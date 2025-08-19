@@ -1,0 +1,12 @@
+{
+  "methodology": "AR-AMS0007",
+  "version": "03.0",
+  "rules": [
+    {
+      "rule_id": "baseline_scenario",
+      "check": "Baseline",
+      "condition": "Baseline land use is degraded non-wetland with negligible carbon accumulation.",
+      "evidence": ["Historical imagery", "Land use records", "Carbon accumulation studies"]
+    }
+  ]
+}
