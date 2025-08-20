@@ -14,11 +14,8 @@
         "required": ["filename", "sha256", "url"],
         "properties": {
           "filename": {"type": "string"},
-          "sha256": {
-            "type": "string",
-            "pattern": "^[a-f0-9]{64}$"
-          },
-          "url": {"type": "string", "format": "uri"}
+          "sha256": {"type": "string"},
+          "url": {"type": "string"}
         }
       }
     }
