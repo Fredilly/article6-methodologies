@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Compliance Report v1",
+  "type": "object",
+  "required": ["contract", "methodology_id", "inputs_hash", "summary", "findings"],
+  "properties": {
+    "contract": {"const": "compliance-report.v1"},
+    "methodology_id": {"type": "string"},
+    "inputs_hash": {"type": "string"},
+    "summary": {"type": "object"},
+    "findings": {"type": "array", "items": {"type": "object"}}
+  }
+}

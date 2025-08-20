@@ -1,0 +1,3 @@
+- Keep rules explainable: each check cites sections.json + page.
+- Run `npm run validate` before committing.
+- Add fixtures + expected outputs for new methodologies.

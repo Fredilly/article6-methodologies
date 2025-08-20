@@ -4,14 +4,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "check:json": "node -e \"JSON.parse(require('fs').readFileSync(process.argv[1],'utf8'))\"",
-    "validate": "npm run check:json schema/rules.schema.json && npm run check:json schema/meta.schema.json && npm run check:json methodologies/AR-AMS0007/rules.json && npm run check:json methodologies/AR-AMS0007/meta.json"
+    "validate": "node tools/validate.mjs",
+    "report:gen": "node tools/generate-report.mjs",
+    "hash": "node tools/compute-hash.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "ajv": "^8.12.0"
+  }
 }
-
-

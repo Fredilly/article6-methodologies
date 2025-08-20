@@ -1,0 +1,11 @@
+{
+  "contract": "compliance-report.v1",
+  "methodology_id": "AR-AMS0007",
+  "inputs_hash": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+  "summary": {
+    "status": "WARN",
+    "area_ha": 0,
+    "risk_score": 0
+  },
+  "findings": []
+}

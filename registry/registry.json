@@ -1,0 +1,14 @@
+{
+  "methodologies": [
+    {
+      "id": "AR-AMS0007",
+      "title": "Afforestation/Reforestation small-scale (placeholder)",
+      "status": "draft",
+      "paths": {
+        "rules": "methodologies/AR-AMS0007/rules.json",
+        "meta": "methodologies/AR-AMS0007/META.json",
+        "sections": "methodologies/AR-AMS0007/sections.json"
+      }
+    }
+  ]
+}

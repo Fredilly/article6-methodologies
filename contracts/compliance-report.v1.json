@@ -1,0 +1,23 @@
+{
+  "contract": "compliance-report.v1",
+  "fields": {
+    "methodology_id": "string",
+    "inputs_hash": "sha256(hex)",
+    "summary": {
+      "status": "PASS|FAIL|WARN",
+      "area_ha": "number",
+      "risk_score": "0-100 (optional)"
+    },
+    "findings": [
+      {
+        "check_code": "string",
+        "status": "PASS|FAIL|WARN",
+        "note": "string",
+        "source": {
+          "section_id": "string",
+          "page": "int"
+        }
+      }
+    ]
+  }
+}
