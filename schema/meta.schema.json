@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Methodology Meta",
+  "type": "object",
+  "required": ["methodology_id", "methodology_version", "rule_engine_version", "source_docs"],
+  "properties": {
+    "methodology_id": {"type": "string"},
+    "methodology_version": {"type": "string"},
+    "rule_engine_version": {"type": "string"},
+    "source_docs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["filename", "sha256", "url"],
+        "properties": {
+          "filename": {"type": "string"},
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "url": {"type": "string", "format": "uri"}
+        }
+      }
+    }
+  }
+}
