@@ -1,15 +1,23 @@
 {
   "name": "article6-methodologies",
-  "version": "1.0.0",
+  "version": "1.1.1",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "check:json": "node -e \"JSON.parse(require('fs').readFileSync(process.argv[1],'utf8'))\"",
-    "validate": "npm run check:json schema/rules.schema.json && npm run check:json schema/meta.schema.json && npm run check:json methodologies/AR-AMS0007/rules.json && npm run check:json methodologies/AR-AMS0007/meta.json"
+    "test": "echo \"No tests yet\"",
+    "check:json": "node -e \"JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')); console.log('OK', process.argv[1])\"",
+    "validate:quick": "npm run check:json -- schema/rules.schema.json && npm run check:json -- schema/meta.schema.json && npm run check:json -- methodologies/AR-AMS0007/rules.json && npm run check:json -- methodologies/AR-AMS0007/META.json",
+    "validate:ajv": "node tools/validate.mjs",
+    "validate": "npm run validate:quick && npm run validate:ajv",
+    "report:gen": "node tools/generate-report.mjs",
+    "hash": "node tools/compute-hash.mjs"
   },
+  "devDependencies": {
+    "ajv": "^8.12.0"
+  },
+  "description": "",
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": "",
-  "type": "module"
+  "license": "ISC"
 }
+
