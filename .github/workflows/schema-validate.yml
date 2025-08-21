@@ -10,10 +10,10 @@ jobs:
       - run: npm i -g ajv-cli
       - name: Validate META.json
         run: |
-          find methodologies -name META.json -print0 | xargs -0 -I {} ajv validate -s schemas/meta.schema.json -d {}
+          find methodologies -name META.json -print0 | xargs -0 -I {} ajv validate -s schemas/meta.schema.json -d {} --spec=draft7
       - name: Validate sections.json
         run: |
-          find methodologies -name sections.json -print0 | xargs -0 -I {} ajv validate -s schemas/sections.schema.json -d {}
+          find methodologies -name sections.json -print0 | xargs -0 -I {} ajv validate -s schemas/sections.schema.json -d {} --spec=draft7
       - name: Validate rules.json
         run: |
-          find methodologies -name rules.json -print0 | xargs -0 -I {} ajv validate -s schemas/rules.schema.json -d {}
+          find methodologies -name rules.json -print0 | xargs -0 -I {} ajv validate -s schemas/rules.schema.json -d {} --spec=draft7
