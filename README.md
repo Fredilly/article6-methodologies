@@ -7,4 +7,4 @@ Implements the Five Things:
 4) Overrides → `/overrides/<ISO3>.json`
 5) Registry → `registry.json` mirrors `/methodologies`
 
-Add a new method by copying `methodologies/TEMPLATE_METHOD`.
+Add a new method by copying `methodologies/ZZ-TEMPLATE0000`.

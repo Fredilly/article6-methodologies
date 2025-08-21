@@ -1,5 +1,7 @@
 name: Schema Validate (META/sections/rules)
-on: [pull_request]
+on:
+  push:
+  pull_request:
 jobs:
   schema:
     runs-on: ubuntu-latest

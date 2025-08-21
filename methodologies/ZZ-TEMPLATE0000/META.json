@@ -1,0 +1,14 @@
+{
+  "id": "ZZ-TEMPLATE0000",
+  "title": "",
+  "version": "v1.0.0",
+  "references": {
+    "tools": [],
+    "links": []
+  },
+  "audit_hashes": {
+    "sections_json_sha256": "4d8f4d04eaa527bab94b7ae44deecbb4059de9a18c8cbbcab680e0ad55dc05b5",
+    "rules_json_sha256": "11bb2758b9762b9793566398246de497b9b98a2f9abb9e8aba9ce576224fe6e1"
+  },
+  "created_at": "2025-08-21T00:00:00Z"
+}
