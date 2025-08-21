@@ -3,6 +3,9 @@
   "scope": "",
   "applicability": [],
   "definitions": {},
-  "monitoring": { "parameters": [], "frequency": "" },
+  "monitoring": {
+    "parameters": [],
+    "frequency": ""
+  },
   "calculation_procedures": []
 }
