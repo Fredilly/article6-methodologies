@@ -1,0 +1,14 @@
+name: Validate JSON + LF
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JSON parse
+        run: |
+          find . -name "*.json" -print0 | xargs -0 -I{} node -e "JSON.parse(require('fs').readFileSync(process.argv[1],'utf8'))" {}
+      - name: Enforce LF
+        run: |
+          if git ls-files -z | xargs -0 file | grep -E 'CRLF|CR line'; then
+            echo "Found CRLF endings"; exit 1; fi
