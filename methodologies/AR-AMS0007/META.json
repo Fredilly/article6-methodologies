@@ -1,6 +1,24 @@
 {
+  "id": "AR-AMS0007",
   "title": "Afforestation and Reforestation of Degraded Lands",
   "version": "1.0",
-  "scope": "Afforestation projects",
-  "refs": ["https://example.org/methodology/AR-AMS0007"]
+  "source": {
+    "pdf_filename": "AR-AMS0007.pdf",
+    "sha256": "ac8038c3e3746b771947e15131ac323acdf1872b5b439aed486819423d372161"
+  },
+  "references": {
+    "tools": [
+      {
+        "path": "tools/AR-AMS0007/AR-AMS0007.pdf",
+        "sha256": "ac8038c3e3746b771947e15131ac323acdf1872b5b439aed486819423d372161",
+        "kind": "pdf"
+      }
+    ],
+    "links": []
+  },
+  "audit_hashes": {
+    "sections_json_sha256": "f60bd93cafda94f120b9def48ad63192984bff3d89539f92d3332cdc8a30c2e8",
+    "rules_json_sha256": "0fda76ebf2ed7b8863eff6e18e34b2067fc5455994c4d360f097695cf29da504"
+  },
+  "created_at": "2024-06-01T00:00:00Z"
 }

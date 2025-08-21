@@ -1,3 +1,8 @@
 {
-  "Introduction": "Overview of methodology AR-AMS0007."
+  "preamble": "Overview of methodology AR-AMS0007.",
+  "scope": "Afforestation projects",
+  "applicability": ["Applies to degraded lands"],
+  "definitions": {},
+  "monitoring": { "parameters": [], "frequency": "" },
+  "calculation_procedures": []
 }
