@@ -12,3 +12,9 @@ jobs:
         run: |
           if git ls-files -z | xargs -0 file | grep -E 'CRLF|CR line'; then
             echo "Found CRLF endings"; exit 1; fi
+      - name: Verify scripts manifest
+        run: |
+          ./scripts/hash-scripts.sh > /tmp/scripts.sha
+          find scripts core -type f | sort > /tmp/actual
+          jq -r '.files[].path' scripts_manifest.json | sort > /tmp/manifest
+          diff -u /tmp/manifest /tmp/actual
