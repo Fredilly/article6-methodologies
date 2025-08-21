@@ -1,5 +1,5 @@
 {
-  "id": "<METHOD_ID>",
+  "id": "ZZ-TEMPLATE0000",
   "title": "",
   "version": "v1.0.0",
   "source": {
@@ -8,7 +8,7 @@
   },
   "references": {
     "tools": [
-      { "path": "tools/<METHOD_ID>/<FILE>", "sha256": "<sha256>", "kind": "pdf" }
+      { "path": "tools/ZZ-TEMPLATE0000/<FILE>", "sha256": "<sha256>", "kind": "pdf" }
     ],
     "links": []
   },
