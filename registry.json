@@ -1,6 +1,3 @@
-{
-  "methodologies": [
-    "AR-AMS0007",
-    "AR-AMS0003"
-  ]
-}
+[
+  {"id": "TEMPLATE_METHOD", "path": "methodologies/TEMPLATE_METHOD"}
+]
