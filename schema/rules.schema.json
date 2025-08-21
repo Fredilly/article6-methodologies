@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Methodology Rules",
+  "type": "object",
+  "required": ["id", "title", "version", "checks"],
+  "properties": {
+    "id": {"type": "string"},
+    "title": {"type": "string"},
+    "version": {"type": "string"},
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "desc", "type", "params", "source"],
+        "properties": {
+          "code": {"type": "string"},
+          "desc": {"type": "string"},
+          "type": {"type": "string"},
+          "params": {"type": "object"},
+          "source": {
+            "type": "object",
+            "required": ["section_id", "page"],
+            "properties": {
+              "section_id": {"type": "string"},
+              "page": {"type": "integer"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

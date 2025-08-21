@@ -1,0 +1,26 @@
+name: validate
+on:
+  push:
+  pull_request:
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - run: npm ci || npm install
+      - run: npm run validate
+      - name: Generate reports
+        run: |
+          node tools/generate-report.mjs tests/fixtures/AR-AMS0007/sample_ok.geojson > out_ok.json
+          node tools/generate-report.mjs tests/fixtures/AR-AMS0007/sample_fail.geojson > out_fail.json
+      - name: Compare with expected (determinism)
+        run: |
+          node tools/assert-equal.mjs out_ok.json tests/expected/AR-AMS0007/sample_ok.report.json
+          node tools/assert-equal.mjs out_fail.json tests/expected/AR-AMS0007/sample_fail.report.json
+      - name: Hash outputs
+        run: |
+          node tools/compute-hash.mjs out_ok.json
+          node tools/compute-hash.mjs out_fail.json

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Compliance Report v1",
+  "type": "object",
+  "required": ["contract", "methodology_id", "inputs_hash", "summary", "findings"],
+  "properties": {
+    "contract": {"const": "compliance-report.v1"},
+    "methodology_id": {"type": "string"},
+    "inputs_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "summary": {"type": "object", "required": ["status", "area_ha"], "properties": {"status": {"enum": ["PASS", "FAIL", "WARN"]}, "area_ha": {"type": "number"}, "risk_score": {"type": "number", "minimum": 0, "maximum": 100}}},
+    "findings": {"type": "array", "items": {"type": "object", "required": ["check_code", "status", "source"], "properties": {"check_code": {"type": "string"}, "status": {"enum": ["PASS", "FAIL", "WARN"]}, "note": {"type": "string"}, "source": {"type": "object", "required": ["section_id", "page"], "properties": {"section_id": {"type": "string"}, "page": {"type": "integer"}}}}}}
+  }
+}

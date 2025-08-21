@@ -1,0 +1,23 @@
+name: Bug report
+description: Report a problem with schemas, rules, CI, or outputs
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe the issue
+    validations:
+      required: true
+  - type: input
+    id: sha
+    attributes:
+      label: Commit SHA / PR link
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / CI output
