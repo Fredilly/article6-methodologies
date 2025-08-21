@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "required": ["schema_version"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "applicability_rules": { "type": "array" },
+    "calculation_rules": { "type": "array" },
+    "monitoring_rules": { "type": "array" }
+  }
+}
