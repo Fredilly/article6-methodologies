@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["id", "version", "references", "audit_hashes"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[A-Z]{2}-[A-Z]{3,}[0-9]{4,}$" },
+    "title": { "type": "string" },
+    "version": { "type": "string" },
+    "source": {
+      "type": "object",
+      "properties": {
+        "pdf_filename": { "type": "string" },
+        "sha256": { "type": "string" }
+      },
+      "required": ["sha256"]
+    },
+    "references": {
+      "type": "object",
+      "properties": {
+        "tools": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["path", "sha256", "kind"],
+            "properties": {
+              "path": { "type": "string" },
+              "sha256": { "type": "string" },
+              "kind": { "type": "string" },
+              "notes": { "type": "string" }
+            }
+          }
+        },
+        "links": { "type": "array" }
+      },
+      "required": ["tools"]
+    },
+    "audit_hashes": {
+      "type": "object",
+      "required": ["sections_json_sha256", "rules_json_sha256"],
+      "properties": {
+        "sections_json_sha256": { "type": "string" },
+        "rules_json_sha256": { "type": "string" }
+      }
+    }
+  }
+}

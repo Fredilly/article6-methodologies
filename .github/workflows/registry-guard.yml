@@ -1,0 +1,13 @@
+name: Registry Guard
+on: [pull_request]
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y jq
+      - name: registry.json mirrors /methodologies
+        run: |
+          ids=$(find methodologies -maxdepth 1 -type d -name '*-*' -printf '%f\n' | sort)
+          reg=$(jq -r '.[].id' registry.json | sort)
+          diff <(echo "$ids") <(echo "$reg") || { echo "::error ::registry mismatch"; exit 1; }

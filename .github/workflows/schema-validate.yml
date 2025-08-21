@@ -1,0 +1,19 @@
+name: Schema Validate (META/sections/rules)
+on: [pull_request]
+jobs:
+  schema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: npm i -g ajv-cli
+      - name: Validate META.json
+        run: |
+          find methodologies -name META.json -print0 | xargs -0 -I {} ajv validate -s schemas/meta.schema.json -d {}
+      - name: Validate sections.json
+        run: |
+          find methodologies -name sections.json -print0 | xargs -0 -I {} ajv validate -s schemas/sections.schema.json -d {}
+      - name: Validate rules.json
+        run: |
+          find methodologies -name rules.json -print0 | xargs -0 -I {} ajv validate -s schemas/rules.schema.json -d {}

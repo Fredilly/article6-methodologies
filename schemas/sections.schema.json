@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["calculation_procedures"],
+  "properties": {
+    "preamble": { "type": "string" },
+    "scope": { "type": "string" },
+    "applicability": { "type": "array" },
+    "definitions": { "type": "object" },
+    "monitoring": {
+      "type": "object",
+      "properties": {
+        "parameters": { "type": "array" },
+        "frequency": { "type": "string" }
+      }
+    },
+    "calculation_procedures": { "type": "array" }
+  }
+}

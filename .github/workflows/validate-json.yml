@@ -1,0 +1,13 @@
+name: Validate JSON + LF
+on: [pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y jq
+      - name: Check JSON validity and LF newlines
+        run: |
+          git ls-files '*.json' | while read f; do jq empty "$f" || (echo "Invalid JSON: $f" && exit 1); done
+          bad=$(git ls-files '*.json' | xargs file | grep -v 'with LF' || true)
+          if [ -n "$bad" ]; then echo "Files must end with LF newlines:" && echo "$bad" && exit 1; fi

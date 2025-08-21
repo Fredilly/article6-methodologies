@@ -1,10 +1,3 @@
-__pycache__/
-*.py[cod]
-.pytest_cache/
-
-# Virtual environments
-.venv/
-ENV/
-
-# Mac or other OS files
 .DS_Store
+*.log
+.env

@@ -1,11 +1,10 @@
-# Article 6 Methodologies
+# Article6 Methodologies — Data‑First Repo
 
-This repository provides a canonical structure for storing methodologies used in Article 6 compliance workflows. Each methodology resides under `methodologies/<code>` and contains:
+Implements the Five Things:
+1) Compliance → `methodologies/<ID>/rules.json`
+2) Audit → `methodologies/<ID>/sections.json` + `methodologies/<ID>/META.json` (with `audit_hashes.*`)
+3) Tools → originals in `/tools/**` and listed in `META.references.tools[*]`
+4) Overrides → `/overrides/<ISO3>.json`
+5) Registry → `registry.json` mirrors `/methodologies`
 
-- `META.json` – basic metadata
-- `sections.json` – parsed sections from the source document
-- `rules.json` – machine-readable compliance rules
-- `tests/` – fixture projects and expected outputs
-- `outputs/` – generated artefacts such as compliance reports
-
-Scripts in `scripts/` help automate adding new methodologies and parsing source PDFs. The `core/` package holds simple placeholders for the compliance engine.
+Add a new method by copying `methodologies/TEMPLATE_METHOD`.
