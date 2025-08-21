@@ -9,5 +9,5 @@ jobs:
       - name: Check JSON validity and LF newlines
         run: |
           git ls-files '*.json' | while read f; do jq empty "$f" || (echo "Invalid JSON: $f" && exit 1); done
-          bad=$(git ls-files '*.json' | xargs file | grep -v 'with LF' || true)
+          bad=$(git ls-files '*.json' | xargs file | grep -E 'CRLF|CR' || true)
           if [ -n "$bad" ]; then echo "Files must end with LF newlines:" && echo "$bad" && exit 1; fi
