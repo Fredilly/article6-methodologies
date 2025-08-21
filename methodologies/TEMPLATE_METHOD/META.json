@@ -4,6 +4,16 @@
     "rules_json_sha256": "79f6fee2de76d55457d44c501c43f09eeca7e930d57e3f5d3314657ab7161c73"
   },
   "references": {
-    "tools": []
+    "tools": [
+      {
+        "path": "tools/TEMPLATE_METHOD/source.pdf",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "kind": "pdf"
+      }
+    ]
+  },
+  "automation": {
+    "scripts_manifest_sha256": "b14fd32ef95ab10548c356a7ab0caf22b72675984614b3a59a34925c117bc58e",
+    "repo_commit": "1e6c85204148981a0e759e62a17b62a6ffe347cd"
   }
 }
