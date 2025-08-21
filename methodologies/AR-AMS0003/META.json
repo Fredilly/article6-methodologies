@@ -1,6 +1,24 @@
 {
+  "id": "AR-AMS0003",
   "title": "Reforestation of Grazed Lands",
   "version": "2.1",
-  "scope": "Reforestation projects",
-  "refs": ["https://example.org/methodology/AR-AMS0003"]
+  "source": {
+    "pdf_filename": "AR-AMS0003.pdf",
+    "sha256": "ac8038c3e3746b771947e15131ac323acdf1872b5b439aed486819423d372161"
+  },
+  "references": {
+    "tools": [
+      {
+        "path": "tools/AR-AMS0003/AR-AMS0003.pdf",
+        "sha256": "ac8038c3e3746b771947e15131ac323acdf1872b5b439aed486819423d372161",
+        "kind": "pdf"
+      }
+    ],
+    "links": []
+  },
+  "audit_hashes": {
+    "sections_json_sha256": "1e8453c4bcd55579e9e5c428510183e48f92f19070ff19b6f73c41be593a7743",
+    "rules_json_sha256": "dd883a182972af36797b7768be5d364d12da2ae5aaa84d70461e34f46ebd1ad6"
+  },
+  "created_at": "2024-06-01T00:00:00Z"
 }

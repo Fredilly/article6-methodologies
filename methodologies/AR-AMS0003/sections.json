@@ -1,3 +1,8 @@
 {
-  "Overview": "Summary for AR-AMS0003."
+  "preamble": "Summary for AR-AMS0003.",
+  "scope": "Reforestation projects",
+  "applicability": ["Applies to grazed lands"],
+  "definitions": {},
+  "monitoring": { "parameters": [], "frequency": "" },
+  "calculation_procedures": []
 }

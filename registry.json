@@ -1,6 +1,4 @@
-{
-  "methodologies": [
-    "AR-AMS0007",
-    "AR-AMS0003"
-  ]
-}
+[
+  { "id": "AR-AMS0003" },
+  { "id": "AR-AMS0007" }
+]
