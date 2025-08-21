@@ -1,0 +1,20 @@
+{
+  "name": "article6-methodologies",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "engines": { "node": ">=20 <21" },
+  "scripts": {
+    "test": "echo \"No tests yet\"",
+    "check:json": "node -e \"JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')); console.log('OK', process.argv[1])\"",
+    "validate:quick": "npm run check:json -- schema/rules.schema.json && npm run check:json -- schema/meta.schema.json && npm run check:json -- schema/report.schema.json && npm run check:json -- contracts/compliance-report.v1.json && npm run check:json -- methodologies/AR-AMS0007/rules.json && npm run check:json -- methodologies/AR-AMS0007/META.json && npm run check:json -- methodologies/AR-AMS0007/sections.json",
+    "validate:ajv": "node tools/validate.mjs",
+    "validate": "npm run validate:quick && npm run validate:ajv",
+    "report:gen": "node tools/generate-report.mjs",
+    "hash": "node tools/compute-hash.mjs"
+  },
+  "devDependencies": {
+    "ajv": "^8.12.0"
+  }
+}

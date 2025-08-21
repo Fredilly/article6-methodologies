@@ -1,0 +1,44 @@
+{
+  "methodologies": [
+    {
+      "id": "AR-AMS0007",
+      "title": "Afforestation/Reforestation small-scale (placeholder)",
+      "status": "draft",
+      "paths": {
+        "rules": "methodologies/AR-AMS0007/rules.json",
+        "meta": "methodologies/AR-AMS0007/META.json",
+        "sections": "methodologies/AR-AMS0007/sections.json"
+      }
+    },
+    {
+      "id": "AR-AM0014",
+      "title": "Afforestation/Reforestation methodology AM0014 (placeholder)",
+      "status": "draft",
+      "paths": {
+        "rules": "methodologies/AR-AM0014/rules.json",
+        "meta": "methodologies/AR-AM0014/META.json",
+        "sections": "methodologies/AR-AM0014/sections.json"
+      }
+    },
+    {
+      "id": "AR-ACM0003",
+      "title": "Afforestation/Reforestation consolidated methodology ACM0003 (placeholder)",
+      "status": "draft",
+      "paths": {
+        "rules": "methodologies/AR-ACM0003/rules.json",
+        "meta": "methodologies/AR-ACM0003/META.json",
+        "sections": "methodologies/AR-ACM0003/sections.json"
+      }
+    },
+    {
+      "id": "AR-AMS0003",
+      "title": "Afforestation/Reforestation small-scale AMS0003 (placeholder)",
+      "status": "draft",
+      "paths": {
+        "rules": "methodologies/AR-AMS0003/rules.json",
+        "meta": "methodologies/AR-AMS0003/META.json",
+        "sections": "methodologies/AR-AMS0003/sections.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+name: Feature request
+description: Propose a new methodology or guardrail
+labels: [enhancement]
+body:
+  - type: input
+    id: scope
+    attributes:
+      label: Scope
+      description: What should be added/changed?
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why
+      description: Why is this needed? Impact on compliance/auditability.
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Deliverables
+      description: Files/endpoints to create or modify
