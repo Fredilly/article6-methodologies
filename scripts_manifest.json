@@ -1,22 +1,10 @@
 {
-  "generated_at": "2025-08-21T13:48:34Z",
-  "git_commit": "1e6c85204148981a0e759e62a17b62a6ffe347cd",
+  "generated_at": "2025-08-21T14:04:59Z",
+  "git_commit": "e275318d9babd558fe913ddfb9c8f4c320e03959",
   "files": [
-    {
-      "path": "core/hashing/sha256.js",
-      "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738"
-    },
-    {
-      "path": "scripts/ci-run-tests.sh",
-      "sha256": "a197c80bfcac89797987b10bc6df5ce3f5540214a110058e89846559603efc24"
-    },
-    {
-      "path": "scripts/hash-all.sh",
-      "sha256": "71338e4b2f025b276b4ccf489a720c4315c331235d94ba10687ef9a80dbba19c"
-    },
-    {
-      "path": "scripts/hash-scripts.sh",
-      "sha256": "7d298c1971517a4fda76eb2f591d9bda7d2e3992a109987fae3c5f7529a07a8a"
-    }
+    { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
+    { "path": "scripts/ci-run-tests.sh", "sha256": "a197c80bfcac89797987b10bc6df5ce3f5540214a110058e89846559603efc24" },
+    { "path": "scripts/hash-all.sh", "sha256": "9b399464747405cf7a04f1c4fa3f7062d0c1a53b663a4860c4ea09a041212c21" },
+    { "path": "scripts/hash-scripts.sh", "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3" }
   ]
 }
