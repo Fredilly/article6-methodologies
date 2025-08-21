@@ -1,23 +1,36 @@
-#!/usr/bin/env sh
+#!/bin/sh
 set -eu
 
-# Navigate to repository root
 cd "$(dirname "$0")/.."
 
-# Collect files under scripts and core
+# choose available hashing command
+hash_file() {
+  if command -v shasum >/dev/null 2>&1; then
+    shasum -a 256 "$1" | awk '{print $1}'
+  else
+    openssl dgst -sha256 "$1" | sed 's/^.*= //'
+  fi
+}
+
 files=$(find scripts core -type f | sort)
 
-# Metadata
 generated_at=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 git_commit=$(git rev-parse HEAD)
 
-# Build files array
-entries=$(printf '%s\n' "$files" | while IFS= read -r f; do
-  sha=$(node core/hashing/sha256.js "$f")
-  printf '{"path":"%s","sha256":"%s"}\n' "$f" "$sha"
-done)
+{
+  printf '{\n'
+  printf '  "generated_at": "%s",\n' "$generated_at"
+  printf '  "git_commit": "%s",\n' "$git_commit"
+  printf '  "files": [\n'
+  first=1
+  for f in $files; do
+    sha=$(hash_file "$f")
+    if [ $first -eq 0 ]; then printf ',\n'; fi
+    printf '    { "path": "%s", "sha256": "%s" }' "$f" "$sha"
+    first=0
+  done
+  printf '\n  ]\n'
+  printf '}\n'
+} > scripts_manifest.json
 
-printf '%s\n' "$entries" | jq -s --arg date "$generated_at" --arg commit "$git_commit" '{generated_at:$date, git_commit:$commit, files:.}' > scripts_manifest.json
-
-# Output manifest hash
-node core/hashing/sha256.js scripts_manifest.json
+hash_file scripts_manifest.json
