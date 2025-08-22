@@ -1,3 +1,8 @@
 node_modules
 node_modules/
 .DS_Store
+
+# Ignore local installers
+/git-lfs*/
+*.zip
+*.tar.gz
