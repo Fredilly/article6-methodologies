@@ -1,10 +1,30 @@
 name: Schema Validate (META/sections/rules)
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - 'schemas/**'
+      - 'methodologies/**'
+      - 'registry.json'
+      - '.github/workflows/schema-validate.yml'
+  pull_request:
+    paths:
+      - 'schemas/**'
+      - 'methodologies/**'
+      - 'registry.json'
+      - '.github/workflows/schema-validate.yml'
 jobs:
   schema:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Skip if only staging/** changed
+        run: |
+          if git rev-parse HEAD^ >/dev/null 2>&1; then
+            DIFF=$(git diff --name-only HEAD^)
+          else
+            DIFF=$(git ls-files)
+          fi
+          echo "$DIFF" | grep -v '^staging/' | grep -q . && echo "Proceeding" || { echo "Only staging changed; exiting."; exit 0; }
       - uses: actions/setup-node@v4
         with: { node-version: '20' }
       - run: npm i -g ajv-cli@5 jq
@@ -14,3 +34,4 @@ jobs:
         run: ajv validate -s schemas/sections.schema.json -d 'methodologies/**/sections.json'
       - name: Validate rules
         run: ajv validate -s schemas/rules.schema.json -d 'methodologies/**/rules.json'
+
