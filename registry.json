@@ -1,3 +1,46 @@
 [
-  {"id": "TEMPLATE_METHOD", "path": "methodologies/TEMPLATE_METHOD"}
+  {
+    "id": "TEMPLATE_METHOD",
+    "path": "methodologies/TEMPLATE_METHOD"
+  },
+  {
+    "id": "VM0015",
+    "paths": [
+      "methodologies/Verra/Forestry/VM0015"
+    ],
+    "registry": "Verra",
+    "sector": "AFOLU/Forestry"
+  },
+  {
+    "id": "VM0044",
+    "paths": [
+      "methodologies/Verra/Forestry/VM0044"
+    ],
+    "registry": "Verra",
+    "sector": "AFOLU/Forestry"
+  },
+  {
+    "id": "VM0047",
+    "paths": [
+      "methodologies/Verra/Agriculture/VM0047"
+    ],
+    "registry": "Verra",
+    "sector": "AFOLU/Agriculture"
+  },
+  {
+    "id": "GS-ARR01",
+    "paths": [
+      "methodologies/GoldStandard/Forestry/GS-ARR01"
+    ],
+    "registry": "GoldStandard",
+    "sector": "AFOLU/Forestry"
+  },
+  {
+    "id": "GS-SOC01",
+    "paths": [
+      "methodologies/GoldStandard/Agriculture/GS-SOC01"
+    ],
+    "registry": "GoldStandard",
+    "sector": "AFOLU/Agriculture"
+  }
 ]
