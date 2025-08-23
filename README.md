@@ -25,3 +25,6 @@ See RULESET.md for conventions and CI guardrails.
 - JSON UTF-8, LF, 2 spaces.
 - Do not delete evidence; supersede only.
 - registry.json mirrors `/methodologies`.
+
+## Stable Tree v1
+This structure is normative. Changes require a "Stable Tree vX" section and CI update.
