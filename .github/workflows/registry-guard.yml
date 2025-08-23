@@ -1,10 +1,28 @@
 name: Registry Guard
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - 'methodologies/**'
+      - 'registry.json'
+      - '.github/workflows/registry-guard.yml'
+  pull_request:
+    paths:
+      - 'methodologies/**'
+      - 'registry.json'
+      - '.github/workflows/registry-guard.yml'
 jobs:
   guard:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Skip if only staging/** changed
+        run: |
+          if git rev-parse HEAD^ >/dev/null 2>&1; then
+            DIFF=$(git diff --name-only HEAD^)
+          else
+            DIFF=$(git ls-files)
+          fi
+          echo "$DIFF" | grep -v '^staging/' | grep -q . && echo "Proceeding" || { echo "Only staging changed; exiting."; exit 0; }
       - name: Ensure registry mirrors /methodologies
         run: |
           ls methodologies | jq -R -s 'split("\n")|map(select(length>0))|map("methodologies/"+.)' > /tmp/dirs.json
@@ -13,3 +31,4 @@ jobs:
           # simple presence check:
           missing=$(comm -23 <(jq -r '.[]' /tmp/dirs.json | sort) <(jq -r '.[]?.path' registry.json | sort) || true)
           if [ -n "$missing" ]; then echo "Missing in registry: $missing"; exit 1; fi
+

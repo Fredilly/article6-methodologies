@@ -1,0 +1,54 @@
+{
+  "audit_hashes": {
+    "rules_json_sha256": "",
+    "sections_json_sha256": ""
+  },
+  "id": "AR-AMS0007",
+  "references": {
+    "sources": [
+      {
+        "kind": "methodology",
+        "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/sources/Afforestation and reforestation project activities implemented on lands other than wetlands.pdf",
+        "sha256": "dc04ea2a039e27509db204bc6a7e3a5698308b2d578e1b86e43dc8ad12f4ad32"
+      }
+    ],
+    "tools": [
+      {
+        "id": "AR-TOOL08",
+        "path": "tools/UNFCCC/AR-TOOL08.pdf",
+        "registry": "UNFCCC",
+        "sha256": "e35cf86dbd5db6a81551d333d44274d54002973fb12d32095bdff6f1c5c5ccbb"
+      },
+      {
+        "id": "AR-TOOL12",
+        "path": "tools/UNFCCC/AR-TOOL12.pdf",
+        "registry": "UNFCCC",
+        "sha256": "5aeffca3cfe52a173830b000bb3b713fcbaad519676998bf0b4e31e69effd216"
+      },
+      {
+        "id": "AR-TOOL14",
+        "path": "tools/UNFCCC/AR-TOOL14.pdf",
+        "registry": "UNFCCC",
+        "sha256": "dea000078bf02005f4a9852d06295a0800ad666f05971615916a38e08aea04ee"
+      },
+      {
+        "id": "AR-TOOL15",
+        "path": "tools/UNFCCC/AR-TOOL15.pdf",
+        "registry": "UNFCCC",
+        "sha256": "cae1080a443975b63c7ffb7517225d371e2088124c3628d479158f470bb63bce"
+      },
+      {
+        "id": "AR-TOOL16",
+        "path": "tools/UNFCCC/AR-TOOL16.pdf",
+        "registry": "UNFCCC",
+        "sha256": "92829e89d3893c6f5eb74075b681963492d256db69589d2878e5b8ba91cc64b6"
+      }
+    ]
+  },
+  "registry": "UNFCCC",
+  "registry_scope": "12",
+  "sector": "AFOLU/Forestry",
+  "status": "active",
+  "title": "Afforestation and reforestation project activities implemented on lands other than wetlands",
+  "version": ""
+}
