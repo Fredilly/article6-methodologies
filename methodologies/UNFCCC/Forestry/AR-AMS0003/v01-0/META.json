@@ -1,0 +1,41 @@
+{
+  "title": "Afforestation and reforestation project activities implemented on wetlands (AR-AMS0003)",
+  "standard": "UNFCCC",
+  "domain": "Forestry",
+  "method": "AR-AMS0003",
+  "version": "v01-0",
+  "entry_into_force": null,
+  "audit_hashes": {
+    "sections_json_sha256": "38582a197f7e1ba61b4a401d787d4aad018b3d92d63440d19a6b0545f1594697",
+    "rules_json_sha256": "7f7ad8f54675c009b38bcfcd2fa1c748ad438a40e24fada6e846804a48470c4f"
+  },
+  "references": {
+    "tools": [
+      {
+        "path": "tools/UNFCCC/AR-AMS0003/v01-0/meth_booklet.pdf",
+        "sha256": "b1e73eb883c139285d6a73ba3b645377b140ec860c482192e2158fcfd7b2ba07",
+        "kind": "pdf"
+      },
+      {
+        "path": "tools/UNFCCC/AR-AMS0003/v01-0/source.docx",
+        "sha256": "2719958c1e2b8c29613d13d043dea73f9dd3fb4edbd848a921b81734339ac4b1",
+        "kind": "docx"
+      },
+      {
+        "path": "tools/UNFCCC/AR-AMS0003/v01-0/source.pdf",
+        "sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b",
+        "kind": "pdf"
+      }
+    ]
+  },
+  "dependencies": [
+    "UNFCCC/AR-TOOL08@v4.0.0",
+    "UNFCCC/AR-TOOL12@v3.1",
+    "UNFCCC/AR-TOOL14@v4.2",
+    "UNFCCC/AR-TOOL15@v2.0"
+  ],
+  "automation": {
+    "scripts_manifest_sha256": "208b9d10596c61dfaf87a5c8c6cc0978df9ee9bb0c093f36a0377086c9eca347",
+    "repo_commit": "82ade191d6c0726e4b45d1190ef62f63e210e5ad"
+  }
+}
