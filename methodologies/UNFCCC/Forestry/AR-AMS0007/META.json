@@ -1,0 +1,43 @@
+{
+  "audit_hashes": {
+    "rules_json_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "sections_json_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  "id": "AR-AMS0007",
+  "references": {
+    "tools": [
+      {
+        "path": "tools/UNFCCC/AR-TOOL08.pdf",
+        "sha256": "e35cf86dbd5db6a81551d333d44274d54002973fb12d32095bdff6f1c5c5ccbb",
+        "kind": "tool"
+      },
+      {
+        "path": "tools/UNFCCC/AR-TOOL12.pdf",
+        "sha256": "5aeffca3cfe52a173830b000bb3b713fcbaad519676998bf0b4e31e69effd216",
+        "kind": "tool"
+      },
+      {
+        "path": "tools/UNFCCC/AR-TOOL14.pdf",
+        "sha256": "dea000078bf02005f4a9852d06295a0800ad666f05971615916a38e08aea04ee",
+        "kind": "tool"
+      },
+      {
+        "path": "tools/UNFCCC/AR-TOOL15.pdf",
+        "sha256": "cae1080a443975b63c7ffb7517225d371e2088124c3628d479158f470bb63bce",
+        "kind": "tool"
+      },
+      {
+        "path": "tools/UNFCCC/AR-TOOL16.pdf",
+        "sha256": "92829e89d3893c6f5eb74075b681963492d256db69589d2878e5b8ba91cc64b6",
+        "kind": "tool"
+      }
+    ]
+  },
+  "registry": "UNFCCC",
+  "sector": "AFOLU/Forestry",
+  "automation": {
+    "scripts_manifest_sha256": "04911e46ef4a69abd4c2598be9e74ff9aa6eacc781506a97dad8a8ad38442f4d",
+    "repo_commit": "4ece12faf80b46edcc5b364475bf78d08c01b263"
+  }
+}
+
