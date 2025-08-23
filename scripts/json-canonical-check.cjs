@@ -55,3 +55,4 @@ if (changed.length) {
   console.error('Non-canonical JSON detected in:\n' + changed.map(x => ' - ' + x).join('\n'));
   process.exit(1);
 }
+
