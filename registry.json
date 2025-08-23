@@ -1,3 +1,18 @@
-[
-  {"id": "TEMPLATE_METHOD", "path": "methodologies/TEMPLATE_METHOD"}
-]
+{
+  "stage": [
+    {
+      "id": "VM0007",
+      "path": "methodologies/Verra/AFOLU/VM0007/v1-6"
+    },
+    {
+      "id": "GS-00XX",
+      "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0"
+    }
+  ],
+  "standard": [
+    {
+      "id": "AR-AMS0007",
+      "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1"
+    }
+  ]
+}

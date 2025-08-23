@@ -14,21 +14,23 @@ hash_file() {
 repo_commit=$(git rev-parse HEAD)
 scripts_manifest_sha=$(./scripts/hash-scripts.sh)
 
-for dir in methodologies/*; do
-  [ -d "$dir" ] || continue
+find methodologies -name META.json | sort | while read -r meta_file; do
+  dir=$(dirname "$meta_file")
   sections_hash=$(hash_file "$dir/sections.json")
   rules_hash=$(hash_file "$dir/rules.json")
-  id=$(basename "$dir")
-  tools_dir="tools/$id"
+  rel=${dir#methodologies/}
+  IFS=/ read -r org sector id version <<EOF2
+$rel
+EOF2
+  tools_dir="tools/$org/$id/$version"
   tools_json='[]'
   if [ -d "$tools_dir" ]; then
     tools_json=$(find "$tools_dir" -type f | sort | while read -r f; do
       sha=$(hash_file "$f")
       kind="${f##*.}"
       printf '{"path":"%s","sha256":"%s","kind":"%s"}\n' "$f" "$sha" "$kind"
-    done | jq -s '.');
+    done | jq -s '.')
   fi
-  meta_file="$dir/META.json"
   tmp="$meta_file.tmp"
   jq \
     --arg sections "$sections_hash" \

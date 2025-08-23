@@ -1,15 +1,12 @@
-name: Registry Guard
-on: [push, pull_request]
+name: registry-guard
+on:
+  push:
+  pull_request:
 jobs:
   guard:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Ensure registry mirrors /methodologies
+      - uses: actions/checkout@v3
+      - name: verify registry entries
         run: |
-          ls methodologies | jq -R -s 'split("\n")|map(select(length>0))|map("methodologies/"+.)' > /tmp/dirs.json
-          jq -S . registry.json > /tmp/registry.json
-          diff -u /tmp/dirs.json <(jq -r '.[].path' /tmp/registry.json | jq -R -s 'split("\n")|map(select(length>0))' | jq -c) || true
-          # simple presence check:
-          missing=$(comm -23 <(jq -r '.[]' /tmp/dirs.json | sort) <(jq -r '.[]?.path' registry.json | sort) || true)
-          if [ -n "$missing" ]; then echo "Missing in registry: $missing"; exit 1; fi
+          node -e "const fs=require('fs');const reg=JSON.parse(fs.readFileSync('registry.json'));function check(entries){return entries.every(e=>fs.existsSync(e.path));}if(!check([...(reg.standard||[]),...(reg.stage||[])])){process.exit(1);}"
