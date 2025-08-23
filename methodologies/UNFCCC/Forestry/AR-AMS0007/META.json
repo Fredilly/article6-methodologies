@@ -7,47 +7,37 @@
   "references": {
     "tools": [
       {
-        "id": "AR-TOOL08",
-        "kind": "tool",
         "path": "tools/UNFCCC/AR-TOOL08.pdf",
-        "registry": "UNFCCC",
-        "sha256": "e35cf86dbd5db6a81551d333d44274d54002973fb12d32095bdff6f1c5c5ccbb"
+        "sha256": "e35cf86dbd5db6a81551d333d44274d54002973fb12d32095bdff6f1c5c5ccbb",
+        "kind": "tool"
       },
       {
-        "id": "AR-TOOL12",
-        "kind": "tool",
         "path": "tools/UNFCCC/AR-TOOL12.pdf",
-        "registry": "UNFCCC",
-        "sha256": "5aeffca3cfe52a173830b000bb3b713fcbaad519676998bf0b4e31e69effd216"
+        "sha256": "5aeffca3cfe52a173830b000bb3b713fcbaad519676998bf0b4e31e69effd216",
+        "kind": "tool"
       },
       {
-        "id": "AR-TOOL14",
-        "kind": "tool",
         "path": "tools/UNFCCC/AR-TOOL14.pdf",
-        "registry": "UNFCCC",
-        "sha256": "dea000078bf02005f4a9852d06295a0800ad666f05971615916a38e08aea04ee"
+        "sha256": "dea000078bf02005f4a9852d06295a0800ad666f05971615916a38e08aea04ee",
+        "kind": "tool"
       },
       {
-        "id": "AR-TOOL15",
-        "kind": "tool",
         "path": "tools/UNFCCC/AR-TOOL15.pdf",
-        "registry": "UNFCCC",
-        "sha256": "cae1080a443975b63c7ffb7517225d371e2088124c3628d479158f470bb63bce"
+        "sha256": "cae1080a443975b63c7ffb7517225d371e2088124c3628d479158f470bb63bce",
+        "kind": "tool"
       },
       {
-        "id": "AR-TOOL16",
-        "kind": "tool",
         "path": "tools/UNFCCC/AR-TOOL16.pdf",
-        "registry": "UNFCCC",
-        "sha256": "92829e89d3893c6f5eb74075b681963492d256db69589d2878e5b8ba91cc64b6"
+        "sha256": "92829e89d3893c6f5eb74075b681963492d256db69589d2878e5b8ba91cc64b6",
+        "kind": "tool"
       }
     ]
   },
   "registry": "UNFCCC",
   "sector": "AFOLU/Forestry",
   "automation": {
-    "scripts_manifest_sha256": "904de9dc0e6773fe82b6f2df0757cd0aef874981e9a02f90b3e7855e4050b596",
-    "repo_commit": "1ddd546f74906ce0d4d5f562bd6c935ca4854fdf"
+    "scripts_manifest_sha256": "04911e46ef4a69abd4c2598be9e74ff9aa6eacc781506a97dad8a8ad38442f4d",
+    "repo_commit": "4ece12faf80b46edcc5b364475bf78d08c01b263"
   }
 }
 
