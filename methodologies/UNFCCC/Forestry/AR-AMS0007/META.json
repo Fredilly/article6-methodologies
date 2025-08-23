@@ -1,49 +1,43 @@
 {
   "audit_hashes": {
-    "rules_json_sha256": "",
-    "sections_json_sha256": ""
+    "rules_json_sha256": "e1095bab5e6ca59b7c8d3fa2b164bfe7f831c9eb6c81a66bff22811276e35d99",
+    "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
   },
   "automation": {
-    "repo_commit": "1ddd546f74906ce0d4d5f562bd6c935ca4854fdf",
-    "scripts_manifest_sha256": "b94bdcc84d1861bbe25640f0e0190abc4804ef535acabf3a260a79b25ee3a84f"
+    "repo_commit": "1896d7f8de9435ffc2371a33ef54d89fea6179c7",
+    "scripts_manifest_sha256": "aa70b4cf361c42f371abc836cd2ad99ea0094e6be3f5495737e00d39913092c3"
   },
   "id": "AR-AMS0007",
   "references": {
-    "sources": [
-      {
-        "path": "tools/UNFCCC/AR-AMS0007.pdf",
-        "sha256": "dc04ea2a039e27509db204bc6a7e3a5698308b2d578e1b86e43dc8ad12f4ad32"
-      }
-    ],
     "tools": [
       {
-        "id": "AR-TOOL08",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/AR-AMS0007.pdf",
+        "sha256": "dc04ea2a039e27509db204bc6a7e3a5698308b2d578e1b86e43dc8ad12f4ad32"
+      },
+      {
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-TOOL08.pdf",
-        "registry": "UNFCCC",
         "sha256": "e35cf86dbd5db6a81551d333d44274d54002973fb12d32095bdff6f1c5c5ccbb"
       },
       {
-        "id": "AR-TOOL12",
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-TOOL12.pdf",
-        "registry": "UNFCCC",
         "sha256": "5aeffca3cfe52a173830b000bb3b713fcbaad519676998bf0b4e31e69effd216"
       },
       {
-        "id": "AR-TOOL14",
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-TOOL14.pdf",
-        "registry": "UNFCCC",
         "sha256": "dea000078bf02005f4a9852d06295a0800ad666f05971615916a38e08aea04ee"
       },
       {
-        "id": "AR-TOOL15",
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-TOOL15.pdf",
-        "registry": "UNFCCC",
         "sha256": "cae1080a443975b63c7ffb7517225d371e2088124c3628d479158f470bb63bce"
       },
       {
-        "id": "AR-TOOL16",
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-TOOL16.pdf",
-        "registry": "UNFCCC",
         "sha256": "92829e89d3893c6f5eb74075b681963492d256db69589d2878e5b8ba91cc64b6"
       }
     ]
