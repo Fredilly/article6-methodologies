@@ -1,3 +1,18 @@
 [
-  {"id": "TEMPLATE_METHOD", "path": "methodologies/TEMPLATE_METHOD"}
+  {
+    "id": "GoldStandard/LUF/GS-00XX/v1-0",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0"
+  },
+  {
+    "id": "TEMPLATE_METHOD",
+    "path": "methodologies/TEMPLATE_METHOD"
+  },
+  {
+    "id": "UNFCCC/Forestry/AR-AMS0007/v03-1",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1"
+  },
+  {
+    "id": "Verra/AFOLU/VM0007/v1-6",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-6"
+  }
 ]
