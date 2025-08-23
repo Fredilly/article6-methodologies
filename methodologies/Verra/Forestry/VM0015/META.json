@@ -1,0 +1,20 @@
+{
+  "audit_hashes": {
+    "rules_json_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "sections_json_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  },
+  "automation": {
+    "repo_commit": "1ddd546f74906ce0d4d5f562bd6c935ca4854fdf",
+    "scripts_manifest_sha256": "b12bb6890cef8a816ab9720364e6c451923926dacf62ad585b782d03b2ebdbc7"
+  },
+  "id": "VM0015",
+  "references": {
+    "sources": [],
+    "tools": []
+  },
+  "registry": "Verra",
+  "registry_scope": "AFOLU/Forestry",
+  "sector": "AFOLU/Forestry",
+  "title": "Afforestation, Reforestation and Revegetation",
+  "version": ""
+}
