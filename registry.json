@@ -1,3 +1,26 @@
-[
-  {"id": "TEMPLATE_METHOD", "path": "methodologies/TEMPLATE_METHOD"}
-]
+{
+  "methodologies": [
+    {
+      "id": "TEMPLATE_METHOD",
+      "path": "methodologies/TEMPLATE_METHOD",
+      "paths": {
+        "meta": "methodologies/TEMPLATE_METHOD/META.json",
+        "rules": "methodologies/TEMPLATE_METHOD/rules.json",
+        "sections": "methodologies/TEMPLATE_METHOD/sections.json"
+      },
+      "registry": "",
+      "sector": ""
+    },
+    {
+      "id": "AR-AMS0007",
+      "path": "methodologies/UNFCCC/Forestry/AR-AMS0007",
+      "paths": {
+        "meta": "methodologies/UNFCCC/Forestry/AR-AMS0007/META.json",
+        "rules": "methodologies/UNFCCC/Forestry/AR-AMS0007/rules.json",
+        "sections": "methodologies/UNFCCC/Forestry/AR-AMS0007/sections.json"
+      },
+      "registry": "UNFCCC",
+      "sector": "AFOLU/Forestry"
+    }
+  ]
+}

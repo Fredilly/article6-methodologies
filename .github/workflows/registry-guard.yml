@@ -7,9 +7,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Ensure registry mirrors /methodologies
         run: |
-          ls methodologies | jq -R -s 'split("\n")|map(select(length>0))|map("methodologies/"+.)' > /tmp/dirs.json
-          jq -S . registry.json > /tmp/registry.json
-          diff -u /tmp/dirs.json <(jq -r '.[].path' /tmp/registry.json | jq -R -s 'split("\n")|map(select(length>0))' | jq -c) || true
-          # simple presence check:
-          missing=$(comm -23 <(jq -r '.[]' /tmp/dirs.json | sort) <(jq -r '.[]?.path' registry.json | sort) || true)
+          find methodologies -type f -name META.json -print0 \
+            | xargs -0 -n1 dirname | sort -u > /tmp/dirs.txt
+          jq -r '
+            .methodologies
+            | map(
+                ( .path // ( .paths.meta // "" ) ) as $p
+                | if ($p|length)>0 then ($p|sub("/META.json$";"")) else "" end
+              )
+            | map(select(length>0))
+            | .[]
+          ' registry.json | sort > /tmp/registry_paths.txt
+          diff -u /tmp/dirs.txt /tmp/registry_paths.txt || true
+          missing=$(comm -23 /tmp/dirs.txt /tmp/registry_paths.txt || true)
           if [ -n "$missing" ]; then echo "Missing in registry: $missing"; exit 1; fi
