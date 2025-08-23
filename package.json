@@ -1,0 +1,19 @@
+{
+  "name": "article6-methodologies",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check:json": "node -e \"JSON.parse(require('fs').readFileSync(process.argv[1],'utf8'))\"",
+<<<<<<< HEAD
+    "validate": "npm run check:json schema/rules.schema.json && npm run check:json methodologies/AR-AMS0007/rules.json"
+=======
+    "validate": "npm run check:json schema/rules.schema.json && npm run check:json schema/meta.schema.json && npm run check:json methodologies/AR-AMS0007/rules.json && npm run check:json methodologies/AR-AMS0007/meta.json"
+>>>>>>> ba15d7f (feat: add methodology meta schema)
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
