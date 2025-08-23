@@ -1,44 +1,6 @@
-# OS / IDE
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
-# Logs / caches
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-.cache/
-
-# Node (present because package.json exists)
 node_modules/
-dist/
-build/
-
-# Python (if any scripts)
-__pycache__/
-*.py[cod]
-
-# Archives / installers (local binaries etc)
-*.zip
-*.tar
-*.tar.gz
-*.tgz
-*.bz2
-*.7z
-*.dmg
-*.pkg
-*.exe
-*.msi
-
-# Env / secrets (shouldn’t be in repo anyway)
-.env
-.env.*
-*.key
-*.pem
-
-# Project artefacts to KEEP tracked:
-# methodologies/**  (tracked)
-# tools/**          (tracked - PDFs go to LFS)
+outputs/*
+!outputs/staging/
+!outputs/staging/.gitkeep
+!outputs/prod/
+!outputs/prod/.gitkeep

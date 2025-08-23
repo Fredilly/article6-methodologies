@@ -1,9 +1,9 @@
-name: validate-json
+name: stage-gates
 on:
   pull_request:
-  push:
+    branches: [staging, main]
 jobs:
-  validate:
+  gate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

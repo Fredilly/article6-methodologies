@@ -1,37 +1,59 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "required": ["audit_hashes", "references"],
+  "additionalProperties": true,
   "properties": {
     "audit_hashes": {
-      "type": "object",
-      "required": ["sections_json_sha256", "rules_json_sha256"],
+      "additionalProperties": false,
       "properties": {
-        "sections_json_sha256": {"type": "string"},
-        "rules_json_sha256": {"type": "string"}
-      },
-      "additionalProperties": false
-    },
-    "references": {
-      "type": "object",
-      "required": ["tools"],
-      "properties": {
-        "tools": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "required": ["path", "sha256", "kind"],
-            "properties": {
-              "path": {"type": "string"},
-              "sha256": {"type": "string"},
-              "kind": {"type": "string"}
-            },
-            "additionalProperties": false
-          }
+        "rules_json_sha256": {
+          "type": "string"
+        },
+        "sections_json_sha256": {
+          "type": "string"
         }
       },
-      "additionalProperties": false
+      "required": [
+        "sections_json_sha256",
+        "rules_json_sha256"
+      ],
+      "type": "object"
+    },
+    "references": {
+      "additionalProperties": false,
+      "properties": {
+        "tools": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "type": "string"
+              },
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256",
+              "kind"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "tools"
+      ],
+      "type": "object"
     }
   },
-  "additionalProperties": true
+  "required": [
+    "audit_hashes",
+    "references"
+  ],
+  "type": "object"
 }
