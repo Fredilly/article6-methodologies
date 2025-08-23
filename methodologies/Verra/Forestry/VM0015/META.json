@@ -1,0 +1,16 @@
+{
+  "registry": "Verra",
+  "registry_scope": "AFOLU/Forestry",
+  "sector": "AFOLU/Forestry",
+  "id": "VM0015",
+  "version": "",
+  "title": "Afforestation, Reforestation and Revegetation",
+  "status": "draft",
+  "references": {
+    "sources": []
+  },
+  "audit_hashes": {
+    "sections_json_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "rules_json_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  }
+}
