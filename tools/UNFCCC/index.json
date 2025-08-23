@@ -1,0 +1,41 @@
+{
+  "docs": [
+    {
+      "id": "AR-AMS0007",
+      "kind": "method",
+      "path": "AR-AMS0007.pdf",
+      "sha256": "dc04ea2a039e27509db204bc6a7e3a5698308b2d578e1b86e43dc8ad12f4ad32"
+    },
+    {
+      "id": "AR-TOOL08",
+      "kind": "tool",
+      "path": "AR-TOOL08.pdf",
+      "sha256": "e35cf86dbd5db6a81551d333d44274d54002973fb12d32095bdff6f1c5c5ccbb"
+    },
+    {
+      "id": "AR-TOOL12",
+      "kind": "tool",
+      "path": "AR-TOOL12.pdf",
+      "sha256": "5aeffca3cfe52a173830b000bb3b713fcbaad519676998bf0b4e31e69effd216"
+    },
+    {
+      "id": "AR-TOOL14",
+      "kind": "tool",
+      "path": "AR-TOOL14.pdf",
+      "sha256": "dea000078bf02005f4a9852d06295a0800ad666f05971615916a38e08aea04ee"
+    },
+    {
+      "id": "AR-TOOL15",
+      "kind": "tool",
+      "path": "AR-TOOL15.pdf",
+      "sha256": "cae1080a443975b63c7ffb7517225d371e2088124c3628d479158f470bb63bce"
+    },
+    {
+      "id": "AR-TOOL16",
+      "kind": "tool",
+      "path": "AR-TOOL16.pdf",
+      "sha256": "92829e89d3893c6f5eb74075b681963492d256db69589d2878e5b8ba91cc64b6"
+    }
+  ],
+  "map": {}
+}
