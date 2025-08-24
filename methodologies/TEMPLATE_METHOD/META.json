@@ -1,0 +1,30 @@
+{
+  "audit_hashes": {
+    "rules_json_sha256": "<REPLACE_WITH_64_HEX>",
+    "sections_json_sha256": "<REPLACE_WITH_64_HEX>"
+  },
+  "automation": {
+    "repo_commit": "<GIT_SHA>",
+    "scripts_manifest_sha256": "<REPLACE_WITH_64_HEX>"
+  },
+  "references": {
+    "tools": [
+      {
+        "kind": "docx",
+        "path": "tools/<Standard>/<Method>/<version>/source.docx",
+        "sha256": "<REPLACE_WITH_64_HEX>"
+      },
+      {
+        "kind": "methodology",
+        "path": "tools/<Standard>/<Method>/<version>/source.pdf",
+        "sha256": "<REPLACE_WITH_64_HEX>"
+      },
+      {
+        "kind": "tool",
+        "path": "tools/<Standard>/<Method>/<version>/tools/AR-TOOL08_v4-0-0.pdf",
+        "sha256": "<REPLACE_WITH_64_HEX>"
+      }
+    ]
+  },
+  "stage": "staging"
+}
