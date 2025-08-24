@@ -4,11 +4,16 @@
     "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
   },
   "automation": {
-    "repo_commit": "229c37004ee9fca11f8a1be2825a43ebebc87313",
-    "scripts_manifest_sha256": "275b69fac464ae44dfffae9122ec1b6a8ae3e263f2526079216cdc36607587b0"
+    "repo_commit": "26acca4f98e5c4fba619dcc611afb414d3fdb205",
+    "scripts_manifest_sha256": "8835726dc1006906272225e8d4a59531df9f117fb658b39fd4bba26d659bf238"
   },
   "dependencies": [
-    "UNFCCC/Forestry/AR-AMS0007/v03-1"
+    {
+      "domain": "Forestry",
+      "method": "AR-AMS0007",
+      "standard": "UNFCCC",
+      "version": "v03-1"
+    }
   ],
   "domain": "Forestry",
   "method": "AR-AMS0003",
