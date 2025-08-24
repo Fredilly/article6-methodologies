@@ -4,11 +4,16 @@
     "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
   },
   "automation": {
-    "repo_commit": "229c37004ee9fca11f8a1be2825a43ebebc87313",
-    "scripts_manifest_sha256": "275b69fac464ae44dfffae9122ec1b6a8ae3e263f2526079216cdc36607587b0"
+    "repo_commit": "a55811b978d6b0eaeff6c01892f8f98b3002a89e",
+    "scripts_manifest_sha256": "c59d79eab9ffa4773d4b2cea31c46d767408855e27943bd7a976c2bc803bb226"
   },
   "dependencies": [
-    "UNFCCC/Forestry/AR-AMS0007/v03-1"
+    {
+      "domain": "Forestry",
+      "method": "AR-AMS0007",
+      "standard": "UNFCCC",
+      "version": "v03-1"
+    }
   ],
   "domain": "Forestry",
   "method": "AR-AMS0003",
@@ -56,6 +61,11 @@
         "kind": "tool",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL15_v2-0.pdf",
         "sha256": "cae1080a443975b63c7ffb7517225d371e2088124c3628d479158f470bb63bce"
+      },
+      {
+        "kind": "tool",
+        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL16_v1-1-0.pdf",
+        "sha256": "92829e89d3893c6f5eb74075b681963492d256db69589d2878e5b8ba91cc64b6"
       }
     ]
   },
