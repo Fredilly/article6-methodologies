@@ -1,11 +1,60 @@
 {
   "rules": [
     {
-      "id": "R1",
+      "id": "R-eligibility",
       "tags": [
-        "example"
+        "eligibility"
       ],
-      "text": "Example rule"
+      "text": "Projects must reforest degraded lands in the Andean region using native species."
+    },
+    {
+      "id": "R-baseline",
+      "tags": [
+        "baseline"
+      ],
+      "text": "Baseline scenario assumes continuation of pre-project grazing without tree planting."
+    },
+    {
+      "id": "R-project-boundary",
+      "tags": [
+        "project"
+      ],
+      "text": "The project boundary encompasses all reforested parcels and nurseries."
+    },
+    {
+      "id": "R-pools",
+      "tags": [
+        "pools"
+      ],
+      "text": "Carbon pools include above-ground biomass, below-ground biomass, litter, dead wood, and soil organic carbon."
+    },
+    {
+      "id": "R-soc",
+      "tags": [
+        "soc"
+      ],
+      "text": "SOC changes are conservatively excluded unless site-specific data are available."
+    },
+    {
+      "id": "R-leakage",
+      "tags": [
+        "leakage"
+      ],
+      "text": "Leakage from displaced grazing is quantified using default emission factors."
+    },
+    {
+      "id": "R-monitoring",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Project proponents shall monitor tree survival, growth, and leakage parameters annually."
+    },
+    {
+      "id": "R-uncertainty",
+      "tags": [
+        "uncertainty"
+      ],
+      "text": "Apply a ±10% deduction to net removals to account for uncertainty."
     }
   ]
 }

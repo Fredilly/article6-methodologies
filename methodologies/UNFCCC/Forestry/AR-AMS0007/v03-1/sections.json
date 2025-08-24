@@ -1,9 +1,49 @@
 {
   "sections": [
     {
-      "content": "",
+      "anchor": "1",
       "id": "S1",
-      "title": "Scope"
+      "title": "Introduction"
+    },
+    {
+      "anchor": "2",
+      "id": "S2",
+      "title": "Applicability conditions"
+    },
+    {
+      "anchor": "3",
+      "id": "S3",
+      "title": "Project boundary"
+    },
+    {
+      "anchor": "4",
+      "id": "S4",
+      "title": "Baseline methodology"
+    },
+    {
+      "anchor": "5",
+      "id": "S5",
+      "title": "Project emissions"
+    },
+    {
+      "anchor": "6",
+      "id": "S6",
+      "title": "Leakage"
+    },
+    {
+      "anchor": "7",
+      "id": "S7",
+      "title": "Emission reductions"
+    },
+    {
+      "anchor": "8",
+      "id": "S8",
+      "title": "Monitoring"
+    },
+    {
+      "anchor": "9",
+      "id": "S9",
+      "title": "Uncertainty"
     }
   ]
 }

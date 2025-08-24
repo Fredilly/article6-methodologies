@@ -4,8 +4,8 @@
     "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
   },
   "automation": {
-    "repo_commit": "26acca4f98e5c4fba619dcc611afb414d3fdb205",
-    "scripts_manifest_sha256": "8835726dc1006906272225e8d4a59531df9f117fb658b39fd4bba26d659bf238"
+    "repo_commit": "8cfc39bbee57a58e5d497fb84c5d710daca91d8f",
+    "scripts_manifest_sha256": "7abf935d848c9b50568590b582a241c94824f1faa1b156b51e5dd2ee4fc80eab"
   },
   "dependencies": [
     {
@@ -41,26 +41,6 @@
         "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0003/v01-0/source.pdf",
         "sha256": "4218a9dbf4c018f08a60c6564f532a336ba79cf7c782e32161c81d4d6a6427f2"
-      },
-      {
-        "kind": "tool",
-        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL08_v4-0-0.pdf",
-        "sha256": "e35cf86dbd5db6a81551d333d44274d54002973fb12d32095bdff6f1c5c5ccbb"
-      },
-      {
-        "kind": "tool",
-        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL12_v3-1.pdf",
-        "sha256": "5aeffca3cfe52a173830b000bb3b713fcbaad519676998bf0b4e31e69effd216"
-      },
-      {
-        "kind": "tool",
-        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL14_v4-2.pdf",
-        "sha256": "dea000078bf02005f4a9852d06295a0800ad666f05971615916a38e08aea04ee"
-      },
-      {
-        "kind": "tool",
-        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL15_v2-0.pdf",
-        "sha256": "cae1080a443975b63c7ffb7517225d371e2088124c3628d479158f470bb63bce"
       }
     ]
   },
