@@ -1,10 +1,5 @@
 {
   "sections": [
-    { "number": "1", "title": "Introduction", "id": "intro" },
-    { "number": "2", "title": "Scope, applicability, and entry into force", "id": "scope" },
-    { "number": "3", "title": "Normative references", "id": "normative" },
-    { "number": "4", "title": "Definitions", "id": "definitions" },
-    { "number": "5", "title": "Baseline and monitoring methodology", "id": "baseline" },
-    { "number": "6", "title": "Monitoring procedure", "id": "monitoring" }
+    {"id": "S1", "title": "Scope", "content": ""}
   ]
 }

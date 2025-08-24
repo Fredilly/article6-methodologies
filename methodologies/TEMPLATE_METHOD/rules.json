@@ -1,13 +1,5 @@
 {
   "rules": [
-    {
-      "id": "<Standard>.<Domain>.<Method>.<Version>.R-0001",
-      "type": "eligibility",
-      "when": ["<predicate>"],
-      "inputs": [],
-      "logic": "return eligible;",
-      "notes": "",
-      "refs": ["sections#scope"]
-    }
+    {"id": "R1", "text": "Example rule", "tags": ["example"]}
   ]
 }

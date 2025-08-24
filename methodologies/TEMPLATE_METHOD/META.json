@@ -1,30 +1,19 @@
 {
   "audit_hashes": {
-    "rules_json_sha256": "<REPLACE_WITH_64_HEX>",
-    "sections_json_sha256": "<REPLACE_WITH_64_HEX>"
-  },
-  "automation": {
-    "repo_commit": "<GIT_SHA>",
-    "scripts_manifest_sha256": "<REPLACE_WITH_64_HEX>"
+    "sections_json_sha256": "a421952cc7f532b3d17c5e0d93bc803ebb774f917306f0b2b57783009ef985ac",
+    "rules_json_sha256": "79f6fee2de76d55457d44c501c43f09eeca7e930d57e3f5d3314657ab7161c73"
   },
   "references": {
     "tools": [
       {
-        "kind": "docx",
-        "path": "tools/<Standard>/<Method>/<version>/source.docx",
-        "sha256": "<REPLACE_WITH_64_HEX>"
-      },
-      {
-        "kind": "methodology",
-        "path": "tools/<Standard>/<Method>/<version>/source.pdf",
-        "sha256": "<REPLACE_WITH_64_HEX>"
-      },
-      {
-        "kind": "tool",
-        "path": "tools/<Standard>/<Method>/<version>/tools/AR-TOOL08_v4-0-0.pdf",
-        "sha256": "<REPLACE_WITH_64_HEX>"
+        "path": "tools/TEMPLATE_METHOD/source.pdf",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "kind": "pdf"
       }
     ]
   },
-  "stage": "staging"
+  "automation": {
+    "scripts_manifest_sha256": "9f45970ab6f57d222109b878296ed0e1e3f38a531279d83bf9d10ba0d86b1c2d",
+    "repo_commit": "e275318d9babd558fe913ddfb9c8f4c320e03959"
+  }
 }
