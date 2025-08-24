@@ -3,9 +3,17 @@
     {
       "id": "R1",
       "tags": [
-        "example"
+        "eligibility"
       ],
-      "text": "Example rule"
+      "text": "Project lands must not contain forest at the start of the crediting period."
+    },
+    {
+      "id": "R2",
+      "tags": [
+        "carbon",
+        "monitoring"
+      ],
+      "text": "Carbon stock changes must be quantified using approved tools."
     }
   ]
 }
