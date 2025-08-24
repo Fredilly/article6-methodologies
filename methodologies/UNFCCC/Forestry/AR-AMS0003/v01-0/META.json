@@ -1,0 +1,45 @@
+{
+  "audit_hashes": {
+    "rules_json_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "sections_json_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  "automation": {},
+  "dependencies": [],
+  "domain": "Forestry",
+  "method": "AR-AMS0003",
+  "overrideRefs": [],
+  "provenance": {
+    "source_paths": [
+      "tools/UNFCCC/AR-AMS0003/v01-0/source.pdf",
+      "tools/UNFCCC/AR-AMS0003/v01-0/source.docx",
+      "tools/UNFCCC/AR-AMS0003/v01-0/meth_booklet.pdf"
+    ]
+  },
+  "references": {
+    "tools": [
+      {
+        "kind": "tool",
+        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL08_v4-0-0.pdf",
+        "sha256": "e35cf86dbd5db6a81551d333d44274d54002973fb12d32095bdff6f1c5c5ccbb"
+      },
+      {
+        "kind": "tool",
+        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL14_v4-2.pdf",
+        "sha256": "dea000078bf02005f4a9852d06295a0800ad666f05971615916a38e08aea04ee"
+      },
+      {
+        "kind": "tool",
+        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL15_v2-0.pdf",
+        "sha256": "cae1080a443975b63c7ffb7517225d371e2088124c3628d479158f470bb63bce"
+      },
+      {
+        "kind": "tool",
+        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL12_v3-1.pdf",
+        "sha256": "5aeffca3cfe52a173830b000bb3b713fcbaad519676998bf0b4e31e69effd216"
+      }
+    ]
+  },
+  "standard": "UNFCCC",
+  "title": "AR-AMS0003 — A/R on wetlands (Small-scale)",
+  "version": "v01-0"
+}
