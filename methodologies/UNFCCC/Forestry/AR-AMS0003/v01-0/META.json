@@ -1,9 +1,12 @@
 {
   "audit_hashes": {
-    "rules_json_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-    "sections_json_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    "rules_json_sha256": "e1095bab5e6ca59b7c8d3fa2b164bfe7f831c9eb6c81a66bff22811276e35d99",
+    "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
   },
-  "automation": {},
+  "automation": {
+    "scripts_manifest_sha256": "275b69fac464ae44dfffae9122ec1b6a8ae3e263f2526079216cdc36607587b0",
+    "repo_commit": "229c37004ee9fca11f8a1be2825a43ebebc87313"
+  },
   "dependencies": [],
   "domain": "Forestry",
   "method": "AR-AMS0003",
@@ -18,9 +21,29 @@
   "references": {
     "tools": [
       {
+        "path": "tools/UNFCCC/AR-AMS0003/v01-0/meth_booklet.pdf",
+        "sha256": "395e1dc00779cc5e580ad90c97c7d2189d3021f64e9c4b9ac4fabad3523ac69c",
+        "kind": "pdf"
+      },
+      {
+        "path": "tools/UNFCCC/AR-AMS0003/v01-0/source.docx",
+        "sha256": "2719958c1e2b8c29613d13d043dea73f9dd3fb4edbd848a921b81734339ac4b1",
+        "kind": "docx"
+      },
+      {
+        "path": "tools/UNFCCC/AR-AMS0003/v01-0/source.pdf",
+        "sha256": "4218a9dbf4c018f08a60c6564f532a336ba79cf7c782e32161c81d4d6a6427f2",
+        "kind": "pdf"
+      },
+      {
         "kind": "tool",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL08_v4-0-0.pdf",
         "sha256": "e35cf86dbd5db6a81551d333d44274d54002973fb12d32095bdff6f1c5c5ccbb"
+      },
+      {
+        "kind": "tool",
+        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL12_v3-1.pdf",
+        "sha256": "5aeffca3cfe52a173830b000bb3b713fcbaad519676998bf0b4e31e69effd216"
       },
       {
         "kind": "tool",
@@ -31,11 +54,6 @@
         "kind": "tool",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL15_v2-0.pdf",
         "sha256": "cae1080a443975b63c7ffb7517225d371e2088124c3628d479158f470bb63bce"
-      },
-      {
-        "kind": "tool",
-        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL12_v3-1.pdf",
-        "sha256": "5aeffca3cfe52a173830b000bb3b713fcbaad519676998bf0b4e31e69effd216"
       }
     ]
   },
