@@ -1,9 +1,19 @@
 {
   "sections": [
     {
-      "content": "",
+      "content": "Defines the scope for small-scale afforestation and reforestation projects.",
       "id": "S1",
       "title": "Scope"
+    },
+    {
+      "content": "Identifies eligibility requirements for land and project activities.",
+      "id": "S2",
+      "title": "Applicability conditions"
+    },
+    {
+      "content": "Describes the procedure for establishing the baseline scenario and carbon stocks.",
+      "id": "S3",
+      "title": "Baseline methodology"
     }
   ]
 }
