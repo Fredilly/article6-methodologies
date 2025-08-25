@@ -7,4 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci --no-fund --no-audit
+      - name: Validate rich JSON
+        run: npm run validate:rich
+      - name: Compile lean JSON from rich
+        run: npm run compile:all
+      - name: Validate lean JSON
+        run: npm run validate:lean
       - run: ./scripts/ci-run-tests.sh
