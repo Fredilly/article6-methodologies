@@ -70,8 +70,8 @@ function compileMethod(dir) {
       };
     })
     .sort(cmpRules);
-  writeJson(secL, sectionsLean);
-  writeJson(ruleL, rulesLean);
+  writeJson(secL, { sections: sectionsLean });
+  writeJson(ruleL, { rules: rulesLean });
   return true;
 }
 
