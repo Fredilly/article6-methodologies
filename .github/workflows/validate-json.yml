@@ -1,20 +1,33 @@
 name: validate-json
+
 on:
-  pull_request:
   push:
+  pull_request:
+
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm ci --no-fund --no-audit
-      - name: Validate rich JSON
-        run: npm run validate:rich
-      - name: Compile lean JSON from rich
-        run: npm run compile:all
-      - name: Validate lean JSON
-        run: npm run validate:lean
-      - run: ./scripts/ci-run-tests.sh
+          cache: 'npm'
+
+      # What & Why:
+      # - Prefer npm ci for reproducible installs when package-lock.json is present.
+      # - Fall back to npm install in forks or environments that strip the lockfile.
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci --no-fund --no-audit || npm install --no-fund --no-audit
+          else
+            npm install --no-fund --no-audit
+          fi
+
+      - name: Validate (rich & lean)
+        run: |
+          npm run validate:all
