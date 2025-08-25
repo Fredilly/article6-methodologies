@@ -10,4 +10,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: ./scripts/ci-run-tests.sh
+      - run: scripts/validate-offline.sh

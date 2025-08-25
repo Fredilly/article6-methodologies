@@ -1,5 +1,11 @@
 {
   "rules": [
-    {"id": "R1", "text": "Example rule", "tags": ["example"]}
+    {
+      "id": "R1",
+      "tags": [
+        "example"
+      ],
+      "text": "Example rule"
+    }
   ]
 }

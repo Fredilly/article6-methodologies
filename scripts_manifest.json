@@ -1,13 +1,16 @@
 {
-  "generated_at": "2025-08-25T06:30:44Z",
-  "git_commit": "3af0d934fb0e247f108e7c3704d939bf74c36525",
+  "generated_at": "2025-08-25T17:57:54Z",
+  "git_commit": "2cee4133ed97fd0f1a554fb2f0adbd5a3caba35b",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
-    { "path": "scripts/ci-run-tests.sh", "sha256": "a197c80bfcac89797987b10bc6df5ce3f5540214a110058e89846559603efc24" },
+    { "path": "scripts/ci-run-tests.sh", "sha256": "019cf26f169679c0eb9b7e2ea7ca507d80f3e1783ab784d1a2324cb5c8ea440a" },
     { "path": "scripts/compile-audit.js", "sha256": "dcf9417345c373c9ad26a7ee8d7cf27eaceb32daf1ca4ac398fd835d1f80de53" },
     { "path": "scripts/hash-all.sh", "sha256": "c0460b405ce03814872fb636c5eb8975bf6715b47c5bd0dee9353d1399d22ddb" },
     { "path": "scripts/hash-scripts.sh", "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3" },
+    { "path": "scripts/install-vendored-ajv.sh", "sha256": "4a486815bc96c96bda8f4776b816bf79f2157e363f4f75a4a9bd250c342090bf" },
     { "path": "scripts/json-canonical-check.sh", "sha256": "369c2aba329b493666c768729b0c3b4c6395ecafd012788ba44cb82202e67099" },
-    { "path": "scripts/policy-tools.sh", "sha256": "805620200a704dc64a6be4fa5a6261cf00d35ba747d525c405cc29b7320409ff" }
+    { "path": "scripts/policy-tools.sh", "sha256": "805620200a704dc64a6be4fa5a6261cf00d35ba747d525c405cc29b7320409ff" },
+    { "path": "scripts/require-vendor-ajv.sh", "sha256": "b35df520a0bd5ea8753fac36894d5db93e720ed842320c6be2bf9f8f0ffd6e88" },
+    { "path": "scripts/validate-offline.sh", "sha256": "9970803a6b5e73b7732213d10fcac18aea90909c63c8908143baabd0457fd97e" }
   ]
 }
