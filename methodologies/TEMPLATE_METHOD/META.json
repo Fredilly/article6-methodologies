@@ -1,19 +1,19 @@
 {
   "audit_hashes": {
-    "sections_json_sha256": "a421952cc7f532b3d17c5e0d93bc803ebb774f917306f0b2b57783009ef985ac",
-    "rules_json_sha256": "79f6fee2de76d55457d44c501c43f09eeca7e930d57e3f5d3314657ab7161c73"
+    "rules_json_sha256": "a251bc761ee2aa979b12d0fe1015b14f4304cdaacad2fc2dddf3d74364ebaecf",
+    "sections_json_sha256": "c9962e30eec86b5273be09f6470a585f0fb67c6077f581f31b2711935a9da9b6"
+  },
+  "automation": {
+    "repo_commit": "70188b4e1ec884f7ce1d496b6eee987668719095",
+    "scripts_manifest_sha256": "7a61a63e44dd1f0e42b4db4ccbe31261f599441fe8e0e4c6bcd6ffeaaac64a5a"
   },
   "references": {
     "tools": [
       {
-        "path": "tools/TEMPLATE_METHOD/source.pdf",
-        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "kind": "pdf"
+        "kind": "pdf",
+        "path": "tools/TEMPLATE_METHOD//source.pdf",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     ]
-  },
-  "automation": {
-    "scripts_manifest_sha256": "9f45970ab6f57d222109b878296ed0e1e3f38a531279d83bf9d10ba0d86b1c2d",
-    "repo_commit": "e275318d9babd558fe913ddfb9c8f4c320e03959"
   }
 }
