@@ -2,14 +2,14 @@
   "name": "article6-methodologies",
   "private": true,
   "devDependencies": {
-    "ajv": "^8.12.0",
-    "ajv-cli": "^5.0.0",
-    "ajv-formats": "^3.0.1"
+    "ajv": "file:tools/vendor/npm/ajv-8.x.y.tgz",
+    "ajv-cli": "file:tools/vendor/npm/ajv-cli-5.x.y.tgz",
+    "ajv-formats": "file:tools/vendor/npm/ajv-formats-2.x.y.tgz"
   },
   "scripts": {
     "compile:all": "node scripts/compile-audit.js",
-    "validate:rich": "ajv validate -s schemas/sections.rich.schema.json -d 'methodologies/**/sections.rich.json' && ajv validate -s schemas/rules.rich.schema.json -d 'methodologies/**/rules.rich.json'",
-    "validate:lean": "ajv validate -s schemas/sections.schema.json -d 'methodologies/**/sections.json' && ajv validate -s schemas/rules.schema.json -d 'methodologies/**/rules.json'",
+    "validate:rich": "PATH=tools/vendor/ajv/node_modules/.bin:$PATH npx --no-install ajv validate -s schemas/sections.rich.schema.json -d 'methodologies/**/sections.rich.json' && PATH=tools/vendor/ajv/node_modules/.bin:$PATH npx --no-install ajv validate -s schemas/rules.rich.schema.json -d 'methodologies/**/rules.rich.json'",
+    "validate:lean": "PATH=tools/vendor/ajv/node_modules/.bin:$PATH npx --no-install ajv validate -s schemas/sections.schema.json -d 'methodologies/**/sections.json' && PATH=tools/vendor/ajv/node_modules/.bin:$PATH npx --no-install ajv validate -s schemas/rules.schema.json -d 'methodologies/**/rules.json'",
     "validate:all": "npm run validate:rich && npm run validate:lean"
   }
 }
