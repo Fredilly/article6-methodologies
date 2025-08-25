@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "items": {
+    "additionalProperties": false,
+    "properties": {
+      "anchor": {
+        "type": "string"
+      },
+      "id": {
+        "pattern": "^S-\\d+(?:-\\d+)*$",
+        "type": "string"
+      },
+      "level": {
+        "minimum": 1,
+        "type": "integer"
+      },
+      "notes": {
+        "type": "string"
+      },
+      "provenance": {
+        "additionalProperties": false,
+        "properties": {
+          "lines": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "source_hash": {
+            "pattern": "^[a-f0-9]{64}$",
+            "type": "string"
+          },
+          "source_ref": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "title": {
+        "minLength": 1,
+        "type": "string"
+      }
+    },
+    "required": [
+      "id",
+      "title"
+    ],
+    "type": "object"
+  },
+  "title": "Sections (Rich) v1",
+  "type": "array"
+}
