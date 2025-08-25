@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "ajv": "^8.12.0",
+    "ajv-cli": "^5.0.0"
+  },
+  "scripts": {
+    "compile:all": "node scripts/compile-audit.js",
+    "validate:rich": "ajv validate -s schemas/sections.rich.schema.json -d 'methodologies/**/sections.rich.json' && ajv validate -s schemas/rules.rich.schema.json -d 'methodologies/**/rules.rich.json'",
+    "validate:lean": "ajv validate -s schemas/sections.schema.json -d 'methodologies/**/sections.json' && ajv validate -s schemas/rules.schema.json -d 'methodologies/**/rules.json'"
+  }
+}
