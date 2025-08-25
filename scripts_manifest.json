@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-08-25T10:31:05Z",
-  "git_commit": "1ad7d9c03411ed91a855e79b271d2272e59b5590",
+  "generated_at": "2025-08-25T10:46:33Z",
+  "git_commit": "ca6b216f3f52ff1730faf7ddd6ce86725b447385",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "scripts/ci-run-tests.sh", "sha256": "3b13be6db663aacf7a44a4fa4a538d83d0b6ceaebcbd286b88dbbdf72256dccf" },
@@ -8,6 +8,7 @@
     { "path": "scripts/hash-scripts.sh", "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3" },
     { "path": "scripts/json-canonical-check.sh", "sha256": "369c2aba329b493666c768729b0c3b4c6395ecafd012788ba44cb82202e67099" },
     { "path": "scripts/policy-tools.sh", "sha256": "805620200a704dc64a6be4fa5a6261cf00d35ba747d525c405cc29b7320409ff" },
+    { "path": "scripts/require-vendor-ajv.sh", "sha256": "dd04135a1a9a03f350ba5c8c31d05e1efa6702ced6875b480a5d166aacbfd52f" },
     { "path": "scripts/vendorize-ajv.sh", "sha256": "079ccaed758324a863b24869acf56bce8d00436475ac873b5bdad2877dcbc4da" }
   ]
 }

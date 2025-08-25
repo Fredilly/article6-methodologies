@@ -7,9 +7,9 @@
     "ajv-formats": "file:tools/vendor/npm/ajv-formats-2.x.y.tgz"
   },
   "scripts": {
-    "compile:all": "node scripts/compile-audit.js",
-    "validate:rich": "PATH=tools/vendor/ajv/node_modules/.bin:$PATH npx --no-install ajv validate -s schemas/sections.rich.schema.json -d 'methodologies/**/sections.rich.json' && PATH=tools/vendor/ajv/node_modules/.bin:$PATH npx --no-install ajv validate -s schemas/rules.rich.schema.json -d 'methodologies/**/rules.rich.json'",
-    "validate:lean": "PATH=tools/vendor/ajv/node_modules/.bin:$PATH npx --no-install ajv validate -s schemas/sections.schema.json -d 'methodologies/**/sections.json' && PATH=tools/vendor/ajv/node_modules/.bin:$PATH npx --no-install ajv validate -s schemas/rules.schema.json -d 'methodologies/**/rules.json'",
-    "validate:all": "npm run validate:rich && npm run validate:lean"
+    "validate:meta": "scripts/require-vendor-ajv.sh && npx --no-install ajv validate -s schemas/META.schema.json -d 'methodologies/**/META.json'",
+    "validate:sections": "scripts/require-vendor-ajv.sh && npx --no-install ajv validate -s schemas/sections.schema.json -d 'methodologies/**/sections.json'",
+    "validate:rules": "scripts/require-vendor-ajv.sh && npx --no-install ajv validate -s schemas/rules.schema.json -d 'methodologies/**/rules.json'",
+    "validate:all": "npm run validate:meta && npm run validate:sections && npm run validate:rules"
   }
 }
