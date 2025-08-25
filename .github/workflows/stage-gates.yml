@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: ./scripts/ci-run-tests.sh
+      - run: ./scripts/validate-offline.sh
