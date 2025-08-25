@@ -7,4 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Require vendored AJV
+        run: ./scripts/require-vendor-ajv.sh
       - run: ./scripts/ci-run-tests.sh
