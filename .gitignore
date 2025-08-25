@@ -4,3 +4,6 @@ outputs/*
 !outputs/staging/.gitkeep
 !outputs/prod/
 !outputs/prod/.gitkeep
+.DS_Store
+vendor/.DS_Store
+vendor/ajv-cli/
