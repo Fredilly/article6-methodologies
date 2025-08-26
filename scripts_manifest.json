@@ -1,10 +1,12 @@
 {
-  "generated_at": "2025-08-25T17:57:54Z",
-  "git_commit": "2cee4133ed97fd0f1a554fb2f0adbd5a3caba35b",
+  "generated_at": "2025-08-26T08:26:34Z",
+  "git_commit": "59b063af12c21a6d6c0adecaa4a45625b0516b5e",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
-    { "path": "scripts/ci-run-tests.sh", "sha256": "019cf26f169679c0eb9b7e2ea7ca507d80f3e1783ab784d1a2324cb5c8ea440a" },
+    { "path": "scripts/check-registry.sh", "sha256": "b1d6193aed8960eb7daa1bb57fef53803a416af4cf8ca576ce86a2579b61e287" },
+    { "path": "scripts/ci-run-tests.sh", "sha256": "ff8b0af04c33f9548ac6db2ba65e17fdc93b14d1c9e74b70277e6783835e45a5" },
     { "path": "scripts/compile-audit.js", "sha256": "dcf9417345c373c9ad26a7ee8d7cf27eaceb32daf1ca4ac398fd835d1f80de53" },
+    { "path": "scripts/gen-registry.js", "sha256": "ed5e27b27860ae358c20c1d0e2cd15c678cd021a50ef295ff0234603f00c8b0e" },
     { "path": "scripts/hash-all.sh", "sha256": "c0460b405ce03814872fb636c5eb8975bf6715b47c5bd0dee9353d1399d22ddb" },
     { "path": "scripts/hash-scripts.sh", "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3" },
     { "path": "scripts/install-vendored-ajv.sh", "sha256": "4a486815bc96c96bda8f4776b816bf79f2157e363f4f75a4a9bd250c342090bf" },

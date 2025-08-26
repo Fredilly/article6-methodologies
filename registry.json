@@ -5,7 +5,17 @@
     "code": "GS-00XX",
     "version": "1.0",
     "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0",
-    "stage": "staging"
+    "stage": "staging",
+    "latest": true
+  },
+  {
+    "standard": "UNFCCC",
+    "program": "Forestry",
+    "code": "AR-AMS0003",
+    "version": "01.0",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0",
+    "stage": "staging",
+    "latest": true
   },
   {
     "standard": "UNFCCC",
@@ -13,7 +23,8 @@
     "code": "AR-AMS0007",
     "version": "03.1",
     "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1",
-    "stage": "staging"
+    "stage": "staging",
+    "latest": true
   },
   {
     "standard": "Verra",
@@ -21,6 +32,7 @@
     "code": "VM0007",
     "version": "1.6",
     "path": "methodologies/Verra/AFOLU/VM0007/v1-6",
-    "stage": "staging"
+    "stage": "staging",
+    "latest": true
   }
 ]
