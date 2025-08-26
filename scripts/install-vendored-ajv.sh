@@ -1,18 +1,17 @@
 #!/usr/bin/env bash
 set -euo pipefail
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-NP="$ROOT/vendor/npm"
-PREFIX="$ROOT/vendor/ajv-cli"
-BIN="$PREFIX/node_modules/.bin/ajv"
-command -v npm >/dev/null || { echo "npm not found"; exit 1; }
-[ -d "$NP" ] || { echo "Missing dir: $NP"; exit 1; }
-count="$(ls -1 "$NP"/*.tgz 2>/dev/null | wc -l | tr -d '[:space:]')"
-[ "$count" -gt 0 ] || { echo "No tarballs found in $NP"; exit 1; }
-mkdir -p "$PREFIX"
-[ -f "$PREFIX/package.json" ] || (cd "$PREFIX" && npm init -y >/dev/null 2>&1)
-ABS_NP="$(cd "$NP" && pwd)"
-ARGS=()
-for f in "$ABS_NP"/*.tgz; do tar -tzf "$f" >/dev/null 2>&1 || { echo "Corrupt tarball: $f"; exit 1; }; ARGS+=("file:$f"); done
-(cd "$PREFIX" && npm install --no-audit --no-fund --install-strategy=shallow "${ARGS[@]}")
-[ -x "$BIN" ] || { echo "ajv-cli not installed correctly"; exit 1; }
-echo "Vendored ajv ready: $BIN"
+VENDOR_DIR="${VENDOR_DIR:-vendor/npm}"
+
+mkdir -p scripts/.node
+pushd scripts/.node >/dev/null
+npm init -y >/dev/null 2>&1 || true
+npm install --no-audit --no-fund --prefer-offline --ignore-scripts --no-package-lock \
+  --cache="$PWD/../../$VENDOR_DIR" \
+  ../../$VENDOR_DIR/ajv-8.17.1.tgz \
+  ../../$VENDOR_DIR/ajv-formats-2.1.1.tgz \
+  ../../$VENDOR_DIR/fast-deep-equal-3.1.3.tgz \
+  ../../$VENDOR_DIR/json-schema-traverse-1.0.0.tgz \
+  ../../$VENDOR_DIR/uri-js-4.4.1.tgz \
+  ../../$VENDOR_DIR/require-from-string-2.0.2.tgz
+popd >/dev/null
+echo "Vendored AJV installed to scripts/.node/node_modules"
