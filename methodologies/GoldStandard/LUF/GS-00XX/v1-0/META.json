@@ -10,9 +10,9 @@
   "references": {
     "tools": [
       {
+        "kind": "pdf",
         "path": "tools/GoldStandard/GS-00XX/v1-0/source.pdf",
-        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "kind": "pdf"
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     ]
   }
