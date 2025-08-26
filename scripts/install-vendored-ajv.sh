@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-NP="$ROOT/tools/vendor/npm"
+NP="$ROOT/vendor/npm"
 PREFIX="$ROOT/vendor/ajv-cli"
 BIN="$PREFIX/node_modules/.bin/ajv"
 command -v npm >/dev/null || { echo "npm not found"; exit 1; }
