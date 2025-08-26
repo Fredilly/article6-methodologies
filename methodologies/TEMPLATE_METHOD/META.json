@@ -1,19 +1,13 @@
 {
   "audit_hashes": {
-    "sections_json_sha256": "a421952cc7f532b3d17c5e0d93bc803ebb774f917306f0b2b57783009ef985ac",
-    "rules_json_sha256": "79f6fee2de76d55457d44c501c43f09eeca7e930d57e3f5d3314657ab7161c73"
-  },
-  "references": {
-    "tools": [
-      {
-        "path": "tools/TEMPLATE_METHOD///source.pdf",
-        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "kind": "pdf"
-      }
-    ]
+    "rules_json_sha256": "a251bc761ee2aa979b12d0fe1015b14f4304cdaacad2fc2dddf3d74364ebaecf",
+    "sections_json_sha256": "c9962e30eec86b5273be09f6470a585f0fb67c6077f581f31b2711935a9da9b6"
   },
   "automation": {
-    "scripts_manifest_sha256": "a1f69f21e3a4d56c894c74ca59207101f5b84bd95535c315e8e75318483521fa",
-    "repo_commit": "21d01ec106296c32b2348ca73aade0242524d942"
+    "repo_commit": "587c709663ebe9d9ecc45ed4c51e24770a98002a",
+    "scripts_manifest_sha256": "6b6972e31a9475542ab321e135d154836d0bdfc6d573aa7110e222fb04e997f2"
+  },
+  "references": {
+    "tools": []
   }
 }

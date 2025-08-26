@@ -1,11 +1,11 @@
 {
   "audit_hashes": {
-    "rules_json_sha256": "e1095bab5e6ca59b7c8d3fa2b164bfe7f831c9eb6c81a66bff22811276e35d99",
-    "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
+    "rules_json_sha256": "",
+    "sections_json_sha256": ""
   },
   "automation": {
-    "repo_commit": "21d01ec106296c32b2348ca73aade0242524d942",
-    "scripts_manifest_sha256": "a1f69f21e3a4d56c894c74ca59207101f5b84bd95535c315e8e75318483521fa"
+    "repo_commit": "587c709663ebe9d9ecc45ed4c51e24770a98002a",
+    "scripts_manifest_sha256": "6b6972e31a9475542ab321e135d154836d0bdfc6d573aa7110e222fb04e997f2"
   },
   "references": {
     "tools": []

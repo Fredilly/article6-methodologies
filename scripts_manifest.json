@@ -1,11 +1,12 @@
 {
-  "generated_at": "2025-08-26T09:56:36Z",
-  "git_commit": "21d01ec106296c32b2348ca73aade0242524d942",
+  "generated_at": "2025-08-26T10:15:17Z",
+  "git_commit": "587c709663ebe9d9ecc45ed4c51e24770a98002a",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "scripts/check-registry.sh", "sha256": "d66f360cfc7350e5056a81825c2a6aeb3edea448487d2c89829799d64ea2f968" },
     { "path": "scripts/ci-run-tests.sh", "sha256": "68cd2506a9362209da74b11264956362701b6b1c3a2cc41d706d0d59aade3dac" },
     { "path": "scripts/compile-audit.js", "sha256": "dcf9417345c373c9ad26a7ee8d7cf27eaceb32daf1ca4ac398fd835d1f80de53" },
+    { "path": "scripts/gen-registry.js", "sha256": "ed5e27b27860ae358c20c1d0e2cd15c678cd021a50ef295ff0234603f00c8b0e" },
     { "path": "scripts/hash-all.sh", "sha256": "c0460b405ce03814872fb636c5eb8975bf6715b47c5bd0dee9353d1399d22ddb" },
     { "path": "scripts/hash-scripts.sh", "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3" },
     { "path": "scripts/install-vendored-ajv.sh", "sha256": "4e37b41b99c958fa0c66aa99fa1382db7f94574f8e49e00b3f3ef205a3521fa6" },
