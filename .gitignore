@@ -8,3 +8,8 @@ outputs/*
 vendor/ajv-cli/
 .DS_Store
 vendor/ajv-cli/
+vendor/npm/_cacache/
+vendor/npm/_logs/
+vendor/npm/_update-notifier-last-checked
+scripts/.node/
+scripts/.cache/
