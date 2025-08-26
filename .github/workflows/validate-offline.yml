@@ -1,0 +1,28 @@
+name: Offline JSON Schema Validation
+on:
+  push:
+    paths:
+      - 'methodologies/**'
+      - 'schemas/**'
+      - 'scripts/**'
+      - '.github/workflows/validate-offline.yml'
+  pull_request:
+    paths:
+      - 'methodologies/**'
+      - 'schemas/**'
+      - 'scripts/**'
+      - '.github/workflows/validate-offline.yml'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run offline schema validation
+        run: scripts/validate-offline.sh
