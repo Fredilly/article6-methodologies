@@ -17,12 +17,13 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    env:
+      npm_config_registry: "http://127.0.0.1"   # no network
+      NPM_CONFIG_AUDIT: "false"
+      NPM_CONFIG_FUND: "false"
     steps:
       - uses: actions/checkout@v4
-        with:
-          lfs: true
+        with: { lfs: true }
       - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - name: Run offline schema validation
-        run: scripts/validate-offline.sh
+        with: { node-version: '20' }
+      - run: scripts/validate-offline.sh
