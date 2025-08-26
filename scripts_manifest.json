@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-08-26T08:26:34Z",
-  "git_commit": "59b063af12c21a6d6c0adecaa4a45625b0516b5e",
+  "generated_at": "2025-08-26T08:42:58Z",
+  "git_commit": "740210f4b415367dff217b24f3181daee07afc76",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "scripts/check-registry.sh", "sha256": "b1d6193aed8960eb7daa1bb57fef53803a416af4cf8ca576ce86a2579b61e287" },
