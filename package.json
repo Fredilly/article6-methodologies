@@ -2,14 +2,20 @@
   "name": "article6-methodologies",
   "private": true,
   "devDependencies": {
-    "ajv": "^8.12.0",
+    "ajv": "file:vendor/npm/ajv-8.17.1.tgz",
     "ajv-cli": "^5.0.0",
-    "ajv-formats": "^3.0.1"
+    "ajv-formats": "file:vendor/npm/ajv-formats-2.1.1.tgz"
   },
   "scripts": {
     "compile:all": "node scripts/compile-audit.js",
     "validate:rich": "./scripts/run-ajv.sh validate -s schemas/sections.rich.schema.json -d 'methodologies/**/sections.rich.json' && ./scripts/run-ajv.sh validate -s schemas/rules.rich.schema.json -d 'methodologies/**/rules.rich.json'",
     "validate:lean": "./scripts/run-ajv.sh validate -s schemas/META.schema.json -d 'methodologies/**/META.json' && ./scripts/run-ajv.sh validate -s schemas/sections.schema.json -d 'methodologies/**/sections.json' && ./scripts/run-ajv.sh validate -s schemas/rules.schema.json -d 'methodologies/**/rules.json'",
     "validate:all": "npm run validate:rich || true && npm run validate:lean"
+  },
+  "dependencies": {
+    "fast-deep-equal": "file:vendor/npm/fast-deep-equal-3.1.3.tgz",
+    "json-schema-traverse": "file:vendor/npm/json-schema-traverse-1.0.0.tgz",
+    "require-from-string": "file:vendor/npm/require-from-string-2.0.2.tgz",
+    "uri-js": "file:vendor/npm/uri-js-4.4.1.tgz"
   }
 }
