@@ -6,7 +6,10 @@ jobs:
   guard:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
       - name: verify registry entries
         run: |
-          node -e "const fs=require('fs');const reg=JSON.parse(fs.readFileSync('registry.json'));function check(entries){return entries.every(e=>fs.existsSync(e.path));}if(!check([...(reg.standard||[]),...(reg.stage||[])])){process.exit(1);}"
+          node -e "const fs=require('fs');const reg=JSON.parse(fs.readFileSync('registry.json'));function check(entries){return entries.every(e=>fs.existsSync(e.path));}if(!check([...(reg.standard||[]),...(reg.stage||[])])){process.exit(1);}" 
