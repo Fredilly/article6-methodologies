@@ -13,9 +13,51 @@ on:
       - 'scripts/**'
       - '.github/workflows/validate-offline.yml'
   workflow_dispatch:
+    inputs:
+      generate:
+        description: 'Generate standalone validators and commit them'
+        type: boolean
+        required: false
+        default: false
+      ref:
+        description: 'Ref to push validators to (defaults to the selected ref)'
+        type: string
+        required: false
 
 jobs:
+  # One-shot builder: only runs when you manually dispatch with generate=true.
+  generate-validators:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.generate }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          # If you set a ref in the UI, run against it; else use the selected ref
+          ref: ${{ inputs.ref || github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: mkdir -p scripts/validators
+      - run: npm i --no-audit --no-fund ajv@8.17.1 ajv-formats@2.1.1
+      - run: node scripts/compile-audit.js
+      - name: Commit validators
+        run: |
+          git config user.name "article6-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add scripts/validators/*.cjs || true
+          if git diff --cached --quiet; then
+            echo "No validator changes to commit"
+          else
+            git commit -m "chore(validators): add standalone AJV validators"
+            git push origin HEAD:${{ inputs.ref || github.ref_name }}
+          fi
+
+  # Pure offline validation; skip on manual dispatch to avoid failing while generating.
   validate:
+    if: ${{ github.event_name != 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     env:
       npm_config_registry: "http://127.0.0.1"   # no network
