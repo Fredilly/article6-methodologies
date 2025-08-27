@@ -4,8 +4,8 @@
     "sections_json_sha256": "c9962e30eec86b5273be09f6470a585f0fb67c6077f581f31b2711935a9da9b6"
   },
   "automation": {
-    "repo_commit": "587c709663ebe9d9ecc45ed4c51e24770a98002a",
-    "scripts_manifest_sha256": "6b6972e31a9475542ab321e135d154836d0bdfc6d573aa7110e222fb04e997f2"
+    "repo_commit": "166728fefd026ba637fd040f4ed8cae8a162e3c4",
+    "scripts_manifest_sha256": "c4bd7474df5ad6acdf0918a1b76765b51906e742c4816327f0b4da919090908d"
   },
   "references": {
     "tools": [
@@ -17,32 +17,32 @@
       {
         "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/source.pdf",
-        "sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9"
+        "sha256": "dc04ea2a039e27509db204bc6a7e3a5698308b2d578e1b86e43dc8ad12f4ad32"
       },
       {
         "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL08_v4-0-0.pdf",
-        "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397"
+        "sha256": "e35cf86dbd5db6a81551d333d44274d54002973fb12d32095bdff6f1c5c5ccbb"
       },
       {
         "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL12_v3-1.pdf",
-        "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4"
+        "sha256": "5aeffca3cfe52a173830b000bb3b713fcbaad519676998bf0b4e31e69effd216"
       },
       {
         "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL14_v4-2.pdf",
-        "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331"
+        "sha256": "dea000078bf02005f4a9852d06295a0800ad666f05971615916a38e08aea04ee"
       },
       {
         "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL15_v2-0.pdf",
-        "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29"
+        "sha256": "cae1080a443975b63c7ffb7517225d371e2088124c3628d479158f470bb63bce"
       },
       {
         "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL16_v1-1-0.pdf",
-        "sha256": "edc718dba7eb097092907553f849c10a36e91a3b4199677ccf4a78748a92f8de"
+        "sha256": "92829e89d3893c6f5eb74075b681963492d256db69589d2878e5b8ba91cc64b6"
       }
     ]
   },
