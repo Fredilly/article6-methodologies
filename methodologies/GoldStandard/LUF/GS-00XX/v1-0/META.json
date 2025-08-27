@@ -4,15 +4,15 @@
     "sections_json_sha256": "c9962e30eec86b5273be09f6470a585f0fb67c6077f581f31b2711935a9da9b6"
   },
   "automation": {
-    "repo_commit": "587c709663ebe9d9ecc45ed4c51e24770a98002a",
-    "scripts_manifest_sha256": "6b6972e31a9475542ab321e135d154836d0bdfc6d573aa7110e222fb04e997f2"
+    "repo_commit": "3eddc5cd9a0c1d4de3eea090454178f9502f13fb",
+    "scripts_manifest_sha256": "cf7c678e10d1e01c042e5b911f7cc7ac8af6d817ebb9618bd8fa53cebdf424ab"
   },
   "references": {
     "tools": [
       {
+        "kind": "pdf",
         "path": "tools/GoldStandard/GS-00XX/v1-0/source.pdf",
-        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "kind": "pdf"
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     ]
   }
