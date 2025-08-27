@@ -28,3 +28,10 @@ See RULESET.md for conventions and CI guardrails.
 
 ## Stable Tree v1
 This structure is normative. Changes require a "Stable Tree vX" section and CI update.
+
+### Deterministic offline validation
+- Node is pinned via `.nvmrc` and `package.json#engines`.
+- No global npm, no internet. AJV is vendored under `vendor/npm/`.
+- Build validators: `npm run build:validators`
+- Validate offline: `npm run validate:offline`
+- CI mirrors this exact flow and blocks network fetches.
