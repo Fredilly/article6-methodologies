@@ -1,0 +1,29 @@
+name: Generate Standalone Validators
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: mkdir -p scripts/validators
+      - run: npm i --no-audit --no-fund ajv@8.17.1 ajv-formats@2.1.1
+      - run: node scripts/compile-audit.js
+      - name: Commit validators
+        run: |
+          git config user.name "article6-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add scripts/validators/*.cjs || true
+          if git diff --cached --quiet; then
+            echo "No validator changes to commit"
+          else
+            git commit -m "chore(validators): add standalone AJV validators"
+            git push
+          fi
