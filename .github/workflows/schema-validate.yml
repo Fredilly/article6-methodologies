@@ -10,4 +10,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: scripts/validate-offline.sh
+      - name: Offline schema validation
+        run: node scripts/validate-offline.js
