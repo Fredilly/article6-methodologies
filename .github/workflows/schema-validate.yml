@@ -26,3 +26,5 @@ jobs:
         run: node scripts/validate-offline.js
       - name: Meta-driven source hash check
         run: bash scripts/check-source-hash.sh
+      - name: Trio + registry integrity
+        run: node scripts/check-trio-and-registry.js
