@@ -1,0 +1,21 @@
+# TEMPLATE_METHOD authoring
+
+- Rich is the **authoring master** (humans + Codex work here).
+- Lean (`sections.json`, `rules.json`) is **generated** by the projector; never edit by hand.
+- Canonical 13 section anchors:
+  - scope-applicability
+  - definitions
+  - project-boundary-pools
+  - baseline
+  - project
+  - leakage
+  - monitoring
+  - data-parameters (children: data-parameters-ex-ante, data-parameters-ex-post)
+  - uncertainty
+  - permanence
+  - tools
+  - equations
+  - annexes
+- Rule ID pattern: `Standard.Domain.Method.Version.R-####` (e.g., `UNFCCC.Forestry.AR-AMS0007.v03-1.R-0001`).
+- Allowed rule `type` values: `eligibility`, `parameter`, `equation`, `calc`, `monitoring`, `leakage`, `uncertainty`.
+- Minimal expectations: atomic `when`, explicit units in inputs for equations, provenance in `refs`.
