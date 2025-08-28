@@ -4,15 +4,15 @@
     "sections_json_sha256": "c9962e30eec86b5273be09f6470a585f0fb67c6077f581f31b2711935a9da9b6"
   },
   "automation": {
-    "repo_commit": "587c709663ebe9d9ecc45ed4c51e24770a98002a",
-    "scripts_manifest_sha256": "6b6972e31a9475542ab321e135d154836d0bdfc6d573aa7110e222fb04e997f2"
+    "repo_commit": "88c2f5f1894e55cb58f1a2161f08218109f9e512",
+    "scripts_manifest_sha256": "03d7c2791da14e96e5eadeb37c488632cf8478a0ac38bc1e73e20d0e7a147e5a"
   },
   "references": {
     "tools": [
       {
-        "kind": "pdf",
         "path": "tools/Verra/VM0007/v1-6/source.pdf",
-        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "kind": "pdf"
       }
     ]
   }
