@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-08-28T12:01:38Z",
-  "git_commit": "15d361e17fbebda618f4ae08cef93c7ac5fc280f",
+  "generated_at": "2025-08-28T13:45:37Z",
+  "git_commit": "802a9e745ce593df317aef3daa0a325f59f71d24",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "scripts/.node/node_modules/.package-lock.json", "sha256": "16314bb5d82087952ada77365dd282c93547d84e11b57595834dc9fde89bf7f4" },
@@ -553,6 +553,7 @@
     { "path": "scripts/ci-run-tests.sh", "sha256": "a3b0da7ebba9ab472553fbd17a18c4a193c767db07accfbaf1a9e049e9565038" },
     { "path": "scripts/compile-audit.js", "sha256": "fb07855f9fffbe6d6637a05a69d66e7e67035da9bc60949b300c1e400ee51f02" },
     { "path": "scripts/compile-validators.js", "sha256": "0d6d8454097445711c1a0f974061f7f426522b8c1e1c0b61998cfa1c2237949b" },
+    { "path": "scripts/derive-lean-from-rich.js", "sha256": "bdc71571c00786f4366782053f085d0f38bb92f65acc2815386c5e452d496a2c" },
     { "path": "scripts/gen-registry.js", "sha256": "ed5e27b27860ae358c20c1d0e2cd15c678cd021a50ef295ff0234603f00c8b0e" },
     { "path": "scripts/hash-all.sh", "sha256": "c0460b405ce03814872fb636c5eb8975bf6715b47c5bd0dee9353d1399d22ddb" },
     { "path": "scripts/hash-scripts.sh", "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3" },

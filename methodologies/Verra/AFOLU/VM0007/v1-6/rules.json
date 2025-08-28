@@ -1,11 +1,12 @@
 {
   "rules": [
     {
-      "id": "R1",
+      "id": "R-1-0001",
       "tags": [
         "example"
       ],
-      "text": "Example rule"
+      "text": "Example rule",
+      "section_id": "S-1"
     }
   ]
 }
