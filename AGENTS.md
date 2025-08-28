@@ -45,3 +45,11 @@ Signed-off-by: Fred Egbuedike <fredilly@article6.org>
 
 * Always run JSON/schema/registry/hash checks.
 * Stop on failure; do not commit partial changes.
+
+**BRANCH & PR POLICY**
+
+* Always create a new branch for any change (never push directly to `main`/`staging`).
+* In PR descriptions, explicitly document:
+  * What changed
+  * Why the change is needed
+* Use the PR template prompts to ensure completeness.
