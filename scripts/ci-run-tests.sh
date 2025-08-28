@@ -14,8 +14,8 @@ echo "== CI: Offline Integrity Tests =="
 # Schemas vs validators consistency
 node ./scripts/check-validators-sync.js
 
-# META.tools hash verification
-node ./scripts/check-meta-tool-hashes.js
+# META.tools hash verification (meta-driven; no path inference)
+bash ./scripts/check-source-hash.sh
 
 # Optional: pure offline JSON Schema validation (no npm/network)
 if [ -f scripts/validators/meta.cjs ] && [ -f scripts/validators/sections.cjs ] && [ -f scripts/validators/rules.cjs ]; then
