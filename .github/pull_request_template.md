@@ -1,16 +1,15 @@
-## What changed
+## What
 
-- 
+- Concise scope of change (what was added/removed/modified)
+- Key files/paths touched (group by area: scripts, schemas, methodologies, tools, CI)
+- Behavior changes (user‑facing, CI/guards, validation steps)
+- Data model/schema changes (if any) and migrations/one‑offs
+- Verification performed (commands run, checks passed) and reproducible steps
 
 ## Why
 
-- 
-
-## Checklist
-
-- [ ] Changes are on a new branch (not `main`/`staging`)
-- [ ] Description clearly states WHAT changed and WHY
-- [ ] JSON remains canonical (2-space, LF), no secrets
-- [ ] Offline validators used (no network/npm in CI)
-- [ ] Conventional Commit(s) with required sign-off
-
+- Problem being solved and motivation
+- Determinism/integrity impact (hashes, schema, CI guarantees)
+- Alternatives considered and why rejected
+- Risks/backwards‑compatibility and mitigations
+- Related issues/links (optional)
