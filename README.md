@@ -1,5 +1,6 @@
 # Article6 Methodologies (data-first, audit-ready)
 Canonical store of methodologies: META + sections + rules (+ tools, overrides, tests, core).
+For a working example of the file layout and content, see `docs/examples/TEMPLATE_METHOD`.
 See RULESET.md for conventions and CI guardrails.
 
 ## Five Things mapping

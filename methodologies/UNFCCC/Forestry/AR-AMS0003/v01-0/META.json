@@ -4,8 +4,8 @@
     "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
   },
   "automation": {
-    "repo_commit": "991ca3806a5ed3b5562ae53b963986cebd9f3f5d",
-    "scripts_manifest_sha256": "3663d11742ac6659841596dd1897d752ece6b3a7a4125f795c363dd17fccbc50"
+    "repo_commit": "19e765e01e1298f913fd1e7b76fc8bdb6db906da",
+    "scripts_manifest_sha256": "3e2612bfff8a851d8ba72e134b1e6e9a1eb62a92c36bc283411c8a3510f03112"
   },
   "dependencies": [
     {
