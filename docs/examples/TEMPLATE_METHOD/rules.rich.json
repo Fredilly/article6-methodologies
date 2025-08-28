@@ -64,29 +64,12 @@
         "Compute AGB carbon at time t"
       ],
       "inputs": [
-        {
-          "name": "AGB_dm",
-          "unit": "t d.m. ha-1",
-          "source": "sampling"
-        },
-        {
-          "name": "CF",
-          "unit": "t C / t d.m.",
-          "source": "tool-default",
-          "default": 0.47
-        }
+        { "name": "AGB_dm", "unit": "t d.m. ha-1", "source": "sampling" },
+        { "name": "CF", "unit": "t C / t d.m.", "source": "tool-default", "default": 0.47 }
       ],
-      "logic": "C_AGB_t = AGB_dm * CF  # t C ha-1",
+      "logic": "C_AGB_t = AGB_dm * CF  # output: t C ha-1",
       "notes": "Keep output units explicit.",
-      "refs": [
-        {
-          "doc": "STD/Method@vX-Y",
-          "pages": [
-            2,
-            5
-          ]
-        }
-      ]
+      "refs": [{ "doc": "STD/Method@vX-Y", "pages": [2, 5] }]
     },
     {
       "id": "STD.Domain.Method.vX-Y.R-0110",
@@ -94,24 +77,10 @@
       "when": [
         "Convert carbon to CO2e"
       ],
-      "inputs": [
-        {
-          "name": "C_pool",
-          "unit": "t C ha-1",
-          "source": "calc"
-        }
-      ],
-      "logic": "CO2e_pool = C_pool * 44/12  # t CO2e ha-1",
+      "inputs": [{ "name": "C_pool", "unit": "t C ha-1", "source": "calc" }],
+      "logic": "CO2e_pool = C_pool * 44/12  # output: t CO2e ha-1",
       "notes": "Stoichiometric conversion.",
-      "refs": [
-        {
-          "doc": "STD/Method@vX-Y",
-          "pages": [
-            2,
-            5
-          ]
-        }
-      ]
+      "refs": [{ "doc": "STD/Method@vX-Y", "pages": [2, 5] }]
     },
     {
       "id": "STD.Domain.Method.vX-Y.R-0200",
@@ -120,48 +89,16 @@
         "Annual net GHG removals (project)"
       ],
       "inputs": [
-        {
-          "name": "ΔCO2e_AGB",
-          "unit": "t CO2e ha-1 yr-1",
-          "source": "calc"
-        },
-        {
-          "name": "ΔCO2e_BGB",
-          "unit": "t CO2e ha-1 yr-1",
-          "source": "calc"
-        },
-        {
-          "name": "ΔCO2e_DOM",
-          "unit": "t CO2e ha-1 yr-1",
-          "source": "calc"
-        },
-        {
-          "name": "ΔCO2e_Litter",
-          "unit": "t CO2e ha-1 yr-1",
-          "source": "calc"
-        },
-        {
-          "name": "ΔCO2e_SOC",
-          "unit": "t CO2e ha-1 yr-1",
-          "source": "calc"
-        },
-        {
-          "name": "Leakage",
-          "unit": "t CO2e ha-1 yr-1",
-          "source": "calc"
-        }
+        { "name": "dCO2e_AGB",    "unit": "t CO2e ha-1 yr-1", "source": "calc" },
+        { "name": "dCO2e_BGB",    "unit": "t CO2e ha-1 yr-1", "source": "calc" },
+        { "name": "dCO2e_DOM",    "unit": "t CO2e ha-1 yr-1", "source": "calc" },
+        { "name": "dCO2e_Litter", "unit": "t CO2e ha-1 yr-1", "source": "calc" },
+        { "name": "dCO2e_SOC",    "unit": "t CO2e ha-1 yr-1", "source": "calc" },
+        { "name": "Leakage",      "unit": "t CO2e ha-1 yr-1", "source": "calc" }
       ],
-      "logic": "Net_project = (ΔCO2e_AGB + ΔCO2e_BGB + ΔCO2e_DOM + ΔCO2e_Litter + ΔCO2e_SOC) - Leakage",
+      "logic": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - Leakage  # output: t CO2e ha-1 yr-1",
       "notes": "Zero excluded pools via separate eligibility rules.",
-      "refs": [
-        {
-          "doc": "STD/Method@vX-Y",
-          "pages": [
-            6,
-            9
-          ]
-        }
-      ]
+      "refs": [{ "doc": "STD/Method@vX-Y", "pages": [6, 9] }]
     },
     {
       "id": "STD.Domain.Method.vX-Y.R-0300",
@@ -170,17 +107,9 @@
         "Pool excluded by boundary selection"
       ],
       "inputs": [],
-      "logic": "If a pool is not in boundary, its ΔCO2e := 0.",
+      "logic": "If a pool is not in boundary, its dCO2e := 0.",
       "notes": "Tie to section: project-boundary-pools.",
-      "refs": [
-        {
-          "doc": "STD/Method@vX-Y",
-          "pages": [
-            3,
-            3
-          ]
-        }
-      ]
+      "refs": [{ "doc": "STD/Method@vX-Y", "pages": [3] }]
     },
     {
       "id": "STD.Domain.Method.vX-Y.R-0400",
@@ -188,24 +117,10 @@
       "when": [
         "Precision check for sampling strata"
       ],
-      "inputs": [
-        {
-          "name": "RelativePrecision",
-          "unit": "%",
-          "source": "calc"
-        }
-      ],
+      "inputs": [{ "name": "RelativePrecision", "unit": "%", "source": "calc" }],
       "logic": "If RelativePrecision > 10 then apply uncertainty discount per table U().",
       "notes": "Discount table encoded as parameter rules.",
-      "refs": [
-        {
-          "doc": "STD/Method@vX-Y",
-          "pages": [
-            10,
-            12
-          ]
-        }
-      ]
+      "refs": [{ "doc": "STD/Method@vX-Y", "pages": [10, 12] }]
     },
     {
       "id": "STD.Domain.Method.vX-Y.R-0500",
@@ -214,28 +129,12 @@
         "Permanent sample plots established per design"
       ],
       "inputs": [
-        {
-          "name": "PlotCount",
-          "unit": "count",
-          "source": "design"
-        },
-        {
-          "name": "RevisitInterval",
-          "unit": "yr",
-          "source": "design"
-        }
+        { "name": "PlotCount", "unit": "count", "source": "design" },
+        { "name": "RevisitInterval", "unit": "yr", "source": "design" }
       ],
       "logic": "Revisit plots every RevisitInterval years with consistent mensuration protocol.",
       "notes": "Design variables explicit for QA/QC automation.",
-      "refs": [
-        {
-          "doc": "STD/Method@vX-Y",
-          "pages": [
-            13,
-            15
-          ]
-        }
-      ]
+      "refs": [{ "doc": "STD/Method@vX-Y", "pages": [13, 15] }]
     }
   ]
 }
