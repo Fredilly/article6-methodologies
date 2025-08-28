@@ -1,2 +1,110 @@
-[]
-
+{
+  "sections": [
+    {
+      "n": "1",
+      "title": "Scope and applicability",
+      "id": "scope-applicability",
+      "src": [],
+      "children": []
+    },
+    {
+      "n": "2",
+      "title": "Definitions",
+      "id": "definitions",
+      "src": [],
+      "children": []
+    },
+    {
+      "n": "3",
+      "title": "Project boundary and carbon pools",
+      "id": "project-boundary-pools",
+      "src": [],
+      "children": []
+    },
+    {
+      "n": "4",
+      "title": "Baseline scenario and net GHG emissions",
+      "id": "baseline",
+      "src": [],
+      "children": []
+    },
+    {
+      "n": "5",
+      "title": "Project scenario and net GHG removals",
+      "id": "project",
+      "src": [],
+      "children": []
+    },
+    {
+      "n": "6",
+      "title": "Leakage",
+      "id": "leakage",
+      "src": [],
+      "children": []
+    },
+    {
+      "n": "7",
+      "title": "Monitoring plan",
+      "id": "monitoring",
+      "src": [],
+      "children": []
+    },
+    {
+      "n": "8",
+      "title": "Data and parameters",
+      "id": "data-parameters",
+      "src": [],
+      "children": [
+        {
+          "n": "8.1",
+          "title": "Ex ante data/parameters",
+          "id": "data-parameters-ex-ante",
+          "src": [],
+          "children": []
+        },
+        {
+          "n": "8.2",
+          "title": "Ex post data/parameters",
+          "id": "data-parameters-ex-post",
+          "src": [],
+          "children": []
+        }
+      ]
+    },
+    {
+      "n": "9",
+      "title": "Uncertainty, precision, QA/QC",
+      "id": "uncertainty",
+      "src": [],
+      "children": []
+    },
+    {
+      "n": "10",
+      "title": "Permanence (tCERs/lCERs)",
+      "id": "permanence",
+      "src": [],
+      "children": []
+    },
+    {
+      "n": "11",
+      "title": "Normative tools and references",
+      "id": "tools",
+      "src": [],
+      "children": []
+    },
+    {
+      "n": "12",
+      "title": "Calculation procedures and equations",
+      "id": "equations",
+      "src": [],
+      "children": []
+    },
+    {
+      "n": "13",
+      "title": "Annexes",
+      "id": "annexes",
+      "src": [],
+      "children": []
+    }
+  ]
+}
