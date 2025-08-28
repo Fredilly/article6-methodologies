@@ -19,5 +19,7 @@ jobs:
             exit 1;
           fi
       - run: scripts/validate-offline.sh
+      - name: Meta-driven source hash check
+        run: node scripts/check-source-hash.js
       - name: Trio + registry integrity
         run: node scripts/check-trio-and-registry.js
