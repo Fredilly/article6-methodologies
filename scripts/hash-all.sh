@@ -46,3 +46,4 @@ EOF2
      .automation.repo_commit = $commit' \
     "$meta_file" > "$tmp" && mv "$tmp" "$meta_file"
 done
+echo "OK: refreshed META.audit_hashes, references.tools, and automation pins"
