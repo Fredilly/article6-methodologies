@@ -14,6 +14,14 @@ jobs:
           node-version: '20'
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
+      - name: Derive lean from rich (deterministic)
+        run: |
+          node scripts/derive-lean-from-rich.js
+          if ! git diff --quiet -- methodologies/**/sections.json methodologies/**/rules.json; then
+            echo "Lean JSON drift detected. Run: node scripts/derive-lean-from-rich.js";
+            git --no-pager diff -- methodologies/**/sections.json methodologies/**/rules.json | sed -n '1,200p';
+            exit 1;
+          fi
       - name: Offline schema validation
         run: node scripts/validate-offline.js
       - name: Meta-driven source hash check

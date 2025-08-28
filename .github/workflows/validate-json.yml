@@ -10,4 +10,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Derive lean from rich (deterministic)
+        run: |
+          node scripts/derive-lean-from-rich.js
+          if ! git diff --quiet -- methodologies/**/sections.json methodologies/**/rules.json; then
+            echo "Lean JSON drift detected. Run: node scripts/derive-lean-from-rich.js";
+            git --no-pager diff -- methodologies/**/sections.json methodologies/**/rules.json | sed -n '1,200p';
+            exit 1;
+          fi
       - run: scripts/validate-offline.sh
