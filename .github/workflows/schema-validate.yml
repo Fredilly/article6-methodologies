@@ -12,3 +12,5 @@ jobs:
           node-version: '20'
       - name: Offline schema validation
         run: node scripts/validate-offline.js
+      - name: Meta-driven source hash check
+        run: bash scripts/check-source-hash.sh

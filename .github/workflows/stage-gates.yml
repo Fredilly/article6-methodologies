@@ -11,3 +11,5 @@ jobs:
         with:
           node-version: '20'
       - run: scripts/validate-offline.sh
+      - name: Meta-driven source hash check
+        run: bash scripts/check-source-hash.sh
