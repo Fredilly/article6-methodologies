@@ -17,7 +17,7 @@ try {
 } catch (e) {
   try {
     const bundle = require('./validators/bundle.cjs');
-    validators = { META: bundle.META, sections: bundle.sections, rules: bundle.rules };
+    validators = { META: bundle.META, sections: bundle.sections, rules: bundle.rules, sections_rich: bundle.sections_rich, rules_rich: bundle.rules_rich };
   } catch (e2) {
     console.error('ERROR: compiled validators not found in scripts/validators (meta/sections/rules or bundle).');
     process.exit(2);
@@ -29,6 +29,14 @@ const TARGETS = [
   { name: 'sections', file: 'sections.json', validator: validators.sections },
   { name: 'rules',    file: 'rules.json',    validator: validators.rules },
 ];
+
+// Optionally include rich validators when available
+if (validators.sections_rich && validators.rules_rich) {
+  TARGETS.push(
+    { name: 'sections.rich', file: 'sections.rich.json', validator: validators.sections_rich },
+    { name: 'rules.rich',    file: 'rules.rich.json',    validator: validators.rules_rich },
+  );
+}
 
 function* walk(dir) {
   const ents = fs.readdirSync(dir, { withFileTypes: true });

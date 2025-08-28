@@ -17,6 +17,10 @@ const files = {
   sections: path.join(VDIR, 'sections.cjs'),
   rules: path.join(VDIR, 'rules.cjs'),
 };
+const optional = {
+  sections_rich: path.join(VDIR, 'sections.rich.cjs'),
+  rules_rich: path.join(VDIR, 'rules.rich.cjs'),
+};
 
 for (const [key, p] of Object.entries(files)){
   if (!fs.existsSync(p)) {
@@ -33,8 +37,15 @@ for (const [name, p] of Object.entries(files)){
   const code = read(p);
   parts.push(`const ${name} = load(${jsonStringLiteral(code)}, ${jsonStringLiteral(path.basename(p))});`);
 }
-parts.push('module.exports = { META, sections, rules };');
+for (const [name, p] of Object.entries(optional)){
+  if (fs.existsSync(p)){
+    const code = read(p);
+    parts.push(`const ${name} = load(${jsonStringLiteral(code)}, ${jsonStringLiteral(path.basename(p))});`);
+  } else {
+    parts.push(`const ${name} = null;`);
+  }
+}
+parts.push('module.exports = { META, sections, rules, sections_rich, rules_rich };');
 
 fs.writeFileSync(OUT, parts.join('\n') + '\n', 'utf8');
 console.log('OK: wrote', path.relative(ROOT, OUT));
-
