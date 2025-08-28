@@ -12,6 +12,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
       - run: scripts/validate-offline.sh
       - name: Meta-driven source hash check
         run: bash scripts/check-source-hash.sh
