@@ -1,0 +1,53 @@
+name: Vendor Missing npm Tarballs
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Target branch to commit tarballs to'
+        required: false
+        type: string
+        default: ${{ github.ref_name }}
+
+permissions:
+  contents: write
+
+jobs:
+  vendor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          ref: ${{ inputs.branch || github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Pack tarballs
+        run: |
+          set -eu
+          mkdir -p vendor/npm
+          pkgs=(
+            fast-deep-equal@3.1.3
+            json-schema-traverse@1.0.0
+            uri-js@4.4.1
+            require-from-string@2.0.2
+            glob@10.3.10
+            js-yaml@4.1.0
+            json5@2.2.3
+            minimist@1.2.8
+            fast-json-patch@3.1.1
+            json-schema-migrate@2.0.0
+          )
+          for p in "${pkgs[@]}"; do npm pack "$p" --pack-destination vendor/npm; done
+      - name: Commit tarballs
+        run: |
+          set -eu
+          git config user.name "article6-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add vendor/npm/*.tgz || true
+          if git diff --cached --quiet; then
+            echo "No new tarballs to commit"
+          else
+            git commit -m "chore(vendor): add missing npm tarballs for offline CI"
+            git push origin HEAD:${{ inputs.branch || github.ref_name }}
+          fi

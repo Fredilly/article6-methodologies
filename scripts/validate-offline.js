@@ -7,10 +7,27 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
+let validators;
+try {
+  validators = {
+    META: require('./validators/meta.cjs'),
+    sections: require('./validators/sections.cjs'),
+    rules: require('./validators/rules.cjs'),
+  };
+} catch (e) {
+  try {
+    const bundle = require('./validators/bundle.cjs');
+    validators = { META: bundle.META, sections: bundle.sections, rules: bundle.rules };
+  } catch (e2) {
+    console.error('ERROR: compiled validators not found in scripts/validators (meta/sections/rules or bundle).');
+    process.exit(2);
+  }
+}
+
 const TARGETS = [
-  { name: 'META',     file: 'META.json',     validator: require('./validators/meta.cjs') },
-  { name: 'sections', file: 'sections.json', validator: require('./validators/sections.cjs') },
-  { name: 'rules',    file: 'rules.json',    validator: require('./validators/rules.cjs') },
+  { name: 'META',     file: 'META.json',     validator: validators.META },
+  { name: 'sections', file: 'sections.json', validator: validators.sections },
+  { name: 'rules',    file: 'rules.json',    validator: validators.rules },
 ];
 
 function* walk(dir) {
