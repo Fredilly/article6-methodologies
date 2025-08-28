@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
- * Re-serializes JSON files with sorted keys and 2-space indent, then
- * exits non-zero if any file would change. Does not modify files.
+ * Canonical JSON checker/fixer
+ * - Default: check only; list non-canonical files and exit non-zero.
+ * - With --fix: rewrite files with sorted keys, 2-space indent, trailing LF.
  */
 const fs = require('fs');
 const path = require('path');
@@ -45,13 +46,24 @@ files.forEach(f => {
   try {
     const parsed = JSON.parse(raw);
     const stable = stableStringify(parsed);
-    if (stable !== raw) changed.push(f);
+    if (stable !== raw) {
+      changed.push(f);
+      if (process.argv.includes('--fix')) {
+        fs.writeFileSync(f, stable, 'utf8');
+        console.log('fixed', f);
+      }
+    }
   } catch (e) {
     console.error(`Invalid JSON: ${f}\n${e.message}`);
     process.exitCode = 2;
   }
 });
 if (changed.length) {
-  console.error('Non-canonical JSON detected in:\n' + changed.map(x => ' - ' + x).join('\n'));
-  process.exit(1);
+  if (process.argv.includes('--fix')) {
+    console.log(`OK: canonicalized ${changed.length}/${files.length} JSON file(s)`);
+    process.exit(0);
+  } else {
+    console.error('Non-canonical JSON detected in:\n' + changed.map(x => ' - ' + x).join('\n'));
+    process.exit(1);
+  }
 }
