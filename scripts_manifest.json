@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-08-28T09:52:18Z",
-  "git_commit": "bb51b9d6840c4c4884dff0e6db1991963adb69da",
+  "generated_at": "2025-08-28T10:30:50Z",
+  "git_commit": "ec441e6293e413cea25e453209796e62f1f7fc0b",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "scripts/.node/node_modules/.package-lock.json", "sha256": "16314bb5d82087952ada77365dd282c93547d84e11b57595834dc9fde89bf7f4" },
@@ -551,8 +551,9 @@
     { "path": "scripts/build-validator-bundle.js", "sha256": "307a3850efc0fa6c8acb8386a296189a4541f8a62ec263de3538426cd1e4df69" },
     { "path": "scripts/check-meta-tool-hashes.js", "sha256": "9a6ff082a4aa102412344ed6e48ca6fef9aca710776f047ac3e2a14061137e5f" },
     { "path": "scripts/check-registry.sh", "sha256": "d66f360cfc7350e5056a81825c2a6aeb3edea448487d2c89829799d64ea2f968" },
+    { "path": "scripts/check-source-hash.sh", "sha256": "8a4e30a809ca5e8ce370495f859d50fe7132a8e5554023e1f1fa95ec7457f9b4" },
     { "path": "scripts/check-validators-sync.js", "sha256": "8ec4d1f5fb82f431873d8d7e0c39838b24399b90b1c5c69551ea62e34389c6ab" },
-    { "path": "scripts/ci-run-tests.sh", "sha256": "39d43ad0bce724be5011a3d2f407c888e8c89a1822ebbe766a6fdb8fbdfc99fb" },
+    { "path": "scripts/ci-run-tests.sh", "sha256": "663084b9eb0a6527a5b12b5ab1544bef447ed29ce3a865051e062ba4a43453d0" },
     { "path": "scripts/compile-audit.js", "sha256": "fb07855f9fffbe6d6637a05a69d66e7e67035da9bc60949b300c1e400ee51f02" },
     { "path": "scripts/compile-validators.js", "sha256": "0d6d8454097445711c1a0f974061f7f426522b8c1e1c0b61998cfa1c2237949b" },
     { "path": "scripts/gen-registry.js", "sha256": "ed5e27b27860ae358c20c1d0e2cd15c678cd021a50ef295ff0234603f00c8b0e" },
