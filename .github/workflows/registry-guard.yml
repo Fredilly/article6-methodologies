@@ -12,4 +12,4 @@ jobs:
           node-version: '20'
       - name: verify registry entries
         run: |
-          node -e "const fs=require('fs');const reg=JSON.parse(fs.readFileSync('registry.json'));function check(entries){return entries.every(e=>fs.existsSync(e.path));}if(!check([...(reg.standard||[]),...(reg.stage||[])])){process.exit(1);}" 
+          node -e "const fs=require('fs');const reg=JSON.parse(fs.readFileSync('registry.json'));if(!Array.isArray(reg)){process.exit(1)};process.exit(reg.every(e=>e&&e.path&&fs.existsSync(e.path))?0:1)"

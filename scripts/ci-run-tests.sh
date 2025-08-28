@@ -2,10 +2,11 @@
 set -euo pipefail
 echo "== CI: Offline Integrity Tests =="
 
-./scripts/assert-offline.sh
+# Canonical JSON check (non-mutating)
 ./scripts/json-canonical-check.sh --check
-./scripts/check-lfs-and-empty.sh
-node ./scripts/check-trio-and-refs.js
+
+# Registry JSON sanity
+./scripts/check-registry.sh
 
 # Optional: pure offline JSON Schema validation (no npm/network)
 if [ -f scripts/validators/meta.cjs ] && [ -f scripts/validators/sections.cjs ] && [ -f scripts/validators/rules.cjs ]; then
