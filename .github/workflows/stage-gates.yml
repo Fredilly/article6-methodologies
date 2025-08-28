@@ -12,8 +12,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Install jq
-        run: sudo apt-get update && sudo apt-get install -y jq
+      # jq not required; use Node-based checks only
       - name: Derive lean from rich (deterministic)
         run: |
           node scripts/derive-lean-from-rich.js
@@ -24,6 +23,6 @@ jobs:
           fi
       - run: scripts/validate-offline.sh
       - name: Meta-driven source hash check
-        run: bash scripts/check-source-hash.sh
+        run: node scripts/check-source-hash.js
       - name: Trio + registry integrity
         run: node scripts/check-trio-and-registry.js

@@ -6,7 +6,7 @@
   },
   "devDependencies": {
     "ajv": "file:vendor/npm/ajv-8.17.1.tgz",
-    "ajv-cli": "^5.0.0",
+    "ajv-cli": "file:vendor/npm/ajv-cli-5.0.0.tgz",
     "ajv-formats": "file:vendor/npm/ajv-formats-2.1.1.tgz"
   },
   "scripts": {
