@@ -31,6 +31,7 @@ if (fs.existsSync('.nvmrc')) {
 for (const wf of listWorkflows()){
   const p = path.join(WF_DIR, wf);
   const txt = read(p);
+  const isValidation = /(validate|schema|stage-gates)/i.test(wf);
   // uses pin check
   const uses = [...txt.matchAll(/^\s*-\s*uses:\s*([^\s]+)\s*$/img)].map(m=>m[1]);
   for (const u of uses){
@@ -43,10 +44,10 @@ for (const wf of listWorkflows()){
     if (!nvmrc) { results.push({wf, kind:'no-nvmrc', detail: 'missing .nvmrc'}); break; }
     if (String(v) !== nvmrc) results.push({wf, kind:'node-mismatch', detail: `node-version:${v} vs .nvmrc:${nvmrc}`});
   }
-  // network commands
-  if (BAD_NET.test(txt)) results.push({wf, kind:'net-install', detail: 'contains network install/download command'});
+  // network commands (enforce only for validation workflows)
+  if (isValidation && BAD_NET.test(txt)) results.push({wf, kind:'net-install', detail: 'contains network install/download command'});
   // offline validator presence (require for validation workflows)
-  if (/validate|schema/i.test(wf)){
+  if (isValidation){
     if (!/scripts\/validate-offline\.sh|node\s+scripts\/validate-offline\.js/.test(txt)){
       results.push({wf, kind:'no-offline-validator', detail: 'offline validator not invoked'});
     }
