@@ -21,6 +21,8 @@ jobs:
             git --no-pager diff -- methodologies/**/sections.json methodologies/**/rules.json | sed -n '1,200p';
             exit 1;
           fi
+      - name: Lean generation verifier
+        run: scripts/verify-generation.sh
       - name: Offline schema validation
         run: node scripts/validate-offline.js
       - name: Meta-driven source hash check
