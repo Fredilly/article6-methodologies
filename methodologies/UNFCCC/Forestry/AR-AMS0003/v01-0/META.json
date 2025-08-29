@@ -4,8 +4,8 @@
     "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
   },
   "automation": {
-    "repo_commit": "19e765e01e1298f913fd1e7b76fc8bdb6db906da",
-    "scripts_manifest_sha256": "3e2612bfff8a851d8ba72e134b1e6e9a1eb62a92c36bc283411c8a3510f03112"
+    "repo_commit": "777edf7bef4a3bbcae21eae7dd4ee78978e4b2e3",
+    "scripts_manifest_sha256": "901127af1a9a4ef6da29805a4a9e5d1397adde941ebb2e7ba0f6dbae4c45fca2"
   },
   "dependencies": [
     {
@@ -30,7 +30,7 @@
       {
         "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0003/v01-0/meth_booklet.pdf",
-        "sha256": "b1e73eb883c139285d6a73ba3b645377b140ec860c482192e2158fcfd7b2ba07"
+        "sha256": "395e1dc00779cc5e580ad90c97c7d2189d3021f64e9c4b9ac4fabad3523ac69c"
       },
       {
         "kind": "docx",
@@ -40,7 +40,7 @@
       {
         "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0003/v01-0/source.pdf",
-        "sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b"
+        "sha256": "4218a9dbf4c018f08a60c6564f532a336ba79cf7c782e32161c81d4d6a6427f2"
       }
     ]
   },
