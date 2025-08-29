@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-08-29T17:03:16Z",
-  "git_commit": "68425e388c8938a48c0786cd1fabb01219261bb7",
+  "generated_at": "2025-08-29T17:23:35Z",
+  "git_commit": "59fdcaaffe63760d1c7ca889315fc838ae18f486",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "scripts/assert-offline.sh", "sha256": "b7f69664148270ded298a4d9fb638075a21063ad7fc8e7c8b3e2d49ed88bcffd" },
