@@ -25,3 +25,5 @@ jobs:
         run: node scripts/check-source-hash.js
       - name: Trio + registry integrity
         run: node scripts/check-trio-and-registry.js
+      - name: Supply-chain guard (pinning, no network installs)
+        run: node scripts/check-workflows-supplychain.js
