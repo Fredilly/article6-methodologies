@@ -8,8 +8,8 @@ echo "== CI: Offline Integrity Tests =="
 # Canonical JSON check (non-mutating)
 ./scripts/json-canonical-check.sh --check
 
-# Registry JSON sanity
-./scripts/check-registry.sh
+# Trio + registry integrity (path + version + trio present)
+node ./scripts/check-trio-and-registry.js
 
 # Schemas vs validators consistency
 node ./scripts/check-validators-sync.js
