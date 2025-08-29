@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-08-29T15:30:37Z",
-  "git_commit": "777edf7bef4a3bbcae21eae7dd4ee78978e4b2e3",
+  "generated_at": "2025-08-29T17:03:16Z",
+  "git_commit": "68425e388c8938a48c0786cd1fabb01219261bb7",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "scripts/assert-offline.sh", "sha256": "b7f69664148270ded298a4d9fb638075a21063ad7fc8e7c8b3e2d49ed88bcffd" },
@@ -13,7 +13,7 @@
     { "path": "scripts/ci-run-tests.sh", "sha256": "4b5210a8ca1e520daaa04cdd828239c2f5571488075c576ff0297714e4683707" },
     { "path": "scripts/compile-audit.js", "sha256": "fb07855f9fffbe6d6637a05a69d66e7e67035da9bc60949b300c1e400ee51f02" },
     { "path": "scripts/compile-validators.js", "sha256": "0d6d8454097445711c1a0f974061f7f426522b8c1e1c0b61998cfa1c2237949b" },
-    { "path": "scripts/derive-lean-from-rich.js", "sha256": "bdc71571c00786f4366782053f085d0f38bb92f65acc2815386c5e452d496a2c" },
+    { "path": "scripts/derive-lean-from-rich.js", "sha256": "d433df72b181c4c86c1ee0472d856c6ce7e7b0f4684afbf7b7422e046167087d" },
     { "path": "scripts/gen-method.sh", "sha256": "0893d49e0cc03508e3c90f7db6eb7be6be0ed37a02059f0776663b579538f089" },
     { "path": "scripts/gen-registry.js", "sha256": "ed5e27b27860ae358c20c1d0e2cd15c678cd021a50ef295ff0234603f00c8b0e" },
     { "path": "scripts/hash-all.sh", "sha256": "718402850916a1dd05e5f028d1b91e6723837b9181689c3a5678bc1d849458cf" },
