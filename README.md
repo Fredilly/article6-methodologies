@@ -23,7 +23,7 @@ See RULESET.md for conventions and CI guardrails.
 4. CI validates JSON, schemas, and registry consistency.
 
 ### Meta-driven source hash check
-Use `scripts/check-source-hash.sh` to verify that all `META.references.tools[*]` entries exist and match their recorded SHA-256. This avoids assumptions about folder layout and treats `META` as the source of truth for tool paths.
+Use `node scripts/check-source-hash.js` to verify that all `META.references.tools[*]` entries exist and match their recorded SHA-256. This avoids assumptions about folder layout and treats `META` as the source of truth for tool paths.
 
 ## Conventions
 - JSON UTF-8, LF, 2 spaces.
