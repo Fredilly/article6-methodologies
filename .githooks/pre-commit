@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+# Optional hook: run generator when tools/ content changes.
+CHANGED=$(git diff --cached --name-only -- tools/ | grep -E '^tools/' || true)
+if [ -n "$CHANGED" ]; then
+  echo "[pre-commit] tools/ changes detected; running generator (idempotent)…"
+  scripts/gen-method.sh
+  # Re-add any newly written lean files
+  git add methodologies/**/sections.json methodologies/**/rules.json || true
+fi
+
