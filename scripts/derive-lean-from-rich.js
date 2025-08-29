@@ -58,7 +58,7 @@ function derive(dir){
     }
     const { sec, serial } = parseRuleId(r.id);
     const tags = Array.from(new Set([r.type, ...(r.tags||[])]));
-    return { id: `R-${sec}-${serial}`, tags: tags.filter(Boolean), text: r.summary, section_id: r.refs.sections[0] };
+    return { id: `R-${sec}-${serial}`, section_id: r.refs.sections[0], tags: tags.filter(Boolean), text: r.summary };
   }).sort(cmpRules);
   writeJSON(path.join(dir,'sections.json'), { sections: sectionsLean });
   writeJSON(path.join(dir,'rules.json'), { rules: rulesLean });
