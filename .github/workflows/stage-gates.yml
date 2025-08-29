@@ -21,8 +21,11 @@ jobs:
             git --no-pager diff -- methodologies/**/sections.json methodologies/**/rules.json | sed -n '1,200p';
             exit 1;
           fi
-      - run: scripts/validate-offline.sh
+      - name: Offline schema validation
+        run: node scripts/validate-offline.js
       - name: Meta-driven source hash check
         run: node scripts/check-source-hash.js
       - name: Trio + registry integrity
         run: node scripts/check-trio-and-registry.js
+      - name: Supply-chain guard (pinning, no network installs)
+        run: node scripts/check-workflows-supplychain.js
