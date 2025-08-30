@@ -8,8 +8,16 @@
     "scripts_manifest_sha256": "5b7d870cd54fdc9bfaf590093daa19fed442aa4aa13220b7d112a6d35df93b66"
   },
   "provenance": {
+    "author": "Fred Egbuedike",
+    "date": "2025-08-29T17:46:02.000Z",
     "source_pdfs": [
       {
+        "kind": "docx",
+        "path": "tools/UNFCCC/AR-AMS0007/v03-1/source.docx",
+        "sha256": "2f73349cfc4630255319c6c8dfc1b46a8996ace9d14d8e07563b165915918ec2"
+      },
+      {
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/source.pdf",
         "sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9"
       }
