@@ -7,42 +7,50 @@
     "repo_commit": "d7324060f7b6afc49a638cd0cbaaa003fce8974d",
     "scripts_manifest_sha256": "5b7d870cd54fdc9bfaf590093daa19fed442aa4aa13220b7d112a6d35df93b66"
   },
+  "provenance": {
+    "source_pdfs": [
+      {
+        "path": "tools/UNFCCC/AR-AMS0007/v03-1/source.pdf",
+        "sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9"
+      }
+    ]
+  },
   "references": {
     "tools": [
       {
+        "kind": "docx",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/source.docx",
-        "sha256": "2f73349cfc4630255319c6c8dfc1b46a8996ace9d14d8e07563b165915918ec2",
-        "kind": "docx"
+        "sha256": "2f73349cfc4630255319c6c8dfc1b46a8996ace9d14d8e07563b165915918ec2"
       },
       {
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/source.pdf",
-        "sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9",
-        "kind": "pdf"
+        "sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9"
       },
       {
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL08_v4-0-0.pdf",
-        "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397",
-        "kind": "pdf"
+        "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397"
       },
       {
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL12_v3-1.pdf",
-        "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4",
-        "kind": "pdf"
+        "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4"
       },
       {
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL14_v4-2.pdf",
-        "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
-        "kind": "pdf"
+        "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331"
       },
       {
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL15_v2-0.pdf",
-        "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29",
-        "kind": "pdf"
+        "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29"
       },
       {
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL16_v1-1-0.pdf",
-        "sha256": "edc718dba7eb097092907553f849c10a36e91a3b4199677ccf4a78748a92f8de",
-        "kind": "pdf"
+        "sha256": "edc718dba7eb097092907553f849c10a36e91a3b4199677ccf4a78748a92f8de"
       }
     ]
   },

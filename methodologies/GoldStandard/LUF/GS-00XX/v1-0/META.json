@@ -1,9 +1,9 @@
 {
-  "domain": "Stub",
   "audit_hashes": {
-    "sections_json_sha256": "",
-    "rules_json_sha256": ""
+    "rules_json_sha256": "",
+    "sections_json_sha256": ""
   },
+  "domain": "Stub",
   "files": [
     {
       "path": "sections.json",
