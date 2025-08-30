@@ -1,19 +1,24 @@
 {
+  "domain": "Stub",
   "audit_hashes": {
-    "rules_json_sha256": "d3051be3d6595bb578565e5621ed4485503abcfa00d212eca4e191c9ae13e7da",
-    "sections_json_sha256": "e8a51140c778bf5afe912b3a553e0653674a76ade8cf1570f890ad84643920f7"
+    "sections_json_sha256": "",
+    "rules_json_sha256": ""
   },
-  "automation": {
-    "repo_commit": "d7324060f7b6afc49a638cd0cbaaa003fce8974d",
-    "scripts_manifest_sha256": "5b7d870cd54fdc9bfaf590093daa19fed442aa4aa13220b7d112a6d35df93b66"
-  },
+  "files": [
+    {
+      "path": "sections.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "path": "rules.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "method": "Stub",
   "references": {
-    "tools": [
-      {
-        "path": "tools/GoldStandard/GS-00XX/v1-0/source.pdf",
-        "sha256": "5a838678058f6de375e8635b5f2fea47a4e5f07cb1a882a44b10f39abc6f34ff",
-        "kind": "pdf"
-      }
-    ]
-  }
+    "tools": []
+  },
+  "standard": "Stub",
+  "title": "Stub methodology",
+  "version": "v0-0"
 }
