@@ -19,28 +19,47 @@
   "method": "AR-AMS0003",
   "overrideRefs": [],
   "provenance": {
+    "author": "Fred Egbuedike",
+    "date": "2025-08-29T17:46:02.000Z",
     "source_paths": [
       "tools/UNFCCC/AR-AMS0003/v01-0/source.pdf",
       "tools/UNFCCC/AR-AMS0003/v01-0/source.docx",
       "tools/UNFCCC/AR-AMS0003/v01-0/meth_booklet.pdf"
+    ],
+    "source_pdfs": [
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/AR-AMS0003/v01-0/meth_booklet.pdf",
+        "sha256": "b1e73eb883c139285d6a73ba3b645377b140ec860c482192e2158fcfd7b2ba07"
+      },
+      {
+        "kind": "docx",
+        "path": "tools/UNFCCC/AR-AMS0003/v01-0/source.docx",
+        "sha256": "2719958c1e2b8c29613d13d043dea73f9dd3fb4edbd848a921b81734339ac4b1"
+      },
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/AR-AMS0003/v01-0/source.pdf",
+        "sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b"
+      }
     ]
   },
   "references": {
     "tools": [
       {
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0003/v01-0/meth_booklet.pdf",
-        "sha256": "b1e73eb883c139285d6a73ba3b645377b140ec860c482192e2158fcfd7b2ba07",
-        "kind": "pdf"
+        "sha256": "b1e73eb883c139285d6a73ba3b645377b140ec860c482192e2158fcfd7b2ba07"
       },
       {
+        "kind": "docx",
         "path": "tools/UNFCCC/AR-AMS0003/v01-0/source.docx",
-        "sha256": "2719958c1e2b8c29613d13d043dea73f9dd3fb4edbd848a921b81734339ac4b1",
-        "kind": "docx"
+        "sha256": "2719958c1e2b8c29613d13d043dea73f9dd3fb4edbd848a921b81734339ac4b1"
       },
       {
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0003/v01-0/source.pdf",
-        "sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b",
-        "kind": "pdf"
+        "sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b"
       }
     ]
   },
