@@ -31,10 +31,14 @@ function cmpSections(a,b){
   return 0;
 }
 function parseRuleId(id){
-  // Rich rule id like 'S-1.R-0001' or 'S-1-2.R-0001'
-  const m = String(id).match(/^S-(\d+(?:-\d+)*)\.R-(\d{4})$/);
-  if (!m) throw new Error(`Bad rule id: ${id}`);
-  return { sec: m[1], serial: m[2] };
+  const s = String(id);
+  // Style A: 'S-1.R-0001' or 'S-1-2.R-0001'
+  let m = s.match(/^S-(\d+(?:-\d+)*)\.R-(\d{4})$/);
+  if (m) return { sec: m[1], serial: m[2] };
+  // Style B: '...R-1-0001' or '...R-1-2-0001'
+  m = s.match(/\.R-(\d+(?:-\d+)*)-(\d{4})$/);
+  if (m) return { sec: m[1], serial: m[2] };
+  throw new Error(`Bad rule id: ${id}`);
 }
 function cmpRules(a,b){
   const s = cmpSections({id: a.section_id},{id: b.section_id});
@@ -68,4 +72,3 @@ function derive(dir){
 const base = path.resolve(process.argv[2] || path.join(process.cwd(), 'methodologies'));
 let n = 0; for (const d of listDirs(base)) if (derive(d)) n++;
 console.log(`OK: derived lean JSON for ${n} method folder(s).`);
-
