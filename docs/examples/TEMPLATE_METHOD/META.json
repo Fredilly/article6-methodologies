@@ -4,11 +4,17 @@
     "sections_json_sha256": "c9962e30eec86b5273be09f6470a585f0fb67c6077f581f31b2711935a9da9b6"
   },
   "automation": {
-    "repo_commit": "991ca3806a5ed3b5562ae53b963986cebd9f3f5d",
-    "scripts_manifest_sha256": "3663d11742ac6659841596dd1897d752ece6b3a7a4125f795c363dd17fccbc50"
+    "repo_commit": "9111a7b96688520493e9095019cd5d1e07ca7adb",
+    "scripts_manifest_sha256": "09f802114b89927c492ad5d6dd6a6991272c1be88fa6c508eb76ff8e349bbc2e"
   },
   "references": {
-    "tools": []
+    "tools": [
+      {
+        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL14_v4-2.pdf",
+        "sha256": "dea000078bf02005f4a9852d06295a0800ad666f05971615916a38e08aea04ee",
+        "kind": "pdf"
+      }
+    ]
   }
 }
 
