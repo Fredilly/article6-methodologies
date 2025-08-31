@@ -10,11 +10,10 @@
   "references": {
     "tools": [
       {
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL14_v4-2.pdf",
-        "sha256": "dea000078bf02005f4a9852d06295a0800ad666f05971615916a38e08aea04ee",
-        "kind": "pdf"
+        "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331"
       }
     ]
   }
 }
-
