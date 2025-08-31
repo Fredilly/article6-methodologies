@@ -1,7 +1,11 @@
 {
   "audit_hashes": {
-    "rules_json_sha256": "",
-    "sections_json_sha256": ""
+    "rules_json_sha256": "e1095bab5e6ca59b7c8d3fa2b164bfe7f831c9eb6c81a66bff22811276e35d99",
+    "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
+  },
+  "automation": {
+    "repo_commit": "9111a7b96688520493e9095019cd5d1e07ca7adb",
+    "scripts_manifest_sha256": "09f802114b89927c492ad5d6dd6a6991272c1be88fa6c508eb76ff8e349bbc2e"
   },
   "domain": "Stub",
   "files": [
@@ -19,7 +23,13 @@
     "author": "Fred Egbuedike"
   },
   "references": {
-    "tools": []
+    "tools": [
+      {
+        "kind": "pdf",
+        "path": "tools/GoldStandard/GS-00XX/v1-0/source.pdf",
+        "sha256": "5a838678058f6de375e8635b5f2fea47a4e5f07cb1a882a44b10f39abc6f34ff"
+      }
+    ]
   },
   "standard": "Stub",
   "title": "Stub methodology",
