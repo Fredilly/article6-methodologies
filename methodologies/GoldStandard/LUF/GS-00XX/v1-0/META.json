@@ -4,8 +4,8 @@
     "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
   },
   "automation": {
-    "repo_commit": "3699eb8d3d0d7aee2063952dd6a32324809f3d26",
-    "scripts_manifest_sha256": "eea85b4f4b6001af3ce7283eeb4be41590584804bc1c20d20f794f2b5f8ade67"
+    "repo_commit": "e04bcdea594172397ccc19eac70c49d9728ce4f2",
+    "scripts_manifest_sha256": "a20a42978ccda02277365c216fa1e2f48c9ee1136db913c511cfee7a37e73776"
   },
   "domain": "Stub",
   "files": [
@@ -25,9 +25,11 @@
   "references": {
     "tools": [
       {
+        "doc": "GoldStandard/GS-00XX@v1.0",
+        "kind": "pdf",
         "path": "tools/GoldStandard/GS-00XX/v1-0/source.pdf",
         "sha256": "5a838678058f6de375e8635b5f2fea47a4e5f07cb1a882a44b10f39abc6f34ff",
-        "kind": "pdf"
+        "size": 45
       }
     ]
   },
