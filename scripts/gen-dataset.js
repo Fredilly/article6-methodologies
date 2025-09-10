@@ -99,9 +99,12 @@ function buildSectionRetrieval(sourceDirs) {
 }
 
 function listMethodDirs() {
-  // For MVP, include only AR-AMS0007/v03-1
-  const d = path.join(REPO, 'methodologies', 'UNFCCC', 'Forestry', 'AR-AMS0007', 'v03-1');
-  return [d].filter(p => fs.existsSync(p));
+  // MVP scope: include AR-AMS0007/v03-1 and AR-AMS0003/v01-0
+  const dirs = [
+    path.join(REPO, 'methodologies', 'UNFCCC', 'Forestry', 'AR-AMS0007', 'v03-1'),
+    path.join(REPO, 'methodologies', 'UNFCCC', 'Forestry', 'AR-AMS0003', 'v01-0'),
+  ];
+  return dirs.filter(p => fs.existsSync(p));
 }
 
 function hashDatasets(files) {
