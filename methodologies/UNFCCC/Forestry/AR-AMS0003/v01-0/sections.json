@@ -1,3 +1,24 @@
 {
-  "sections": []
+  "sections": [
+    {
+      "id": "S-1",
+      "title": "Scope and applicability"
+    },
+    {
+      "id": "S-2",
+      "title": "Definitions"
+    },
+    {
+      "id": "S-3",
+      "title": "Project boundary and carbon pools"
+    },
+    {
+      "id": "S-4",
+      "title": "Baseline scenario and emissions"
+    },
+    {
+      "id": "S-5",
+      "title": "Project scenario and removals"
+    }
+  ]
 }

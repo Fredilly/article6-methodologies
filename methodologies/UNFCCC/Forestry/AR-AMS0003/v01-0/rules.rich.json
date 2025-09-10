@@ -1,1 +1,232 @@
-[]
+[
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001",
+    "inputs": [],
+    "logic": "ELIGIBLE if all predicates are true.",
+    "refs": {
+      "doc": "UNFCCC/AR-AMS0003@v01.0",
+      "locators": [
+        {
+          "hint": "Section 1",
+          "quote": "Eligibility",
+          "type": "text_anchor"
+        }
+      ],
+      "sections": [
+        "S-1"
+      ],
+      "tools": []
+    },
+    "summary": "Activity eligible when predicates satisfied.",
+    "type": "eligibility",
+    "when": [
+      "Small-scale A/R"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0010",
+    "inputs": [],
+    "logic": "CF = 0.47",
+    "refs": {
+      "doc": "UNFCCC/AR-AMS0003@v01.0",
+      "locators": [
+        {
+          "hint": "Section 5",
+          "quote": "carbon fraction",
+          "type": "text_anchor"
+        }
+      ],
+      "sections": [
+        "S-5"
+      ],
+      "tools": []
+    },
+    "summary": "Default carbon fraction for biomass.",
+    "type": "parameter",
+    "when": [
+      "Parameter CF required"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0020",
+    "inputs": [
+      {
+        "name": "AGB_dm",
+        "unit": "t d.m. ha-1"
+      },
+      {
+        "name": "CF",
+        "unit": "t C / t d.m."
+      }
+    ],
+    "logic": "C_AGB_t = AGB_dm * CF",
+    "refs": {
+      "doc": "UNFCCC/AR-AMS0003@v01.0",
+      "locators": [
+        {
+          "hint": "Section 5",
+          "quote": "AGB",
+          "type": "text_anchor"
+        }
+      ],
+      "sections": [
+        "S-5"
+      ],
+      "tools": []
+    },
+    "summary": "C_AGB_t = AGB_dm * CF",
+    "type": "equation",
+    "when": [
+      "Compute carbon in AGB"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0030",
+    "inputs": [
+      {
+        "name": "C_pool",
+        "unit": "t C ha-1"
+      }
+    ],
+    "logic": "CO2e_pool = C_pool * 44/12",
+    "refs": {
+      "doc": "UNFCCC/AR-AMS0003@v01.0",
+      "locators": [
+        {
+          "hint": "Section 5",
+          "quote": "44/12",
+          "type": "text_anchor"
+        }
+      ],
+      "sections": [
+        "S-5"
+      ],
+      "tools": []
+    },
+    "summary": "CO2e_pool = C_pool * 44/12",
+    "type": "equation",
+    "when": [
+      "Convert carbon to CO2e"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0040",
+    "inputs": [
+      {
+        "name": "leakage",
+        "unit": "t CO2e ha-1 yr-1"
+      }
+    ],
+    "logic": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage",
+    "refs": {
+      "doc": "UNFCCC/AR-AMS0003@v01.0",
+      "locators": [
+        {
+          "hint": "Section 5",
+          "quote": "Net removals",
+          "type": "text_anchor"
+        }
+      ],
+      "sections": [
+        "S-5"
+      ],
+      "tools": []
+    },
+    "summary": "Net_project = Σ pools - leakage",
+    "type": "calc",
+    "when": [
+      "Annual net GHG removals"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0050",
+    "inputs": [
+      {
+        "name": "L_AS",
+        "unit": "t CO2e ha-1 yr-1"
+      },
+      {
+        "name": "L_MD",
+        "unit": "t CO2e ha-1 yr-1"
+      }
+    ],
+    "logic": "leakage = L_AS + L_MD",
+    "refs": {
+      "doc": "UNFCCC/AR-AMS0003@v01.0",
+      "locators": [
+        {
+          "hint": "Section 4",
+          "quote": "leakage",
+          "type": "text_anchor"
+        }
+      ],
+      "sections": [
+        "S-4"
+      ],
+      "tools": []
+    },
+    "summary": "leakage = L_AS + L_MD",
+    "type": "leakage",
+    "when": [
+      "Leakage accounting"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0060",
+    "inputs": [
+      {
+        "name": "RevisitInterval",
+        "unit": "yr"
+      }
+    ],
+    "logic": "Revisit plots every RevisitInterval years using consistent protocol.",
+    "refs": {
+      "doc": "UNFCCC/AR-AMS0003@v01.0",
+      "locators": [
+        {
+          "hint": "Section 5",
+          "quote": "monitoring",
+          "type": "text_anchor"
+        }
+      ],
+      "sections": [
+        "S-5"
+      ],
+      "tools": []
+    },
+    "summary": "Revisit plots at set intervals.",
+    "type": "monitoring",
+    "when": [
+      "Permanent plots established"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0070",
+    "inputs": [
+      {
+        "name": "RelativePrecision",
+        "unit": "%"
+      }
+    ],
+    "logic": "If RelativePrecision > 10 then apply discount per table.",
+    "refs": {
+      "doc": "UNFCCC/AR-AMS0003@v01.0",
+      "locators": [
+        {
+          "hint": "Section 5",
+          "quote": "precision",
+          "type": "text_anchor"
+        }
+      ],
+      "sections": [
+        "S-5"
+      ],
+      "tools": []
+    },
+    "summary": "Apply discount if precision threshold exceeded.",
+    "type": "uncertainty",
+    "when": [
+      "Precision check"
+    ]
+  }
+]

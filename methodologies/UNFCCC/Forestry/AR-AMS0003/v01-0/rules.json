@@ -1,3 +1,68 @@
 {
-  "rules": []
+  "rules": [
+    {
+      "id": "R-1-0001",
+      "section_id": "S-1",
+      "tags": [
+        "eligibility"
+      ],
+      "text": "Activity eligible when predicates satisfied."
+    },
+    {
+      "id": "R-1-0050",
+      "section_id": "S-4",
+      "tags": [
+        "leakage"
+      ],
+      "text": "leakage = L_AS + L_MD"
+    },
+    {
+      "id": "R-1-0010",
+      "section_id": "S-5",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Default carbon fraction for biomass."
+    },
+    {
+      "id": "R-1-0020",
+      "section_id": "S-5",
+      "tags": [
+        "equation"
+      ],
+      "text": "C_AGB_t = AGB_dm * CF"
+    },
+    {
+      "id": "R-1-0030",
+      "section_id": "S-5",
+      "tags": [
+        "equation"
+      ],
+      "text": "CO2e_pool = C_pool * 44/12"
+    },
+    {
+      "id": "R-1-0040",
+      "section_id": "S-5",
+      "tags": [
+        "calc"
+      ],
+      "text": "Net_project = Σ pools - leakage"
+    },
+    {
+      "id": "R-1-0060",
+      "section_id": "S-5",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Revisit plots at set intervals."
+    },
+    {
+      "id": "R-1-0070",
+      "section_id": "S-5",
+      "tags": [
+        "uncertainty"
+      ],
+      "text": "Apply discount if precision threshold exceeded."
+    }
+  ]
 }
