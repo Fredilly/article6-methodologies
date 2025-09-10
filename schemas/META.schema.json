@@ -25,6 +25,9 @@
           "items": {
             "additionalProperties": false,
             "properties": {
+              "doc": {
+                "type": "string"
+              },
               "kind": {
                 "type": "string"
               },
@@ -33,6 +36,15 @@
               },
               "sha256": {
                 "type": "string"
+              },
+              "size": {
+                "type": "integer"
+              },
+              "url": {
+                "type": [
+                  "string",
+                  "null"
+                ]
               }
             },
             "required": [

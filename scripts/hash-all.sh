@@ -27,8 +27,9 @@ EOF2
   if [ -d "$tools_dir" ]; then
     tools_json=$(find "$tools_dir" -type f | sort | while read -r f; do
       sha=$(hash_file "$f")
+      size=$(wc -c < "$f")
       kind="${f##*.}"
-      printf '{"path":"%s","sha256":"%s","kind":"%s"}\n' "$f" "$sha" "$kind"
+      printf '{"path":"%s","sha256":"%s","size":%s,"kind":"%s"}\n' "$f" "$sha" "$size" "$kind"
     done | jq -s '.')
   fi
   tmp="$meta_file.tmp"
@@ -40,7 +41,15 @@ EOF2
     --arg commit "$repo_commit" \
     '.audit_hashes.sections_json_sha256 = $sections |
      .audit_hashes.rules_json_sha256 = $rules |
-     .references.tools = $tools |
+     .references.tools = ((.references.tools // []) |
+       reduce $tools[] as $t (
+         .;
+         if (map(.path == $t.path) | any) then
+           map(if .path == $t.path then .sha256 = $t.sha256 | .size = $t.size else . end)
+         else
+           . + [$t]
+         end
+       ) | sort_by(.path)) |
      .automation = (.automation // {}) |
      .automation.scripts_manifest_sha256 = $manifest |
      .automation.repo_commit = $commit' \
