@@ -22,9 +22,12 @@ function loadJSON(p) { return JSON.parse(fs.readFileSync(p, 'utf8')); }
 function stableSplit(id) { const h = sha256(Buffer.from(String(id))); return (parseInt(h.slice(0,8),16) % 5) === 0 ? 'val' : 'train'; }
 
 function listMethodDirs() {
-  // MVP scope: UNFCCC/Forestry/AR-AMS0007/v03-1
-  const d = path.join(REPO, 'methodologies', 'UNFCCC', 'Forestry', 'AR-AMS0007', 'v03-1');
-  return [d].filter(p => fs.existsSync(p));
+  // MVP scope: include AR-AMS0007/v03-1 and AR-AMS0003/v01-0
+  const dirs = [
+    path.join(REPO, 'methodologies', 'UNFCCC', 'Forestry', 'AR-AMS0007', 'v03-1'),
+    path.join(REPO, 'methodologies', 'UNFCCC', 'Forestry', 'AR-AMS0003', 'v01-0'),
+  ];
+  return dirs.filter(p => fs.existsSync(p));
 }
 
 function uniqSorted(arr) { return Array.from(new Set(arr.filter(Boolean))).sort(); }
