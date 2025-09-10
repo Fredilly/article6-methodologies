@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-09-10T15:32:52Z",
-  "git_commit": "b9c7318eb725ded786b92b27103e41404f85fd11",
+  "generated_at": "2025-09-10T16:40:09Z",
+  "git_commit": "f51dde9f906f70fc3361090cb610cddf6b7d40bb",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "scripts/assert-offline.sh", "sha256": "b7f69664148270ded298a4d9fb638075a21063ad7fc8e7c8b3e2d49ed88bcffd" },
@@ -21,7 +21,7 @@
     { "path": "scripts/gen-dataset.js", "sha256": "47b58f5dc13beded4ece8a74029827669945ae5140b2dfec4a8f19894d3cc753" },
     { "path": "scripts/gen-method.sh", "sha256": "0893d49e0cc03508e3c90f7db6eb7be6be0ed37a02059f0776663b579538f089" },
     { "path": "scripts/gen-registry.js", "sha256": "ed5e27b27860ae358c20c1d0e2cd15c678cd021a50ef295ff0234603f00c8b0e" },
-    { "path": "scripts/hash-all.sh", "sha256": "f5bf16e64c9e707c9223e1b6de4301966c4d48368a15673bb7033303e870a9a0" },
+    { "path": "scripts/hash-all.sh", "sha256": "c356ab79cc1752cdc126d89f856190bed118a0bd1ba6c6cf5774333bc215fe1e" },
     { "path": "scripts/hash-scripts.sh", "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3" },
     { "path": "scripts/install-vendored-ajv.sh", "sha256": "58d98426bb0dc94f73e53d535495d629df276e876534ffb2d8227557f4ccfc2c" },
     { "path": "scripts/json-canonical-check.sh", "sha256": "c35dae1d9dd7efe8f56dc56e9db396f6f147f9788cd7bbd2726c4d7a358b9d17" },
@@ -32,10 +32,10 @@
     { "path": "scripts/validate-offline.js", "sha256": "1dcb46c0de25397a3d6ada0f696133e83422064953c0d995dc9c41492980f3df" },
     { "path": "scripts/validate-offline.sh", "sha256": "e9c63cdd27a80bad26e8163702a32aa5c229e8cdbae535e2f5f72f93ceade260" },
     { "path": "scripts/validators/.gitkeep", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" },
-    { "path": "scripts/validators/bundle.cjs", "sha256": "d93e76f779bdea1b78987f96ab1626161bb20dee6f06f3d77cc1f6d94f811420" },
-    { "path": "scripts/validators/meta.cjs", "sha256": "0821cb018f346e2ecdf1b0cd5317d56809b775e4ef19d5b34ee59c31d8bfe4aa" },
+    { "path": "scripts/validators/bundle.cjs", "sha256": "45c98b18ef97a430195f8362f2fe3bb623e68b6e330e821f9ebc3dd5376ff53f" },
+    { "path": "scripts/validators/meta.cjs", "sha256": "32062eae3938280a4ecbfb8b50769b5b0ed8af54fa0305ec28f38d3d41a7559b" },
     { "path": "scripts/validators/rules.cjs", "sha256": "8b5c98029894a60203acd331faaf15d896fa4fe154e7772e9775b51af3c33645" },
-    { "path": "scripts/validators/schemas.sha256", "sha256": "45da45eaee3a5fcae501e0bb1b435bffe09f190128cee25b20897b09475579ea" },
+    { "path": "scripts/validators/schemas.sha256", "sha256": "78af21bd40faf6a35ac2d203b6101d69df8274cef6ea649c9eaa27ec00b7f71f" },
     { "path": "scripts/validators/sections.cjs", "sha256": "0a1144951376e8f8c94c8e18500da9c5838bc20f114de8ebb5ca7eb3f2f95602" },
     { "path": "scripts/verify-generation.sh", "sha256": "7d5f2d839b26d6888083c95746f3ff5609d9ab4b17797dd6be801c06b4774c55" }
   ]

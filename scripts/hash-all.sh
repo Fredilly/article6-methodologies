@@ -29,7 +29,8 @@ EOF2
       sha=$(hash_file "$f")
       size=$(wc -c < "$f")
       kind="${f##*.}"
-      printf '{"path":"%s","sha256":"%s","size":%s,"kind":"%s"}\n' "$f" "$sha" "$size" "$kind"
+      doc=$(printf "%s\n" "$f" | awk -F'/' '{org=$2; file=$NF; if (match(file, /^AR-[A-Z0-9]+_v[0-9]+(-[0-9]+)*\.(pdf|docx)$/)) {split(file,a,"_v"); tool=a[1]; ver=a[2]; sub(/\.(pdf|docx)$/,"",ver); gsub(/-/,".",ver); printf "%s/%s@v%s", org, tool, ver} else if (file ~ /(source\.(pdf|docx)|meth_booklet\.pdf)$/) {method=$3; ver=$4; gsub(/-/,".",ver); printf "%s/%s@%s", org, method, ver}}')
+      printf '{"doc":"%s","path":"%s","sha256":"%s","size":%s,"kind":"%s"}\n' "$doc" "$f" "$sha" "$size" "$kind"
     done | jq -s '.')
   fi
   tmp="$meta_file.tmp"
@@ -45,7 +46,7 @@ EOF2
        reduce $tools[] as $t (
          .;
          if (map(.path == $t.path) | any) then
-           map(if .path == $t.path then .sha256 = $t.sha256 | .size = $t.size else . end)
+           map(if .path == $t.path then .sha256 = $t.sha256 | .size = $t.size | .doc = (if (.doc // "") == "" then $t.doc else .doc end) | .kind = (.kind // $t.kind) else . end)
          else
            . + [$t]
          end
