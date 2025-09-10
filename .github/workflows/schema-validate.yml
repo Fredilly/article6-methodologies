@@ -13,6 +13,8 @@ jobs:
         with:
           node-version: '20'
       # jq not required; use Node-based checks only
+      - name: Assert tool hashes (no drift)
+        run: scripts/assert-tool-hashes.sh
       - name: Derive lean from rich (deterministic)
         run: |
           node scripts/derive-lean-from-rich.js
@@ -21,11 +23,11 @@ jobs:
             git --no-pager diff -- methodologies/**/sections.json methodologies/**/rules.json | sed -n '1,200p';
             exit 1;
           fi
-      - name: Lean generation verifier
-        run: scripts/verify-generation.sh
+      - name: Lean drift gate
+        run: scripts/check-lean-drift.sh
       - name: Offline schema validation
         run: node scripts/validate-offline.js
-      - name: Meta-driven source hash check
+      - name: Meta-driven source hash check (redundant gate)
         run: node scripts/check-source-hash.js
       - name: Trio + registry integrity
         run: node scripts/check-trio-and-registry.js
