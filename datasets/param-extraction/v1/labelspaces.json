@@ -1,0 +1,28 @@
+{
+  "variables": [
+    "AGB_dm",
+    "CF",
+    "C_pool",
+    "C_t1",
+    "C_t2",
+    "L_AS",
+    "L_MD",
+    "ShrubCrownCover_i",
+    "T",
+    "dCO2e_AGB",
+    "dCO2e_BGB",
+    "dCO2e_DOM",
+    "dCO2e_Litter",
+    "dCO2e_SOC",
+    "leakage"
+  ],
+  "units": [
+    "fraction",
+    "t C / t d.m.",
+    "t C ha-1",
+    "t CO2e",
+    "t CO2e ha-1 yr-1",
+    "t d.m. ha-1",
+    "yr"
+  ]
+}

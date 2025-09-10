@@ -1,0 +1,8 @@
+{"qid":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0010","text":"Default CF = 0.47 t C per t d.m. (trees and shrubs).","answers":["S-1"]}
+{"qid":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0030","text":"If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.","answers":["S-1"]}
+{"qid":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0040","text":"C_AGB_t = AGB_dm * CF","answers":["S-1"]}
+{"qid":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0045","text":"CO2e_pool = C_pool * 44/12","answers":["S-1"]}
+{"qid":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0050","text":"Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage","answers":["S-1"]}
+{"qid":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0060","text":"leakage = L_AS + L_MD","answers":["S-1"]}
+{"qid":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0090","text":"If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.","answers":["S-1"]}
+{"qid":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0100","text":"ΔC_year = (C_t2 - C_t1) / T","answers":["S-1"]}
