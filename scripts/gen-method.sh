@@ -70,7 +70,7 @@ mapfile -t DETECTED < <(strings "$SRC" 2>/dev/null | grep -Eo 'AR-TOOL[0-9]{2}' 
 
 # If rules.rich.json has no refs at all, seed minimal refs from DETECTED (version-agnostic)
 if ! jq -e '.rules[]? | select(.refs? and (.refs|length>0))' "$RICH_RULES" >/dev/null; then
-  refs='[]'; for t in "${DETECTED[@]}"; do refs=$(jq -c --arg d "UNFCCC/${t}@any" '. + [{"doc":$d}]' <<<"$refs"); done
+  refs='[]'; for t in "${DETECTED[@]}"; do refs=$(jq -c --arg d "UNFCCC/${t}@any" --arg q "$t" '. + [{"doc":$d, "locators":[{"type":"text_anchor","quote":$q}]}]' <<<"$refs"); done
   tmp="$(mktemp)"
   jq --argjson R "$refs" '.rules = (.rules | map(.refs = (.refs // $R)))' "$RICH_RULES" > "$tmp"
   if [[ $dry -eq 1 ]]; then echo "→ would inject detected refs into: $RICH_RULES"; rm -f "$tmp"; else mv "$tmp" "$RICH_RULES"; echo "✓ refs injected (once): $RICH_RULES"; fi

@@ -46,7 +46,13 @@ EOF2
        reduce $tools[] as $t (
          .;
          if (map(.path == $t.path) | any) then
-           map(if .path == $t.path then .sha256 = $t.sha256 | .size = $t.size | .doc = (if (.doc // "") == "" then $t.doc else .doc end) | .kind = (.kind // $t.kind) else . end)
+           map(if .path == $t.path then
+                 .sha256 = $t.sha256
+               | .size = $t.size
+               | .doc = (if (.doc // "") == "" then $t.doc else .doc end)
+               | .url = (.url // null)
+               | .kind = (.kind // $t.kind)
+               else . end)
          else
            . + [$t]
          end
