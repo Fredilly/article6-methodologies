@@ -1,0 +1,2 @@
+{"id":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0070","text":"Revisit plots every RevisitInterval years using consistent mensuration protocol.","variables":["PlotCount","RevisitInterval"],"units":["count","yr"]}
+{"id":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0080","text":"If RelativePrecision > 10 then apply uncertainty discount per U-table.","variables":["RelativePrecision"],"units":["%"]}

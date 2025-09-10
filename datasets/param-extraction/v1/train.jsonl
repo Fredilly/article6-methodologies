@@ -1,0 +1,6 @@
+{"id":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0040","text":"C_AGB_t = AGB_dm * CF","variables":["AGB_dm","CF"],"units":["t C / t d.m.","t d.m. ha-1"]}
+{"id":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0045","text":"CO2e_pool = C_pool * 44/12","variables":["C_pool"],"units":["t C ha-1"]}
+{"id":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0050","text":"Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage","variables":["dCO2e_AGB","dCO2e_BGB","dCO2e_DOM","dCO2e_Litter","dCO2e_SOC","leakage"],"units":["t CO2e ha-1 yr-1"]}
+{"id":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0060","text":"leakage = L_AS + L_MD","variables":["L_AS","L_MD"],"units":["t CO2e ha-1 yr-1"]}
+{"id":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0090","text":"If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.","variables":["ShrubCrownCover_i"],"units":["fraction"]}
+{"id":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0100","text":"ΔC_year = (C_t2 - C_t1) / T","variables":["C_t1","C_t2","T"],"units":["t CO2e","yr"]}

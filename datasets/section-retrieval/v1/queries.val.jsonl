@@ -1,0 +1,5 @@
+{"qid":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001","text":"ELIGIBLE if all predicates true; otherwise INELIGIBLE.","answers":["S-1"]}
+{"qid":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0020","text":"RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).","answers":["S-1"]}
+{"qid":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0070","text":"Revisit plots every RevisitInterval years using consistent mensuration protocol.","answers":["S-1"]}
+{"qid":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0080","text":"If RelativePrecision > 10 then apply uncertainty discount per U-table.","answers":["S-1"]}
+{"qid":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0110","text":"Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.","answers":["S-1"]}
