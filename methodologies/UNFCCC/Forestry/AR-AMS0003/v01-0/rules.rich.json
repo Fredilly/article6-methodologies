@@ -115,6 +115,16 @@
       "source_ref": "UNFCCC/AR-AMS0003@v01-0"
     },
     "refs": {
+      "locators": [
+        {
+          "hint": "C_AGB_t = AGB_dm * CF",
+          "pages": [
+            9
+          ],
+          "quote": "AGB",
+          "type": "text_anchor"
+        }
+      ],
       "sections": [
         "S-1"
       ],
@@ -145,6 +155,16 @@
       "source_ref": "UNFCCC/AR-AMS0003@v01-0"
     },
     "refs": {
+      "locators": [
+        {
+          "hint": "Conversion factor",
+          "pages": [
+            9
+          ],
+          "quote": "44/12",
+          "type": "text_anchor"
+        }
+      ],
       "sections": [
         "S-1"
       ],

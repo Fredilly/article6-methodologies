@@ -7,6 +7,9 @@
     "C_t2",
     "L_AS",
     "L_MD",
+    "PlotCount",
+    "RelativePrecision",
+    "RevisitInterval",
     "ShrubCrownCover_i",
     "T",
     "dCO2e_AGB",
@@ -17,6 +20,8 @@
     "leakage"
   ],
   "units": [
+    "%",
+    "count",
     "fraction",
     "t C / t d.m.",
     "t C ha-1",
