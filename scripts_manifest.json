@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-09-11T07:00:32Z",
-  "git_commit": "738b10fad5523a19c6ff5fe0b578305bc6098774",
+  "generated_at": "2025-09-11T07:25:20Z",
+  "git_commit": "4af9145667643e57dec531f146e32879889ce8d3",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "scripts/.node/node_modules/.package-lock.json", "sha256": "16314bb5d82087952ada77365dd282c93547d84e11b57595834dc9fde89bf7f4" },
@@ -558,7 +558,7 @@
     { "path": "scripts/check-workflows-supplychain.js", "sha256": "733f4271adf7caf6bc64d616b4a96f333b6a9e1f6754827b7fedf36a7c15e8d0" },
     { "path": "scripts/ci-run-tests.sh", "sha256": "9fe1d8bce3c97fd0c4ed6667f520b41b178372019c501810f2df5480898e229a" },
     { "path": "scripts/compile-audit.js", "sha256": "917ee7d5fabef37ec7d4bfa9503ac498da225426bf5fbd05fd710d35699a1a14" },
-    { "path": "scripts/compile-validators.js", "sha256": "0d6d8454097445711c1a0f974061f7f426522b8c1e1c0b61998cfa1c2237949b" },
+    { "path": "scripts/compile-validators.js", "sha256": "9d20b74d393d47e9d38aeb7208768a8ee0a1ae53a5f37599df5869bf9fc4f275" },
     { "path": "scripts/derive-lean-from-rich.js", "sha256": "522e798bcbbf3e8261454dc104a4287b774f1157b890cf798571571698d608b9" },
     { "path": "scripts/fill-provenance.js", "sha256": "ada54506b8554fd101c56541768bbec912d9050842734c2f97a153b9d067b221" },
     { "path": "scripts/gen-dataset-params.js", "sha256": "befe8d1bdece5b2738284c2b60598e676f7f910c605ffb53fbb7a07c3342414f" },
@@ -579,11 +579,13 @@
     { "path": "scripts/validate-offline.js", "sha256": "1dcb46c0de25397a3d6ada0f696133e83422064953c0d995dc9c41492980f3df" },
     { "path": "scripts/validate-offline.sh", "sha256": "e9c63cdd27a80bad26e8163702a32aa5c229e8cdbae535e2f5f72f93ceade260" },
     { "path": "scripts/validators/.gitkeep", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" },
-    { "path": "scripts/validators/bundle.cjs", "sha256": "45c98b18ef97a430195f8362f2fe3bb623e68b6e330e821f9ebc3dd5376ff53f" },
-    { "path": "scripts/validators/meta.cjs", "sha256": "32062eae3938280a4ecbfb8b50769b5b0ed8af54fa0305ec28f38d3d41a7559b" },
-    { "path": "scripts/validators/rules.cjs", "sha256": "8b5c98029894a60203acd331faaf15d896fa4fe154e7772e9775b51af3c33645" },
-    { "path": "scripts/validators/schemas.sha256", "sha256": "a717a5516af237c4362b7d39c1f02c28b381860040ea6bdf6b96d131d7f0d760" },
-    { "path": "scripts/validators/sections.cjs", "sha256": "0a1144951376e8f8c94c8e18500da9c5838bc20f114de8ebb5ca7eb3f2f95602" },
+    { "path": "scripts/validators/bundle.cjs", "sha256": "19aa766e4ae33bec955f8bfee84cada5b014b52dbf28b623098d95dbbb481cc6" },
+    { "path": "scripts/validators/meta.cjs", "sha256": "1ee432e07bec9fc773b19b7cdce240961eb5c9239a1aba2b89be7828989cca95" },
+    { "path": "scripts/validators/rules.cjs", "sha256": "3c1d3334c34ff7f66ae95f79e38327ffd78cdecd270a926f7f85b6c5bb547ede" },
+    { "path": "scripts/validators/rules.rich.cjs", "sha256": "8f9598a0e72b36a59edbd30aa1b6ad01978e9278dbeafdace64a9c49ff770c7b" },
+    { "path": "scripts/validators/schemas.sha256", "sha256": "a619e7c485de44978af0a57fd7a74aa0e4f06eecdf84fd270bb4da991ae33ed3" },
+    { "path": "scripts/validators/sections.cjs", "sha256": "812eb20411226726a39cc64946de6089fda3ce81ef2c17ef169fb05f91dab4de" },
+    { "path": "scripts/validators/sections.rich.cjs", "sha256": "babd52dcc3c3d35b598066eade5f036faa590a4889f9495e09b8d95ab369500c" },
     { "path": "scripts/verify-generation.sh", "sha256": "7d5f2d839b26d6888083c95746f3ff5609d9ab4b17797dd6be801c06b4774c55" }
   ]
 }
