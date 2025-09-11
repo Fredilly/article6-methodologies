@@ -219,6 +219,16 @@
       "source_ref": "UNFCCC/AR-AMS0003@v01-0"
     },
     "refs": {
+      "locators": [
+        {
+          "hint": "Net_project = Σ pools - leakage",
+          "pages": [
+            10
+          ],
+          "quote": "Net removals",
+          "type": "text_anchor"
+        }
+      ],
       "sections": [
         "S-1"
       ],
