@@ -117,6 +117,16 @@
       "source_ref": "UNFCCC/AR-AMS0007@v03-1"
     },
     "refs": {
+      "locators": [
+        {
+          "hint": "C_AGB_t = AGB_dm * CF",
+          "pages": [
+            11
+          ],
+          "quote": "AGB",
+          "type": "text_anchor"
+        }
+      ],
       "sections": [
         "S-1"
       ],
@@ -147,6 +157,16 @@
       "source_ref": "UNFCCC/AR-AMS0007@v03-1"
     },
     "refs": {
+      "locators": [
+        {
+          "hint": "Stoichiometric conversion",
+          "pages": [
+            11
+          ],
+          "quote": "44/12",
+          "type": "text_anchor"
+        }
+      ],
       "sections": [
         "S-1"
       ],
@@ -201,6 +221,16 @@
       "source_ref": "UNFCCC/AR-AMS0007@v03-1"
     },
     "refs": {
+      "locators": [
+        {
+          "hint": "Net_project = ... - leakage",
+          "pages": [
+            12
+          ],
+          "quote": "Net removals",
+          "type": "text_anchor"
+        }
+      ],
       "sections": [
         "S-1"
       ],
