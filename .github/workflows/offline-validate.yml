@@ -1,0 +1,24 @@
+name: offline-validate
+on:
+  pull_request:
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          lfs: true
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '20'
+      - name: full pipeline
+        run: |
+          ./scripts/hash-all.sh
+          ./scripts/json-canonical-check.sh --fix
+          node scripts/derive-lean-from-rich.js
+          node scripts/lint-shape.js
+          node scripts/validate-offline.js
+          ./scripts/ci-run-tests.sh
+          node scripts/gen-dataset.js
+          node scripts/gen-dataset-params.js
+          git diff --exit-code

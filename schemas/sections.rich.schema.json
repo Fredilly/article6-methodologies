@@ -34,6 +34,10 @@
             "type": "string"
           }
         },
+        "required": [
+          "source_hash",
+          "source_ref"
+        ],
         "type": "object"
       },
       "title": {
@@ -43,7 +47,8 @@
     },
     "required": [
       "id",
-      "title"
+      "title",
+      "provenance"
     ],
     "type": "object"
   },

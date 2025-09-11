@@ -1,46 +1,18 @@
 {
   "audit_hashes": {
-    "rules_json_sha256": "e1095bab5e6ca59b7c8d3fa2b164bfe7f831c9eb6c81a66bff22811276e35d99",
-    "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
+    "rules_json_sha256": "49c8549f7f304d8ff1d305113686ebe5fc4169c434eab0b16e9013238c7dcc97",
+    "sections_json_sha256": "80a90d64d3f6ba202560d8f50d8243140a2f982157060e43d181f8a7860f690e"
   },
   "automation": {
-    "repo_commit": "e77ed0706416ebf91169160a320c95358eaa8a72",
-    "scripts_manifest_sha256": "285f8ec4b3b7b84297aa0b7ee2bcbd99a85361e0364f0879e72f6aef3fb87678"
+    "repo_commit": "594330017c80da4fa42ed06a9eae7a6cfaf3959b",
+    "scripts_manifest_sha256": "2136bb6e4c77823b2da64ae6b5fc3bb31867559e27bd916a72b69e60e58fba7d"
   },
-  "dependencies": [
-    {
-      "domain": "Forestry",
-      "method": "AR-AMS0007",
-      "standard": "UNFCCC",
-      "version": "v03-1"
-    }
-  ],
-  "domain": "Forestry",
-  "method": "AR-AMS0003",
-  "overrideRefs": [],
   "provenance": {
-    "author": "Fred Egbuedike",
-    "date": "2025-08-29T17:46:02.000Z",
-    "source_paths": [
-      "tools/UNFCCC/AR-AMS0003/v01-0/source.pdf",
-      "tools/UNFCCC/AR-AMS0003/v01-0/source.docx",
-      "tools/UNFCCC/AR-AMS0003/v01-0/meth_booklet.pdf"
-    ],
     "source_pdfs": [
       {
         "kind": "pdf",
-        "path": "tools/UNFCCC/AR-AMS0003/v01-0/meth_booklet.pdf",
-        "sha256": "b1e73eb883c139285d6a73ba3b645377b140ec860c482192e2158fcfd7b2ba07"
-      },
-      {
-        "kind": "docx",
-        "path": "tools/UNFCCC/AR-AMS0003/v01-0/source.docx",
-        "sha256": "2719958c1e2b8c29613d13d043dea73f9dd3fb4edbd848a921b81734339ac4b1"
-      },
-      {
-        "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0003/v01-0/source.pdf",
-        "sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b"
+        "sha256": "4218a9dbf4c018f08a60c6564f532a336ba79cf7c782e32161c81d4d6a6427f2"
       }
     ]
   },
@@ -50,29 +22,25 @@
         "doc": "UNFCCC/AR-AMS0003@v01.0",
         "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0003/v01-0/meth_booklet.pdf",
-        "sha256": "b1e73eb883c139285d6a73ba3b645377b140ec860c482192e2158fcfd7b2ba07",
-        "size": 6380796,
-        "url": null
+        "sha256": "395e1dc00779cc5e580ad90c97c7d2189d3021f64e9c4b9ac4fabad3523ac69c",
+        "size": 132
       },
       {
         "doc": "UNFCCC/AR-AMS0003@v01.0",
         "kind": "docx",
         "path": "tools/UNFCCC/AR-AMS0003/v01-0/source.docx",
         "sha256": "2719958c1e2b8c29613d13d043dea73f9dd3fb4edbd848a921b81734339ac4b1",
-        "size": 359579,
-        "url": null
+        "size": 359579
       },
       {
-        "doc": "UNFCCC/AR-AMS0003@v01.0",
+        "doc": "UNFCCC/AR-AMS0003@v01-0",
         "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0003/v01-0/source.pdf",
-        "sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b",
-        "size": 1049675,
+        "sha256": "4218a9dbf4c018f08a60c6564f532a336ba79cf7c782e32161c81d4d6a6427f2",
+        "size": 132,
         "url": null
       }
     ]
   },
-  "standard": "UNFCCC",
-  "title": "AR-AMS0003 — A/R on wetlands (Small-scale)",
-  "version": "v01-0"
+  "stage": "staging"
 }

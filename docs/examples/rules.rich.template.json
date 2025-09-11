@@ -1,19 +1,20 @@
+// checksum: 1c9babf57a1abebaa801bdd1a6bda38e2505a1e15aee04533ec22cb4aaf54bae
 [
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001",
+    "id": "{{METHOD_KEY_CANON}}.{{VERSION}}.R-1-0001",
     "inputs": [],
     "logic": "ELIGIBLE if all predicates true; otherwise INELIGIBLE.",
     "notes": "Keep each predicate atomic for auditability.",
     "provenance": {
-      "source_hash": "4218a9dbf4c018f08a60c6564f532a336ba79cf7c782e32161c81d4d6a6427f2",
-      "source_ref": "UNFCCC/AR-AMS0003@v01-0"
+      "source_hash": "{{PDF_SHA256}}",
+      "source_ref": "{{METHOD_KEY}}@{{VERSION}}"
     },
     "refs": {
       "sections": [
         "S-1"
       ],
       "tools": [
-        "UNFCCC/AR-AMS0003@v01-0"
+        "{{METHOD_KEY}}@{{VERSION}}"
       ]
     },
     "summary": "ELIGIBLE if all predicates true; otherwise INELIGIBLE.",
@@ -25,7 +26,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0010",
+    "id": "{{METHOD_KEY_CANON}}.{{VERSION}}.R-1-0010",
     "inputs": [],
     "logic": "Default CF = 0.47 t C per t d.m. (trees and shrubs).",
     "notes": "Overridable with transparent national defaults; record provenance.",
@@ -48,7 +49,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0020",
+    "id": "{{METHOD_KEY_CANON}}.{{VERSION}}.R-1-0020",
     "inputs": [],
     "logic": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).",
     "notes": "Defaults unless justified site-/species-specific data available.",
@@ -71,20 +72,20 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0030",
+    "id": "{{METHOD_KEY_CANON}}.{{VERSION}}.R-1-0030",
     "inputs": [],
     "logic": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",
     "notes": "Tie to section 'project-boundary-pools'. Use explicit zeroing rules elsewhere if tool gates apply.",
     "provenance": {
-      "source_hash": "4218a9dbf4c018f08a60c6564f532a336ba79cf7c782e32161c81d4d6a6427f2",
-      "source_ref": "UNFCCC/AR-AMS0003@v01-0"
+      "source_hash": "{{PDF_SHA256}}",
+      "source_ref": "{{METHOD_KEY}}@{{VERSION}}"
     },
     "refs": {
       "sections": [
         "S-1"
       ],
       "tools": [
-        "UNFCCC/AR-AMS0003@v01-0"
+        "{{METHOD_KEY}}@{{VERSION}}"
       ]
     },
     "summary": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",
@@ -94,7 +95,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0040",
+    "id": "{{METHOD_KEY_CANON}}.{{VERSION}}.R-1-0040",
     "inputs": [
       {
         "name": "AGB_dm",
@@ -111,15 +112,15 @@
     "logic": "C_AGB_t = AGB_dm * CF",
     "notes": "Maintain units explicitly. Output: t C ha-1.",
     "provenance": {
-      "source_hash": "4218a9dbf4c018f08a60c6564f532a336ba79cf7c782e32161c81d4d6a6427f2",
-      "source_ref": "UNFCCC/AR-AMS0003@v01-0"
+      "source_hash": "{{PDF_SHA256}}",
+      "source_ref": "{{METHOD_KEY}}@{{VERSION}}"
     },
     "refs": {
       "sections": [
         "S-1"
       ],
       "tools": [
-        "UNFCCC/AR-AMS0003@v01-0",
+        "{{METHOD_KEY}}@{{VERSION}}",
         "UNFCCC/AR-TOOL14@v4.2"
       ]
     },
@@ -130,7 +131,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0045",
+    "id": "{{METHOD_KEY_CANON}}.{{VERSION}}.R-1-0045",
     "inputs": [
       {
         "name": "C_pool",
@@ -141,15 +142,15 @@
     "logic": "CO2e_pool = C_pool * 44/12",
     "notes": "Stoichiometric conversion (44/12). Output: t CO2e ha-1.",
     "provenance": {
-      "source_hash": "4218a9dbf4c018f08a60c6564f532a336ba79cf7c782e32161c81d4d6a6427f2",
-      "source_ref": "UNFCCC/AR-AMS0003@v01-0"
+      "source_hash": "{{PDF_SHA256}}",
+      "source_ref": "{{METHOD_KEY}}@{{VERSION}}"
     },
     "refs": {
       "sections": [
         "S-1"
       ],
       "tools": [
-        "UNFCCC/AR-AMS0003@v01-0"
+        "{{METHOD_KEY}}@{{VERSION}}"
       ]
     },
     "summary": "CO2e_pool = C_pool * 44/12",
@@ -159,7 +160,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0050",
+    "id": "{{METHOD_KEY_CANON}}.{{VERSION}}.R-1-0050",
     "inputs": [
       {
         "name": "dCO2e_AGB",
@@ -195,15 +196,15 @@
     "logic": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage",
     "notes": "Zero excluded pools via boundary rules.",
     "provenance": {
-      "source_hash": "4218a9dbf4c018f08a60c6564f532a336ba79cf7c782e32161c81d4d6a6427f2",
-      "source_ref": "UNFCCC/AR-AMS0003@v01-0"
+      "source_hash": "{{PDF_SHA256}}",
+      "source_ref": "{{METHOD_KEY}}@{{VERSION}}"
     },
     "refs": {
       "sections": [
         "S-1"
       ],
       "tools": [
-        "UNFCCC/AR-AMS0003@v01-0"
+        "{{METHOD_KEY}}@{{VERSION}}"
       ]
     },
     "summary": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage",
@@ -213,7 +214,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0060",
+    "id": "{{METHOD_KEY_CANON}}.{{VERSION}}.R-1-0060",
     "inputs": [
       {
         "name": "L_AS",
@@ -247,7 +248,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0070",
+    "id": "{{METHOD_KEY_CANON}}.{{VERSION}}.R-1-0070",
     "inputs": [
       {
         "name": "PlotCount",
@@ -263,15 +264,15 @@
     "logic": "Revisit plots every RevisitInterval years using consistent mensuration protocol.",
     "notes": "Design variables explicit for QA/QC automation.",
     "provenance": {
-      "source_hash": "4218a9dbf4c018f08a60c6564f532a336ba79cf7c782e32161c81d4d6a6427f2",
-      "source_ref": "UNFCCC/AR-AMS0003@v01-0"
+      "source_hash": "{{PDF_SHA256}}",
+      "source_ref": "{{METHOD_KEY}}@{{VERSION}}"
     },
     "refs": {
       "sections": [
         "S-1"
       ],
       "tools": [
-        "UNFCCC/AR-AMS0003@v01-0"
+        "{{METHOD_KEY}}@{{VERSION}}"
       ]
     },
     "summary": "Revisit plots every RevisitInterval years using consistent mensuration protocol.",
@@ -281,7 +282,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0080",
+    "id": "{{METHOD_KEY_CANON}}.{{VERSION}}.R-1-0080",
     "inputs": [
       {
         "name": "RelativePrecision",
@@ -310,7 +311,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0090",
+    "id": "{{METHOD_KEY_CANON}}.{{VERSION}}.R-1-0090",
     "inputs": [
       {
         "name": "ShrubCrownCover_i",
@@ -339,7 +340,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0100",
+    "id": "{{METHOD_KEY_CANON}}.{{VERSION}}.R-1-0100",
     "inputs": [
       {
         "name": "C_t2",
@@ -378,7 +379,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0110",
+    "id": "{{METHOD_KEY_CANON}}.{{VERSION}}.R-1-0110",
     "inputs": [],
     "logic": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.",
     "notes": "Keep table-form sources consistent across strata.",

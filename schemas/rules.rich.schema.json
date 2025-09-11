@@ -31,7 +31,8 @@
             }
           },
           "required": [
-            "name"
+            "name",
+            "source"
           ],
           "type": "object"
         },
@@ -48,6 +49,7 @@
         ]
       },
       "notes": {
+        "minLength": 5,
         "type": "string"
       },
       "provenance": {
@@ -61,6 +63,10 @@
             "type": "string"
           }
         },
+        "required": [
+          "source_hash",
+          "source_ref"
+        ],
         "type": "object"
       },
       "refs": {
@@ -85,11 +91,13 @@
               "pattern": "^[A-Za-z0-9\\-/]+@v[0-9][A-Za-z0-9\\.-]*$",
               "type": "string"
             },
+            "minItems": 0,
             "type": "array"
           }
         },
         "required": [
-          "sections"
+          "sections",
+          "tools"
         ],
         "type": "object"
       },
@@ -121,6 +129,7 @@
           "minLength": 1,
           "type": "string"
         },
+        "minItems": 1,
         "type": "array"
       }
     },
@@ -128,7 +137,10 @@
       "id",
       "type",
       "refs",
-      "summary"
+      "summary",
+      "provenance",
+      "notes",
+      "when"
     ],
     "type": "object"
   },
