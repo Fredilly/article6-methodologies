@@ -21,4 +21,6 @@ jobs:
           ./scripts/ci-run-tests.sh
           node scripts/gen-dataset.js
           node scripts/gen-dataset-params.js
+          # Discard generated datasets to keep working tree clean for PRs
+          git checkout -- datasets || true
           git diff --exit-code
