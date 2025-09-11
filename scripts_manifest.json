@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-09-11T11:23:50Z",
-  "git_commit": "9b40e3c564036584a5b825ef80f6b1259ece171a",
+  "generated_at": "2025-09-11T15:15:13Z",
+  "git_commit": "5f4ad8761d24cb3e3511d2b1ef335c2a1e206918",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "scripts/.node/node_modules/.package-lock.json", "sha256": "16314bb5d82087952ada77365dd282c93547d84e11b57595834dc9fde89bf7f4" },
@@ -567,6 +567,7 @@
     { "path": "scripts/gen-registry.js", "sha256": "ed5e27b27860ae358c20c1d0e2cd15c678cd021a50ef295ff0234603f00c8b0e" },
     { "path": "scripts/hash-all.sh", "sha256": "a64cb13c1088f4c2ec2c2459a2fca7051bf8a1de9ae70bc84c76ef56803df1e1" },
     { "path": "scripts/hash-scripts.sh", "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3" },
+    { "path": "scripts/inject-anchors.js", "sha256": "0541bc16ebc87a2cb54c2b8b251e96d64512a6e8607ed70948195af4f6fc2953" },
     { "path": "scripts/install-vendored-ajv.sh", "sha256": "58d98426bb0dc94f73e53d535495d629df276e876534ffb2d8227557f4ccfc2c" },
     { "path": "scripts/json-canonical-check.sh", "sha256": "c35dae1d9dd7efe8f56dc56e9db396f6f147f9788cd7bbd2726c4d7a358b9d17" },
     { "path": "scripts/lint-shape.js", "sha256": "0a321724887eb1f25ba03d40cb9f802e6dff7c0ee479de6c3f09fe61f6eec7eb" },

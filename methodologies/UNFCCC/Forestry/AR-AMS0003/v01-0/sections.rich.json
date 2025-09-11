@@ -5,6 +5,18 @@
       "source_hash": "b1e73eb883c139285d6a73ba3b645377b140ec860c482192e2158fcfd7b2ba07",
       "source_ref": "UNFCCC/AR-AMS0003@v01-0"
     },
+    "refs": {
+      "locators": [
+        {
+          "hint": "Scope and applicability",
+          "pages": [
+            2
+          ],
+          "quote": "Scope",
+          "type": "text_anchor"
+        }
+      ]
+    },
     "title": "Scope and applicability"
   },
   {
@@ -36,6 +48,18 @@
     "provenance": {
       "source_hash": "b1e73eb883c139285d6a73ba3b645377b140ec860c482192e2158fcfd7b2ba07",
       "source_ref": "UNFCCC/AR-AMS0003@v01-0"
+    },
+    "refs": {
+      "locators": [
+        {
+          "hint": "Removals and equations",
+          "pages": [
+            8
+          ],
+          "quote": "Project scenario",
+          "type": "text_anchor"
+        }
+      ]
     },
     "title": "Project scenario and net GHG removals"
   },
