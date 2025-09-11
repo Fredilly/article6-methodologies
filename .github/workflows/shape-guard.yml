@@ -1,0 +1,32 @@
+name: shape-guard
+on:
+  pull_request:
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          lfs: true
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '20'
+      - name: run checks
+        run: |
+          ./scripts/json-canonical-check.sh --fix
+          node scripts/derive-lean-from-rich.js
+          node scripts/lint-shape.js
+          node scripts/validate-offline.js
+          git diff --exit-code
+  sync-examples:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: sync
+        run: |
+          bash scripts/sync-examples.sh
+          if ! git diff --quiet -- docs/examples; then
+            echo 'docs/examples out of sync; run scripts/sync-examples.sh';
+            git --no-pager diff -- docs/examples | head -n 200;
+            exit 1;
+          fi

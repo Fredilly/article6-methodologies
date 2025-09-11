@@ -4,9 +4,18 @@
 const fs = require('fs');
 const path = require('path');
 
-const Ajv = require('ajv');
-const addFormats = require('ajv-formats');
-const standaloneCode = require('ajv/dist/standalone').default;
+let Ajv, addFormats, standaloneCode;
+try {
+  Ajv = require('ajv');
+  addFormats = require('ajv-formats');
+  standaloneCode = require('ajv/dist/standalone').default;
+} catch (e) {
+  const ROOT_DIR = path.resolve(__dirname, '..');
+  const VENDOR = path.join(ROOT_DIR, 'vendor', 'ajv-cli', 'node_modules');
+  Ajv = require(path.join(VENDOR, 'ajv'));
+  addFormats = require(path.join(VENDOR, 'ajv-formats'));
+  standaloneCode = require(path.join(VENDOR, 'ajv', 'dist', 'standalone')).default;
+}
 
 const ROOT = path.resolve(__dirname, '..');
 const SCHEMAS = {

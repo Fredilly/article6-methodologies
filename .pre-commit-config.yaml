@@ -1,0 +1,8 @@
+repos:
+- repo: local
+  hooks:
+  - id: shape
+    name: shape
+    entry: bash -c './scripts/json-canonical-check.sh --fix && node scripts/derive-lean-from-rich.js && node scripts/lint-shape.js && node scripts/validate-offline.js'
+    language: system
+    pass_filenames: false
