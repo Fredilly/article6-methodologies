@@ -18,7 +18,8 @@
     "dataset:sections": "node scripts/gen-dataset.js section-retrieval",
     "eval:sections:bm25": "node scripts/baselines/bm25-retrieval.js datasets/section-retrieval/v1",
     "dataset:params": "node scripts/gen-dataset-params.js",
-    "eval:params:tfidf": "node scripts/baselines/param-extraction-tfidf.js"
+    "eval:params:tfidf": "node scripts/baselines/param-extraction-tfidf.js",
+    "eval:params:linear": "node scripts/baselines/param-extraction-linear.js"
   },
   "dependencies": {
     "fast-deep-equal": "file:vendor/npm/fast-deep-equal-3.1.3.tgz",
