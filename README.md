@@ -22,6 +22,27 @@ See RULESET.md for conventions and CI guardrails.
 3. Commit the changes.
 4. CI validates JSON, schemas, and registry consistency.
 
+## Baselines & CLI (Offline, Deterministic)
+
+- Section retrieval (BM25):
+  - Build dataset: `npm run dataset:sections`
+  - Evaluate: `npm run eval:sections:bm25`
+  - Example metrics (current corpus): `acc@1≈0.6250`, `mrr@5≈0.7333`
+
+- Parameter/units extraction (TF‑IDF/Linear):
+  - Build dataset: `npm run dataset:params`
+  - Evaluate: `npm run eval:params:linear`
+  - Example metrics: `variables micro‑F1≈0.6364`, `units micro‑F1≈0.9091`
+
+- CLI retrieval wrapper:
+  - Installable bin: `mrv-cli`
+  - Usage: `npm run cli:query -- "<query text>" --k 5`
+  - Prints top‑K rules with sections, summary, and refs (tool kind/path/sha256 lifted from META).
+
+Determinism
+- Fixed BM25 params and TF‑IDF/Linear hyperparameters; stable ordering and splits.
+- Dataset files recorded in `datasets_manifest.json` with SHA‑256.
+
 ### Meta-driven source hash check
 Use `node scripts/check-source-hash.js` to verify that all `META.references.tools[*]` entries exist and match their recorded SHA-256. This avoids assumptions about folder layout and treats `META` as the source of truth for tool paths.
 
