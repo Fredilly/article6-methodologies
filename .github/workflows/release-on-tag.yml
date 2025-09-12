@@ -1,0 +1,31 @@
+name: release-on-tag
+on:
+  push:
+    tags:
+      - 'mvp-baselines-*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          lfs: true
+      - name: Generate release notes
+        id: notes
+        run: |
+          echo "title=Baseline freeze: $GITHUB_REF_NAME" >> $GITHUB_OUTPUT
+          echo "body=Deterministic offline baselines (BM25 retrieval, TF-IDF/Linear extraction).\n\nArtifacts: datasets_manifest.json (SHA-256s), CLI mrv-cli usage in README." >> $GITHUB_OUTPUT
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@de2c0eb7338cfda1b873c6c4ee2e9f8893f4a5d8
+        with:
+          name: ${{ steps.notes.outputs.title }}
+          body: ${{ steps.notes.outputs.body }}
+          files: |
+            datasets_manifest.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
