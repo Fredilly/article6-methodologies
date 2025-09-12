@@ -43,6 +43,8 @@ Determinism
 - Fixed BM25 params and TF‑IDF/Linear hyperparameters; stable ordering and splits.
 - Dataset files recorded in `datasets_manifest.json` with SHA‑256.
 
+See also: `docs/baselines-cli.md` for quickstart commands, expected metrics, and how to verify determinism locally.
+
 ### Meta-driven source hash check
 Use `node scripts/check-source-hash.js` to verify that all `META.references.tools[*]` entries exist and match their recorded SHA-256. This avoids assumptions about folder layout and treats `META` as the source of truth for tool paths.
 
