@@ -39,6 +39,12 @@ See RULESET.md for conventions and CI guardrails.
   - Usage: `npm run cli:query -- "<query text>" --k 5`
   - Prints top‑K rules with sections, summary, and refs (tool kind/path/sha256 lifted from META).
 
+- HTTP engine adapter:
+  - Installable bin: `http-engine-adapter`
+  - Start locally: `npm run server:http -- --port 3030`
+  - POST `http://<host>:<port>/query` with `{ "query": "forest leakage" }` (optional `top_k` ≤ 50).
+  - Replies deterministically with BM25-ranked rules across AR-AMS0003 and AR-AMS0007 plus audit hashes (rules/sections/tool refs).
+
 Determinism
 - Fixed BM25 params and TF‑IDF/Linear hyperparameters; stable ordering and splits.
 - Dataset files recorded in `datasets_manifest.json` with SHA‑256.
