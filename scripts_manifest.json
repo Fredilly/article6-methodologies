@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-09-11T16:29:58Z",
-  "git_commit": "92aded6d176cf0a1f519cb4c4a50616da2c1453b",
+  "generated_at": "2025-09-18T15:48:12Z",
+  "git_commit": "862decd3324fc472f423144d064e3538d956b895",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "scripts/.node/node_modules/.package-lock.json", "sha256": "16314bb5d82087952ada77365dd282c93547d84e11b57595834dc9fde89bf7f4" },
@@ -548,6 +548,7 @@
     { "path": "scripts/assert-offline.sh", "sha256": "b7f69664148270ded298a4d9fb638075a21063ad7fc8e7c8b3e2d49ed88bcffd" },
     { "path": "scripts/assert-tool-hashes.sh", "sha256": "df6b46b70aaee6bbe0e107afbb9a64c50e125d8ae22479d1d3f4722d84cc316a" },
     { "path": "scripts/baselines/bm25-retrieval.js", "sha256": "a4fecca2f1d899bcf892de00c3dd09b9cac5d7b51049fc0401b94c1710a587c9" },
+    { "path": "scripts/baselines/param-extraction-linear.js", "sha256": "13f483627ff922c5d41d5d2d60f03c53a207d30eee1ba9a3758b863b2323c2ea" },
     { "path": "scripts/baselines/param-extraction-tfidf.js", "sha256": "9ba211f2a139daf0bd1a857205c3ede17f741c71fe345d4de2148cd8b2a70c8a" },
     { "path": "scripts/build-validator-bundle.js", "sha256": "307a3850efc0fa6c8acb8386a296189a4541f8a62ec263de3538426cd1e4df69" },
     { "path": "scripts/check-lean-drift.sh", "sha256": "6c482f7b7ed321f6612c8e1a347921894613cf500fa013f0f1c3904e9b78713f" },
