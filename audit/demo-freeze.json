@@ -1,0 +1,347 @@
+{
+  "tag": "demo-freeze",
+  "commit_sha": "da29ec9df2426cce6e815bf8f3c93f1dc53c8297",
+  "tree_sha": "c76ec6469ad775a6cc2cf25980f08424d35831da",
+  "generated_at": "2025-09-20T22:19:12.420Z",
+  "hashes": {
+    "sections_json": [
+      {
+        "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/sections.json",
+        "sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91",
+        "size": 21
+      },
+      {
+        "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/sections.json",
+        "sha256": "80a90d64d3f6ba202560d8f50d8243140a2f982157060e43d181f8a7860f690e",
+        "size": 987
+      },
+      {
+        "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/sections.json",
+        "sha256": "80a90d64d3f6ba202560d8f50d8243140a2f982157060e43d181f8a7860f690e",
+        "size": 987
+      },
+      {
+        "path": "methodologies/Verra/AFOLU/VM0007/v1-6/sections.json",
+        "sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91",
+        "size": 21
+      }
+    ],
+    "rules_json": [
+      {
+        "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+        "sha256": "e1095bab5e6ca59b7c8d3fa2b164bfe7f831c9eb6c81a66bff22811276e35d99",
+        "size": 18
+      },
+      {
+        "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+        "sha256": "49c8549f7f304d8ff1d305113686ebe5fc4169c434eab0b16e9013238c7dcc97",
+        "size": 2387
+      },
+      {
+        "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+        "sha256": "49c8549f7f304d8ff1d305113686ebe5fc4169c434eab0b16e9013238c7dcc97",
+        "size": 2387
+      },
+      {
+        "path": "methodologies/Verra/AFOLU/VM0007/v1-6/rules.json",
+        "sha256": "e1095bab5e6ca59b7c8d3fa2b164bfe7f831c9eb6c81a66bff22811276e35d99",
+        "size": 18
+      }
+    ],
+    "tools": [
+      {
+        "path": "tools/GoldStandard/GS-00XX/v1-0/source.pdf",
+        "sha256": "ea2754bd03295a14ef462469ae0c9368cafc4631ad492b946ad0de64fb47ed2d",
+        "size": 127
+      },
+      {
+        "path": "tools/UNFCCC/AR-AMS0003/v01-0/meth_booklet.pdf",
+        "sha256": "395e1dc00779cc5e580ad90c97c7d2189d3021f64e9c4b9ac4fabad3523ac69c",
+        "size": 132
+      },
+      {
+        "path": "tools/UNFCCC/AR-AMS0003/v01-0/source.docx",
+        "sha256": "2719958c1e2b8c29613d13d043dea73f9dd3fb4edbd848a921b81734339ac4b1",
+        "size": 359579
+      },
+      {
+        "path": "tools/UNFCCC/AR-AMS0003/v01-0/source.pdf",
+        "sha256": "4218a9dbf4c018f08a60c6564f532a336ba79cf7c782e32161c81d4d6a6427f2",
+        "size": 132
+      },
+      {
+        "path": "tools/UNFCCC/AR-AMS0007/v03-1/source.docx",
+        "sha256": "2f73349cfc4630255319c6c8dfc1b46a8996ace9d14d8e07563b165915918ec2",
+        "size": 12
+      },
+      {
+        "path": "tools/UNFCCC/AR-AMS0007/v03-1/source.pdf",
+        "sha256": "dc04ea2a039e27509db204bc6a7e3a5698308b2d578e1b86e43dc8ad12f4ad32",
+        "size": 131
+      },
+      {
+        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL08_v4-0-0.pdf",
+        "sha256": "e35cf86dbd5db6a81551d333d44274d54002973fb12d32095bdff6f1c5c5ccbb",
+        "size": 131
+      },
+      {
+        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL12_v3-1.pdf",
+        "sha256": "5aeffca3cfe52a173830b000bb3b713fcbaad519676998bf0b4e31e69effd216",
+        "size": 131
+      },
+      {
+        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL14_v4-2.pdf",
+        "sha256": "dea000078bf02005f4a9852d06295a0800ad666f05971615916a38e08aea04ee",
+        "size": 131
+      },
+      {
+        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL15_v2-0.pdf",
+        "sha256": "cae1080a443975b63c7ffb7517225d371e2088124c3628d479158f470bb63bce",
+        "size": 132
+      },
+      {
+        "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL16_v1-1-0.pdf",
+        "sha256": "92829e89d3893c6f5eb74075b681963492d256db69589d2878e5b8ba91cc64b6",
+        "size": 131
+      },
+      {
+        "path": "tools/Verra/VM0007/v1-6/source.pdf",
+        "sha256": "ea2754bd03295a14ef462469ae0c9368cafc4631ad492b946ad0de64fb47ed2d",
+        "size": 127
+      }
+    ],
+    "scripts": [
+      {
+        "path": "scripts/assert-offline.sh",
+        "sha256": "b7f69664148270ded298a4d9fb638075a21063ad7fc8e7c8b3e2d49ed88bcffd",
+        "size": 274
+      },
+      {
+        "path": "scripts/assert-tool-hashes.sh",
+        "sha256": "df6b46b70aaee6bbe0e107afbb9a64c50e125d8ae22479d1d3f4722d84cc316a",
+        "size": 261
+      },
+      {
+        "path": "scripts/baselines/bm25-retrieval.js",
+        "sha256": "a4fecca2f1d899bcf892de00c3dd09b9cac5d7b51049fc0401b94c1710a587c9",
+        "size": 4625
+      },
+      {
+        "path": "scripts/baselines/param-extraction-linear.js",
+        "sha256": "13f483627ff922c5d41d5d2d60f03c53a207d30eee1ba9a3758b863b2323c2ea",
+        "size": 4385
+      },
+      {
+        "path": "scripts/baselines/param-extraction-tfidf.js",
+        "sha256": "9ba211f2a139daf0bd1a857205c3ede17f741c71fe345d4de2148cd8b2a70c8a",
+        "size": 6002
+      },
+      {
+        "path": "scripts/build-validator-bundle.js",
+        "sha256": "307a3850efc0fa6c8acb8386a296189a4541f8a62ec263de3538426cd1e4df69",
+        "size": 1914
+      },
+      {
+        "path": "scripts/check-lean-drift.sh",
+        "sha256": "6c482f7b7ed321f6612c8e1a347921894613cf500fa013f0f1c3904e9b78713f",
+        "size": 568
+      },
+      {
+        "path": "scripts/check-registry.sh",
+        "sha256": "d66f360cfc7350e5056a81825c2a6aeb3edea448487d2c89829799d64ea2f968",
+        "size": 217
+      },
+      {
+        "path": "scripts/check-source-hash.js",
+        "sha256": "876000268db7a6b59773f404c96f9c668c3d99fda4d2dd9336624ba23a5cd52a",
+        "size": 1689
+      },
+      {
+        "path": "scripts/check-trio-and-registry.js",
+        "sha256": "8df1ab3dd5c4a5f714c067e1f8f6c173ece5da1eb4e0f9429d928aaaff65ae92",
+        "size": 2080
+      },
+      {
+        "path": "scripts/check-validators-sync.js",
+        "sha256": "8ec4d1f5fb82f431873d8d7e0c39838b24399b90b1c5c69551ea62e34389c6ab",
+        "size": 1528
+      },
+      {
+        "path": "scripts/check-workflows-supplychain.js",
+        "sha256": "733f4271adf7caf6bc64d616b4a96f333b6a9e1f6754827b7fedf36a7c15e8d0",
+        "size": 2549
+      },
+      {
+        "path": "scripts/ci-run-tests.sh",
+        "sha256": "9fe1d8bce3c97fd0c4ed6667f520b41b178372019c501810f2df5480898e229a",
+        "size": 898
+      },
+      {
+        "path": "scripts/compile-audit.js",
+        "sha256": "917ee7d5fabef37ec7d4bfa9503ac498da225426bf5fbd05fd710d35699a1a14",
+        "size": 1931
+      },
+      {
+        "path": "scripts/compile-validators.js",
+        "sha256": "0d6d8454097445711c1a0f974061f7f426522b8c1e1c0b61998cfa1c2237949b",
+        "size": 1474
+      },
+      {
+        "path": "scripts/derive-lean-from-rich.js",
+        "sha256": "522e798bcbbf3e8261454dc104a4287b774f1157b890cf798571571698d608b9",
+        "size": 3052
+      },
+      {
+        "path": "scripts/fill-provenance.js",
+        "sha256": "ada54506b8554fd101c56541768bbec912d9050842734c2f97a153b9d067b221",
+        "size": 4850
+      },
+      {
+        "path": "scripts/gen-dataset-params.js",
+        "sha256": "befe8d1bdece5b2738284c2b60598e676f7f910c605ffb53fbb7a07c3342414f",
+        "size": 4031
+      },
+      {
+        "path": "scripts/gen-dataset.js",
+        "sha256": "47b58f5dc13beded4ece8a74029827669945ae5140b2dfec4a8f19894d3cc753",
+        "size": 4602
+      },
+      {
+        "path": "scripts/gen-method.sh",
+        "sha256": "768efba1930eaca72cf134c950f49fc79d648deb2354cb974fab643a5fe9198b",
+        "size": 6043
+      },
+      {
+        "path": "scripts/gen-registry.js",
+        "sha256": "ed5e27b27860ae358c20c1d0e2cd15c678cd021a50ef295ff0234603f00c8b0e",
+        "size": 2459
+      },
+      {
+        "path": "scripts/hash-all.sh",
+        "sha256": "a64cb13c1088f4c2ec2c2459a2fca7051bf8a1de9ae70bc84c76ef56803df1e1",
+        "size": 2444
+      },
+      {
+        "path": "scripts/hash-scripts.sh",
+        "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3",
+        "size": 790
+      },
+      {
+        "path": "scripts/inject-anchors.js",
+        "sha256": "0541bc16ebc87a2cb54c2b8b251e96d64512a6e8607ed70948195af4f6fc2953",
+        "size": 2660
+      },
+      {
+        "path": "scripts/install-vendored-ajv.sh",
+        "sha256": "58d98426bb0dc94f73e53d535495d629df276e876534ffb2d8227557f4ccfc2c",
+        "size": 872
+      },
+      {
+        "path": "scripts/json-canonical-check.sh",
+        "sha256": "c35dae1d9dd7efe8f56dc56e9db396f6f147f9788cd7bbd2726c4d7a358b9d17",
+        "size": 1910
+      },
+      {
+        "path": "scripts/lint-shape.js",
+        "sha256": "0a321724887eb1f25ba03d40cb9f802e6dff7c0ee479de6c3f09fe61f6eec7eb",
+        "size": 2579
+      },
+      {
+        "path": "scripts/policy-tools.sh",
+        "sha256": "805620200a704dc64a6be4fa5a6261cf00d35ba747d525c405cc29b7320409ff",
+        "size": 918
+      },
+      {
+        "path": "scripts/require-vendor-ajv.sh",
+        "sha256": "fc58376b1e5dfb4c1cf4a22cbcf574c151e58ec90222c32144a018fc98f02389",
+        "size": 236
+      },
+      {
+        "path": "scripts/run-ajv.sh",
+        "sha256": "fa3e40b945144c9f8dda93f44f6c00f2e404475a3074a7bc5cf450a4e38ffe0f",
+        "size": 202
+      },
+      {
+        "path": "scripts/scaffold-method.js",
+        "sha256": "bac5757661dd49c2dc48ba3811170e98f7dc94acc5d28573614d72e54168204e",
+        "size": 2602
+      },
+      {
+        "path": "scripts/sync-examples.sh",
+        "sha256": "cfa456e1711d3fe873fa1bd19c54c38476815becd5e198efced4ff0d4dc3b728",
+        "size": 326
+      },
+      {
+        "path": "scripts/utils/jsonl.js",
+        "sha256": "86c0723c800b41d691fcc7790895e90e2032d9c7fb4a685030917c6d5c54c8c3",
+        "size": 433
+      },
+      {
+        "path": "scripts/validate-offline.js",
+        "sha256": "1dcb46c0de25397a3d6ada0f696133e83422064953c0d995dc9c41492980f3df",
+        "size": 2646
+      },
+      {
+        "path": "scripts/validate-offline.sh",
+        "sha256": "e9c63cdd27a80bad26e8163702a32aa5c229e8cdbae535e2f5f72f93ceade260",
+        "size": 475
+      },
+      {
+        "path": "scripts/validators/.gitkeep",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      },
+      {
+        "path": "scripts/validators/bundle.cjs",
+        "sha256": "45c98b18ef97a430195f8362f2fe3bb623e68b6e330e821f9ebc3dd5376ff53f",
+        "size": 18543
+      },
+      {
+        "path": "scripts/validators/meta.cjs",
+        "sha256": "32062eae3938280a4ecbfb8b50769b5b0ed8af54fa0305ec28f38d3d41a7559b",
+        "size": 9278
+      },
+      {
+        "path": "scripts/validators/rules.cjs",
+        "sha256": "8b5c98029894a60203acd331faaf15d896fa4fe154e7772e9775b51af3c33645",
+        "size": 4186
+      },
+      {
+        "path": "scripts/validators/schemas.sha256",
+        "sha256": "78af21bd40faf6a35ac2d203b6101d69df8274cef6ea649c9eaa27ec00b7f71f",
+        "size": 65
+      },
+      {
+        "path": "scripts/validators/sections.cjs",
+        "sha256": "0a1144951376e8f8c94c8e18500da9c5838bc20f114de8ebb5ca7eb3f2f95602",
+        "size": 3799
+      },
+      {
+        "path": "scripts/verify-generation.sh",
+        "sha256": "7d5f2d839b26d6888083c95746f3ff5609d9ab4b17797dd6be801c06b4774c55",
+        "size": 604
+      }
+    ],
+    "core": [
+      {
+        "path": "core/hashing/sha256.js",
+        "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738",
+        "size": 216
+      }
+    ],
+    "scripts_manifest": [
+      {
+        "path": "scripts_manifest.json",
+        "sha256": "2519134509b5611e426c1bbbca639f0fb3de8fdccc1391f43a63d8c777ba61bd",
+        "size": 93479
+      }
+    ],
+    "datasets_manifest": [
+      {
+        "path": "datasets_manifest.json",
+        "sha256": "2f0cc9d079ca71914e7cdc8aa79dd09db7ca97731b0ccb2528653698457a7e2d",
+        "size": 968
+      }
+    ]
+  }
+}
