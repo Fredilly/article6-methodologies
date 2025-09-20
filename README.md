@@ -44,6 +44,12 @@ See RULESET.md for conventions and CI guardrails.
   - Start locally: `npm run server:http -- --port 3030`
   - POST `http://<host>:<port>/query` with `{ "query": "forest leakage" }` (optional `top_k` ≤ 50).
   - Replies deterministically with BM25-ranked rules across AR-AMS0003 and AR-AMS0007 plus audit hashes (rules/sections/tool refs).
+- Serverless endpoint (Vercel-style `/api/query`):
+  - GET `/api/query?text=forest+leakage[&top_k=5]` for ad-hoc checks.
+  - POST `/api/query` with `{ "query": "forest leakage", "top_k": 5 }` for structured calls.
+  - Delegates to the same deterministic BM25 engine to keep outputs aligned with the CLI/HTTP adapter.
+- Health check:
+  - GET `/api/healthz` → `{ "status": "ok", "documents": 26 }` (document count driven by corpus size).
 
 Determinism
 - Fixed BM25 params and TF‑IDF/Linear hyperparameters; stable ordering and splits.
