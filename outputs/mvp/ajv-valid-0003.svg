@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="220" viewBox="0 0 1320 220">
+  <rect width="1320" height="220" fill="#0d1117"/>
+  <text x="24" y="48" font-family="Menlo,Consolas,'Liberation Mono',monospace" font-size="24" fill="#8b949e">$ ./scripts/run-ajv.sh validate -s schemas/META.schema.json \</text>
+  <text x="24" y="78" font-family="Menlo,Consolas,'Liberation Mono',monospace" font-size="24" fill="#8b949e">    -s schemas/sections.schema.json -s schemas/rules.schema.json \</text>
+  <text x="24" y="108" font-family="Menlo,Consolas,'Liberation Mono',monospace" font-size="24" fill="#8b949e">    -d methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/META.json \</text>
+  <text x="24" y="138" font-family="Menlo,Consolas,'Liberation Mono',monospace" font-size="24" fill="#8b949e">    -d methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/sections.json \</text>
+  <text x="24" y="168" font-family="Menlo,Consolas,'Liberation Mono',monospace" font-size="24" fill="#8b949e">    -d methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json</text>
+  <text x="24" y="204" font-family="Menlo,Consolas,'Liberation Mono',monospace" font-size="28" fill="#56d364">… META.json valid   ·   … sections.json valid   ·   … rules.json valid</text>
+</svg>
