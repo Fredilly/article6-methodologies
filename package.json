@@ -24,6 +24,7 @@
     "dataset:params": "node scripts/gen-dataset-params.js",
     "eval:params:tfidf": "node scripts/baselines/param-extraction-tfidf.js",
     "eval:params:linear": "node scripts/baselines/param-extraction-linear.js",
+    "eval:params:linear:json": "node scripts/baselines/param-extraction-linear-json.js",
     "cli:query": "node bin/mrv-cli.js",
     "server:http": "node bin/http-engine-adapter.js"
   },
