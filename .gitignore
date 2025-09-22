@@ -1,5 +1,13 @@
 node_modules/
 outputs/*
+!outputs/mvp/
+outputs/mvp/*
+!outputs/mvp/hash-all.log
+!outputs/mvp/validate-lean.log
+!outputs/mvp/ajv-valid-0003.txt
+!outputs/mvp/ajv-valid-0003.svg
+!outputs/mvp/ajv-valid-0007.txt
+!outputs/mvp/ajv-valid-0007.svg
 !outputs/staging/
 !outputs/staging/.gitkeep
 !outputs/prod/
