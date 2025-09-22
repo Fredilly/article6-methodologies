@@ -1,0 +1,92 @@
+{
+  "tag": "params.linear",
+  "commit_sha": "d0cc7505d9fcb7a6390315ff7cc1b5a96153eb9e",
+  "generated_at": "2025-09-22T06:38:06.402Z",
+  "dataset": "datasets/param-extraction/v1",
+  "metrics": {
+    "variables": {
+      "micro_f1": 0.6364,
+      "precision": 0.4667,
+      "recall": 1,
+      "tp": 7,
+      "fp": 8,
+      "fn": 0
+    },
+    "units": {
+      "micro_f1": 0.9091,
+      "precision": 1,
+      "recall": 0.8333,
+      "tp": 5,
+      "fp": 0,
+      "fn": 1
+    }
+  },
+  "k": {
+    "variables": 3,
+    "units": 1
+  },
+  "reliable_variables": [
+    {
+      "label": "C_pool",
+      "true_positive": 1,
+      "support": 1,
+      "precision": 1
+    },
+    {
+      "label": "L_MD",
+      "true_positive": 1,
+      "support": 1,
+      "precision": 1
+    },
+    {
+      "label": "PlotCount",
+      "true_positive": 1,
+      "support": 1,
+      "precision": 1
+    },
+    {
+      "label": "RelativePrecision",
+      "true_positive": 1,
+      "support": 1,
+      "precision": 1
+    },
+    {
+      "label": "RevisitInterval",
+      "true_positive": 1,
+      "support": 1,
+      "precision": 1
+    }
+  ],
+  "reliable_units": [
+    {
+      "label": "%",
+      "true_positive": 1,
+      "support": 1,
+      "precision": 1
+    },
+    {
+      "label": "fraction",
+      "true_positive": 1,
+      "support": 1,
+      "precision": 1
+    },
+    {
+      "label": "t C ha-1",
+      "true_positive": 1,
+      "support": 1,
+      "precision": 1
+    },
+    {
+      "label": "t CO2e ha-1 yr-1",
+      "true_positive": 1,
+      "support": 1,
+      "precision": 1
+    },
+    {
+      "label": "yr",
+      "true_positive": 1,
+      "support": 1,
+      "precision": 1
+    }
+  ]
+}

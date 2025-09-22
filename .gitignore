@@ -8,6 +8,7 @@ outputs/mvp/*
 !outputs/mvp/ajv-valid-0003.svg
 !outputs/mvp/ajv-valid-0007.txt
 !outputs/mvp/ajv-valid-0007.svg
+!outputs/mvp/params.linear.*.json
 !outputs/staging/
 !outputs/staging/.gitkeep
 !outputs/prod/
