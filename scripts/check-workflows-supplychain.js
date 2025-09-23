@@ -11,7 +11,7 @@ const WF_DIR = path.join('.github', 'workflows');
 const BAD_NET = /(apt-get|curl\b|wget\b|npm\s+install|pip\b|brew\b|go\s+get)/i;
 const USES_RX = /^\s*-\s*uses:\s*[^@]+@([A-Za-z0-9_.-]+)\s*$/m;
 const SHA40 = /^[a-f0-9]{40}$/;
-const NODE_RX = /node-version:\s*'?(\d+)(?:\.\d+\.\d+)?'?/ig;
+const NODE_RX = /node-version:\s*'?(\d+(?:\.\d+){0,2})'?/ig;
 
 function listWorkflows(){
   if (!fs.existsSync(WF_DIR)) return [];
