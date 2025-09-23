@@ -1,8 +1,9 @@
 {
-  "generated_at": "2025-09-22T18:48:16Z",
-  "git_commit": "e63172ed32c6d117a320f97e03f157c62f9105b8",
+  "generated_at": "2025-09-23T12:52:43Z",
+  "git_commit": "1c6f6a8e88377cfc1c5bac548587a263caff0ae5",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
+    { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
     { "path": "scripts/.node/node_modules/.package-lock.json", "sha256": "16314bb5d82087952ada77365dd282c93547d84e11b57595834dc9fde89bf7f4" },
     { "path": "scripts/.node/node_modules/ajv-formats/LICENSE", "sha256": "9df3bb69929a3b650ed73b3bfa1756725aaff0ac296461605753547004eafeaf" },
     { "path": "scripts/.node/node_modules/ajv-formats/README.md", "sha256": "94a341854ce2561e7484f927c65d4da699be47097964e97cfb044d8516b856a8" },
