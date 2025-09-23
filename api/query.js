@@ -2,6 +2,7 @@
 
 const { URL } = require('url');
 const { createEngine } = require('../bin/http-engine-adapter');
+const { recordRequest } = require('../core/metrics/request-metrics');
 
 let engine;
 
@@ -56,6 +57,7 @@ function parseQueryFromUrl(reqUrl) {
 }
 
 module.exports = async function handler(req, res) {
+  const started = process.hrtime.bigint();
   const method = (req.method || 'GET').toUpperCase();
   const engineInstance = ensureEngine();
 
@@ -94,5 +96,13 @@ module.exports = async function handler(req, res) {
   } catch (err) {
     const statusCode = err && err.statusCode ? err.statusCode : 500;
     send(res, statusCode, { error: 'ServerError', message: 'Unexpected error' });
+  } finally {
+    try {
+      const elapsedNs = process.hrtime.bigint() - started;
+      const durationMs = Number(elapsedNs) / 1e6;
+      recordRequest(durationMs);
+    } catch (metricsErr) {
+      console.warn('[engine] metrics capture failed', metricsErr && metricsErr.message ? metricsErr.message : metricsErr);
+    }
   }
 };

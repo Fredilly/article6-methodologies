@@ -1,4 +1,5 @@
 # Article6 Methodologies (data-first, audit-ready)
+![Engine Health](https://img.shields.io/endpoint?url=https%3A%2F%2Fdemo.article6.org%2Fapi%2Fhealthz%3Fbadge%3D1)
 Canonical store of methodologies: META + sections + rules (+ tools, overrides, tests, core).
 For a working example of the file layout and content, see `docs/examples/TEMPLATE_METHOD`.
 See RULESET.md for conventions and CI guardrails.
@@ -44,6 +45,7 @@ See RULESET.md for conventions and CI guardrails.
   - Start locally: `npm run server:http -- --port 3030`
   - POST `http://<host>:<port>/query` with `{ "query": "forest leakage" }` (optional `top_k` ≤ 50).
   - Replies deterministically with BM25-ranked rules across AR-AMS0003 and AR-AMS0007 plus audit hashes (rules/sections/tool refs).
+  - Metrics logging: every request prints `requests=<n> p95_ms=<latency>`; set `ENGINE_METRICS_LOG=/path/to/file.log` to append to disk.
 - Serverless endpoint (Vercel-style `/api/query`):
   - GET `/api/query?text=forest+leakage[&top_k=5]` for ad-hoc checks.
   - POST `/api/query` with `{ "query": "forest leakage", "top_k": 5 }` for structured calls.
