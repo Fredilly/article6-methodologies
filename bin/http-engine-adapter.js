@@ -5,12 +5,17 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const { URL } = require('url');
 
 const ROOT = path.resolve(__dirname, '..');
 const DEFAULT_PORT = 3030;
 const DEFAULT_HOST = '127.0.0.1';
 const MAX_BODY_BYTES = 1 * 1024 * 1024; // 1 MiB
 const BM25_PARAMS = { k1: 1.2, b: 0.75 };
+const HEALTH_METRICS_WINDOW = Number(process.env.ENGINE_HEALTH_METRICS_WINDOW || 200) || 200;
+const HEALTH_METRICS_LOG = process.env.ENGINE_METRICS_LOG ? path.resolve(process.env.ENGINE_METRICS_LOG) : null;
+const healthDurations = [];
+let healthRequestCount = 0;
 
 const METHOD_CONFIGS = [
   { methodology_id: 'AR-AMS0003', version: 'v01-0', relDir: 'methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0' },
@@ -248,6 +253,80 @@ function sendJSON(res, statusCode, payload) {
   res.end(body);
 }
 
+function percentile(values, p) {
+  if (!values.length) return 0;
+  const sorted = values.slice().sort((a, b) => a - b);
+  const rank = Math.ceil((p / 100) * sorted.length) - 1;
+  const idx = Math.min(sorted.length - 1, Math.max(0, rank));
+  return sorted[idx];
+}
+
+function recordHealthMetrics(durationMs) {
+  healthRequestCount += 1;
+  healthDurations.push(durationMs);
+  if (healthDurations.length > HEALTH_METRICS_WINDOW) healthDurations.shift();
+  const p95 = percentile(healthDurations, 95);
+  const line = `[engine][healthz] requests=${healthRequestCount} p95_ms=${p95.toFixed(2)}`;
+  console.log(line);
+  if (HEALTH_METRICS_LOG) {
+    const entry = `${new Date().toISOString()} ${line}\n`;
+    fs.appendFile(HEALTH_METRICS_LOG, entry, (err) => {
+      if (err) console.warn('[engine] unable to append health metrics log', err.message || err);
+    });
+  }
+}
+
+function renderBadge(documents) {
+  const left = 'engine';
+  const right = `ok • ${documents} docs`;
+  const leftWidth = 6 * left.length + 40;
+  const rightWidth = 6 * right.length + 40;
+  const totalWidth = leftWidth + rightWidth;
+  const height = 28;
+
+  return [
+    '<?xml version="1.0" encoding="UTF-8"?>\n',
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${totalWidth}" height="${height}" role="img" aria-label="engine status">`,
+    '<linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient>',
+    `<mask id="m"><rect width="${totalWidth}" height="${height}" rx="4" ry="4" fill="#fff"/></mask>`,
+    `<g mask="url(#m)">`,
+    `<rect width="${leftWidth}" height="${height}" fill="#555"/>`,
+    `<rect x="${leftWidth}" width="${rightWidth}" height="${height}" fill="#2c974b"/>`,
+    `<rect width="${totalWidth}" height="${height}" fill="url(#s)"/></g>`,
+    `<g fill="#fff" text-anchor="middle" font-family="'DejaVu Sans',Verdana,Geneva,sans-serif" font-size="14">`,
+    `<text x="${leftWidth / 2}" y="20">${left}</text>`,
+    `<text x="${leftWidth + rightWidth / 2}" y="20">${right}</text>`,
+    '</g></svg>'
+  ].join('');
+}
+
+function handleHealth(engine, req, res) {
+  const started = process.hrtime.bigint();
+  try {
+    const url = new URL(req.url, 'http://localhost');
+    const docCount = engine.audit.bm25.documents;
+    if (url.searchParams.has('badge')) {
+      const svg = renderBadge(docCount);
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8');
+      res.setHeader('Cache-Control', 'no-store');
+      res.end(svg);
+    } else {
+      sendJSON(res, 200, { status: 'ok', documents: docCount });
+    }
+  } catch (err) {
+    console.warn('[engine] failed to handle health request', err && err.message ? err.message : err);
+    sendJSON(res, 500, { error: 'InternalError', message: 'Failed to render health status' });
+  } finally {
+    try {
+      const elapsed = process.hrtime.bigint() - started;
+      recordHealthMetrics(Number(elapsed) / 1e6);
+    } catch (metricsErr) {
+      console.warn('[engine] failed to record health metrics', metricsErr && metricsErr.message ? metricsErr.message : metricsErr);
+    }
+  }
+}
+
 async function handleQuery(engine, req, res) {
   try {
     const rawBody = await readRequestBody(req);
@@ -288,10 +367,19 @@ function startServer(engine, options = {}) {
       handleQuery(engine, req, res);
       return;
     }
-    if (req.method === 'GET' && req.url === '/healthz') {
-      sendJSON(res, 200, { status: 'ok', documents: engine.audit.bm25.documents });
-      return;
+
+    if (req.method === 'GET') {
+      try {
+        const url = new URL(req.url, 'http://localhost');
+        if (url.pathname === '/healthz' || url.pathname === '/api/healthz') {
+          handleHealth(engine, req, res);
+          return;
+        }
+      } catch (err) {
+        console.warn('[engine] invalid health request URL', err && err.message ? err.message : err);
+      }
     }
+
     sendJSON(res, 404, { error: 'NotFound' });
   });
   return new Promise((resolve, reject) => {
