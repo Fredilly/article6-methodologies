@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
-          node-version: '20'
+          node-version: '20.11.1'
       - name: verify registry entries
         run: |
           node -e "const fs=require('fs');const reg=JSON.parse(fs.readFileSync('registry.json'));if(!Array.isArray(reg)){process.exit(1)};process.exit(reg.every(e=>e&&e.path&&fs.existsSync(e.path))?0:1)"
