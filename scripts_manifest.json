@@ -1,5 +1,8 @@
 {
 
+  "generated_at": "2025-09-24T09:55:06Z",
+  "git_commit": "3cd32f2a6cc8e19be21019e0cb763d6e17c1ee71",
+
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },

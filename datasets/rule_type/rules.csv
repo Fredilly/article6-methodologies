@@ -1,3 +1,66 @@
+feat/rule-type-dataset
+method_tag,anchor,text,label
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001#logic,ELIGIBLE if all predicates true; otherwise INELIGIBLE.,eligibility
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001#notes,Keep each predicate atomic for auditability.,accounting_equation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001#summary,ELIGIBLE if all predicates true; otherwise INELIGIBLE.,eligibility
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001#when1,Activity is small-scale A/R on lands other than wetlands,calculation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001#when2,Lands meet national forest definition thresholds when project matures,accounting_equation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001#when3,Baseline land-use and legal eligibility documented,eligibility
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0010#logic,Default CF = 0.47 t C per t d.m. (trees and shrubs).,exclusion_rule
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0010#notes,Overridable with transparent national defaults; record provenance.,accounting_equation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0010#summary,Default CF = 0.47 t C per t d.m. (trees and shrubs).,exclusion_rule
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0010#when1,Carbon fraction for aboveground and shrub biomass required,conversion_factor
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0020#logic,RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).,exclusion_rule
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0020#notes,Defaults unless justified site-/species-specific data available.,calculation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0020#summary,RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).,exclusion_rule
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0020#when1,Root:shoot ratio required for trees and shrubs,accounting_equation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0030#logic,"If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",carbon_boundary
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0030#notes,Tie to section 'project-boundary-pools'. Use explicit zeroing rules elsewhere if tool gates apply.,carbon_boundary
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0030#summary,"If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",carbon_boundary
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0030#when1,"Optional pools (DOM, Litter, SOC) excluded via boundary selection",carbon_boundary
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0040#logic,C_AGB_t = AGB_dm * CF,calculation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0040#notes,Maintain units explicitly. Output: t C ha-1.,calculation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0040#summary,C_AGB_t = AGB_dm * CF,calculation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0040#when1,Compute carbon in AGB at time t,accounting_equation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0045#logic,CO2e_pool = C_pool * 44/12,conversion_factor
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0045#notes,Stoichiometric conversion (44/12). Output: t CO2e ha-1.,conversion_factor
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0045#summary,CO2e_pool = C_pool * 44/12,conversion_factor
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0045#when1,Convert carbon to CO2e,accounting_equation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0050#logic,Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage,leakage
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0050#notes,Zero excluded pools via boundary rules.,carbon_boundary
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0050#summary,Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage,leakage
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0050#when1,Annual net GHG removals (project),accounting_equation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0060#logic,leakage = L_AS + L_MD,leakage
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0060#notes,Zero under specific AR-TOOL15 conditions; else compute via tool equations.,calculation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0060#summary,leakage = L_AS + L_MD,leakage
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0060#when1,Leakage must be accounted per methodology/tool,leakage
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0070#logic,Revisit plots every RevisitInterval years using consistent mensuration protocol.,monitoring
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0070#notes,Design variables explicit for QA/QC automation.,qa_qc
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0070#summary,Revisit plots every RevisitInterval years using consistent mensuration protocol.,monitoring
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0070#when1,Permanent sample plots established per design,accounting_equation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0080#logic,If RelativePrecision > 10 then apply uncertainty discount per U-table.,uncertainty
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0080#notes,Encode the uncertainty discount table as separate parameter rules.,uncertainty
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0080#summary,If RelativePrecision > 10 then apply uncertainty discount per U-table.,uncertainty
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0080#when1,Precision check for sampling strata (trees/shrubs),uncertainty
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0090#logic,If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.,exclusion_rule
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0090#notes,Deterministic gate; cite shrub-cover threshold.,calculation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0090#summary,If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.,exclusion_rule
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0090#when1,Zeroing conditions for shrubs stratum defined by crown cover,accounting_equation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0100#logic,ΔC_year = (C_t2 - C_t1) / T,calculation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0100#notes,Apply per stratum then aggregate.,accounting_equation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0100#summary,ΔC_year = (C_t2 - C_t1) / T,calculation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0100#when1,Annual change by linear interpolation between verifications,accounting_equation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0110#logic,Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.,monitoring
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0110#notes,Keep table-form sources consistent across strata.,calculation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0110#summary,Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.,monitoring
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0110#when1,Data and parameters recorded per methodology,accounting_equation
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001#logic,ELIGIBLE if all predicates true; otherwise INELIGIBLE.,eligibility
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001#notes,Keep each predicate atomic for auditability.,accounting_equation
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001#summary,ELIGIBLE if all predicates true; otherwise INELIGIBLE.,eligibility
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001#when1,Activity is small-scale A/R on lands other than wetlands,calculation
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001#when2,Lands meet national forest definition thresholds when project matures,accounting_equation
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001#when3,Baseline land-use and legal eligibility documented,eligibility
+
 rule_id,rule_type,notes
 UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001,eligibility,Screening predicates determine project eligibility.
 UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0010,conversion_factor,Defines default carbon fraction for biomass.
@@ -25,3 +88,4 @@ UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0080,uncertainty,Triggers discount when pre
 UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0090,exclusion_rule,Suppresses shrub carbon when crown cover below 5%.
 UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0100,calculation,Annualizes carbon stock change over monitoring period.
 UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0110,qa_qc,Requires SOP and QA/QC documentation for inventories.
+ main
