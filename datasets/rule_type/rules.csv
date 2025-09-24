@@ -1,3 +1,4 @@
+feat/rule-type-dataset
 method_tag,anchor,text,label
 UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001#logic,ELIGIBLE if all predicates true; otherwise INELIGIBLE.,eligibility
 UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001#notes,Keep each predicate atomic for auditability.,accounting_equation
@@ -59,3 +60,32 @@ UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001#summa
 UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001#when1,Activity is small-scale A/R on lands other than wetlands,calculation
 UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001#when2,Lands meet national forest definition thresholds when project matures,accounting_equation
 UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001#when3,Baseline land-use and legal eligibility documented,eligibility
+
+rule_id,rule_type,notes
+UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001,eligibility,Screening predicates determine project eligibility.
+UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0010,conversion_factor,Defines default carbon fraction for biomass.
+UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0020,conversion_factor,Root-to-shoot ratio defaults for trees and shrubs.
+UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0030,carbon_boundary,Excluded pools contribute zero emissions by rule.
+UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0040,calculation,Computes aboveground carbon from dry mass and CF.
+UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0045,conversion_factor,Applies 44/12 stoichiometric factor to convert carbon.
+UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0050,accounting_equation,Net project emissions equation across carbon pools and leakage.
+UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0060,leakage,Sums activity-shifting and market leakage components.
+UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0070,monitoring,Specifies revisit interval and protocol consistency for plots.
+UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0080,uncertainty,Triggers discount when precision exceeds threshold.
+UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0090,exclusion_rule,Suppresses shrub carbon when crown cover below 5%.
+UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0100,calculation,Annualizes carbon stock change over monitoring period.
+UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0110,qa_qc,Requires SOP and QA/QC documentation for inventories.
+UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001,eligibility,Screening predicates determine project eligibility.
+UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0010,conversion_factor,Defines default carbon fraction for biomass.
+UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0020,conversion_factor,Root-to-shoot ratio defaults for trees and shrubs.
+UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0030,carbon_boundary,Excluded pools contribute zero emissions by rule.
+UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0040,calculation,Computes aboveground carbon from dry mass and CF.
+UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0045,conversion_factor,Applies 44/12 stoichiometric factor to convert carbon.
+UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0050,accounting_equation,Net project emissions equation across carbon pools and leakage.
+UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0060,leakage,Sums activity-shifting and market leakage components.
+UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0070,monitoring,Specifies revisit interval and protocol consistency for plots.
+UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0080,uncertainty,Triggers discount when precision exceeds threshold.
+UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0090,exclusion_rule,Suppresses shrub carbon when crown cover below 5%.
+UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0100,calculation,Annualizes carbon stock change over monitoring period.
+UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0110,qa_qc,Requires SOP and QA/QC documentation for inventories.
+ main

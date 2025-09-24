@@ -44,7 +44,9 @@ All four commands must complete without diffs or errors before opening a pull re
   - Example metrics: `variables micro‑F1≈0.6364`, `units micro‑F1≈0.9091`
 - Rule-type labels (manual curation):
   - Dataset: `datasets/rule_type/rules.csv`
+
   - Categories defined in `datasets/rule_type/labels.yaml`
+
   - Update flow: edit CSV → `./scripts/hash-all.sh` → run validators.
 
 - CLI retrieval wrapper:
