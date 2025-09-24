@@ -1,6 +1,5 @@
 {
-  "generated_at": "2025-09-23T15:31:53Z",
-  "git_commit": "a3bfe10aa56987efb22a972cea8087e33df59099",
+
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
@@ -558,7 +557,7 @@
     { "path": "scripts/check-source-hash.js", "sha256": "876000268db7a6b59773f404c96f9c668c3d99fda4d2dd9336624ba23a5cd52a" },
     { "path": "scripts/check-trio-and-registry.js", "sha256": "8df1ab3dd5c4a5f714c067e1f8f6c173ece5da1eb4e0f9429d928aaaff65ae92" },
     { "path": "scripts/check-validators-sync.js", "sha256": "8ec4d1f5fb82f431873d8d7e0c39838b24399b90b1c5c69551ea62e34389c6ab" },
-    { "path": "scripts/check-workflows-supplychain.js", "sha256": "733f4271adf7caf6bc64d616b4a96f333b6a9e1f6754827b7fedf36a7c15e8d0" },
+    { "path": "scripts/check-workflows-supplychain.js", "sha256": "628f024eda85390342e46ccfea86bed1d546e17c15ad67aca03f4458415e6108" },
     { "path": "scripts/ci-run-tests.sh", "sha256": "9fe1d8bce3c97fd0c4ed6667f520b41b178372019c501810f2df5480898e229a" },
     { "path": "scripts/compile-audit.js", "sha256": "917ee7d5fabef37ec7d4bfa9503ac498da225426bf5fbd05fd710d35699a1a14" },
     { "path": "scripts/compile-validators.js", "sha256": "0d6d8454097445711c1a0f974061f7f426522b8c1e1c0b61998cfa1c2237949b" },
