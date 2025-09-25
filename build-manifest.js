@@ -4,26 +4,26 @@ const path = require("path");
 
 const ROOT = process.cwd();
 const METHODOLOGIES_DIR = path.join(ROOT, "methodologies");
-const OUTPUT_MANIFEST_PATH = path.join(ROOT, "outputs", "mvp", "manifest.index.json");
+const OUTPUT_PATH = path.join(ROOT, "outputs", "mvp", "manifest.index.json");
 const APP_MANIFEST_PATH = path.join(ROOT, "..", "app.article6", "public", "manifest", "index.json");
 
-async function collectRules(dir) {
+async function collectRuleFiles(dir) {
   const entries = await fs.readdir(dir, { withFileTypes: true });
-  const rules = [];
+  const files = [];
 
   for (const entry of entries) {
-    const fullPath = path.join(dir, entry.name);
+    const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
-      rules.push(...(await collectRules(fullPath)));
+      files.push(...(await collectRuleFiles(full)));
     } else if (entry.isFile() && entry.name === "rules.json") {
-      rules.push(fullPath);
+      files.push(full);
     }
   }
 
-  return rules;
+  return files;
 }
 
-function enrichRule(rule, filePath) {
+function formatRule(rule, filePath) {
   const relativeDir = path.relative(METHODOLOGIES_DIR, path.dirname(filePath));
   const segments = relativeDir.split(path.sep);
   const version = segments.pop() ?? "unknown";
@@ -40,16 +40,16 @@ function enrichRule(rule, filePath) {
 }
 
 async function main() {
-  const ruleFiles = await collectRules(METHODOLOGIES_DIR);
+  const files = await collectRuleFiles(METHODOLOGIES_DIR);
   const aggregate = [];
 
-  for (const filePath of ruleFiles) {
-    const raw = await fs.readFile(filePath, "utf8");
+  for (const file of files) {
+    const raw = await fs.readFile(file, "utf8");
     let parsed;
     try {
       parsed = JSON.parse(raw);
     } catch (error) {
-      console.warn(`Skipping invalid JSON: ${filePath}`, error);
+      console.warn("Skipping invalid JSON:", file, error.message);
       continue;
     }
 
@@ -61,19 +61,20 @@ async function main() {
 
     for (const rule of rules) {
       if (rule && typeof rule === "object") {
-        aggregate.push(enrichRule(rule, filePath));
+        aggregate.push(formatRule(rule, file));
       }
     }
   }
 
-  await fs.mkdir(path.dirname(OUTPUT_MANIFEST_PATH), { recursive: true });
+  const serialized = JSON.stringify(aggregate, null, 2);
+
+  await fs.mkdir(path.dirname(OUTPUT_PATH), { recursive: true });
   await fs.mkdir(path.dirname(APP_MANIFEST_PATH), { recursive: true });
 
-  const serialized = JSON.stringify(aggregate, null, 2);
-  await fs.writeFile(OUTPUT_MANIFEST_PATH, serialized);
+  await fs.writeFile(OUTPUT_PATH, serialized);
   await fs.writeFile(APP_MANIFEST_PATH, serialized);
 
-  console.log(`Wrote ${aggregate.length} rules to:\n - ${OUTPUT_MANIFEST_PATH}\n - ${APP_MANIFEST_PATH}`);
+  console.log(`Wrote ${aggregate.length} rules`);
 }
 
 main().catch(error => {
