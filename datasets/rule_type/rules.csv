@@ -1,4 +1,7 @@
+ feat/rule-type-dataset
+
 feat/rule-type-dataset
+ main
 method_tag,anchor,text,label
 UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001#logic,ELIGIBLE if all predicates true; otherwise INELIGIBLE.,eligibility
 UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001#notes,Keep each predicate atomic for auditability.,accounting_equation
@@ -60,6 +63,8 @@ UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001#summa
 UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001#when1,Activity is small-scale A/R on lands other than wetlands,calculation
 UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001#when2,Lands meet national forest definition thresholds when project matures,accounting_equation
 UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001#when3,Baseline land-use and legal eligibility documented,eligibility
+feat/rule-type-dataset
+
 
 rule_id,rule_type,notes
 UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001,eligibility,Screening predicates determine project eligibility.
@@ -88,4 +93,5 @@ UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0080,uncertainty,Triggers discount when pre
 UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0090,exclusion_rule,Suppresses shrub carbon when crown cover below 5%.
 UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0100,calculation,Annualizes carbon stock change over monitoring period.
 UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0110,qa_qc,Requires SOP and QA/QC documentation for inventories.
+ main
  main
