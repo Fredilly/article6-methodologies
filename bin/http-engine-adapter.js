@@ -349,7 +349,8 @@ function handleManifest(engine, req, res) {
           const versionMatch = entry.version && String(entry.version).toLowerCase().includes(q);
           const methodMatch = entry.methodology_id && entry.methodology_id.toLowerCase().includes(q);
           const ruleMatch = entry.rule_id && entry.rule_id.toLowerCase().includes(q);
-          return textMatch || tagsMatch || versionMatch || methodMatch || ruleMatch;
+          const titleMatch = entry.section_title && entry.section_title.toLowerCase().includes(q);
+          return textMatch || tagsMatch || versionMatch || methodMatch || ruleMatch || titleMatch;
         })
       : docs;
     sendJSON(res, 200, { rules: filtered, total: filtered.length });

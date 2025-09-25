@@ -21,16 +21,15 @@ function send(res, statusCode, payload) {
 }
 
 module.exports = async function handler(req, res) {
-  const method = (req.method || 'GET').toUpperCase();
-  if (method !== 'GET') {
+  if ((req.method || 'GET').toUpperCase() !== 'GET') {
     send(res, 405, { error: 'MethodNotAllowed', message: 'Use GET' });
     return;
   }
 
-  let searchParam = '';
+  let query = '';
   try {
     const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
-    searchParam = (url.searchParams.get('q') || '').trim().toLowerCase();
+    query = (url.searchParams.get('q') || '').trim().toLowerCase();
   } catch (err) {
     send(res, 400, { error: 'InvalidRequest', message: 'Malformed URL' });
     return;
@@ -48,15 +47,16 @@ module.exports = async function handler(req, res) {
     text: doc.text
   }));
 
-  const query = searchParam;
   const filtered = query
     ? docs.filter((entry) => {
-        const inText = entry.text && entry.text.toLowerCase().includes(query);
-        const inTags = Array.isArray(entry.tags) && entry.tags.some((tag) => String(tag).toLowerCase().includes(query));
-        const inVersion = entry.version && String(entry.version).toLowerCase().includes(query);
-        const inMethod = entry.methodology_id && entry.methodology_id.toLowerCase().includes(query);
-        const inRule = entry.rule_id && entry.rule_id.toLowerCase().includes(query);
-        return inText || inTags || inVersion || inMethod || inRule;
+        const q = query;
+        const textMatch = entry.text && entry.text.toLowerCase().includes(q);
+        const tagsMatch = Array.isArray(entry.tags) && entry.tags.some((tag) => String(tag).toLowerCase().includes(q));
+        const versionMatch = entry.version && String(entry.version).toLowerCase().includes(q);
+        const methodMatch = entry.methodology_id && entry.methodology_id.toLowerCase().includes(q);
+        const ruleMatch = entry.rule_id && entry.rule_id.toLowerCase().includes(q);
+        const titleMatch = entry.section_title && entry.section_title.toLowerCase().includes(q);
+        return textMatch || tagsMatch || versionMatch || methodMatch || ruleMatch || titleMatch;
       })
     : docs;
 
