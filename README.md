@@ -42,6 +42,11 @@ All four commands must complete without diffs or errors before opening a pull re
   - Build dataset: `npm run dataset:params`
   - Evaluate: `npm run eval:params:linear`
   - Example metrics: `variables micro‑F1≈0.6364`, `units micro‑F1≈0.9091`
+- Rule-type labels (manual curation):
+  - Primary dataset: `datasets/rule_type/rules.csv` (`method_tag`, `anchor`, `text`, `label`)
+  - Metadata: `datasets/rule_type/rules_meta.csv` (`rule_id`, `rule_type`, `notes`)
+  - Allowed categories listed in `datasets/rule_type/labels.yaml`
+  - Update flow: edit CSVs → `./scripts/hash-all.sh` → run validators.
 
 - CLI retrieval wrapper:
   - Installable bin: `mrv-cli`

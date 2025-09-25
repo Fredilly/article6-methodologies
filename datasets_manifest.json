@@ -13,6 +13,18 @@
       "sha256": "92ee5eeaf28f1e212b7a35b181580c635e6fdc58da99310cdece558143934e21"
     },
     {
+      "path": "datasets/rule_type/labels.yaml",
+      "sha256": "1d5b7a5b5da28902a20d2530e1c8e3e4f97e9029ebc6ca6d443b63392e15e7ab"
+    },
+    {
+      "path": "datasets/rule_type/rules.csv",
+      "sha256": "bbbf44ad59ee9c55a600d2a52d7f69b2b8b7c84156c32bef5d698e0b3639e350"
+    },
+    {
+      "path": "datasets/rule_type/rules_meta.csv",
+      "sha256": "355a9330869cd8b6b5dd663bdca0ee4c25fc1e0198a48b49b9267af7157f2a9c"
+    },
+    {
       "path": "datasets/section-retrieval/v1/corpus.jsonl",
       "sha256": "868b28f527e8a297711152cc917ee140a613b3c1c94bf919640e68c44ee109ae"
     },

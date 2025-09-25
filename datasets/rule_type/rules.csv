@@ -1,0 +1,53 @@
+method_tag,anchor,text,label
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001#logic,ELIGIBLE if all predicates true; otherwise INELIGIBLE.,eligibility
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001#summary,ELIGIBLE if all predicates true; otherwise INELIGIBLE.,eligibility
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0010#logic,Default CF = 0.47 t C per t d.m. (trees and shrubs).,exclusion_rule
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0010#summary,Default CF = 0.47 t C per t d.m. (trees and shrubs).,exclusion_rule
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0020#logic,RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).,exclusion_rule
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0020#summary,RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).,exclusion_rule
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0030#logic,"If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",carbon_boundary
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0030#summary,"If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",carbon_boundary
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0040#logic,C_AGB_t = AGB_dm * CF,calculation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0040#summary,C_AGB_t = AGB_dm * CF,calculation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0045#logic,CO2e_pool = C_pool * 44/12,conversion_factor
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0045#summary,CO2e_pool = C_pool * 44/12,conversion_factor
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0050#logic,Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage,leakage
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0050#summary,Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage,leakage
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0060#logic,leakage = L_AS + L_MD,leakage
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0060#summary,leakage = L_AS + L_MD,leakage
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0070#logic,Revisit plots every RevisitInterval years using consistent mensuration protocol.,monitoring
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0070#summary,Revisit plots every RevisitInterval years using consistent mensuration protocol.,monitoring
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0080#logic,If RelativePrecision > 10 then apply uncertainty discount per U-table.,uncertainty
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0080#summary,If RelativePrecision > 10 then apply uncertainty discount per U-table.,uncertainty
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0090#logic,If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.,exclusion_rule
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0090#summary,If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.,exclusion_rule
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0100#logic,ΔC_year = (C_t2 - C_t1) / T,calculation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0100#summary,ΔC_year = (C_t2 - C_t1) / T,calculation
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0110#logic,Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.,monitoring
+UNFCCC.Forestry.AR-AMS0003.v01-0,UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0110#summary,Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.,monitoring
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001#logic,ELIGIBLE if all predicates true; otherwise INELIGIBLE.,eligibility
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001#summary,ELIGIBLE if all predicates true; otherwise INELIGIBLE.,eligibility
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0010#logic,Default CF = 0.47 t C per t d.m. (trees and shrubs).,exclusion_rule
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0010#summary,Default CF = 0.47 t C per t d.m. (trees and shrubs).,exclusion_rule
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0020#logic,RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).,exclusion_rule
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0020#summary,RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).,exclusion_rule
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0030#logic,"If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",carbon_boundary
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0030#summary,"If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",carbon_boundary
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0040#logic,C_AGB_t = AGB_dm * CF,calculation
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0040#summary,C_AGB_t = AGB_dm * CF,calculation
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0045#logic,CO2e_pool = C_pool * 44/12,conversion_factor
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0045#summary,CO2e_pool = C_pool * 44/12,conversion_factor
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0050#logic,Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage,leakage
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0050#summary,Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage,leakage
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0060#logic,leakage = L_AS + L_MD,leakage
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0060#summary,leakage = L_AS + L_MD,leakage
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0070#logic,Revisit plots every RevisitInterval years using consistent mensuration protocol.,monitoring
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0070#summary,Revisit plots every RevisitInterval years using consistent mensuration protocol.,monitoring
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0080#logic,If RelativePrecision > 10 then apply uncertainty discount per U-table.,uncertainty
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0080#summary,If RelativePrecision > 10 then apply uncertainty discount per U-table.,uncertainty
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0090#logic,If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.,exclusion_rule
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0090#summary,If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.,exclusion_rule
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0100#logic,ΔC_year = (C_t2 - C_t1) / T,calculation
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0100#summary,ΔC_year = (C_t2 - C_t1) / T,calculation
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0110#logic,Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.,monitoring
+UNFCCC.Forestry.AR-AMS0007.v03-1,UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0110#summary,Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.,monitoring
