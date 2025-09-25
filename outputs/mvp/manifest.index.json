@@ -6,10 +6,14 @@
       "eligibility"
     ],
     "text": "ELIGIBLE if all predicates true; otherwise INELIGIBLE.",
+    "rule": "ELIGIBLE if all predicates true; otherwise INELIGIBLE.",
     "methodology": "AR-AMS0003",
     "version": "v01-0",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0010",
@@ -18,10 +22,14 @@
       "parameter"
     ],
     "text": "Default CF = 0.47 t C per t d.m. (trees and shrubs).",
+    "rule": "Default CF = 0.47 t C per t d.m. (trees and shrubs).",
     "methodology": "AR-AMS0003",
     "version": "v01-0",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0020",
@@ -30,10 +38,14 @@
       "parameter"
     ],
     "text": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).",
+    "rule": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).",
     "methodology": "AR-AMS0003",
     "version": "v01-0",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0030",
@@ -42,10 +54,14 @@
       "eligibility"
     ],
     "text": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",
+    "rule": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",
     "methodology": "AR-AMS0003",
     "version": "v01-0",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0040",
@@ -54,10 +70,14 @@
       "equation"
     ],
     "text": "C_AGB_t = AGB_dm * CF",
+    "rule": "C_AGB_t = AGB_dm * CF",
     "methodology": "AR-AMS0003",
     "version": "v01-0",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0045",
@@ -66,10 +86,14 @@
       "equation"
     ],
     "text": "CO2e_pool = C_pool * 44/12",
+    "rule": "CO2e_pool = C_pool * 44/12",
     "methodology": "AR-AMS0003",
     "version": "v01-0",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0050",
@@ -78,10 +102,14 @@
       "calc"
     ],
     "text": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage",
+    "rule": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage",
     "methodology": "AR-AMS0003",
     "version": "v01-0",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0060",
@@ -90,10 +118,14 @@
       "leakage"
     ],
     "text": "leakage = L_AS + L_MD",
+    "rule": "leakage = L_AS + L_MD",
     "methodology": "AR-AMS0003",
     "version": "v01-0",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0070",
@@ -102,10 +134,14 @@
       "monitoring"
     ],
     "text": "Revisit plots every RevisitInterval years using consistent mensuration protocol.",
+    "rule": "Revisit plots every RevisitInterval years using consistent mensuration protocol.",
     "methodology": "AR-AMS0003",
     "version": "v01-0",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0080",
@@ -114,10 +150,14 @@
       "uncertainty"
     ],
     "text": "If RelativePrecision > 10 then apply uncertainty discount per U-table.",
+    "rule": "If RelativePrecision > 10 then apply uncertainty discount per U-table.",
     "methodology": "AR-AMS0003",
     "version": "v01-0",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0090",
@@ -126,10 +166,14 @@
       "eligibility"
     ],
     "text": "If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.",
+    "rule": "If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.",
     "methodology": "AR-AMS0003",
     "version": "v01-0",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0100",
@@ -138,10 +182,14 @@
       "equation"
     ],
     "text": "ΔC_year = (C_t2 - C_t1) / T",
+    "rule": "ΔC_year = (C_t2 - C_t1) / T",
     "methodology": "AR-AMS0003",
     "version": "v01-0",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0110",
@@ -150,10 +198,14 @@
       "monitoring"
     ],
     "text": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.",
+    "rule": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.",
     "methodology": "AR-AMS0003",
     "version": "v01-0",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0001",
@@ -162,10 +214,14 @@
       "eligibility"
     ],
     "text": "ELIGIBLE if all predicates true; otherwise INELIGIBLE.",
+    "rule": "ELIGIBLE if all predicates true; otherwise INELIGIBLE.",
     "methodology": "AR-AMS0007",
     "version": "v03-1",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0010",
@@ -174,10 +230,14 @@
       "parameter"
     ],
     "text": "Default CF = 0.47 t C per t d.m. (trees and shrubs).",
+    "rule": "Default CF = 0.47 t C per t d.m. (trees and shrubs).",
     "methodology": "AR-AMS0007",
     "version": "v03-1",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0020",
@@ -186,10 +246,14 @@
       "parameter"
     ],
     "text": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).",
+    "rule": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).",
     "methodology": "AR-AMS0007",
     "version": "v03-1",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0030",
@@ -198,10 +262,14 @@
       "eligibility"
     ],
     "text": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",
+    "rule": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",
     "methodology": "AR-AMS0007",
     "version": "v03-1",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0040",
@@ -210,10 +278,14 @@
       "equation"
     ],
     "text": "C_AGB_t = AGB_dm * CF",
+    "rule": "C_AGB_t = AGB_dm * CF",
     "methodology": "AR-AMS0007",
     "version": "v03-1",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0045",
@@ -222,10 +294,14 @@
       "equation"
     ],
     "text": "CO2e_pool = C_pool * 44/12",
+    "rule": "CO2e_pool = C_pool * 44/12",
     "methodology": "AR-AMS0007",
     "version": "v03-1",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0050",
@@ -234,10 +310,14 @@
       "calc"
     ],
     "text": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage",
+    "rule": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage",
     "methodology": "AR-AMS0007",
     "version": "v03-1",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0060",
@@ -246,10 +326,14 @@
       "leakage"
     ],
     "text": "leakage = L_AS + L_MD",
+    "rule": "leakage = L_AS + L_MD",
     "methodology": "AR-AMS0007",
     "version": "v03-1",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0070",
@@ -258,10 +342,14 @@
       "monitoring"
     ],
     "text": "Revisit plots every RevisitInterval years using consistent mensuration protocol.",
+    "rule": "Revisit plots every RevisitInterval years using consistent mensuration protocol.",
     "methodology": "AR-AMS0007",
     "version": "v03-1",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0080",
@@ -270,10 +358,14 @@
       "uncertainty"
     ],
     "text": "If RelativePrecision > 10 then apply uncertainty discount per U-table.",
+    "rule": "If RelativePrecision > 10 then apply uncertainty discount per U-table.",
     "methodology": "AR-AMS0007",
     "version": "v03-1",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0090",
@@ -282,10 +374,14 @@
       "eligibility"
     ],
     "text": "If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.",
+    "rule": "If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.",
     "methodology": "AR-AMS0007",
     "version": "v03-1",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0100",
@@ -294,10 +390,14 @@
       "equation"
     ],
     "text": "ΔC_year = (C_t2 - C_t1) / T",
+    "rule": "ΔC_year = (C_t2 - C_t1) / T",
     "methodology": "AR-AMS0007",
     "version": "v03-1",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   },
   {
     "id": "R-1-0110",
@@ -306,9 +406,13 @@
       "monitoring"
     ],
     "text": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.",
+    "rule": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.",
     "methodology": "AR-AMS0007",
     "version": "v03-1",
     "family": "UNFCCC/Forestry",
-    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json"
+    "source": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "pdfId": "",
+    "anchor": "",
+    "sha256": ""
   }
 ]

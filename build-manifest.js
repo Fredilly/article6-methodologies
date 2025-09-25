@@ -30,12 +30,24 @@ function formatRule(rule, filePath) {
   const methodology = segments.pop() ?? "unknown";
   const family = segments.join("/");
 
+  const ruleText =
+    typeof rule.rule === "string"
+      ? rule.rule
+      : typeof rule.text === "string"
+      ? rule.text
+      : "";
+
   return {
     ...rule,
+    rule: ruleText,
     methodology,
     version,
     family,
     source: path.join("methodologies", relativeDir, "rules.json"),
+    tags: Array.isArray(rule.tags) ? rule.tags : [],
+    pdfId: typeof rule.pdfId === "string" ? rule.pdfId : "",
+    anchor: typeof rule.anchor === "string" ? rule.anchor : "",
+    sha256: typeof rule.sha256 === "string" ? rule.sha256 : "",
   };
 }
 
