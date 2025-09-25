@@ -222,7 +222,7 @@ function createEngine() {
     return { results, audit, topK: limit };
   }
 
-  return { search, audit };
+  return { search, audit, documents };
 }
 
 async function readRequestBody(req) {
@@ -327,6 +327,38 @@ function handleHealth(engine, req, res) {
   }
 }
 
+function handleManifest(engine, req, res) {
+  try {
+    const url = new URL(req.url, 'http://localhost');
+    const query = (url.searchParams.get('q') || '').trim().toLowerCase();
+    const docs = (engine.documents || []).map((doc) => ({
+      doc_id: doc.key,
+      methodology_id: doc.methodology_id,
+      version: doc.version,
+      rule_id: doc.rule_id,
+      section_id: doc.section_id,
+      section_title: doc.section_title,
+      tags: doc.tags,
+      text: doc.text
+    }));
+    const filtered = query
+      ? docs.filter((entry) => {
+          const q = query;
+          const textMatch = entry.text && entry.text.toLowerCase().includes(q);
+          const tagsMatch = Array.isArray(entry.tags) && entry.tags.some((tag) => String(tag).toLowerCase().includes(q));
+          const versionMatch = entry.version && String(entry.version).toLowerCase().includes(q);
+          const methodMatch = entry.methodology_id && entry.methodology_id.toLowerCase().includes(q);
+          const ruleMatch = entry.rule_id && entry.rule_id.toLowerCase().includes(q);
+          return textMatch || tagsMatch || versionMatch || methodMatch || ruleMatch;
+        })
+      : docs;
+    sendJSON(res, 200, { rules: filtered, total: filtered.length });
+  } catch (err) {
+    console.warn('[engine] manifest error', err && err.message ? err.message : err);
+    sendJSON(res, 400, { error: 'InvalidRequest', message: 'Malformed manifest request' });
+  }
+}
+
 async function handleQuery(engine, req, res) {
   try {
     const rawBody = await readRequestBody(req);
@@ -373,6 +405,10 @@ function startServer(engine, options = {}) {
         const url = new URL(req.url, 'http://localhost');
         if (url.pathname === '/healthz' || url.pathname === '/api/healthz') {
           handleHealth(engine, req, res);
+          return;
+        }
+        if (url.pathname === '/manifest' || url.pathname === '/api/manifest') {
+          handleManifest(engine, req, res);
           return;
         }
       } catch (err) {
