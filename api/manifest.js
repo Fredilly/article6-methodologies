@@ -27,9 +27,12 @@ module.exports = async function handler(req, res) {
   }
 
   let query = '';
+  let returnAll = false;
   try {
     const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
     query = (url.searchParams.get('q') || '').trim().toLowerCase();
+    const allParam = (url.searchParams.get('all') || '').trim().toLowerCase();
+    returnAll = allParam === '1' || allParam === 'true' || allParam === 'yes';
   } catch (err) {
     send(res, 400, { error: 'InvalidRequest', message: 'Malformed URL' });
     return;
@@ -60,5 +63,7 @@ module.exports = async function handler(req, res) {
       })
     : docs;
 
-  send(res, 200, { rules: filtered, total: filtered.length });
+  const output = returnAll ? docs : filtered;
+
+  send(res, 200, { rules: output, total: output.length });
 };

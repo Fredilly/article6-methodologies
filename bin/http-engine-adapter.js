@@ -17,11 +17,6 @@ const HEALTH_METRICS_LOG = process.env.ENGINE_METRICS_LOG ? path.resolve(process
 const healthDurations = [];
 let healthRequestCount = 0;
 
-const METHOD_CONFIGS = [
-  { methodology_id: 'AR-AMS0003', version: 'v01-0', relDir: 'methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0' },
-  { methodology_id: 'AR-AMS0007', version: 'v03-1', relDir: 'methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1' }
-];
-
 function sha256(buf) {
   return crypto.createHash('sha256').update(buf).digest('hex');
 }
@@ -39,10 +34,48 @@ function tokenize(text) {
   return String(text).toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
 }
 
+function discoverMethodConfigs() {
+  const baseDir = path.join(ROOT, 'methodologies');
+  const configs = [];
+  function walk(currentDir, segments) {
+    let entries;
+    try {
+      entries = fs.readdirSync(currentDir, { withFileTypes: true });
+    } catch (err) {
+      return;
+    }
+    for (const entry of entries) {
+      if (!entry.isDirectory()) continue;
+      const nextDir = path.join(currentDir, entry.name);
+      const nextSegments = segments.concat(entry.name);
+      const metaPath = path.join(nextDir, 'META.json');
+      const sectionsPath = path.join(nextDir, 'sections.json');
+      const rulesPath = path.join(nextDir, 'rules.json');
+      if (fs.existsSync(metaPath) && fs.existsSync(sectionsPath) && fs.existsSync(rulesPath)) {
+        if (nextSegments.length >= 2) {
+          const version = nextSegments[nextSegments.length - 1];
+          const methodologyId = nextSegments[nextSegments.length - 2];
+          configs.push({
+            methodology_id: methodologyId,
+            version,
+            relDir: toPosixRelative(nextDir)
+          });
+        }
+        continue;
+      }
+      walk(nextDir, nextSegments);
+    }
+  }
+  if (fs.existsSync(baseDir)) walk(baseDir, []);
+  configs.sort((a, b) => a.relDir.localeCompare(b.relDir));
+  return configs;
+}
+
 function buildCorpus() {
   const documents = [];
   const perMethodAudit = [];
-  for (const cfg of METHOD_CONFIGS) {
+  const methodConfigs = discoverMethodConfigs();
+  for (const cfg of methodConfigs) {
     const methodRoot = path.join(ROOT, cfg.relDir);
     const metaPath = path.join(methodRoot, 'META.json');
     const leanSectionsPath = path.join(methodRoot, 'sections.json');
@@ -331,6 +364,8 @@ function handleManifest(engine, req, res) {
   try {
     const url = new URL(req.url, 'http://localhost');
     const query = (url.searchParams.get('q') || '').trim().toLowerCase();
+    const allParam = (url.searchParams.get('all') || '').trim().toLowerCase();
+    const returnAll = allParam === '1' || allParam === 'true' || allParam === 'yes';
     const docs = (engine.documents || []).map((doc) => ({
       doc_id: doc.key,
       methodology_id: doc.methodology_id,
@@ -353,7 +388,8 @@ function handleManifest(engine, req, res) {
           return textMatch || tagsMatch || versionMatch || methodMatch || ruleMatch || titleMatch;
         })
       : docs;
-    sendJSON(res, 200, { rules: filtered, total: filtered.length });
+    const output = returnAll ? docs : filtered;
+    sendJSON(res, 200, { rules: output, total: output.length });
   } catch (err) {
     console.warn('[engine] manifest error', err && err.message ? err.message : err);
     sendJSON(res, 400, { error: 'InvalidRequest', message: 'Malformed manifest request' });
