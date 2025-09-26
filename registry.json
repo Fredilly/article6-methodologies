@@ -1,10 +1,44 @@
 [
   {
+    "id": "UNFCCC.Forestry.AR-ACM0003.v02-0",
+    "methodology_id": "AR-ACM0003",
+    "version": "v02-0",
+    "sector": "Forestry",
+    "organization": "UNFCCC",
+    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v03-0",
+    "methodology_id": "AR-AM0014",
+    "version": "v03-0",
+    "sector": "Forestry",
+    "organization": "UNFCCC",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0"
+  },
+  {
     "standard": "GoldStandard",
     "program": "LUF",
     "code": "GS-00XX",
     "version": "1.0",
     "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0",
+    "stage": "staging",
+    "latest": true
+  },
+  {
+    "standard": "UNFCCC",
+    "program": "Forestry",
+    "code": "AR-ACM0003",
+    "version": "02.0",
+    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0",
+    "stage": "staging",
+    "latest": true
+  },
+  {
+    "standard": "UNFCCC",
+    "program": "Forestry",
+    "code": "AR-AM0014",
+    "version": "03.0",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0",
     "stage": "staging",
     "latest": true
   },

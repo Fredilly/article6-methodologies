@@ -1,0 +1,186 @@
+[
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0001",
+    "type": "eligibility",
+    "summary": "Projects must reforest lands without forest cover since 31 December 1989 and comply with national definitions.",
+    "logic": "Projects must reforest lands without forest cover since 31 December 1989 and comply with national definitions.",
+    "notes": "Eligibility hinges on legal right to implement A/R activity and demonstration of degradation baseline.",
+    "provenance": {
+      "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+      "source_ref": "UNFCCC/AR-AM0014@v03-0"
+    },
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-AM0014@v03-0"
+      ]
+    },
+    "when": [
+      "Project lands classified as non-forest for at least 10 years prior to start date.",
+      "Title documents demonstrate right to implement A/R activities."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0002",
+    "type": "parameter",
+    "summary": "Baseline biomass is determined using IPCC default factors or site-specific sampling following Tool 02 guidance.",
+    "logic": "Baseline biomass is determined using IPCC default factors or site-specific sampling following Tool 02 guidance.",
+    "notes": "Projects may adopt stratified sampling; defaults used where measurement uncertainty exceeds thresholds.",
+    "provenance": {
+      "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+      "source_ref": "UNFCCC/AR-AM0014@v03-0"
+    },
+    "refs": {
+      "sections": [
+        "S-2"
+      ],
+      "tools": [
+        "UNFCCC/AR-AM0014@v03-0"
+      ]
+    },
+    "when": [
+      "Sampling plans approved by DOE.",
+      "IPCC Tier 2 defaults are justified in monitoring report."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0003",
+    "type": "equation",
+    "summary": "Net anthropogenic GHG removals equal project removals minus baseline emissions and leakage.",
+    "logic": "Net anthropogenic GHG removals equal project removals minus baseline emissions and leakage.",
+    "notes": "Equation integrates carbon pool changes for AGB, BGB, litter, deadwood, soil, and harvested wood products.",
+    "provenance": {
+      "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+      "source_ref": "UNFCCC/AR-AM0014@v03-0"
+    },
+    "refs": {
+      "sections": [
+        "S-3"
+      ],
+      "tools": [
+        "UNFCCC/AR-AM0014@v03-0"
+      ]
+    },
+    "when": [
+      "All carbon pools accounted for unless exclusion justified.",
+      "Leakage deduction applied before reporting net removal."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0004",
+    "type": "leakage",
+    "summary": "Activity shifting leakage is quantified using Tool 14 and discounted from net removals.",
+    "logic": "Activity shifting leakage is quantified using Tool 14 and discounted from net removals.",
+    "notes": "Buffer for grazing displacement must be monitored annually.",
+    "provenance": {
+      "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+      "source_ref": "UNFCCC/AR-AM0014@v03-0"
+    },
+    "refs": {
+      "sections": [
+        "S-4"
+      ],
+      "tools": [
+        "UNFCCC/AR-AM0014@v03-0"
+      ]
+    },
+    "when": [
+      "Community livelihoods impacted by land-use change.",
+      "Leakage mitigation plan implemented with monitoring indicators."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0005",
+    "type": "monitoring",
+    "summary": "Field measurements of biomass stock changes occur at least every five years with permanent plots.",
+    "logic": "Field measurements of biomass stock changes occur at least every five years with permanent plots.",
+    "notes": "QA/QC procedures include re-measurement of 10% of plots and calibration of instruments.",
+    "provenance": {
+      "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+      "source_ref": "UNFCCC/AR-AM0014@v03-0"
+    },
+    "refs": {
+      "sections": [
+        "S-5"
+      ],
+      "tools": [
+        "UNFCCC/AR-AM0014@v03-0"
+      ]
+    },
+    "when": [
+      "Monitoring plan approved during validation.",
+      "Permanent sample plots accessible throughout crediting period."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0006",
+    "type": "uncertainty",
+    "summary": "If sampling uncertainty exceeds 10%, apply Tool 12 to derive conservative estimates.",
+    "logic": "If sampling uncertainty exceeds 10%, apply Tool 12 to derive conservative estimates.",
+    "notes": "Uncertainty deductions documented in verification report.",
+    "provenance": {
+      "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+      "source_ref": "UNFCCC/AR-AM0014@v03-0"
+    },
+    "refs": {
+      "sections": [
+        "S-5"
+      ],
+      "tools": [
+        "UNFCCC/AR-AM0014@v03-0"
+      ]
+    },
+    "when": [
+      "Confidence interval wider than \u00b110%.",
+      "DOE reviews uncertainty calculation worksheets."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0007",
+    "type": "reporting",
+    "summary": "Monitoring reports include maps, inventory data, leakage deductions, and QA/QC evidence.",
+    "logic": "Monitoring reports include maps, inventory data, leakage deductions, and QA/QC evidence.",
+    "notes": "Documentation stored for a minimum of two crediting periods.",
+    "provenance": {
+      "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+      "source_ref": "UNFCCC/AR-AM0014@v03-0"
+    },
+    "refs": {
+      "sections": [
+        "S-5"
+      ],
+      "tools": [
+        "UNFCCC/AR-AM0014@v03-0"
+      ]
+    },
+    "when": [
+      "Reporting aligns with UNFCCC template requirements.",
+      "All supporting datasets archived with version history."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0008",
+    "type": "monitoring",
+    "summary": "Non-permanence risk must be addressed through buffer contributions consistent with Tool 15 guidance.",
+    "logic": "Non-permanence risk must be addressed through buffer contributions consistent with Tool 15 guidance.",
+    "notes": "Buffer percentage justified using risk analysis and updated if project conditions change.",
+    "provenance": {
+      "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+      "source_ref": "UNFCCC/AR-AM0014@v03-0"
+    },
+    "refs": {
+      "sections": [
+        "S-4"
+      ],
+      "tools": [
+        "UNFCCC/AR-AM0014@v03-0"
+      ]
+    },
+    "when": [
+      "Non-permanence risk assessment completed prior to credit issuance.",
+      "Buffer contributions recorded in registry records."
+    ]
+  }
+]
