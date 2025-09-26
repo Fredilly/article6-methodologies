@@ -14,11 +14,11 @@
     },
     {
       "path": "datasets/rule_type/rules.csv",
-      "sha256": "6ae3bdb92996cf57d8bbad6d8af68f1fd7e65c37cd9284d40729db625fda70d1"
+      "sha256": "1fd55fe4eb354290ed592f78e7adac8555aae75c375ef251edef49adb177f91d"
     },
     {
       "path": "datasets/rule_type/rules_meta.csv",
-      "sha256": "e40deae68ca394b264f0a287c538f8ab83027ab4a91dea67b5cb08462922132e"
+      "sha256": "11dc4ebb7cd26add1e20fdd7ad3bc149321aa119a0cfbbf51c802f06787c6c71"
     },
     {
       "path": "datasets/section-retrieval/v1/corpus.jsonl",

@@ -1,0 +1,68 @@
+{
+  "rules": [
+    {
+      "id": "R-1-0001",
+      "section_id": "S-1",
+      "tags": [
+        "eligibility"
+      ],
+      "text": "Activities must restore degraded forestlands and demonstrate additionality using Tool 01 or equivalent."
+    },
+    {
+      "id": "R-1-0002",
+      "section_id": "S-2",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Baseline net GHG removals derived from historical land-use data and validated management practices."
+    },
+    {
+      "id": "R-1-0003",
+      "section_id": "S-3",
+      "tags": [
+        "equation"
+      ],
+      "text": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08."
+    },
+    {
+      "id": "R-1-0004",
+      "section_id": "S-4",
+      "tags": [
+        "leakage"
+      ],
+      "text": "Leakage from wood product displacement addressed using standardized factors in Tool 14."
+    },
+    {
+      "id": "R-1-0008",
+      "section_id": "S-4",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Non-permanence buffer share determined via Tool 15 and recorded in registry accounts."
+    },
+    {
+      "id": "R-1-0005",
+      "section_id": "S-5",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Permanent plots re-measured at least every five years with QA/QC according to Tool 16."
+    },
+    {
+      "id": "R-1-0006",
+      "section_id": "S-5",
+      "tags": [
+        "uncertainty"
+      ],
+      "text": "Combined sampling uncertainty must remain below 10% at 90% confidence or be conservatively adjusted."
+    },
+    {
+      "id": "R-1-0007",
+      "section_id": "S-5",
+      "tags": [
+        "reporting"
+      ],
+      "text": "Monitoring reports contain geospatial data, field measurements, emission sources, and buffer contributions."
+    }
+  ]
+}

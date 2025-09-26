@@ -1,0 +1,68 @@
+{
+  "rules": [
+    {
+      "id": "R-1-0001",
+      "section_id": "S-1",
+      "tags": [
+        "eligibility"
+      ],
+      "text": "Projects must reforest lands without forest cover since 31 December 1989 and comply with national definitions."
+    },
+    {
+      "id": "R-1-0002",
+      "section_id": "S-2",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Baseline biomass is determined using IPCC default factors or site-specific sampling following Tool 02 guidance."
+    },
+    {
+      "id": "R-1-0003",
+      "section_id": "S-3",
+      "tags": [
+        "equation"
+      ],
+      "text": "Net anthropogenic GHG removals equal project removals minus baseline emissions and leakage."
+    },
+    {
+      "id": "R-1-0004",
+      "section_id": "S-4",
+      "tags": [
+        "leakage"
+      ],
+      "text": "Activity shifting leakage is quantified using Tool 14 and discounted from net removals."
+    },
+    {
+      "id": "R-1-0008",
+      "section_id": "S-4",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Non-permanence risk must be addressed through buffer contributions consistent with Tool 15 guidance."
+    },
+    {
+      "id": "R-1-0005",
+      "section_id": "S-5",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Field measurements of biomass stock changes occur at least every five years with permanent plots."
+    },
+    {
+      "id": "R-1-0006",
+      "section_id": "S-5",
+      "tags": [
+        "uncertainty"
+      ],
+      "text": "If sampling uncertainty exceeds 10%, apply Tool 12 to derive conservative estimates."
+    },
+    {
+      "id": "R-1-0007",
+      "section_id": "S-5",
+      "tags": [
+        "reporting"
+      ],
+      "text": "Monitoring reports include maps, inventory data, leakage deductions, and QA/QC evidence."
+    }
+  ]
+}
