@@ -1,21 +1,5 @@
 [
   {
-    "id": "UNFCCC.Forestry.AR-ACM0003.v02-0",
-    "methodology_id": "AR-ACM0003",
-    "version": "v02-0",
-    "sector": "Forestry",
-    "organization": "UNFCCC",
-    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0"
-  },
-  {
-    "id": "UNFCCC.Forestry.AR-AM0014.v03-0",
-    "methodology_id": "AR-AM0014",
-    "version": "v03-0",
-    "sector": "Forestry",
-    "organization": "UNFCCC",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0"
-  },
-  {
     "standard": "GoldStandard",
     "program": "LUF",
     "code": "GS-00XX",
