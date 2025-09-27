@@ -9,15 +9,15 @@
       "source_ref": "UNFCCC/AR-AMS0007@v03-1"
     },
     "refs": {
+      "lines": [
+        "text_anchor hint=\"Eligibility scope\" quote=\"Scope and applicability\" pages=[2]"
+      ],
       "sections": [
         "S-1"
       ],
       "tools": [
         "UNFCCC/AR-AMS0007@v03-1",
         "UNFCCC/AR-TOOL14@v4.2"
-      ],
-      "lines": [
-        "text_anchor hint=\"Eligibility scope\" quote=\"Scope and applicability\" pages=[2]"
       ]
     },
     "summary": "ELIGIBLE if all predicates true; otherwise INELIGIBLE.",
@@ -120,15 +120,15 @@
       "source_ref": "UNFCCC/AR-AMS0007@v03-1"
     },
     "refs": {
+      "lines": [
+        "text_anchor hint=\"C_AGB_t = AGB_dm * CF\" quote=\"AGB\" pages=[11]"
+      ],
       "sections": [
         "S-1"
       ],
       "tools": [
         "UNFCCC/AR-AMS0007@v03-1",
         "UNFCCC/AR-TOOL14@v4.2"
-      ],
-      "lines": [
-        "text_anchor hint=\"C_AGB_t = AGB_dm * CF\" quote=\"AGB\" pages=[11]"
       ]
     },
     "summary": "C_AGB_t = AGB_dm * CF",
@@ -153,14 +153,14 @@
       "source_ref": "UNFCCC/AR-AMS0007@v03-1"
     },
     "refs": {
+      "lines": [
+        "text_anchor hint=\"Stoichiometric conversion\" quote=\"44/12\" pages=[11]"
+      ],
       "sections": [
         "S-1"
       ],
       "tools": [
         "UNFCCC/AR-AMS0007@v03-1"
-      ],
-      "lines": [
-        "text_anchor hint=\"Stoichiometric conversion\" quote=\"44/12\" pages=[11]"
       ]
     },
     "summary": "CO2e_pool = C_pool * 44/12",
@@ -210,16 +210,16 @@
       "source_ref": "UNFCCC/AR-AMS0007@v03-1"
     },
     "refs": {
+      "lines": [
+        "text_anchor hint=\"Net_project = ... - leakage\" quote=\"Net removals\" pages=[12]",
+        "text_anchor hint=\"Removals and equations\" quote=\"Project scenario\" pages=[10]"
+      ],
       "sections": [
         "S-1",
         "S-5"
       ],
       "tools": [
         "UNFCCC/AR-AMS0007@v03-1"
-      ],
-      "lines": [
-        "text_anchor hint=\"Net_project = ... - leakage\" quote=\"Net removals\" pages=[12]",
-        "text_anchor hint=\"Removals and equations\" quote=\"Project scenario\" pages=[10]"
       ]
     },
     "summary": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage",

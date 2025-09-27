@@ -14,6 +14,8 @@
     "ajv-formats": "file:vendor/npm/ajv-formats-2.1.1.tgz"
   },
   "scripts": {
+    "hooks:install": "./scripts/install-hooks.sh",
+    "mvp:check": "./scripts/mvp-check.sh",
     "compile:all": "node scripts/compile-audit.js",
     "validate:rich": "./scripts/run-ajv.sh validate -s schemas/sections.rich.schema.json -d 'methodologies/**/sections.rich.json' && ./scripts/run-ajv.sh validate -s schemas/rules.rich.schema.json -d 'methodologies/**/rules.rich.json'",
     "validate:lean": "./scripts/run-ajv.sh validate -s schemas/META.schema.json -d 'methodologies/**/META.json' && ./scripts/run-ajv.sh validate -s schemas/sections.schema.json -d 'methodologies/**/sections.json' && ./scripts/run-ajv.sh validate -s schemas/rules.schema.json -d 'methodologies/**/rules.json'",
