@@ -2,6 +2,7 @@
   "version": 2,
   "routes": [
     { "src": "/healthz", "dest": "api/healthz.js" },
-    { "src": "/query", "dest": "api/query.js" }
+    { "src": "/query", "dest": "api/query.js" },
+    { "src": "/manifest", "dest": "api/manifest.js" }
   ]
 }
