@@ -27,8 +27,8 @@
       "text": "Baseline net GHG removals derived from historical land-use data and validated management practices.",
       "title": "Baseline net GHG removals derived from historical land-use data and validated management practices.",
       "tools": [
-        "UNFCCC/AR-TOOL02@v1",
-        "UNFCCC/AR-ACM0003@v02-0"
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL02@v1.0"
       ],
       "when": [
         "Baseline scenario documentation provided for DOE review.",
@@ -45,8 +45,8 @@
       "text": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08.",
       "title": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08.",
       "tools": [
-        "UNFCCC/AR-TOOL08@v4.0.0",
-        "UNFCCC/AR-ACM0003@v02-0"
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL08@v4.0.0"
       ],
       "when": [
         "Fuel consumption logged with calibrated meters.",
@@ -63,8 +63,8 @@
       "text": "Leakage from wood product displacement addressed using standardized factors in Tool 14.",
       "title": "Leakage from wood product displacement addressed using standardized factors in Tool 14.",
       "tools": [
-        "UNFCCC/AR-TOOL14@v4.2",
-        "UNFCCC/AR-ACM0003@v02-0"
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL14@v4.2"
       ],
       "when": [
         "Leakage monitoring includes community engagement.",
@@ -99,7 +99,6 @@
       "text": "Permanent plots re-measured at least every five years with QA/QC according to Tool 16.",
       "title": "Permanent plots re-measured at least every five years with QA/QC according to Tool 16.",
       "tools": [
-        "UNFCCC/AR-TOOL15@v2.0",
         "UNFCCC/AR-ACM0003@v02-0",
         "UNFCCC/AR-TOOL16@v1.1.0"
       ],
@@ -118,7 +117,6 @@
       "text": "Combined sampling uncertainty must remain below 10% at 90% confidence or be conservatively adjusted.",
       "title": "Combined sampling uncertainty must remain below 10% at 90% confidence or be conservatively adjusted.",
       "tools": [
-        "UNFCCC/AR-TOOL16@v1.1.0",
         "UNFCCC/AR-ACM0003@v02-0",
         "UNFCCC/AR-TOOL12@v3.1"
       ],
@@ -137,7 +135,6 @@
       "text": "Monitoring reports contain geospatial data, field measurements, emission sources, and buffer contributions.",
       "title": "Monitoring reports contain geospatial data, field measurements, emission sources, and buffer contributions.",
       "tools": [
-        "UNFCCC/AR-TOOL12@v3.1",
         "UNFCCC/AR-ACM0003@v02-0"
       ],
       "when": [

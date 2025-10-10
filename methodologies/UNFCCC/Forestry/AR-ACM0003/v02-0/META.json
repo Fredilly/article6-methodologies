@@ -1,13 +1,15 @@
 {
   "audit_hashes": {
-    "rules_json_sha256": "f33f5120e1f7a809d80cd8219affc5c20be704b23d20e2b600b8aecf4c8358a8",
+    "rules_json_sha256": "b7b9ee23f51454c30fe4d736dd3376d028c4a25dac423fda4815b5d68b776505",
     "sections_json_sha256": "f35fc63ea03a21a81da4a23e3f2430ff5abe5fd95692413cb7b691f61317d71b"
   },
   "automation": {
-    "repo_commit": "f4e34ec74460c745a008d48cabb61c9e53d6e9ee",
-    "scripts_manifest_sha256": "057701c6d0dc4efcc4fd9c7b06bb8eb18c01dde8857ce5b235ae190e6e52ce97"
+    "repo_commit": "ecc2d58db0ace9c193102caed8fc2fa8d8ea3791",
+    "scripts_manifest_sha256": "e8315214f0516c6b3916a177141a7decd209bac944f48923f8de4c00a2268ea0"
   },
   "provenance": {
+    "author": "Fred Egbuedike",
+    "date": "2025-09-25T19:37:38.000Z",
     "source_pdfs": [
       {
         "doc": "UNFCCC/AR-ACM0003@v02-0",
@@ -29,7 +31,7 @@
         "url": null
       },
       {
-        "doc": "UNFCCC/AR-TOOL02@v1",
+        "doc": "UNFCCC/AR-TOOL02@v1.0",
         "kind": "pdf",
         "path": "tools/UNFCCC/AR-ACM0003/v02-0/ar-am-tool-02-v1.pdf",
         "sha256": "37324fd7d9e727d006bd7e46b5410acff24acbe2195a65229a70a27041bbe4b4",

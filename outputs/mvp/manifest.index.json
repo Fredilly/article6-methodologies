@@ -34,8 +34,8 @@
     "text": "Baseline net GHG removals derived from historical land-use data and validated management practices.",
     "title": "Baseline net GHG removals derived from historical land-use data and validated management practices.",
     "tools": [
-      "UNFCCC/AR-TOOL02@v1",
-      "UNFCCC/AR-ACM0003@v02-0"
+      "UNFCCC/AR-ACM0003@v02-0",
+      "UNFCCC/AR-TOOL02@v1.0"
     ],
     "when": [
       "Baseline scenario documentation provided for DOE review.",
@@ -60,8 +60,8 @@
     "text": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08.",
     "title": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08.",
     "tools": [
-      "UNFCCC/AR-TOOL08@v4.0.0",
-      "UNFCCC/AR-ACM0003@v02-0"
+      "UNFCCC/AR-ACM0003@v02-0",
+      "UNFCCC/AR-TOOL08@v4.0.0"
     ],
     "when": [
       "Fuel consumption logged with calibrated meters.",
@@ -86,8 +86,8 @@
     "text": "Leakage from wood product displacement addressed using standardized factors in Tool 14.",
     "title": "Leakage from wood product displacement addressed using standardized factors in Tool 14.",
     "tools": [
-      "UNFCCC/AR-TOOL14@v4.2",
-      "UNFCCC/AR-ACM0003@v02-0"
+      "UNFCCC/AR-ACM0003@v02-0",
+      "UNFCCC/AR-TOOL14@v4.2"
     ],
     "when": [
       "Leakage monitoring includes community engagement.",
@@ -138,7 +138,6 @@
     "text": "Permanent plots re-measured at least every five years with QA/QC according to Tool 16.",
     "title": "Permanent plots re-measured at least every five years with QA/QC according to Tool 16.",
     "tools": [
-      "UNFCCC/AR-TOOL15@v2.0",
       "UNFCCC/AR-ACM0003@v02-0",
       "UNFCCC/AR-TOOL16@v1.1.0"
     ],
@@ -165,7 +164,6 @@
     "text": "Combined sampling uncertainty must remain below 10% at 90% confidence or be conservatively adjusted.",
     "title": "Combined sampling uncertainty must remain below 10% at 90% confidence or be conservatively adjusted.",
     "tools": [
-      "UNFCCC/AR-TOOL16@v1.1.0",
       "UNFCCC/AR-ACM0003@v02-0",
       "UNFCCC/AR-TOOL12@v3.1"
     ],
@@ -192,7 +190,6 @@
     "text": "Monitoring reports contain geospatial data, field measurements, emission sources, and buffer contributions.",
     "title": "Monitoring reports contain geospatial data, field measurements, emission sources, and buffer contributions.",
     "tools": [
-      "UNFCCC/AR-TOOL12@v3.1",
       "UNFCCC/AR-ACM0003@v02-0"
     ],
     "when": [
@@ -243,8 +240,8 @@
     "text": "Baseline biomass is determined using IPCC default factors or site-specific sampling following Tool 02 guidance.",
     "title": "Baseline biomass is determined using IPCC default factors or site-specific sampling following Tool 02 guidance.",
     "tools": [
-      "UNFCCC/AR-TOOL02@v1",
-      "UNFCCC/AR-AM0014@v03-0"
+      "UNFCCC/AR-AM0014@v03-0",
+      "UNFCCC/AR-TOOL02@v1.0"
     ],
     "when": [
       "Sampling plans approved by DOE.",
@@ -269,8 +266,8 @@
     "text": "Net anthropogenic GHG removals equal project removals minus baseline emissions and leakage.",
     "title": "Net anthropogenic GHG removals equal project removals minus baseline emissions and leakage.",
     "tools": [
-      "UNFCCC/AR-TOOL08@v4.0.0",
-      "UNFCCC/AR-AM0014@v03-0"
+      "UNFCCC/AR-AM0014@v03-0",
+      "UNFCCC/AR-TOOL08@v4.0.0"
     ],
     "when": [
       "All carbon pools accounted for unless exclusion justified.",
@@ -295,8 +292,8 @@
     "text": "Activity shifting leakage is quantified using Tool 14 and discounted from net removals.",
     "title": "Activity shifting leakage is quantified using Tool 14 and discounted from net removals.",
     "tools": [
-      "UNFCCC/AR-TOOL14@v4.2",
-      "UNFCCC/AR-AM0014@v03-0"
+      "UNFCCC/AR-AM0014@v03-0",
+      "UNFCCC/AR-TOOL14@v4.2"
     ],
     "when": [
       "Community livelihoods impacted by land-use change.",
@@ -347,7 +344,6 @@
     "text": "Field measurements of biomass stock changes occur at least every five years with permanent plots.",
     "title": "Field measurements of biomass stock changes occur at least every five years with permanent plots.",
     "tools": [
-      "UNFCCC/AR-TOOL15@v2.0",
       "UNFCCC/AR-AM0014@v03-0",
       "UNFCCC/AR-TOOL08@v4.0.0"
     ],
@@ -374,7 +370,6 @@
     "text": "If sampling uncertainty exceeds 10%, apply Tool 12 to derive conservative estimates.",
     "title": "If sampling uncertainty exceeds 10%, apply Tool 12 to derive conservative estimates.",
     "tools": [
-      "UNFCCC/AR-TOOL08@v4.0.0",
       "UNFCCC/AR-AM0014@v03-0",
       "UNFCCC/AR-TOOL12@v3.1"
     ],
@@ -401,7 +396,6 @@
     "text": "Monitoring reports include maps, inventory data, leakage deductions, and QA/QC evidence.",
     "title": "Monitoring reports include maps, inventory data, leakage deductions, and QA/QC evidence.",
     "tools": [
-      "UNFCCC/AR-TOOL12@v3.1",
       "UNFCCC/AR-AM0014@v03-0"
     ],
     "when": [

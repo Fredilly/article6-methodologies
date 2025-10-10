@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if ! command -v git >/dev/null 2>&1; then
+  echo "pre-commit: git not found" >&2
+  exit 1
+fi
+
+repo_root="$(git rev-parse --show-toplevel 2>/dev/null || true)"
+if [[ -z "${repo_root}" ]]; then
+  echo "pre-commit: unable to determine repo root" >&2
+  exit 1
+fi
+
+cd "${repo_root}"
+
+mapfile -d '' -t staged < <(git diff --cached --name-only --diff-filter=ACMR -z -- 'methodologies')
+json_files=()
+for rel_path in "${staged[@]}"; do
+  [[ "${rel_path}" == *.json ]] || continue
+  [[ -f "${rel_path}" ]] || continue
+  json_files+=("${rel_path}")
+done
+
+if (( ${#json_files[@]} == 0 )); then
+  exit 0
+fi
+
+echo "pre-commit: canonicalizing ${#json_files[@]} methodologies JSON file(s)"
+node scripts/json-canonical-check.sh --fix "${json_files[@]}"
+
+# Re-stage files after canonicalization
+git add -- "${json_files[@]}"
+
+exit 0

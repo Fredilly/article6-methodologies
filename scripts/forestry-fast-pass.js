@@ -9,7 +9,7 @@ const CONFIG = {
     sections: ['S-1', 'S-2', 'S-3', 'S-4', 'S-5', 'S-5', 'S-5', 'S-5'],
     toolHints: [
       ['UNFCCC/AR-ACM0003@v02-0'],
-      ['UNFCCC/AR-ACM0003@v02-0', 'UNFCCC/AR-TOOL02@v1'],
+      ['UNFCCC/AR-ACM0003@v02-0', 'UNFCCC/AR-TOOL02@v1.0'],
       ['UNFCCC/AR-ACM0003@v02-0', 'UNFCCC/AR-TOOL08@v4.0.0'],
       ['UNFCCC/AR-ACM0003@v02-0', 'UNFCCC/AR-TOOL14@v4.2'],
       ['UNFCCC/AR-ACM0003@v02-0', 'UNFCCC/AR-TOOL15@v2.0'],
@@ -22,7 +22,7 @@ const CONFIG = {
     sections: ['S-1', 'S-2', 'S-3', 'S-4', 'S-5', 'S-5', 'S-5', 'S-5'],
     toolHints: [
       ['UNFCCC/AR-AM0014@v03-0'],
-      ['UNFCCC/AR-AM0014@v03-0', 'UNFCCC/AR-TOOL02@v1'],
+      ['UNFCCC/AR-AM0014@v03-0', 'UNFCCC/AR-TOOL02@v1.0'],
       ['UNFCCC/AR-AM0014@v03-0', 'UNFCCC/AR-TOOL08@v4.0.0'],
       ['UNFCCC/AR-AM0014@v03-0', 'UNFCCC/AR-TOOL14@v4.2'],
       ['UNFCCC/AR-AM0014@v03-0', 'UNFCCC/AR-TOOL15@v2.0'],
@@ -67,7 +67,8 @@ function normalizeToolIdFromPath(pth, fallbackDoc) {
   const toolMatch = file.match(/ar-am-tool-(\d+)-v([\d.]+)\.(pdf|docx)$/i);
   if (toolMatch) {
     const tool = toolMatch[1].padStart(2, '0');
-    return `${domain}/AR-TOOL${tool}@v${toolMatch[2]}`;
+    const ver = toolMatch[2].includes('.') ? toolMatch[2] : `${toolMatch[2]}.0`;
+    return `${domain}/AR-TOOL${tool}@v${ver}`;
   }
   if (/AR-TOOL(\d+)_v([\d-]+)\.(pdf|docx)$/i.test(file)) {
     const m = file.match(/AR-TOOL(\d+)_v([\d-]+)\.(pdf|docx)$/i);

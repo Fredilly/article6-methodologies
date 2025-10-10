@@ -35,8 +35,8 @@
         "S-2"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL02@v1",
-        "UNFCCC/AR-ACM0003@v02-0"
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL02@v1.0"
       ]
     },
     "summary": "Baseline net GHG removals derived from historical land-use data and validated management practices.",
@@ -59,8 +59,8 @@
         "S-3"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL08@v4.0.0",
-        "UNFCCC/AR-ACM0003@v02-0"
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL08@v4.0.0"
       ]
     },
     "summary": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08.",
@@ -83,8 +83,8 @@
         "S-4"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL14@v4.2",
-        "UNFCCC/AR-ACM0003@v02-0"
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL14@v4.2"
       ]
     },
     "summary": "Leakage from wood product displacement addressed using standardized factors in Tool 14.",
@@ -131,7 +131,6 @@
         "S-5"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL15@v2.0",
         "UNFCCC/AR-ACM0003@v02-0",
         "UNFCCC/AR-TOOL16@v1.1.0"
       ]
@@ -156,7 +155,6 @@
         "S-5"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL16@v1.1.0",
         "UNFCCC/AR-ACM0003@v02-0",
         "UNFCCC/AR-TOOL12@v3.1"
       ]
@@ -181,7 +179,6 @@
         "S-5"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL12@v3.1",
         "UNFCCC/AR-ACM0003@v02-0"
       ]
     },
