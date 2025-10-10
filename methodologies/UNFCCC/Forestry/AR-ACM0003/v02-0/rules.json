@@ -81,8 +81,8 @@
       "text": "Non-permanence buffer share determined via Tool 15 and recorded in registry accounts.",
       "title": "Non-permanence buffer share determined via Tool 15 and recorded in registry accounts.",
       "tools": [
-        "UNFCCC/AR-TOOL15@v2.0",
-        "UNFCCC/AR-ACM0003@v02-0"
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL15@v2.0"
       ],
       "when": [
         "Buffer contribution documented alongside issuance request.",
@@ -99,8 +99,9 @@
       "text": "Permanent plots re-measured at least every five years with QA/QC according to Tool 16.",
       "title": "Permanent plots re-measured at least every five years with QA/QC according to Tool 16.",
       "tools": [
-        "UNFCCC/AR-TOOL16@v1.1.0",
-        "UNFCCC/AR-ACM0003@v02-0"
+        "UNFCCC/AR-TOOL15@v2.0",
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL16@v1.1.0"
       ],
       "when": [
         "Sample plot network georeferenced and maintained.",
@@ -117,8 +118,9 @@
       "text": "Combined sampling uncertainty must remain below 10% at 90% confidence or be conservatively adjusted.",
       "title": "Combined sampling uncertainty must remain below 10% at 90% confidence or be conservatively adjusted.",
       "tools": [
-        "UNFCCC/AR-TOOL12@v3.1",
-        "UNFCCC/AR-ACM0003@v02-0"
+        "UNFCCC/AR-TOOL16@v1.1.0",
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL12@v3.1"
       ],
       "when": [
         "Variance analysis submitted with monitoring report.",
@@ -135,6 +137,7 @@
       "text": "Monitoring reports contain geospatial data, field measurements, emission sources, and buffer contributions.",
       "title": "Monitoring reports contain geospatial data, field measurements, emission sources, and buffer contributions.",
       "tools": [
+        "UNFCCC/AR-TOOL12@v3.1",
         "UNFCCC/AR-ACM0003@v02-0"
       ],
       "when": [

@@ -1,11 +1,11 @@
 {
   "audit_hashes": {
-    "rules_json_sha256": "91b3b7a6fc7ce7c0504521b80aeabf9506c264695872b3f153f254c694a9d98b",
+    "rules_json_sha256": "f33f5120e1f7a809d80cd8219affc5c20be704b23d20e2b600b8aecf4c8358a8",
     "sections_json_sha256": "f35fc63ea03a21a81da4a23e3f2430ff5abe5fd95692413cb7b691f61317d71b"
   },
   "automation": {
-    "repo_commit": "63eae8a868ce472b1328d342cf9a0fdc7cc09189",
-    "scripts_manifest_sha256": "3224021cd6d98c3f93090f31042f029cb943531e3523e802ce955c26270caa44"
+    "repo_commit": "c70c91cffbc135978a97960cb1830cf7d5ca6971",
+    "scripts_manifest_sha256": "300267c71a0abee433046b6d009fa58eea2f6c8b6c3b75d7a939b620bbb70535"
   },
   "provenance": {
     "source_pdfs": [
