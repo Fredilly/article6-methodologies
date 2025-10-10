@@ -3,7 +3,23 @@ const fs = require('fs');
 const path = require('path');
 
 function readJSON(p){ return JSON.parse(fs.readFileSync(p,'utf8')); }
-function writeJSON(p, data){ fs.writeFileSync(p, JSON.stringify(data, null, 2) + '\n', 'utf8'); }
+
+function sortKeysDeep(value){
+  if (Array.isArray(value)) return value.map(sortKeysDeep);
+  if (value && typeof value === 'object') {
+    const out = {};
+    for (const key of Object.keys(value).sort()) {
+      out[key] = sortKeysDeep(value[key]);
+    }
+    return out;
+  }
+  return value;
+}
+
+function writeJSON(p, data){
+  const sorted = sortKeysDeep(data);
+  fs.writeFileSync(p, JSON.stringify(sorted, null, 2) + '\n', 'utf8');
+}
 
 function listDirs(root){
   const out = [];
@@ -71,11 +87,9 @@ function derive(dir){
     const tags = Array.from(new Set([r.type, ...(r.tags||[])]));
     const summary = r.summary;
     const text = Array.isArray(summary)
-      ? summary.map((entry) => entry)
-      : summary;
-    const title = Array.isArray(summary)
       ? summary.join(' ').trim()
       : String(summary);
+    const title = text;
     const inputs = Array.isArray(r.inputs) ? r.inputs.map((input) => input) : [];
     const when = Array.isArray(r.when) ? r.when.map((w) => w) : [];
     const tools = Array.isArray(r.refs.tools) ? r.refs.tools.map((tool) => tool) : [];

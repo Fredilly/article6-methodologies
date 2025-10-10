@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-10-10T12:10:38Z",
-  "git_commit": "c70c91cffbc135978a97960cb1830cf7d5ca6971",
+  "generated_at": "2025-10-10T18:23:15Z",
+  "git_commit": "f4e34ec74460c745a008d48cabb61c9e53d6e9ee",
   "files": [
     { "path": "core/forestry-guardrails.json", "sha256": "38ea1827454b06e97daec4885476d0208ca0bf7903996bb9b3f4f9f1f676eea6" },
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
@@ -564,7 +564,7 @@
     { "path": "scripts/ci-run-tests.sh", "sha256": "9fe1d8bce3c97fd0c4ed6667f520b41b178372019c501810f2df5480898e229a" },
     { "path": "scripts/compile-audit.js", "sha256": "917ee7d5fabef37ec7d4bfa9503ac498da225426bf5fbd05fd710d35699a1a14" },
     { "path": "scripts/compile-validators.js", "sha256": "0d6d8454097445711c1a0f974061f7f426522b8c1e1c0b61998cfa1c2237949b" },
-    { "path": "scripts/derive-lean-from-rich.js", "sha256": "5a35fad3f14cc1d737d9e7287b0067b71e5fe5bf9270e578a29da218a5d198d1" },
+    { "path": "scripts/derive-lean-from-rich.js", "sha256": "e2ea5f641ac94a0dbee333533f4ecda3fcfdfeba04192ebee6f4a1a701615691" },
     { "path": "scripts/fill-provenance.js", "sha256": "ada54506b8554fd101c56541768bbec912d9050842734c2f97a153b9d067b221" },
     { "path": "scripts/forestry-fast-pass.js", "sha256": "b0a3592fbcb28f99c13819d997d8c14e9aac9d82c2a31a2475f6997bfffefbd1" },
     { "path": "scripts/gen-dataset-params.js", "sha256": "befe8d1bdece5b2738284c2b60598e676f7f910c605ffb53fbb7a07c3342414f" },
