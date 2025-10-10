@@ -27,6 +27,7 @@ See RULESET.md for conventions and CI guardrails.
 - `./scripts/hash-all.sh` — updates `META.audit_hashes`, `META.automation`, and `scripts_manifest.json`.
 - `npm run validate:rich` — ensures every rich JSON conforms to the schemas before deriving lean files.
 - `npm run validate:lean` — validates all lean `META.json`, `sections.json`, and `rules.json` artifacts.
+- `npm run validate:guardrails` — enforces forestry rule sequencing, section coverage, and tool provenance guardrails.
 - `./scripts/check-registry.sh` — confirms `registry.json` mirrors the methodologies tree.
 
 All four commands must complete without diffs or errors before opening a pull request. Capture any new evidence files under `outputs/mvp/` and include screenshots or logs referenced in the change summary.

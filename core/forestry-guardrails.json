@@ -1,0 +1,44 @@
+{
+  "UNFCCC/Forestry/AR-ACM0003/v02-0": {
+    "requiredSections": [
+      "S-1",
+      "S-2",
+      "S-3",
+      "S-4",
+      "S-5"
+    ]
+  },
+  "UNFCCC/Forestry/AR-AM0014/v03-0": {
+    "requiredSections": [
+      "S-1",
+      "S-2",
+      "S-3",
+      "S-4",
+      "S-5"
+    ]
+  },
+  "UNFCCC/Forestry/AR-AMS0003/v01-0": {
+    "requiredSections": [
+      "S-1",
+      "S-3",
+      "S-5",
+      "S-6",
+      "S-7",
+      "S-8",
+      "S-9",
+      "S-12"
+    ]
+  },
+  "UNFCCC/Forestry/AR-AMS0007/v03-1": {
+    "requiredSections": [
+      "S-1",
+      "S-3",
+      "S-5",
+      "S-6",
+      "S-7",
+      "S-8",
+      "S-9",
+      "S-12"
+    ]
+  }
+}

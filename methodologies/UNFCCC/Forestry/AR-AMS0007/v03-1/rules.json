@@ -2,107 +2,319 @@
   "rules": [
     {
       "id": "R-1-0001",
+      "inputs": [],
       "section_id": "S-1",
       "tags": [
         "eligibility"
       ],
-      "text": "ELIGIBLE if all predicates true; otherwise INELIGIBLE."
+      "text": "ELIGIBLE if all predicates true; otherwise INELIGIBLE.",
+      "title": "ELIGIBLE if all predicates true; otherwise INELIGIBLE.",
+      "tools": [
+        "UNFCCC/AR-AMS0007@v03.1"
+      ],
+      "when": [
+        "Activity is small-scale A/R on lands other than wetlands",
+        "Lands meet national forest definition thresholds when project matures",
+        "Baseline land-use and legal eligibility documented"
+      ]
     },
     {
-      "id": "R-1-0010",
-      "section_id": "S-1",
+      "id": "R-1-0002",
+      "inputs": [],
+      "section_id": "S-8",
       "tags": [
         "parameter"
       ],
-      "text": "Default CF = 0.47 t C per t d.m. (trees and shrubs)."
+      "text": "Default CF = 0.47 t C per t d.m. (trees and shrubs).",
+      "title": "Default CF = 0.47 t C per t d.m. (trees and shrubs).",
+      "tools": [
+        "UNFCCC/AR-AMS0007@v03.1",
+        "UNFCCC/AR-TOOL14@v4.2"
+      ],
+      "when": [
+        "Carbon fraction for aboveground and shrub biomass required"
+      ]
     },
     {
-      "id": "R-1-0020",
-      "section_id": "S-1",
+      "id": "R-1-0003",
+      "inputs": [],
+      "section_id": "S-8",
       "tags": [
         "parameter"
       ],
-      "text": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless)."
+      "text": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).",
+      "title": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).",
+      "tools": [
+        "UNFCCC/AR-AMS0007@v03.1",
+        "UNFCCC/AR-TOOL14@v4.2"
+      ],
+      "when": [
+        "Root:shoot ratio required for trees and shrubs"
+      ]
     },
     {
-      "id": "R-1-0030",
-      "section_id": "S-1",
+      "id": "R-1-0004",
+      "inputs": [],
+      "section_id": "S-3",
       "tags": [
         "eligibility"
       ],
-      "text": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule."
+      "text": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",
+      "title": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",
+      "tools": [
+        "UNFCCC/AR-AMS0007@v03.1"
+      ],
+      "when": [
+        "Optional pools (DOM, Litter, SOC) excluded via boundary selection"
+      ]
     },
     {
-      "id": "R-1-0040",
-      "section_id": "S-1",
+      "id": "R-1-0005",
+      "inputs": [
+        {
+          "name": "AGB_dm",
+          "source": "sampling",
+          "unit": "t d.m. ha-1"
+        },
+        {
+          "default": 0.47,
+          "name": "CF",
+          "source": "tool-default",
+          "unit": "t C / t d.m."
+        }
+      ],
+      "section_id": "S-8",
       "tags": [
         "equation"
       ],
-      "text": "C_AGB_t = AGB_dm * CF"
+      "text": "C_AGB_t = AGB_dm * CF",
+      "title": "C_AGB_t = AGB_dm * CF",
+      "tools": [
+        "UNFCCC/AR-AMS0007@v03.1",
+        "UNFCCC/AR-TOOL14@v4.2"
+      ],
+      "when": [
+        "Compute carbon in AGB at time t"
+      ]
     },
     {
-      "id": "R-1-0045",
-      "section_id": "S-1",
+      "id": "R-1-0006",
+      "inputs": [
+        {
+          "name": "C_pool",
+          "source": "calc",
+          "unit": "t C ha-1"
+        }
+      ],
+      "section_id": "S-12",
       "tags": [
         "equation"
       ],
-      "text": "CO2e_pool = C_pool * 44/12"
+      "text": "CO2e_pool = C_pool * 44/12",
+      "title": "CO2e_pool = C_pool * 44/12",
+      "tools": [
+        "UNFCCC/AR-AMS0007@v03.1"
+      ],
+      "when": [
+        "Convert carbon to CO2e"
+      ]
     },
     {
-      "id": "R-1-0050",
-      "section_id": "S-1",
+      "id": "R-1-0007",
+      "inputs": [
+        {
+          "name": "dCO2e_AGB",
+          "source": "calc",
+          "unit": "t CO2e ha-1 yr-1"
+        },
+        {
+          "name": "dCO2e_BGB",
+          "source": "calc",
+          "unit": "t CO2e ha-1 yr-1"
+        },
+        {
+          "name": "dCO2e_DOM",
+          "source": "calc",
+          "unit": "t CO2e ha-1 yr-1"
+        },
+        {
+          "name": "dCO2e_Litter",
+          "source": "calc",
+          "unit": "t CO2e ha-1 yr-1"
+        },
+        {
+          "name": "dCO2e_SOC",
+          "source": "calc",
+          "unit": "t CO2e ha-1 yr-1"
+        },
+        {
+          "name": "leakage",
+          "source": "calc",
+          "unit": "t CO2e ha-1 yr-1"
+        }
+      ],
+      "section_id": "S-5",
       "tags": [
         "calc"
       ],
-      "text": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage"
+      "text": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage",
+      "title": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage",
+      "tools": [
+        "UNFCCC/AR-AMS0007@v03.1"
+      ],
+      "when": [
+        "Annual net GHG removals (project)"
+      ]
     },
     {
-      "id": "R-1-0060",
-      "section_id": "S-1",
+      "id": "R-1-0008",
+      "inputs": [
+        {
+          "name": "L_AS",
+          "source": "calc",
+          "unit": "t CO2e ha-1 yr-1"
+        },
+        {
+          "name": "L_MD",
+          "source": "calc",
+          "unit": "t CO2e ha-1 yr-1"
+        }
+      ],
+      "section_id": "S-6",
       "tags": [
         "leakage"
       ],
-      "text": "leakage = L_AS + L_MD"
+      "text": "leakage = L_AS + L_MD",
+      "title": "leakage = L_AS + L_MD",
+      "tools": [
+        "UNFCCC/AR-AMS0007@v03.1",
+        "UNFCCC/AR-TOOL14@v4.2"
+      ],
+      "when": [
+        "Leakage must be accounted per methodology/tool"
+      ]
     },
     {
-      "id": "R-1-0070",
-      "section_id": "S-1",
+      "id": "R-1-0009",
+      "inputs": [
+        {
+          "name": "PlotCount",
+          "source": "design",
+          "unit": "count"
+        },
+        {
+          "name": "RevisitInterval",
+          "source": "design",
+          "unit": "yr"
+        }
+      ],
+      "section_id": "S-7",
       "tags": [
         "monitoring"
       ],
-      "text": "Revisit plots every RevisitInterval years using consistent mensuration protocol."
+      "text": "Revisit plots every RevisitInterval years using consistent mensuration protocol.",
+      "title": "Revisit plots every RevisitInterval years using consistent mensuration protocol.",
+      "tools": [
+        "UNFCCC/AR-AMS0007@v03.1",
+        "UNFCCC/AR-TOOL16@v1.1.0"
+      ],
+      "when": [
+        "Permanent sample plots established per design"
+      ]
     },
     {
-      "id": "R-1-0080",
-      "section_id": "S-1",
+      "id": "R-1-0010",
+      "inputs": [
+        {
+          "name": "RelativePrecision",
+          "source": "calc",
+          "unit": "%"
+        }
+      ],
+      "section_id": "S-9",
       "tags": [
         "uncertainty"
       ],
-      "text": "If RelativePrecision > 10 then apply uncertainty discount per U-table."
+      "text": "If RelativePrecision > 10 then apply uncertainty discount per U-table.",
+      "title": "If RelativePrecision > 10 then apply uncertainty discount per U-table.",
+      "tools": [
+        "UNFCCC/AR-AMS0007@v03.1",
+        "UNFCCC/AR-TOOL12@v3.1"
+      ],
+      "when": [
+        "Precision check for sampling strata (trees/shrubs)"
+      ]
     },
     {
-      "id": "R-1-0090",
-      "section_id": "S-1",
+      "id": "R-1-0011",
+      "inputs": [
+        {
+          "name": "ShrubCrownCover_i",
+          "source": "monitoring",
+          "unit": "fraction"
+        }
+      ],
+      "section_id": "S-3",
       "tags": [
         "eligibility"
       ],
-      "text": "If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0."
+      "text": "If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.",
+      "title": "If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.",
+      "tools": [
+        "UNFCCC/AR-AMS0007@v03.1"
+      ],
+      "when": [
+        "Zeroing conditions for shrubs stratum defined by crown cover"
+      ]
     },
     {
-      "id": "R-1-0100",
-      "section_id": "S-1",
+      "id": "R-1-0012",
+      "inputs": [
+        {
+          "name": "C_t2",
+          "source": "calc",
+          "unit": "t CO2e"
+        },
+        {
+          "name": "C_t1",
+          "source": "calc",
+          "unit": "t CO2e"
+        },
+        {
+          "name": "T",
+          "source": "calc",
+          "unit": "yr"
+        }
+      ],
+      "section_id": "S-12",
       "tags": [
         "equation"
       ],
-      "text": "ΔC_year = (C_t2 - C_t1) / T"
+      "text": "ΔC_year = (C_t2 - C_t1) / T",
+      "title": "ΔC_year = (C_t2 - C_t1) / T",
+      "tools": [
+        "UNFCCC/AR-AMS0007@v03.1"
+      ],
+      "when": [
+        "Annual change by linear interpolation between verifications"
+      ]
     },
     {
-      "id": "R-1-0110",
-      "section_id": "S-1",
+      "id": "R-1-0013",
+      "inputs": [],
+      "section_id": "S-7",
       "tags": [
         "monitoring"
       ],
-      "text": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification."
+      "text": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.",
+      "title": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.",
+      "tools": [
+        "UNFCCC/AR-AMS0007@v03.1",
+        "UNFCCC/AR-TOOL16@v1.1.0"
+      ],
+      "when": [
+        "Data and parameters recorded per methodology"
+      ]
     }
   ]
 }

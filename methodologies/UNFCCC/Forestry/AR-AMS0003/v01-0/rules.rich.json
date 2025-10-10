@@ -9,14 +9,14 @@
       "source_ref": "UNFCCC/AR-AMS0003@v01-0"
     },
     "refs": {
+      "lines": [
+        "text_anchor hint=\"Scope and applicability\" quote=\"Scope\" pages=[2]"
+      ],
       "sections": [
         "S-1"
       ],
       "tools": [
         "UNFCCC/AR-AMS0003@v01-0"
-      ],
-      "lines": [
-        "text_anchor hint=\"Scope and applicability\" quote=\"Scope\" pages=[2]"
       ]
     },
     "summary": "ELIGIBLE if all predicates true; otherwise INELIGIBLE.",
@@ -28,7 +28,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0010",
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0002",
     "inputs": [],
     "logic": "Default CF = 0.47 t C per t d.m. (trees and shrubs).",
     "notes": "Overridable with transparent national defaults; record provenance.",
@@ -38,10 +38,10 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-8"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-AMS0003@v01-0"
       ]
     },
     "summary": "Default CF = 0.47 t C per t d.m. (trees and shrubs).",
@@ -51,7 +51,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0020",
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0003",
     "inputs": [],
     "logic": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).",
     "notes": "Defaults unless justified site-/species-specific data available.",
@@ -61,10 +61,10 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-8"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-AMS0003@v01-0"
       ]
     },
     "summary": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).",
@@ -74,7 +74,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0030",
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0004",
     "inputs": [],
     "logic": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",
     "notes": "Tie to section 'project-boundary-pools'. Use explicit zeroing rules elsewhere if tool gates apply.",
@@ -84,7 +84,7 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-3"
       ],
       "tools": [
         "UNFCCC/AR-AMS0003@v01-0"
@@ -97,7 +97,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0040",
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0005",
     "inputs": [
       {
         "name": "AGB_dm",
@@ -118,15 +118,14 @@
       "source_ref": "UNFCCC/AR-AMS0003@v01-0"
     },
     "refs": {
-      "sections": [
-        "S-1"
-      ],
-      "tools": [
-        "UNFCCC/AR-AMS0003@v01-0",
-        "UNFCCC/AR-TOOL14@v4.2"
-      ],
       "lines": [
         "text_anchor hint=\"C_AGB_t = AGB_dm * CF\" quote=\"AGB\" pages=[9]"
+      ],
+      "sections": [
+        "S-8"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
       ]
     },
     "summary": "C_AGB_t = AGB_dm * CF",
@@ -136,7 +135,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0045",
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0006",
     "inputs": [
       {
         "name": "C_pool",
@@ -151,14 +150,14 @@
       "source_ref": "UNFCCC/AR-AMS0003@v01-0"
     },
     "refs": {
+      "lines": [
+        "text_anchor hint=\"Conversion factor\" quote=\"44/12\" pages=[9]"
+      ],
       "sections": [
-        "S-1"
+        "S-12"
       ],
       "tools": [
         "UNFCCC/AR-AMS0003@v01-0"
-      ],
-      "lines": [
-        "text_anchor hint=\"Conversion factor\" quote=\"44/12\" pages=[9]"
       ]
     },
     "summary": "CO2e_pool = C_pool * 44/12",
@@ -168,7 +167,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0050",
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0007",
     "inputs": [
       {
         "name": "dCO2e_AGB",
@@ -208,16 +207,15 @@
       "source_ref": "UNFCCC/AR-AMS0003@v01-0"
     },
     "refs": {
+      "lines": [
+        "text_anchor hint=\"Net_project = Σ pools - leakage\" quote=\"Net removals\" pages=[10]",
+        "text_anchor hint=\"Removals and equations\" quote=\"Project scenario\" pages=[8]"
+      ],
       "sections": [
-        "S-1",
         "S-5"
       ],
       "tools": [
         "UNFCCC/AR-AMS0003@v01-0"
-      ],
-      "lines": [
-        "text_anchor hint=\"Net_project = Σ pools - leakage\" quote=\"Net removals\" pages=[10]",
-        "text_anchor hint=\"Removals and equations\" quote=\"Project scenario\" pages=[8]"
       ]
     },
     "summary": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage",
@@ -227,7 +225,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0060",
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0008",
     "inputs": [
       {
         "name": "L_AS",
@@ -248,10 +246,10 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-6"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL15@v2.0"
+        "UNFCCC/AR-AMS0003@v01-0"
       ]
     },
     "summary": "leakage = L_AS + L_MD",
@@ -261,7 +259,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0070",
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0009",
     "inputs": [
       {
         "name": "PlotCount",
@@ -282,7 +280,7 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-7"
       ],
       "tools": [
         "UNFCCC/AR-AMS0003@v01-0"
@@ -295,7 +293,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0080",
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0010",
     "inputs": [
       {
         "name": "RelativePrecision",
@@ -311,10 +309,10 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-9"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-AMS0003@v01-0"
       ]
     },
     "summary": "If RelativePrecision > 10 then apply uncertainty discount per U-table.",
@@ -324,7 +322,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0090",
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0011",
     "inputs": [
       {
         "name": "ShrubCrownCover_i",
@@ -340,10 +338,10 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-3"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-AMS0003@v01-0"
       ]
     },
     "summary": "If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.",
@@ -353,7 +351,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0100",
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0012",
     "inputs": [
       {
         "name": "C_t2",
@@ -379,10 +377,10 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-12"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-AMS0003@v01-0"
       ]
     },
     "summary": "ΔC_year = (C_t2 - C_t1) / T",
@@ -392,7 +390,7 @@
     ]
   },
   {
-    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0110",
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0013",
     "inputs": [],
     "logic": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.",
     "notes": "Keep table-form sources consistent across strata.",
@@ -402,10 +400,10 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-7"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-AMS0003@v01-0"
       ]
     },
     "summary": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.",

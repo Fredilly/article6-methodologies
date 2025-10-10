@@ -30,3 +30,14 @@ jobs:
         run: node scripts/check-trio-and-registry.js
       - name: Supply-chain guard (pinning, no network installs)
         run: node scripts/check-workflows-supplychain.js
+      - name: Forestry methodology guardrails
+        run: npm run validate:guardrails
+      - name: Canonical JSON and hash determinism
+        run: |
+          ./scripts/json-canonical-check.sh --check
+          ./scripts/hash-all.sh
+          if ! git diff --quiet; then
+            echo "hash-all.sh introduced changes. Commit refreshed automation artefacts.";
+            git --no-pager diff;
+            exit 1;
+          fi

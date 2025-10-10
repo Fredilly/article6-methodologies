@@ -26,7 +26,8 @@
     "eval:params:linear": "node scripts/baselines/param-extraction-linear.js",
     "eval:params:linear:json": "node scripts/baselines/param-extraction-linear-json.js",
     "cli:query": "node bin/mrv-cli.js",
-    "server:http": "node bin/http-engine-adapter.js"
+    "server:http": "node bin/http-engine-adapter.js",
+    "validate:guardrails": "node scripts/check-methodology-guardrails.js"
   },
   "dependencies": {
     "fast-deep-equal": "file:vendor/npm/fast-deep-equal-3.1.3.tgz",
