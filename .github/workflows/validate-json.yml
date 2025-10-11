@@ -36,5 +36,5 @@ jobs:
       - name: Canonical JSON and hash determinism
         run: |
           ./scripts/json-canonical-check.sh --check
-          ./scripts/hash-all.sh
+          A6_SKIP_REPO_COMMIT=1 ./scripts/hash-all.sh
           git diff --quiet
