@@ -6,103 +6,103 @@
       "tags": [
         "eligibility"
       ],
-      "text": "ELIGIBLE if all predicates true; otherwise INELIGIBLE."
+      "text": "Small-scale A/R activities eligible when total area < 16,000 ha and participants grouped as defined."
     },
     {
-      "id": "R-1-0010",
-      "section_id": "S-1",
+      "id": "R-1-0002",
+      "section_id": "S-2",
       "tags": [
-        "parameter"
+        "definition"
       ],
-      "text": "Default CF = 0.47 t C per t d.m. (trees and shrubs)."
+      "text": "Definitions for grouped smallholder projects include participants, monitoring entity, and leakage belt."
     },
     {
-      "id": "R-1-0020",
-      "section_id": "S-1",
+      "id": "R-1-0003",
+      "section_id": "S-3",
       "tags": [
-        "parameter"
+        "boundary"
       ],
-      "text": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless)."
+      "text": "Project boundary includes above- and below-ground biomass, dead wood, litter, and soil carbon pools unless excluded with justification."
     },
     {
-      "id": "R-1-0030",
-      "section_id": "S-1",
+      "id": "R-1-0004",
+      "section_id": "S-4",
       "tags": [
-        "eligibility"
+        "baseline"
       ],
-      "text": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule."
+      "text": "Baseline scenario assumes continuation of pre-project land use with carbon stock change set to zero."
     },
     {
-      "id": "R-1-0040",
-      "section_id": "S-1",
+      "id": "R-1-0005",
+      "section_id": "S-5",
       "tags": [
-        "equation"
+        "emissions"
       ],
-      "text": "C_AGB_t = AGB_dm * CF"
+      "text": "Project removals calculated by summing carbon stock changes per pool minus fossil fuel and fertilizer emissions."
     },
     {
-      "id": "R-1-0045",
-      "section_id": "S-1",
-      "tags": [
-        "equation"
-      ],
-      "text": "CO2e_pool = C_pool * 44/12"
-    },
-    {
-      "id": "R-1-0050",
-      "section_id": "S-1",
-      "tags": [
-        "calc"
-      ],
-      "text": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage"
-    },
-    {
-      "id": "R-1-0060",
-      "section_id": "S-1",
+      "id": "R-1-0006",
+      "section_id": "S-6",
       "tags": [
         "leakage"
       ],
-      "text": "leakage = L_AS + L_MD"
+      "text": "Leakage from activity shifting or market effects monitored and deducted using Tool 14 default factors."
     },
     {
-      "id": "R-1-0070",
-      "section_id": "S-1",
+      "id": "R-1-0007",
+      "section_id": "S-7",
       "tags": [
         "monitoring"
       ],
-      "text": "Revisit plots every RevisitInterval years using consistent mensuration protocol."
+      "text": "Monitoring plan requires permanent plots measured every five years plus tracking of grouped participant compliance."
     },
     {
-      "id": "R-1-0080",
-      "section_id": "S-1",
+      "id": "R-1-0008",
+      "section_id": "S-8",
+      "tags": [
+        "data"
+      ],
+      "text": "Data and parameters table specifies default biomass factors and sampling requirements."
+    },
+    {
+      "id": "R-1-0009",
+      "section_id": "S-9",
       "tags": [
         "uncertainty"
       ],
-      "text": "If RelativePrecision > 10 then apply uncertainty discount per U-table."
+      "text": "Uncertainty calculated per Tool 12; apply deductions when precision exceeds 10%."
     },
     {
-      "id": "R-1-0090",
-      "section_id": "S-1",
+      "id": "R-1-0010",
+      "section_id": "S-10",
       "tags": [
-        "eligibility"
+        "permanence"
       ],
-      "text": "If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0."
+      "text": "Non-permanence risk buffer determined via Tool 15 and updated when risk profile changes."
     },
     {
-      "id": "R-1-0100",
-      "section_id": "S-1",
+      "id": "R-1-0011",
+      "section_id": "S-11",
+      "tags": [
+        "reference"
+      ],
+      "text": "Normative tools and references (Tools 02, 08, 12, 14, 15, 16) must be accessible to grouped project manager."
+    },
+    {
+      "id": "R-1-0012",
+      "section_id": "S-12",
       "tags": [
         "equation"
       ],
-      "text": "ΔC_year = (C_t2 - C_t1) / T"
+      "text": "Annual net removals computed as sum of pool changes minus leakage and emissions, divided by years between measurements."
     },
     {
-      "id": "R-1-0110",
-      "section_id": "S-1",
+      "id": "R-1-0013",
+      "section_id": "S-13",
       "tags": [
-        "monitoring"
+        "reporting"
       ],
-      "text": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification."
+      "text": "Annexes include participant enrollment records, training logs, and dispute resolution evidence."
     }
   ]
 }

@@ -1,12 +1,8 @@
 [
   {
     "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0001",
-    "logic": "Activities must restore degraded forestlands and demonstrate additionality using Tool 01 or equivalent.",
-    "notes": "Additionality barrier analysis or financial test documented during validation.",
-    "provenance": {
-      "source_hash": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e",
-      "source_ref": "UNFCCC/AR-ACM0003@v02-0"
-    },
+    "logic": "Project restores degraded forest lands and demonstrates additionality using the UNFCCC barrier or investment analysis.",
+    "notes": "Record baseline scenario analysis and legal right to implement A/R activities.",
     "refs": {
       "sections": [
         "S-1"
@@ -15,136 +11,137 @@
         "UNFCCC/AR-ACM0003@v02-0"
       ]
     },
-    "summary": "Activities must restore degraded forestlands and demonstrate additionality using Tool 01 or equivalent.",
+    "summary": "Project restores degraded forest lands and meets additionality tests per Tool 01.",
     "type": "eligibility",
     "when": [
-      "Project lands classified as degraded prior to start.",
-      "Alternative land-use scenario demonstrates lower carbon sequestration."
+      "Target areas classified as degraded forest land prior to start date.",
+      "Additionality analysis completed per UNFCCC requirements."
     ]
   },
   {
     "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0002",
-    "logic": "Baseline net GHG removals derived from historical land-use data and validated management practices.",
-    "notes": "Where data gaps exist, conservative defaults applied.",
-    "provenance": {
-      "source_hash": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e",
-      "source_ref": "UNFCCC/AR-ACM0003@v02-0"
-    },
+    "logic": "Baseline net removals estimated using historical land-use/land-cover data and default parameters from Tool 02.",
+    "notes": "Use conservative defaults where national data unavailable; document stratification.",
     "refs": {
       "sections": [
         "S-2"
       ],
       "tools": [
-        "UNFCCC/AR-ACM0003@v02-0"
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL02@v1.0"
       ]
     },
-    "summary": "Baseline net GHG removals derived from historical land-use data and validated management practices.",
-    "type": "parameter",
+    "summary": "Baseline net GHG removals derived from historical land-use data per Tool 02 guidance.",
+    "type": "baseline",
     "when": [
-      "Baseline scenario documentation provided for DOE review.",
-      "Land-use maps consistent with national inventory data."
+      "Baseline strata delineated and documented.",
+      "Default biomass parameters justified when field data absent."
     ]
   },
   {
     "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0003",
-    "logic": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08.",
-    "notes": "Emission sources excluded only with transparent justification.",
-    "provenance": {
-      "source_hash": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e",
-      "source_ref": "UNFCCC/AR-ACM0003@v02-0"
-    },
+    "logic": "Project emissions include fossil fuel consumption, biomass burning, and fertilizer use calculated with Tool 08 default factors.",
+    "notes": "Exclude sources only with transparent justification and monitoring evidence.",
     "refs": {
       "sections": [
         "S-3"
       ],
       "tools": [
-        "UNFCCC/AR-ACM0003@v02-0"
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL08@v4.0.0"
       ]
     },
     "summary": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08.",
-    "type": "equation",
+    "type": "emissions",
     "when": [
-      "Fuel consumption logged with calibrated meters.",
-      "Fertilizer application records preserved for verification."
+      "Fuel consumption metered or logged with auditable records.",
+      "Fertilizer application data retained for verification."
     ]
   },
   {
     "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0004",
-    "logic": "Leakage from wood product displacement addressed using standardized factors in Tool 14.",
-    "notes": "Activity shifting leakage quantified annually.",
-    "provenance": {
-      "source_hash": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e",
-      "source_ref": "UNFCCC/AR-ACM0003@v02-0"
-    },
+    "logic": "Activity shifting and market leakage quantified annually with Tool 14 standardized coefficients.",
+    "notes": "Describe mitigation measures and community engagement to minimize leakage.",
     "refs": {
       "sections": [
         "S-4"
       ],
       "tools": [
-        "UNFCCC/AR-ACM0003@v02-0"
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL14@v4.2"
       ]
     },
-    "summary": "Leakage from wood product displacement addressed using standardized factors in Tool 14.",
+    "summary": "Leakage from activity shifting and market effects addressed using Tool 14 default factors.",
     "type": "leakage",
     "when": [
-      "Leakage monitoring includes community engagement.",
-      "Mitigation measures documented in monitoring report."
+      "Leakage monitoring plan implemented with annual review.",
+      "Leakage deductions applied before credit issuance."
     ]
   },
   {
     "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0005",
-    "logic": "Permanent plots re-measured at least every five years with QA/QC according to Tool 16.",
-    "notes": "Remote sensing data used to supplement field inventories.",
-    "provenance": {
-      "source_hash": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e",
-      "source_ref": "UNFCCC/AR-ACM0003@v02-0"
-    },
+    "logic": "Buffer contribution calculated with Tool 15 risk scoring and documented alongside issuance.",
+    "notes": "Reassess risk when management conditions change.",
     "refs": {
       "sections": [
         "S-5"
       ],
       "tools": [
-        "UNFCCC/AR-ACM0003@v02-0"
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL15@v2.0"
       ]
     },
-    "summary": "Permanent plots re-measured at least every five years with QA/QC according to Tool 16.",
+    "summary": "Non-permanence buffer determined via Tool 15 risk analysis and recorded in registry accounts.",
     "type": "monitoring",
     "when": [
-      "Sample plot network georeferenced and maintained.",
-      "Remote sensing imagery archived for DOE review."
+      "Updated risk assessment provided during verification.",
+      "Evidence of buffer account entries retained."
     ]
   },
   {
     "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0006",
-    "logic": "Combined sampling uncertainty must remain below 10% at 90% confidence or be conservatively adjusted.",
-    "notes": "Uncertainty deductions reported in verification documentation.",
-    "provenance": {
-      "source_hash": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e",
-      "source_ref": "UNFCCC/AR-ACM0003@v02-0"
-    },
+    "logic": "Plot network re-measured at ≤5-year intervals using standard mensuration and Tool 16 QA/QC checks.",
+    "notes": "Remote sensing may supplement but not replace ground plots.",
     "refs": {
       "sections": [
         "S-5"
       ],
       "tools": [
-        "UNFCCC/AR-ACM0003@v02-0"
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL16@v1.1.0"
       ]
     },
-    "summary": "Combined sampling uncertainty must remain below 10% at 90% confidence or be conservatively adjusted.",
-    "type": "uncertainty",
+    "summary": "Permanent sample plots re-measured at least every five years per Tool 16 QA/QC guidance.",
+    "type": "monitoring",
     "when": [
-      "Variance analysis submitted with monitoring report.",
-      "DOE reviews recalculated confidence intervals."
+      "Plot coordinates archived and accessible for re-measurement.",
+      "QA/QC procedures documented for each monitoring campaign."
     ]
   },
   {
     "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0007",
-    "logic": "Monitoring reports contain geospatial data, field measurements, emission sources, and buffer contributions.",
-    "notes": "Records retained for at least two crediting periods.",
-    "provenance": {
-      "source_hash": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e",
-      "source_ref": "UNFCCC/AR-ACM0003@v02-0"
+    "logic": "Calculate combined sampling uncertainty and apply Tool 12 deductions when precision >10% at 90% confidence.",
+    "notes": "Variance calculations retained within monitoring report appendices.",
+    "refs": {
+      "sections": [
+        "S-5"
+      ],
+      "tools": [
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL12@v3.1"
+      ]
     },
+    "summary": "Sampling uncertainty kept below 10% at 90% confidence or conservatively adjusted using Tool 12.",
+    "type": "uncertainty",
+    "when": [
+      "Uncertainty worksheet provided at verification.",
+      "Deductions applied prior to credit issuance if threshold exceeded."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0008",
+    "logic": "Monitoring reports include updated maps, field measurements, emission source logs, leakage deductions, and buffer transactions.",
+    "notes": "Retain monitoring datasets for at least two crediting periods for audit.",
     "refs": {
       "sections": [
         "S-5"
@@ -153,34 +150,11 @@
         "UNFCCC/AR-ACM0003@v02-0"
       ]
     },
-    "summary": "Monitoring reports contain geospatial data, field measurements, emission sources, and buffer contributions.",
+    "summary": "Monitoring reports compile geospatial data, emissions sources, and buffer transactions with full audit trail.",
     "type": "reporting",
     "when": [
-      "All datasets version-controlled and auditable.",
-      "DOE verifies completeness of supporting documentation."
-    ]
-  },
-  {
-    "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0008",
-    "logic": "Non-permanence buffer share determined via Tool 15 and recorded in registry accounts.",
-    "notes": "Risk reassessment required if project conditions or management change.",
-    "provenance": {
-      "source_hash": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e",
-      "source_ref": "UNFCCC/AR-ACM0003@v02-0"
-    },
-    "refs": {
-      "sections": [
-        "S-4"
-      ],
-      "tools": [
-        "UNFCCC/AR-ACM0003@v02-0"
-      ]
-    },
-    "summary": "Non-permanence buffer share determined via Tool 15 and recorded in registry accounts.",
-    "type": "monitoring",
-    "when": [
-      "Buffer contribution documented alongside issuance request.",
-      "Risk assessment approved by DOE."
+      "All datasets version-controlled with metadata.",
+      "DOE confirms completeness of supporting records."
     ]
   }
 ]

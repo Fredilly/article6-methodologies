@@ -6,103 +6,103 @@
       "tags": [
         "eligibility"
       ],
-      "text": "ELIGIBLE if all predicates true; otherwise INELIGIBLE."
+      "text": "Wetland restoration projects eligible when activities convert degraded wetlands to forest and meet small-scale thresholds."
     },
     {
-      "id": "R-1-0010",
-      "section_id": "S-1",
+      "id": "R-1-0002",
+      "section_id": "S-2",
       "tags": [
-        "parameter"
+        "definition"
       ],
-      "text": "Default CF = 0.47 t C per t d.m. (trees and shrubs)."
+      "text": "Definitions clarify wetland geomorphology, participant aggregation, and leakage belt concepts."
     },
     {
-      "id": "R-1-0020",
-      "section_id": "S-1",
+      "id": "R-1-0003",
+      "section_id": "S-3",
       "tags": [
-        "parameter"
+        "boundary"
       ],
-      "text": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless)."
+      "text": "Project boundary includes on-site hydrological interventions and relevant carbon pools except where justified."
     },
     {
-      "id": "R-1-0030",
-      "section_id": "S-1",
+      "id": "R-1-0004",
+      "section_id": "S-4",
       "tags": [
-        "eligibility"
+        "baseline"
       ],
-      "text": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule."
+      "text": "Baseline assumes continuation of pre-project wetland degradation with zero additional removals."
     },
     {
-      "id": "R-1-0040",
-      "section_id": "S-1",
+      "id": "R-1-0005",
+      "section_id": "S-5",
       "tags": [
-        "equation"
+        "emissions"
       ],
-      "text": "C_AGB_t = AGB_dm * CF"
+      "text": "Project removals calculated from pool carbon stock changes minus emissions from project operations."
     },
     {
-      "id": "R-1-0045",
-      "section_id": "S-1",
-      "tags": [
-        "equation"
-      ],
-      "text": "CO2e_pool = C_pool * 44/12"
-    },
-    {
-      "id": "R-1-0050",
-      "section_id": "S-1",
-      "tags": [
-        "calc"
-      ],
-      "text": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage"
-    },
-    {
-      "id": "R-1-0060",
-      "section_id": "S-1",
+      "id": "R-1-0006",
+      "section_id": "S-6",
       "tags": [
         "leakage"
       ],
-      "text": "leakage = L_AS + L_MD"
+      "text": "Leakage from displaced wetland uses monitored and deducted using Tool 14 defaults."
     },
     {
-      "id": "R-1-0070",
-      "section_id": "S-1",
+      "id": "R-1-0007",
+      "section_id": "S-7",
       "tags": [
         "monitoring"
       ],
-      "text": "Revisit plots every RevisitInterval years using consistent mensuration protocol."
+      "text": "Monitoring plan covers hydrology restoration, vegetation plots, and participant reporting."
     },
     {
-      "id": "R-1-0080",
-      "section_id": "S-1",
+      "id": "R-1-0008",
+      "section_id": "S-8",
+      "tags": [
+        "data"
+      ],
+      "text": "Data tables specify default biomass factors, hydrological parameters, and monitoring records."
+    },
+    {
+      "id": "R-1-0009",
+      "section_id": "S-9",
       "tags": [
         "uncertainty"
       ],
-      "text": "If RelativePrecision > 10 then apply uncertainty discount per U-table."
+      "text": "Uncertainty analysis follows Tool 12 with deductions when precision thresholds unmet."
     },
     {
-      "id": "R-1-0090",
-      "section_id": "S-1",
+      "id": "R-1-0010",
+      "section_id": "S-10",
       "tags": [
-        "eligibility"
+        "permanence"
       ],
-      "text": "If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0."
+      "text": "Permanence buffer contributions determined via Tool 15 wetland risk factors."
     },
     {
-      "id": "R-1-0100",
-      "section_id": "S-1",
+      "id": "R-1-0011",
+      "section_id": "S-11",
+      "tags": [
+        "reference"
+      ],
+      "text": "Normative tools and references maintained for monitoring and verification teams."
+    },
+    {
+      "id": "R-1-0012",
+      "section_id": "S-12",
       "tags": [
         "equation"
       ],
-      "text": "ΔC_year = (C_t2 - C_t1) / T"
+      "text": "Annualized carbon stock change derived from difference in pool carbon divided by measurement interval."
     },
     {
-      "id": "R-1-0110",
-      "section_id": "S-1",
+      "id": "R-1-0013",
+      "section_id": "S-13",
       "tags": [
-        "monitoring"
+        "reporting"
       ],
-      "text": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification."
+      "text": "Annexes capture hydrology restoration evidence, training records, and community engagement notes."
     }
   ]
 }

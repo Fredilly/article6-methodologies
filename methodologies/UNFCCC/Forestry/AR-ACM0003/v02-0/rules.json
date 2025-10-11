@@ -6,21 +6,21 @@
       "tags": [
         "eligibility"
       ],
-      "text": "Activities must restore degraded forestlands and demonstrate additionality using Tool 01 or equivalent."
+      "text": "Project restores degraded forest lands and meets additionality tests per Tool 01."
     },
     {
       "id": "R-1-0002",
       "section_id": "S-2",
       "tags": [
-        "parameter"
+        "baseline"
       ],
-      "text": "Baseline net GHG removals derived from historical land-use data and validated management practices."
+      "text": "Baseline net GHG removals derived from historical land-use data per Tool 02 guidance."
     },
     {
       "id": "R-1-0003",
       "section_id": "S-3",
       "tags": [
-        "equation"
+        "emissions"
       ],
       "text": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08."
     },
@@ -30,15 +30,7 @@
       "tags": [
         "leakage"
       ],
-      "text": "Leakage from wood product displacement addressed using standardized factors in Tool 14."
-    },
-    {
-      "id": "R-1-0008",
-      "section_id": "S-4",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "Non-permanence buffer share determined via Tool 15 and recorded in registry accounts."
+      "text": "Leakage from activity shifting and market effects addressed using Tool 14 default factors."
     },
     {
       "id": "R-1-0005",
@@ -46,23 +38,31 @@
       "tags": [
         "monitoring"
       ],
-      "text": "Permanent plots re-measured at least every five years with QA/QC according to Tool 16."
+      "text": "Non-permanence buffer determined via Tool 15 risk analysis and recorded in registry accounts."
     },
     {
       "id": "R-1-0006",
       "section_id": "S-5",
       "tags": [
-        "uncertainty"
+        "monitoring"
       ],
-      "text": "Combined sampling uncertainty must remain below 10% at 90% confidence or be conservatively adjusted."
+      "text": "Permanent sample plots re-measured at least every five years per Tool 16 QA/QC guidance."
     },
     {
       "id": "R-1-0007",
       "section_id": "S-5",
       "tags": [
+        "uncertainty"
+      ],
+      "text": "Sampling uncertainty kept below 10% at 90% confidence or conservatively adjusted using Tool 12."
+    },
+    {
+      "id": "R-1-0008",
+      "section_id": "S-5",
+      "tags": [
         "reporting"
       ],
-      "text": "Monitoring reports contain geospatial data, field measurements, emission sources, and buffer contributions."
+      "text": "Monitoring reports compile geospatial data, emissions sources, and buffer transactions with full audit trail."
     }
   ]
 }
