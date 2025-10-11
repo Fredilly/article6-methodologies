@@ -3,7 +3,23 @@ const fs = require('fs');
 const path = require('path');
 
 function readJSON(p){ return JSON.parse(fs.readFileSync(p,'utf8')); }
-function writeJSON(p, data){ fs.writeFileSync(p, JSON.stringify(data, null, 2) + '\n', 'utf8'); }
+
+function sortKeysDeep(value) {
+  if (Array.isArray(value)) return value.map(sortKeysDeep);
+  if (value && typeof value === 'object') {
+    const out = {};
+    for (const key of Object.keys(value).sort()) {
+      out[key] = sortKeysDeep(value[key]);
+    }
+    return out;
+  }
+  return value;
+}
+
+function writeJSON(p, data){
+  const sorted = sortKeysDeep(data);
+  fs.writeFileSync(p, JSON.stringify(sorted, null, 2) + '\n', 'utf8');
+}
 
 function listDirs(root){
   const out = [];
@@ -43,9 +59,18 @@ function parseRuleId(id){
 function cmpRules(a,b){
   const s = cmpSections({id: a.section_id},{id: b.section_id});
   if (s !== 0) return s;
-  const ma = String(a.id).match(/^R-\d+(?:-\d+)*-(\d{4})$/);
-  const mb = String(b.id).match(/^R-\d+(?:-\d+)*-(\d{4})$/);
-  if (ma && mb) return parseInt(ma[1],10) - parseInt(mb[1],10);
+  const ma = String(a.id).match(/^R-(\d+(?:-\d+)*)-(\d{4})$/);
+  const mb = String(b.id).match(/^R-(\d+(?:-\d+)*)-(\d{4})$/);
+  if (ma && mb) {
+    const partsA = ma[1].split('-').map((n) => parseInt(n, 10));
+    const partsB = mb[1].split('-').map((n) => parseInt(n, 10));
+    const len = Math.max(partsA.length, partsB.length);
+    for (let i = 0; i < len; i += 1) {
+      const diff = (partsA[i] || 0) - (partsB[i] || 0);
+      if (diff !== 0) return diff;
+    }
+    return parseInt(ma[2], 10) - parseInt(mb[2], 10);
+  }
   return String(a.id).localeCompare(String(b.id));
 }
 
@@ -62,7 +87,21 @@ function derive(dir){
     }
     const { sec, serial } = parseRuleId(r.id);
     const tags = Array.from(new Set([r.type, ...(r.tags||[])]));
-    return { id: `R-${sec}-${serial}`, section_id: r.refs.sections[0], tags: tags.filter(Boolean), text: r.summary };
+    const text = Array.isArray(r.summary) ? r.summary.join(' ').trim() : String(r.summary);
+    const title = text;
+    const inputs = Array.isArray(r.inputs) ? r.inputs : [];
+    const when = Array.isArray(r.when) ? r.when : [];
+    const tools = Array.isArray(r.refs.tools) ? r.refs.tools : [];
+    return {
+      id: `R-${sec}-${serial}`,
+      section_id: r.refs.sections[0],
+      tags: tags.filter(Boolean),
+      text,
+      title,
+      inputs,
+      when,
+      tools
+    };
   }).sort(cmpRules);
   writeJSON(path.join(dir,'sections.json'), { sections: sectionsLean });
   writeJSON(path.join(dir,'rules.json'), { rules: rulesLean });

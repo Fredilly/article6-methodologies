@@ -2,67 +2,145 @@
   "rules": [
     {
       "id": "R-1-0001",
+      "inputs": [],
       "section_id": "S-1",
       "tags": [
         "eligibility"
       ],
-      "text": "Projects must reforest lands without forest cover since 31 December 1989 and comply with national definitions."
+      "text": "Projects must reforest lands without forest cover since 31 December 1989 and comply with national definitions.",
+      "title": "Projects must reforest lands without forest cover since 31 December 1989 and comply with national definitions.",
+      "tools": [
+        "UNFCCC/AR-AM0014@v03-0"
+      ],
+      "when": [
+        "Project lands classified as non-forest for at least 10 years prior to start date.",
+        "Title documents demonstrate right to implement A/R activities."
+      ]
     },
     {
       "id": "R-1-0002",
+      "inputs": [],
       "section_id": "S-2",
       "tags": [
         "parameter"
       ],
-      "text": "Baseline biomass is determined using IPCC default factors or site-specific sampling following Tool 02 guidance."
+      "text": "Baseline biomass is determined using IPCC default factors or site-specific sampling following Tool 02 guidance.",
+      "title": "Baseline biomass is determined using IPCC default factors or site-specific sampling following Tool 02 guidance.",
+      "tools": [
+        "UNFCCC/AR-AM0014@v03-0",
+        "UNFCCC/AR-TOOL02@v1.0"
+      ],
+      "when": [
+        "Sampling plans approved by DOE.",
+        "IPCC Tier 2 defaults are justified in monitoring report."
+      ]
     },
     {
       "id": "R-1-0003",
+      "inputs": [],
       "section_id": "S-3",
       "tags": [
         "equation"
       ],
-      "text": "Net anthropogenic GHG removals equal project removals minus baseline emissions and leakage."
+      "text": "Net anthropogenic GHG removals equal project removals minus baseline emissions and leakage.",
+      "title": "Net anthropogenic GHG removals equal project removals minus baseline emissions and leakage.",
+      "tools": [
+        "UNFCCC/AR-AM0014@v03-0",
+        "UNFCCC/AR-TOOL08@v4.0.0"
+      ],
+      "when": [
+        "All carbon pools accounted for unless exclusion justified.",
+        "Leakage deduction applied before reporting net removal."
+      ]
     },
     {
       "id": "R-1-0004",
+      "inputs": [],
       "section_id": "S-4",
       "tags": [
         "leakage"
       ],
-      "text": "Activity shifting leakage is quantified using Tool 14 and discounted from net removals."
-    },
-    {
-      "id": "R-1-0008",
-      "section_id": "S-4",
-      "tags": [
-        "monitoring"
+      "text": "Activity shifting leakage is quantified using Tool 14 and discounted from net removals.",
+      "title": "Activity shifting leakage is quantified using Tool 14 and discounted from net removals.",
+      "tools": [
+        "UNFCCC/AR-AM0014@v03-0",
+        "UNFCCC/AR-TOOL14@v4.2"
       ],
-      "text": "Non-permanence risk must be addressed through buffer contributions consistent with Tool 15 guidance."
+      "when": [
+        "Community livelihoods impacted by land-use change.",
+        "Leakage mitigation plan implemented with monitoring indicators."
+      ]
     },
     {
       "id": "R-1-0005",
+      "inputs": [],
       "section_id": "S-5",
       "tags": [
         "monitoring"
       ],
-      "text": "Field measurements of biomass stock changes occur at least every five years with permanent plots."
+      "text": "Field measurements of biomass stock changes occur at least every five years with permanent plots.",
+      "title": "Field measurements of biomass stock changes occur at least every five years with permanent plots.",
+      "tools": [
+        "UNFCCC/AR-AM0014@v03-0",
+        "UNFCCC/AR-TOOL15@v2.0"
+      ],
+      "when": [
+        "Monitoring plan approved during validation.",
+        "Permanent sample plots accessible throughout crediting period."
+      ]
     },
     {
       "id": "R-1-0006",
+      "inputs": [],
       "section_id": "S-5",
       "tags": [
         "uncertainty"
       ],
-      "text": "If sampling uncertainty exceeds 10%, apply Tool 12 to derive conservative estimates."
+      "text": "If sampling uncertainty exceeds 10%, apply Tool 12 to derive conservative estimates.",
+      "title": "If sampling uncertainty exceeds 10%, apply Tool 12 to derive conservative estimates.",
+      "tools": [
+        "UNFCCC/AR-AM0014@v03-0",
+        "UNFCCC/AR-TOOL08@v4.0.0"
+      ],
+      "when": [
+        "Confidence interval wider than ±10%.",
+        "DOE reviews uncertainty calculation worksheets."
+      ]
     },
     {
       "id": "R-1-0007",
+      "inputs": [],
       "section_id": "S-5",
       "tags": [
         "reporting"
       ],
-      "text": "Monitoring reports include maps, inventory data, leakage deductions, and QA/QC evidence."
+      "text": "Monitoring reports include maps, inventory data, leakage deductions, and QA/QC evidence.",
+      "title": "Monitoring reports include maps, inventory data, leakage deductions, and QA/QC evidence.",
+      "tools": [
+        "UNFCCC/AR-AM0014@v03-0",
+        "UNFCCC/AR-TOOL12@v3.1"
+      ],
+      "when": [
+        "Reporting aligns with UNFCCC template requirements.",
+        "All supporting datasets archived with version history."
+      ]
+    },
+    {
+      "id": "R-1-0008",
+      "inputs": [],
+      "section_id": "S-5",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Non-permanence risk must be addressed through buffer contributions consistent with Tool 15 guidance.",
+      "title": "Non-permanence risk must be addressed through buffer contributions consistent with Tool 15 guidance.",
+      "tools": [
+        "UNFCCC/AR-AM0014@v03-0"
+      ],
+      "when": [
+        "Non-permanence risk assessment completed prior to credit issuance.",
+        "Buffer contributions recorded in registry records."
+      ]
     }
   ]
 }

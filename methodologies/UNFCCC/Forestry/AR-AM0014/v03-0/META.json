@@ -1,13 +1,15 @@
 {
   "audit_hashes": {
-    "rules_json_sha256": "eacf287130f1cce3ec480008104b744a427fbba6ad9fcc8b891bf9a47db73836",
+    "rules_json_sha256": "b74dc2288f4126990f4969f835534dab8867986cdeb8346f9232d2667d0db88b",
     "sections_json_sha256": "4b9f1e1c6c2e57a48e9119a63c0c0c5b7cc0bf87ee041e679acadd0bd3e76b60"
   },
   "automation": {
-    "repo_commit": "db5025b949f21c95d6aacee6ceb7642841a567c4",
-    "scripts_manifest_sha256": "809f42fac3907705c58eeb5e85caaf05bfecb039ede0079ed61a953d33d14589"
+    "repo_commit": "845014f4e68a2ba23a01dce6090e723bbdb07f9b",
+    "scripts_manifest_sha256": "299d7b6cdc5b832c72d9e8baf1a91ee136cab4f86ff4ffc7ee3a5351f4a0bbb2"
   },
   "provenance": {
+    "author": "Fred Egbuedike",
+    "date": "2025-09-25T19:37:38.000Z",
     "source_pdfs": [
       {
         "doc": "UNFCCC/AR-AM0014@v03-0",
@@ -16,9 +18,7 @@
         "sha256": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
         "size": 1131963
       }
-    ],
-    "author": "Fred Egbuedike",
-    "date": "2025-09-25T19:37:38.000Z"
+    ]
   },
   "references": {
     "tools": [

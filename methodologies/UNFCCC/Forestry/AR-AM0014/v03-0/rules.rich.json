@@ -35,7 +35,8 @@
         "S-2"
       ],
       "tools": [
-        "UNFCCC/AR-AM0014@v03-0"
+        "UNFCCC/AR-AM0014@v03-0",
+        "UNFCCC/AR-TOOL02@v1.0"
       ]
     },
     "summary": "Baseline biomass is determined using IPCC default factors or site-specific sampling following Tool 02 guidance.",
@@ -58,7 +59,8 @@
         "S-3"
       ],
       "tools": [
-        "UNFCCC/AR-AM0014@v03-0"
+        "UNFCCC/AR-AM0014@v03-0",
+        "UNFCCC/AR-TOOL08@v4.0.0"
       ]
     },
     "summary": "Net anthropogenic GHG removals equal project removals minus baseline emissions and leakage.",
@@ -81,7 +83,8 @@
         "S-4"
       ],
       "tools": [
-        "UNFCCC/AR-AM0014@v03-0"
+        "UNFCCC/AR-AM0014@v03-0",
+        "UNFCCC/AR-TOOL14@v4.2"
       ]
     },
     "summary": "Activity shifting leakage is quantified using Tool 14 and discounted from net removals.",
@@ -104,7 +107,8 @@
         "S-5"
       ],
       "tools": [
-        "UNFCCC/AR-AM0014@v03-0"
+        "UNFCCC/AR-AM0014@v03-0",
+        "UNFCCC/AR-TOOL15@v2.0"
       ]
     },
     "summary": "Field measurements of biomass stock changes occur at least every five years with permanent plots.",
@@ -127,7 +131,8 @@
         "S-5"
       ],
       "tools": [
-        "UNFCCC/AR-AM0014@v03-0"
+        "UNFCCC/AR-AM0014@v03-0",
+        "UNFCCC/AR-TOOL08@v4.0.0"
       ]
     },
     "summary": "If sampling uncertainty exceeds 10%, apply Tool 12 to derive conservative estimates.",
@@ -150,7 +155,8 @@
         "S-5"
       ],
       "tools": [
-        "UNFCCC/AR-AM0014@v03-0"
+        "UNFCCC/AR-AM0014@v03-0",
+        "UNFCCC/AR-TOOL12@v3.1"
       ]
     },
     "summary": "Monitoring reports include maps, inventory data, leakage deductions, and QA/QC evidence.",
@@ -170,7 +176,7 @@
     },
     "refs": {
       "sections": [
-        "S-4"
+        "S-5"
       ],
       "tools": [
         "UNFCCC/AR-AM0014@v03-0"

@@ -39,9 +39,10 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-8"
       ],
       "tools": [
+        "UNFCCC/AR-AMS0007@v03-1",
         "UNFCCC/AR-TOOL14@v4.2"
       ]
     },
@@ -62,9 +63,10 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-8"
       ],
       "tools": [
+        "UNFCCC/AR-AMS0007@v03-1",
         "UNFCCC/AR-TOOL14@v4.2"
       ]
     },
@@ -85,7 +87,7 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-3"
       ],
       "tools": [
         "UNFCCC/AR-AMS0007@v03-1",
@@ -124,7 +126,7 @@
         "text_anchor hint=\"C_AGB_t = AGB_dm * CF\" quote=\"AGB\" pages=[11]"
       ],
       "sections": [
-        "S-1"
+        "S-8"
       ],
       "tools": [
         "UNFCCC/AR-AMS0007@v03-1",
@@ -157,7 +159,7 @@
         "text_anchor hint=\"Stoichiometric conversion\" quote=\"44/12\" pages=[11]"
       ],
       "sections": [
-        "S-1"
+        "S-12"
       ],
       "tools": [
         "UNFCCC/AR-AMS0007@v03-1"
@@ -215,7 +217,6 @@
         "text_anchor hint=\"Removals and equations\" quote=\"Project scenario\" pages=[10]"
       ],
       "sections": [
-        "S-1",
         "S-5"
       ],
       "tools": [
@@ -250,9 +251,11 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-6"
       ],
       "tools": [
+        "UNFCCC/AR-AMS0007@v03-1",
+        "UNFCCC/AR-TOOL14@v4.2",
         "UNFCCC/AR-TOOL15@v2.0"
       ]
     },
@@ -284,10 +287,11 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-7"
       ],
       "tools": [
-        "UNFCCC/AR-AMS0007@v03-1"
+        "UNFCCC/AR-AMS0007@v03-1",
+        "UNFCCC/AR-TOOL16@v1.1.0"
       ]
     },
     "summary": "Revisit plots every RevisitInterval years using consistent mensuration protocol.",
@@ -313,9 +317,11 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-9"
       ],
       "tools": [
+        "UNFCCC/AR-AMS0007@v03-1",
+        "UNFCCC/AR-TOOL12@v3.1",
         "UNFCCC/AR-TOOL14@v4.2"
       ]
     },
@@ -342,9 +348,10 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-3"
       ],
       "tools": [
+        "UNFCCC/AR-AMS0007@v03-1",
         "UNFCCC/AR-TOOL14@v4.2"
       ]
     },
@@ -381,9 +388,10 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-12"
       ],
       "tools": [
+        "UNFCCC/AR-AMS0007@v03-1",
         "UNFCCC/AR-TOOL14@v4.2"
       ]
     },
@@ -404,10 +412,12 @@
     },
     "refs": {
       "sections": [
-        "S-1"
+        "S-7"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-AMS0007@v03-1",
+        "UNFCCC/AR-TOOL14@v4.2",
+        "UNFCCC/AR-TOOL16@v1.1.0"
       ]
     },
     "summary": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.",
