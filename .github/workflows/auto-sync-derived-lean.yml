@@ -1,0 +1,84 @@
+# --- begin workflow ---
+name: Auto-sync derived lean JSON (one-time)
+
+on:
+  push:
+    branches:
+      - fix/clean-reset
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies (if present)
+        run: |
+          if [ -f package.json ]; then
+            npm ci --prefer-offline --no-audit --no-fund || true
+          fi
+
+      - name: Regenerate derived lean JSON
+        run: |
+          node scripts/derive-lean-from-rich.js
+
+      - name: List changed files
+        run: |
+          git diff --name-only > changed_files.txt || true
+          echo "Changed files:"; cat changed_files.txt
+
+      - name: Validate changed files are only derived lean files
+        run: |
+          ALLOWED_REGEX='^methodologies/.*/(sections|rules)\.json$'
+          bad=false
+          while IFS= read -r f; do
+            if [ -z "$f" ]; then
+              continue
+            fi
+            if ! echo "$f" | grep -Eq "$ALLOWED_REGEX"; then
+              echo "UNEXPECTED: $f"
+              bad=true
+            fi
+          done < changed_files.txt
+          if [ "$bad" = true ]; then
+            echo "Found unexpected changed files; aborting without commit."
+            echo "--- Files ---"; cat changed_files.txt
+            exit 1
+          fi
+          echo "Only allowed derived files changed."
+
+      - name: Commit and push derived files
+        run: |
+          files=$(cat changed_files.txt)
+          if [ -z "$files" ]; then
+            echo "No derived files changed; nothing to commit."
+            exit 0
+          fi
+          while IFS= read -r f; do
+            git add -- "$f"
+          done < changed_files.txt
+
+          if git diff --cached --quiet; then
+            echo "No staged changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Sync derived lean JSON (deterministic re-derive)"
+          git push origin HEAD:fix/clean-reset
+
+      - name: Cleanup workflow file (optional)
+        if: success()
+        run: |
+          echo "Workflow completed. You can remove .github/workflows/auto-sync-derived-lean.yml after verification."
+# --- end workflow ---
