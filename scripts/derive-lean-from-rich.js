@@ -3,7 +3,26 @@ const fs = require('fs');
 const path = require('path');
 
 function readJSON(p){ return JSON.parse(fs.readFileSync(p,'utf8')); }
-function writeJSON(p, data){ fs.writeFileSync(p, JSON.stringify(data, null, 2) + '\n', 'utf8'); }
+
+// Recursively sort object keys to produce deterministic JSON bytes.
+function sortKeysRecursively(value) {
+  if (Array.isArray(value)) {
+    return value.map(sortKeysRecursively);
+  }
+  if (value && typeof value === 'object') {
+    const keys = Object.keys(value).sort();
+    const out = {};
+    for (const k of keys) out[k] = sortKeysRecursively(value[k]);
+    return out;
+  }
+  return value;
+}
+
+function writeCanonicalJson(p, data) {
+  const sorted = sortKeysRecursively(data);
+  // 2-space indent, trailing newline, UTF-8
+  fs.writeFileSync(p, JSON.stringify(sorted, null, 2) + '\n', 'utf8');
+}
 
 function listDirs(root){
   const out = [];
@@ -54,18 +73,27 @@ function derive(dir){
   const ruleR = path.join(dir, 'rules.rich.json');
   if (!fs.existsSync(secR) || !fs.existsSync(ruleR)) return false;
   const sectionsRich = readJSON(secR);
-  const sectionsLean = sectionsRich.map(s=>({ id: s.id, title: s.title, anchor: s.anchor ?? undefined })).sort(cmpSections);
+  // Create lean sections with explicit property order: id, title, anchor
+  const sectionsLean = sectionsRich.map(s => {
+    const obj = { id: s.id, title: s.title };
+    if (s.anchor) obj.anchor = s.anchor;
+    return obj;
+  }).sort(cmpSections);
   const rulesRich = readJSON(ruleR);
   const rulesLean = rulesRich.map(r => {
     if (!r.summary || !r.refs || !Array.isArray(r.refs.sections) || !r.refs.sections[0]) {
       throw new Error(`Missing summary/refs.sections: ${r.id}`);
     }
     const { sec, serial } = parseRuleId(r.id);
-    const tags = Array.from(new Set([r.type, ...(r.tags||[])]));
-    return { id: `R-${sec}-${serial}`, section_id: r.refs.sections[0], tags: tags.filter(Boolean), text: r.summary };
+    // Derive tags: union of r.type and r.tags, filter falsy, sort for determinism
+    const tags = Array.from(new Set([r.type, ...(r.tags||[])]))
+      .filter(Boolean)
+      .sort();
+    // Explicit property order: id, section_id, tags, text
+    return { id: `R-${sec}-${serial}`, section_id: r.refs.sections[0], tags: tags, text: r.summary };
   }).sort(cmpRules);
-  writeJSON(path.join(dir,'sections.json'), { sections: sectionsLean });
-  writeJSON(path.join(dir,'rules.json'), { rules: rulesLean });
+  writeCanonicalJson(path.join(dir,'sections.json'), { sections: sectionsLean });
+  writeCanonicalJson(path.join(dir,'rules.json'), { rules: rulesLean });
   return true;
 }
 
