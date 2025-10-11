@@ -1,0 +1,7 @@
+version: 2
+methods:
+  # Example entry — replace or append as needed
+  - id: UNFCCC.Agriculture.AM0073
+    version: v01-0
+    sector: Agriculture
+    source_page: "https://cdm.unfccc.int/methodologies/DB/66DCX9DCDE8UFYYIHJEY5NRPAA8WNE/view.html"
