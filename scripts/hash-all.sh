@@ -11,6 +11,22 @@ hash_file() {
   fi
 }
 
+tool_digest() {
+  file="$1"
+  if head -n1 "$file" 2>/dev/null | grep -q 'version https://git-lfs.github.com/spec/v1'; then
+    oid=$(grep -E '^oid sha256:' "$file" | sed 's/^oid sha256://')
+    sz=$(grep -E '^size ' "$file" | awk '{print $2}')
+    if [ -n "$oid" ]; then
+      if [ -z "$sz" ]; then
+        sz=$(wc -c < "$file")
+      fi
+      printf '%s %s' "$oid" "$sz"
+      return 0
+    fi
+  fi
+  printf '%s %s' "$(hash_file "$file")" "$(wc -c < "$file")"
+}
+
 repo_commit=$(git rev-parse HEAD)
 scripts_manifest_sha=$(./scripts/hash-scripts.sh)
 
@@ -26,8 +42,9 @@ EOF2
   tools_json='[]'
   if [ -d "$tools_dir" ]; then
     tools_json=$(find "$tools_dir" -type f | sort | while read -r f; do
-      sha=$(hash_file "$f")
-      size=$(wc -c < "$f")
+      set -- $(tool_digest "$f")
+      sha="$1"
+      size="$2"
       kind="${f##*.}"
       doc=$(printf "%s\n" "$f" | awk -F'/' '{org=$2; file=$NF; if (match(file, /^AR-[A-Z0-9]+_v[0-9]+(-[0-9]+)*\.(pdf|docx)$/)) {split(file,a,"_v"); tool=a[1]; ver=a[2]; sub(/\.(pdf|docx)$/,"",ver); gsub(/-/,".",ver); printf "%s/%s@v%s", org, tool, ver} else if (file ~ /(source\.(pdf|docx)|meth_booklet\.pdf)$/) {method=$3; ver=$4; gsub(/-/,".",ver); printf "%s/%s@%s", org, method, ver}}')
       printf '{"doc":"%s","path":"%s","sha256":"%s","size":%s,"kind":"%s"}\n' "$doc" "$f" "$sha" "$size" "$kind"
