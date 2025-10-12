@@ -10,6 +10,42 @@
   },
   {
     "standard": "UNFCCC",
+    "program": "Agriculture",
+    "code": "ACM0010",
+    "version": "03.0",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0",
+    "stage": "staging",
+    "latest": true
+  },
+  {
+    "standard": "UNFCCC",
+    "program": "Agriculture",
+    "code": "AM0073",
+    "version": "01.0",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0",
+    "stage": "staging",
+    "latest": true
+  },
+  {
+    "standard": "UNFCCC",
+    "program": "Agriculture",
+    "code": "AMS-III.D",
+    "version": "21.0",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0",
+    "stage": "staging",
+    "latest": true
+  },
+  {
+    "standard": "UNFCCC",
+    "program": "Agriculture",
+    "code": "AMS-III.R",
+    "version": "05.0",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0",
+    "stage": "staging",
+    "latest": true
+  },
+  {
+    "standard": "UNFCCC",
     "program": "Forestry",
     "code": "AR-ACM0003",
     "version": "02.0",

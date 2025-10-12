@@ -1,0 +1,31 @@
+{
+  "audit": {
+    "created_at": "2025-10-12T00:00:00Z",
+    "created_by": "ingest.sh"
+  },
+  "audit_hashes": {
+    "rules_json_sha256": "699b4d018980f4ae306c9a82008dad9dd329e215595c2910e9a2f9af72a360e6",
+    "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
+  },
+  "automation": {
+    "repo_commit": "e5895b3b7b91d071f8f920bf1c68b99019ec9180",
+    "scripts_manifest_sha256": "e98fb4898e3dd877c4c1d935bd18656aae1c4ed240117df93352dc32341bf594"
+  },
+  "id": "UNFCCC.Agriculture.AM0073",
+  "references": {
+    "tools": [
+      {
+        "doc": "UNFCCC/AM0073@v01.0",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/AM0073/v01-0/source.pdf",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0,
+        "url": null
+      }
+    ]
+  },
+  "sector": "Agriculture",
+  "source_page": "https://cdm.unfccc.int/methodologies/DB/2N19WQ6DCXNYRNUVZQO0GH7TK0Q2D8",
+  "status": "draft",
+  "version": "v01-0"
+}
