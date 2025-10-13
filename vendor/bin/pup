@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -euo pipefail
+input="$(cat)"
+args="$*"
+
+# Handle JSON mode (skip tools step)
+if echo "$args" | grep -q "json{}"; then
+  echo "[]"
+  exit 0
+fi
+
+# Handle attr{href} mode (extract hrefs)
+if echo "$args" | grep -q "attr{href}"; then
+  echo "$input" | grep -ioE 'href="[^"]+"' | sed -E 's/^href="//; s/"$//'
+  exit 0
+fi
+
+exit 0

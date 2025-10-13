@@ -3,12 +3,13 @@
     "created_at": "2025-10-13T13:49:50Z",
     "created_by": "ingest.sh"
   },
+  "audit_hashes": {
+    "rules_json_sha256": "5a5b52a3c1c7d9103184fb694520ce53371457515c948e10af19635d03c86f9e",
+    "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
+  },
   "id": "UNFCCC.Agriculture.ACM0010",
   "references": {
-    "pdf": {
-      "path": "tools/UNFCCC/ACM0010/v03-0/source.pdf",
-      "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c"
-    }
+    "tools": []
   },
   "sector": "Agriculture",
   "source_page": "https://cdm.unfccc.int/methodologies/DB/66DCX9DCDE8UFYYIHJEY5NRPAA8WNE/view.html",
