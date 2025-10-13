@@ -186,4 +186,11 @@ for i in $(seq 0 $((method_count-1))); do
   echo "[done] $id $ver"
 done
 
+# auto-derive rich if available
+if [ -x ./scripts/derive-rich.sh ]; then
+  ./scripts/derive-rich.sh
+else
+  echo "[note] derive-rich.sh not found; rich files will remain stubs"
+fi
+
 echo "✅ ingest complete"
