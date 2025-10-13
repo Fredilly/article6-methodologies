@@ -4,8 +4,13 @@
     "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
   },
   "automation": {
+feat/ingest-workflow
     "repo_commit": "2411d291866812efcf6f9043d5320c84b63d28bb",
     "scripts_manifest_sha256": "886d078aa80c1fd7cf7a3378eda7fb5708a3c5df8ca03b77998cc1681c6e3087"
+
+    "repo_commit": "e5895b3b7b91d071f8f920bf1c68b99019ec9180",
+    "scripts_manifest_sha256": "00700395f4935bce50be955fb795d5185b83c053fe2093ca566b164ed31e07b8"
+ main
   },
   "domain": "Stub",
   "files": [
