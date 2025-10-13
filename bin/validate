@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+if [ -x "$ROOT/scripts/validators/run-ajv.sh" ]; then
+  exec "$ROOT/scripts/validators/run-ajv.sh" "$@"
+fi
+echo "[warn] validate: validators/run-ajv.sh missing" >&2
+exit 1

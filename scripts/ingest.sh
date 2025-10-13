@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
-
-# TODO: replace with your real ingest logic
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+exec node "$ROOT/scripts/ingest.js" "$@"

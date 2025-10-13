@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+if [ -x "$ROOT/scripts/validators/derive-lean.sh" ]; then
+  exec "$ROOT/scripts/validators/derive-lean.sh" "$@"
+fi
+if [ -f "$ROOT/scripts/derive-lean-from-rich.js" ]; then
+  exec node "$ROOT/scripts/derive-lean-from-rich.js" "$@"
+fi
+echo "[warn] derive-lean: implementation not found" >&2
+exit 1

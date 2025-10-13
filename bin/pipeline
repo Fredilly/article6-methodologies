@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+"$ROOT/bin/ingest" "$@"
+"$ROOT/bin/derive-rich"
+"$ROOT/bin/derive-lean"
+"$ROOT/bin/validate"
+"$ROOT/bin/canonicalize"
+"$ROOT/bin/hash-all"

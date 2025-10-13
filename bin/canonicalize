@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+if [ -x "$ROOT/scripts/validators/json-canonical-check.sh" ]; then
+  if [ $# -eq 0 ]; then
+    set -- --fix
+  fi
+  exec "$ROOT/scripts/validators/json-canonical-check.sh" "$@"
+fi
+echo "[warn] canonicalize: validators/json-canonical-check.sh missing" >&2
+exit 1

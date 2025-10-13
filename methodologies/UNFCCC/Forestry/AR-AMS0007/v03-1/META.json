@@ -4,8 +4,8 @@
     "sections_json_sha256": "80a90d64d3f6ba202560d8f50d8243140a2f982157060e43d181f8a7860f690e"
   },
   "automation": {
-    "repo_commit": "c7ea3b89fb72703214f92eda6029c92a3451d5bd",
-    "scripts_manifest_sha256": "d76186fe5e0755a0cf31b8d8410b55f3b11c703f43934930c59890fefd504bc0"
+    "repo_commit": "2411d291866812efcf6f9043d5320c84b63d28bb",
+    "scripts_manifest_sha256": "886d078aa80c1fd7cf7a3378eda7fb5708a3c5df8ca03b77998cc1681c6e3087"
   },
   "provenance": {
     "author": "Fred Egbuedike",
@@ -91,38 +91,43 @@
       },
       {
         "doc": "UNFCCC/AR-TOOL08@v4.0.0",
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL08_v4-0-0.pdf",
         "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397",
         "size": 263864,
-        "kind": "pdf"
+        "url": null
       },
       {
         "doc": "UNFCCC/AR-TOOL12@v3.1",
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL12_v3-1.pdf",
         "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4",
         "size": 275971,
-        "kind": "pdf"
+        "url": null
       },
       {
         "doc": "UNFCCC/AR-TOOL14@v4.2",
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL14_v4-2.pdf",
         "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
         "size": 691428,
-        "kind": "pdf"
+        "url": null
       },
       {
         "doc": "UNFCCC/AR-TOOL15@v2.0",
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL15_v2-0.pdf",
         "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29",
         "size": 1008516,
-        "kind": "pdf"
+        "url": null
       },
       {
         "doc": "UNFCCC/AR-TOOL16@v1.1.0",
+        "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL16_v1-1-0.pdf",
         "sha256": "edc718dba7eb097092907553f849c10a36e91a3b4199677ccf4a78748a92f8de",
         "size": 255568,
-        "kind": "pdf"
+        "url": null
       }
     ]
   },

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+if [ -x "$ROOT/scripts/validators/hash-all.sh" ]; then
+  exec "$ROOT/scripts/validators/hash-all.sh" "$@"
+fi
+exec "$ROOT/scripts/hash-all.sh" "$@"

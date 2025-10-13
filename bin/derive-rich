@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+if [ -x "$ROOT/scripts/derive-rich.sh" ]; then
+  exec "$ROOT/scripts/derive-rich.sh" "$@"
+fi
+if [ -x "$ROOT/scripts/python/derive_rich.py" ]; then
+  exec python3 "$ROOT/scripts/python/derive_rich.py" "$@"
+fi
+echo "[note] derive-rich: no extractor found; skipping." >&2
+exit 0
