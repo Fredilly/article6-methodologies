@@ -1,0 +1,17 @@
+{
+  "audit": {
+    "created_at": "2025-10-13T13:49:50Z",
+    "created_by": "ingest.sh"
+  },
+  "id": "UNFCCC.Agriculture.ACM0010",
+  "references": {
+    "pdf": {
+      "path": "tools/UNFCCC/ACM0010/v03-0/source.pdf",
+      "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c"
+    }
+  },
+  "sector": "Agriculture",
+  "source_page": "https://cdm.unfccc.int/methodologies/DB/66DCX9DCDE8UFYYIHJEY5NRPAA8WNE/view.html",
+  "status": "draft",
+  "version": "v03-0"
+}
