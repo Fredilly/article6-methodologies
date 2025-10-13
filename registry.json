@@ -47,6 +47,15 @@
   {
     "standard": "UNFCCC",
     "program": "Agriculture",
+    "code": "AM0073",
+    "version": "01.0",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0",
+    "stage": "staging",
+    "latest": true
+  },
+  {
+    "standard": "UNFCCC",
+    "program": "Agriculture",
     "code": "ACM0010",
     "version": "03.0",
     "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0",
