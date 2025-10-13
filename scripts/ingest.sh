@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+[ -f ./.env.path ] && source ./.env.path || true
+export PATH="$(pwd)/tools/bin:$PATH"
+
 # --- toggles ---
 DRY_RUN="${DRY_RUN:-0}"
 AUTO_COMMIT="${AUTO_COMMIT:-1}"
