@@ -45,6 +45,33 @@
     "latest": true
   },
   {
+    "standard": "UNFCCC",
+    "program": "Agriculture",
+    "code": "ACM0010",
+    "version": "03.0",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0",
+    "stage": "staging",
+    "latest": true
+  },
+  {
+    "standard": "UNFCCC",
+    "program": "Agriculture",
+    "code": "AMS-III.D",
+    "version": "21.0",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0",
+    "stage": "staging",
+    "latest": true
+  },
+  {
+    "standard": "UNFCCC",
+    "program": "Agriculture",
+    "code": "AMS-III.R",
+    "version": "05.0",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0",
+    "stage": "staging",
+    "latest": true
+  },
+  {
     "standard": "Verra",
     "program": "AFOLU",
     "code": "VM0007",
