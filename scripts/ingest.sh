@@ -190,3 +190,9 @@ for i in $(seq 0 $((method_count-1))); do
 done
 
 echo "✅ ingest complete"
+
+if [ -x ./scripts/derive-rich.sh ]; then
+  ./scripts/derive-rich.sh
+else
+  echo "[note] derive-rich.sh not found; rich files will remain stubs"
+fi

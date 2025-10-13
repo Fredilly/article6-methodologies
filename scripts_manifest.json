@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-10-13T04:59:27Z",
-  "git_commit": "e5895b3b7b91d071f8f920bf1c68b99019ec9180",
+  "generated_at": "2025-10-13T05:30:57Z",
+  "git_commit": "5779dc3f5c67ad3eae21a67610b88e536edf7ad1",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
@@ -22,6 +22,9 @@
     { "path": "scripts/compile-audit.js", "sha256": "917ee7d5fabef37ec7d4bfa9503ac498da225426bf5fbd05fd710d35699a1a14" },
     { "path": "scripts/compile-validators.js", "sha256": "0d6d8454097445711c1a0f974061f7f426522b8c1e1c0b61998cfa1c2237949b" },
     { "path": "scripts/derive-lean-from-rich.js", "sha256": "522e798bcbbf3e8261454dc104a4287b774f1157b890cf798571571698d608b9" },
+    { "path": "scripts/derive-lean.sh", "sha256": "fcffce191a18b3c7f50b0a35f0b51c0e049cad49f615a06d7b9ea815bdde9d18" },
+    { "path": "scripts/derive-rich.sh", "sha256": "9c3ece9ace871548ac2ad4e4921ae40881eeae9dec30bb980853c62efa01465b" },
+    { "path": "scripts/derive_rich.py", "sha256": "7564377b9160edb2f938ff364bbe5f1c8a73e32580131ed780953ce1735082f9" },
     { "path": "scripts/fill-provenance.js", "sha256": "ada54506b8554fd101c56541768bbec912d9050842734c2f97a153b9d067b221" },
     { "path": "scripts/gen-dataset-params.js", "sha256": "befe8d1bdece5b2738284c2b60598e676f7f910c605ffb53fbb7a07c3342414f" },
     { "path": "scripts/gen-dataset.js", "sha256": "47b58f5dc13beded4ece8a74029827669945ae5140b2dfec4a8f19894d3cc753" },
@@ -29,7 +32,7 @@
     { "path": "scripts/gen-registry.js", "sha256": "ed5e27b27860ae358c20c1d0e2cd15c678cd021a50ef295ff0234603f00c8b0e" },
     { "path": "scripts/hash-all.sh", "sha256": "fabde300b13955637938a3fb95e41b41f8aca2da8257baf16feb8beed4c3ec03" },
     { "path": "scripts/hash-scripts.sh", "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3" },
-    { "path": "scripts/ingest.sh", "sha256": "54ce06fcb23253574352df1ba76c6da71764b7dc371f443ca290f34de3ba3fc3" },
+    { "path": "scripts/ingest.sh", "sha256": "3622a9e5b36cc13b13371381b40b926ef1921bd7baa1606134db49b79e2191ba" },
     { "path": "scripts/inject-anchors.js", "sha256": "0541bc16ebc87a2cb54c2b8b251e96d64512a6e8607ed70948195af4f6fc2953" },
     { "path": "scripts/install-hooks.sh", "sha256": "fcd91a8dc76ea68cf703f388c0fc99282f8cefacd30e348ca27a238049123ac3" },
     { "path": "scripts/install-vendored-ajv.sh", "sha256": "58d98426bb0dc94f73e53d535495d629df276e876534ffb2d8227557f4ccfc2c" },
