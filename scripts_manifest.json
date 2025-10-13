@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-10-13T08:30:10Z",
-  "git_commit": "e5895b3b7b91d071f8f920bf1c68b99019ec9180",
+  "generated_at": "2025-10-13T11:24:12Z",
+  "git_commit": "3e45704a1f5d4f58131325b8a4e4562ce54266f2",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
@@ -29,7 +29,7 @@
     { "path": "scripts/gen-registry.js", "sha256": "ed5e27b27860ae358c20c1d0e2cd15c678cd021a50ef295ff0234603f00c8b0e" },
     { "path": "scripts/hash-all.sh", "sha256": "fabde300b13955637938a3fb95e41b41f8aca2da8257baf16feb8beed4c3ec03" },
     { "path": "scripts/hash-scripts.sh", "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3" },
-    { "path": "scripts/ingest.sh", "sha256": "8c9ea564475e79fa829d07937a31b457e8a4b57f8c8b97bc1644a26cf421af2f" },
+    { "path": "scripts/ingest.sh", "sha256": "44adb017424b752e9f5a2c34675038b38fbc9c7f131689908373f5498ae02f67" },
     { "path": "scripts/inject-anchors.js", "sha256": "0541bc16ebc87a2cb54c2b8b251e96d64512a6e8607ed70948195af4f6fc2953" },
     { "path": "scripts/install-hooks.sh", "sha256": "fcd91a8dc76ea68cf703f388c0fc99282f8cefacd30e348ca27a238049123ac3" },
     { "path": "scripts/install-vendored-ajv.sh", "sha256": "58d98426bb0dc94f73e53d535495d629df276e876534ffb2d8227557f4ccfc2c" },

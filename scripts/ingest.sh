@@ -1,6 +1,103 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+VENDOR_BIN_DIR="$REPO_ROOT/vendor/bin"
+export PATH="$VENDOR_BIN_DIR:$PATH"
+
+ensure_macos_tool() {
+  local name="$1"
+  local url="$2"
+  local sha_source="$3"
+  local extract_path="$4"
+
+  command -v "$name" >/dev/null 2>&1 && return 0
+
+  if [ "$(uname -s)" != "Darwin" ]; then
+    echo "Missing: $name" >&2
+    exit 1
+  fi
+
+  mkdir -p "$VENDOR_BIN_DIR"
+
+  local tmp_file
+  tmp_file="$(mktemp)"
+  curl -fsSL "$url" -o "$tmp_file"
+
+  local expected_sha=""
+  local sha_mode="strict"
+  local sha_payload="$sha_source"
+  if [[ "$sha_payload" == optional::* ]]; then
+    sha_mode="optional"
+    sha_payload="${sha_payload#optional::}"
+  fi
+  if [ -n "$sha_payload" ]; then
+    if [[ "$sha_payload" == *::* ]]; then
+      local sha_url="${sha_payload%%::*}"
+      local sha_label="${sha_payload##*::}"
+      expected_sha="$(curl -fsSL "$sha_url" | awk -v label="$sha_label" 'NF >= 2 { if ($2 == label || $2 == "*" label) { print $1; exit } }' || true)"
+    elif [[ "$sha_payload" =~ ^http ]]; then
+      expected_sha="$(curl -fsSL "$sha_payload" | awk '{print $1}' | head -n1 || true)"
+    else
+      expected_sha="$sha_payload"
+    fi
+    if [ -z "$expected_sha" ]; then
+      if [ "$sha_mode" = "strict" ]; then
+        echo "Unable to determine checksum for $name" >&2
+        rm -f "$tmp_file"
+        exit 1
+      else
+        echo "[warn] unable to verify $name; proceeding without checksum" >&2
+      fi
+    fi
+  fi
+
+  if [ -n "$expected_sha" ]; then
+    local actual_sha
+    actual_sha="$(shasum -a 256 "$tmp_file" | awk '{print $1}')"
+    if [ "$actual_sha" != "$expected_sha" ]; then
+      echo "Checksum mismatch for $name (expected $expected_sha, got $actual_sha)" >&2
+      rm -f "$tmp_file"
+      exit 1
+    fi
+  fi
+
+  local dest="$VENDOR_BIN_DIR/$name"
+
+  if [ "$extract_path" = "zip" ]; then
+    local tmp_dir
+    tmp_dir="$(mktemp -d)"
+    if ! command -v unzip >/dev/null 2>&1; then
+      echo "Missing: unzip" >&2
+      rm -rf "$tmp_dir" "$tmp_file"
+      exit 1
+    fi
+    unzip -qo "$tmp_file" -d "$tmp_dir"
+    local extracted
+    extracted="$(find "$tmp_dir" -maxdepth 1 -type f -name 'pup*' | head -n1)"
+    if [ -z "$extracted" ]; then
+      echo "Failed to extract $name" >&2
+      rm -rf "$tmp_dir" "$tmp_file"
+      exit 1
+    fi
+    mv "$extracted" "$dest"
+    rm -rf "$tmp_dir" "$tmp_file"
+  else
+    mv "$tmp_file" "$dest"
+  fi
+
+  chmod +x "$dest"
+}
+
+ensure_bootstrap_tools() {
+  ensure_macos_tool "jq" "https://github.com/stedolan/jq/releases/download/jq-1.6/jq-osx-amd64" "https://github.com/stedolan/jq/releases/download/jq-1.6/jq-osx-amd64.sha256" ""
+  ensure_macos_tool "yq" "https://github.com/mikefarah/yq/releases/download/v4.35.1/yq_darwin_amd64" "https://github.com/mikefarah/yq/releases/download/v4.35.1/yq_darwin_amd64.sha256" ""
+  ensure_macos_tool "pup" "https://github.com/ericchiang/pup/releases/download/v0.4.0/pup_v0.4.0_darwin_amd64.zip" "optional::https://github.com/ericchiang/pup/releases/download/v0.4.0/SHA256SUMS::pup_v0.4.0_darwin_amd64.zip" "zip"
+}
+
+ensure_bootstrap_tools
+
 # --- toggles ---
 DRY_RUN="${DRY_RUN:-0}"
 AUTO_COMMIT="${AUTO_COMMIT:-1}"
