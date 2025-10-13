@@ -10,6 +10,13 @@ need() { command -v "$1" >/dev/null || { echo "Missing: $1"; exit 1; }; }
 sha256() { shasum -a 256 "$1" | awk '{print $1}'; }
 json_escape() { jq -Rs . <<<"${1}"; }
 
+# --- offline mode (no binaries, no network) ---
+if [[ "${OFFLINE:-0}" == "1" ]]; then
+  echo "[info] OFFLINE=1 → using offline batch pipeline"
+  ./scripts/offline/ingest-offline.sh "${BATCH:-offline_drop/batch.yml}"
+  exit $?
+fi
+
 need yq
 need jq
 need pup
