@@ -4,7 +4,7 @@ methods:
   - id: UNFCCC.Agriculture.AM0073
     version: v01-0
     sector: Agriculture
-    source_page: "https://cdm.unfccc.int/methodologies/DB/2N19WQ6DCXNYRNUVZQO0GH7TK0Q2D8"
+    source_page: "https://cdm.unfccc.int/methodologies/DB/2N19WQ6DCXNYRNJVZQQOHG7TK0Q2D8"
     include_text:
       - "GHG emission reductions through multi-site manure collection and treatment in a central plant"
       - "Project emissions from flaring"
