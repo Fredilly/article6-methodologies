@@ -38,15 +38,29 @@ find methodologies -name META.json | sort | while read -r meta_file; do
   IFS=/ read -r org sector id version <<EOF2
 $rel
 EOF2
-  tools_dir="tools/$org/$id/$version"
+  base_dir="tools/$org/$id/$version"
+  sector_dir="tools/$org/$sector/$id/$version"
+  tool_dirs=""
+  if [ -d "$base_dir" ]; then
+    tool_dirs="$base_dir"
+  fi
+  if [ "$sector_dir" != "$base_dir" ] && [ -d "$sector_dir" ]; then
+    if [ -n "$tool_dirs" ]; then
+      tool_dirs="$tool_dirs\n$sector_dir"
+    else
+      tool_dirs="$sector_dir"
+    fi
+  fi
   tools_json='[]'
-  if [ -d "$tools_dir" ]; then
-    tools_json=$(find "$tools_dir" -type f | sort | while read -r f; do
+  if [ -n "$tool_dirs" ]; then
+    tools_json=$(printf '%s\n' "$tool_dirs" | while read -r dir; do
+      [ -n "$dir" ] && find "$dir" -type f
+    done | sort -u | while read -r f; do
       set -- $(tool_digest "$f")
       sha="$1"
       size="$2"
       kind="${f##*.}"
-      doc=$(printf "%s\n" "$f" | awk -F'/' '{org=$2; file=$NF; if (match(file, /^AR-[A-Z0-9]+_v[0-9]+(-[0-9]+)*\.(pdf|docx)$/)) {split(file,a,"_v"); tool=a[1]; ver=a[2]; sub(/\.(pdf|docx)$/,"",ver); gsub(/-/,".",ver); printf "%s/%s@v%s", org, tool, ver} else if (file ~ /(source\.(pdf|docx)|meth_booklet\.pdf)$/) {method=$3; ver=$4; gsub(/-/,".",ver); printf "%s/%s@%s", org, method, ver}}')
+      doc=$(printf "%s\n" "$f" | awk -F'/' '{org=$2; file=$NF; method=$(NF-2); ver=$(NF-1); if (match(file, /^AR-[A-Z0-9]+_v[0-9]+(-[0-9]+)*\.(pdf|docx)$/)) {split(file,a,"_v"); tool=a[1]; ver=a[2]; sub(/\.(pdf|docx)$/,"",ver); gsub(/-/,".",ver); printf "%s/%s@v%s", org, tool, ver} else if (file ~ /(source\.(pdf|docx)|meth_booklet\.pdf)$/) {gsub(/-/,".",ver); printf "%s/%s@%s", org, method, ver}}')
       printf '{"doc":"%s","path":"%s","sha256":"%s","size":%s,"kind":"%s"}\n' "$doc" "$f" "$sha" "$size" "$kind"
     done | jq -s '.')
   fi
