@@ -1,0 +1,24 @@
+name: "✅ QA Check"
+description: "Verify Stage-1 acceptance checks + stability checklist."
+labels: [ "type:qa", "phase:1", "state:ready" ]
+body:
+  - type: checkboxes
+    id: accept
+    attributes:
+      label: "Stage-1 Acceptance"
+      options:
+        - label: "links.txt deduped (method pages + version pages + primary PDFs)"
+        - label: "Primary PDFs under source-assets/UNFCCC/<Sector>/<Method>/<vXX-X>/source.pdf"
+        - label: "Tools under tools/UNFCCC/common (no Word/clarifications/EB/meetings)"
+        - label: "META.json has status, validity, sectoral_scope"
+        - label: "registry.json lists versions with correct status/valid_from/valid_to"
+        - label: "Idempotent re-run (no diffs)"
+  - type: checkboxes
+    id: stability
+    attributes:
+      label: "Stability Checklist (excerpt)"
+      options:
+        - label: "Unified ingest-full.sh: ingest → derive-lean → hash-all → gen-registry → validate"
+        - label: "Fail-fast AJV & hash gates in CI"
+        - label: "Offline mode respected (no network)"
+        - label: "Audit logs and created_at/by captured"

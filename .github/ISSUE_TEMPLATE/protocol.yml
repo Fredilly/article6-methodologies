@@ -1,0 +1,9 @@
+name: "📜 Protocol"
+description: "Track adoption of Article6-Ingest-LinksOnly-v1."
+labels: [ "type:protocol", "phase:1", "state:ready" ]
+body:
+  - type: input
+    id: doc_path
+    attributes:
+      label: "Protocol doc path"
+      value: "docs/protocol/Article6-Ingest-LinksOnly-v1.md"

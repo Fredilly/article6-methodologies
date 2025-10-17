@@ -1,0 +1,19 @@
+name: "🧩 Ingest Batch"
+description: "Run a codes/links batch through the Stage-1 protocol."
+labels: [ "type:batch", "phase:1", "state:ready" ]
+body:
+  - type: input
+    id: codes_file
+    attributes:
+      label: "codes_file (path)"
+      placeholder: "batches/2025-10-17.codes.txt"
+  - type: input
+    id: links_file
+    attributes:
+      label: "links_file (optional)"
+      placeholder: "batches/2025-10-17.links.txt"
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes"
+      placeholder: "Scope and any caveats."
