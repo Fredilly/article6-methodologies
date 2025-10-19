@@ -32,10 +32,13 @@
       ]
     },
     "summary": "Baseline net GHG removals derived from historical land-use data per Tool 02 guidance.",
-    "type": "baseline",
+    "type": "calc",
     "when": [
       "Baseline strata delineated and documented.",
       "Default biomass parameters justified when field data absent."
+    ],
+    "tags": [
+      "baseline"
     ]
   },
   {
@@ -52,10 +55,13 @@
       ]
     },
     "summary": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08.",
-    "type": "emissions",
+    "type": "calc",
     "when": [
       "Fuel consumption metered or logged with auditable records.",
       "Fertilizer application data retained for verification."
+    ],
+    "tags": [
+      "emissions"
     ]
   },
   {

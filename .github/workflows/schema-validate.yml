@@ -1,9 +1,25 @@
 name: schema-validate
 on:
   push:
+    branches-ignore: ['bot/**']
+    paths:
+      - 'methodologies/**'
+      - 'schemas/**'
+      - 'tools/**'
   pull_request:
+    branches:
+      - 'main'
+      - 'feat/**'
+    paths:
+      - 'methodologies/**'
+      - 'schemas/**'
+      - 'tools/**'
 jobs:
   schema:
+    if: |
+      !contains(github.event.head_commit.message, '[skip ci]') &&
+      !startsWith(github.ref_name, 'bot/') &&
+      !(github.event_name == 'pull_request' && startsWith(github.event.pull_request.head.ref, 'bot/'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683

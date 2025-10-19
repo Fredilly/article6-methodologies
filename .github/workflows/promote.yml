@@ -1,0 +1,65 @@
+name: Promote Drafts
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "drafts/ingest/<folder>"
+        required: true
+      target:
+        description: "live root to mirror into (e.g., methodologies/UNFCCC)"
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '20.11.1'
+
+      - name: Validate inputs exist
+        shell: bash
+        run: |
+          test -d "${{ inputs.source }}" || { echo "Missing source: ${{ inputs.source }}"; ls -la drafts/ingest || true; exit 2; }
+          mkdir -p "${{ inputs.target }}"
+
+      # Optional preflight to reduce PR failures; adjust to your repo
+      - name: Preflight fixups (optional but recommended)
+        shell: bash
+        run: |
+          set -e
+          # Try your canonicalizer and hashers before we open a PR.
+          # If they don't exist, keep this step tolerant.
+          ./scripts/json-canonical-check.sh --fix || true
+          ./scripts/hash-all.sh || true
+          npm run validate:lean || true
+          npm run validate:rich || true
+
+      - name: Mirror drafts -> live target
+        shell: bash
+        env:
+          SRC: ${{ inputs.source }}
+          DST: ${{ inputs.target }}
+        run: |
+          rsync -a --delete "$SRC"/ "$DST"/
+          echo "Mirrored $SRC -> $DST"
+          git status --porcelain
+
+      - name: Create PR for promotion
+        uses: peter-evans/create-pull-request@v6
+        with:
+          title: "promote: ${{ inputs.source }} -> ${{ inputs.target }}"
+          branch: "feat/promote-${{ github.run_id }}"
+          base: "main"
+          draft: false
+          body: |
+            Promote drafts from `${{ inputs.source }}` into `${{ inputs.target }}`.
+            Opened by Promote Drafts workflow.

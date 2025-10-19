@@ -12,6 +12,7 @@
       "id": "R-1-0002",
       "section_id": "S-2",
       "tags": [
+        "eligibility",
         "definition"
       ],
       "text": "Definitions for grouped smallholder projects include participants, monitoring entity, and leakage belt."
@@ -20,6 +21,7 @@
       "id": "R-1-0003",
       "section_id": "S-3",
       "tags": [
+        "eligibility",
         "boundary"
       ],
       "text": "Project boundary includes above- and below-ground biomass, dead wood, litter, and soil carbon pools unless excluded with justification."
@@ -28,6 +30,7 @@
       "id": "R-1-0004",
       "section_id": "S-4",
       "tags": [
+        "calc",
         "baseline"
       ],
       "text": "Baseline scenario assumes continuation of pre-project land use with carbon stock change set to zero."
@@ -36,6 +39,7 @@
       "id": "R-1-0005",
       "section_id": "S-5",
       "tags": [
+        "calc",
         "emissions"
       ],
       "text": "Project removals calculated by summing carbon stock changes per pool minus fossil fuel and fertilizer emissions."
@@ -60,6 +64,7 @@
       "id": "R-1-0008",
       "section_id": "S-8",
       "tags": [
+        "parameter",
         "data"
       ],
       "text": "Data and parameters table specifies default biomass factors and sampling requirements."
@@ -76,6 +81,7 @@
       "id": "R-1-0010",
       "section_id": "S-10",
       "tags": [
+        "uncertainty",
         "permanence"
       ],
       "text": "Non-permanence risk buffer determined via Tool 15 and updated when risk profile changes."
@@ -84,6 +90,7 @@
       "id": "R-1-0011",
       "section_id": "S-11",
       "tags": [
+        "reporting",
         "reference"
       ],
       "text": "Normative tools and references (Tools 02, 08, 12, 14, 15, 16) must be accessible to grouped project manager."
