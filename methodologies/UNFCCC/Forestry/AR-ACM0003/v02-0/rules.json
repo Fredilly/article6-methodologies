@@ -12,6 +12,7 @@
       "id": "R-1-0002",
       "section_id": "S-2",
       "tags": [
+        "calc",
         "baseline"
       ],
       "text": "Baseline net GHG removals derived from historical land-use data per Tool 02 guidance."
@@ -20,6 +21,7 @@
       "id": "R-1-0003",
       "section_id": "S-3",
       "tags": [
+        "calc",
         "emissions"
       ],
       "text": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08."

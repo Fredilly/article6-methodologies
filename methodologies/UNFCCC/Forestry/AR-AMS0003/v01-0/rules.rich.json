@@ -31,10 +31,13 @@
       ]
     },
     "summary": "Definitions for grouped smallholder projects include participants, monitoring entity, and leakage belt.",
-    "type": "definition",
+    "type": "eligibility",
     "when": [
       "Participant list updated prior to verification.",
       "Leakage belt delineated and archived with geospatial data."
+    ],
+    "tags": [
+      "definition"
     ]
   },
   {
@@ -50,10 +53,13 @@
       ]
     },
     "summary": "Project boundary includes above- and below-ground biomass, dead wood, litter, and soil carbon pools unless excluded with justification.",
-    "type": "boundary",
+    "type": "eligibility",
     "when": [
       "Boundary map maintained and updated with parcel additions.",
       "Excluded pools recorded with zero-change assumption."
+    ],
+    "tags": [
+      "boundary"
     ]
   },
   {
@@ -69,10 +75,13 @@
       ]
     },
     "summary": "Baseline scenario assumes continuation of pre-project land use with carbon stock change set to zero.",
-    "type": "baseline",
+    "type": "calc",
     "when": [
       "Baseline justification renewed if socio-economic conditions shift.",
       "Alternative land-use scenarios documented during validation."
+    ],
+    "tags": [
+      "baseline"
     ]
   },
   {
@@ -89,10 +98,13 @@
       ]
     },
     "summary": "Project removals calculated by summing carbon stock changes per pool minus fossil fuel and fertilizer emissions.",
-    "type": "emissions",
+    "type": "calc",
     "when": [
       "Activity data for fossil fuel and fertilizer use collected annually.",
       "Emission factors conform to latest IPCC or national guidance."
+    ],
+    "tags": [
+      "emissions"
     ]
   },
   {
@@ -149,10 +161,13 @@
       ]
     },
     "summary": "Data and parameters table specifies default biomass factors and sampling requirements.",
-    "type": "data",
+    "type": "parameter",
     "when": [
       "Project data registry kept current for all parameters.",
       "Any parameter change approved by DOE prior to use."
+    ],
+    "tags": [
+      "data"
     ]
   },
   {
@@ -189,10 +204,13 @@
       ]
     },
     "summary": "Non-permanence risk buffer determined via Tool 15 and updated when risk profile changes.",
-    "type": "permanence",
+    "type": "uncertainty",
     "when": [
       "Risk assessment reviewed every verification.",
       "Buffer ledger entries retained for DOE review."
+    ],
+    "tags": [
+      "permanence"
     ]
   },
   {
@@ -208,9 +226,12 @@
       ]
     },
     "summary": "Normative tools and references (Tools 02, 08, 12, 14, 15, 16) must be accessible to grouped project manager.",
-    "type": "reference",
+    "type": "reporting",
     "when": [
       "Normative tools catalog updated when UNFCCC issues revisions."
+    ],
+    "tags": [
+      "reference"
     ]
   },
   {

@@ -12,6 +12,7 @@
       "id": "R-1-0002",
       "section_id": "S-2",
       "tags": [
+        "eligibility",
         "definition"
       ],
       "text": "Definitions clarify wetland geomorphology, participant aggregation, and leakage belt concepts."
@@ -20,6 +21,7 @@
       "id": "R-1-0003",
       "section_id": "S-3",
       "tags": [
+        "eligibility",
         "boundary"
       ],
       "text": "Project boundary includes on-site hydrological interventions and relevant carbon pools except where justified."
@@ -28,6 +30,7 @@
       "id": "R-1-0004",
       "section_id": "S-4",
       "tags": [
+        "calc",
         "baseline"
       ],
       "text": "Baseline assumes continuation of pre-project wetland degradation with zero additional removals."
@@ -36,6 +39,7 @@
       "id": "R-1-0005",
       "section_id": "S-5",
       "tags": [
+        "calc",
         "emissions"
       ],
       "text": "Project removals calculated from pool carbon stock changes minus emissions from project operations."
@@ -60,6 +64,7 @@
       "id": "R-1-0008",
       "section_id": "S-8",
       "tags": [
+        "parameter",
         "data"
       ],
       "text": "Data tables specify default biomass factors, hydrological parameters, and monitoring records."
@@ -76,6 +81,7 @@
       "id": "R-1-0010",
       "section_id": "S-10",
       "tags": [
+        "uncertainty",
         "permanence"
       ],
       "text": "Permanence buffer contributions determined via Tool 15 wetland risk factors."
@@ -84,6 +90,7 @@
       "id": "R-1-0011",
       "section_id": "S-11",
       "tags": [
+        "reporting",
         "reference"
       ],
       "text": "Normative tools and references maintained for monitoring and verification teams."

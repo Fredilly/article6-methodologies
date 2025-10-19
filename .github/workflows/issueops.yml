@@ -1,0 +1,107 @@
+name: IssueOps
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "ingest | derive-lean | validate"
+        required: true
+        default: "ingest"
+      args:
+        description: "optional args e.g. --batch batches/2025-10-17.forestry"
+        required: false
+      commit_artifacts:
+        description: "commit drafts to bot/ branch with [skip ci] (true/false)"
+        required: false
+        default: "false"
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  actions: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Detect trigger & parse command
+        id: gate
+        shell: bash
+        run: |
+          FROM="${{ github.event_name }}"
+          BODY="${{ github.event.comment.body || '' }}"
+          if [[ "$FROM" == "issue_comment" && "$BODY" =~ ^/run[[:space:]]+([a-zA-Z0-9._:-]+)([[:space:]].*)?$ ]]; then
+            echo "task=${BASH_REMATCH[1]}" >> $GITHUB_OUTPUT
+            echo "args=${BASH_REMATCH[2]}" >> $GITHUB_OUTPUT
+            echo "issue=${{ github.event.issue.number }}" >> $GITHUB_OUTPUT
+            echo "from=comment" >> $GITHUB_OUTPUT
+            echo "commit=false" >> $GITHUB_OUTPUT
+          else
+            echo "task=${{ inputs.task }}" >> $GITHUB_OUTPUT
+            echo "args=${{ inputs.args }}" >> $GITHUB_OUTPUT
+            echo "issue=" >> $GITHUB_OUTPUT
+            echo "from=dispatch" >> $GITHUB_OUTPUT
+            echo "commit=${{ inputs.commit_artifacts }}" >> $GITHUB_OUTPUT
+          fi
+
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '20.11.1'
+
+      - name: Prepare drafts folder
+        id: envs
+        shell: bash
+        run: |
+          TS="$(date +%F-%H%M%S)"
+          OUTDIR="drafts/ingest/${TS}"
+          mkdir -p "$OUTDIR" logs
+          echo "outdir=$OUTDIR" >> $GITHUB_OUTPUT
+
+      - name: Run ops router
+        env:
+          TASK: ${{ steps.gate.outputs.task }}
+          ARGS: ${{ steps.gate.outputs.args }}
+          OUTDIR: ${{ steps.envs.outputs.outdir }}
+        run: |
+          chmod +x ./scripts/ops.sh
+          ./scripts/ops.sh "$TASK" --out "$OUTDIR" $ARGS
+
+      - name: Upload drafts as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ingest-${{ github.run_id }}
+          path: ${{ steps.envs.outputs.outdir }}/
+
+      - name: Comment result (if triggered from issue)
+        if: ${{ steps.gate.outputs.issue != '' }}
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ steps.gate.outputs.issue }}
+          body: |
+            ✅ **${{ steps.gate.outputs.task }}** finished.
+            - Args: `${{ steps.gate.outputs.args }}`
+            - Drafts: `${{ steps.envs.outputs.outdir }}`
+            - Artifact: `ingest-${{ github.run_id }}`
+
+      - name: Optionally commit drafts to bot/ branch with [skip ci]
+        if: ${{ steps.gate.outputs.commit == 'true' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BR="bot/ingest-${{ github.run_id }}"
+          git config user.name "article6-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git checkout -b "$BR"
+          git add ${{ steps.envs.outputs.outdir }}/
+          git commit -m "ops: ingest drafts to ${{ steps.envs.outputs.outdir }} [skip ci]"
+          git push origin "$BR"
+          gh pr create --base main --head "$BR" \
+            --title "ops(drafts): $BR" \
+            --body "Draft artefacts only. CI disabled via [skip ci]." \
+            --draft
