@@ -1,0 +1,44 @@
+name: Sync Manifest to App
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "methodologies/**"
+      - "scripts/build-manifest.mjs"
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: npm ci || npm i
+      - run: npm run build:manifest
+
+      - name: Checkout app repo
+        uses: actions/checkout@v4
+        with:
+          repository: Fredilly/app.article6
+          token: ${{ secrets.APP_REPO_PAT }}
+          path: app.article6
+
+      - name: Replace manifest
+        run: |
+          mkdir -p app.article6/public/manifest
+          cp manifest/index.json app.article6/public/manifest/index.json
+          cd app.article6
+          git config user.name "article6-bot"
+          git config user.email "bot@article6.org"
+          git checkout -b chore/sync-manifest-${{ github.sha }}
+          git add public/manifest/index.json
+          git commit -m "chore(manifest): sync from methodologies @ ${{ github.sha }}" || echo "no changes"
+          git push -u origin HEAD || echo "no push"
+
+      - name: Open PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.APP_REPO_PAT }}
+          path: app.article6
+          title: "chore(manifest): sync from methodologies @ ${{ github.sha }}"
+          branch: chore/sync-manifest-${{ github.sha }}
+          body: "Automated sync of UI manifest from methodologies."

@@ -1,0 +1,565 @@
+[
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-ACM0003",
+    "version": "v02-0",
+    "rule_id": "R-1-0001",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "eligibility"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-ACM0003",
+    "version": "v02-0",
+    "rule_id": "R-1-0002",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "calc",
+      "baseline"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-ACM0003",
+    "version": "v02-0",
+    "rule_id": "R-1-0003",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "calc",
+      "emissions"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-ACM0003",
+    "version": "v02-0",
+    "rule_id": "R-1-0004",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "leakage"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-ACM0003",
+    "version": "v02-0",
+    "rule_id": "R-1-0005",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "monitoring"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-ACM0003",
+    "version": "v02-0",
+    "rule_id": "R-1-0006",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "monitoring"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-ACM0003",
+    "version": "v02-0",
+    "rule_id": "R-1-0007",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "uncertainty"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-ACM0003",
+    "version": "v02-0",
+    "rule_id": "R-1-0008",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "reporting"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AM0014",
+    "version": "v03-0",
+    "rule_id": "R-1-0001",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "eligibility"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AM0014",
+    "version": "v03-0",
+    "rule_id": "R-1-0002",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "calc",
+      "baseline"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AM0014",
+    "version": "v03-0",
+    "rule_id": "R-1-0003",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "equation"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AM0014",
+    "version": "v03-0",
+    "rule_id": "R-1-0004",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "leakage"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AM0014",
+    "version": "v03-0",
+    "rule_id": "R-1-0005",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "monitoring"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AM0014",
+    "version": "v03-0",
+    "rule_id": "R-1-0006",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "monitoring"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AM0014",
+    "version": "v03-0",
+    "rule_id": "R-1-0007",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "uncertainty"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AM0014",
+    "version": "v03-0",
+    "rule_id": "R-1-0008",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "reporting"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0003",
+    "version": "v01-0",
+    "rule_id": "R-1-0001",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "eligibility"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0003",
+    "version": "v01-0",
+    "rule_id": "R-1-0002",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "eligibility",
+      "definition"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0003",
+    "version": "v01-0",
+    "rule_id": "R-1-0003",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "eligibility",
+      "boundary"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0003",
+    "version": "v01-0",
+    "rule_id": "R-1-0004",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "calc",
+      "baseline"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0003",
+    "version": "v01-0",
+    "rule_id": "R-1-0005",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "calc",
+      "emissions"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0003",
+    "version": "v01-0",
+    "rule_id": "R-1-0006",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "leakage"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0003",
+    "version": "v01-0",
+    "rule_id": "R-1-0007",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "monitoring"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0003",
+    "version": "v01-0",
+    "rule_id": "R-1-0008",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "parameter",
+      "data"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0003",
+    "version": "v01-0",
+    "rule_id": "R-1-0009",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "uncertainty"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0003",
+    "version": "v01-0",
+    "rule_id": "R-1-0010",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "uncertainty",
+      "permanence"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0003",
+    "version": "v01-0",
+    "rule_id": "R-1-0011",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "reporting",
+      "reference"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0003",
+    "version": "v01-0",
+    "rule_id": "R-1-0012",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "equation"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0003",
+    "version": "v01-0",
+    "rule_id": "R-1-0013",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "reporting"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0007",
+    "version": "v03-1",
+    "rule_id": "R-1-0001",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "eligibility"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0007",
+    "version": "v03-1",
+    "rule_id": "R-1-0002",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "eligibility",
+      "definition"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0007",
+    "version": "v03-1",
+    "rule_id": "R-1-0003",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "eligibility",
+      "boundary"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0007",
+    "version": "v03-1",
+    "rule_id": "R-1-0004",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "calc",
+      "baseline"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0007",
+    "version": "v03-1",
+    "rule_id": "R-1-0005",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "calc",
+      "emissions"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0007",
+    "version": "v03-1",
+    "rule_id": "R-1-0006",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "leakage"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0007",
+    "version": "v03-1",
+    "rule_id": "R-1-0007",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "monitoring"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0007",
+    "version": "v03-1",
+    "rule_id": "R-1-0008",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "parameter",
+      "data"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0007",
+    "version": "v03-1",
+    "rule_id": "R-1-0009",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "uncertainty"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0007",
+    "version": "v03-1",
+    "rule_id": "R-1-0010",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "uncertainty",
+      "permanence"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0007",
+    "version": "v03-1",
+    "rule_id": "R-1-0011",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "reporting",
+      "reference"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0007",
+    "version": "v03-1",
+    "rule_id": "R-1-0012",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "equation"
+    ]
+  },
+  {
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "methodology": "AR-AMS0007",
+    "version": "v03-1",
+    "rule_id": "R-1-0013",
+    "rule": "\"\"",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "reporting"
+    ]
+  }
+]
