@@ -1,3 +1,12 @@
 {
-  "rules": []
+  "rules": [
+    {
+      "id": "TEST-001",
+      "section_id": "S-0",
+      "tags": [
+        "automation-check"
+      ],
+      "text": "Temporary automation check rule to confirm sync pipeline."
+    }
+  ]
 }

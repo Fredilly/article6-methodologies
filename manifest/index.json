@@ -561,5 +561,18 @@
     "tags": [
       "reporting"
     ]
+  },
+  {
+    "provider": "Verra",
+    "category": "AFOLU",
+    "methodology": "VM0007",
+    "version": "v1-6",
+    "rule_id": "TEST-001",
+    "rule": "\"\"",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-6/rules.json",
+    "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "tags": [
+      "automation-check"
+    ]
   }
 ]
