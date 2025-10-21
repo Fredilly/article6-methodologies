@@ -41,10 +41,12 @@ for (const file of files) {
       (typeof r.sectionId === "string" && r.sectionId) ||
       undefined;
 
-    const sha256 = crypto.createHash("sha256").update(ruleTxt).digest("hex");
+    const identity = `${methodology}|${version}|${ruleId}|${ruleTxt}`;
+    const sha256 = crypto.createHash("sha256").update(identity, "utf8").digest("hex");
 
     entries.push({
       id: ruleId,
+      rule_id: ruleId,
       methodology,
       version,
       rule: ruleTxt,

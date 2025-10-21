@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-10-21T17:27:36Z",
-  "git_commit": "a1bf3f27e5b3180c656c14e8162f47a1a4aedd68",
+  "generated_at": "2025-10-21T19:55:44Z",
+  "git_commit": "d42da63687246a105817b4ed33cacfac785efbfb",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
@@ -10,7 +10,7 @@
     { "path": "scripts/baselines/param-extraction-linear-json.js", "sha256": "95c48577722e227d980fd650331262b928daee2288f715379c878624c52962b2" },
     { "path": "scripts/baselines/param-extraction-linear.js", "sha256": "13f483627ff922c5d41d5d2d60f03c53a207d30eee1ba9a3758b863b2323c2ea" },
     { "path": "scripts/baselines/param-extraction-tfidf.js", "sha256": "9ba211f2a139daf0bd1a857205c3ede17f741c71fe345d4de2148cd8b2a70c8a" },
-    { "path": "scripts/build-manifest.mjs", "sha256": "11a9050dc53907520b11296e4c1e6117e66fe4842078d063ebba7193f4d91741" },
+    { "path": "scripts/build-manifest.mjs", "sha256": "61aa4f2b0e5fda53d0cbd722e539e23e51047168057024ad7b7927e404bc89a6" },
     { "path": "scripts/build-validator-bundle.js", "sha256": "307a3850efc0fa6c8acb8386a296189a4541f8a62ec263de3538426cd1e4df69" },
     { "path": "scripts/check-lean-drift.sh", "sha256": "6c482f7b7ed321f6612c8e1a347921894613cf500fa013f0f1c3904e9b78713f" },
     { "path": "scripts/check-methodology-guardrails.js", "sha256": "b1ed068574c8a9d9399f11e122ca21b9d7c39a3e6a4deccfb6cb218a32145cd4" },
