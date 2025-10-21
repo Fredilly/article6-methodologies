@@ -33,12 +33,14 @@ jobs:
           git add public/manifest/index.json
           git commit -m "chore(manifest): sync from methodologies @ ${{ github.sha }}" || echo "no changes"
           git push -u origin HEAD || echo "no push"
+          git checkout main
 
       - name: Open PR
         uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c
         with:
           token: ${{ secrets.APP_REPO_PAT }}
           path: app.article6
+          base: main
           title: "chore(manifest): sync from methodologies @ ${{ github.sha }}"
           branch: chore/sync-manifest-${{ github.sha }}
           body: "Automated sync of UI manifest from methodologies."
