@@ -54,6 +54,15 @@ jobs:
         with:
           node-version: '20.11.1'
 
+      - name: Install jq, yq, pup (Ubuntu runner)
+        shell: bash
+        run: |
+          set -euxo pipefail
+          sudo apt-get update
+          sudo apt-get install -y jq pup curl
+          sudo curl -L "https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64" -o /usr/local/bin/yq
+          sudo chmod +x /usr/local/bin/yq
+
       - name: Prepare drafts folder
         id: envs
         shell: bash
