@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-10-21T19:55:44Z",
-  "git_commit": "d42da63687246a105817b4ed33cacfac785efbfb",
+  "generated_at": "2025-10-22T02:33:52Z",
+  "git_commit": "bc24481e5fa6b31ef4fc41da9b7663688afb6b86",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
@@ -44,7 +44,7 @@
     { "path": "scripts/offline/prepare-offline.cjs", "sha256": "85a31d59658a83203f885de8d34743625705e0e381aba13545ad5a95ecb5f708" },
     { "path": "scripts/offline/read-batch.cjs", "sha256": "967e10dd8add00199e5f3f1991b78e42e374e51c4b3cc4beec30c81066f297f7" },
     { "path": "scripts/offline/update-registry.cjs", "sha256": "11b2ef249a112a0551cb19858dcbfdcd5b2c6dcb534424b0d4bd9134f6323d54" },
-    { "path": "scripts/ops.sh", "sha256": "36dfb66b14d406c9cf994154dbd802f96e8e4cf3064165ac9b08c1051cac5bcf" },
+    { "path": "scripts/ops.sh", "sha256": "797ca9be37c35b9fdaeee972066ab84390fecab8b0f92a549f09de866d3111d5" },
     { "path": "scripts/policy-tools.sh", "sha256": "805620200a704dc64a6be4fa5a6261cf00d35ba747d525c405cc29b7320409ff" },
     { "path": "scripts/py/extract_rules.py", "sha256": "6e57781f4c1f57d4e46a3c1df35f19a9680048fc19833a812461da385736231e" },
     { "path": "scripts/py/extract_sections.py", "sha256": "c419e385956a8e1cd960a4d2e6352ffbd49132195b6447ac220102a63b4a0b2a" },

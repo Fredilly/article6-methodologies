@@ -31,12 +31,12 @@
       ]
     },
     "summary": "Definitions clarify wetland geomorphology, participant aggregation, and leakage belt concepts.",
+    "tags": [
+      "definition"
+    ],
     "type": "eligibility",
     "when": [
       "Definitions reviewed during participant onboarding."
-    ],
-    "tags": [
-      "definition"
     ]
   },
   {
@@ -52,12 +52,12 @@
       ]
     },
     "summary": "Project boundary includes on-site hydrological interventions and relevant carbon pools except where justified.",
+    "tags": [
+      "boundary"
+    ],
     "type": "eligibility",
     "when": [
       "Boundary updates documented when parcels are added or removed."
-    ],
-    "tags": [
-      "boundary"
     ]
   },
   {
@@ -73,12 +73,12 @@
       ]
     },
     "summary": "Baseline assumes continuation of pre-project wetland degradation with zero additional removals.",
+    "tags": [
+      "baseline"
+    ],
     "type": "calc",
     "when": [
       "Baseline scenario revisited if policy or land tenure shifts."
-    ],
-    "tags": [
-      "baseline"
     ]
   },
   {
@@ -95,13 +95,13 @@
       ]
     },
     "summary": "Project removals calculated from pool carbon stock changes minus emissions from project operations.",
+    "tags": [
+      "emissions"
+    ],
     "type": "calc",
     "when": [
       "Activity data for pumps and machinery collected annually.",
       "Emission factors traceable to IPCC or national sources."
-    ],
-    "tags": [
-      "emissions"
     ]
   },
   {
@@ -158,12 +158,12 @@
       ]
     },
     "summary": "Data tables specify default biomass factors, hydrological parameters, and monitoring records.",
+    "tags": [
+      "data"
+    ],
     "type": "parameter",
     "when": [
       "Data registry updated prior to each verification."
-    ],
-    "tags": [
-      "data"
     ]
   },
   {
@@ -200,12 +200,12 @@
       ]
     },
     "summary": "Permanence buffer contributions determined via Tool 15 wetland risk factors.",
+    "tags": [
+      "permanence"
+    ],
     "type": "uncertainty",
     "when": [
       "Risk assessment reassessed at each verification."
-    ],
-    "tags": [
-      "permanence"
     ]
   },
   {
@@ -221,12 +221,12 @@
       ]
     },
     "summary": "Normative tools and references maintained for monitoring and verification teams.",
+    "tags": [
+      "reference"
+    ],
     "type": "reporting",
     "when": [
       "Reference library refreshed when tools updated."
-    ],
-    "tags": [
-      "reference"
     ]
   },
   {
