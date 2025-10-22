@@ -1,11 +1,12 @@
 name: Ingest Forestry Batch
+
 on:
   workflow_dispatch:
     inputs:
-      batch:
-        description: Path to batch file
+      ingest_file:
+        description: Path to ingest.yml (used by scripts/ingest.sh)
         required: true
-        default: batches/2025-10-17.codes.forestry-01.txt
+        default: ingest.yml
 
 permissions:
   contents: write
@@ -15,26 +16,40 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: '20.19.3'
           cache: 'npm'
-      - run: npm ci
-      - name: Run ingestion
+
+      - name: Install npm deps
+        run: npm ci
+
+      - name: Install CLI deps (yq, pup)
         run: |
-          if [ -x scripts/ingest-full.sh ]; then
-            bash scripts/ingest-full.sh "${{ github.event.inputs.batch }}"
-          else
-            npm run ingest:full -- --batch "${{ github.event.inputs.batch }}"
-          fi
+          sudo apt-get update
+          sudo apt-get install -y jq pup
+          sudo curl -L "https://github.com/mikefarah/yq/releases/download/v4.44.3/yq_linux_amd64" -o /usr/local/bin/yq
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Run ingestion
+        env:
+          INGEST_FILE: ${{ github.event.inputs.ingest_file }}
+        run: |
+          chmod +x scripts/ingest.sh
+          bash scripts/ingest.sh
+
       - name: Commit artefacts
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add methodologies tools registry.json manifest/index.json ingest.log 2>/dev/null || true
-          git commit -m "CI: ingest ${{ github.event.inputs.batch }} [skip ci]" || echo "Nothing to commit"
+          git commit -m "CI: ingest ${{ github.event.inputs.ingest_file }} [skip ci]" || echo "Nothing to commit"
           git push || true
+
       - name: Upload logs
         uses: actions/upload-artifact@v4
         with:
