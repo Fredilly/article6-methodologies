@@ -32,13 +32,13 @@
       ]
     },
     "summary": "Baseline biomass estimated using IPCC defaults or site-specific sampling following Tool 02.",
+    "tags": [
+      "baseline"
+    ],
     "type": "calc",
     "when": [
       "Sampling plan approved during validation.",
       "Baseline strata documentation provided to DOE."
-    ],
-    "tags": [
-      "baseline"
     ]
   },
   {

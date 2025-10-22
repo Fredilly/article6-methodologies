@@ -21,8 +21,34 @@ case "$TASK" in
   ingest)
     log "ingest -> $OUTDIR  args: ${ARGS[*]:-}"
     mkdir -p "$OUTDIR"
-    # Example offline-friendly ingest (adjust flags to match your repo)
-    ./scripts/ingest.sh --offline --out "$OUTDIR" "${ARGS[@]}"
+
+    # Translate CLI flags to envs for ingest.sh
+    OFFLINE_ENV=0
+    BATCH_ENV=""
+    REMAIN=()
+
+    while [[ ${#ARGS[@]} -gt 0 ]]; do
+      case "${ARGS[0]}" in
+        --offline)
+          OFFLINE_ENV=1
+          ARGS=("${ARGS[@]:1}")
+          ;;
+        --batch)
+          if [[ ${#ARGS[@]} -lt 2 ]]; then
+            echo "Missing value for --batch" >&2; exit 2
+          fi
+          BATCH_ENV="${ARGS[1]}"
+          ARGS=("${ARGS[@]:2}")
+          ;;
+        *)
+          REMAIN+=("${ARGS[0]}")
+          ARGS=("${ARGS[@]:1}")
+          ;;
+      esac
+    done
+
+    # Export only what ingest.sh understands; ignore REMAIN for now
+    OFFLINE="${OFFLINE_ENV}" BATCH="${BATCH_ENV}" OUTDIR="${OUTDIR}" ./scripts/ingest.sh
     ;;
 
   derive-lean)
@@ -43,4 +69,3 @@ case "$TASK" in
 esac
 
 log "done."
-
