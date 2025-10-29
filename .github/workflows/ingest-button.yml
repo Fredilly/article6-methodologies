@@ -1,0 +1,190 @@
+name: Ingest (Issues/Projects)
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "ingest|issue|project"
+        required: true
+        default: "ingest"
+      issue_number:
+        description: "Issue number when source=issue"
+        required: false
+      project_number:
+        description: "Project number when source=project"
+        required: false
+      mode:
+        description: "both|rich|lean"
+        default: "both"
+      dry_run:
+        description: "true to skip commit/PR"
+        default: "false"
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: read
+  id-token: write
+
+env:
+  NODE_VERSION: '20'
+  TMP_DIR: ./.tmp
+  SCOPED: ./.tmp/ingest.scoped.yml
+
+jobs:
+  maybe-slash:
+    if: github.event_name == 'issue_comment'
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.parse.outputs.run }}
+      mode: ${{ steps.parse.outputs.mode }}
+    steps:
+      - name: Parse /ingest
+        id: parse
+        run: |
+          body="${{ github.event.comment.body }}"
+          if echo "$body" | grep -Eiq '^\s*/ingest'; then
+            mode="$(echo "$body" | awk '{print $2}')" || true
+            if [ -z "$mode" ]; then mode="both"; fi
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "mode=$mode" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  run:
+    needs: maybe-slash
+    if: github.event_name == 'workflow_dispatch' || needs.maybe-slash.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install
+        run: |
+          npm ci || npm i
+
+      - name: Install CLI dependencies
+        run: |
+          set -euxo pipefail
+          sudo apt-get update
+          sudo apt-get install -y jq pup curl
+          sudo curl -L "https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64" -o /usr/local/bin/yq
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Determine scope & mode
+        id: meta
+        run: |
+          if [ "${{ github.event_name }}" = "issue_comment" ]; then
+            mode="${{ needs.maybe-slash.outputs.mode }}"
+            if [ -z "$mode" ] || [ "$mode" = 'null' ]; then mode="both"; fi
+            echo "mode=$mode" >> "$GITHUB_OUTPUT"
+            echo "source=issue" >> "$GITHUB_OUTPUT"
+            echo "issue=${{ github.event.issue.number }}" >> "$GITHUB_OUTPUT"
+            echo "project=" >> "$GITHUB_OUTPUT"
+            echo "dry_run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
+            echo "source=${{ inputs.source }}" >> "$GITHUB_OUTPUT"
+            echo "issue=${{ inputs.issue_number }}" >> "$GITHUB_OUTPUT"
+            echo "project=${{ inputs.project_number }}" >> "$GITHUB_OUTPUT"
+            echo "dry_run=${{ inputs.dry_run }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Resolve scope → .tmp/ingest.scoped.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$TMP_DIR"
+          SRC="${{ steps.meta.outputs.source }}"
+          ISSUE_NO="${{ steps.meta.outputs.issue }}"
+          PROJ_NO="${{ steps.meta.outputs.project }}"
+          node scripts/resolve-ingest-scope.mjs \
+            --source "${SRC:-ingest}" \
+            --issue "${ISSUE_NO:-0}" \
+            --project "${PROJ_NO:-0}" \
+            --in ingest.yml \
+            --out "$SCOPED"
+
+      - name: Run ingest (rich/lean)
+        id: ingest
+        env:
+          MODE: ${{ steps.meta.outputs.mode }}
+        run: |
+          set -euo pipefail
+          echo "MODE=$MODE"
+          if [ -x scripts/ingest.sh ]; then
+            export INGEST_FILE="$SCOPED"
+            if [ "$MODE" = "rich" ] || [ "$MODE" = "both" ]; then
+              scripts/ingest.sh
+            fi
+            if ([ "$MODE" = "lean" ] || [ "$MODE" = "both" ]) && [ -x scripts/derive-lean.sh ]; then
+              scripts/derive-lean.sh
+            fi
+          else
+            if [ "$MODE" = "rich" ]; then npm run ingest:rich --if-present -- "$SCOPED"; fi
+            if [ "$MODE" = "lean" ]; then npm run ingest:lean --if-present -- "$SCOPED"; fi
+            if [ "$MODE" = "both" ]; then
+              npm run ingest:rich --if-present -- "$SCOPED"
+              npm run ingest:lean --if-present -- "$SCOPED"
+            fi
+          fi
+
+      - name: Validate & quality gates
+        run: |
+          set -e
+          npm run validate:rich --if-present
+          npm run validate:lean --if-present
+          npm run validate --if-present || true
+
+      - name: Detect changes
+        id: diff
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit & PR
+        if: steps.diff.outputs.changed == 'true' && steps.meta.outputs.dry_run != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          BR="chore/ingest-button-${{ github.run_id }}"
+          git switch -c "$BR"
+          git config user.name "article6-bot"
+          git config user.email "bot@article6.org"
+          RUN_ID="${{ github.run_id }}"
+          cat <<MSG > /tmp/commit_msg.txt
+Ingest: run ${RUN_ID} (rich→lean)
+
+WHAT
+- Scoped ingest via resolver (issue/project/ingest.yml)
+- Ran rich and lean, validated, staged artefacts
+
+WHY
+- One-click, idempotent ingest tied to Issues/Projects for auditability
+
+Signed-off-by: fredilly@article6.org
+MSG
+          git commit -F /tmp/commit_msg.txt
+          git push -u origin "$BR"
+          gh pr create --fill --title "Ingest: ${BR}" --label ingest
+
+      - name: Upload logs (artifact)
+        uses: actions/upload-artifact@v4
+        with:
+          name: ingest-logs
+          path: ${{ env.TMP_DIR }}
