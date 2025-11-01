@@ -32,14 +32,22 @@ jobs:
           set -euxo pipefail
           sudo apt-get update
           sudo apt-get install -y jq curl unzip
-          curl -fsSL "https://github.com/mikefarah/yq/releases/download/v4.44.3/yq_linux_amd64" -o yq
-          sudo mv yq /usr/local/bin/yq
+          YQ_VERSION="v4.44.3"
+          curl -fsSL "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64.tar.gz" -o /tmp/yq.tgz
+          tar -xzf /tmp/yq.tgz -C /tmp
+          sudo mv /tmp/yq_linux_amd64 /usr/local/bin/yq
           sudo chmod +x /usr/local/bin/yq
-          curl -fsSL "https://github.com/ericchiang/pup/releases/download/v0.4.0/pup_v0.4.0_linux_amd64.zip" -o pup.zip
-          unzip -q pup.zip pup
-          sudo mv pup /usr/local/bin/pup
+          rm -f /tmp/yq.tgz
+          PUP_VERSION="v0.4.0"
+          curl -fsSL "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/pup_${PUP_VERSION#v}_linux_amd64.zip" -o /tmp/pup.zip
+          unzip -q /tmp/pup.zip -d /tmp
+          if [ -f /tmp/pup ]; then sudo mv /tmp/pup /usr/local/bin/pup; else sudo mv /tmp/pup_*/pup /usr/local/bin/pup; fi
           sudo chmod +x /usr/local/bin/pup
-          rm -f pup.zip
+          rm -f /tmp/pup.zip
+          rm -rf /tmp/pup /tmp/pup_*
+          yq --version
+          pup --version
+          jq --version
 
       - name: Run ingestion
         env:
