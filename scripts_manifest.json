@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-11-01T02:50:53Z",
-  "git_commit": "b0453de3485d2764515eec3bc9f4821503c56d84",
+  "generated_at": "2025-11-01T12:13:40Z",
+  "git_commit": "156ffb5a983a642ec9494b1459d1ba245a902a70",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
@@ -31,7 +31,7 @@
     { "path": "scripts/gen-registry.js", "sha256": "ed5e27b27860ae358c20c1d0e2cd15c678cd021a50ef295ff0234603f00c8b0e" },
     { "path": "scripts/hash-all.sh", "sha256": "91dcef91eb557a896cfc2cfddeb12f61e5042206438fbdc66a52ecb341c0b853" },
     { "path": "scripts/hash-scripts.sh", "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3" },
-    { "path": "scripts/ingest.sh", "sha256": "c9a7b18ce2cb6c4e3b3a1ae7cb119166b743e923699e359ece067960ad2d664a" },
+    { "path": "scripts/ingest.sh", "sha256": "9613acabdc1adf6c095ff555a7c73dab0bdcfd425a061329b4e73f584c4daee4" },
     { "path": "scripts/inject-anchors.js", "sha256": "0541bc16ebc87a2cb54c2b8b251e96d64512a6e8607ed70948195af4f6fc2953" },
     { "path": "scripts/install-hooks.sh", "sha256": "fcd91a8dc76ea68cf703f388c0fc99282f8cefacd30e348ca27a238049123ac3" },
     { "path": "scripts/install-vendored-ajv.sh", "sha256": "58d98426bb0dc94f73e53d535495d629df276e876534ffb2d8227557f4ccfc2c" },
@@ -54,7 +54,6 @@
     { "path": "scripts/run-ajv.sh", "sha256": "fa3e40b945144c9f8dda93f44f6c00f2e404475a3074a7bc5cf450a4e38ffe0f" },
     { "path": "scripts/scaffold-method.js", "sha256": "bac5757661dd49c2dc48ba3811170e98f7dc94acc5d28573614d72e54168204e" },
     { "path": "scripts/sync-examples.sh", "sha256": "cfa456e1711d3fe873fa1bd19c54c38476815becd5e198efced4ff0d4dc3b728" },
-    { "path": "scripts/testfile.tmp", "sha256": "98ea6e4f216f2fb4b69fff9b3a44842c38686ca685f3f55dc48c5d3fb1107be4" },
     { "path": "scripts/utils/jsonl.js", "sha256": "86c0723c800b41d691fcc7790895e90e2032d9c7fb4a685030917c6d5c54c8c3" },
     { "path": "scripts/validate-offline.js", "sha256": "1dcb46c0de25397a3d6ada0f696133e83422064953c0d995dc9c41492980f3df" },
     { "path": "scripts/validate-offline.sh", "sha256": "e9c63cdd27a80bad26e8163702a32aa5c229e8cdbae535e2f5f72f93ceade260" },

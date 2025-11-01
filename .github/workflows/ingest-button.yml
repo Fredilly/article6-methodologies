@@ -62,23 +62,28 @@ jobs:
           set -euxo pipefail
           sudo apt-get update
           sudo apt-get install -y jq curl unzip
+          # yq (stable)
           YQ_VERSION="v4.44.3"
           curl -fsSL "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64.tar.gz" -o /tmp/yq.tgz
           tar -xzf /tmp/yq.tgz -C /tmp
           sudo mv /tmp/yq_linux_amd64 /usr/local/bin/yq
           sudo chmod +x /usr/local/bin/yq
           rm -f /tmp/yq.tgz
+
+          # pup (resolve asset name via GitHub API)
           PUP_VERSION="v0.4.0"
-          curl -fsSL "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/pup_${PUP_VERSION#v}_linux_amd64.zip" -o /tmp/pup.zip
-          unzip -q /tmp/pup.zip -d /tmp
-          if [ -f /tmp/pup ]; then
-            sudo mv /tmp/pup /usr/local/bin/pup
-          else
-            sudo mv /tmp/pup_*/pup /usr/local/bin/pup
+          API="https://api.github.com/repos/ericchiang/pup/releases/tags/${PUP_VERSION}"
+          URL=$(curl -fsSL "$API" | jq -r '.assets[] | select(.name | test("linux_amd64(\\.zip|\\.tar\\.gz)$")) | .browser_download_url' | head -n1 || true)
+          if [ -z "$URL" ]; then
+            # fallback to latest if tag shape ever changes
+            URL=$(curl -fsSL "https://api.github.com/repos/ericchiang/pup/releases/latest" \
+              | jq -r '.assets[] | select(.name | test("linux_amd64(\\.zip|\\.tar\\.gz)$")) | .browser_download_url' | head -n1)
           fi
+          curl -fsSL "$URL" -o /tmp/pup.any
+          (unzip -q /tmp/pup.any -d /tmp || tar -xzf /tmp/pup.any -C /tmp)
+          if [ -f /tmp/pup ]; then BIN=/tmp/pup; else BIN=$(find /tmp -maxdepth 2 -type f -name pup | head -n1); fi
+          sudo mv "$BIN" /usr/local/bin/pup
           sudo chmod +x /usr/local/bin/pup
-          rm -f /tmp/pup.zip
-          rm -rf /tmp/pup /tmp/pup_*
           yq --version
           pup --version
           jq --version
