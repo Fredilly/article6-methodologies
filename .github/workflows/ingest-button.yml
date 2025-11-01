@@ -69,20 +69,21 @@ jobs:
           sudo chmod +x /usr/local/bin/yq
           rm -f /tmp/yq.tgz
           PUP_VERSION="v0.4.0"
-          PUP_PRIMARY="pup_${PUP_VERSION#v}_linux_amd64.zip"
-          PUP_FALLBACK="pup_${PUP_VERSION}_linux_amd64.zip"
-          if ! curl -fsSL "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/${PUP_PRIMARY}" -o /tmp/pup.zip; then
-            curl -fsSL "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/${PUP_FALLBACK}" -o /tmp/pup.zip
+          API="https://api.github.com/repos/ericchiang/pup/releases/tags/${PUP_VERSION}"
+          URL=$(curl -fsSL "$API" | jq -r '.assets[] | select(.name | test("linux_amd64(\\\\.zip|\\\\.tar\\\\.gz)$")) | .browser_download_url' | head -n1 || true)
+          if [ -z "$URL" ]; then
+            URL=$(curl -fsSL "https://api.github.com/repos/ericchiang/pup/releases/latest" \
+              | jq -r '.assets[] | select(.name | test("linux_amd64(\\\\.zip|\\\\.tar\\\\.gz)$")) | .browser_download_url' | head -n1)
           fi
-          unzip -q /tmp/pup.zip -d /tmp
+          curl -fsSL "$URL" -o /tmp/pup.any
+          (unzip -q /tmp/pup.any -d /tmp || tar -xzf /tmp/pup.any -C /tmp)
           if [ -f /tmp/pup ]; then
-            sudo mv /tmp/pup /usr/local/bin/pup
+            BIN=/tmp/pup
           else
-            sudo mv /tmp/pup_*/pup /usr/local/bin/pup
+            BIN=$(find /tmp -maxdepth 2 -type f -name pup | head -n1)
           fi
+          sudo mv "$BIN" /usr/local/bin/pup
           sudo chmod +x /usr/local/bin/pup
-          rm -f /tmp/pup.zip
-          rm -rf /tmp/pup /tmp/pup_*
           yq --version
           pup --version
           jq --version
