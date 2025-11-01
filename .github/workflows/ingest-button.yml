@@ -76,9 +76,15 @@ jobs:
         run: |
           set -euxo pipefail
           sudo apt-get update
-          sudo apt-get install -y jq pup curl
-          sudo curl -L "https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64" -o /usr/local/bin/yq
+          sudo apt-get install -y jq curl unzip
+          curl -fsSL "https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64" -o yq
+          sudo mv yq /usr/local/bin/yq
           sudo chmod +x /usr/local/bin/yq
+          curl -fsSL "https://github.com/ericchiang/pup/releases/download/v0.4.0/pup_v0.4.0_linux_amd64.zip" -o pup.zip
+          unzip -q pup.zip pup
+          sudo mv pup /usr/local/bin/pup
+          sudo chmod +x /usr/local/bin/pup
+          rm -f pup.zip
 
       - name: Determine scope & mode
         id: meta
