@@ -41,7 +41,11 @@ jobs:
           PUP_VERSION="v0.4.0"
           curl -fsSL "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/pup_${PUP_VERSION#v}_linux_amd64.zip" -o /tmp/pup.zip
           unzip -q /tmp/pup.zip -d /tmp
-          if [ -f /tmp/pup ]; then sudo mv /tmp/pup /usr/local/bin/pup; else sudo mv /tmp/pup_*/pup /usr/local/bin/pup; fi
+          if [ -f /tmp/pup ]; then
+            sudo mv /tmp/pup /usr/local/bin/pup
+          else
+            sudo mv /tmp/pup_*/pup /usr/local/bin/pup
+          fi
           sudo chmod +x /usr/local/bin/pup
           rm -f /tmp/pup.zip
           rm -rf /tmp/pup /tmp/pup_*

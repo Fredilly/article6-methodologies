@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-10-22T02:49:13Z",
-  "git_commit": "295da4440f254725d9bc8065e05dcb01be878df8",
+  "generated_at": "2025-11-01T02:50:53Z",
+  "git_commit": "b0453de3485d2764515eec3bc9f4821503c56d84",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
@@ -49,10 +49,12 @@
     { "path": "scripts/py/extract_rules.py", "sha256": "6e57781f4c1f57d4e46a3c1df35f19a9680048fc19833a812461da385736231e" },
     { "path": "scripts/py/extract_sections.py", "sha256": "c419e385956a8e1cd960a4d2e6352ffbd49132195b6447ac220102a63b4a0b2a" },
     { "path": "scripts/require-vendor-ajv.sh", "sha256": "fc58376b1e5dfb4c1cf4a22cbcf574c151e58ec90222c32144a018fc98f02389" },
+    { "path": "scripts/resolve-ingest-scope.mjs", "sha256": "dc5b72c576ae65adf346abe48f1c304238d545eb59d4c3bfd4d19059ec2b93a1" },
     { "path": "scripts/rewrite-forestry.js", "sha256": "ff99289605e2e87a28ce4c5f55b512b6c3e86983b69dcf0b638e84f1f7884cf4" },
     { "path": "scripts/run-ajv.sh", "sha256": "fa3e40b945144c9f8dda93f44f6c00f2e404475a3074a7bc5cf450a4e38ffe0f" },
     { "path": "scripts/scaffold-method.js", "sha256": "bac5757661dd49c2dc48ba3811170e98f7dc94acc5d28573614d72e54168204e" },
     { "path": "scripts/sync-examples.sh", "sha256": "cfa456e1711d3fe873fa1bd19c54c38476815becd5e198efced4ff0d4dc3b728" },
+    { "path": "scripts/testfile.tmp", "sha256": "98ea6e4f216f2fb4b69fff9b3a44842c38686ca685f3f55dc48c5d3fb1107be4" },
     { "path": "scripts/utils/jsonl.js", "sha256": "86c0723c800b41d691fcc7790895e90e2032d9c7fb4a685030917c6d5c54c8c3" },
     { "path": "scripts/validate-offline.js", "sha256": "1dcb46c0de25397a3d6ada0f696133e83422064953c0d995dc9c41492980f3df" },
     { "path": "scripts/validate-offline.sh", "sha256": "e9c63cdd27a80bad26e8163702a32aa5c229e8cdbae535e2f5f72f93ceade260" },

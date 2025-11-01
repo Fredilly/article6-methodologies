@@ -15,9 +15,11 @@ on:
         required: false
       mode:
         description: "both|rich|lean"
+        required: true
         default: "both"
       dry_run:
         description: "true to skip commit/PR"
+        required: true
         default: "false"
   issue_comment:
     types: [created]
@@ -25,8 +27,11 @@ on:
 permissions:
   contents: write
   pull-requests: write
-  issues: read
-  id-token: write
+  issues: write
+
+concurrency:
+  group: ingest-button-${{ github.ref }}
+  cancel-in-progress: false
 
 env:
   NODE_VERSION: '20'
@@ -86,7 +91,11 @@ jobs:
           PUP_VERSION="v0.4.0"
           curl -fsSL "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/pup_${PUP_VERSION#v}_linux_amd64.zip" -o /tmp/pup.zip
           unzip -q /tmp/pup.zip -d /tmp
-          if [ -f /tmp/pup ]; then sudo mv /tmp/pup /usr/local/bin/pup; else sudo mv /tmp/pup_*/pup /usr/local/bin/pup; fi
+          if [ -f /tmp/pup ]; then
+            sudo mv /tmp/pup /usr/local/bin/pup
+          else
+            sudo mv /tmp/pup_*/pup /usr/local/bin/pup
+          fi
           sudo chmod +x /usr/local/bin/pup
           rm -f /tmp/pup.zip
           rm -rf /tmp/pup /tmp/pup_*
