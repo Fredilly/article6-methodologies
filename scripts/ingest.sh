@@ -7,7 +7,15 @@ AUTO_COMMIT="${AUTO_COMMIT:-1}"
 RUN_VALIDATE="${RUN_VALIDATE:-1}"
 
 need() { command -v "$1" >/dev/null || { echo "Missing: $1"; exit 1; }; }
-sha256() { shasum -a 256 "$1" | awk '{print $1}'; }
+sha256() {
+  if command -v shasum >/dev/null 2>&1; then
+    shasum -a 256 "$1" | awk '{print $1}'
+  elif command -v sha256sum >/dev/null 2>&1; then
+    sha256sum "$1" | awk '{print $1}'
+  else
+    openssl dgst -sha256 "$1" | sed 's/^.*= //'
+  fi
+}
 json_escape() { jq -Rs . <<<"${1}"; }
 
 # --- offline mode (no binaries, no network) ---
@@ -101,7 +109,7 @@ for i in $(seq 0 $((method_count-1))); do
     $L
     | map({text: (.text // ""), href: (.href // "")})
     | map(select((.href|test("\\.pdf$"; "i"))))
-  ' <<<'{}')"
+  ' <<<"$links_json")"
 
   # apply include/exclude in shell to preserve substring semantics (case-insensitive)
   save_tools=()
