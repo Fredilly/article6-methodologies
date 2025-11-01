@@ -39,7 +39,11 @@ jobs:
           sudo chmod +x /usr/local/bin/yq
           rm -f /tmp/yq.tgz
           PUP_VERSION="v0.4.0"
-          curl -fsSL "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/pup_${PUP_VERSION#v}_linux_amd64.zip" -o /tmp/pup.zip
+          PUP_PRIMARY="pup_${PUP_VERSION#v}_linux_amd64.zip"
+          PUP_FALLBACK="pup_${PUP_VERSION}_linux_amd64.zip"
+          if ! curl -fsSL "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/${PUP_PRIMARY}" -o /tmp/pup.zip; then
+            curl -fsSL "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/${PUP_FALLBACK}" -o /tmp/pup.zip
+          fi
           unzip -q /tmp/pup.zip -d /tmp
           if [ -f /tmp/pup ]; then
             sudo mv /tmp/pup /usr/local/bin/pup
