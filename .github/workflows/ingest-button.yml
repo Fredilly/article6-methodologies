@@ -1,26 +1,32 @@
-name: Ingest (Issues/Projects)
+name: Ingest Button
 
 on:
   workflow_dispatch:
     inputs:
       source:
-        description: "ingest|issue|project"
+        description: "Ingest source (e.g., forestry, agriculture, all)"
         required: true
         default: "ingest"
+      mode:
+        description: "Mode (batch | single | both)"
+        required: true
+        default: "both"
+      dry_run:
+        description: "Run without writing files"
+        required: true
+        default: "false"
       issue_number:
         description: "Issue number when source=issue"
         required: false
       project_number:
         description: "Project number when source=project"
         required: false
-      mode:
-        description: "both|rich|lean"
-        required: true
-        default: "both"
-      dry_run:
-        description: "true to skip commit/PR"
-        required: true
-        default: "false"
+  push:
+    branches:
+      - main
+      - chore/*
+      - fix/*
+      - feat/*
   issue_comment:
     types: [created]
 
@@ -61,7 +67,7 @@ jobs:
 
   run:
     needs: maybe-slash
-    if: github.event_name == 'workflow_dispatch' || needs.maybe-slash.outputs.run == 'true'
+    if: github.event_name != 'issue_comment' || needs.maybe-slash.outputs.run == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -106,7 +112,8 @@ jobs:
       - name: Determine scope & mode
         id: meta
         run: |
-          if [ "${{ github.event_name }}" = "issue_comment" ]; then
+          EVENT="${{ github.event_name }}"
+          if [ "$EVENT" = "issue_comment" ]; then
             mode="${{ needs.maybe-slash.outputs.mode }}"
             if [ -z "$mode" ] || [ "$mode" = 'null' ]; then mode="both"; fi
             echo "mode=$mode" >> "$GITHUB_OUTPUT"
@@ -114,12 +121,18 @@ jobs:
             echo "issue=${{ github.event.issue.number }}" >> "$GITHUB_OUTPUT"
             echo "project=" >> "$GITHUB_OUTPUT"
             echo "dry_run=false" >> "$GITHUB_OUTPUT"
-          else
+          elif [ "$EVENT" = "workflow_dispatch" ]; then
             echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
             echo "source=${{ inputs.source }}" >> "$GITHUB_OUTPUT"
             echo "issue=${{ inputs.issue_number }}" >> "$GITHUB_OUTPUT"
             echo "project=${{ inputs.project_number }}" >> "$GITHUB_OUTPUT"
             echo "dry_run=${{ inputs.dry_run }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=both" >> "$GITHUB_OUTPUT"
+            echo "source=ingest" >> "$GITHUB_OUTPUT"
+            echo "issue=" >> "$GITHUB_OUTPUT"
+            echo "project=" >> "$GITHUB_OUTPUT"
+            echo "dry_run=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Resolve scope → .tmp/ingest.scoped.yml
@@ -145,21 +158,38 @@ jobs:
         run: |
           set -euo pipefail
           echo "MODE=$MODE"
+          run_rich=1
+          run_lean=1
+          case "$MODE" in
+            batch|both)
+              run_rich=1
+              run_lean=1
+              ;;
+            single|rich)
+              run_rich=1
+              run_lean=0
+              ;;
+            lean)
+              run_rich=0
+              run_lean=1
+              ;;
+            *)
+              echo "[warn] MODE '$MODE' not recognized → defaulting to both"
+              run_rich=1
+              run_lean=1
+              ;;
+          esac
           if [ -x scripts/ingest.sh ]; then
             export INGEST_FILE="$SCOPED"
-            if [ "$MODE" = "rich" ] || [ "$MODE" = "both" ]; then
+            if [ "$run_rich" -eq 1 ]; then
               scripts/ingest.sh
             fi
-            if ([ "$MODE" = "lean" ] || [ "$MODE" = "both" ]) && [ -x scripts/derive-lean.sh ]; then
+            if [ "$run_lean" -eq 1 ] && [ -x scripts/derive-lean.sh ]; then
               scripts/derive-lean.sh
             fi
           else
-            if [ "$MODE" = "rich" ]; then npm run ingest:rich --if-present -- "$SCOPED"; fi
-            if [ "$MODE" = "lean" ]; then npm run ingest:lean --if-present -- "$SCOPED"; fi
-            if [ "$MODE" = "both" ]; then
-              npm run ingest:rich --if-present -- "$SCOPED"
-              npm run ingest:lean --if-present -- "$SCOPED"
-            fi
+            if [ "$run_rich" -eq 1 ]; then npm run ingest:rich --if-present -- "$SCOPED"; fi
+            if [ "$run_lean" -eq 1 ]; then npm run ingest:lean --if-present -- "$SCOPED"; fi
           fi
 
       - name: Validate & quality gates
