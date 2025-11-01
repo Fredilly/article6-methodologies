@@ -81,6 +81,17 @@ jobs:
             URL="$(curl -fsSL "${CURL_HEADERS[@]}" "https://api.github.com/repos/ericchiang/pup/releases/latest" | jq -r '.assets[] | select(.name | test("linux_amd64(\\\\.zip|\\\\.tar.gz)$")) | .browser_download_url' | head -n1 || true)"
           fi
           if [ -z "$URL" ]; then
+            for candidate in \
+              "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/pup_${PUP_VERSION#v}_linux_amd64.zip" \
+              "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/pup_${PUP_VERSION}_linux_amd64.zip"
+            do
+              if curl -sfI "$candidate" >/dev/null; then
+                URL="$candidate"
+                break
+              fi
+            done
+          fi
+          if [ -z "$URL" ]; then
             echo "Failed to resolve Pup linux_amd64 asset from GitHub releases" >&2
             exit 1
           fi
