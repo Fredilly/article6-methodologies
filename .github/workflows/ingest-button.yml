@@ -76,9 +76,9 @@ jobs:
           if [ -n "${GITHUB_TOKEN:-}" ]; then
             CURL_HEADERS+=(-H "Authorization: Bearer ${GITHUB_TOKEN}")
           fi
-          URL="$(curl -fsSL "${CURL_HEADERS[@]}" "$API" | jq -r '.assets[] | select(.name | test("linux_amd64(\\\\.zip|\\\\.tar.gz)$")) | .browser_download_url' | head -n1 || true)"
+          URL="$(curl -fsSL "${CURL_HEADERS[@]}" "$API" | jq -r '.assets[] | select(.name | endswith("linux_amd64.zip") or endswith("linux_amd64.tar.gz")) | .browser_download_url' | head -n1 || true)"
           if [ -z "$URL" ]; then
-            URL="$(curl -fsSL "${CURL_HEADERS[@]}" "https://api.github.com/repos/ericchiang/pup/releases/latest" | jq -r '.assets[] | select(.name | test("linux_amd64(\\\\.zip|\\\\.tar.gz)$")) | .browser_download_url' | head -n1 || true)"
+            URL="$(curl -fsSL "${CURL_HEADERS[@]}" "https://api.github.com/repos/ericchiang/pup/releases/latest" | jq -r '.assets[] | select(.name | endswith("linux_amd64.zip") or endswith("linux_amd64.tar.gz")) | .browser_download_url' | head -n1 || true)"
           fi
           if [ -z "$URL" ]; then
             for candidate in \
