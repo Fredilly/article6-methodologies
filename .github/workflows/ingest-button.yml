@@ -4,23 +4,18 @@ on:
   workflow_dispatch:
     inputs:
       source:
-        description: "Ingest source (e.g., forestry, agriculture, all)"
-        required: true
+        description: "Ingest source"
         default: "ingest"
       mode:
-        description: "Mode (batch | single | both)"
-        required: true
+        description: "Mode"
         default: "both"
       dry_run:
         description: "Run without writing files"
-        required: true
         default: "false"
       issue_number:
         description: "Issue number when source=issue"
-        required: false
       project_number:
         description: "Project number when source=project"
-        required: false
   push:
     branches:
       - main
@@ -220,18 +215,18 @@ jobs:
           git config user.name "article6-bot"
           git config user.email "bot@article6.org"
           RUN_ID="${{ github.run_id }}"
-          cat <<MSG > /tmp/commit_msg.txt
-Ingest: run ${RUN_ID} (rich→lean)
+          cat <<'MSG' > /tmp/commit_msg.txt
+          Ingest: run ${RUN_ID} (rich→lean)
 
-WHAT
-- Scoped ingest via resolver (issue/project/ingest.yml)
-- Ran rich and lean, validated, staged artefacts
+          WHAT
+          - Scoped ingest via resolver (issue/project/ingest.yml)
+          - Ran rich and lean, validated, staged artefacts
 
-WHY
-- One-click, idempotent ingest tied to Issues/Projects for auditability
+          WHY
+          - One-click, idempotent ingest tied to Issues/Projects for auditability
 
-Signed-off-by: fredilly@article6.org
-MSG
+          Signed-off-by: fredilly@article6.org
+          MSG
           git commit -F /tmp/commit_msg.txt
           git push -u origin "$BR"
           gh pr create --fill --title "Ingest: ${BR}" --label ingest
