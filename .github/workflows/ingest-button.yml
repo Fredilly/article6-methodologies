@@ -40,7 +40,37 @@ env:
   SCOPED: ./.tmp/ingest.scoped.yml
 
 jobs:
+  maybe-slash:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.eval.outputs.run }}
+      mode: ${{ steps.eval.outputs.mode }}
+    steps:
+      - name: Parse /ingest comment (if any)
+        id: eval
+        shell: bash
+        run: |
+          set -euo pipefail
+          FROM="${{ github.event_name }}"
+          BODY="${{ github.event.comment.body || '' }}"
+          if [ "$FROM" = "issue_comment" ]; then
+            if [[ "$BODY" =~ ^/ingest([[:space:]]+([A-Za-z0-9._-]+))? ]]; then
+              MODE="${BASH_REMATCH[2]}"
+              if [ -n "$MODE" ]; then MODE="$(echo "$MODE" | tr '[:upper:]' '[:lower:]')"; fi
+              if [ -z "$MODE" ]; then MODE="both"; fi
+              echo "run=true" >> "$GITHUB_OUTPUT"
+              echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+            else
+              echo "run=false" >> "$GITHUB_OUTPUT"
+              echo "mode=" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "mode=" >> "$GITHUB_OUTPUT"
+          fi
+
   run:
+    needs: maybe-slash
     if: github.event_name != 'issue_comment' || needs.maybe-slash.outputs.run == 'true'
     runs-on: ubuntu-latest
     steps:
