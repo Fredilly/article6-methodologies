@@ -50,7 +50,18 @@ for i in $(seq 0 $((method_count-1))); do
   # paths
   IFS='.' read -r -a id_parts <<<"$id"
   org="${id_parts[0]}"
+  id_sector="${id_parts[1]:-}"
   method="${id_parts[${#id_parts[@]}-1]}"
+   # method slug for rule ids should collapse any remaining dots into dashes
+  method_slug="${id_parts[2]:-}"
+  if [ "${#id_parts[@]}" -gt 3 ]; then
+    for slug_part in "${id_parts[@]:3}"; do
+      method_slug="${method_slug}-${slug_part}"
+    done
+  fi
+  if [ -z "$method_slug" ]; then
+    method_slug="${method}"
+  fi
   rest_path="$(echo "$id" | tr '.' '/')"
   dest_dir="methodologies/${rest_path}/${ver}"
   tools_dir="tools/${org}/${method}/${ver}"
@@ -177,7 +188,7 @@ PY
     pdf_sha=""
     [ -s "$pdf_path" ] && pdf_sha="$(sha256 "$pdf_path")"
     placeholder_section="S-0000"
-    placeholder_rule="${id}.${ver}.R-0-0000"
+    placeholder_rule="${org}.${id_sector}.${method_slug}.${ver}.R-0-0000"
 
     jq -n \
       --arg id "$id" \
