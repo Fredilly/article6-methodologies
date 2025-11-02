@@ -64,9 +64,8 @@ jobs:
             echo "mode=$mode" >>"$GITHUB_OUTPUT"
           fi
 
-  run:
-    needs: maybe-slash
-    if: github.event_name != 'issue_comment' || needs.maybe-slash.outputs.run == 'true'
+  run-dispatch:
+    if: github.event_name != 'issue_comment'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -112,15 +111,7 @@ jobs:
         id: meta
         run: |
           EVENT="${{ github.event_name }}"
-          if [ "$EVENT" = "issue_comment" ]; then
-            mode="${{ needs.maybe-slash.outputs.mode }}"
-            if [ -z "$mode" ] || [ "$mode" = 'null' ]; then mode="both"; fi
-            echo "mode=$mode" >> "$GITHUB_OUTPUT"
-            echo "source=issue" >> "$GITHUB_OUTPUT"
-            echo "issue=${{ github.event.issue.number }}" >> "$GITHUB_OUTPUT"
-            echo "project=" >> "$GITHUB_OUTPUT"
-            echo "dry_run=false" >> "$GITHUB_OUTPUT"
-          elif [ "$EVENT" = "workflow_dispatch" ]; then
+          if [ "$EVENT" = "workflow_dispatch" ]; then
             echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
             echo "source=${{ inputs.source }}" >> "$GITHUB_OUTPUT"
             echo "issue=${{ inputs.issue_number }}" >> "$GITHUB_OUTPUT"
@@ -133,6 +124,169 @@ jobs:
             echo "project=" >> "$GITHUB_OUTPUT"
             echo "dry_run=false" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Resolve scope → .tmp/ingest.scoped.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$TMP_DIR"
+          SRC="${{ steps.meta.outputs.source }}"
+          ISSUE_NO="${{ steps.meta.outputs.issue }}"
+          PROJ_NO="${{ steps.meta.outputs.project }}"
+          node scripts/resolve-ingest-scope.mjs \
+            --source "${SRC:-ingest}" \
+            --issue "${ISSUE_NO:-0}" \
+            --project "${PROJ_NO:-0}" \
+            --in ingest.yml \
+            --out "$SCOPED"
+
+      - name: Run ingest (rich/lean)
+        id: ingest
+        env:
+          MODE: ${{ steps.meta.outputs.mode }}
+        run: |
+          set -euo pipefail
+          echo "MODE=$MODE"
+          run_rich=1
+          run_lean=1
+          case "$MODE" in
+            batch|both)
+              run_rich=1
+              run_lean=1
+              ;;
+            single|rich)
+              run_rich=1
+              run_lean=0
+              ;;
+            lean)
+              run_rich=0
+              run_lean=1
+              ;;
+            *)
+              echo "[warn] MODE '$MODE' not recognized → defaulting to both"
+              run_rich=1
+              run_lean=1
+              ;;
+          esac
+          if [ -x scripts/ingest.sh ]; then
+            export INGEST_FILE="$SCOPED"
+            if [ "$run_rich" -eq 1 ]; then
+              scripts/ingest.sh
+            fi
+            if [ "$run_lean" -eq 1 ] && [ -x scripts/derive-lean.sh ]; then
+              scripts/derive-lean.sh
+            fi
+          else
+            if [ "$run_rich" -eq 1 ]; then npm run ingest:rich --if-present -- "$SCOPED"; fi
+            if [ "$run_lean" -eq 1 ]; then npm run ingest:lean --if-present -- "$SCOPED"; fi
+          fi
+
+      - name: Validate & quality gates
+        run: |
+          set -e
+          npm run validate:rich --if-present
+          npm run validate:lean --if-present
+          npm run validate --if-present || true
+
+      - name: Detect changes
+        id: diff
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit & PR
+        if: steps.diff.outputs.changed == 'true' && steps.meta.outputs.dry_run != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          BR="chore/ingest-button-${{ github.run_id }}"
+          git switch -c "$BR"
+          git config user.name "article6-bot"
+          git config user.email "bot@article6.org"
+          RUN_ID="${{ github.run_id }}"
+          cat <<'MSG' > /tmp/commit_msg.txt
+          Ingest: run ${RUN_ID} (rich→lean)
+
+          WHAT
+          - Scoped ingest via resolver (issue/project/ingest.yml)
+          - Ran rich and lean, validated, staged artefacts
+
+          WHY
+          - One-click, idempotent ingest tied to Issues/Projects for auditability
+
+          Signed-off-by: fredilly@article6.org
+          MSG
+          git commit -F /tmp/commit_msg.txt
+          git push -u origin "$BR"
+          gh pr create --fill --title "Ingest: ${BR}" --label ingest
+
+      - name: Upload logs (artifact)
+        uses: actions/upload-artifact@v4
+        with:
+          name: ingest-logs
+          path: ${{ env.TMP_DIR }}
+
+  run-from-comment:
+    needs:
+      - maybe-slash
+    if: needs.maybe-slash.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install
+        run: |
+          npm ci || npm i
+
+      - name: Install CLI dependencies
+        run: |
+          set -euxo pipefail
+          sudo apt-get update
+          sudo apt-get install -y jq curl unzip
+          YQ_VERSION="v4.44.3"
+          curl -fsSL "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64.tar.gz" -o /tmp/yq.tgz
+          tar -xzf /tmp/yq.tgz -C /tmp
+          sudo mv /tmp/yq_linux_amd64 /usr/local/bin/yq
+          sudo chmod +x /usr/local/bin/yq
+          rm -f /tmp/yq.tgz
+          PUP_VERSION="v0.4.0"
+          curl -fsSL "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/pup_${PUP_VERSION#v}_linux_amd64.zip" -o /tmp/pup.zip
+          unzip -q /tmp/pup.zip -d /tmp
+          if [ -f /tmp/pup ]; then
+            sudo mv /tmp/pup /usr/local/bin/pup
+          else
+            sudo mv /tmp/pup_*/pup /usr/local/bin/pup
+          fi
+          sudo chmod +x /usr/local/bin/pup
+          rm -f /tmp/pup.zip
+          rm -rf /tmp/pup /tmp/pup_*
+          yq --version
+          pup --version
+          jq --version
+
+      - name: Determine scope & mode
+        id: meta
+        run: |
+          mode="${{ needs.maybe-slash.outputs.mode }}"
+          if [ -z "$mode" ] || [ "$mode" = 'null' ]; then mode="both"; fi
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
+          echo "source=issue" >> "$GITHUB_OUTPUT"
+          echo "issue=${{ github.event.issue.number }}" >> "$GITHUB_OUTPUT"
+          echo "project=" >> "$GITHUB_OUTPUT"
+          echo "dry_run=false" >> "$GITHUB_OUTPUT"
 
       - name: Resolve scope → .tmp/ingest.scoped.yml
         env:
