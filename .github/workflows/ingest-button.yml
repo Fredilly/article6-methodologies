@@ -228,6 +228,7 @@ jobs:
           MSG
           git commit -F /tmp/commit_msg.txt
           git push -u origin "$BR"
+          git fetch --depth=1 origin main
           gh pr create --fill --title "Ingest: ${BR}" --label ingest
 
       - name: Upload logs (artifact)
