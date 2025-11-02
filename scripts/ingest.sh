@@ -190,19 +190,31 @@ PY
     placeholder_section="S-0000"
     placeholder_rule="${org}.${id_sector}.${method_slug}.${ver}.R-0-0000"
 
+    pdf_rel_path="tools/${org}/${method}/${ver}/source.pdf"
     jq -n \
       --arg id "$id" \
       --arg version "$ver" \
       --arg sector "${sector:-}" \
       --arg source_page "${page:-}" \
       --arg pdf_sha "$pdf_sha" \
-      --arg org "$org" \
-      --arg method "$method" \
+      --arg pdf_path "$pdf_rel_path" \
       '{
         id:$id, version:$version, sector:$sector, source_page:$source_page,
         status:"draft",
-        references:{ pdf:{ path:"tools/\($org)/\($method)/\($version)/source.pdf", sha256:$pdf_sha }},
-        audit:{ created_at:(now|todate), created_by:"ingest.sh" }
+        references:{
+          tools:[
+            {
+              kind:"pdf",
+              path:$pdf_path,
+              sha256:$pdf_sha
+            }
+          ]
+        },
+        audit:{ created_at:(now|todate), created_by:"ingest.sh" },
+        audit_hashes:{
+          sections_json_sha256:"",
+          rules_json_sha256:""
+        }
       }' > "$meta"
 
     # schema-compliant placeholders to keep gates green until rich extraction lands
