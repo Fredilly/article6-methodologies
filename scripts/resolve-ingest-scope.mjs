@@ -3,7 +3,8 @@
 Usage:
   node scripts/resolve-ingest-scope.mjs --source [ingest|issue|project] \
     --issue 123 --project 1 --token $GITHUB_TOKEN \
-    --in ingest.yml --out ./.tmp/ingest.scoped.yml
+    --in ingest.yml --out ./.tmp/ingest.scoped.yml \
+    --codes batches/2024-01-01.codes.txt [--force]
 */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -31,11 +32,37 @@ const OUT = path.resolve(args.out || '.tmp/ingest.scoped.yml');
 const ISSUE = Number(args.issue || 0);
 const PROJECT = Number(args.project || 0);
 const TOKEN = process.env.GITHUB_TOKEN || args.token || process.env.GH_TOKEN || '';
+const FORCE = parseBoolean(args.force);
+const rawCodesArg = args.codes || '';
+const CODES_ARG = rawCodesArg && rawCodesArg !== 'true' ? path.resolve(rawCodesArg) : '';
 
 const repoFull = process.env.GITHUB_REPOSITORY || '';
 const [owner = '', repo = ''] = repoFull.split('/');
 
 const ID_RE = /\b[A-Z0-9.-]*UNFCCC\.[A-Za-z]+\.[A-Z0-9.-]+|UNFCCC\.[A-Za-z]+\.[A-Z0-9.-]+\b/g;
+
+function parseBoolean(value) {
+  if (value === undefined) return false;
+  const normalized = String(value).trim().toLowerCase();
+  return normalized === 'true' || normalized === '1' || normalized === 'yes' || normalized === 'y';
+}
+
+function scopeError(exitCode, message) {
+  const error = new Error(message);
+  error.exitCode = exitCode;
+  return error;
+}
+
+function mustAllow({ code, id, allowCodes, allowListEmpty }) {
+  if (allowListEmpty) return;
+  if (!code) {
+    throw scopeError(12, `[resolve-ingest] unable to derive method code from id=${id}`);
+  }
+  if (!allowCodes.has(code)) {
+    const allowedList = Array.from(allowCodes).join(', ') || '(none)';
+    throw scopeError(12, `[resolve-ingest] method code ${code} not in allow-list (${allowedList})`);
+  }
+}
 
 function ensureDir(p) {
   fs.mkdirSync(path.dirname(p), { recursive: true });
@@ -258,35 +285,79 @@ async function collectIdsFromProject() {
   }
   if (!fs.existsSync(INGEST_IN)) throw new Error(`input file ${INGEST_IN} not found`);
 
+  if (rawCodesArg === 'true') {
+    console.warn('[resolve-ingest] --codes flag provided without a path; ignoring');
+  }
+
   const full = parseYaml(fs.readFileSync(INGEST_IN, 'utf8'));
 
   let ids = [];
   if (SRC === 'issue' && ISSUE) ids = await collectIdsFromIssue();
   else if (SRC === 'project' && PROJECT) ids = await collectIdsFromProject();
 
-  const idset = new Set(ids.map((value) => normalizeId(value)));
-  const scoped = { version: full.version, methods: [] };
-
-  if (idset.size) {
-    scoped.methods = full.methods.filter((method) => {
-      const fullId = normalizeId(method.id);
-      const code = normalizeId(extractCode(method.id));
-      return idset.has(fullId) || idset.has(code);
-    });
-    if (!scoped.methods.length) {
-      console.warn(`[resolve-ingest] scope matched 0 methods from ingest.yml (ids=${ids.join(', ')})`);
-      scoped.methods = full.methods;
+  if (CODES_ARG) {
+    const codesFromArg = loadCodesFromFile(CODES_ARG);
+    if (codesFromArg.length) {
+      console.log(`[resolve-ingest] --codes ${CODES_ARG} → ${codesFromArg.length} entries`);
+      ids = ids.concat(codesFromArg);
     } else {
-      console.log(`[resolve-ingest] scoped → ${scoped.methods.length} methods`);
+      console.warn(`[resolve-ingest] --codes ${CODES_ARG} empty`);
     }
-  } else {
-    scoped.methods = full.methods;
-    console.log('[resolve-ingest] no scoped ids detected; using full ingest.yml');
   }
+
+  const idset = new Set();
+  const allowCodes = new Set();
+
+  for (const value of ids) {
+    const normalized = normalizeId(value);
+    if (normalized) idset.add(normalized);
+    const code = normalizeId(extractCode(value));
+    if (code) {
+      idset.add(code);
+      allowCodes.add(code);
+    }
+  }
+
+  const allowListEmpty = allowCodes.size === 0;
+  if (allowListEmpty && !FORCE) {
+    throw scopeError(11, '[resolve-ingest] allow-list is empty; provide codes or re-run with --force to include all methods');
+  }
+  if (allowListEmpty && FORCE) {
+    console.warn('[resolve-ingest] allow-list empty; --force set → including all methods');
+  }
+
+  const scoped = { version: full.version, methods: [] };
+  const selected = [];
+  const hasScopedIds = idset.size > 0;
+
+  for (const method of full.methods) {
+    const fullId = normalizeId(method.id);
+    const code = normalizeId(extractCode(method.id));
+    let inScope = false;
+    if (hasScopedIds) {
+      inScope = idset.has(fullId) || idset.has(code);
+    } else if (!allowListEmpty) {
+      inScope = allowCodes.has(code);
+    } else {
+      inScope = true;
+    }
+    if (!inScope) continue;
+    mustAllow({ code, id: method.id, allowCodes, allowListEmpty });
+    selected.push(method);
+  }
+
+  if (!selected.length) {
+    throw scopeError(12, `[resolve-ingest] allow-list matched 0 methods from ingest.yml (ids=${ids.join(', ') || '(none)'})`);
+  }
+
+  scoped.methods = selected;
+  console.log(`[resolve-ingest] scoped → ${scoped.methods.length} methods`);
 
   fs.writeFileSync(OUT, dumpYaml(scoped));
   console.log(`scope=${SRC} ids=${ids.join(',') || '(all)'} → ${OUT}`);
 })().catch((err) => {
-  console.error(`[resolve-ingest] fatal: ${err.message}`);
-  process.exit(1);
+  const exitCode = Number.isInteger(err.exitCode) ? err.exitCode : 1;
+  const tag = exitCode ? `fatal(${exitCode})` : 'fatal';
+  console.error(`[resolve-ingest] ${tag}: ${err.message}`);
+  process.exit(exitCode);
 });

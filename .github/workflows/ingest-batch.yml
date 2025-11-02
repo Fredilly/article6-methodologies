@@ -41,11 +41,35 @@ jobs:
           fi
           chmod +x scripts/ingest.sh
           ./scripts/ingest.sh 2>&1 | tee ingest.log
+      - name: Derive lean artefacts
+        run: |
+          set -euo pipefail
+          if [ -x scripts/derive-lean.sh ]; then
+            scripts/derive-lean.sh
+          fi
+      - name: Normalise & enforce gates
+        run: |
+          set -euo pipefail
+          if [ -f scripts/normalize-meta.js ]; then
+            node scripts/normalize-meta.js
+          fi
+          if [ -x scripts/check-no-stubs.sh ]; then
+            bash scripts/check-no-stubs.sh
+          fi
+          npm run validate:rich --if-present
+          npm run validate:lean --if-present
+          npm run validate:guardrails --if-present
+          if [ -f scripts/build-manifest.mjs ]; then
+            node scripts/build-manifest.mjs
+          fi
+          if [ -x scripts/hash-all.sh ]; then
+            scripts/hash-all.sh
+          fi
       - name: Commit artefacts
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add methodologies tools registry.json manifest/index.json ingest.log 2>/dev/null || true
+          git add methodologies tools source-assets registry.json manifest/index.json ingest.log 2>/dev/null || true
           git commit -m "CI: ingest ${{ github.event.inputs.ingest_file }} [skip ci]" || echo "Nothing to commit"
           git push || true
       - name: Upload logs

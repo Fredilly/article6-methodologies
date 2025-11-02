@@ -5,7 +5,7 @@ import os
 import re
 import sys
 
-RULE = re.compile(r'^(?:Requirement|Shall|Must|Should|The project proponent shall)\b', re.I)
+RULE = re.compile(r'\b(Requirement|Shall|Must|Should|The project proponent shall)\b', re.I)
 
 
 def load_txt(directory):
@@ -20,10 +20,12 @@ def load_txt(directory):
 def to_rules(text):
   rules = []
   for line in text.splitlines():
-    if RULE.search(line):
-      snippet = line.strip()
+    snippet = line.strip()
+    if not snippet:
+      continue
+    if RULE.search(snippet):
       rules.append({
-        'id': f'R.{len(rules) + 1}',
+        'id': f'R-{len(rules) + 1:04d}',
         'title': snippet[:160],
         'clause': None,
         'requirement': snippet,
@@ -31,14 +33,7 @@ def to_rules(text):
         'sources': []
       })
   if not rules:
-    rules.append({
-      'id': 'R.1',
-      'title': 'Document-level requirements (manual triage pending)',
-      'clause': None,
-      'requirement': None,
-      'scope': None,
-      'sources': []
-    })
+    raise ValueError('no requirement-like sentences detected')
   return rules
 
 
@@ -47,7 +42,12 @@ def main(directory):
   if not txt:
     print(f"[err] No TXT in {directory}/txt; supply TXT or enable vendor pdf2txt", file=sys.stderr)
     sys.exit(2)
-  rules = {'rules': to_rules(txt)}
+  try:
+    payload = to_rules(txt)
+  except ValueError as err:
+    print(f"[err] {err}", file=sys.stderr)
+    sys.exit(4)
+  rules = {'rules': payload}
   out_path = os.path.join(directory, 'rules.rich.json')
   with open(out_path, 'w') as handle:
     json.dump(rules, handle, indent=2, ensure_ascii=False)

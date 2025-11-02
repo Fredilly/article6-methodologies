@@ -6,7 +6,7 @@ JQ_VER=1.7.1
 PUP_VER=0.4.0
 
 sudo apt-get update -y
-sudo apt-get install -y curl unzip ca-certificates python3
+sudo apt-get install -y curl unzip ca-certificates python3 poppler-utils
 
 curl -fsSL -o /tmp/jq "https://github.com/jqlang/jq/releases/download/jq-${JQ_VER}/jq-linux-amd64"
 sudo mv /tmp/jq "${BIN}/jq"

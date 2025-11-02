@@ -186,12 +186,24 @@ jobs:
             if [ "$run_lean" -eq 1 ]; then npm run ingest:lean --if-present -- "$SCOPED"; fi
           fi
 
-      - name: Validate & quality gates
+      - name: Normalise & enforce gates
         run: |
-          set -e
+          set -euo pipefail
+          if [ -f scripts/normalize-meta.js ]; then
+            node scripts/normalize-meta.js
+          fi
+          if [ -x scripts/check-no-stubs.sh ]; then
+            bash scripts/check-no-stubs.sh
+          fi
           npm run validate:rich --if-present
           npm run validate:lean --if-present
-          npm run validate --if-present || true
+          npm run validate:guardrails --if-present
+          if [ -f scripts/build-manifest.mjs ]; then
+            node scripts/build-manifest.mjs
+          fi
+          if [ -x scripts/hash-all.sh ]; then
+            scripts/hash-all.sh
+          fi
 
       - name: Detect changes
         id: diff
