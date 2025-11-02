@@ -117,7 +117,14 @@ PY
   fi
 
   # parse all links (text + href) → JSON
-  links_json="$(pup 'a json{}' < "$html_tmp" 2>/dev/null || echo '[]')"
+  links_json="$(pup 'a json{}' < "$html_tmp" 2>/dev/null || true)"
+  if [ -z "${links_json//[[:space:]]/}" ] || [[ "$links_json" == empty* ]]; then
+    links_json='[]'
+  else
+    if ! jq -e . >/dev/null 2>&1 <<<"$links_json"; then
+      links_json='[]'
+    fi
+  fi
   rm -f "$html_tmp"
 
   include_count="$(yq ".methods[$i].include_text | length" "$INGEST_FILE" 2>/dev/null || echo 0)"
