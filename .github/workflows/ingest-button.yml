@@ -229,8 +229,11 @@ jobs:
           git commit -F /tmp/commit_msg.txt
           git push -u origin "$BR"
           git fetch --depth=1 origin main
-          gh pr create --fill --title "Ingest: ${BR}"
-          gh pr edit --add-label ingest || true
+          if gh pr create --fill --title "Ingest: ${BR}"; then
+            gh pr edit --add-label ingest || true
+          else
+            echo "[warn] gh pr create failed; skipping automatic PR labelling"
+          fi
 
       - name: Upload logs (artifact)
         uses: actions/upload-artifact@v4
