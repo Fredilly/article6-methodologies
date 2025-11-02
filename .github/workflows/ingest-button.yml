@@ -82,62 +82,8 @@ jobs:
         run: |
           npm ci || npm i
 
-      - name: Install CLI dependencies
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          set -euxo pipefail
-          sudo apt-get update
-          sudo apt-get install -y jq curl unzip
-          YQ_VERSION="v4.44.3"
-          curl -fsSL "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64.tar.gz" -o /tmp/yq.tgz
-          tar -xzf /tmp/yq.tgz -C /tmp
-          sudo mv /tmp/yq_linux_amd64 /usr/local/bin/yq
-          sudo chmod +x /usr/local/bin/yq
-          rm -f /tmp/yq.tgz
-          PUP_VERSION="v0.4.0"
-          API="https://api.github.com/repos/ericchiang/pup/releases/tags/${PUP_VERSION}"
-          CURL_HEADERS=(-H "Accept: application/vnd.github+json" -H "User-Agent: ingest-workflow" -H "X-GitHub-Api-Version: 2022-11-28")
-          if [ -n "${GITHUB_TOKEN:-}" ]; then
-            CURL_HEADERS+=(-H "Authorization: Bearer ${GITHUB_TOKEN}")
-          fi
-          URL="$(curl -fsSL "${CURL_HEADERS[@]}" "$API" | jq -r '.assets[] | select(.name | endswith("linux_amd64.zip") or endswith("linux_amd64.tar.gz")) | .browser_download_url' | head -n1 || true)"
-          if [ -z "$URL" ]; then
-            URL="$(curl -fsSL "${CURL_HEADERS[@]}" "https://api.github.com/repos/ericchiang/pup/releases/latest" | jq -r '.assets[] | select(.name | endswith("linux_amd64.zip") or endswith("linux_amd64.tar.gz")) | .browser_download_url' | head -n1 || true)"
-          fi
-          if [ -z "$URL" ]; then
-            for candidate in \
-              "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/pup_${PUP_VERSION#v}_linux_amd64.zip" \
-              "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/pup_${PUP_VERSION}_linux_amd64.zip"
-            do
-              if curl -sfI "$candidate" >/dev/null; then
-                URL="$candidate"
-                break
-              fi
-            done
-          fi
-          if [ -z "$URL" ]; then
-            echo "Failed to resolve Pup linux_amd64 asset from GitHub releases" >&2
-            exit 1
-          fi
-          curl -fsSL "$URL" -o /tmp/pup.any
-          mkdir -p /tmp/pup.extract
-          if [[ "$URL" == *.zip ]]; then
-            unzip -q /tmp/pup.any -d /tmp/pup.extract
-          else
-            tar -xzf /tmp/pup.any -C /tmp/pup.extract
-          fi
-          BIN="$(find /tmp/pup.extract -maxdepth 2 -type f -name pup | head -n1 || true)"
-          if [ -z "$BIN" ]; then
-            echo "Pup binary not found after extracting $URL" >&2
-            exit 1
-          fi
-          sudo mv "$BIN" /usr/local/bin/pup
-          sudo chmod +x /usr/local/bin/pup
-          rm -rf /tmp/pup.any /tmp/pup.extract
-          yq --version
-          pup --version
-          jq --version
+      - name: Install ingest tools
+        run: scripts/setup/install-ingest-tools.sh
 
       - name: Determine scope & mode
         id: meta

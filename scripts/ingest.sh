@@ -40,9 +40,9 @@ echo "[ingest] methods: $method_count"
 for i in $(seq 0 $((method_count-1))); do
   id="$(yq -r ".methods[$i].id" "$INGEST_FILE")"
   ver="$(yq -r ".methods[$i].version" "$INGEST_FILE")"
-  sector="$(yq -r ".methods[$i].sector // empty" "$INGEST_FILE")"
-  page="$(yq -r ".methods[$i].source_page // empty" "$INGEST_FILE")"
-  pdf_url_override="$(yq -r ".methods[$i].pdf_url // empty" "$INGEST_FILE")"
+  sector="$(yq -r ".methods[$i].sector // \"\"" "$INGEST_FILE")"
+  page="$(yq -r ".methods[$i].source_page // \"\"" "$INGEST_FILE")"
+  pdf_url_override="$(yq -r ".methods[$i].pdf_url // \"\"" "$INGEST_FILE")"
 
   echo "———"
   echo "[ingest] $id $ver"
@@ -60,34 +60,14 @@ for i in $(seq 0 $((method_count-1))); do
   html_tmp="$(mktemp)"
   if [ -n "$page" ]; then
     curl -fsSL "$page" -o "$html_tmp"
-    # normalise encoding to UTF-8 so downstream parsing doesn't choke on latin-1 pages
     python3 - "$html_tmp" <<'PY' || true
-import re
 import sys
+import unicodedata
 from pathlib import Path
 
-src = Path(sys.argv[1])
-raw = src.read_bytes()
-encoding = "utf-8"
-match = re.search(br"charset=([A-Za-z0-9_\-]+)", raw, flags=re.IGNORECASE)
-if match:
-    try:
-        encoding = match.group(1).decode("ascii").lower()
-    except UnicodeDecodeError:
-        pass
-
-def decode(data, enc):
-    try:
-        return data.decode(enc, errors="ignore")
-    except LookupError:
-        return data.decode("latin-1", errors="ignore")
-
-if encoding.replace("-", "") in {"utf8"}:
-    text = decode(raw, "utf-8")
-else:
-    text = decode(raw, encoding)
-
-src.write_text(text, encoding="utf-8")
+path = Path(sys.argv[1])
+data = path.read_bytes().decode('utf-8', 'replace')
+path.write_text(unicodedata.normalize('NFC', data), encoding='utf-8')
 PY
   fi
 
