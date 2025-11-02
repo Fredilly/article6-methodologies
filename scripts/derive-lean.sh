@@ -7,12 +7,22 @@ need jq
 while IFS= read -r -d '' meta; do
   dir="$(dirname "$meta")"
   if [[ -f "$dir/sections.rich.json" ]]; then
-    jq '{sections: (.sections // []) | map({id, title, anchors: (.anchors // []), content: (.content // null)})}' \
-      "$dir/sections.rich.json" | jq -S . > "$dir/sections.json"
+    jq '
+      def pick_sections:
+        if type == "array" then .
+        elif type == "object" then (.sections // [])
+        else [] end;
+      {sections: (pick_sections | map({id, title, anchors: (.anchors // []), content: (.content // null)}))}
+    ' "$dir/sections.rich.json" | jq -S . > "$dir/sections.json"
   fi
   if [[ -f "$dir/rules.rich.json" ]]; then
-    jq '{rules: (.rules // []) | map({id, title, clause: (.clause // null), requirement: (.requirement // null), scope: (.scope // null), sources: (.sources // [])})}' \
-      "$dir/rules.rich.json" | jq -S . > "$dir/rules.json"
+    jq '
+      def pick_rules:
+        if type == "array" then .
+        elif type == "object" then (.rules // [])
+        else [] end;
+      {rules: (pick_rules | map({id, title, clause: (.clause // null), requirement: (.requirement // null), scope: (.scope // null), sources: (.sources // [])}))}
+    ' "$dir/rules.rich.json" | jq -S . > "$dir/rules.json"
   fi
 done < <(find methodologies -type f -name META.json -print0)
 
