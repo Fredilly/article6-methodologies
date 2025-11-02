@@ -140,13 +140,22 @@ jobs:
             echo "source=${{ inputs.source }}" >> "$GITHUB_OUTPUT"
             echo "issue=${{ inputs.issue_number }}" >> "$GITHUB_OUTPUT"
             echo "project=${{ inputs.project_number }}" >> "$GITHUB_OUTPUT"
-            echo "dry_run=${{ inputs.dry_run }}" >> "$GITHUB_OUTPUT"
+            dry_input="${{ inputs.dry_run }}"
+            dry="0"
+            if [ "$dry_input" = "true" ] || [ "$dry_input" = "1" ]; then dry="1"; fi
+            echo "dry_run=$dry" >> "$GITHUB_OUTPUT"
+          elif [ "$EVENT" = "push" ]; then
+            echo "mode=both" >> "$GITHUB_OUTPUT"
+            echo "source=ingest" >> "$GITHUB_OUTPUT"
+            echo "issue=" >> "$GITHUB_OUTPUT"
+            echo "project=" >> "$GITHUB_OUTPUT"
+            echo "dry_run=1" >> "$GITHUB_OUTPUT"
           else
             echo "mode=both" >> "$GITHUB_OUTPUT"
             echo "source=ingest" >> "$GITHUB_OUTPUT"
             echo "issue=" >> "$GITHUB_OUTPUT"
             echo "project=" >> "$GITHUB_OUTPUT"
-            echo "dry_run=false" >> "$GITHUB_OUTPUT"
+            echo "dry_run=0" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Resolve scope → .tmp/ingest.scoped.yml
@@ -169,6 +178,8 @@ jobs:
         id: ingest
         env:
           MODE: ${{ steps.meta.outputs.mode }}
+          DRY_RUN: ${{ steps.meta.outputs.dry_run }}
+          AUTO_COMMIT: 0
         run: |
           set -euo pipefail
           echo "MODE=$MODE"
@@ -207,6 +218,7 @@ jobs:
           fi
 
       - name: Validate & quality gates
+        if: steps.meta.outputs.dry_run != '1'
         run: |
           set -e
           npm run validate:rich --if-present
@@ -224,7 +236,7 @@ jobs:
           fi
 
       - name: Commit & PR
-        if: steps.diff.outputs.changed == 'true' && steps.meta.outputs.dry_run != 'true'
+        if: steps.diff.outputs.changed == 'true' && steps.meta.outputs.dry_run != '1'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -334,7 +346,7 @@ jobs:
           echo "source=issue" >> "$GITHUB_OUTPUT"
           echo "issue=${{ github.event.issue.number }}" >> "$GITHUB_OUTPUT"
           echo "project=" >> "$GITHUB_OUTPUT"
-          echo "dry_run=false" >> "$GITHUB_OUTPUT"
+          echo "dry_run=0" >> "$GITHUB_OUTPUT"
 
       - name: Resolve scope → .tmp/ingest.scoped.yml
         env:
@@ -356,6 +368,8 @@ jobs:
         id: ingest
         env:
           MODE: ${{ steps.meta.outputs.mode }}
+          DRY_RUN: ${{ steps.meta.outputs.dry_run }}
+          AUTO_COMMIT: 0
         run: |
           set -euo pipefail
           echo "MODE=$MODE"
@@ -394,6 +408,7 @@ jobs:
           fi
 
       - name: Validate & quality gates
+        if: steps.meta.outputs.dry_run != '1'
         run: |
           set -e
           npm run validate:rich --if-present
@@ -411,7 +426,7 @@ jobs:
           fi
 
       - name: Commit & PR
-        if: steps.diff.outputs.changed == 'true' && steps.meta.outputs.dry_run != 'true'
+        if: steps.diff.outputs.changed == 'true' && steps.meta.outputs.dry_run != '1'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
