@@ -93,16 +93,40 @@ jobs:
           sudo chmod +x /usr/local/bin/yq
           rm -f /tmp/yq.tgz
           PUP_VERSION="v0.4.0"
-          curl -fsSL "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/pup_${PUP_VERSION#v}_linux_amd64.zip" -o /tmp/pup.zip
-          unzip -q /tmp/pup.zip -d /tmp
-          if [ -f /tmp/pup ]; then
-            sudo mv /tmp/pup /usr/local/bin/pup
-          else
-            sudo mv /tmp/pup_*/pup /usr/local/bin/pup
+          BASE_URL="https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}"
+          URL=""
+          for candidate in \
+            "${BASE_URL}/pup_${PUP_VERSION#v}_linux_amd64.zip" \
+            "${BASE_URL}/pup_linux_amd64.zip" \
+            "${BASE_URL}/pup_${PUP_VERSION}_linux_amd64.zip" \
+            "${BASE_URL}/pup_${PUP_VERSION#v}_linux_amd64.tar.gz" \
+            "${BASE_URL}/pup_linux_amd64.tar.gz" \
+            "${BASE_URL}/pup_${PUP_VERSION}_linux_amd64.tar.gz"
+          do
+            if curl -sfI "$candidate" >/dev/null; then
+              URL="$candidate"
+              break
+            fi
+          done
+          if [ -z "$URL" ]; then
+            echo "Failed to resolve Pup linux_amd64 asset" >&2
+            exit 1
           fi
+          curl -fsSL "$URL" -o /tmp/pup.any
+          mkdir -p /tmp/pup.extract
+          if [[ "$URL" == *.zip ]]; then
+            unzip -q /tmp/pup.any -d /tmp/pup.extract
+          else
+            tar -xzf /tmp/pup.any -C /tmp/pup.extract
+          fi
+          BIN="$(find /tmp/pup.extract -maxdepth 2 -type f -name pup | head -n1 || true)"
+          if [ -z "$BIN" ]; then
+            echo "Pup binary not found after extracting $URL" >&2
+            exit 1
+          fi
+          sudo mv "$BIN" /usr/local/bin/pup
           sudo chmod +x /usr/local/bin/pup
-          rm -f /tmp/pup.zip
-          rm -rf /tmp/pup /tmp/pup_*
+          rm -rf /tmp/pup.any /tmp/pup.extract
           yq --version
           pup --version
           jq --version
@@ -263,16 +287,40 @@ jobs:
           sudo chmod +x /usr/local/bin/yq
           rm -f /tmp/yq.tgz
           PUP_VERSION="v0.4.0"
-          curl -fsSL "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/pup_${PUP_VERSION#v}_linux_amd64.zip" -o /tmp/pup.zip
-          unzip -q /tmp/pup.zip -d /tmp
-          if [ -f /tmp/pup ]; then
-            sudo mv /tmp/pup /usr/local/bin/pup
-          else
-            sudo mv /tmp/pup_*/pup /usr/local/bin/pup
+          BASE_URL="https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}"
+          URL=""
+          for candidate in \
+            "${BASE_URL}/pup_${PUP_VERSION#v}_linux_amd64.zip" \
+            "${BASE_URL}/pup_linux_amd64.zip" \
+            "${BASE_URL}/pup_${PUP_VERSION}_linux_amd64.zip" \
+            "${BASE_URL}/pup_${PUP_VERSION#v}_linux_amd64.tar.gz" \
+            "${BASE_URL}/pup_linux_amd64.tar.gz" \
+            "${BASE_URL}/pup_${PUP_VERSION}_linux_amd64.tar.gz"
+          do
+            if curl -sfI "$candidate" >/dev/null; then
+              URL="$candidate"
+              break
+            fi
+          done
+          if [ -z "$URL" ]; then
+            echo "Failed to resolve Pup linux_amd64 asset" >&2
+            exit 1
           fi
+          curl -fsSL "$URL" -o /tmp/pup.any
+          mkdir -p /tmp/pup.extract
+          if [[ "$URL" == *.zip ]]; then
+            unzip -q /tmp/pup.any -d /tmp/pup.extract
+          else
+            tar -xzf /tmp/pup.any -C /tmp/pup.extract
+          fi
+          BIN="$(find /tmp/pup.extract -maxdepth 2 -type f -name pup | head -n1 || true)"
+          if [ -z "$BIN" ]; then
+            echo "Pup binary not found after extracting $URL" >&2
+            exit 1
+          fi
+          sudo mv "$BIN" /usr/local/bin/pup
           sudo chmod +x /usr/local/bin/pup
-          rm -f /tmp/pup.zip
-          rm -rf /tmp/pup /tmp/pup_*
+          rm -rf /tmp/pup.any /tmp/pup.extract
           yq --version
           pup --version
           jq --version
