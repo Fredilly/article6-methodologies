@@ -225,7 +225,7 @@ PY
       "id": "$placeholder_section",
       "title": "TODO: replace with extracted section content",
       "anchors": [],
-      "content": null
+      "content": ""
     }
   ]
 }
