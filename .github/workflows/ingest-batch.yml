@@ -28,8 +28,6 @@ jobs:
         run: npm ci
 
       - name: Install CLI deps (jq, yq, pup)
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euxo pipefail
           sudo apt-get update
@@ -41,28 +39,20 @@ jobs:
           sudo chmod +x /usr/local/bin/yq
           rm -f /tmp/yq.tgz
           PUP_VERSION="v0.4.0"
-          API="https://api.github.com/repos/ericchiang/pup/releases/tags/${PUP_VERSION}"
-          CURL_HEADERS=(-H "Accept: application/vnd.github+json" -H "User-Agent: ingest-workflow" -H "X-GitHub-Api-Version: 2022-11-28")
-          if [ -n "${GITHUB_TOKEN:-}" ]; then
-            CURL_HEADERS+=(-H "Authorization: Bearer ${GITHUB_TOKEN}")
-          fi
-          URL="$(curl -fsSL "${CURL_HEADERS[@]}" "$API" | jq -r '.assets[] | select(.name | endswith("linux_amd64.zip") or endswith("linux_amd64.tar.gz")) | .browser_download_url' | head -n1 || true)"
+          BASE_URL="https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}"
+          URL=""
+          for candidate in \
+            "${BASE_URL}/pup_${PUP_VERSION#v}_linux_amd64.zip" \
+            "${BASE_URL}/pup_linux_amd64.zip" \
+            "${BASE_URL}/pup_${PUP_VERSION}_linux_amd64.zip"
+          do
+            if curl -sfI "$candidate" >/dev/null; then
+              URL="$candidate"
+              break
+            fi
+          done
           if [ -z "$URL" ]; then
-            URL="$(curl -fsSL "${CURL_HEADERS[@]}" "https://api.github.com/repos/ericchiang/pup/releases/latest" | jq -r '.assets[] | select(.name | endswith("linux_amd64.zip") or endswith("linux_amd64.tar.gz")) | .browser_download_url' | head -n1 || true)"
-          fi
-          if [ -z "$URL" ]; then
-            for candidate in \
-              "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/pup_${PUP_VERSION#v}_linux_amd64.zip" \
-              "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/pup_${PUP_VERSION}_linux_amd64.zip"
-            do
-              if curl -sfI "$candidate" >/dev/null; then
-                URL="$candidate"
-                break
-              fi
-            done
-          fi
-          if [ -z "$URL" ]; then
-            echo "Failed to resolve Pup linux_amd64 asset from GitHub releases" >&2
+            echo "Failed to resolve Pup linux_amd64 asset" >&2
             exit 1
           fi
           curl -fsSL "$URL" -o /tmp/pup.any
