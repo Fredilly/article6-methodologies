@@ -31,12 +31,21 @@ while IFS= read -r -d '' meta; do
       def normalize_rule:
         {
           id,
-          title
+          text: (
+            if (.summary? and (.summary | type) == "string" and (.summary | length) > 0) then .summary
+            elif (.text? and (.text | type) == "string" and (.text | length) > 0) then .text
+            elif (.logic? and (.logic | type) == "string") then .logic
+            else "TODO: populate lean summary"
+            end
+          )
         }
-        + (if (.clause? and (.clause | type) == "string") then {clause: .clause} else {} end)
-        + (if (.requirement? and (.requirement | type) == "string") then {requirement: .requirement} else {} end)
-        + (if (.scope? and (.scope | type) == "string") then {scope: .scope} else {} end)
-        + {sources: (if (.sources? and (.sources | type) == "array") then .sources else [] end)};
+        + (if (.refs?.sections? and (.refs.sections | type) == "array" and (.refs.sections | length) > 0)
+            then {section_id: (.refs.sections[0])}
+            else {} end)
+        + (if (.tags? and (.tags | type) == "array") then {tags: .tags}
+           elif (.type? and (.type | type) == "string") then {tags: [.type]}
+           else {tags: []} end)
+        + (if (.sources? and (.sources | type) == "array") then {sources: .sources} else {} end);
       {rules: (pick_rules | map(normalize_rule))}
     ' "$dir/rules.rich.json" | jq -S . > "$dir/rules.json"
   fi
