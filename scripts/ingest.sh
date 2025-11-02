@@ -29,6 +29,7 @@ need yq
 need jq
 need pup
 need curl
+need python3
 
 INGEST_FILE="${INGEST_FILE:-ingest.yml}"
 test -f "$INGEST_FILE" || { echo "No $INGEST_FILE"; exit 1; }
@@ -59,6 +60,35 @@ for i in $(seq 0 $((method_count-1))); do
   html_tmp="$(mktemp)"
   if [ -n "$page" ]; then
     curl -fsSL "$page" -o "$html_tmp"
+    # normalise encoding to UTF-8 so downstream parsing doesn't choke on latin-1 pages
+    python3 - "$html_tmp" <<'PY' || true
+import re
+import sys
+from pathlib import Path
+
+src = Path(sys.argv[1])
+raw = src.read_bytes()
+encoding = "utf-8"
+match = re.search(br"charset=([A-Za-z0-9_\-]+)", raw, flags=re.IGNORECASE)
+if match:
+    try:
+        encoding = match.group(1).decode("ascii").lower()
+    except UnicodeDecodeError:
+        pass
+
+def decode(data, enc):
+    try:
+        return data.decode(enc, errors="ignore")
+    except LookupError:
+        return data.decode("latin-1", errors="ignore")
+
+if encoding.replace("-", "") in {"utf8"}:
+    text = decode(raw, "utf-8")
+else:
+    text = decode(raw, encoding)
+
+src.write_text(text, encoding="utf-8")
+PY
   fi
 
   # resolve main PDF
