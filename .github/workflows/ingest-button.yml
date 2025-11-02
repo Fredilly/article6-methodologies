@@ -12,6 +12,9 @@ on:
       dry_run:
         description: "Run without writing files"
         default: "false"
+      batch_file:
+        description: "Path to .txt file with methodology codes"
+        required: false
       issue_number:
         description: "Issue number when source=issue"
       project_number:
@@ -97,18 +100,21 @@ jobs:
             echo "issue=${{ github.event.issue.number }}" >> "$GITHUB_OUTPUT"
             echo "project=" >> "$GITHUB_OUTPUT"
             echo "dry_run=false" >> "$GITHUB_OUTPUT"
+            echo "batch=" >> "$GITHUB_OUTPUT"
           elif [ "$EVENT" = "workflow_dispatch" ]; then
             echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
             echo "source=${{ inputs.source }}" >> "$GITHUB_OUTPUT"
             echo "issue=${{ inputs.issue_number }}" >> "$GITHUB_OUTPUT"
             echo "project=${{ inputs.project_number }}" >> "$GITHUB_OUTPUT"
             echo "dry_run=${{ inputs.dry_run }}" >> "$GITHUB_OUTPUT"
+            echo "batch=${{ inputs.batch_file }}" >> "$GITHUB_OUTPUT"
           else
             echo "mode=both" >> "$GITHUB_OUTPUT"
             echo "source=ingest" >> "$GITHUB_OUTPUT"
             echo "issue=" >> "$GITHUB_OUTPUT"
             echo "project=" >> "$GITHUB_OUTPUT"
             echo "dry_run=false" >> "$GITHUB_OUTPUT"
+            echo "batch=" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Resolve scope → .tmp/ingest.scoped.yml
@@ -120,12 +126,20 @@ jobs:
           SRC="${{ steps.meta.outputs.source }}"
           ISSUE_NO="${{ steps.meta.outputs.issue }}"
           PROJ_NO="${{ steps.meta.outputs.project }}"
-          node scripts/resolve-ingest-scope.mjs \
-            --source "${SRC:-ingest}" \
-            --issue "${ISSUE_NO:-0}" \
-            --project "${PROJ_NO:-0}" \
-            --in ingest.yml \
-            --out "$SCOPED"
+          FILE_INPUT="${{ steps.meta.outputs.batch }}"
+          if [ -n "$FILE_INPUT" ]; then
+            node scripts/resolve-ingest-scope.mjs \
+              --source "txt" \
+              --in "$FILE_INPUT" \
+              --out "$SCOPED"
+          else
+            node scripts/resolve-ingest-scope.mjs \
+              --source "${SRC:-ingest}" \
+              --issue "${ISSUE_NO:-0}" \
+              --project "${PROJ_NO:-0}" \
+              --in ingest.yml \
+              --out "$SCOPED"
+          fi
 
       - name: Run ingest (rich/lean)
         id: ingest
