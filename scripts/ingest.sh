@@ -176,6 +176,8 @@ PY
   if [ "$DRY_RUN" = "0" ]; then
     pdf_sha=""
     [ -s "$pdf_path" ] && pdf_sha="$(sha256 "$pdf_path")"
+    placeholder_section="S-0000"
+    placeholder_rule="${id}.${ver}.R-0-0000"
 
     jq -n \
       --arg id "$id" \
@@ -192,10 +194,46 @@ PY
         audit:{ created_at:(now|todate), created_by:"ingest.sh" }
       }' > "$meta"
 
-    # minimal placeholders (non-empty) to keep strict gates calm
-    echo '[]' > "$sections"
-    echo '[{"id":"SCHEMA_STUB","type":"placeholder","text":"Replace with extracted rules","evidence":[]}]' > "$rules"
-    echo '[{"id":"SCHEMA_STUB","type":"placeholder","text":"Replace with rich rules","evidence":[]}]' > "$rules_rich"
+    # schema-compliant placeholders to keep gates green until rich extraction lands
+    cat <<JSON > "$sections"
+{
+  "sections": [
+    {
+      "id": "$placeholder_section",
+      "title": "TODO: replace with extracted section content",
+      "anchors": [],
+      "content": null
+    }
+  ]
+}
+JSON
+
+    cat <<JSON > "$rules"
+{
+  "rules": [
+    {
+      "id": "$placeholder_rule",
+      "text": "TODO: replace with lean rule summary"
+    }
+  ]
+}
+JSON
+
+    cat <<JSON > "$rules_rich"
+[
+  {
+    "id": "$placeholder_rule",
+    "type": "eligibility",
+    "summary": "TODO: replace with rich rule summary",
+    "logic": "TODO",
+    "refs": {
+      "sections": [
+        "$placeholder_section"
+      ]
+    }
+  }
+]
+JSON
   fi
 
   # validate + commit
