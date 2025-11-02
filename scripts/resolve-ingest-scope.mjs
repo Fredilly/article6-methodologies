@@ -234,6 +234,28 @@ async function collectIdsFromProject() {
 
 (async () => {
   ensureDir(OUT);
+  if (SRC === 'txt') {
+    if (!args.in) throw new Error('--in path is required when source=txt');
+    if (!fs.existsSync(INGEST_IN)) throw new Error(`txt source file ${INGEST_IN} not found`);
+    const codes = fs
+      .readFileSync(INGEST_IN, 'utf8')
+      .split(/\r?\n/)
+      .map((line) => line.trim())
+      .filter((line) => line && !line.startsWith('#'));
+    const lines = [];
+    if (codes.length) {
+      lines.push('include:');
+      for (const code of codes) {
+        lines.push(`  - code: ${quote(code)}`);
+        lines.push('    version: "latest"');
+      }
+    } else {
+      lines.push('include: []');
+    }
+    fs.writeFileSync(OUT, `${lines.join('\n')}\n`);
+    console.log(`[ok] scoped ${codes.length} codes from ${INGEST_IN}`);
+    return;
+  }
   if (!fs.existsSync(INGEST_IN)) throw new Error(`input file ${INGEST_IN} not found`);
 
   const full = parseYaml(fs.readFileSync(INGEST_IN, 'utf8'));
