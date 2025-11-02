@@ -40,7 +40,32 @@ env:
   SCOPED: ./.tmp/ingest.scoped.yml
 
 jobs:
+  maybe-slash:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'issue_comment'
+    outputs:
+      run: ${{ steps.slash.outputs.run }}
+      mode: ${{ steps.slash.outputs.mode }}
+    steps:
+      - id: slash
+        shell: bash
+        run: |
+          body="${{ github.event.comment.body }}"
+          mode="both"
+          if [[ "$body" =~ ^(/[rR]un )?[iI]ngest( \+([a-zA-Z]+))? ]]; then
+            echo "run=true" >>"$GITHUB_OUTPUT"
+            if [[ -n "${BASH_REMATCH[3]}" ]]; then
+              echo "mode=${BASH_REMATCH[3]}" >>"$GITHUB_OUTPUT"
+            else
+              echo "mode=both" >>"$GITHUB_OUTPUT"
+            fi
+          else
+            echo "run=false" >>"$GITHUB_OUTPUT"
+            echo "mode=$mode" >>"$GITHUB_OUTPUT"
+          fi
+
   run:
+    needs: maybe-slash
     if: github.event_name != 'issue_comment' || needs.maybe-slash.outputs.run == 'true'
     runs-on: ubuntu-latest
     steps:
