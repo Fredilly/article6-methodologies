@@ -7,11 +7,13 @@ need jq
 while IFS= read -r -d '' meta; do
   dir="$(dirname "$meta")"
   if [[ -f "$dir/sections.rich.json" ]]; then
-    jq '{sections: (.sections // []) | map({id, title, anchors: (.anchors // []), content: (.content // null)})}' \
+    jq '{sections: ((if type == "array" then . else (.sections // []) end)
+      | map({id, title, anchors: (.anchors // []), content: (.content // null)}))}' \
       "$dir/sections.rich.json" | jq -S . > "$dir/sections.json"
   fi
   if [[ -f "$dir/rules.rich.json" ]]; then
-    jq '{rules: (.rules // []) | map({id, title, clause: (.clause // null), requirement: (.requirement // null), scope: (.scope // null), sources: (.sources // [])})}' \
+    jq '{rules: ((if type == "array" then . else (.rules // []) end)
+      | map({id, title, clause: (.clause // null), requirement: (.requirement // null), scope: (.scope // null), sources: (.sources // [])}))}' \
       "$dir/rules.rich.json" | jq -S . > "$dir/rules.json"
   fi
 done < <(find methodologies -type f -name META.json -print0)

@@ -39,9 +39,9 @@ echo "[ingest] methods: $method_count"
 for i in $(seq 0 $((method_count-1))); do
   id="$(yq -r ".methods[$i].id" "$INGEST_FILE")"
   ver="$(yq -r ".methods[$i].version" "$INGEST_FILE")"
-  sector="$(yq -r ".methods[$i].sector // empty" "$INGEST_FILE")"
-  page="$(yq -r ".methods[$i].source_page // empty" "$INGEST_FILE")"
-  pdf_url_override="$(yq -r ".methods[$i].pdf_url // empty" "$INGEST_FILE")"
+  sector="$(yq -r ".methods[$i].sector // \"\"" "$INGEST_FILE")"
+  page="$(yq -r ".methods[$i].source_page // \"\"" "$INGEST_FILE")"
+  pdf_url_override="$(yq -r ".methods[$i].pdf_url // \"\"" "$INGEST_FILE")"
 
   echo "———"
   echo "[ingest] $id $ver"
