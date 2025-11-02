@@ -45,7 +45,6 @@ env:
 jobs:
   maybe-slash:
     runs-on: ubuntu-latest
-    if: github.event_name == 'issue_comment'
     outputs:
       run: ${{ steps.slash.outputs.run }}
       mode: ${{ steps.slash.outputs.mode }}
@@ -53,6 +52,11 @@ jobs:
       - id: slash
         shell: bash
         run: |
+          if [ "${{ github.event_name }}" != "issue_comment" ]; then
+            echo "run=false" >>"$GITHUB_OUTPUT"
+            echo "mode=both"  >>"$GITHUB_OUTPUT"
+            exit 0
+          fi
           body="${{ github.event.comment.body }}"
           mode="both"
           if [[ "$body" =~ ^(/[rR]un )?[iI]ngest( \+([a-zA-Z]+))? ]]; then
@@ -64,7 +68,7 @@ jobs:
             fi
           else
             echo "run=false" >>"$GITHUB_OUTPUT"
-            echo "mode=$mode" >>"$GITHUB_OUTPUT"
+            echo "mode=both"  >>"$GITHUB_OUTPUT"
           fi
 
   run:
@@ -224,7 +228,12 @@ jobs:
           MSG
           git commit -F /tmp/commit_msg.txt
           git push -u origin "$BR"
-          gh pr create --fill --title "Ingest: ${BR}" --label ingest
+          git fetch --depth=1 origin main
+          if gh pr create --fill --title "Ingest: ${BR}"; then
+            gh pr edit --add-label ingest || true
+          else
+            echo "[warn] gh pr create failed; skipping automatic PR labelling"
+          fi
 
       - name: Upload logs (artifact)
         uses: actions/upload-artifact@v4
