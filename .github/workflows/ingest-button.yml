@@ -92,7 +92,7 @@ jobs:
           npm ci || npm i
 
       - name: Install ingest tools
-        run: scripts/setup/install-ingest-tools.sh
+        run: bash scripts/setup/install-ingest-tools.sh
 
       - name: Determine scope & mode
         id: meta
@@ -153,6 +153,7 @@ jobs:
           MODE: ${{ steps.meta.outputs.mode }}
         run: |
           set -euo pipefail
+          export PATH="$PWD/local-tools/bin:$PATH"
           echo "MODE=$MODE"
           run_rich=1
           run_lean=1

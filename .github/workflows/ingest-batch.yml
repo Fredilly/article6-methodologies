@@ -30,13 +30,14 @@ jobs:
         run: npm ci
 
       - name: Install ingest tools
-        run: scripts/setup/install-ingest-tools.sh
+        run: bash scripts/setup/install-ingest-tools.sh
 
       - name: Run ingestion
         env:
           INGEST_FILE: ${{ github.event.inputs.ingest_file }}
         run: |
           set -euxo pipefail
+          export PATH="$PWD/local-tools/bin:$PATH"
           if [ ! -f "$INGEST_FILE" ]; then
             echo "Missing $INGEST_FILE" >&2
             exit 1
