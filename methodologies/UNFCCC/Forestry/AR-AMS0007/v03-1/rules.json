@@ -1,7 +1,7 @@
 {
   "rules": [
     {
-      "id": "R-1-0001",
+      "id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0001",
       "section_id": "S-1",
       "tags": [
         "eligibility"
@@ -9,43 +9,39 @@
       "text": "Wetland restoration projects eligible when activities convert degraded wetlands to forest and meet small-scale thresholds."
     },
     {
-      "id": "R-1-0002",
+      "id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0002",
       "section_id": "S-2",
       "tags": [
-        "eligibility",
         "definition"
       ],
       "text": "Definitions clarify wetland geomorphology, participant aggregation, and leakage belt concepts."
     },
     {
-      "id": "R-1-0003",
+      "id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0003",
       "section_id": "S-3",
       "tags": [
-        "eligibility",
         "boundary"
       ],
       "text": "Project boundary includes on-site hydrological interventions and relevant carbon pools except where justified."
     },
     {
-      "id": "R-1-0004",
+      "id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0004",
       "section_id": "S-4",
       "tags": [
-        "calc",
         "baseline"
       ],
       "text": "Baseline assumes continuation of pre-project wetland degradation with zero additional removals."
     },
     {
-      "id": "R-1-0005",
+      "id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0005",
       "section_id": "S-5",
       "tags": [
-        "calc",
         "emissions"
       ],
       "text": "Project removals calculated from pool carbon stock changes minus emissions from project operations."
     },
     {
-      "id": "R-1-0006",
+      "id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0006",
       "section_id": "S-6",
       "tags": [
         "leakage"
@@ -53,7 +49,7 @@
       "text": "Leakage from displaced wetland uses monitored and deducted using Tool 14 defaults."
     },
     {
-      "id": "R-1-0007",
+      "id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0007",
       "section_id": "S-7",
       "tags": [
         "monitoring"
@@ -61,16 +57,15 @@
       "text": "Monitoring plan covers hydrology restoration, vegetation plots, and participant reporting."
     },
     {
-      "id": "R-1-0008",
+      "id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0008",
       "section_id": "S-8",
       "tags": [
-        "parameter",
         "data"
       ],
       "text": "Data tables specify default biomass factors, hydrological parameters, and monitoring records."
     },
     {
-      "id": "R-1-0009",
+      "id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0009",
       "section_id": "S-9",
       "tags": [
         "uncertainty"
@@ -78,25 +73,23 @@
       "text": "Uncertainty analysis follows Tool 12 with deductions when precision thresholds unmet."
     },
     {
-      "id": "R-1-0010",
+      "id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0010",
       "section_id": "S-10",
       "tags": [
-        "uncertainty",
         "permanence"
       ],
       "text": "Permanence buffer contributions determined via Tool 15 wetland risk factors."
     },
     {
-      "id": "R-1-0011",
+      "id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0011",
       "section_id": "S-11",
       "tags": [
-        "reporting",
         "reference"
       ],
       "text": "Normative tools and references maintained for monitoring and verification teams."
     },
     {
-      "id": "R-1-0012",
+      "id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0012",
       "section_id": "S-12",
       "tags": [
         "equation"
@@ -104,7 +97,7 @@
       "text": "Annualized carbon stock change derived from difference in pool carbon divided by measurement interval."
     },
     {
-      "id": "R-1-0013",
+      "id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0013",
       "section_id": "S-13",
       "tags": [
         "reporting"
