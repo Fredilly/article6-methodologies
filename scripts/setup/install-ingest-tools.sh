@@ -8,6 +8,7 @@ trap 'rm -rf "$TMP"' EXIT
 JQ_VER=1.7.1
 YQ_VER=4.44.3
 PUP_VER=0.4.0
+PUP_TAG="v${PUP_VER}"
 
 sudo apt-get update -y
 sudo apt-get install -y curl unzip ca-certificates coreutils tar
@@ -27,16 +28,10 @@ fi
 sudo mv "${TMP}/yq_linux_amd64" "${BIN}/yq"
 sudo chmod +x "${BIN}/yq"
 
-# pup (pinned release; tolerate zip or tar.gz)
-PUP_ZIP="https://github.com/ericchiang/pup/releases/download/v${PUP_VER}/pup_${PUP_VER}_linux_amd64.zip"
-PUP_TGZ="https://github.com/ericchiang/pup/releases/download/v${PUP_VER}/pup_${PUP_VER}_linux_amd64.tar.gz"
-
-if curl -fsSL -o "${TMP}/pup.pkg" "${PUP_ZIP}"; then
-  unzip -q "${TMP}/pup.pkg" -d "${TMP}" || true
-else
-  curl -fsSL -o "${TMP}/pup.pkg" "${PUP_TGZ}"
-  tar -xzf "${TMP}/pup.pkg" -C "${TMP}"
-fi
+# pup (pinned release asset uses leading "v" in filename)
+PUP_ASSET="pup_${PUP_TAG}_linux_amd64.zip"
+curl -fsSL -o "${TMP}/${PUP_ASSET}" "https://github.com/ericchiang/pup/releases/download/${PUP_TAG}/${PUP_ASSET}"
+unzip -q "${TMP}/${PUP_ASSET}" -d "${TMP}"
 
 if [ -f "${TMP}/pup" ]; then
   SRC="${TMP}/pup"
