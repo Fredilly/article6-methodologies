@@ -3,8 +3,26 @@ set -euo pipefail
 
 # --- toggles ---
 DRY_RUN="${DRY_RUN:-0}"
-AUTO_COMMIT="${AUTO_COMMIT:-1}"
+AUTO_COMMIT="${AUTO_COMMIT:-0}"
 RUN_VALIDATE="${RUN_VALIDATE:-1}"
+PREFETCH_ONLY="${PREFETCH_ONLY:-0}"
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "${SCRIPT_DIR}/lib/net.sh"
+
+if [ "$PREFETCH_ONLY" = "1" ]; then
+  DRY_RUN=1
+  RUN_VALIDATE=0
+  AUTO_COMMIT=0
+fi
+
+if [ "$AUTO_COMMIT" = "1" ] && [ "${ALLOW_AUTO_COMMIT:-0}" != "1" ]; then
+  echo "[ingest] AUTO_COMMIT=1 requires ALLOW_AUTO_COMMIT=1 (set ALLOW_AUTO_COMMIT=1 to proceed)" >&2
+  exit 2
+fi
+
+INGEST_ASSET_ROOT="${INGEST_ASSET_ROOT:-$PWD/source-assets}"
+mkdir -p "$INGEST_ASSET_ROOT"
 
 need() { command -v "$1" >/dev/null || { echo "Missing: $1"; exit 1; }; }
 sha256() {
@@ -17,6 +35,86 @@ sha256() {
   fi
 }
 json_escape() { jq -Rs . <<<"${1}"; }
+
+hash_string() {
+  if command -v shasum >/dev/null 2>&1; then
+    printf '%s' "$1" | shasum -a 256 | awk '{print $1}'
+  elif command -v sha256sum >/dev/null 2>&1; then
+    printf '%s' "$1" | sha256sum | awk '{print $1}'
+  else
+    printf '%s' "$1" | openssl dgst -sha256 | sed 's/^.*= //'
+  fi
+}
+
+cache_path_for_url() {
+  local url="$1"
+  local key base ext dir
+  key="$(hash_string "$url")"
+  base="${url%%\?*}"
+  ext=".bin"
+  if [[ $base =~ \.([A-Za-z0-9]{1,5})$ ]]; then
+    local raw_ext="${BASH_REMATCH[1]}"
+    ext=".$(printf '%s' "$raw_ext" | tr '[:upper:]' '[:lower:]')"
+  fi
+  dir="${INGEST_ASSET_ROOT%/}/${key:0:2}/${key:2:2}"
+  printf '%s/%s%s' "$dir" "$key" "$ext"
+}
+
+ensure_cached_asset() {
+  local url="$1"
+  local cache_file lock tmp rc waited
+  cache_file="$(cache_path_for_url "$url")"
+  lock="${cache_file}.lock"
+  mkdir -p "$(dirname "$cache_file")"
+  waited=0
+  while ! mkdir "$lock" 2>/dev/null; do
+    sleep 0.2
+    waited=$((waited + 1))
+    if [ "$waited" -ge 1500 ]; then
+      echo "[cache] timeout acquiring lock for $url" >&2
+      return 120
+    fi
+  done
+
+  cleanup_lock() {
+    rm -rf "$lock"
+  }
+
+  if [ -s "$cache_file" ]; then
+    printf '%s\n' "$cache_file"
+    cleanup_lock
+    return 0
+  fi
+
+  if [ "${NO_NETWORK:-0}" = "1" ]; then
+    echo "[cache] missing cached asset for $url (NO_NETWORK=1)" >&2
+    cleanup_lock
+    return 112
+  fi
+
+  tmp="$(mktemp "${TMPDIR:-/tmp}/asset.XXXXXX")"
+  if fetch "$url" "$tmp"; then
+    mv "$tmp" "$cache_file"
+    printf '{"url":"%s","fetched_at":"%s"}\n' "$url" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "${cache_file}.meta"
+    printf '%s\n' "$cache_file"
+    rc=0
+  else
+    rm -f "$tmp"
+    rc=$?
+  fi
+
+  cleanup_lock
+  return "$rc"
+}
+
+copy_cached_asset() {
+  local url="$1"
+  local dest="$2"
+  local cached
+  cached="$(ensure_cached_asset "$url")" || return "$?"
+  mkdir -p "$(dirname "$dest")"
+  cp "$cached" "$dest"
+}
 
 # --- offline mode (no binaries, no network) ---
 if [[ "${OFFLINE:-0}" == "1" ]]; then
@@ -35,9 +133,27 @@ INGEST_FILE="${INGEST_FILE:-ingest.yml}"
 test -f "$INGEST_FILE" || { echo "No $INGEST_FILE"; exit 1; }
 
 method_count="$(yq '.methods | length' "$INGEST_FILE")"
+if ! [[ "$method_count" =~ ^[0-9]+$ ]]; then
+  echo "[ingest] unable to determine method count from $INGEST_FILE" >&2
+  exit 1
+fi
+
+if [ -n "${INGEST_METHOD_INDEX:-}" ]; then
+  if ! [[ "$INGEST_METHOD_INDEX" =~ ^[0-9]+$ ]] || [ "$INGEST_METHOD_INDEX" -lt 0 ] || [ "$INGEST_METHOD_INDEX" -ge "$method_count" ]; then
+    echo "[ingest] INGEST_METHOD_INDEX=$INGEST_METHOD_INDEX is out of range (0..$((method_count-1)))" >&2
+    exit 1
+  fi
+  method_indexes=("$INGEST_METHOD_INDEX")
+else
+  method_indexes=()
+  for idx in $(seq 0 $((method_count - 1))); do
+    method_indexes+=("$idx")
+  done
+fi
+
 echo "[ingest] methods: $method_count"
 
-for i in $(seq 0 $((method_count-1))); do
+for i in "${method_indexes[@]}"; do
   id="$(yq -r ".methods[$i].id" "$INGEST_FILE")"
   ver="$(yq -r ".methods[$i].version" "$INGEST_FILE")"
   sector="$(yq -r ".methods[$i].sector // \"\"" "$INGEST_FILE")"
@@ -65,12 +181,19 @@ for i in $(seq 0 $((method_count-1))); do
   rest_path="$(echo "$id" | tr '.' '/')"
   dest_dir="methodologies/${rest_path}/${ver}"
   tools_dir="tools/${org}/${method}/${ver}"
-  mkdir -p "$dest_dir" "$tools_dir"
+  if [ "$DRY_RUN" = "0" ]; then
+    mkdir -p "$dest_dir" "$tools_dir"
+  fi
 
   # fetch page html (for link parsing) unless we have direct pdf_url
   html_tmp="$(mktemp)"
   if [ -n "$page" ]; then
-    curl -fsSL "$page" -o "$html_tmp"
+    if ! page_cache="$(ensure_cached_asset "$page")"; then
+      echo "[error] failed to fetch source page for $id ($page)" >&2
+      rm -f "$html_tmp"
+      continue
+    fi
+    cp "$page_cache" "$html_tmp"
     python3 - "$html_tmp" <<'PY' || true
 import sys
 import unicodedata
@@ -80,6 +203,8 @@ path = Path(sys.argv[1])
 data = path.read_bytes().decode('utf-8', 'replace')
 path.write_text(unicodedata.normalize('NFC', data), encoding='utf-8')
 PY
+  else
+    : > "$html_tmp"
   fi
 
   # resolve main PDF
@@ -101,10 +226,24 @@ PY
          ;;
     esac
     echo "[pdf] $pdf_url"
-    [ "$DRY_RUN" = "1" ] || curl -fsSL "$pdf_url" -o "$pdf_path"
+    if [ "$DRY_RUN" = "1" ]; then
+      if ! ensure_cached_asset "$pdf_url" >/dev/null; then
+        echo "[error] cache miss for $pdf_url" >&2
+        rm -f "$html_tmp"
+        continue
+      fi
+    else
+      if ! copy_cached_asset "$pdf_url" "$pdf_path"; then
+        echo "[warn] $id: failed to download main PDF $pdf_url" >&2
+        : > "$pdf_path"
+      fi
+    fi
   else
     echo "[warn] $id: main PDF not found; creating placeholder"
-    [ "$DRY_RUN" = "1" ] || : > "$pdf_path"
+    if [ "$DRY_RUN" = "0" ]; then
+      mkdir -p "$tools_dir"
+      : > "$pdf_path"
+    fi
   fi
 
   # parse all links (text + href) → JSON
@@ -172,7 +311,13 @@ PY
       fname="$(echo "$t" | tr -cs '[:alnum:]_+.-' '-' | sed 's/^-*//; s/-*$//' ).pdf"
       out="$tools_dir/$fname"
       echo " - $t"
-      [ "$DRY_RUN" = "1" ] || curl -fsSL "$u" -o "$out"
+      if [ "$DRY_RUN" = "1" ]; then
+        if ! ensure_cached_asset "$u" >/dev/null; then
+          echo "[warn] cache miss for tool PDF $u" >&2
+        fi
+      else
+        copy_cached_asset "$u" "$out" || echo "[warn] failed to download tool PDF $u" >&2
+      fi
     done
   else
     echo "[tools] none matched after include/exclude filters"

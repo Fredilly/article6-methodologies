@@ -1,4 +1,5 @@
 node_modules/
+source-assets/
 outputs/*
 !outputs/mvp/
 outputs/mvp/*
