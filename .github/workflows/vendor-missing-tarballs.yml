@@ -6,7 +6,7 @@ on:
         description: 'Target branch to commit tarballs to'
         required: false
         type: string
-        default: ${{ github.ref_name }}
+        default: ''
   push:
     branches-ignore: ['bot/**']
     paths:
@@ -36,7 +36,7 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: true
-          ref: ${{ inputs.branch || github.ref }}
+          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.branch != '' && inputs.branch || github.ref }}
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '20.11.1'
@@ -67,5 +67,5 @@ jobs:
             echo "No new tarballs to commit"
           else
             git commit -m "chore(vendor): add missing npm tarballs for offline CI"
-            git push origin HEAD:${{ inputs.branch || github.ref_name }}
+            git push origin HEAD:${{ github.event_name == 'workflow_dispatch' && inputs.branch != '' && inputs.branch || github.ref_name }}
           fi
