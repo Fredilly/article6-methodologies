@@ -29,33 +29,8 @@ jobs:
       - name: Install npm deps
         run: npm ci
 
-      - name: Install CLI deps (jq, yq, pup)
-        run: |
-          set -euo pipefail
-          sudo apt-get update -y
-          sudo apt-get install -y jq curl unzip
-          tmp="$(mktemp -d)"
-          trap 'rm -rf "$tmp"' EXIT
-          YQ_VERSION="v4.44.3"
-          curl -fsSL "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64.tar.gz" -o "$tmp/yq.tgz"
-          tar -xzf "$tmp/yq.tgz" -C "$tmp"
-          sudo mv "$tmp/yq_linux_amd64" /usr/local/bin/yq
-          sudo chmod +x /usr/local/bin/yq
-          curl -sL https://api.github.com/repos/ericchiang/pup/releases/latest \
-            | jq -r '.assets[] | select(.name | test("linux_amd64.(zip|tar.gz)$")) | .browser_download_url' \
-            | head -n1 | xargs -I{} curl -sSL "{}" -o "$tmp/pup.pkg"
-          if file "$tmp/pup.pkg" | grep -q 'Zip archive data'; then
-            unzip -q "$tmp/pup.pkg" -d "$tmp"
-          else
-            tar -xzf "$tmp/pup.pkg" -C "$tmp"
-          fi
-          if [ -f "$tmp/pup" ]; then
-            sudo mv "$tmp/pup" /usr/local/bin/pup
-          else
-            sudo mv "$tmp"/pup_*/pup /usr/local/bin/pup
-          fi
-          sudo chmod +x /usr/local/bin/pup
-          pup --version || (echo "pup missing" >&2 && exit 1)
+      - name: Install ingest tools
+        run: scripts/setup/install-ingest-tools.sh
 
       - name: Run ingestion
         env:

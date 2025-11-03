@@ -7,12 +7,47 @@ need jq
 while IFS= read -r -d '' meta; do
   dir="$(dirname "$meta")"
   if [[ -f "$dir/sections.rich.json" ]]; then
-    jq '{sections: (.sections // []) | map({id, title, anchors: (.anchors // []), content: (.content // null)})}' \
-      "$dir/sections.rich.json" | jq -S . > "$dir/sections.json"
+    jq '
+      def pick_sections:
+        if type == "array" then .
+        elif type == "object" then (.sections // [])
+        else [] end;
+      def normalize_section:
+        {
+          id,
+          title
+        }
+        + {anchors: (if (.anchors? and (.anchors | type) == "array") then .anchors else [] end)}
+        + (if (.content? and (.content | type) == "string") then {content: .content} else {} end);
+      {sections: (pick_sections | map(normalize_section))}
+    ' "$dir/sections.rich.json" | jq -S . > "$dir/sections.json"
   fi
   if [[ -f "$dir/rules.rich.json" ]]; then
-    jq '{rules: (.rules // []) | map({id, title, clause: (.clause // null), requirement: (.requirement // null), scope: (.scope // null), sources: (.sources // [])})}' \
-      "$dir/rules.rich.json" | jq -S . > "$dir/rules.json"
+    jq '
+      def pick_rules:
+        if type == "array" then .
+        elif type == "object" then (.rules // [])
+        else [] end;
+      def normalize_rule:
+        {
+          id,
+          text: (
+            if (.summary? and (.summary | type) == "string" and (.summary | length) > 0) then .summary
+            elif (.text? and (.text | type) == "string" and (.text | length) > 0) then .text
+            elif (.logic? and (.logic | type) == "string") then .logic
+            else "TODO: populate lean summary"
+            end
+          )
+        }
+        + (if (.refs?.sections? and (.refs.sections | type) == "array" and (.refs.sections | length) > 0)
+            then {section_id: (.refs.sections[0])}
+            else {} end)
+        + (if (.tags? and (.tags | type) == "array") then {tags: .tags}
+           elif (.type? and (.type | type) == "string") then {tags: [.type]}
+           else {tags: []} end)
+        + (if (.sources? and (.sources | type) == "array") then {sources: .sources} else {} end);
+      {rules: (pick_rules | map(normalize_rule))}
+    ' "$dir/rules.rich.json" | jq -S . > "$dir/rules.json"
   fi
 done < <(find methodologies -type f -name META.json -print0)
 
