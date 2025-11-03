@@ -34,7 +34,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  NODE_VERSION: '20'
+  NODE_VERSION: '20.11.1'
   TMP_DIR: ./.tmp
   SCOPED: ./.tmp/ingest.scoped.yml
 
@@ -64,11 +64,13 @@ jobs:
     if: github.event_name == 'workflow_dispatch' || needs.maybe-slash.outputs.run == 'true'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        # actions/checkout@v4.2.2
         with:
           lfs: true
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        # actions/setup-node@v4.0.4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
@@ -79,29 +81,31 @@ jobs:
 
       - name: Install CLI dependencies
         run: |
-          set -euxo pipefail
-          sudo apt-get update
+          set -euo pipefail
+          sudo apt-get update -y
           sudo apt-get install -y jq curl unzip
+          tmp="$(mktemp -d)"
+          trap 'rm -rf "$tmp"' EXIT
           YQ_VERSION="v4.44.3"
-          curl -fsSL "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64.tar.gz" -o /tmp/yq.tgz
-          tar -xzf /tmp/yq.tgz -C /tmp
-          sudo mv /tmp/yq_linux_amd64 /usr/local/bin/yq
+          curl -fsSL "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64.tar.gz" -o "$tmp/yq.tgz"
+          tar -xzf "$tmp/yq.tgz" -C "$tmp"
+          sudo mv "$tmp/yq_linux_amd64" /usr/local/bin/yq
           sudo chmod +x /usr/local/bin/yq
-          rm -f /tmp/yq.tgz
-          PUP_VERSION="v0.4.0"
-          curl -fsSL "https://github.com/ericchiang/pup/releases/download/${PUP_VERSION}/pup_${PUP_VERSION#v}_linux_amd64.zip" -o /tmp/pup.zip
-          unzip -q /tmp/pup.zip -d /tmp
-          if [ -f /tmp/pup ]; then
-            sudo mv /tmp/pup /usr/local/bin/pup
+          curl -sL https://api.github.com/repos/ericchiang/pup/releases/latest \
+            | jq -r '.assets[] | select(.name | test("linux_amd64.(zip|tar.gz)$")) | .browser_download_url' \
+            | head -n1 | xargs -I{} curl -sSL "{}" -o "$tmp/pup.pkg"
+          if file "$tmp/pup.pkg" | grep -q 'Zip archive data'; then
+            unzip -q "$tmp/pup.pkg" -d "$tmp"
           else
-            sudo mv /tmp/pup_*/pup /usr/local/bin/pup
+            tar -xzf "$tmp/pup.pkg" -C "$tmp"
+          fi
+          if [ -f "$tmp/pup" ]; then
+            sudo mv "$tmp/pup" /usr/local/bin/pup
+          else
+            sudo mv "$tmp"/pup_*/pup /usr/local/bin/pup
           fi
           sudo chmod +x /usr/local/bin/pup
-          rm -f /tmp/pup.zip
-          rm -rf /tmp/pup /tmp/pup_*
-          yq --version
-          pup --version
-          jq --version
+          pup --version || (echo "pup missing" >&2 && exit 1)
 
       - name: Determine scope & mode
         id: meta
@@ -207,7 +211,8 @@ MSG
           gh pr create --fill --title "Ingest: ${BR}" --label ingest
 
       - name: Upload logs (artifact)
-        uses: actions/upload-artifact@v4
+        # actions/upload-artifact@v4.3.1
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: ingest-logs
           path: ${{ env.TMP_DIR }}
