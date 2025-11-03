@@ -1,7 +1,7 @@
 {
   "rules": [
     {
-      "id": "R-1-0001",
+      "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0001",
       "section_id": "S-1",
       "tags": [
         "eligibility"
@@ -9,16 +9,15 @@
       "text": "Projects reforest lands without forest cover since 1989 and comply with national forest definitions."
     },
     {
-      "id": "R-1-0002",
+      "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0002",
       "section_id": "S-2",
       "tags": [
-        "calc",
         "baseline"
       ],
       "text": "Baseline biomass estimated using IPCC defaults or site-specific sampling following Tool 02."
     },
     {
-      "id": "R-1-0003",
+      "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0003",
       "section_id": "S-3",
       "tags": [
         "equation"
@@ -26,7 +25,7 @@
       "text": "Net anthropogenic removals equal project removals minus baseline emissions and leakage."
     },
     {
-      "id": "R-1-0004",
+      "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0004",
       "section_id": "S-4",
       "tags": [
         "leakage"
@@ -34,7 +33,7 @@
       "text": "Activity shifting leakage quantified annually using Tool 14 and deducted from net removals."
     },
     {
-      "id": "R-1-0005",
+      "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0005",
       "section_id": "S-5",
       "tags": [
         "monitoring"
@@ -42,7 +41,7 @@
       "text": "Non-permanence risks addressed through buffer contributions per Tool 15 guidance."
     },
     {
-      "id": "R-1-0006",
+      "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0006",
       "section_id": "S-5",
       "tags": [
         "monitoring"
@@ -50,7 +49,7 @@
       "text": "Field biomass measurements conducted at least every five years using permanent plots."
     },
     {
-      "id": "R-1-0007",
+      "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0007",
       "section_id": "S-5",
       "tags": [
         "uncertainty"
@@ -58,7 +57,7 @@
       "text": "Sampling uncertainty above 10% addressed with Tool 12 conservative adjustments."
     },
     {
-      "id": "R-1-0008",
+      "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0008",
       "section_id": "S-5",
       "tags": [
         "reporting"

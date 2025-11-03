@@ -1,0 +1,24 @@
+{
+  "audit": {
+    "created_at": "2025-11-03T07:02:05Z",
+    "created_by": "ingest.sh"
+  },
+  "audit_hashes": {
+    "rules_json_sha256": "",
+    "sections_json_sha256": ""
+  },
+  "id": "UNFCCC.Agriculture.AMS-III.D",
+  "references": {
+    "tools": [
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/D/v21-0/source.pdf",
+        "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c"
+      }
+    ]
+  },
+  "sector": "Agriculture",
+  "source_page": "https://cdm.unfccc.int/methodologies/DB/H9DVSB24O7GEZQYLYNWUX23YS6G4RC",
+  "status": "draft",
+  "version": "v21-0"
+}
