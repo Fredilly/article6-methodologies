@@ -16,12 +16,14 @@ jobs:
     timeout-minutes: 60
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        # actions/checkout@v4.2.2
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        # actions/setup-node@v4.0.4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
-          node-version: '20.19.3'
+          node-version: '20.11.1'
           cache: 'npm'
 
       - name: Install npm deps
@@ -49,7 +51,8 @@ jobs:
           git commit -m "CI: ingest ${{ github.event.inputs.ingest_file }} [skip ci]" || echo "Nothing to commit"
           git push || true
       - name: Upload logs
-        uses: actions/upload-artifact@v4
+        # actions/upload-artifact@v4.3.1
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: ingest-logs
           path: ingest.log
