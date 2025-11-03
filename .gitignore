@@ -1,4 +1,5 @@
 node_modules/
+local-tools/
 source-assets/
 outputs/*
 !outputs/mvp/
