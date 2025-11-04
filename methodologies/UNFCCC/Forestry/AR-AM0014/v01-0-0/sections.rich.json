@@ -1,0 +1,42 @@
+[
+  {
+    "id": "S-1",
+    "provenance": {
+      "source_hash": "8505376f7987ae68159db4c570a3daab136432a05112e406c46aa83653d7040a",
+      "source_ref": "UNFCCC/AR-AM0014@v01-0-0"
+    },
+    "title": "Scope and applicability"
+  },
+  {
+    "id": "S-2",
+    "provenance": {
+      "source_hash": "8505376f7987ae68159db4c570a3daab136432a05112e406c46aa83653d7040a",
+      "source_ref": "UNFCCC/AR-AM0014@v01-0-0"
+    },
+    "title": "Baseline scenario and leakage considerations"
+  },
+  {
+    "id": "S-3",
+    "provenance": {
+      "source_hash": "8505376f7987ae68159db4c570a3daab136432a05112e406c46aa83653d7040a",
+      "source_ref": "UNFCCC/AR-AM0014@v01-0-0"
+    },
+    "title": "Project scenario and carbon accounting"
+  },
+  {
+    "id": "S-4",
+    "provenance": {
+      "source_hash": "8505376f7987ae68159db4c570a3daab136432a05112e406c46aa83653d7040a",
+      "source_ref": "UNFCCC/AR-AM0014@v01-0-0"
+    },
+    "title": "Leakage assessment and mitigation"
+  },
+  {
+    "id": "S-5",
+    "provenance": {
+      "source_hash": "8505376f7987ae68159db4c570a3daab136432a05112e406c46aa83653d7040a",
+      "source_ref": "UNFCCC/AR-AM0014@v01-0-0"
+    },
+    "title": "Monitoring, QA/QC, and reporting"
+  }
+]

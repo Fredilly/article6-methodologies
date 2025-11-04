@@ -21,6 +21,24 @@
     "standard": "UNFCCC",
     "program": "Forestry",
     "code": "AR-AM0014",
+    "version": "02.0.0",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0",
+    "stage": "staging",
+    "latest": false
+  },
+  {
+    "standard": "UNFCCC",
+    "program": "Forestry",
+    "code": "AR-AM0014",
+    "version": "01.0.0",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0",
+    "stage": "staging",
+    "latest": false
+  },
+  {
+    "standard": "UNFCCC",
+    "program": "Forestry",
+    "code": "AR-AM0014",
     "version": "03.0",
     "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0",
     "stage": "staging",
