@@ -1,0 +1,37 @@
+{
+  "audit_hashes": {
+    "rules_json_sha256": "41fa1a2bd574636a08da21c8a0e9dfc226972a3b2ed7beb4d282fcb1a99ff909",
+    "sections_json_sha256": "4b9f1e1c6c2e57a48e9119a63c0c0c5b7cc0bf87ee041e679acadd0bd3e76b60"
+  },
+  "provenance": {
+    "author": null,
+    "date": null,
+    "source_pdfs": [
+      {
+        "doc": "UNFCCC/AR-AM0014@v02-0-0",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/AR-AM0014/v02-0-0/EB70_repan34_AM0014_ver02.0.0.pdf",
+        "sha256": "d4656f9d29fe9afbe35e2fda7dfadf0e5b80220b56319980c18147c8b8dcb955",
+        "size": 180228,
+        "url": null
+      }
+    ]
+  },
+  "references": {
+    "tools": [
+      {
+        "doc": "UNFCCC/AR-AM0014@v02-0-0",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/AR-AM0014/v02-0-0/EB70_repan34_AM0014_ver02.0.0.pdf",
+        "sha256": "d4656f9d29fe9afbe35e2fda7dfadf0e5b80220b56319980c18147c8b8dcb955",
+        "size": 180228,
+        "url": null
+      }
+    ]
+  },
+  "stage": "staging",
+  "automation": {
+    "scripts_manifest_sha256": "602e9c1619789e067fff405dddf9cf493ad2620fcbfc8b747607a1f4b4a47625",
+    "repo_commit": "e5fcdb1d30308fba0e6479d54b6ffa8ed593fa4a"
+  }
+}
