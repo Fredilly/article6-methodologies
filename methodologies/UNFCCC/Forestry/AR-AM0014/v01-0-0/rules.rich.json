@@ -103,7 +103,7 @@
   },
   {
     "id": "UNFCCC.Forestry.AR-AM0014.v01-0-0.R-1-0006",
-    "logic": "Permanent sample plots measured at \u22645-year intervals with QA/QC re-measurement requirements.",
+    "logic": "Permanent sample plots measured at ≤5-year intervals with QA/QC re-measurement requirements.",
     "notes": "Calibration records maintained for all instruments.",
     "refs": {
       "sections": [
@@ -137,7 +137,7 @@
     "summary": "Sampling uncertainty above 10% addressed with Tool 12 conservative adjustments.",
     "type": "uncertainty",
     "when": [
-      "Confidence interval wider than \u00b110%.",
+      "Confidence interval wider than ±10%.",
       "DOE reviews uncertainty calculation worksheets."
     ]
   },

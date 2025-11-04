@@ -3,6 +3,10 @@
     "rules_json_sha256": "41fa1a2bd574636a08da21c8a0e9dfc226972a3b2ed7beb4d282fcb1a99ff909",
     "sections_json_sha256": "4b9f1e1c6c2e57a48e9119a63c0c0c5b7cc0bf87ee041e679acadd0bd3e76b60"
   },
+  "automation": {
+    "repo_commit": "e5fcdb1d30308fba0e6479d54b6ffa8ed593fa4a",
+    "scripts_manifest_sha256": "602e9c1619789e067fff405dddf9cf493ad2620fcbfc8b747607a1f4b4a47625"
+  },
   "provenance": {
     "author": null,
     "date": null,
@@ -29,9 +33,5 @@
       }
     ]
   },
-  "stage": "staging",
-  "automation": {
-    "scripts_manifest_sha256": "602e9c1619789e067fff405dddf9cf493ad2620fcbfc8b747607a1f4b4a47625",
-    "repo_commit": "e5fcdb1d30308fba0e6479d54b6ffa8ed593fa4a"
-  }
+  "stage": "staging"
 }
