@@ -1,0 +1,64 @@
+{
+  "audit": {
+    "created_at": "2025-11-06T10:56:51Z",
+    "created_by": "ingest.sh"
+  },
+  "audit_hashes": {
+    "rules_json_sha256": "3d39076232e1fbf8c2d1d7140b1a8df3680db0c62e852fae1453005768d5c52a",
+    "sections_json_sha256": "9307319bd8a076d3e7e2a838229593aa1281641207a945748bb303b6681f0189"
+  },
+  "automation": {
+    "repo_commit": "881697d5a0d64c689fb89f1a344b4f4230a12494",
+    "scripts_manifest_sha256": "f33f192b02af00b0f83ff4e5294d51941d4294f43d7767c82068e127d77c83a1"
+  },
+  "id": "UNFCCC.Agriculture.AMS-III.D",
+  "provenance": {
+    "author": "Fred Egbuedike",
+    "date": "2025-11-06T10:21:57.000Z",
+    "source_pdfs": [
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/AMS-III.D/v21-0/source.pdf",
+        "sha256": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4"
+      }
+    ]
+  },
+  "references": {
+    "tools": [
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/AMS-III.D/v21-0/Baseline-project-and-or-leakage-emissions-from-electricity-consumption-and-monitoring-of-electricity-generation.pdf",
+        "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51",
+        "size": 572432
+      },
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/AMS-III.D/v21-0/Project-and-leakage-emissions-from-anaerobic-digesters.pdf",
+        "sha256": "0788effccd28e867dfee522e5c413ca4d47240c75acce3a05d6d0cf759a3d1d0",
+        "size": 325737
+      },
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/AMS-III.D/v21-0/Project-emissions-from-flaring.pdf",
+        "sha256": "0a806611660fab64122335bd85c8c20974c8932b3e063592692b7d2230162907",
+        "size": 426246
+      },
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/AMS-III.D/v21-0/Tool-to-calculate-project-or-leakage-CO2-emissions-from-fossil-fuel-combustion.pdf",
+        "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02",
+        "size": 447750
+      },
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/AMS-III.D/v21-0/source.pdf",
+        "sha256": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4",
+        "size": 853732
+      }
+    ]
+  },
+  "sector": "Agriculture",
+  "source_page": "https://cdm.unfccc.int/methodologies/DB/H9DVSB24O7GEZQYLYNWUX23YS6G4RC",
+  "status": "draft",
+  "version": "v21-0"
+}

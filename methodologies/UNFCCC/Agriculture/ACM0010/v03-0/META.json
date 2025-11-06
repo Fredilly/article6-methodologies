@@ -1,0 +1,58 @@
+{
+  "audit": {
+    "created_at": "2025-11-06T10:56:41Z",
+    "created_by": "ingest.sh"
+  },
+  "audit_hashes": {
+    "rules_json_sha256": "0a3b5ebc98728850fed9527e41ba130177b6eef00023e66cf92cb67b81e20956",
+    "sections_json_sha256": "c794ca776cdd988c133821d2d62dcbe509e3f86a6ad37217d3c8695f5dc0471a"
+  },
+  "automation": {
+    "repo_commit": "881697d5a0d64c689fb89f1a344b4f4230a12494",
+    "scripts_manifest_sha256": "f33f192b02af00b0f83ff4e5294d51941d4294f43d7767c82068e127d77c83a1"
+  },
+  "id": "UNFCCC.Agriculture.ACM0010",
+  "provenance": {
+    "author": "Fred Egbuedike",
+    "date": "2025-11-06T10:21:57.000Z",
+    "source_pdfs": [
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/ACM0010/v03-0/source.pdf",
+        "sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9"
+      }
+    ]
+  },
+  "references": {
+    "tools": [
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/ACM0010/v03-0/Tool-to-calculate-baseline-project-and-or-leakage-emissions-from-electricity-consumption.pdf",
+        "sha256": "e3f3238248e0d68d7da0a98eca93e411b3b44f7e5c44be9cbd8b62693b8b7107",
+        "size": 550422
+      },
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/ACM0010/v03-0/Tool-to-calculate-project-or-leakage-CO2-emissions-from-fossil-fuel-combustion.pdf",
+        "sha256": "57868a381913568599c98d331b9ff339115c38cc1070aeec43eca0d11823185a",
+        "size": 115214
+      },
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/ACM0010/v03-0/Tool-to-determine-project-emissions-from-flaring-gases-containing-methane.pdf",
+        "sha256": "6888d77e76c6b39e5de3097cc0cc2d493d6b1bd13814c985f45c20000283413d",
+        "size": 511852
+      },
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/ACM0010/v03-0/source.pdf",
+        "sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+        "size": 450287
+      }
+    ]
+  },
+  "sector": "Agriculture",
+  "source_page": "https://cdm.unfccc.int/methodologies/DB/66DCX9DCDE8UFYYIHJEY5NRPAA8WNE/view.html",
+  "status": "draft",
+  "version": "v03-0"
+}

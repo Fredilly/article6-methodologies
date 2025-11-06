@@ -1,0 +1,1082 @@
+[
+  {
+    "content": "1/38\nApproved consolidated baseline methodology ACM0010\n“Consolidated baseline methodology for GHG emission reductions from manure management\nsystems”\nSource",
+    "id": "S-1",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Document"
+  },
+  {
+    "content": "• \tAM0006: “GHG emission reductions from manure management systems”, based on the CDM-PDD\n“Methane capture and combustion of swine manure treatment for Peralillo” whose baseline study,\nmonitoring and verification plan and project design document were prepared by Agricola Super\nLimitada. For more information regarding the proposal and its consideration by the Executive Board\nplease refer to case NM0022: “Methane capture and combustion of swine manure treatment for\nPeralillo” on http://cdm.unfccc.int/methodologies/approved.\n• \tAM0016: “Greenhouse gas mitigation from improved Animal Waste Management Systems in\nconfined animal feeding operations”, whose baseline study, monitoring and verification plan and\nproject design document were prepared by AgCert Canada Co. on behalf of Granja Becker, L.B.Pork,\nInc. and AgCert Canada Co. For more information regarding the proposal and its consideration by the\nExecutive Board please refer to case NM0034-rev 2: “Granja Becker GHG Mitigation Project” on\nhttp://cdm.unfccc.int/methodologies/approved.\nFor more information regarding the proposals and their consideration by the Executive Board please refer",
+    "id": "S-2",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "This consolidated baseline methodology is based on elements from the following methodologies:"
+  },
+  {
+    "content": "• \tCase NM0022: “Methane capture and combustion of swine manure treatment for Peralillo”; and\n• \tCase NM0034-rev.2: “Granja Becker GHG Mitigation Project”\non http://cdm.unfccc.int/goto/MPappmeth.",
+    "id": "S-3",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "to:"
+  },
+  {
+    "content": "• \t“Tool to determine project emissions from flaring gases containing Methane”.\n• \t“Tool to calculate project emissions from electricity consumption”.\n• \t“Tool to calculate project or leakage CO2 emissions from fossil fuel combustion”\nFor more information on the proposals and their consideration by the Executive Board as well as on\napproved methodological tools please refer to: http://cdm.unfccc.int/goto/MPappmeth.\nSelected approach from paragraph 48 of the CDM modalities and procedures\n“Emissions from a technology that represents an economically attractive course of action, taking into\naccount barriers to investment”",
+    "id": "S-4",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "The methodology also refers to the latest version of the following tools1 :"
+  },
+  {
+    "content": "This methodology is applicable generally to manure management on livestock farms where the existing\nanaerobic manure treatment system, within the project boundary, is replaced by one or a combination of\nmore than one animal waste management systems (AWMSs) that result in less GHG emissions.",
+    "id": "S-5",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Applicability"
+  },
+  {
+    "content": "-- 1 of 38 --\n\n2/38\n• \tFarms where livestock populations, comprising of cattle, buffalo, swine, sheep, goats, and/or poultry,\nis managed under confined conditions.\n• \tFarms where manure is not discharged into natural water resources (e.g. rivers or estuaries).\n• \tIn case of anaerobic lagoons treatments systems, the depth of the lagoons used for manure\nmanagement under the baseline scenario should be at least 1m2 .\n• \tThe annual average temperature in the site where the anaerobic manure treatment facility in the\nbaseline existed is higher than 5°C.\n• \tIn the baseline case, the minimum retention time of manure waste in the anaerobic treatment system is\ngreater than 1 month.\n• \tThe AWMS/process in the project case should ensure that no leakage of manure waste into ground\nwater takes place, e.g., the lagoon should have a non-permeable layer at the lagoon bottom.\nThis baseline methodology shall be used in conjunction with the approved monitoring methodology\nACM0010 (Consolidated baseline methodology for GHG emission reductions from manure management\nsystems).\nIdentification of the baseline scenario",
+    "id": "S-6",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "1 Please refer to http://cdm.unfccc.int/goto/MPappmeth."
+  },
+  {
+    "content": "Step I: \tDefine alternative scenarios to the proposed CDM project activity.\nStep II: \tBarriers analysis.\nStep III: \tInvestment analysis.\nStep IV: \tBaseline revision at renewal of crediting period.\nStep 1: Define alternative scenarios to the proposed CDM project activity",
+    "id": "S-7",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "The methodology determines the baseline scenario through the following steps:"
+  },
+  {
+    "content": "participants or to other potential project developers3 for managing the manure. These alternative scenarios",
+    "id": "S-8",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "1. Identify realistic and credible alternative scenarios that are available either to the project"
+  },
+  {
+    "content": "• \tThe proposed project activity not being registered as a CDM project activity.\n• \tAll other plausible and credible alternatives to the project activity scenario, including the common\npractices in the relevant sector. In doing so, the complete set of possible manure management\nsystems listed in the 2006 IPCC Guidelines for National Greenhouse Gas Inventories (Chapter 10,\nTable 10.17) should be taken into account. In drawing up a list of possible scenarios, possible\ncombinations of different Animal Waste Management Systems (AWMS) should be taken into\naccount.",
+    "id": "S-9",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "should include:"
+  },
+  {
+    "content": "anaerobic bottom layer and that algal oxygen production can be ruled out.",
+    "id": "S-10",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "2 In particular, loading in the waste water streams has to be high enough to assure that the lagoon develops an"
+  },
+  {
+    "content": "producer investing in wind energy or for a sugar factory owner investing in a co-generation, but may be an\nalternative for a public utility. As a result, the proposed project may be able to avoid emissions that would have\noccurred from the coal-fired power station that would have been built (or built earlier) by the utility in the absence of\nthe CDM. Therefore, there may be cases where the baseline scenario includes an alternative that is not accessible to\nthe project participant. However, there are also cases where all the alternatives are accessible to the project\nparticipant: for instance, this may be the case for projects flaring landfill gas, improving boilers, etc.\n\n-- 2 of 38 --\n\n3/38\n• \tIf applicable, continuation of the current situation (no project activity or other alternatives\nundertaken).\nEliminate alternatives that are not in compliance with all applicable legal and regulatory requirements.\nApply Sub-step 1b of the latest version of the “Tool for demonstration assessment and of additionality”.\nFor the purpose of identifying alternative scenarios that are common practice, provide an analysis of other\nmanure management practices implemented previously or currently underway. Projects are considered\nsimilar if they are in the same country/region, are of a similar scale, and take place in a comparable\nenvironment with respect to regulatory framework, investment climate, access to technology, access to\nfinancing, etc. Other CDM project activities are not to be included in this analysis. Provide documented\nevidence. On the basis of that analysis, identify and include all alternative scenarios that are common\npractice.\nStep 2: Barrier analysis\nEstablish a complete list of barriers that would prevent alternative scenarios to occur in the absence of the",
+    "id": "S-11",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "3 For example, a coal-fired power station or hydropower may not be an alternative for an independent power"
+  },
+  {
+    "content": "- \tDebt funding is not available for this type of innovative activities.\n- \tNeither access to international capital markets due to real or perceived risks associated\nwith domestic or foreign direct investment in the country where the project activity is to\nbe implemented.",
+    "id": "S-12",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Investment barriers, inter alia:"
+  },
+  {
+    "content": "- \tSkilled and/or properly trained labour to operate and maintain the technology is not\navailable and no education/training institution in the host country provides the needed\nskill, leading to equipment disrepair and malfunctioning.\n- \tLack of infrastructure for implementation of the technology.",
+    "id": "S-13",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Technological barriers, inter alia:"
+  },
+  {
+    "content": "- \tThe alternative is the “first of its kind”: No alternative of this type is currently operational\nin the host country or region.\nSince the proposed project activity not being registered as a CDM project activity shall be one of the\nconsidered alternatives, any barrier that may prevent the project activity to occur shall be included in that\nlist.\nProvide transparent and documented evidence, and offer conservative interpretations of this documented\nevidence, as to how it demonstrates the existence and significance of the identified barriers. Anecdotal\nevidence can be included, but alone is not sufficient proof of barriers. The type of evidence to be provided",
+    "id": "S-14",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Barriers due to prevailing practice, inter alia:"
+  },
+  {
+    "content": "(a) \tRelevant legislation, regulatory information or industry norms;\n(b) \tRelevant (sectoral) studies or surveys (e.g. market surveys, technology studies, etc)\nundertaken by universities, research institutions, industry associations, companies,\nbilateral/multilateral institutions, etc;\n(c) \tRelevant statistical data from national or international statistics;\n(d) \tDocumentation of relevant market data (e.g. market prices, tariffs, rules);\n\n-- 3 of 38 --\n\n4/38\n(e) \tWritten documentation from the company or institution developing or implementing the",
+    "id": "S-15",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "may include:"
+  },
+  {
+    "content": "meetings, correspondence, feasibility studies, financial or budgetary information, etc;\n(f) \tDocuments prepared by the project developer, contractors or project partners in the\ncontext of the proposed project activity or similar previous project implementations;\n(g) \tWritten documentation of independent expert judgments from industry, educational\ninstitutions (e.g. universities, technical schools, training centers), industry associations and\nothers.\nAssess for all barriers identified which scenario alternatives would be prohibited from being implemented\nby the barrier and eliminate those alternatives from further consideration.\nIf there is only one scenario alternative that is not prevented by any barrier, and\ni. \tIf this alternative is not the proposed project activity not being registered as a CDM project activity,\nthen this scenario alternative is the most plausible baseline scenario.\nii. \tIf this alternative is the proposed project activity not being registered as a CDM project activity,\nthen the project activity is the most plausible baseline scenario.\niii. \tIf there are still several baseline scenario alternatives remaining, either go to Step III (investment\nanalysis) or choose the alternative with the lowest emissions (i.e. the most conservative) as the most\nplausible baseline scenario.\nStep 3: Investment analysis\nUndertake investment analysis of all the alternatives that do not face any barriers, as identified in Step II.\nFor each alternative, all costs and economic benefits attributable to the waste management scenario should\nbe illustrated in a transparent and complete manner, as shown in Table 1 below.\nTable 1: Calculation of NPV and IRR\nCOSTS AND BENEFITS \tYear 1 \tYear 2 \tYear n \tYear n+1\nEquipment costs (specify the equipment needed)\nInstallation costs\nMaintenance costs\nOther costs\n(e.g. operation, consultancy, engineering, etc.)\nRevenues from the sale of electricity or other\nproject related products, when applicable",
+    "id": "S-16",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "CDM project activity or the CDM project developer, such as minutes from Board"
+  },
+  {
+    "content": "NPV (US$) (specify discount rate)",
+    "id": "S-17",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "TOTAL"
+  },
+  {
+    "content": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV)\nshould be calculated. The calculation of the IRR must include inter alia investment costs, operation and\nmaintenance costs, as well as any other appropriate costs (engineering, consultancy, etc.). Similarly, take\ninto consideration all revenues generated by each manure management scenario, including revenue from\n\n-- 4 of 38 --\n\n5/38\nthe sale of electricity and cost savings due to avoided electricity purchases and other sources of income\nrelated to the implementation of the project, except revenues from the sale of CERs.\nThe IRR for all alternative scenarios should be calculated in a conservative manner. To ensure this,\nassumptions and parameters for the proposed project activity, if still under consideration, should be chosen\nin a conservative way such that they tend to lead to a higher IRR and NPV. For all other scenarios\nconsidered, assumptions and parameters should be chosen in a way such that they tend to lead to a lower\nIRR and NPV. This conservative choice of parameters and assumptions should be ensured by obtaining\nexpert opinions and should be evaluated by the DOE as part of the validation of the project activity.\nIf the IRR cannot be calculated due to the existence of only negative flows in the financial analysis, the\ncomparison should be based on the NPV, stating explicitly the discount rate used.\nThe baseline scenario is identified as the economically most attractive course of action i.e., alternative\nscenario with highest IRR or NPV, where the IRR cannot be calculated\nStep 4: Baseline revision\nRenewal of crediting period: The project participants, at the renewal of each credit period, will undertake\nthe relevance of baseline scenario identified above taking into account change in the relevant national\nand/or sectoral regulations between two crediting periods as well as any increase in the animal stock above\nthe pre-project animal stock. This assessment will be undertaken by the verifying DOE.\nAdditionality\nIf the baseline determination in this methodology (see section \"Identification of the baseline scenario\"\nabove) demonstrates that the baseline is different from the proposed project activity not undertaken as a",
+    "id": "S-18",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "IRR (%)"
+  },
+  {
+    "content": "-- 5 of 38 --\n\n6/38",
+    "id": "S-19",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "CDM project activity it may be concluded that the project is additional."
+  },
+  {
+    "content": "Loading",
+    "id": "S-20",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "PROJECT BOUNDARY"
+  },
+  {
+    "content": "BARNS \tCombustion\nFlare;\nHeat and/or\nelectricity\nEffluent Usage or Disposal\nPower/ heat Source\nUser\nAWMS (more than one\ntechnology/process can\nreplace baseline AWMS)\nFigure 1: Project activity boundary\nSource \tGas \tJustification / Explanation\nCH4 \tIncluded \tThe major source of emissions in the baseline\nN2 O \tIncluded\nDirect\nemissions\nfrom the\nwaste\ntreatment\nprocesses.\nCO2 \tExcluded \tCO2 emissions from the decomposition of organic waste\nare not accounted.\nCO2 \tIncluded \tElectricity may be consumed from the grid or generated\nonsite in the baseline scenario.\nCH4 \tExcluded \tExcluded for simplification. This is conservative.\nEmissions\nfrom\nelectricity\nconsumpti\non /\ngeneration\nN2 O \tExcluded \tExcluded for simplification. This is conservative.\nCO2 \tIncluded \tIf thermal energy generation is included in the project\nactivity\nCH4 \tExcluded \tExcluded for simplification. This is conservative.",
+    "id": "S-21",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "ANIMAL"
+  },
+  {
+    "content": "Emissions\nfrom\nthermal\nenergy\ngeneration\nN2 O \tExcluded \tExcluded for simplification. This is conservative.\n\n-- 6 of 38 --\n\n7/38\nCO2 \tIncluded \tMay be an important emission source\nCH4 \tExcluded \tExcluded for simplification. This emission source is\nassumed to be very small.\nEmissions\nfrom\nthermal\nenergy\ngeneration N2 O \tExcluded \tExcluded for simplification. This emission source is\nassumed to be very small.\nCO2 \tIncluded \tMay be an important emission source. If electricity is\ngenerated from collected biogas, these emissions are not\naccounted for.\nCH4 \tExcluded \tExcluded for simplification. This emission source is\nassumed to be very small.\nEmissions\nfrom on-\nsite\nelectricity\nuse N2 O \tExcluded \tExcluded for simplification. This emission source is\nassumed to be very small.\nN2 O \tIncluded",
+    "id": "S-22",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Baseline"
+  },
+  {
+    "content": "Excluded \tCO2 emissions from the decomposition of organic waste\nare not accounted.\nProject Activity\nDirect\nemissions\nfrom the\nwaste\ntreatment\nprocesses. CH4 \tIncluded\nThe emission from uncombusted methane, physical\nleakage, and minor CH4 emissions from aerobic\ntreatment.\nThe project proponents will provide a clear diagrammatic representation of the project scenario with all the\ntreatments steps adopted in treating the manure waste as well as its final disposal in the CDM-PDD. The\ndiagrammatic representation will also indicate the fraction of volatile solids degraded within the project\nboundary in pre-project situation before disposal. This shall include the final disposal of methane, if any\ncaptured, and also the auxiliary energy used to run project treatments steps.\nThe precise location of the farm(s) where the project activity takes place shall be identified in the CDM-\nPDD (e.g., co-ordinates of farm (s) using global positioning system).\nBaseline Emissions\nThe baseline is the AWMSs identified through the baseline selection procedure.",
+    "id": "S-23",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "CO2"
+  },
+  {
+    "content": "y\theat\telec\ty\tO\tN\ty\tCH\ty \tBE\tBE\tBE\tBE \t,\t/\t,\t2\t,4 \t+\t+\t= \t(1)\nBE y \tBaseline emissions in year y, in tCO 2 e/year.\nBE CH4,y \tBaseline methane emissions in year y, in tCO 2 e/year.\nBE N2O,y \tBaseline N2 O emissions in year y, in tCO2 e/year.\nBE elec/heat,y \tBaseline CO2 emissions from electricity and/or heat used in the baseline, in tCO2e/year.\nSource \tGas \tJustification / Explanation\n\n-- 7 of 38 --\n\n8/38\n(i) Methane emissions\nManure management system in the baseline could be based on different treatment systems and on one or",
+    "id": "S-24",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Baseline emissions are:"
+  },
+  {
+    "content": "j\tBl\ty\tLT\tLT\tLT\tj",
+    "id": "S-25",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "more stages. Therefore:"
+  },
+  {
+    "content": ",",
+    "id": "S-26",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "CH CH y CH MS VS N B MCF D GWP BE , , ,0"
+  },
+  {
+    "content": "BE CH4,y \tThe annual baseline methane emissions in t CO2e/y\nGWP CH4 \tGlobal Warming Potential (GWP) of CH4 .\nDCH4 \tCH4 density (0.00067 t/m3 at room temperature (20 ºC) and 1 atm pressure).\nMCF j \tAnnual methane conversion factor (MCF) for the baseline AWMS j from IPCC 2006\ntable 10.17, chapter 10, volume 4.\nB 0,LT \tMaximum methane producing potential of the volatile solid generated, in\nm3 CH4 /kg_dm, by animal type LT.\nNLT \tAnnual Average number of animals of type LT for the year y, expressed in numbers.\nVS LT,y \tAnnual volatile solid for livestock LT entering all AWMS [on a dry matter weight basis\n(kg-dm/animal/year), as estimated below.\nMS%Bl, j \tFraction of manure handled in system j\nLT \tAll types of livestock",
+    "id": "S-27",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "4 4 ,4 % * * * * * ∑ ⋅ = (2)"
+  },
+  {
+    "content": "value with ndy (number of days in year y).",
+    "id": "S-28",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "1. Using published country specific data. If the data is expressed in kg dm per day, multiply the"
+  },
+  {
+    "content": "( \t) \ty",
+    "id": "S-29",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "2. Estimation of VS based on dietary intake of livestock"
+  },
+  {
+    "content": "LT\ty\tLT \tnd",
+    "id": "S-30",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "LT"
+  },
+  {
+    "content": "*\t*\n100",
+    "id": "S-31",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "GE VS *"
+  },
+  {
+    "content": "\n\n\n \t−\n\n +\t\n\n −\t= \t(3)\nVS LT,y \tAnnual volatile solid excretions on a dry matter weight basis (kg-dm/year)\nGE LT \tDaily average gross energy intake in MJ/day\nDE LT \tDigestible energy of the feed in percent (IPCC 2006 defaults available)\nUE*GE LT \tUrinary energy expressed as fraction of GE. Typically 0.04GE can be considered\nurinary energy excretion by most ruminants (reduce to 0.02 for ruminants fed with\n85% or more grain in the diet or for swine). Use country-specific values where\navailable\nASH \tAsh content of manure calculated as a fraction of the dry matter feed intake. Use\ncountry-specific values where available.\nEDLT \tEnergy density of the feed in MJ/kg (IPCC notes the energy density of feed, ED, is\ntypically 18.45 MJ/kg DM, which is relatively constant across a wide variety of grain-\nbased feeds.) fed to livestock type LT. The project proponent will record the\n\n-- 8 of 38 --\n\n9/38\ncomposition of the feed to enable the DOE to verify the energy density of the feed.\nnd y \tNumber of days in year y where the treatment plant was operational.",
+    "id": "S-32",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "1 * , "
+  },
+  {
+    "content": "y\tdefault\ndefault\nsite\ny\tLT \tnd\tVS",
+    "id": "S-33",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "in equation below:"
+  },
+  {
+    "content": "\n\n\n\n\n=\t, \t(4)\nVS LT,y \tAdjusted volatile solid excretion per year on a dry-matter basis for a defined livestock\npopulation at the project site in kg-dm/animal/yr.\nWsite \tAverage animal weight of a defined population at the project site in kg.\nWdefault \tDefault average animal weight of a defined population in kg from where the data on\nVS default is sourced (IPCC 2006 or US-EPA, whichever is lower).\nVS default \tDefault value (IPCC 2006 or US-EPA, which ever is lower) for the volatile solid excretion\nper day on a dry-matter basis for a defined livestock population in kg-dm/animal/day.\nnd y \tNumber of days in year y where the treatment plant was operational.",
+    "id": "S-34",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "VS ⋅ ⋅"
+  },
+  {
+    "content": "• \tThe genetic source of the production operations livestock originate from an Annex I Party\n• \tThe farm use formulated feed rations (FFR) which are optimized for the various animal(s),\nstage of growth, category, weight gain/productivity and/or genetics\n• \tThe use of FFR can be validated (through on-farm record keeping, feed supplier, etc.)\n• \tThe project specific animal weights are more similar to developed country IPCC default\nvalues",
+    "id": "S-35",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Developed countries VS LT,y values can be used provided the following conditions can be satisfied:"
+  },
+  {
+    "content": "• \tIPCC 2006 guidelines, volume 4, chapter 10\n• \tUS-EPA 2001: Development Document for the Proposed Revisions to the National Pollutant\nDischarge Elimination System Regulation and the Effluent Guidelines for Concentrated\nAnimal Feeding Operations, Chapter 8.2 (http://epa.gov/ost/guide/cafo/devdoc.html)\n\n-- 9 of 38 --\n\n10/38",
+    "id": "S-36",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "The following sources should be used to calculate baseline emissions:"
+  },
+  {
+    "content": "This value varies by species and diet. Where default values are used, they should be taken from tables\n10A-4 through 10A-9 (IPCC 2006 Guidelines for National Greenhouse Gas Inventories volume 4, chapter",
+    "id": "S-37",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "(B) Maximum Methane Production Potential (B0,LT):"
+  },
+  {
+    "content": "• \tThe genetic source of the production operations livestock originate from an Annex I Party\n• \tThe farm use formulated feed rations (FFR) which are optimized for the various animal(s),\nstage of growth, category, weight gain/productivity and/or genetics\n• \tThe use of FFR can be validated (through on-farm record keeping, feed supplier, etc.)\n• \tThe project specific animal weights are more similar to developed country IPCC default\nvalues",
+    "id": "S-38",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Developed countries B 0,LT values can be used provided the following conditions are satisfied:"
+  },
+  {
+    "content": "• \tThe IPCC 2006 MCF values given in table 10.17 (chapter 10, volume 4) should be used, which is\nattached here as Annex 3. MCF values depend on the annual average temperature where the\nanaerobic manure treatment facility in the baseline existed. For average annual temperatures\nbelow 10 o C and above 5 o\nC, a linear interpolation should be used to estimate the MCF value at the\nspecific temperature assuming an MCF value of 0 at an annual average of 5 o C. Future revisions\nto the IPCC Guidelines for National Greenhouse Gas Inventories should be taken into account.\n• \tA conservativeness factor should be applied by multiplying MCF values (estimated as per above\nbullet) with a value of 0.94, , to account for the 20% uncertainty in the MCF values as reported by",
+    "id": "S-39",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "(C) Methane conversion factors (MCFs):"
+  },
+  {
+    "content": "For subsequent treatment stages, the reduction of the volatile solids during a treatment stage is estimated\nbased on referenced data for different treatment types. Emissions from the next treatment stage are then\ncalculated following the approach outlined above, but with volatile solids adjusted for the reduction from\nthe previous treatment stages by multiplying by (1 - RVS), where RVS is the relative reduction of volatile\nsolids from the previous stage. The relative reduction (RVS) of volatile solids depends on the treatment\ntechnology and should be estimated in a conservative manner. Default values for different treatment\ntechnologies can be found in Table 8.10 of chapter 8.2 in US-EPA (2001).4 These values are provided in\nAnnex 1.",
+    "id": "S-40",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "IPCC 2006."
+  },
+  {
+    "content": "\n\n\n= 365\n* p\nda\tLT",
+    "id": "S-41",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "(D) Annual Average number of animals (N LT):"
+  },
+  {
+    "content": "NLT \tAnnual average number of animals of type LT for the year y, expressed in numbers.\nNda \tNumber of days animal is alive in the farm in the year y, expressed in numbers\nNp \tNumber of animals produced annually of type LT for the year y, expressed in numbers",
+    "id": "S-42",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "N N (5)"
+  },
+  {
+    "content": "-- 10 of 38 --\n\n11/38\n(ii) N2 O emissions from manure management\n)\t.(\n1000",
+    "id": "S-43",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "4 http://www.epa.gov/ost/guide/cafo/pdf/DDChapters8.pdf"
+  },
+  {
+    "content": "BE N2O,y \tAnnual baseline N2 O emissions in t CO2e / yr\nGWP N2O \tGlobal Warming Potential (GWP) for N2 O.\nCF N2O-N,N \tConversion factor N2 O-N to N2 O (44/28).\nE N2O,D,y \tDirect N2 O emission in kg N2 O-N/year.\nE N2O,ID,y \tIndirect N2 O emission in kg N2 O-N/year.",
+    "id": "S-44",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "1 , , 2 , , 2 , 2 2 , 2 y ID O N y D O N N N O N O N y O N E E CF GWP BE + ⋅ ⋅ = − (6)"
+  },
+  {
+    "content": ",\t,\t,\t,\t2\t,\t,\t2 \t)\t%\t( \t(7)\nE N2O,D,y \tAre the direct nitrous oxide emissions in kg of N2 O per year.\nEF N2O,D,j \tIs the direct N2 O emission factor for the treatment system j of the manure management\nsystem in kg N 2 O-N/kg N (estimated with site-specific, regional or national data if such\ndata is available, otherwise use default EF3 from table 10.21, chapter 10, volume 4, in\nthe IPCC 2006 Guidelines for National Greenhouse Gas Inventories).\nNEX LT,y \tIs the annual average nitrogen excretion per head of a defined livestock population in kg\nN/animal/year estimated as described in Annex 2.\nMS%Bl, j \tFraction of manure handled in system j, in %\nNLT \tAnnual Average number of animals of type LT for the year y estimated as per equation\n(5), expressed in numbers.",
+    "id": "S-45",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "j Bl LT y LT j D O N y D O N MS N NEX EF E ,"
+  },
+  {
+    "content": ",\t,\t,\t,\t2\t,\t,\t2 \t)\t%\t( \t(8)\nE N2O,ID,y \tAre the indirect nitrous oxide emissions in kg of N2 O per year.\nEF N2O,ID,j \tIs the indirect N2 O emission factor for N2 O emissions from atmospheric deposition of\nnitrogen on soils and water surfaces, kg N2 O-N/kg NH3-N and NOx-N emitted,\nestimated with site-specific, regional or national data if such data is available.\nOtherwise, default values for EF4 from table 11.3, chapter 11, volume 4 of IPCC 2006\nGuidelines for National Greenhouse Gas Inventories can be used.\nNEX LT,y \tIs the annual average nitrogen excretion per head of a defined livestock population in kg\nN/animal/year estimated as described in Annex 2.\nMS%Bl, j \tFraction of manure handled in system j\nF gasm \tPercent of managed manure nitrogen for livestock category that volatilises as NH3 and\nNOx in the manure management system.\nNLT \tAnnual Average number of animals of type LT for the year y estimated as per equation\n(5), expressed in numbers.\nFor subsequent treatment stages, the reduction of the nitrogen during a treatment stage is estimated based\non referenced data for different treatment types. Emissions from the next treatment stage are then\ncalculated following the approach outlined above, but with nitrogen adjusted for the reduction from the\nprevious treatment stages by multiplying by (1 - RN), where RN is the relative reduction of nitrogen from\nthe previous stage. The relative reduction (R N) of nitrogen depends on the treatment technology and\n\n-- 11 of 38 --\n\n12/38\nshould be estimated in a conservative manner. Default values for different treatment technologies can be\nfound in Chapter 8.2 in US-EPA (2001). 5 These values are provided in Annex 1.\n(iii) CO2 emission from electricity and heat within the project boundary\ny\ttherm\tBl\ty\tBL\tgrid\ty\td\ty\telec\tBl\ty\tBl\ty\theat\telec \tCEF\tHG\tCEF\tEG\tCEF\tEG\tBE \t,\t,\t,\t,\t,\t,\t,\t,\t/ \t⋅\t+\t⋅\t+\t⋅\t=\n(9)\nWhere,\nEGBL,y \tIs the amount of electricity in the year y that would be consumed at the project site in the\nabsence of the project activity (MWh) for operating AWMS.\nCEF Bl, elec,y \tIs the carbon emissions factor for electricity consumed at the project site in the absence of\nthe project activity (tCO2 /MWh)\nEGd,y \tIs the amount of electricity generated utilizing the biogas collected during project activity\nand exported to the grid during the year y (MWh)\nCEF grid \tIs the carbon emissions factor for the grid in the project scenario (tCO2 /MWh)\nHGBL,y \tIs the quantity of thermal energy that would be consumed in year y at the project site in\nthe absence of the project activity (MJ) using fossil fuel for operating AWMS.\nCEF Bl, therm \tIs the CO2 emissions intensity for thermal energy generation (tCO2 e/MJ)",
+    "id": "S-46",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "j Bl LT y LT gasm j ID O N y ID O N MS N NEX F EF E ,"
+  },
+  {
+    "content": "• \tIn cases where electricity would in the absence of the project activity be generated in an on-site fossil\nfuel fired power plant, project participants should use for CEF Bl,elec, the default emission factor for a\ndiesel generator with a capacity of more than 200 kW for small-scale project activities\n(0.8 tCO2 /MWh, see Table I.D.1 in the simplified baseline and monitoring methodology AMS.I.D for\nselected small-scale CDM project activity categories).\n• \tIn cases where electricity would, in the absence of the project activity, be purchased from the grid, the\nemission factor CEF Bl,elec should be calculated according to approved methodology “Tool for\ncalculation of emission factor for electricity systems” . If electricity consumption is less than small\nscale threshold (15 GWh/yr), use the default emission factor for a diesel generator with a capacity of\nmore than 200 kW for small-scale project activities (0.8 tCO2 /MWh, see Table I.D.1 in the simplified\nbaseline and monitoring methodology AMS.I.D for selected small-scale CDM project activity\ncategories).",
+    "id": "S-47",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Determination of CEF Bl,elec:"
+  },
+  {
+    "content": "CEF grid should be calculated according to “Tool for calculation of emission factor for electricity systems”.",
+    "id": "S-48",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Determination of CEF grid:"
+  },
+  {
+    "content": "CEF Bl,therm is the CO2 emissions intensity for thermal energy generation (tCO2e/MJ).\nBaseline electricity and thermal energy consumptions should be estimated as the average of the historical",
+    "id": "S-49",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Determination of CEF Bl,therm:"
+  },
+  {
+    "content": "-- 12 of 38 --\n\n13/38\nProject Emissions\nThe project activity might include one or more AWMS to treat the manure. For example, the manure\nmight be first treated in an anaerobic digester and the treated waste might be further processed using an\naerobic pond. Each AWMS is referred to as a treatment stage.",
+    "id": "S-50",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "5 http://www.epa.gov/ost/guide/cafo/pdf/DDChapters8.pdf ."
+  },
+  {
+    "content": "/\t,\t,\t,\t2\t,\t, \theat\telec\ty\tflare\ty\tPL\ty\tO\tN\ty\tAer\ty\tAD\ty \tPE\tPE\tPE\tPE\tPE\tPE\tPE \t+\t+\t+\t+\t+\t= \t(10)\nPE AD, y \tLeakage from AWMS systems that capture’s methane in t CO2e/yr\nPE Aer, y \tMethane emissions from AWMS that aerobically treats the manure in t CO2e/yr\nPE N2O,y \tNitrous oxide emission from project manure waste management system in t CO2e/yr\nPE PL,y \tPhysical leakage of emissions from biogas network to flare the captured methane or\nsupply to the facility where it is used for heat and/or electricity generation in t CO2e/yr\nPE flare,y \tProject emissions from flaring of the residual gas stream in t CO2e/yr\nPE elec/heat \tProject emissions from use of heat and/or electricity in the project case in t CO2e/yr",
+    "id": "S-51",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Project emissions are estimated as follows:"
+  },
+  {
+    "content": "IPCC guidelines specify physical leakage from anaerobic digesters as being 15% of total biogas\nproduction. Where project participants use lower values for percentage of physical leakage, they should\nprovide measurements proving that this lower value is appropriate for the project.\nEx-ante leakage to be reported in the CDM-PDD will be estimated using equation 11.a or 11.b below, with\na leakage factor of 0.15 or a lower value, if properly justified through documented evidence (which should\nbe validated by the DOE).\nIf project case AWMS is anaerobic digester only, then use equation (11.a), else use equation (11.b).",
+    "id": "S-52",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "(i) Methane emissions from AWMS where gas is captured (PEAD, y):"
+  },
+  {
+    "content": "y\tLT\tLT\tLT\tAD\tAD\tCH\tCH\ty\tAD \tVS\tN\tB\tF\tLF\tD\tGWP\tPE \t)\t*\t*\t(\t*\t*\t* \t,\t,0\t4\t4\t, \t(11.a)\n( \t) \t∑\t∏ \t",
+    "id": "S-53",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "∑ ⋅ = LT"
+  },
+  {
+    "content": ",\t,0\n,\t4\t4\t, \t)\t%\t*\t*\t*\t(\t*\t1\t*\t*\t* \t(11.b)\nDCH4 \tCH4 density (0.00067 t/m3 at room temperature (20 ºC) and 1 atm pressure).\nLF AD \tMethane leakage from Anaerobic digesters, default of 0.15.\nF AD \tFraction of volatile solid directed to anaerobic digester.\nR VS,n \tFraction of volatile solid treated in AWMS stage n. The project proponents shall\nprovide the values based on proven test results. In absence of such values the\nconservative value of volatile solids treated in Annex 1 shall be used.\nLT \tIndex for livestock type\nB 0,LT \tCH4 production capacity from manure for livestock type LT, in m3 CH4 /kg-VS, to be\nchosen based on procedure provided for in the baseline methodology section.\nNLT \tAnnual average number of animals of type LT for the year y estimated as per equation\n(5), expressed in numbers.\nVS LT,y \tAnnual volatile solid excretion of livestock type LT on a dry-matter basis in\n\n-- 13 of 38 --\n\n14/38\nkg/animal/year\nMS%j \tFraction of manure handled in system j\nAs noted in equations (11.a) and (11.b), not all volatile solids are degraded in the anaerobic digester. If\nthe undegraded volatile solid in the effluent from anaerobic digester is discharged outside the project\nboundary without further treatment, these emissions should be treated as leakage and appropriately\nreported and accounted.",
+    "id": "S-54",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "n VS AD AD CH CH y AD MS VS N B R F LF D GWP PE ,"
+  },
+  {
+    "content": "IPCC guidelines specify emissions from aerobic lagoons as 0.1% of total methane generating potential of\nthe waste processed, which can be used as a default for all types of aerobic AWMS treatment.\n( \t) \ty\tSl",
+    "id": "S-55",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "(ii) Methane emissions from aerobic AWMS treatment (PEAer, y):"
+  },
+  {
+    "content": ",\n,\t,0\n,\t4\t4\t, \t)\t%\t*\t*\t*\t(\t*\t1\t*\t*\t001\t.\t0\t* \t+\t\n −\t⋅\t= \t∑\t∏=\n(12)\nR VS,n \tFraction of volatile solid degraded in AWMS treatment method n of the N treatment\nsteps prior to waste being treated in Aerobic lagoon.\nDCH4 \tCH4 density (0.00067 t/m3 at room temperature (20 ºC) and 1 atm pressure).\nF Aer \tFraction of volatile solid directed to Aerobic system.\nLT \tindex for livestock type\nB 0,LT \tCH4 production capacity from manure for livestock type LT, in m3 CH4 /kg-VS, to be\nchosen based on procedure provided for in the Baseline methodology section.\nVS LT,y \tAnnual volatile solid excretion livestock type LT on a dry-matter basis in\nkg/animal/year.\nNLT \tAnnual average number of animals of type LT for the year y estimated as per equation\n(5), expressed in numbers..\nPE Sl,y \tCH4 emissions from sludge disposed of in storage pit prior to disposal during the year\ny, expressed in tons of CO2e /yr.\nMS%j \tFraction of manure handled in system j\nAerobic treatment results in large accumulations of sludge. Sludge requires removal and has large VS\nvalues. It is important to identify the following management process for the sludge and estimate the\nemissions from that management process. If the sludge ponds are not within the project boundary, the\nemissions should be included in leakages. The emissions from sludge ponds shall be estimated as follows:\n( \t) \t∑\t∏ \t",
+    "id": "S-56",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "n VS Aer CH CH y Aer PE MS VS N B R F D GWP PE ,"
+  },
+  {
+    "content": ",\t,0\n,\t4\t4\t, \t)\t%\t*\t*\t*\t(\t*\t1\t*\t*\t* \t(13)\nR VS,n \tFraction of volatile solid degraded in AWMS treatment method n of the N treatment\nsteps prior to sludge being treated. Values for Rvs should be taken from Annex 1.\nDCH4 \tCH4 density (0.00067 t/m3 at room temperature (20 ºC) and 1 atm pressure).\nF Aer \tFraction of volatile solid directed to Aerobic system.\nLT \tindex for livestock type\nB 0,LT \tCH4 production capacity from manure for livestock type LT, in m3 CH4 /kg-VS, to be\nchosen based on procedure provided for in the baseline methodology section.\nVS LT,y \tAnnual volatile solid excretion of livestock type LT on a dry-matter basis in\nkg/animal/year.\nNLT, \tAnnual average number of animals of type LT for the year y estimated as per equation\n(5), expressed in numbers.\nMS%j \tFraction of manure handled in system j\nMCF sl \tMethane conversion factor (MCF) for the sludge stored in sludge pits estimated as in\n\n-- 14 of 38 --\n\n15/38\nthe baseline emissions section.\n(iii) N2 O emissions from manure management\n)\t.(\n1000",
+    "id": "S-57",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "n VS Aer sl CH CH y Sl MS VS N B R F MCF D GWP PE ,"
+  },
+  {
+    "content": "PE N2O,y \tAnnual project N2 O emissions in t CO2e / yr\nGWP N2O \tGlobal Warming Potential (GWP) for N2O.\nCF N2O-N,N \tConversion factor N2 O-N to N2 O (44/28).\nE N2O,D,y \tDirect N2 O emission in kg N2 O-N/year.\nE N2O,ID,y \tIndirect N2 O emission in kg N2 O-N/year.",
+    "id": "S-58",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "1 , , 2 , , 2 , 2 2 , 2 y ID O N y D O N N N O N O N y O N E E CF GWP PE + ⋅ ⋅ = − (14)"
+  },
+  {
+    "content": ",\t,\t,\t2\t,\t,\t2 \t)\t%\t( \t(15)\nE N2O,D,y \tAre the direct nitrous oxide emissions in kg of N2 O per year.\nEF N2O,D,j \tIs the direct N2 O emission factor for the treatment system j of the manure management\nsystem in kg N 2 O-N/kg N (estimated with site-specific, regional or national data if such\ndata is available, otherwise use default EF3 in volume 4, chapter 10, table 10.21 in IPCC",
+    "id": "S-59",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "j LT y LT j D O N y D O N MS N NEX EF E ,"
+  },
+  {
+    "content": "NEX LT,y \tIs the annual average nitrogen excretion per head of a defined livestock population in kg\nN/animal/year estimated as described in Annex 2.\nMS j \tFraction of manure handled in system j, in %.\nNLT \tAnnual average number of animals of type LT for the year y estimated as per equation\n(5), expressed in numbers.",
+    "id": "S-60",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "2006 Guidelines)."
+  },
+  {
+    "content": ",\t,\t,\t2\t,\t,\t2 \t)\t%\t*\t*\t*\t*\t( \t(16)\nE N2O,y \tAre the indirect nitrous oxide emissions in kg of N2 O per year.\nEF N2O,ID,j \tIs the indirect N2 O emission factor for N2O emissions from atmospheric deposition of\nnitrogen on soils and water surfaces, kg N2O-N/kg NH3-N and NOx-N emitted\nestimated with site-specific, regional or national data if such data is available.\nOtherwise, default values for EF4 from table 11.3, chapter 11, volume 4 of IPCC 2006\nguidelines can be used.\nNEX LT,y \tIs the annual average nitrogen excretion per head of a defined livestock population in kg\nN/animal/year estimated as described in Annex 2.\nMS%j \tFraction of manure handled in system j\nF gasm \tPercent of managed manure nitrogen for livestock category that volatilises as NH3 and\nNOx in the manure management system\nNLT \tAnnual average number of animals of type LT for the year y estimated as per equation\n(5), , expressed in numbers.\nFor subsequent treatment stages, the reduction of the nitrogen during a treatment stage is estimated based\non referenced data for different treatment types. Emissions from the next treatment stage are then\n\n-- 15 of 38 --\n\n16/38\ncalculated following the approach outlined above, but with nitrogen adjusted for the reduction from the\nprevious treatment stages by multiplying by (1-RN), where RN is the relative reduction of nitrogen from the\nprevious stage. The relative reduction (R N) of nitrogen depends on the treatment technology and should be\nestimated in a conservative manner. Default values for different treatment technologies can be found in\nChapter 8.2 in US-EPA (2001).6 These values are provided in Annex 1.\n(iv) Physical Leakage from distribution network of the captured methane in (PEPL)\nThis refers to leaks in the biogas system from the biogas pipeline delivery system. The sum of the\nquantities of captured methane fed to the flare, to the power plant and to the boiler (measured as per the\nmonitoring plan) must be compared annually with the total methane generated as measured by meter at\nthe outlet of the methane generating digester. The difference between the monitored value of methane\ngenerated and that consumed in flare/electricity generation/heat shall be accounted as leakage from the\npipelines.\nIn the case where biogas is just flared and the pipeline from collection point to flare is short (i.e., less than",
+    "id": "S-61",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "j LT y LT gasm j ID O N y ID O N MS N NEX F EF E ,"
+  },
+  {
+    "content": "be considered as zero. .",
+    "id": "S-62",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "1 km, and for on site delivery only), one flow meter can be used. In such cases the physical leakage may"
+  },
+  {
+    "content": "The combustion of biogas methane may give rise to significant methane emissions as a result of\nincomplete or inefficient combustion.\nProject emissions from flaring of the residual gas stream should be determined following the procedure\ndescribed in the “Tool to determine project emissions from flaring gases containing Methane”.",
+    "id": "S-63",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "(v) Project emissions from flaring of the residual gas stream (PE flare,y):"
+  },
+  {
+    "content": "y\tj,\theat,\nj\ny\tElec,\ty\telec/heat, \tPE\tPE\tPE \t∑\t+\t= \t(17)\nPE Elec,y \tIs the emissions from consumption of electricity in the project case. The project\nemissions from electricity consumption (PEElec,y = PE EC,y) will be calculated following the\nlatest version of “Tool to calculate project emissions from electricity consumption”. In\ncase, the electricity consumption is not measured then the electricity consumption shall be",
+    "id": "S-64",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "(vi) Project emissions from heat use and electricity use (PEelec/heat):"
+  },
+  {
+    "content": "∑\t=\ni\ny,i\ty,\tPJ \t8760\t*\tCP\tEC \t, where CP i,y is the rated capacity (in MW) of electrical\nequipment i used for project activity.\nPE heat,j,y \tIs the emissions from consumption of heat in the project case. The project emissions from\nfossil fuel combustion (PEheat,j,y = PEFC,j,y ) will be calculated following the latest version\nof “Tool to calculate project or leakage CO2 emissions from fossil fuel combustion”. For\nthis purpose, the processes j in the tool corresponds to all fossil fuel combustion in the\npaper plant established as part of the project activity, as well as any other on-site fuel\ncombustion for the purposes of the project activity.",
+    "id": "S-65",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "estimated as follows:"
+  },
+  {
+    "content": "-- 16 of 38 --\n\n17/38",
+    "id": "S-66",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "6 http://www.epa.gov/ost/guide/cafo/pdf/DDChapters8.pdf ."
+  },
+  {
+    "content": "Leakage covers the emissions from land application of treated manure, outside the project boundary.\nThese emissions are estimated as net of those released under project activity and those released in the\nbaseline scenario. Net leakage of N2 O and CH4 are only considered if they are positive.\n.",
+    "id": "S-67",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Leakage"
+  },
+  {
+    "content": "LE P,N2O \tAre the N2 O emissions released during project activity from land application of the\ntreated manure, in tCO2 e/year.\nLE B,N2O \tAre the N2 O emissions released during baseline scenario from land application of the\ntreated manure, in tCO2 e/year.\nLE P,CH4 \tAre the CH4 emissions released during project activity from land application of the\ntreated manure, in tCO2 e/year.\nLE B,CH4 \tAre the CH4 emissions released during baseline scenario from land application of the\ntreated manure, in tCO2 e/year.",
+    "id": "S-68",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": ") LE LE ( ) LE LE ( LE 4 CH ,B 4 CH ,P O 2 N ,B O 2 N ,P y − + − = (18)"
+  },
+  {
+    "content": ")\t(\t*\n1000",
+    "id": "S-69",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "The baseline case N2O emissions are estimated using the following equations:"
+  },
+  {
+    "content": ",\t1\t,\t2 \t*\t1\t* \t(20)",
+    "id": "S-70",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "n N land O N N NEX R EF LE ,"
+  },
+  {
+    "content": "n\tN\tleach\trunoff\tO\tN \tN\tNEX\tR\tF\tEF\tLE \t,\n,\t5\t,\t2 \t*\t1\t*\t* \t(21)",
+    "id": "S-71",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "LT y LT"
+  },
+  {
+    "content": "LT\ty\tLT\tgasm",
+    "id": "S-72",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "( ) ∑ ∏ ⋅ − = = LT"
+  },
+  {
+    "content": ",\t4\t,\t2 \t*\t*\t1\t* \t(22)\nLE N2O,land \tDirect nitrous oxide emission from application of manure waste, in Kg N2 O-N/year.\nLE N2O,runoff \tNitrous oxide emission due to leaching and run-off, in Kg N2 O-N/year.\nF gasm \tFraction of animal manure N that volatizes as NH3 and NOX in kg NH3 -N and NOX-N\nper kg of N, estimated with site-specific, regional or national data if such data is\navailable. Otherwise, default values from table 11.3, chapter 11, volume 4 of IPCC",
+    "id": "S-73",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "n N vol O N N NEX F R EF LE ,"
+  },
+  {
+    "content": "Annual average number of animals of type LT estimated as per equation (5),\nexpressed in numbers.\nNEX LT \tAverage annual N excretion per head per animal category LT in kg - N/animal-year\n\n-- 17 of 38 --\n\n18/38\n(estimated as in annex 2)\nEF 1 \tEmission factor for direct emission of N2 O from soils in Kg N2 O-N/kg N, estimated\nwith site-specific, regional or national data if such data is available. Otherwise,\ndefault values from table 11.1, chapter 11, volume 4 of IPCC 2006 guidelines can be\nused.\nEF 5 \tEmission factor for indirect emission of N2 O from runoff in Kg N2O-N/kg N,\nestimated with site-specific, regional or national data if such data is available.\nOtherwise, default values from table 11.3, chapter 11, volume 4 of IPCC 2006\nguidelines can be used.\nEF 4 \tEmission factor for N2O emissions from atmospheric deposition of N on soils and\nwater surfaces, [kg N- N2O / (kg NH3-N + NOx-N volatilized)], estimated with site-\nspecific, regional or national data if such data is available. Otherwise, default values\nfrom table 11.3, chapter 11, volume 4 of IPCC 2006 guidelines can be used.\nF leach \tFraction of all N added to/mineralised in managed soils in regions where\nleaching/runoff occurs that is lost through leaching and runoff should be estimated\nwith site-specific, regional or national data if such data is available. Otherwise,\ndefault values from table 11.3, chapter 11, volume 4 of IPCC 2006 guidelines can be\nused.\nCF N20-N,N \tConversion factor (= 44/28).\nR N,n \tFraction of NEX in manure waste that is reduced in the Baseline AWMS. The\nrelative reduction of nitrogen depends on the treatment technology and should be\nestimated in a conservative manner. Default values for different treatment\ntechnologies can be found in Annex 1.",
+    "id": "S-74",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "NLT"
+  },
+  {
+    "content": ")\t(\t*\n1000",
+    "id": "S-75",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "The project case N2O emissions are estimated using the following equations:"
+  },
+  {
+    "content": ",\t1\t,\t2 \t*\t1\t* \t(24)",
+    "id": "S-76",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "n N land O N N NEX R EF LE ,"
+  },
+  {
+    "content": "n\tN\tleach\trunoff\tO\tN \tN\tNEX\tR\tF\tEF\tLE \t,\n,\t5\t,\t2 \t*\t1\t*\t* \t(25)",
+    "id": "S-77",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "LT y LT"
+  },
+  {
+    "content": "LT\ty\tLT\tgasm",
+    "id": "S-78",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "( ) ∑ ∏ ⋅ − = = LT"
+  },
+  {
+    "content": ",\t4\t,\t2 \t*\t*\t1\t* \t(26)\nLE N2O,land \tDirect nitrous oxide emission from application of manure waste, in Kg N2 O-N/year.\nLE N2O,runoff \tNitrous oxide emission due to leaching and run-off, in Kg N2 O-N/year.\nF gasm \tFraction of animal manure N that volatizes as NH3 and NOX in kg NH3 -N and NOX-N\nper kg of N, estimated with site-specific, regional or national data if such data is\navailable. Otherwise, default values from table 11.3, chapter 11, volume 4 of IPCC",
+    "id": "S-79",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "n N vol O N N NEX F R EF LE ,"
+  },
+  {
+    "content": "NLT \tAnnual average number of animals of type LT estimated as per equation (5),\nexpressed in numbers.\n\n-- 18 of 38 --\n\n19/38\nNEX LT \tAverage annual N excretion per head per animal category LT in kg - N/animal-year\n(estimated as in annex 2)\nEF 1 \tEmission factor for direct emission of N2 O from soils in kg N2 O-N/kg N, estimated\nwith site-specific, regional or national data if such data is available. Otherwise,\ndefault values from table 11.1, chapter 11, volume 4 of IPCC 2006 guidelines can be\nused.\nEF 5 \tEmission factor for indirect emission of N2 O from runoff in kg N2 O-N/kg N,\nestimated with site-specific, regional or national data if such data is available.\nOtherwise, default values from table 11.3, chapter 11, volume 4 of IPCC 2006\nguidelines can be used.\nEF 4 \tEmission factor for N2O emissions from atmospheric deposition of N on soils and\nwater surfaces, [kg N- N2O / (kg NH3-N + NOx-N volatilized)], estimated with site-\nspecific, regional or national data if such data is available. Otherwise, default values\nfrom table 11.3, chapter 11, volume 4 of IPCC 2006 guidelines can be used.\nF leach \tFraction of all N added to/mineralised in managed soils in regions where\nleaching/runoff occurs that is lost through leaching and runoff should be estimated\nwith site-specific, regional or national data if such data is available. Otherwise,\ndefault values from table 11.3, chapter 11, volume 4 of IPCC 2006 guidelines can be\nused.\nCF N20-N,N \tConversion factor (= 44/28).\nR N,n \tFraction of NEX in manure waste that is reduced in the project AWMS. The relative\nreduction of nitrogen depends on the treatment technology and should be estimated in\na conservative manner. Default values for different treatment technologies can be\nfound in Annex 1.\nIt is possible to measure the quantity of manure applied to land in kg manure/yr (QDM) and the nitrogen\nconcentration in kg N / kg manure (NDM ) in the manure to estimate the total quantity of nitrogen applied to\nland. In this case, \t( \t) \t∑\t∏ \t⋅\t−",
+    "id": "S-80",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "2006 guidelines can be used."
+  },
+  {
+    "content": ", \t*\t1 \tin equations (24), (25) and (26) above should be\nsubstituted by QDM*NDM.\n(ii) Methane emissions from disposal of treated manure\nThe calculation of methane emissions from land application of manure in the baseline and project cases",
+    "id": "S-81",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "n N N NEX R ,"
+  },
+  {
+    "content": "( \t) \t∑\t∏ \t",
+    "id": "S-82",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "are estimated from equations (27) and (28), below:"
+  },
+  {
+    "content": ",\t,0\n,\t4\t4\t4\t, \t)\t%\t*\t*\t*\t(\t*\t1\t*\t*\t* \t(27)\n( \t) \t∑\t∏ \t",
+    "id": "S-83",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "n VS d CH CH CH B MS VS N B R MCF D GWP LE ,"
+  },
+  {
+    "content": ",\t,0\n,\t4\t4\t4\t, \t)\t%\t*\t*\t*\t(\t*\t1\t*\t*\t* \t(28)\nLE B,CH4 \tMethane leakage emissions in the baseline (t CO2 e / yr)\nLE P,CH4 \tMethane leakage emissions in the project case (t CO2 e / yr)\nR VS,n \tFraction of volatile solid degraded in AWMS n prior to sludge being treated. Values for\nRvs should be taken from annex 1.\nGWP CH4 \tGlobal Warming Potential (GWP) of CH4 .\n\n-- 19 of 38 --\n\n20/38\nDCH4 \tCH4 density (0.00067 t/m3 at room temperature (20 ºC) and 1 atm pressure).\nB 0,LT \tMaximum methane producing potential of the volatile solid generated, in\nm3 CH4 /kg_dm, by animal type LT.\nNLT \tAnnual average number of animals of type LT estimated as per equation (5), expressed\nin numbers.\nVS LT,y \tAnnual volatile solids from livestock LT, on a dry matter weight basis (kg-dm/year).\nMS%j \tFraction of manure handled in system j\nMCF d \tMethane conversion factor (MCF) assumed to be equal to 1.\nEmission Reduction\nThe emission reduction ERy by the project activity during a given year y is the difference between the",
+    "id": "S-84",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "n VS d CH CH CH P MS VS N B R MCF D GWP LE ,"
+  },
+  {
+    "content": "Further, in estimating emissions reduction for claiming certified emissions reductions, if the calculated\nCH4 baseline emissions from anaerobic lagoons are higher than the measured CH4 generated in the\nanaerobic digester in the project situation (this is calculated as product of biogas flow at the digester outlet\nand methane fraction in the biogas), then the latter shall be used to calculate the emissions reduction for\nclaiming certified emissions reductions. Therefore, the actual methane captured from an anaerobic\ndigester shall be compared to the (BECH4,y - PEAD,y - PE PL,y) and if found lower, then (BECH4,y - PE AD,y -\nPE PL,y) ( which is a component of BEy -PEy )in equation (29) is replaced by actual methane captured.\nData and parameters not monitored",
+    "id": "S-85",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "y y y y LE PE BE ER − − = (29)"
+  },
+  {
+    "content": "Parameter: \tRVS,n\nDescription: \tVS degradation factor\nSource of data: \tRefer to Annex 1\nAny comment: \tEstimated from Table provided in Annex 1. The most conservative value for the\ngiven technology must be used.",
+    "id": "S-86",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "ID Number: 1"
+  },
+  {
+    "content": "Parameter: \tEF N2O, D,j, EF N2O,ID,j\nData unit: \tkg N2O-N/ kg N and kg N2O-N/ kg NH3-N and NOX-N\nDescription: \tN2O emission factors (direct and indirect emissions) used in equation 14 and 15\nAny comment: \tIPCC 2006 default values may be used, if country specific or region specific data\nare not available.\n\n-- 20 of 38 --\n\n21/38",
+    "id": "S-87",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "ID Number: 2"
+  },
+  {
+    "content": "Parameter: \tF gasm\nDescription: \tFraction of N lost due to volatilization\nAny comment: \tIPCC 2006 default values can be used.",
+    "id": "S-88",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "ID Number: 3"
+  },
+  {
+    "content": "Parameter: \tEF 1 , EF4 , EF5\nData unit: \tkg N2 O-N/ kg N for EF1, EF 5 and kg N2O-N/ kg NH3-N and NOX-N for EF4\nDescription: \tN2 O emission factor from soil and runoff water\nAny comment: \tIPCC 2006 default values may be used, if country specific or region specific data\nare not available.",
+    "id": "S-89",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "ID Number: 4"
+  },
+  {
+    "content": "Parameter: \tF leach\nDescription: \tFraction of N leached\nAny comment: \tIPCC 2006 default values can be used.",
+    "id": "S-90",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "ID Number: 5"
+  },
+  {
+    "content": "Parameter: \tCEFBl, therm,y\nData unit: \ttCO2 /MJ\nDescription: \tEmission factor of baseline heat use\nSource of data: \tRefer to baseline methodology\nAny comment: \tCalculated as per procedure described in the baseline methodology.",
+    "id": "S-91",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "ID Number: 6"
+  },
+  {
+    "content": "Parameter: \tEGBl,y\nData unit: \tMWh\nDescription: \tElectricity consumption by Baseline AWMS\nArchive electronically for the duration of project plus 5 years\nAny comment: \tEstimation is based on three years data prior to start of the project. Electricity\nmeters will undergo maintenance/calibration subject to appropriate industry\nstandards. The accuracy of the meter readings will be verified by receipts issued\nby the purchasing power company. Uncertainty of the meters to be obtained from\nthe manufacturers. This uncertainty to be included in a conservative manner while\ncalculating CERs and procedure for doing so should be described in the CDM-",
+    "id": "S-92",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "ID Number: 7"
+  },
+  {
+    "content": "-- 21 of 38 --\n\n22/38",
+    "id": "S-93",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "PDD."
+  },
+  {
+    "content": "Parameter: \tnd y\nData unit: \tNumber\nDescription: \tNumber of days treatment plant was operational in year y\nArchive electronic for the duration of project plus 5 yrs",
+    "id": "S-94",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "ID Number: 8"
+  },
+  {
+    "content": "Parameter: \tHGBL,y\nData unit: \tMJ\nDescription: \tHeat used by baseline AWMS\nArchive electronic for the duration of project plus 5 yrs\nAny comment: \tAt start of project. Fuel purchase records to be cross checked with estimates.\nEstimation is based on three years data prior to start of the project.",
+    "id": "S-95",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "ID Number: 9"
+  },
+  {
+    "content": "Parameter: \tMS%Bl,j\nDescription: \tFraction of manure handled in system j in the baseline",
+    "id": "S-96",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "ID Number: 10"
+  },
+  {
+    "content": "Parameter: \tGWPCH4\nData unit: \ttCO2 e/tCH4\nDescription: \tGlobal warming potential for CH4\nSource of data: \tIPCC",
+    "id": "S-97",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "ID Number: 11"
+  },
+  {
+    "content": "COP/MOP decisions.",
+    "id": "S-98",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "21 for the first commitment period. Shall be updated according to any future"
+  },
+  {
+    "content": "Parameter: \tGWPN2O\nData unit: \ttCO2 e/tN2 O\nDescription: \tGlobal warming potential for N2 O\nSource of data: \tIPCC",
+    "id": "S-99",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "ID Number: 12"
+  },
+  {
+    "content": "COP/MOP decisions.",
+    "id": "S-100",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "310 for the first commitment period. Shall be updated according to any future"
+  },
+  {
+    "content": "Parameter: \tDCH4\nData unit: \tt/m3\nDescription: \tDensity of methane\nSource of data: \tTechnical literature\n\n-- 22 of 38 --\n\n23/38\nAny comment: \t0.00067 t/m3 at room temperature 20 o C and 1 atm pressure",
+    "id": "S-101",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "ID Number: 13"
+  },
+  {
+    "content": "Parameter: \tMCF d\nData unit: \t---\nDescription: \tMethane conversion factor for leakage calculation assumed to be equal 1\nSource of data: \tSee Leakage section",
+    "id": "S-102",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "ID Number: 14"
+  },
+  {
+    "content": "Parameter: \tCF N2O-N,N\nData unit: \t---\nDescription: \tConversion factor = 44/28\nSource of data: \tTechnical literature\nMonitoring Methodology\nIn this methodology, monitoring comprises several activities.\nThe monitoring plan should include on site inspections for each individual farm included in the project\nboundary where the project activity is implemented for each verification period.",
+    "id": "S-103",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "ID Number: 15"
+  },
+  {
+    "content": "• \tDiagrammatic representation of animal waste management system existing on the project site prior to\nproject implementation.\n• \tParameters MCF, Bo , and RVS for estimating methane emissions from AWMS in the baseline.\n• \tEF N2O and RN for estimating nitrogen emission from AWMS in the baseline;\n• \tAmbient temperature at the AWMS site;\n• \tAmount of electricity used for the operation of the AWMS in the baseline;\n• \tAmount of fossil fuel used for the operation of the AWMS in the baseline;\n• \tBiogas based electricity exported to the grid, needs to be monitored only if emissions reduction for\nelectricity generation from biogas are claimed;\n• \tData and parameters for estimating heat and electricity emission factors.",
+    "id": "S-104",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Baseline emissions:"
+  },
+  {
+    "content": "• \tThe livestock populations by different livestock types. This includes the number of heads of each\npopulation and the average animal weight in each population;\n• \tParameters MCF, Bo , and RVS for estimating methane emissions from AWMSs in the project case.\n• \tEF N2O and RN for estimating nitrogen emission from AWMS in the baseline.\n• \tThe default volatile solid excretion values or other parameters required for estimating the volatile\nsolids. If dietary intake method is used, the feed intake of animals and its energy will be monitored.\n\n-- 23 of 38 --\n\n24/38\n• \tLeakage from anaerobic digester, if used. The default value is 15%, but in case project participants\nuse a lower value, the appropriate measurement to support the lower value shall be monitored and\nreported.\n• \tThe default nitrogen excretion per animal or parameters required to estimate nitrogen excretion. If N\nintake method is used the amount of dry matter intake by livestock shall be monitored.\n• \tAmount of electricity used in the project case. If electricity consumption is measured in the project,\nthen project proponents may use the “Tool to calculate project emissions from electricity\nconsumption”.\n• \tFuel consumption for generation of heat used in the project case. Calculated following the latest\nversion of “Tool to calculate project or leakage CO2 emissions from fossil fuel combustion”.\n• \tFlow of biogas to the flare, heat generation, and electricity generation. In the case where biogas is just\nflared, one flow meter can be used provided that the meter used is calibrated periodically by an\nofficially accredited entity.\n• \tConcentration of methane in biogas at outlet of anaerobic digester, this shall be measured on wet\nbasis.\n• \tThe parameters used for determining the project emissions from flaring of the residual gas stream in\nyear y (PE flare,y) should be monitored as per the “Tool to determine project emissions from flaring\ngases containing Methane”.\n• \tBiogas leakage in project: through leaks in the pipeline during transportation of biogas.\n\n-- 24 of 38 --\n\n25/38\nEffluent to open\nlagoons\nStack gas\nTo grid\nRaw effluent",
+    "id": "S-105",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Project emissions:"
+  },
+  {
+    "content": "• \tNitrogen concentration and COD in waste water/sludge disposed outside the project boundary;\nAnaerobic\ndigester\nsystem\nPower\ngeneration\nsystem\nFlare\nsystem\nCOD concentration\nN Concentration\nEffluent flow rate\nBiogas flow rate\nBiogas CH 4\nconcentration\nBiogas flow rate\nBiogas flow rate\nFossil fuel flow rate\nPE flare,y\nElectricity exported to\ngrid\nHeating\nequipment\nBiogas flow rate\nHeat\nSecond\ntreatment\nQuantity of effluent\nCOD in the effluent\nN in the effluent\nSludge, if ST\nis aerobic\npond\nnth\ntreatment\nQuantity of effluent\nCOD in the effluent\nN in the effluent\nDisposal outside",
+    "id": "S-106",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Leakage:"
+  },
+  {
+    "content": "Quantity of effluent\nCOD in the effluent\nN in the effluent\n\n-- 25 of 38 --\n\n26/38\nData and parameters monitored\nData / Parameter: \tMCF\nDescription: \tMethane correction factor\nAny comment: \tThe factor MCF is taken from IPCC 2006 guidelines. If annual average\ntemperature is lower than 10 o C and higher than 5 o C, Annual MCF should be\nestimated using linear interpolation assuming MCF=0 at annual average\ntemperature of 5 o C.\nData / Parameter: \tMCF sl\nDescription: \tMethane correction factor\nAny comment: \tThe factor MCF is taken from IPCC 2006 guidelines. If annual average\ntemperature is lower than 10 o C and higher than 5 o C, Annual MCF should be\nestimated using linear interpolation assuming MCF=0 at annual average\ntemperature of 5 o C.\nData / Parameter: \tB0,LT\nDescription: \tMaximum methane production\nSource of data: \tTechnical literature\nAny comment: \tThe value is taken from published sources. The parameter value should be\nupdates on latest available public data source\n\n-- 26 of 38 --\n\n27/38\nData / Parameter: \tVS LT,y\nData unit: \tkg dry matter/animal/year\nDescription: \tVolatile solid excretion per animal per day\nMonitoring frequency: \tAnnually, estimated or based on published information such as IPCC\nAny comment: \tIf it is required to use developed country VS values, the following should be\nmonitored: - Genetic source of the production operations livestock originate from\nan Annex I Party; - The formulated feed rations (FFR). If equation 4 is used to\nestimate the value, VSdefault (kg-dm/animal/day, Default average animal weight of\na defined population in kg from where the data on VSdefault is sourced (IPCC 2006\nor US-EPA, which ever is lower) shall be recorded and archived .\nData / Parameter: \tCEF Bl,elec,y\nData unit: \ttCO2 /MWh\nDescription: \tEmission factor of baseline electricity use\nSource of data: \tRefer to baseline methodology\nMonitoring frequency: \tAt start of project\nAny comment: \tCalculated as per procedure described in the baseline methodology.\nData / Parameter: \tCEF grid\nData unit: \ttCO2 /MWh\nDescription: \tEmission factor of exported electricity\nSource of data: \tRefer to baseline methodology\nAny comment: \tCalculated as per procedure described in the baseline methodology.\nData / Parameter: \tLF AD\nDescription: \tFraction of methane leakage from anaerobic digester",
+    "id": "S-107",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "project Boundary"
+  },
+  {
+    "content": "Any comment: \tIPCC default of 0.15 or less if documented evidence can be provided (to be\nchecked by DOE)\n\n-- 27 of 38 --\n\n28/38\nData / Parameter: \tRN,n\nData unit: \tfraction\nDescription: \tNitrogen degradation factor\nSource of data: \tRefer to Annex 1\nAny comment: \tEstimated from Table provided in Annex 1. The most conservative value for the\ngiven technology must be used.\nData / Parameter: \tType\nData unit: \t---\nDescription: \tType of barn and AWMS",
+    "id": "S-108",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "QA/QC procedures:"
+  },
+  {
+    "content": "Any comment: \tBarn and AWMS layout and configuration\nData / Parameter: \tCP\nData unit: \t%\nDescription: \tCrude protein percent\nData / Parameter: \tGE\nData unit: \tMJ/d\nDescription: \tGross energy intake of the animal\nData / Parameter: \tT\nData unit: o C\nDescription: \tAnnual Average ambient temperature at Project site\nMonitoring frequency: \tMonthly\nAny comment: \tUsed to select the annual MCF from IPCC 2006 guidelines\n\n-- 28 of 38 --\n\n29/38\nData / Parameter: \tEGd,y\nData unit: \tMWh\nDescription: \tElectricity exported to grid\nMonitoring frequency: \tAnnual\nQA/QC procedures: \tElectricity meters will undergo maintenance/calibration subject to appropriate\nindustry standards. The accuracy of the meter readings will be verified by\nreceipts issued by the purchasing power company. Uncertainty of the meters to\nbe obtained from the manufacturers. This uncertainty to be included in a\nconservative manner while calculating CERs and procedure for doing so should\nbe described in the CDM-PDD.\nData / Parameter: \tRegulations\nData unit: \t---\nDescription: \tExistence and enforcement of relevant regulation\n---\nMonitoring frequency: \tAt start of crediting period\nQA/QC procedures: \tQuality control for the existence and enforcement of relevant regulations and\nincentives is beyond the bounds of the project activity. Instead, the DOE will\nverify the evidence collected.\nData / Parameter: \tNda\nData unit: \tNumber\nDescription: \tNumber of days animal is alive in the farm in the year y\nMonitoring frequency: \tMonthly\nAny comment: \tThe PDD should describe the system on monitoring the number of livestock\npopulation. The consistency between the value and indirect information (records\nof sales, records of food purchases) should be assessed.\nData / Parameter: \tNp\nData unit: \tNumber\nDescription: \tNumber of animals produced annually of type LT for the year y\nMonitoring frequency: \tMonthly\nAny comment: \tThe PDD should describe the system on monitoring the number of livestock\npopulation. The consistency between the value and indirect information (records\nof sales, records of food purchases) should be assessed.\n\n-- 29 of 38 --\n\n30/38\nData / Parameter: \tWsite\nData unit: \tkg\nDescription: \tWeight of livestock\nMonitoring frequency: \tMonthly\nAny comment: \tThe PDD should describe the system on monitoring the weight of livestock. .\nData / Parameter: \tF AD\nDescription: \tFraction of volatile solids directed to anaerobic digesters\nData / Parameter: \tF Aer\nDescription: \tFraction of volatile solids directed to aerobic treatment\nData / Parameter: \tVf\nData unit: \tm3\nDescription: \tBiogas flow\nMonitoring frequency: \tContinuously by flow meter and reported cumulatively on weekly basis\nQA/QC procedures: \tFlow meters will undergo maintenance/calibration subject to appropriate industry\nstandards. The frequency of calibration and control procedures would be\ndifferent for each application. This maintenance/calibration practice should be\nclearly stated in the CDM-PDD.\nAny comment: \tThe biogas flow will be measured at 4 points, as shown in the figure. But if the\nproject participants can demonstrate that leakage in distribution pipeline is zero,\nit need be measured at any three points. The biogas flow to electricity or heat\nequipment in a moment can be considered destroyed, by monitoring that the\nequipment was working at this time.\n\n-- 30 of 38 --\n\n31/38\nData / Parameter: \tCCH4\nDescription: \tMethane fraction of biogas\nArchive electronically during project plus 5 years. Shall be measured on wet\nbasis.\nMonitoring frequency: \tto be decided by PPs.\nQA/QC procedures: \tThe project proponents shall define the variability of the concentration. They\nshall also define the error in estimate for different level of measurement\nfrequency. The level of accuracy will be deducted from average concentration of\nmeasurement.\nAny comment: \tThe project proponents shall define the variability of the concentration. They\nshall also define the error in estimate for different level of measurement\nfrequency. The level of accuracy will be deducted from average concentration of\nmeasurement.\nData / Parameter: \tPE flare,y\nData unit: \ttCO2e\nDescription: \tProject emissions from flaring of the residual gas stream in year y",
+    "id": "S-109",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Monitoring frequency:"
+  },
+  {
+    "content": "The parameters used for determining the project emissions from flaring of the\nresidual gas stream in year y (PEflare,y) should be monitored as per the “Tool to\ndetermine project emissions from flaring gases containing Methane”.",
+    "id": "S-110",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Source of data:"
+  },
+  {
+    "content": "QA/QC procedures: \tThe parameters used for determining the project emissions from flaring of the\nresidual gas stream in year y (PEflare,y) should use the QA/QC procedures as per\nthe “Tool to determine project emissions from flaring gases containing\nMethane”.",
+    "id": "S-111",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Monitoring frequency:"
+  },
+  {
+    "content": "-- 31 of 38 --\n\n32/38\nData / parameter: \tPEElec,y\nData unit: \ttCO2\nDescription: \tEmissions from consumption of electricity in the project case in year y.\nSource of data: \tCalculated as per the “Tool to calculate project emissions from electricity\nconsumption”. When using the tool PEElec,y = PEEC,y.\nAs per the “Tool to calculate project emissions from electricity consumption”\nMonitoring frequency: \tAs per the “Tool to calculate project emissions from electricity consumption”\nQA/QC procedures: \tAs per the “Tool to calculate project emissions from electricity consumption”\nAny comment: \t-\nData / parameter: \tPEHEAT,j,y\nData unit: \ttCO2e\nDescription: \tProject emissions from fossil fuel combustion in process j during the year y .\nSource of data: \tCalculated as per the “Tool to calculate project or leakage CO2 emissions from\nfossil fuel combustion”. When using the tool PEheat,j,y = PEFC,j,y .\nAs per the “Tool to calculate project or leakage CO2 emissions from fossil fuel\ncombustion”\nMonitoring frequency: \tAs per the “Tool to calculate project or leakage CO2 emissions from fossil fuel\ncombustion”\nQA/QC procedures: \tAs per the “Tool to calculate project or leakage CO2 emissions from fossil fuel\ncombustion”\nAny comment: \t-\nData / Parameter: \tCP i,y\nData unit: \tMW\nDescription: \tRated capacity of electrical equipment i used for project activity in year y.\nSource of data: \tEquipment at site.",
+    "id": "S-112",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Any comment:"
+  },
+  {
+    "content": "Any comment: \tThis parameter is used in case the electricity consumption is not measured.\nData / Parameter: \tNDM\nData unit: \tkg N20-N/KG effluent\nDescription: \tN concentration in disposed manure\nMonitoring frequency: \tEvery batch disposed\n\n-- 32 of 38 --\n\n33/38\nData / Parameter: \tQDM\nData unit: \tkg\nDescription: \tMass of manure disposed outside project boundary\nMonitoring frequency: \tEvery batch disposed\nData / Parameter: \tMS%j\nDescription: \tFraction of manure handled in system j in project activity\nArchive electronically during project plus 5 yrs\nData / Parameter: \tNEXLT,y\nData unit: \tkg N/animal/year\nDescription: \tAnnual average nitrogen excretion per head of a defined livestock population in\nkg N/animal/year estimated as described in Annex 2.\nSource of data: \tRefer to Annex 2\nArchive electronically during project plus 5 yrs\nData / Parameter: \tGE LT\nData unit: \tMJ/day\nDescription: \tDaily average gross energy intake in MJ/day.\nArchive electronically during project plus 5 yrs\nMonitoring frequency: \tDaily\n\n-- 33 of 38 --\n\n34/38\nData / Parameter: \tDE LT\nData unit: \t%\nDescription: \tDigestible energy of the feed in percent (IPCC 2006 defaults available).\nSource of data: \t---\nArchive electronically during project plus 5 yrs\nMonitoring frequency: \t---\nData / Parameter: \tUE\nData unit: \tfraction of GE\nDescription: \tUrinary energy expressed as fraction of GE\nSource of data: \t---\nArchive electronically during project plus 5 yrs\nMonitoring frequency: \t---\nData / Parameter: \tASH\nData unit: \tfraction of the dry matter feed intake\nDescription: \tAsh content of the manure calculated as a fraction of the dry matter feed intake.\nSource of data: \t---\nMonitoring frequency: \t---\nData / Parameter: \tEDLT\nData unit: \tMJ/kg\nDescription: \tEnergy density of the feed in MJ/kg fed to livestock type LT.",
+    "id": "S-113",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "QA/QC procedures:"
+  },
+  {
+    "content": "Archive electronically during project plus 5 years. The project proponent will\nrecord the composition of the feed to enable the DOE to verify the energy density\nof the feed.\nMonitoring frequency: \t---\n\n-- 34 of 38 --\n\n35/38\nAnnex 1: Anaerobic Unit Process Performance\n\n-- 35 of 38 --\n\n36/38\nAnnex 2: Procedure for estimating NEX\n)\tN\t-\t(1\t*\tN\tNEX \tretention\tintake\t= \t(1)\nNintake \tThe annual N intake per animal – kg N/animal-year.\nNretention \tThe portion of that N intake that is retained in the animal. (Default values are\nreported in Table 10.20 in IPCC 2006 guidelines, volume 4, chapter 10)\nNintake may be calculated using: \t\n\n\n\n\n\n= 6.25",
+    "id": "S-114",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "Source of data:"
+  },
+  {
+    "content": "*",
+    "id": "S-115",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "CP/100"
+  },
+  {
+    "content": "N intake \t(1a)\nCP \tCrude percent of protein (percent).\nGE \tGross energy intake of the animal, in enteric model, based on digestible energy, milk\nproduction, pregnancy, current weight, mature weight, rate of weight gain, and IPCC\nconstants, MJ day -1",
+    "id": "S-116",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "GE"
+  },
+  {
+    "content": "relatively constant across a wide range of forage and grain-based feeds commonly\nconsumed by livestock.",
+    "id": "S-117",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "18.45 Conversion factor for dietary GE per kg of dry matter (MJ/kg). This value is"
+  },
+  {
+    "content": "In absence of availability of project specific information on Protein intake, which should be justified in\nthe CDM-PDD, site-specific national or regional data should be used for the nitrogen excretion NEX, if\navailable. In the absence of such data, default values from table 10.19 of the IPCC 2006, volume 4,\nchapter 10.) may be used and should be corrected for the animal weight at the project site in the",
+    "id": "S-118",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "6.25 Conversion from kg of dietary protein to kg of dietary N, kg feed protein (kg N)-1"
+  },
+  {
+    "content": "default\tIPCC\ndefault\nsite\nsite \tNEX",
+    "id": "S-119",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "following way:"
+  },
+  {
+    "content": "NEX site \tIs the adjusted annual average nitrogen excretion per head of a defined livestock\npopulation in kg N/animal/year.\nWsite \tIs the average animal weight of a defined population at the project site in kg.\nWdefault \tIs the default average animal weight of a defined population in kg.\nNEX IPCCdefault \tIs the default value (IPCC 2006 or US-EPA) for the nitrogen excretion per head\nof a defined livestock population in kg N/animal/year.\n\n-- 36 of 38 --\n\n37/38\nAnnex 3: Table 10.17 of IPCC 2006\n\n-- 37 of 38 --\n\n38/38\n- - - - - -\n\n-- 38 of 38 --",
+    "id": "S-120",
+    "provenance": {
+      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "source_ref": "UNFCCC/ACM0010@v03-0"
+    },
+    "title": "NEX ⋅ = (2)"
+  }
+]

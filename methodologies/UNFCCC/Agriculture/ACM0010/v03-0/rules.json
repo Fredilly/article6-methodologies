@@ -1,0 +1,628 @@
+{
+  "rules": [
+    {
+      "id": "R-6-0001",
+      "section_id": "S-6",
+      "tags": [
+        "requirement"
+      ],
+      "text": "management under the baseline scenario should be at least 1m2 ."
+    },
+    {
+      "id": "R-6-0002",
+      "section_id": "S-6",
+      "tags": [
+        "requirement"
+      ],
+      "text": "• The AWMS/process in the project case should ensure that no leakage of manure waste into ground"
+    },
+    {
+      "id": "R-6-0003",
+      "section_id": "S-6",
+      "tags": [
+        "requirement"
+      ],
+      "text": "water takes place, e.g., the lagoon should have a non-permeable layer at the lagoon bottom."
+    },
+    {
+      "id": "R-6-0004",
+      "section_id": "S-6",
+      "tags": [
+        "requirement"
+      ],
+      "text": "This baseline methodology shall be used in conjunction with the approved monitoring methodology"
+    },
+    {
+      "id": "R-9-0001",
+      "section_id": "S-9",
+      "tags": [
+        "requirement"
+      ],
+      "text": "Table 10.17) should be taken into account. In drawing up a list of possible scenarios, possible"
+    },
+    {
+      "id": "R-9-0002",
+      "section_id": "S-9",
+      "tags": [
+        "requirement"
+      ],
+      "text": "combinations of different Animal Waste Management Systems (AWMS) should be taken into"
+    },
+    {
+      "id": "R-14-0001",
+      "section_id": "S-14",
+      "tags": [
+        "requirement"
+      ],
+      "text": "Since the proposed project activity not being registered as a CDM project activity shall be one of the"
+    },
+    {
+      "id": "R-14-0002",
+      "section_id": "S-14",
+      "tags": [
+        "requirement"
+      ],
+      "text": "considered alternatives, any barrier that may prevent the project activity to occur shall be included in that"
+    },
+    {
+      "id": "R-16-0001",
+      "section_id": "S-16",
+      "tags": [
+        "requirement"
+      ],
+      "text": "For each alternative, all costs and economic benefits attributable to the waste management scenario should"
+    },
+    {
+      "id": "R-18-0001",
+      "section_id": "S-18",
+      "tags": [
+        "requirement"
+      ],
+      "text": "should be calculated. The calculation of the IRR must include inter alia investment costs, operation and"
+    },
+    {
+      "id": "R-18-0002",
+      "section_id": "S-18",
+      "tags": [
+        "requirement"
+      ],
+      "text": "The IRR for all alternative scenarios should be calculated in a conservative manner. To ensure this,"
+    },
+    {
+      "id": "R-18-0003",
+      "section_id": "S-18",
+      "tags": [
+        "requirement"
+      ],
+      "text": "assumptions and parameters for the proposed project activity, if still under consideration, should be chosen"
+    },
+    {
+      "id": "R-18-0004",
+      "section_id": "S-18",
+      "tags": [
+        "requirement"
+      ],
+      "text": "considered, assumptions and parameters should be chosen in a way such that they tend to lead to a lower"
+    },
+    {
+      "id": "R-18-0005",
+      "section_id": "S-18",
+      "tags": [
+        "requirement"
+      ],
+      "text": "IRR and NPV. This conservative choice of parameters and assumptions should be ensured by obtaining"
+    },
+    {
+      "id": "R-18-0006",
+      "section_id": "S-18",
+      "tags": [
+        "requirement"
+      ],
+      "text": "expert opinions and should be evaluated by the DOE as part of the validation of the project activity."
+    },
+    {
+      "id": "R-18-0007",
+      "section_id": "S-18",
+      "tags": [
+        "requirement"
+      ],
+      "text": "comparison should be based on the NPV, stating explicitly the discount rate used."
+    },
+    {
+      "id": "R-23-0001",
+      "section_id": "S-23",
+      "tags": [
+        "requirement"
+      ],
+      "text": "boundary in pre-project situation before disposal. This shall include the final disposal of methane, if any"
+    },
+    {
+      "id": "R-23-0002",
+      "section_id": "S-23",
+      "tags": [
+        "requirement"
+      ],
+      "text": "The precise location of the farm(s) where the project activity takes place shall be identified in the CDM-"
+    },
+    {
+      "id": "R-36-0001",
+      "section_id": "S-36",
+      "tags": [
+        "requirement"
+      ],
+      "text": "The following sources should be used to calculate baseline emissions:"
+    },
+    {
+      "id": "R-37-0001",
+      "section_id": "S-37",
+      "tags": [
+        "requirement"
+      ],
+      "text": "This value varies by species and diet. Where default values are used, they should be taken from tables"
+    },
+    {
+      "id": "R-39-0001",
+      "section_id": "S-39",
+      "tags": [
+        "requirement"
+      ],
+      "text": "• The IPCC 2006 MCF values given in table 10.17 (chapter 10, volume 4) should be used, which is"
+    },
+    {
+      "id": "R-39-0002",
+      "section_id": "S-39",
+      "tags": [
+        "requirement"
+      ],
+      "text": "C, a linear interpolation should be used to estimate the MCF value at the"
+    },
+    {
+      "id": "R-39-0003",
+      "section_id": "S-39",
+      "tags": [
+        "requirement"
+      ],
+      "text": "to the IPCC Guidelines for National Greenhouse Gas Inventories should be taken into account."
+    },
+    {
+      "id": "R-39-0004",
+      "section_id": "S-39",
+      "tags": [
+        "requirement"
+      ],
+      "text": "• A conservativeness factor should be applied by multiplying MCF values (estimated as per above"
+    },
+    {
+      "id": "R-40-0001",
+      "section_id": "S-40",
+      "tags": [
+        "requirement"
+      ],
+      "text": "technology and should be estimated in a conservative manner. Default values for different treatment"
+    },
+    {
+      "id": "R-46-0001",
+      "section_id": "S-46",
+      "tags": [
+        "requirement"
+      ],
+      "text": "should be estimated in a conservative manner. Default values for different treatment technologies can be"
+    },
+    {
+      "id": "R-47-0001",
+      "section_id": "S-47",
+      "tags": [
+        "requirement"
+      ],
+      "text": "fuel fired power plant, project participants should use for CEF Bl,elec, the default emission factor for a"
+    },
+    {
+      "id": "R-47-0002",
+      "section_id": "S-47",
+      "tags": [
+        "requirement"
+      ],
+      "text": "emission factor CEF Bl,elec should be calculated according to approved methodology “Tool for"
+    },
+    {
+      "id": "R-48-0001",
+      "section_id": "S-48",
+      "tags": [
+        "requirement"
+      ],
+      "text": "CEF grid should be calculated according to “Tool for calculation of emission factor for electricity systems”."
+    },
+    {
+      "id": "R-49-0001",
+      "section_id": "S-49",
+      "tags": [
+        "requirement"
+      ],
+      "text": "Baseline electricity and thermal energy consumptions should be estimated as the average of the historical"
+    },
+    {
+      "id": "R-52-0001",
+      "section_id": "S-52",
+      "tags": [
+        "requirement"
+      ],
+      "text": "production. Where project participants use lower values for percentage of physical leakage, they should"
+    },
+    {
+      "id": "R-52-0002",
+      "section_id": "S-52",
+      "tags": [
+        "requirement"
+      ],
+      "text": "a leakage factor of 0.15 or a lower value, if properly justified through documented evidence (which should"
+    },
+    {
+      "id": "R-54-0001",
+      "section_id": "S-54",
+      "tags": [
+        "requirement"
+      ],
+      "text": "R VS,n Fraction of volatile solid treated in AWMS stage n. The project proponents shall"
+    },
+    {
+      "id": "R-54-0002",
+      "section_id": "S-54",
+      "tags": [
+        "requirement"
+      ],
+      "text": "conservative value of volatile solids treated in Annex 1 shall be used."
+    },
+    {
+      "id": "R-54-0003",
+      "section_id": "S-54",
+      "tags": [
+        "requirement"
+      ],
+      "text": "boundary without further treatment, these emissions should be treated as leakage and appropriately"
+    },
+    {
+      "id": "R-56-0001",
+      "section_id": "S-56",
+      "tags": [
+        "requirement"
+      ],
+      "text": "emissions should be included in leakages. The emissions from sludge ponds shall be estimated as follows:"
+    },
+    {
+      "id": "R-57-0001",
+      "section_id": "S-57",
+      "tags": [
+        "requirement"
+      ],
+      "text": "steps prior to sludge being treated. Values for Rvs should be taken from Annex 1."
+    },
+    {
+      "id": "R-61-0001",
+      "section_id": "S-61",
+      "tags": [
+        "requirement"
+      ],
+      "text": "previous stage. The relative reduction (R N) of nitrogen depends on the treatment technology and should be"
+    },
+    {
+      "id": "R-61-0002",
+      "section_id": "S-61",
+      "tags": [
+        "requirement"
+      ],
+      "text": "monitoring plan) must be compared annually with the total methane generated as measured by meter at"
+    },
+    {
+      "id": "R-61-0003",
+      "section_id": "S-61",
+      "tags": [
+        "requirement"
+      ],
+      "text": "generated and that consumed in flare/electricity generation/heat shall be accounted as leakage from the"
+    },
+    {
+      "id": "R-63-0001",
+      "section_id": "S-63",
+      "tags": [
+        "requirement"
+      ],
+      "text": "Project emissions from flaring of the residual gas stream should be determined following the procedure"
+    },
+    {
+      "id": "R-64-0001",
+      "section_id": "S-64",
+      "tags": [
+        "requirement"
+      ],
+      "text": "case, the electricity consumption is not measured then the electricity consumption shall be"
+    },
+    {
+      "id": "R-74-0001",
+      "section_id": "S-74",
+      "tags": [
+        "requirement"
+      ],
+      "text": "leaching/runoff occurs that is lost through leaching and runoff should be estimated"
+    },
+    {
+      "id": "R-74-0002",
+      "section_id": "S-74",
+      "tags": [
+        "requirement"
+      ],
+      "text": "relative reduction of nitrogen depends on the treatment technology and should be"
+    },
+    {
+      "id": "R-80-0001",
+      "section_id": "S-80",
+      "tags": [
+        "requirement"
+      ],
+      "text": "reduction of nitrogen depends on the treatment technology and should be estimated in"
+    },
+    {
+      "id": "R-81-0001",
+      "section_id": "S-81",
+      "tags": [
+        "requirement"
+      ],
+      "text": ", * 1 in equations (24), (25) and (26) above should be"
+    },
+    {
+      "id": "R-84-0001",
+      "section_id": "S-84",
+      "tags": [
+        "requirement"
+      ],
+      "text": "Rvs should be taken from annex 1."
+    },
+    {
+      "id": "R-85-0001",
+      "section_id": "S-85",
+      "tags": [
+        "requirement"
+      ],
+      "text": "and methane fraction in the biogas), then the latter shall be used to calculate the emissions reduction for"
+    },
+    {
+      "id": "R-85-0002",
+      "section_id": "S-85",
+      "tags": [
+        "requirement"
+      ],
+      "text": "digester shall be compared to the (BECH4,y - PEAD,y - PE PL,y) and if found lower, then (BECH4,y - PE AD,y -"
+    },
+    {
+      "id": "R-86-0001",
+      "section_id": "S-86",
+      "tags": [
+        "requirement"
+      ],
+      "text": "given technology must be used."
+    },
+    {
+      "id": "R-92-0001",
+      "section_id": "S-92",
+      "tags": [
+        "requirement"
+      ],
+      "text": "calculating CERs and procedure for doing so should be described in the CDM-"
+    },
+    {
+      "id": "R-98-0001",
+      "section_id": "S-98",
+      "tags": [
+        "requirement"
+      ],
+      "text": "21 for the first commitment period. Shall be updated according to any future"
+    },
+    {
+      "id": "R-100-0001",
+      "section_id": "S-100",
+      "tags": [
+        "requirement"
+      ],
+      "text": "310 for the first commitment period. Shall be updated according to any future"
+    },
+    {
+      "id": "R-103-0001",
+      "section_id": "S-103",
+      "tags": [
+        "requirement"
+      ],
+      "text": "The monitoring plan should include on site inspections for each individual farm included in the project"
+    },
+    {
+      "id": "R-105-0001",
+      "section_id": "S-105",
+      "tags": [
+        "requirement"
+      ],
+      "text": "• The default volatile solid excretion values or other parameters required for estimating the volatile"
+    },
+    {
+      "id": "R-105-0002",
+      "section_id": "S-105",
+      "tags": [
+        "requirement"
+      ],
+      "text": "use a lower value, the appropriate measurement to support the lower value shall be monitored and"
+    },
+    {
+      "id": "R-105-0003",
+      "section_id": "S-105",
+      "tags": [
+        "requirement"
+      ],
+      "text": "• The default nitrogen excretion per animal or parameters required to estimate nitrogen excretion. If N"
+    },
+    {
+      "id": "R-105-0004",
+      "section_id": "S-105",
+      "tags": [
+        "requirement"
+      ],
+      "text": "intake method is used the amount of dry matter intake by livestock shall be monitored."
+    },
+    {
+      "id": "R-105-0005",
+      "section_id": "S-105",
+      "tags": [
+        "requirement"
+      ],
+      "text": "• Concentration of methane in biogas at outlet of anaerobic digester, this shall be measured on wet"
+    },
+    {
+      "id": "R-105-0006",
+      "section_id": "S-105",
+      "tags": [
+        "requirement"
+      ],
+      "text": "year y (PE flare,y) should be monitored as per the “Tool to determine project emissions from flaring"
+    },
+    {
+      "id": "R-107-0001",
+      "section_id": "S-107",
+      "tags": [
+        "requirement"
+      ],
+      "text": "temperature is lower than 10 o C and higher than 5 o C, Annual MCF should be"
+    },
+    {
+      "id": "R-107-0002",
+      "section_id": "S-107",
+      "tags": [
+        "requirement"
+      ],
+      "text": "Any comment: The value is taken from published sources. The parameter value should be"
+    },
+    {
+      "id": "R-107-0003",
+      "section_id": "S-107",
+      "tags": [
+        "requirement"
+      ],
+      "text": "Any comment: If it is required to use developed country VS values, the following should be"
+    },
+    {
+      "id": "R-107-0004",
+      "section_id": "S-107",
+      "tags": [
+        "requirement"
+      ],
+      "text": "or US-EPA, which ever is lower) shall be recorded and archived ."
+    },
+    {
+      "id": "R-109-0001",
+      "section_id": "S-109",
+      "tags": [
+        "requirement"
+      ],
+      "text": "conservative manner while calculating CERs and procedure for doing so should"
+    },
+    {
+      "id": "R-109-0002",
+      "section_id": "S-109",
+      "tags": [
+        "requirement"
+      ],
+      "text": "Any comment: The PDD should describe the system on monitoring the number of livestock"
+    },
+    {
+      "id": "R-109-0003",
+      "section_id": "S-109",
+      "tags": [
+        "requirement"
+      ],
+      "text": "of sales, records of food purchases) should be assessed."
+    },
+    {
+      "id": "R-109-0004",
+      "section_id": "S-109",
+      "tags": [
+        "requirement"
+      ],
+      "text": "Any comment: The PDD should describe the system on monitoring the weight of livestock. ."
+    },
+    {
+      "id": "R-109-0005",
+      "section_id": "S-109",
+      "tags": [
+        "requirement"
+      ],
+      "text": "different for each application. This maintenance/calibration practice should be"
+    },
+    {
+      "id": "R-109-0006",
+      "section_id": "S-109",
+      "tags": [
+        "requirement"
+      ],
+      "text": "Archive electronically during project plus 5 years. Shall be measured on wet"
+    },
+    {
+      "id": "R-109-0007",
+      "section_id": "S-109",
+      "tags": [
+        "requirement"
+      ],
+      "text": "QA/QC procedures: The project proponents shall define the variability of the concentration. They"
+    },
+    {
+      "id": "R-109-0008",
+      "section_id": "S-109",
+      "tags": [
+        "requirement"
+      ],
+      "text": "shall also define the error in estimate for different level of measurement"
+    },
+    {
+      "id": "R-109-0009",
+      "section_id": "S-109",
+      "tags": [
+        "requirement"
+      ],
+      "text": "Any comment: The project proponents shall define the variability of the concentration. They"
+    },
+    {
+      "id": "R-110-0001",
+      "section_id": "S-110",
+      "tags": [
+        "requirement"
+      ],
+      "text": "residual gas stream in year y (PEflare,y) should be monitored as per the “Tool to"
+    },
+    {
+      "id": "R-111-0001",
+      "section_id": "S-111",
+      "tags": [
+        "requirement"
+      ],
+      "text": "residual gas stream in year y (PEflare,y) should use the QA/QC procedures as per"
+    },
+    {
+      "id": "R-118-0001",
+      "section_id": "S-118",
+      "tags": [
+        "requirement"
+      ],
+      "text": "In absence of availability of project specific information on Protein intake, which should be justified in"
+    },
+    {
+      "id": "R-118-0002",
+      "section_id": "S-118",
+      "tags": [
+        "requirement"
+      ],
+      "text": "the CDM-PDD, site-specific national or regional data should be used for the nitrogen excretion NEX, if"
+    },
+    {
+      "id": "R-118-0003",
+      "section_id": "S-118",
+      "tags": [
+        "requirement"
+      ],
+      "text": "chapter 10.) may be used and should be corrected for the animal weight at the project site in the"
+    }
+  ]
+}

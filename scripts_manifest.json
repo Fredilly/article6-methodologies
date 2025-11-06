@@ -1,71 +1,274 @@
 {
-  "generated_at": "2025-11-03T05:15:03Z",
-  "git_commit": "5410892f561b32e0a8eec61cf7011f22c84d44ff",
+  "generated_at": "2025-11-06T10:21:57Z",
+  "git_commit": "881697d5a0d64c689fb89f1a344b4f4230a12494",
   "files": [
-    { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
-    { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
-    { "path": "scripts/assert-offline.sh", "sha256": "b7f69664148270ded298a4d9fb638075a21063ad7fc8e7c8b3e2d49ed88bcffd" },
-    { "path": "scripts/assert-tool-hashes.sh", "sha256": "df6b46b70aaee6bbe0e107afbb9a64c50e125d8ae22479d1d3f4722d84cc316a" },
-    { "path": "scripts/baselines/bm25-retrieval.js", "sha256": "a4fecca2f1d899bcf892de00c3dd09b9cac5d7b51049fc0401b94c1710a587c9" },
-    { "path": "scripts/baselines/param-extraction-linear-json.js", "sha256": "95c48577722e227d980fd650331262b928daee2288f715379c878624c52962b2" },
-    { "path": "scripts/baselines/param-extraction-linear.js", "sha256": "13f483627ff922c5d41d5d2d60f03c53a207d30eee1ba9a3758b863b2323c2ea" },
-    { "path": "scripts/baselines/param-extraction-tfidf.js", "sha256": "9ba211f2a139daf0bd1a857205c3ede17f741c71fe345d4de2148cd8b2a70c8a" },
-    { "path": "scripts/build-manifest.mjs", "sha256": "61aa4f2b0e5fda53d0cbd722e539e23e51047168057024ad7b7927e404bc89a6" },
-    { "path": "scripts/build-validator-bundle.js", "sha256": "307a3850efc0fa6c8acb8386a296189a4541f8a62ec263de3538426cd1e4df69" },
-    { "path": "scripts/check-lean-drift.sh", "sha256": "6c482f7b7ed321f6612c8e1a347921894613cf500fa013f0f1c3904e9b78713f" },
-    { "path": "scripts/check-methodology-guardrails.js", "sha256": "b1ed068574c8a9d9399f11e122ca21b9d7c39a3e6a4deccfb6cb218a32145cd4" },
-    { "path": "scripts/check-registry.sh", "sha256": "d66f360cfc7350e5056a81825c2a6aeb3edea448487d2c89829799d64ea2f968" },
-    { "path": "scripts/check-source-hash.js", "sha256": "a3cba2d0d15b855c504c2f6cedd828b44aba19dfb5312f17b461d39d945435eb" },
-    { "path": "scripts/check-trio-and-registry.js", "sha256": "8df1ab3dd5c4a5f714c067e1f8f6c173ece5da1eb4e0f9429d928aaaff65ae92" },
-    { "path": "scripts/check-validators-sync.js", "sha256": "8ec4d1f5fb82f431873d8d7e0c39838b24399b90b1c5c69551ea62e34389c6ab" },
-    { "path": "scripts/check-workflows-supplychain.js", "sha256": "628f024eda85390342e46ccfea86bed1d546e17c15ad67aca03f4458415e6108" },
-    { "path": "scripts/ci-run-tests.sh", "sha256": "9fe1d8bce3c97fd0c4ed6667f520b41b178372019c501810f2df5480898e229a" },
-    { "path": "scripts/compile-audit.js", "sha256": "917ee7d5fabef37ec7d4bfa9503ac498da225426bf5fbd05fd710d35699a1a14" },
-    { "path": "scripts/compile-validators.js", "sha256": "0d6d8454097445711c1a0f974061f7f426522b8c1e1c0b61998cfa1c2237949b" },
-    { "path": "scripts/derive-lean-from-rich.js", "sha256": "522e798bcbbf3e8261454dc104a4287b774f1157b890cf798571571698d608b9" },
-    { "path": "scripts/derive-lean.sh", "sha256": "30dc23357fbdd0c442368d66bfefc3bfa70c4299fe573b62380fd616c846f14b" },
-    { "path": "scripts/fill-provenance.js", "sha256": "ada54506b8554fd101c56541768bbec912d9050842734c2f97a153b9d067b221" },
-    { "path": "scripts/gen-dataset-params.js", "sha256": "befe8d1bdece5b2738284c2b60598e676f7f910c605ffb53fbb7a07c3342414f" },
-    { "path": "scripts/gen-dataset.js", "sha256": "47b58f5dc13beded4ece8a74029827669945ae5140b2dfec4a8f19894d3cc753" },
-    { "path": "scripts/gen-method.sh", "sha256": "768efba1930eaca72cf134c950f49fc79d648deb2354cb974fab643a5fe9198b" },
-    { "path": "scripts/gen-registry.js", "sha256": "ed5e27b27860ae358c20c1d0e2cd15c678cd021a50ef295ff0234603f00c8b0e" },
-    { "path": "scripts/hash-all.sh", "sha256": "91dcef91eb557a896cfc2cfddeb12f61e5042206438fbdc66a52ecb341c0b853" },
-    { "path": "scripts/hash-scripts.sh", "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3" },
-    { "path": "scripts/ingest.sh", "sha256": "df710c9196d0073d2bbf582b13aaee86829fc47638e4c8dae8f5e36ebded5d20" },
-    { "path": "scripts/inject-anchors.js", "sha256": "0541bc16ebc87a2cb54c2b8b251e96d64512a6e8607ed70948195af4f6fc2953" },
-    { "path": "scripts/install-hooks.sh", "sha256": "fcd91a8dc76ea68cf703f388c0fc99282f8cefacd30e348ca27a238049123ac3" },
-    { "path": "scripts/install-vendored-ajv.sh", "sha256": "58d98426bb0dc94f73e53d535495d629df276e876534ffb2d8227557f4ccfc2c" },
-    { "path": "scripts/json-canonical-check.sh", "sha256": "a28760529bfa17f0e8e4fe2df1914029ee77341034ab841bf7fe3a7fa7199c42" },
-    { "path": "scripts/lib/net.sh", "sha256": "c60e38d3370d94bdea3b4752e5720da6c27e141bcb454085ad00361de7321ec6" },
-    { "path": "scripts/lint-shape.js", "sha256": "0a321724887eb1f25ba03d40cb9f802e6dff7c0ee479de6c3f09fe61f6eec7eb" },
-    { "path": "scripts/mvp-check.sh", "sha256": "d726b2a99cd668c392c23fe69cf3fb16988ec8e151c0b0bc24e77e48e0f3d4cd" },
-    { "path": "scripts/offline/ingest-offline.sh", "sha256": "c6d4af789a0f945adef891c66d410db987bcb43fed946181fbfa40033f22d9c0" },
-    { "path": "scripts/offline/no-stubs.sh", "sha256": "08bc96ae10db0013e3842b779d72a8768ed3a40ec57eb7de286da8e211ffb43a" },
-    { "path": "scripts/offline/pdf2txt.cjs", "sha256": "c95ad503f4d3287665260b8c375f950771d0aa1938c3836511447246b4494c90" },
-    { "path": "scripts/offline/prepare-offline.cjs", "sha256": "85a31d59658a83203f885de8d34743625705e0e381aba13545ad5a95ecb5f708" },
-    { "path": "scripts/offline/read-batch.cjs", "sha256": "967e10dd8add00199e5f3f1991b78e42e374e51c4b3cc4beec30c81066f297f7" },
-    { "path": "scripts/offline/update-registry.cjs", "sha256": "11b2ef249a112a0551cb19858dcbfdcd5b2c6dcb534424b0d4bd9134f6323d54" },
-    { "path": "scripts/ops.sh", "sha256": "797ca9be37c35b9fdaeee972066ab84390fecab8b0f92a549f09de866d3111d5" },
-    { "path": "scripts/policy-tools.sh", "sha256": "805620200a704dc64a6be4fa5a6261cf00d35ba747d525c405cc29b7320409ff" },
-    { "path": "scripts/prefetch-assets.sh", "sha256": "3d4611de6f46c8f0e38b917b9b0935f287b14611eb955b4d03552aa646c7a72d" },
-    { "path": "scripts/py/extract_rules.py", "sha256": "6e57781f4c1f57d4e46a3c1df35f19a9680048fc19833a812461da385736231e" },
-    { "path": "scripts/py/extract_sections.py", "sha256": "c419e385956a8e1cd960a4d2e6352ffbd49132195b6447ac220102a63b4a0b2a" },
-    { "path": "scripts/require-vendor-ajv.sh", "sha256": "fc58376b1e5dfb4c1cf4a22cbcf574c151e58ec90222c32144a018fc98f02389" },
-    { "path": "scripts/resolve-ingest-scope.mjs", "sha256": "c9146f4fbea6ca3c94f12aef5dd92ad8d6a23834f0fa7f8312f4319c8e9689d8" },
-    { "path": "scripts/rewrite-forestry.js", "sha256": "ff99289605e2e87a28ce4c5f55b512b6c3e86983b69dcf0b638e84f1f7884cf4" },
-    { "path": "scripts/run-ajv.sh", "sha256": "fa3e40b945144c9f8dda93f44f6c00f2e404475a3074a7bc5cf450a4e38ffe0f" },
-    { "path": "scripts/scaffold-method.js", "sha256": "bac5757661dd49c2dc48ba3811170e98f7dc94acc5d28573614d72e54168204e" },
-    { "path": "scripts/setup/install-ingest-tools.sh", "sha256": "96135bdbe7c18a69b0123039992817b8bf10723b71b4a7f6a2359f2b08115ae4" },
-    { "path": "scripts/sync-examples.sh", "sha256": "cfa456e1711d3fe873fa1bd19c54c38476815becd5e198efced4ff0d4dc3b728" },
-    { "path": "scripts/utils/jsonl.js", "sha256": "86c0723c800b41d691fcc7790895e90e2032d9c7fb4a685030917c6d5c54c8c3" },
-    { "path": "scripts/validate-offline.js", "sha256": "1dcb46c0de25397a3d6ada0f696133e83422064953c0d995dc9c41492980f3df" },
-    { "path": "scripts/validate-offline.sh", "sha256": "e9c63cdd27a80bad26e8163702a32aa5c229e8cdbae535e2f5f72f93ceade260" },
-    { "path": "scripts/validators/.gitkeep", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" },
-    { "path": "scripts/validators/bundle.cjs", "sha256": "45c98b18ef97a430195f8362f2fe3bb623e68b6e330e821f9ebc3dd5376ff53f" },
-    { "path": "scripts/validators/meta.cjs", "sha256": "32062eae3938280a4ecbfb8b50769b5b0ed8af54fa0305ec28f38d3d41a7559b" },
-    { "path": "scripts/validators/rules.cjs", "sha256": "8b5c98029894a60203acd331faaf15d896fa4fe154e7772e9775b51af3c33645" },
-    { "path": "scripts/validators/schemas.sha256", "sha256": "6e8cf80238616eaa8676d2d72546d7cf902333d7f9dfe6e96127ebe0222c45f7" },
-    { "path": "scripts/validators/sections.cjs", "sha256": "0a1144951376e8f8c94c8e18500da9c5838bc20f114de8ebb5ca7eb3f2f95602" },
-    { "path": "scripts/verify-generation.sh", "sha256": "7d5f2d839b26d6888083c95746f3ff5609d9ab4b17797dd6be801c06b4774c55" }
+    {
+      "path": "scripts/assert-offline.sh",
+      "sha256": "b7f69664148270ded298a4d9fb638075a21063ad7fc8e7c8b3e2d49ed88bcffd"
+    },
+    {
+      "path": "scripts/assert-tool-hashes.sh",
+      "sha256": "df6b46b70aaee6bbe0e107afbb9a64c50e125d8ae22479d1d3f4722d84cc316a"
+    },
+    {
+      "path": "scripts/baselines/bm25-retrieval.js",
+      "sha256": "a4fecca2f1d899bcf892de00c3dd09b9cac5d7b51049fc0401b94c1710a587c9"
+    },
+    {
+      "path": "scripts/baselines/param-extraction-linear-json.js",
+      "sha256": "95c48577722e227d980fd650331262b928daee2288f715379c878624c52962b2"
+    },
+    {
+      "path": "scripts/baselines/param-extraction-linear.js",
+      "sha256": "13f483627ff922c5d41d5d2d60f03c53a207d30eee1ba9a3758b863b2323c2ea"
+    },
+    {
+      "path": "scripts/baselines/param-extraction-tfidf.js",
+      "sha256": "9ba211f2a139daf0bd1a857205c3ede17f741c71fe345d4de2148cd8b2a70c8a"
+    },
+    {
+      "path": "scripts/build-manifest.mjs",
+      "sha256": "61aa4f2b0e5fda53d0cbd722e539e23e51047168057024ad7b7927e404bc89a6"
+    },
+    {
+      "path": "scripts/build-validator-bundle.js",
+      "sha256": "307a3850efc0fa6c8acb8386a296189a4541f8a62ec263de3538426cd1e4df69"
+    },
+    {
+      "path": "scripts/check-lean-drift.sh",
+      "sha256": "6c482f7b7ed321f6612c8e1a347921894613cf500fa013f0f1c3904e9b78713f"
+    },
+    {
+      "path": "scripts/check-methodology-guardrails.js",
+      "sha256": "b1ed068574c8a9d9399f11e122ca21b9d7c39a3e6a4deccfb6cb218a32145cd4"
+    },
+    {
+      "path": "scripts/check-registry.sh",
+      "sha256": "d66f360cfc7350e5056a81825c2a6aeb3edea448487d2c89829799d64ea2f968"
+    },
+    {
+      "path": "scripts/check-source-hash.js",
+      "sha256": "a3cba2d0d15b855c504c2f6cedd828b44aba19dfb5312f17b461d39d945435eb"
+    },
+    {
+      "path": "scripts/check-trio-and-registry.js",
+      "sha256": "8df1ab3dd5c4a5f714c067e1f8f6c173ece5da1eb4e0f9429d928aaaff65ae92"
+    },
+    {
+      "path": "scripts/check-validators-sync.js",
+      "sha256": "8ec4d1f5fb82f431873d8d7e0c39838b24399b90b1c5c69551ea62e34389c6ab"
+    },
+    {
+      "path": "scripts/check-workflows-supplychain.js",
+      "sha256": "628f024eda85390342e46ccfea86bed1d546e17c15ad67aca03f4458415e6108"
+    },
+    {
+      "path": "scripts/ci-run-tests.sh",
+      "sha256": "9fe1d8bce3c97fd0c4ed6667f520b41b178372019c501810f2df5480898e229a"
+    },
+    {
+      "path": "scripts/compile-audit.js",
+      "sha256": "917ee7d5fabef37ec7d4bfa9503ac498da225426bf5fbd05fd710d35699a1a14"
+    },
+    {
+      "path": "scripts/compile-validators.js",
+      "sha256": "0d6d8454097445711c1a0f974061f7f426522b8c1e1c0b61998cfa1c2237949b"
+    },
+    {
+      "path": "scripts/derive-lean-from-rich.js",
+      "sha256": "522e798bcbbf3e8261454dc104a4287b774f1157b890cf798571571698d608b9"
+    },
+    {
+      "path": "scripts/derive-lean.sh",
+      "sha256": "30dc23357fbdd0c442368d66bfefc3bfa70c4299fe573b62380fd616c846f14b"
+    },
+    {
+      "path": "scripts/fill-provenance.js",
+      "sha256": "ada54506b8554fd101c56541768bbec912d9050842734c2f97a153b9d067b221"
+    },
+    {
+      "path": "scripts/gen-dataset-params.js",
+      "sha256": "befe8d1bdece5b2738284c2b60598e676f7f910c605ffb53fbb7a07c3342414f"
+    },
+    {
+      "path": "scripts/gen-dataset.js",
+      "sha256": "47b58f5dc13beded4ece8a74029827669945ae5140b2dfec4a8f19894d3cc753"
+    },
+    {
+      "path": "scripts/gen-method.sh",
+      "sha256": "768efba1930eaca72cf134c950f49fc79d648deb2354cb974fab643a5fe9198b"
+    },
+    {
+      "path": "scripts/gen-registry.js",
+      "sha256": "ed5e27b27860ae358c20c1d0e2cd15c678cd021a50ef295ff0234603f00c8b0e"
+    },
+    {
+      "path": "scripts/hash-all.sh",
+      "sha256": "91dcef91eb557a896cfc2cfddeb12f61e5042206438fbdc66a52ecb341c0b853"
+    },
+    {
+      "path": "scripts/hash-scripts.sh",
+      "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3"
+    },
+    {
+      "path": "scripts/ingest-full.sh",
+      "sha256": "dd1de771a8a0958571b9cf97174e682527ea18f06c6cb33a9bd54d3f80d6ef4b"
+    },
+    {
+      "path": "scripts/ingest.sh",
+      "sha256": "5ddcc5dd7ea93e6fde08ca9f0c4506a3408a70e7b4b011445046962d4fd64043"
+    },
+    {
+      "path": "scripts/inject-anchors.js",
+      "sha256": "0541bc16ebc87a2cb54c2b8b251e96d64512a6e8607ed70948195af4f6fc2953"
+    },
+    {
+      "path": "scripts/install-hooks.sh",
+      "sha256": "fcd91a8dc76ea68cf703f388c0fc99282f8cefacd30e348ca27a238049123ac3"
+    },
+    {
+      "path": "scripts/install-vendored-ajv.sh",
+      "sha256": "58d98426bb0dc94f73e53d535495d629df276e876534ffb2d8227557f4ccfc2c"
+    },
+    {
+      "path": "scripts/json-canonical-check.sh",
+      "sha256": "a28760529bfa17f0e8e4fe2df1914029ee77341034ab841bf7fe3a7fa7199c42"
+    },
+    {
+      "path": "scripts/lib/net.sh",
+      "sha256": "c60e38d3370d94bdea3b4752e5720da6c27e141bcb454085ad00361de7321ec6"
+    },
+    {
+      "path": "scripts/lint-shape.js",
+      "sha256": "0a321724887eb1f25ba03d40cb9f802e6dff7c0ee479de6c3f09fe61f6eec7eb"
+    },
+    {
+      "path": "scripts/mvp-check.sh",
+      "sha256": "d726b2a99cd668c392c23fe69cf3fb16988ec8e151c0b0bc24e77e48e0f3d4cd"
+    },
+    {
+      "path": "scripts/offline/ingest-offline.sh",
+      "sha256": "c6d4af789a0f945adef891c66d410db987bcb43fed946181fbfa40033f22d9c0"
+    },
+    {
+      "path": "scripts/offline/no-stubs.sh",
+      "sha256": "08bc96ae10db0013e3842b779d72a8768ed3a40ec57eb7de286da8e211ffb43a"
+    },
+    {
+      "path": "scripts/offline/pdf2txt.cjs",
+      "sha256": "1170e9f4053da5ca7507132a5cdf4f56f49655588b7fa6420260f6096f9f5143"
+    },
+    {
+      "path": "scripts/offline/prepare-offline.cjs",
+      "sha256": "85a31d59658a83203f885de8d34743625705e0e381aba13545ad5a95ecb5f708"
+    },
+    {
+      "path": "scripts/offline/read-batch.cjs",
+      "sha256": "967e10dd8add00199e5f3f1991b78e42e374e51c4b3cc4beec30c81066f297f7"
+    },
+    {
+      "path": "scripts/offline/update-registry.cjs",
+      "sha256": "11b2ef249a112a0551cb19858dcbfdcd5b2c6dcb534424b0d4bd9134f6323d54"
+    },
+    {
+      "path": "scripts/ops.sh",
+      "sha256": "797ca9be37c35b9fdaeee972066ab84390fecab8b0f92a549f09de866d3111d5"
+    },
+    {
+      "path": "scripts/policy-tools.sh",
+      "sha256": "805620200a704dc64a6be4fa5a6261cf00d35ba747d525c405cc29b7320409ff"
+    },
+    {
+      "path": "scripts/prefetch-assets.sh",
+      "sha256": "3d4611de6f46c8f0e38b917b9b0935f287b14611eb955b4d03552aa646c7a72d"
+    },
+    {
+      "path": "scripts/py/extract_rules.py",
+      "sha256": "6e57781f4c1f57d4e46a3c1df35f19a9680048fc19833a812461da385736231e"
+    },
+    {
+      "path": "scripts/py/extract_sections.py",
+      "sha256": "c419e385956a8e1cd960a4d2e6352ffbd49132195b6447ac220102a63b4a0b2a"
+    },
+    {
+      "path": "scripts/py/generate_rich_from_txt.py",
+      "sha256": "683214f65017b4de046c0973770b4e6849b11def05a55366d4cb55c16ad53402"
+    },
+    {
+      "path": "scripts/require-vendor-ajv.sh",
+      "sha256": "fc58376b1e5dfb4c1cf4a22cbcf574c151e58ec90222c32144a018fc98f02389"
+    },
+    {
+      "path": "scripts/resolve-ingest-scope.mjs",
+      "sha256": "c9146f4fbea6ca3c94f12aef5dd92ad8d6a23834f0fa7f8312f4319c8e9689d8"
+    },
+    {
+      "path": "scripts/rewrite-forestry.js",
+      "sha256": "ff99289605e2e87a28ce4c5f55b512b6c3e86983b69dcf0b638e84f1f7884cf4"
+    },
+    {
+      "path": "scripts/run-ajv.sh",
+      "sha256": "fa3e40b945144c9f8dda93f44f6c00f2e404475a3074a7bc5cf450a4e38ffe0f"
+    },
+    {
+      "path": "scripts/scaffold-method.js",
+      "sha256": "bac5757661dd49c2dc48ba3811170e98f7dc94acc5d28573614d72e54168204e"
+    },
+    {
+      "path": "scripts/setup/install-ingest-tools.sh",
+      "sha256": "96135bdbe7c18a69b0123039992817b8bf10723b71b4a7f6a2359f2b08115ae4"
+    },
+    {
+      "path": "scripts/sync-examples.sh",
+      "sha256": "cfa456e1711d3fe873fa1bd19c54c38476815becd5e198efced4ff0d4dc3b728"
+    },
+    {
+      "path": "scripts/utils/jsonl.js",
+      "sha256": "86c0723c800b41d691fcc7790895e90e2032d9c7fb4a685030917c6d5c54c8c3"
+    },
+    {
+      "path": "scripts/validate-offline.js",
+      "sha256": "1dcb46c0de25397a3d6ada0f696133e83422064953c0d995dc9c41492980f3df"
+    },
+    {
+      "path": "scripts/validate-offline.sh",
+      "sha256": "e9c63cdd27a80bad26e8163702a32aa5c229e8cdbae535e2f5f72f93ceade260"
+    },
+    {
+      "path": "scripts/validators/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "scripts/validators/bundle.cjs",
+      "sha256": "45c98b18ef97a430195f8362f2fe3bb623e68b6e330e821f9ebc3dd5376ff53f"
+    },
+    {
+      "path": "scripts/validators/meta.cjs",
+      "sha256": "32062eae3938280a4ecbfb8b50769b5b0ed8af54fa0305ec28f38d3d41a7559b"
+    },
+    {
+      "path": "scripts/validators/rules.cjs",
+      "sha256": "8b5c98029894a60203acd331faaf15d896fa4fe154e7772e9775b51af3c33645"
+    },
+    {
+      "path": "scripts/validators/schemas.sha256",
+      "sha256": "6e8cf80238616eaa8676d2d72546d7cf902333d7f9dfe6e96127ebe0222c45f7"
+    },
+    {
+      "path": "scripts/validators/sections.cjs",
+      "sha256": "0a1144951376e8f8c94c8e18500da9c5838bc20f114de8ebb5ca7eb3f2f95602"
+    },
+    {
+      "path": "scripts/verify-generation.sh",
+      "sha256": "7d5f2d839b26d6888083c95746f3ff5609d9ab4b17797dd6be801c06b4774c55"
+    },
+    {
+      "path": "core/hashing/sha256.js",
+      "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738"
+    },
+    {
+      "path": "core/metrics/request-metrics.js",
+      "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa"
+    }
   ]
 }

@@ -1,0 +1,628 @@
+{
+  "rules": [
+    {
+      "id": "R-6-0001",
+      "section_id": "S-6",
+      "tags": [
+        "requirement"
+      ],
+      "text": "in wastewater treatment\" shall be applied;"
+    },
+    {
+      "id": "R-7-0001",
+      "section_id": "S-7",
+      "tags": [
+        "requirement"
+      ],
+      "text": "4. The project activity shall satisfy the following conditions:"
+    },
+    {
+      "id": "R-7-0002",
+      "section_id": "S-7",
+      "tags": [
+        "requirement"
+      ],
+      "text": "(a) The residual waste from the animal manure management system shall be handled"
+    },
+    {
+      "id": "R-7-0003",
+      "section_id": "S-7",
+      "tags": [
+        "requirement"
+      ],
+      "text": "aerobically, otherwise the related emissions shall be taken into account as per"
+    },
+    {
+      "id": "R-7-0004",
+      "section_id": "S-7",
+      "tags": [
+        "requirement"
+      ],
+      "text": "procedures (not resulting in methane emissions) must be ensured;"
+    },
+    {
+      "id": "R-8-0001",
+      "section_id": "S-8",
+      "tags": [
+        "requirement"
+      ],
+      "text": "(b) Technical measures shall be used (including a flare for exigencies) to ensure that"
+    },
+    {
+      "id": "R-8-0002",
+      "section_id": "S-8",
+      "tags": [
+        "requirement"
+      ],
+      "text": "transportation, should not exceed 45 days before being fed into the anaerobic"
+    },
+    {
+      "id": "R-12-0001",
+      "section_id": "S-12",
+      "tags": [
+        "requirement"
+      ],
+      "text": "5. Projects that recover methane from landfills shall use “AMS-III.G Landfill methane"
+    },
+    {
+      "id": "R-12-0002",
+      "section_id": "S-12",
+      "tags": [
+        "requirement"
+      ],
+      "text": "recovery\" and projects for wastewater treatment shall use AMS-III.H. Projects for"
+    },
+    {
+      "id": "R-12-0003",
+      "section_id": "S-12",
+      "tags": [
+        "requirement"
+      ],
+      "text": "composting of animal manure shall use “AMS-III.F Avoidance of methane emissions"
+    },
+    {
+      "id": "R-13-0001",
+      "section_id": "S-13",
+      "tags": [
+        "requirement"
+      ],
+      "text": "organic matters shall use the methodology “AMS-III.AO Methane recovery through"
+    },
+    {
+      "id": "R-14-0001",
+      "section_id": "S-14",
+      "tags": [
+        "requirement"
+      ],
+      "text": "under this methodology. The respective procedures in AMS-III.H shall be followed in this"
+    },
+    {
+      "id": "R-14-0002",
+      "section_id": "S-14",
+      "tags": [
+        "requirement"
+      ],
+      "text": "it should be taken into account accordingly, using zero as its emission factor; however,"
+    },
+    {
+      "id": "R-16-0001",
+      "section_id": "S-16",
+      "tags": [
+        "requirement"
+      ],
+      "text": "equipment shall be met as described in the \"General guidelines for SSC CDM"
+    },
+    {
+      "id": "R-19-0001",
+      "section_id": "S-19",
+      "tags": [
+        "requirement"
+      ],
+      "text": "12. Project participants shall take into account the “General guidelines for SSC CDM"
+    },
+    {
+      "id": "R-24-0001",
+      "section_id": "S-24",
+      "tags": [
+        "requirement"
+      ],
+      "text": "destruction of methane from livestock manure. If so, it is not required to apply the"
+    },
+    {
+      "id": "R-27-0001",
+      "section_id": "S-27",
+      "tags": [
+        "requirement"
+      ],
+      "text": "systems in the baseline is required. Manure characteristics include the amount of"
+    },
+    {
+      "id": "R-29-0001",
+      "section_id": "S-29",
+      "tags": [
+        "requirement"
+      ],
+      "text": "(Bo shall be based on total as-excreted VS). These values shall be compared to"
+    },
+    {
+      "id": "R-29-0002",
+      "section_id": "S-29",
+      "tags": [
+        "requirement"
+      ],
+      "text": "IPCC default values and any significant differences shall be explained. If country"
+    },
+    {
+      "id": "R-30-0001",
+      "section_id": "S-30",
+      "tags": [
+        "requirement"
+      ],
+      "text": "each animal species is required."
+    },
+    {
+      "id": "R-32-0001",
+      "section_id": "S-32",
+      "tags": [
+        "requirement"
+      ],
+      "text": "sources. These values shall be compared with IPCC default values and any"
+    },
+    {
+      "id": "R-32-0002",
+      "section_id": "S-32",
+      "tags": [
+        "requirement"
+      ],
+      "text": "significant differences shall be explained."
+    },
+    {
+      "id": "R-34-0001",
+      "section_id": "S-34",
+      "tags": [
+        "requirement"
+      ],
+      "text": "average animal weight. If so, it shall be well explained and documented. The"
+    },
+    {
+      "id": "R-35-0001",
+      "section_id": "S-35",
+      "tags": [
+        "requirement"
+      ],
+      "text": "following equation shall be used:"
+    },
+    {
+      "id": "R-37-0001",
+      "section_id": "S-37",
+      "tags": [
+        "requirement"
+      ],
+      "text": "of volatile solids (RVS) depends on the treatment technology and should be"
+    },
+    {
+      "id": "R-37-0002",
+      "section_id": "S-37",
+      "tags": [
+        "requirement"
+      ],
+      "text": "systems used in particular countries or regions shall be used. Alternatively, the"
+    },
+    {
+      "id": "R-44-0001",
+      "section_id": "S-44",
+      "tags": [
+        "requirement"
+      ],
+      "text": "the procedure specified in paragraph 18(e) shall be used to estimate the"
+    },
+    {
+      "id": "R-47-0001",
+      "section_id": "S-47",
+      "tags": [
+        "requirement"
+      ],
+      "text": "the recovered biogas shall be included in the project boundary and its output shall be"
+    },
+    {
+      "id": "R-47-0002",
+      "section_id": "S-47",
+      "tags": [
+        "requirement"
+      ],
+      "text": "monitoring the required parameters as described in Section 5 below, the project participant will"
+    },
+    {
+      "id": "R-50-0001",
+      "section_id": "S-50",
+      "tags": [
+        "requirement"
+      ],
+      "text": "digester shall be accounted for if both condition (a) and condition (b) below are satisfied:"
+    },
+    {
+      "id": "R-51-0001",
+      "section_id": "S-51",
+      "tags": [
+        "requirement"
+      ],
+      "text": "25. The following method shall be used to calculate project emissions from manure storage:"
+    },
+    {
+      "id": "R-58-0001",
+      "section_id": "S-58",
+      "tags": [
+        "requirement"
+      ],
+      "text": "28. Biogas flared or combusted, (MDy) shall be determined using the flare efficiency and"
+    },
+    {
+      "id": "R-59-0001",
+      "section_id": "S-59",
+      "tags": [
+        "requirement"
+      ],
+      "text": "used for metering, recording and processing the data obtained, shall be described in the"
+    },
+    {
+      "id": "R-64-0001",
+      "section_id": "S-64",
+      "tags": [
+        "requirement"
+      ],
+      "text": "equipment shall be designed to utilize biogas as fuel, and efficiency"
+    },
+    {
+      "id": "R-64-0002",
+      "section_id": "S-64",
+      "tags": [
+        "requirement"
+      ],
+      "text": "efficiency values, the highest value of the range shall be used for the"
+    },
+    {
+      "id": "R-65-0001",
+      "section_id": "S-65",
+      "tags": [
+        "requirement"
+      ],
+      "text": "31. Project proponents shall provide evidence to a validating DOE that only the biogas"
+    },
+    {
+      "id": "R-66-0001",
+      "section_id": "S-66",
+      "tags": [
+        "requirement"
+      ],
+      "text": "AMS-III.H shall be followed."
+    },
+    {
+      "id": "R-68-0001",
+      "section_id": "S-68",
+      "tags": [
+        "requirement"
+      ],
+      "text": "residual waste shall be monitored."
+    },
+    {
+      "id": "R-69-0001",
+      "section_id": "S-69",
+      "tags": [
+        "requirement"
+      ],
+      "text": "35. The monitoring plan should include on-site inspections for each individual farm included"
+    },
+    {
+      "id": "R-70-0001",
+      "section_id": "S-70",
+      "tags": [
+        "requirement"
+      ],
+      "text": "(a) The PDD shall describe the system used for monitoring the fraction of the manure"
+    },
+    {
+      "id": "R-70-0002",
+      "section_id": "S-70",
+      "tags": [
+        "requirement"
+      ],
+      "text": "records of food purchases) shall be assessed. Significant changes in livestock"
+    },
+    {
+      "id": "R-70-0003",
+      "section_id": "S-70",
+      "tags": [
+        "requirement"
+      ],
+      "text": "population and average weight shall be explained;"
+    },
+    {
+      "id": "R-71-0001",
+      "section_id": "S-71",
+      "tags": [
+        "requirement"
+      ],
+      "text": "3 If a fuel is defined as a start-up fuel, it should not represent more than 1% of the total fuel utilized in the"
+    },
+    {
+      "id": "R-72-0001",
+      "section_id": "S-72",
+      "tags": [
+        "requirement"
+      ],
+      "text": "(b) If developed country VS values are being used the following shall be monitored:"
+    },
+    {
+      "id": "R-72-0002",
+      "section_id": "S-72",
+      "tags": [
+        "requirement"
+      ],
+      "text": "population (kg) shall be recorded and archived."
+    },
+    {
+      "id": "R-73-0001",
+      "section_id": "S-73",
+      "tags": [
+        "requirement"
+      ],
+      "text": "37. Relevant parameters shall be monitored as indicated in section 5.1 below. The applicable"
+    },
+    {
+      "id": "R-73-0002",
+      "section_id": "S-73",
+      "tags": [
+        "requirement"
+      ],
+      "text": "monitoring guidelines specified below and therefore shall be referred by the project"
+    },
+    {
+      "id": "R-74-0001",
+      "section_id": "S-74",
+      "tags": [
+        "requirement"
+      ],
+      "text": "Only required when data from national published source are not"
+    },
+    {
+      "id": "R-74-0002",
+      "section_id": "S-74",
+      "tags": [
+        "requirement"
+      ],
+      "text": "chapter 10, parameters of GELT, DELT, UE, ASH and EDLT shall be"
+    },
+    {
+      "id": "R-74-0003",
+      "section_id": "S-74",
+      "tags": [
+        "requirement"
+      ],
+      "text": "relevant parameters specified in the paragraph 18(d) and 36(b) shall"
+    },
+    {
+      "id": "R-74-0004",
+      "section_id": "S-74",
+      "tags": [
+        "requirement"
+      ],
+      "text": "weight of a defined livestock population at the project site (Wsite) shall"
+    },
+    {
+      "id": "R-75-0001",
+      "section_id": "S-75",
+      "tags": [
+        "requirement"
+      ],
+      "text": "The PDD should describe the system for monitoring the number of"
+    },
+    {
+      "id": "R-75-0002",
+      "section_id": "S-75",
+      "tags": [
+        "requirement"
+      ],
+      "text": "information (records of sales, records of food purchases) should be"
+    },
+    {
+      "id": "R-75-0003",
+      "section_id": "S-75",
+      "tags": [
+        "requirement"
+      ],
+      "text": "assessed sales, records of food purchases) should be assessed"
+    },
+    {
+      "id": "R-75-0004",
+      "section_id": "S-75",
+      "tags": [
+        "requirement"
+      ],
+      "text": "The PDD should describe the system on monitoring the number of"
+    },
+    {
+      "id": "R-87-0001",
+      "section_id": "S-87",
+      "tags": [
+        "requirement"
+      ],
+      "text": "the farm to collect the data, and the data shall be summarized and analyzed by the CDM"
+    },
+    {
+      "id": "R-88-0001",
+      "section_id": "S-88",
+      "tags": [
+        "requirement"
+      ],
+      "text": "shall be monitored ex post, using flow meters. If the biogas flared and"
+    },
+    {
+      "id": "R-88-0002",
+      "section_id": "S-88",
+      "tags": [
+        "requirement"
+      ],
+      "text": "system should be built and operated to ensure that there is no air"
+    },
+    {
+      "id": "R-88-0003",
+      "section_id": "S-88",
+      "tags": [
+        "requirement"
+      ],
+      "text": "shall be carried out close to a location in the system where a biogas"
+    },
+    {
+      "id": "R-88-0004",
+      "section_id": "S-88",
+      "tags": [
+        "requirement"
+      ],
+      "text": "The fraction of methane in the biogas should be measured with a"
+    },
+    {
+      "id": "R-88-0005",
+      "section_id": "S-88",
+      "tags": [
+        "requirement"
+      ],
+      "text": "Option chosen should be clearly specified in the PDD. It shall be"
+    },
+    {
+      "id": "R-88-0006",
+      "section_id": "S-88",
+      "tags": [
+        "requirement"
+      ],
+      "text": "is not permitted. The methane content measurement shall be carried"
+    },
+    {
+      "id": "R-91-0001",
+      "section_id": "S-91",
+      "tags": [
+        "requirement"
+      ],
+      "text": "The number of measurements required to meet the 90/10 reliability is calculated according to:"
+    },
+    {
+      "id": "R-96-0001",
+      "section_id": "S-96",
+      "tags": [
+        "requirement"
+      ],
+      "text": "sampling every five weeks should be sufficient for 90/10 reliability. For simplification, monthly"
+    },
+    {
+      "id": "R-96-0002",
+      "section_id": "S-96",
+      "tags": [
+        "requirement"
+      ],
+      "text": "shall be carried out to ensure optimal operation of flares"
+    },
+    {
+      "id": "R-97-0001",
+      "section_id": "S-97",
+      "tags": [
+        "requirement"
+      ],
+      "text": "As the case in paragraph 17(b), manure weight shall be directly"
+    },
+    {
+      "id": "R-97-0002",
+      "section_id": "S-97",
+      "tags": [
+        "requirement"
+      ],
+      "text": "different animal types shall be recorded separately for crosscheck."
+    },
+    {
+      "id": "R-97-0003",
+      "section_id": "S-97",
+      "tags": [
+        "requirement"
+      ],
+      "text": "paragraph 17(b), testing shall be performed according to the"
+    },
+    {
+      "id": "R-99-0001",
+      "section_id": "S-99",
+      "tags": [
+        "requirement"
+      ],
+      "text": "emissions from fossil fuel combustion”. Alternatively it shall be"
+    },
+    {
+      "id": "R-99-0002",
+      "section_id": "S-99",
+      "tags": [
+        "requirement"
+      ],
+      "text": "weight delivered to each system shall be directly measured or"
+    },
+    {
+      "id": "R-99-0003",
+      "section_id": "S-99",
+      "tags": [
+        "requirement"
+      ],
+      "text": "types shall be recorded separately for cross-check. Recording of the"
+    },
+    {
+      "id": "R-99-0004",
+      "section_id": "S-99",
+      "tags": [
+        "requirement"
+      ],
+      "text": "manure would have been treated anaerobically is also required"
+    },
+    {
+      "id": "R-100-0001",
+      "section_id": "S-100",
+      "tags": [
+        "requirement"
+      ],
+      "text": "shall be monitored/documented"
+    },
+    {
+      "id": "R-103-0001",
+      "section_id": "S-103",
+      "tags": [
+        "requirement"
+      ],
+      "text": "Only required for project activities that utilize the recovered methane"
+    },
+    {
+      "id": "R-104-0001",
+      "section_id": "S-104",
+      "tags": [
+        "requirement"
+      ],
+      "text": "shall be designed to utilize biogas as fuel, and the efficiency"
+    },
+    {
+      "id": "R-105-0001",
+      "section_id": "S-105",
+      "tags": [
+        "requirement"
+      ],
+      "text": "replaced equipment needs to be implemented. The monitoring should include a"
+    },
+    {
+      "id": "R-105-0002",
+      "section_id": "S-105",
+      "tags": [
+        "requirement"
+      ],
+      "text": "scrapped equipment should be stored until such correspondence has been"
+    },
+    {
+      "id": "R-105-0003",
+      "section_id": "S-105",
+      "tags": [
+        "requirement"
+      ],
+      "text": "checked. The scrapping of replaced equipment should be documented and"
+    }
+  ]
+}

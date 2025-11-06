@@ -1,649 +1,3329 @@
 [
   {
-    "id": "R-1-0001",
-    "rule_id": "R-1-0001",
-    "methodology": "AR-ACM0003",
-    "version": "v02-0",
-    "rule": "Project restores degraded forest lands and meets additionality tests per Tool 01.",
-    "tags": [
-      "eligibility"
-    ],
-    "sha256": "eece4efeea1e33859370f4a08278b5e93aae51740505e98b3c7eb6e94d9f4f29",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
-    "sectionId": "S-1"
-  },
-  {
-    "id": "R-1-0002",
-    "rule_id": "R-1-0002",
-    "methodology": "AR-ACM0003",
-    "version": "v02-0",
-    "rule": "Baseline net GHG removals derived from historical land-use data per Tool 02 guidance.",
-    "tags": [
-      "calc",
-      "baseline"
-    ],
-    "sha256": "2be96dbebec4ac1c6cc7c2ab5c884e954a9ca97289a0a069ecd82af853796700",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
-    "sectionId": "S-2"
-  },
-  {
-    "id": "R-1-0003",
-    "rule_id": "R-1-0003",
-    "methodology": "AR-ACM0003",
-    "version": "v02-0",
-    "rule": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08.",
-    "tags": [
-      "calc",
-      "emissions"
-    ],
-    "sha256": "58fd16262708861274fa19a07b97efda386f61fea077efd53c4ebf5ec7d5bc9d",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
-    "sectionId": "S-3"
-  },
-  {
-    "id": "R-1-0004",
-    "rule_id": "R-1-0004",
-    "methodology": "AR-ACM0003",
-    "version": "v02-0",
-    "rule": "Leakage from activity shifting and market effects addressed using Tool 14 default factors.",
-    "tags": [
-      "leakage"
-    ],
-    "sha256": "c41ee9e14878f260c59b381e1e69225194d1319d239afa01ec14fb3a78201bec",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
-    "sectionId": "S-4"
-  },
-  {
-    "id": "R-1-0005",
-    "rule_id": "R-1-0005",
-    "methodology": "AR-ACM0003",
-    "version": "v02-0",
-    "rule": "Non-permanence buffer determined via Tool 15 risk analysis and recorded in registry accounts.",
-    "tags": [
-      "monitoring"
-    ],
-    "sha256": "3ce1e08394525334cc5040053395fa931293828660b2461396ecc9c21fec839b",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
-    "sectionId": "S-5"
-  },
-  {
-    "id": "R-1-0006",
-    "rule_id": "R-1-0006",
-    "methodology": "AR-ACM0003",
-    "version": "v02-0",
-    "rule": "Permanent sample plots re-measured at least every five years per Tool 16 QA/QC guidance.",
-    "tags": [
-      "monitoring"
-    ],
-    "sha256": "fa61f9db56dd32f49fb450b0580a5a897e6edbc00a9229dfb63893f038713ecc",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
-    "sectionId": "S-5"
-  },
-  {
-    "id": "R-1-0007",
-    "rule_id": "R-1-0007",
-    "methodology": "AR-ACM0003",
-    "version": "v02-0",
-    "rule": "Sampling uncertainty kept below 10% at 90% confidence or conservatively adjusted using Tool 12.",
-    "tags": [
-      "uncertainty"
-    ],
-    "sha256": "b7b666a116e2d85f446a81242f8c0aaecf8834fccf90130a5e655cf090466ae0",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
-    "sectionId": "S-5"
-  },
-  {
-    "id": "R-1-0008",
-    "rule_id": "R-1-0008",
-    "methodology": "AR-ACM0003",
-    "version": "v02-0",
-    "rule": "Monitoring reports compile geospatial data, emissions sources, and buffer transactions with full audit trail.",
-    "tags": [
-      "reporting"
-    ],
-    "sha256": "cfe405bb4515c762040edb99b7912be3c6edb8c955b7996e80afd199b28ad952",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
-    "sectionId": "S-5"
-  },
-  {
-    "id": "R-1-0001",
-    "rule_id": "R-1-0001",
-    "methodology": "AR-AM0014",
+    "id": "R-100-0001",
+    "rule_id": "R-100-0001",
+    "methodology": "ACM0010",
     "version": "v03-0",
-    "rule": "Projects reforest lands without forest cover since 1989 and comply with national forest definitions.",
+    "rule": "310 for the first commitment period. Shall be updated according to any future",
     "tags": [
-      "eligibility"
+      "requirement"
     ],
-    "sha256": "73415d3b1d58fb838bfd3cc188231ef779ef2a2560a5a66c37808395886dd301",
+    "sha256": "decfd88647e3dc6aa551e263e2018d2842a9789158a9f8314989e3ab919c379e",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
-    "sectionId": "S-1"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-100"
   },
   {
-    "id": "R-1-0002",
-    "rule_id": "R-1-0002",
-    "methodology": "AR-AM0014",
+    "id": "R-103-0001",
+    "rule_id": "R-103-0001",
+    "methodology": "ACM0010",
     "version": "v03-0",
-    "rule": "Baseline biomass estimated using IPCC defaults or site-specific sampling following Tool 02.",
+    "rule": "The monitoring plan should include on site inspections for each individual farm included in the project",
     "tags": [
-      "calc",
-      "baseline"
+      "requirement"
     ],
-    "sha256": "cdaf04f3bed14be94067ef94f2159d3d4f6b71ea0f2d2512282ea61b5d4aefb5",
+    "sha256": "47b7b112e9ac559d29f26a9b723e60d4cc0e85a86885c0fbe8f211d30723f9b5",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
-    "sectionId": "S-2"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-103"
   },
   {
-    "id": "R-1-0003",
-    "rule_id": "R-1-0003",
-    "methodology": "AR-AM0014",
+    "id": "R-105-0001",
+    "rule_id": "R-105-0001",
+    "methodology": "ACM0010",
     "version": "v03-0",
-    "rule": "Net anthropogenic removals equal project removals minus baseline emissions and leakage.",
+    "rule": "• The default volatile solid excretion values or other parameters required for estimating the volatile",
     "tags": [
-      "equation"
+      "requirement"
     ],
-    "sha256": "4f95a0ec1cf79744f7e5eae4fd1f8d8b4db5d1dada39095018a1dae0b8cf6f07",
+    "sha256": "c74e91016bf06d342273d12bca55aaa1b0355b6383c6d81c436637d0d1d3956d",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
-    "sectionId": "S-3"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-105"
   },
   {
-    "id": "R-1-0004",
-    "rule_id": "R-1-0004",
-    "methodology": "AR-AM0014",
+    "id": "R-105-0002",
+    "rule_id": "R-105-0002",
+    "methodology": "ACM0010",
     "version": "v03-0",
-    "rule": "Activity shifting leakage quantified annually using Tool 14 and deducted from net removals.",
+    "rule": "use a lower value, the appropriate measurement to support the lower value shall be monitored and",
     "tags": [
-      "leakage"
+      "requirement"
     ],
-    "sha256": "2ada7e76aa6a323502c4db5c983c7b53a13aabac17b84173fc8b430e262b202c",
+    "sha256": "675d918d1e189c0761695c3377ec034c2bec68f7892f7f3d22f890cf7866f0ef",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
-    "sectionId": "S-4"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-105"
   },
   {
-    "id": "R-1-0005",
-    "rule_id": "R-1-0005",
-    "methodology": "AR-AM0014",
+    "id": "R-105-0003",
+    "rule_id": "R-105-0003",
+    "methodology": "ACM0010",
     "version": "v03-0",
-    "rule": "Non-permanence risks addressed through buffer contributions per Tool 15 guidance.",
+    "rule": "• The default nitrogen excretion per animal or parameters required to estimate nitrogen excretion. If N",
     "tags": [
-      "monitoring"
+      "requirement"
     ],
-    "sha256": "a8f77f6e8f00f6ef02c0f25722cc224f1239788e8e91966ee00a4e84c60d866b",
+    "sha256": "67e125d3362a2b7e9f6a1434366c915e6e20dc5db5f4347a0fcb51a80ca663f2",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
-    "sectionId": "S-5"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-105"
   },
   {
-    "id": "R-1-0006",
-    "rule_id": "R-1-0006",
-    "methodology": "AR-AM0014",
+    "id": "R-105-0004",
+    "rule_id": "R-105-0004",
+    "methodology": "ACM0010",
     "version": "v03-0",
-    "rule": "Field biomass measurements conducted at least every five years using permanent plots.",
+    "rule": "intake method is used the amount of dry matter intake by livestock shall be monitored.",
     "tags": [
-      "monitoring"
+      "requirement"
     ],
-    "sha256": "e8d04cccdef2d3e9f309ecfc105e1276519b0eb0c6bb4e1d0a1016775118aacd",
+    "sha256": "e78a1b4cce334a4cd40a66fb683fa3d1c2fa00c0a10f076742e858ecb70f038f",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
-    "sectionId": "S-5"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-105"
   },
   {
-    "id": "R-1-0007",
-    "rule_id": "R-1-0007",
-    "methodology": "AR-AM0014",
+    "id": "R-105-0005",
+    "rule_id": "R-105-0005",
+    "methodology": "ACM0010",
     "version": "v03-0",
-    "rule": "Sampling uncertainty above 10% addressed with Tool 12 conservative adjustments.",
+    "rule": "• Concentration of methane in biogas at outlet of anaerobic digester, this shall be measured on wet",
     "tags": [
-      "uncertainty"
+      "requirement"
     ],
-    "sha256": "1de71d3735f225ca725ace153b75a3c182a77a35bd4b4454ad9cbca01f4f92e5",
+    "sha256": "09eac3b5cf6698ac16420a84fead7f41b6d4f142dea1f46cf90adfee75a1e379",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
-    "sectionId": "S-5"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-105"
   },
   {
-    "id": "R-1-0008",
-    "rule_id": "R-1-0008",
-    "methodology": "AR-AM0014",
+    "id": "R-105-0006",
+    "rule_id": "R-105-0006",
+    "methodology": "ACM0010",
     "version": "v03-0",
-    "rule": "Monitoring reports consolidate maps, inventory data, leakage deductions, and QA/QC evidence.",
+    "rule": "year y (PE flare,y) should be monitored as per the “Tool to determine project emissions from flaring",
     "tags": [
-      "reporting"
+      "requirement"
     ],
-    "sha256": "20392924b5cb87f77dc2c9c8e80fd0e6a07b7c42f36f62c5e6719bcb79139253",
+    "sha256": "48098addd688f6f12026d99f1db978918a455a9956b5a97977e8ca13b2712f4d",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
-    "sectionId": "S-5"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-105"
   },
   {
-    "id": "R-1-0001",
-    "rule_id": "R-1-0001",
-    "methodology": "AR-AMS0003",
-    "version": "v01-0",
-    "rule": "Small-scale A/R activities eligible when total area < 16,000 ha and participants grouped as defined.",
+    "id": "R-107-0001",
+    "rule_id": "R-107-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "temperature is lower than 10 o C and higher than 5 o C, Annual MCF should be",
     "tags": [
-      "eligibility"
+      "requirement"
     ],
-    "sha256": "0a9bf2b8d8faa00f312d358e8d6c68f575678257d74b9e562663697fd499d3ba",
+    "sha256": "4bce7eb9c73e42b13c1b459475a85275a39b33c58725e880a6463a4a32b1df44",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
-    "sectionId": "S-1"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-107"
   },
   {
-    "id": "R-1-0002",
-    "rule_id": "R-1-0002",
-    "methodology": "AR-AMS0003",
-    "version": "v01-0",
-    "rule": "Definitions for grouped smallholder projects include participants, monitoring entity, and leakage belt.",
+    "id": "R-107-0002",
+    "rule_id": "R-107-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Any comment: The value is taken from published sources. The parameter value should be",
     "tags": [
-      "eligibility",
-      "definition"
+      "requirement"
     ],
-    "sha256": "5d650f96f8684972c6c2be15a37e424ac380a8c2fdca745db42ebe1643e8cda5",
+    "sha256": "c2d25dd834b5eb8f696410baf2cb05211f62a57cd4155e3b29be1b0d05cf7003",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
-    "sectionId": "S-2"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-107"
   },
   {
-    "id": "R-1-0003",
-    "rule_id": "R-1-0003",
-    "methodology": "AR-AMS0003",
-    "version": "v01-0",
-    "rule": "Project boundary includes above- and below-ground biomass, dead wood, litter, and soil carbon pools unless excluded with justification.",
+    "id": "R-107-0003",
+    "rule_id": "R-107-0003",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Any comment: If it is required to use developed country VS values, the following should be",
     "tags": [
-      "eligibility",
-      "boundary"
+      "requirement"
     ],
-    "sha256": "a942e22bc527f9b38347b5ad05c4825591a6bbdec10d6e08303223c35c3846f8",
+    "sha256": "0632db86150f2a372e4615f3f438f5edc1396f4ce9c5176d78c4c72b15c79329",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
-    "sectionId": "S-3"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-107"
   },
   {
-    "id": "R-1-0004",
-    "rule_id": "R-1-0004",
-    "methodology": "AR-AMS0003",
-    "version": "v01-0",
-    "rule": "Baseline scenario assumes continuation of pre-project land use with carbon stock change set to zero.",
+    "id": "R-107-0004",
+    "rule_id": "R-107-0004",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "or US-EPA, which ever is lower) shall be recorded and archived .",
     "tags": [
-      "calc",
-      "baseline"
+      "requirement"
     ],
-    "sha256": "c8336f5f6ee266da4266a731726ccf24820577ca6352d3e5bf5c383e20e2a632",
+    "sha256": "12c854138bef1e3b5b29fc342a3217c6daceebe341eb87b7288568d2ccd518dd",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
-    "sectionId": "S-4"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-107"
   },
   {
-    "id": "R-1-0005",
-    "rule_id": "R-1-0005",
-    "methodology": "AR-AMS0003",
-    "version": "v01-0",
-    "rule": "Project removals calculated by summing carbon stock changes per pool minus fossil fuel and fertilizer emissions.",
+    "id": "R-109-0001",
+    "rule_id": "R-109-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "conservative manner while calculating CERs and procedure for doing so should",
     "tags": [
-      "calc",
-      "emissions"
+      "requirement"
     ],
-    "sha256": "2f2756b82b58b1bf02f3a8463f295573d617ffecdbedf884798a45af38bd77b3",
+    "sha256": "caadedc6e61daf8ebc80973ca47cadeaaa6548635a4346913af333aae333eff7",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
-    "sectionId": "S-5"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-109"
   },
   {
-    "id": "R-1-0006",
-    "rule_id": "R-1-0006",
-    "methodology": "AR-AMS0003",
-    "version": "v01-0",
-    "rule": "Leakage from activity shifting or market effects monitored and deducted using Tool 14 default factors.",
+    "id": "R-109-0002",
+    "rule_id": "R-109-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Any comment: The PDD should describe the system on monitoring the number of livestock",
     "tags": [
-      "leakage"
+      "requirement"
     ],
-    "sha256": "29617681672616c00d765d851338c1aa656b60727a379437594554a52bfe5f82",
+    "sha256": "2fefdb3ae19a38f96614c1386ec2886012d753b6fdaf0cede15134db8b37f7f1",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-109"
+  },
+  {
+    "id": "R-109-0003",
+    "rule_id": "R-109-0003",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "of sales, records of food purchases) should be assessed.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "e04db06c96dd7f0b936375232f0db2672d5c58e3454e4de4bbbc6b3479209629",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-109"
+  },
+  {
+    "id": "R-109-0004",
+    "rule_id": "R-109-0004",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Any comment: The PDD should describe the system on monitoring the weight of livestock. .",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "ad8379b84ee266ed9de2c90b73b8c318d7711ef8c16074f5d5c90b04a66c463b",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-109"
+  },
+  {
+    "id": "R-109-0005",
+    "rule_id": "R-109-0005",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "different for each application. This maintenance/calibration practice should be",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "88edb2a7d30ac0c9e622b3c23cb551c66d7ec5e1e07fc3e855f4e0f669709c64",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-109"
+  },
+  {
+    "id": "R-109-0006",
+    "rule_id": "R-109-0006",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Archive electronically during project plus 5 years. Shall be measured on wet",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "5ebe050d09fc9f6821846aa8b69b1a2dda0abce064ea24d0b0874700f110f36f",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-109"
+  },
+  {
+    "id": "R-109-0007",
+    "rule_id": "R-109-0007",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "QA/QC procedures: The project proponents shall define the variability of the concentration. They",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "8b68e69fff0c32e165a1dbbbb6224ad604b05137e257a0d875d49a9d74d5fc29",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-109"
+  },
+  {
+    "id": "R-109-0008",
+    "rule_id": "R-109-0008",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "shall also define the error in estimate for different level of measurement",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "8bcaea976f76bb45484f2896e3f4cc17bd597191513b9d127a4a2d73b3cf2ced",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-109"
+  },
+  {
+    "id": "R-109-0009",
+    "rule_id": "R-109-0009",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Any comment: The project proponents shall define the variability of the concentration. They",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "cc65a2d8009a56455efcfb1c4b91124503dbc99a6c1840bdd143956bacd7989f",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-109"
+  },
+  {
+    "id": "R-110-0001",
+    "rule_id": "R-110-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "residual gas stream in year y (PEflare,y) should be monitored as per the “Tool to",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "70fe8606f6a3328ff2396f33976cb8e0adf65c12266e8bcc1695a1ba6fe3f9a7",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-110"
+  },
+  {
+    "id": "R-111-0001",
+    "rule_id": "R-111-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "residual gas stream in year y (PEflare,y) should use the QA/QC procedures as per",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "8bfe50d48a1f26c9e234ffaa81b01aa0aec1dc24cfd448842f06ac021998cd2f",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-111"
+  },
+  {
+    "id": "R-118-0001",
+    "rule_id": "R-118-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "In absence of availability of project specific information on Protein intake, which should be justified in",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "238126e371e7ed4f31cb52427b078770da83d028a9404828fbdf09588bfa3243",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-118"
+  },
+  {
+    "id": "R-118-0002",
+    "rule_id": "R-118-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "the CDM-PDD, site-specific national or regional data should be used for the nitrogen excretion NEX, if",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "6c7c1fc40c4ea95191b94491e49571d6d631954e65d90551825a509136392688",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-118"
+  },
+  {
+    "id": "R-118-0003",
+    "rule_id": "R-118-0003",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "chapter 10.) may be used and should be corrected for the animal weight at the project site in the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "90d02b8dd19b4015969d9b9bfeb377b9d4a081dafd92a9d9e01468c67df8ca96",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-118"
+  },
+  {
+    "id": "R-14-0001",
+    "rule_id": "R-14-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Since the proposed project activity not being registered as a CDM project activity shall be one of the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "4b14712d314e29c5a6ef590871dfcd412e84669bb273d02bb92c89b1ee1d5967",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-14"
+  },
+  {
+    "id": "R-14-0002",
+    "rule_id": "R-14-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "considered alternatives, any barrier that may prevent the project activity to occur shall be included in that",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "29b6cfe102fb9a82be5f095dee0a2a1c03222d19cf975e873d2c4cd338b5078e",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-14"
+  },
+  {
+    "id": "R-16-0001",
+    "rule_id": "R-16-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "For each alternative, all costs and economic benefits attributable to the waste management scenario should",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "b8d0ea6e6dd6d805f21bbfad201ef24f61361ad62b99ad059e56764c07276ba9",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-16"
+  },
+  {
+    "id": "R-18-0001",
+    "rule_id": "R-18-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "should be calculated. The calculation of the IRR must include inter alia investment costs, operation and",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "2eb418967444dba4d3e23ae253f50e15a6cb3ba559ef4721d5243f4403c00a74",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-18"
+  },
+  {
+    "id": "R-18-0002",
+    "rule_id": "R-18-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "The IRR for all alternative scenarios should be calculated in a conservative manner. To ensure this,",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "0d9ca72598fce5ee88dce7e38533f5c9d6205f75a5fb5088b4cd2d810fec30b4",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-18"
+  },
+  {
+    "id": "R-18-0003",
+    "rule_id": "R-18-0003",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "assumptions and parameters for the proposed project activity, if still under consideration, should be chosen",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "3a0a33a604cfc9a2067bf52cfa5a3e2a222e245ba0cf0d9caf4005911f028673",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-18"
+  },
+  {
+    "id": "R-18-0004",
+    "rule_id": "R-18-0004",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "considered, assumptions and parameters should be chosen in a way such that they tend to lead to a lower",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "7ab3158eb6314a1fa777b715ec6ce420a1593491a28398726b397bba44180ae5",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-18"
+  },
+  {
+    "id": "R-18-0005",
+    "rule_id": "R-18-0005",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "IRR and NPV. This conservative choice of parameters and assumptions should be ensured by obtaining",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "61fbfcf1bf103eec28d3b7f0452734d035ee2b27e74b3c712c9fe3ad6aaa4527",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-18"
+  },
+  {
+    "id": "R-18-0006",
+    "rule_id": "R-18-0006",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "expert opinions and should be evaluated by the DOE as part of the validation of the project activity.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "2693217f9c9930f3b48cd4471ae3c67e2fdb184e5d9eb597381585ac7da6d080",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-18"
+  },
+  {
+    "id": "R-18-0007",
+    "rule_id": "R-18-0007",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "comparison should be based on the NPV, stating explicitly the discount rate used.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "03964da2e75806398b0e20dc667856b3c37043f92075bbcb16168cec6e73e004",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-18"
+  },
+  {
+    "id": "R-23-0001",
+    "rule_id": "R-23-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "boundary in pre-project situation before disposal. This shall include the final disposal of methane, if any",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "fc3e2d62097fbf96e986df8160b3f64aa9571aef70740473bdc572ea07536daf",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-23"
+  },
+  {
+    "id": "R-23-0002",
+    "rule_id": "R-23-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "The precise location of the farm(s) where the project activity takes place shall be identified in the CDM-",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "6310906b86c8699ac9e4dfea55deac0b205becd0cfcf70deb913dc4d2c6a575a",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-23"
+  },
+  {
+    "id": "R-36-0001",
+    "rule_id": "R-36-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "The following sources should be used to calculate baseline emissions:",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "8857186916fdf2667eeeeae75e63897b70fb7393d3f3447ecca4792ece57b206",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-36"
+  },
+  {
+    "id": "R-37-0001",
+    "rule_id": "R-37-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "This value varies by species and diet. Where default values are used, they should be taken from tables",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "968148dfc9cb5991a9af145ddee2f9e8284eb2954636fdb5f5630a7e9b677f9b",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-37"
+  },
+  {
+    "id": "R-39-0001",
+    "rule_id": "R-39-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "• The IPCC 2006 MCF values given in table 10.17 (chapter 10, volume 4) should be used, which is",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "cc2ef1717b77d14d4bd439754c0f4ce8eec29f0da8ab3441bee2599f38c2fc67",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-39"
+  },
+  {
+    "id": "R-39-0002",
+    "rule_id": "R-39-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "C, a linear interpolation should be used to estimate the MCF value at the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "686dd4b53b95e83fb5e7344c267b8ed72c9895b7cbc1ce3c886f0cea49f9bbb5",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-39"
+  },
+  {
+    "id": "R-39-0003",
+    "rule_id": "R-39-0003",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "to the IPCC Guidelines for National Greenhouse Gas Inventories should be taken into account.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "ff599af5c0bf8362fdd38260e177e6c9f0d78f14070ef82933676b7d883aa6c4",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-39"
+  },
+  {
+    "id": "R-39-0004",
+    "rule_id": "R-39-0004",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "• A conservativeness factor should be applied by multiplying MCF values (estimated as per above",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "5e27500f27898c9a5b0768f1f057afff6a5e2bf8d066e625726e2ccd272584c8",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-39"
+  },
+  {
+    "id": "R-40-0001",
+    "rule_id": "R-40-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "technology and should be estimated in a conservative manner. Default values for different treatment",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "531b57fc1d75bce8b38f49ac27c7a18032de788e66f544e11f8176eaad3edeb3",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-40"
+  },
+  {
+    "id": "R-46-0001",
+    "rule_id": "R-46-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "should be estimated in a conservative manner. Default values for different treatment technologies can be",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "2e8082f58ae7b07e73ea1ef35f18f6112b3c7c644b46efa35f58e33b9be21776",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-46"
+  },
+  {
+    "id": "R-47-0001",
+    "rule_id": "R-47-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "fuel fired power plant, project participants should use for CEF Bl,elec, the default emission factor for a",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "8b2ae7e31ffc62198f306b6b4f80280e0cbea1e6cdce098f302a202ddc969c7a",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-47"
+  },
+  {
+    "id": "R-47-0002",
+    "rule_id": "R-47-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "emission factor CEF Bl,elec should be calculated according to approved methodology “Tool for",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "e0fec84b8132efd69ef5167669c405735b81dab397ea0a55868e14da40c1b928",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-47"
+  },
+  {
+    "id": "R-48-0001",
+    "rule_id": "R-48-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "CEF grid should be calculated according to “Tool for calculation of emission factor for electricity systems”.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "488d0dd32b7635d5ff406e583b6660da92a0d3cb4d8e548c1d226ce72b58582f",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-48"
+  },
+  {
+    "id": "R-49-0001",
+    "rule_id": "R-49-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Baseline electricity and thermal energy consumptions should be estimated as the average of the historical",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "fa69dae7f132ed1c4e6ca75a6e34ea6db1195131e71515eed306edc8ebb496bb",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-49"
+  },
+  {
+    "id": "R-52-0001",
+    "rule_id": "R-52-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "production. Where project participants use lower values for percentage of physical leakage, they should",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "1b422f6b3325085a184d4e0b2592d8027de19b5d1b1aebc04666a0bcd0248c28",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-52"
+  },
+  {
+    "id": "R-52-0002",
+    "rule_id": "R-52-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "a leakage factor of 0.15 or a lower value, if properly justified through documented evidence (which should",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "597272e6e470cef9b6061d58a3402918217d87ef62fd645fbfafd1c8a496ee16",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-52"
+  },
+  {
+    "id": "R-54-0001",
+    "rule_id": "R-54-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "R VS,n Fraction of volatile solid treated in AWMS stage n. The project proponents shall",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "af13d770ac38a3b9ea42e7e324234a0c1c8f72a50e9ab7be643ad5abda9d2529",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-54"
+  },
+  {
+    "id": "R-54-0002",
+    "rule_id": "R-54-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "conservative value of volatile solids treated in Annex 1 shall be used.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "26a446c7cfee308d765365b29762f5182438692db8be696fbf9526cf9cbf31a0",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-54"
+  },
+  {
+    "id": "R-54-0003",
+    "rule_id": "R-54-0003",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "boundary without further treatment, these emissions should be treated as leakage and appropriately",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "a1eff564b85b93e6d91dd8eadf9f5142520dbf317f0435a9bb780cf0127bbbfc",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-54"
+  },
+  {
+    "id": "R-56-0001",
+    "rule_id": "R-56-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "emissions should be included in leakages. The emissions from sludge ponds shall be estimated as follows:",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "0ea821cc771a685332be616f18461fe4a242aae9efd7faa0dcd2b49ee1981008",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-56"
+  },
+  {
+    "id": "R-57-0001",
+    "rule_id": "R-57-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "steps prior to sludge being treated. Values for Rvs should be taken from Annex 1.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "a01f42576ef79044c9fee6859d0fa243fba44a6cadcbbbe7b3023de6e092ce25",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-57"
+  },
+  {
+    "id": "R-6-0001",
+    "rule_id": "R-6-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "management under the baseline scenario should be at least 1m2 .",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "9e56fa20dd017e9e6356df3f59f33977e8c18575bdb074c0559b67fd4acff57d",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
     "sectionId": "S-6"
   },
   {
-    "id": "R-1-0007",
-    "rule_id": "R-1-0007",
-    "methodology": "AR-AMS0003",
-    "version": "v01-0",
-    "rule": "Monitoring plan requires permanent plots measured every five years plus tracking of grouped participant compliance.",
+    "id": "R-6-0002",
+    "rule_id": "R-6-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "• The AWMS/process in the project case should ensure that no leakage of manure waste into ground",
     "tags": [
-      "monitoring"
+      "requirement"
     ],
-    "sha256": "18b358295d9181f30ed5edf4b4705077d1849f34837fdf91ca0e53fac38b6a8b",
+    "sha256": "d795753fd8461a2f5817dddbe1cb9da2427cf70c6de170da74d010b9c513d804",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
-    "sectionId": "S-7"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-6"
   },
   {
-    "id": "R-1-0008",
-    "rule_id": "R-1-0008",
-    "methodology": "AR-AMS0003",
-    "version": "v01-0",
-    "rule": "Data and parameters table specifies default biomass factors and sampling requirements.",
+    "id": "R-6-0003",
+    "rule_id": "R-6-0003",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "water takes place, e.g., the lagoon should have a non-permeable layer at the lagoon bottom.",
     "tags": [
-      "parameter",
-      "data"
+      "requirement"
     ],
-    "sha256": "3375e21ee36a077c878d10a74e12036c8c7d9fd6c8bcc85d93b5249ff9289353",
+    "sha256": "f05082eae90846495a3e1985e65d81f4d1d46d591cb02bf405f9735a826f1bbf",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
-    "sectionId": "S-8"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-6"
   },
   {
-    "id": "R-1-0009",
-    "rule_id": "R-1-0009",
-    "methodology": "AR-AMS0003",
-    "version": "v01-0",
-    "rule": "Uncertainty calculated per Tool 12; apply deductions when precision exceeds 10%.",
+    "id": "R-6-0004",
+    "rule_id": "R-6-0004",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "This baseline methodology shall be used in conjunction with the approved monitoring methodology",
     "tags": [
-      "uncertainty"
+      "requirement"
     ],
-    "sha256": "ccf66995424d01856751fb07c114cd77f2fbee12a3688be28407b0c4d603fe55",
+    "sha256": "556e76022a0dc77fa3b0f8ad316933c2e4a93ed1231019d81246fcfc77f5eb5e",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-6"
+  },
+  {
+    "id": "R-61-0001",
+    "rule_id": "R-61-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "previous stage. The relative reduction (R N) of nitrogen depends on the treatment technology and should be",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "81034f18173afb0b085616648a4ac3d79086a75b05f01c3c53f762455ec4ae94",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-61"
+  },
+  {
+    "id": "R-61-0002",
+    "rule_id": "R-61-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "monitoring plan) must be compared annually with the total methane generated as measured by meter at",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "e92fe684040bd3efc1da4fc3966734812f25b3a173a3503be572fbe5735bcb91",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-61"
+  },
+  {
+    "id": "R-61-0003",
+    "rule_id": "R-61-0003",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "generated and that consumed in flare/electricity generation/heat shall be accounted as leakage from the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "5da332ea7766f4aa04566a5dddcf0ec4f13572fb9634143c822b52cd7e2623bc",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-61"
+  },
+  {
+    "id": "R-63-0001",
+    "rule_id": "R-63-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Project emissions from flaring of the residual gas stream should be determined following the procedure",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "497ba51c3c03f7332adffffae97f2626a57e48f403e289f6dbd327d6c3f844fb",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-63"
+  },
+  {
+    "id": "R-64-0001",
+    "rule_id": "R-64-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "case, the electricity consumption is not measured then the electricity consumption shall be",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "951cf8091e77865d479cc18e001d2fab2ed47da6b1ace1c1f8150e9be67c350b",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-64"
+  },
+  {
+    "id": "R-74-0001",
+    "rule_id": "R-74-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "leaching/runoff occurs that is lost through leaching and runoff should be estimated",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "3d020d398bedc5543a91a8458eeed13da3cd19c9b894b077ba7237827a76f748",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-74"
+  },
+  {
+    "id": "R-74-0002",
+    "rule_id": "R-74-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "relative reduction of nitrogen depends on the treatment technology and should be",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "4999e62b69ce37a6ec03d121d21af9be923d44e9eb7923d9d37defd5f5a056de",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-74"
+  },
+  {
+    "id": "R-80-0001",
+    "rule_id": "R-80-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "reduction of nitrogen depends on the treatment technology and should be estimated in",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "c9495d3550147c866912879001cc92e58da7975c394f008f00ae78f7b091437d",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-80"
+  },
+  {
+    "id": "R-81-0001",
+    "rule_id": "R-81-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": ", * 1 in equations (24), (25) and (26) above should be",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "861f76fc66d513ceb9e679819a7269a0c1c1555c81989b99f7b8fa9402454e1d",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-81"
+  },
+  {
+    "id": "R-84-0001",
+    "rule_id": "R-84-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Rvs should be taken from annex 1.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "473121c2423ce577abdc629f2001ea5a84fd169e7ba899235e95fe7cff1f18f8",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-84"
+  },
+  {
+    "id": "R-85-0001",
+    "rule_id": "R-85-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "and methane fraction in the biogas), then the latter shall be used to calculate the emissions reduction for",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "a66dd898f3992f1298a09468a5254261a7fd0fe4cc13444687f940bd29296691",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-85"
+  },
+  {
+    "id": "R-85-0002",
+    "rule_id": "R-85-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "digester shall be compared to the (BECH4,y - PEAD,y - PE PL,y) and if found lower, then (BECH4,y - PE AD,y -",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "2a2bfbf1969d1dede08a8dbcbdb996b1381d3dc2ef03dc9f1f3672cb3b50d1ef",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-85"
+  },
+  {
+    "id": "R-86-0001",
+    "rule_id": "R-86-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "given technology must be used.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "736a011f3d4a132cfe8c095d8a3925cec4d199a4ac3c792424aa6c7a8fca3b94",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-86"
+  },
+  {
+    "id": "R-9-0001",
+    "rule_id": "R-9-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Table 10.17) should be taken into account. In drawing up a list of possible scenarios, possible",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "361cf4f874a0aadc36204703f96be77ba22c0972a7995774983a3fbc191dc936",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
     "sectionId": "S-9"
   },
   {
-    "id": "R-1-0010",
-    "rule_id": "R-1-0010",
-    "methodology": "AR-AMS0003",
-    "version": "v01-0",
-    "rule": "Non-permanence risk buffer determined via Tool 15 and updated when risk profile changes.",
+    "id": "R-9-0002",
+    "rule_id": "R-9-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "combinations of different Animal Waste Management Systems (AWMS) should be taken into",
     "tags": [
-      "uncertainty",
-      "permanence"
+      "requirement"
     ],
-    "sha256": "cc28ee2c5b1b7bcdd8dbc8b38955e6eb871cecef3b44368080aec08199606e5b",
+    "sha256": "00d567382ef5c60caa26e9eff488057ba0f86771e91e9350d32aeea947d040d2",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
-    "sectionId": "S-10"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-9"
   },
   {
-    "id": "R-1-0011",
-    "rule_id": "R-1-0011",
-    "methodology": "AR-AMS0003",
-    "version": "v01-0",
-    "rule": "Normative tools and references (Tools 02, 08, 12, 14, 15, 16) must be accessible to grouped project manager.",
+    "id": "R-92-0001",
+    "rule_id": "R-92-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "calculating CERs and procedure for doing so should be described in the CDM-",
     "tags": [
-      "reporting",
-      "reference"
+      "requirement"
     ],
-    "sha256": "8c0e06c585f6ec322150ef8372e5f620392a062ef16c13fc7aff78bb67e496cb",
+    "sha256": "0a0608b501d665059edb2e9f59f0672bc8b76ebe28415d429d959b33b62092af",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
-    "sectionId": "S-11"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-92"
   },
   {
-    "id": "R-1-0012",
-    "rule_id": "R-1-0012",
-    "methodology": "AR-AMS0003",
-    "version": "v01-0",
-    "rule": "Annual net removals computed as sum of pool changes minus leakage and emissions, divided by years between measurements.",
+    "id": "R-98-0001",
+    "rule_id": "R-98-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "21 for the first commitment period. Shall be updated according to any future",
     "tags": [
-      "equation"
+      "requirement"
     ],
-    "sha256": "e7b9579f7443e2622455a51484002b1bf83bb5c12ac84e5e280cf55e616e73d7",
+    "sha256": "dc9660b5afddf27e8a293c7a7dab2b67ce3b960c27a0ea3ea5e3fe3bebb341e5",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
-    "sectionId": "S-12"
-  },
-  {
-    "id": "R-1-0013",
-    "rule_id": "R-1-0013",
-    "methodology": "AR-AMS0003",
-    "version": "v01-0",
-    "rule": "Annexes include participant enrollment records, training logs, and dispute resolution evidence.",
-    "tags": [
-      "reporting"
-    ],
-    "sha256": "ecaf6969b8847d3eb51145fba77d9cf486b0d49af5a4e3b2b4b6da824314d19b",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
-    "sectionId": "S-13"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-98"
   },
   {
     "id": "R-1-0001",
     "rule_id": "R-1-0001",
-    "methodology": "AR-AMS0007",
-    "version": "v03-1",
-    "rule": "Wetland restoration projects eligible when activities convert degraded wetlands to forest and meet small-scale thresholds.",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "the regional treatment plant. These alternative scenarios should include, inter alia:",
     "tags": [
-      "eligibility"
+      "requirement"
     ],
-    "sha256": "74246b2153daf8d271b9a4f5fcaccf913d078b7d6aaade50eff02cc3a129f021",
+    "sha256": "8f833f0ee5ff99fc61bc4063c5a3e3342f94aea8a17d425647d7f4dc8ac39896",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
     "sectionId": "S-1"
   },
   {
     "id": "R-1-0002",
     "rule_id": "R-1-0002",
-    "methodology": "AR-AMS0007",
-    "version": "v03-1",
-    "rule": "Definitions clarify wetland geomorphology, participant aggregation, and leakage belt concepts.",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "The measure of the residues Bo should be directly done as described in:",
     "tags": [
-      "eligibility",
-      "definition"
+      "requirement"
     ],
-    "sha256": "a837df7fd85425e68421e1e3002cf012ff4675c756264336eb58149075a053d2",
+    "sha256": "dcc8511b180f081127df6595221dd8cb5189f04d96252230a4e57be16be88b86",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
-    "sectionId": "S-2"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-1"
   },
   {
     "id": "R-1-0003",
     "rule_id": "R-1-0003",
-    "methodology": "AR-AMS0007",
-    "version": "v03-1",
-    "rule": "Project boundary includes on-site hydrological interventions and relevant carbon pools except where justified.",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "2 - Samples should be collected in clean wide-mouth glass bottles;",
     "tags": [
-      "eligibility",
-      "boundary"
+      "requirement"
     ],
-    "sha256": "026d02de41ef06fee779d7c94af25e7d5c1db90c13fad423e158ce666f42c094",
+    "sha256": "d8c3d5fbf6ae35869a72d7ca875eb2f12b8360d87073d29767b6067c2357475a",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
-    "sectionId": "S-3"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-1"
   },
   {
     "id": "R-1-0004",
     "rule_id": "R-1-0004",
-    "methodology": "AR-AMS0007",
-    "version": "v03-1",
-    "rule": "Baseline assumes continuation of pre-project wetland degradation with zero additional removals.",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "6 - Uncertainty range shall not exceed 20% under a 90% confidence interval, which is calculated as",
     "tags": [
-      "calc",
-      "baseline"
+      "requirement"
     ],
-    "sha256": "eab42f1a05ea732da552ef34fa7fb0cf321a7dcfd72663659b1731481e9dd7ec",
+    "sha256": "0f09da285ff58ec4ab939c8677c0db82727eebef8d5f3eae764d4070d88b9fb9",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
-    "sectionId": "S-4"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-1"
   },
   {
-    "id": "R-1-0005",
-    "rule_id": "R-1-0005",
-    "methodology": "AR-AMS0007",
-    "version": "v03-1",
-    "rule": "Project removals calculated from pool carbon stock changes minus emissions from project operations.",
+    "id": "R-104-0001",
+    "rule_id": "R-104-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "fossil fuel fired power plant, project participants should use for CEF Bl,elec, the default emission",
     "tags": [
-      "calc",
-      "emissions"
+      "requirement"
     ],
-    "sha256": "11bbc274d72a3c9a1c1cdf2f616f009fcfc2775a9c9181ec64fbc0661a3cdfeb",
+    "sha256": "3e41ea2464b1a0cc959ad041cae12ff1bd27be3cf7785f952652d75626b270e2",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
-    "sectionId": "S-5"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-104"
   },
   {
-    "id": "R-1-0006",
-    "rule_id": "R-1-0006",
-    "methodology": "AR-AMS0007",
-    "version": "v03-1",
-    "rule": "Leakage from displaced wetland uses monitored and deducted using Tool 14 defaults.",
+    "id": "R-104-0002",
+    "rule_id": "R-104-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "grid, the emission factor CEF Bl,elec should be calculated according to the latest version of the",
     "tags": [
-      "leakage"
+      "requirement"
     ],
-    "sha256": "919d090d94f8b9c91108c11266e7955655a33daac0905b4cd5816b43fb203566",
+    "sha256": "e2c9bcf29c6a4845fbbd50806730e1b48b2c4a1e3b9cb891f353aa690e4ea7c3",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
-    "sectionId": "S-6"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-104"
   },
   {
-    "id": "R-1-0007",
-    "rule_id": "R-1-0007",
-    "methodology": "AR-AMS0007",
-    "version": "v03-1",
-    "rule": "Monitoring plan covers hydrology restoration, vegetation plots, and participant reporting.",
+    "id": "R-105-0001",
+    "rule_id": "R-105-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "CEF grid should be calculated according to “Tool to calculate the emission factor for an electricity",
     "tags": [
-      "monitoring"
+      "requirement"
     ],
-    "sha256": "45019177281e97bf25b2af939e6c22aec0831a1f78aebfdf54bf0dcbf0bf58f4",
+    "sha256": "839cfc74e1ed494823ed975c02fe887da729e7df3261745cb787d70cb0bcddde",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
-    "sectionId": "S-7"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-105"
   },
   {
-    "id": "R-1-0008",
-    "rule_id": "R-1-0008",
-    "methodology": "AR-AMS0007",
-    "version": "v03-1",
-    "rule": "Data tables specify default biomass factors, hydrological parameters, and monitoring records.",
+    "id": "R-107-0001",
+    "rule_id": "R-107-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Baseline electricity and thermal energy consumptions should be estimated as the average of the historical",
     "tags": [
-      "parameter",
-      "data"
+      "requirement"
     ],
-    "sha256": "54ab0d3d4724f7202cdd7b40349930ea4097d2c7598e8994f6ba8e41f894f8b2",
+    "sha256": "dcafb1b728e6fc1a2a5d19cd5cbec3f203d0315aa675b69a836ee1adaab040c3",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
-    "sectionId": "S-8"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-107"
   },
   {
-    "id": "R-1-0009",
-    "rule_id": "R-1-0009",
-    "methodology": "AR-AMS0007",
-    "version": "v03-1",
-    "rule": "Uncertainty analysis follows Tool 12 with deductions when precision thresholds unmet.",
+    "id": "R-114-0001",
+    "rule_id": "R-114-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "nitrogen depends on the treatment technology and should be estimated in a",
     "tags": [
-      "uncertainty"
+      "requirement"
     ],
-    "sha256": "42ea1b7791bcf192eb31c66d4680a25a718cdb52b61e0f295d063f85191f256c",
+    "sha256": "92ea4f73e04745443fb14c951f46a7a4a6a4800a1e71cfb270174c00706dde32",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
-    "sectionId": "S-9"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-114"
   },
   {
-    "id": "R-1-0010",
-    "rule_id": "R-1-0010",
-    "methodology": "AR-AMS0007",
-    "version": "v03-1",
-    "rule": "Permanence buffer contributions determined via Tool 15 wetland risk factors.",
+    "id": "R-115-0001",
+    "rule_id": "R-115-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "leaching/runoff occurs that is lost through leaching and runoff should be",
     "tags": [
-      "uncertainty",
-      "permanence"
+      "requirement"
     ],
-    "sha256": "8adab52d9161d1c71c61d67f99720eb032ed9c87461e04164ebfb08cbece779f",
+    "sha256": "bf470528af008af3ee983c23cd9842d0958628583005572cf4764c272a9f3234",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
-    "sectionId": "S-10"
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-115"
   },
   {
-    "id": "R-1-0011",
-    "rule_id": "R-1-0011",
-    "methodology": "AR-AMS0007",
-    "version": "v03-1",
-    "rule": "Normative tools and references maintained for monitoring and verification teams.",
+    "id": "R-12-0001",
+    "rule_id": "R-12-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Inventories (Chapter 10, Table 10.17) should be taken into account. In drawing up a list",
     "tags": [
-      "reporting",
-      "reference"
+      "requirement"
     ],
-    "sha256": "c57da507c1f47546a76cc6d9d20ecbafc3471ce8d5785300028147461c89935d",
+    "sha256": "11010d473b8f1647624909e733be8dff9c27de47da28557231dbb400e0bfe782",
     "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
-    "sectionId": "S-11"
-  },
-  {
-    "id": "R-1-0012",
-    "rule_id": "R-1-0012",
-    "methodology": "AR-AMS0007",
-    "version": "v03-1",
-    "rule": "Annualized carbon stock change derived from difference in pool carbon divided by measurement interval.",
-    "tags": [
-      "equation"
-    ],
-    "sha256": "b6caa70ca875e34ee5c82c034d9302f62417b4f1685e6422279ebca7f921b241",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
     "sectionId": "S-12"
   },
   {
-    "id": "R-1-0013",
-    "rule_id": "R-1-0013",
-    "methodology": "AR-AMS0007",
-    "version": "v03-1",
-    "rule": "Annexes capture hydrology restoration evidence, training records, and community engagement notes.",
+    "id": "R-12-0002",
+    "rule_id": "R-12-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Systems (AWMS) should be taken into account;",
     "tags": [
-      "reporting"
+      "requirement"
     ],
-    "sha256": "1a45b3e5dae01f80649fad79054dea595fca811723dbc381185e260e3c720b43",
+    "sha256": "ed1c5c97560154f493753bbf666a7aca9f0a0a6aeb8ae4184cfe620c1960d00a",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-12"
+  },
+  {
+    "id": "R-12-0003",
+    "rule_id": "R-12-0003",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "(2) The alternative(s) shall be in compliance with all mandatory applicable legal and regulatory",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "4d6552c956a33d55b7caa1f09ff77462f612e44c565a590f3fa09b27f8379ee0",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-12"
+  },
+  {
+    "id": "R-12-0004",
+    "rule_id": "R-12-0004",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "The identification of all reasonable potential alternative scenarios shall be made through interviews and/or",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "4f165f87d946e191d214dfee31248bdb4309739c6f3e98595cb58b310f97e757",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-12"
+  },
+  {
+    "id": "R-12-0005",
+    "rule_id": "R-12-0005",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "possible alternative scenarios. From the information collected, it should be possible to identify the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "8969a0516dcbe7fcd1add70aaf3731c53582d5b81567075b360851622080a627",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-12"
+  },
+  {
+    "id": "R-127-0001",
+    "rule_id": "R-127-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "treated. Values for RVS should be taken from Annex 1",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "d2ba07629dc879d4a1d8f29c9cf0044d8b2291266b1ba6cda4530f6e447ca89a",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-127"
+  },
+  {
+    "id": "R-129-0001",
+    "rule_id": "R-129-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "fraction in the biogas), then the latter shall be used to calculate the emissions reduction for claiming",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "e2960b45914b9475813d525ffe439527b3c7c4a52d7e9cc2e4f5fce913d52abb",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-129"
+  },
+  {
+    "id": "R-129-0002",
+    "rule_id": "R-129-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "shall be compared to the ( y PL y AD y CH PE PE BE , , ,4 − − ) and if found lower, then",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "170f9b18449ca986c397cd78ce555541cac575ae2b21d9b3b7c6f0c94cac9e0b",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-129"
+  },
+  {
+    "id": "R-130-0001",
+    "rule_id": "R-130-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "given technology must be used.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "b09a7f7b23d22ebad3a4974153270815d4ec09c27dbaeac0d6293e897e5fb4ff",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-130"
+  },
+  {
+    "id": "R-135-0001",
+    "rule_id": "R-135-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "calculating CERs and procedure for doing so should be described in the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "e95d61161e5d3e17c0247d9b8fb565fe1cf28f9041c50f07553c5399fd38e19c",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-135"
+  },
+  {
+    "id": "R-139-0001",
+    "rule_id": "R-139-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "21 and 310, respectively, for the first commitment period. Shall be updated",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "f1a2d94b0b9f6469d4d73a3ee793390ad02d39668e05e69b82529cc6436c7315",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-139"
+  },
+  {
+    "id": "R-151-0001",
+    "rule_id": "R-151-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "the sites included in the project boundary, it must be ensured that:",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "cc5ee0deef766785440a8084fff075c9c53a18efc60b6cbf4396e5dd1c47242c",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-151"
+  },
+  {
+    "id": "R-151-0002",
+    "rule_id": "R-151-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "(1) In the case where residues are collected with tank trucks, those must be equipped with flow",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "2dd7f9c4bec2deedd108a7725614ed60c076e7a4fc0aa7f7e1c199be9b9967ef",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-151"
+  },
+  {
+    "id": "R-151-0003",
+    "rule_id": "R-151-0003",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "meters and GPS devices. For every charging and discharging operation a geo-reference must be",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "5fa102cdce2e81be65385ad64cd122023f9ddf6fbf09b577ad7224dc46e8bbf6",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-151"
+  },
+  {
+    "id": "R-151-0004",
+    "rule_id": "R-151-0004",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "acquired, and the quantity of residues collected should be measured (m3 ). This information will",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "aff658930acd8c4c0e251d7373fe32bcafe75a0f729545967745ff59ad3aa191",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-151"
+  },
+  {
+    "id": "R-151-0005",
+    "rule_id": "R-151-0005",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "shall be detailed in the CDM-PDD. The quantity of residues collected through the pipes system",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "c416202890ad331699320cd1a87974ea42c192919436683a72c168ebd20bdf23",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-151"
+  },
+  {
+    "id": "R-151-0006",
+    "rule_id": "R-151-0006",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "should be measured (m3 ). It shall be depicted in the CDM-PDD whether the residues are",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "3d1a2e16c4cca74c47fb1e26f875255fe87c7d703f7a961670b777c3d649a179",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-151"
+  },
+  {
+    "id": "R-151-0007",
+    "rule_id": "R-151-0007",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "The precise location of manure collection points shall be identified in the CDM-PDD (e.g., coordinates",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "1f9096ad0127f37cf84843dbdfc3d4b501c91860c573d830fc98c09ee98a82e3",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-151"
+  },
+  {
+    "id": "R-151-0008",
+    "rule_id": "R-151-0008",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "central treatment plant shall be documented using information from official sources.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "19a978df970503c9e31966d902730e5df4a4530fda9432ed7dc7e1e27acb68de",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-151"
+  },
+  {
+    "id": "R-151-0009",
+    "rule_id": "R-151-0009",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "DOEs must perform site visits on the central treatment plant during project verification. All",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "143d26cc99fb72cfab9a8cad1638a38e32bae9bfc956ed6091a996f824bf5320",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-151"
+  },
+  {
+    "id": "R-151-0010",
+    "rule_id": "R-151-0010",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "documentation which shall be checked by the DOE, referring to every farm, must be available during the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "67d15e3f691226c9220e79955c93e979f8d903820e655a1cd1454da1ecb1aa00",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-151"
+  },
+  {
+    "id": "R-151-0011",
+    "rule_id": "R-151-0011",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Prior to the verification, project proponents shall calculate the baseline emission from each site",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "b5525587f4cbd806072308483bc0bfd62400ba9f9b4124c0c365e5ca83c09661",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-151"
+  },
+  {
+    "id": "R-151-0012",
+    "rule_id": "R-151-0012",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "separately. Then, project participants shall ordinate, in decreasing order, the sites where most of the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "7a383c2ed8bb97445e7762bbed36d41ada3b2c8b30c75d67d1df5dfe6ca476c0",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-151"
+  },
+  {
+    "id": "R-151-0013",
+    "rule_id": "R-151-0013",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "baseline emissions would occur. DOEs shall perform site inspections on the sites that are individually",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "6424fb25d61c1ede91b515c2097b8ce75f335522f6ce4981c6d03f2c2c2a6ed1",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-151"
+  },
+  {
+    "id": "R-151-0014",
+    "rule_id": "R-151-0014",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "sites (“lower rank”), DOEs shall perform site inspections on a number n of randomly selected sites,",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "533c2a70113aa22ef76a73b29befbf5f2b222d61742cfda5d641465b108c37e1",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-151"
+  },
+  {
+    "id": "R-153-0001",
+    "rule_id": "R-153-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Then, a CH4 emission reduction deviation factor ( site DF ) shall be calculated for each “lower rank” site.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "435797739f3ffeedfe3dd48706062286a3b748b4c33cb62e6211ade573ce7572",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-153"
+  },
+  {
+    "id": "R-155-0001",
+    "rule_id": "R-155-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Then, an average baseline emissions deviation factor ( DF ) shall be calculated:",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "9297449d35b3cf306c24bf3b1d77b532834c24303e8ebdb47e09b71c8a51af01",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-155"
+  },
+  {
+    "id": "R-157-0001",
+    "rule_id": "R-157-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Then, the baseline emissions from the “lower rank” sites shall be corrected as follows:",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "967f1bed9302a76af642f5932d62571585511e0ecf9ed1f238e81461ea5d4bfe",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-157"
+  },
+  {
+    "id": "R-158-0001",
+    "rule_id": "R-158-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Then, total baseline emissions shall be calculated as follows:",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "1f38d3da576dd6e31a6bbc2d93e51e951ef183a546253ca5f61ec2f18add6cd3",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0002",
+    "rule_id": "R-158-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "shall be applied – absolute verified values must be used)",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "77cdb06d4c06f53a73293636b93748a7d1b68c53d5ee7b603c5137e677b3d2a7",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0003",
+    "rule_id": "R-158-0003",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "temperature is lower than 10ºC and higher than 5ºC, Annual MCF should be",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "ca91a3ad8464e0a7b40d41e5d8548ba52c0c9ef43c05cc240bfe4c1384c9144b",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0004",
+    "rule_id": "R-158-0004",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Monitoring frequency: This parameter shall be continuously monitored",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "647c3f1c18ff9211a7fd777cd61fc5494d8874c606716c7ba975074573db6757",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0005",
+    "rule_id": "R-158-0005",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "industry standards. This maintenance/calibration practice should be clearly",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "c9c7510e6a89468c4b420245d5ccd57b73f107f320d2c7509b13f0c95fc4a2b1",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0006",
+    "rule_id": "R-158-0006",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Any comment: This parameter shall be monitored by continuous flow meters installed after the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "2f30fee84f4d09e05ba85e84d1b9b15f70852e735025f04b2fa9972a291683eb",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0007",
+    "rule_id": "R-158-0007",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "QA/QC procedures: Volatile solids determination should be performed according to the guidance",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "0bcd5f55a120a8df22df08764538a684fe5c4fba0af50c64b022ffa15ef9c1bb",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0008",
+    "rule_id": "R-158-0008",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Sample collection procedures shall be performed as described in Annex 4. Total",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "e2bf4e52ce59d06d6ea86b5b7077aa8e08880d31239610e2779c42c75a106d0e",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0009",
+    "rule_id": "R-158-0009",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "nitrogen determination should be performed according to the guidance provided",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "7a447bf3898de3644f7145dd06acb057281a2ea05c7aba97f229ffd9a33e2ea8",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0010",
+    "rule_id": "R-158-0010",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Any comment: The effluent mix shall be collected after the effluent admittance point or after",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "af6aba1baad4e9247d80d1a668a721e9570a58f99d6e5c1c79c1b285922a2036",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0011",
+    "rule_id": "R-158-0011",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "QA/QC procedures: Total nitrogen determination should be performed according to the guidance",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "5447ac9dcbd6b42c2b7ee593b340f405f3fd1c230fd2a4a3481395e109829101",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0012",
+    "rule_id": "R-158-0012",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "conservative manner while calculating CERs and procedure for doing so should",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "8714bab0f4c4630b01888c8e7198b6288827a093d0964f47e31a4c5eb068409a",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0013",
+    "rule_id": "R-158-0013",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "If no appropriate default values are available, project proponents shall used site",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "8059c576e730966c40a8a148473bd1546ba5c8adba124f8e24d74c8d44b4a183",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0014",
+    "rule_id": "R-158-0014",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "shall be included in the monitoring plan of the CDM-PDD. Project proponents",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "218ed10b5cface7482a5278d3c949b9262e27ab4f740f8d82d247cad43b32093",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0015",
+    "rule_id": "R-158-0015",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "should be performed according to the guidance provided in Annex 3.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "ccb6c5dd543ce40666411dbc3c9236085b73d31f5855c9c3394a05d33cabc30b",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0016",
+    "rule_id": "R-158-0016",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "project proponents shall used site specific data in order to calculate this",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "2835db2bf7acbf2d5b98d82bd3e2366575be4b43c17eda611810e5f9a5526a5f",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0017",
+    "rule_id": "R-158-0017",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "parameter. The data used for this purpose shall be included in the monitoring",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "c65bdf09b3d19eba02bf5211487e7a237ae156ff10ee176d33ad00cc2a5f4057",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0018",
+    "rule_id": "R-158-0018",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "be different for each application. This maintenance/calibration practice should",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "47f4f4fbf0bf7581066931e9f24976e7c8fd58a7da482da07b5b46dcdd82aec1",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-158-0019",
+    "rule_id": "R-158-0019",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "residual gas stream in year y ( y flare PE , ) should be monitored as per the “Tool to",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "b2b8a2871a6460fdcbc0330e389c34452f5c83bd3b4c2da522e5a08d43f3efcc",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-158"
+  },
+  {
+    "id": "R-159-0001",
+    "rule_id": "R-159-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "residual gas stream in year y ( y flare PE , ) should use the QA/QC procedures as",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "78d2d2383278ef4b2731c6e6ec3f2a600a7a34baa2bca69250cf778fe18f46b5",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-159"
+  },
+  {
+    "id": "R-159-0002",
+    "rule_id": "R-159-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "If it is required to use developed country VS values, the following should be",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "37789dbfa75843fac7cea8a6034ee7f026cd24526da949008b9ef632303c64db",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-159"
+  },
+  {
+    "id": "R-159-0003",
+    "rule_id": "R-159-0003",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "(IPCC 2006 or US-EPA, whichever is lower) shall be recorded and archived",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "c4ca6e01cb54202289e2040f015c93472dc71647104566d06e45ea7284b5adaa",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-159"
+  },
+  {
+    "id": "R-159-0004",
+    "rule_id": "R-159-0004",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "The PDD should describe the system on monitoring the number of livestock",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "06c769f56fcb2ffcd86e32a23d05f7d15ca95f829340c95683d9829e027772b1",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-159"
+  },
+  {
+    "id": "R-159-0005",
+    "rule_id": "R-159-0005",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "(records of sales, records of food purchases) should be assessed",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "648ccc7160f1f8e0408f556a021bf0e164561ea177a4d4dd974db27cdc371669",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-159"
+  },
+  {
+    "id": "R-159-0006",
+    "rule_id": "R-159-0006",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Any comment: The PDD should describe the system on monitoring the number of livestock",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "061ca0b95f046502d70caf5d33c24c7bdaea6c9082f3a923d5491f38106ab95d",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-159"
+  },
+  {
+    "id": "R-159-0007",
+    "rule_id": "R-159-0007",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Any comment: The PDD should describe the system on monitoring the weight of livestock",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "9d57963cdac0cd92ee1e91a1281b449f1eb85810336f41c993e919d204cd1cf9",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-159"
+  },
+  {
+    "id": "R-159-0008",
+    "rule_id": "R-159-0008",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Any comment: The PDD should describe the system on monitoring the weight of manure",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "829e5ab3cce2acb4efc93a2e49424a9fe2092cf496a038fef7011ae1ba20e7c5",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-159"
+  },
+  {
+    "id": "R-16-0001",
+    "rule_id": "R-16-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "eliminate those alternative scenarios from further consideration. All alternative scenarios shall be",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "7e63bbb43c2b277221b40682c0594f1ea4d8f5256d599115eefdaf995ac28ccd",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-16"
+  },
+  {
+    "id": "R-16-0002",
+    "rule_id": "R-16-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "compared to the same set of barriers. The assessment of the significance of barriers should take into",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "99e19e8b3f34c4e5dfbeadb6eb7b21e4222fb28daf3471915d07720fc82596eb",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-16"
+  },
+  {
+    "id": "R-160-0001",
+    "rule_id": "R-160-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "must ensure that this end use remains the same throughout the project activity",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "3ceb7a046ebab340e2646e72e33a3bda61eed58b7824257e0220a7527a16e745",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-160"
+  },
+  {
+    "id": "R-17-0001",
+    "rule_id": "R-17-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "provided should include at least one of the following:",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "002bf3b35fc4ef6c1de360ea0818bcd76fe190e11db660d1e42cd7bf6a0dca08",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-17"
+  },
+  {
+    "id": "R-17-0002",
+    "rule_id": "R-17-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "should be illustrated in a transparent and complete manner, as shown in Table 1 below.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "3522104a67ff316c5801984973b3d11b21dc73fe1ed9a1ad956d93f69da5ee53",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-17"
+  },
+  {
+    "id": "R-173-0001",
+    "rule_id": "R-173-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "is in the region of 450ºC and the main advantage is that no catalyst or other additions are required.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "4250c0b64714ec71d842c1a48e8e7bfceacaf6dbc6eb047c0ffe623539d9b5cd",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-173"
+  },
+  {
+    "id": "R-173-0002",
+    "rule_id": "R-173-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "that it forms a mercury-ammonium complex which must be decomposed before determining ammonia.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "220acea93becc738c324be774c9b8584928f8e7fe6da99670b533f05d889e005",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-173"
+  },
+  {
+    "id": "R-173-0003",
+    "rule_id": "R-173-0003",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "For manual determination PPs shall follow the protocol depicted below (adapted from Mendham",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "31fa1a0da67f90c6d8d09f1980a6e8a0ba15b4ea1edc57a1cf776fbbf1d5afa6",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-173"
+  },
+  {
+    "id": "R-180-0001",
+    "rule_id": "R-180-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "For the purposes of the essays described in Annex 2 and 3, project participants shall observe the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "73cfce7940369a15f95a54ebc653be7997e802f8a97d4443962b434c4e94f0fb",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-180"
+  },
+  {
+    "id": "R-181-0001",
+    "rule_id": "R-181-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "1 – For liquid material, samples should be preferably collected using continuous-flow samples at the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "266f35384fa6953071bc4555e90c71e4c9053f0b22851397bc38dd457ec7f09a",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-181"
+  },
+  {
+    "id": "R-182-0001",
+    "rule_id": "R-182-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "3 – Samples should be analysed as soon as possible. If samples need to be stored, storage shall be",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "f3b9573ab9b99b58de16c883d13b126cdd5eec0cefebd3f81ba3d30d1b81c84d",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-182"
+  },
+  {
+    "id": "R-183-0001",
+    "rule_id": "R-183-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "4 - It should be checked that the suspended matter does not adhere to the walls, prior to the analysis",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "b3a36b0e20c793ba03a566fddc52f60b27a78ff878438afa699e2a981dcc8244",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-183"
+  },
+  {
+    "id": "R-184-0001",
+    "rule_id": "R-184-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "5 – If results must be expressed in a dry matter basis, dry matter content shall be determined after oven-",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "1b74bdbc5057da4649abf3df96e0e82fc4211bd08c73dd5e5fb140ac320dcabb",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-184"
+  },
+  {
+    "id": "R-19-0001",
+    "rule_id": "R-19-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "should be calculated. The calculation of the IRR must include inter alia investment costs, operation and",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "78dca5694e5bfa4d7a34970e8447469123438d9c8a939c788c8b5a2b0719a5da",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-19"
+  },
+  {
+    "id": "R-19-0002",
+    "rule_id": "R-19-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "The IRR for all alternative scenarios should be calculated in a conservative manner. To ensure this,",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "c14748f8368c7f0f376a1ae668a4d780653420ea06100a337b018e013ec423e0",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-19"
+  },
+  {
+    "id": "R-19-0003",
+    "rule_id": "R-19-0003",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "assumptions and parameters for the proposed project activity, if still under consideration, should be",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "0e81a9eb88bfda5e696e9aed39374e54f3006af3e7b91ede8738ed001495e66f",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-19"
+  },
+  {
+    "id": "R-19-0004",
+    "rule_id": "R-19-0004",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "considered, assumptions and parameters should be chosen in a way such that they tend to lead to a lower",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "b60dc36d2577f01ce2754e201c5dfe4eba0eceb9aeecf1411c1034f4f1e80212",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-19"
+  },
+  {
+    "id": "R-19-0005",
+    "rule_id": "R-19-0005",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "IRR and NPV. This conservative choice of parameters and assumptions should be ensured by obtaining",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "6197854b487f9cf0a627a501ea6c3379fe2a7191145f3a6cc2c507ae87153920",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-19"
+  },
+  {
+    "id": "R-19-0006",
+    "rule_id": "R-19-0006",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "expert opinions and should be evaluated by the DOE as part of the validation of the project activity.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "0891ede37745be59f147d5f392f36fb52d6df966ba0fcfe38f1500b80c9c1813",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-19"
+  },
+  {
+    "id": "R-19-0007",
+    "rule_id": "R-19-0007",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "comparison should be based on the NPV, stating explicitly the discount rate used.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "60e661feb9e7124d4a7d330113820c5b2e92b15d1726969e18a957e90df8300c",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-19"
+  },
+  {
+    "id": "R-19-0008",
+    "rule_id": "R-19-0008",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "For validation, project proponents shall calculate the baseline emission from each farm separately, based",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "9ec8e80aaf3850406803a8de05e5caf1e1628db1443c130a3107b3d37dee3c0d",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-19"
+  },
+  {
+    "id": "R-19-0009",
+    "rule_id": "R-19-0009",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "on ex ante estimation of parameters. Then, project participants shall ordinate, in decreasing order, the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "288dc24365c3bc7de161c729f6732c34f82a2d0eb485470172175864bbd80696",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-19"
+  },
+  {
+    "id": "R-19-0010",
+    "rule_id": "R-19-0010",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "sites where most of the baseline emissions would occur. DOEs shall perform site inspections on the sites",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "680c8677fc0139fbac08b69a86dd6fd524c548d65ffc4374a408a99ece6ec4d9",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-19"
+  },
+  {
+    "id": "R-19-0011",
+    "rule_id": "R-19-0011",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "For the remaining sites (“lower rank”), DOEs shall perform site inspections on a number n of randomly",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "7604972f527ecf51608767cd74d49cfead4d240eeaae19d4b8ffba1ccadcd1c5",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-19"
+  },
+  {
+    "id": "R-192-0001",
+    "rule_id": "R-192-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "In absence of availability of project specific information on Protein intake, which should be justified in the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "31578a2ef0c4a29aad37b373e8258cd23fe6aa1f569edc8e744aef6036430eb8",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-192"
+  },
+  {
+    "id": "R-193-0001",
+    "rule_id": "R-193-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "CDM-PDD, site-specific national or regional data should be used for the nitrogen excretion NEX, if",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "d0a1b777ccc08d182263fe46ba7ee200ccaf89f5cc81b3cdd7b6cb5213959626",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-193"
+  },
+  {
+    "id": "R-193-0002",
+    "rule_id": "R-193-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "chapter10) may be used and should be corrected for the animal weight at the project site in the following",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "0a9c5383789969b848465df6aa42f5700c59b49953196f73950cb4bc4a42487c",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-193"
+  },
+  {
+    "id": "R-21-0001",
+    "rule_id": "R-21-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "rank”should be inspected.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "172c07ad68a7867d625d1b65c9b800fa52801fe954862e8e3f6e8e00da1d427a",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-21"
+  },
+  {
+    "id": "R-21-0002",
+    "rule_id": "R-21-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "livestock farms owners excluded from this analysis. The additionality of the project activity shall be",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "364b95f5b9f6536ba97c84db9391747d06a0588608e173281c800fefa07e2526",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-21"
+  },
+  {
+    "id": "R-21-0003",
+    "rule_id": "R-21-0003",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "section. When doing the investment analysis the following potential income sources should be taken into",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "aa3582cfde73ea2f408d93f8a2b50d9c8d7dffea2339620f3ed6cda34ebfbaed",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-21"
+  },
+  {
+    "id": "R-26-0001",
+    "rule_id": "R-26-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "project boundary in pre-project situation before disposal. This shall include the final disposal of methane,",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "8d2d598a0f3478d91a3290b078f69b9ba2ddf859be9499138aed449f195b8e2f",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-26"
+  },
+  {
+    "id": "R-26-0002",
+    "rule_id": "R-26-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "The precise location of the farms where the project activity takes place shall be identified in the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "b7564fa8e02b22744c5c47cb48ac0e794a44abe75b1a41f4d7a4eeb383bad0cb",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-26"
+  },
+  {
+    "id": "R-28-0001",
+    "rule_id": "R-28-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "production. Where project participants use lower values for percentage of physical leakage, they should",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "087ff2e95c49f25f33735f3cb6fb39231a59546e17b60c2244041e452580e7b8",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-28"
+  },
+  {
+    "id": "R-28-0002",
+    "rule_id": "R-28-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "leakage factor of 0.15 or a lower value, if properly justified through documented evidence (which should",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "5c5605f6eeb44c13b2f30a13b6eb5c7bfd00d4c8421db8069e1864c905ab28c3",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-28"
+  },
+  {
+    "id": "R-30-0001",
+    "rule_id": "R-30-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "treatment, these emissions should be treated as leakage and appropriately reported and accounted.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "47f648d124cce37f4d5ddf198797bbe179206b6e58dbae6760aa36139c6c21e1",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-30"
+  },
+  {
+    "id": "R-32-0001",
+    "rule_id": "R-32-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "matter content. Sludge must be treated through thermo-mechanical drying or composting prior to its final",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "047599443d5a012ce1f89c4f899d891634cdb44cf3b34634e2b6d05f20dca725",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-32"
+  },
+  {
+    "id": "R-32-0002",
+    "rule_id": "R-32-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "disposal/usage. The same procedure shall be applied to suspended solids removed during the treatment",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "655d855676db1df65aee78a526f012d18a38e93d88cf7bee17a6c5a8e9ccc304",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-32"
+  },
+  {
+    "id": "R-37-0001",
+    "rule_id": "R-37-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "composting process and shall be accounted as follows:",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "670e8fae9d90d7b245a482c0b5e90786b08efbe987074b6cd807d1adbfa5e12d",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-37"
+  },
+  {
+    "id": "R-56-0001",
+    "rule_id": "R-56-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "should be estimated in a conservative manner. Default values for different treatment technologies can be",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "50c216eec75f2016646810dedb2c26f3deb27a4207f12bb0b3a40526afbd3246",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-56"
+  },
+  {
+    "id": "R-56-0002",
+    "rule_id": "R-56-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "monitoring plan) must be compared annually with the total methane generated as measured by meter at",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "c9f8ab361cd40fd14dfc5dd82f7b8598e7ca7889b4360bd761d4d54c948bb634",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-56"
+  },
+  {
+    "id": "R-56-0003",
+    "rule_id": "R-56-0003",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "generated and that consumed in flare/electricity generation/heat shall be accounted as leakage from the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "45d127fcede05cb8ef5b281780ce5b75ce5ba5a09c9e9d7c3e2a232acf58c648",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-56"
+  },
+  {
+    "id": "R-57-0001",
+    "rule_id": "R-57-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Project emissions from flaring of the residual gas stream should be determined following the procedure",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "c105c466b0f6b2f9954424e8abd1961f78e489ed88be87f25531e139c53fda78",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-57"
+  },
+  {
+    "id": "R-59-0001",
+    "rule_id": "R-59-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "not measured then the electricity consumption shall be estimated as follows:",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "90ceb5d974b0a3a6261b33200c3a6d924d15bdc63b87705390017b32c925713c",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-59"
+  },
+  {
+    "id": "R-63-0001",
+    "rule_id": "R-63-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Emissions arising form the road transportation of treated manure shall be calculated as described above.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "5b23c52d959665459ec0a62167279d182cd622fbb0d4885100a36a7741453f7f",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-63"
+  },
+  {
+    "id": "R-63-0002",
+    "rule_id": "R-63-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Such emission shall be considered as project emissions if the final destiny and itinerary between the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "9b5ed5dbfc4f7e9cb990c3ff2d2e726091f3e7a8e300768c4ea6170c2ba76374",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-63"
+  },
+  {
+    "id": "R-63-0003",
+    "rule_id": "R-63-0003",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "treatment plant are included in the project boundary. Otherwise such emission shall be considered as",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "66943edf2abfb8dcd9055d53b58f8d88ac72b5f48be86acedc76b7e0268857b3",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-63"
+  },
+  {
+    "id": "R-63-0004",
+    "rule_id": "R-63-0004",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "leakage ( y Trans CO LE , ,2 ), which shall be calculated in the same manner as depicted above.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "a2fcded8c174c13c3b1fffca7acd0e24a9b846acfac54dfe3a91aabca3ea3f5f",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-63"
+  },
+  {
+    "id": "R-64-0001",
+    "rule_id": "R-64-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "emissions may occur during residues storage and shall be calculated as follows:",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "bf78a7bdeeea685c2dcd9c4cae2cbb5b8b58f267da4a8dfab6b579758cb10ee6",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-64"
+  },
+  {
+    "id": "R-7-0001",
+    "rule_id": "R-7-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "shall be greater than 1 m; 2",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "513a73ab0f23a9ddc3a8f5f3085ca8b826e09ff662deb78c0c80a334375996fb",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-7"
+  },
+  {
+    "id": "R-7-0002",
+    "rule_id": "R-7-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "• The retention time of the organic matter in the baseline anaerobic treatment systems should be at",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "c4d8a0487ba528e0c471aeefed81aefe17db8364697abde75b7e0a0cf025a898",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-7"
+  },
+  {
+    "id": "R-7-0003",
+    "rule_id": "R-7-0003",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "• If residues are stored in between collection activities, storage tanks shall comprise outdoor open",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "80d3387e7d6aa82db5c9a5dd95c9915fd8285907021434c6c77b4d9957051aca",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-7"
+  },
+  {
+    "id": "R-7-0004",
+    "rule_id": "R-7-0004",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "• If the treated residue is used as fertilizer in the baseline, project proponents must ensure that this",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "3ac2d6b5171ac92b28d9134022e9e9b68e5960bdbedd89f9a10a2b1e9a03759d",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-7"
+  },
+  {
+    "id": "R-7-0005",
+    "rule_id": "R-7-0005",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "• Sludge produced during the project activity shall be stabilized through thermal drying or",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "d2a82b5123c5b6bc7e031b2bd0ac9243df2b09cb53ebfc1eb970c94ad762b804",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-7"
+  },
+  {
+    "id": "R-7-0006",
+    "rule_id": "R-7-0006",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "• The AWMS/process in the project case should ensure that no leakage of manure waste into",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "fa7a2d606815edc92f7cacf965992ebb4e4814e5354466fd5cb370c8ed8772b4",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-7"
+  },
+  {
+    "id": "R-7-0007",
+    "rule_id": "R-7-0007",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "ground water takes place, e.g., the lagoon should have a non-permeable layer at the lagoon",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "6eb916cf9801fe778240c6f985b7447f28a768700c100fc2675ad5d9c9ad9acd",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-7"
+  },
+  {
+    "id": "R-7-0008",
+    "rule_id": "R-7-0008",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "• CERs shall be claimed by the Central Treatment Plant managing person/entity, only. Other",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "ab9d37405db4371c0adb02cbc602f89a5a0fc4cf3536b2474817022a120ba2bb",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-7"
+  },
+  {
+    "id": "R-7-0009",
+    "rule_id": "R-7-0009",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "parties involved must sign a legally binding declaration that they will not claim CERs from the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "f2a905211de02a444cf0971980bb86f10b5d08622d5cb6fd13a11f96fd924e33",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-7"
+  },
+  {
+    "id": "R-7-0010",
+    "rule_id": "R-7-0010",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "improved animal waste treatment practices. Such declarations shall be verified by the DOE",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "2094a961dcbb714b2462dadb6df8a5880437f1095e5c394bb84ad51459625c06",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-7"
+  },
+  {
+    "id": "R-7-0011",
+    "rule_id": "R-7-0011",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "during the validation, and these documents shall be valid throughout the whole crediting period.",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "fe37f46da5f293fd331031cfc72255f70e9643858b794b7d04cef13d7d2a1efd",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-7"
+  },
+  {
+    "id": "R-8-0001",
+    "rule_id": "R-8-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Baseline scenario should be identified from the perspective of the owner of central treatment plant, as",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "650692d39f3a6d772e38c863d08b85a9ceab9d0fdb8e5aa4ec9d07ab160b91f1",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-8"
+  },
+  {
+    "id": "R-80-0001",
+    "rule_id": "R-80-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "7 When the dietary intake of livestock is different from farm to farm, these emissions should be separately estimated",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "c58ffc4f8299bcc0b54ee1c60223a0fa6aa7770b703eebe481e8f1e9ab1b9157",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-80"
+  },
+  {
+    "id": "R-83-0001",
+    "rule_id": "R-83-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "The following sources should be used to calculate baseline emissions:",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "e99a7f101ceb6c81c6b30ebb80f7aa6aa68d8a2416614f309305e4b3b6b0cda7",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-83"
+  },
+  {
+    "id": "R-84-0001",
+    "rule_id": "R-84-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "(1) This value varies by livestock species and diet. Where default values are used, they should be taken",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "98f839175285f7e1c377dfafc44e0786de3041bfcb42a73dd7697cfed8574602",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-84"
+  },
+  {
+    "id": "R-9-0001",
+    "rule_id": "R-9-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Project participants shall apply the following steps to identify the baseline scenario:",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "cb024b9fde6e1b44f86ed0219ca8457ee50fad9b7405383b92ae7726f0e67b58",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-9"
+  },
+  {
+    "id": "R-9-0002",
+    "rule_id": "R-9-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "geographical area. The relevant geographical area should be the at least the action radius of",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "010cc89390f3958f189314a5408f23832bb4c6e4a2b556551d2512326e36b68d",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-9"
+  },
+  {
+    "id": "R-90-0001",
+    "rule_id": "R-90-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "• The IPCC 2006 MCF values given in table 10.17 (chapter 10, volume 4) should be used, which is",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "c79724e164d5af9c0e621eb6be7b9ac5115c3df19511458c816205652edcb343",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-90"
+  },
+  {
+    "id": "R-90-0002",
+    "rule_id": "R-90-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "below 10ºC and above 5ºC, a linear interpolation should be used to estimate the MCF value at the",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "47288508460a842aee1bfa8a030526a31db4695ad474e93b96ad5068342ed4c8",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-90"
+  },
+  {
+    "id": "R-90-0003",
+    "rule_id": "R-90-0003",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "to the IPCC Guidelines for National Greenhouse Gas Inventories should be taken into account;",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "4cd51aef131d3cac5b7b7108083fc970aadab67fbe159f4c232f9519ae399697",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-90"
+  },
+  {
+    "id": "R-90-0004",
+    "rule_id": "R-90-0004",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "• A conservativeness factor should be applied by multiplying MCF values (estimated as per above",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "1a87cfd34343a7dc634caf3b9cb10459f74eae6917d81ed5864205770d2ab082",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-90"
+  },
+  {
+    "id": "R-91-0001",
+    "rule_id": "R-91-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "technology and should be estimated in a conservative manner. Default values for different treatment",
+    "tags": [
+      "requirement"
+    ],
+    "sha256": "7c56a4341e89be8480712269fcd1de6cd42762c70be91de00fe68e51a86e6711",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-91"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-ACM0003.v01-0.R-0-0000",
+    "rule_id": "UNFCCC.Forestry.AR-ACM0003.v01-0.R-0-0000",
+    "methodology": "AR-ACM0003",
+    "version": "v01-0",
+    "rule": "TODO: replace with lean rule summary",
+    "tags": [],
+    "sha256": "771a7cf790c2310fb72d2c07bcd3b998f7d0781d3e20af715996c5f60586e8e6",
     "provider": "UNFCCC",
     "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
-    "sectionId": "S-13"
+    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v01-0/rules.json"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-0-0000",
+    "rule_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-0-0000",
+    "methodology": "AR-ACM0003",
+    "version": "v02-0",
+    "rule": "TODO: replace with lean rule summary",
+    "tags": [],
+    "sha256": "5a77274a3fe89c1e9422e1a34d36e0e2b1a318a49b47c842e45ef939b3b9ca9b",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v01-0.R-0-0000",
+    "rule_id": "UNFCCC.Forestry.AR-AM0014.v01-0.R-0-0000",
+    "methodology": "AR-AM0014",
+    "version": "v01-0",
+    "rule": "TODO: replace with lean rule summary",
+    "tags": [],
+    "sha256": "7cef50b395834b7971c49d8ee2ce0f58db537aa04724f6a0c2003a74fa086182",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0/rules.json"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v02-0.R-0-0000",
+    "rule_id": "UNFCCC.Forestry.AR-AM0014.v02-0.R-0-0000",
+    "methodology": "AR-AM0014",
+    "version": "v02-0",
+    "rule": "TODO: replace with lean rule summary",
+    "tags": [],
+    "sha256": "d2212a7dd6a98b102786bdaa26199d2017bb582f6900dbf07085aafe65c52b7b",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0/rules.json"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-0-0000",
+    "rule_id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-0-0000",
+    "methodology": "AR-AM0014",
+    "version": "v03-0",
+    "rule": "TODO: replace with lean rule summary",
+    "tags": [],
+    "sha256": "fcfa799835d9b01715b3faf18bc850b1865902ec6f59f6571de98b68160707b1",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0-0000",
+    "rule_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0-0000",
+    "methodology": "AR-AMS0003",
+    "version": "v01-0",
+    "rule": "TODO: replace with lean rule summary",
+    "tags": [],
+    "sha256": "bc20882625f7725ee7abd0df2cc147f7e2f52b32a231ccdf30e95108ada4c427",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0003.v02-0.R-0-0000",
+    "rule_id": "UNFCCC.Forestry.AR-AMS0003.v02-0.R-0-0000",
+    "methodology": "AR-AMS0003",
+    "version": "v02-0",
+    "rule": "TODO: replace with lean rule summary",
+    "tags": [],
+    "sha256": "1b50e80d73f263e42f243ddee8502630fafbf133ec944846187c6a7b23149f2e",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v02-0/rules.json"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0003.v03-0.R-0-0000",
+    "rule_id": "UNFCCC.Forestry.AR-AMS0003.v03-0.R-0-0000",
+    "methodology": "AR-AMS0003",
+    "version": "v03-0",
+    "rule": "TODO: replace with lean rule summary",
+    "tags": [],
+    "sha256": "475d94d0849a11dbe13de81aed756d605c3b8f6741566019104ec57cc07147b8",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v03-0/rules.json"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0-0000",
+    "rule_id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0-0000",
+    "methodology": "AR-AMS0007",
+    "version": "v01-1",
+    "rule": "TODO: replace with lean rule summary",
+    "tags": [],
+    "sha256": "d4a639b980cdf66749ccfa906702ee12c4628514474d961b56851efd2928c0a4",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v01-1/rules.json"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v02-0.R-0-0000",
+    "rule_id": "UNFCCC.Forestry.AR-AMS0007.v02-0.R-0-0000",
+    "methodology": "AR-AMS0007",
+    "version": "v02-0",
+    "rule": "TODO: replace with lean rule summary",
+    "tags": [],
+    "sha256": "d0f035181359db50bbf001766f8fc24d93c69e691db4968f35dfbc2f7ccdb1d7",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v02-0/rules.json"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-0-0000",
+    "rule_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-0-0000",
+    "methodology": "AR-AMS0007",
+    "version": "v03-1",
+    "rule": "TODO: replace with lean rule summary",
+    "tags": [],
+    "sha256": "421c9953fc79ee74dfac01ad4d4dadc32217ae15e564c15af0e5396b406e45ee",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json"
   }
 ]

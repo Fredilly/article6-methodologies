@@ -7,7 +7,7 @@ let pdfParse = null;
 
 if (USE_VENDOR) {
   try {
-    pdfParse = require(path.resolve('vendor/npm/pdf-parse/index.js'));
+    pdfParse = require(path.resolve('vendor/npm/pdf-parse/dist/pdf-parse/cjs/index.cjs'));
   } catch (err) {
     console.error('[warn] pdf-parse vendor not found; supply TXT or disable USE_VENDOR');
     process.exit(2);
