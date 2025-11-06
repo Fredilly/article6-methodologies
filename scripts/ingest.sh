@@ -214,7 +214,7 @@ PY
   else
     # heuristic: first PDF whose link text contains "methodology" OR the first PDF on the page
     # (unfccc pages usually label the main doc; else we fall back)
-    pdf_url="$(pup 'a' attr{href} < "$html_tmp" | grep -i '\.pdf' | head -n1 || true)"
+    pdf_url="$(pup 'a attr{href}' < "$html_tmp" | grep 'UserManagement/FileStorage' | head -n1 || true)"
   fi
 
   if [ -n "${pdf_url:-}" ]; then
@@ -255,11 +255,11 @@ PY
 
   # build filters
   includes=()
-  for j in $(seq 0 $((include_count-1))); do
+  for ((j=0; j<include_count; j++)); do
     includes+=("$(yq -r ".methods[$i].include_text[$j]" "$INGEST_FILE")")
   done
   excludes=()
-  for j in $(seq 0 $((exclude_count-1))); do
+  for ((j=0; j<exclude_count; j++)); do
     excludes+=("$(yq -r ".methods[$i].exclude_text[$j]" "$INGEST_FILE")")
   done
 

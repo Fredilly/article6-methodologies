@@ -1,0 +1,67 @@
+methods:
+  - id: UNFCCC.Forestry.AR-AM0014
+    version: v03-0
+    sector: Forestry
+    source_page: https://cdm.unfccc.int/methodologies/DB/KMH6O8T6RL3P5XKNBQE2N359QG7KOE
+    include_text: []
+    exclude_text: []
+  - id: UNFCCC.Forestry.AR-AM0014
+    version: v02-0
+    sector: Forestry
+    pdf_url: https://cdm.unfccc.int/UserManagement/FileStorage/HDCF7GEK6W2Q8BYIAM91UP5RO4VNTL
+    include_text: []
+    exclude_text: []
+  - id: UNFCCC.Forestry.AR-AM0014
+    version: v01-0
+    sector: Forestry
+    pdf_url: https://cdm.unfccc.int/UserManagement/FileStorage/GLFDQWIB3ZHPSAMO9C6XR1E74KT205
+    include_text: []
+    exclude_text: []
+  - id: UNFCCC.Forestry.AR-ACM0003
+    version: v02-0
+    sector: Forestry
+    source_page: https://cdm.unfccc.int/methodologies/DB/C9QS5G3CS8FW04MYYXDFOQDPXWM4OE
+    include_text: []
+    exclude_text: []
+  - id: UNFCCC.Forestry.AR-ACM0003
+    version: v01-0
+    sector: Forestry
+    pdf_url: https://cdm.unfccc.int/UserManagement/FileStorage/CDM_ACMZOCHO8KW19650M36KQREWZ9QKZGOZ1
+    include_text: []
+    exclude_text: []
+  - id: UNFCCC.Forestry.AR-AMS0003
+    version: v03-0
+    sector: Forestry
+    source_page: https://cdm.unfccc.int/methodologies/DB/808WOYH6FWAXP3CQR4PXOLORGZBVRG
+    include_text: []
+    exclude_text: []
+  - id: UNFCCC.Forestry.AR-AMS0003
+    version: v02-0
+    sector: Forestry
+    pdf_url: https://cdm.unfccc.int/UserManagement/FileStorage/YOM3AKGC94F1QV8ZN0JB6PD7TEWL5X
+    include_text: []
+    exclude_text: []
+  - id: UNFCCC.Forestry.AR-AMS0003
+    version: v01-0
+    sector: Forestry
+    pdf_url: https://cdm.unfccc.int/UserManagement/FileStorage/CDM_AMS265RZ2UYRKLUMD8PHM3BZL7QMDL790
+    include_text: []
+    exclude_text: []
+  - id: UNFCCC.Forestry.AR-AMS0007
+    version: v03-1
+    sector: Forestry
+    source_page: https://cdm.unfccc.int/methodologies/DB/J6ZHLX1C3AEMSZ52PWIII6D2AOJZUB
+    include_text: []
+    exclude_text: []
+  - id: UNFCCC.Forestry.AR-AMS0007
+    version: v02-0
+    sector: Forestry
+    pdf_url: https://cdm.unfccc.int/UserManagement/FileStorage/M5VLWCP0HB8YXK2ZG64NQ3IJS17RT9
+    include_text: []
+    exclude_text: []
+  - id: UNFCCC.Forestry.AR-AMS0007
+    version: v01-1
+    sector: Forestry
+    pdf_url: https://cdm.unfccc.int/UserManagement/FileStorage/AY5UI2OCSTW8G3BD1VR0JFPL9KE6ZX
+    include_text: []
+    exclude_text: []

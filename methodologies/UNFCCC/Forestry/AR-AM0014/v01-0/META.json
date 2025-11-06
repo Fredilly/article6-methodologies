@@ -1,0 +1,24 @@
+{
+  "audit": {
+    "created_at": "2025-11-06T10:02:02Z",
+    "created_by": "ingest.sh"
+  },
+  "audit_hashes": {
+    "rules_json_sha256": "",
+    "sections_json_sha256": ""
+  },
+  "id": "UNFCCC.Forestry.AR-AM0014",
+  "references": {
+    "tools": [
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/AR-AM0014/v01-0/source.pdf",
+        "sha256": "8505376f7987ae68159db4c570a3daab136432a05112e406c46aa83653d7040a"
+      }
+    ]
+  },
+  "sector": "Forestry",
+  "source_page": "",
+  "status": "draft",
+  "version": "v01-0"
+}
