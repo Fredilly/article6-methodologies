@@ -25,9 +25,17 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           lfs: true
+      - name: Install Git LFS tooling
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git-lfs
+          git lfs install --local
+          git lfs version
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '20.11.1'
+      - name: Install deps
+        run: npm ci
       # jq not required; use Node-based checks only
       - name: Assert tool hashes (no drift)
         run: scripts/assert-tool-hashes.sh
