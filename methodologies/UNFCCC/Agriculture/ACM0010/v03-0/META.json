@@ -1,61 +1,19 @@
 {
   "audit": {
-    "created_at": "2025-11-06T10:56:41Z",
+    "created_at": "2025-11-07T07:27:17Z",
     "created_by": "ingest.sh"
   },
   "audit_hashes": {
-    "rules_json_sha256": "49c8549f7f304d8ff1d305113686ebe5fc4169c434eab0b16e9013238c7dcc97",
-    "sections_json_sha256": "80a90d64d3f6ba202560d8f50d8243140a2f982157060e43d181f8a7860f690e"
-  },
-  "automation": {
-    "repo_commit": "ae215a5daa98f2764370a599e03acebbe7d77dbd",
-    "scripts_manifest_sha256": "032f5a31b4fd30031d119cccd90355a000b40be5e2205b2d2aa0cf7eec4843dc"
+    "rules_json_sha256": "",
+    "sections_json_sha256": ""
   },
   "id": "UNFCCC.Agriculture.ACM0010",
-  "provenance": {
-    "author": "Fred Egbuedike",
-    "date": "2025-11-06T10:21:57.000Z",
-    "source_pdfs": [
-      {
-        "kind": "pdf",
-        "path": "tools/UNFCCC/ACM0010/v03-0/source.pdf",
-        "sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9"
-      }
-    ]
-  },
   "references": {
     "tools": [
       {
         "kind": "pdf",
-        "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/Tool-to-calculate-baseline-project-and-or-leakage-emissions-from-electricity-consumption.pdf",
-        "sha256": "e3f3238248e0d68d7da0a98eca93e411b3b44f7e5c44be9cbd8b62693b8b7107",
-        "size": 550422,
-        "doc": "",
-        "url": null
-      },
-      {
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/Tool-to-calculate-project-or-leakage-CO2-emissions-from-fossil-fuel-combustion.pdf",
-        "sha256": "57868a381913568599c98d331b9ff339115c38cc1070aeec43eca0d11823185a",
-        "size": 115214,
-        "doc": "",
-        "url": null
-      },
-      {
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/Tool-to-determine-project-emissions-from-flaring-gases-containing-methane.pdf",
-        "sha256": "6888d77e76c6b39e5de3097cc0cc2d493d6b1bd13814c985f45c20000283413d",
-        "size": 511852,
-        "doc": "",
-        "url": null
-      },
-      {
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/source.pdf",
-        "sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-        "size": 450287,
-        "doc": "UNFCCC/ACM0010@v03.0",
-        "url": null
+        "path": "tools/UNFCCC/ACM0010/v03-0/source.pdf",
+        "sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9"
       }
     ]
   },

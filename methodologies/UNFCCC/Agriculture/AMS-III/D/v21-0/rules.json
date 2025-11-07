@@ -1,108 +1,12 @@
 {
   "rules": [
     {
-      "id": "R-1-0001",
-      "section_id": "S-1",
+      "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0-0000",
+      "section_id": "S-0000",
       "tags": [
         "eligibility"
       ],
-      "text": "ELIGIBLE if all predicates true; otherwise INELIGIBLE."
-    },
-    {
-      "id": "R-1-0010",
-      "section_id": "S-1",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Default CF = 0.47 t C per t d.m. (trees and shrubs)."
-    },
-    {
-      "id": "R-1-0020",
-      "section_id": "S-1",
-      "tags": [
-        "parameter"
-      ],
-      "text": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless)."
-    },
-    {
-      "id": "R-1-0030",
-      "section_id": "S-1",
-      "tags": [
-        "eligibility"
-      ],
-      "text": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule."
-    },
-    {
-      "id": "R-1-0040",
-      "section_id": "S-1",
-      "tags": [
-        "equation"
-      ],
-      "text": "C_AGB_t = AGB_dm * CF"
-    },
-    {
-      "id": "R-1-0045",
-      "section_id": "S-1",
-      "tags": [
-        "equation"
-      ],
-      "text": "CO2e_pool = C_pool * 44/12"
-    },
-    {
-      "id": "R-1-0050",
-      "section_id": "S-1",
-      "tags": [
-        "calc"
-      ],
-      "text": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage"
-    },
-    {
-      "id": "R-1-0060",
-      "section_id": "S-1",
-      "tags": [
-        "leakage"
-      ],
-      "text": "leakage = L_AS + L_MD"
-    },
-    {
-      "id": "R-1-0070",
-      "section_id": "S-1",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "Revisit plots every RevisitInterval years using consistent mensuration protocol."
-    },
-    {
-      "id": "R-1-0080",
-      "section_id": "S-1",
-      "tags": [
-        "uncertainty"
-      ],
-      "text": "If RelativePrecision > 10 then apply uncertainty discount per U-table."
-    },
-    {
-      "id": "R-1-0090",
-      "section_id": "S-1",
-      "tags": [
-        "eligibility"
-      ],
-      "text": "If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0."
-    },
-    {
-      "id": "R-1-0100",
-      "section_id": "S-1",
-      "tags": [
-        "equation"
-      ],
-      "text": "ΔC_year = (C_t2 - C_t1) / T"
-    },
-    {
-      "id": "R-1-0110",
-      "section_id": "S-1",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification."
+      "text": "TODO: replace with rich rule summary"
     }
   ]
 }
