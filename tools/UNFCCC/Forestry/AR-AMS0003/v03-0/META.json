@@ -1,0 +1,77 @@
+{
+  "id": "UNFCCC.Forestry.AR-AMS0003",
+  "version": "v03-0",
+  "audit": {
+    "created_at": "2025-11-06T10:02:36Z",
+    "created_by": "scripts/generate-tools-meta.js",
+    "source_commit": "ae215a5daa98f2764370a599e03acebbe7d77dbd"
+  },
+  "references": {
+    "methodology": "UNFCCC.Forestry.AR-AMS0003@v03-0",
+    "meta_path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v03-0/META.json",
+    "doc": null,
+    "url": "https://cdm.unfccc.int/methodologies/DB/808WOYH6FWAXP3CQR4PXOLORGZBVRG"
+  },
+  "assets": [
+    {
+      "path": "tools/UNFCCC/Forestry/AR-AMS0003/v03-0/CDM-glossary.pdf",
+      "kind": "pdf",
+      "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c",
+      "bytes": 277555,
+      "size": 277555,
+      "doc": "",
+      "url": null,
+      "lfs": true
+    },
+    {
+      "path": "tools/UNFCCC/Forestry/AR-AMS0003/v03-0/Estimation-of-carbon-stocks-and-change-in-carbon-stocks-in-dead-wood-and-litter-in-A-R-CDM-project-activities.pdf",
+      "kind": "pdf",
+      "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4",
+      "bytes": 275971,
+      "size": 275971,
+      "doc": "",
+      "url": null,
+      "lfs": true
+    },
+    {
+      "path": "tools/UNFCCC/Forestry/AR-AMS0003/v03-0/Estimation-of-carbon-stocks-and-change-in-carbon-stocks-of-trees-and-shrubs-in-A-RCDM-project-activities.pdf",
+      "kind": "pdf",
+      "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+      "bytes": 691428,
+      "size": 691428,
+      "doc": "",
+      "url": null,
+      "lfs": true
+    },
+    {
+      "path": "tools/UNFCCC/Forestry/AR-AMS0003/v03-0/Estimation-of-non-CO2-GHG-emissions-resulting-from-burning-of-biomass-attributable-to-an-A-R-CDM-project-activity.pdf",
+      "kind": "pdf",
+      "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397",
+      "bytes": 263864,
+      "size": 263864,
+      "doc": "",
+      "url": null,
+      "lfs": true
+    },
+    {
+      "path": "tools/UNFCCC/Forestry/AR-AMS0003/v03-0/Estimation-of-the-increase-in-GHG-emissions-attributable-to-displacement-of-pre-project-agricultural-activities-in-A-R-CDM-project-activity.pdf",
+      "kind": "pdf",
+      "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29",
+      "bytes": 1008516,
+      "size": 1008516,
+      "doc": "",
+      "url": null,
+      "lfs": true
+    },
+    {
+      "path": "tools/UNFCCC/Forestry/AR-AMS0003/v03-0/source.pdf",
+      "kind": "pdf",
+      "sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b",
+      "bytes": 1049675,
+      "size": 1049675,
+      "doc": "UNFCCC/AR-AMS0003@v03.0",
+      "url": null,
+      "lfs": true
+    }
+  ]
+}

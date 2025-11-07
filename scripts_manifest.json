@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-11-07T09:35:11Z",
-  "git_commit": "4048690de2804fe4a038110253d014f33014a8dd",
+  "generated_at": "2025-11-07T13:05:37Z",
+  "git_commit": "864ca2a0892fd64afbbb6b9ab0d5aa12430e219a",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
@@ -13,7 +13,7 @@
     { "path": "scripts/build-manifest.mjs", "sha256": "61aa4f2b0e5fda53d0cbd722e539e23e51047168057024ad7b7927e404bc89a6" },
     { "path": "scripts/build-validator-bundle.js", "sha256": "307a3850efc0fa6c8acb8386a296189a4541f8a62ec263de3538426cd1e4df69" },
     { "path": "scripts/check-lean-drift.sh", "sha256": "6c482f7b7ed321f6612c8e1a347921894613cf500fa013f0f1c3904e9b78713f" },
-    { "path": "scripts/check-lfs.js", "sha256": "419bdb86abd41a0487482a4fe957756a38b22f11f62b56bf979fe4795bb3d100" },
+    { "path": "scripts/check-lfs.js", "sha256": "956b2582b094fe52ed50f41f66e8cfd67300f36760c50454e4c6acf415b50790" },
     { "path": "scripts/check-methodology-guardrails.js", "sha256": "b1ed068574c8a9d9399f11e122ca21b9d7c39a3e6a4deccfb6cb218a32145cd4" },
     { "path": "scripts/check-registry.sh", "sha256": "d66f360cfc7350e5056a81825c2a6aeb3edea448487d2c89829799d64ea2f968" },
     { "path": "scripts/check-source-hash.js", "sha256": "a3cba2d0d15b855c504c2f6cedd828b44aba19dfb5312f17b461d39d945435eb" },
@@ -30,6 +30,7 @@
     { "path": "scripts/gen-dataset.js", "sha256": "47b58f5dc13beded4ece8a74029827669945ae5140b2dfec4a8f19894d3cc753" },
     { "path": "scripts/gen-method.sh", "sha256": "768efba1930eaca72cf134c950f49fc79d648deb2354cb974fab643a5fe9198b" },
     { "path": "scripts/gen-registry.js", "sha256": "ed5e27b27860ae358c20c1d0e2cd15c678cd021a50ef295ff0234603f00c8b0e" },
+    { "path": "scripts/generate-tools-meta.js", "sha256": "6b7931efdbf40b24af30118cacfa2bc75d7be0885e530eaa10b5a79a93ceca37" },
     { "path": "scripts/hash-all.sh", "sha256": "91dcef91eb557a896cfc2cfddeb12f61e5042206438fbdc66a52ecb341c0b853" },
     { "path": "scripts/hash-scripts.sh", "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3" },
     { "path": "scripts/ingest-full.sh", "sha256": "dd1de771a8a0958571b9cf97174e682527ea18f06c6cb33a9bd54d3f80d6ef4b" },

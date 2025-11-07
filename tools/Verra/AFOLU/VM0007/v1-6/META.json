@@ -1,0 +1,27 @@
+{
+  "id": "Verra.AFOLU.VM0007",
+  "version": "v1-6",
+  "audit": {
+    "created_at": "1970-01-01T00:00:00Z",
+    "created_by": "scripts/generate-tools-meta.js",
+    "source_commit": "ae215a5daa98f2764370a599e03acebbe7d77dbd"
+  },
+  "references": {
+    "methodology": "Verra.AFOLU.VM0007@v1-6",
+    "meta_path": "methodologies/Verra/AFOLU/VM0007/v1-6/META.json",
+    "doc": null,
+    "url": null
+  },
+  "assets": [
+    {
+      "path": "tools/Verra/AFOLU/VM0007/v1-6/source.pdf",
+      "kind": "pdf",
+      "sha256": "5a838678058f6de375e8635b5f2fea47a4e5f07cb1a882a44b10f39abc6f34ff",
+      "bytes": 45,
+      "size": 45,
+      "doc": "Verra/VM0007@v1.6",
+      "url": null,
+      "lfs": true
+    }
+  ]
+}

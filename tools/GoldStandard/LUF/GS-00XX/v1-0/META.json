@@ -1,0 +1,27 @@
+{
+  "id": "GoldStandard.LUF.GS-00XX",
+  "version": "v1-0",
+  "audit": {
+    "created_at": "1970-01-01T00:00:00Z",
+    "created_by": "scripts/generate-tools-meta.js",
+    "source_commit": "ae215a5daa98f2764370a599e03acebbe7d77dbd"
+  },
+  "references": {
+    "methodology": "GoldStandard.LUF.GS-00XX@v1-0",
+    "meta_path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/META.json",
+    "doc": null,
+    "url": null
+  },
+  "assets": [
+    {
+      "path": "tools/GoldStandard/LUF/GS-00XX/v1-0/source.pdf",
+      "kind": "pdf",
+      "sha256": "5a838678058f6de375e8635b5f2fea47a4e5f07cb1a882a44b10f39abc6f34ff",
+      "bytes": 45,
+      "size": 45,
+      "doc": "GoldStandard/GS-00XX@v1.0",
+      "url": null,
+      "lfs": true
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "UNFCCC.Agriculture.AMS-III.R",
+  "version": "v05-0",
+  "audit": {
+    "created_at": "2025-11-06T10:57:04Z",
+    "created_by": "scripts/generate-tools-meta.js",
+    "source_commit": "ae215a5daa98f2764370a599e03acebbe7d77dbd"
+  },
+  "references": {
+    "methodology": "UNFCCC.Agriculture.AMS-III.R@v05-0",
+    "meta_path": "methodologies/UNFCCC/Agriculture/AMS-III/R/v05-0/META.json",
+    "doc": null,
+    "url": "https://cdm.unfccc.int/methodologies/DB/Q8EMKMK67G1XIUKJFED8EVFL2VH1SN"
+  },
+  "assets": [
+    {
+      "path": "tools/UNFCCC/Agriculture/AMS-III/R/v05-0/Baseline-project-and-or-leakage-emissions-from-electricity-consumption-and-monitoring-of-electricity-generation.pdf",
+      "kind": "pdf",
+      "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51",
+      "bytes": 572432,
+      "size": 572432,
+      "doc": "",
+      "url": null,
+      "lfs": true
+    },
+    {
+      "path": "tools/UNFCCC/Agriculture/AMS-III/R/v05-0/Demonstration-of-additionality-of-small-scale-project-activities.pdf",
+      "kind": "pdf",
+      "sha256": "c3a9fbb19b500f6ab70dfd29c3765921bb348251c8c7387e20ed50f96b29993d",
+      "bytes": 205794,
+      "size": 205794,
+      "doc": "",
+      "url": null,
+      "lfs": true
+    },
+    {
+      "path": "tools/UNFCCC/Agriculture/AMS-III/R/v05-0/Leakage-in-biomass-small-scale-project-activities.pdf",
+      "kind": "pdf",
+      "sha256": "13a14ce8ae638e0b2ae87873c854d60e8b129934611a4d41f2ac6d10caae03df",
+      "bytes": 115899,
+      "size": 115899,
+      "doc": "",
+      "url": null,
+      "lfs": true
+    },
+    {
+      "path": "tools/UNFCCC/Agriculture/AMS-III/R/v05-0/Project-and-leakage-emissions-from-anaerobic-digesters.pdf",
+      "kind": "pdf",
+      "sha256": "0788effccd28e867dfee522e5c413ca4d47240c75acce3a05d6d0cf759a3d1d0",
+      "bytes": 325737,
+      "size": 325737,
+      "doc": "",
+      "url": null,
+      "lfs": true
+    },
+    {
+      "path": "tools/UNFCCC/Agriculture/AMS-III/R/v05-0/source.pdf",
+      "kind": "pdf",
+      "sha256": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "bytes": 293350,
+      "size": 293350,
+      "doc": "UNFCCC/R@v05.0",
+      "url": null,
+      "lfs": true
+    },
+    {
+      "path": "tools/UNFCCC/Agriculture/AMS-III/R/v05-0/Tool-to-calculate-project-or-leakage-CO2-emissions-from-fossil-fuel-combustion.pdf",
+      "kind": "pdf",
+      "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02",
+      "bytes": 447750,
+      "size": 447750,
+      "doc": "",
+      "url": null,
+      "lfs": true
+    }
+  ]
+}

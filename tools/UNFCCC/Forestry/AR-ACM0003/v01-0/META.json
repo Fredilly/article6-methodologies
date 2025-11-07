@@ -1,0 +1,27 @@
+{
+  "id": "UNFCCC.Forestry.AR-ACM0003",
+  "version": "v01-0",
+  "audit": {
+    "created_at": "2025-11-06T10:02:25Z",
+    "created_by": "scripts/generate-tools-meta.js",
+    "source_commit": "ae215a5daa98f2764370a599e03acebbe7d77dbd"
+  },
+  "references": {
+    "methodology": "UNFCCC.Forestry.AR-ACM0003@v01-0",
+    "meta_path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v01-0/META.json",
+    "doc": null,
+    "url": null
+  },
+  "assets": [
+    {
+      "path": "tools/UNFCCC/Forestry/AR-ACM0003/v01-0/source.pdf",
+      "kind": "pdf",
+      "sha256": "903762ef3141d114e4312792cc7752d8132967bfe842b91ef1bfdfc1cc57dee7",
+      "bytes": 185889,
+      "size": 185889,
+      "doc": "UNFCCC/AR-ACM0003@v01.0",
+      "url": null,
+      "lfs": true
+    }
+  ]
+}
