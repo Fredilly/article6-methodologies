@@ -12,18 +12,11 @@
     "tools": [
       {
         "kind": "pdf",
-        "path": "tools/UNFCCC/AR-AMS0003/v02-0/source.pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AMS0003/v02-0/source.pdf",
         "sha256": "fb93c1b522e3439d97aace522ea9f990d69976e79afb3723013e24d92fe7b3fa",
         "size": 237872,
         "doc": "UNFCCC/AR-AMS0003@v02.0",
         "url": null
-      },
-      {
-        "doc": "UNFCCC/AR-AMS0003@v02.0",
-        "path": "tools/UNFCCC/Forestry/AR-AMS0003/v02-0/source.pdf",
-        "sha256": "fb93c1b522e3439d97aace522ea9f990d69976e79afb3723013e24d92fe7b3fa",
-        "size": 237872,
-        "kind": "pdf"
       }
     ]
   },
@@ -32,7 +25,7 @@
   "status": "draft",
   "version": "v02-0",
   "automation": {
-    "scripts_manifest_sha256": "5513ff293e8fc375c47b968f3835980c281f791291cf91b1d620f2da5982f7ec",
-    "repo_commit": "ef48c87524037a5867fa79ca16c7eb517da585a2"
+    "scripts_manifest_sha256": "3901ab9f3558fe649c9ee9ce41bb167453d1de0a4fa25c1a83aba3b7de2e81e6",
+    "repo_commit": "92602016b03d24908042ba5225327a5963172e83"
   }
 }
