@@ -17,6 +17,13 @@
         "size": 237872,
         "doc": "UNFCCC/AR-AMS0003@v02.0",
         "url": null
+      },
+      {
+        "doc": "UNFCCC/AR-AMS0003@v02.0",
+        "path": "tools/UNFCCC/Forestry/AR-AMS0003/v02-0/source.pdf",
+        "sha256": "fb93c1b522e3439d97aace522ea9f990d69976e79afb3723013e24d92fe7b3fa",
+        "size": 237872,
+        "kind": "pdf"
       }
     ]
   },
@@ -25,7 +32,7 @@
   "status": "draft",
   "version": "v02-0",
   "automation": {
-    "scripts_manifest_sha256": "3d190dc19600fb69cded0e76a8daf0447bcc30a30cc4093cf5b0012e5ba2cb7d",
-    "repo_commit": "c263504271670dde10e1cf1c30b5367ae5e05b29"
+    "scripts_manifest_sha256": "5513ff293e8fc375c47b968f3835980c281f791291cf91b1d620f2da5982f7ec",
+    "repo_commit": "ef48c87524037a5867fa79ca16c7eb517da585a2"
   }
 }

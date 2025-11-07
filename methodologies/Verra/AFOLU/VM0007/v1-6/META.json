@@ -4,8 +4,8 @@
     "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
   },
   "automation": {
-    "repo_commit": "c263504271670dde10e1cf1c30b5367ae5e05b29",
-    "scripts_manifest_sha256": "3d190dc19600fb69cded0e76a8daf0447bcc30a30cc4093cf5b0012e5ba2cb7d"
+    "repo_commit": "ef48c87524037a5867fa79ca16c7eb517da585a2",
+    "scripts_manifest_sha256": "5513ff293e8fc375c47b968f3835980c281f791291cf91b1d620f2da5982f7ec"
   },
   "domain": "Stub",
   "files": [
@@ -24,6 +24,13 @@
   },
   "references": {
     "tools": [
+      {
+        "doc": "Verra/VM0007@v1.6",
+        "path": "tools/Verra/AFOLU/VM0007/v1-6/source.pdf",
+        "sha256": "5a838678058f6de375e8635b5f2fea47a4e5f07cb1a882a44b10f39abc6f34ff",
+        "size": 45,
+        "kind": "pdf"
+      },
       {
         "doc": "Verra/VM0007@v1.6",
         "kind": "pdf",

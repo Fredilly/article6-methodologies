@@ -57,6 +57,48 @@
         "size": 1049675,
         "doc": "UNFCCC/AR-AMS0003@v03.0",
         "url": null
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Forestry/AR-AMS0003/v03-0/CDM-glossary.pdf",
+        "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c",
+        "size": 277555,
+        "kind": "pdf"
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Forestry/AR-AMS0003/v03-0/Estimation-of-carbon-stocks-and-change-in-carbon-stocks-in-dead-wood-and-litter-in-A-R-CDM-project-activities.pdf",
+        "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4",
+        "size": 275971,
+        "kind": "pdf"
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Forestry/AR-AMS0003/v03-0/Estimation-of-carbon-stocks-and-change-in-carbon-stocks-of-trees-and-shrubs-in-A-RCDM-project-activities.pdf",
+        "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+        "size": 691428,
+        "kind": "pdf"
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Forestry/AR-AMS0003/v03-0/Estimation-of-non-CO2-GHG-emissions-resulting-from-burning-of-biomass-attributable-to-an-A-R-CDM-project-activity.pdf",
+        "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397",
+        "size": 263864,
+        "kind": "pdf"
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Forestry/AR-AMS0003/v03-0/Estimation-of-the-increase-in-GHG-emissions-attributable-to-displacement-of-pre-project-agricultural-activities-in-A-R-CDM-project-activity.pdf",
+        "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29",
+        "size": 1008516,
+        "kind": "pdf"
+      },
+      {
+        "doc": "UNFCCC/AR-AMS0003@v03.0",
+        "path": "tools/UNFCCC/Forestry/AR-AMS0003/v03-0/source.pdf",
+        "sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b",
+        "size": 1049675,
+        "kind": "pdf"
       }
     ]
   },
@@ -65,7 +107,7 @@
   "status": "draft",
   "version": "v03-0",
   "automation": {
-    "scripts_manifest_sha256": "3d190dc19600fb69cded0e76a8daf0447bcc30a30cc4093cf5b0012e5ba2cb7d",
-    "repo_commit": "c263504271670dde10e1cf1c30b5367ae5e05b29"
+    "scripts_manifest_sha256": "5513ff293e8fc375c47b968f3835980c281f791291cf91b1d620f2da5982f7ec",
+    "repo_commit": "ef48c87524037a5867fa79ca16c7eb517da585a2"
   }
 }

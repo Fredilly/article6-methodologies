@@ -8,8 +8,8 @@
     "sections_json_sha256": "c794ca776cdd988c133821d2d62dcbe509e3f86a6ad37217d3c8695f5dc0471a"
   },
   "automation": {
-    "repo_commit": "c263504271670dde10e1cf1c30b5367ae5e05b29",
-    "scripts_manifest_sha256": "3d190dc19600fb69cded0e76a8daf0447bcc30a30cc4093cf5b0012e5ba2cb7d"
+    "repo_commit": "ef48c87524037a5867fa79ca16c7eb517da585a2",
+    "scripts_manifest_sha256": "5513ff293e8fc375c47b968f3835980c281f791291cf91b1d620f2da5982f7ec"
   },
   "id": "UNFCCC.Agriculture.ACM0010",
   "provenance": {
@@ -56,6 +56,34 @@
         "size": 450287,
         "doc": "UNFCCC/ACM0010@v03.0",
         "url": null
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/Tool-to-calculate-baseline-project-and-or-leakage-emissions-from-electricity-consumption.pdf",
+        "sha256": "e3f3238248e0d68d7da0a98eca93e411b3b44f7e5c44be9cbd8b62693b8b7107",
+        "size": 550422,
+        "kind": "pdf"
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/Tool-to-calculate-project-or-leakage-CO2-emissions-from-fossil-fuel-combustion.pdf",
+        "sha256": "57868a381913568599c98d331b9ff339115c38cc1070aeec43eca0d11823185a",
+        "size": 115214,
+        "kind": "pdf"
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/Tool-to-determine-project-emissions-from-flaring-gases-containing-methane.pdf",
+        "sha256": "6888d77e76c6b39e5de3097cc0cc2d493d6b1bd13814c985f45c20000283413d",
+        "size": 511852,
+        "kind": "pdf"
+      },
+      {
+        "doc": "UNFCCC/ACM0010@v03.0",
+        "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/source.pdf",
+        "sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+        "size": 450287,
+        "kind": "pdf"
       }
     ]
   },
