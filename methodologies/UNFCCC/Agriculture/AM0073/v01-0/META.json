@@ -8,8 +8,8 @@
     "sections_json_sha256": "6b60fe745de9c2d7fa6df429450b1cbe98aae2a40f894e4e7a5763aabc82221b"
   },
   "automation": {
-    "repo_commit": "881697d5a0d64c689fb89f1a344b4f4230a12494",
-    "scripts_manifest_sha256": "f33f192b02af00b0f83ff4e5294d51941d4294f43d7767c82068e127d77c83a1"
+    "repo_commit": "c263504271670dde10e1cf1c30b5367ae5e05b29",
+    "scripts_manifest_sha256": "3d190dc19600fb69cded0e76a8daf0447bcc30a30cc4093cf5b0012e5ba2cb7d"
   },
   "id": "UNFCCC.Agriculture.AM0073",
   "provenance": {
@@ -29,37 +29,49 @@
         "kind": "pdf",
         "path": "tools/UNFCCC/AM0073/v01-0/Baseline-project-and-or-leakage-emissions-from-electricity-consumption-and-monitoring-of-electricity-generation.pdf",
         "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51",
-        "size": 572432
+        "size": 572432,
+        "doc": "",
+        "url": null
       },
       {
         "kind": "pdf",
         "path": "tools/UNFCCC/AM0073/v01-0/Project-emissions-from-flaring.pdf",
         "sha256": "0a806611660fab64122335bd85c8c20974c8932b3e063592692b7d2230162907",
-        "size": 426246
+        "size": 426246,
+        "doc": "",
+        "url": null
       },
       {
         "kind": "pdf",
         "path": "tools/UNFCCC/AM0073/v01-0/Tool-for-the-demonstration-and-assessment-of-additionality.pdf",
         "sha256": "b516fd941c5d13671cb88ff7b6511cda3390f8290e3a509a1b5d22e9ad1b35bd",
-        "size": 238446
+        "size": 238446,
+        "doc": "",
+        "url": null
       },
       {
         "kind": "pdf",
         "path": "tools/UNFCCC/AM0073/v01-0/Tool-to-calculate-project-or-leakage-CO2-emissions-from-fossil-fuel-combustion.pdf",
         "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02",
-        "size": 447750
+        "size": 447750,
+        "doc": "",
+        "url": null
       },
       {
         "kind": "pdf",
         "path": "tools/UNFCCC/AM0073/v01-0/Tool-to-calculate-the-emission-factor-for-an-electricity-system.pdf",
         "sha256": "7f3864427916369b25b960ace50b5eed74b57530a14e421dc70ce35bae83bf5b",
-        "size": 1231188
+        "size": 1231188,
+        "doc": "",
+        "url": null
       },
       {
         "kind": "pdf",
         "path": "tools/UNFCCC/AM0073/v01-0/source.pdf",
         "sha256": "dc6e5a0e5942fa22e7275c1a639b8f47b85384aa7845c446fa600697646c744a",
-        "size": 733424
+        "size": 733424,
+        "doc": "UNFCCC/AM0073@v01.0",
+        "url": null
       }
     ]
   },

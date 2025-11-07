@@ -28,6 +28,24 @@
   },
   {
     "standard": "UNFCCC",
+    "program": "Agriculture",
+    "code": "AMS-III.D",
+    "version": "21.0",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III/D/v21-0",
+    "stage": "staging",
+    "latest": true
+  },
+  {
+    "standard": "UNFCCC",
+    "program": "Agriculture",
+    "code": "AMS-III.R",
+    "version": "05.0",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III/R/v05-0",
+    "stage": "staging",
+    "latest": true
+  },
+  {
+    "standard": "UNFCCC",
     "program": "Forestry",
     "code": "AR-ACM0003",
     "version": "01.0",

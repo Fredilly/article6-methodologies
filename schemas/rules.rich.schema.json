@@ -4,7 +4,7 @@
     "additionalProperties": false,
     "properties": {
       "id": {
-        "pattern": "^[A-Za-z0-9]+\\.[A-Za-z0-9]+\\.[A-Za-z0-9-]+\\.[vV][0-9][A-Za-z0-9\\.-]*\\.R-\\d+(?:-\\d+)*-\\d{4}$",
+        "pattern": "^[A-Za-z0-9]+\\.[A-Za-z0-9]+(?:\\.[A-Za-z0-9-]+)+\\.[vV][0-9][A-Za-z0-9\\.-]*\\.R-\\d+(?:-\\d+)*-\\d{4}$",
         "type": "string"
       },
       "inputs": {
@@ -111,6 +111,7 @@
           "calc",
           "monitoring",
           "leakage",
+          "requirement",
           "uncertainty",
           "reporting"
         ],
