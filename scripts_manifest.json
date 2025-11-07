@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-11-07T06:50:57Z",
-  "git_commit": "7c637c9c00ee4e78306880c3ccad8b549857f69b",
+  "generated_at": "2025-11-07T07:24:44Z",
+  "git_commit": "ae215a5daa98f2764370a599e03acebbe7d77dbd",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
@@ -24,7 +24,7 @@
     { "path": "scripts/compile-validators.js", "sha256": "0d6d8454097445711c1a0f974061f7f426522b8c1e1c0b61998cfa1c2237949b" },
     { "path": "scripts/derive-lean-from-rich.js", "sha256": "522e798bcbbf3e8261454dc104a4287b774f1157b890cf798571571698d608b9" },
     { "path": "scripts/derive-lean.sh", "sha256": "30dc23357fbdd0c442368d66bfefc3bfa70c4299fe573b62380fd616c846f14b" },
-    { "path": "scripts/fill-provenance.js", "sha256": "ada54506b8554fd101c56541768bbec912d9050842734c2f97a153b9d067b221" },
+    { "path": "scripts/fill-provenance.js", "sha256": "760e1dcfa7a023f5c99517131bd1fe1418d11f855b86c58b590873c966e40b28" },
     { "path": "scripts/gen-dataset-params.js", "sha256": "befe8d1bdece5b2738284c2b60598e676f7f910c605ffb53fbb7a07c3342414f" },
     { "path": "scripts/gen-dataset.js", "sha256": "47b58f5dc13beded4ece8a74029827669945ae5140b2dfec4a8f19894d3cc753" },
     { "path": "scripts/gen-method.sh", "sha256": "768efba1930eaca72cf134c950f49fc79d648deb2354cb974fab643a5fe9198b" },
@@ -54,7 +54,7 @@
     { "path": "scripts/py/generate_rich_from_txt.py", "sha256": "683214f65017b4de046c0973770b4e6849b11def05a55366d4cb55c16ad53402" },
     { "path": "scripts/require-vendor-ajv.sh", "sha256": "fc58376b1e5dfb4c1cf4a22cbcf574c151e58ec90222c32144a018fc98f02389" },
     { "path": "scripts/resolve-ingest-scope.mjs", "sha256": "c9146f4fbea6ca3c94f12aef5dd92ad8d6a23834f0fa7f8312f4319c8e9689d8" },
-    { "path": "scripts/rewrite-forestry.js", "sha256": "ff99289605e2e87a28ce4c5f55b512b6c3e86983b69dcf0b638e84f1f7884cf4" },
+    { "path": "scripts/rewrite-forestry.js", "sha256": "4830d7e177e25b33085f0e38a1a396ab32e6f81a517a592f32982293b9e5bb16" },
     { "path": "scripts/run-ajv.sh", "sha256": "fa3e40b945144c9f8dda93f44f6c00f2e404475a3074a7bc5cf450a4e38ffe0f" },
     { "path": "scripts/scaffold-method.js", "sha256": "bac5757661dd49c2dc48ba3811170e98f7dc94acc5d28573614d72e54168204e" },
     { "path": "scripts/setup/install-ingest-tools.sh", "sha256": "96135bdbe7c18a69b0123039992817b8bf10723b71b4a7f6a2359f2b08115ae4" },
