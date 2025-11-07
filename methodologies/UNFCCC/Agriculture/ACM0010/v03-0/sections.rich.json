@@ -5,7 +5,7 @@
       "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
       "source_ref": "UNFCCC/ACM0010@v03-0"
     },
-    "title": "Document"
+    "title": "Scope and applicability"
   },
   {
     "id": "S-2",
@@ -13,7 +13,7 @@
       "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
       "source_ref": "UNFCCC/ACM0010@v03-0"
     },
-    "title": "This consolidated baseline methodology is based on elements from the following methodologies:"
+    "title": "Definitions"
   },
   {
     "id": "S-3",
@@ -21,7 +21,7 @@
       "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
       "source_ref": "UNFCCC/ACM0010@v03-0"
     },
-    "title": "to:"
+    "title": "Project boundary and carbon pools"
   },
   {
     "id": "S-4",
@@ -29,7 +29,7 @@
       "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
       "source_ref": "UNFCCC/ACM0010@v03-0"
     },
-    "title": "The methodology also refers to the latest version of the following tools1 :"
+    "title": "Baseline scenario and net GHG emissions"
   },
   {
     "id": "S-5",
@@ -37,7 +37,7 @@
       "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
       "source_ref": "UNFCCC/ACM0010@v03-0"
     },
-    "title": "Applicability"
+    "title": "Project scenario and net GHG removals"
   },
   {
     "id": "S-6",
@@ -45,7 +45,7 @@
       "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
       "source_ref": "UNFCCC/ACM0010@v03-0"
     },
-    "title": "1 Please refer to http://cdm.unfccc.int/goto/MPappmeth."
+    "title": "Leakage"
   },
   {
     "id": "S-7",
@@ -53,7 +53,7 @@
       "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
       "source_ref": "UNFCCC/ACM0010@v03-0"
     },
-    "title": "The methodology determines the baseline scenario through the following steps:"
+    "title": "Monitoring plan"
   },
   {
     "id": "S-8",
@@ -61,7 +61,7 @@
       "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
       "source_ref": "UNFCCC/ACM0010@v03-0"
     },
-    "title": "1. Identify realistic and credible alternative scenarios that are available either to the project"
+    "title": "Data and parameters"
   },
   {
     "id": "S-9",
@@ -69,7 +69,7 @@
       "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
       "source_ref": "UNFCCC/ACM0010@v03-0"
     },
-    "title": "should include:"
+    "title": "Uncertainty, precision, QA/QC"
   },
   {
     "id": "S-10",
@@ -77,7 +77,7 @@
       "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
       "source_ref": "UNFCCC/ACM0010@v03-0"
     },
-    "title": "2 In particular, loading in the waste water streams has to be high enough to assure that the lagoon develops an"
+    "title": "Permanence (tCERs/lCERs)"
   },
   {
     "id": "S-11",
@@ -85,7 +85,7 @@
       "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
       "source_ref": "UNFCCC/ACM0010@v03-0"
     },
-    "title": "3 For example, a coal-fired power station or hydropower may not be an alternative for an independent power"
+    "title": "Normative tools and references"
   },
   {
     "id": "S-12",
@@ -93,7 +93,7 @@
       "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
       "source_ref": "UNFCCC/ACM0010@v03-0"
     },
-    "title": "Investment barriers, inter alia:"
+    "title": "Calculation procedures and equations"
   },
   {
     "id": "S-13",
@@ -101,862 +101,6 @@
       "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
       "source_ref": "UNFCCC/ACM0010@v03-0"
     },
-    "title": "Technological barriers, inter alia:"
-  },
-  {
-    "id": "S-14",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Barriers due to prevailing practice, inter alia:"
-  },
-  {
-    "id": "S-15",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "may include:"
-  },
-  {
-    "id": "S-16",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "CDM project activity or the CDM project developer, such as minutes from Board"
-  },
-  {
-    "id": "S-17",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "TOTAL"
-  },
-  {
-    "id": "S-18",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "IRR (%)"
-  },
-  {
-    "id": "S-19",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "CDM project activity it may be concluded that the project is additional."
-  },
-  {
-    "id": "S-20",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "PROJECT BOUNDARY"
-  },
-  {
-    "id": "S-21",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "ANIMAL"
-  },
-  {
-    "id": "S-22",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Baseline"
-  },
-  {
-    "id": "S-23",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "CO2"
-  },
-  {
-    "id": "S-24",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Baseline emissions are:"
-  },
-  {
-    "id": "S-25",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "more stages. Therefore:"
-  },
-  {
-    "id": "S-26",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "CH CH y CH MS VS N B MCF D GWP BE , , ,0"
-  },
-  {
-    "id": "S-27",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "4 4 ,4 % * * * * * \u2211 \u22c5 = (2)"
-  },
-  {
-    "id": "S-28",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "1. Using published country specific data. If the data is expressed in kg dm per day, multiply the"
-  },
-  {
-    "id": "S-29",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "2. Estimation of VS based on dietary intake of livestock"
-  },
-  {
-    "id": "S-30",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "LT"
-  },
-  {
-    "id": "S-31",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "GE VS *"
-  },
-  {
-    "id": "S-32",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "1 * , \uf8fa"
-  },
-  {
-    "id": "S-33",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "in equation below:"
-  },
-  {
-    "id": "S-34",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "VS \u22c5 \u22c5"
-  },
-  {
-    "id": "S-35",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Developed countries VS LT,y values can be used provided the following conditions can be satisfied:"
-  },
-  {
-    "id": "S-36",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "The following sources should be used to calculate baseline emissions:"
-  },
-  {
-    "id": "S-37",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "(B) Maximum Methane Production Potential (B0,LT):"
-  },
-  {
-    "id": "S-38",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Developed countries B 0,LT values can be used provided the following conditions are satisfied:"
-  },
-  {
-    "id": "S-39",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "(C) Methane conversion factors (MCFs):"
-  },
-  {
-    "id": "S-40",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "IPCC 2006."
-  },
-  {
-    "id": "S-41",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "(D) Annual Average number of animals (N LT):"
-  },
-  {
-    "id": "S-42",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "N N (5)"
-  },
-  {
-    "id": "S-43",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "4 http://www.epa.gov/ost/guide/cafo/pdf/DDChapters8.pdf"
-  },
-  {
-    "id": "S-44",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "1 , , 2 , , 2 , 2 2 , 2 y ID O N y D O N N N O N O N y O N E E CF GWP BE + \u22c5 \u22c5 = \u2212 (6)"
-  },
-  {
-    "id": "S-45",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "j Bl LT y LT j D O N y D O N MS N NEX EF E ,"
-  },
-  {
-    "id": "S-46",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "j Bl LT y LT gasm j ID O N y ID O N MS N NEX F EF E ,"
-  },
-  {
-    "id": "S-47",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Determination of CEF Bl,elec:"
-  },
-  {
-    "id": "S-48",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Determination of CEF grid:"
-  },
-  {
-    "id": "S-49",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Determination of CEF Bl,therm:"
-  },
-  {
-    "id": "S-50",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "5 http://www.epa.gov/ost/guide/cafo/pdf/DDChapters8.pdf ."
-  },
-  {
-    "id": "S-51",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Project emissions are estimated as follows:"
-  },
-  {
-    "id": "S-52",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "(i) Methane emissions from AWMS where gas is captured (PEAD, y):"
-  },
-  {
-    "id": "S-53",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "\u2211 \u22c5 = LT"
-  },
-  {
-    "id": "S-54",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "n VS AD AD CH CH y AD MS VS N B R F LF D GWP PE ,"
-  },
-  {
-    "id": "S-55",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "(ii) Methane emissions from aerobic AWMS treatment (PEAer, y):"
-  },
-  {
-    "id": "S-56",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "n VS Aer CH CH y Aer PE MS VS N B R F D GWP PE ,"
-  },
-  {
-    "id": "S-57",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "n VS Aer sl CH CH y Sl MS VS N B R F MCF D GWP PE ,"
-  },
-  {
-    "id": "S-58",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "1 , , 2 , , 2 , 2 2 , 2 y ID O N y D O N N N O N O N y O N E E CF GWP PE + \u22c5 \u22c5 = \u2212 (14)"
-  },
-  {
-    "id": "S-59",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "j LT y LT j D O N y D O N MS N NEX EF E ,"
-  },
-  {
-    "id": "S-60",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "2006 Guidelines)."
-  },
-  {
-    "id": "S-61",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "j LT y LT gasm j ID O N y ID O N MS N NEX F EF E ,"
-  },
-  {
-    "id": "S-62",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "1 km, and for on site delivery only), one flow meter can be used. In such cases the physical leakage may"
-  },
-  {
-    "id": "S-63",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "(v) Project emissions from flaring of the residual gas stream (PE flare,y):"
-  },
-  {
-    "id": "S-64",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "(vi) Project emissions from heat use and electricity use (PEelec/heat):"
-  },
-  {
-    "id": "S-65",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "estimated as follows:"
-  },
-  {
-    "id": "S-66",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "6 http://www.epa.gov/ost/guide/cafo/pdf/DDChapters8.pdf ."
-  },
-  {
-    "id": "S-67",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Leakage"
-  },
-  {
-    "id": "S-68",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": ") LE LE ( ) LE LE ( LE 4 CH ,B 4 CH ,P O 2 N ,B O 2 N ,P y \u2212 + \u2212 = (18)"
-  },
-  {
-    "id": "S-69",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "The baseline case N2O emissions are estimated using the following equations:"
-  },
-  {
-    "id": "S-70",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "n N land O N N NEX R EF LE ,"
-  },
-  {
-    "id": "S-71",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "LT y LT"
-  },
-  {
-    "id": "S-72",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "( ) \u2211 \u220f \u22c5 \u2212 = = LT"
-  },
-  {
-    "id": "S-73",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "n N vol O N N NEX F R EF LE ,"
-  },
-  {
-    "id": "S-74",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "NLT"
-  },
-  {
-    "id": "S-75",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "The project case N2O emissions are estimated using the following equations:"
-  },
-  {
-    "id": "S-76",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "n N land O N N NEX R EF LE ,"
-  },
-  {
-    "id": "S-77",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "LT y LT"
-  },
-  {
-    "id": "S-78",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "( ) \u2211 \u220f \u22c5 \u2212 = = LT"
-  },
-  {
-    "id": "S-79",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "n N vol O N N NEX F R EF LE ,"
-  },
-  {
-    "id": "S-80",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "2006 guidelines can be used."
-  },
-  {
-    "id": "S-81",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "n N N NEX R ,"
-  },
-  {
-    "id": "S-82",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "are estimated from equations (27) and (28), below:"
-  },
-  {
-    "id": "S-83",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "n VS d CH CH CH B MS VS N B R MCF D GWP LE ,"
-  },
-  {
-    "id": "S-84",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "n VS d CH CH CH P MS VS N B R MCF D GWP LE ,"
-  },
-  {
-    "id": "S-85",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "y y y y LE PE BE ER \u2212 \u2212 = (29)"
-  },
-  {
-    "id": "S-86",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "ID Number: 1"
-  },
-  {
-    "id": "S-87",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "ID Number: 2"
-  },
-  {
-    "id": "S-88",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "ID Number: 3"
-  },
-  {
-    "id": "S-89",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "ID Number: 4"
-  },
-  {
-    "id": "S-90",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "ID Number: 5"
-  },
-  {
-    "id": "S-91",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "ID Number: 6"
-  },
-  {
-    "id": "S-92",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "ID Number: 7"
-  },
-  {
-    "id": "S-93",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "PDD."
-  },
-  {
-    "id": "S-94",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "ID Number: 8"
-  },
-  {
-    "id": "S-95",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "ID Number: 9"
-  },
-  {
-    "id": "S-96",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "ID Number: 10"
-  },
-  {
-    "id": "S-97",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "ID Number: 11"
-  },
-  {
-    "id": "S-98",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "21 for the first commitment period. Shall be updated according to any future"
-  },
-  {
-    "id": "S-99",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "ID Number: 12"
-  },
-  {
-    "id": "S-100",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "310 for the first commitment period. Shall be updated according to any future"
-  },
-  {
-    "id": "S-101",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "ID Number: 13"
-  },
-  {
-    "id": "S-102",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "ID Number: 14"
-  },
-  {
-    "id": "S-103",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "ID Number: 15"
-  },
-  {
-    "id": "S-104",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Baseline emissions:"
-  },
-  {
-    "id": "S-105",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Project emissions:"
-  },
-  {
-    "id": "S-106",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Leakage:"
-  },
-  {
-    "id": "S-107",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "project Boundary"
-  },
-  {
-    "id": "S-108",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "QA/QC procedures:"
-  },
-  {
-    "id": "S-109",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Monitoring frequency:"
-  },
-  {
-    "id": "S-110",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Source of data:"
-  },
-  {
-    "id": "S-111",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Monitoring frequency:"
-  },
-  {
-    "id": "S-112",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Any comment:"
-  },
-  {
-    "id": "S-113",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "QA/QC procedures:"
-  },
-  {
-    "id": "S-114",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "Source of data:"
-  },
-  {
-    "id": "S-115",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "CP/100"
-  },
-  {
-    "id": "S-116",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "GE"
-  },
-  {
-    "id": "S-117",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "18.45 Conversion factor for dietary GE per kg of dry matter (MJ/kg). This value is"
-  },
-  {
-    "id": "S-118",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "6.25 Conversion from kg of dietary protein to kg of dietary N, kg feed protein (kg N)-1"
-  },
-  {
-    "id": "S-119",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "following way:"
-  },
-  {
-    "id": "S-120",
-    "provenance": {
-      "source_hash": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "source_ref": "UNFCCC/ACM0010@v03-0"
-    },
-    "title": "NEX \u22c5 = (2)"
+    "title": "Annexes"
   }
 ]

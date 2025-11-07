@@ -1,618 +1,403 @@
 [
   {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-11-0001",
-    "logic": "4. The project activity shall satisfy the following conditions:",
-    "refs": {
-      "sections": [
-        "S-11"
-      ]
-    },
-    "summary": "4. The project activity shall satisfy the following conditions:",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-11-0002",
-    "logic": "(b) Final digestate must be handled aerobically, and the conditions and procedures of",
-    "refs": {
-      "sections": [
-        "S-11"
-      ]
-    },
-    "summary": "(b) Final digestate must be handled aerobically, and the conditions and procedures of",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-11-0003",
-    "logic": "the aerobic handling of the final digestate (e.g. land application) shall be described",
-    "refs": {
-      "sections": [
-        "S-11"
-      ]
-    },
-    "summary": "the aerobic handling of the final digestate (e.g. land application) shall be described",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-11-0004",
-    "logic": "(c) Measures shall be used (e.g. combustion in a biogas burner for cooking needs) to",
-    "refs": {
-      "sections": [
-        "S-11"
-      ]
-    },
-    "summary": "(c) Measures shall be used (e.g. combustion in a biogas burner for cooking needs) to",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-11-0005",
-    "logic": "(d) In order to mitigate risks for physical leakage and venting, project participants shall",
-    "refs": {
-      "sections": [
-        "S-11"
-      ]
-    },
-    "summary": "(d) In order to mitigate risks for physical leakage and venting, project participants shall",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-12-0001",
-    "logic": "households. Justifications shall be provided in the PDD and monitoring",
-    "refs": {
-      "sections": [
-        "S-12"
-      ]
-    },
-    "summary": "households. Justifications shall be provided in the PDD and monitoring",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-12-0002",
-    "logic": "commissioning or installation and that the trainings shall be documented in",
-    "refs": {
-      "sections": [
-        "S-12"
-      ]
-    },
-    "summary": "commissioning or installation and that the trainings shall be documented in",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-12-0003",
-    "logic": "Description of such technical support system shall be provided in the PDD",
-    "refs": {
-      "sections": [
-        "S-12"
-      ]
-    },
-    "summary": "Description of such technical support system shall be provided in the PDD",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-12-0004",
-    "logic": "combustion system shall be documented.",
-    "refs": {
-      "sections": [
-        "S-12"
-      ]
-    },
-    "summary": "combustion system shall be documented.",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-12-0005",
-    "logic": "(e) Aggregated annual emission reductions of all systems included shall be less than",
-    "refs": {
-      "sections": [
-        "S-12"
-      ]
-    },
-    "summary": "(e) Aggregated annual emission reductions of all systems included shall be less than",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
     "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0001",
-    "logic": "7. Project participants shall apply the General guidelines for SSC CDM methodologies,",
+    "inputs": [],
+    "logic": "ELIGIBLE if all predicates true; otherwise INELIGIBLE.",
+    "notes": "Keep each predicate atomic for auditability.",
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
     "refs": {
       "sections": [
         "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III/R@v05-0"
       ]
     },
-    "summary": "7. Project participants shall apply the General guidelines for SSC CDM methodologies,",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
+    "summary": "ELIGIBLE if all predicates true; otherwise INELIGIBLE.",
+    "type": "eligibility",
+    "when": [
+      "Activity is small-scale A/R on lands other than wetlands",
+      "Lands meet national forest definition thresholds when project matures",
+      "Baseline land-use and legal eligibility documented"
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0002",
-    "logic": "9. The definitions contained in the Glossary of CDM terms shall apply.",
+    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0010",
+    "inputs": [],
+    "logic": "Default CF = 0.47 t C per t d.m. (trees and shrubs).",
+    "notes": "Overridable with transparent national defaults; record provenance.",
+    "provenance": {
+      "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+    },
     "refs": {
       "sections": [
         "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-TOOL14@v4.2"
       ]
     },
-    "summary": "9. The definitions contained in the Glossary of CDM terms shall apply.",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
+    "summary": "Default CF = 0.47 t C per t d.m. (trees and shrubs).",
+    "type": "parameter",
+    "when": [
+      "Carbon fraction for aboveground and shrub biomass required"
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-19-0001",
-    "logic": "with a 90 per cent confidence interval and 10 per cent margin of error. The survey should",
+    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0020",
+    "inputs": [],
+    "logic": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).",
+    "notes": "Defaults unless justified site-/species-specific data available.",
+    "provenance": {
+      "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+    },
     "refs": {
       "sections": [
-        "S-19"
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-TOOL14@v4.2"
       ]
     },
-    "summary": "with a 90 per cent confidence interval and 10 per cent margin of error. The survey should",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
+    "summary": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).",
+    "type": "parameter",
+    "when": [
+      "Root:shoot ratio required for trees and shrubs"
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-19-0002",
-    "logic": "raised in shared centralized farms,3 the project participant shall be able to show the",
+    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0030",
+    "inputs": [],
+    "logic": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",
+    "notes": "Tie to section 'project-boundary-pools'. Use explicit zeroing rules elsewhere if tool gates apply.",
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
     "refs": {
       "sections": [
-        "S-19"
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III/R@v05-0"
       ]
     },
-    "summary": "raised in shared centralized farms,3 the project participant shall be able to show the",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
+    "summary": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",
+    "type": "eligibility",
+    "when": [
+      "Optional pools (DOM, Litter, SOC) excluded via boundary selection"
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-34-0001",
-    "logic": "of the system shall be estimated using TOOL03 and TOOL05 . When applying the above",
+    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0040",
+    "inputs": [
+      {
+        "name": "AGB_dm",
+        "source": "sampling",
+        "unit": "t d.m. ha-1"
+      },
+      {
+        "default": 0.47,
+        "name": "CF",
+        "source": "tool-default",
+        "unit": "t C / t d.m."
+      }
+    ],
+    "logic": "C_AGB_t = AGB_dm * CF",
+    "notes": "Maintain units explicitly. Output: t C ha-1.",
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
     "refs": {
       "sections": [
-        "S-34"
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III/R@v05-0",
+        "UNFCCC/AR-TOOL14@v4.2"
       ]
     },
-    "summary": "of the system shall be estimated using TOOL03 and TOOL05 . When applying the above",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
+    "summary": "C_AGB_t = AGB_dm * CF",
+    "type": "equation",
+    "when": [
+      "Compute carbon in AGB at time t"
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-35-0001",
-    "logic": "17. The applicable requirements from TOOL22 shall be followed to calculate leakage related",
+    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0045",
+    "inputs": [
+      {
+        "name": "C_pool",
+        "source": "calc",
+        "unit": "t C ha-1"
+      }
+    ],
+    "logic": "CO2e_pool = C_pool * 44/12",
+    "notes": "Stoichiometric conversion (44/12). Output: t CO2e ha-1.",
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
     "refs": {
       "sections": [
-        "S-35"
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III/R@v05-0"
       ]
     },
-    "summary": "17. The applicable requirements from TOOL22 shall be followed to calculate leakage related",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
+    "summary": "CO2e_pool = C_pool * 44/12",
+    "type": "equation",
+    "when": [
+      "Convert carbon to CO2e"
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-36-0001",
-    "logic": "18. Project participants shall undertake direct measurement of the amount of biogas",
+    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0050",
+    "inputs": [
+      {
+        "name": "dCO2e_AGB",
+        "source": "calc",
+        "unit": "t CO2e ha-1 yr-1"
+      },
+      {
+        "name": "dCO2e_BGB",
+        "source": "calc",
+        "unit": "t CO2e ha-1 yr-1"
+      },
+      {
+        "name": "dCO2e_DOM",
+        "source": "calc",
+        "unit": "t CO2e ha-1 yr-1"
+      },
+      {
+        "name": "dCO2e_Litter",
+        "source": "calc",
+        "unit": "t CO2e ha-1 yr-1"
+      },
+      {
+        "name": "dCO2e_SOC",
+        "source": "calc",
+        "unit": "t CO2e ha-1 yr-1"
+      },
+      {
+        "name": "leakage",
+        "source": "calc",
+        "unit": "t CO2e ha-1 yr-1"
+      }
+    ],
+    "logic": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage",
+    "notes": "Zero excluded pools via boundary rules.",
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
     "refs": {
       "sections": [
-        "S-36"
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III/R@v05-0"
       ]
     },
-    "summary": "18. Project participants shall undertake direct measurement of the amount of biogas",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
+    "summary": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage",
+    "type": "calc",
+    "when": [
+      "Annual net GHG removals (project)"
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-43-0001",
-    "logic": "19. Methane combusted (MDy) shall be determined as follows.",
+    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0060",
+    "inputs": [
+      {
+        "name": "L_AS",
+        "source": "calc",
+        "unit": "t CO2e ha-1 yr-1"
+      },
+      {
+        "name": "L_MD",
+        "source": "calc",
+        "unit": "t CO2e ha-1 yr-1"
+      }
+    ],
+    "logic": "leakage = L_AS + L_MD",
+    "notes": "Zero under specific AR-TOOL15 conditions; else compute via tool equations.",
+    "provenance": {
+      "source_hash": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29",
+      "source_ref": "UNFCCC/AR-TOOL15@v2.0"
+    },
     "refs": {
       "sections": [
-        "S-43"
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-TOOL15@v2.0"
       ]
     },
-    "summary": "19. Methane combusted (MDy) shall be determined as follows.",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
+    "summary": "leakage = L_AS + L_MD",
+    "type": "leakage",
+    "when": [
+      "Leakage must be accounted per methodology/tool"
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-46-0001",
-    "logic": "requirements. It shall be verified if the amount of manure generated and fed to the digester,",
+    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0070",
+    "inputs": [
+      {
+        "name": "PlotCount",
+        "source": "design",
+        "unit": "count"
+      },
+      {
+        "name": "RevisitInterval",
+        "source": "design",
+        "unit": "yr"
+      }
+    ],
+    "logic": "Revisit plots every RevisitInterval years using consistent mensuration protocol.",
+    "notes": "Design variables explicit for QA/QC automation.",
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
     "refs": {
       "sections": [
-        "S-46"
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III/R@v05-0"
       ]
     },
-    "summary": "requirements. It shall be verified if the amount of manure generated and fed to the digester,",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
+    "summary": "Revisit plots every RevisitInterval years using consistent mensuration protocol.",
+    "type": "monitoring",
+    "when": [
+      "Permanent sample plots established per design"
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-47-0001",
-    "logic": "shall be verified on a sampling basis following requirements in the “Standard for sampling",
+    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0080",
+    "inputs": [
+      {
+        "name": "RelativePrecision",
+        "source": "calc",
+        "unit": "%"
+      }
+    ],
+    "logic": "If RelativePrecision > 10 then apply uncertainty discount per U-table.",
+    "notes": "Encode the uncertainty discount table as separate parameter rules.",
+    "provenance": {
+      "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+    },
     "refs": {
       "sections": [
-        "S-47"
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-TOOL14@v4.2"
       ]
     },
-    "summary": "shall be verified on a sampling basis following requirements in the “Standard for sampling",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
+    "summary": "If RelativePrecision > 10 then apply uncertainty discount per U-table.",
+    "type": "uncertainty",
+    "when": [
+      "Precision check for sampling strata (trees/shrubs)"
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-48-0001",
-    "logic": "10 Biogas volume and methane content measurements shall be on the same basis (wet or dry).",
+    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0090",
+    "inputs": [
+      {
+        "name": "ShrubCrownCover_i",
+        "source": "monitoring",
+        "unit": "fraction"
+      }
+    ],
+    "logic": "If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.",
+    "notes": "Deterministic gate; cite shrub-cover threshold.",
+    "provenance": {
+      "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+    },
     "refs": {
       "sections": [
-        "S-48"
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-TOOL14@v4.2"
       ]
     },
-    "summary": "10 Biogas volume and methane content measurements shall be on the same basis (wet or dry).",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
+    "summary": "If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.",
+    "type": "eligibility",
+    "when": [
+      "Zeroing conditions for shrubs stratum defined by crown cover"
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-49-0001",
-    "logic": "The project design document should describe the system for",
+    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0100",
+    "inputs": [
+      {
+        "name": "C_t2",
+        "source": "calc",
+        "unit": "t CO2e"
+      },
+      {
+        "name": "C_t1",
+        "source": "calc",
+        "unit": "t CO2e"
+      },
+      {
+        "name": "T",
+        "source": "calc",
+        "unit": "yr"
+      }
+    ],
+    "logic": "ΔC_year = (C_t2 - C_t1) / T",
+    "notes": "Apply per stratum then aggregate.",
+    "provenance": {
+      "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+    },
     "refs": {
       "sections": [
-        "S-49"
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-TOOL14@v4.2"
       ]
     },
-    "summary": "The project design document should describe the system for",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
+    "summary": "ΔC_year = (C_t2 - C_t1) / T",
+    "type": "equation",
+    "when": [
+      "Annual change by linear interpolation between verifications"
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-49-0002",
-    "logic": "of sales, records of feed purchases) should be assessed.",
+    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0110",
+    "inputs": [],
+    "logic": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.",
+    "notes": "Keep table-form sources consistent across strata.",
+    "provenance": {
+      "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+    },
     "refs": {
       "sections": [
-        "S-49"
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-TOOL14@v4.2"
       ]
     },
-    "summary": "of sales, records of feed purchases) should be assessed.",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-49-0003",
-    "logic": "surveys for CDM project activities and programmes of activities” shall",
-    "refs": {
-      "sections": [
-        "S-49"
-      ]
-    },
-    "summary": "surveys for CDM project activities and programmes of activities” shall",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-49-0004",
-    "logic": "participant shall also determine the number of families/households",
-    "refs": {
-      "sections": [
-        "S-49"
-      ]
-    },
-    "summary": "participant shall also determine the number of families/households",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-51-0001",
-    "logic": "At the time of installation all project activity systems shall be inspected",
-    "refs": {
-      "sections": [
-        "S-51"
-      ]
-    },
-    "summary": "At the time of installation all project activity systems shall be inspected",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-51-0002",
-    "logic": "biogas digester, methane recovery and combustion system, shall be",
-    "refs": {
-      "sections": [
-        "S-51"
-      ]
-    },
-    "summary": "biogas digester, methane recovery and combustion system, shall be",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-52-0001",
-    "logic": "surveys for CDM project activities and programme of activities” shall",
-    "refs": {
-      "sections": [
-        "S-52"
-      ]
-    },
-    "summary": "surveys for CDM project activities and programme of activities” shall",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-52-0002",
-    "logic": "measurement shall be carried out for at least 30 days.",
-    "refs": {
-      "sections": [
-        "S-52"
-      ]
-    },
-    "summary": "measurement shall be carried out for at least 30 days.",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-53-0001",
-    "logic": "unit must be considered as project emissions. Equation 1 shall be",
-    "refs": {
-      "sections": [
-        "S-53"
-      ]
-    },
-    "summary": "unit must be considered as project emissions. Equation 1 shall be",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-53-0002",
-    "logic": "(a) Biogas flow meters shall be used to monitor accumulated biogas",
-    "refs": {
-      "sections": [
-        "S-53"
-      ]
-    },
-    "summary": "(a) Biogas flow meters shall be used to monitor accumulated biogas",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-54-0001",
-    "logic": "• Measurement campaigns shall be undertaken at randomly",
-    "refs": {
-      "sections": [
-        "S-54"
-      ]
-    },
-    "summary": "• Measurement campaigns shall be undertaken at randomly",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-54-0002",
-    "logic": "activities and programme of activities” shall be used for",
-    "refs": {
-      "sections": [
-        "S-54"
-      ]
-    },
-    "summary": "activities and programme of activities” shall be used for",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-54-0003",
-    "logic": "• The selected samples should take into account the need for",
-    "refs": {
-      "sections": [
-        "S-54"
-      ]
-    },
-    "summary": "• The selected samples should take into account the need for",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-54-0004",
-    "logic": "measurement shall be carried out for at least 30 days;",
-    "refs": {
-      "sections": [
-        "S-54"
-      ]
-    },
-    "summary": "measurement shall be carried out for at least 30 days;",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-54-0005",
-    "logic": "shall be taken where a single period is chosen corresponding",
-    "refs": {
-      "sections": [
-        "S-54"
-      ]
-    },
-    "summary": "shall be taken where a single period is chosen corresponding",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-55-0001",
-    "logic": "The fraction of methane in the biogas should be measured with a",
-    "refs": {
-      "sections": [
-        "S-55"
-      ]
-    },
-    "summary": "The fraction of methane in the biogas should be measured with a",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-55-0002",
-    "logic": "It shall be measured using equipment that can directly measure",
-    "refs": {
-      "sections": [
-        "S-55"
-      ]
-    },
-    "summary": "It shall be measured using equipment that can directly measure",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-55-0003",
-    "logic": "as CO2 is not permitted. The methane content measurement shall be",
-    "refs": {
-      "sections": [
-        "S-55"
-      ]
-    },
-    "summary": "as CO2 is not permitted. The methane content measurement shall be",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-55-0004",
-    "logic": "Any comment: The option chosen should be clearly specified in the project design",
-    "refs": {
-      "sections": [
-        "S-55"
-      ]
-    },
-    "summary": "Any comment: The option chosen should be clearly specified in the project design",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-55-0005",
-    "logic": "Justifications shall be provided in the project design document and",
-    "refs": {
-      "sections": [
-        "S-55"
-      ]
-    },
-    "summary": "Justifications shall be provided in the project design document and",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-56-0001",
-    "logic": "The trainings shall be documented in a verifiable manner (e.g.",
-    "refs": {
-      "sections": [
-        "S-56"
-      ]
-    },
-    "summary": "The trainings shall be documented in a verifiable manner (e.g.",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-56-0002",
-    "logic": "Description of such technical support system shall be provided in the",
-    "refs": {
-      "sections": [
-        "S-56"
-      ]
-    },
-    "summary": "Description of such technical support system shall be provided in the",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
-  },
-  {
-    "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-56-0003",
-    "logic": "combustion system shall be documented",
-    "refs": {
-      "sections": [
-        "S-56"
-      ]
-    },
-    "summary": "combustion system shall be documented",
-    "tags": [
-      "requirement"
-    ],
-    "type": "requirement"
+    "summary": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.",
+    "type": "monitoring",
+    "when": [
+      "Data and parameters recorded per methodology"
+    ]
   }
 ]

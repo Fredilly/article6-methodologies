@@ -1,254 +1,106 @@
 [
   {
     "id": "S-1",
-    "title": "CLEAN DEVELOPMENT MECHANISM"
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
+    "title": "Scope and applicability"
   },
   {
     "id": "S-2",
-    "title": "6.1. Data and parameters monitored .................................................................. 10"
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
+    "title": "Definitions"
   },
   {
     "id": "S-3",
-    "title": "1. The following table describes the key elements of the methodology:"
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
+    "title": "Project boundary and carbon pools"
   },
   {
     "id": "S-4",
-    "title": "mixture of manure and other agricultural wastes through:"
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
+    "title": "Baseline scenario and net GHG emissions"
   },
   {
     "id": "S-5",
-    "title": "GHG destruction:"
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
+    "title": "Project scenario and net GHG removals"
   },
   {
     "id": "S-6",
-    "title": "2. This methodology covers project activities involving the recovery and combustion of"
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
+    "title": "Leakage"
   },
   {
     "id": "S-7",
-    "title": "activity. Recovery and combustion of methane can be achieved either by:"
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
+    "title": "Monitoring plan"
   },
   {
     "id": "S-8",
-    "title": "3. The methodology is applicable under the following conditions:"
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
+    "title": "Data and parameters"
   },
   {
     "id": "S-9",
-    "title": "1 A small amount of \u201cother agricultural wastes\u201d can be mixed but the baseline emissions arising from \u201cother"
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
+    "title": "Uncertainty, precision, QA/QC"
   },
   {
     "id": "S-10",
-    "title": "4 of 15"
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
+    "title": "Permanence (tCERs/lCERs)"
   },
   {
     "id": "S-11",
-    "title": "4. The project activity shall satisfy the following conditions:"
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
+    "title": "Normative tools and references"
   },
   {
     "id": "S-12",
-    "title": "provide documentation in the PDD which:"
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
+    "title": "Calculation procedures and equations"
   },
   {
     "id": "S-13",
-    "title": "2 Systems with annual emission reductions higher than five t CO2e are eligible under \u201cAMS-III.D.: Methane"
-  },
-  {
-    "id": "S-14",
-    "title": "6. For validation and verification of clean development mechanism (CDM) projects and"
-  },
-  {
-    "id": "S-15",
-    "title": "\u201cTOOL21: Demonstration of additionality of small-scale project activities\u201d and \u201cTOOL22:"
-  },
-  {
-    "id": "S-16",
-    "title": "methodologies, tools and standard:"
-  },
-  {
-    "id": "S-17",
-    "title": "10. The project boundary is the physical, geographical site of the methane recovery and"
-  },
-  {
-    "id": "S-18",
-    "title": "11. In the absence of the project activity, manure and wastes from agricultural activities are"
-  },
-  {
-    "id": "S-19",
-    "title": "12. The fraction of total annual volatile solids for each livestock type LT that is treated in a"
-  },
-  {
-    "id": "S-20",
-    "title": "100 \u00d7 \ud835\udc34\ud835\udc4a\ud835\udc40\ud835\udc46\ud835\udc3f\ud835\udc47,\ud835\udc40\ud835\udc46,\ud835\udc58) \u00d7 \ud835\udc3a\ud835\udc4a\ud835\udc43\ud835\udc36\ud835\udc3b4 \u00d7 \ud835\udc48\ud835\udc39\ud835\udc4f"
-  },
-  {
-    "id": "S-21",
-    "title": "Where:"
-  },
-  {
-    "id": "S-22",
-    "title": "3 In shared centralized farms systems, multiple households raise their animals in a centralized farm, for"
-  },
-  {
-    "id": "S-23",
-    "title": "4 Refer to the chapter \u2018Emissions from Livestock and Manure Management\u2019 in the volume \u2018Agriculture,"
-  },
-  {
-    "id": "S-24",
-    "title": "5 For the definition of high and low productivity systems, refer to chapter \u2018Emissions from Livestock and"
-  },
-  {
-    "id": "S-25",
-    "title": "7 of 15"
-  },
-  {
-    "id": "S-26",
-    "title": "0.67 = Conversion factor of m3 CH4 to kg CH4"
-  },
-  {
-    "id": "S-27",
-    "title": "14. Project activity emissions consist of:"
-  },
-  {
-    "id": "S-28",
-    "title": "(PEFC,y);"
-  },
-  {
-    "id": "S-29",
-    "title": "(PEEC,y);"
-  },
-  {
-    "id": "S-30",
-    "title": "Where:"
-  },
-  {
-    "id": "S-31",
-    "title": "FCCC/SBSTA/2003/10/Add.2)."
-  },
-  {
-    "id": "S-32",
-    "title": "15. Project emissions due to physical leakage of methane from biogas digesters are"
-  },
-  {
-    "id": "S-33",
-    "title": "\u00d7 \ud835\udc3a\ud835\udc4a\ud835\udc43\ud835\udc36\ud835\udc3b4"
-  },
-  {
-    "id": "S-34",
-    "title": "16. Project emissions from use of fossil fuels (\ud835\udc43\ud835\udc38\ud835\udc39\ud835\udc36,\ud835\udc66) or electricity (\ud835\udc43\ud835\udc38\ud835\udc38\ud835\udc36,\ud835\udc66) for the operation"
-  },
-  {
-    "id": "S-35",
-    "title": "17. The applicable requirements from TOOL22 shall be followed to calculate leakage related"
-  },
-  {
-    "id": "S-36",
-    "title": "18. Project participants shall undertake direct measurement of the amount of biogas"
-  },
-  {
-    "id": "S-37",
-    "title": "the lowest value of the following:"
-  },
-  {
-    "id": "S-38",
-    "title": "\u2212 \ud835\udc43\ud835\udc38\ud835\udc38\ud835\udc36,\ud835\udc66)] \u2212 \ud835\udc3f\ud835\udc38\ud835\udc66"
-  },
-  {
-    "id": "S-39",
-    "title": "Where:"
-  },
-  {
-    "id": "S-40",
-    "title": "7 Leakage rate of 0.1 for low quality biogas digesters provided in the 2019 Refinement to the 2006 IPCC"
-  },
-  {
-    "id": "S-41",
-    "title": "8 The emission reductions achieved by energy displacement are estimated and monitored according to"
-  },
-  {
-    "id": "S-42",
-    "title": "9 of 15"
-  },
-  {
-    "id": "S-43",
-    "title": "19. Methane combusted (MDy) shall be determined as follows."
-  },
-  {
-    "id": "S-44",
-    "title": "\u00d7 \ud835\udc64\ud835\udc36\ud835\udc3b4,\ud835\udc66 \u00d7 \ud835\udc37\ud835\udc36\ud835\udc3b4,\ud835\udc66 \u00d7 \ud835\udc3a\ud835\udc4a\ud835\udc43\ud835\udc36\ud835\udc3b4)"
-  },
-  {
-    "id": "S-45",
-    "title": "Where:"
-  },
-  {
-    "id": "S-46",
-    "title": "20. Emission reductions can only be claimed if the systems are demonstrated to be"
-  },
-  {
-    "id": "S-47",
-    "title": "21. The proper land application (resulting in negligible methane emissions) of the digestate"
-  },
-  {
-    "id": "S-48",
-    "title": "10 Biogas volume and methane content measurements shall be on the same basis (wet or dry)."
-  },
-  {
-    "id": "S-49",
-    "title": "6.1. Data and parameters monitored"
-  },
-  {
-    "id": "S-50",
-    "title": "Determined using one of the following two options:"
-  },
-  {
-    "id": "S-51",
-    "title": "11 of 15"
-  },
-  {
-    "id": "S-52",
-    "title": "conducted using one of the following methods:"
-  },
-  {
-    "id": "S-53",
-    "title": "12 of 15"
-  },
-  {
-    "id": "S-54",
-    "title": "supplied to thermal energy equipment:"
-  },
-  {
-    "id": "S-55",
-    "title": "13 of 15"
-  },
-  {
-    "id": "S-56",
-    "title": "14 of 15"
-  },
-  {
-    "id": "S-57",
-    "title": "15 of 15"
-  },
-  {
-    "id": "S-58",
-    "title": "05.0 24 March 2023 EB 117, Annex 5"
-  },
-  {
-    "id": "S-59",
-    "title": "04.0 27 May 2021 EB 110, Annex 7"
-  },
-  {
-    "id": "S-60",
-    "title": "03.0 13 September 2012 EB 69, Annex 23"
-  },
-  {
-    "id": "S-61",
-    "title": "02 18 February 2011 EB 59, Annex 4"
-  },
-  {
-    "id": "S-62",
-    "title": "AMS-I.E.;"
-  },
-  {
-    "id": "S-63",
-    "title": "01 19 October 2007 EB 35, Annex 27"
+    "provenance": {
+      "source_hash": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
+      "source_ref": "UNFCCC/AMS-III/R@v05-0"
+    },
+    "title": "Annexes"
   }
 ]
