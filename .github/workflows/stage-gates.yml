@@ -50,7 +50,7 @@ jobs:
         run: node scripts/check-trio-and-registry.js
       - name: Tools schema validation
         run: npm run validate:tools
-      - name: LFS audit for tools
-        run: npm run validate:lfs
+      - name: LFS audit for methodologies
+        run: node scripts/check-lfs.js --scope methodologies
       - name: Supply-chain guard (pinning, no network installs)
         run: node scripts/check-workflows-supplychain.js

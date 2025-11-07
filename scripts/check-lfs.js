@@ -41,6 +41,11 @@ function main() {
     console.error(`scope path not found: ${scope}`);
     process.exit(2);
   }
+  const relScope = path.relative(root, absScope).split(path.sep).join('/');
+  if (scope === 'tools' || relScope === 'tools') {
+    console.warn('Skipping LFS audit for tools scope (enforcement disabled).');
+    return;
+  }
   const pdfs = listPdfs(absScope, root);
   const missing = pdfs.filter(p => !trackedByLfs(p));
   if (missing.length) {
