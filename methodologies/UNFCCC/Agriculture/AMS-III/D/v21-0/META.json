@@ -8,8 +8,8 @@
     "sections_json_sha256": "9307319bd8a076d3e7e2a838229593aa1281641207a945748bb303b6681f0189"
   },
   "automation": {
-    "repo_commit": "905034467b75bf7031b1b9fe5333811fb20c81b0",
-    "scripts_manifest_sha256": "fd9141df869f91fd03aa42b1af0fb005858c6dae5213a9cc75fdb9286e0dc4ab"
+    "repo_commit": "080bd1ac1fed915fed45ca90d4b0ddfa58ada0fd",
+    "scripts_manifest_sha256": "feaf2b64d4031ea303d23b25f7796f0eb2a34980fe6277e23f7c18b8d5f941da"
   },
   "id": "UNFCCC.Agriculture.AMS-III.D",
   "provenance": {
@@ -27,33 +27,11 @@
     "tools": [
       {
         "kind": "pdf",
-        "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/Baseline-project-and-or-leakage-emissions-from-electricity-consumption-and-monitoring-of-electricity-generation.pdf",
+        "path": "tools/UNFCCC/Agriculture/AMS-III/D/v21-0/Baseline-project-and-or-leakage-emissions-from-electricity-consumption-and-monitoring-of-electricity-generation.pdf",
         "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51",
-        "size": 572432
-      },
-      {
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/Project-and-leakage-emissions-from-anaerobic-digesters.pdf",
-        "sha256": "0788effccd28e867dfee522e5c413ca4d47240c75acce3a05d6d0cf759a3d1d0",
-        "size": 325737
-      },
-      {
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/Project-emissions-from-flaring.pdf",
-        "sha256": "0a806611660fab64122335bd85c8c20974c8932b3e063592692b7d2230162907",
-        "size": 426246
-      },
-      {
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/Tool-to-calculate-project-or-leakage-CO2-emissions-from-fossil-fuel-combustion.pdf",
-        "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02",
-        "size": 447750
-      },
-      {
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/source.pdf",
-        "sha256": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4",
-        "size": 853732
+        "size": 572432,
+        "doc": "",
+        "url": null
       },
       {
         "doc": "",
@@ -61,6 +39,14 @@
         "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51",
         "size": 572432,
         "kind": "pdf",
+        "url": null
+      },
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Agriculture/AMS-III/D/v21-0/Project-and-leakage-emissions-from-anaerobic-digesters.pdf",
+        "sha256": "0788effccd28e867dfee522e5c413ca4d47240c75acce3a05d6d0cf759a3d1d0",
+        "size": 325737,
+        "doc": "",
         "url": null
       },
       {
@@ -72,6 +58,14 @@
         "url": null
       },
       {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Agriculture/AMS-III/D/v21-0/Project-emissions-from-flaring.pdf",
+        "sha256": "0a806611660fab64122335bd85c8c20974c8932b3e063592692b7d2230162907",
+        "size": 426246,
+        "doc": "",
+        "url": null
+      },
+      {
         "doc": "",
         "path": "tools/UNFCCC/Agriculture/AMS-III/D/v21-0/Project-emissions-from-flaring.pdf",
         "sha256": "0a806611660fab64122335bd85c8c20974c8932b3e063592692b7d2230162907",
@@ -80,11 +74,27 @@
         "url": null
       },
       {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Agriculture/AMS-III/D/v21-0/Tool-to-calculate-project-or-leakage-CO2-emissions-from-fossil-fuel-combustion.pdf",
+        "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02",
+        "size": 447750,
+        "doc": "",
+        "url": null
+      },
+      {
         "doc": "",
         "path": "tools/UNFCCC/Agriculture/AMS-III/D/v21-0/Tool-to-calculate-project-or-leakage-CO2-emissions-from-fossil-fuel-combustion.pdf",
         "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02",
         "size": 447750,
         "kind": "pdf",
+        "url": null
+      },
+      {
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Agriculture/AMS-III/D/v21-0/source.pdf",
+        "sha256": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4",
+        "size": 853732,
+        "doc": "UNFCCC/D@v21.0",
         "url": null
       },
       {
