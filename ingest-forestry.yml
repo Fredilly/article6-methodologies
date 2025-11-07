@@ -1,0 +1,17 @@
+methods:
+  - id: UNFCCC.Forestry.AR-AM0014
+    version: v03-0
+    sector: Forestry
+    source_page: https://cdm.unfccc.int/methodologies/DB/KMH6O8T6RL3P5XKNBQE2N359QG7KOE
+  - id: UNFCCC.Forestry.AR-ACM0003
+    version: v02-0
+    sector: Forestry
+    source_page: https://cdm.unfccc.int/methodologies/DB/C9QS5G3CS8FW04MYYXDFOQDPXWM4OE
+  - id: UNFCCC.Forestry.AR-AMS0003
+    version: v03-0
+    sector: Forestry
+    source_page: https://cdm.unfccc.int/methodologies/DB/808WOYH6FWAXP3CQR4PXOLORGZBVRG
+  - id: UNFCCC.Forestry.AR-AMS0007
+    version: v03-1
+    sector: Forestry
+    source_page: https://cdm.unfccc.int/methodologies/DB/J6ZHLX1C3AEMSZ52PWIII6D2AOJZUB
