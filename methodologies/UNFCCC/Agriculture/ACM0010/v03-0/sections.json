@@ -1,482 +1,602 @@
 {
   "sections": [
     {
+      "anchors": [],
       "id": "S-1",
       "title": "Document"
     },
     {
+      "anchors": [],
       "id": "S-2",
       "title": "This consolidated baseline methodology is based on elements from the following methodologies:"
     },
     {
+      "anchors": [],
       "id": "S-3",
       "title": "to:"
     },
     {
+      "anchors": [],
       "id": "S-4",
       "title": "The methodology also refers to the latest version of the following tools1 :"
     },
     {
+      "anchors": [],
       "id": "S-5",
       "title": "Applicability"
     },
     {
+      "anchors": [],
       "id": "S-6",
       "title": "1 Please refer to http://cdm.unfccc.int/goto/MPappmeth."
     },
     {
+      "anchors": [],
       "id": "S-7",
       "title": "The methodology determines the baseline scenario through the following steps:"
     },
     {
+      "anchors": [],
       "id": "S-8",
       "title": "1. Identify realistic and credible alternative scenarios that are available either to the project"
     },
     {
+      "anchors": [],
       "id": "S-9",
       "title": "should include:"
     },
     {
+      "anchors": [],
       "id": "S-10",
       "title": "2 In particular, loading in the waste water streams has to be high enough to assure that the lagoon develops an"
     },
     {
+      "anchors": [],
       "id": "S-11",
       "title": "3 For example, a coal-fired power station or hydropower may not be an alternative for an independent power"
     },
     {
+      "anchors": [],
       "id": "S-12",
       "title": "Investment barriers, inter alia:"
     },
     {
+      "anchors": [],
       "id": "S-13",
       "title": "Technological barriers, inter alia:"
     },
     {
+      "anchors": [],
       "id": "S-14",
       "title": "Barriers due to prevailing practice, inter alia:"
     },
     {
+      "anchors": [],
       "id": "S-15",
       "title": "may include:"
     },
     {
+      "anchors": [],
       "id": "S-16",
       "title": "CDM project activity or the CDM project developer, such as minutes from Board"
     },
     {
+      "anchors": [],
       "id": "S-17",
       "title": "TOTAL"
     },
     {
+      "anchors": [],
       "id": "S-18",
       "title": "IRR (%)"
     },
     {
+      "anchors": [],
       "id": "S-19",
       "title": "CDM project activity it may be concluded that the project is additional."
     },
     {
+      "anchors": [],
       "id": "S-20",
       "title": "PROJECT BOUNDARY"
     },
     {
+      "anchors": [],
       "id": "S-21",
       "title": "ANIMAL"
     },
     {
+      "anchors": [],
       "id": "S-22",
       "title": "Baseline"
     },
     {
+      "anchors": [],
       "id": "S-23",
       "title": "CO2"
     },
     {
+      "anchors": [],
       "id": "S-24",
       "title": "Baseline emissions are:"
     },
     {
+      "anchors": [],
       "id": "S-25",
       "title": "more stages. Therefore:"
     },
     {
+      "anchors": [],
       "id": "S-26",
       "title": "CH CH y CH MS VS N B MCF D GWP BE , , ,0"
     },
     {
+      "anchors": [],
       "id": "S-27",
       "title": "4 4 ,4 % * * * * * ∑ ⋅ = (2)"
     },
     {
+      "anchors": [],
       "id": "S-28",
       "title": "1. Using published country specific data. If the data is expressed in kg dm per day, multiply the"
     },
     {
+      "anchors": [],
       "id": "S-29",
       "title": "2. Estimation of VS based on dietary intake of livestock"
     },
     {
+      "anchors": [],
       "id": "S-30",
       "title": "LT"
     },
     {
+      "anchors": [],
       "id": "S-31",
       "title": "GE VS *"
     },
     {
+      "anchors": [],
       "id": "S-32",
       "title": "1 * , "
     },
     {
+      "anchors": [],
       "id": "S-33",
       "title": "in equation below:"
     },
     {
+      "anchors": [],
       "id": "S-34",
       "title": "VS ⋅ ⋅"
     },
     {
+      "anchors": [],
       "id": "S-35",
       "title": "Developed countries VS LT,y values can be used provided the following conditions can be satisfied:"
     },
     {
+      "anchors": [],
       "id": "S-36",
       "title": "The following sources should be used to calculate baseline emissions:"
     },
     {
+      "anchors": [],
       "id": "S-37",
       "title": "(B) Maximum Methane Production Potential (B0,LT):"
     },
     {
+      "anchors": [],
       "id": "S-38",
       "title": "Developed countries B 0,LT values can be used provided the following conditions are satisfied:"
     },
     {
+      "anchors": [],
       "id": "S-39",
       "title": "(C) Methane conversion factors (MCFs):"
     },
     {
+      "anchors": [],
       "id": "S-40",
       "title": "IPCC 2006."
     },
     {
+      "anchors": [],
       "id": "S-41",
       "title": "(D) Annual Average number of animals (N LT):"
     },
     {
+      "anchors": [],
       "id": "S-42",
       "title": "N N (5)"
     },
     {
+      "anchors": [],
       "id": "S-43",
       "title": "4 http://www.epa.gov/ost/guide/cafo/pdf/DDChapters8.pdf"
     },
     {
+      "anchors": [],
       "id": "S-44",
       "title": "1 , , 2 , , 2 , 2 2 , 2 y ID O N y D O N N N O N O N y O N E E CF GWP BE + ⋅ ⋅ = − (6)"
     },
     {
+      "anchors": [],
       "id": "S-45",
       "title": "j Bl LT y LT j D O N y D O N MS N NEX EF E ,"
     },
     {
+      "anchors": [],
       "id": "S-46",
       "title": "j Bl LT y LT gasm j ID O N y ID O N MS N NEX F EF E ,"
     },
     {
+      "anchors": [],
       "id": "S-47",
       "title": "Determination of CEF Bl,elec:"
     },
     {
+      "anchors": [],
       "id": "S-48",
       "title": "Determination of CEF grid:"
     },
     {
+      "anchors": [],
       "id": "S-49",
       "title": "Determination of CEF Bl,therm:"
     },
     {
+      "anchors": [],
       "id": "S-50",
       "title": "5 http://www.epa.gov/ost/guide/cafo/pdf/DDChapters8.pdf ."
     },
     {
+      "anchors": [],
       "id": "S-51",
       "title": "Project emissions are estimated as follows:"
     },
     {
+      "anchors": [],
       "id": "S-52",
       "title": "(i) Methane emissions from AWMS where gas is captured (PEAD, y):"
     },
     {
+      "anchors": [],
       "id": "S-53",
       "title": "∑ ⋅ = LT"
     },
     {
+      "anchors": [],
       "id": "S-54",
       "title": "n VS AD AD CH CH y AD MS VS N B R F LF D GWP PE ,"
     },
     {
+      "anchors": [],
       "id": "S-55",
       "title": "(ii) Methane emissions from aerobic AWMS treatment (PEAer, y):"
     },
     {
+      "anchors": [],
       "id": "S-56",
       "title": "n VS Aer CH CH y Aer PE MS VS N B R F D GWP PE ,"
     },
     {
+      "anchors": [],
       "id": "S-57",
       "title": "n VS Aer sl CH CH y Sl MS VS N B R F MCF D GWP PE ,"
     },
     {
+      "anchors": [],
       "id": "S-58",
       "title": "1 , , 2 , , 2 , 2 2 , 2 y ID O N y D O N N N O N O N y O N E E CF GWP PE + ⋅ ⋅ = − (14)"
     },
     {
+      "anchors": [],
       "id": "S-59",
       "title": "j LT y LT j D O N y D O N MS N NEX EF E ,"
     },
     {
+      "anchors": [],
       "id": "S-60",
       "title": "2006 Guidelines)."
     },
     {
+      "anchors": [],
       "id": "S-61",
       "title": "j LT y LT gasm j ID O N y ID O N MS N NEX F EF E ,"
     },
     {
+      "anchors": [],
       "id": "S-62",
       "title": "1 km, and for on site delivery only), one flow meter can be used. In such cases the physical leakage may"
     },
     {
+      "anchors": [],
       "id": "S-63",
       "title": "(v) Project emissions from flaring of the residual gas stream (PE flare,y):"
     },
     {
+      "anchors": [],
       "id": "S-64",
       "title": "(vi) Project emissions from heat use and electricity use (PEelec/heat):"
     },
     {
+      "anchors": [],
       "id": "S-65",
       "title": "estimated as follows:"
     },
     {
+      "anchors": [],
       "id": "S-66",
       "title": "6 http://www.epa.gov/ost/guide/cafo/pdf/DDChapters8.pdf ."
     },
     {
+      "anchors": [],
       "id": "S-67",
       "title": "Leakage"
     },
     {
+      "anchors": [],
       "id": "S-68",
       "title": ") LE LE ( ) LE LE ( LE 4 CH ,B 4 CH ,P O 2 N ,B O 2 N ,P y − + − = (18)"
     },
     {
+      "anchors": [],
       "id": "S-69",
       "title": "The baseline case N2O emissions are estimated using the following equations:"
     },
     {
+      "anchors": [],
       "id": "S-70",
       "title": "n N land O N N NEX R EF LE ,"
     },
     {
+      "anchors": [],
       "id": "S-71",
       "title": "LT y LT"
     },
     {
+      "anchors": [],
       "id": "S-72",
       "title": "( ) ∑ ∏ ⋅ − = = LT"
     },
     {
+      "anchors": [],
       "id": "S-73",
       "title": "n N vol O N N NEX F R EF LE ,"
     },
     {
+      "anchors": [],
       "id": "S-74",
       "title": "NLT"
     },
     {
+      "anchors": [],
       "id": "S-75",
       "title": "The project case N2O emissions are estimated using the following equations:"
     },
     {
+      "anchors": [],
       "id": "S-76",
       "title": "n N land O N N NEX R EF LE ,"
     },
     {
+      "anchors": [],
       "id": "S-77",
       "title": "LT y LT"
     },
     {
+      "anchors": [],
       "id": "S-78",
       "title": "( ) ∑ ∏ ⋅ − = = LT"
     },
     {
+      "anchors": [],
       "id": "S-79",
       "title": "n N vol O N N NEX F R EF LE ,"
     },
     {
+      "anchors": [],
       "id": "S-80",
       "title": "2006 guidelines can be used."
     },
     {
+      "anchors": [],
       "id": "S-81",
       "title": "n N N NEX R ,"
     },
     {
+      "anchors": [],
       "id": "S-82",
       "title": "are estimated from equations (27) and (28), below:"
     },
     {
+      "anchors": [],
       "id": "S-83",
       "title": "n VS d CH CH CH B MS VS N B R MCF D GWP LE ,"
     },
     {
+      "anchors": [],
       "id": "S-84",
       "title": "n VS d CH CH CH P MS VS N B R MCF D GWP LE ,"
     },
     {
+      "anchors": [],
       "id": "S-85",
       "title": "y y y y LE PE BE ER − − = (29)"
     },
     {
+      "anchors": [],
       "id": "S-86",
       "title": "ID Number: 1"
     },
     {
+      "anchors": [],
       "id": "S-87",
       "title": "ID Number: 2"
     },
     {
+      "anchors": [],
       "id": "S-88",
       "title": "ID Number: 3"
     },
     {
+      "anchors": [],
       "id": "S-89",
       "title": "ID Number: 4"
     },
     {
+      "anchors": [],
       "id": "S-90",
       "title": "ID Number: 5"
     },
     {
+      "anchors": [],
       "id": "S-91",
       "title": "ID Number: 6"
     },
     {
+      "anchors": [],
       "id": "S-92",
       "title": "ID Number: 7"
     },
     {
+      "anchors": [],
       "id": "S-93",
       "title": "PDD."
     },
     {
+      "anchors": [],
       "id": "S-94",
       "title": "ID Number: 8"
     },
     {
+      "anchors": [],
       "id": "S-95",
       "title": "ID Number: 9"
     },
     {
+      "anchors": [],
       "id": "S-96",
       "title": "ID Number: 10"
     },
     {
+      "anchors": [],
       "id": "S-97",
       "title": "ID Number: 11"
     },
     {
+      "anchors": [],
       "id": "S-98",
       "title": "21 for the first commitment period. Shall be updated according to any future"
     },
     {
+      "anchors": [],
       "id": "S-99",
       "title": "ID Number: 12"
     },
     {
+      "anchors": [],
       "id": "S-100",
       "title": "310 for the first commitment period. Shall be updated according to any future"
     },
     {
+      "anchors": [],
       "id": "S-101",
       "title": "ID Number: 13"
     },
     {
+      "anchors": [],
       "id": "S-102",
       "title": "ID Number: 14"
     },
     {
+      "anchors": [],
       "id": "S-103",
       "title": "ID Number: 15"
     },
     {
+      "anchors": [],
       "id": "S-104",
       "title": "Baseline emissions:"
     },
     {
+      "anchors": [],
       "id": "S-105",
       "title": "Project emissions:"
     },
     {
+      "anchors": [],
       "id": "S-106",
       "title": "Leakage:"
     },
     {
+      "anchors": [],
       "id": "S-107",
       "title": "project Boundary"
     },
     {
+      "anchors": [],
       "id": "S-108",
       "title": "QA/QC procedures:"
     },
     {
+      "anchors": [],
       "id": "S-109",
       "title": "Monitoring frequency:"
     },
     {
+      "anchors": [],
       "id": "S-110",
       "title": "Source of data:"
     },
     {
+      "anchors": [],
       "id": "S-111",
       "title": "Monitoring frequency:"
     },
     {
+      "anchors": [],
       "id": "S-112",
       "title": "Any comment:"
     },
     {
+      "anchors": [],
       "id": "S-113",
       "title": "QA/QC procedures:"
     },
     {
+      "anchors": [],
       "id": "S-114",
       "title": "Source of data:"
     },
     {
+      "anchors": [],
       "id": "S-115",
       "title": "CP/100"
     },
     {
+      "anchors": [],
       "id": "S-116",
       "title": "GE"
     },
     {
+      "anchors": [],
       "id": "S-117",
       "title": "18.45 Conversion factor for dietary GE per kg of dry matter (MJ/kg). This value is"
     },
     {
+      "anchors": [],
       "id": "S-118",
       "title": "6.25 Conversion from kg of dietary protein to kg of dietary N, kg feed protein (kg N)-1"
     },
     {
+      "anchors": [],
       "id": "S-119",
       "title": "following way:"
     },
     {
+      "anchors": [],
       "id": "S-120",
       "title": "NEX ⋅ = (2)"
     }

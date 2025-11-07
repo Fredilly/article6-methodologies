@@ -26,10 +26,10 @@
     "tools": [
       {
         "doc": "Verra/VM0007@v1.6",
+        "kind": "pdf",
         "path": "tools/Verra/AFOLU/VM0007/v1-6/source.pdf",
         "sha256": "5a838678058f6de375e8635b5f2fea47a4e5f07cb1a882a44b10f39abc6f34ff",
-        "size": 45,
-        "kind": "pdf"
+        "size": 45
       },
       {
         "doc": "Verra/VM0007@v1.6",
