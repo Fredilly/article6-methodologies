@@ -4,21 +4,68 @@
     "created_by": "ingest.sh"
   },
   "audit_hashes": {
-    "rules_json_sha256": "",
-    "sections_json_sha256": ""
+    "rules_json_sha256": "49c8549f7f304d8ff1d305113686ebe5fc4169c434eab0b16e9013238c7dcc97",
+    "sections_json_sha256": "80a90d64d3f6ba202560d8f50d8243140a2f982157060e43d181f8a7860f690e"
   },
   "id": "UNFCCC.Forestry.AR-AMS0003",
   "references": {
     "tools": [
       {
+        "doc": "",
+        "path": "tools/UNFCCC/AR-AMS0003/v03-0/CDM-glossary.pdf",
+        "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c",
+        "size": 277555,
+        "kind": "pdf",
+        "url": null
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/AR-AMS0003/v03-0/Estimation-of-carbon-stocks-and-change-in-carbon-stocks-in-dead-wood-and-litter-in-A-R-CDM-project-activities.pdf",
+        "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4",
+        "size": 275971,
+        "kind": "pdf",
+        "url": null
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/AR-AMS0003/v03-0/Estimation-of-carbon-stocks-and-change-in-carbon-stocks-of-trees-and-shrubs-in-A-RCDM-project-activities.pdf",
+        "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+        "size": 691428,
+        "kind": "pdf",
+        "url": null
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/AR-AMS0003/v03-0/Estimation-of-non-CO2-GHG-emissions-resulting-from-burning-of-biomass-attributable-to-an-A-R-CDM-project-activity.pdf",
+        "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397",
+        "size": 263864,
+        "kind": "pdf",
+        "url": null
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/AR-AMS0003/v03-0/Estimation-of-the-increase-in-GHG-emissions-attributable-to-displacement-of-pre-project-agricultural-activities-in-A-R-CDM-project-activity.pdf",
+        "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29",
+        "size": 1008516,
+        "kind": "pdf",
+        "url": null
+      },
+      {
         "kind": "pdf",
         "path": "tools/UNFCCC/AR-AMS0003/v03-0/source.pdf",
-        "sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b"
+        "sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b",
+        "size": 1049675,
+        "doc": "UNFCCC/AR-AMS0003@v03.0",
+        "url": null
       }
     ]
   },
   "sector": "Forestry",
   "source_page": "https://cdm.unfccc.int/methodologies/DB/808WOYH6FWAXP3CQR4PXOLORGZBVRG",
   "status": "draft",
-  "version": "v03-0"
+  "version": "v03-0",
+  "automation": {
+    "scripts_manifest_sha256": "3db149abf884dc7c207e67eebee9a9ecd43dd54afa7f54d6322db92540273d7a",
+    "repo_commit": "6e1a7788258dc924008a53b3d8677519e4ad780b"
+  }
 }

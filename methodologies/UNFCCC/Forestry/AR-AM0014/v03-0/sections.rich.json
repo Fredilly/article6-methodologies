@@ -13,7 +13,7 @@
       "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
       "source_ref": "UNFCCC/AR-AM0014@v03-0"
     },
-    "title": "Baseline scenario and leakage considerations"
+    "title": "Definitions"
   },
   {
     "id": "S-3",
@@ -21,7 +21,7 @@
       "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
       "source_ref": "UNFCCC/AR-AM0014@v03-0"
     },
-    "title": "Project scenario and carbon accounting"
+    "title": "Project boundary and carbon pools"
   },
   {
     "id": "S-4",
@@ -29,7 +29,7 @@
       "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
       "source_ref": "UNFCCC/AR-AM0014@v03-0"
     },
-    "title": "Leakage assessment and mitigation"
+    "title": "Baseline scenario and net GHG emissions"
   },
   {
     "id": "S-5",
@@ -37,6 +37,70 @@
       "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
       "source_ref": "UNFCCC/AR-AM0014@v03-0"
     },
-    "title": "Monitoring, QA/QC, and reporting"
+    "title": "Project scenario and net GHG removals"
+  },
+  {
+    "id": "S-6",
+    "provenance": {
+      "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+      "source_ref": "UNFCCC/AR-AM0014@v03-0"
+    },
+    "title": "Leakage"
+  },
+  {
+    "id": "S-7",
+    "provenance": {
+      "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+      "source_ref": "UNFCCC/AR-AM0014@v03-0"
+    },
+    "title": "Monitoring plan"
+  },
+  {
+    "id": "S-8",
+    "provenance": {
+      "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+      "source_ref": "UNFCCC/AR-AM0014@v03-0"
+    },
+    "title": "Data and parameters"
+  },
+  {
+    "id": "S-9",
+    "provenance": {
+      "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+      "source_ref": "UNFCCC/AR-AM0014@v03-0"
+    },
+    "title": "Uncertainty, precision, QA/QC"
+  },
+  {
+    "id": "S-10",
+    "provenance": {
+      "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+      "source_ref": "UNFCCC/AR-AM0014@v03-0"
+    },
+    "title": "Permanence (tCERs/lCERs)"
+  },
+  {
+    "id": "S-11",
+    "provenance": {
+      "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+      "source_ref": "UNFCCC/AR-AM0014@v03-0"
+    },
+    "title": "Normative tools and references"
+  },
+  {
+    "id": "S-12",
+    "provenance": {
+      "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+      "source_ref": "UNFCCC/AR-AM0014@v03-0"
+    },
+    "title": "Calculation procedures and equations"
+  },
+  {
+    "id": "S-13",
+    "provenance": {
+      "source_hash": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+      "source_ref": "UNFCCC/AR-AM0014@v03-0"
+    },
+    "title": "Annexes"
   }
 ]

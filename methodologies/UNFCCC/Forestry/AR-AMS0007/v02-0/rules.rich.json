@@ -1,13 +1,403 @@
 [
   {
-    "id": "UNFCCC.Forestry.AR-AMS0007.v02-0.R-0-0000",
-    "logic": "TODO",
+    "id": "UNFCCC.Forestry.AR-AMS0007.v02-0.R-1-0001",
+    "inputs": [],
+    "logic": "ELIGIBLE if all predicates true; otherwise INELIGIBLE.",
+    "notes": "Keep each predicate atomic for auditability.",
+    "provenance": {
+      "source_hash": "2acdb2376f4c3df0bf23e5be09ebe45a8695613b409c3ea362b635ecdac578cf",
+      "source_ref": "UNFCCC/AR-AMS0007@v02-0"
+    },
     "refs": {
       "sections": [
-        "S-0000"
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v02-0"
       ]
     },
-    "summary": "TODO: replace with rich rule summary",
-    "type": "eligibility"
+    "summary": "ELIGIBLE if all predicates true; otherwise INELIGIBLE.",
+    "type": "eligibility",
+    "when": [
+      "Activity is small-scale A/R on lands other than wetlands",
+      "Lands meet national forest definition thresholds when project matures",
+      "Baseline land-use and legal eligibility documented"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v02-0.R-1-0010",
+    "inputs": [],
+    "logic": "Default CF = 0.47 t C per t d.m. (trees and shrubs).",
+    "notes": "Overridable with transparent national defaults; record provenance.",
+    "provenance": {
+      "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+    },
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-TOOL14@v4.2"
+      ]
+    },
+    "summary": "Default CF = 0.47 t C per t d.m. (trees and shrubs).",
+    "type": "parameter",
+    "when": [
+      "Carbon fraction for aboveground and shrub biomass required"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v02-0.R-1-0020",
+    "inputs": [],
+    "logic": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).",
+    "notes": "Defaults unless justified site-/species-specific data available.",
+    "provenance": {
+      "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+    },
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-TOOL14@v4.2"
+      ]
+    },
+    "summary": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).",
+    "type": "parameter",
+    "when": [
+      "Root:shoot ratio required for trees and shrubs"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v02-0.R-1-0030",
+    "inputs": [],
+    "logic": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",
+    "notes": "Tie to section 'project-boundary-pools'. Use explicit zeroing rules elsewhere if tool gates apply.",
+    "provenance": {
+      "source_hash": "2acdb2376f4c3df0bf23e5be09ebe45a8695613b409c3ea362b635ecdac578cf",
+      "source_ref": "UNFCCC/AR-AMS0007@v02-0"
+    },
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v02-0"
+      ]
+    },
+    "summary": "If a pool is excluded from boundary, set its ΔCO2e := 0 by rule.",
+    "type": "eligibility",
+    "when": [
+      "Optional pools (DOM, Litter, SOC) excluded via boundary selection"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v02-0.R-1-0040",
+    "inputs": [
+      {
+        "name": "AGB_dm",
+        "source": "sampling",
+        "unit": "t d.m. ha-1"
+      },
+      {
+        "default": 0.47,
+        "name": "CF",
+        "source": "tool-default",
+        "unit": "t C / t d.m."
+      }
+    ],
+    "logic": "C_AGB_t = AGB_dm * CF",
+    "notes": "Maintain units explicitly. Output: t C ha-1.",
+    "provenance": {
+      "source_hash": "2acdb2376f4c3df0bf23e5be09ebe45a8695613b409c3ea362b635ecdac578cf",
+      "source_ref": "UNFCCC/AR-AMS0007@v02-0"
+    },
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v02-0",
+        "UNFCCC/AR-TOOL14@v4.2"
+      ]
+    },
+    "summary": "C_AGB_t = AGB_dm * CF",
+    "type": "equation",
+    "when": [
+      "Compute carbon in AGB at time t"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v02-0.R-1-0045",
+    "inputs": [
+      {
+        "name": "C_pool",
+        "source": "calc",
+        "unit": "t C ha-1"
+      }
+    ],
+    "logic": "CO2e_pool = C_pool * 44/12",
+    "notes": "Stoichiometric conversion (44/12). Output: t CO2e ha-1.",
+    "provenance": {
+      "source_hash": "2acdb2376f4c3df0bf23e5be09ebe45a8695613b409c3ea362b635ecdac578cf",
+      "source_ref": "UNFCCC/AR-AMS0007@v02-0"
+    },
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v02-0"
+      ]
+    },
+    "summary": "CO2e_pool = C_pool * 44/12",
+    "type": "equation",
+    "when": [
+      "Convert carbon to CO2e"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v02-0.R-1-0050",
+    "inputs": [
+      {
+        "name": "dCO2e_AGB",
+        "source": "calc",
+        "unit": "t CO2e ha-1 yr-1"
+      },
+      {
+        "name": "dCO2e_BGB",
+        "source": "calc",
+        "unit": "t CO2e ha-1 yr-1"
+      },
+      {
+        "name": "dCO2e_DOM",
+        "source": "calc",
+        "unit": "t CO2e ha-1 yr-1"
+      },
+      {
+        "name": "dCO2e_Litter",
+        "source": "calc",
+        "unit": "t CO2e ha-1 yr-1"
+      },
+      {
+        "name": "dCO2e_SOC",
+        "source": "calc",
+        "unit": "t CO2e ha-1 yr-1"
+      },
+      {
+        "name": "leakage",
+        "source": "calc",
+        "unit": "t CO2e ha-1 yr-1"
+      }
+    ],
+    "logic": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage",
+    "notes": "Zero excluded pools via boundary rules.",
+    "provenance": {
+      "source_hash": "2acdb2376f4c3df0bf23e5be09ebe45a8695613b409c3ea362b635ecdac578cf",
+      "source_ref": "UNFCCC/AR-AMS0007@v02-0"
+    },
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v02-0"
+      ]
+    },
+    "summary": "Net_project = (dCO2e_AGB + dCO2e_BGB + dCO2e_DOM + dCO2e_Litter + dCO2e_SOC) - leakage",
+    "type": "calc",
+    "when": [
+      "Annual net GHG removals (project)"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v02-0.R-1-0060",
+    "inputs": [
+      {
+        "name": "L_AS",
+        "source": "calc",
+        "unit": "t CO2e ha-1 yr-1"
+      },
+      {
+        "name": "L_MD",
+        "source": "calc",
+        "unit": "t CO2e ha-1 yr-1"
+      }
+    ],
+    "logic": "leakage = L_AS + L_MD",
+    "notes": "Zero under specific AR-TOOL15 conditions; else compute via tool equations.",
+    "provenance": {
+      "source_hash": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29",
+      "source_ref": "UNFCCC/AR-TOOL15@v2.0"
+    },
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-TOOL15@v2.0"
+      ]
+    },
+    "summary": "leakage = L_AS + L_MD",
+    "type": "leakage",
+    "when": [
+      "Leakage must be accounted per methodology/tool"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v02-0.R-1-0070",
+    "inputs": [
+      {
+        "name": "PlotCount",
+        "source": "design",
+        "unit": "count"
+      },
+      {
+        "name": "RevisitInterval",
+        "source": "design",
+        "unit": "yr"
+      }
+    ],
+    "logic": "Revisit plots every RevisitInterval years using consistent mensuration protocol.",
+    "notes": "Design variables explicit for QA/QC automation.",
+    "provenance": {
+      "source_hash": "2acdb2376f4c3df0bf23e5be09ebe45a8695613b409c3ea362b635ecdac578cf",
+      "source_ref": "UNFCCC/AR-AMS0007@v02-0"
+    },
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v02-0"
+      ]
+    },
+    "summary": "Revisit plots every RevisitInterval years using consistent mensuration protocol.",
+    "type": "monitoring",
+    "when": [
+      "Permanent sample plots established per design"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v02-0.R-1-0080",
+    "inputs": [
+      {
+        "name": "RelativePrecision",
+        "source": "calc",
+        "unit": "%"
+      }
+    ],
+    "logic": "If RelativePrecision > 10 then apply uncertainty discount per U-table.",
+    "notes": "Encode the uncertainty discount table as separate parameter rules.",
+    "provenance": {
+      "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+    },
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-TOOL14@v4.2"
+      ]
+    },
+    "summary": "If RelativePrecision > 10 then apply uncertainty discount per U-table.",
+    "type": "uncertainty",
+    "when": [
+      "Precision check for sampling strata (trees/shrubs)"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v02-0.R-1-0090",
+    "inputs": [
+      {
+        "name": "ShrubCrownCover_i",
+        "source": "monitoring",
+        "unit": "fraction"
+      }
+    ],
+    "logic": "If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.",
+    "notes": "Deterministic gate; cite shrub-cover threshold.",
+    "provenance": {
+      "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+    },
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-TOOL14@v4.2"
+      ]
+    },
+    "summary": "If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.",
+    "type": "eligibility",
+    "when": [
+      "Zeroing conditions for shrubs stratum defined by crown cover"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v02-0.R-1-0100",
+    "inputs": [
+      {
+        "name": "C_t2",
+        "source": "calc",
+        "unit": "t CO2e"
+      },
+      {
+        "name": "C_t1",
+        "source": "calc",
+        "unit": "t CO2e"
+      },
+      {
+        "name": "T",
+        "source": "calc",
+        "unit": "yr"
+      }
+    ],
+    "logic": "ΔC_year = (C_t2 - C_t1) / T",
+    "notes": "Apply per stratum then aggregate.",
+    "provenance": {
+      "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+    },
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-TOOL14@v4.2"
+      ]
+    },
+    "summary": "ΔC_year = (C_t2 - C_t1) / T",
+    "type": "equation",
+    "when": [
+      "Annual change by linear interpolation between verifications"
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v02-0.R-1-0110",
+    "inputs": [],
+    "logic": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.",
+    "notes": "Keep table-form sources consistent across strata.",
+    "provenance": {
+      "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+    },
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-TOOL14@v4.2"
+      ]
+    },
+    "summary": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.",
+    "type": "monitoring",
+    "when": [
+      "Data and parameters recorded per methodology"
+    ]
   }
 ]

@@ -1,10 +1,56 @@
 {
   "sections": [
     {
-      "anchors": [],
-      "content": "",
-      "id": "S-0000",
-      "title": "TODO: replace with extracted section content"
+      "id": "S-1",
+      "title": "Scope and applicability"
+    },
+    {
+      "id": "S-2",
+      "title": "Definitions"
+    },
+    {
+      "id": "S-3",
+      "title": "Project boundary and carbon pools"
+    },
+    {
+      "id": "S-4",
+      "title": "Baseline scenario and net GHG emissions"
+    },
+    {
+      "id": "S-5",
+      "title": "Project scenario and net GHG removals"
+    },
+    {
+      "id": "S-6",
+      "title": "Leakage"
+    },
+    {
+      "id": "S-7",
+      "title": "Monitoring plan"
+    },
+    {
+      "id": "S-8",
+      "title": "Data and parameters"
+    },
+    {
+      "id": "S-9",
+      "title": "Uncertainty, precision, QA/QC"
+    },
+    {
+      "id": "S-10",
+      "title": "Permanence (tCERs/lCERs)"
+    },
+    {
+      "id": "S-11",
+      "title": "Normative tools and references"
+    },
+    {
+      "id": "S-12",
+      "title": "Calculation procedures and equations"
+    },
+    {
+      "id": "S-13",
+      "title": "Annexes"
     }
   ]
 }
