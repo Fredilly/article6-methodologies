@@ -3,6 +3,21 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 
+function hasGitLfs() {
+  const res = spawnSync('git', ['lfs', 'version'], { encoding: 'utf8' });
+  if (res.error) {
+    if (res.error.code === 'ENOENT') return false;
+    throw res.error;
+  }
+  if (res.status !== 0) {
+    const msg = (res.stderr || res.stdout || '').trim();
+    if (msg.includes("git: 'lfs' is not a git command")) return false;
+    console.error(msg);
+    process.exit(res.status);
+  }
+  return true;
+}
+
 function listPdfs(dir, root) {
   const results = [];
   const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -42,6 +57,10 @@ function main() {
   if (!fs.existsSync(absScope)) {
     console.error(`scope path not found: ${scope}`);
     process.exit(2);
+  }
+  if (!hasGitLfs()) {
+    console.warn('git-lfs not installed; skipping LFS audit for this run.');
+    return;
   }
   const pdfs = listPdfs(absScope, root);
   const lfsList = runGitLfs(scope);
