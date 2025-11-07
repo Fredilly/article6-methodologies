@@ -3,21 +3,6 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 
-function hasGitLfs() {
-  const res = spawnSync('git', ['lfs', 'version'], { encoding: 'utf8' });
-  if (res.error) {
-    if (res.error.code === 'ENOENT') return false;
-    throw res.error;
-  }
-  if (res.status !== 0) {
-    const msg = (res.stderr || res.stdout || '').trim();
-    if (msg.includes("git: 'lfs' is not a git command")) return false;
-    console.error(msg);
-    process.exit(res.status);
-  }
-  return true;
-}
-
 function listPdfs(dir, root) {
   const results = [];
   const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -32,18 +17,16 @@ function listPdfs(dir, root) {
   return results;
 }
 
-function runGitLfs(scope) {
-  const res = spawnSync('git', ['lfs', 'ls-files', '--name-only', scope], { encoding: 'utf8' });
-  if (res.error) {
-    console.error('git lfs is required to run this check.');
-    throw res.error;
-  }
+function trackedByLfs(file) {
+  const res = spawnSync('git', ['check-attr', 'filter', '--', file], { encoding: 'utf8' });
+  if (res.error) throw res.error;
   if (res.status !== 0) {
-    const msg = res.stderr || res.stdout;
-    console.error(msg.trim());
+    console.error((res.stderr || res.stdout || '').trim());
     process.exit(res.status);
   }
-  return res.stdout.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+  const line = res.stdout.trim();
+  const match = line.match(/:\s*filter:\s*(\S+)/i);
+  return match ? match[1].toLowerCase() === 'lfs' : false;
 }
 
 function main() {
@@ -58,18 +41,12 @@ function main() {
     console.error(`scope path not found: ${scope}`);
     process.exit(2);
   }
-  if (!hasGitLfs()) {
-    console.warn('git-lfs not installed; skipping LFS audit for this run.');
-    return;
-  }
   const pdfs = listPdfs(absScope, root);
-  const lfsList = runGitLfs(scope);
-  const lfsSet = new Set(lfsList);
-  const missing = pdfs.filter(p => !lfsSet.has(p));
+  const missing = pdfs.filter(p => !trackedByLfs(p));
   if (missing.length) {
     console.error('PDFs missing from git lfs tracking:');
     for (const m of missing) console.error(`  - ${m}`);
-    console.error(`PDFs total ${pdfs.length}, LFS ${lfsList.length}`);
+    console.error(`PDFs total ${pdfs.length}, tracked ${pdfs.length - missing.length}`);
     process.exit(1);
   }
   console.log(`All PDFs tracked by LFS under ${scope} (${pdfs.length})`);
