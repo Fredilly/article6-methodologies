@@ -19,14 +19,26 @@ on:
         description: "Issue number when source=issue"
       project_number:
         description: "Project number when source=project"
-  push:
-    branches:
-      - main
-      - chore/*
-      - fix/*
-      - feat/*
-  issue_comment:
-    types: [created]
+  workflow_call:
+    inputs:
+      source:
+        type: string
+        default: "ingest"
+      mode:
+        type: string
+        default: "both"
+      dry_run:
+        type: string
+        default: "false"
+      batch_file:
+        type: string
+        default: ""
+      issue_number:
+        type: string
+        default: ""
+      project_number:
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -43,37 +55,31 @@ env:
   SCOPED: ./.tmp/ingest.scoped.yml
 
 jobs:
-  maybe-slash:
+  changes:
     runs-on: ubuntu-latest
     outputs:
-      run: ${{ steps.slash.outputs.run }}
-      mode: ${{ steps.slash.outputs.mode }}
+      relevant: ${{ steps.diff.outputs.relevant }}
     steps:
-      - id: slash
-        shell: bash
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+      - name: Detect relevant changes
+        id: diff
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
-          if [ "${{ github.event_name }}" != "issue_comment" ]; then
-            echo "run=false" >>"$GITHUB_OUTPUT"
-            echo "mode=both"  >>"$GITHUB_OUTPUT"
-            exit 0
-          fi
-          body="${{ github.event.comment.body }}"
-          mode="both"
-          if [[ "$body" =~ ^(/[rR]un )?[iI]ngest( \+([a-zA-Z]+))? ]]; then
-            echo "run=true" >>"$GITHUB_OUTPUT"
-            if [[ -n "${BASH_REMATCH[3]}" ]]; then
-              echo "mode=${BASH_REMATCH[3]}" >>"$GITHUB_OUTPUT"
-            else
-              echo "mode=both" >>"$GITHUB_OUTPUT"
-            fi
+          set -euo pipefail
+          git fetch origin "$DEFAULT_BRANCH"
+          base="origin/$DEFAULT_BRANCH"
+          if git diff --quiet "$base"...HEAD -- schemas/** scripts/** methodologies/**; then
+            echo "relevant=false" >> "$GITHUB_OUTPUT"
           else
-            echo "run=false" >>"$GITHUB_OUTPUT"
-            echo "mode=both"  >>"$GITHUB_OUTPUT"
+            echo "relevant=true" >> "$GITHUB_OUTPUT"
           fi
 
   run:
-    needs: maybe-slash
-    if: github.event_name != 'issue_comment' || needs.maybe-slash.outputs.run == 'true'
+    needs: changes
+    if: needs.changes.outputs.relevant == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
@@ -98,16 +104,7 @@ jobs:
         id: meta
         run: |
           EVENT="${{ github.event_name }}"
-          if [ "$EVENT" = "issue_comment" ]; then
-            mode="${{ needs.maybe-slash.outputs.mode }}"
-            if [ -z "$mode" ] || [ "$mode" = 'null' ]; then mode="both"; fi
-            echo "mode=$mode" >> "$GITHUB_OUTPUT"
-            echo "source=issue" >> "$GITHUB_OUTPUT"
-            echo "issue=${{ github.event.issue.number }}" >> "$GITHUB_OUTPUT"
-            echo "project=" >> "$GITHUB_OUTPUT"
-            echo "dry_run=false" >> "$GITHUB_OUTPUT"
-            echo "batch=" >> "$GITHUB_OUTPUT"
-          elif [ "$EVENT" = "workflow_dispatch" ]; then
+          if [ "$EVENT" = "workflow_dispatch" ]; then
             echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
             echo "source=${{ inputs.source }}" >> "$GITHUB_OUTPUT"
             echo "issue=${{ inputs.issue_number }}" >> "$GITHUB_OUTPUT"
@@ -115,12 +112,12 @@ jobs:
             echo "dry_run=${{ inputs.dry_run }}" >> "$GITHUB_OUTPUT"
             echo "batch=${{ inputs.batch_file }}" >> "$GITHUB_OUTPUT"
           else
-            echo "mode=both" >> "$GITHUB_OUTPUT"
-            echo "source=ingest" >> "$GITHUB_OUTPUT"
-            echo "issue=" >> "$GITHUB_OUTPUT"
-            echo "project=" >> "$GITHUB_OUTPUT"
-            echo "dry_run=false" >> "$GITHUB_OUTPUT"
-            echo "batch=" >> "$GITHUB_OUTPUT"
+            echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
+            echo "source=${{ inputs.source }}" >> "$GITHUB_OUTPUT"
+            echo "issue=${{ inputs.issue_number }}" >> "$GITHUB_OUTPUT"
+            echo "project=${{ inputs.project_number }}" >> "$GITHUB_OUTPUT"
+            echo "dry_run=${{ inputs.dry_run }}" >> "$GITHUB_OUTPUT"
+            echo "batch=${{ inputs.batch_file }}" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Resolve scope → .tmp/ingest.scoped.yml
@@ -188,6 +185,10 @@ jobs:
             if [ "$run_rich" -eq 1 ]; then npm run ingest:rich --if-present -- "$SCOPED"; fi
             if [ "$run_lean" -eq 1 ]; then npm run ingest:lean --if-present -- "$SCOPED"; fi
           fi
+
+      - name: Refresh META hashes
+        run: |
+          ./scripts/hash-all.sh
 
       - name: Validate & quality gates
         run: |
