@@ -5,14 +5,22 @@ const path = require('path');
 function readJSON(p){ return JSON.parse(fs.readFileSync(p,'utf8')); }
 function writeJSON(p, data){ fs.writeFileSync(p, JSON.stringify(data, null, 2) + '\n', 'utf8'); }
 
+const PREVIOUS_SEGMENT = `${path.sep}previous${path.sep}`;
+const PREVIOUS_SUFFIX = `${path.sep}previous`;
+
+function isPreviousDir(p){
+  return p.includes(PREVIOUS_SEGMENT) || p.endsWith(PREVIOUS_SUFFIX);
+}
+
 function listDirs(root){
   const out = [];
   (function walk(d){
     if (!fs.existsSync(d)) return;
+    if (d !== root && isPreviousDir(d)) return;
     const ents = fs.readdirSync(d, { withFileTypes: true });
     let has = 0;
     for (const e of ents) if (e.isFile() && (e.name === 'sections.rich.json' || e.name === 'rules.rich.json')) has++;
-    if (has >= 2) out.push(d);
+    if (has >= 2 && !isPreviousDir(d)) out.push(d);
     for (const e of ents) if (e.isDirectory()) walk(path.join(d, e.name));
   }) (root);
   return out;

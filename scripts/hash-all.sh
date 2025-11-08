@@ -32,6 +32,22 @@ scripts_manifest_sha=$(./scripts/hash-scripts.sh)
 
 find methodologies -name META.json | sort | while read -r meta_file; do
   dir=$(dirname "$meta_file")
+  case "$dir" in
+    *"/previous/"*)
+      source_pdf="$dir/source.pdf"
+      if [ ! -f "$source_pdf" ]; then
+        echo "[hash-all] missing previous source PDF: $source_pdf" >&2
+        exit 1
+      fi
+      source_hash=$(hash_file "$source_pdf")
+      tmp="$meta_file.tmp"
+      jq --arg source "$source_hash" \
+        '.audit_hashes = (.audit_hashes // {}) |
+         .audit_hashes.source_pdf_sha256 = $source' \
+        "$meta_file" > "$tmp" && mv "$tmp" "$meta_file"
+      continue
+      ;;
+  esac
   sections_hash=$(hash_file "$dir/sections.json")
   rules_hash=$(hash_file "$dir/rules.json")
   rel=${dir#methodologies/}
