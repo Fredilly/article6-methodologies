@@ -19,13 +19,20 @@ let failed = 0;
 const vdirs = [...walk('methodologies')].map(p=>p.split(path.sep).join('/')).sort();
 const isPreviousDir = (dir) => dir.includes('/previous/');
 for (const d of vdirs){
-  if (isPreviousDir(d)) continue;
+  if (isPreviousDir(d)) {
+    const required = ['META.json', 'source.pdf'];
+    for (const f of required) {
+      const p = path.join(d, f);
+      if (!fs.existsSync(p)) { console.error(`✖ MISSING ${f} in ${d}`); failed = 1; }
+    }
+    continue;
+  }
   for (const f of ['META.json','sections.json','rules.json']){
     const p = path.join(d, f);
     if (!fs.existsSync(p)) { console.error(`✖ MISSING ${f} in ${d}`); failed = 1; }
   }
 }
-if (!failed) console.log('✓ All version dirs contain META.json, sections.json, rules.json');
+if (!failed) console.log('✓ All version dirs contain required artifacts');
 
 // Registry checks
 if (!fs.existsSync('registry.json')){

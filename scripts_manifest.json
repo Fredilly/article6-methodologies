@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-11-08T08:47:07Z",
-  "git_commit": "c0bfba0ea74504c2b6f6cebf4f863a49ac12ce26",
+  "generated_at": "2025-11-08T09:01:21Z",
+  "git_commit": "c86b0a125f3ac0ac96affd20b6038e9867b31f62",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
@@ -16,7 +16,7 @@
     { "path": "scripts/check-methodology-guardrails.js", "sha256": "b1ed068574c8a9d9399f11e122ca21b9d7c39a3e6a4deccfb6cb218a32145cd4" },
     { "path": "scripts/check-registry.sh", "sha256": "d66f360cfc7350e5056a81825c2a6aeb3edea448487d2c89829799d64ea2f968" },
     { "path": "scripts/check-source-hash.js", "sha256": "a3cba2d0d15b855c504c2f6cedd828b44aba19dfb5312f17b461d39d945435eb" },
-    { "path": "scripts/check-trio-and-registry.js", "sha256": "dcc11fd49898ff77e7df94a93ed4fc054602a6467e922e8892c961d719508869" },
+    { "path": "scripts/check-trio-and-registry.js", "sha256": "761c06202984cbfe1ec9f4348d5413b8b5461c96113792842a12792d3bf0e23a" },
     { "path": "scripts/check-validators-sync.js", "sha256": "8ec4d1f5fb82f431873d8d7e0c39838b24399b90b1c5c69551ea62e34389c6ab" },
     { "path": "scripts/check-workflows-supplychain.js", "sha256": "628f024eda85390342e46ccfea86bed1d546e17c15ad67aca03f4458415e6108" },
     { "path": "scripts/ci-run-tests.sh", "sha256": "9fe1d8bce3c97fd0c4ed6667f520b41b178372019c501810f2df5480898e229a" },
