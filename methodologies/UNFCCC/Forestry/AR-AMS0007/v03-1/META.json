@@ -92,6 +92,13 @@
       },
       {
         "doc": "",
+        "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/META.json",
+        "sha256": "a5276f91ec09cad8fe4419fda5ea7d96c4bdf1b67cd2cab0a13fbbb4bcd85d12",
+        "size": 6739,
+        "kind": "json"
+      },
+      {
+        "doc": "",
         "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/Tool-for-estimation-of-change-in-soil-organic-carbon-stocks-due-to-the-implementation-of-A-R-CDM-project-activities.pdf",
         "sha256": "edc718dba7eb097092907553f849c10a36e91a3b4199677ccf4a78748a92f8de",
         "size": 255568,
@@ -169,7 +176,7 @@
   "status": "draft",
   "version": "v03-1",
   "automation": {
-    "scripts_manifest_sha256": "3be48666cf94564b23b0f02ac15655b56f1cc2b05cf61cde8470732963bc01c3",
-    "repo_commit": "ae215a5daa98f2764370a599e03acebbe7d77dbd"
+    "scripts_manifest_sha256": "52a576fb803dea904f037a5664c0bc3574a75df249787eb4798e5f306bb36035",
+    "repo_commit": "d15b821022e04baab380c5370657fef21c1d1c3b"
   }
 }

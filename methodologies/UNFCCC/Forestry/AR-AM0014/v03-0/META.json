@@ -68,6 +68,13 @@
       },
       {
         "doc": "",
+        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/META.json",
+        "sha256": "930d2d40c39b5e4c7c6a55c8deb1ec4bab2361a70447eebe433dfa2b124a6055",
+        "size": 4851,
+        "kind": "json"
+      },
+      {
+        "doc": "",
         "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-02-v1.pdf",
         "sha256": "37324fd7d9e727d006bd7e46b5410acff24acbe2195a65229a70a27041bbe4b4",
         "size": 251692,
@@ -121,7 +128,7 @@
   "status": "draft",
   "version": "v03-0",
   "automation": {
-    "scripts_manifest_sha256": "3be48666cf94564b23b0f02ac15655b56f1cc2b05cf61cde8470732963bc01c3",
-    "repo_commit": "ae215a5daa98f2764370a599e03acebbe7d77dbd"
+    "scripts_manifest_sha256": "52a576fb803dea904f037a5664c0bc3574a75df249787eb4798e5f306bb36035",
+    "repo_commit": "d15b821022e04baab380c5370657fef21c1d1c3b"
   }
 }

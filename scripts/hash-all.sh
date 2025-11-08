@@ -3,6 +3,15 @@ set -eu
 
 cd "$(dirname "$0")/.."
 
+if [ -x "./node_modules/.bin/jq" ]; then
+  JQ="./node_modules/.bin/jq"
+elif command -v jq >/dev/null 2>&1; then
+  JQ="$(command -v jq)"
+else
+  echo "jq is required. Install it via npm (jq-cli-wrapper) or your package manager." >&2
+  exit 1
+fi
+
 hash_file() {
   if command -v shasum >/dev/null 2>&1; then
     shasum -a 256 "$1" | awk '{print $1}'
@@ -62,10 +71,10 @@ EOF2
       kind="${f##*.}"
       doc=$(printf "%s\n" "$f" | awk -F'/' '{org=$2; file=$NF; method=$(NF-2); ver=$(NF-1); if (match(file, /^AR-[A-Z0-9]+_v[0-9]+(-[0-9]+)*\.(pdf|docx)$/)) {split(file,a,"_v"); tool=a[1]; ver=a[2]; sub(/\.(pdf|docx)$/,"",ver); gsub(/-/,".",ver); printf "%s/%s@v%s", org, tool, ver} else if (file ~ /(source\.(pdf|docx)|meth_booklet\.pdf)$/) {gsub(/-/,".",ver); printf "%s/%s@%s", org, method, ver}}')
       printf '{"doc":"%s","path":"%s","sha256":"%s","size":%s,"kind":"%s"}\n' "$doc" "$f" "$sha" "$size" "$kind"
-    done | jq -s '.')
+    done | "$JQ" -s '.')
   fi
   tmp="$meta_file.tmp"
-  jq \
+  "$JQ" \
     --arg sections "$sections_hash" \
     --arg rules "$rules_hash" \
     --argjson tools "$tools_json" \
