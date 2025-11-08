@@ -22,35 +22,10 @@ on:
         description: "Issue number when source=issue"
       project_number:
         description: "Project number when source=project"
-      allow_auto:
-        description: "Allow automatic execution"
-        default: "false"
-  workflow_call:
-    inputs:
-      scope:
-        type: string
-        required: true
-      allow_auto:
-        type: boolean
-        default: false
-      source:
-        type: string
-        default: "ingest"
-      mode:
-        type: string
-        default: "both"
-      dry_run:
-        type: string
-        default: "false"
-      batch_file:
-        type: string
-        default: ""
-      issue_number:
-        type: string
-        default: ""
-      project_number:
-        type: string
-        default: ""
+  repository_dispatch:
+    types: [ingest-button]
+  issue_comment:
+    types: [created]
 
 permissions:
   contents: write
@@ -64,11 +39,14 @@ env:
 
 jobs:
   ingest:
-    if: ${{ github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_call' && inputs.allow_auto) }}
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'repository_dispatch' ||
+      (github.event_name == 'issue_comment' && startsWith(github.event.comment.body, '/ingest'))
     runs-on: ubuntu-latest
     concurrency:
-      group: ingest-${{ inputs.scope ?? 'manual' }}-${{ github.ref }}
-      cancel-in-progress: true
+      group: ingest-${{ github.ref }}
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -89,14 +67,51 @@ jobs:
       - name: Determine scope & mode
         id: meta
         run: |
-          mode="${{ inputs.mode }}"
+          set -euo pipefail
+          EVENT="${{ github.event_name }}"
+          mode="both"
+          source="ingest"
+          issue=""
+          project=""
+          dry_run="false"
+          batch=""
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            mode=$(jq -r '.inputs.mode // "both"' "$GITHUB_EVENT_PATH")
+            source=$(jq -r '.inputs.source // "ingest"' "$GITHUB_EVENT_PATH")
+            issue=$(jq -r '.inputs.issue_number // ""' "$GITHUB_EVENT_PATH")
+            project=$(jq -r '.inputs.project_number // ""' "$GITHUB_EVENT_PATH")
+            dry_run=$(jq -r '.inputs.dry_run // "false"' "$GITHUB_EVENT_PATH")
+            batch=$(jq -r '.inputs.batch_file // ""' "$GITHUB_EVENT_PATH")
+          elif [ "$EVENT" = "repository_dispatch" ]; then
+            mode=$(jq -r '.client_payload.mode // "both"' "$GITHUB_EVENT_PATH")
+            source=$(jq -r '.client_payload.source // "ingest"' "$GITHUB_EVENT_PATH")
+            issue=$(jq -r '.client_payload.issue_number // ""' "$GITHUB_EVENT_PATH")
+            project=$(jq -r '.client_payload.project_number // ""' "$GITHUB_EVENT_PATH")
+            dry_run=$(jq -r '.client_payload.dry_run // "false"' "$GITHUB_EVENT_PATH")
+            batch=$(jq -r '.client_payload.batch_file // ""' "$GITHUB_EVENT_PATH")
+          elif [ "$EVENT" = "issue_comment" ]; then
+            body=$(jq -r '.comment.body // ""' "$GITHUB_EVENT_PATH")
+            if [[ "$body" =~ ^/ingest([[:space:]]+([[:alpha:]]+))? ]]; then
+              if [ -n "${BASH_REMATCH[2]:-}" ]; then
+                mode="${BASH_REMATCH[2]}"
+              fi
+            else
+              echo "comment missing /ingest command" >&2
+              exit 1
+            fi
+            issue=$(jq -r '.issue.number // ""' "$GITHUB_EVENT_PATH")
+            project=""
+            source="issue"
+            dry_run="false"
+            batch=""
+          fi
           if [ -z "$mode" ] || [ "$mode" = "null" ]; then mode="both"; fi
           echo "mode=$mode" >> "$GITHUB_OUTPUT"
-          echo "source=${{ inputs.source }}" >> "$GITHUB_OUTPUT"
-          echo "issue=${{ inputs.issue_number }}" >> "$GITHUB_OUTPUT"
-          echo "project=${{ inputs.project_number }}" >> "$GITHUB_OUTPUT"
-          echo "dry_run=${{ inputs.dry_run }}" >> "$GITHUB_OUTPUT"
-          echo "batch=${{ inputs.batch_file }}" >> "$GITHUB_OUTPUT"
+          echo "source=$source" >> "$GITHUB_OUTPUT"
+          echo "issue=$issue" >> "$GITHUB_OUTPUT"
+          echo "project=$project" >> "$GITHUB_OUTPUT"
+          echo "dry_run=$dry_run" >> "$GITHUB_OUTPUT"
+          echo "batch=$batch" >> "$GITHUB_OUTPUT"
 
       - name: Resolve scope → .tmp/ingest.scoped.yml
         env:
