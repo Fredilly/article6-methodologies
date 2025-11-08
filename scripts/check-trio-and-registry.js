@@ -17,7 +17,9 @@ function *walk(d){
 
 let failed = 0;
 const vdirs = [...walk('methodologies')].map(p=>p.split(path.sep).join('/')).sort();
+const isPreviousDir = (dir) => dir.includes('/previous/');
 for (const d of vdirs){
+  if (isPreviousDir(d)) continue;
   for (const f of ['META.json','sections.json','rules.json']){
     const p = path.join(d, f);
     if (!fs.existsSync(p)) { console.error(`✖ MISSING ${f} in ${d}`); failed = 1; }
@@ -39,6 +41,7 @@ function verFromDir(vdir){ return vdir.slice(1).replace(/-/g,'.'); }
 
 let ok = 1;
 for (const v of vdirs){
+  if (isPreviousDir(v)) continue;
   const base = v.substring(v.lastIndexOf('/')+1);
   const version = verFromDir(base);
   const matches = reg.filter(e => e.path === v && e.version === version);
@@ -54,4 +57,3 @@ for (const e of reg){
 if (ok) console.log('✓ registry.json matches version dirs with correct path + version');
 
 process.exit(failed || !ok ? 1 : 0);
-

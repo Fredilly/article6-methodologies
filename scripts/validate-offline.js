@@ -7,25 +7,52 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
+function safeRequire(mod){
+  try { return require(mod); }
+  catch (err) {
+    if (err && (err.code === 'MODULE_NOT_FOUND' || /Cannot find module/.test(String(err)))) return null;
+    throw err;
+  }
+}
+
 let validators;
 try {
   validators = {
     META: require('./validators/meta.cjs'),
+    META_PREVIOUS: safeRequire('./validators/meta.previous.cjs'),
     sections: require('./validators/sections.cjs'),
     rules: require('./validators/rules.cjs'),
   };
 } catch (e) {
   try {
     const bundle = require('./validators/bundle.cjs');
-    validators = { META: bundle.META, sections: bundle.sections, rules: bundle.rules, sections_rich: bundle.sections_rich, rules_rich: bundle.rules_rich };
+    validators = { META: bundle.META, META_PREVIOUS: bundle.meta_previous, sections: bundle.sections, rules: bundle.rules, sections_rich: bundle.sections_rich, rules_rich: bundle.rules_rich };
   } catch (e2) {
     console.error('ERROR: compiled validators not found in scripts/validators (meta/sections/rules or bundle).');
     process.exit(2);
   }
 }
 
+if (!validators.META) {
+  console.error('ERROR: META validator unavailable.');
+  process.exit(2);
+}
+
 const TARGETS = [
-  { name: 'META',     file: 'META.json',     validator: validators.META },
+  {
+    name: 'META',
+    file: 'META.json',
+    pickValidator: (file) => {
+      const previous = isPrevious(file);
+      if (previous) {
+        return {
+          type: 'META.previous',
+          validator: validators.META_PREVIOUS || validators.META,
+        };
+      }
+      return { type: 'META', validator: validators.META };
+    },
+  },
   { name: 'sections', file: 'sections.json', validator: validators.sections },
   { name: 'rules',    file: 'rules.json',    validator: validators.rules },
 ];
@@ -38,6 +65,11 @@ if (validators.sections_rich && validators.rules_rich) {
   );
 }
 
+const PREVIOUS_MARKER = `${path.sep}previous${path.sep}`;
+function isPrevious(p){
+  return p.includes(PREVIOUS_MARKER) || p.includes('/previous/');
+}
+
 function* walk(dir) {
   const ents = fs.readdirSync(dir, { withFileTypes: true });
   for (const e of ents) {
@@ -47,11 +79,25 @@ function* walk(dir) {
   }
 }
 
+function matchesFile(p, file){
+  return p.endsWith('/' + file) || p.endsWith('\\' + file);
+}
+
 function collectFiles() {
   const hits = [];
   for (const p of walk(path.join(ROOT, 'methodologies'))) {
     for (const t of TARGETS) {
-      if (p.endsWith('/' + t.file)) hits.push({ type: t.name, file: p, validate: t.validator });
+      if (!matchesFile(p, t.file)) continue;
+      if (t.pickValidator) {
+        const picked = t.pickValidator(p);
+        if (!picked || !picked.validator) {
+          console.error(`✖ No validator available for ${p}`);
+          process.exit(2);
+        }
+        hits.push({ type: picked.type || t.name, file: p, validate: picked.validator });
+      } else {
+        hits.push({ type: t.name, file: p, validate: t.validator });
+      }
     }
   }
   return hits;

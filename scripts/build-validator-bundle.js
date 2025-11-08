@@ -18,6 +18,7 @@ const files = {
   rules: path.join(VDIR, 'rules.cjs'),
 };
 const optional = {
+  meta_previous: path.join(VDIR, 'meta.previous.cjs'),
   sections_rich: path.join(VDIR, 'sections.rich.cjs'),
   rules_rich: path.join(VDIR, 'rules.rich.cjs'),
 };
@@ -45,7 +46,7 @@ for (const [name, p] of Object.entries(optional)){
     parts.push(`const ${name} = null;`);
   }
 }
-parts.push('module.exports = { META, sections, rules, sections_rich, rules_rich };');
+parts.push('module.exports = { META, meta_previous, sections, rules, sections_rich, rules_rich };');
 
 fs.writeFileSync(OUT, parts.join('\n') + '\n', 'utf8');
 console.log('OK: wrote', path.relative(ROOT, OUT));

@@ -22,6 +22,7 @@ try {
 const ROOT = path.resolve(__dirname, '..');
 const SCHEMAS = [
   { in: 'META.schema.json', out: 'meta.cjs' },
+  { in: 'META.previous.schema.json', out: 'meta.previous.cjs' },
   { in: 'sections.schema.json', out: 'sections.cjs' },
   { in: 'rules.schema.json', out: 'rules.cjs' },
 ];
