@@ -9,7 +9,7 @@
   },
   "automation": {
     "repo_commit": "ae215a5daa98f2764370a599e03acebbe7d77dbd",
-    "scripts_manifest_sha256": "8606a6a254b6abc124c5b4502db421bd643a00d12e042b294f9ed69cd683bd9e"
+    "scripts_manifest_sha256": "3be48666cf94564b23b0f02ac15655b56f1cc2b05cf61cde8470732963bc01c3"
   },
   "id": "UNFCCC.Agriculture.AMS-III.D",
   "provenance": {
@@ -18,7 +18,7 @@
     "source_pdfs": [
       {
         "kind": "pdf",
-        "path": "tools/UNFCCC/AMS-III.D/v21-0/source.pdf",
+        "path": "tools/UNFCCC/Agriculture/AMS-III/D/v21-0/source.pdf",
         "sha256": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4"
       }
     ]

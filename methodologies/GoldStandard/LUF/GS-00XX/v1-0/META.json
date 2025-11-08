@@ -5,17 +5,17 @@
   },
   "automation": {
     "repo_commit": "ae215a5daa98f2764370a599e03acebbe7d77dbd",
-    "scripts_manifest_sha256": "8606a6a254b6abc124c5b4502db421bd643a00d12e042b294f9ed69cd683bd9e"
+    "scripts_manifest_sha256": "3be48666cf94564b23b0f02ac15655b56f1cc2b05cf61cde8470732963bc01c3"
   },
   "domain": "Stub",
   "files": [
     {
       "path": "sections.json",
-      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      "sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
     },
     {
       "path": "rules.json",
-      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      "sha256": "e1095bab5e6ca59b7c8d3fa2b164bfe7f831c9eb6c81a66bff22811276e35d99"
     }
   ],
   "method": "Stub",
