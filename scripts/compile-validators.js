@@ -11,7 +11,6 @@ const standaloneCode = require('ajv/dist/standalone').default;
 const ROOT = path.resolve(__dirname, '..');
 const SCHEMAS = {
   meta: path.join(ROOT, 'schemas', 'META.schema.json'),
-  'meta.previous': path.join(ROOT, 'schemas', 'META.previous.schema.json'),
   sections: path.join(ROOT, 'schemas', 'sections.schema.json'),
   rules: path.join(ROOT, 'schemas', 'rules.schema.json'),
   'sections.rich': path.join(ROOT, 'schemas', 'sections.rich.schema.json'),

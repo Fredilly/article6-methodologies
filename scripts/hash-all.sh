@@ -43,7 +43,9 @@ find methodologies -name META.json | sort | while read -r meta_file; do
       tmp="$meta_file.tmp"
       jq --arg source "$source_hash" \
         '.audit_hashes = (.audit_hashes // {}) |
-         .audit_hashes.source_pdf_sha256 = $source' \
+         .audit_hashes.source_pdf_sha256 = $source |
+         .references = (.references // {}) |
+         .references.tools = (.references.tools // [])' \
         "$meta_file" > "$tmp" && mv "$tmp" "$meta_file"
       continue
       ;;
@@ -68,6 +70,7 @@ EOF2
     fi
   fi
   tools_json='[]'
+  source_hash=""
   if [ -n "$tool_dirs" ]; then
     tools_json=$(printf '%s\n' "$tool_dirs" | while read -r dir; do
       [ -n "$dir" ] && find "$dir" -type f
@@ -80,15 +83,36 @@ EOF2
       printf '{"doc":"%s","path":"%s","sha256":"%s","size":%s,"kind":"%s"}\n' "$doc" "$f" "$sha" "$size" "$kind"
     done | jq -s '.')
   fi
+  if [ -z "$source_hash" ] && [ "$tools_json" != '[]' ]; then
+    method_doc_prefix="$org/$id@"
+    source_hash=$(printf '%s' "$tools_json" | jq -r --arg prefix "$method_doc_prefix" '
+      (map(select((.doc // "") | startswith($prefix))) | .[0].sha256) // empty')
+    if [ -z "$source_hash" ]; then
+      source_hash=$(printf '%s' "$tools_json" | jq -r '
+        (map(select((.path // "") | endswith("/source.pdf"))) | .[0].sha256) // empty')
+    fi
+  fi
+  if [ -z "$source_hash" ]; then
+    prov_path=$(jq -r '.provenance.source_pdfs[0].path? // ""' "$meta_file")
+    if [ -n "$prov_path" ] && [ -f "$prov_path" ]; then
+      source_hash=$(hash_file "$prov_path")
+    fi
+  fi
+  if [ -z "$source_hash" ]; then
+    echo "[hash-all] unable to determine source_pdf hash for $meta_file" >&2
+    exit 1
+  fi
   tmp="$meta_file.tmp"
   jq \
     --arg sections "$sections_hash" \
     --arg rules "$rules_hash" \
+    --arg source "$source_hash" \
     --argjson tools "$tools_json" \
     --arg manifest "$scripts_manifest_sha" \
     --arg commit "$repo_commit" \
     '.audit_hashes.sections_json_sha256 = $sections |
      .audit_hashes.rules_json_sha256 = $rules |
+     .audit_hashes.source_pdf_sha256 = $source |
      .references.tools = ((.references.tools // []) |
        reduce $tools[] as $t (
          .;

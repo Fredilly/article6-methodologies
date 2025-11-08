@@ -19,17 +19,40 @@ let failed = 0;
 const vdirs = [...walk('methodologies')].map(p=>p.split(path.sep).join('/')).sort();
 const isPreviousDir = (dir) => dir.includes('/previous/');
 for (const d of vdirs){
+  const metaPath = path.join(d, 'META.json');
+  if (!fs.existsSync(metaPath)) {
+    console.error(`✖ MISSING META.json in ${d}`);
+    failed = 1;
+    continue;
+  }
+  let meta;
+  try {
+    meta = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
+  } catch (err) {
+    console.error(`✖ META.json invalid JSON in ${d}: ${err.message}`);
+    failed = 1;
+    continue;
+  }
+  const audit = (meta && meta.audit_hashes) || {};
   if (isPreviousDir(d)) {
-    const required = ['META.json', 'source.pdf'];
+    const required = ['source.pdf'];
     for (const f of required) {
       const p = path.join(d, f);
       if (!fs.existsSync(p)) { console.error(`✖ MISSING ${f} in ${d}`); failed = 1; }
     }
+    if (!audit.source_pdf_sha256) {
+      console.error(`✖ audit_hashes.source_pdf_sha256 missing for ${d}`);
+      failed = 1;
+    }
     continue;
   }
-  for (const f of ['META.json','sections.json','rules.json']){
+  for (const f of ['sections.json','rules.json']){
     const p = path.join(d, f);
     if (!fs.existsSync(p)) { console.error(`✖ MISSING ${f} in ${d}`); failed = 1; }
+  }
+  if (!audit.source_pdf_sha256 || !audit.sections_json_sha256 || !audit.rules_json_sha256) {
+    console.error(`✖ audit_hashes fields missing for ${d}`);
+    failed = 1;
   }
 }
 if (!failed) console.log('✓ All version dirs contain required artifacts');

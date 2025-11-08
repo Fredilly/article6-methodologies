@@ -109,5 +109,8 @@
   ],
   "audit_hashes": {
     "source_pdf_sha256": "2acdb2376f4c3df0bf23e5be09ebe45a8695613b409c3ea362b635ecdac578cf"
+  },
+  "references": {
+    "tools": []
   }
 }

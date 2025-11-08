@@ -3,33 +3,18 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 meta_schema="$ROOT/schemas/META.schema.json"
-previous_schema="$ROOT/schemas/META.previous.schema.json"
 
-active=()
-previous=()
+files=()
 while IFS= read -r -d '' file; do
-  case "$file" in
-    *"/previous/"*)
-      previous+=("$file")
-      ;;
-    *)
-      active+=("$file")
-      ;;
-  esac
+  files+=("$file")
 done < <(find "$ROOT/methodologies" -name META.json -print0)
 
-if [ "${#active[@]}" -gt 0 ]; then
-  args=(validate -s "$meta_schema")
-  for f in "${active[@]}"; do
-    args+=(-d "$f")
-  done
-  "$ROOT/scripts/run-ajv.sh" "${args[@]}"
+if [ "${#files[@]}" -eq 0 ]; then
+  exit 0
 fi
 
-if [ "${#previous[@]}" -gt 0 ]; then
-  args=(validate -s "$previous_schema")
-  for f in "${previous[@]}"; do
-    args+=(-d "$f")
-  done
-  "$ROOT/scripts/run-ajv.sh" "${args[@]}"
-fi
+args=(validate -s "$meta_schema")
+for f in "${files[@]}"; do
+  args+=(-d "$f")
+done
+"$ROOT/scripts/run-ajv.sh" "${args[@]}"
