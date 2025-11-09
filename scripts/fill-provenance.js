@@ -29,7 +29,7 @@ function commitDateUTC(commit){
 }
 
 function normalizeToolIdFromPath(pth){
-  // e.g., tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL14_v4-2.pdf → UNFCCC/AR-TOOL14@v4.2
+  // e.g., tools/UNFCCC/Forestry/AR-AMS0007/v03-1/tools/AR-TOOL14_v4-2.pdf → UNFCCC/AR-TOOL14@v4.2
   const parts = pth.split('/');
   const idx = parts.indexOf('tools');
   if (idx === -1 || idx+1 >= parts.length) return null;

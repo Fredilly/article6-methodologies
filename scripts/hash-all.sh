@@ -88,7 +88,7 @@ EOF2
   source_hash=""
   if [ -n "$tool_dirs" ]; then
     tools_json=$(printf '%s\n' "$tool_dirs" | while read -r dir; do
-      [ -n "$dir" ] && find "$dir" -type f
+      [ -n "$dir" ] && find "$dir" -type f ! -path '*/previous/*'
     done | sort -u | while read -r f; do
       set -- $(tool_digest "$f")
       sha="$1"
