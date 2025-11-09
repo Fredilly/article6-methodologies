@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-11-08T09:24:20Z",
-  "git_commit": "d1449d2f10ce40588cd7f2ac654e86fa6a4a2dc0",
+  "generated_at": "2025-11-09T04:53:18Z",
+  "git_commit": "3bd4b68c1d563d424a311cf7388901a37ac7c4b5",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
@@ -16,7 +16,7 @@
     { "path": "scripts/check-methodology-guardrails.js", "sha256": "b1ed068574c8a9d9399f11e122ca21b9d7c39a3e6a4deccfb6cb218a32145cd4" },
     { "path": "scripts/check-registry.sh", "sha256": "d66f360cfc7350e5056a81825c2a6aeb3edea448487d2c89829799d64ea2f968" },
     { "path": "scripts/check-source-hash.js", "sha256": "a3cba2d0d15b855c504c2f6cedd828b44aba19dfb5312f17b461d39d945435eb" },
-    { "path": "scripts/check-trio-and-registry.js", "sha256": "c798c463ce0b429e29cd3d8bf0b5546ff006dcddb25b4e5be78d56e2a6fccc27" },
+    { "path": "scripts/check-trio-and-registry.js", "sha256": "9442e94afe2d01fdf9b0e506b501419cd0f1d6cb514cfc74ab4939012a507ae9" },
     { "path": "scripts/check-validators-sync.js", "sha256": "8ec4d1f5fb82f431873d8d7e0c39838b24399b90b1c5c69551ea62e34389c6ab" },
     { "path": "scripts/check-workflows-supplychain.js", "sha256": "628f024eda85390342e46ccfea86bed1d546e17c15ad67aca03f4458415e6108" },
     { "path": "scripts/ci-run-tests.sh", "sha256": "9fe1d8bce3c97fd0c4ed6667f520b41b178372019c501810f2df5480898e229a" },
@@ -28,8 +28,8 @@
     { "path": "scripts/gen-dataset-params.js", "sha256": "befe8d1bdece5b2738284c2b60598e676f7f910c605ffb53fbb7a07c3342414f" },
     { "path": "scripts/gen-dataset.js", "sha256": "47b58f5dc13beded4ece8a74029827669945ae5140b2dfec4a8f19894d3cc753" },
     { "path": "scripts/gen-method.sh", "sha256": "768efba1930eaca72cf134c950f49fc79d648deb2354cb974fab643a5fe9198b" },
-    { "path": "scripts/gen-registry.js", "sha256": "42f0228c6a73f840461688d73d34ffb757a6cb2746d87786a6d6c73b24b901be" },
-    { "path": "scripts/hash-all.sh", "sha256": "5d1dafc40411c52cc6a5f0194b45cb775e13903ac3405d469c61a6b11236c7cd" },
+    { "path": "scripts/gen-registry.js", "sha256": "f5f5f90a1543dfd87f3b802a22d7af61493a87abca50a929c8e0005b4aea6479" },
+    { "path": "scripts/hash-all.sh", "sha256": "0d37709e010e081a580948112788195c19da8bf5c0216d07a939a5489474c28d" },
     { "path": "scripts/hash-scripts.sh", "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3" },
     { "path": "scripts/ingest.sh", "sha256": "df710c9196d0073d2bbf582b13aaee86829fc47638e4c8dae8f5e36ebded5d20" },
     { "path": "scripts/inject-anchors.js", "sha256": "0541bc16ebc87a2cb54c2b8b251e96d64512a6e8607ed70948195af4f6fc2953" },
