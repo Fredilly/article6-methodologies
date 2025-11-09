@@ -104,7 +104,7 @@ EOF2
       (map(select((.doc // "") | startswith($prefix))) | .[0].sha256) // empty')
     if [ -z "$source_hash" ]; then
       source_hash=$(printf '%s' "$tools_json" | jq -r '
-        (map(select((.path // "") | endswith("/source.pdf"))) | .[0].sha256) // empty')
+        (map(select((.path // "") | (endswith("/source.pdf") and (contains("/previous/") | not)))) | .[0].sha256) // empty')
     fi
   fi
   if [ -z "$source_hash" ]; then

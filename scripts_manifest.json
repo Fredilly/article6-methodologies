@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-11-09T04:53:18Z",
-  "git_commit": "3bd4b68c1d563d424a311cf7388901a37ac7c4b5",
+  "generated_at": "2025-11-09T10:28:16Z",
+  "git_commit": "22f5ba9cd825f6f6417edf44d62668a6e540497e",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
@@ -29,7 +29,7 @@
     { "path": "scripts/gen-dataset.js", "sha256": "47b58f5dc13beded4ece8a74029827669945ae5140b2dfec4a8f19894d3cc753" },
     { "path": "scripts/gen-method.sh", "sha256": "768efba1930eaca72cf134c950f49fc79d648deb2354cb974fab643a5fe9198b" },
     { "path": "scripts/gen-registry.js", "sha256": "f5f5f90a1543dfd87f3b802a22d7af61493a87abca50a929c8e0005b4aea6479" },
-    { "path": "scripts/hash-all.sh", "sha256": "0d37709e010e081a580948112788195c19da8bf5c0216d07a939a5489474c28d" },
+    { "path": "scripts/hash-all.sh", "sha256": "7de93d9738512deb56b630f30b4b48ecc82bec9a7350013b02b603ebc87db239" },
     { "path": "scripts/hash-scripts.sh", "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3" },
     { "path": "scripts/ingest.sh", "sha256": "df710c9196d0073d2bbf582b13aaee86829fc47638e4c8dae8f5e36ebded5d20" },
     { "path": "scripts/inject-anchors.js", "sha256": "0541bc16ebc87a2cb54c2b8b251e96d64512a6e8607ed70948195af4f6fc2953" },
