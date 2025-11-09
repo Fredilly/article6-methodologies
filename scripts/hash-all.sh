@@ -32,11 +32,26 @@ scripts_manifest_sha=$(./scripts/hash-scripts.sh)
 
 find methodologies -name META.json | sort | while read -r meta_file; do
   dir=$(dirname "$meta_file")
-  case "$dir" in
+case "$dir" in
     *"/previous/"*)
-      source_pdf="$dir/source.pdf"
-      if [ ! -f "$source_pdf" ]; then
-        echo "[hash-all] missing previous source PDF: $source_pdf" >&2
+      source_pdf=$(jq -r '
+        ([
+          (.provenance.source_pdfs[]?.path // ""),
+          ((.references.tools // [])[]? | (.path // ""))
+        ]
+        | map(select((. // "") | endswith("/source.pdf")))
+        | map(select(. != ""))
+        | .[0]) // ""' "$meta_file")
+      if [ -z "$source_pdf" ]; then
+        id=$(jq -r '.id // ""' "$meta_file")
+        ver=$(jq -r '.version // ""' "$meta_file")
+        if [ -n "$id" ] && [ -n "$ver" ]; then
+          id_path=$(printf '%s\n' "$id" | tr '.' '/')
+          source_pdf="source-assets/${id_path}/${ver}/source.pdf"
+        fi
+      fi
+      if [ -z "$source_pdf" ] || [ ! -f "$source_pdf" ]; then
+        echo "[hash-all] missing previous source PDF reference for $meta_file (expected: ${source_pdf:-unknown})" >&2
         exit 1
       fi
       source_hash=$(hash_file "$source_pdf")
@@ -49,7 +64,7 @@ find methodologies -name META.json | sort | while read -r meta_file; do
         "$meta_file" > "$tmp" && mv "$tmp" "$meta_file"
       continue
       ;;
-  esac
+esac
   sections_hash=$(hash_file "$dir/sections.json")
   rules_hash=$(hash_file "$dir/rules.json")
   rel=${dir#methodologies/}
