@@ -434,7 +434,6 @@ const METHODS = {
     tools: [
       'tools/UNFCCC/Forestry/AR-AMS0007/v03-1/source.docx',
       'tools/UNFCCC/Forestry/AR-AMS0007/v03-1/source.pdf',
-      'tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-02-v1.pdf',
       'tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-08-v4.0.0.pdf',
       'tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-12-v3.1.pdf',
       'tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-14-v4.2.pdf',
