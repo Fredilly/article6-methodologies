@@ -5,8 +5,8 @@
     "source_pdf_sha256": "5a838678058f6de375e8635b5f2fea47a4e5f07cb1a882a44b10f39abc6f34ff"
   },
   "automation": {
-    "repo_commit": "e300e83005b827416b9bae5fac571dbeb0c6457a",
-    "scripts_manifest_sha256": "f07b98fd2caa2eb73eddfa368301d8d5afe0d3199e938aa90ec9af8c6379961b"
+    "repo_commit": "3aaedcb260a52c230b4fdcb46dc740dee4a4e848",
+    "scripts_manifest_sha256": "5311f5582906d6894d6884ab90b525dddbaaf1ec15276fd3c46b841366b315bd"
   },
   "domain": "Stub",
   "files": [
@@ -30,7 +30,8 @@
         "path": "tools/Verra/AFOLU/VM0007/v1-6/source.pdf",
         "sha256": "5a838678058f6de375e8635b5f2fea47a4e5f07cb1a882a44b10f39abc6f34ff",
         "size": 45,
-        "kind": "pdf"
+        "kind": "pdf",
+        "url": null
       }
     ]
   },
