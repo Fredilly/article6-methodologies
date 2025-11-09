@@ -1,0 +1,69 @@
+name: CI
+
+on:
+  push:
+    branches-ignore: ['bot/**']
+  pull_request:
+
+jobs:
+  filter:
+    runs-on: ubuntu-latest
+    outputs:
+      methodologies: ${{ steps.diff.outputs.methodologies }}
+      tools: ${{ steps.diff.outputs.tools }}
+      schemas: ${{ steps.diff.outputs.schemas }}
+      scripts: ${{ steps.diff.outputs.scripts }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+      - name: Detect relevant changes
+        id: diff
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          base="origin/$DEFAULT_BRANCH"
+          git fetch origin "$DEFAULT_BRANCH"
+          tmp="$(mktemp)"
+          git diff --name-only "$base"...HEAD > "$tmp"
+          methodologies=false
+          tools=false
+          schemas=false
+          scripts=false
+          while IFS= read -r file; do
+            case "$file" in
+              methodologies/*)
+                if [[ "$file" != *"source-assets/"* ]]; then
+                  methodologies=true
+                fi
+                ;;
+              tools/*)
+                tools=true
+                ;;
+              schemas/*)
+                schemas=true
+                ;;
+              scripts/*)
+                scripts=true
+                ;;
+            esac
+          done < "$tmp"
+          echo "methodologies=$methodologies" >> "$GITHUB_OUTPUT"
+          echo "tools=$tools" >> "$GITHUB_OUTPUT"
+          echo "schemas=$schemas" >> "$GITHUB_OUTPUT"
+          echo "scripts=$scripts" >> "$GITHUB_OUTPUT"
+
+  validate:
+    needs: filter
+    if: ${{ needs.filter.outputs.methodologies == 'true' || needs.filter.outputs.tools == 'true' || needs.filter.outputs.schemas == 'true' || needs.filter.outputs.scripts == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '20.11.1'
+          cache: 'npm'
+      - run: npm ci || npm i
+      - run: npm run validate:rich
+      - run: npm run validate:lean

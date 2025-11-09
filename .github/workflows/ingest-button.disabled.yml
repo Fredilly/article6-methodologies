@@ -1,8 +1,11 @@
-name: Ingest Button
+name: Ingest (Reusable)
 
 on:
   workflow_dispatch:
     inputs:
+      scope:
+        description: "Concurrency scope label"
+        default: "manual"
       source:
         description: "Ingest source"
         default: "ingest"
@@ -19,12 +22,8 @@ on:
         description: "Issue number when source=issue"
       project_number:
         description: "Project number when source=project"
-  push:
-    branches:
-      - main
-      - chore/*
-      - fix/*
-      - feat/*
+  repository_dispatch:
+    types: [ingest-button]
   issue_comment:
     types: [created]
 
@@ -33,56 +32,27 @@ permissions:
   pull-requests: write
   issues: write
 
-concurrency:
-  group: ingest-button-${{ github.ref }}
-  cancel-in-progress: false
-
 env:
   NODE_VERSION: '20.11.1'
   TMP_DIR: ./.tmp
   SCOPED: ./.tmp/ingest.scoped.yml
 
 jobs:
-  maybe-slash:
+  ingest:
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'repository_dispatch' ||
+      (github.event_name == 'issue_comment' && startsWith(github.event.comment.body, '/ingest'))
     runs-on: ubuntu-latest
-    outputs:
-      run: ${{ steps.slash.outputs.run }}
-      mode: ${{ steps.slash.outputs.mode }}
-    steps:
-      - id: slash
-        shell: bash
-        run: |
-          if [ "${{ github.event_name }}" != "issue_comment" ]; then
-            echo "run=false" >>"$GITHUB_OUTPUT"
-            echo "mode=both"  >>"$GITHUB_OUTPUT"
-            exit 0
-          fi
-          body="${{ github.event.comment.body }}"
-          mode="both"
-          if [[ "$body" =~ ^(/[rR]un )?[iI]ngest( \+([a-zA-Z]+))? ]]; then
-            echo "run=true" >>"$GITHUB_OUTPUT"
-            if [[ -n "${BASH_REMATCH[3]}" ]]; then
-              echo "mode=${BASH_REMATCH[3]}" >>"$GITHUB_OUTPUT"
-            else
-              echo "mode=both" >>"$GITHUB_OUTPUT"
-            fi
-          else
-            echo "run=false" >>"$GITHUB_OUTPUT"
-            echo "mode=both"  >>"$GITHUB_OUTPUT"
-          fi
-
-  run:
-    needs: maybe-slash
-    if: github.event_name != 'issue_comment' || needs.maybe-slash.outputs.run == 'true'
-    runs-on: ubuntu-latest
+    concurrency:
+      group: ingest-${{ github.ref }}
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-        # actions/checkout@v4.2.2
         with:
           lfs: true
 
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
-        # actions/setup-node@v4.0.4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
@@ -97,31 +67,51 @@ jobs:
       - name: Determine scope & mode
         id: meta
         run: |
+          set -euo pipefail
           EVENT="${{ github.event_name }}"
-          if [ "$EVENT" = "issue_comment" ]; then
-            mode="${{ needs.maybe-slash.outputs.mode }}"
-            if [ -z "$mode" ] || [ "$mode" = 'null' ]; then mode="both"; fi
-            echo "mode=$mode" >> "$GITHUB_OUTPUT"
-            echo "source=issue" >> "$GITHUB_OUTPUT"
-            echo "issue=${{ github.event.issue.number }}" >> "$GITHUB_OUTPUT"
-            echo "project=" >> "$GITHUB_OUTPUT"
-            echo "dry_run=false" >> "$GITHUB_OUTPUT"
-            echo "batch=" >> "$GITHUB_OUTPUT"
-          elif [ "$EVENT" = "workflow_dispatch" ]; then
-            echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
-            echo "source=${{ inputs.source }}" >> "$GITHUB_OUTPUT"
-            echo "issue=${{ inputs.issue_number }}" >> "$GITHUB_OUTPUT"
-            echo "project=${{ inputs.project_number }}" >> "$GITHUB_OUTPUT"
-            echo "dry_run=${{ inputs.dry_run }}" >> "$GITHUB_OUTPUT"
-            echo "batch=${{ inputs.batch_file }}" >> "$GITHUB_OUTPUT"
-          else
-            echo "mode=both" >> "$GITHUB_OUTPUT"
-            echo "source=ingest" >> "$GITHUB_OUTPUT"
-            echo "issue=" >> "$GITHUB_OUTPUT"
-            echo "project=" >> "$GITHUB_OUTPUT"
-            echo "dry_run=false" >> "$GITHUB_OUTPUT"
-            echo "batch=" >> "$GITHUB_OUTPUT"
+          mode="both"
+          source="ingest"
+          issue=""
+          project=""
+          dry_run="false"
+          batch=""
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            mode=$(jq -r '.inputs.mode // "both"' "$GITHUB_EVENT_PATH")
+            source=$(jq -r '.inputs.source // "ingest"' "$GITHUB_EVENT_PATH")
+            issue=$(jq -r '.inputs.issue_number // ""' "$GITHUB_EVENT_PATH")
+            project=$(jq -r '.inputs.project_number // ""' "$GITHUB_EVENT_PATH")
+            dry_run=$(jq -r '.inputs.dry_run // "false"' "$GITHUB_EVENT_PATH")
+            batch=$(jq -r '.inputs.batch_file // ""' "$GITHUB_EVENT_PATH")
+          elif [ "$EVENT" = "repository_dispatch" ]; then
+            mode=$(jq -r '.client_payload.mode // "both"' "$GITHUB_EVENT_PATH")
+            source=$(jq -r '.client_payload.source // "ingest"' "$GITHUB_EVENT_PATH")
+            issue=$(jq -r '.client_payload.issue_number // ""' "$GITHUB_EVENT_PATH")
+            project=$(jq -r '.client_payload.project_number // ""' "$GITHUB_EVENT_PATH")
+            dry_run=$(jq -r '.client_payload.dry_run // "false"' "$GITHUB_EVENT_PATH")
+            batch=$(jq -r '.client_payload.batch_file // ""' "$GITHUB_EVENT_PATH")
+          elif [ "$EVENT" = "issue_comment" ]; then
+            body=$(jq -r '.comment.body // ""' "$GITHUB_EVENT_PATH")
+            if [[ "$body" =~ ^/ingest([[:space:]]+([[:alpha:]]+))? ]]; then
+              if [ -n "${BASH_REMATCH[2]:-}" ]; then
+                mode="${BASH_REMATCH[2]}"
+              fi
+            else
+              echo "comment missing /ingest command" >&2
+              exit 1
+            fi
+            issue=$(jq -r '.issue.number // ""' "$GITHUB_EVENT_PATH")
+            project=""
+            source="issue"
+            dry_run="false"
+            batch=""
           fi
+          if [ -z "$mode" ] || [ "$mode" = "null" ]; then mode="both"; fi
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
+          echo "source=$source" >> "$GITHUB_OUTPUT"
+          echo "issue=$issue" >> "$GITHUB_OUTPUT"
+          echo "project=$project" >> "$GITHUB_OUTPUT"
+          echo "dry_run=$dry_run" >> "$GITHUB_OUTPUT"
+          echo "batch=$batch" >> "$GITHUB_OUTPUT"
 
       - name: Resolve scope → .tmp/ingest.scoped.yml
         env:
@@ -181,13 +171,16 @@ jobs:
             if [ "$run_rich" -eq 1 ]; then
               scripts/ingest.sh
             fi
-            if [ "$run_lean" -eq 1 ] && [ -x scripts/derive-lean.sh ]; then
+            if ( [ "$run_rich" -eq 0 ] || [ "$run_lean" -eq 1 ] ) && [ -x scripts/derive-lean.sh ]; then
               scripts/derive-lean.sh
             fi
           else
             if [ "$run_rich" -eq 1 ]; then npm run ingest:rich --if-present -- "$SCOPED"; fi
             if [ "$run_lean" -eq 1 ]; then npm run ingest:lean --if-present -- "$SCOPED"; fi
           fi
+
+      - name: Refresh META hashes
+        run: ./scripts/hash-all.sh
 
       - name: Validate & quality gates
         run: |
@@ -239,7 +232,6 @@ jobs:
           fi
 
       - name: Upload logs (artifact)
-        # actions/upload-artifact@v4.3.1
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: ingest-logs

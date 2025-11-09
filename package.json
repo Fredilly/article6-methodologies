@@ -18,7 +18,7 @@
     "mvp:check": "./scripts/mvp-check.sh",
     "compile:all": "node scripts/compile-audit.js",
     "validate:rich": "./scripts/run-ajv.sh validate -s schemas/sections.rich.schema.json -d 'methodologies/**/sections.rich.json' && ./scripts/run-ajv.sh validate -s schemas/rules.rich.schema.json -d 'methodologies/**/rules.rich.json'",
-    "validate:lean": "./scripts/run-ajv.sh validate -s schemas/META.schema.json -d 'methodologies/**/META.json' && ./scripts/run-ajv.sh validate -s schemas/sections.schema.json -d 'methodologies/**/sections.json' && ./scripts/run-ajv.sh validate -s schemas/rules.schema.json -d 'methodologies/**/rules.json'",
+    "validate:lean": "./scripts/validate-meta.sh && ./scripts/run-ajv.sh validate -s schemas/sections.schema.json -d 'methodologies/**/sections.json' && ./scripts/run-ajv.sh validate -s schemas/rules.schema.json -d 'methodologies/**/rules.json'",
     "validate:all": "npm run validate:rich || true && npm run validate:lean",
     "validate:offline": "node scripts/validate-offline.js",
     "dataset:sections": "node scripts/gen-dataset.js section-retrieval",

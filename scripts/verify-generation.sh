@@ -6,10 +6,13 @@ set -euo pipefail
 # - Fails if any methodologies/**/{sections.json,rules.json} would change
 
 node scripts/derive-lean-from-rich.js >/dev/null
-if ! git diff --quiet -- methodologies/**/sections.json methodologies/**/rules.json; then
+if ! git diff --quiet -- \
+  ':(glob)methodologies/**/sections.json' \
+  ':(glob)methodologies/**/rules.json' \
+  ':(exclude)methodologies/**/previous/**/sections.json' \
+  ':(exclude)methodologies/**/previous/**/rules.json'; then
   echo "✖ Lean generation drift detected. Run: node scripts/derive-lean-from-rich.js" >&2
   git --no-pager diff -- methodologies/**/sections.json methodologies/**/rules.json | sed -n '1,200p'
   exit 1
 fi
 echo "✓ Lean generation clean (no writes needed)"
-

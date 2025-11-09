@@ -3,17 +3,25 @@ on:
   push:
     branches-ignore: ['bot/**']
     paths:
-      - 'methodologies/**'
+      - 'methodologies/**/v*/META.json'
+      - 'methodologies/**/v*/sections.json'
+      - 'methodologies/**/v*/rules.json'
       - 'schemas/**'
       - 'tools/**'
+      - 'scripts/**'
+      - '!methodologies/**/previous/**'
   pull_request:
     branches:
       - 'main'
       - 'feat/**'
     paths:
-      - 'methodologies/**'
+      - 'methodologies/**/v*/META.json'
+      - 'methodologies/**/v*/sections.json'
+      - 'methodologies/**/v*/rules.json'
       - 'schemas/**'
       - 'tools/**'
+      - 'scripts/**'
+      - '!methodologies/**/previous/**'
 jobs:
   schema:
     if: |
@@ -34,7 +42,11 @@ jobs:
       - name: Derive lean from rich (deterministic)
         run: |
           node scripts/derive-lean-from-rich.js
-          if ! git diff --quiet -- methodologies/**/sections.json methodologies/**/rules.json; then
+          if ! git diff --quiet -- \
+            ':(glob)methodologies/**/sections.json' \
+            ':(glob)methodologies/**/rules.json' \
+            ':(exclude)methodologies/**/previous/**/sections.json' \
+            ':(exclude)methodologies/**/previous/**/rules.json'; then
             echo "Lean JSON drift detected. Run: node scripts/derive-lean-from-rich.js";
             git --no-pager diff -- methodologies/**/sections.json methodologies/**/rules.json | sed -n '1,200p';
             exit 1;

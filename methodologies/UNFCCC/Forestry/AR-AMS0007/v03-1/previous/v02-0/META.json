@@ -1,0 +1,124 @@
+{
+  "kind": "methodology",
+  "publisher": "UNFCCC",
+  "id": "UNFCCC.Forestry.AR-AMS0007",
+  "version": "v02-0",
+  "status": "superseded",
+  "effective_from": "2012-07-20",
+  "effective_to": "2013-10-03",
+  "provenance": {
+    "methodology_page": "https://cdm.unfccc.int/methodologies/DB/J6ZHLX1C3AEMSZ52PWIII6D2AOJZUB",
+    "source_url": "https://cdm.unfccc.int/UserManagement/FileStorage/M5VLWCP0HB8YXK2ZG64NQ3IJS17RT9",
+    "version_number": "2.0",
+    "source_pdfs": [
+      {
+        "kind": "pdf",
+        "path": "source-assets/UNFCCC/Forestry/AR-AMS0007/v02-0/source.pdf",
+        "sha256": "2acdb2376f4c3df0bf23e5be09ebe45a8695613b409c3ea362b635ecdac578cf",
+        "size": 247813
+      }
+    ]
+  },
+  "pointers": {
+    "active_successor": "../.."
+  },
+  "tools": [
+    {
+      "doc": "UNFCCC/AR-TOOL02@v1",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/AR-AMS0007/v03-1/ar-am-tool-02-v1.pdf",
+      "sha256": "37324fd7d9e727d006bd7e46b5410acff24acbe2195a65229a70a27041bbe4b4",
+      "size": 251692
+    },
+    {
+      "doc": "UNFCCC/AR-TOOL08@v4.0.0",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/AR-AMS0007/v03-1/ar-am-tool-08-v4.0.0.pdf",
+      "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397",
+      "size": 263864
+    },
+    {
+      "doc": "UNFCCC/AR-TOOL12@v3.1",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/AR-AMS0007/v03-1/ar-am-tool-12-v3.1.pdf",
+      "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4",
+      "size": 275971
+    },
+    {
+      "doc": "UNFCCC/AR-TOOL14@v4.2",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/AR-AMS0007/v03-1/ar-am-tool-14-v4.2.pdf",
+      "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+      "size": 691428
+    },
+    {
+      "doc": "UNFCCC/AR-TOOL15@v2.0",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/AR-AMS0007/v03-1/ar-am-tool-15-v2.0.pdf",
+      "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29",
+      "size": 1008516
+    },
+    {
+      "doc": "UNFCCC/AR-TOOL16@v1.1.0",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/AR-AMS0007/v03-1/ar-am-tool-16-v1.1.0.pdf",
+      "sha256": "edc718dba7eb097092907553f849c10a36e91a3b4199677ccf4a78748a92f8de",
+      "size": 255568
+    },
+    {
+      "doc": "UNFCCC/AR-AMS0007@v03-1",
+      "kind": "docx",
+      "pointer": "../../../../../../../tools/UNFCCC/AR-AMS0007/v03-1/source.docx",
+      "sha256": "2f73349cfc4630255319c6c8dfc1b46a8996ace9d14d8e07563b165915918ec2",
+      "size": 12
+    },
+    {
+      "doc": "UNFCCC/AR-AMS0007@v03-1",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/AR-AMS0007/v03-1/source.pdf",
+      "sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9",
+      "size": 209654
+    },
+    {
+      "doc": "UNFCCC/AR-TOOL08@v4.0.0",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL08_v4-0-0.pdf",
+      "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397",
+      "size": 263864
+    },
+    {
+      "doc": "UNFCCC/AR-TOOL12@v3.1",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL12_v3-1.pdf",
+      "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4",
+      "size": 275971
+    },
+    {
+      "doc": "UNFCCC/AR-TOOL14@v4.2",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL14_v4-2.pdf",
+      "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+      "size": 691428
+    },
+    {
+      "doc": "UNFCCC/AR-TOOL15@v2.0",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL15_v2-0.pdf",
+      "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29",
+      "size": 1008516
+    },
+    {
+      "doc": "UNFCCC/AR-TOOL16@v1.1.0",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/AR-AMS0007/v03-1/tools/AR-TOOL16_v1-1-0.pdf",
+      "sha256": "edc718dba7eb097092907553f849c10a36e91a3b4199677ccf4a78748a92f8de",
+      "size": 255568
+    }
+  ],
+  "audit_hashes": {
+    "source_pdf_sha256": "2acdb2376f4c3df0bf23e5be09ebe45a8695613b409c3ea362b635ecdac578cf"
+  },
+  "references": {
+    "tools": []
+  }
+}

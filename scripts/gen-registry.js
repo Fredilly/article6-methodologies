@@ -16,6 +16,17 @@ function versionCompare(a, b) {
   return 0;
 }
 
+function sourceAssetPath(meta) {
+  if (!meta || !meta.id || !meta.version) return null;
+  const parts = String(meta.id).split('.').filter(Boolean);
+  if (parts.length < 2) return null;
+  const publisher = parts[0];
+  const middle = parts.slice(1, -1);
+  const code = parts[parts.length - 1];
+  const segments = ['source-assets', publisher].concat(middle, [code, meta.version, 'source.pdf']);
+  return segments.join('/');
+}
+
 const entries = [];
 const standards = fs.readdirSync(baseDir).sort();
 for (const standard of standards) {
@@ -36,18 +47,80 @@ for (const standard of standards) {
         const metaFile = path.join(fullPath, 'META.json');
         if (!fs.existsSync(metaFile)) continue;
         const meta = JSON.parse(fs.readFileSync(metaFile, 'utf8'));
-        const stage = meta.stage || 'staging';
         const version = vDir.slice(1).replace(/-/g, '.');
         const relPath = path.relative(repoRoot, fullPath).split(path.sep).join('/');
-        entries.push({ standard, program, code, version, path: relPath, stage });
+        const audit = meta.audit_hashes || {};
+        if (relPath.includes('/previous/')) {
+          const sourcePath = sourceAssetPath(meta) || `${relPath}/source.pdf`;
+          entries.push({
+            kind: 'previous',
+            standard,
+            program,
+            code,
+            version,
+            path: relPath,
+            status: meta.status || 'superseded',
+            effective_from: meta.effective_from || null,
+            effective_to: meta.effective_to || null,
+            source_pdf: {
+              path: sourcePath,
+              sha256: audit.source_pdf_sha256 || null,
+            },
+            tools: meta.tools || [],
+          });
+          continue;
+        }
+        const stage = meta.stage || 'staging';
+        entries.push({
+          kind: 'active',
+          standard,
+          program,
+          code,
+          version,
+          path: relPath,
+          stage,
+          latest: false,
+        });
+
+        const previousDir = path.join(fullPath, 'previous');
+        if (fs.existsSync(previousDir) && fs.statSync(previousDir).isDirectory()) {
+          const prevEntries = fs.readdirSync(previousDir).sort();
+          for (const prevVer of prevEntries) {
+            const prevPath = path.join(previousDir, prevVer);
+            if (!fs.statSync(prevPath).isDirectory()) continue;
+            const prevMetaFile = path.join(prevPath, 'META.json');
+            if (!fs.existsSync(prevMetaFile)) continue;
+            const prevMeta = JSON.parse(fs.readFileSync(prevMetaFile, 'utf8'));
+            const prevRel = path.relative(repoRoot, prevPath).split(path.sep).join('/');
+            const prevAudit = prevMeta.audit_hashes || {};
+            const sourcePath = sourceAssetPath(prevMeta) || `${prevRel}/source.pdf`;
+            entries.push({
+              kind: 'previous',
+              standard,
+              program,
+              code,
+              version: prevVer.slice(1).replace(/-/g, '.'),
+              path: prevRel,
+              status: prevMeta.status || 'superseded',
+              effective_from: prevMeta.effective_from || null,
+              effective_to: prevMeta.effective_to || null,
+              source_pdf: {
+                path: sourcePath,
+                sha256: prevAudit.source_pdf_sha256 || null,
+              },
+              tools: prevMeta.tools || [],
+            });
+          }
+        }
       }
     }
   }
 }
 
 // mark latest per (standard, program, code)
+const activeEntries = entries.filter(e => e.kind !== 'previous');
 const groups = new Map();
-for (const e of entries) {
+for (const e of activeEntries) {
   const key = `${e.standard}||${e.program}||${e.code}`;
   if (!groups.has(key)) groups.set(key, []);
   groups.get(key).push(e);
@@ -67,4 +140,3 @@ entries.sort((a, b) =>
 
 const outPath = path.join(repoRoot, 'registry.json');
 fs.writeFileSync(outPath, JSON.stringify(entries, null, 2) + '\n');
-

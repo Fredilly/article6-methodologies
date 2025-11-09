@@ -7,6 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
+
 let validators;
 try {
   validators = {
@@ -22,6 +23,11 @@ try {
     console.error('ERROR: compiled validators not found in scripts/validators (meta/sections/rules or bundle).');
     process.exit(2);
   }
+}
+
+if (!validators.META) {
+  console.error('ERROR: META validator unavailable.');
+  process.exit(2);
 }
 
 const TARGETS = [
@@ -47,11 +53,16 @@ function* walk(dir) {
   }
 }
 
+function matchesFile(p, file){
+  return p.endsWith('/' + file) || p.endsWith('\\' + file);
+}
+
 function collectFiles() {
   const hits = [];
   for (const p of walk(path.join(ROOT, 'methodologies'))) {
     for (const t of TARGETS) {
-      if (p.endsWith('/' + t.file)) hits.push({ type: t.name, file: p, validate: t.validator });
+      if (!matchesFile(p, t.file)) continue;
+      hits.push({ type: t.name, file: p, validate: t.validator });
     }
   }
   return hits;

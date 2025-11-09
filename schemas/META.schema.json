@@ -2,6 +2,9 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "additionalProperties": true,
   "properties": {
+    "status": {
+      "type": "string"
+    },
     "audit_hashes": {
       "additionalProperties": false,
       "properties": {
@@ -10,12 +13,11 @@
         },
         "sections_json_sha256": {
           "type": "string"
+        },
+        "source_pdf_sha256": {
+          "type": "string"
         }
       },
-      "required": [
-        "sections_json_sha256",
-        "rules_json_sha256"
-      ],
       "type": "object"
     },
     "references": {
@@ -67,5 +69,69 @@
     "audit_hashes",
     "references"
   ],
-  "type": "object"
+  "type": "object",
+  "definitions": {
+    "activeAudit": {
+      "type": "object",
+      "properties": {
+        "audit_hashes": {
+          "type": "object",
+          "properties": {
+            "rules_json_sha256": { "type": "string" },
+            "sections_json_sha256": { "type": "string" },
+            "source_pdf_sha256": { "type": "string" }
+          },
+          "required": [
+            "source_pdf_sha256",
+            "sections_json_sha256",
+            "rules_json_sha256"
+          ]
+        }
+      }
+    },
+    "archivalAudit": {
+      "type": "object",
+      "properties": {
+        "audit_hashes": {
+          "type": "object",
+          "properties": {
+            "source_pdf_sha256": { "type": "string" }
+          },
+          "required": [
+            "source_pdf_sha256"
+          ]
+        }
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "description": "Active methodology release",
+      "not": {
+        "required": ["status"],
+        "properties": {
+          "status": {
+            "enum": ["superseded", "withdrawn"]
+          }
+        }
+      },
+      "allOf": [
+        { "$ref": "#/definitions/activeAudit" }
+      ]
+    },
+    {
+      "description": "Archival / previous methodology release",
+      "properties": {
+        "status": {
+          "enum": ["superseded", "withdrawn"]
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "allOf": [
+        { "$ref": "#/definitions/archivalAudit" }
+      ]
+    }
+  ]
 }
