@@ -30,6 +30,7 @@
     "cli:query": "node bin/mrv-cli.js",
     "server:http": "node bin/http-engine-adapter.js",
     "validate:guardrails": "node scripts/check-methodology-guardrails.js",
+    "gate": "bash scripts/check-lean-drift.sh && bash scripts/verify-generation.sh && node scripts/validate-offline.js && node scripts/check-source-hash.js && node scripts/check-trio-and-registry.js && node scripts/check-workflows-supplychain.js",
     "build:manifest": "node scripts/build-manifest.mjs",
     "ingest:all": "bash scripts/ingest-full.sh && node scripts/build-manifest.mjs"
   },
