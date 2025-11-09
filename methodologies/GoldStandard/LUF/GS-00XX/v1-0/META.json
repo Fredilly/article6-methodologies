@@ -2,7 +2,7 @@
   "audit_hashes": {
     "rules_json_sha256": "e1095bab5e6ca59b7c8d3fa2b164bfe7f831c9eb6c81a66bff22811276e35d99",
     "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91",
-    "source_pdf_sha256": "5a838678058f6de375e8635b5f2fea47a4e5f07cb1a882a44b10f39abc6f34ff"
+    "source_pdf_sha256": "ea2754bd03295a14ef462469ae0c9368cafc4631ad492b946ad0de64fb47ed2d"
   },
   "automation": {
     "repo_commit": "d1449d2f10ce40588cd7f2ac654e86fa6a4a2dc0",
@@ -21,7 +21,14 @@
   ],
   "method": "Stub",
   "provenance": {
-    "author": "Fred Egbuedike"
+    "author": "Fred Egbuedike",
+    "source_pdfs": [
+      {
+        "kind": "pdf",
+        "path": "tools/GoldStandard/GS-00XX/v1-0/source.pdf",
+        "sha256": "ea2754bd03295a14ef462469ae0c9368cafc4631ad492b946ad0de64fb47ed2d"
+      }
+    ]
   },
   "references": {
     "tools": [
@@ -29,8 +36,8 @@
         "doc": "GoldStandard/GS-00XX@v1.0",
         "kind": "pdf",
         "path": "tools/GoldStandard/GS-00XX/v1-0/source.pdf",
-        "sha256": "5a838678058f6de375e8635b5f2fea47a4e5f07cb1a882a44b10f39abc6f34ff",
-        "size": 45,
+        "sha256": "ea2754bd03295a14ef462469ae0c9368cafc4631ad492b946ad0de64fb47ed2d",
+        "size": 127,
         "url": null
       }
     ]
