@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-11-09T10:53:40Z",
-  "git_commit": "1644c7619346bb8de49afea6602b341451270c1f",
+  "generated_at": "2025-11-09T11:40:11Z",
+  "git_commit": "0bf9bad79d978b778d77f898627431c88a02a258",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
@@ -24,7 +24,7 @@
     { "path": "scripts/compile-validators.js", "sha256": "0d6d8454097445711c1a0f974061f7f426522b8c1e1c0b61998cfa1c2237949b" },
     { "path": "scripts/derive-lean-from-rich.js", "sha256": "7e696efeed3353cc16e3cdb6df9ad5b3456001641020b586399be0dfe8d03078" },
     { "path": "scripts/derive-lean.sh", "sha256": "30dc23357fbdd0c442368d66bfefc3bfa70c4299fe573b62380fd616c846f14b" },
-    { "path": "scripts/fill-provenance.js", "sha256": "d8f8fcbe4b59337491564062dc828b79a9152a2a0703dcb0fa33e8b5e839292f" },
+    { "path": "scripts/fill-provenance.js", "sha256": "760e1dcfa7a023f5c99517131bd1fe1418d11f855b86c58b590873c966e40b28" },
     { "path": "scripts/gen-dataset-params.js", "sha256": "befe8d1bdece5b2738284c2b60598e676f7f910c605ffb53fbb7a07c3342414f" },
     { "path": "scripts/gen-dataset.js", "sha256": "47b58f5dc13beded4ece8a74029827669945ae5140b2dfec4a8f19894d3cc753" },
     { "path": "scripts/gen-method.sh", "sha256": "768efba1930eaca72cf134c950f49fc79d648deb2354cb974fab643a5fe9198b" },
