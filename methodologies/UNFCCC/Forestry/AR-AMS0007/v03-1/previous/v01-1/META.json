@@ -9,7 +9,15 @@
   "provenance": {
     "methodology_page": "https://cdm.unfccc.int/methodologies/DB/J6ZHLX1C3AEMSZ52PWIII6D2AOJZUB",
     "source_url": "https://cdm.unfccc.int/UserManagement/FileStorage/AY5UI2OCSTW8G3BD1VR0JFPL9KE6ZX",
-    "version_number": "1.1"
+    "version_number": "1.1",
+    "source_pdfs": [
+      {
+        "kind": "pdf",
+        "path": "source-assets/UNFCCC/Forestry/AR-AMS0007/v01-1/source.pdf",
+        "sha256": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+        "size": 225599
+      }
+    ]
   },
   "pointers": {
     "active_successor": "../.."

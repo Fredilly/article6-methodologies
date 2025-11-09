@@ -16,6 +16,17 @@ function versionCompare(a, b) {
   return 0;
 }
 
+function sourceAssetPath(meta) {
+  if (!meta || !meta.id || !meta.version) return null;
+  const parts = String(meta.id).split('.').filter(Boolean);
+  if (parts.length < 2) return null;
+  const publisher = parts[0];
+  const middle = parts.slice(1, -1);
+  const code = parts[parts.length - 1];
+  const segments = ['source-assets', publisher].concat(middle, [code, meta.version, 'source.pdf']);
+  return segments.join('/');
+}
+
 const entries = [];
 const standards = fs.readdirSync(baseDir).sort();
 for (const standard of standards) {
@@ -40,6 +51,7 @@ for (const standard of standards) {
         const relPath = path.relative(repoRoot, fullPath).split(path.sep).join('/');
         const audit = meta.audit_hashes || {};
         if (relPath.includes('/previous/')) {
+          const sourcePath = sourceAssetPath(meta) || `${relPath}/source.pdf`;
           entries.push({
             kind: 'previous',
             standard,
@@ -51,7 +63,7 @@ for (const standard of standards) {
             effective_from: meta.effective_from || null,
             effective_to: meta.effective_to || null,
             source_pdf: {
-              path: `${relPath}/source.pdf`,
+              path: sourcePath,
               sha256: audit.source_pdf_sha256 || null,
             },
             tools: meta.tools || [],
@@ -81,6 +93,7 @@ for (const standard of standards) {
             const prevMeta = JSON.parse(fs.readFileSync(prevMetaFile, 'utf8'));
             const prevRel = path.relative(repoRoot, prevPath).split(path.sep).join('/');
             const prevAudit = prevMeta.audit_hashes || {};
+            const sourcePath = sourceAssetPath(prevMeta) || `${prevRel}/source.pdf`;
             entries.push({
               kind: 'previous',
               standard,
@@ -92,7 +105,7 @@ for (const standard of standards) {
               effective_from: prevMeta.effective_from || null,
               effective_to: prevMeta.effective_to || null,
               source_pdf: {
-                path: `${prevRel}/source.pdf`,
+                path: sourcePath,
                 sha256: prevAudit.source_pdf_sha256 || null,
               },
               tools: prevMeta.tools || [],
