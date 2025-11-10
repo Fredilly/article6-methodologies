@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-11-09T14:21:55Z",
-  "git_commit": "6ccf3da599c66215a0942b3066139b5b640e8421",
+  "generated_at": "2025-11-10T10:16:58Z",
+  "git_commit": "63e141cda36158925ca7e2e860d50293706a9c4b",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },

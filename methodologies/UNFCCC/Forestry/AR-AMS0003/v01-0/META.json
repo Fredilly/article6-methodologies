@@ -2,31 +2,17 @@
   "audit_hashes": {
     "rules_json_sha256": "5ea5311927c5e1c9f18e37828f0cdfffd460d170edfdc77f048c96c07fdd0d75",
     "sections_json_sha256": "80a90d64d3f6ba202560d8f50d8243140a2f982157060e43d181f8a7860f690e",
-    "source_pdf_sha256": "b1e73eb883c139285d6a73ba3b645377b140ec860c482192e2158fcfd7b2ba07"
+    "source_pdf_sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b"
   },
   "automation": {
-    "repo_commit": "6ccf3da599c66215a0942b3066139b5b640e8421",
-    "scripts_manifest_sha256": "c401a7db433c0701eef91b95facf496ea869d80264fc28ffc7e8f455e16523d0"
+    "repo_commit": "63e141cda36158925ca7e2e860d50293706a9c4b",
+    "scripts_manifest_sha256": "721bbf9d565f2d0e1847671b55fdc16e40015b26bd93315b2389e0cad675db2f"
   },
   "provenance": {
-    "source_pdfs": [
-      {
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/meth_booklet.pdf",
-        "sha256": "b1e73eb883c139285d6a73ba3b645377b140ec860c482192e2158fcfd7b2ba07"
-      }
-    ]
+    "source_pdfs": []
   },
   "references": {
     "tools": [
-      {
-        "doc": "UNFCCC/AR-TOOL02@v1",
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-02-v1.pdf",
-        "sha256": "37324fd7d9e727d006bd7e46b5410acff24acbe2195a65229a70a27041bbe4b4",
-        "size": 251692,
-        "url": null
-      },
       {
         "doc": "UNFCCC/AR-TOOL08@v4.0.0",
         "kind": "pdf",
@@ -57,30 +43,6 @@
         "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-15-v2.0.pdf",
         "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29",
         "size": 1008516,
-        "url": null
-      },
-      {
-        "doc": "UNFCCC/AR-TOOL16@v1.1.0",
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-16-v1.1.0.pdf",
-        "sha256": "edc718dba7eb097092907553f849c10a36e91a3b4199677ccf4a78748a92f8de",
-        "size": 255568,
-        "url": null
-      },
-      {
-        "doc": "UNFCCC/AR-AMS0003@v01-0",
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/meth_booklet.pdf",
-        "sha256": "b1e73eb883c139285d6a73ba3b645377b140ec860c482192e2158fcfd7b2ba07",
-        "size": 6380796,
-        "url": null
-      },
-      {
-        "doc": "UNFCCC/AR-AMS0003@v01-0",
-        "kind": "docx",
-        "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/source.docx",
-        "sha256": "2719958c1e2b8c29613d13d043dea73f9dd3fb4edbd848a921b81734339ac4b1",
-        "size": 359579,
         "url": null
       },
       {
