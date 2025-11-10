@@ -45,13 +45,13 @@ function dedupeSorted(array) {
 const METHODS = {
   'UNFCCC/Forestry/AR-ACM0003/v02-0': {
     tools: [
-      'tools/UNFCCC/AR-ACM0003/v02-0/EB75_repan30_AR-ACM0003_ver02.0.pdf',
-      'tools/UNFCCC/AR-ACM0003/v02-0/ar-am-tool-02-v1.pdf',
-      'tools/UNFCCC/AR-ACM0003/v02-0/ar-am-tool-08-v4.0.0.pdf',
-      'tools/UNFCCC/AR-ACM0003/v02-0/ar-am-tool-12-v3.1.pdf',
-      'tools/UNFCCC/AR-ACM0003/v02-0/ar-am-tool-14-v4.2.pdf',
-      'tools/UNFCCC/AR-ACM0003/v02-0/ar-am-tool-15-v2.0.pdf',
-      'tools/UNFCCC/AR-ACM0003/v02-0/ar-am-tool-16-v1.1.0.pdf'
+      'tools/UNFCCC/Forestry/AR-ACM0003/v02-0/EB75_repan30_AR-ACM0003_ver02.0.pdf',
+      'tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-02-v1.pdf',
+      'tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-08-v4.0.0.pdf',
+      'tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-12-v3.1.pdf',
+      'tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-14-v4.2.pdf',
+      'tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-15-v2.0.pdf',
+      'tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-16-v1.1.0.pdf'
     ],
     rules: [
       {
@@ -154,12 +154,12 @@ const METHODS = {
   },
   'UNFCCC/Forestry/AR-AM0014/v03-0': {
     tools: [
-      'tools/UNFCCC/AR-AM0014/v03-0/EB75_repan29_AR-AM0014_ver03.0.pdf',
-      'tools/UNFCCC/AR-AM0014/v03-0/ar-am-tool-02-v1.pdf',
-      'tools/UNFCCC/AR-AM0014/v03-0/ar-am-tool-08-v4.0.0.pdf',
-      'tools/UNFCCC/AR-AM0014/v03-0/ar-am-tool-12-v3.1.pdf',
-      'tools/UNFCCC/AR-AM0014/v03-0/ar-am-tool-14-v4.2.pdf',
-      'tools/UNFCCC/AR-AM0014/v03-0/ar-am-tool-15-v2.0.pdf'
+      'tools/UNFCCC/Forestry/AR-AM0014/v03-0/EB75_repan29_AR-AM0014_ver03.0.pdf',
+      'tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-02-v1.pdf',
+      'tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-08-v4.0.0.pdf',
+      'tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-12-v3.1.pdf',
+      'tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-14-v4.2.pdf',
+      'tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-15-v2.0.pdf'
     ],
     rules: [
       {
@@ -262,15 +262,15 @@ const METHODS = {
   },
   'UNFCCC/Forestry/AR-AMS0003/v01-0': {
     tools: [
-      'tools/UNFCCC/AR-AMS0003/v01-0/meth_booklet.pdf',
-      'tools/UNFCCC/AR-AMS0003/v01-0/source.docx',
-      'tools/UNFCCC/AR-AMS0003/v01-0/source.pdf',
-      'tools/UNFCCC/AR-AMS0003/v01-0/ar-am-tool-02-v1.pdf',
-      'tools/UNFCCC/AR-AMS0003/v01-0/ar-am-tool-08-v4.0.0.pdf',
-      'tools/UNFCCC/AR-AMS0003/v01-0/ar-am-tool-12-v3.1.pdf',
-      'tools/UNFCCC/AR-AMS0003/v01-0/ar-am-tool-14-v4.2.pdf',
-      'tools/UNFCCC/AR-AMS0003/v01-0/ar-am-tool-15-v2.0.pdf',
-      'tools/UNFCCC/AR-AMS0003/v01-0/ar-am-tool-16-v1.1.0.pdf'
+      'tools/UNFCCC/Forestry/AR-AMS0003/v01-0/meth_booklet.pdf',
+      'tools/UNFCCC/Forestry/AR-AMS0003/v01-0/source.docx',
+      'tools/UNFCCC/Forestry/AR-AMS0003/v01-0/source.pdf',
+      'tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-02-v1.pdf',
+      'tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-08-v4.0.0.pdf',
+      'tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-12-v3.1.pdf',
+      'tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-14-v4.2.pdf',
+      'tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-15-v2.0.pdf',
+      'tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-16-v1.1.0.pdf'
     ],
     rules: [
       {
@@ -432,14 +432,13 @@ const METHODS = {
   },
   'UNFCCC/Forestry/AR-AMS0007/v03-1': {
     tools: [
-      'tools/UNFCCC/AR-AMS0007/v03-1/source.docx',
-      'tools/UNFCCC/AR-AMS0007/v03-1/source.pdf',
-      'tools/UNFCCC/AR-AMS0007/v03-1/ar-am-tool-02-v1.pdf',
-      'tools/UNFCCC/AR-AMS0007/v03-1/ar-am-tool-08-v4.0.0.pdf',
-      'tools/UNFCCC/AR-AMS0007/v03-1/ar-am-tool-12-v3.1.pdf',
-      'tools/UNFCCC/AR-AMS0007/v03-1/ar-am-tool-14-v4.2.pdf',
-      'tools/UNFCCC/AR-AMS0007/v03-1/ar-am-tool-15-v2.0.pdf',
-      'tools/UNFCCC/AR-AMS0007/v03-1/ar-am-tool-16-v1.1.0.pdf'
+      'tools/UNFCCC/Forestry/AR-AMS0007/v03-1/source.docx',
+      'tools/UNFCCC/Forestry/AR-AMS0007/v03-1/source.pdf',
+      'tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-08-v4.0.0.pdf',
+      'tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-12-v3.1.pdf',
+      'tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-14-v4.2.pdf',
+      'tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-15-v2.0.pdf',
+      'tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-16-v1.1.0.pdf'
     ],
     rules: [
       {
