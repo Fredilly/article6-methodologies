@@ -1,0 +1,56 @@
+{
+  "rules": {
+    "UNFCCC.Forestry.AR-AMS0003.v1-0.R-1-0040": [
+      {
+        "hint": "C_AGB_t = AGB_dm * CF",
+        "pages": [
+          9
+        ],
+        "quote": "AGB",
+        "type": "text_anchor"
+      }
+    ],
+    "UNFCCC.Forestry.AR-AMS0003.v1-0.R-1-0045": [
+      {
+        "hint": "Conversion factor",
+        "pages": [
+          9
+        ],
+        "quote": "44/12",
+        "type": "text_anchor"
+      }
+    ],
+    "UNFCCC.Forestry.AR-AMS0003.v1-0.R-1-0050": [
+      {
+        "hint": "Net_project = Σ pools - leakage",
+        "pages": [
+          10
+        ],
+        "quote": "Net removals",
+        "type": "text_anchor"
+      }
+    ]
+  },
+  "sections": {
+    "S-1": [
+      {
+        "hint": "Scope and applicability",
+        "pages": [
+          2
+        ],
+        "quote": "Scope",
+        "type": "text_anchor"
+      }
+    ],
+    "S-5": [
+      {
+        "hint": "Removals and equations",
+        "pages": [
+          8
+        ],
+        "quote": "Project scenario",
+        "type": "text_anchor"
+      }
+    ]
+  }
+}

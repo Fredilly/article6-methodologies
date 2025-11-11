@@ -1,6 +1,10 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
+import { createRequire } from "node:module";
 import glob from "glob";
 import crypto from "node:crypto";
+
+const require = createRequire(import.meta.url);
+const { normalizeVersion, compareVersionTags } = require("../core/versioning");
 
 const files = glob.sync("methodologies/**/*/rules.json", { nodir: true });
 const entries = [];
@@ -14,7 +18,8 @@ for (const file of files) {
   }
   const m = file.match(/methodologies\/([^/]+)\/([^/]+)\/([^/]+)\/([^/]+)\/rules\.json$/);
   if (!m) continue;
-  const [, provider, category, methodology, version] = m;
+  const [, provider, category, methodology, versionDir] = m;
+  const version = normalizeVersion(versionDir);
   const rules = Array.isArray(json.rules) ? json.rules : [];
   rules.forEach((r, idx) => {
     const ruleId =
@@ -64,7 +69,7 @@ for (const file of files) {
 entries.sort((a, b) => {
   const methodologyCmp = a.methodology.localeCompare(b.methodology);
   if (methodologyCmp !== 0) return methodologyCmp;
-  const versionCmp = a.version.localeCompare(b.version);
+  const versionCmp = compareVersionTags(a.version, b.version);
   if (versionCmp !== 0) return versionCmp;
   return a.id.localeCompare(b.id);
 });

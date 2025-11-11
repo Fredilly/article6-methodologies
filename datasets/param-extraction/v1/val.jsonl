@@ -1,5 +1,5 @@
-{"id":"UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0045","text":"CO2e_pool = C_pool * 44/12","variables":["C_pool"],"units":["t C ha-1"]}
-{"id":"UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0060","text":"leakage = L_AS + L_MD","variables":["L_AS","L_MD"],"units":["t CO2e ha-1 yr-1"]}
-{"id":"UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0090","text":"If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.","variables":["ShrubCrownCover_i"],"units":["fraction"]}
-{"id":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0070","text":"Revisit plots every RevisitInterval years using consistent mensuration protocol.","variables":["PlotCount","RevisitInterval"],"units":["count","yr"]}
-{"id":"UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0080","text":"If RelativePrecision > 10 then apply uncertainty discount per U-table.","variables":["RelativePrecision"],"units":["%"]}
+{"id":"UNFCCC.Forestry.AR-AMS0003.v1-0.R-1-0045","text":"CO2e_pool = C_pool * 44/12","variables":["C_pool"],"units":["t C ha-1"]}
+{"id":"UNFCCC.Forestry.AR-AMS0003.v1-0.R-1-0060","text":"leakage = L_AS + L_MD","variables":["L_AS","L_MD"],"units":["t CO2e ha-1 yr-1"]}
+{"id":"UNFCCC.Forestry.AR-AMS0003.v1-0.R-1-0090","text":"If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.","variables":["ShrubCrownCover_i"],"units":["fraction"]}
+{"id":"UNFCCC.Forestry.AR-AMS0007.v3-1.R-1-0070","text":"Revisit plots every RevisitInterval years using consistent mensuration protocol.","variables":["PlotCount","RevisitInterval"],"units":["count","yr"]}
+{"id":"UNFCCC.Forestry.AR-AMS0007.v3-1.R-1-0080","text":"If RelativePrecision > 10 then apply uncertainty discount per U-table.","variables":["RelativePrecision"],"units":["%"]}

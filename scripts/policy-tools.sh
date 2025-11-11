@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-META_0003="methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/META.json"
+META_0003="methodologies/UNFCCC/Forestry/AR-AMS0003/v1-0/META.json"
 expect=("AR-TOOL08_v4-0-0.pdf" "AR-TOOL12_v3-1.pdf" "AR-TOOL14_v4-2.pdf" "AR-TOOL15_v2-0.pdf")
 mapfile -t have < <(jq -r '.references.tools[]?.path | select(contains("AR-AMS0007"))' "$META_0003" | awk -F/ '{print $NF}' | sort -u)
 ok=1

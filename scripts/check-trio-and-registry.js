@@ -3,6 +3,10 @@
 // and registry.json lists each version exactly once with matching path+version.
 const fs = require('fs');
 const path = require('path');
+const {
+  isLooseVersionTag,
+  normalizeVersion,
+} = require('../core/versioning');
 
 function sourceAssetPath(meta) {
   if (!meta || !meta.id || !meta.version) return null;
@@ -20,7 +24,7 @@ function *walk(d){
   for (const e of fs.readdirSync(d,{withFileTypes:true})){
     const p = path.join(d,e.name);
     if (e.isDirectory()) {
-      if (/^v\d/.test(e.name)) yield p;
+      if (isLooseVersionTag(e.name)) yield p;
       yield *walk(p);
     }
   }
@@ -83,7 +87,10 @@ try { reg = JSON.parse(fs.readFileSync('registry.json','utf8')); }
 catch (e){ console.error('✖ registry.json invalid JSON:', e.message); process.exit(2); }
 if (!Array.isArray(reg)) { console.error('✖ registry.json is not an array'); process.exit(2); }
 
-function verFromDir(vdir){ return vdir.slice(1).replace(/-/g,'.'); }
+function verFromDir(vdir){
+  const normalized = normalizeVersion(vdir);
+  return normalized.slice(1).replace(/-/g,'.');
+}
 
 let ok = 1;
 for (const v of vdirs){

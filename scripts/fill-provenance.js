@@ -29,7 +29,7 @@ function commitDateUTC(commit){
 }
 
 function normalizeToolIdFromPath(pth){
-  // e.g., tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-14-v4.2.pdf → UNFCCC/AR-TOOL14@v4.2
+  // e.g., tools/UNFCCC/Forestry/AR-AMS0007/v3-1/ar-am-tool-14-v4.2.pdf → UNFCCC/AR-TOOL14@v4.2
   const parts = pth.split('/');
   const idx = parts.indexOf('tools');
   if (idx === -1 || idx+1 >= parts.length) return null;
@@ -41,10 +41,10 @@ function normalizeToolIdFromPath(pth){
     const ver = [m[2], m[3], m[4]].filter(Boolean).join('.');
     return `${standard}/${tool}@v${ver}`;
   }
-  // method source e.g. source.pdf belongs to method id (UNFCCC/AR-AMS0007@v03-1)
+  // method source e.g. source.pdf belongs to method id (UNFCCC/AR-AMS0007@v3-1)
   if (/source\.(pdf|docx)$/.test(file)){
     const method = parts[idx+2]; // e.g., AR-AMS0007
-    const version = parts[idx+3]; // e.g., v03-1
+    const version = parts[idx+3]; // e.g., v3-1
     return `${standard}/${method}@${version}`;
   }
   return null;

@@ -53,6 +53,14 @@ jobs:
           fi
       - name: Lean drift gate
         run: scripts/check-lean-drift.sh
+      - name: Version format preflight
+        run: node scripts/preflight-version-format.js --strict --write-report audit/version-format-scan.json
+      - name: Upload version format audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: schema-version-format-scan
+          path: audit/version-format-scan.json
       - name: Offline schema validation
         run: node scripts/validate-offline.js
       - name: Meta-driven source hash check (redundant gate)

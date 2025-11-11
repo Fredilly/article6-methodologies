@@ -23,6 +23,11 @@ See RULESET.md for conventions and CI guardrails.
 3. Commit the changes.
 4. CI validates JSON, schemas, and registry consistency.
 
+## Versioning
+- Canonical tags follow `vX-Y[ -Z]` with no leading zeros (e.g., `v3-1`, `v21-0`). Any incoming `v0X-Y` payloads are normalized via `core/versioning`.
+- `scripts/preflight-version-format.js` runs in CI with `--strict` and fails on the first padded directory or JSON token; it also uploads `audit/version-format-scan.json` for traceability.
+- If you touch versioned paths or strings outside `methodologies/**`, run `node scripts/preflight-version-format.js --write-report audit/version-format-scan.json` locally and inspect the diff to ensure no regressions.
+
 ## Definition of Done
 - `./scripts/hash-all.sh` — updates `META.audit_hashes`, `META.automation`, and `scripts_manifest.json`.
 - `npm run validate:rich` — ensures every rich JSON conforms to the schemas before deriving lean files.

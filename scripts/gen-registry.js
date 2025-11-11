@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
+const { normalizeVersion, compareVersionTags } = require('../core/versioning');
 
 const repoRoot = path.join(__dirname, '..');
 const baseDir = path.join(repoRoot, 'methodologies');
@@ -40,14 +41,15 @@ for (const standard of standards) {
     for (const code of codes) {
       const codeDir = path.join(programDir, code);
       if (!fs.statSync(codeDir).isDirectory()) continue;
-      const versions = fs.readdirSync(codeDir).sort();
+      const versions = fs.readdirSync(codeDir).sort((a, b) => compareVersionTags(a, b));
       for (const vDir of versions) {
         const fullPath = path.join(codeDir, vDir);
         if (!fs.statSync(fullPath).isDirectory()) continue;
         const metaFile = path.join(fullPath, 'META.json');
         if (!fs.existsSync(metaFile)) continue;
         const meta = JSON.parse(fs.readFileSync(metaFile, 'utf8'));
-        const version = vDir.slice(1).replace(/-/g, '.');
+        const normalizedVersionTag = normalizeVersion(vDir);
+        const version = normalizedVersionTag.slice(1).replace(/-/g, '.');
         const relPath = path.relative(repoRoot, fullPath).split(path.sep).join('/');
         const audit = meta.audit_hashes || {};
         if (relPath.includes('/previous/')) {
@@ -84,7 +86,7 @@ for (const standard of standards) {
 
         const previousDir = path.join(fullPath, 'previous');
         if (fs.existsSync(previousDir) && fs.statSync(previousDir).isDirectory()) {
-          const prevEntries = fs.readdirSync(previousDir).sort();
+          const prevEntries = fs.readdirSync(previousDir).sort((a, b) => compareVersionTags(a, b));
           for (const prevVer of prevEntries) {
             const prevPath = path.join(previousDir, prevVer);
             if (!fs.statSync(prevPath).isDirectory()) continue;
@@ -99,7 +101,7 @@ for (const standard of standards) {
               standard,
               program,
               code,
-              version: prevVer.slice(1).replace(/-/g, '.'),
+              version: normalizeVersion(prevVer).slice(1).replace(/-/g, '.'),
               path: prevRel,
               status: prevMeta.status || 'superseded',
               effective_from: prevMeta.effective_from || null,

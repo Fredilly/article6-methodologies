@@ -3,7 +3,7 @@
     "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0001",
     "type": "eligibility",
     "summary": "Livestock must be confined and baseline manure streams must be anaerobic without methane recovery.",
-    "logic": "Confirm that each participating farm manages animals in confinement, does not discharge manure or effluent to natural waters, operates baseline lagoons/tanks with retention >1 month and depth \u22651 m, and lacks any methane capture or destruction. Baseline ambient temperature must average >5 \u00b0C.",
+    "logic": "Confirm that each participating farm manages animals in confinement, does not discharge manure or effluent to natural waters, operates baseline lagoons/tanks with retention >1 month and depth ≥1 m, and lacks any methane capture or destruction. Baseline ambient temperature must average >5 °C.",
     "refs": {
       "sections": [
         "S-1"
@@ -73,7 +73,7 @@
     "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0050",
     "type": "calc",
     "summary": "Baseline methane emissions follow ACM0010/AM0073 factors using VS or COD data and methane conversion factors.",
-    "logic": "Compute BE_CH4,y per animal category using BE_CH4,y = 365 \u00d7 VS_i,y \u00d7 B0_i \u00d7 MCF_i \u00d7 \u03c6_i, or COD-based equivalents. Select B0 and MCF values consistent with temperature, animal type and baseline system. Use conservative defaults where measurements are unavailable and document data sources.",
+    "logic": "Compute BE_CH4,y per animal category using BE_CH4,y = 365 × VS_i,y × B0_i × MCF_i × φ_i, or COD-based equivalents. Select B0 and MCF values consistent with temperature, animal type and baseline system. Use conservative defaults where measurements are unavailable and document data sources.",
     "inputs": [
       {
         "name": "VS_i,y",
@@ -91,7 +91,7 @@
         "source": "defaults"
       },
       {
-        "name": "\u03c6_i",
+        "name": "φ_i",
         "unit": "fraction",
         "source": "monitoring"
       }
@@ -101,8 +101,8 @@
         "S-3"
       ],
       "tools": [
-        "UNFCCC/ACM0010@v03-0",
-        "UNFCCC/AM0073@v01-0",
+        "UNFCCC/ACM0010@v3-0",
+        "UNFCCC/AM0073@v1-0",
         "UNFCCC/AMS-III-D@v21-0"
       ]
     }
@@ -157,7 +157,7 @@
     "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0090",
     "type": "eligibility",
     "summary": "Respect the 60 kt CO2e/year small-scale cap and SSC general guidelines for lifetime and capacity additions.",
-    "logic": "Demonstrate that aggregate emission reductions from all Type III components of the project (or PoA) remain \u226460 kt CO2e per year, and satisfy SSC general guidelines on equipment lifetime, Greenfield projects and capacity additions.",
+    "logic": "Demonstrate that aggregate emission reductions from all Type III components of the project (or PoA) remain ≤60 kt CO2e per year, and satisfy SSC general guidelines on equipment lifetime, Greenfield projects and capacity additions.",
     "refs": {
       "sections": [
         "S-1",

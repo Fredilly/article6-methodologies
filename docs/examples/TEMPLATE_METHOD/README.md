@@ -14,7 +14,7 @@ monitoring, data-parameters (children: data-parameters-ex-ante, data-parameters-
 uncertainty, permanence, tools, equations, annexes.
 
 **Rule IDs:** `Standard.Domain.Method.Version.R-####`
-(e.g., `UNFCCC.Forestry.AR-AMS0007.v03-1.R-0001`).
+(e.g., `UNFCCC.Forestry.AR-AMS0007.v3-1.R-0001`).
 
 **Allowed rule types:** `eligibility | parameter | equation | calc | monitoring | leakage | uncertainty`.
 

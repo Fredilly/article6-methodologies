@@ -76,11 +76,11 @@ cat \> templates/ingest.template.yml \<\<'YAML'
 version: 2  
 methods:  
   \- id: EXAMPLE.REPLACE.METHOD  
-    version: v00-0  
+    version: v0-0  
     sector: Example  
     source\_page: "https://example.invalid"  
     assets:  
-      primary: "source-assets/UNFCCC/Example/METHOD/v00-0/source.pdf"  
+      primary: "source-assets/UNFCCC/Example/METHOD/v0-0/source.pdf"  
       tools: \[\]  
     include\_text: \[\]  
     exclude\_text: \[\]  

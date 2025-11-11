@@ -1,0 +1,42 @@
+[
+  {
+    "id": "S-1",
+    "provenance": {
+      "source_hash": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e",
+      "source_ref": "UNFCCC/AR-ACM0003@v2-0"
+    },
+    "title": "Scope and boundary"
+  },
+  {
+    "id": "S-2",
+    "provenance": {
+      "source_hash": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e",
+      "source_ref": "UNFCCC/AR-ACM0003@v2-0"
+    },
+    "title": "Baseline and additionality"
+  },
+  {
+    "id": "S-3",
+    "provenance": {
+      "source_hash": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e",
+      "source_ref": "UNFCCC/AR-ACM0003@v2-0"
+    },
+    "title": "Project emissions and removals"
+  },
+  {
+    "id": "S-4",
+    "provenance": {
+      "source_hash": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e",
+      "source_ref": "UNFCCC/AR-ACM0003@v2-0"
+    },
+    "title": "Leakage and displacement risks"
+  },
+  {
+    "id": "S-5",
+    "provenance": {
+      "source_hash": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e",
+      "source_ref": "UNFCCC/AR-ACM0003@v2-0"
+    },
+    "title": "Monitoring, data, and reporting"
+  }
+]

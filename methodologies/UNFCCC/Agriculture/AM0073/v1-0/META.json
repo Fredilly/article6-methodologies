@@ -1,0 +1,79 @@
+{
+  "provenance": {
+    "author": "Fred Egbuedike",
+    "date": "2025-11-11T03:25:04Z",
+    "methodology_page": "https://cdm.unfccc.int/methodologies/DB/2N19WQ6DCXNYRNJVZQQOHG7TK0Q2D8",
+    "version_number": "1.0",
+    "source_pdfs": [
+      {
+        "doc": "UNFCCC/AM0073@v1-0",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Agriculture/AM0073/v1-0/source.pdf",
+        "sha256": "dc6e5a0e5942fa22e7275c1a639b8f47b85384aa7845c446fa600697646c744a",
+        "size": 733424
+      }
+    ]
+  },
+  "references": {
+    "tools": [
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Agriculture/AM0073/v1-0/am-tool-01-v7.0.0.pdf",
+        "sha256": "b516fd941c5d13671cb88ff7b6511cda3390f8290e3a509a1b5d22e9ad1b35bd",
+        "size": 238446,
+        "kind": "pdf",
+        "url": null
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Agriculture/AM0073/v1-0/am-tool-03-v3.pdf",
+        "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02",
+        "size": 447750,
+        "kind": "pdf",
+        "url": null
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Agriculture/AM0073/v1-0/am-tool-05-v3.0.pdf",
+        "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51",
+        "size": 572432,
+        "kind": "pdf",
+        "url": null
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Agriculture/AM0073/v1-0/am-tool-06-v4.0.pdf",
+        "sha256": "0a806611660fab64122335bd85c8c20974c8932b3e063592692b7d2230162907",
+        "size": 426246,
+        "kind": "pdf",
+        "url": null
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Agriculture/AM0073/v1-0/am-tool-07-v7.0.pdf",
+        "sha256": "7f3864427916369b25b960ace50b5eed74b57530a14e421dc70ce35bae83bf5b",
+        "size": 1231188,
+        "kind": "pdf",
+        "url": null
+      },
+      {
+        "doc": "UNFCCC/AM0073@v01.0",
+        "path": "tools/UNFCCC/Agriculture/AM0073/v1-0/source.pdf",
+        "sha256": "dc6e5a0e5942fa22e7275c1a639b8f47b85384aa7845c446fa600697646c744a",
+        "size": 733424,
+        "kind": "pdf",
+        "url": null
+      }
+    ]
+  },
+  "stage": "staging",
+  "audit_hashes": {
+    "sections_json_sha256": "a5eb547b4affcd26cdc9ad932db5063ecd1d6dd350c931fb7f617e638d5dc8a1",
+    "rules_json_sha256": "36223f50cb2365a82a99c149a5b613303047de433d3fe26c619808d07fc14992",
+    "source_pdf_sha256": "dc6e5a0e5942fa22e7275c1a639b8f47b85384aa7845c446fa600697646c744a"
+  },
+  "automation": {
+    "scripts_manifest_sha256": "6b3f6aa81a7eba59d7a198045281bb8279d389a1dfff6e98f9a05e035e809790",
+    "repo_commit": "29c41662d156a351ca72fc2019887e962c684b1c"
+  }
+}

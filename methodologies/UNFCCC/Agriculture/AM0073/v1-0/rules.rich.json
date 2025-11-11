@@ -1,0 +1,175 @@
+[
+  {
+    "id": "UNFCCC.Agriculture.AM0073.v1-0.R-1-0001",
+    "type": "eligibility",
+    "summary": "Only multi-farm projects that centralize anaerobic manure treatment under the full applicability conditions qualify.",
+    "logic": "Verify that participating farms keep confined livestock, discharge no manure to surface waters, historically treated residues anaerobically, and satisfy the minimum temperature (>5 °C), lagoon depth (>1 m) and sludge retention (≥30 days) thresholds. Sludge must be stabilized via drying or composting, outdoor interim storage must be open tanks, groundwater protection (impermeable liners) is required, and written declarations must prevent double-counting of CERs.",
+    "notes": "Document each farm’s baseline system, lagoon design data and the legally binding statements assigning CER claims to the central operator.",
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AM0073@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AM0073.v1-0.R-1-0010",
+    "type": "eligibility",
+    "summary": "Establish additionality using the approved tool for both the central facility and the participating farms.",
+    "logic": "Identify barriers and investment benchmarks for the central treatment plant and confirm that each farm would have continued using its baseline AWMS without methane recovery. Apply the Additionality Tool to show that methane capture and energy recovery are not attractive absent CDM revenue and that no regulation forces such upgrades.",
+    "refs": {
+      "sections": [
+        "S-2"
+      ],
+      "tools": [
+        "UNFCCC/AM-TOOL01@v7.0.0",
+        "UNFCCC/AM0073@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AM0073.v1-0.R-1-0020",
+    "type": "eligibility",
+    "summary": "Baseline scenario must remain anaerobic manure treatment without methane recovery.",
+    "logic": "Apply the stepwise baseline procedure (identify alternatives, check compliance with legal requirements, select the most plausible option) from both the plant owner and farm owner perspectives. If the baseline analysis yields any option with methane recovery, the methodology cannot be used.",
+    "refs": {
+      "sections": [
+        "S-2"
+      ],
+      "tools": [
+        "UNFCCC/AM0073@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AM0073.v1-0.R-1-0030",
+    "type": "reporting",
+    "summary": "Define the project boundary to include farm sites, transport, centralized treatment, biogas handling and energy systems.",
+    "logic": "Map all sources and sinks (manure storage, digesters, flare/engine, auxiliary boilers, electricity import/export and sludge management) and treat CH4 and CO2 emissions consistently with the methodology. Manure transport routes must be explicitly inside the boundary and their fuel use recorded.",
+    "refs": {
+      "sections": [
+        "S-3"
+      ],
+      "tools": [
+        "UNFCCC/AM-TOOL03@v3",
+        "UNFCCC/AM-TOOL05@v3.0",
+        "UNFCCC/AM-TOOL07@v7.0",
+        "UNFCCC/AM-TOOL06@v4.0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AM0073.v1-0.R-1-0040",
+    "type": "calc",
+    "summary": "Baseline methane emissions equal the sum of farm-level anaerobic system emissions.",
+    "logic": "For each farm i calculate BE_CH4,i,y = VS_i,y × 365 × Bo × MCF_i × η_i × 0.67 kg/m3 (or COD-based equivalent), where VS_i,y derives from monitored animal populations and feed, Bo and MCF match IPCC/AMS default values for the baseline technology and temperature class, and η_i adjusts for operating days. Sum methane emissions across all farms and convert to CO2e.",
+    "inputs": [
+      {
+        "name": "VS_i,y",
+        "unit": "kg VS/day",
+        "source": "monitoring"
+      },
+      {
+        "name": "Bo",
+        "unit": "m3 CH4/kg VS",
+        "source": "defaults"
+      },
+      {
+        "name": "MCF_i",
+        "unit": "%",
+        "source": "defaults"
+      },
+      {
+        "name": "η_i",
+        "unit": "fraction",
+        "source": "monitoring"
+      }
+    ],
+    "refs": {
+      "sections": [
+        "S-4"
+      ],
+      "tools": [
+        "UNFCCC/AM0073@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AM0073.v1-0.R-1-0050",
+    "type": "calc",
+    "summary": "Baseline fossil fuel and electricity emissions must rely on the approved combustion and electricity tools.",
+    "logic": "Quantify baseline diesel, LPG or other fuels that would have powered decentralized systems using the Tool to calculate project or leakage CO2 emissions from fossil fuel combustion, and compute baseline electricity emissions with the electricity consumption tool and the host grid emission factor.",
+    "refs": {
+      "sections": [
+        "S-4"
+      ],
+      "tools": [
+        "UNFCCC/AM-TOOL03@v3",
+        "UNFCCC/AM-TOOL05@v3.0",
+        "UNFCCC/AM-TOOL07@v7.0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AM0073.v1-0.R-1-0060",
+    "type": "calc",
+    "summary": "Project emissions cover residual methane, methane slip and auxiliary energy consumption.",
+    "logic": "Compute project methane emissions from effluent treatment, biogas that bypasses capture, flare inefficiencies and digestion downtime. Add CO2 emissions from auxiliary fossil fuels and any electricity import using the respective tools. Account for CH4 destruction in flares or engines by applying measured destruction efficiencies.",
+    "refs": {
+      "sections": [
+        "S-5"
+      ],
+      "tools": [
+        "UNFCCC/AM0073@v1-0",
+        "UNFCCC/AM-TOOL06@v4.0",
+        "UNFCCC/AM-TOOL03@v3",
+        "UNFCCC/AM-TOOL05@v3.0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AM0073.v1-0.R-1-0070",
+    "type": "leakage",
+    "summary": "Leakage covers incremental manure transport and any displaced baseline manure uses.",
+    "logic": "Track transport distances and fuel consumption for tank trucks, canals or pumps that would not exist in the baseline, and apply the fossil fuel tool for those emissions. If baseline manure had other uses (e.g., fertilizer), confirm those uses continue or deduct the emissions from their displacement.",
+    "refs": {
+      "sections": [
+        "S-5"
+      ],
+      "tools": [
+        "UNFCCC/AM-TOOL03@v3",
+        "UNFCCC/AM0073@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AM0073.v1-0.R-1-0080",
+    "type": "monitoring",
+    "summary": "Monitor animal populations, manure flows, biogas production, methane content, COD removal, fossil fuel use and exported electricity/heat.",
+    "logic": "Install calibrated flow meters and gas analyzers on biogas lines, record COD/VS data for influent and effluent, log digester retention times, monitor sludge stabilization batches, measure auxiliary fossil fuel consumption, and meter electricity and heat generation/export. Maintain QA/QC documentation for installations, calibrations and data validation; use conservative estimates during meter downtime.",
+    "refs": {
+      "sections": [
+        "S-6"
+      ],
+      "tools": [
+        "UNFCCC/AM0073@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AM0073.v1-0.R-1-0090",
+    "type": "reporting",
+    "summary": "The central plant operator must retain farmer declarations assigning CER claims and provide them to the DOE.",
+    "logic": "Collect legally binding statements from each participating farmer that they will not claim CERs for the improved manure management, keep them valid for the whole crediting period, and present them at validation and verification.",
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AM0073@v1-0"
+      ]
+    }
+  }
+]

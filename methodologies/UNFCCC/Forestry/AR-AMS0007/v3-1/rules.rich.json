@@ -1,0 +1,269 @@
+[
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v3-1.R-1-0001",
+    "logic": "Eligible lands are degraded wetlands converted to forest; aggregated area remains below the small-scale threshold and hydrological integrity is restored.",
+    "notes": "Document hydrological restoration plan and baseline conditions.",
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v3-1"
+      ]
+    },
+    "summary": "Wetland restoration projects eligible when activities convert degraded wetlands to forest and meet small-scale thresholds.",
+    "type": "eligibility",
+    "when": [
+      "Baseline hydrology assessment completed.",
+      "Aggregated area < 16,000 ha during crediting period."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v3-1.R-1-0002",
+    "logic": "Methodology definitions specify hydrological units, participant roles, and leakage belt boundaries.",
+    "notes": "Provide glossary to participants and monitoring team.",
+    "refs": {
+      "sections": [
+        "S-2"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v3-1"
+      ]
+    },
+    "summary": "Definitions clarify wetland geomorphology, participant aggregation, and leakage belt concepts.",
+    "tags": [
+      "definition"
+    ],
+    "type": "eligibility",
+    "when": [
+      "Definitions reviewed during participant onboarding."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v3-1.R-1-0003",
+    "logic": "Boundary encompasses project hydrological zones and carbon pools; excluded pools set to zero change in calculations.",
+    "notes": "Maintain geospatial files showing boundary and leakage belt.",
+    "refs": {
+      "sections": [
+        "S-3"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v3-1"
+      ]
+    },
+    "summary": "Project boundary includes on-site hydrological interventions and relevant carbon pools except where justified.",
+    "tags": [
+      "boundary"
+    ],
+    "type": "eligibility",
+    "when": [
+      "Boundary updates documented when parcels are added or removed."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v3-1.R-1-0004",
+    "logic": "Baseline carbon stock change set to zero under conservative assumption of continued degradation without project intervention.",
+    "notes": "Provide evidence that alternative land uses would maintain degraded conditions.",
+    "refs": {
+      "sections": [
+        "S-4"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v3-1"
+      ]
+    },
+    "summary": "Baseline assumes continuation of pre-project wetland degradation with zero additional removals.",
+    "tags": [
+      "baseline"
+    ],
+    "type": "calc",
+    "when": [
+      "Baseline scenario revisited if policy or land tenure shifts."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v3-1.R-1-0005",
+    "logic": "Net project removals equal sum of pool-specific carbon changes minus emissions from fuel use, drainage pumps, and fertilizer application.",
+    "notes": "Document emission factors and drainage pump operating records.",
+    "refs": {
+      "sections": [
+        "S-5"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v3-1",
+        "UNFCCC/AR-TOOL08@v4.0.0"
+      ]
+    },
+    "summary": "Project removals calculated from pool carbon stock changes minus emissions from project operations.",
+    "tags": [
+      "emissions"
+    ],
+    "type": "calc",
+    "when": [
+      "Activity data for pumps and machinery collected annually.",
+      "Emission factors traceable to IPCC or national sources."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v3-1.R-1-0006",
+    "logic": "Leakage emissions calculated from Tool 14 metrics applied to displaced wetland uses and deducted before credit issuance.",
+    "notes": "Engage communities to minimize activity shifting.",
+    "refs": {
+      "sections": [
+        "S-6"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v3-1",
+        "UNFCCC/AR-TOOL14@v4.2"
+      ]
+    },
+    "summary": "Leakage from displaced wetland uses monitored and deducted using Tool 14 defaults.",
+    "type": "leakage",
+    "when": [
+      "Leakage belt surveys performed annually.",
+      "Leakage mitigation plan implemented and documented."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v3-1.R-1-0007",
+    "logic": "Implement monitoring plan with hydrological gauges, vegetation plots (Tool 16 QA/QC), and participant compliance forms.",
+    "notes": "Hydrological data and plot measurements archived for audit.",
+    "refs": {
+      "sections": [
+        "S-7"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v3-1",
+        "UNFCCC/AR-TOOL16@v1.1.0"
+      ]
+    },
+    "summary": "Monitoring plan covers hydrology restoration, vegetation plots, and participant reporting.",
+    "type": "monitoring",
+    "when": [
+      "Hydrology indicators remain within restoration targets.",
+      "Plot network re-measured at ≤5-year intervals."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v3-1.R-1-0008",
+    "logic": "Maintain dataset for biomass expansion factors, drainage rates, and soil parameters; update when national values available.",
+    "notes": "Ensure data registry accessible to DOE.",
+    "refs": {
+      "sections": [
+        "S-8"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v3-1",
+        "UNFCCC/AR-TOOL14@v4.2"
+      ]
+    },
+    "summary": "Data tables specify default biomass factors, hydrological parameters, and monitoring records.",
+    "tags": [
+      "data"
+    ],
+    "type": "parameter",
+    "when": [
+      "Data registry updated prior to each verification."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v3-1.R-1-0009",
+    "logic": "Apply Tool 12 procedures combining sampling and model uncertainty; deduct when precision worse than ±10% at 90% confidence.",
+    "notes": "Uncertainty spreadsheets stored in project archive.",
+    "refs": {
+      "sections": [
+        "S-9"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v3-1",
+        "UNFCCC/AR-TOOL12@v3.1"
+      ]
+    },
+    "summary": "Uncertainty analysis follows Tool 12 with deductions when precision thresholds unmet.",
+    "type": "uncertainty",
+    "when": [
+      "Confidence interval wider than ±10%.",
+      "DOE reviews uncertainty calculations."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v3-1.R-1-0010",
+    "logic": "Use Tool 15 wetland-specific risk scoring to set buffer share; adjust when management or climate risks change.",
+    "notes": "Record buffer transactions in registry statements.",
+    "refs": {
+      "sections": [
+        "S-10"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v3-1",
+        "UNFCCC/AR-TOOL15@v2.0"
+      ]
+    },
+    "summary": "Permanence buffer contributions determined via Tool 15 wetland risk factors.",
+    "tags": [
+      "permanence"
+    ],
+    "type": "uncertainty",
+    "when": [
+      "Risk assessment reassessed at each verification."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v3-1.R-1-0011",
+    "logic": "Maintain accessible copies of UNFCCC tools referenced in methodology for all monitoring staff.",
+    "notes": "Notify team when UNFCCC issues updates to normative tools.",
+    "refs": {
+      "sections": [
+        "S-11"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v3-1"
+      ]
+    },
+    "summary": "Normative tools and references maintained for monitoring and verification teams.",
+    "tags": [
+      "reference"
+    ],
+    "type": "reporting",
+    "when": [
+      "Reference library refreshed when tools updated."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v3-1.R-1-0012",
+    "logic": "ΔC_year = (C_t2 - C_t1) / T applied to each pool prior to emission and leakage deductions.",
+    "notes": "Maintain calculation worksheets showing measurement intervals.",
+    "refs": {
+      "sections": [
+        "S-12"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v3-1",
+        "UNFCCC/AR-TOOL14@v4.2"
+      ]
+    },
+    "summary": "Annualized carbon stock change derived from difference in pool carbon divided by measurement interval.",
+    "type": "equation",
+    "when": [
+      "Measurement intervals documented and justified."
+    ]
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v3-1.R-1-0013",
+    "logic": "Include hydrological restoration documentation, participant training logs, and engagement minutes in monitoring annexes.",
+    "notes": "Retain annex materials for full crediting period.",
+    "refs": {
+      "sections": [
+        "S-13"
+      ],
+      "tools": [
+        "UNFCCC/AR-AMS0007@v3-1"
+      ]
+    },
+    "summary": "Annexes capture hydrology restoration evidence, training records, and community engagement notes.",
+    "type": "reporting",
+    "when": [
+      "Community engagement documented each monitoring cycle."
+    ]
+  }
+]
