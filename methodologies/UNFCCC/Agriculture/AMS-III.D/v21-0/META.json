@@ -1,0 +1,66 @@
+{
+  "provenance": {
+    "author": "Fred Egbuedike",
+    "date": "2025-11-11T03:25:04Z",
+    "methodology_page": "https://cdm.unfccc.int/methodologies/DB/H9DVSB24O7GEZQYLYNWUX23YS6G4RC",
+    "version_number": "21.0",
+    "source_pdfs": [
+      {
+        "doc": "UNFCCC/AMS-III.D@v21-0",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/source.pdf",
+        "sha256": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4",
+        "size": 853732
+      }
+    ]
+  },
+  "references": {
+    "tools": [
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/am-tool-03-v3.pdf",
+        "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02",
+        "size": 447750,
+        "kind": "pdf"
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/am-tool-05-v3.0.pdf",
+        "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51",
+        "size": 572432,
+        "kind": "pdf"
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/am-tool-06-v4.0.pdf",
+        "sha256": "0a806611660fab64122335bd85c8c20974c8932b3e063592692b7d2230162907",
+        "size": 426246,
+        "kind": "pdf"
+      },
+      {
+        "doc": "",
+        "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/am-tool-14-v3.pdf",
+        "sha256": "0788effccd28e867dfee522e5c413ca4d47240c75acce3a05d6d0cf759a3d1d0",
+        "size": 325737,
+        "kind": "pdf"
+      },
+      {
+        "doc": "UNFCCC/AMS-III.D@v21.0",
+        "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/source.pdf",
+        "sha256": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4",
+        "size": 853732,
+        "kind": "pdf"
+      }
+    ]
+  },
+  "stage": "staging",
+  "audit_hashes": {
+    "sections_json_sha256": "c7dbf4d03a828b8df2478a0acbee38a7e98ec264fbf549a230fdff0d5b415947",
+    "rules_json_sha256": "8e41dd6e01a2f4db627415239a514fd496998a7dfd22fe3f6bec2c39fc99e830",
+    "source_pdf_sha256": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4"
+  },
+  "automation": {
+    "scripts_manifest_sha256": "372afce5f96e8262de455c1ef34db98207ff5b08919b340bfd6ea74483c0ee1a",
+    "repo_commit": "c264e980d7ec809f8e4872761213111d448899f4"
+  }
+}

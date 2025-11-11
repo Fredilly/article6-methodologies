@@ -1,0 +1,156 @@
+[
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v05-0.R-1-0001",
+    "type": "eligibility",
+    "summary": "Installations must be at individual households or small farms where baseline manure decays anaerobically without methane recovery.",
+    "logic": "Confirm each domestic digester is located at a household/small farm, that baseline manure would have decomposed anaerobically onsite, and that the average annual temperature exceeds 5 \u00b0C. Systems yielding >5 t CO2e reductions annually must instead use AMS-III-D.",
+    "refs": {
+      "sections": [
+        "S-1",
+        "S-2"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-R@v05-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v05-0.R-1-0010",
+    "type": "eligibility",
+    "summary": "Only the manure fraction that decays anaerobically in the baseline may be credited and must be established via a 90/10 survey.",
+    "logic": "Conduct a statistically valid survey (90% confidence, 10% precision) to determine the share of manure routed to anaerobic systems per livestock type, management system and climate region. Use this fraction when calculating baseline emissions and document sampling procedures for DOE review.",
+    "refs": {
+      "sections": [
+        "S-2",
+        "S-5"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-R@v05-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v05-0.R-1-0020",
+    "type": "reporting",
+    "summary": "Projects may mix small amounts of other agricultural wastes, but emission reductions may only reflect manure.",
+    "logic": "Ensure that any co-digested agricultural residues do not contribute to credited emission reductions. If other waste streams dominate, apply the appropriate methodology (e.g., AMS-III-D or AMS-III.AO).",
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-R@v05-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v05-0.R-1-0030",
+    "type": "eligibility",
+    "summary": "Demonstrate additionality using TOOL21 or by showing no regulation requires household methane recovery.",
+    "logic": "If no regulation mandates methane capture for the target households, state this in the PDD and treat the project as additional. Otherwise apply TOOL21 to document barriers or investment constraints and maintain supporting evidence.",
+    "refs": {
+      "sections": [
+        "S-3"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-R@v05-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v05-0.R-1-0040",
+    "type": "calc",
+    "summary": "Baseline methane emissions follow Equation (13) using animal populations, volatile solids, B0 and MCF values.",
+    "logic": "Compute BE_y = \u03a3LT,PS,k (N_LT,PS,y \u00d7 AML_LT,PS/10^3 \u00d7 VS_rate_LT,PS \u00d7 365 \u00d7 B0_LT,PS \u00d7 0.67 \u00d7 AWM S_LT,MS,k \u00d7 MCF_MS,k \u00d7 MS) where survey-derived fractions, VS rates, B0 and MCF values align with climate region k. Use conservative defaults when measurements are unavailable.",
+    "inputs": [
+      {
+        "name": "N_LT,PS,y",
+        "unit": "head",
+        "source": "monitoring"
+      },
+      {
+        "name": "VS_rate_LT,PS",
+        "unit": "kg VS/head/day",
+        "source": "defaults or surveys"
+      },
+      {
+        "name": "B0_LT,PS",
+        "unit": "m3 CH4/kg VS",
+        "source": "defaults"
+      },
+      {
+        "name": "MCF_MS,k",
+        "unit": "%",
+        "source": "defaults"
+      }
+    ],
+    "refs": {
+      "sections": [
+        "S-4"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-R@v05-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v05-0.R-1-0050",
+    "type": "calc",
+    "summary": "Project emissions must account for methane losses, fossil fuels and electricity use via TOOL14, TOOL03 and TOOL05.",
+    "logic": "Quantify methane remaining in digestate or bypassing combustion with TOOL14 (project and leakage emissions from anaerobic digesters), methane destroyed through flaring/combustion, fossil fuel consumption with TOOL03, and electricity imports with TOOL05. Treat biogas used for auxiliary energy with a zero emission factor.",
+    "refs": {
+      "sections": [
+        "S-4"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-R@v05-0",
+        "UNFCCC/AM-TOOL14@v3",
+        "UNFCCC/AM-TOOL03@v3",
+        "UNFCCC/AM-TOOL05@v3.0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v05-0.R-1-0060",
+    "type": "leakage",
+    "summary": "Assess leakage from shifts in biomass fuels, manure use and transport via TOOL22 and SSC sampling standards.",
+    "logic": "Apply TOOL22 to capture emissions from households switching fuel types or sourcing biomass differently. Include fuel used to transport manure or digestate outside the boundary, and document sampling approaches per the CDM \"Standard for sampling and surveys\".",
+    "refs": {
+      "sections": [
+        "S-5"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-R@v05-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v05-0.R-1-0070",
+    "type": "monitoring",
+    "summary": "Monitor all parameters in Table 6.1 and maintain documented O&M and rehabilitation services for every digester.",
+    "logic": "Collect data on animal populations, manure quantities, digester operation time, methane usage, fossil fuel consumption and maintenance events. Establish a support network capable of rehabilitating digesters throughout the crediting period, and record each repair (parts, technicians, dates) for DOE inspections.",
+    "refs": {
+      "sections": [
+        "S-6"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-R@v05-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v05-0.R-1-0080",
+    "type": "eligibility",
+    "summary": "Aggregated emission reductions across all included systems must remain \u226460 kt CO2e per year.",
+    "logic": "Track cumulative reductions from all digesters (including parallel Type I components) and demonstrate they stay within the Type III SSC cap for every year of the crediting period.",
+    "refs": {
+      "sections": [
+        "S-1",
+        "S-5"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-R@v05-0"
+      ]
+    }
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "kind": "methodology",
+  "publisher": "UNFCCC",
+  "id": "UNFCCC.Agriculture.AMS-III.D",
+  "version": "v11-0",
+  "status": "superseded",
+  "effective_from": "2006-12-22",
+  "effective_to": "2007-05-17",
+  "provenance": {
+    "methodology_page": "https://cdm.unfccc.int/methodologies/DB/H9DVSB24O7GEZQYLYNWUX23YS6G4RC",
+    "source_url": "https://cdm.unfccc.int/UserManagement/FileStorage/CDMWF_AM_8ZT96MNYC3LOIGNJNHTFNRYFRIGTHR",
+    "version_number": "11.0",
+    "source_pdfs": [
+      {
+        "kind": "pdf",
+        "path": "source-assets/UNFCCC/Agriculture/AMS-III.D/v11-0/source.pdf",
+        "sha256": "3b46c4ecb8469d61f315c8c64f0d445d8ce6f1f86f52509e7795a13070a740c3",
+        "size": 168285
+      }
+    ]
+  },
+  "pointers": {
+    "active_successor": "../.."
+  },
+  "tools": [
+    {
+      "doc": "UNFCCC/AMS-III.D@v21-0",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/Agriculture/AMS-III.D/v21-0/source.pdf",
+      "sha256": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4",
+      "size": 853732
+    },
+    {
+      "doc": "UNFCCC/AM-TOOL03@v3",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/Agriculture/AMS-III.D/v21-0/am-tool-03-v3.pdf",
+      "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02",
+      "size": 447750
+    },
+    {
+      "doc": "UNFCCC/AM-TOOL05@v3.0",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/Agriculture/AMS-III.D/v21-0/am-tool-05-v3.0.pdf",
+      "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51",
+      "size": 572432
+    },
+    {
+      "doc": "UNFCCC/AM-TOOL06@v4.0",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/Agriculture/AMS-III.D/v21-0/am-tool-06-v4.0.pdf",
+      "sha256": "0a806611660fab64122335bd85c8c20974c8932b3e063592692b7d2230162907",
+      "size": 426246
+    },
+    {
+      "doc": "UNFCCC/AM-TOOL14@v3",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/Agriculture/AMS-III.D/v21-0/am-tool-14-v3.pdf",
+      "sha256": "0788effccd28e867dfee522e5c413ca4d47240c75acce3a05d6d0cf759a3d1d0",
+      "size": 325737
+    }
+  ],
+  "audit_hashes": {
+    "source_pdf_sha256": "3b46c4ecb8469d61f315c8c64f0d445d8ce6f1f86f52509e7795a13070a740c3"
+  },
+  "references": {
+    "tools": []
+  }
+}

@@ -1,0 +1,171 @@
+[
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0001",
+    "type": "eligibility",
+    "summary": "Livestock must be confined and baseline manure streams must be anaerobic without methane recovery.",
+    "logic": "Confirm that each participating farm manages animals in confinement, does not discharge manure or effluent to natural waters, operates baseline lagoons/tanks with retention >1 month and depth \u22651 m, and lacks any methane capture or destruction. Baseline ambient temperature must average >5 \u00b0C.",
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-D@v21-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0010",
+    "type": "eligibility",
+    "summary": "Residual waste must be handled aerobically and all biogas must be captured or flared.",
+    "logic": "Demonstrate that digestate is aerobically stabilized (composting, soil application with no anaerobic conditions) or treat methane emissions per AMS-III.AO. Provide technical measures (continuous gas recovery, emergency flare) to use or destroy all biogas, and limit manure storage time after removal from barns as required.",
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-D@v21-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0020",
+    "type": "reporting",
+    "summary": "Apply alternative methodologies when landfill, wastewater or co-digestion activities occur.",
+    "logic": "If manure is treated as wastewater, landfill methane or anaerobic co-digestion with other organics is included, switch to AMS-III.H, AMS-III.G or AMS-III.AO respectively. Compost-only projects must apply AMS-III.F. Document the screening to prevent double counting.",
+    "refs": {
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-D@v21-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0030",
+    "type": "eligibility",
+    "summary": "Additionality is satisfied if no regulation requires methane capture; otherwise apply SSC additionality guidelines.",
+    "logic": "Check host-country environmental and agricultural regulations for mandates to capture or flare manure methane. If none exist, state this and no further additionality test is needed. If regulations do exist, apply Attachment A to Appendix B of the SSC guidelines or the SSC general guidelines to demonstrate barriers or investment constraints.",
+    "refs": {
+      "sections": [
+        "S-2"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-D@v21-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0040",
+    "type": "reporting",
+    "summary": "Include livestock facilities, manure handling, centralized digesters, biogas utilization and transport within the project boundary.",
+    "logic": "Map the physical sites of the livestock, AWMS units, centralized plant, gas recovery/flare/energy systems and any cross-site transport. Maintain sectoral scope 13 validation coverage.",
+    "refs": {
+      "sections": [
+        "S-2"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-D@v21-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0050",
+    "type": "calc",
+    "summary": "Baseline methane emissions follow ACM0010/AM0073 factors using VS or COD data and methane conversion factors.",
+    "logic": "Compute BE_CH4,y per animal category using BE_CH4,y = 365 \u00d7 VS_i,y \u00d7 B0_i \u00d7 MCF_i \u00d7 \u03c6_i, or COD-based equivalents. Select B0 and MCF values consistent with temperature, animal type and baseline system. Use conservative defaults where measurements are unavailable and document data sources.",
+    "inputs": [
+      {
+        "name": "VS_i,y",
+        "unit": "kg VS/day",
+        "source": "monitoring"
+      },
+      {
+        "name": "B0_i",
+        "unit": "m3 CH4/kg VS",
+        "source": "defaults"
+      },
+      {
+        "name": "MCF_i",
+        "unit": "%",
+        "source": "defaults"
+      },
+      {
+        "name": "\u03c6_i",
+        "unit": "fraction",
+        "source": "monitoring"
+      }
+    ],
+    "refs": {
+      "sections": [
+        "S-3"
+      ],
+      "tools": [
+        "UNFCCC/ACM0010@v03-0",
+        "UNFCCC/AM0073@v01-0",
+        "UNFCCC/AMS-III-D@v21-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0060",
+    "type": "calc",
+    "summary": "Project emissions use the anaerobic digester, flaring, fossil fuel and electricity tools.",
+    "logic": "Calculate methane remaining in digestate, methane not captured, slip from flaring/combustion and parasitic energy use with the \"Project and leakage emissions from anaerobic digesters\" and \"Project emissions from flaring\" tools plus the fossil fuel and electricity consumption tools. Deduct on-site use of biogas for auxiliaries at zero emission factor.",
+    "refs": {
+      "sections": [
+        "S-4"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-D@v21-0",
+        "UNFCCC/AM-TOOL06@v4.0",
+        "UNFCCC/AM-TOOL03@v3",
+        "UNFCCC/AM-TOOL05@v3.0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0070",
+    "type": "leakage",
+    "summary": "Account for leakage from manure transport, digestate handling and suppressed baseline uses.",
+    "logic": "Quantify incremental fuel use for manure transport and digestate disposal, and include emissions if residual waste is transported to sites outside the boundary. If the project displaces existing manure applications, deduct related emissions unless continued use is demonstrated.",
+    "refs": {
+      "sections": [
+        "S-4"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-D@v21-0",
+        "UNFCCC/AM-TOOL03@v3"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0080",
+    "type": "monitoring",
+    "summary": "Monitor all parameters listed in Table 5.1 with calibrated instruments and maintain 95/10 precision when sampling.",
+    "logic": "Record animal populations, manure quantities, VS/COD, biogas flow and composition, methane destruction efficiency, auxiliary fuel consumption, electricity import/export and transport fuel. Calibrate meters per manufacturer recommendations, document downtime, and apply conservative estimates if data gaps occur. PoAs must design sampling plans that meet 95% confidence and 10% precision at the aggregate level.",
+    "refs": {
+      "sections": [
+        "S-5"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-D@v21-0"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0090",
+    "type": "eligibility",
+    "summary": "Respect the 60 kt CO2e/year small-scale cap and SSC general guidelines for lifetime and capacity additions.",
+    "logic": "Demonstrate that aggregate emission reductions from all Type III components of the project (or PoA) remain \u226460 kt CO2e per year, and satisfy SSC general guidelines on equipment lifetime, Greenfield projects and capacity additions.",
+    "refs": {
+      "sections": [
+        "S-1",
+        "S-2"
+      ],
+      "tools": [
+        "UNFCCC/AMS-III-D@v21-0"
+      ]
+    }
+  }
+]

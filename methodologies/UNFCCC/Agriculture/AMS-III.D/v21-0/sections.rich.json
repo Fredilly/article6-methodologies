@@ -1,0 +1,47 @@
+[
+  {
+    "id": "S-1",
+    "title": "Scope, applicability, and normative references",
+    "provenance": {
+      "source_ref": "UNFCCC/AMS-III.D@v21-0",
+      "source_hash": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4"
+    },
+    "notes": "Version 21.0 applies to small-scale projects (<60 kt CO2e/year) that replace or modify anaerobic manure management systems in livestock farms or treat manure from multiple farms in a centralized plant to recover and destroy methane. Livestock must be confined, manure streams cannot be discharged to natural waters, baseline systems must operate >1 month retention with lagoon depths \u22651 m, and no baseline methane recovery may occur. Residual wastes must be handled aerobically. The methodology cross-references ACM0010, AM0073, AMS-III.F/G/H/AO, the anaerobic digester and flaring tools, and the SSC additionality guidelines."
+  },
+  {
+    "id": "S-2",
+    "title": "Project boundary, sectoral scope, and additionality",
+    "provenance": {
+      "source_ref": "UNFCCC/AMS-III.D@v21-0",
+      "source_hash": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4"
+    },
+    "notes": "The boundary encompasses the livestock housing, onsite manure handling, centralized digestion (where applicable), biogas recovery and utilization systems, flares, auxiliary energy systems, and manure transport between farms and the facility. Validation and verification must use sectoral scope 13. Additionality may be established by demonstrating that no regulation compels methane capture; otherwise Attachment A to Appendix B of the SSC guidelines applies. Greenfield plants and capacity additions must comply with SSC general guidelines, including lifetime demonstration for replaced equipment."
+  },
+  {
+    "id": "S-3",
+    "title": "Baseline emissions methodology",
+    "provenance": {
+      "source_ref": "UNFCCC/AMS-III.D@v21-0",
+      "source_hash": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4"
+    },
+    "notes": "Baseline emissions (BE_y) equal the methane produced in the baseline AWMS and any associated fossil fuel or electricity use. Methane is calculated per animal category using volatile solids or COD data, maximum methane producing capacity (B0), methane conversion factors (MCF) and correction factors for operating temperature, with defaults sourced from ACM0010 or AM0073 where necessary. Baseline fossil fuels and electricity are quantified with the respective SSC tools using monitored or conservative default activity data."
+  },
+  {
+    "id": "S-4",
+    "title": "Project emissions, leakage, and emission reductions",
+    "provenance": {
+      "source_ref": "UNFCCC/AMS-III.D@v21-0",
+      "source_hash": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4"
+    },
+    "notes": "Project emissions include methane remaining in digestate or uncovered storage, methane bypassing collection, slip from flares or engines, and fuel/electricity used by auxiliary equipment or manure transport. Leakage captures increased transport, downstream treatment of digestate, and any displacement of manure uses outside the boundary. Emission reductions equal BE_y minus project emissions and leakage; no credit is allowed if residual waste handling still emits methane unless AMS-III.AO procedures are applied."
+  },
+  {
+    "id": "S-5",
+    "title": "Monitoring methodology and parameters",
+    "provenance": {
+      "source_ref": "UNFCCC/AMS-III.D@v21-0",
+      "source_hash": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4"
+    },
+    "notes": "Monitoring follows Table 5.1 of the methodology and requires data on animal populations, manure volumes, volatile solids/COD, digester operating conditions, biogas quantity and composition, methane destruction efficiency, auxiliary fossil fuel use, electricity import/export, and transport fuel. Metering and sampling equipment must be calibrated according to manufacturer instructions. For PoAs, sampling approaches must maintain 95/10 precision unless justified otherwise. QA/QC records, downtime procedures, and evidence that emissions stay below the 60 kt CO2e threshold are mandatory."
+  }
+]
