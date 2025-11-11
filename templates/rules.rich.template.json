@@ -31,14 +31,14 @@
     "notes": "Overridable with transparent national defaults; record provenance.",
     "provenance": {
       "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
-      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+      "source_ref": "UNFCCC/AR-TOOL14@v04.2"
     },
     "refs": {
       "sections": [
         "S-1"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-TOOL14@v04.2"
       ]
     },
     "summary": "Default CF = 0.47 t C per t d.m. (trees and shrubs).",
@@ -54,14 +54,14 @@
     "notes": "Defaults unless justified site-/species-specific data available.",
     "provenance": {
       "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
-      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+      "source_ref": "UNFCCC/AR-TOOL14@v04.2"
     },
     "refs": {
       "sections": [
         "S-1"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-TOOL14@v04.2"
       ]
     },
     "summary": "RSR_trees = 0.25; RSR_shrubs = 0.40 (dimensionless).",
@@ -120,7 +120,7 @@
       ],
       "tools": [
         "{{METHOD_KEY}}@{{VERSION}}",
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-TOOL14@v04.2"
       ]
     },
     "summary": "C_AGB_t = AGB_dm * CF",
@@ -230,14 +230,14 @@
     "notes": "Zero under specific AR-TOOL15 conditions; else compute via tool equations.",
     "provenance": {
       "source_hash": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29",
-      "source_ref": "UNFCCC/AR-TOOL15@v2.0"
+      "source_ref": "UNFCCC/AR-TOOL15@v02.0"
     },
     "refs": {
       "sections": [
         "S-1"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL15@v2.0"
+        "UNFCCC/AR-TOOL15@v02.0"
       ]
     },
     "summary": "leakage = L_AS + L_MD",
@@ -293,14 +293,14 @@
     "notes": "Encode the uncertainty discount table as separate parameter rules.",
     "provenance": {
       "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
-      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+      "source_ref": "UNFCCC/AR-TOOL14@v04.2"
     },
     "refs": {
       "sections": [
         "S-1"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-TOOL14@v04.2"
       ]
     },
     "summary": "If RelativePrecision > 10 then apply uncertainty discount per U-table.",
@@ -322,14 +322,14 @@
     "notes": "Deterministic gate; cite shrub-cover threshold.",
     "provenance": {
       "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
-      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+      "source_ref": "UNFCCC/AR-TOOL14@v04.2"
     },
     "refs": {
       "sections": [
         "S-1"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-TOOL14@v04.2"
       ]
     },
     "summary": "If ShrubCrownCover_i <= 0.05 then ΔC_shrubs_i := 0.",
@@ -361,14 +361,14 @@
     "notes": "Apply per stratum then aggregate.",
     "provenance": {
       "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
-      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+      "source_ref": "UNFCCC/AR-TOOL14@v04.2"
     },
     "refs": {
       "sections": [
         "S-1"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-TOOL14@v04.2"
       ]
     },
     "summary": "ΔC_year = (C_t2 - C_t1) / T",
@@ -384,14 +384,14 @@
     "notes": "Keep table-form sources consistent across strata.",
     "provenance": {
       "source_hash": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
-      "source_ref": "UNFCCC/AR-TOOL14@v4.2"
+      "source_ref": "UNFCCC/AR-TOOL14@v04.2"
     },
     "refs": {
       "sections": [
         "S-1"
       ],
       "tools": [
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-TOOL14@v04.2"
       ]
     },
     "summary": "Maintain SOPs and QA/QC per national inventory guidance or IPCC GPG; record all monitored parameters at each verification.",

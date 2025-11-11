@@ -28,7 +28,7 @@
       ],
       "tools": [
         "UNFCCC/AR-AM0014@v03-0",
-        "UNFCCC/AR-TOOL02@v1.0"
+        "UNFCCC/AR-TOOL02@v01.0"
       ]
     },
     "summary": "Baseline biomass estimated using IPCC defaults or site-specific sampling following Tool 02.",
@@ -51,7 +51,7 @@
       ],
       "tools": [
         "UNFCCC/AR-AM0014@v03-0",
-        "UNFCCC/AR-TOOL08@v4.0.0"
+        "UNFCCC/AR-TOOL08@v04.0.0"
       ]
     },
     "summary": "Net anthropogenic removals equal project removals minus baseline emissions and leakage.",
@@ -71,7 +71,7 @@
       ],
       "tools": [
         "UNFCCC/AR-AM0014@v03-0",
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-TOOL14@v04.2"
       ]
     },
     "summary": "Activity shifting leakage quantified annually using Tool 14 and deducted from net removals.",
@@ -91,7 +91,7 @@
       ],
       "tools": [
         "UNFCCC/AR-AM0014@v03-0",
-        "UNFCCC/AR-TOOL15@v2.0"
+        "UNFCCC/AR-TOOL15@v02.0"
       ]
     },
     "summary": "Non-permanence risks addressed through buffer contributions per Tool 15 guidance.",
@@ -111,7 +111,7 @@
       ],
       "tools": [
         "UNFCCC/AR-AM0014@v03-0",
-        "UNFCCC/AR-TOOL08@v4.0.0"
+        "UNFCCC/AR-TOOL08@v04.0.0"
       ]
     },
     "summary": "Field biomass measurements conducted at least every five years using permanent plots.",
@@ -131,7 +131,7 @@
       ],
       "tools": [
         "UNFCCC/AR-AM0014@v03-0",
-        "UNFCCC/AR-TOOL12@v3.1"
+        "UNFCCC/AR-TOOL12@v03.1"
       ]
     },
     "summary": "Sampling uncertainty above 10% addressed with Tool 12 conservative adjustments.",
