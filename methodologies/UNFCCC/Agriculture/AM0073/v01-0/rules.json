@@ -1,7 +1,7 @@
 {
   "rules": [
     {
-      "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0001",
+      "id": "R-1-0001",
       "section_id": "S-1",
       "tags": [
         "eligibility"
@@ -9,15 +9,23 @@
       "text": "Only multi-farm projects that centralize anaerobic manure treatment under the full applicability conditions qualify."
     },
     {
-      "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0010",
+      "id": "R-1-0090",
+      "section_id": "S-1",
+      "tags": [
+        "reporting"
+      ],
+      "text": "The central plant operator must retain farmer declarations assigning CER claims and provide them to the DOE."
+    },
+    {
+      "id": "R-1-0010",
       "section_id": "S-2",
       "tags": [
-        "additionality"
+        "eligibility"
       ],
       "text": "Establish additionality using the approved tool for both the central facility and the participating farms."
     },
     {
-      "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0020",
+      "id": "R-1-0020",
       "section_id": "S-2",
       "tags": [
         "eligibility"
@@ -25,39 +33,39 @@
       "text": "Baseline scenario must remain anaerobic manure treatment without methane recovery."
     },
     {
-      "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0030",
+      "id": "R-1-0030",
       "section_id": "S-3",
       "tags": [
-        "boundary"
+        "reporting"
       ],
       "text": "Define the project boundary to include farm sites, transport, centralized treatment, biogas handling and energy systems."
     },
     {
-      "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0040",
+      "id": "R-1-0040",
       "section_id": "S-4",
       "tags": [
-        "calculation"
+        "calc"
       ],
       "text": "Baseline methane emissions equal the sum of farm-level anaerobic system emissions."
     },
     {
-      "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0050",
+      "id": "R-1-0050",
       "section_id": "S-4",
       "tags": [
-        "calculation"
+        "calc"
       ],
       "text": "Baseline fossil fuel and electricity emissions must rely on the approved combustion and electricity tools."
     },
     {
-      "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0060",
+      "id": "R-1-0060",
       "section_id": "S-5",
       "tags": [
-        "calculation"
+        "calc"
       ],
       "text": "Project emissions cover residual methane, methane slip and auxiliary energy consumption."
     },
     {
-      "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0070",
+      "id": "R-1-0070",
       "section_id": "S-5",
       "tags": [
         "leakage"
@@ -65,20 +73,12 @@
       "text": "Leakage covers incremental manure transport and any displaced baseline manure uses."
     },
     {
-      "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0080",
+      "id": "R-1-0080",
       "section_id": "S-6",
       "tags": [
         "monitoring"
       ],
       "text": "Monitor animal populations, manure flows, biogas production, methane content, COD removal, fossil fuel use and exported electricity/heat."
-    },
-    {
-      "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0090",
-      "section_id": "S-1",
-      "tags": [
-        "governance"
-      ],
-      "text": "The central plant operator must retain farmer declarations assigning CER claims and provide them to the DOE."
     }
   ]
 }

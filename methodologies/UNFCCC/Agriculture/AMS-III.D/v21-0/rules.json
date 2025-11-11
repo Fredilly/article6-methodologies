@@ -1,7 +1,7 @@
 {
   "rules": [
     {
-      "id": "UNFCCC.Agriculture.AMS-III.D.v21-0.R-1-0001",
+      "id": "R-1-0001",
       "section_id": "S-1",
       "tags": [
         "eligibility"
@@ -9,7 +9,7 @@
       "text": "Livestock must be confined and baseline manure streams must be anaerobic without methane recovery."
     },
     {
-      "id": "UNFCCC.Agriculture.AMS-III.D.v21-0.R-1-0010",
+      "id": "R-1-0010",
       "section_id": "S-1",
       "tags": [
         "eligibility"
@@ -17,47 +17,55 @@
       "text": "Residual waste must be handled aerobically and all biogas must be captured or flared."
     },
     {
-      "id": "UNFCCC.Agriculture.AMS-III.D.v21-0.R-1-0020",
+      "id": "R-1-0020",
       "section_id": "S-1",
       "tags": [
-        "scope"
+        "reporting"
       ],
       "text": "Apply alternative methodologies when landfill, wastewater or co-digestion activities occur."
     },
     {
-      "id": "UNFCCC.Agriculture.AMS-III.D.v21-0.R-1-0030",
+      "id": "R-1-0090",
+      "section_id": "S-1",
+      "tags": [
+        "eligibility"
+      ],
+      "text": "Respect the 60 kt CO2e/year small-scale cap and SSC general guidelines for lifetime and capacity additions."
+    },
+    {
+      "id": "R-1-0030",
       "section_id": "S-2",
       "tags": [
-        "additionality"
+        "eligibility"
       ],
       "text": "Additionality is satisfied if no regulation requires methane capture; otherwise apply SSC additionality guidelines."
     },
     {
-      "id": "UNFCCC.Agriculture.AMS-III.D.v21-0.R-1-0040",
+      "id": "R-1-0040",
       "section_id": "S-2",
       "tags": [
-        "boundary"
+        "reporting"
       ],
       "text": "Include livestock facilities, manure handling, centralized digesters, biogas utilization and transport within the project boundary."
     },
     {
-      "id": "UNFCCC.Agriculture.AMS-III.D.v21-0.R-1-0050",
+      "id": "R-1-0050",
       "section_id": "S-3",
       "tags": [
-        "calculation"
+        "calc"
       ],
       "text": "Baseline methane emissions follow ACM0010/AM0073 factors using VS or COD data and methane conversion factors."
     },
     {
-      "id": "UNFCCC.Agriculture.AMS-III.D.v21-0.R-1-0060",
+      "id": "R-1-0060",
       "section_id": "S-4",
       "tags": [
-        "calculation"
+        "calc"
       ],
       "text": "Project emissions use the anaerobic digester, flaring, fossil fuel and electricity tools."
     },
     {
-      "id": "UNFCCC.Agriculture.AMS-III.D.v21-0.R-1-0070",
+      "id": "R-1-0070",
       "section_id": "S-4",
       "tags": [
         "leakage"
@@ -65,20 +73,12 @@
       "text": "Account for leakage from manure transport, digestate handling and suppressed baseline uses."
     },
     {
-      "id": "UNFCCC.Agriculture.AMS-III.D.v21-0.R-1-0080",
+      "id": "R-1-0080",
       "section_id": "S-5",
       "tags": [
         "monitoring"
       ],
       "text": "Monitor all parameters listed in Table 5.1 with calibrated instruments and maintain 95/10 precision when sampling."
-    },
-    {
-      "id": "UNFCCC.Agriculture.AMS-III.D.v21-0.R-1-0090",
-      "section_id": "S-1",
-      "tags": [
-        "eligibility"
-      ],
-      "text": "Respect the 60 kt CO2e/year small-scale cap and SSC general guidelines for lifetime and capacity additions."
     }
   ]
 }

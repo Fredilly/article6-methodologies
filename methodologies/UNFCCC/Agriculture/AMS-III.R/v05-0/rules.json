@@ -1,7 +1,7 @@
 {
   "rules": [
     {
-      "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0001",
+      "id": "R-1-0001",
       "section_id": "S-1",
       "tags": [
         "eligibility"
@@ -9,7 +9,23 @@
       "text": "Installations must be at individual households or small farms where baseline manure decays anaerobically without methane recovery."
     },
     {
-      "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0010",
+      "id": "R-1-0020",
+      "section_id": "S-1",
+      "tags": [
+        "reporting"
+      ],
+      "text": "Projects may mix small amounts of other agricultural wastes, but emission reductions may only reflect manure."
+    },
+    {
+      "id": "R-1-0080",
+      "section_id": "S-1",
+      "tags": [
+        "eligibility"
+      ],
+      "text": "Aggregated emission reductions across all included systems must remain ≤60 kt CO2e per year."
+    },
+    {
+      "id": "R-1-0010",
       "section_id": "S-2",
       "tags": [
         "eligibility"
@@ -17,39 +33,31 @@
       "text": "Only the manure fraction that decays anaerobically in the baseline may be credited and must be established via a 90/10 survey."
     },
     {
-      "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0020",
-      "section_id": "S-1",
-      "tags": [
-        "scope"
-      ],
-      "text": "Projects may mix small amounts of other agricultural wastes, but emission reductions may only reflect manure."
-    },
-    {
-      "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0030",
+      "id": "R-1-0030",
       "section_id": "S-3",
       "tags": [
-        "additionality"
+        "eligibility"
       ],
       "text": "Demonstrate additionality using TOOL21 or by showing no regulation requires household methane recovery."
     },
     {
-      "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0040",
+      "id": "R-1-0040",
       "section_id": "S-4",
       "tags": [
-        "calculation"
+        "calc"
       ],
       "text": "Baseline methane emissions follow Equation (13) using animal populations, volatile solids, B0 and MCF values."
     },
     {
-      "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0050",
+      "id": "R-1-0050",
       "section_id": "S-4",
       "tags": [
-        "calculation"
+        "calc"
       ],
       "text": "Project emissions must account for methane losses, fossil fuels and electricity use via TOOL14, TOOL03 and TOOL05."
     },
     {
-      "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0060",
+      "id": "R-1-0060",
       "section_id": "S-5",
       "tags": [
         "leakage"
@@ -57,20 +65,12 @@
       "text": "Assess leakage from shifts in biomass fuels, manure use and transport via TOOL22 and SSC sampling standards."
     },
     {
-      "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0070",
+      "id": "R-1-0070",
       "section_id": "S-6",
       "tags": [
         "monitoring"
       ],
       "text": "Monitor all parameters in Table 6.1 and maintain documented O&M and rehabilitation services for every digester."
-    },
-    {
-      "id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0080",
-      "section_id": "S-1",
-      "tags": [
-        "eligibility"
-      ],
-      "text": "Aggregated emission reductions across all included systems must remain ≤60 kt CO2e per year."
     }
   ]
 }
