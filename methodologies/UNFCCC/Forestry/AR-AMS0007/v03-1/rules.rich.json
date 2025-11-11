@@ -91,7 +91,7 @@
       ],
       "tools": [
         "UNFCCC/AR-AMS0007@v03-1",
-        "UNFCCC/AR-TOOL08@v4.0.0"
+        "UNFCCC/AR-TOOL08@v04.0.0"
       ]
     },
     "summary": "Project removals calculated from pool carbon stock changes minus emissions from project operations.",
@@ -114,7 +114,7 @@
       ],
       "tools": [
         "UNFCCC/AR-AMS0007@v03-1",
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-TOOL14@v04.2"
       ]
     },
     "summary": "Leakage from displaced wetland uses monitored and deducted using Tool 14 defaults.",
@@ -134,7 +134,7 @@
       ],
       "tools": [
         "UNFCCC/AR-AMS0007@v03-1",
-        "UNFCCC/AR-TOOL16@v1.1.0"
+        "UNFCCC/AR-TOOL16@v01.1.0"
       ]
     },
     "summary": "Monitoring plan covers hydrology restoration, vegetation plots, and participant reporting.",
@@ -154,7 +154,7 @@
       ],
       "tools": [
         "UNFCCC/AR-AMS0007@v03-1",
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-TOOL14@v04.2"
       ]
     },
     "summary": "Data tables specify default biomass factors, hydrological parameters, and monitoring records.",
@@ -176,7 +176,7 @@
       ],
       "tools": [
         "UNFCCC/AR-AMS0007@v03-1",
-        "UNFCCC/AR-TOOL12@v3.1"
+        "UNFCCC/AR-TOOL12@v03.1"
       ]
     },
     "summary": "Uncertainty analysis follows Tool 12 with deductions when precision thresholds unmet.",
@@ -196,7 +196,7 @@
       ],
       "tools": [
         "UNFCCC/AR-AMS0007@v03-1",
-        "UNFCCC/AR-TOOL15@v2.0"
+        "UNFCCC/AR-TOOL15@v02.0"
       ]
     },
     "summary": "Permanence buffer contributions determined via Tool 15 wetland risk factors.",
@@ -239,7 +239,7 @@
       ],
       "tools": [
         "UNFCCC/AR-AMS0007@v03-1",
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-TOOL14@v04.2"
       ]
     },
     "summary": "Annualized carbon stock change derived from difference in pool carbon divided by measurement interval.",
