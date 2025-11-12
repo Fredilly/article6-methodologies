@@ -1,2 +1,50 @@
 version: 2
 methods:
+  - id: UNFCCC.Agriculture.ACM0010
+    version: v03-0
+    sector: Agriculture
+    source_page: "https://cdm.unfccc.int/methodologies/DB/66DCX9DCDE8UFYYIHJEY5NRPAA8WNE"
+    pdf_url: "https://cdm.unfccc.int/UserManagement/FileStorage/CDMWF_AM_Q7IHTIXMRJGZK38H6D0YX6M8923067"
+    include_text:
+      - "tool"
+    exclude_text:
+      - "Word"
+      - "Clarification"
+      - "meeting"
+      - "panel"
+  - id: UNFCCC.Agriculture.AM0073
+    version: v01-0
+    sector: Agriculture
+    source_page: "https://cdm.unfccc.int/methodologies/DB/2N19WQ6DCXNYRNJVZQQOHG7TK0Q2D8"
+    pdf_url: "https://cdm.unfccc.int/UserManagement/FileStorage/CDMWF_AM_8CTM5MFZLTDO7SZK1A6D7AK3YPIG7S"
+    include_text:
+      - "tool"
+    exclude_text:
+      - "Word"
+      - "Clarification"
+      - "meeting"
+      - "panel"
+  - id: UNFCCC.Agriculture.AMS-III.D
+    version: v21-0
+    sector: Agriculture
+    source_page: "https://cdm.unfccc.int/methodologies/DB/H9DVSB24O7GEZQYLYNWUX23YS6G4RC"
+    pdf_url: "https://cdm.unfccc.int/UserManagement/FileStorage/1AWXEKHVTYF423LCN56Z9GIMQOS8JR"
+    include_text:
+      - "tool"
+    exclude_text:
+      - "Word"
+      - "Clarification"
+      - "meeting"
+      - "panel"
+  - id: UNFCCC.Agriculture.AMS-III.R
+    version: v05-0
+    sector: Agriculture
+    source_page: "https://cdm.unfccc.int/methodologies/DB/Q8EMKMK67G1XIUKJFED8EVFL2VH1SN"
+    pdf_url: "https://cdm.unfccc.int/UserManagement/FileStorage/TKU2CSMPLH3WEQ0D6GNBY5O74XRZ1V"
+    include_text:
+      - "tool"
+    exclude_text:
+      - "Word"
+      - "Clarification"
+      - "meeting"
+      - "panel"

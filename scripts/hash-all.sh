@@ -30,7 +30,18 @@ tool_digest() {
 repo_commit=$(git rev-parse HEAD)
 scripts_manifest_sha=$(./scripts/hash-scripts.sh)
 
-find methodologies -name META.json | sort | while read -r meta_file; do
+SCOPE_SPEC="${HASH_SCOPE:-methodologies}"
+IFS=':' read -r -a SCOPE_PARTS <<<"$SCOPE_SPEC"
+FIND_ROOTS=()
+for root in "${SCOPE_PARTS[@]}"; do
+  [ -z "${root// }" ] && continue
+  if [ -d "$root" ]; then
+    FIND_ROOTS+=("$root")
+  fi
+done
+[ ${#FIND_ROOTS[@]} -eq 0 ] && FIND_ROOTS=("methodologies")
+
+find "${FIND_ROOTS[@]}" -name META.json | sort | while read -r meta_file; do
   dir=$(dirname "$meta_file")
 case "$dir" in
     *"/previous/"*)

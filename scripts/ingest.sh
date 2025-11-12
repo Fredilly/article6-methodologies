@@ -167,18 +167,22 @@ for i in "${method_indexes[@]}"; do
   IFS='.' read -r -a id_parts <<<"$id"
   org="${id_parts[0]}"
   id_sector="${id_parts[1]:-}"
-  method="${id_parts[${#id_parts[@]}-1]}"
-   # method slug for rule ids should collapse any remaining dots into dashes
-  method_slug="${id_parts[2]:-}"
-  if [ "${#id_parts[@]}" -gt 3 ]; then
-    for slug_part in "${id_parts[@]:3}"; do
-      method_slug="${method_slug}-${slug_part}"
+  method_parts=("${id_parts[@]:2}")
+  method="${method_parts[0]:-}"
+  if [ "${#method_parts[@]}" -gt 1 ]; then
+    for part in "${method_parts[@]:1}"; do
+      if [ -n "$method" ]; then
+        method="${method}.${part}"
+      else
+        method="$part"
+      fi
     done
   fi
+  method_slug="${method//./-}"
   if [ -z "$method_slug" ]; then
     method_slug="${method}"
   fi
-  rest_path="$(echo "$id" | tr '.' '/')"
+  rest_path="${org}/${id_sector}/${method}"
   dest_dir="methodologies/${rest_path}/${ver}"
   tools_dir="tools/${org}/${method}/${ver}"
   if [ "$DRY_RUN" = "0" ]; then

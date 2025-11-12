@@ -4,6 +4,17 @@ set -euo pipefail
 need() { command -v "$1" >/dev/null || { echo "Missing: $1"; exit 1; }; }
 need jq
 
+SCOPE_SPEC="${LEAN_SCOPE:-methodologies}"
+IFS=':' read -r -a SCOPE_PARTS <<<"$SCOPE_SPEC"
+FIND_ROOTS=()
+for root in "${SCOPE_PARTS[@]}"; do
+  [ -z "${root// }" ] && continue
+  if [ -d "$root" ]; then
+    FIND_ROOTS+=("$root")
+  fi
+done
+[ ${#FIND_ROOTS[@]} -eq 0 ] && FIND_ROOTS=("methodologies")
+
 while IFS= read -r -d '' meta; do
   dir="$(dirname "$meta")"
   if [[ -f "$dir/sections.rich.json" ]]; then
@@ -49,6 +60,6 @@ while IFS= read -r -d '' meta; do
       {rules: (pick_rules | map(normalize_rule))}
     ' "$dir/rules.rich.json" | jq -S . > "$dir/rules.json"
   fi
-done < <(find methodologies -type f -name META.json -print0)
+done < <(find "${FIND_ROOTS[@]}" -type f -name META.json -print0)
 
 echo "[ok] derive-lean complete"
