@@ -122,39 +122,6 @@ function quote(str) {
   return `"${str.replace(/\"/g, '\\"')}"`;
 }
 
-function normalizeProgram(value) {
-  if (!value) return '';
-  const lower = value.toLowerCase();
-  return lower.charAt(0).toUpperCase() + lower.slice(1);
-}
-
-function canonicalizeMethod(method, index) {
-  const out = { ...method };
-  const rawId = normalizeId(out.id || '');
-  if (!rawId) return out;
-  const parts = rawId.split('.');
-  if (!parts[0]) {
-    console.warn(`[resolve-ingest] method[${index}] missing org segment in id: ${rawId}`);
-    return out;
-  }
-  parts[0] = parts[0].toUpperCase();
-
-  if (parts[0] === 'UNFCCC') {
-    if (parts.length === 2 && out.sector) {
-      parts.splice(1, 0, normalizeProgram(out.sector));
-    } else if (parts.length >= 2) {
-      parts[1] = normalizeProgram(parts[1]);
-    }
-    if (parts.length >= 3) {
-      const code = parts.slice(2).join('.');
-      parts.length = 3;
-      parts[2] = code.toUpperCase();
-    }
-  }
-  out.id = parts.join('.');
-  return out;
-}
-
 function dumpYaml(doc) {
   const lines = [];
   lines.push(`version: ${doc.version}`);
@@ -292,7 +259,6 @@ async function collectIdsFromProject() {
   if (!fs.existsSync(INGEST_IN)) throw new Error(`input file ${INGEST_IN} not found`);
 
   const full = parseYaml(fs.readFileSync(INGEST_IN, 'utf8'));
-  full.methods = full.methods.map((method, index) => canonicalizeMethod(method, index));
 
   let ids = [];
   if (SRC === 'issue' && ISSUE) ids = await collectIdsFromIssue();
