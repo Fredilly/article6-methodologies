@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import { spawnSync } from 'node:child_process';
-import fs from 'node:fs';
-import os from 'node:os';
-import path from 'node:path';
+const { spawnSync } = require('node:child_process');
+const fs = require('node:fs');
+const os = require('node:os');
+const path = require('node:path');
 
-const repoRoot = path.resolve(new URL('.', import.meta.url).pathname, '..');
+const repoRoot = path.resolve(__dirname, '..');
 const fixturesRoot = path.join(repoRoot, 'tests', 'fixtures', 'forestry-gold');
 const manifestPath = path.join(fixturesRoot, 'manifest.json');
 
@@ -21,7 +21,7 @@ const copyDir = (src, dest) => {
 };
 
 const backupPaths = (rootDir, relPaths = []) =>
-  relPaths
+  (relPaths || [])
     .map((rel) => {
       const target = path.join(repoRoot, rootDir, rel);
       if (!fs.existsSync(target)) {
@@ -43,8 +43,8 @@ const restorePaths = (entries = []) => {
   });
 };
 
-const methodologyBackups = backupPaths('methodologies', manifest.methodologies || []);
-const toolBackups = backupPaths('tools', manifest.tools || []);
+const methodologyBackups = backupPaths('methodologies', manifest.methodologies);
+const toolBackups = backupPaths('tools', manifest.tools);
 
 let restored = false;
 const cleanup = () => {
@@ -79,7 +79,7 @@ try {
   run('npm', ['run', 'ingest:full', '--', ingestFile]);
 
   const compareDirs = (rootDir, relPaths = []) => {
-    relPaths.forEach((rel) => {
+    (relPaths || []).forEach((rel) => {
       const fixtureDir = path.join(fixturesRoot, rootDir, rel);
       const targetDir = path.join(repoRoot, rootDir, rel);
       if (!fs.existsSync(fixtureDir)) {
@@ -96,8 +96,8 @@ try {
     });
   };
 
-  compareDirs('methodologies', manifest.methodologies || []);
-  compareDirs('tools', manifest.tools || []);
+  compareDirs('methodologies', manifest.methodologies);
+  compareDirs('tools', manifest.tools);
 } finally {
   cleanup();
 }
