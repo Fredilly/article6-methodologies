@@ -1,75 +1,85 @@
 {
+  "audit": {
+    "created_at": "2025-11-06T10:03:00Z",
+    "created_by": "ingest.sh"
+  },
   "audit_hashes": {
     "rules_json_sha256": "a776d453fc53c9888587d67597528200d327db2f1de4b21359711efff9a11afc",
     "sections_json_sha256": "80a90d64d3f6ba202560d8f50d8243140a2f982157060e43d181f8a7860f690e",
     "source_pdf_sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9"
   },
   "automation": {
-    "repo_commit": "76f10df86e48ddcf29959ce96c8d66a03445b7d1",
-    "scripts_manifest_sha256": "38838ca873f781550ca16ab91f1c8aa7ac7020383bd17e9fea1bee39b810ec19"
+    "repo_commit": "6a14b9c0ed0b6b285477170eb70d537b2894484f",
+    "scripts_manifest_sha256": "be663f1e0defe7423eb2c36be77a425a8cb7b15037e7e50c45d4b5ec13380b91"
   },
+  "id": "UNFCCC.Forestry.AR-AMS0007",
   "provenance": {
-    "author": "Fred Egbuedike",
-    "date": "2025-08-29T17:46:02.000Z",
+    "author": "Codex Ingest",
+    "date": "2025-11-06T10:03:00Z",
     "source_pdfs": [
       {
         "kind": "pdf",
         "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/source.pdf",
-        "sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9"
+        "sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9",
+        "size": 209654
       }
     ]
   },
   "references": {
     "tools": [
       {
-        "doc": "UNFCCC/AR-TOOL08@v04.0.0",
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-08-v04.0.0.pdf",
-        "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397",
-        "size": 263864,
-        "url": null
-      },
-      {
-        "doc": "UNFCCC/AR-TOOL12@v03.1",
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-12-v03.1.pdf",
-        "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4",
-        "size": 275971,
-        "url": null
-      },
-      {
-        "doc": "UNFCCC/AR-TOOL14@v04.2",
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-14-v04.2.pdf",
-        "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
-        "size": 691428,
-        "url": null
-      },
-      {
-        "doc": "UNFCCC/AR-TOOL15@v02.0",
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-15-v02.0.pdf",
-        "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29",
-        "size": 1008516,
-        "url": null
-      },
-      {
-        "doc": "",
-        "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-16-v01.1.0.pdf",
-        "sha256": "edc718dba7eb097092907553f849c10a36e91a3b4199677ccf4a78748a92f8de",
-        "size": 255568,
-        "kind": "pdf",
-        "url": null
-      },
-      {
         "doc": "UNFCCC/AR-AMS0007@v03-1",
         "kind": "pdf",
         "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/source.pdf",
         "sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9",
         "size": 209654,
-        "url": null
+        "url": "https://cdm.unfccc.int/UserManagement/FileStorage/G7D639YWI0K1JBECMX84FH2TLNSVPO"
+      },
+      {
+        "doc": "UNFCCC/AR-AM-TOOL-08@v04.0.0",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-08-v04.0.0.pdf",
+        "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397",
+        "size": 263864,
+        "url": "https://cdm.unfccc.int/methodologies/ARmethodologies/tools/ar-am-tool-08-v4.0.0.pdf"
+      },
+      {
+        "doc": "UNFCCC/AR-AM-TOOL-12@v03.1",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-12-v03.1.pdf",
+        "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4",
+        "size": 275971,
+        "url": "https://cdm.unfccc.int/methodologies/ARmethodologies/tools/ar-am-tool-12-v3.1.pdf"
+      },
+      {
+        "doc": "UNFCCC/AR-AM-TOOL-14@v04.2",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-14-v04.2.pdf",
+        "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
+        "size": 691428,
+        "url": "https://cdm.unfccc.int/methodologies/ARmethodologies/tools/ar-am-tool-14-v4.2.pdf"
+      },
+      {
+        "doc": "UNFCCC/AR-AM-TOOL-15@v02.0",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-15-v02.0.pdf",
+        "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29",
+        "size": 1008516,
+        "url": "https://cdm.unfccc.int/methodologies/ARmethodologies/tools/ar-am-tool-15-v2.0.pdf"
+      },
+      {
+        "doc": "UNFCCC/AR-AM-TOOL-16@v01.1.0",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-16-v01.1.0.pdf",
+        "sha256": "edc718dba7eb097092907553f849c10a36e91a3b4199677ccf4a78748a92f8de",
+        "size": 255568,
+        "url": "https://cdm.unfccc.int/methodologies/ARmethodologies/tools/ar-am-tool-16-v1.1.0.pdf"
       }
     ]
   },
-  "stage": "staging"
+  "sector": "Forestry",
+  "source_page": "https://cdm.unfccc.int/methodologies/DB/J6ZHLX1C3AEMSZ52PWIII6D2AOJZUB",
+  "stage": "staging",
+  "status": "draft",
+  "version": "v03-1"
 }

@@ -1,2 +1,21 @@
 version: 2
 methods:
+  - id: UNFCCC.Forestry.AR-AMS0007
+    version: v03-1
+    sector: Forestry
+    source_page: "https://cdm.unfccc.int/methodologies/DB/J6ZHLX1C3AEMSZ52PWIII6D2AOJZUB"
+    pdf_url: "https://cdm.unfccc.int/UserManagement/FileStorage/G7D639YWI0K1JBECMX84FH2TLNSVPO"
+    include_text: []
+    exclude_text:
+      - glossary
+      - booklet
+  - id: UNFCCC.Agriculture.AMS-III.D
+    version: v21-0
+    sector: Agriculture
+    source_page: "https://cdm.unfccc.int/methodologies/DB/H9DVSB24O7GEZQYLYNWUX23YS6G4RC"
+    pdf_url: "https://cdm.unfccc.int/UserManagement/FileStorage/1AWXEKHVTYF423LCN56Z9GIMQOS8JR"
+    include_text: []
+    exclude_text:
+      - glossary
+      - booklet
+      - methane recovery

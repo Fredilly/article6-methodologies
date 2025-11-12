@@ -61,11 +61,15 @@ infer_tool_doc() {
   local stem="${base##*/}"
   stem="${stem%.pdf}"
   local doc=""
-  if [[ "$stem" =~ ^(.+?)-v([0-9][0-9.]+)$ ]]; then
-    local slug="${BASH_REMATCH[1]}"
-    local version="${BASH_REMATCH[2]}"
-    slug="$(echo "$slug" | tr '[:lower:]' '[:upper:]')"
-    doc="${org}/${slug}@v${version}"
+  if [[ "$stem" == *-v* ]]; then
+    local slug="${stem%-v*}"
+    local version="${stem##*-v}"
+    if [[ "$version" =~ ^[0-9][0-9.]*$ ]]; then
+      slug="$(echo "$slug" | tr '[:lower:]' '[:upper:]')"
+      doc="${org}/${slug}@v${version}"
+    else
+      doc="$fallback"
+    fi
   else
     doc="$fallback"
   fi
@@ -188,6 +192,7 @@ if [ -f scripts_manifest.json ]; then
 else
   SCRIPTS_MANIFEST_SHA=""
 fi
+INGEST_STAGE="${INGEST_STAGE:-staging}"
 
 method_count="$(yq '.methods | length' "$INGEST_FILE")"
 if ! [[ "$method_count" =~ ^[0-9]+$ ]]; then
@@ -224,19 +229,27 @@ for i in "${method_indexes[@]}"; do
   IFS='.' read -r -a id_parts <<<"$id"
   org="${id_parts[0]}"
   id_sector="${id_parts[1]:-}"
-  method="${id_parts[${#id_parts[@]}-1]}"
+  program="${id_parts[1]:-}"
+  code_parts=("${id_parts[@]:2}")
+  if [ "${#code_parts[@]}" -eq 0 ]; then
+    echo "[ingest] $id missing code segment" >&2
+    exit 1
+  fi
+  code="${code_parts[0]}"
+  if [ "${#code_parts[@]}" -gt 1 ]; then
+    for part in "${code_parts[@]:1}"; do
+      code="${code}.${part}"
+    done
+  fi
+  method="$code"
    # method slug for rule ids should collapse any remaining dots into dashes
-  method_slug="${id_parts[2]:-}"
-  if [ "${#id_parts[@]}" -gt 3 ]; then
-    for slug_part in "${id_parts[@]:3}"; do
+  method_slug="${code_parts[0]}"
+  if [ "${#code_parts[@]}" -gt 1 ]; then
+    for slug_part in "${code_parts[@]:1}"; do
       method_slug="${method_slug}-${slug_part}"
     done
   fi
-  if [ -z "$method_slug" ]; then
-    method_slug="${method}"
-  fi
-  rest_path="$(echo "$id" | tr '.' '/')"
-  program="${id_parts[1]:-}"
+  rest_path="${org}/${program}/${code}"
   if [ "$org" = "UNFCCC" ] && [ -z "$program" ]; then
     if [ -n "$sector" ]; then
       program="$(printf '%s' "$sector" | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')"
@@ -251,9 +264,9 @@ for i in "${method_indexes[@]}"; do
       echo "[ingest] $id path must include program folder (expected UNFCCC/${program}/...)" >&2
       exit 1
     fi
-    tools_dir="tools/${org}/${program}/${method}/${ver}"
+    tools_dir="tools/${org}/${program}/${code}/${ver}"
   else
-    tools_dir="tools/${org}/${method}/${ver}"
+    tools_dir="tools/${org}/${code}/${ver}"
   fi
   dest_dir="methodologies/${rest_path}/${ver}"
   pdf_rel_path="${tools_dir}/source.pdf"
@@ -339,6 +352,13 @@ PY
     fi
     pdf_sha="$(sha256 "$pdf_path")"
     pdf_size="$(file_size "$pdf_path")"
+    pdf_cache_meta=""
+    if [ -n "${pdf_url:-}" ]; then
+      cache_meta_path="$(cache_path_for_url "$pdf_url").meta"
+      if [ -f "$cache_meta_path" ]; then
+        pdf_cache_meta="$(jq -r '.fetched_at // empty' "$cache_meta_path" 2>/dev/null || true)"
+      fi
+    fi
     append_tool_reference "$method_doc" "$pdf_rel_path" "$pdf_sha" "$pdf_size" "${pdf_url:-}"
   fi
 
@@ -351,13 +371,17 @@ PY
 
   # build filters
   includes=()
-  for j in $(seq 0 $((include_count-1))); do
-    includes+=("$(yq -r ".methods[$i].include_text[$j]" "$INGEST_FILE")")
-  done
+  if [ "$include_count" -gt 0 ]; then
+    for j in $(seq 0 $((include_count-1))); do
+      includes+=("$(yq -r ".methods[$i].include_text[$j]" "$INGEST_FILE")")
+    done
+  fi
   excludes=()
-  for j in $(seq 0 $((exclude_count-1))); do
-    excludes+=("$(yq -r ".methods[$i].exclude_text[$j]" "$INGEST_FILE")")
-  done
+  if [ "$exclude_count" -gt 0 ]; then
+    for j in $(seq 0 $((exclude_count-1))); do
+      excludes+=("$(yq -r ".methods[$i].exclude_text[$j]" "$INGEST_FILE")")
+    done
+  fi
 
   # select tool links by visible text
   # we keep links with any include match, then drop those with any exclude match, and that end with .pdf
@@ -404,7 +428,23 @@ PY
     for item in "${save_tools[@]}"; do
       t="$(jq -r '.text' <<<"$item")"
       u="$(jq -r '.url' <<<"$item")"
-      fname="$(echo "$t" | tr -cs '[:alnum:]_+.-' '-' | sed 's/^-*//; s/-*$//' ).pdf"
+      base_url="${u%%\?*}"
+      fname="$(basename "$base_url")"
+      if [ -z "$fname" ]; then
+        fname="$(echo "$t" | tr -cs '[:alnum:]_+.-' '-' | sed 's/^-*//; s/-*$//').pdf"
+      fi
+      stem_guess="${fname%.pdf}"
+      if [[ "$stem_guess" == *-v* ]]; then
+        slug_guess="${stem_guess%-v*}"
+        version_raw="${stem_guess##*-v}"
+        if [[ "$version_raw" =~ ^([0-9]+)(.*)$ ]]; then
+          version_norm=$(printf '%02d' "${BASH_REMATCH[1]}")"${BASH_REMATCH[2]}"
+        else
+          version_norm="$version_raw"
+        fi
+        slug_norm="$(echo "$slug_guess" | tr '[:upper:]' '[:lower:]')"
+        fname="${slug_norm}-v${version_norm}.pdf"
+      fi
       out="$tools_dir/$fname"
       echo " - $t"
       if [ "$DRY_RUN" = "1" ]; then
@@ -438,8 +478,13 @@ PY
     placeholder_section="S-0000"
     placeholder_rule="${org}.${id_sector}.${method_slug}.${ver}.R-0-0000"
 
-    # schema-compliant placeholders to keep gates green until rich extraction lands
-    cat <<JSON > "$sections"
+    placeholder_section="S-0000"
+    placeholder_rule="${org}.${id_sector}.${method_slug}.${ver}.R-0-0000"
+
+    if [ -f "$sections" ]; then
+      sections_sha="$(sha256 "$sections")"
+    else
+      cat <<JSON > "$sections"
 {
   "sections": [
     {
@@ -451,8 +496,13 @@ PY
   ]
 }
 JSON
+      sections_sha="$(sha256 "$sections")"
+    fi
 
-    cat <<JSON > "$rules"
+    if [ -f "$rules" ]; then
+      rules_sha="$(sha256 "$rules")"
+    else
+      cat <<JSON > "$rules"
 {
   "rules": [
     {
@@ -462,8 +512,11 @@ JSON
   ]
 }
 JSON
+      rules_sha="$(sha256 "$rules")"
+    fi
 
-    cat <<JSON > "$rules_rich"
+    if [ ! -f "$rules_rich" ]; then
+      cat <<JSON > "$rules_rich"
 [
   {
     "id": "$placeholder_rule",
@@ -478,8 +531,14 @@ JSON
   }
 ]
 JSON
-    sections_sha="$(sha256 "$sections")"
-    rules_sha="$(sha256 "$rules")"
+    fi
+
+    if [ ! -f "$rules_rich" ]; then
+      :
+    fi
+
+    [ -z "${sections_sha:-}" ] && sections_sha="$(sha256 "$sections")"
+    [ -z "${rules_sha:-}" ] && rules_sha="$(sha256 "$rules")"
 
     if [ -z "$pdf_sha" ]; then
       echo "[ingest] missing pdf hash for $pdf_rel_path" >&2
@@ -505,7 +564,7 @@ JSON
     fi
 
     author="${INGEST_AUTHOR:-$AUTHOR_FALLBACK}"
-    created_at="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+    created_at="${pdf_cache_meta:-$(date -u +%Y-%m-%dT%H:%M:%SZ)}"
 
     TOOL_REFS_JSON="$tool_refs_json" \
     SOURCE_PDFS_JSON="$source_pdfs_json" \
@@ -520,6 +579,7 @@ JSON
     INGEST_RULES_SHA="$rules_sha" \
     INGEST_AUTOMATION_COMMIT="$REPO_COMMIT" \
     INGEST_AUTOMATION_SCRIPTS_SHA="$SCRIPTS_MANIFEST_SHA" \
+    INGEST_STAGE_VALUE="$INGEST_STAGE" \
     python3 - "$meta" <<'PY'
 import json
 import os
@@ -543,6 +603,7 @@ meta = {
     "sector": os.environ.get("INGEST_META_SECTOR", ""),
     "source_page": os.environ.get("INGEST_META_PAGE", ""),
     "status": "draft",
+    "stage": os.environ.get("INGEST_STAGE_VALUE", "staging"),
     "references": {
         "tools": tool_refs
     },
@@ -576,7 +637,9 @@ PY
 
   # validate + commit
   if [ "$RUN_VALIDATE" = "1" ]; then
-    [ -x ./scripts/json-canonical-check.sh ] && ./scripts/json-canonical-check.sh --fix || true
+    if [ -x ./scripts/json-canonical-check.sh ]; then
+      ./scripts/json-canonical-check.sh --fix "$meta" "$sections" "$rules" "$rules_rich" || true
+    fi
     npm run -s validate:lean || true
   fi
   if [ "$AUTO_COMMIT" = "1" ] && [ "$DRY_RUN" = "0" ]; then

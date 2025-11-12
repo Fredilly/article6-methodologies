@@ -1,9 +1,19 @@
 {
   "files": [
     {
+      "path": "README.md",
+      "sha256": "2197418cb2d4f2e787e0a9cd66a5a9c144662640927e756d6ab2746c8956d724",
+      "bytes": 1080
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "8e2a8502a21697f3868265a444b9bac314911e42907181a1a226648af0c91910",
+      "bytes": 2902
+    },
+    {
       "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/META.json",
-      "sha256": "0aef50f6cbcfe904a3fc56ca45fe2e166b040c6ffdc399bcb612f7775ce29881",
-      "bytes": 2604
+      "sha256": "b62853571b97dd5ed45e0b16048458ae16430c786bd72bf49ac0b182252b3505",
+      "bytes": 3429
     },
     {
       "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.rich.json",
