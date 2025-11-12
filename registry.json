@@ -10,16 +10,6 @@
     "latest": true
   },
   {
-    "kind": "active",
-    "standard": "UNFCCC",
-    "program": "Agriculture",
-    "code": "AMS-III.D",
-    "version": "21.0",
-    "path": "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0",
-    "stage": "staging",
-    "latest": true
-  },
-  {
     "kind": "previous",
     "standard": "UNFCCC",
     "program": "Forestry",
