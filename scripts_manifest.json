@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-11-11T07:46:03Z",
-  "git_commit": "76f10df86e48ddcf29959ce96c8d66a03445b7d1",
+  "generated_at": "2025-11-12T09:54:47Z",
+  "git_commit": "6a14b9c0ed0b6b285477170eb70d537b2894484f",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
@@ -32,7 +32,7 @@
     { "path": "scripts/gen-registry.js", "sha256": "f5f5f90a1543dfd87f3b802a22d7af61493a87abca50a929c8e0005b4aea6479" },
     { "path": "scripts/hash-all.sh", "sha256": "cf28b17e76778cafee7e0b4cec69f9b00934160938c5d119a9366b3842519e06" },
     { "path": "scripts/hash-scripts.sh", "sha256": "ee774cb19ed6f38c8edaeaa048d008e8759d512438946f7740ff79f79a7071a3" },
-    { "path": "scripts/ingest.sh", "sha256": "df710c9196d0073d2bbf582b13aaee86829fc47638e4c8dae8f5e36ebded5d20" },
+    { "path": "scripts/ingest.sh", "sha256": "b6adfdf02a6827431d3c59366c9f0c59619d4f6d552c8f83360ef150245477ff" },
     { "path": "scripts/inject-anchors.js", "sha256": "0541bc16ebc87a2cb54c2b8b251e96d64512a6e8607ed70948195af4f6fc2953" },
     { "path": "scripts/install-hooks.sh", "sha256": "fcd91a8dc76ea68cf703f388c0fc99282f8cefacd30e348ca27a238049123ac3" },
     { "path": "scripts/install-vendored-ajv.sh", "sha256": "58d98426bb0dc94f73e53d535495d629df276e876534ffb2d8227557f4ccfc2c" },
@@ -52,7 +52,7 @@
     { "path": "scripts/py/extract_rules.py", "sha256": "6e57781f4c1f57d4e46a3c1df35f19a9680048fc19833a812461da385736231e" },
     { "path": "scripts/py/extract_sections.py", "sha256": "c419e385956a8e1cd960a4d2e6352ffbd49132195b6447ac220102a63b4a0b2a" },
     { "path": "scripts/require-vendor-ajv.sh", "sha256": "fc58376b1e5dfb4c1cf4a22cbcf574c151e58ec90222c32144a018fc98f02389" },
-    { "path": "scripts/resolve-ingest-scope.mjs", "sha256": "c9146f4fbea6ca3c94f12aef5dd92ad8d6a23834f0fa7f8312f4319c8e9689d8" },
+    { "path": "scripts/resolve-ingest-scope.mjs", "sha256": "3f29ed453aba8a452b37c4757a5709ea3098c89e0eb7ba3b53f84f4589539b56" },
     { "path": "scripts/rewrite-forestry.js", "sha256": "9fc4a2aa94ea514b462db037ae514246edde43b287494e61a11871b568b06908" },
     { "path": "scripts/run-ajv.sh", "sha256": "fa3e40b945144c9f8dda93f44f6c00f2e404475a3074a7bc5cf450a4e38ffe0f" },
     { "path": "scripts/scaffold-method.js", "sha256": "bac5757661dd49c2dc48ba3811170e98f7dc94acc5d28573614d72e54168204e" },
