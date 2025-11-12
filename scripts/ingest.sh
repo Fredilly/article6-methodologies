@@ -46,6 +46,55 @@ hash_string() {
   fi
 }
 
+file_size() {
+  python3 - "$1" <<'PY'
+import os, sys
+path = sys.argv[1]
+print(os.path.getsize(path) if os.path.exists(path) else 0)
+PY
+}
+
+infer_tool_doc() {
+  local base="$1"
+  local org="$2"
+  local fallback="$3"
+  local stem="${base##*/}"
+  stem="${stem%.pdf}"
+  local doc=""
+  if [[ "$stem" =~ ^(.+?)-v([0-9][0-9.]+)$ ]]; then
+    local slug="${BASH_REMATCH[1]}"
+    local version="${BASH_REMATCH[2]}"
+    slug="$(echo "$slug" | tr '[:lower:]' '[:upper:]')"
+    doc="${org}/${slug}@v${version}"
+  else
+    doc="$fallback"
+  fi
+  printf '%s\n' "$doc"
+}
+
+append_tool_reference() {
+  [ -z "${tool_refs_tmp:-}" ] && return 0
+  local doc="$1"
+  local path="$2"
+  local sha="$3"
+  local size="${4:-0}"
+  local url="${5:-}"
+  jq -n \
+    --arg doc "$doc" \
+    --arg path "$path" \
+    --arg sha "$sha" \
+    --arg url "$url" \
+    --argjson size "$size" \
+    '{
+      doc:$doc,
+      kind:"pdf",
+      path:$path,
+      sha256:$sha,
+      size:$size,
+      url: (if ($url | length) == 0 then null else $url end)
+    }' >> "$tool_refs_tmp"
+}
+
 cache_path_for_url() {
   local url="$1"
   local key base ext dir
@@ -132,6 +181,14 @@ need python3
 INGEST_FILE="${INGEST_FILE:-ingest.yml}"
 test -f "$INGEST_FILE" || { echo "No $INGEST_FILE"; exit 1; }
 
+AUTHOR_FALLBACK="$(git config user.name 2>/dev/null || echo 'Codex Ingest')"
+REPO_COMMIT="$(git rev-parse HEAD 2>/dev/null || echo '')"
+if [ -f scripts_manifest.json ]; then
+  SCRIPTS_MANIFEST_SHA="$(sha256 scripts_manifest.json)"
+else
+  SCRIPTS_MANIFEST_SHA=""
+fi
+
 method_count="$(yq '.methods | length' "$INGEST_FILE")"
 if ! [[ "$method_count" =~ ^[0-9]+$ ]]; then
   echo "[ingest] unable to determine method count from $INGEST_FILE" >&2
@@ -179,10 +236,36 @@ for i in "${method_indexes[@]}"; do
     method_slug="${method}"
   fi
   rest_path="$(echo "$id" | tr '.' '/')"
+  program="${id_parts[1]:-}"
+  if [ "$org" = "UNFCCC" ] && [ -z "$program" ]; then
+    if [ -n "$sector" ]; then
+      program="$(printf '%s' "$sector" | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')"
+    fi
+  fi
+  if [ "$org" = "UNFCCC" ]; then
+    if [ -z "$program" ]; then
+      echo "[ingest] $id missing <Program> segment (expected UNFCCC.<Program>.<Code>)" >&2
+      exit 1
+    fi
+    if ! [[ "$rest_path" =~ ^UNFCCC/${program}/ ]]; then
+      echo "[ingest] $id path must include program folder (expected UNFCCC/${program}/...)" >&2
+      exit 1
+    fi
+    tools_dir="tools/${org}/${program}/${method}/${ver}"
+  else
+    tools_dir="tools/${org}/${method}/${ver}"
+  fi
   dest_dir="methodologies/${rest_path}/${ver}"
-  tools_dir="tools/${org}/${method}/${ver}"
+  pdf_rel_path="${tools_dir}/source.pdf"
+  pdf_path="$pdf_rel_path"
+  method_doc="${org}/${method}@${ver}"
+  pdf_sha=""
+  pdf_size=0
   if [ "$DRY_RUN" = "0" ]; then
     mkdir -p "$dest_dir" "$tools_dir"
+    tool_refs_tmp="$(mktemp)"
+  else
+    tool_refs_tmp=""
   fi
 
   # fetch page html (for link parsing) unless we have direct pdf_url
@@ -191,6 +274,7 @@ for i in "${method_indexes[@]}"; do
     if ! page_cache="$(ensure_cached_asset "$page")"; then
       echo "[error] failed to fetch source page for $id ($page)" >&2
       rm -f "$html_tmp"
+      if [ -n "$tool_refs_tmp" ]; then rm -f "$tool_refs_tmp"; fi
       continue
     fi
     cp "$page_cache" "$html_tmp"
@@ -208,7 +292,7 @@ PY
   fi
 
   # resolve main PDF
-  pdf_path="$tools_dir/source.pdf"
+  pdf_path="$pdf_rel_path"
   if [ -n "$pdf_url_override" ]; then
     pdf_url="$pdf_url_override"
   else
@@ -230,6 +314,7 @@ PY
       if ! ensure_cached_asset "$pdf_url" >/dev/null; then
         echo "[error] cache miss for $pdf_url" >&2
         rm -f "$html_tmp"
+        if [ -n "$tool_refs_tmp" ]; then rm -f "$tool_refs_tmp"; fi
         continue
       fi
     else
@@ -244,6 +329,17 @@ PY
       mkdir -p "$tools_dir"
       : > "$pdf_path"
     fi
+  fi
+
+  if [ "$DRY_RUN" = "0" ]; then
+    if [ ! -s "$pdf_path" ]; then
+      echo "[ingest] missing primary PDF at $pdf_path" >&2
+      rm -f "$html_tmp" "$tool_refs_tmp"
+      exit 1
+    fi
+    pdf_sha="$(sha256 "$pdf_path")"
+    pdf_size="$(file_size "$pdf_path")"
+    append_tool_reference "$method_doc" "$pdf_rel_path" "$pdf_sha" "$pdf_size" "${pdf_url:-}"
   fi
 
   # parse all links (text + href) → JSON
@@ -317,6 +413,15 @@ PY
         fi
       else
         copy_cached_asset "$u" "$out" || echo "[warn] failed to download tool PDF $u" >&2
+        if [ ! -s "$out" ]; then
+          echo "[ingest] missing tool PDF $out" >&2
+          rm -f "$html_tmp" "$tool_refs_tmp"
+          exit 1
+        fi
+        tool_sha="$(sha256 "$out")"
+        tool_size="$(file_size "$out")"
+        tool_doc="$(infer_tool_doc "$fname" "$org" "$method_doc")"
+        append_tool_reference "$tool_doc" "$out" "$tool_sha" "$tool_size" "$u"
       fi
     done
   else
@@ -330,37 +435,8 @@ PY
   rules_rich="$dest_dir/rules.rich.json"
 
   if [ "$DRY_RUN" = "0" ]; then
-    pdf_sha=""
-    [ -s "$pdf_path" ] && pdf_sha="$(sha256 "$pdf_path")"
     placeholder_section="S-0000"
     placeholder_rule="${org}.${id_sector}.${method_slug}.${ver}.R-0-0000"
-
-    pdf_rel_path="tools/${org}/${method}/${ver}/source.pdf"
-    jq -n \
-      --arg id "$id" \
-      --arg version "$ver" \
-      --arg sector "${sector:-}" \
-      --arg source_page "${page:-}" \
-      --arg pdf_sha "$pdf_sha" \
-      --arg pdf_path "$pdf_rel_path" \
-      '{
-        id:$id, version:$version, sector:$sector, source_page:$source_page,
-        status:"draft",
-        references:{
-          tools:[
-            {
-              kind:"pdf",
-              path:$pdf_path,
-              sha256:$pdf_sha
-            }
-          ]
-        },
-        audit:{ created_at:(now|todate), created_by:"ingest.sh" },
-        audit_hashes:{
-          sections_json_sha256:"",
-          rules_json_sha256:""
-        }
-      }' > "$meta"
 
     # schema-compliant placeholders to keep gates green until rich extraction lands
     cat <<JSON > "$sections"
@@ -402,6 +478,100 @@ JSON
   }
 ]
 JSON
+    sections_sha="$(sha256 "$sections")"
+    rules_sha="$(sha256 "$rules")"
+
+    if [ -z "$pdf_sha" ]; then
+      echo "[ingest] missing pdf hash for $pdf_rel_path" >&2
+      rm -f "$tool_refs_tmp"
+      exit 1
+    fi
+
+    source_pdfs_json="$(jq -n \
+      --arg kind "pdf" \
+      --arg path "$pdf_rel_path" \
+      --arg sha "$pdf_sha" \
+      --argjson size "$pdf_size" \
+      '[
+        { kind:$kind, path:$path, sha256:$sha, size:$size }
+      ]')"
+
+    if [ -n "$tool_refs_tmp" ] && [ -s "$tool_refs_tmp" ]; then
+      tool_refs_json="$(jq -s '.' "$tool_refs_tmp")"
+    else
+      echo "[ingest] references.tools missing for $id $ver" >&2
+      rm -f "$tool_refs_tmp"
+      exit 1
+    fi
+
+    author="${INGEST_AUTHOR:-$AUTHOR_FALLBACK}"
+    created_at="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+
+    TOOL_REFS_JSON="$tool_refs_json" \
+    SOURCE_PDFS_JSON="$source_pdfs_json" \
+    INGEST_META_ID="$id" \
+    INGEST_META_VERSION="$ver" \
+    INGEST_META_SECTOR="${sector:-}" \
+    INGEST_META_PAGE="${page:-}" \
+    INGEST_AUTHOR_VALUE="$author" \
+    INGEST_CREATED_AT="$created_at" \
+    INGEST_PDF_SHA="$pdf_sha" \
+    INGEST_SECTIONS_SHA="$sections_sha" \
+    INGEST_RULES_SHA="$rules_sha" \
+    INGEST_AUTOMATION_COMMIT="$REPO_COMMIT" \
+    INGEST_AUTOMATION_SCRIPTS_SHA="$SCRIPTS_MANIFEST_SHA" \
+    python3 - "$meta" <<'PY'
+import json
+import os
+import sys
+
+meta_path = sys.argv[1]
+tool_refs = json.loads(os.environ["TOOL_REFS_JSON"])
+source_pdfs = json.loads(os.environ["SOURCE_PDFS_JSON"])
+if not tool_refs:
+    raise SystemExit("references.tools is empty")
+for ref in tool_refs:
+    if not ref.get("doc"):
+        raise SystemExit("references.tools entry missing doc")
+    if not ref.get("sha256"):
+        raise SystemExit("references.tools entry missing sha256")
+if not source_pdfs:
+    raise SystemExit("provenance.source_pdfs is empty")
+meta = {
+    "id": os.environ["INGEST_META_ID"],
+    "version": os.environ["INGEST_META_VERSION"],
+    "sector": os.environ.get("INGEST_META_SECTOR", ""),
+    "source_page": os.environ.get("INGEST_META_PAGE", ""),
+    "status": "draft",
+    "references": {
+        "tools": tool_refs
+    },
+    "provenance": {
+        "author": os.environ.get("INGEST_AUTHOR_VALUE", "Codex Ingest"),
+        "date": os.environ["INGEST_CREATED_AT"],
+        "source_pdfs": source_pdfs
+    },
+    "audit": {
+        "created_at": os.environ["INGEST_CREATED_AT"],
+        "created_by": "ingest.sh"
+    },
+    "audit_hashes": {
+        "sections_json_sha256": os.environ["INGEST_SECTIONS_SHA"],
+        "rules_json_sha256": os.environ["INGEST_RULES_SHA"],
+        "source_pdf_sha256": os.environ["INGEST_PDF_SHA"]
+    },
+    "automation": {
+        "repo_commit": os.environ.get("INGEST_AUTOMATION_COMMIT", ""),
+        "scripts_manifest_sha256": os.environ.get("INGEST_AUTOMATION_SCRIPTS_SHA", "")
+    }
+}
+with open(meta_path, "w", encoding="utf-8") as fh:
+    json.dump(meta, fh, indent=2)
+    fh.write("\n")
+PY
+
+    rm -f "$tool_refs_tmp"
+    tool_refs_tmp=""
   fi
 
   # validate + commit
