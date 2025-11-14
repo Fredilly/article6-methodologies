@@ -1,0 +1,26 @@
+{
+  "name": "article6-methodologies",
+  "workspaceFolder": "/workspaces/article6-methodologies",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".devcontainer",
+    "args": {
+      "NODE_VERSION": "20"
+    }
+  },
+  "runArgs": [
+    "--init"
+  ],
+  "postCreateCommand": "git lfs install --system && git lfs install",
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}

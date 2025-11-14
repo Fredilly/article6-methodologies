@@ -23,6 +23,11 @@ See RULESET.md for conventions and CI guardrails.
 3. Commit the changes.
 4. CI validates JSON, schemas, and registry consistency.
 
+## Development Setup
+- The recommended environment is the Linux devcontainer defined in `.devcontainer/`.
+- Use VS Code’s “Reopen in Container” (or GitHub Codespaces) to get Node 20, poppler-utils, qpdf, jq, yq, git-lfs, and build-essential preinstalled.
+- See `docs/devcontainer.md` for full instructions. Native macOS/Windows setups remain optional but aren’t required for ingest work.
+
 ## Definition of Done
 - `./scripts/hash-all.sh` — updates `META.audit_hashes`, `META.automation`, and `scripts_manifest.json`.
 - `npm run validate:rich` — ensures every rich JSON conforms to the schemas before deriving lean files.
