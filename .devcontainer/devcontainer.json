@@ -1,28 +1,34 @@
 {
   "name": "article6-methodologies",
   "workspaceFolder": "/workspaces/article6-methodologies",
+
   "build": {
     "dockerfile": "Dockerfile",
-    "context": "..",
+    "context": ".devcontainer",
     "args": {
       "NODE_VERSION": "20"
     }
   },
-  "runArgs": [
-    "--init"
-  ],
+
+  // ✨ FIX: remove remoteUser, let Codespaces create the correct user
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": false,
+      "username": "automatic"
+    }
+  },
+
+  "runArgs": ["--init"],
+
   "postCreateCommand": "git lfs install --system && git lfs install",
-  "remoteUser": "vscode",
+
   "customizations": {
     "vscode": {
-      "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash"
-      },
+      "settings": {},
       "extensions": [
-        "ms-vscode.git",
-        "dbaeumer.vscode-eslint",
-        "ms-vscode.node-debug2",
-        "ms-vscode.cpptools"
+        "ms-azuretools.vscode-docker",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
       ]
     }
   }
