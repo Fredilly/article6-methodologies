@@ -16,10 +16,13 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
+        "terminal.integrated.defaultProfile.linux": "bash"
       },
       "extensions": [
-        "ms-azuretools.vscode-docker"
+        "ms-vscode.git",
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.node-debug2",
+        "ms-vscode.cpptools"
       ]
     }
   }

@@ -1,34 +1,23 @@
-FROM mcr.microsoft.com/devcontainers/base:ubuntu
+FROM mcr.microsoft.com/devcontainers/javascript-node:20
 
-ARG NODE_VERSION=20
-
-ENV DEBIAN_FRONTEND=noninteractive \
-    NODE_VERSION=${NODE_VERSION}
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-      ca-certificates \
-      build-essential \
-      curl \
       git \
       git-lfs \
       jq \
       yq \
       poppler-utils \
       qpdf \
-      unzip \
       python3 \
       python3-pip \
+      curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Node.js 20.x via NodeSource, enable Corepack for pnpm/yarn parity.
-RUN curl -fsSL "https://deb.nodesource.com/setup_${NODE_VERSION}.x" | bash - \
-    && apt-get install -y --no-install-recommends nodejs \
-    && npm install -g corepack \
-    && corepack enable \
-    && npm cache clean --force \
-    && rm -rf /var/lib/apt/lists/*
+RUN curl -Lo /usr/local/bin/pup https://github.com/ericchiang/pup/releases/download/v0.4.0/pup-linux-amd64 \
+    && chmod +x /usr/local/bin/pup
 
 RUN git lfs install --system
 
-WORKDIR /workspaces/article6-methodologies
+WORKDIR /workspace/article6-methodologies
