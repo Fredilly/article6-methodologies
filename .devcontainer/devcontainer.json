@@ -4,13 +4,12 @@
 
   "build": {
     "dockerfile": "Dockerfile",
-    "context": ".devcontainer",
+    "context": ".devcontainer",  // Ensure this points to the right folder.
     "args": {
       "NODE_VERSION": "20"
     }
   },
 
-  // ✨ FIX: remove remoteUser, let Codespaces create the correct user
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
       "installZsh": false,
