@@ -1,27 +1,28 @@
 {
   "name": "article6-methodologies",
-  "workspaceFolder": "/workspace/article6-methodologies",
+  "workspaceFolder": "/workspaces/article6-methodologies",
   "build": {
     "dockerfile": "Dockerfile",
-    "context": "..",
+    "context": ".devcontainer",
     "args": {
       "NODE_VERSION": "20"
     }
   },
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
-  },
-  "extensions": [
-    "ms-vscode.node-debug2",
-    "ms-vscode.cpptools"
+  "runArgs": [
+    "--init"
   ],
   "postCreateCommand": "git lfs install --system && git lfs install",
   "remoteUser": "vscode",
   "customizations": {
     "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
       "extensions": [
         "ms-vscode.git",
-        "dbaeumer.vscode-eslint"
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.node-debug2",
+        "ms-vscode.cpptools"
       ]
     }
   }
