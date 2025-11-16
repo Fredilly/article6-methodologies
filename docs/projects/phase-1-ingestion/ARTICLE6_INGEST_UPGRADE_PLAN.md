@@ -75,15 +75,21 @@ Generate real `sections.json` from PDFs.
 
 **Do**
 
-- Add `scripts/extract-sections.cjs` using `pdftotext` or `pdf.js`.
+- Add `scripts/extract-sections.cjs` using `pdftotext` (with a fallback to `pdfminer`, install via
+  `python3 -m pip install pdfminer.six`) to dump a PDF into text and
+  apply the header heuristic.
 - Use a header heuristic:
   - treat a line as a section header if it is ALL CAPS or starts with a digit plus dot (`1.` `2.`),
   - ensure length is between 5 and 120 characters.
-- Assign incremental IDs (`S-0001`, `S-0002`, ...).
+- Assign incremental IDs (`S-0001`, `S-0002`, ...) and capture the first non-empty line of the section body as an anchor.
+- Expose Forestry automation via `npm run extract:sections:forestry`, which reads each `META.json`,
+  resolves `provenance.source_pdfs[].path`, and overwrites `sections.json`. Re-run `node scripts/build-meta.cjs <method>`
+  afterward so hashes stay in sync.
 - Extract anchors and first paragraphs as `content`.
 
 **Gate**  
-If any `TODO` remains or the section count is below 5, fail the run.
+If any `TODO` remains or the section count is below 5, fail the run. Use `npm run gate:sections` locally to ensure
+Forestry outputs pass the sanity check before pushing.
 
 ---
 
