@@ -25,3 +25,6 @@ jobs:
           file: .devcontainer/Dockerfile
           push: false
           tags: article6/devcontainer:ci
+
+      - name: Run ingest sanity check
+        run: npm run sanity
