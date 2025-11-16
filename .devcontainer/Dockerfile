@@ -1,12 +1,14 @@
-FROM mcr.microsoft.com/devcontainers/base:ubuntu
+# Devcontainer image for article6-methodologies
+FROM mcr.microsoft.com/devcontainers/javascript-node:20
 
-ARG NODE_VERSION=20
+# Pin pup version
 ARG PUP_VERSION=0.4.0
 
+# Non-interactive apt, expose pup version
 ENV DEBIAN_FRONTEND=noninteractive \
-    NODE_VERSION=${NODE_VERSION} \
     PUP_VERSION=${PUP_VERSION}
 
+# Base tooling for ingest + sanity
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
       ca-certificates \
@@ -17,6 +19,7 @@ RUN apt-get update \
       golang-go \
       jq \
       yq \
+      ripgrep \
       poppler-utils \
       qpdf \
       unzip \
@@ -24,18 +27,13 @@ RUN apt-get update \
       python3-pip \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Node.js 20.x via NodeSource, enable Corepack for pnpm/yarn parity.
-RUN curl -fsSL "https://deb.nodesource.com/setup_${NODE_VERSION}.x" | bash - \
-    && apt-get install -y --no-install-recommends nodejs \
-    && npm install -g corepack \
-    && corepack enable \
-    && npm cache clean --force \
-    && rm -rf /var/lib/apt/lists/*
-
+# Install pup via Go (pinned)
 RUN GOBIN=/usr/local/bin GO111MODULE=on go install "github.com/ericchiang/pup@v${PUP_VERSION}" \
     && pup --version
 
+# Git LFS + repo safety
 RUN git lfs install --system
 RUN git config --system --add safe.directory /workspaces/article6-methodologies
 
+# Default workdir
 WORKDIR /workspaces/article6-methodologies
