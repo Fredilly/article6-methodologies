@@ -1,27 +1,35 @@
 {
-  "kind": "methodology",
-  "publisher": "UNFCCC",
-  "id": "UNFCCC.Forestry.AR-AMS0007",
-  "version": "v01-1",
-  "status": "superseded",
+  "audit_hashes": {
+    "source_pdf_sha256": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808"
+  },
   "effective_from": "2010-09-17",
   "effective_to": "2012-07-19",
+  "id": "UNFCCC.Forestry.AR-AMS0007",
+  "kind": "methodology",
+  "pointers": {
+    "active_successor": "../.."
+  },
   "provenance": {
     "methodology_page": "https://cdm.unfccc.int/methodologies/DB/J6ZHLX1C3AEMSZ52PWIII6D2AOJZUB",
-    "source_url": "https://cdm.unfccc.int/UserManagement/FileStorage/AY5UI2OCSTW8G3BD1VR0JFPL9KE6ZX",
-    "version_number": "1.1",
     "source_pdfs": [
       {
         "kind": "pdf",
         "path": "source-assets/UNFCCC/Forestry/AR-AMS0007/v01-1/source.pdf",
         "sha256": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
-        "size": 225599
+        "size": 225599,
+        "doc": "UNFCCC/AR-AMS0007@v03-1"
       }
-    ]
+    ],
+    "source_url": "https://cdm.unfccc.int/UserManagement/FileStorage/AY5UI2OCSTW8G3BD1VR0JFPL9KE6ZX",
+    "version_number": "1.1",
+    "author": "Fred Egbuedike",
+    "date": "2025-11-11T17:17:30+08:00"
   },
-  "pointers": {
-    "active_successor": "../.."
+  "publisher": "UNFCCC",
+  "references": {
+    "tools": []
   },
+  "status": "superseded",
   "tools": [
     {
       "doc": "UNFCCC/AR-TOOL08@v04.0.0",
@@ -73,10 +81,6 @@
       "size": 209654
     }
   ],
-  "audit_hashes": {
-    "source_pdf_sha256": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808"
-  },
-  "references": {
-    "tools": []
-  }
+  "version": "v01-1",
+  "automation": {}
 }
