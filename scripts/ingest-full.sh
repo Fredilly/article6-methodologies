@@ -12,8 +12,7 @@ echo "[ingest-full] mode: ${MODE}"
 
 pushd "$REPO_ROOT" >/dev/null
 
-bash "${SCRIPT_DIR}/ingest.sh" "$INGEST_YML" "$MODE"
+INGEST_FILE="$INGEST_YML" bash "${SCRIPT_DIR}/ingest.sh"
 node "${SCRIPT_DIR}/derive-lean-from-rich.js"
 
 popd >/dev/null
-

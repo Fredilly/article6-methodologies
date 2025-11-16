@@ -7,6 +7,7 @@ Usage:
 */
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const args = (() => {
   const out = {};
@@ -36,6 +37,7 @@ const repoFull = process.env.GITHUB_REPOSITORY || '';
 const [owner = '', repo = ''] = repoFull.split('/');
 
 const ID_RE = /\b[A-Z0-9.-]*UNFCCC\.[A-Za-z]+\.[A-Z0-9.-]+|UNFCCC\.[A-Za-z]+\.[A-Z0-9.-]+\b/g;
+const thisFilePath = fileURLToPath(import.meta.url);
 
 function ensureDir(p) {
   fs.mkdirSync(path.dirname(p), { recursive: true });
@@ -142,6 +144,37 @@ function dumpYaml(doc) {
   return `${lines.join('\n')}\n`;
 }
 
+export function canonicalPaths({ id = '', version = '' }) {
+  const trimmedId = String(id).trim();
+  const trimmedVersion = String(version).trim();
+  if (!trimmedId) {
+    throw new Error('[canonicalPaths] missing methodology id');
+  }
+  if (!trimmedVersion) {
+    throw new Error(`[canonicalPaths] ${trimmedId}: missing version`);
+  }
+  const parts = trimmedId.split('.');
+  if (parts.length < 3) {
+    throw new Error(
+      `[canonicalPaths] ${trimmedId}: expected format ORG.Program.Code (e.g., UNFCCC.Forestry.AR-AM0014)`,
+    );
+  }
+  const [org, program, ...codes] = parts;
+  const code = codes.join('.');
+  if (!org || !program || !code) {
+    throw new Error(`[canonicalPaths] ${trimmedId}: unable to derive org/program/code`);
+  }
+  const canonical = {
+    org,
+    program,
+    code,
+    version: trimmedVersion,
+    methodologiesDir: path.posix.join('methodologies', org, program, code, trimmedVersion),
+    toolsDir: path.posix.join('tools', org, program, code, trimmedVersion),
+  };
+  return canonical;
+}
+
 function extractCode(id) {
   const parts = `${id || ''}`.split('.');
   if (parts.length <= 2) return parts[parts.length - 1] || '';
@@ -232,7 +265,7 @@ async function collectIdsFromProject() {
   return [];
 }
 
-(async () => {
+async function main() {
   ensureDir(OUT);
   if (SRC === 'txt') {
     if (!args.in) throw new Error('--in path is required when source=txt');
@@ -286,7 +319,12 @@ async function collectIdsFromProject() {
 
   fs.writeFileSync(OUT, dumpYaml(scoped));
   console.log(`scope=${SRC} ids=${ids.join(',') || '(all)'} → ${OUT}`);
-})().catch((err) => {
-  console.error(`[resolve-ingest] fatal: ${err.message}`);
-  process.exit(1);
-});
+}
+
+const invokedDirectly = path.resolve(process.argv[1] || '') === thisFilePath;
+if (invokedDirectly) {
+  main().catch((err) => {
+    console.error(`[resolve-ingest] fatal: ${err.message}`);
+    process.exit(1);
+  });
+}
