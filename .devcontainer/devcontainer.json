@@ -3,23 +3,26 @@
   "workspaceFolder": "/workspaces/article6-methodologies",
   "build": {
     "dockerfile": "Dockerfile",
-    "context": ".devcontainer",
+    "context": "..",
     "args": {
       "NODE_VERSION": "20"
     }
   },
-  "runArgs": [
-    "--init"
-  ],
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": false,
+      "username": "automatic"
+    }
+  },
+  "runArgs": ["--init"],
   "postCreateCommand": "git lfs install --system && git lfs install",
-  "remoteUser": "vscode",
   "customizations": {
     "vscode": {
-      "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
-      },
+      "settings": {},
       "extensions": [
-        "ms-azuretools.vscode-docker"
+        "ms-azuretools.vscode-docker",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
       ]
     }
   }

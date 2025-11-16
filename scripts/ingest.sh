@@ -314,15 +314,21 @@ PY
   # resolve main PDF
   pdf_url=""
   pdf_path="$tools_dir/source.pdf"
+  use_existing_pdf=0
   if [ -n "$pdf_url_override" ]; then
     pdf_url="$pdf_url_override"
+  elif [ -s "$pdf_path" ]; then
+    use_existing_pdf=1
+    echo "[pdf] existing $pdf_path detected; reusing cached main document"
   else
     # heuristic: first PDF whose link text contains "methodology" OR the first PDF on the page
     # (unfccc pages usually label the main doc; else we fall back)
     pdf_url="$(pup 'a' attr{href} < "$html_tmp" | grep -i '\.pdf' | head -n1 || true)"
   fi
 
-  if [ -n "${pdf_url:-}" ]; then
+  if [ "$use_existing_pdf" -eq 1 ]; then
+    :
+  elif [ -n "${pdf_url:-}" ]; then
     case "$pdf_url" in
       http*) true ;;
       *) # make relative absolute
