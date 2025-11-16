@@ -154,7 +154,7 @@ const METHODS = {
   },
   'UNFCCC/Forestry/AR-AM0014/v03-0': {
     tools: [
-      'tools/UNFCCC/Forestry/AR-AM0014/v03-0/EB75_repan29_AR-AM0014_ver03.0.pdf',
+      'tools/UNFCCC/Forestry/AR-AM0014/v03-0/source.pdf',
       'tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-02-v01.pdf',
       'tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-08-v04.0.0.pdf',
       'tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-12-v03.1.pdf',

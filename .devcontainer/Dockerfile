@@ -18,6 +18,7 @@ RUN apt-get update \
       git-lfs \
       golang-go \
       jq \
+      ripgrep \
       yq \
       ripgrep \
       poppler-utils \
