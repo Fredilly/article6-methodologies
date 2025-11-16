@@ -24,7 +24,12 @@ jobs:
           context: .
           file: .devcontainer/Dockerfile
           push: false
+          load: true
           tags: article6/devcontainer:ci
 
-      - name: Run ingest sanity check
-        run: npm run sanity
+      - name: Run ingest sanity check inside devcontainer
+        run: |
+          docker run --rm \
+            -v "${GITHUB_WORKSPACE}:/workspaces/article6-methodologies" \
+            article6/devcontainer:ci \
+            bash -lc "cd /workspaces/article6-methodologies && npm run sanity"
