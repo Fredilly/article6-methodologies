@@ -18,6 +18,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     docker.io \
   && rm -rf /var/lib/apt/lists/*  # Clean up apt cache to reduce image size
 
+# Enable Docker service (ensure the Docker daemon is running)
+RUN systemctl enable docker
+
 # Initialize Git LFS
 RUN git lfs install --system
 
