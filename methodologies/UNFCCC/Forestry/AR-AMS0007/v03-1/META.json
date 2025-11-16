@@ -1,28 +1,36 @@
 {
   "audit_hashes": {
-    "rules_json_sha256": "a776d453fc53c9888587d67597528200d327db2f1de4b21359711efff9a11afc",
+    "rules_json_sha256": "cd1fe84bbbedd8eaabb2e246cf9d97cd8f5acce0ba1fbb08550aed384ef7b054",
     "sections_json_sha256": "80a90d64d3f6ba202560d8f50d8243140a2f982157060e43d181f8a7860f690e",
     "source_pdf_sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9"
   },
   "automation": {
-    "repo_commit": "76f10df86e48ddcf29959ce96c8d66a03445b7d1",
+    "repo_commit": "a62525c16d27b9073a38e5627dc0e08304ab0619",
     "scripts_manifest_sha256": "38838ca873f781550ca16ab91f1c8aa7ac7020383bd17e9fea1bee39b810ec19"
   },
   "provenance": {
     "author": "Fred Egbuedike",
-    "date": "2025-08-29T17:46:02.000Z",
+    "date": "2025-11-16T12:22:59.561Z",
     "source_pdfs": [
       {
+        "doc": "UNFCCC/AR-AMS0007@v03-1",
         "kind": "pdf",
         "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/source.pdf",
         "sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9",
-        "doc": "UNFCCC/AR-AMS0007@v03-1",
         "size": 209654
       }
     ]
   },
   "references": {
     "tools": [
+      {
+        "doc": "UNFCCC/AR-AMS0007@v03-1",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/source.pdf",
+        "sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9",
+        "size": 209654,
+        "url": null
+      },
       {
         "doc": "UNFCCC/AR-TOOL08@v04.0.0",
         "kind": "pdf",
@@ -62,16 +70,11 @@
         "sha256": "edc718dba7eb097092907553f849c10a36e91a3b4199677ccf4a78748a92f8de",
         "size": 255568,
         "url": null
-      },
-      {
-        "doc": "UNFCCC/AR-AMS0007@v03-1",
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/source.pdf",
-        "sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9",
-        "size": 209654,
-        "url": null
       }
     ]
   },
-  "stage": "staging"
+  "audit": {
+    "created_at": "2025-11-16T12:22:59.561Z",
+    "created_by": "ingest.sh"
+  }
 }
