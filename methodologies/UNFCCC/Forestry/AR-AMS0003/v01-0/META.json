@@ -1,11 +1,11 @@
 {
   "audit_hashes": {
-    "rules_json_sha256": "5ea5311927c5e1c9f18e37828f0cdfffd460d170edfdc77f048c96c07fdd0d75",
+    "rules_json_sha256": "56623e828186498f56c8726daa88d45426484d1de9b9b5cf82d978cc786daf69",
     "sections_json_sha256": "80a90d64d3f6ba202560d8f50d8243140a2f982157060e43d181f8a7860f690e",
     "source_pdf_sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b"
   },
   "automation": {
-    "repo_commit": "76f10df86e48ddcf29959ce96c8d66a03445b7d1",
+    "repo_commit": "fcbf2c2b36f7f702486d5249ceec97a34117ef32",
     "scripts_manifest_sha256": "38838ca873f781550ca16ab91f1c8aa7ac7020383bd17e9fea1bee39b810ec19"
   },
   "provenance": {
@@ -23,6 +23,14 @@
   },
   "references": {
     "tools": [
+      {
+        "doc": "UNFCCC/AR-AMS0003@v01-0",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/source.pdf",
+        "sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b",
+        "size": 1049675,
+        "url": null
+      },
       {
         "doc": "UNFCCC/AR-TOOL08@v04.0.0",
         "kind": "pdf",
@@ -54,16 +62,12 @@
         "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29",
         "size": 1008516,
         "url": null
-      },
-      {
-        "doc": "UNFCCC/AR-AMS0003@v01-0",
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/source.pdf",
-        "sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b",
-        "size": 1049675,
-        "url": null
       }
     ]
+  },
+  "audit": {
+    "created_at": "2025-11-16T10:55:31.266Z",
+    "created_by": "ingest.sh"
   },
   "stage": "staging"
 }

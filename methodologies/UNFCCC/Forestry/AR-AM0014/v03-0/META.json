@@ -1,11 +1,11 @@
 {
   "audit_hashes": {
-    "rules_json_sha256": "41fa1a2bd574636a08da21c8a0e9dfc226972a3b2ed7beb4d282fcb1a99ff909",
+    "rules_json_sha256": "08c9736189cd0b3ff708064994497937ab91b2a8c9c83911e5a1abf937566ee2",
     "sections_json_sha256": "4b9f1e1c6c2e57a48e9119a63c0c0c5b7cc0bf87ee041e679acadd0bd3e76b60",
     "source_pdf_sha256": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a"
   },
   "automation": {
-    "repo_commit": "76f10df86e48ddcf29959ce96c8d66a03445b7d1",
+    "repo_commit": "fcbf2c2b36f7f702486d5249ceec97a34117ef32",
     "scripts_manifest_sha256": "38838ca873f781550ca16ab91f1c8aa7ac7020383bd17e9fea1bee39b810ec19"
   },
   "provenance": {
@@ -15,7 +15,7 @@
       {
         "doc": "UNFCCC/AR-AM0014@v03-0",
         "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/source.pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/EB75_repan29_AR-AM0014_ver03.0.pdf",
         "sha256": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
         "size": 1131963
       }
@@ -23,14 +23,6 @@
   },
   "references": {
     "tools": [
-      {
-        "doc": "UNFCCC/AR-AM0014@v03-0",
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/source.pdf",
-        "sha256": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
-        "size": 1131963,
-        "url": null
-      },
       {
         "doc": "UNFCCC/AR-TOOL02@v01",
         "kind": "pdf",
@@ -70,9 +62,20 @@
         "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29",
         "size": 1008516,
         "url": null
+      },
+      {
+        "doc": "UNFCCC/AR-AM0014@v03-0",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/EB75_repan29_AR-AM0014_ver03.0.pdf",
+        "sha256": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a",
+        "size": 1131963,
+        "url": null
       }
     ]
   },
-  "source_filename": "EB75_repan29_AR-AM0014_ver03.0.pdf",
+  "audit": {
+    "created_at": "2025-11-16T10:55:22.486Z",
+    "created_by": "ingest.sh"
+  },
   "stage": "staging"
 }

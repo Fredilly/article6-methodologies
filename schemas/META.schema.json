@@ -1,137 +1,202 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "additionalProperties": true,
-  "properties": {
-    "status": {
-      "type": "string"
-    },
-    "audit_hashes": {
+  "definitions": {
+    "toolReference": {
       "additionalProperties": false,
       "properties": {
-        "rules_json_sha256": {
-          "type": "string"
-        },
-        "sections_json_sha256": {
-          "type": "string"
-        },
-        "source_pdf_sha256": {
-          "type": "string"
-        }
+        "doc": { "type": "string" },
+        "kind": { "type": "string" },
+        "path": { "type": "string" },
+        "sha256": { "type": "string" },
+        "size": { "type": "integer" },
+        "url": { "type": ["string", "null"] }
       },
+      "required": ["doc", "kind", "path", "sha256", "size"],
       "type": "object"
     },
-    "references": {
+    "sourcePdfReference": {
       "additionalProperties": false,
       "properties": {
-        "tools": {
-          "items": {
-            "additionalProperties": false,
-            "properties": {
-              "doc": {
-                "type": "string"
-              },
-              "kind": {
-                "type": "string"
-              },
-              "path": {
-                "type": "string"
-              },
-              "sha256": {
-                "type": "string"
-              },
-              "size": {
-                "type": "integer"
-              },
-              "url": {
-                "type": [
-                  "string",
-                  "null"
-                ]
-              }
-            },
-            "required": [
-              "path",
-              "sha256",
-              "kind"
-            ],
-            "type": "object"
+        "doc": { "type": "string" },
+        "kind": { "type": "string" },
+        "path": { "type": "string" },
+        "sha256": { "type": "string" },
+        "size": { "type": "integer" }
+      },
+      "required": ["doc", "kind", "path", "sha256", "size"],
+      "type": "object"
+    },
+    "baseActive": {
+      "properties": {
+        "audit_hashes": {
+          "properties": {
+            "source_pdf_sha256": { "type": "string" }
           },
-          "type": "array"
+          "required": ["source_pdf_sha256"],
+          "type": "object"
         }
       },
-      "required": [
-        "tools"
+      "required": ["audit_hashes"],
+      "type": "object"
+    },
+    "unfcccStrict": {
+      "allOf": [
+        {
+          "properties": {
+            "audit_hashes": {
+              "properties": {
+                "rules_json_sha256": { "type": "string" },
+                "sections_json_sha256": { "type": "string" },
+                "source_pdf_sha256": { "type": "string" }
+              },
+              "required": [
+                "source_pdf_sha256",
+                "sections_json_sha256",
+                "rules_json_sha256"
+              ],
+              "type": "object"
+            }
+          },
+          "required": ["audit_hashes"],
+          "type": "object"
+        },
+        {
+          "properties": {
+            "automation": {
+              "properties": {
+                "repo_commit": { "type": "string" },
+                "scripts_manifest_sha256": { "type": "string" }
+              },
+              "required": ["repo_commit", "scripts_manifest_sha256"],
+              "type": "object"
+            }
+          },
+          "required": ["automation"],
+          "type": "object"
+        },
+        {
+          "properties": {
+            "provenance": {
+              "properties": {
+                "author": { "type": "string" },
+                "date": { "type": "string" },
+                "source_pdfs": {
+                  "items": { "$ref": "#/definitions/sourcePdfReference" },
+                  "minItems": 1,
+                  "type": "array"
+                }
+              },
+              "required": ["author", "date", "source_pdfs"],
+              "type": "object"
+            }
+          },
+          "required": ["provenance"],
+          "type": "object"
+        },
+        {
+          "properties": {
+            "references": {
+              "additionalProperties": false,
+              "properties": {
+                "tools": {
+                  "items": { "$ref": "#/definitions/toolReference" },
+                  "minItems": 1,
+                  "type": "array"
+                }
+              },
+              "required": ["tools"],
+              "type": "object"
+            }
+          },
+          "required": ["references"],
+          "type": "object"
+        },
+        {
+          "properties": {
+            "audit": {
+              "properties": {
+                "created_at": { "type": "string" },
+                "created_by": { "type": "string" }
+              },
+              "required": ["created_at", "created_by"],
+              "type": "object"
+            }
+          },
+          "required": ["audit"],
+          "type": "object"
+        }
       ],
       "type": "object"
-    }
-  },
-  "required": [
-    "audit_hashes",
-    "references"
-  ],
-  "type": "object",
-  "definitions": {
-    "activeAudit": {
-      "type": "object",
-      "properties": {
-        "audit_hashes": {
-          "type": "object",
-          "properties": {
-            "rules_json_sha256": { "type": "string" },
-            "sections_json_sha256": { "type": "string" },
-            "source_pdf_sha256": { "type": "string" }
-          },
-          "required": [
-            "source_pdf_sha256",
-            "sections_json_sha256",
-            "rules_json_sha256"
-          ]
-        }
-      }
     },
     "archivalAudit": {
-      "type": "object",
       "properties": {
         "audit_hashes": {
-          "type": "object",
           "properties": {
             "source_pdf_sha256": { "type": "string" }
           },
-          "required": [
-            "source_pdf_sha256"
-          ]
+          "required": ["source_pdf_sha256"],
+          "type": "object"
         }
-      }
+      },
+      "required": ["audit_hashes"],
+      "type": "object"
     }
   },
-  "oneOf": [
+  "allOf": [
     {
-      "description": "Active methodology release",
-      "not": {
-        "required": ["status"],
+      "type": "object",
+      "if": {
+        "type": "object",
         "properties": {
           "status": {
             "enum": ["superseded", "withdrawn"]
           }
-        }
+        },
+        "required": ["status"]
       },
-      "allOf": [
-        { "$ref": "#/definitions/activeAudit" }
-      ]
+      "then": { "$ref": "#/definitions/archivalAudit" },
+      "else": { "$ref": "#/definitions/baseActive" }
     },
     {
-      "description": "Archival / previous methodology release",
-      "properties": {
-        "status": {
-          "enum": ["superseded", "withdrawn"]
-        }
+      "type": "object",
+      "if": {
+        "type": "object",
+        "properties": {
+          "references": {
+            "type": "object",
+            "properties": {
+              "tools": {
+                "contains": {
+                  "type": "object",
+                  "properties": {
+                    "path": {
+                      "type": "string",
+                      "pattern": "^tools/UNFCCC/"
+                    }
+                  },
+                  "required": ["path"],
+                  "type": "object"
+                },
+                "type": "array"
+              }
+            },
+            "required": ["tools"]
+          }
+        },
+        "required": ["references"]
       },
-      "required": [
-        "status"
-      ],
-      "allOf": [
-        { "$ref": "#/definitions/archivalAudit" }
-      ]
+      "then": { "$ref": "#/definitions/unfcccStrict" }
     }
-  ]
+  ],
+  "properties": {
+    "audit": { "type": "object" },
+    "audit_hashes": { "type": "object" },
+    "automation": { "type": "object" },
+    "provenance": { "type": "object" },
+    "references": { "type": "object" },
+    "status": { "type": "string" }
+  },
+  "required": ["audit_hashes", "references"],
+  "type": "object"
 }
