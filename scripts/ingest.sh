@@ -133,14 +133,6 @@ file_size() {
   wc -c <"$1" | tr -d '[:space:]'
 }
 
-determine_kind() {
-  case "${1##*.}" in
-    pdf|PDF) printf 'pdf' ;;
-    docx|DOCX) printf 'docx' ;;
-    *) printf 'binary' ;;
-  esac
-}
-
 derive_tool_doc() {
   local rel_path="$1"
   DOC_VAL="$(
@@ -152,42 +144,6 @@ NODE
   )"
   printf '%s' "$DOC_VAL"
 }
-
-add_tool_reference() {
-  local path_value="$1"
-  local doc_value="$2"
-  local sha_value="$3"
-  local size_value="$4"
-  local kind_value="$5"
-  local url_value="$6"
-  tool_refs+=("$(
-    jq -n \
-      --arg doc "$doc_value" \
-      --arg path "$path_value" \
-      --arg sha "$sha_value" \
-      --arg kind "$kind_value" \
-      --arg url "$url_value" \
-      --arg size "$size_value" \
-      '{
-        doc:$doc,
-        kind:$kind,
-        path:$path,
-        sha256:$sha,
-        size:($size|tonumber),
-        url:($url | select(. != "") // null)
-      }'
-  )")
-}
-
-PROVENANCE_AUTHOR="${INGEST_PROVENANCE_AUTHOR:-Article 6 Ingest}"
-CREATED_BY="${INGEST_CREATED_BY:-ingest.sh}"
-REPO_COMMIT="$(git rev-parse HEAD)"
-if [ -f scripts_manifest.json ]; then
-  SCRIPTS_MANIFEST_SHA="$(sha256 scripts_manifest.json)"
-else
-  echo "[ingest] scripts_manifest.json missing; run scripts/hash-scripts.sh first" >&2
-  exit 1
-fi
 
 canonical_paths_json() {
   local id="$1"
@@ -287,8 +243,6 @@ for i in "${method_indexes[@]}"; do
   if [ "$DRY_RUN" = "0" ]; then
     mkdir -p "$dest_dir" "$tools_dir"
   fi
-  tool_refs=()
-
   # fetch page html (for link parsing) unless we have direct pdf_url
   html_tmp="$(mktemp)"
   if [ -n "$page" ]; then
@@ -314,21 +268,15 @@ PY
   # resolve main PDF
   pdf_url=""
   pdf_path="$tools_dir/source.pdf"
-  use_existing_pdf=0
   if [ -n "$pdf_url_override" ]; then
     pdf_url="$pdf_url_override"
-  elif [ -s "$pdf_path" ]; then
-    use_existing_pdf=1
-    echo "[pdf] existing $pdf_path detected; reusing cached main document"
   else
     # heuristic: first PDF whose link text contains "methodology" OR the first PDF on the page
     # (unfccc pages usually label the main doc; else we fall back)
     pdf_url="$(pup 'a' attr{href} < "$html_tmp" | grep -i '\.pdf' | head -n1 || true)"
   fi
 
-  if [ "$use_existing_pdf" -eq 1 ]; then
-    :
-  elif [ -n "${pdf_url:-}" ]; then
+  if [ -n "${pdf_url:-}" ]; then
     case "$pdf_url" in
       http*) true ;;
       *) # make relative absolute
@@ -465,17 +413,8 @@ PY
       echo "[ingest] missing primary PDF for $id $ver ($pdf_path)" >&2
       exit 1
     fi
-    pdf_sha="$(sha256 "$pdf_path")"
-    if [ -z "$pdf_sha" ]; then
-      echo "[ingest] unable to compute SHA-256 for $pdf_path" >&2
-      exit 1
-    fi
-    pdf_size="$(file_size "$pdf_path")"
-    pdf_rel_path="${tools_dir}/source.pdf"
     placeholder_section="S-0000"
     placeholder_rule="${org}.${id_sector}.${method_slug}.${ver}.R-0-0000"
-    method_doc="${org}/${method}@${ver}"
-    add_tool_reference "$pdf_rel_path" "$method_doc" "$pdf_sha" "$pdf_size" "$(determine_kind "$pdf_rel_path")" "${pdf_url:-}"
 
     # schema-compliant placeholders to keep gates green until rich extraction lands
     cat <<JSON > "$sections"
@@ -518,66 +457,7 @@ JSON
 ]
 JSON
 
-    sections_sha="$(sha256 "$sections")"
-    rules_sha="$(sha256 "$rules")"
-
-    if [ "${#tool_refs[@]}" -gt 0 ]; then
-      tools_json="$(printf '%s\n' "${tool_refs[@]}" | jq -s '.')"
-    else
-      tools_json='[]'
-    fi
-    if [ "$(jq 'all(.[]; ((.doc // "") | length) > 0 and ((.sha256 // "") | length) > 0)' <<<"$tools_json")" != "true" ]; then
-      echo "[ingest] references.tools entries must include doc and sha256 for $id $ver" >&2
-      exit 1
-    fi
-    source_pdfs_json="$(jq '[.[] | select(.path | test("/source\\.pdf$")) | {doc, kind, path, sha256, size}]' <<<"$tools_json")"
-    if [ "$(jq 'length' <<<"$source_pdfs_json")" -eq 0 ]; then
-      echo "[ingest] provenance.source_pdfs missing for $id $ver" >&2
-      exit 1
-    fi
-
-    created_at="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-    jq -n \
-      --arg id "$id" \
-      --arg version "$ver" \
-      --arg sector "${sector:-}" \
-      --arg source_page "${page:-}" \
-      --arg created_at "$created_at" \
-      --arg created_by "$CREATED_BY" \
-      --arg provenance_author "$PROVENANCE_AUTHOR" \
-      --arg repo_commit "$REPO_COMMIT" \
-      --arg scripts_manifest "$SCRIPTS_MANIFEST_SHA" \
-      --arg pdf_sha "$pdf_sha" \
-      --arg sections_sha "$sections_sha" \
-      --arg rules_sha "$rules_sha" \
-      --argjson tools "$tools_json" \
-      --argjson source_pdfs "$source_pdfs_json" \
-      '{
-        id:$id,
-        version:$version,
-        sector:$sector,
-        source_page:$source_page,
-        status:"draft",
-        provenance:{
-          author:$provenance_author,
-          date:$created_at,
-          source_pdfs:$source_pdfs
-        },
-        references:{ tools:$tools },
-        audit:{
-          created_at:$created_at,
-          created_by:$created_by
-        },
-        audit_hashes:{
-          sections_json_sha256:$sections_sha,
-          rules_json_sha256:$rules_sha,
-          source_pdf_sha256:$pdf_sha
-        },
-        automation:{
-          repo_commit:$repo_commit,
-          scripts_manifest_sha256:$scripts_manifest
-        }
-      }' > "$meta"
+    node scripts/build-meta.cjs "$dest_dir"
   fi
 
   # validate + commit
