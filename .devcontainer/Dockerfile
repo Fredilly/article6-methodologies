@@ -1,28 +1,39 @@
-# Use the official base image for dev containers
+# Devcontainer image for article6-methodologies
 FROM mcr.microsoft.com/devcontainers/javascript-node:20
 
-# Set non-interactive mode to avoid prompts during installation
-ENV DEBIAN_FRONTEND=noninteractive
+# Pin pup version
+ARG PUP_VERSION=0.4.0
 
-# Install required packages including Docker
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    git \
-    git-lfs \
-    jq \
-    yq \
-    poppler-utils \
-    qpdf \
-    python3 \
-    python3-pip \
-    pup \
-    docker.io \
-  && rm -rf /var/lib/apt/lists/*  # Clean up apt cache to reduce image size
+# Non-interactive apt, expose pup version
+ENV DEBIAN_FRONTEND=noninteractive \
+    PUP_VERSION=${PUP_VERSION}
 
-# Enable Docker service (ensure the Docker daemon is running)
-RUN systemctl enable docker
+# Base tooling for ingest + sanity
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+      ca-certificates \
+      build-essential \
+      curl \
+      git \
+      git-lfs \
+      golang-go \
+      jq \
+      yq \
+      ripgrep \
+      poppler-utils \
+      qpdf \
+      unzip \
+      python3 \
+      python3-pip \
+    && rm -rf /var/lib/apt/lists/*
 
-# Initialize Git LFS
+# Install pup via Go (pinned)
+RUN GOBIN=/usr/local/bin GO111MODULE=on go install "github.com/ericchiang/pup@v${PUP_VERSION}" \
+    && pup --version
+
+# Git LFS + repo safety
 RUN git lfs install --system
+RUN git config --system --add safe.directory /workspaces/article6-methodologies
 
-# Set working directory for the container
+# Default workdir
 WORKDIR /workspaces/article6-methodologies

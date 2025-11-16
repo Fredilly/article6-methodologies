@@ -129,6 +129,100 @@ need pup
 need curl
 need python3
 
+file_size() {
+  wc -c <"$1" | tr -d '[:space:]'
+}
+
+determine_kind() {
+  case "${1##*.}" in
+    pdf|PDF) printf 'pdf' ;;
+    docx|DOCX) printf 'docx' ;;
+    *) printf 'binary' ;;
+  esac
+}
+
+derive_tool_doc() {
+  local rel_path="$1"
+  DOC_VAL="$(
+    TOOL_PATH="$rel_path" node --input-type=module <<'NODE'
+import { deriveToolDoc } from './scripts/lib/tool-doc.mjs';
+const toolPath = process.env.TOOL_PATH || '';
+process.stdout.write(deriveToolDoc(toolPath));
+NODE
+  )"
+  printf '%s' "$DOC_VAL"
+}
+
+add_tool_reference() {
+  local path_value="$1"
+  local doc_value="$2"
+  local sha_value="$3"
+  local size_value="$4"
+  local kind_value="$5"
+  local url_value="$6"
+  tool_refs+=("$(
+    jq -n \
+      --arg doc "$doc_value" \
+      --arg path "$path_value" \
+      --arg sha "$sha_value" \
+      --arg kind "$kind_value" \
+      --arg url "$url_value" \
+      --arg size "$size_value" \
+      '{
+        doc:$doc,
+        kind:$kind,
+        path:$path,
+        sha256:$sha,
+        size:($size|tonumber),
+        url:($url | select(. != "") // null)
+      }'
+  )")
+}
+
+PROVENANCE_AUTHOR="${INGEST_PROVENANCE_AUTHOR:-Article 6 Ingest}"
+CREATED_BY="${INGEST_CREATED_BY:-ingest.sh}"
+REPO_COMMIT="$(git rev-parse HEAD)"
+if [ -f scripts_manifest.json ]; then
+  SCRIPTS_MANIFEST_SHA="$(sha256 scripts_manifest.json)"
+else
+  echo "[ingest] scripts_manifest.json missing; run scripts/hash-scripts.sh first" >&2
+  exit 1
+fi
+
+canonical_paths_json() {
+  local id="$1"
+  local version="$2"
+  if [ -z "$id" ] || [ -z "$version" ]; then
+    echo "[ingest] canonical path helper requires id and version" >&2
+    return 1
+  fi
+  CANONICAL_JSON="$(
+    CANON_ID="$id" CANON_VERSION="$version" node --input-type=module <<'NODE'
+import { canonicalPaths } from './scripts/resolve-ingest-scope.mjs';
+const id = process.env.CANON_ID || '';
+const version = process.env.CANON_VERSION || '';
+try {
+  const result = canonicalPaths({ id, version });
+  process.stdout.write(JSON.stringify(result));
+} catch (err) {
+  console.error(`[canonical-paths] ${err.message}`);
+  process.exit(1);
+}
+NODE
+  )" || return 1
+  printf '%s' "$CANONICAL_JSON"
+}
+
+ensure_canonical_layout() {
+  local path_value="$1"
+  local kind="$2"
+  local expected_prefix="$3"
+  if [[ ! "$path_value" =~ ^${expected_prefix}/[A-Za-z0-9._-]+/[A-Za-z0-9.-]+/v[0-9]{2}-[0-9]+$ ]]; then
+    echo "[ingest] ${kind} path ${path_value} is not canonical (${expected_prefix}/<Program>/<Code>/vXX-0)" >&2
+    exit 1
+  fi
+}
+
 INGEST_FILE="${INGEST_FILE:-ingest.yml}"
 test -f "$INGEST_FILE" || { echo "No $INGEST_FILE"; exit 1; }
 
@@ -178,12 +272,22 @@ for i in "${method_indexes[@]}"; do
   if [ -z "$method_slug" ]; then
     method_slug="${method}"
   fi
-  rest_path="$(echo "$id" | tr '.' '/')"
-  dest_dir="methodologies/${rest_path}/${ver}"
-  tools_dir="tools/${org}/${method}/${ver}"
+  canonical="$(canonical_paths_json "$id" "$ver")" || {
+    echo "[ingest] unable to determine canonical paths for $id $ver" >&2
+    exit 1
+  }
+  dest_dir="$(jq -r '.methodologiesDir' <<<"$canonical")"
+  tools_dir="$(jq -r '.toolsDir' <<<"$canonical")"
+  if [ -z "$dest_dir" ] || [ "$dest_dir" = "null" ] || [ -z "$tools_dir" ] || [ "$tools_dir" = "null" ]; then
+    echo "[ingest] canonical path helper returned empty directories for $id $ver" >&2
+    exit 1
+  fi
+  ensure_canonical_layout "$dest_dir" "methodologies" "methodologies/${org}"
+  ensure_canonical_layout "$tools_dir" "tools" "tools/${org}"
   if [ "$DRY_RUN" = "0" ]; then
     mkdir -p "$dest_dir" "$tools_dir"
   fi
+  tool_refs=()
 
   # fetch page html (for link parsing) unless we have direct pdf_url
   html_tmp="$(mktemp)"
@@ -208,6 +312,7 @@ PY
   fi
 
   # resolve main PDF
+  pdf_url=""
   pdf_path="$tools_dir/source.pdf"
   if [ -n "$pdf_url_override" ]; then
     pdf_url="$pdf_url_override"
@@ -255,13 +360,17 @@ PY
 
   # build filters
   includes=()
-  for j in $(seq 0 $((include_count-1))); do
-    includes+=("$(yq -r ".methods[$i].include_text[$j]" "$INGEST_FILE")")
-  done
+  if [ "$include_count" -gt 0 ]; then
+    for j in $(seq 0 $((include_count-1))); do
+      includes+=("$(yq -r ".methods[$i].include_text[$j]" "$INGEST_FILE")")
+    done
+  fi
   excludes=()
-  for j in $(seq 0 $((exclude_count-1))); do
-    excludes+=("$(yq -r ".methods[$i].exclude_text[$j]" "$INGEST_FILE")")
-  done
+  if [ "$exclude_count" -gt 0 ]; then
+    for j in $(seq 0 $((exclude_count-1))); do
+      excludes+=("$(yq -r ".methods[$i].exclude_text[$j]" "$INGEST_FILE")")
+    done
+  fi
 
   # select tool links by visible text
   # we keep links with any include match, then drop those with any exclude match, and that end with .pdf
@@ -308,7 +417,12 @@ PY
     for item in "${save_tools[@]}"; do
       t="$(jq -r '.text' <<<"$item")"
       u="$(jq -r '.url' <<<"$item")"
-      fname="$(echo "$t" | tr -cs '[:alnum:]_+.-' '-' | sed 's/^-*//; s/-*$//' ).pdf"
+      raw_name="$(basename "${u%%\?*}")"
+      if [[ "$raw_name" =~ \.(pdf|docx)$ ]]; then
+        fname="$raw_name"
+      else
+        fname="$(echo "$t" | tr -cs '[:alnum:]_+.-' '-' | sed 's/^-*//; s/-*$//' ).pdf"
+      fi
       out="$tools_dir/$fname"
       echo " - $t"
       if [ "$DRY_RUN" = "1" ]; then
@@ -316,7 +430,18 @@ PY
           echo "[warn] cache miss for tool PDF $u" >&2
         fi
       else
-        copy_cached_asset "$u" "$out" || echo "[warn] failed to download tool PDF $u" >&2
+        if copy_cached_asset "$u" "$out"; then
+          tool_sha="$(sha256 "$out")"
+          tool_size="$(file_size "$out")"
+          doc_id="$(derive_tool_doc "$out")"
+          if [ -z "$doc_id" ]; then
+            echo "[ingest] unable to derive doc id for tool $out" >&2
+            exit 1
+          fi
+          add_tool_reference "$out" "$doc_id" "$tool_sha" "$tool_size" "$(determine_kind "$out")" "$u"
+        else
+          echo "[warn] failed to download tool PDF $u" >&2
+        fi
       fi
     done
   else
@@ -330,37 +455,21 @@ PY
   rules_rich="$dest_dir/rules.rich.json"
 
   if [ "$DRY_RUN" = "0" ]; then
-    pdf_sha=""
-    [ -s "$pdf_path" ] && pdf_sha="$(sha256 "$pdf_path")"
+    if [ ! -s "$pdf_path" ]; then
+      echo "[ingest] missing primary PDF for $id $ver ($pdf_path)" >&2
+      exit 1
+    fi
+    pdf_sha="$(sha256 "$pdf_path")"
+    if [ -z "$pdf_sha" ]; then
+      echo "[ingest] unable to compute SHA-256 for $pdf_path" >&2
+      exit 1
+    fi
+    pdf_size="$(file_size "$pdf_path")"
+    pdf_rel_path="${tools_dir}/source.pdf"
     placeholder_section="S-0000"
     placeholder_rule="${org}.${id_sector}.${method_slug}.${ver}.R-0-0000"
-
-    pdf_rel_path="tools/${org}/${method}/${ver}/source.pdf"
-    jq -n \
-      --arg id "$id" \
-      --arg version "$ver" \
-      --arg sector "${sector:-}" \
-      --arg source_page "${page:-}" \
-      --arg pdf_sha "$pdf_sha" \
-      --arg pdf_path "$pdf_rel_path" \
-      '{
-        id:$id, version:$version, sector:$sector, source_page:$source_page,
-        status:"draft",
-        references:{
-          tools:[
-            {
-              kind:"pdf",
-              path:$pdf_path,
-              sha256:$pdf_sha
-            }
-          ]
-        },
-        audit:{ created_at:(now|todate), created_by:"ingest.sh" },
-        audit_hashes:{
-          sections_json_sha256:"",
-          rules_json_sha256:""
-        }
-      }' > "$meta"
+    method_doc="${org}/${method}@${ver}"
+    add_tool_reference "$pdf_rel_path" "$method_doc" "$pdf_sha" "$pdf_size" "$(determine_kind "$pdf_rel_path")" "${pdf_url:-}"
 
     # schema-compliant placeholders to keep gates green until rich extraction lands
     cat <<JSON > "$sections"
@@ -402,6 +511,67 @@ JSON
   }
 ]
 JSON
+
+    sections_sha="$(sha256 "$sections")"
+    rules_sha="$(sha256 "$rules")"
+
+    if [ "${#tool_refs[@]}" -gt 0 ]; then
+      tools_json="$(printf '%s\n' "${tool_refs[@]}" | jq -s '.')"
+    else
+      tools_json='[]'
+    fi
+    if [ "$(jq 'all(.[]; ((.doc // "") | length) > 0 and ((.sha256 // "") | length) > 0)' <<<"$tools_json")" != "true" ]; then
+      echo "[ingest] references.tools entries must include doc and sha256 for $id $ver" >&2
+      exit 1
+    fi
+    source_pdfs_json="$(jq '[.[] | select(.path | test("/source\\.pdf$")) | {doc, kind, path, sha256, size}]' <<<"$tools_json")"
+    if [ "$(jq 'length' <<<"$source_pdfs_json")" -eq 0 ]; then
+      echo "[ingest] provenance.source_pdfs missing for $id $ver" >&2
+      exit 1
+    fi
+
+    created_at="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+    jq -n \
+      --arg id "$id" \
+      --arg version "$ver" \
+      --arg sector "${sector:-}" \
+      --arg source_page "${page:-}" \
+      --arg created_at "$created_at" \
+      --arg created_by "$CREATED_BY" \
+      --arg provenance_author "$PROVENANCE_AUTHOR" \
+      --arg repo_commit "$REPO_COMMIT" \
+      --arg scripts_manifest "$SCRIPTS_MANIFEST_SHA" \
+      --arg pdf_sha "$pdf_sha" \
+      --arg sections_sha "$sections_sha" \
+      --arg rules_sha "$rules_sha" \
+      --argjson tools "$tools_json" \
+      --argjson source_pdfs "$source_pdfs_json" \
+      '{
+        id:$id,
+        version:$version,
+        sector:$sector,
+        source_page:$source_page,
+        status:"draft",
+        provenance:{
+          author:$provenance_author,
+          date:$created_at,
+          source_pdfs:$source_pdfs
+        },
+        references:{ tools:$tools },
+        audit:{
+          created_at:$created_at,
+          created_by:$created_by
+        },
+        audit_hashes:{
+          sections_json_sha256:$sections_sha,
+          rules_json_sha256:$rules_sha,
+          source_pdf_sha256:$pdf_sha
+        },
+        automation:{
+          repo_commit:$repo_commit,
+          scripts_manifest_sha256:$scripts_manifest
+        }
+      }' > "$meta"
   fi
 
   # validate + commit
