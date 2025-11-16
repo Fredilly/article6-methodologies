@@ -16,11 +16,14 @@
         "kind": "pdf",
         "path": "source-assets/UNFCCC/Forestry/AR-AM0014/v01-0/source.pdf",
         "sha256": "8505376f7987ae68159db4c570a3daab136432a05112e406c46aa83653d7040a",
-        "size": 240716
+        "size": 240716,
+        "doc": "UNFCCC/AR-AM0014@v03-0"
       }
     ],
     "source_url": "https://cdm.unfccc.int/UserManagement/FileStorage/GLFDQWIB3ZHPSAMO9C6XR1E74KT205",
-    "version_number": "1.0.0"
+    "version_number": "1.0.0",
+    "author": "Fred Egbuedike",
+    "date": "2025-11-16T16:58:58+08:00"
   },
   "publisher": "UNFCCC",
   "references": {
@@ -71,5 +74,6 @@
       "size": 1008516
     }
   ],
-  "version": "v01-0"
+  "version": "v01-0",
+  "automation": {}
 }
