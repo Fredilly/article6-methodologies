@@ -16,6 +16,7 @@ RUN apt-get update \
       git-lfs \
       golang-go \
       jq \
+      ripgrep \
       yq \
       poppler-utils \
       qpdf \
