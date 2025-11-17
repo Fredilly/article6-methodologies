@@ -8,7 +8,7 @@ ARG PUP_VERSION=0.4.0
 ENV DEBIAN_FRONTEND=noninteractive \
     PUP_VERSION=${PUP_VERSION}
 
-# Base tooling for ingest + sanity
+# Base tooling for ingest + sanity (including Docker)
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
       ca-certificates \
@@ -20,12 +20,12 @@ RUN apt-get update \
       jq \
       ripgrep \
       yq \
-      ripgrep \
       poppler-utils \
       qpdf \
       unzip \
       python3 \
       python3-pip \
+      docker.io \
     && rm -rf /var/lib/apt/lists/*
 
 # Install pup via Go (pinned)
@@ -38,3 +38,4 @@ RUN git config --system --add safe.directory /workspaces/article6-methodologies
 
 # Default workdir
 WORKDIR /workspaces/article6-methodologies
+
