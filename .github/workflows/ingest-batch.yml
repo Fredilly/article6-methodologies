@@ -26,6 +26,18 @@ jobs:
           node-version: '20.11.1'
           cache: 'npm'
 
+      - name: Setup Go
+        uses: actions/setup-go@4d34df0c2316fe8122ab82dc22947d607c0c91f9
+        with:
+          go-version: '1.22.1'
+
+      - name: Install pup
+        run: |
+          set -euxo pipefail
+          go install github.com/ericchiang/pup@v0.4.0
+          sudo install -m 0755 "$(go env GOPATH)/bin/pup" /usr/local/bin/pup
+          pup --version
+
       - name: Install npm deps
         run: npm ci
 
