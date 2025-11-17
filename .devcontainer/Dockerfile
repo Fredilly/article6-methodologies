@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git-lfs \
     jq \
     yq \
+    ripgrep \
     poppler-utils \
     qpdf \
     python3 \
