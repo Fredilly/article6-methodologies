@@ -94,3 +94,4 @@ Use `node scripts/check-source-hash.js` to verify that all `META.references.tool
 
 ## Stable Tree v1
 This structure is normative. Changes require a "Stable Tree vX" section and CI update.
+
