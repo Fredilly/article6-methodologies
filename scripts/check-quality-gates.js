@@ -3,6 +3,8 @@ const fs = require('fs');
 const path = require('path');
 
 const repoRoot = path.resolve(__dirname, '..');
+const SECTION_PAGE_TITLE_RE = /^\d+\s+of\s+\d+$/i;
+const MIN_SECTION_CONTENT_LENGTH = 10;
 
 function parseConfig(configPath) {
   const content = fs.readFileSync(configPath, 'utf8');
@@ -84,7 +86,38 @@ function validateMeta(meta, file, errors) {
     requireField(meta.audit_hashes?.source_pdf_sha256, 'audit_hashes.source_pdf_sha256 missing', errors, file);
     requireField(meta.automation?.repo_commit, 'automation.repo_commit missing', errors, file);
     requireField(meta.automation?.scripts_manifest_sha256, 'automation.scripts_manifest_sha256 missing', errors, file);
+    validateSections(file, errors);
   }
+}
+
+function validateSections(metaRelPath, errors) {
+  const sectionsRelPath = metaRelPath.replace(/META\.json$/, 'sections.json');
+  const sectionsPath = path.join(repoRoot, sectionsRelPath);
+  if (!fs.existsSync(sectionsPath)) {
+    errors.push(`${sectionsRelPath}: missing sections.json for QA checks`);
+    return;
+  }
+  let data;
+  try {
+    data = JSON.parse(fs.readFileSync(sectionsPath, 'utf8'));
+  } catch (err) {
+    errors.push(`${sectionsRelPath}: failed to parse sections.json - ${err.message}`);
+    return;
+  }
+  if (!Array.isArray(data.sections) || data.sections.length === 0) {
+    errors.push(`${sectionsRelPath}: sections array missing or empty`);
+    return;
+  }
+  data.sections.forEach((section, index) => {
+    const title = (section.title || '').trim();
+    const content = (section.content || '').trim();
+    if (SECTION_PAGE_TITLE_RE.test(title)) {
+      errors.push(`${sectionsRelPath}: sections[${index}].title "${title}" looks like a page marker`);
+    }
+    if (content.length < MIN_SECTION_CONTENT_LENGTH) {
+      errors.push(`${sectionsRelPath}: sections[${index}].content too short (min ${MIN_SECTION_CONTENT_LENGTH} chars)`);
+    }
+  });
 }
 
 function main() {

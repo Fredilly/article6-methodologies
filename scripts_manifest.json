@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-11-22T01:03:52Z",
-  "git_commit": "d1351227a996e987e5c243caa1fcae94e5d23e29",
+  "generated_at": "2025-11-22T02:09:09Z",
+  "git_commit": "88befd1d7831f35c04339654c00525ecc8c4e47c",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
@@ -16,7 +16,7 @@
     { "path": "scripts/check-ingest-paths.sh", "sha256": "6819f26a5b44301af6029249061aa894c64a750d23c50bbc7890a8d1d067de72" },
     { "path": "scripts/check-lean-drift.sh", "sha256": "6c482f7b7ed321f6612c8e1a347921894613cf500fa013f0f1c3904e9b78713f" },
     { "path": "scripts/check-methodology-guardrails.js", "sha256": "b1ed068574c8a9d9399f11e122ca21b9d7c39a3e6a4deccfb6cb218a32145cd4" },
-    { "path": "scripts/check-quality-gates.js", "sha256": "5d239295db5c6861d1a71d059d36dafa9900ade94ce8f8ce6dd64d601a221e21" },
+    { "path": "scripts/check-quality-gates.js", "sha256": "b91f6d0f8b77b8bad5e793b2ec9e82655e97d2f5a0fa9a2494cdbc3225f8e72f" },
     { "path": "scripts/check-registry.sh", "sha256": "d66f360cfc7350e5056a81825c2a6aeb3edea448487d2c89829799d64ea2f968" },
     { "path": "scripts/check-section-extractor.cjs", "sha256": "70bedc26b16711f008e9ca9f91b39f2f9ce41b450e1aa6ae8fca481dde768474" },
     { "path": "scripts/check-source-hash.js", "sha256": "a3cba2d0d15b855c504c2f6cedd828b44aba19dfb5312f17b461d39d945435eb" },
@@ -29,7 +29,7 @@
     { "path": "scripts/derive-lean-from-rich.js", "sha256": "75a7c65c12d5b1b4458389a73fa54bc89edc6e9a4819deba4c65ca3adbeb44d1" },
     { "path": "scripts/derive-lean.sh", "sha256": "30dc23357fbdd0c442368d66bfefc3bfa70c4299fe573b62380fd616c846f14b" },
     { "path": "scripts/extract-sections-forestry.cjs", "sha256": "d5e6f15e512052587f610fd8b0997b4473f2f0b6b26bc18077040634328c0446" },
-    { "path": "scripts/extract-sections.cjs", "sha256": "d3e40a847a1d5d1b8a5e2819d1dfc7f06c7c6addd71a2a2202b0a66b283415d6" },
+    { "path": "scripts/extract-sections.cjs", "sha256": "0c99065e93c6255e4b05ff18e62beb4b913ddc80599c49ae00f9579e870de9de" },
     { "path": "scripts/fill-provenance.js", "sha256": "cf5152d09b7626c30ace82703acd4b0254cb0a8f1cba283d8168081b3a4809b3" },
     { "path": "scripts/gate-lfs.sh", "sha256": "28a13a96f4fac81fc1beeba3b1a8c8d486fcdb3eee5317673b6df52f7f3285cf" },
     { "path": "scripts/gen-dataset-params.js", "sha256": "befe8d1bdece5b2738284c2b60598e676f7f910c605ffb53fbb7a07c3342414f" },

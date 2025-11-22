@@ -3,6 +3,9 @@ const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
 
+const PAGE_MARKER_RE = /^\d+\s+of\s+\d+$/i;
+const MIN_SECTION_CONTENT_LENGTH = 10;
+
 async function extractSections({ pdfPath, outPath, methodId }) {
   const resolvedPdf = path.resolve(pdfPath);
   if (!fs.existsSync(resolvedPdf)) {
@@ -14,17 +17,16 @@ async function extractSections({ pdfPath, outPath, methodId }) {
 
   const text = readPdfText(resolvedPdf);
   const lines = text.split(/\r?\n/).map((line) => line.replace(/\s+/g, ' ').trim());
-  const sections = buildSections(lines);
+  const sections = sanitizeSections(buildSections(lines));
   const payload = {
     sections: sections.map((section, index) => {
       const id = `S-${String(index + 1).padStart(4, '0')}`;
-      const body = section.body.join('\n').trim();
-      const anchor = deriveAnchor(section.body);
       return {
         id,
         title: section.title,
-        anchor,
-        content: body
+        anchor: section.anchor,
+        content: section.content,
+        anchors: section.anchors || []
       };
     })
   };
@@ -38,6 +40,7 @@ async function extractSections({ pdfPath, outPath, methodId }) {
 function buildSections(lines) {
   const headers = [];
   for (const line of lines) {
+    if (isPageMarker(line)) continue;
     if (isHeader(line)) {
       headers.push(line);
     }
@@ -47,6 +50,7 @@ function buildSections(lines) {
   for (const rawLine of lines) {
     const line = rawLine.trim();
     if (!line) continue;
+    if (isPageMarker(line)) continue;
     if (isHeader(line)) {
       if (current) {
         sectionList.push(current);
@@ -74,10 +78,11 @@ function buildSections(lines) {
 function isHeader(line) {
   if (!line) return false;
   const normalized = line.trim();
-  if (normalized.length < 5 || normalized.length > 120) return false;
-  const numericHeading = /^[0-9]+(\.[0-9]+)*\s/.test(normalized);
+  if (isPageMarker(normalized)) return false;
+  if (normalized.length < 5 || normalized.length > 200) return false;
+  const numericHeading = /^\d+(\.\d+)*\.\s+/.test(normalized);
   const hasLetters = /[A-Z]/.test(normalized);
-  const allCaps = normalized === normalized.toUpperCase() && hasLetters;
+  const allCaps = normalized === normalized.toUpperCase() && hasLetters && normalized.includes(' ');
   return numericHeading || allCaps;
 }
 
@@ -148,3 +153,34 @@ function readPdfText(pdfPath) {
 }
 
 module.exports = { extractSections };
+
+function sanitizeSections(sectionList) {
+  const filtered = [];
+  for (const section of sectionList) {
+    const title = (section.title || '').trim();
+    if (!title || isPageMarker(title)) continue;
+    const content = section.body.join('\n').trim();
+    if (content.length < MIN_SECTION_CONTENT_LENGTH) continue;
+    filtered.push({
+      title,
+      anchor: deriveAnchor(section.body),
+      content,
+      anchors: []
+    });
+  }
+  if (!filtered.length && sectionList.length) {
+    const fallback = sectionList[0];
+    filtered.push({
+      title: (fallback.title || 'Document Overview').trim() || 'Document Overview',
+      anchor: deriveAnchor(fallback.body),
+      content: fallback.body.join('\n').trim(),
+      anchors: []
+    });
+  }
+  return filtered;
+}
+
+function isPageMarker(line) {
+  if (!line) return false;
+  return PAGE_MARKER_RE.test(line.trim());
+}

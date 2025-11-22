@@ -1,69 +1,172 @@
 {
   "sections": [
     {
+      "anchor": "AR-AMS0007",
       "anchors": [],
-      "id": "S-1",
-      "title": "Scope and applicability"
+      "content": "AR-AMS0007\nA/R Small-scale Methodology\nAfforestation and reforestation project\nactivities implemented on lands other than\nwetlands\nVersion 03.1\nSectoral scope(s): 14\nAR-AMS0007\nA/R Small-scale Methodology: Afforestation and reforestation project activities implemented on lands\nother than wetlands\nVersion 03.1\nSectoral scope(s): 14",
+      "id": "S-0001",
+      "title": "CLEAN DEVELOPMENT MECHANISM"
     },
     {
+      "anchor": "Page",
       "anchors": [],
-      "id": "S-2",
-      "title": "Definitions"
+      "content": "Page\n1.\n2.\n3.\n4.\n5.",
+      "id": "S-0002",
+      "title": "TABLE OF CONTENTS"
     },
     {
+      "anchor": "2.1.",
       "anchors": [],
-      "id": "S-3",
-      "title": "Project boundary and carbon pools"
+      "content": "2.1.\n2.2.\n2.3.\n2.4.\nScope ...........................................................................................................\nLand-use types covered under appendix B of annex to decision",
+      "id": "S-0003",
+      "title": "SCOPE, APPLICABILITY, AND ENTRY INTO FORCE ........................................."
     },
     {
+      "anchor": "Applicability ..................................................................................................",
       "anchors": [],
-      "id": "S-4",
-      "title": "Baseline scenario and net GHG emissions"
+      "content": "Applicability ..................................................................................................\nEntry into force .............................................................................................",
+      "id": "S-0004",
+      "title": "6/CMP.1 ......................................................................................................."
     },
     {
+      "anchor": "5.1.",
       "anchors": [],
-      "id": "S-5",
-      "title": "Project scenario and net GHG removals"
+      "content": "5.1.\n5.2.\n5.3.\n5.4.\n5.5.\n5.6.\n5.7.\n5.8.\nProject boundary and eligibility of land .........................................................\nIdentification of the baseline scenario and demonstration of additionality ....\nStratification .................................................................................................\nBaseline net GHG removals by sinks ...........................................................\nActual net GHG removals by sinks ..............................................................\nLeakage .......................................................................................................\nNet anthropogenic GHG removals by sinks .................................................\nCalculation of tCERs and lCERs ..................................................................",
+      "id": "S-0005",
+      "title": "BASELINE AND MONITORING METHODOLOGY ................................................"
     },
     {
+      "anchor": "6.3.",
       "anchors": [],
-      "id": "S-6",
-      "title": "Leakage"
+      "content": "6.3.\n6.4.\nPrecision requirements ................................................................................\nData requirements under the methodology ..................................................",
+      "id": "S-0006",
+      "title": "6.2. Monitoring of project implementation ..........................................................."
     },
     {
+      "anchor": "3",
       "anchors": [],
-      "id": "S-7",
-      "title": "Monitoring plan"
+      "content": "3\n3\n3\n3\n3\n4\n4\n4\n5\n5\n6\n6\n6\n7\n8\n8\n9\n9\n9\n9\n10\n10\n11\n13\n15\nAR-AMS0007\nA/R Small-scale Methodology: Afforestation and reforestation project activities implemented on lands\nother than wetlands\nVersion 03.1\nSectoral scope(s): 14\n1.\n1.\nIntroduction\nThis methodology allows afforestation and reforestation of any land that does not fall into\nthe category of wetland. Where the land in its baseline land-use has soil organic carbon\n(SOC) content that is expected to be higher than that under the land-use of “forestry”,\nthe methodology restricts the extent of soil disturbance in the project to be no more than\n10 per cent. The higher SOC content in the baseline may result either because of the\nnature of the soils (e.g. the soils are organic soils) or because of anthropogenic activities\n(e.g. soils are not tilled and external organic matter is added as inputs). Apart from this\nrestriction on the extent of soil disturbance in certain types of soils and land-use\npractices, the methodology has a broad scope of application1.",
+      "id": "S-0007",
+      "title": "APPENDIX 3. GRASSLANDS IN WHICH SOIL DISTURBANCE IS RESTRICTED ...."
     },
     {
+      "anchor": "2.",
       "anchors": [],
-      "id": "S-8",
-      "title": "Data and parameters"
+      "content": "2.\nThis methodology is applicable to small-scale afforestation and reforestation (A/R)\nproject activities under the clean development mechanism (CDM). It does not apply to\nlarge-scale A/R CDM project activities.",
+      "id": "S-0008",
+      "title": "2.1. Scope"
     },
     {
+      "anchor": "3.",
       "anchors": [],
-      "id": "S-9",
-      "title": "Uncertainty, precision, QA/QC"
+      "content": "3.\nThis methodology allows the following types of small-scale A/R project activities as listed\nin appendix B of annex to decision 6/CMP.1, paragraph 4:\n(a)\n(b)\n(d)\nGrassland to forested land;\nCropland to forested land;\nSettlement to forested land.\n4.\n5.\nThis methodology also applies to small-scale A/R project activities implemented on any\nother type of land except wetland.\nSmall-scale A/R project activities implemented on wetlands, as provided under\nparagraph 4(c) of appendix B, are covered by the methodology “AR-AMS0003:\nAfforestation and reforestation project activities implemented on wetlands”.",
+      "id": "S-0009",
+      "title": "2.2. Land-use types covered under appendix B of annex to decision 6/CMP.1"
     },
     {
+      "anchor": "6.",
       "anchors": [],
-      "id": "S-10",
-      "title": "Permanence (tCERs/lCERs)"
+      "content": "6.\nThis methodology is applicable under the following conditions:\n(a)\nThe land subject to the project activity does not fall in wetland category;\n1 For example, the land to be afforested or reforested does not have to be degraded land.\nAR-AMS0007\nA/R Small-scale Methodology: Afforestation and reforestation project activities implemented on lands\nother than wetlands\nVersion 03.1\nSectoral scope(s): 14\n(b)\nSoil disturbance attributable to the project activity does not cover more than 10\nper cent of area2 in each of the following types of land, when these lands are\nincluded within the project boundary:\n(i)\nLand containing organic soils;\n(ii)\nLand which, in the baseline, is subjected to land-use and management\npractices and receives inputs listed in appendices 2 and 3 to this\nmethodology.\n7.\nA project activity applying this methodology shall also comply with the applicability\nconditions of the tools contained within the methodology and applied by the project\nactivity.",
+      "id": "S-0010",
+      "title": "2.3. Applicability"
     },
     {
+      "anchor": "8.",
       "anchors": [],
-      "id": "S-11",
-      "title": "Normative tools and references"
+      "content": "8.\nThe date of entry into force is the date of the publication of the EB 85 meeting report on\n24 July 2015.",
+      "id": "S-0011",
+      "title": "2.4. Entry into force"
     },
     {
+      "anchor": "9.",
       "anchors": [],
-      "id": "S-12",
-      "title": "Calculation procedures and equations"
+      "content": "9.\nThe following documents are indispensable for application of this methodology:3\n(a)\n(b)\nClean development mechanism project standard;\nA/R methodological tools:\n(i)\n(ii)\n(iii)\n(iv)\n(v)\n“Estimation of carbon stocks and change in carbon stocks of trees and\nshrubs in A/R CDM project activities”;\n“Estimation of carbon stocks and change in carbon stocks in dead wood\nand litter in A/R CDM project activities”;\n“Tool for estimation of change in soil organic carbon stocks due to the\nimplementation of A/R CDM project activities”;\n“Estimation of non-CO2 greenhouse gas (GHG) emissions resulting from\nburning of biomass attributable to an A/R CDM project activity”;\n“Estimation of the increase in GHG emissions attributable to displacement\nof pre-project agricultural activities in A/R CDM project activity”.",
+      "id": "S-0012",
+      "title": "3. Normative references"
     },
     {
+      "anchor": "10.",
       "anchors": [],
-      "id": "S-13",
-      "title": "Annexes"
+      "content": "10.\nThe definitions contained in the following documents shall apply:4\n2 For example, digging pits of size 0.50 m × 0.50 m (length × width) at a spacing of 3 m × 3 m is equal to\na coverage of 2.78 per cent; continuous ploughing of land is equal to a coverage of 100 per cent.\n3 These documents are available online at: <http://cdm.unfccc.int/Reference/index.html>.\n4 These documents are available online at the following URLs:\n(a) <http://cdm.unfccc.int/Reference/index.html>;\n(b) <http://cdm.unfccc.int/Reference/COPMOP/index.html>;\nAR-AMS0007\nA/R Small-scale Methodology: Afforestation and reforestation project activities implemented on lands\nother than wetlands\nVersion 03.1\nSectoral scope(s): 14\n(a)\n(b)\n(c)\n“Glossary of CDM terms”;\n“Modalities and procedures for afforestation and reforestation project activities\nunder the clean development mechanism (A/R CDM modalities and procedures)\nas contained in the annex to decision 5/CMP.1”;\n“IPCC Good Practice Guidance for Land Use, Land-Use Change and Forestry,\n2003.”\n11.\nFor the purpose of this methodology, the following definition shall apply:\n(a)\nSoil disturbance - refers to any activity that results in a decrease in soil organic\ncarbon (SOC), for example ploughing, ripping, scarification, digging of pits and\ntrenches, stump removal, etc.",
+      "id": "S-0013",
+      "title": "4. Definitions"
+    },
+    {
+      "anchor": "12.",
+      "anchors": [],
+      "content": "12.\nThe carbon pools selected for accounting of carbon stock changes are shown in table 1.\nTable 1.\nCarbon pools selected for accounting of carbon stock changes\nCarbon pool\nWhether\nselected\nJustification/Explanation\nAbove-ground\nbiomass\nBelow-ground biomass Yes\nYes\nDead wood\nLitter and\nSoil organic carbon\nOptional\nThis is the major carbon pool subjected to project\nactivity\nCarbon stock in this pool is expected to increase due to\nthe implementation of the project activity\nCarbon stock in these pools may increase due to\nimplementation of the project activity\n13.\nThe emission sources and associated GHGs selected for accounting are shown in\ntable 2.\nTable 2.\nEmission sources and GHGs selected for accounting\nSources\nBurning of woody\nbiomass\nGas\nCO2\nCH4\nWhether\nSelected\nNo\nYes\nJustification/Explanation\nCO2 emissions due to burning of biomass\nare accounted as a change in carbon stock\nBurning of woody biomass for the purpose\nof site preparation, or as part of forest\nmanagement,\nthis\nmethodology\nis allowed under\n(c) <http://www.ipcc nggip.iges.or.jp/public/gpglulucf/gpglulucf.html>.\nAR-AMS0007\nA/R Small-scale Methodology: Afforestation and reforestation project activities implemented on lands\nother than wetlands\nVersion 03.1\nSectoral scope(s): 14\nSources\nGas\nN2O\nWhether\nSelected\nYes\nJustification/Explanation\nBurning of woody biomass for the purpose\nof site preparation, or as part of forest\nmanagement,\nthis\nmethodology\nis allowed under\n5.2.\nIdentification of the baseline scenario and demonstration of additionality\n14.\n15.\nThe baseline scenario of a small-scale A/R CDM project activity implemented under this\nmethodology is continuation of the pre-project land use.\nProject participants (PPs) shall demonstrate that the project activity is additional by\nselecting one of the following options:\n(a)\n(b)\nUsing the barrier analysis outline contained in appendix 1 of this methodology; or\nUsing an approved standardized baseline applicable to their project.",
+      "id": "S-0014",
+      "title": "5.1. Project boundary and eligibility of land"
+    },
+    {
+      "anchor": "16.",
+      "anchors": [],
+      "content": "16.\nIf biomass distribution over the project area is not homogeneous, stratification should be\ncarried out to improve the precision of biomass estimation. Different stratifications may\nbe appropriate for the baseline and project scenarios in order to achieve optimal\nprecision of estimation of net GHG removals by sinks. In particular:\n(a)\n(b)\nFor baseline net GHG removals by sinks, it is usually sufficient to stratify the area\naccording to major vegetation types and their crown cover and/or land use types;\nFor actual net GHG removals by sinks the stratification for ex ante estimations is\nbased on the project planting/management plan and the stratification for ex post\nestimations\nthe project\nplanting/management plan. If natural or anthropogenic impacts (e.g. local fires) or\nother factors (e.g. soil type) significantly alter the pattern of biomass distribution\nin the project area, then the ex post stratification is revised accordingly.\nimplementation of\nis based on\nthe actual",
+      "id": "S-0015",
+      "title": "5.3. Stratification"
+    },
+    {
+      "anchor": "17.",
+      "anchors": [],
+      "content": "17.\nThe baseline net GHG removals by sinks shall be calculated as follows:\n∆(cid:1829)(cid:3003)(cid:3020)(cid:3013),(cid:3047) (cid:3404) ∆(cid:1829)(cid:3021)(cid:3019)(cid:3006)(cid:3006)_ (cid:3003)(cid:3020)(cid:3013),(cid:3047) (cid:3397) ∆(cid:1829)(cid:3020)(cid:3009)(cid:3019)(cid:3022)(cid:3003)_ (cid:3003)(cid:3020)(cid:3013),(cid:3047) (cid:3397) ∆(cid:1829)(cid:3005)(cid:3024)_ (cid:3003)(cid:3020)(cid:3013),(cid:3047) (cid:3397) ∆(cid:1829)(cid:3013)(cid:3010)_ (cid:3003)(cid:3020)(cid:3013),(cid:3047)\nEquation (1)\nWhere:\n∆(cid:1829)(cid:3003)(cid:3020)(cid:3013),(cid:3047)\n∆(cid:1829)(cid:3021)(cid:3019)(cid:3006)(cid:3006)_ (cid:3003)(cid:3020)(cid:3013),(cid:3047)\n= Baseline net GHG removals by sinks in year t; t CO2-e\n= Change in carbon stock in baseline tree biomass within the project\nboundary in year t, as estimated in the tool “Estimation of carbon\nstocks and change in carbon stocks of trees and shrubs in A/R\nCDM project activities”; t CO2-e\nAR-AMS0007\nA/R Small-scale Methodology: Afforestation and reforestation project activities implemented on lands\nother than wetlands\nVersion 03.1\nSectoral scope(s): 14\n∆(cid:1829)(cid:3020)(cid:3009)(cid:3019)(cid:3022)(cid:3003)_ (cid:3003)(cid:3020)(cid:3013),(cid:3047)\n∆(cid:1829)(cid:3005)(cid:3024)_ (cid:3003)(cid:3020)(cid:3013),(cid:3047)\n∆(cid:1829)(cid:3013)(cid:3010)_ (cid:3003)(cid:3020)(cid:3013),(cid:3047)\n= Change in carbon stock in baseline shrub biomass within the\nproject boundary, in year t, as estimated in the tool “Estimation of\ncarbon stocks and change in carbon stocks of trees and shrubs in\nA/R CDM project activities”; t CO2-e\n= Change in carbon stock in baseline dead-wood biomass within the\nproject boundary, in year t, as estimated in the tool “Estimation of\ncarbon stocks and change in carbon stocks in dead wood and litter\nin A/R CDM project activities”; t CO2-e\n= Change in carbon stock in baseline litter biomass within the project\nboundary, in year t, as estimated in the tool “Estimation of carbon\nstocks and change in carbon stocks in dead wood and litter in A/R\nCDM project activities”; t CO2-e",
+      "id": "S-0016",
+      "title": "5.4. Baseline net GHG removals by sinks"
+    },
+    {
+      "anchor": "18.",
+      "anchors": [],
+      "content": "18.\nGHG emissions resulting from removal of herbaceous vegetation, combustion of fossil\nfuel, fertilizer application, use of wood, decomposition of litter and fine roots of N-fixing\ntrees, construction of access roads within the project boundary, and transportation\nattributable to the project activity shall be considered insignificant and therefore\naccounted as zero\n19.\nThe actual net GHG removals by sinks is calculated as follows:\n∆(cid:1829)(cid:3002)(cid:3004)(cid:3021)(cid:3022)(cid:3002)(cid:3013),(cid:3047) (cid:3404) ∆(cid:1829)(cid:3017),(cid:3047) (cid:3398) (cid:1833)(cid:1834)(cid:1833)(cid:3006),(cid:3047)\nEquation (2)\nWhere:\n∆(cid:1829)(cid:3002)(cid:3004)(cid:3021)(cid:3022)(cid:3002)(cid:3013),(cid:3047)\n∆(cid:1829)(cid:3017),(cid:3047)\n= Actual net GHG removals by sinks, in year t; t CO2-e\n= Change in the carbon stocks in project, occurring in the selected\ncarbon pools, in year t; t CO2-e\n(cid:1833)(cid:1834)(cid:1833)(cid:3006),(cid:3047)\n=\nIncrease in non-CO2 GHG emissions within the project boundary\nas a result of the implementation of the A/R CDM project activity,\nin year t, as calculated in the tool “Estimation of non-CO2 GHG\nemissions resulting from burning of biomass attributable to an A/R\nCDM project activity”; t CO2-e\n20.\nChange in the carbon stocks in project, occurring in the selected carbon pools, in year t\nis calculated as follows:\n∆(cid:1829)(cid:3017),(cid:3047) (cid:3404) ∆(cid:1829)(cid:3021)(cid:3019)(cid:3006)(cid:3006)_ (cid:3017)(cid:3019)(cid:3016)(cid:3011),(cid:3047) (cid:3397) ∆(cid:1829)(cid:3020)(cid:3009)(cid:3019)(cid:3022)(cid:3003)_ (cid:3017)(cid:3019)(cid:3016)(cid:3011),(cid:3047) (cid:3397) ∆(cid:1829)(cid:3005)(cid:3024)_ (cid:3017)(cid:3019)(cid:3016)(cid:3011),(cid:3047) (cid:3397) ∆(cid:1829)(cid:3013)(cid:3010)_ (cid:3017)(cid:3019)(cid:3016)(cid:3011),(cid:3047)\nEquation (3)\n(cid:3397) ∆(cid:1845)(cid:1841)(cid:1829)(cid:3002)(cid:3013),(cid:3047)\nWhere:\n∆(cid:1829)(cid:3017),(cid:3047)\n= Change in the carbon stocks in project, occurring in the selected\ncarbon pools, in year t; t CO2-e\nAR-AMS0007\nA/R Small-scale Methodology: Afforestation and reforestation project activities implemented on lands\nother than wetlands\nVersion 03.1\nSectoral scope(s): 14\n∆(cid:1829)(cid:3021)(cid:3019)(cid:3006)(cid:3006)_ (cid:3017)(cid:3019)(cid:3016)(cid:3011),(cid:3047)\n= Change in carbon stock in tree biomass in project in year t, as\nestimated in the tool “Estimation of carbon stocks and change in\ncarbon stocks of trees and shrubs in A/R CDM project activities”;\nt CO2-e\n∆(cid:1829)(cid:3020)(cid:3009)(cid:3019)(cid:3022)(cid:3003)_ (cid:3017)(cid:3019)(cid:3016)(cid:3011),(cid:3047) = Change in carbon stock in shrub biomass in project in year t, as\nestimated in the tool “Estimation of carbon stocks and change in\ncarbon stocks of trees and shrubs in A/R CDM project activities”;\nt CO2-e\n∆(cid:1829)(cid:3005)(cid:3024)_ (cid:3017)(cid:3019)(cid:3016)(cid:3011),(cid:3047)\n∆(cid:1829)(cid:3013)(cid:3010)_ (cid:3017)(cid:3019)(cid:3016)(cid:3011),(cid:3047)\n∆(cid:1845)(cid:1841)(cid:1829)(cid:3002)(cid:3013),(cid:3047)\n= Change in carbon stock in dead-wood biomass in project in year t,\nas estimated in the tool “Estimation of carbon stocks and change\nin carbon stocks in dead wood and litter in A/R CDM project\nactivities”; t CO2-e\n= Change in carbon stock in litter biomass in project in year t, as\nestimated in the tool “Estimation of carbon stocks and change in\ncarbon stocks in dead wood and litter in A/R CDM project\nactivities”; t CO2-e\n= Change in carbon stock in SOC in project, in year t, as estimated\nin the tool “Tool for estimation of change in soil organic carbon\nstocks due to the implementation of A/R CDM project activities”;\nt CO2-e",
+      "id": "S-0017",
+      "title": "5.5. Actual net GHG removals by sinks"
+    },
+    {
+      "anchor": "21.",
+      "anchors": [],
+      "content": "21.\nLeakage emissions shall be estimated as follows:\n(cid:1838)(cid:1837)(cid:3047) (cid:3404) (cid:1838)(cid:1837)(cid:3002)(cid:3008)(cid:3019)(cid:3010)(cid:3004),(cid:3047)\nWhere:\n(cid:1838)(cid:1837)(cid:3047)\n(cid:1838)(cid:1837)(cid:3002)(cid:3008)(cid:3019)(cid:3010)(cid:3004),(cid:3047)\nEquation (4)\n= GHG emissions due to leakage, in year t; t CO2-e\n= Leakage due to the displacement of agricultural activities in year t,\nas calculated in the tool “Estimation of the increase in GHG\nemissions attributable to displacement of pre-project agricultural\nactivities in A/R CDM project activity”; t CO2-e",
+      "id": "S-0018",
+      "title": "5.6. Leakage"
+    },
+    {
+      "anchor": "22.",
+      "anchors": [],
+      "content": "22.\nThe net anthropogenic GHG removals by sinks is calculated as follows:\n∆(cid:1829)(cid:3002)(cid:3019)(cid:2879)(cid:3004)(cid:3005)(cid:3014),(cid:3047) (cid:3404) ∆(cid:1829)(cid:3002)(cid:3004)(cid:3021)(cid:3022)(cid:3002)(cid:3013).(cid:3047) (cid:3398) ∆(cid:1829)(cid:3003)(cid:3020)(cid:3013),(cid:3047) (cid:3398) (cid:1838)(cid:1837)(cid:3047)\nEquation (5)\nWhere:\n∆(cid:1829)(cid:3002)(cid:3019)(cid:2879)(cid:3004)(cid:3005)(cid:3014),(cid:3047)\n∆(cid:1829)(cid:3002)(cid:3004)(cid:3021)(cid:3022)(cid:3002)(cid:3013).(cid:3047)\n∆(cid:1829)(cid:3003)(cid:3020)(cid:3013),(cid:3047)\n= Net anthropogenic GHG removals by sinks, in year t; t CO2-e\n= Actual net GHG removals by sinks, in year t; t CO2-e\n= Baseline net GHG removals by sinks, in year t; t CO2-e\nAR-AMS0007\nA/R Small-scale Methodology: Afforestation and reforestation project activities implemented on lands\nother than wetlands\nVersion 03.1\nSectoral scope(s): 14\n(cid:1838)(cid:1837)(cid:3047)\n= GHG emissions due to leakage, in year t; t CO2-e",
+      "id": "S-0019",
+      "title": "5.7. Net anthropogenic GHG removals by sinks"
+    },
+    {
+      "anchor": "23.",
+      "anchors": [],
+      "content": "23.\nThe tCERs and lCERs for a verification period T = t2 – t1, where t1 and t2 are the years of\nthe start and the end, respectively, of the verification period, are calculated as follows:\n(cid:3047)(cid:3118)\n(cid:1872)(cid:1829)(cid:1831)(cid:1844)(cid:3047)(cid:3118) (cid:3404) (cid:3533) ∆(cid:1829)(cid:3002)(cid:3019)(cid:2879)(cid:3004)(cid:3005)(cid:3014),(cid:3047)\n(cid:2869)\n(cid:3047)(cid:3118)\n(cid:1864)(cid:1829)(cid:1831)(cid:1844)(cid:3047)(cid:3118) (cid:3404) (cid:3533) ∆(cid:1829)(cid:3002)(cid:3019)(cid:2879)(cid:3004)(cid:3005)(cid:3014),(cid:3047)\n(cid:3047)(cid:3117)(cid:2878)(cid:2869)\nEquation (6)\nEquation (7)\nWhere:\n(cid:1872)(cid:1829)(cid:1831)(cid:1844)(cid:3047)(cid:3118)\n(cid:1864)(cid:1829)(cid:1831)(cid:1844)(cid:3047)(cid:3118)\n∆(cid:1829)(cid:3002)(cid:3019)(cid:2879)(cid:3004)(cid:3005)(cid:3014),(cid:3047)\n(cid:1872)(cid:2869), (cid:1872)(cid:2870)\n= Number of units of temporary certified emission reductions\n(tCERs) issuable in year t2\n= Number of units of long-term certified emission reductions (lCERs)\nissuable in year t2\n= Net anthropogenic GHG removals by sinks, in year t; t CO2-e\n= The years of the start and the end, respectively, of the verification\nperiod\n24.\nIf\nlCER\nt\n2\n0\nthen\nlCER represents the number of lCERs that shall be replaced\n2t\nbecause of a reversal of net anthropogenic GHG removals by sinks since the previous\ncertification.",
+      "id": "S-0020",
+      "title": "5.8. Calculation of tCERs and lCERs"
+    },
+    {
+      "anchor": "25.",
+      "anchors": [],
+      "content": "25.\nThe monitoring plan shall provide for collection of all relevant data necessary for:\n(a)\n(b)\n(c)\nVerification that the applicability conditions listed under paragraphs 3 and 4 have\nbeen met;\nVerification of changes in carbon stocks in the pools selected;\nVerification of project emissions and leakage emissions.\n26.\nThe data collected shall be archived for a period of at least two years after the end of the\nlast crediting period of the project activity.",
+      "id": "S-0021",
+      "title": "6.1. Monitoring plan"
+    },
+    {
+      "anchor": "27.",
+      "anchors": [],
+      "content": "27.\nInformation shall be provided, and recorded in the project design document (PDD), to\nestablish that the commonly accepted principles and practices of forest inventory and\nAR-AMS0007\nA/R Small-scale Methodology: Afforestation and reforestation project activities implemented on lands\nother than wetlands\nVersion 03.1\nSectoral scope(s): 14\nforest management in the host country are implemented. If such principles and practices\nare not known or available, standard operating procedures (SOPs) and quality\ncontrol/quality assurance (QA/QC) procedures for inventory operations, including field\ndata collection and data management, shall be identified, recorded and applied. Use or\nadaptation of SOPs available from published handbooks, or from the “IPCC Good\nPractice Guidance\nis\nrecommended.\nfor Land Use, Land-Use Change and Forestry 2003”,",
+      "id": "S-0022",
+      "title": "6.2. Monitoring of project implementation"
+    },
+    {
+      "anchor": "28.",
+      "anchors": [],
+      "content": "28.\nFor this methodology, the precision requirements are those listed in the tool “Estimation\nof carbon stocks and change in carbon stocks of trees and shrubs in A/R CDM project\nactivities”.",
+      "id": "S-0023",
+      "title": "6.3. Precision requirements"
+    },
+    {
+      "anchor": "29.",
+      "anchors": [],
+      "content": "29.\nDescription of data and parameters can be found in the tools used in this methodology.\n30.\nData and parameters obtained from measurement shall be monitored as required in the\ntools.\nAR-AMS0007\nA/R Small-scale Methodology: Afforestation and reforestation project activities implemented on lands\nother than wetlands\nVersion 03.1\nSectoral scope(s): 14\nAppendix 1. Assessment of additionality\n1.\nProject participants (PPs) shall demonstrate that the project activity would not have\noccurred anyway due to at least one of the following barriers:1\n(a)\nInvestment barriers, other than economic/financial barriers, inter alia:\n(i) Debt funding not available for this type of project activity;\n(ii) No access to international capital markets due to real or perceived risks\nassociated with domestic or foreign direct investment in the country where\nthe project activity is to be implemented;\n(b)\nInstitutional barriers, inter alia:\n(i) Risk relating to changes in government policies or laws;\n(ii)\nLack of enforcement of legislation relating to forest or land-use;\n(c)\nTechnological barriers, inter alia:\n(i)\nLack of access to planting materials;\n(ii)\nLack of infrastructure for implementation of the technology;\n(d)\nBarriers relating to local tradition, inter alia:\n(i)\nTraditional knowledge or lack thereof, of laws and customs, market\nconditions, practices;\n(ii) Traditional equipment and technology;\n(e)\nBarriers due to prevailing practice, inter alia:\n(i)\nThe project activity is the “first of its kind”. No project activity of this type is\ncurrently operational in the host country or region;\n(f)\nBarriers due to local ecological conditions, inter alia:\n(i) Degraded soil (e.g. water/wind erosion, salinization);\n(ii) Catastrophic natural and/or human-induced events (e.g. land slides, fire);\n(iii) Unfavourable meteorological conditions (e.g. early/late frost, drought);\n(iv) Pervasive opportunistic species or group of species preventing\nregeneration of trees (e.g. grasses, weeds);\n(v) Unfavourable course of ecological succession;\n(vi) Biotic pressure in terms of grazing, fodder collection, etc.;\n1 For general approaches to demonstration of existence of barriers, project participants may draw upon\nthe “Guidelines for objective demonstration and assessment of barriers”.\nAR-AMS0007\nA/R Small-scale Methodology: Afforestation and reforestation project activities implemented on lands\nother than wetlands\nVersion 03.1\nSectoral scope(s): 14\n(g)\nBarriers due to social conditions, inter alia:\n(i) Demographic pressure on the land (e.g. increased demand on land due to\npopulation growth);\n(ii) Social conflict among interest groups in the region where the project activity\ntakes place;\n(iii) Widespread illegal practices (e.g. illegal grazing, non-timber product\nextraction and tree felling);\n(iv) Lack of skilled and/or properly trained labour force;\n(v)\nLack of organization of local communities.\nAR-AMS0007\nA/R Small-scale Methodology: Afforestation and reforestation project activities implemented on lands\nother than wetlands\nVersion 03.1\nSectoral scope(s): 14\nAppendix 2. Cropland in which soil disturbance is restricted\n1.\nCropland which is subjected, in the baseline, to the land-use, land management\npractices, and inputs listed in the following table attracts the restriction on the extent of\nsoil disturbance as described in paragraph 6(b) (ii) of this methodology.\nTable.\nCropland in which soil disturbance is restricted1\nRegion\nLand use\nBoreal\nTemperate, cold, dry\nLong-term cultivated cropland\nShort-term or set aside cropland\nLong-term cultivated cropland\nShort-term or set aside cropland\nLong-term cultivated cropland\nTemperate, cold, moist\nShort-term or set aside cropland\nLong-term cultivated cropland\nTemperate, warm, dry\nShort-term or set aside cropland\nManagement\nFull tillage\nReduced tillage\nNo-till\nFull tillage\nReduced tillage\nNo-till\nFull tillage\nReduced tillage\nNo-till\nFull tillage\nReduced tillage\nNo-till\nReduced tillage\nNo-till\nFull tillage\nReduced tillage\nNo-till\nFull tillage\nReduced tillage\nNo-till\nFull tillage\nReduced tillage\nNo-till\nInputs\nHigh with manure\nHigh with manure\nHigh without\nmanure\nHigh with manure\nHigh with manure\nHigh with manure\nHigh without\nmanure\nHigh with manure\nHigh with manure\nHigh with manure\nHigh with manure\nHigh with manure\nHigh with manure\nMedium\nHigh without\nmanure\nHigh with manure\nHigh with manure\nHigh with manure\nHigh with manure\nHigh without\nmanure\nHigh with manure\nHigh with manure\nHigh with manure\nHigh with manure\nHigh with manure\nHigh with manure\nMedium\nHigh without\nmanure\n1 Adapted from “2006 IPCC Guidelines for National Greenhouse Gas Inventories”. See table 5.5 on page 5.17 for\na more complete description of the terms used in the table.\nAR-AMS0007\nA/R Small-scale Methodology: Afforestation and reforestation project activities implemented on lands\nother than wetlands\nVersion 03.1\nSectoral scope(s): 14\nRegion\nLand use\nLong-term cultivated cropland\nTemperate, warm, moist\nShort-term or set aside cropland\nTropical, dry\nShort-term or set aside cropland\nTropical, moist\nShort-term or set aside cropland\nLong-term cultivated cropland\nTropical, montane\nShort-term or set aside cropland\nTropical, wet\nShort-term or set aside cropland\nManagement\nReduced tillage\nNo-till\nFull tillage\nReduced tillage\nNo-till\nFull tillage\nReduced tillage\nInputs\nHigh with manure\nHigh with manure\nHigh with manure\nHigh with manure\nHigh without\nmanure\nHigh with manure\nHigh with manure\nMedium\nHigh without\nmanure\nHigh with manure\nNo-till\nAll\nFull tillage\nReduced tillage\nNo-till\nNo-till\nFull tillage\nReduced tillage\nNo-till\nFull tillage\nReduced tillage\nNo-till\nHigh with manure\nHigh without\nmanure\nHigh with manure\nHigh without\nmanure\nHigh with manure\nHigh with manure\nHigh with manure\nHigh without\nmanure\nHigh with manure\nMedium\nHigh without\nmanure\nHigh with manure\nHigh with manure\nHigh without\nmanure\nHigh with manure\nHigh without\nmanure\nHigh with manure\nAR-AMS0007\nA/R Small-scale Methodology: Afforestation and reforestation project activities implemented on lands\nother than wetlands\nVersion 03.1\nSectoral scope(s): 14\nAppendix 3. Grasslands\nin which soil disturbance\nis\nrestricted\n1.\nGrassland which is subjected, in the baseline, to the land management practices and\ninputs listed in the following table attracts the restriction on the extent of soil disturbance\nas described in paragraph 6(b) (ii) of the methodology.\nTable.\nGrasslands in which soil disturbance is restricted1\nTemperature/Moisture Regime\nBoreal\nTemperate, cold, dry\nTemperate, cold, moist\nTemperate, warm, dry\nTemperate, warm, moist\nTropical, dry\nTropical, moist\nTropical, montane\nTropical, wet\nManagement\nImproved\nNon-degraded\nModerately degraded\nImproved\nNon-degraded\nModerately degraded\nImproved\nNon-degraded\nModerately degraded\nImproved\nNon-degraded\nModerately degraded\nImproved\nNon-degraded\nModerately degraded\nImproved\nNon-degraded\nImproved\nNon-degraded\nModerately degraded\nImproved\nNon-degraded\nModerately degraded\nImproved\nNon-degraded\nModerately degraded\n- - - - -\n1 Adapted from “2006 IPCC Guidelines for National Greenhouse Gas Inventories”. See table 6.2 on page 6.16 for\na more complete description of the terms used in the table.\nAR-AMS0007\nA/R Small-scale Methodology: Afforestation and reforestation project activities implemented on lands\nother than wetlands\nVersion 03.1\nSectoral scope(s): 14\nDocument information\nVersion\nDate\nDescription\n03.1\n24 July 2015\nEB 85, Annex 21\nMinor revision to remove the use of a tool under Normative\nReferences and other editorial improvements.\n03.0\n4 October 2013\nEB 75, Annex 32\nThis revision:\n Allows projects to use approved standardized baselines when\napplicable;\n Uses a revised template and thus enhances readability and\nconsistency;\n Changes the title from “AR-AMS0007: Simplified baseline and\nmonitoring methodology for small scale CDM afforestation and\nreforestation project activities implemented on lands other than\nwetlands” to AR-AMS0007: Afforestation and reforestation\nproject activities implemented on lands other than wetlands”.\n02.0.0\n20 July 2012\nEB 68, Annex 29\nThe revision:\n Consolidates the small-scale A/R CDM methodologies:\n(a) AR-AMS0001\n“Simplified baseline and monitoring\nmethodologies for small-scale A/R CDM project activities\nimplemented on grasslands or croplands with limited\ndisplacement of pre-project activities”;\n“Simplified baseline and monitoring\n(b) AR-AMS0002\nmethodologies\nand\nsmall-scale\nreforestation project activities under the CDM implemented\non settlements”;\nafforestation\nfor\n(c) AR-AMS0004\n“Approved\nand\nmonitoring methodology\nfor small-scale agroforestry\nafforestation and reforestation project activities under the\nclean development mechanism”;\nsimplified\nbaseline\n(d) AR-AMS0005\nsimplified\n“Approved\nand\nmonitoring methodology for small-scale afforestation and\nreforestation project activities under the clean development\nmechanism implemented on lands having low inherent\npotential to support living biomass”;\nbaseline\n(e) AR-AMS0006\n“Approved\nand\nmonitoring methodology\nfor small-scale silvopastoral\nafforestation and reforestation project activities under the\nclean development mechanism”;\nsimplified\nbaseline\n\nIncorporates the use of the approved tools to broaden the\nchoice of carbon pools and to allow alternative approaches,\nincluding simplified approaches based on default values of\nparameters, for estimation of changes in carbon stocks in the\npools;\n Changes the title from AR-AMS0007 “Simplified baseline and\nAR-AMS0007\nA/R Small-scale Methodology: Afforestation and reforestation project activities implemented on lands\nother than wetlands\nVersion 03.1\nSectoral scope(s): 14\nVersion\nDate\nDescription\nmonitoring methodology for small-scale A/R CDM project\nactivities implemented on grasslands or croplands” to AR-\nAMS0007 “Simplified baseline and monitoring methodology for\nsmall scale CDM afforestation and reforestation project\nactivities implemented on lands other than wetlands”.\nDue to overall modification of the document, no highlights of the\nchanges are provided.\n01\n17 September 2010\nEB 56, Annex 10\nInitial adoption.\nDecision Class: Regulatory\nDocument Type: Standard\nBusiness Function: Methodology\nKeywords: afforestation reforestation, biomass, SSC AR project activity",
+      "id": "S-0024",
+      "title": "6.4. Data requirements under the methodology"
     }
   ]
 }

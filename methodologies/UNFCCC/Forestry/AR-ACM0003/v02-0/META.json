@@ -5,12 +5,12 @@
   },
   "audit_hashes": {
     "rules_json_sha256": "934d872df2667698052930645a5c319b0740410e88ad4375044553901bf139d5",
-    "sections_json_sha256": "0bbdc0572eec23cd53090046ce8776cdb7b41798648cad32beb5bdb6299da2ae",
+    "sections_json_sha256": "ba692b2e152586d0c725bf9ad21d23006950b36df1539faf8093822754b9a2e2",
     "source_pdf_sha256": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e"
   },
   "automation": {
-    "repo_commit": "d1351227a996e987e5c243caa1fcae94e5d23e29",
-    "scripts_manifest_sha256": "19cbc7da3ddf8abbd9bfd7dc616ea241d6e5756ce9948dc7f012ab7780530a75"
+    "repo_commit": "88befd1d7831f35c04339654c00525ecc8c4e47c",
+    "scripts_manifest_sha256": "fcef795da7b57a59ac554c775318296b06be31d167b84ffee31c0f71ab7bd6b8"
   },
   "provenance": {
     "author": "Fred Egbuedike",
