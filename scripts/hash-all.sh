@@ -27,41 +27,6 @@ tool_digest() {
   printf '%s %s' "$(hash_file "$file")" "$(wc -c < "$file")"
 }
 
-derive_doc() {
-  file="$1"
-  org="$2"
-  method_slug="$3"
-  version_slug="$4"
-  printf '%s\n' "$file" | ORG="$org" METHOD_SLUG="$method_slug" VERSION_SLUG="$version_slug" awk -F'/' '
-    BEGIN {
-      org = ENVIRON["ORG"];
-      method = ENVIRON["METHOD_SLUG"];
-      ver = ENVIRON["VERSION_SLUG"];
-    }
-    {
-      fileName = $NF;
-      upper = toupper(fileName);
-      if (match(upper, /^AR-[A-Z0-9]+_V[0-9]+(-[0-9]+)*\.(PDF|DOCX)$/)) {
-        split(upper, a, "_V");
-        tool = a[1];
-        tver = a[2];
-        sub(/\.(PDF|DOCX)$/, "", tver);
-        gsub(/-/, ".", tver);
-        printf "%s/%s@v%s", org, tool, tver;
-      } else if (upper ~ /(SOURCE\.(PDF|DOCX)|METH_BOOKLET\.PDF)$/) {
-        printf "%s/%s@%s", org, method, ver;
-      } else {
-        safe = fileName;
-        sub(/\.[^.]+$/, "", safe);
-        gsub(/[^A-Za-z0-9]/, "-", safe);
-        gsub(/^-+/, "", safe);
-        gsub(/-+$/, "", safe);
-        if (safe == "") safe = "asset";
-        printf "%s/%s@%s#%s", org, method, ver, safe;
-      }
-    }'
-}
-
 repo_commit=$(git rev-parse HEAD)
 scripts_manifest_sha=$(./scripts/hash-scripts.sh)
 
@@ -103,48 +68,20 @@ esac
   sections_hash=$(hash_file "$dir/sections.json")
   rules_hash=$(hash_file "$dir/rules.json")
   rel=${dir#methodologies/}
-  org=${rel%%/*}
-  rest=${rel#*/}
-  version=${rest##*/}
-  version_slug=$(printf '%s\n' "$version" | tr '-' '.')
-  method_path=${rest%/*}
-  sector=${method_path%%/*}
-  if [ "$sector" = "$method_path" ]; then
-    sector=""
-    id_path="$method_path"
-  else
-    id_path=${method_path#*/}
-  fi
-  if [ -z "$id_path" ]; then
-    id_path="$sector"
-    sector=""
-  fi
-  method_slug=$(printf '%s\n' "$id_path" | tr '/' '.')
-  if [ -z "$method_slug" ]; then
-    method_slug=$(printf '%s\n' "$sector" | tr '/' '.')
-  fi
+  IFS=/ read -r org sector id version <<EOF2
+$rel
+EOF2
+  base_dir="tools/$org/$id/$version"
+  sector_dir="tools/$org/$sector/$id/$version"
   tool_dirs=""
-  base_dir="tools/$org"
-  if [ -n "$id_path" ]; then
-    base_dir="$base_dir/$id_path"
-  fi
-  base_dir="$base_dir/$version"
   if [ -d "$base_dir" ]; then
     tool_dirs="$base_dir"
   fi
-  if [ -n "$sector" ]; then
-    with_sector="tools/$org/$sector"
-    if [ -n "$id_path" ]; then
-      with_sector="$with_sector/$id_path"
-    fi
-    with_sector="$with_sector/$version"
-    if [ -d "$with_sector" ]; then
-      if [ -n "$tool_dirs" ]; then
-        tool_dirs="$tool_dirs
-$with_sector"
-      else
-        tool_dirs="$with_sector"
-      fi
+  if [ "$sector_dir" != "$base_dir" ] && [ -d "$sector_dir" ]; then
+    if [ -n "$tool_dirs" ]; then
+      tool_dirs="$tool_dirs\n$sector_dir"
+    else
+      tool_dirs="$sector_dir"
     fi
   fi
   tools_json='[]'
@@ -157,12 +94,12 @@ $with_sector"
       sha="$1"
       size="$2"
       kind="${f##*.}"
-      doc=$(derive_doc "$f" "$org" "$method_slug" "$version_slug")
+      doc=$(printf "%s\n" "$f" | awk -F'/' '{org=$2; file=$NF; method=$(NF-2); ver=$(NF-1); if (match(file, /^AR-[A-Z0-9]+_v[0-9]+(-[0-9]+)*\.(pdf|docx)$/)) {split(file,a,"_v"); tool=a[1]; ver=a[2]; sub(/\.(pdf|docx)$/,"",ver); gsub(/-/,".",ver); printf "%s/%s@v%s", org, tool, ver} else if (file ~ /(source\.(pdf|docx)|meth_booklet\.pdf)$/) {gsub(/-/,".",ver); printf "%s/%s@%s", org, method, ver}}')
       printf '{"doc":"%s","path":"%s","sha256":"%s","size":%s,"kind":"%s"}\n' "$doc" "$f" "$sha" "$size" "$kind"
     done | jq -s '.')
   fi
   if [ -z "$source_hash" ] && [ "$tools_json" != '[]' ]; then
-    method_doc_prefix="$org/$method_slug@"
+    method_doc_prefix="$org/$id@"
     source_hash=$(printf '%s' "$tools_json" | jq -r --arg prefix "$method_doc_prefix" '
       (map(select((.doc // "") | startswith($prefix))) | .[0].sha256) // empty')
     if [ -z "$source_hash" ]; then

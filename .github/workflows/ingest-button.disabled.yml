@@ -50,25 +50,12 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          clean: true
-          fetch-depth: 0
           lfs: true
 
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
-
-      - uses: actions/setup-go@4d34df0c2316fe8122ab82dc22947d607c0c91f9
-        with:
-          go-version: '1.22.1'
-
-      - name: Install pup
-        run: |
-          set -euxo pipefail
-          go install github.com/ericchiang/pup@v0.4.0
-          sudo install -m 0755 "$(go env GOPATH)/bin/pup" /usr/local/bin/pup
-          pup --version
 
       - name: Install
         run: |

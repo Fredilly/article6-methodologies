@@ -18,9 +18,6 @@ jobs:
       - name: Checkout
         # actions/checkout@v4.2.2
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-        with:
-          clean: true
-          fetch-depth: 0
 
       - name: Setup Node
         # actions/setup-node@v4.0.4
@@ -28,18 +25,6 @@ jobs:
         with:
           node-version: '20.11.1'
           cache: 'npm'
-
-      - name: Setup Go
-        uses: actions/setup-go@4d34df0c2316fe8122ab82dc22947d607c0c91f9
-        with:
-          go-version: '1.22.1'
-
-      - name: Install pup
-        run: |
-          set -euxo pipefail
-          go install github.com/ericchiang/pup@v0.4.0
-          sudo install -m 0755 "$(go env GOPATH)/bin/pup" /usr/local/bin/pup
-          pup --version
 
       - name: Install npm deps
         run: npm ci
