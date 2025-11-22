@@ -4,13 +4,13 @@
     "created_by": "ingest.sh"
   },
   "audit_hashes": {
-    "rules_json_sha256": "a80804d45b6867110e469f7e4bc53643b604801ae59286d30e34d7cc64c085f6",
-    "sections_json_sha256": "f35fc63ea03a21a81da4a23e3f2430ff5abe5fd95692413cb7b691f61317d71b",
+    "rules_json_sha256": "934d872df2667698052930645a5c319b0740410e88ad4375044553901bf139d5",
+    "sections_json_sha256": "0bbdc0572eec23cd53090046ce8776cdb7b41798648cad32beb5bdb6299da2ae",
     "source_pdf_sha256": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e"
   },
   "automation": {
-    "repo_commit": "a62525c16d27b9073a38e5627dc0e08304ab0619",
-    "scripts_manifest_sha256": "38838ca873f781550ca16ab91f1c8aa7ac7020383bd17e9fea1bee39b810ec19"
+    "repo_commit": "d1351227a996e987e5c243caa1fcae94e5d23e29",
+    "scripts_manifest_sha256": "19cbc7da3ddf8abbd9bfd7dc616ea241d6e5756ce9948dc7f012ab7780530a75"
   },
   "provenance": {
     "author": "Fred Egbuedike",
@@ -27,6 +27,14 @@
   },
   "references": {
     "tools": [
+      {
+        "doc": "UNFCCC/AR-ACM0003@v02-0",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/EB75_repan30_AR-ACM0003_ver02.0.pdf",
+        "sha256": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e",
+        "size": 1078217,
+        "url": null
+      },
       {
         "doc": "UNFCCC/AR-TOOL02@v01",
         "kind": "pdf",
@@ -73,14 +81,6 @@
         "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-16-v01.1.0.pdf",
         "sha256": "edc718dba7eb097092907553f849c10a36e91a3b4199677ccf4a78748a92f8de",
         "size": 255568,
-        "url": null
-      },
-      {
-        "doc": "UNFCCC/AR-ACM0003@v02-0",
-        "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/EB75_repan30_AR-ACM0003_ver02.0.pdf",
-        "sha256": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e",
-        "size": 1078217,
         "url": null
       }
     ]
