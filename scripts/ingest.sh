@@ -427,6 +427,55 @@ PY
     node scripts/derive-rules-rich.cjs "$dest_dir"
     node scripts/derive-lean-from-rich.js "$dest_dir"
     node scripts/build-meta.cjs "$dest_dir"
+
+    prev_tmp="$(mktemp)"
+    if ! node scripts/parse-previous-versions.cjs "$html_tmp" > "$prev_tmp" 2>/dev/null; then
+      echo '[]' > "$prev_tmp"
+    fi
+    prev_count="$(jq 'length' "$prev_tmp" 2>/dev/null || echo 0)"
+    if [ "$prev_count" -gt 0 ]; then
+      echo "[previous] detected $prev_count archived version(s)"
+      while IFS= read -r prev_entry; do
+        prev_version="$(jq -r '.version' <<<"$prev_entry")"
+        version_number="$(jq -r '.version_number' <<<"$prev_entry")"
+        pdf_url="$(jq -r '.pdf_url' <<<"$prev_entry")"
+        effective_from="$(jq -r '.effective_from // ""' <<<"$prev_entry")"
+        effective_to="$(jq -r '.effective_to // ""' <<<"$prev_entry")"
+        if [ -z "$prev_version" ] || [ -z "$pdf_url" ]; then
+          continue
+        fi
+        prev_meta_dir="$dest_dir/previous/$prev_version"
+        prev_tools_dir="$tools_dir/previous/$prev_version/tools"
+        if [ -f "$prev_meta_dir/META.json" ]; then
+          echo "[previous] skip existing $prev_version"
+          continue
+        fi
+        mkdir -p "$prev_meta_dir" "$prev_tools_dir"
+        source_asset="source-assets/$org/$program/$code/$prev_version/source.pdf"
+        mkdir -p "$(dirname "$source_asset")"
+        if ! copy_cached_asset "$pdf_url" "$source_asset"; then
+          echo "[previous] failed to download $pdf_url for $prev_version" >&2
+          continue
+        fi
+        cp "$source_asset" "$prev_tools_dir/source.pdf"
+        printf 'Normative tools: see active version %s/tools/\n' "$ver" > "$prev_tools_dir/POINTERS.md"
+        prev_sha="$(sha256 "$source_asset")"
+        prev_size="$(file_size "$source_asset")"
+        node scripts/write-previous-meta.cjs \
+          --method "$dest_dir" \
+          --prev "$prev_meta_dir" \
+          --version "$prev_version" \
+          --version_number "$version_number" \
+          --pdf_path "$source_asset" \
+          --pdf_sha "$prev_sha" \
+          --pdf_size "$prev_size" \
+          --pdf_url "$pdf_url" \
+          --method_page "$page" \
+          --effective_from "$effective_from" \
+          --effective_to "$effective_to"
+      done < <(jq -c '.[]' "$prev_tmp")
+    fi
+    rm -f "$prev_tmp"
   fi
 
   # validate + commit
