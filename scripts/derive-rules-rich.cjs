@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
+const { writeFileIfChanged } = require('./lib/fs-utils.cjs');
 
 const KEYWORD_TYPES = [
   { type: 'eligibility', regex: /eligib/i },
@@ -118,8 +119,9 @@ function deriveRulesForMethod(methodDir, strictMode) {
     console.warn(message);
     return false;
   }
+  rules.sort((a, b) => String(a.id).localeCompare(String(b.id)));
   const dest = path.join(methodDir, 'rules.rich.json');
-  fs.writeFileSync(dest, `${JSON.stringify(rules, null, 2)}\n`);
+  writeFileIfChanged(dest, `${JSON.stringify(rules, null, 2)}\n`);
   console.log(`[rules-rich] wrote ${path.relative(repoRoot, dest)}`);
   return true;
 }

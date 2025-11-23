@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
+const { writeFileIfChanged } = require('./lib/fs-utils.cjs');
 
 const repoRoot = path.join(__dirname, '..');
 const baseDir = path.join(repoRoot, 'methodologies');
@@ -139,4 +140,4 @@ entries.sort((a, b) =>
 );
 
 const outPath = path.join(repoRoot, 'registry.json');
-fs.writeFileSync(outPath, JSON.stringify(entries, null, 2) + '\n');
+writeFileIfChanged(outPath, JSON.stringify(entries, null, 2) + '\n');
