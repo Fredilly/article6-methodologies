@@ -1,0 +1,310 @@
+[
+  {
+    "id": "S-0005.R-0001",
+    "type": "leakage",
+    "summary": "Leakage ..........................................................................................................",
+    "logic": "Leakage ..........................................................................................................",
+    "refs": {
+      "sections": [
+        "S-0005"
+      ]
+    }
+  },
+  {
+    "id": "S-0009.R-0001",
+    "type": "baseline",
+    "summary": "(a) The livestock population in the farm is managed under confined conditions; (b) Manure or the streams obtained after treatment are not discharged into natural water resources (e.g. river or estuaries), otherwise “AMS-III.H Methane rec...",
+    "logic": "(a) The livestock population in the farm is managed under confined conditions; (b) Manure or the streams obtained after treatment are not discharged into natural water resources (e.g. river or estuaries), otherwise “AMS-III.H Methane recovery in wastewater treatment\" shall be applied; (c) The annual average temperature of baseline site where anaerobic manure treatment facility is located is higher than 5°C; (d) In the baseline scenario the retention time of manure waste in the anaerobic treatment system is greater than one month, and if anaerobic lagoons are used in the baseline, their depths are at least 1 m; (e) No methane recovery and destruction by flaring or combustion for gainful use takes place in the baseline scenario.",
+    "refs": {
+      "sections": [
+        "S-0009"
+      ]
+    }
+  },
+  {
+    "id": "S-0014.R-0001",
+    "type": "eligibility",
+    "summary": "If the recovered biogas is used to power auxiliary equipment of the project activity, it should be taken into account accordingly, using zero as its emission factor; however, energy used for such purposes is not eligible as an SSC CDM Ty...",
+    "logic": "If the recovered biogas is used to power auxiliary equipment of the project activity, it should be taken into account accordingly, using zero as its emission factor; however, energy used for such purposes is not eligible as an SSC CDM Type I project component.",
+    "refs": {
+      "sections": [
+        "S-0014"
+      ]
+    }
+  },
+  {
+    "id": "S-0015.R-0001",
+    "type": "eligibility",
+    "summary": "compared to the baseline scenario are only eligible if they comply with the related and relevant requirements in the \"General guidelines for SSC CDM methodologies\".",
+    "logic": "compared to the baseline scenario are only eligible if they comply with the related and relevant requirements in the \"General guidelines for SSC CDM methodologies\".",
+    "refs": {
+      "sections": [
+        "S-0015"
+      ]
+    }
+  },
+  {
+    "id": "S-0020.R-0001",
+    "type": "baseline",
+    "summary": "methodologies and tools: (a) “ACM0010: Consolidated baseline methodology for GHG emission reductions from manure management systems”; (b) AM0073: GHG emission reductions through multi-site manure collection and treatment in a central pla...",
+    "logic": "methodologies and tools: (a) “ACM0010: Consolidated baseline methodology for GHG emission reductions from manure management systems”; (b) AM0073: GHG emission reductions through multi-site manure collection and treatment in a central plant”; (c) “AMS-III.F: Avoidance of methane emissions through composting\"; (d) “AMS-III.G: Landfill methane recovery\"; (e) “AMS-III.H: Methane recovery in wastewater treatment\";",
+    "refs": {
+      "sections": [
+        "S-0020"
+      ]
+    }
+  },
+  {
+    "id": "S-0025.R-0001",
+    "type": "baseline",
+    "summary": "Baseline emissions (BEy) are calculated by using one of the following two options: (a) Using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC Tier 2 ...",
+    "logic": "Baseline emissions (BEy) are calculated by using one of the following two options: (a) Using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC Tier 2 approach (please refer to the chapter ‘Emissions from Livestock and Manure Management’ under the volume ‘Agriculture, Forestry and other Land use’ of the 2006 IPCC Guidelines for National Greenhouse Gas Inventories).",
+    "refs": {
+      "sections": [
+        "S-0025"
+      ]
+    }
+  },
+  {
+    "id": "S-0025.R-0002",
+    "type": "baseline",
+    "summary": "For this calculation, information about the characteristics of the manure and of the management systems in the baseline is required.",
+    "logic": "For this calculation, information about the characteristics of the manure and of the management systems in the baseline is required.",
+    "refs": {
+      "sections": [
+        "S-0025"
+      ]
+    }
+  },
+  {
+    "id": "S-0035.R-0001",
+    "type": "leakage",
+    "summary": "(a) Physical leakage of biogas in the manure management systems which includes production, collection and transport of biogas to the point of flaring/combustion or gainful use (PEPL,y); (b) Emissions from flaring or combustion of the gas...",
+    "logic": "(a) Physical leakage of biogas in the manure management systems which includes production, collection and transport of biogas to the point of flaring/combustion or gainful use (PEPL,y); (b) Emissions from flaring or combustion of the gas stream (PEflare,y); (c) CO2 emissions from use of fossil fuels or electricity for the operation of all the installed facilities (PEpower,y); (d) CO2 emissions from incremental transportation distances; (e) Emissions from the storage of manure before being fed into the anaerobic digester (PEstorage,y).",
+    "refs": {
+      "sections": [
+        "S-0035"
+      ]
+    }
+  },
+  {
+    "id": "S-0038.R-0001",
+    "type": "monitoring",
+    "summary": "However, this use of the recovered biogas shall be included in the project boundary and its output shall be monitored in order to ensure that the recovered biogas is actually destroyed, even if the emission reductions from this component...",
+    "logic": "However, this use of the recovered biogas shall be included in the project boundary and its output shall be monitored in order to ensure that the recovered biogas is actually destroyed, even if the emission reductions from this component are not claimed.",
+    "refs": {
+      "sections": [
+        "S-0038"
+      ]
+    }
+  },
+  {
+    "id": "S-0039.R-0001",
+    "type": "leakage",
+    "summary": "a default value of 10% of the maximum methane producing potential (Bo) for the physical leakages from anaerobic digesters.",
+    "logic": "a default value of 10% of the maximum methane producing potential (Bo) for the physical leakages from anaerobic digesters.",
+    "refs": {
+      "sections": [
+        "S-0039"
+      ]
+    }
+  },
+  {
+    "id": "S-0041.R-0001",
+    "type": "leakage",
+    "summary": "the methodological tool “Project and leakage emissions from anaerobic digesters”, where PEPower,y is the sum of PEEC,y and PEFC,y in the tool.",
+    "logic": "the methodological tool “Project and leakage emissions from anaerobic digesters”, where PEPower,y is the sum of PEEC,y and PEFC,y in the tool.",
+    "refs": {
+      "sections": [
+        "S-0041"
+      ]
+    }
+  },
+  {
+    "id": "S-0044.R-0001",
+    "type": "leakage",
+    "summary": "leakage emissions from anaerobic digesters”.",
+    "logic": "leakage emissions from anaerobic digesters”.",
+    "refs": {
+      "sections": [
+        "S-0044"
+      ]
+    }
+  },
+  {
+    "id": "S-0048.R-0001",
+    "type": "monitoring",
+    "summary": "year of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting ...",
+    "logic": "year of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting period.",
+    "refs": {
+      "sections": [
+        "S-0048"
+      ]
+    }
+  },
+  {
+    "id": "S-0049.R-0001",
+    "type": "monitoring",
+    "summary": "may be calculated as follows, based on the amount of monitored electricity generation, without monitoring methane flow and concentration:",
+    "logic": "may be calculated as follows, based on the amount of monitored electricity generation, without monitoring methane flow and concentration:",
+    "refs": {
+      "sections": [
+        "S-0049"
+      ]
+    }
+  },
+  {
+    "id": "S-0054.R-0001",
+    "type": "monitoring",
+    "summary": "When the amount of methane that is combusted for energy and that is flared is separately monitored, or when only the biogas flow to the flare is monitored and the biogas used for energy is calculated based on electricity generation, a de...",
+    "logic": "When the amount of methane that is combusted for energy and that is flared is separately monitored, or when only the biogas flow to the flare is monitored and the biogas used for energy is calculated based on electricity generation, a destruction efficiency of 100% can be used for the amount that is combusted for energy.",
+    "refs": {
+      "sections": [
+        "S-0054"
+      ]
+    }
+  },
+  {
+    "id": "S-0055.R-0001",
+    "type": "monitoring",
+    "summary": "residual waste shall be monitored.",
+    "logic": "residual waste shall be monitored.",
+    "refs": {
+      "sections": [
+        "S-0055"
+      ]
+    }
+  },
+  {
+    "id": "S-0057.R-0001",
+    "type": "monitoring",
+    "summary": "(a) The PDD shall describe the system used for monitoring the fraction of the manure handled in the animal manure management system (MS%,i,y), the average weight of the livestock (Wsite) and the livestock population (NLT,y) taking into a...",
+    "logic": "(a) The PDD shall describe the system used for monitoring the fraction of the manure handled in the animal manure management system (MS%,i,y), the average weight of the livestock (Wsite) and the livestock population (NLT,y) taking into account the average number of days the animals are alive in the farm in a specific year.",
+    "refs": {
+      "sections": [
+        "S-0057"
+      ]
+    }
+  },
+  {
+    "id": "S-0060.R-0001",
+    "type": "monitoring",
+    "summary": "requirements specified in the “General Guidelines for SSC CDM methodologies” (e.g. calibration requirements, sampling requirements) are also an integral part of the monitoring guidelines specified below and therefore shall be referred by...",
+    "logic": "requirements specified in the “General Guidelines for SSC CDM methodologies” (e.g. calibration requirements, sampling requirements) are also an integral part of the monitoring guidelines specified below and therefore shall be referred by the project participants.",
+    "refs": {
+      "sections": [
+        "S-0060"
+      ]
+    }
+  },
+  {
+    "id": "S-0069.R-0001",
+    "type": "monitoring",
+    "summary": "Sampled group will be changed in each monitoring period.",
+    "logic": "Sampled group will be changed in each monitoring period.",
+    "refs": {
+      "sections": [
+        "S-0069"
+      ]
+    }
+  },
+  {
+    "id": "S-0071.R-0001",
+    "type": "monitoring",
+    "summary": "the date and signature; the monitor forms will be collected, summarized and kept by the project participant.",
+    "logic": "the date and signature; the monitor forms will be collected, summarized and kept by the project participant.",
+    "refs": {
+      "sections": [
+        "S-0071"
+      ]
+    }
+  },
+  {
+    "id": "S-0081.R-0001",
+    "type": "monitoring",
+    "summary": "Use country-specific values where available Monitoring frequency: - QA/QC procedures: - Any comment: -",
+    "logic": "Use country-specific values where available Monitoring frequency: - QA/QC procedures: - Any comment: -",
+    "refs": {
+      "sections": [
+        "S-0081"
+      ]
+    }
+  },
+  {
+    "id": "S-0084.R-0001",
+    "type": "monitoring",
+    "summary": "programme of activities: (a) If the project activity involves the replacement of equipment, and the leakage effect of the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an inde...",
+    "logic": "programme of activities: (a) If the project activity involves the replacement of equipment, and the leakage effect of the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an independent monitoring of scrapping of replaced equipment needs to be implemented.",
+    "refs": {
+      "sections": [
+        "S-0084"
+      ]
+    }
+  },
+  {
+    "id": "S-0084.R-0002",
+    "type": "monitoring",
+    "summary": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other.",
+    "logic": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other.",
+    "refs": {
+      "sections": [
+        "S-0084"
+      ]
+    }
+  },
+  {
+    "id": "S-0092.R-0001",
+    "type": "monitoring",
+    "summary": "To include the monitoring table to clarify the monitoring requirements.",
+    "logic": "To include the monitoring table to clarify the monitoring requirements.",
+    "refs": {
+      "sections": [
+        "S-0092"
+      ]
+    }
+  },
+  {
+    "id": "S-0093.R-0001",
+    "type": "baseline",
+    "summary": "To cover centralized treatment of animal manure collected from different farms and to include provisions for determining baseline emissions based on the direct measurement of manure quantity and volatile solids.",
+    "logic": "To cover centralized treatment of animal manure collected from different farms and to include provisions for determining baseline emissions based on the direct measurement of manure quantity and volatile solids.",
+    "refs": {
+      "sections": [
+        "S-0093"
+      ]
+    }
+  },
+  {
+    "id": "S-0099.R-0001",
+    "type": "monitoring",
+    "summary": "To clarify that in the monitoring plan on-site inspections are to be conducted for each individual farm and includes additional guidance on how to determine the efficiency of the flaring process in an enclosed flare and in an open flare;...",
+    "logic": "To clarify that in the monitoring plan on-site inspections are to be conducted for each individual farm and includes additional guidance on how to determine the efficiency of the flaring process in an enclosed flare and in an open flare; To assign scope 15 to this methodology and exclude this methodology from sectoral scopes 10 and 13, and to clarify that that DOE functions (validation, verification etc.) of project activities applying earlier versions can only be performed by DOEs accredited to all of the sectoral scopes to which the earlier versions of these methodologies respectively belong to.",
+    "refs": {
+      "sections": [
+        "S-0099"
+      ]
+    }
+  },
+  {
+    "id": "S-0107.R-0001",
+    "type": "monitoring",
+    "summary": "Guidance on ‘capacity addition’ and ‘cofiring’ in Type I methodologies and monitoring of methane in AMS-III.D included.",
+    "logic": "Guidance on ‘capacity addition’ and ‘cofiring’ in Type I methodologies and monitoring of methane in AMS-III.D included.",
+    "refs": {
+      "sections": [
+        "S-0107"
+      ]
+    }
+  },
+  {
+    "id": "S-0108.R-0001",
+    "type": "leakage",
+    "summary": "AMS-II.F was adopted, leakage due to equipment transfer was included in all Type I and Type II methodologies.",
+    "logic": "AMS-II.F was adopted, leakage due to equipment transfer was included in all Type I and Type II methodologies.",
+    "refs": {
+      "sections": [
+        "S-0108"
+      ]
+    }
+  }
+]

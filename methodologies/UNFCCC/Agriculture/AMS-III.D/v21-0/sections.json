@@ -1,0 +1,676 @@
+{
+  "sections": [
+    {
+      "anchor": "ams-iii-d",
+      "content": "Small-scale Methodology Methane recovery in animal manure management systems Version 21.0",
+      "id": "S-0001",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "ams-iii-d-2",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0002",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "scope-applicability-and-entry-into-force-3",
+      "content": "2.1. Scope ............................................................................................................. 3",
+      "id": "S-0003",
+      "title": "SCOPE, APPLICABILITY, AND ENTRY INTO FORCE ........................................... 3"
+    },
+    {
+      "anchor": "project-boundary-6",
+      "content": "4.2. Additionality .................................................................................................... 6",
+      "id": "S-0004",
+      "title": "Project boundary ............................................................................................ 6"
+    },
+    {
+      "anchor": "project-activity-emissions-10",
+      "content": "4.5. Leakage .......................................................................................................... 12",
+      "id": "S-0005",
+      "title": "Project activity emissions ............................................................................... 10"
+    },
+    {
+      "anchor": "ams-iii-d-3",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0006",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "the-following-table-describes-the-key-elements-of-the-methodology",
+      "content": "Table 1. Methodology key elements",
+      "id": "S-0007",
+      "title": "The following table describes the key elements of the methodology:"
+    },
+    {
+      "anchor": "this-methodology-covers-project-activities-involving-the-replacement-or-modification-of",
+      "content": "anaerobic animal manure management systems in livestock farms to achieve methane recovery and destruction by flaring/combustion or gainful use of the recovered methane. It also covers treatment of manure collected from several farms in a centralized plant.",
+      "id": "S-0008",
+      "title": "This methodology covers project activities involving the replacement or modification of"
+    },
+    {
+      "anchor": "this-methodology-is-only-applicable-under-the-following-conditions",
+      "content": "(a) The livestock population in the farm is managed under confined conditions; (b) Manure or the streams obtained after treatment are not discharged into natural water resources (e.g. river or estuaries), otherwise “AMS-III.H Methane recovery in wastewater treatment\" shall be applied; (c) The annual average temperature of baseline site where anaerobic manure treatment facility is located is higher than 5°C; (d) In the baseline scenario the retention time of manure waste in the anaerobic treatment system is greater than one month, and if anaerobic lagoons are used in the baseline, their depths are at least 1 m; (e) No methane recovery and destruction by flaring or combustion for gainful use takes place in the baseline scenario.",
+      "id": "S-0009",
+      "title": "This methodology is only applicable under the following conditions:"
+    },
+    {
+      "anchor": "the-project-activity-shall-satisfy-the-following-conditions",
+      "content": "(a) The residual waste from the animal manure management system shall be handled aerobically, otherwise the related emissions shall be taken into account as per relevant procedures of “AMS-III.AO Methane recovery through controlled anaerobic digestion\". In the case of soil application, proper conditions and procedures (not resulting in methane emissions) must be ensured;",
+      "id": "S-0010",
+      "title": "The project activity shall satisfy the following conditions:"
+    },
+    {
+      "anchor": "ams-iii-d-4",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0011",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "projects-that-recover-methane-from-landfills-shall-use-ams-iii-g-landfill-methane",
+      "content": "recovery\" and projects for wastewater treatment shall use AMS-III.H. Projects for composting of animal manure shall use “AMS-III.F Avoidance of methane emissions through composting\". Project activities involving co-digestion of animal manure and other",
+      "id": "S-0012",
+      "title": "Projects that recover methane from landfills shall use “AMS-III.G Landfill methane"
+    },
+    {
+      "anchor": "ams-iii-d-5",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0013",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "utilization-of-the-recovered-biogas-in-one-of-the-options-detailed-in-ams-iii-h-is-also-eligible",
+      "content": "under this methodology. The respective procedures in AMS-III.H shall be followed in this regard. If the recovered biogas is used to power auxiliary equipment of the project activity, it should be taken into account accordingly, using zero as its emission factor; however, energy used for such purposes is not eligible as an SSC CDM Type I project component.",
+      "id": "S-0014",
+      "title": "Utilization of the recovered biogas in one of the options detailed in AMS-III.H is also eligible"
+    },
+    {
+      "anchor": "new-facilities-greenfield-projects-and-project-activities-involving-capacity-additions",
+      "content": "compared to the baseline scenario are only eligible if they comply with the related and relevant requirements in the \"General guidelines for SSC CDM methodologies\".",
+      "id": "S-0015",
+      "title": "New facilities (Greenfield projects) and project activities involving capacity additions"
+    },
+    {
+      "anchor": "the-requirements-concerning-demonstration-of-the-remaining-lifetime-of-the-replaced",
+      "content": "equipment shall be met as described in the \"General guidelines for SSC CDM methodologies\".",
+      "id": "S-0016",
+      "title": "The requirements concerning demonstration of the remaining lifetime of the replaced"
+    },
+    {
+      "anchor": "measures-are-limited-to-those-that-result-in-aggregate-emission-reductions-of-less-than-or",
+      "content": "equal to 60 kt CO2 equivalent annually from all Type III components of the project activity.",
+      "id": "S-0017",
+      "title": "Measures are limited to those that result in aggregate emission reductions of less than or"
+    },
+    {
+      "anchor": "for-validation-and-verification-of-cdm-projects-and-programme-of-activities-by-a",
+      "content": "designated operational entity (DOE) using this methodology, application of sectoral scope",
+      "id": "S-0018",
+      "title": "For validation and verification of CDM projects and programme of activities by a"
+    },
+    {
+      "anchor": "project-participants-shall-take-into-account-the-general-guidelines-for-ssc-cdm",
+      "content": "methodologies” and the “Guidelines on the demonstration of additionality of small-scale project activities” (Attachment A to Appendix B) provided at: <http://cdm.unfccc.int/methodologies/SSCmethodologies/approved.html> mutatis mutandis.",
+      "id": "S-0019",
+      "title": "Project participants shall take into account the “General guidelines for SSC CDM"
+    },
+    {
+      "anchor": "this-methodology-also-refers-to-the-latest-approved-versions-of-the-following",
+      "content": "methodologies and tools: (a) “ACM0010: Consolidated baseline methodology for GHG emission reductions from manure management systems”; (b) AM0073: GHG emission reductions through multi-site manure collection and treatment in a central plant”; (c) “AMS-III.F: Avoidance of methane emissions through composting\"; (d) “AMS-III.G: Landfill methane recovery\"; (e) “AMS-III.H: Methane recovery in wastewater treatment\";",
+      "id": "S-0020",
+      "title": "This methodology also refers to the latest approved versions of the following"
+    },
+    {
+      "anchor": "ams-iii-d-6",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0021",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "the-project-boundary-includes-the-physical-geographical-site-s-of",
+      "content": "(a) The livestock; (b) Animal manure management systems (including centralised manure treatment plant where applicable); (c) Facilities which recover and flare/combust or use methane.",
+      "id": "S-0022",
+      "title": "The project boundary includes the physical, geographical site(s) of:"
+    },
+    {
+      "anchor": "project-activities-may-demonstrate-the-additionality-by-showing-that-there-is-no-regulation",
+      "content": "in the host country, applicable to the project site, that requires the collection and destruction of methane from livestock manure. If so, it is not required to apply the “Guidelines on the demonstration of additionality of small-scale project activities”.",
+      "id": "S-0023",
+      "title": "Project activities may demonstrate the additionality by showing that there is no regulation"
+    },
+    {
+      "anchor": "this-additionality-condition-also-applies-to-greenfield-project-activities-furthermore-for",
+      "content": "project activities applying this methodology in combination with a Type I methodology, that has an energy component whose installed capacity is less than 5 MW, this procedure for additionality demonstration also applies to that component.",
+      "id": "S-0024",
+      "title": "This additionality condition also applies to Greenfield project activities. Furthermore, for"
+    },
+    {
+      "anchor": "the-baseline-scenario-is-the-situation-where-in-the-absence-of-the-project-activity-animal",
+      "content": "manure is left to decay anaerobically within the project boundary and methane is emitted to the atmosphere. Baseline emissions (BEy) are calculated by using one of the following two options: (a) Using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC Tier 2 approach (please refer to the chapter ‘Emissions from Livestock and Manure Management’ under the volume ‘Agriculture, Forestry and other Land use’ of the 2006 IPCC Guidelines for National Greenhouse Gas Inventories). For this calculation, information about the characteristics of the manure and of the management systems in the baseline is required. Manure characteristics include the amount of volatile solids (VS) produced by the livestock and the maximum amount of methane that can be potentially produced from that manure (Bo);",
+      "id": "S-0025",
+      "title": "The baseline scenario is the situation where, in the absence of the project activity, animal"
+    },
+    {
+      "anchor": "ams-iii-d-7",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0026",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "if-option-in-paragraph-17-a-is-chosen-baseline-emissions-are-determined-as-follows",
+      "content": "𝐵𝐸𝑦 = 𝐺𝑊𝑃𝐶𝐻4 × 𝐷𝐶𝐻4 × 𝑈𝐹𝑏 ×  𝑀𝐶𝐹𝑗 × 𝐵0,𝐿𝑇 × 𝑁𝐿𝑇,𝑦 × 𝑉𝑆𝐿𝑇,𝑦 × j , LT Equation (1)",
+      "id": "S-0027",
+      "title": "If option in paragraph 17(a) is chosen, baseline emissions are determined as follows:"
+    },
+    {
+      "anchor": "ipcc-guidelines-for-national-greenhouse-gas-inventories-volume-4",
+      "content": "Chapter 10 can be used, provided that the project participants assess the suitability of those data to the specific situation of the treatment site; (b) VS are the organic material in livestock manure and consist of both biodegradable and non-biodegradable fractions. For the calculations the total VS excreted by each animal species is required.",
+      "id": "S-0028",
+      "title": "IPCC Guidelines for National Greenhouse Gas Inventories volume 4"
+    },
+    {
+      "anchor": "ams-iii-d-8",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0029",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "section",
+      "content": "Where: 𝑉𝑆𝐿𝑇,𝑦 = Annual volatile solid excretions for livestock LT entering all animal waste management systems on a dry matter weight basis (kg- dm/animal/yr) 𝐺𝐸𝐿𝑇 = Daily average gross energy intake (MJ/animal/day)",
+      "id": "S-0030",
+      "title": "𝐸𝐷𝐿𝑇"
+    },
+    {
+      "anchor": "table-10-a-4-to-10-a-9-can-be-used-provided-that-the-project-participants",
+      "content": "assess the suitability of those data to the specific situation of the treatment site particularly with reference to feed intake levels; (c) Project participants may adjust default IPCC values for VS for a site-specific average animal weight. If so, it shall be well explained and documented. The following equation shall be used:",
+      "id": "S-0031",
+      "title": "table 10 A-4 to 10 A-9 can be used provided that the project participants"
+    },
+    {
+      "anchor": "ams-iii-d-9",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0032",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "ams-iii-d-10",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0033",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "if-option-in-paragraph-17-b-is-chosen-baseline-emissions-are-determined-based-on",
+      "content": "directly measured quantity of manure and its specific volatile solids content, as follows:",
+      "id": "S-0034",
+      "title": "If option in paragraph 17(b) is chosen, baseline emissions are determined based on"
+    },
+    {
+      "anchor": "project-activity-emissions-consist-of",
+      "content": "(a) Physical leakage of biogas in the manure management systems which includes production, collection and transport of biogas to the point of flaring/combustion or gainful use (PEPL,y); (b) Emissions from flaring or combustion of the gas stream (PEflare,y); (c) CO2 emissions from use of fossil fuels or electricity for the operation of all the installed facilities (PEpower,y); (d) CO2 emissions from incremental transportation distances; (e) Emissions from the storage of manure before being fed into the anaerobic digester (PEstorage,y).",
+      "id": "S-0035",
+      "title": "Project activity emissions consist of:"
+    },
+    {
+      "anchor": "ams-iii-d-11",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0036",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "project-emissions-due-to-physical-leakage-of-biogas-from-the-animal-manure-management",
+      "content": "systems used to produce, collect and transport the biogas to the point of flaring or gainful use are estimated as: (a) 10% of the maximum methane producing potential of the manure fed into the management systems implemented by the project activity:2 (i) If the option in paragraph 17(a) is chosen, it is determined as:",
+      "id": "S-0037",
+      "title": "Project emissions due to physical leakage of biogas from the animal manure management"
+    },
+    {
+      "anchor": "in-the-case-of-flaring-of-the-recovered-biogas-project-emissions-are-estimated-using-the",
+      "content": "procedures described in the methodological tool “Project emissions from flaring”. If the recovered biogas is combusted for electrical/thermal energy production or for other gainful use, the methane destruction efficiency can be considered as 100%. However, this use of the recovered biogas shall be included in the project boundary and its output shall be monitored in order to ensure that the recovered biogas is actually destroyed, even if the emission reductions from this component are not claimed.",
+      "id": "S-0038",
+      "title": "In the case of flaring of the recovered biogas, project emissions are estimated using the"
+    },
+    {
+      "anchor": "2006-ipcc-guidelines-for-national-greenhouse-gas-inventories-volume-4-chapter-10-guidelines-specify",
+      "content": "a default value of 10% of the maximum methane producing potential (Bo) for the physical leakages from anaerobic digesters.",
+      "id": "S-0039",
+      "title": "2006 IPCC Guidelines for National Greenhouse Gas Inventories Volume 4 Chapter 10 guidelines specify"
+    },
+    {
+      "anchor": "ams-iii-d-12",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0040",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "project-emissions-from-electricity-and-fossil-fuel-consumption-are-determined-by-following",
+      "content": "the methodological tool “Project and leakage emissions from anaerobic digesters”, where PEPower,y is the sum of PEEC,y and PEFC,y in the tool.",
+      "id": "S-0041",
+      "title": "Project emissions from electricity and fossil fuel consumption are determined by following"
+    },
+    {
+      "anchor": "project-emissions-on-account-of-storage-of-manure-before-being-fed-into-the-anaerobic",
+      "content": "digester shall be accounted for if both condition (a) and condition (b) below are satisfied: (a) The storage time of the manure after removal from the animal barns, including transportation, exceeds 24 hours before being fed into the anaerobic digester; (b) The dry matter content of the manure when removed from the animal barns is less than 20%.",
+      "id": "S-0042",
+      "title": "Project emissions on account of storage of manure before being fed into the anaerobic"
+    },
+    {
+      "anchor": "the-following-method-shall-be-used-to-calculate-project-emissions-from-manure-storage",
+      "content": "𝑃𝐸𝑠𝑡𝑜𝑟𝑎𝑔𝑒 = 𝐺𝑊𝑃𝐶𝐻4 × 𝐷𝐶𝐻4 Equation (9)",
+      "id": "S-0043",
+      "title": "The following method shall be used to calculate project emissions from manure storage:"
+    },
+    {
+      "anchor": "it-is-determined-by-following-the-relevant-procedure-in-the-methodological-tool-project-and",
+      "content": "leakage emissions from anaerobic digesters”.",
+      "id": "S-0044",
+      "title": "It is determined by following the relevant procedure in the methodological tool “Project and"
+    },
+    {
+      "anchor": "the-emission-reductions-achieved-by-the-project-activity-will-be-determined-ex-post",
+      "content": "through direct measurement of the amount of methane fuelled, flared or gainfully used. It",
+      "id": "S-0045",
+      "title": "The emission reductions achieved by the project activity will be determined ex post"
+    },
+    {
+      "anchor": "ams-iii-d-13",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0046",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "biogas-flared-or-combusted-mdy-shall-be-determined-using-the-flare-efficiency-and",
+      "content": "methane content of biogas.",
+      "id": "S-0047",
+      "title": "Biogas flared or combusted, (MDy) shall be determined using the flare efficiency and"
+    },
+    {
+      "anchor": "the-method-for-integration-of-the-terms-in-equation-above-to-obtain-the-results-for-one",
+      "content": "year of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting period.",
+      "id": "S-0048",
+      "title": "The method for integration of the terms in equation above to obtain the results for one"
+    },
+    {
+      "anchor": "alternatively-if-project-activities-utilize-the-recovered-methane-for-power-generation-md-y",
+      "content": "may be calculated as follows, based on the amount of monitored electricity generation, without monitoring methane flow and concentration:",
+      "id": "S-0049",
+      "title": "Alternatively, if project activities utilize the recovered methane for power generation, MD y"
+    },
+    {
+      "anchor": "ams-iii-d-14",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0050",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "conversion-factor-1-mwh-3600-mj",
+      "content": "𝑁𝐶𝑉𝐶𝐻4 = NCV of methane (MJ/Nm3) (use default value: 35.9 MJ/Nm 3) 𝐸𝐸𝑦 y = Energy conversion efficiency of the project equipment, which is determined by adopting one of the following criteria: - Specification provided by the equipment manufacture. The equipment shall be designed to utilize biogas as fuel, and efficiency specification is for this fuel. If the specification provides a range of efficiency values, the highest value of the range shall be used for the calculation; - Default efficiency of 40 %.",
+      "id": "S-0051",
+      "title": "= Conversion factor (1 MWh = 3600 MJ)"
+    },
+    {
+      "anchor": "project-proponents-shall-provide-evidence-to-a-validating-doe-that-only-the-biogas",
+      "content": "recovered through the project manure management system is used for power generation; no other gas or fuels except a start-up fuel3 are used.",
+      "id": "S-0052",
+      "title": "Project proponents shall provide evidence to a validating DOE that only the biogas"
+    },
+    {
+      "anchor": "in-case-of-project-activities-covered-under-paragraph-6-the-relevant-procedure-in",
+      "content": "AMS-III.H shall be followed.",
+      "id": "S-0053",
+      "title": "In case of project activities covered under paragraph 6, the relevant procedure in"
+    },
+    {
+      "anchor": "project-activities-where-a-portion-of-the-biogas-is-destroyed-through-flaring-and-the-other",
+      "content": "portion is used for energy may consider applying the flare efficiency to the portion of the biogas used for energy, if separate measurements of the respective flows are not performed. When the amount of methane that is combusted for energy and that is flared is separately monitored, or when only the biogas flow to the flare is monitored and the biogas used for energy is calculated based on electricity generation, a destruction efficiency of 100% can be used for the amount that is combusted for energy.",
+      "id": "S-0054",
+      "title": "Project activities where a portion of the biogas is destroyed through flaring and the other"
+    },
+    {
+      "anchor": "where-applicable-the-proper-soil-application-not-resulting-in-methane-emissions-of-the",
+      "content": "residual waste shall be monitored.",
+      "id": "S-0055",
+      "title": "Where applicable, the proper soil application (not resulting in methane emissions) of the"
+    },
+    {
+      "anchor": "the-monitoring-plan-should-include-on-site-inspections-for-each-individual-farm-included",
+      "content": "in the project boundary where the project activity is implemented for each verification period.",
+      "id": "S-0056",
+      "title": "The monitoring plan should include on-site inspections for each individual farm included"
+    },
+    {
+      "anchor": "if-the-option-in-paragraph-17-a-is-chosen-for-baseline-emission-determination",
+      "content": "(a) The PDD shall describe the system used for monitoring the fraction of the manure handled in the animal manure management system (MS%,i,y), the average weight of the livestock (Wsite) and the livestock population (NLT,y) taking into account the average number of days the animals are alive in the farm in a specific year. The consistency between these values and indirect information (records of sales, records of food purchases) shall be assessed. Significant changes in livestock population and average weight shall be explained;",
+      "id": "S-0057",
+      "title": "If the option in paragraph 17(a) is chosen for baseline emission determination,"
+    },
+    {
+      "anchor": "if-a-fuel-is-defined-as-a-start-up-fuel-it-should-not-represent-more-than-1-of-the-total-fuel-utilized-in-the",
+      "content": "process, on energy basis.",
+      "id": "S-0058",
+      "title": "If a fuel is defined as a start-up fuel, it should not represent more than 1% of the total fuel utilized in the"
+    },
+    {
+      "anchor": "ams-iii-d-15",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0059",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "relevant-parameters-shall-be-monitored-as-indicated-in-section-5-1-below-the-applicable",
+      "content": "requirements specified in the “General Guidelines for SSC CDM methodologies” (e.g. calibration requirements, sampling requirements) are also an integral part of the monitoring guidelines specified below and therefore shall be referred by the project participants.",
+      "id": "S-0060",
+      "title": "Relevant parameters shall be monitored as indicated in section 5.1 below. The applicable"
+    },
+    {
+      "anchor": "data-and-parameters-monitored",
+      "content": "Data / Parameter table 1.",
+      "id": "S-0061",
+      "title": "Data and parameters monitored"
+    },
+    {
+      "anchor": "ams-iii-d-16",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0062",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "ams-iii-d-17",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0063",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "objective-and-reliability-requirements-the-objective-of-the-sampling-plan-is-to-determine",
+      "content": "the average weight of the cattle. The confidence/precision level of 90/10 will be applied.",
+      "id": "S-0064",
+      "title": "Objective and reliability requirements: The objective of the sampling plan is to determine"
+    },
+    {
+      "anchor": "target-population-the-target-population-is-the-30-000-cattle-in-the-farm-classified-into-5",
+      "content": "age categories, i.e. dry cow, milk cow, young cow, growing cow and calf.",
+      "id": "S-0065",
+      "title": "Target population: The target population is the 30,000 cattle in the farm, classified into 5"
+    },
+    {
+      "anchor": "sampling-method-stratified-random-sampling-will-be-carried-out-the-cattle-population-will",
+      "content": "be classified into 5 age categories as above.",
+      "id": "S-0066",
+      "title": "Sampling method: Stratified random sampling will be carried out. The cattle population will"
+    },
+    {
+      "anchor": "sample-size-approximate-equation-from-the-section-2-1-8-of-appendix-1-of-guideline",
+      "content": "Sampling and surveys for CDM project activities and programmes of activities” version",
+      "id": "S-0067",
+      "title": "Sample size: Approximate equation from the section 2.1.8 of Appendix 1 of “Guideline:"
+    },
+    {
+      "anchor": "after-applying-a-response-rate-of-90-and-10-contingency-the-sample-size-is",
+      "content": "rounded up to 333. (Please see Appendix 1 of “Guideline: Sampling and surveys for CDM project activities and programmes of activities” version 03.0 for the example of the calculation of sampling size. Or alternatively use the sample size calculator available at <https://cdm.unfccc.int/Reference/Guidclarif/index.html>.",
+      "id": "S-0068",
+      "title": "After applying a response rate of 90% and 10% contingency, the sample size is"
+    },
+    {
+      "anchor": "sampling-frame-sampling-frame-is-worked-out-independently-by-taking-categories-as",
+      "content": "sampling unit. Sampled group will be changed in each monitoring period. Based on the data available on 13/12/2012, when some cows have not been put into the farm, the sample size for each age category is determined as follows:",
+      "id": "S-0069",
+      "title": "Sampling frame: Sampling frame is worked out independently by taking categories as"
+    },
+    {
+      "anchor": "field-measurements-for-each-sampled-cow-the-weight-will-be-monthly-monitored-with",
+      "content": "the scale installed at the farm by project owner.",
+      "id": "S-0070",
+      "title": "Field Measurements: For each sampled cow, the weight will be monthly monitored with"
+    },
+    {
+      "anchor": "quality-assurance-quality-control-every-technician-to-monitor-the-sampled-cow-will-fill-in",
+      "content": "the date and signature; the monitor forms will be collected, summarized and kept by the project participant. In addition, the scale will be calibrated annually.",
+      "id": "S-0071",
+      "title": "Quality Assurance/Quality Control: Every technician to monitor the sampled cow will fill in"
+    },
+    {
+      "anchor": "data-analysis-the-primary-monitoring-data-are-collected-and-used-to-calculate-ghg",
+      "content": "emission reductions. Implementation plan The project participant will establish the detailed measurement plan and train the employees in the farm to collect the data, and the data shall be summarized and analyzed by the CDM manager.",
+      "id": "S-0072",
+      "title": "Data analysis: The primary monitoring data are collected and used to calculate GHG"
+    },
+    {
+      "anchor": "ams-iii-d-18",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0073",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "ams-iii-d-19",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0074",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "ams-iii-d-20",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0075",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "the-sample-size-calculation-suggests-that-to-accommodate-11-measurements-per-year",
+      "content": "sampling every five weeks should be sufficient for 90/10 reliability. For simplification, monthly measurement, corresponding to 12 measurements per year, will be done. For the biogas pressure, the same sampling plan also applies. Considering the expected biogas pressure of 900 mbar and the SD of 120 mbar, the calculation results in 7 measurements per year. For simplification, the sampling for biogas pressure will be done on a monthly basis, corresponding to 12 measurements per year, carried out at the same time as the measurement for the biogas temperature.",
+      "id": "S-0076",
+      "title": "The sample size calculation suggests that to accommodate 11 measurements per year,"
+    },
+    {
+      "anchor": "ams-iii-d-21",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0077",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "ams-iii-d-22",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0078",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "ams-iii-d-23",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0079",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "ams-iii-d-24",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0080",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "for-ruminants-fed-with-85-or-more-grain-in-the-diet-or-for",
+      "content": "swine). Use country-specific values where available Monitoring frequency: - QA/QC procedures: - Any comment: -",
+      "id": "S-0081",
+      "title": "for ruminants fed with 85% or more grain in the diet or for"
+    },
+    {
+      "anchor": "ams-iii-d-25",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0082",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "ams-iii-d-26",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0083",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "the-following-conditions-apply-for-use-of-this-methodology-in-a-project-activity-under-a",
+      "content": "programme of activities: (a) If the project activity involves the replacement of equipment, and the leakage effect of the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an independent monitoring of scrapping of replaced equipment needs to be implemented. The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other. For this purpose, scrapped equipment should be stored until such correspondence has been checked. The scrapping of replaced equipment should be documented and independently verified.",
+      "id": "S-0084",
+      "title": "The following conditions apply for use of this methodology in a project activity under a"
+    },
+    {
+      "anchor": "ams-iii-d-27",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0085",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "hrt-cod-ts-vs-tn-p-k",
+      "content": "Anaerobic Treatment days Per cent Reduction Pull plug pits 4-30 — 0-30 0-30 0-20 0-20 0-15 Underfloor pit storage 30-180 — 30-40 20-30 5-20 5-15 5-15 Open top tank 30-180 — — — 25-30 10-20 10-20 Open pond 30-180 — — — 70-80 50-65 40-50 Heated digester effluent 12-20 35-70 25-50 40-70 0 0 0 prior to storage Covered first cell of two 30-90 70-90 75-95 80-90 25-35 50-80 30-50 cell lagoon One-cell lagoon >365 70-90 75-95 75-85 60-80 50-70 30-50 Two-cell lagoon 210+ 90-95 80-95 90-98 50-80 85-90 30-50 HRT=hydraulic retention time; COD=chemical oxygen demand; TS=total solids; VS=volatile solids; TN=total nitrogen; P=phosphorus; K=potassium; — =data not available. Source: Moser and Martin, 1999",
+      "id": "S-0086",
+      "title": "HRT COD TS VS TN P K"
+    },
+    {
+      "anchor": "22-september-2017-eb-96-annex-9",
+      "content": "Revision to clarify options to estimate volatile solids.",
+      "id": "S-0087",
+      "title": "22 September 2017 EB 96, Annex 9"
+    },
+    {
+      "anchor": "23-october-2015-editorial-revision-to-reflect-the-decision-of-eb-85-to-classify-the",
+      "content": "methodology under sectoral scope 13 and to include a table of content.",
+      "id": "S-0088",
+      "title": "23 October 2015 Editorial revision to reflect the decision of EB 85 to classify the"
+    },
+    {
+      "anchor": "16-october-2015-eb-86-annex-15",
+      "content": "Revision to include non-binding best practice examples.",
+      "id": "S-0089",
+      "title": "16 October 2015 EB 86, Annex 15"
+    },
+    {
+      "anchor": "23-november-2012-eb-70-annex-31",
+      "content": "To include simplified requirements for project activities that utilize the recovered methane for power generation; and to include further guidance on additionality demonstration for project applying this methodology.",
+      "id": "S-0090",
+      "title": "23 November 2012 EB 70, Annex 31."
+    },
+    {
+      "anchor": "ams-iii-d-28",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0091",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "29-september-2011-eb-63-annex-22",
+      "content": "To include the monitoring table to clarify the monitoring requirements.",
+      "id": "S-0092",
+      "title": "29 September 2011 EB 63, Annex 22."
+    },
+    {
+      "anchor": "26-november-2010-eb-58-annex-20",
+      "content": "To cover centralized treatment of animal manure collected from different farms and to include provisions for determining baseline emissions based on the direct measurement of manure quantity and volatile solids.",
+      "id": "S-0093",
+      "title": "26 November 2010 EB 58, Annex 20."
+    },
+    {
+      "anchor": "01-june-2010-editorial-revision-in-paragraph-2-c",
+      "content": " To change storage time from 5 days to 45 days.",
+      "id": "S-0094",
+      "title": "01 June 2010 Editorial revision in paragraph 2(c):"
+    },
+    {
+      "anchor": "26-march-2010-eb-53-annex-16",
+      "content": "To include additional guidance for long term storage of manure after removal from the animal barns.",
+      "id": "S-0095",
+      "title": "26 March 2010 EB 53, Annex 16."
+    },
+    {
+      "anchor": "17-july-2009-eb-48-annex-18",
+      "content": "To provide additional guidance on consideration of the storage time of animal manure taking into account the fact that the manure could be transported from locations other than the location of the anaerobic digester.",
+      "id": "S-0096",
+      "title": "17 July 2009 EB 48, Annex 18."
+    },
+    {
+      "anchor": "14-march-2008-eb-38-annex-11",
+      "content": "To:  Clarify the use of the tier 2 approach of 2006 IPCC guidelines for emission reduction calculations for manure management systems; and  Expand the applicability of the methodology to include the possibility of pipeline transport of the recovered and upgraded biogas to the end-users, similar to the revision recommended to",
+      "id": "S-0097",
+      "title": "14 March 2008 EB 38, Annex 11."
+    },
+    {
+      "anchor": "27-july-2007-eb-33-annex-32",
+      "content": "Revision of the approved small-scale methodology AMS-III.D to allow for its application under a programme of activities (PoA).",
+      "id": "S-0098",
+      "title": "27 July 2007 EB 33, Annex 32."
+    },
+    {
+      "anchor": "04-may-2007-eb-31-annex-22",
+      "content": "To clarify that in the monitoring plan on-site inspections are to be conducted for each individual farm and includes additional guidance on how to determine the efficiency of the flaring process in an enclosed flare and in an open flare; To assign scope 15 to this methodology and exclude this methodology from sectoral scopes 10 and 13, and to clarify that that DOE functions (validation, verification etc.) of project activities applying earlier versions can only be performed by DOEs accredited to all of the sectoral scopes to which the earlier versions of these methodologies respectively belong to.",
+      "id": "S-0099",
+      "title": "04 May 2007 EB 31, Annex 22."
+    },
+    {
+      "anchor": "ams-iii-d-29",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0100",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "23-december-2006-eb-28-meeting-report-para-64",
+      "content": "To remove the interim applicability condition that is 25 ktCO2e/y limit from all Type III categories.",
+      "id": "S-0101",
+      "title": "23 December 2006 EB 28, Meeting report, Para. 64."
+    },
+    {
+      "anchor": "28-july-2006-eb-25-annex-25",
+      "content": "To expand its applicability to cover project activities that change manure management practices that is from ‘lagoon’, ‘liquid/slurry’, ‘solid storage’ or ‘drylot’ to ‘anaerobic digestion’ for the treatment of swine or cattle manure.",
+      "id": "S-0102",
+      "title": "28 July 2006 EB 25, Annex 25."
+    },
+    {
+      "anchor": "12-may-2006-eb-24-meeting-report-para-64",
+      "content": "To introduce the interim applicability condition that is 25kt CO2e/y limit for all Type III categories.",
+      "id": "S-0103",
+      "title": "12 May 2006 EB 24, Meeting report, Para. 64."
+    },
+    {
+      "anchor": "03-march-2006-eb-23-annex-25",
+      "content": "To clarify its applicability and align it with AMS-III.F, AMS-III.G, AMS-III.H and AMS-III.I.",
+      "id": "S-0104",
+      "title": "03 March 2006 EB 23, Annex 25."
+    },
+    {
+      "anchor": "25-november-2005-eb-22-para-59",
+      "content": "References to “non-renewable biomass” in Appendix B deleted.",
+      "id": "S-0105",
+      "title": "25 November 2005 EB 22, Para. 59."
+    },
+    {
+      "anchor": "20-september-2005-eb-21-annex-22",
+      "content": "Guidance on consideration of non-renewable biomass in Type I methodologies, thermal equivalence of Type II GWhe limits included.",
+      "id": "S-0106",
+      "title": "20 September 2005 EB 21, Annex 22."
+    },
+    {
+      "anchor": "25-february-2005-eb-18-annex-6",
+      "content": "Guidance on ‘capacity addition’ and ‘cofiring’ in Type I methodologies and monitoring of methane in AMS-III.D included.",
+      "id": "S-0107",
+      "title": "25 February 2005 EB 18, Annex 6."
+    },
+    {
+      "anchor": "22-october-2004-eb-16-annex-2",
+      "content": "AMS-II.F was adopted, leakage due to equipment transfer was included in all Type I and Type II methodologies.",
+      "id": "S-0108",
+      "title": "22 October 2004 EB 16, Annex 2."
+    },
+    {
+      "anchor": "ams-iii-d-30",
+      "content": "Small-scale Methodology: Methane recovery in animal manure management systems Version 21.0 Sectoral scope(s): 13",
+      "id": "S-0109",
+      "title": "AMS-III.D."
+    },
+    {
+      "anchor": "30-june-2004-eb-14-annex-2",
+      "content": "New methodology AMS-III.E was adopted.",
+      "id": "S-0110",
+      "title": "30 June 2004 EB 14, Annex 2."
+    },
+    {
+      "anchor": "28-november-2003-eb-12-annex-2",
+      "content": "Definition of build margin included in AMS-I.D, minor revisions to",
+      "id": "S-0111",
+      "title": "28 November 2003 EB 12, Annex 2."
+    },
+    {
+      "anchor": "21-january-2003-eb-7-annex-6",
+      "content": "Initial adoption. The Board at its seventh meeting noted the adoption by the Conference of the Parties (COP), by its decision 21/CP.8, of simplified modalities and procedures for small-scale CDM project activities (SSC M&P). Decision Class: Regulatory Document Type: Standard Business Function: Methodology Keywords: simplified methodologies, type (iii) projects, animal manure management systems",
+      "id": "S-0112",
+      "title": "21 January 2003 EB 7, Annex 6."
+    }
+  ]
+}

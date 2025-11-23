@@ -1,0 +1,123 @@
+[
+  {
+    "id": "S-0009.R-0001",
+    "type": "leakage",
+    "summary": "(a) The average annual emission reductions achieved by each domestic biogas digester, methane recovery and combustion system is less than or equal to five tonnes of carbon dioxide equivalent (tCO2e) per system;2 (b) Final digestate must ...",
+    "logic": "(a) The average annual emission reductions achieved by each domestic biogas digester, methane recovery and combustion system is less than or equal to five tonnes of carbon dioxide equivalent (tCO2e) per system;2 (b) Final digestate must be handled aerobically, and the conditions and procedures of the aerobic handling of the final digestate (e.g. land application) shall be described in the project design document (PDD) and subsequently checked upon verification; (c) Measures shall be used (e.g. combustion in a biogas burner for cooking needs) to ensure that all the methane collected by the recovery system is combusted;. (d) In order to mitigate risks for physical leakage and venting, project participants shall provide documentation in the PDD which: (i) Ensures that biodigesters are appropriately designed in terms of their sizing, considering manure inputs and the thermal energy requirements of households.",
+    "refs": {
+      "sections": [
+        "S-0009"
+      ]
+    }
+  },
+  {
+    "id": "S-0009.R-0002",
+    "type": "monitoring",
+    "summary": "Justifications shall be provided in the PDD and monitoring reports to demonstrate that gasholders are sufficiently large to capture and store all the biogas that would be generated until consumption; (ii) Ensures that the construction or...",
+    "logic": "Justifications shall be provided in the PDD and monitoring reports to demonstrate that gasholders are sufficiently large to capture and store all the biogas that would be generated until consumption; (ii) Ensures that the construction or installation of biodigesters (in the case of prefabricated plants) complies with relevant national and/or international standards and that a quality assurance/quality control (QA/QC) system is put in place for the construction or installation; (iii) Ensures that trainings are conducted for all users of biodigesters prior to their commissioning or installation and that the trainings shall be documented in a verifiable manner (e.g. protocol of trainings, documentation of on-site visits); (iv) Ensures that a plan for periodic inspection and maintenance is in place and rehabilitation services are available throughout the crediting period.",
+    "refs": {
+      "sections": [
+        "S-0009"
+      ]
+    }
+  },
+  {
+    "id": "S-0012.R-0001",
+    "type": "leakage",
+    "summary": "“TOOL21: Demonstration of additionality of small-scale project activities” and “TOOL22: Leakage in biomass small-scale project activities” available at <http://cdm.unfccc.int/Reference/Guidclarif/index.html#meth> mutatis mutandis.",
+    "logic": "“TOOL21: Demonstration of additionality of small-scale project activities” and “TOOL22: Leakage in biomass small-scale project activities” available at <http://cdm.unfccc.int/Reference/Guidclarif/index.html#meth> mutatis mutandis.",
+    "refs": {
+      "sections": [
+        "S-0012"
+      ]
+    }
+  },
+  {
+    "id": "S-0013.R-0001",
+    "type": "baseline",
+    "summary": "methodologies, tools and standard: (a) “AMS-I.C.: Thermal energy production with or without electricity”; (b) “AMS-I.E.: Switch from non-renewable biomass for thermal applications by the user”; (c) “AMS-I.I.: Biogas/biomass thermal appli...",
+    "logic": "methodologies, tools and standard: (a) “AMS-I.C.: Thermal energy production with or without electricity”; (b) “AMS-I.E.: Switch from non-renewable biomass for thermal applications by the user”; (c) “AMS-I.I.: Biogas/biomass thermal applications for households/small users”; (d) “AMS-III.D.: Methane recovery in animal manure management systems”; (e) “Standard for sampling and surveys for CDM project activities and programme of activities”; (f) “TOOL03: Tool to calculate project or leakage CO2 emissions from fossil fuel combustion”; (g) “TOOL05: Baseline, project and/or leakage emissions from electricity consumption and monitoring of electricity generation”; (h) “TOOL14: Project and leakage emissions from anaerobic digesters”.",
+    "refs": {
+      "sections": [
+        "S-0013"
+      ]
+    }
+  },
+  {
+    "id": "S-0017.R-0001",
+    "type": "baseline",
+    "summary": "The survey should determine the baseline animal manure management practices applied.",
+    "logic": "The survey should determine the baseline animal manure management practices applied.",
+    "refs": {
+      "sections": [
+        "S-0017"
+      ]
+    }
+  },
+  {
+    "id": "S-0017.R-0002",
+    "type": "baseline",
+    "summary": "If the livestock is raised in shared centralized farms, 3 the project participant shall be able to show the baseline animal manure management practices at each farm, either individually or through sampling.",
+    "logic": "If the livestock is raised in shared centralized farms, 3 the project participant shall be able to show the baseline animal manure management practices at each farm, either individually or through sampling.",
+    "refs": {
+      "sections": [
+        "S-0017"
+      ]
+    }
+  },
+  {
+    "id": "S-0021.R-0001",
+    "type": "uncertainty",
+    "summary": "𝑀𝐶𝐹𝐿𝑇,𝑀𝑆,𝑘 = Methane conversion factors for each manure management system MS by climate region k (per cent) Use default values as provided in Table 10.17 of chapter ‘Emissions from Livestock and Manure Management’ under the volum...",
+    "logic": "𝑀𝐶𝐹𝐿𝑇,𝑀𝑆,𝑘 = Methane conversion factors for each manure management system MS by climate region k (per cent) Use default values as provided in Table 10.17 of chapter ‘Emissions from Livestock and Manure Management’ under the volume ‘Agriculture, Forestry and other Land use’ of the 2019 Refinement to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories, following the definitions of manure management systems provided in Table 10.18. 𝐴𝑊𝑀𝑆𝐿𝑇,𝑀𝑆,𝑘 = Fraction of total annual VS for each livestock type LT that is treated in manure management system MS in climate region k, estimated as per procedures mentioned in paragraph 12 above Global warming potential (GWP) of CH4 applicable to the relevant period 𝐺𝑊𝑃𝐶𝐻4 = (t CO2e/t CH4) Net-to-gross adjustment factor to account for uncertainties.",
+    "refs": {
+      "sections": [
+        "S-0021"
+      ]
+    }
+  },
+  {
+    "id": "S-0022.R-0001",
+    "type": "leakage",
+    "summary": "(a) Physical leakage of biogas (PEPL,y); (b) CO2 emissions from use of fossil fuels for the operation of all the installed facilities (PEFC,y); (c) CO2 emissions from use of electricity for the operation of all the installed facilities (...",
+    "logic": "(a) Physical leakage of biogas (PEPL,y); (b) CO2 emissions from use of fossil fuels for the operation of all the installed facilities (PEFC,y); (c) CO2 emissions from use of electricity for the operation of all the installed facilities (PEEC,y);",
+    "refs": {
+      "sections": [
+        "S-0022"
+      ]
+    }
+  },
+  {
+    "id": "S-0040.R-0001",
+    "type": "monitoring",
+    "summary": "Revision to • Provide further clarity on monitoring requirements for biogas digester systems; • Address the fugitive methane emissions from biogas digesters and the use of updated Intergovernmental Panel on Climate Change (IPCC) methods.",
+    "logic": "Revision to • Provide further clarity on monitoring requirements for biogas digester systems; • Address the fugitive methane emissions from biogas digesters and the use of updated Intergovernmental Panel on Climate Change (IPCC) methods.",
+    "refs": {
+      "sections": [
+        "S-0040"
+      ]
+    }
+  },
+  {
+    "id": "S-0042.R-0001",
+    "type": "baseline",
+    "summary": "To introduce the IPCC Tier 1 approach as an alternative method for calculation of baseline emissions.",
+    "logic": "To introduce the IPCC Tier 1 approach as an alternative method for calculation of baseline emissions.",
+    "refs": {
+      "sections": [
+        "S-0042"
+      ]
+    }
+  },
+  {
+    "id": "S-0044.R-0001",
+    "type": "baseline",
+    "summary": "• To revise the guidance on calculation of project emissions from physical leakage and baseline emissions; • To revise sampling requirements; • To remove the conditions for PoA.",
+    "logic": "• To revise the guidance on calculation of project emissions from physical leakage and baseline emissions; • To revise sampling requirements; • To remove the conditions for PoA.",
+    "refs": {
+      "sections": [
+        "S-0044"
+      ]
+    }
+  }
+]
