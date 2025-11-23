@@ -4,6 +4,7 @@ const fsp = require('fs/promises');
 const path = require('path');
 const crypto = require('crypto');
 const { execSync } = require('child_process');
+const { writeFileIfChanged } = require('./lib/fs-utils.cjs');
 
 const repoRoot = path.resolve(__dirname, '..');
 
@@ -99,7 +100,7 @@ async function main() {
   }
 
   const output = JSON.stringify(nextMeta, null, 2) + '\n';
-  await fsp.writeFile(metaPath, output);
+  writeFileIfChanged(metaPath, output);
   console.log(`[meta] wrote ${path.relative(repoRoot, metaPath)}`);
 }
 

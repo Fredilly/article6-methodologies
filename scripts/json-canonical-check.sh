@@ -10,7 +10,17 @@ const fs = require('fs');
 const path = require('path');
 
 function sortKeysDeep(obj) {
-  if (Array.isArray(obj)) return obj.map(sortKeysDeep);
+  if (Array.isArray(obj)) {
+    const normalized = obj.map(sortKeysDeep);
+    if (
+      normalized.every(
+        (entry) => entry && typeof entry === 'object' && typeof entry.id === 'string',
+      )
+    ) {
+      return normalized.sort((a, b) => a.id.localeCompare(b.id));
+    }
+    return normalized;
+  }
   if (obj && typeof obj === 'object') {
     const out = {};
     Object.keys(obj)

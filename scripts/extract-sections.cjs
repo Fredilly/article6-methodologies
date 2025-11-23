@@ -3,6 +3,7 @@ const { spawnSync } = require('child_process');
 const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
+const { writeFileIfChanged } = require('./lib/fs-utils.cjs');
 
 const repoRoot = path.resolve(__dirname, '..');
 
@@ -204,8 +205,14 @@ function main() {
     })),
   };
 
-  fs.writeFileSync(path.join(methodDir, 'sections.rich.json'), `${JSON.stringify(rich, null, 2)}\n`);
-  fs.writeFileSync(path.join(methodDir, 'sections.json'), `${JSON.stringify(lean, null, 2)}\n`);
+  writeFileIfChanged(
+    path.join(methodDir, 'sections.rich.json'),
+    `${JSON.stringify(rich, null, 2)}\n`,
+  );
+  writeFileIfChanged(
+    path.join(methodDir, 'sections.json'),
+    `${JSON.stringify(lean, null, 2)}\n`,
+  );
 
   console.log(`[sections] extracted ${sections.length} sections for ${docRef}`);
 }
