@@ -407,28 +407,29 @@ PY
   sections="$dest_dir/sections.json"
   rules="$dest_dir/rules.json"
   rules_rich="$dest_dir/rules.rich.json"
+  sections_rich="$dest_dir/sections.rich.json"
 
   if [ "$DRY_RUN" = "0" ]; then
     if [ ! -s "$pdf_path" ]; then
       echo "[ingest] missing primary PDF for $id $ver ($pdf_path)" >&2
       exit 1
     fi
-    placeholder_section="S-0000"
-    placeholder_rule="${org}.${id_sector}.${method_slug}.${ver}.R-0-0000"
+    node scripts/extract-sections.cjs "$dest_dir" "$pdf_path"
+    if [ ! -s "$sections" ]; then
+      echo "[ingest] section extractor failed for $id $ver" >&2
+      exit 1
+    fi
+    if [ ! -s "$sections_rich" ]; then
+      echo "[ingest] sections.rich.json missing after extraction for $id $ver" >&2
+      exit 1
+    fi
 
-    # schema-compliant placeholders to keep gates green until rich extraction lands
-    cat <<JSON > "$sections"
-{
-  "sections": [
-    {
-      "id": "$placeholder_section",
-      "title": "TODO: replace with extracted section content",
-      "anchors": [],
-      "content": ""
-    }
-  ]
-}
-JSON
+    placeholder_section="$(jq -r '.sections[0].id' "$sections" 2>/dev/null || true)"
+    if [ -z "$placeholder_section" ] || [ "$placeholder_section" = "null" ]; then
+      echo "[ingest] unable to read first section id for $id $ver" >&2
+      exit 1
+    fi
+    placeholder_rule="${org}.${id_sector}.${method_slug}.${ver}.R-0-0000"
 
     cat <<JSON > "$rules"
 {

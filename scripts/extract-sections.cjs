@@ -1,150 +1,220 @@
 #!/usr/bin/env node
+const { spawnSync } = require('child_process');
+const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
-const { spawnSync } = require('child_process');
 
-async function extractSections({ pdfPath, outPath, methodId }) {
-  const resolvedPdf = path.resolve(pdfPath);
-  if (!fs.existsSync(resolvedPdf)) {
-    throw new Error(`[sections] missing PDF: ${resolvedPdf}`);
+const repoRoot = path.resolve(__dirname, '..');
+
+function usage() {
+  console.error('Usage: node scripts/extract-sections.cjs <methodologies/.../vXX-X> [source.pdf]');
+  process.exit(2);
+}
+
+function sha256(filePath) {
+  try {
+    const buf = fs.readFileSync(filePath);
+    return crypto.createHash('sha256').update(buf).digest('hex');
+  } catch (err) {
+    throw new Error(`unable to hash ${filePath}: ${err.message}`);
   }
-  const resolvedOut = path.resolve(outPath);
-  const outputDir = path.dirname(resolvedOut);
-  fs.mkdirSync(outputDir, { recursive: true });
+}
 
-  const text = readPdfText(resolvedPdf);
-  const lines = text.split(/\r?\n/).map((line) => line.replace(/\s+/g, ' ').trim());
-  const sections = buildSections(lines);
-  const payload = {
-    sections: sections.map((section, index) => {
-      const id = `S-${String(index + 1).padStart(4, '0')}`;
-      const body = section.body.join('\n').trim();
-      const anchor = deriveAnchor(section.body);
-      return {
-        id,
-        title: section.title,
-        anchor,
-        content: body
-      };
-    })
+function ensureMethodPath(methodDir) {
+  const absolute = path.resolve(methodDir);
+  if (!absolute.startsWith(repoRoot)) {
+    throw new Error('method path must live inside the repository');
+  }
+  const parts = path.relative(repoRoot, absolute).split(path.sep);
+  if (parts.length < 5 || parts[0] !== 'methodologies') {
+    throw new Error('method path must look like methodologies/<Org>/<Program>/<Code>/<Version>');
+  }
+  return { absolute, parts };
+}
+
+function slugify(title, collisions) {
+  let base = title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+  if (!base) base = 'section';
+  let slug = base;
+  let n = 1;
+  while (collisions.has(slug)) {
+    n += 1;
+    slug = `${base}-${n}`;
+  }
+  collisions.add(slug);
+  return slug;
+}
+
+function headerFromLine(line) {
+  if (!line) return null;
+  const normalized = line.replace(/\s+/g, ' ').trim();
+  const len = normalized.length;
+  if (len < 5 || len > 120) return null;
+
+  const numeric = normalized.match(/^(\d+(?:\.\d+)*)(?:\.)?\s+(.*)$/);
+  if (numeric) {
+    const [, rawNumber, rest] = numeric;
+    if (/^\d/.test(rawNumber)) {
+      const level = rawNumber.split('.').length;
+      const title = rest.trim();
+      if (title.length >= 3) {
+        return { title, numbering: rawNumber, level };
+      }
+    }
+  }
+
+  const letters = normalized.replace(/[^A-Za-z]/g, '');
+  if (letters && letters === letters.toUpperCase()) {
+    return { title: normalized, numbering: '', level: 1 };
+  }
+
+  return null;
+}
+
+function collectParagraphs(lines) {
+  const out = [];
+  let buf = [];
+  const flush = () => {
+    if (!buf.length) return;
+    const text = buf.join(' ').replace(/\s+/g, ' ').trim();
+    if (text) out.push(text);
+    buf = [];
+  };
+  for (const line of lines) {
+    if (!line) flush();
+    else buf.push(line);
+  }
+  flush();
+  return out;
+}
+
+function parseSections(text) {
+  const rawLines = text
+    .replace(/\r/g, '')
+    .split('\n')
+    .map((line) => line.replace(/\f/g, '').trim());
+
+  const sections = [];
+  let current = null;
+  let bodyLines = [];
+
+  const finalizeCurrent = () => {
+    if (!current) return;
+    const paragraphs = collectParagraphs(bodyLines);
+    current.content = paragraphs[0] || '';
+    current.paragraphs = paragraphs;
+    sections.push(current);
+    current = null;
+    bodyLines = [];
   };
 
-  fs.writeFileSync(resolvedOut, `${JSON.stringify(payload, null, 2)}\n`);
-  const descriptor = methodId || path.relative(process.cwd(), resolvedOut);
-  console.log(`[sections] wrote ${path.relative(process.cwd(), resolvedOut)} (${payload.sections.length} sections${descriptor ? ` for ${descriptor}` : ''})`);
-  return payload;
-}
-
-function buildSections(lines) {
-  const headers = [];
-  for (const line of lines) {
-    if (isHeader(line)) {
-      headers.push(line);
-    }
-  }
-  const sectionList = [];
-  let current = null;
-  for (const rawLine of lines) {
-    const line = rawLine.trim();
-    if (!line) continue;
-    if (isHeader(line)) {
-      if (current) {
-        sectionList.push(current);
-      }
-      current = { title: line, body: [] };
+  for (const line of rawLines) {
+    const header = headerFromLine(line);
+    if (header) {
+      finalizeCurrent();
+      current = {
+        title: header.title.replace(/\s+/g, ' ').trim(),
+        numbering: header.numbering || '',
+        level: header.level || 1,
+      };
       continue;
     }
-    if (!current) {
-      current = { title: 'Document Overview', body: [] };
-    }
-    current.body.push(line);
-  }
-  if (current) {
-    sectionList.push(current);
-  }
-  if (sectionList.length === 0) {
-    sectionList.push({
-      title: 'Document Overview',
-      body: lines.filter((line) => line.trim().length > 0)
-    });
-  }
-  return sectionList;
-}
-
-function isHeader(line) {
-  if (!line) return false;
-  const normalized = line.trim();
-  if (normalized.length < 5 || normalized.length > 120) return false;
-  const numericHeading = /^[0-9]+(\.[0-9]+)*\s/.test(normalized);
-  const hasLetters = /[A-Z]/.test(normalized);
-  const allCaps = normalized === normalized.toUpperCase() && hasLetters;
-  return numericHeading || allCaps;
-}
-
-function deriveAnchor(bodyLines) {
-  for (const line of bodyLines) {
-    const trimmed = line.trim();
-    if (trimmed) {
-      return trimmed;
+    if (current) {
+      bodyLines.push(line);
     }
   }
-  return '';
+  finalizeCurrent();
+
+  return sections.filter((section) => section.title && section.content);
 }
 
-function parseArgs(argv) {
-  const args = {};
-  for (let i = 0; i < argv.length; i += 1) {
-    const token = argv[i];
-    if (token.startsWith('--')) {
-      const key = token.slice(2);
-      const value = argv[i + 1];
-      args[key] = value;
-      i += 1;
-    }
+function requirePdftotext() {
+  const found = spawnSync('which', ['pdftotext'], { encoding: 'utf8' });
+  if (found.status !== 0 || !found.stdout.trim()) {
+    throw new Error(
+      'pdftotext not found. Run inside the devcontainer / Codespace image where poppler is available.'
+    );
   }
-  return args;
 }
 
-async function runCLI() {
-  const args = parseArgs(process.argv.slice(2));
-  const pdfPath = args.pdf;
-  const outPath = args.out;
-  const methodId = args['method-id'] || args.method;
-  if (!pdfPath || !outPath) {
-    console.error('Usage: node scripts/extract-sections.cjs --pdf <path/to.pdf> --out <path/to/sections.json> [--method-id <id>]');
-    process.exit(2);
+function extractText(pdfPath) {
+  const result = spawnSync('pdftotext', ['-layout', '-nopgbrk', pdfPath, '-'], {
+    encoding: 'utf8',
+    maxBuffer: 1024 * 1024 * 40,
+  });
+  if (result.error) {
+    throw new Error(`pdftotext failed: ${result.error.message}`);
   }
-  try {
-    await extractSections({ pdfPath, outPath, methodId });
-  } catch (err) {
-    console.error(err.message || err);
-    process.exit(1);
+  if (result.status !== 0) {
+    throw new Error(`pdftotext exited with ${result.status}: ${result.stderr || ''}`.trim());
   }
+  return result.stdout || '';
+}
+
+function main() {
+  const methodArg = process.argv[2];
+  if (!methodArg) usage();
+  const sourceOverride = process.argv[3];
+  const { absolute: methodDir, parts } = ensureMethodPath(methodArg);
+  const [, org, program, code, version] = parts;
+  const docRef = `${org}/${code}@${version}`;
+
+  const pdfPath =
+    sourceOverride && sourceOverride !== '-'
+      ? path.resolve(sourceOverride)
+      : path.join(repoRoot, 'tools', org, program, code, version, 'source.pdf');
+  if (!fs.existsSync(pdfPath) || fs.statSync(pdfPath).size === 0) {
+    throw new Error(`primary PDF missing for ${docRef} (${pdfPath})`);
+  }
+
+  requirePdftotext();
+  const pdfHash = sha256(pdfPath);
+  const text = extractText(pdfPath);
+  const sections = parseSections(text);
+  if (sections.length < 5) {
+    throw new Error(`extracted ${sections.length} sections for ${docRef}; require at least 5`);
+  }
+
+  const anchorSet = new Set();
+  sections.forEach((section, idx) => {
+    section.id = `S-${String(idx + 1).padStart(4, '0')}`;
+    section.anchor = slugify(section.title, anchorSet);
+  });
+
+  const rich = sections.map((section) => ({
+    id: section.id,
+    title: section.title,
+    anchor: section.anchor,
+    level: section.level,
+    provenance: {
+      source_hash: pdfHash,
+      source_ref: docRef,
+    },
+  }));
+
+  const lean = {
+    sections: sections.map((section) => ({
+      id: section.id,
+      title: section.title,
+      anchor: section.anchor,
+      content: section.content,
+    })),
+  };
+
+  fs.writeFileSync(path.join(methodDir, 'sections.rich.json'), `${JSON.stringify(rich, null, 2)}\n`);
+  fs.writeFileSync(path.join(methodDir, 'sections.json'), `${JSON.stringify(lean, null, 2)}\n`);
+
+  console.log(`[sections] extracted ${sections.length} sections for ${docRef}`);
 }
 
 if (require.main === module) {
-  runCLI();
-}
-
-function readPdfText(pdfPath) {
-  const pythonSnippet =
-    'from pdfminer.high_level import extract_text;import sys;sys.stdout.write(extract_text(sys.argv[1]))';
-  const commands = [
-    ['pdftotext', ['-layout', '-q', pdfPath, '-']],
-    ['python3', ['-c', pythonSnippet, pdfPath]]
-  ];
-  let lastError = null;
-  for (const [command, args] of commands) {
-    const result = spawnSync(command, args, { encoding: 'utf8', maxBuffer: 20 * 1024 * 1024 });
-    if (result.status === 0 && !result.error) {
-      return result.stdout;
-    }
-    lastError = result.error ? result.error : new Error(`${command} exited with ${result.status}`);
-    if (result.error && result.error.code !== 'ENOENT') {
-      break;
-    }
+  try {
+    main();
+  } catch (err) {
+    console.error(`[sections] ${err.message}`);
+    process.exit(2);
   }
-  throw new Error(`[sections] unable to extract text for ${pdfPath}: ${lastError ? lastError.message : 'unknown error'}`);
 }
-
-module.exports = { extractSections };
