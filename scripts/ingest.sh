@@ -424,40 +424,8 @@ PY
       exit 1
     fi
 
-    placeholder_section="$(jq -r '.sections[0].id' "$sections" 2>/dev/null || true)"
-    if [ -z "$placeholder_section" ] || [ "$placeholder_section" = "null" ]; then
-      echo "[ingest] unable to read first section id for $id $ver" >&2
-      exit 1
-    fi
-    placeholder_rule="${org}.${id_sector}.${method_slug}.${ver}.R-0-0000"
-
-    cat <<JSON > "$rules"
-{
-  "rules": [
-    {
-      "id": "$placeholder_rule",
-      "text": "TODO: replace with lean rule summary"
-    }
-  ]
-}
-JSON
-
-    cat <<JSON > "$rules_rich"
-[
-  {
-    "id": "$placeholder_rule",
-    "type": "eligibility",
-    "summary": "TODO: replace with rich rule summary",
-    "logic": "TODO",
-    "refs": {
-      "sections": [
-        "$placeholder_section"
-      ]
-    }
-  }
-]
-JSON
-
+    node scripts/derive-rules-rich.cjs "$dest_dir"
+    node scripts/derive-lean-from-rich.js "$dest_dir"
     node scripts/build-meta.cjs "$dest_dir"
   fi
 
