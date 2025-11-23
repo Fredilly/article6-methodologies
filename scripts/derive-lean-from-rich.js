@@ -61,8 +61,6 @@ function derive(dir){
   const secR = path.join(dir, 'sections.rich.json');
   const ruleR = path.join(dir, 'rules.rich.json');
   if (!fs.existsSync(secR) || !fs.existsSync(ruleR)) return false;
-  const sectionsRich = readJSON(secR);
-  const sectionsLean = sectionsRich.map(s=>({ id: s.id, title: s.title, anchor: s.anchor ?? undefined })).sort(cmpSections);
   const rulesRich = readJSON(ruleR);
   const rulesLean = rulesRich.map(r => {
     if (!r.summary || !r.refs || !Array.isArray(r.refs.sections) || !r.refs.sections[0]) {
@@ -72,7 +70,6 @@ function derive(dir){
     const tags = Array.from(new Set([r.type, ...(r.tags||[])]));
     return { id: `R-${sec}-${serial}`, section_id: r.refs.sections[0], tags: tags.filter(Boolean), text: r.summary };
   }).sort(cmpRules);
-  writeJSON(path.join(dir,'sections.json'), { sections: sectionsLean });
   writeJSON(path.join(dir,'rules.json'), { rules: rulesLean });
   return true;
 }

@@ -1,4 +1,8 @@
 {
+  "audit": {
+    "created_at": "2025-11-16T12:22:59.561Z",
+    "created_by": "ingest.sh"
+  },
   "audit_hashes": {
     "rules_json_sha256": "cd1fe84bbbedd8eaabb2e246cf9d97cd8f5acce0ba1fbb08550aed384ef7b054",
     "sections_json_sha256": "80a90d64d3f6ba202560d8f50d8243140a2f982157060e43d181f8a7860f690e",
@@ -72,9 +76,5 @@
         "url": null
       }
     ]
-  },
-  "audit": {
-    "created_at": "2025-11-16T12:22:59.561Z",
-    "created_by": "ingest.sh"
   }
 }
