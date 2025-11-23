@@ -5,6 +5,17 @@ const path = require('path');
 const repoRoot = path.join(__dirname, '..');
 const baseDir = path.join(repoRoot, 'methodologies');
 
+function safeReadJson(filePath) {
+  try {
+    return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  } catch (err) {
+    console.error(
+      `[registry] failed to read ${path.relative(repoRoot, filePath)}: ${err.message}`,
+    );
+    return null;
+  }
+}
+
 function versionCompare(a, b) {
   const pa = a.split('.').map(Number);
   const pb = b.split('.').map(Number);
@@ -46,7 +57,8 @@ for (const standard of standards) {
         if (!fs.statSync(fullPath).isDirectory()) continue;
         const metaFile = path.join(fullPath, 'META.json');
         if (!fs.existsSync(metaFile)) continue;
-        const meta = JSON.parse(fs.readFileSync(metaFile, 'utf8'));
+        const meta = safeReadJson(metaFile);
+        if (!meta) continue;
         const version = vDir.slice(1).replace(/-/g, '.');
         const relPath = path.relative(repoRoot, fullPath).split(path.sep).join('/');
         const audit = meta.audit_hashes || {};
@@ -90,7 +102,8 @@ for (const standard of standards) {
             if (!fs.statSync(prevPath).isDirectory()) continue;
             const prevMetaFile = path.join(prevPath, 'META.json');
             if (!fs.existsSync(prevMetaFile)) continue;
-            const prevMeta = JSON.parse(fs.readFileSync(prevMetaFile, 'utf8'));
+            const prevMeta = safeReadJson(prevMetaFile);
+            if (!prevMeta) continue;
             const prevRel = path.relative(repoRoot, prevPath).split(path.sep).join('/');
             const prevAudit = prevMeta.audit_hashes || {};
             const sourcePath = sourceAssetPath(prevMeta) || `${prevRel}/source.pdf`;
