@@ -1,1 +1,7 @@
 meta_complete: true
+references_complete: true
+sections_min_count: 5
+sections_no_todo: true
+rules_no_todo: true
+registry_integrity: true
+scope_prefix: methodologies/UNFCCC/Forestry
