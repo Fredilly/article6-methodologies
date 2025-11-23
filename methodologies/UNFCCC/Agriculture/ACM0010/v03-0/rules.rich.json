@@ -1,7 +1,7 @@
 [
   {
-    "id": "S-0002.R-0001",
-    "type": "baseline",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0002",
+    "type": "parameter",
     "summary": "Approved consolidated baseline methodology ACM0010",
     "logic": "Approved consolidated baseline methodology ACM0010",
     "refs": {
@@ -11,8 +11,8 @@
     }
   },
   {
-    "id": "S-0004.R-0001",
-    "type": "baseline",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0004",
+    "type": "parameter",
     "summary": "• Farms where livestock populations, comprising of cattle, buffalo, swine, sheep, goats, and/or poultry, is managed under confined conditions. • Farms where manure is not discharged into natural water resources (e.g. rivers or estuaries)...",
     "logic": "• Farms where livestock populations, comprising of cattle, buffalo, swine, sheep, goats, and/or poultry, is managed under confined conditions. • Farms where manure is not discharged into natural water resources (e.g. rivers or estuaries). • In case of anaerobic lagoons treatments systems, the depth of the lagoons used for manure management under the baseline scenario should be at least 1m2. • The annual average temperature in the site where the anaerobic manure treatment facility in the baseline existed is higher than 5°C.",
     "refs": {
@@ -22,8 +22,8 @@
     }
   },
   {
-    "id": "S-0011.R-0001",
-    "type": "baseline",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0011",
+    "type": "parameter",
     "summary": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated.",
     "logic": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated.",
     "refs": {
@@ -33,8 +33,8 @@
     }
   },
   {
-    "id": "S-0046.R-0001",
-    "type": "baseline",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0046",
+    "type": "parameter",
     "summary": "the baseline emissions section.",
     "logic": "the baseline emissions section.",
     "refs": {
@@ -44,7 +44,7 @@
     }
   },
   {
-    "id": "S-0052.R-0001",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0052",
     "type": "leakage",
     "summary": "Leakage",
     "logic": "Leakage",
@@ -55,8 +55,8 @@
     }
   },
   {
-    "id": "S-0055.R-0001",
-    "type": "baseline",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0055",
+    "type": "parameter",
     "summary": "RN,n Fraction of NEX in manure waste that is reduced in the Baseline AWMS.",
     "logic": "RN,n Fraction of NEX in manure waste that is reduced in the Baseline AWMS.",
     "refs": {
@@ -66,7 +66,7 @@
     }
   },
   {
-    "id": "S-0070.R-0001",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0070",
     "type": "leakage",
     "summary": "• Leakage from anaerobic digester, if used.",
     "logic": "• Leakage from anaerobic digester, if used.",
@@ -77,7 +77,7 @@
     }
   },
   {
-    "id": "S-0070.R-0002",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0002-0070",
     "type": "monitoring",
     "summary": "The default value is 15%, but in case project participants use a lower value, the appropriate measurement to support the lower value shall be monitored and reported. • The default nitrogen excretion per animal or parameters required to e...",
     "logic": "The default value is 15%, but in case project participants use a lower value, the appropriate measurement to support the lower value shall be monitored and reported. • The default nitrogen excretion per animal or parameters required to estimate nitrogen excretion.",
@@ -88,7 +88,7 @@
     }
   },
   {
-    "id": "S-0070.R-0003",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0003-0070",
     "type": "monitoring",
     "summary": "If N intake method is used the amount of dry matter intake by livestock shall be monitored. • Amount of electricity used in the project case.",
     "logic": "If N intake method is used the amount of dry matter intake by livestock shall be monitored. • Amount of electricity used in the project case.",
@@ -99,7 +99,7 @@
     }
   },
   {
-    "id": "S-0070.R-0004",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0004-0070",
     "type": "leakage",
     "summary": "Calculated following the latest version of “Tool to calculate project or leakage CO2 emissions from fossil fuel combustion”. • Flow of biogas to the flare, heat generation, and electricity generation.",
     "logic": "Calculated following the latest version of “Tool to calculate project or leakage CO2 emissions from fossil fuel combustion”. • Flow of biogas to the flare, heat generation, and electricity generation.",
@@ -110,7 +110,7 @@
     }
   },
   {
-    "id": "S-0070.R-0005",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0005-0070",
     "type": "monitoring",
     "summary": "In the case where biogas is just flared, one flow meter can be used provided that the meter used is calibrated periodically by an officially accredited entity. • Concentration of methane in biogas at outlet of anaerobic digester, this sh...",
     "logic": "In the case where biogas is just flared, one flow meter can be used provided that the meter used is calibrated periodically by an officially accredited entity. • Concentration of methane in biogas at outlet of anaerobic digester, this shall be measured on wet basis. • The parameters used for determining the project emissions from flaring of the residual gas stream in year y (PEflare,y) should be monitored as per the “Tool to determine project emissions from flaring gases containing Methane”. • Biogas leakage in project: through leaks in the pipeline during transportation of biogas.",
@@ -121,7 +121,7 @@
     }
   },
   {
-    "id": "S-0072.R-0001",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0072",
     "type": "leakage",
     "summary": "Leakage:",
     "logic": "Leakage:",
@@ -132,7 +132,7 @@
     }
   },
   {
-    "id": "S-0074.R-0001",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0074",
     "type": "monitoring",
     "summary": "Data and parameters monitored",
     "logic": "Data and parameters monitored",
@@ -143,7 +143,7 @@
     }
   },
   {
-    "id": "S-0076.R-0001",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0076",
     "type": "monitoring",
     "summary": "Data / Parameter: VSLT,y Data unit: kg dry matter/animal/year Description: Volatile solid excretion per animal per day Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any):...",
     "logic": "Data / Parameter: VSLT,y Data unit: kg dry matter/animal/year Description: Volatile solid excretion per animal per day Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually, estimated or based on published information such as IPCC QA/QC procedures: --- Any comment: If it is required to use developed country VS values, the following should be monitored: - Genetic source of the production operations livestock originate from an Annex I Party; - The formulated feed rations (FFR).",
@@ -154,7 +154,7 @@
     }
   },
   {
-    "id": "S-0078.R-0001",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0078",
     "type": "monitoring",
     "summary": "Data / Parameter: RN,n Data unit: fraction Description: Nitrogen degradation factor Source of data: Refer to Annex 1 Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC...",
     "logic": "Data / Parameter: RN,n Data unit: fraction Description: Nitrogen degradation factor Source of data: Refer to Annex 1 Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: --- Any comment: Estimated from Table provided in Annex 1.",
@@ -165,7 +165,7 @@
     }
   },
   {
-    "id": "S-0080.R-0001",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0080",
     "type": "monitoring",
     "summary": "Data / Parameter: EGd,y Data unit: MWh Description: Electricity exported to grid Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annual QA/QC pr...",
     "logic": "Data / Parameter: EGd,y Data unit: MWh Description: Electricity exported to grid Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annual QA/QC procedures: Electricity meters will undergo maintenance/calibration subject to appropriate industry standards.",
@@ -176,7 +176,7 @@
     }
   },
   {
-    "id": "S-0080.R-0002",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0002-0080",
     "type": "uncertainty",
     "summary": "Uncertainty of the meters to be obtained from the manufacturers.",
     "logic": "Uncertainty of the meters to be obtained from the manufacturers.",
@@ -187,7 +187,7 @@
     }
   },
   {
-    "id": "S-0080.R-0003",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0003-0080",
     "type": "uncertainty",
     "summary": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM-PDD.",
     "logic": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM-PDD.",
@@ -198,7 +198,7 @@
     }
   },
   {
-    "id": "S-0082.R-0001",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0082",
     "type": "monitoring",
     "summary": "Data / Parameter: Wsite Data unit: kg Description: Weight of livestock Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures:...",
     "logic": "Data / Parameter: Wsite Data unit: kg Description: Weight of livestock Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures: --- Any comment: The PDD should describe the system on monitoring the weight of livestock. .",
@@ -209,7 +209,7 @@
     }
   },
   {
-    "id": "S-0084.R-0001",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0084",
     "type": "monitoring",
     "summary": "Monitoring frequency: to be decided by PPs.",
     "logic": "Monitoring frequency: to be decided by PPs.",
@@ -220,7 +220,7 @@
     }
   },
   {
-    "id": "S-0084.R-0002",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0002-0084",
     "type": "monitoring",
     "summary": "QA/QC procedures: The project proponents shall define the variability of the concentration.",
     "logic": "QA/QC procedures: The project proponents shall define the variability of the concentration.",
@@ -231,7 +231,7 @@
     }
   },
   {
-    "id": "S-0086.R-0001",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0086",
     "type": "monitoring",
     "summary": "Measurement As per the “Tool to calculate project emissions from electricity consumption” procedures (if any): Monitoring frequency: As per the “Tool to calculate project emissions from electricity consumption” QA/QC procedures: As per t...",
     "logic": "Measurement As per the “Tool to calculate project emissions from electricity consumption” procedures (if any): Monitoring frequency: As per the “Tool to calculate project emissions from electricity consumption” QA/QC procedures: As per the “Tool to calculate project emissions from electricity consumption” Any comment: -",
@@ -242,7 +242,7 @@
     }
   },
   {
-    "id": "S-0088.R-0001",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0088",
     "type": "monitoring",
     "summary": "Data / Parameter: QDM Data unit: kg Description: Mass of manure disposed outside project boundary Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency...",
     "logic": "Data / Parameter: QDM Data unit: kg Description: Mass of manure disposed outside project boundary Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Every batch disposed QA/QC procedures: --- Any comment: ---",
@@ -253,7 +253,7 @@
     }
   },
   {
-    "id": "S-0090.R-0001",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0090",
     "type": "monitoring",
     "summary": "Source of data: --- Measurement Archive electronically during project plus 5 yrs procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---",
     "logic": "Source of data: --- Measurement Archive electronically during project plus 5 yrs procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---",
