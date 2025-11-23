@@ -146,10 +146,11 @@ function extractText(pdfPath) {
     maxBuffer: 1024 * 1024 * 40,
   });
   if (result.error) {
-    throw new Error(`pdftotext failed: ${result.error.message}`);
+    throw new Error(`pdftotext failed for ${pdfPath}: ${result.error.message}`);
   }
   if (result.status !== 0) {
-    throw new Error(`pdftotext exited with ${result.status}: ${result.stderr || ''}`.trim());
+    const stderr = (result.stderr || '').trim();
+    throw new Error(`pdftotext exited with ${result.status} for ${pdfPath}: ${stderr}`);
   }
   return result.stdout || '';
 }
@@ -166,13 +167,20 @@ function main() {
     sourceOverride && sourceOverride !== '-'
       ? path.resolve(sourceOverride)
       : path.join(repoRoot, 'tools', org, program, code, version, 'source.pdf');
-  if (!fs.existsSync(pdfPath) || fs.statSync(pdfPath).size === 0) {
+  if (!fs.existsSync(pdfPath)) {
     throw new Error(`primary PDF missing for ${docRef} (${pdfPath})`);
+  }
+  const pdfStats = fs.statSync(pdfPath);
+  if (!pdfStats.isFile() || pdfStats.size === 0) {
+    throw new Error(`primary PDF empty for ${docRef} (${pdfPath})`);
   }
 
   requirePdftotext();
   const pdfHash = sha256(pdfPath);
   const text = extractText(pdfPath);
+  if (!text || !text.trim()) {
+    throw new Error(`pdftotext produced no content for ${docRef} (${pdfPath})`);
+  }
   const sections = parseSections(text);
   if (sections.length < 5) {
     throw new Error(`extracted ${sections.length} sections for ${docRef}; require at least 5`);

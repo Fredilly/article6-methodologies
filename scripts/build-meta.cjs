@@ -107,7 +107,11 @@ async function readOptionalJson(file) {
   try {
     const data = await fsp.readFile(file, 'utf8');
     return JSON.parse(data);
-  } catch {
+  } catch (err) {
+    if (err.code !== 'ENOENT') {
+      const rel = path.relative(repoRoot, file);
+      console.warn(`[meta] skipping malformed JSON ${rel}: ${err.message}`);
+    }
     return null;
   }
 }
