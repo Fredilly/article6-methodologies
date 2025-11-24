@@ -4,13 +4,13 @@
     "created_by": "ingest.sh"
   },
   "audit_hashes": {
-    "rules_json_sha256": "93e8337e06216bc6a6b48b3f0eec45eb917d484aac469b4dd905df7b53602545",
+    "rules_json_sha256": "72eb16c216352e294d743e12b4351ef3a221c353736a344d731806b6c96a8bd1",
     "sections_json_sha256": "80a9fea3bbcaaf25039db427bd162ae23b0911b36587c5898ef995a4f2a5ad37",
     "source_pdf_sha256": "57868a381913568599c98d331b9ff339115c38cc1070aeec43eca0d11823185a"
   },
   "automation": {
-    "repo_commit": "c7c673cbd9a0809ca32539515a3ac812c60ebe47",
-    "scripts_manifest_sha256": "ae63aaaa7766138b9239fb635995559ae0a6401b8373357c2d65e056c73b0048"
+    "repo_commit": "efbdc1d55ecc87e4c3c1ececcee43a11a3744358",
+    "scripts_manifest_sha256": "1c4cc74fa0975705ffb7680a1586934b7aa76bd077c4fb43f703432c23bd4a32"
   },
   "provenance": {
     "author": "Fred Egbuedike",
