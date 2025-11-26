@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-11-24T06:37:40Z",
-  "git_commit": "efbdc1d55ecc87e4c3c1ececcee43a11a3744358",
+  "generated_at": "2025-11-26T09:15:20Z",
+  "git_commit": "961391df9843aa675e3df874e2ec70690844a0c5",
   "files": [
     { "path": "core/hashing/sha256.js", "sha256": "b4f9db6546461662be8652ea40f0619f2d10ee14987fb8e46b58b5c25d216738" },
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
@@ -32,6 +32,7 @@
     { "path": "scripts/extract-sections-forestry.cjs", "sha256": "d5e6f15e512052587f610fd8b0997b4473f2f0b6b26bc18077040634328c0446" },
     { "path": "scripts/extract-sections.cjs", "sha256": "7822ca86611aecc5b382f15f7cb6650a8369d60292aba4095563f18d4553c213" },
     { "path": "scripts/fill-provenance.js", "sha256": "cf5152d09b7626c30ace82703acd4b0254cb0a8f1cba283d8168081b3a4809b3" },
+    { "path": "scripts/fix-agriculture-rule-ids.cjs", "sha256": "0bf4b15f6e3a9e3159ba109a55b2d9033d745bc2c477e8731a43d5589f133474" },
     { "path": "scripts/gate-lfs.sh", "sha256": "28a13a96f4fac81fc1beeba3b1a8c8d486fcdb3eee5317673b6df52f7f3285cf" },
     { "path": "scripts/gen-dataset-params.js", "sha256": "befe8d1bdece5b2738284c2b60598e676f7f910c605ffb53fbb7a07c3342414f" },
     { "path": "scripts/gen-dataset.js", "sha256": "47b58f5dc13beded4ece8a74029827669945ae5140b2dfec4a8f19894d3cc753" },
