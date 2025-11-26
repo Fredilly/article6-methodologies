@@ -3,8 +3,12 @@ const fs = require('fs');
 const path = require('path');
 
 const KEYWORD_TYPES = [
+  // Must be in the enum:
+  // "eligibility", "parameter", "equation", "calc",
+  // "monitoring", "leakage", "uncertainty", "reporting"
   { type: 'eligibility', regex: /eligib/i },
-  { type: 'baseline', regex: /baseline/i },
+  // Treat "baseline" language as parameters
+  { type: 'parameter', regex: /baseline/i },
   { type: 'monitoring', regex: /qa\s*\/?\s*qc/i },
   { type: 'monitoring', regex: /monitor/i },
   { type: 'leakage', regex: /leakage/i },
@@ -30,6 +34,7 @@ function splitCandidates(content) {
     .split(/\n{2,}/)
     .map((p) => normalizeWhitespace(p))
     .filter(Boolean);
+
   const candidates = [];
   paragraphs.forEach((paragraph) => {
     const sentences = paragraph.split(/(?<=[.!?])\s+(?=[A-Z0-9])/);
@@ -52,9 +57,43 @@ function classify(sentence) {
   return null;
 }
 
-function formatRuleId(sectionId, index) {
-  return `${sectionId}.R-${String(index).padStart(4, '0')}`;
+/* ------------------------------------------------------------------
+   Canonical UNFCCC rule IDs derived from folder path
+   ------------------------------------------------------------------ */
+
+/** Build UNFCCC.<Sector>.<Code>.<vXX-X> from disk path */
+function getMethodKeyFromDir(methodDir) {
+  // Expects: methodologies/UNFCCC/Agriculture/ACM0010/v03-0
+  const parts = methodDir.split(path.sep);
+  const n = parts.length;
+
+  const versionTag = parts[n - 1];       // v03-0
+  const rawCode    = parts[n - 2];       // ACM0010, AM0073, AMS-III.D, AMS-III.R
+  const code       = rawCode.replace(/\./g, '-'); // normalize dots → dashes
+  const sector     = parts[n - 3];       // Agriculture / Forestry / ...
+  const program    = parts[n - 4];       // UNFCCC
+
+  // Final: UNFCCC.Agriculture.ACM0010.v03-0
+  return `${program}.${sector}.${code}.${versionTag}`;
 }
+
+/** Correct rule ID: UNFCCC.<Sector>.<Code>.<vXX-X>.R-0001-0001 */
+function buildRuleId(methodDir, ruleIndex, sectionId) {
+  const methodKey = getMethodKeyFromDir(methodDir);
+
+  // R-0001, R-0002, ...
+  const R = String(ruleIndex + 1).padStart(4, '0');
+
+  // S-0001 → 0001
+  const S = String(
+    (sectionId || '').replace(/^S-/, '') || '1'
+  ).padStart(4, '0');
+
+  // UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0001
+  return `${methodKey}.R-${R}-${S}`;
+}
+
+/* ------------------------------------------------------------------ */
 
 function isPreviousDir(dir) {
   return dir.split(path.sep).includes('previous');
@@ -67,15 +106,19 @@ function listMethods(root) {
     const stat = fs.statSync(current);
     if (!stat.isDirectory()) return;
     if (current !== root && isPreviousDir(current)) return;
+
     const entries = fs.readdirSync(current, { withFileTypes: true });
+
     if (entries.some((entry) => entry.isFile() && entry.name === 'sections.json')) {
       methods.push(current);
       return;
     }
+
     entries
       .filter((entry) => entry.isDirectory())
       .forEach((entry) => walk(path.join(current, entry.name)));
   })(root);
+
   return methods;
 }
 
@@ -84,40 +127,50 @@ function loadSections(methodDir) {
   if (!fs.existsSync(sectionsPath)) {
     throw new Error(`missing sections.json for ${methodDir}`);
   }
+
   const data = JSON.parse(fs.readFileSync(sectionsPath, 'utf8'));
-  const sections = Array.isArray(data.sections) ? data.sections : [];
-  return sections;
+  return Array.isArray(data.sections) ? data.sections : [];
 }
 
 function deriveRulesForMethod(methodDir, strictMode) {
   const sections = loadSections(methodDir);
   const rules = [];
+
   sections.forEach((section) => {
     const content = section.content || '';
     const candidates = splitCandidates(content);
     if (!candidates.length) return;
+
     let idx = 0;
+
     candidates.forEach((sentence) => {
       const type = classify(sentence);
       if (!type) return;
+
       idx += 1;
+
+      const sectionId =
+        (section.id && section.id.startsWith('S-') && section.id) ||
+        section.id ||
+        'S-0001';
+
       rules.push({
-        id: formatRuleId(section.id, idx),
+        id: buildRuleId(methodDir, idx - 1, sectionId),
         type,
         summary: summarize(sentence),
         logic: sentence,
-        refs: { sections: [section.id] },
+        refs: { sections: [sectionId] },
       });
     });
   });
+
   if (!rules.length) {
     const message = `[rules-rich] ${path.relative(repoRoot, methodDir)} produced 0 rules`;
-    if (strictMode) {
-      throw new Error(message);
-    }
+    if (strictMode) throw new Error(message);
     console.warn(message);
     return false;
   }
+
   const dest = path.join(methodDir, 'rules.rich.json');
   fs.writeFileSync(dest, `${JSON.stringify(rules, null, 2)}\n`);
   console.log(`[rules-rich] wrote ${path.relative(repoRoot, dest)}`);
@@ -135,11 +188,14 @@ function main() {
   const args = process.argv.slice(2);
   const strict = args.length > 0;
   const targets = collectTargets(args);
+
   if (!targets.length) {
     console.warn('[rules-rich] no method directories found');
     return;
   }
+
   let success = 0;
+
   targets.forEach((dir) => {
     try {
       const processed = deriveRulesForMethod(dir, strict);
@@ -149,6 +205,7 @@ function main() {
       if (strict) process.exit(2);
     }
   });
+
   if (!strict) {
     console.log(`[rules-rich] derived rules for ${success} method(s)`);
   }

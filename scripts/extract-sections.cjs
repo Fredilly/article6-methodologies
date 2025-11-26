@@ -131,17 +131,14 @@ function parseSections(text) {
   return sections.filter((section) => section.title && section.content);
 }
 
-function requirePdftotext() {
+function findPdftotext() {
   const found = spawnSync('which', ['pdftotext'], { encoding: 'utf8' });
-  if (found.status !== 0 || !found.stdout.trim()) {
-    throw new Error(
-      'pdftotext not found. Run inside the devcontainer / Codespace image where poppler is available.'
-    );
-  }
+  if (found.status !== 0) return '';
+  return (found.stdout || '').trim();
 }
 
-function extractText(pdfPath) {
-  const result = spawnSync('pdftotext', ['-layout', '-nopgbrk', pdfPath, '-'], {
+function extractWithPdftotext(binary, pdfPath) {
+  const result = spawnSync(binary, ['-layout', '-nopgbrk', pdfPath, '-'], {
     encoding: 'utf8',
     maxBuffer: 1024 * 1024 * 40,
   });
@@ -153,6 +150,33 @@ function extractText(pdfPath) {
     throw new Error(`pdftotext exited with ${result.status} for ${pdfPath}: ${stderr}`);
   }
   return result.stdout || '';
+}
+
+function extractWithPdfminer(pdfPath) {
+  const result = spawnSync(
+    'python3',
+    ['-m', 'pdfminer.high_level', '--maxpages', '0', pdfPath],
+    { encoding: 'utf8', maxBuffer: 1024 * 1024 * 40 }
+  );
+  if (result.error) {
+    throw new Error(`pdfminer failed for ${pdfPath}: ${result.error.message}`);
+  }
+  if (result.status !== 0) {
+    const stderr = (result.stderr || '').trim();
+    throw new Error(
+      `pdfminer exited with ${result.status} for ${pdfPath}: ${stderr || 'install via python3 -m pip install pdfminer.six'}`
+    );
+  }
+  return result.stdout || '';
+}
+
+function extractText(pdfPath) {
+  const pdftotext = findPdftotext();
+  if (pdftotext) {
+    return extractWithPdftotext(pdftotext, pdfPath);
+  }
+  console.warn('[extract-sections] pdftotext missing, falling back to pdfminer.six');
+  return extractWithPdfminer(pdfPath);
 }
 
 function main() {
@@ -175,7 +199,6 @@ function main() {
     throw new Error(`primary PDF empty for ${docRef} (${pdfPath})`);
   }
 
-  requirePdftotext();
   const pdfHash = sha256(pdfPath);
   const text = extractText(pdfPath);
   if (!text || !text.trim()) {

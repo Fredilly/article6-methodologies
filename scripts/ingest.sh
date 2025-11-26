@@ -133,6 +133,19 @@ file_size() {
   wc -c <"$1" | tr -d '[:space:]'
 }
 
+determine_kind() {
+  case "${1##*.}" in
+    pdf|PDF) printf 'pdf' ;;
+    docx|DOCX) printf 'docx' ;;
+    *) printf 'binary' ;;
+  esac
+}
+
+add_tool_reference() {
+  # Tool references are recomputed later via scripts/build-meta.cjs; this is a no-op hook to keep the ingest flow intact.
+  :
+}
+
 derive_tool_doc() {
   local rel_path="$1"
   DOC_VAL="$(

@@ -1,0 +1,196 @@
+{
+  "rules": [
+    {
+      "id": "R-0001-0002",
+      "section_id": "S-0002",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Approved consolidated baseline methodology ACM0010"
+    },
+    {
+      "id": "R-0001-0004",
+      "section_id": "S-0004",
+      "tags": [
+        "parameter"
+      ],
+      "text": "• Farms where livestock populations, comprising of cattle, buffalo, swine, sheep, goats, and/or poultry, is managed under confined conditions. • Farms where manure is not discharged into natural water resources (e.g. rivers or estuaries)..."
+    },
+    {
+      "id": "R-0001-0011",
+      "section_id": "S-0011",
+      "tags": [
+        "parameter"
+      ],
+      "text": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated."
+    },
+    {
+      "id": "R-0001-0046",
+      "section_id": "S-0046",
+      "tags": [
+        "parameter"
+      ],
+      "text": "the baseline emissions section."
+    },
+    {
+      "id": "R-0001-0052",
+      "section_id": "S-0052",
+      "tags": [
+        "leakage"
+      ],
+      "text": "Leakage"
+    },
+    {
+      "id": "R-0001-0055",
+      "section_id": "S-0055",
+      "tags": [
+        "parameter"
+      ],
+      "text": "RN,n Fraction of NEX in manure waste that is reduced in the Baseline AWMS."
+    },
+    {
+      "id": "R-0001-0070",
+      "section_id": "S-0070",
+      "tags": [
+        "leakage"
+      ],
+      "text": "• Leakage from anaerobic digester, if used."
+    },
+    {
+      "id": "R-0002-0070",
+      "section_id": "S-0070",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "The default value is 15%, but in case project participants use a lower value, the appropriate measurement to support the lower value shall be monitored and reported. • The default nitrogen excretion per animal or parameters required to e..."
+    },
+    {
+      "id": "R-0003-0070",
+      "section_id": "S-0070",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "If N intake method is used the amount of dry matter intake by livestock shall be monitored. • Amount of electricity used in the project case."
+    },
+    {
+      "id": "R-0004-0070",
+      "section_id": "S-0070",
+      "tags": [
+        "leakage"
+      ],
+      "text": "Calculated following the latest version of “Tool to calculate project or leakage CO2 emissions from fossil fuel combustion”. • Flow of biogas to the flare, heat generation, and electricity generation."
+    },
+    {
+      "id": "R-0005-0070",
+      "section_id": "S-0070",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "In the case where biogas is just flared, one flow meter can be used provided that the meter used is calibrated periodically by an officially accredited entity. • Concentration of methane in biogas at outlet of anaerobic digester, this sh..."
+    },
+    {
+      "id": "R-0001-0072",
+      "section_id": "S-0072",
+      "tags": [
+        "leakage"
+      ],
+      "text": "Leakage:"
+    },
+    {
+      "id": "R-0001-0074",
+      "section_id": "S-0074",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Data and parameters monitored"
+    },
+    {
+      "id": "R-0001-0076",
+      "section_id": "S-0076",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Data / Parameter: VSLT,y Data unit: kg dry matter/animal/year Description: Volatile solid excretion per animal per day Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any):..."
+    },
+    {
+      "id": "R-0001-0078",
+      "section_id": "S-0078",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Data / Parameter: RN,n Data unit: fraction Description: Nitrogen degradation factor Source of data: Refer to Annex 1 Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC..."
+    },
+    {
+      "id": "R-0001-0080",
+      "section_id": "S-0080",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Data / Parameter: EGd,y Data unit: MWh Description: Electricity exported to grid Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annual QA/QC pr..."
+    },
+    {
+      "id": "R-0002-0080",
+      "section_id": "S-0080",
+      "tags": [
+        "uncertainty"
+      ],
+      "text": "Uncertainty of the meters to be obtained from the manufacturers."
+    },
+    {
+      "id": "R-0003-0080",
+      "section_id": "S-0080",
+      "tags": [
+        "uncertainty"
+      ],
+      "text": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM-PDD."
+    },
+    {
+      "id": "R-0001-0082",
+      "section_id": "S-0082",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Data / Parameter: Wsite Data unit: kg Description: Weight of livestock Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures:..."
+    },
+    {
+      "id": "R-0001-0084",
+      "section_id": "S-0084",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Monitoring frequency: to be decided by PPs."
+    },
+    {
+      "id": "R-0002-0084",
+      "section_id": "S-0084",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "QA/QC procedures: The project proponents shall define the variability of the concentration."
+    },
+    {
+      "id": "R-0001-0086",
+      "section_id": "S-0086",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Measurement As per the “Tool to calculate project emissions from electricity consumption” procedures (if any): Monitoring frequency: As per the “Tool to calculate project emissions from electricity consumption” QA/QC procedures: As per t..."
+    },
+    {
+      "id": "R-0001-0088",
+      "section_id": "S-0088",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Data / Parameter: QDM Data unit: kg Description: Mass of manure disposed outside project boundary Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency..."
+    },
+    {
+      "id": "R-0001-0090",
+      "section_id": "S-0090",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Source of data: --- Measurement Archive electronically during project plus 5 yrs procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---"
+    }
+  ]
+}

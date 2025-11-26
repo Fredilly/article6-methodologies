@@ -1,0 +1,92 @@
+{
+  "rules": [
+    {
+      "id": "R-0001-0009",
+      "section_id": "S-0009",
+      "tags": [
+        "leakage"
+      ],
+      "text": "(a) The average annual emission reductions achieved by each domestic biogas digester, methane recovery and combustion system is less than or equal to five tonnes of carbon dioxide equivalent (tCO2e) per system;2 (b) Final digestate must ..."
+    },
+    {
+      "id": "R-0002-0009",
+      "section_id": "S-0009",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Justifications shall be provided in the PDD and monitoring reports to demonstrate that gasholders are sufficiently large to capture and store all the biogas that would be generated until consumption; (ii) Ensures that the construction or..."
+    },
+    {
+      "id": "R-0001-0012",
+      "section_id": "S-0012",
+      "tags": [
+        "leakage"
+      ],
+      "text": "“TOOL21: Demonstration of additionality of small-scale project activities” and “TOOL22: Leakage in biomass small-scale project activities” available at <http://cdm.unfccc.int/Reference/Guidclarif/index.html#meth> mutatis mutandis."
+    },
+    {
+      "id": "R-0001-0013",
+      "section_id": "S-0013",
+      "tags": [
+        "parameter"
+      ],
+      "text": "methodologies, tools and standard: (a) “AMS-I.C.: Thermal energy production with or without electricity”; (b) “AMS-I.E.: Switch from non-renewable biomass for thermal applications by the user”; (c) “AMS-I.I.: Biogas/biomass thermal appli..."
+    },
+    {
+      "id": "R-0001-0017",
+      "section_id": "S-0017",
+      "tags": [
+        "parameter"
+      ],
+      "text": "The survey should determine the baseline animal manure management practices applied."
+    },
+    {
+      "id": "R-0002-0017",
+      "section_id": "S-0017",
+      "tags": [
+        "parameter"
+      ],
+      "text": "If the livestock is raised in shared centralized farms, 3 the project participant shall be able to show the baseline animal manure management practices at each farm, either individually or through sampling."
+    },
+    {
+      "id": "R-0001-0021",
+      "section_id": "S-0021",
+      "tags": [
+        "uncertainty"
+      ],
+      "text": "𝑀𝐶𝐹𝐿𝑇,𝑀𝑆,𝑘 = Methane conversion factors for each manure management system MS by climate region k (per cent) Use default values as provided in Table 10.17 of chapter ‘Emissions from Livestock and Manure Management’ under the volum..."
+    },
+    {
+      "id": "R-0001-0022",
+      "section_id": "S-0022",
+      "tags": [
+        "leakage"
+      ],
+      "text": "(a) Physical leakage of biogas (PEPL,y); (b) CO2 emissions from use of fossil fuels for the operation of all the installed facilities (PEFC,y); (c) CO2 emissions from use of electricity for the operation of all the installed facilities (..."
+    },
+    {
+      "id": "R-0001-0040",
+      "section_id": "S-0040",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Revision to • Provide further clarity on monitoring requirements for biogas digester systems; • Address the fugitive methane emissions from biogas digesters and the use of updated Intergovernmental Panel on Climate Change (IPCC) methods."
+    },
+    {
+      "id": "R-0001-0042",
+      "section_id": "S-0042",
+      "tags": [
+        "parameter"
+      ],
+      "text": "To introduce the IPCC Tier 1 approach as an alternative method for calculation of baseline emissions."
+    },
+    {
+      "id": "R-0001-0044",
+      "section_id": "S-0044",
+      "tags": [
+        "parameter"
+      ],
+      "text": "• To revise the guidance on calculation of project emissions from physical leakage and baseline emissions; • To revise sampling requirements; • To remove the conditions for PoA."
+    }
+  ]
+}
