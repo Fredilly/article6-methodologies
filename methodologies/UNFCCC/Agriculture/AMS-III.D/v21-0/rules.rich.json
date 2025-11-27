@@ -1,6 +1,6 @@
 [
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0005",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0005",
     "logic": "Leakage ..........................................................................................................",
     "refs": {
       "sections": [
@@ -11,7 +11,7 @@
     "type": "leakage"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0009",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0009",
     "logic": "(a) The livestock population in the farm is managed under confined conditions; (b) Manure or the streams obtained after treatment are not discharged into natural water resources (e.g. river or estuaries), otherwise “AMS-III.H Methane recovery in wastewater treatment\" shall be applied; (c) The annual average temperature of baseline site where anaerobic manure treatment facility is located is higher than 5°C; (d) In the baseline scenario the retention time of manure waste in the anaerobic treatment system is greater than one month, and if anaerobic lagoons are used in the baseline, their depths are at least 1 m; (e) No methane recovery and destruction by flaring or combustion for gainful use takes place in the baseline scenario.",
     "refs": {
       "sections": [
@@ -22,7 +22,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0014",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0014",
     "logic": "If the recovered biogas is used to power auxiliary equipment of the project activity, it should be taken into account accordingly, using zero as its emission factor; however, energy used for such purposes is not eligible as an SSC CDM Type I project component.",
     "refs": {
       "sections": [
@@ -33,7 +33,7 @@
     "type": "eligibility"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0015",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0015",
     "logic": "compared to the baseline scenario are only eligible if they comply with the related and relevant requirements in the \"General guidelines for SSC CDM methodologies\".",
     "refs": {
       "sections": [
@@ -44,7 +44,7 @@
     "type": "eligibility"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0020",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0020",
     "logic": "methodologies and tools: (a) “ACM0010: Consolidated baseline methodology for GHG emission reductions from manure management systems”; (b) AM0073: GHG emission reductions through multi-site manure collection and treatment in a central plant”; (c) “AMS-III.F: Avoidance of methane emissions through composting\"; (d) “AMS-III.G: Landfill methane recovery\"; (e) “AMS-III.H: Methane recovery in wastewater treatment\";",
     "refs": {
       "sections": [
@@ -55,7 +55,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0025",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0025",
     "logic": "Baseline emissions (BEy) are calculated by using one of the following two options: (a) Using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC Tier 2 approach (please refer to the chapter ‘Emissions from Livestock and Manure Management’ under the volume ‘Agriculture, Forestry and other Land use’ of the 2006 IPCC Guidelines for National Greenhouse Gas Inventories).",
     "refs": {
       "sections": [
@@ -66,7 +66,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0002-0025",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-2-0025",
     "logic": "For this calculation, information about the characteristics of the manure and of the management systems in the baseline is required.",
     "refs": {
       "sections": [
@@ -77,7 +77,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0035",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0035",
     "logic": "(a) Physical leakage of biogas in the manure management systems which includes production, collection and transport of biogas to the point of flaring/combustion or gainful use (PEPL,y); (b) Emissions from flaring or combustion of the gas stream (PEflare,y); (c) CO2 emissions from use of fossil fuels or electricity for the operation of all the installed facilities (PEpower,y); (d) CO2 emissions from incremental transportation distances; (e) Emissions from the storage of manure before being fed into the anaerobic digester (PEstorage,y).",
     "refs": {
       "sections": [
@@ -88,7 +88,7 @@
     "type": "leakage"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0038",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0038",
     "logic": "However, this use of the recovered biogas shall be included in the project boundary and its output shall be monitored in order to ensure that the recovered biogas is actually destroyed, even if the emission reductions from this component are not claimed.",
     "refs": {
       "sections": [
@@ -99,7 +99,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0039",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0039",
     "logic": "a default value of 10% of the maximum methane producing potential (Bo) for the physical leakages from anaerobic digesters.",
     "refs": {
       "sections": [
@@ -110,7 +110,7 @@
     "type": "leakage"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0041",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0041",
     "logic": "the methodological tool “Project and leakage emissions from anaerobic digesters”, where PEPower,y is the sum of PEEC,y and PEFC,y in the tool.",
     "refs": {
       "sections": [
@@ -121,7 +121,7 @@
     "type": "leakage"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0044",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0044",
     "logic": "leakage emissions from anaerobic digesters”.",
     "refs": {
       "sections": [
@@ -132,7 +132,7 @@
     "type": "leakage"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0048",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0048",
     "logic": "year of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting period.",
     "refs": {
       "sections": [
@@ -143,7 +143,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0049",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0049",
     "logic": "may be calculated as follows, based on the amount of monitored electricity generation, without monitoring methane flow and concentration:",
     "refs": {
       "sections": [
@@ -154,7 +154,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0054",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0054",
     "logic": "When the amount of methane that is combusted for energy and that is flared is separately monitored, or when only the biogas flow to the flare is monitored and the biogas used for energy is calculated based on electricity generation, a destruction efficiency of 100% can be used for the amount that is combusted for energy.",
     "refs": {
       "sections": [
@@ -165,7 +165,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0055",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0055",
     "logic": "residual waste shall be monitored.",
     "refs": {
       "sections": [
@@ -176,7 +176,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0057",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0057",
     "logic": "(a) The PDD shall describe the system used for monitoring the fraction of the manure handled in the animal manure management system (MS%,i,y), the average weight of the livestock (Wsite) and the livestock population (NLT,y) taking into account the average number of days the animals are alive in the farm in a specific year.",
     "refs": {
       "sections": [
@@ -187,7 +187,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0060",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0060",
     "logic": "requirements specified in the “General Guidelines for SSC CDM methodologies” (e.g. calibration requirements, sampling requirements) are also an integral part of the monitoring guidelines specified below and therefore shall be referred by the project participants.",
     "refs": {
       "sections": [
@@ -198,7 +198,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0069",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0069",
     "logic": "Sampled group will be changed in each monitoring period.",
     "refs": {
       "sections": [
@@ -209,7 +209,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0071",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0071",
     "logic": "the date and signature; the monitor forms will be collected, summarized and kept by the project participant.",
     "refs": {
       "sections": [
@@ -220,7 +220,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0081",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0081",
     "logic": "Use country-specific values where available Monitoring frequency: - QA/QC procedures: - Any comment: -",
     "refs": {
       "sections": [
@@ -231,7 +231,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0084",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0084",
     "logic": "programme of activities: (a) If the project activity involves the replacement of equipment, and the leakage effect of the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an independent monitoring of scrapping of replaced equipment needs to be implemented.",
     "refs": {
       "sections": [
@@ -242,7 +242,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0002-0084",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-2-0084",
     "logic": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other.",
     "refs": {
       "sections": [
@@ -253,7 +253,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0092",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0092",
     "logic": "To include the monitoring table to clarify the monitoring requirements.",
     "refs": {
       "sections": [
@@ -264,7 +264,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0093",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0093",
     "logic": "To cover centralized treatment of animal manure collected from different farms and to include provisions for determining baseline emissions based on the direct measurement of manure quantity and volatile solids.",
     "refs": {
       "sections": [
@@ -275,7 +275,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0099",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0099",
     "logic": "To clarify that in the monitoring plan on-site inspections are to be conducted for each individual farm and includes additional guidance on how to determine the efficiency of the flaring process in an enclosed flare and in an open flare; To assign scope 15 to this methodology and exclude this methodology from sectoral scopes 10 and 13, and to clarify that that DOE functions (validation, verification etc.) of project activities applying earlier versions can only be performed by DOEs accredited to all of the sectoral scopes to which the earlier versions of these methodologies respectively belong to.",
     "refs": {
       "sections": [
@@ -286,7 +286,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0107",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0107",
     "logic": "Guidance on ‘capacity addition’ and ‘cofiring’ in Type I methodologies and monitoring of methane in AMS-III.D included.",
     "refs": {
       "sections": [
@@ -297,7 +297,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-0001-0108",
+    "id": "UNFCCC.Agriculture.AMS-III-D.v21-0.R-1-0108",
     "logic": "AMS-II.F was adopted, leakage due to equipment transfer was included in all Type I and Type II methodologies.",
     "refs": {
       "sections": [

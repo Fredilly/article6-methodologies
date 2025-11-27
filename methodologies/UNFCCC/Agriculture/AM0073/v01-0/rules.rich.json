@@ -1,6 +1,6 @@
 [
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0002",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0002",
     "logic": "Approved baseline and monitoring methodology AM0073",
     "refs": {
       "sections": [
@@ -11,7 +11,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0003",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0003",
     "logic": "Sources This baseline and monitoring methodology is based on the following proposed new methodology:",
     "refs": {
       "sections": [
@@ -22,7 +22,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0005",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0005",
     "logic": "• In the cases where the baseline anaerobic treatment system is an open lagoon, the lagoon depth shall be greater than 1 m;2 • The retention time of the organic matter in the baseline anaerobic treatment systems should be at least 30 days; • If residues are stored in between collection activities, storage tanks shall comprise outdoor open equipments; • If the treated residue is used as fertilizer in the baseline, project proponents must ensure that this end use remains the same throughout the project activity; • Sludge produced during the project activity shall be stabilized through thermal drying or composting, prior to its final disposition/application; • The AWMS/process in the project case should ensure that no leakage of manure waste into ground water takes place, e.g., the lagoon should have a non-permeable layer at the lagoon bottom; • CERs shall be claimed by the Central Treatment Plant managing person/entity, only.",
     "refs": {
       "sections": [
@@ -33,7 +33,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0002-0005",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-2-0005",
     "logic": "Finally, this methodology is only applicable if the application of the procedure to identify the baseline scenario results in that anaerobic manure treatment systems without methane recovery in the farms are the most plausible baseline scenario.",
     "refs": {
       "sections": [
@@ -44,7 +44,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0006",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0006",
     "logic": "Identification of the baseline scenario Baseline scenario should be identified from the perspective of the owner of central treatment plant, as well as from the perspective of the multiple livestock farms owners.",
     "refs": {
       "sections": [
@@ -55,7 +55,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0002-0006",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-2-0006",
     "logic": "Project participants shall apply the following steps to identify the baseline scenario: Step 1: Identify plausible alternative scenarios",
     "refs": {
       "sections": [
@@ -66,7 +66,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0016",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0016",
     "logic": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated.",
     "refs": {
       "sections": [
@@ -77,7 +77,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0002-0016",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-2-0016",
     "logic": "The baseline scenario is identified as the economically most attractive course of action i.e., alternative scenario with highest IRR or NPV, where the IRR cannot be calculated Step 4: Baseline revision at renewal of crediting period At the renewal of each crediting period, the relevance of baseline scenario identified above will be assessed taking into account change in the relevant national and/or sectoral regulations between two crediting periods as well as any increase in the animal stock above the pre-project animal stock.",
     "refs": {
       "sections": [
@@ -88,7 +88,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0003-0016",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-3-0016",
     "logic": "This methodology is only applicable if the application of the procedure to identify the baseline scenario results in that anaerobic manure treatment systems in the farms and no implementation of the central plant are the most plausible baseline scenario.",
     "refs": {
       "sections": [
@@ -99,7 +99,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0004-0016",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-4-0016",
     "logic": "Guidance for the assessment of the baseline scenario for the livestock farms For validation, project proponents shall calculate the baseline emission from each farm separately, based on ex ante estimation of parameters.",
     "refs": {
       "sections": [
@@ -110,7 +110,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0005-0016",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-5-0016",
     "logic": "Then, project participants shall ordinate, in decreasing order, the sites where most of the baseline emissions would occur.",
     "refs": {
       "sections": [
@@ -121,7 +121,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0006-0016",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-6-0016",
     "logic": "DOEs shall perform site inspections on the sites that are individually responsible for an amount of baseline emissions equal to, or higher than, 900 tCO2e (“upper rank”).",
     "refs": {
       "sections": [
@@ -132,7 +132,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0007-0016",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-7-0016",
     "logic": "This guarantees that the most preponderant baseline GHG sources are properly validated.",
     "refs": {
       "sections": [
@@ -143,7 +143,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0025",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0025",
     "logic": "FVRG ,h = Volumetric flow rate of the captured biogas in dry basis at normal conditions in hour h (m3/h) fvCH 4 , RG , h = Volumetric fraction of methane in the captured biogas on dry basis in hour h (fraction) LFAD = Methane leakage from anaerobic digesters/reactor, default of 0.15",
     "refs": {
       "sections": [
@@ -154,7 +154,7 @@
     "type": "leakage"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0035",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0035",
     "logic": "Else, RN can be calculated based on the direct monitoring of the nitrogen concentration in the effluent mix after each treatment step. (iv) Physical Leakage from distribution network of the captured methane in (PEPL) This refers to leaks in the biogas system from the biogas pipeline delivery system.",
     "refs": {
       "sections": [
@@ -165,7 +165,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0002-0035",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-2-0035",
     "logic": "The sum of the quantities of captured methane fed to the flare, to the power plant and to the boiler (measured as per the monitoring plan) must be compared annually with the total methane generated as measured by meter at the outlet of the methane generating digester.",
     "refs": {
       "sections": [
@@ -176,7 +176,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0003-0035",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-3-0035",
     "logic": "The difference between the monitored value of methane generated and that consumed in flare/electricity generation/heat shall be accounted as leakage from the pipelines.",
     "refs": {
       "sections": [
@@ -187,7 +187,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0038",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0038",
     "logic": "The project emissions from fossil fuel combustion (PEheat,j,y = PEFC,j,y ) will be calculated following the latest version of “Tool to calculate project or leakage CO2 emissions from fossil fuel combustion”.",
     "refs": {
       "sections": [
@@ -198,7 +198,7 @@
     "type": "leakage"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0044",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0044",
     "logic": "(i) Methane emissions from animal waste treatment Manure management system in the baseline could be based on different treatment systems and on one or more stages.",
     "refs": {
       "sections": [
@@ -209,7 +209,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0065",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0065",
     "logic": "Baseline electricity and thermal energy consumptions should be estimated as the average of the historical",
     "refs": {
       "sections": [
@@ -220,7 +220,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0066",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0066",
     "logic": "Leakage Leakage covers the emissions from land application of treated residues, outside the project boundary.",
     "refs": {
       "sections": [
@@ -231,7 +231,7 @@
     "type": "leakage"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0002-0066",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-2-0066",
     "logic": "These emissions are estimated as net of those released under project activity and those released in the baseline scenario.",
     "refs": {
       "sections": [
@@ -242,7 +242,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0003-0066",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-3-0066",
     "logic": "Net leakage of N2O and CH4 are only considered if they are positive.",
     "refs": {
       "sections": [
@@ -253,7 +253,7 @@
     "type": "leakage"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0004-0066",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-4-0066",
     "logic": "CO2 emissions due to the road transportation of sludge or treated effluent outside the project boundary are also considered as leakage.",
     "refs": {
       "sections": [
@@ -264,7 +264,7 @@
     "type": "leakage"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0068",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0068",
     "logic": "Where: LE B , N 2O = N2O emissions released during baseline scenario from land application of the treated manure, in tCO2e/year GWPN 2O = Global Warming Potential (GWP) for N2O CFN 2O − N , N = Conversion factor (= 44/28) LE B , N 2O ,land = Baseline direct N2O emissions from application of manure waste, in kg N2O-N/year LE B , N 2O ,runoff = Baseline N2O emissions due to leaching and run-off, in kg N2O-N/year LE B , N 2O ,vol = Baseline N2O emissions due to nitrogen volatilization as NH3 and NOx, in kg N2O-N/year Fgasm = Fraction of total N that volatizes as NH3 and NOx in kg NH3-N and NOx-N per kg of N, estimated with site-specific, regional or national data if such data is available.",
     "refs": {
       "sections": [
@@ -275,7 +275,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0002-0068",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-2-0068",
     "logic": "Otherwise, default values from table 11.3, chapter 11, volume 4 of IPCC 2006 guidelines can be used N LT , y = Number of animals of type LT for the year y, expressed in numbers NEX LT = Is the annual average nitrogen excretion per head of a defined livestock population in kg N/animal/year estimated as described in Annex 6 MS % Bl , j = Fraction of manure handled in system j in the baseline scenario EF1 = Emission factor for direct emission of N2O from soils in kg N2O-N/kg N, estimated with site-specific, regional or national data if such data is available.",
     "refs": {
       "sections": [
@@ -286,7 +286,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0003-0068",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-3-0068",
     "logic": "Otherwise, default values from table 11.1, chapter 11, volume 4 of IPCC 2006 guidelines can be used RN , n = Fraction of N that is reduced in the Baseline AWMS.",
     "refs": {
       "sections": [
@@ -297,7 +297,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0076",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0076",
     "logic": "Data and parameters not monitored In addition to the parameters listed in the tables below, the provisions on data and parameters not monitored in the tools referred to in this methodology apply.",
     "refs": {
       "sections": [
@@ -308,7 +308,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0079",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0079",
     "logic": "ID Number: 7 Parameter: HG Bl , y Data unit: MJ Description: Heat used by baseline AWMSs Source of data: Project proponents Measurement Archive electronic for the duration of project + 5 yrs procedures (if any): Any comment: At start of project.",
     "refs": {
       "sections": [
@@ -319,7 +319,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0088",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0088",
     "logic": "Prior to the verification, project proponents shall calculate the baseline emission from each site separately.",
     "refs": {
       "sections": [
@@ -330,7 +330,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0002-0088",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-2-0088",
     "logic": "Then, project participants shall ordinate, in decreasing order, the sites where most of the baseline emissions would occur.",
     "refs": {
       "sections": [
@@ -341,7 +341,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0003-0088",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-3-0088",
     "logic": "DOEs shall perform site inspections on the sites that are individually responsible for an amount of baseline emissions equal or higher than 900 tCO2e (“upper rank”).",
     "refs": {
       "sections": [
@@ -352,7 +352,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0004-0088",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-4-0088",
     "logic": "This guarantees that the most preponderant baseline GHG sources are properly verified.",
     "refs": {
       "sections": [
@@ -363,7 +363,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0091",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0091",
     "logic": "Where: corrected BELR = Total corrected baseline emissions from the “lower rank” sites (tCO2e) , total",
     "refs": {
       "sections": [
@@ -374,7 +374,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0093",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0093",
     "logic": "Data / Parameter: B0 , LT Data unit: m3 CH4/kg_VS_dm Description: Maximum methane producing potential of the volatile solid generated Source of data: IPCC 2006 Guidelines or directly measured Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: --- Any comment: See guidance on how to estimate this parameter in the methodology",
     "refs": {
       "sections": [
@@ -385,7 +385,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0095",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0095",
     "logic": "Data / Parameter: Q EM ,m Data unit: m3/month Description: Monthly volume of the effluent mix entering the central treatment plant Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: This parameter shall be continuously monitored Flow meters will undergo maintenance/calibration subject to appropriate QA/QC procedures: industry standards.",
     "refs": {
       "sections": [
@@ -396,7 +396,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0002-0095",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-2-0095",
     "logic": "This maintenance/calibration practice should be clearly stated in the CDM-PDD Any comment: This parameter shall be monitored by continuous flow meters installed after the effluent admittance point or after the equalization tanks (if existent)",
     "refs": {
       "sections": [
@@ -407,7 +407,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0097",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0097",
     "logic": "Data / Parameter: VS res ,m Data unit: Ton VS/ton residue Description: Average monthly volatile solids (VS) concentration of the residue entering the composting step Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Weekly aggregated for monthly average QA/QC procedures: Volatile solids determination should be performed according to the guidance provided in Annex 2 Any comment: ---",
     "refs": {
       "sections": [
@@ -418,7 +418,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0099",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0099",
     "logic": "Data / Parameter: [ N ] EM ,m Data unit: kg N/m3 Monthly total nitrogen concentration in the effluent mix entering the central Description: treatment plant Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Weekly aggregated for monthly average Sample collection procedures shall be performed as described in Annex 4.",
     "refs": {
       "sections": [
@@ -429,7 +429,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0002-0099",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-2-0099",
     "logic": "Total QA/QC procedures: nitrogen determination should be performed according to the guidance provided in annex 3 Any comment: The effluent mix shall be collected after the effluent admittance point or after the equalization tanks (if existent)",
     "refs": {
       "sections": [
@@ -440,7 +440,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0103",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0103",
     "logic": "Data / Parameter: EG d , y Data unit: MWh Description: Electricity exported to grid Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annual QA/QC procedures: Electricity meters will undergo maintenance/calibration subject to appropriate industry standards.",
     "refs": {
       "sections": [
@@ -451,7 +451,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0002-0103",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-2-0103",
     "logic": "Uncertainty of the meters to be obtained from the manufacturers.",
     "refs": {
       "sections": [
@@ -462,7 +462,7 @@
     "type": "uncertainty"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0003-0103",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-3-0103",
     "logic": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM-PDD",
     "refs": {
       "sections": [
@@ -473,7 +473,7 @@
     "type": "uncertainty"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0105",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0105",
     "logic": "Data / Parameter: EFN 2O , D ,n Data unit: kg N2O-N/ kg N Description: Direct N2O emission factor for treatment stage n Source of data: Project proponents or IPCC 2006 Guidelines Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly If no appropriate default values are available, for project emission calculations, project proponents shall used site specific data in order to calculate this QA/QC procedures: parameter.",
     "refs": {
       "sections": [
@@ -484,7 +484,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0002-0105",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-2-0105",
     "logic": "The data used for this purpose shall be included in the monitoring plan of the CDM-PDD.",
     "refs": {
       "sections": [
@@ -495,7 +495,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0107",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0107",
     "logic": "Data / Parameter: T2 ,m Data unit: Kelvin Description: Monthly average ambient temperature at the manure storage tanks Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Daily aggregated for monthly average QA/QC procedures: --- Any comment:",
     "refs": {
       "sections": [
@@ -506,7 +506,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0109",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0109",
     "logic": "Data / Parameter: PE flare , y Data unit: tCO2e Description: Project emissions from flaring of the residual gas stream in year y Source of data: “Tool to determine project emissions from flaring gases containing Methane” Measurement The parameters used for determining the project emissions from flaring of the procedures (if any): residual gas stream in year y ( PE flare , y ) should be monitored as per the “Tool to determine project emissions from flaring gases containing Methane” The parameters used for determining the project emissions from flaring of the Monitoring frequency: residual gas stream in year y ( PE flare , y ) should be monitored as per the “Tool to determine project emissions from flaring gases containing Methane” QA/QC procedures: The parameters used for determining the project emissions from flaring of the residual gas stream in year y ( PE flare , y ) should use the QA/QC procedures as per the “Tool to determine project emissions from flaring gases containing Methane” Any comment: ---",
     "refs": {
       "sections": [
@@ -517,7 +517,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0111",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0111",
     "logic": "Data / parameter: N vehicles ,i , y Data unit: Number Number of trips of vehicles type i used for transportation, with similar loading Description: capacity Source of data: Project proponents Measurement On-site monitoring records procedures (if any): Monitoring frequency: Daily QA/QC procedures: --- Any comment: ---",
     "refs": {
       "sections": [
@@ -528,7 +528,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0113",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0113",
     "logic": "Data / parameter: N LT , y Data unit: Number Average livestock population used in both baseline and project case emissions Description: estimation.",
     "refs": {
       "sections": [
@@ -539,7 +539,7 @@
     "type": "parameter"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0002-0113",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-2-0113",
     "logic": "Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures: --- The PDD should describe the system on monitoring the number of livestock Any comment: population.",
     "refs": {
       "sections": [
@@ -550,7 +550,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0115",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0115",
     "logic": "Data / parameter: Wsite Data unit: kg Description: Weight of livestock Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures: --- Any comment: The PDD should describe the system on monitoring the weight of livestock",
     "refs": {
       "sections": [
@@ -561,7 +561,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0117",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0117",
     "logic": "Use country-specific values where available Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---",
     "refs": {
       "sections": [
@@ -572,7 +572,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0119",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0119",
     "logic": "Data / parameter: N Data unit: - Description: Total Numbers of farms Source of data: Project proponents Measurement procedures (if any): Monitoring frequency: Annually QA/QC procedures: Any comment:",
     "refs": {
       "sections": [
@@ -583,7 +583,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0121",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0121",
     "logic": "Monitoring frequency: Weekly aggregated for monthly average QA/QC procedures: Any comment:",
     "refs": {
       "sections": [
@@ -594,7 +594,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0123",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0123",
     "logic": "Monitoring frequency: Weekly aggregated for monthly average QA/QC procedures: Any comment:",
     "refs": {
       "sections": [
@@ -605,7 +605,7 @@
     "type": "monitoring"
   },
   {
-    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-0001-0125",
+    "id": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0125",
     "logic": "Data / parameter: PEEC,y Data unit: tCO2 Description: Project emissions from electricity consumption by the project activity during the year y Source of data: Calculated as per the “Tool to calculate baseline, project and/or leakage emissions from electricity consumption” Measurement As per the “Tool to calculate baseline, project and/or leakage emissions from procedures (if any): electricity consumption” Monitoring frequency: As per the “Tool to calculate baseline, project and/or leakage emissions from electricity consumption” QA/QC procedures: As per the “Tool to calculate baseline, project and/or leakage emissions from electricity consumption” Any comment: -",
     "refs": {
       "sections": [

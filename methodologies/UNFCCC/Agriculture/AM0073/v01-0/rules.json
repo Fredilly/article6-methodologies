@@ -1,7 +1,7 @@
 {
   "rules": [
     {
-      "id": "R-0001-0002",
+      "id": "R-1-0002",
       "section_id": "S-0002",
       "tags": [
         "parameter"
@@ -9,7 +9,7 @@
       "text": "Approved baseline and monitoring methodology AM0073"
     },
     {
-      "id": "R-0001-0003",
+      "id": "R-1-0003",
       "section_id": "S-0003",
       "tags": [
         "parameter"
@@ -17,7 +17,7 @@
       "text": "Sources This baseline and monitoring methodology is based on the following proposed new methodology:"
     },
     {
-      "id": "R-0001-0005",
+      "id": "R-1-0005",
       "section_id": "S-0005",
       "tags": [
         "parameter"
@@ -25,7 +25,7 @@
       "text": "• In the cases where the baseline anaerobic treatment system is an open lagoon, the lagoon depth shall be greater than 1 m;2 • The retention time of the organic matter in the baseline anaerobic treatment systems should be at least 30 day..."
     },
     {
-      "id": "R-0002-0005",
+      "id": "R-2-0005",
       "section_id": "S-0005",
       "tags": [
         "parameter"
@@ -33,7 +33,7 @@
       "text": "Finally, this methodology is only applicable if the application of the procedure to identify the baseline scenario results in that anaerobic manure treatment systems without methane recovery in the farms are the most plausible baseline s..."
     },
     {
-      "id": "R-0001-0006",
+      "id": "R-1-0006",
       "section_id": "S-0006",
       "tags": [
         "parameter"
@@ -41,7 +41,7 @@
       "text": "Identification of the baseline scenario Baseline scenario should be identified from the perspective of the owner of central treatment plant, as well as from the perspective of the multiple livestock farms owners."
     },
     {
-      "id": "R-0002-0006",
+      "id": "R-2-0006",
       "section_id": "S-0006",
       "tags": [
         "parameter"
@@ -49,7 +49,7 @@
       "text": "Project participants shall apply the following steps to identify the baseline scenario: Step 1: Identify plausible alternative scenarios"
     },
     {
-      "id": "R-0001-0016",
+      "id": "R-1-0016",
       "section_id": "S-0016",
       "tags": [
         "parameter"
@@ -57,7 +57,7 @@
       "text": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated."
     },
     {
-      "id": "R-0002-0016",
+      "id": "R-2-0016",
       "section_id": "S-0016",
       "tags": [
         "parameter"
@@ -65,7 +65,7 @@
       "text": "The baseline scenario is identified as the economically most attractive course of action i.e., alternative scenario with highest IRR or NPV, where the IRR cannot be calculated Step 4: Baseline revision at renewal of crediting period At t..."
     },
     {
-      "id": "R-0003-0016",
+      "id": "R-3-0016",
       "section_id": "S-0016",
       "tags": [
         "parameter"
@@ -73,7 +73,7 @@
       "text": "This methodology is only applicable if the application of the procedure to identify the baseline scenario results in that anaerobic manure treatment systems in the farms and no implementation of the central plant are the most plausible b..."
     },
     {
-      "id": "R-0004-0016",
+      "id": "R-4-0016",
       "section_id": "S-0016",
       "tags": [
         "parameter"
@@ -81,7 +81,7 @@
       "text": "Guidance for the assessment of the baseline scenario for the livestock farms For validation, project proponents shall calculate the baseline emission from each farm separately, based on ex ante estimation of parameters."
     },
     {
-      "id": "R-0005-0016",
+      "id": "R-5-0016",
       "section_id": "S-0016",
       "tags": [
         "parameter"
@@ -89,7 +89,7 @@
       "text": "Then, project participants shall ordinate, in decreasing order, the sites where most of the baseline emissions would occur."
     },
     {
-      "id": "R-0006-0016",
+      "id": "R-6-0016",
       "section_id": "S-0016",
       "tags": [
         "parameter"
@@ -97,7 +97,7 @@
       "text": "DOEs shall perform site inspections on the sites that are individually responsible for an amount of baseline emissions equal to, or higher than, 900 tCO2e (“upper rank”)."
     },
     {
-      "id": "R-0007-0016",
+      "id": "R-7-0016",
       "section_id": "S-0016",
       "tags": [
         "parameter"
@@ -105,7 +105,7 @@
       "text": "This guarantees that the most preponderant baseline GHG sources are properly validated."
     },
     {
-      "id": "R-0001-0025",
+      "id": "R-1-0025",
       "section_id": "S-0025",
       "tags": [
         "leakage"
@@ -113,7 +113,7 @@
       "text": "FVRG ,h = Volumetric flow rate of the captured biogas in dry basis at normal conditions in hour h (m3/h) fvCH 4 , RG , h = Volumetric fraction of methane in the captured biogas on dry basis in hour h (fraction) LFAD = Methane leakage fro..."
     },
     {
-      "id": "R-0001-0035",
+      "id": "R-1-0035",
       "section_id": "S-0035",
       "tags": [
         "monitoring"
@@ -121,7 +121,7 @@
       "text": "Else, RN can be calculated based on the direct monitoring of the nitrogen concentration in the effluent mix after each treatment step. (iv) Physical Leakage from distribution network of the captured methane in (PEPL) This refers to leaks..."
     },
     {
-      "id": "R-0002-0035",
+      "id": "R-2-0035",
       "section_id": "S-0035",
       "tags": [
         "monitoring"
@@ -129,7 +129,7 @@
       "text": "The sum of the quantities of captured methane fed to the flare, to the power plant and to the boiler (measured as per the monitoring plan) must be compared annually with the total methane generated as measured by meter at the outlet of t..."
     },
     {
-      "id": "R-0003-0035",
+      "id": "R-3-0035",
       "section_id": "S-0035",
       "tags": [
         "monitoring"
@@ -137,7 +137,7 @@
       "text": "The difference between the monitored value of methane generated and that consumed in flare/electricity generation/heat shall be accounted as leakage from the pipelines."
     },
     {
-      "id": "R-0001-0038",
+      "id": "R-1-0038",
       "section_id": "S-0038",
       "tags": [
         "leakage"
@@ -145,7 +145,7 @@
       "text": "The project emissions from fossil fuel combustion (PEheat,j,y = PEFC,j,y ) will be calculated following the latest version of “Tool to calculate project or leakage CO2 emissions from fossil fuel combustion”."
     },
     {
-      "id": "R-0001-0044",
+      "id": "R-1-0044",
       "section_id": "S-0044",
       "tags": [
         "parameter"
@@ -153,7 +153,7 @@
       "text": "(i) Methane emissions from animal waste treatment Manure management system in the baseline could be based on different treatment systems and on one or more stages."
     },
     {
-      "id": "R-0001-0065",
+      "id": "R-1-0065",
       "section_id": "S-0065",
       "tags": [
         "parameter"
@@ -161,7 +161,7 @@
       "text": "Baseline electricity and thermal energy consumptions should be estimated as the average of the historical"
     },
     {
-      "id": "R-0001-0066",
+      "id": "R-1-0066",
       "section_id": "S-0066",
       "tags": [
         "leakage"
@@ -169,7 +169,7 @@
       "text": "Leakage Leakage covers the emissions from land application of treated residues, outside the project boundary."
     },
     {
-      "id": "R-0002-0066",
+      "id": "R-2-0066",
       "section_id": "S-0066",
       "tags": [
         "parameter"
@@ -177,7 +177,7 @@
       "text": "These emissions are estimated as net of those released under project activity and those released in the baseline scenario."
     },
     {
-      "id": "R-0003-0066",
+      "id": "R-3-0066",
       "section_id": "S-0066",
       "tags": [
         "leakage"
@@ -185,7 +185,7 @@
       "text": "Net leakage of N2O and CH4 are only considered if they are positive."
     },
     {
-      "id": "R-0004-0066",
+      "id": "R-4-0066",
       "section_id": "S-0066",
       "tags": [
         "leakage"
@@ -193,7 +193,7 @@
       "text": "CO2 emissions due to the road transportation of sludge or treated effluent outside the project boundary are also considered as leakage."
     },
     {
-      "id": "R-0001-0068",
+      "id": "R-1-0068",
       "section_id": "S-0068",
       "tags": [
         "parameter"
@@ -201,7 +201,7 @@
       "text": "Where: LE B , N 2O = N2O emissions released during baseline scenario from land application of the treated manure, in tCO2e/year GWPN 2O = Global Warming Potential (GWP) for N2O CFN 2O − N , N = Conversion factor (= 44/28) LE B , N 2O ,la..."
     },
     {
-      "id": "R-0002-0068",
+      "id": "R-2-0068",
       "section_id": "S-0068",
       "tags": [
         "parameter"
@@ -209,7 +209,7 @@
       "text": "Otherwise, default values from table 11.3, chapter 11, volume 4 of IPCC 2006 guidelines can be used N LT , y = Number of animals of type LT for the year y, expressed in numbers NEX LT = Is the annual average nitrogen excretion per head o..."
     },
     {
-      "id": "R-0003-0068",
+      "id": "R-3-0068",
       "section_id": "S-0068",
       "tags": [
         "parameter"
@@ -217,7 +217,7 @@
       "text": "Otherwise, default values from table 11.1, chapter 11, volume 4 of IPCC 2006 guidelines can be used RN , n = Fraction of N that is reduced in the Baseline AWMS."
     },
     {
-      "id": "R-0001-0076",
+      "id": "R-1-0076",
       "section_id": "S-0076",
       "tags": [
         "monitoring"
@@ -225,7 +225,7 @@
       "text": "Data and parameters not monitored In addition to the parameters listed in the tables below, the provisions on data and parameters not monitored in the tools referred to in this methodology apply."
     },
     {
-      "id": "R-0001-0079",
+      "id": "R-1-0079",
       "section_id": "S-0079",
       "tags": [
         "parameter"
@@ -233,7 +233,7 @@
       "text": "ID Number: 7 Parameter: HG Bl , y Data unit: MJ Description: Heat used by baseline AWMSs Source of data: Project proponents Measurement Archive electronic for the duration of project + 5 yrs procedures (if any): Any comment: At start of ..."
     },
     {
-      "id": "R-0001-0088",
+      "id": "R-1-0088",
       "section_id": "S-0088",
       "tags": [
         "parameter"
@@ -241,7 +241,7 @@
       "text": "Prior to the verification, project proponents shall calculate the baseline emission from each site separately."
     },
     {
-      "id": "R-0002-0088",
+      "id": "R-2-0088",
       "section_id": "S-0088",
       "tags": [
         "parameter"
@@ -249,7 +249,7 @@
       "text": "Then, project participants shall ordinate, in decreasing order, the sites where most of the baseline emissions would occur."
     },
     {
-      "id": "R-0003-0088",
+      "id": "R-3-0088",
       "section_id": "S-0088",
       "tags": [
         "parameter"
@@ -257,7 +257,7 @@
       "text": "DOEs shall perform site inspections on the sites that are individually responsible for an amount of baseline emissions equal or higher than 900 tCO2e (“upper rank”)."
     },
     {
-      "id": "R-0004-0088",
+      "id": "R-4-0088",
       "section_id": "S-0088",
       "tags": [
         "parameter"
@@ -265,7 +265,7 @@
       "text": "This guarantees that the most preponderant baseline GHG sources are properly verified."
     },
     {
-      "id": "R-0001-0091",
+      "id": "R-1-0091",
       "section_id": "S-0091",
       "tags": [
         "parameter"
@@ -273,7 +273,7 @@
       "text": "Where: corrected BELR = Total corrected baseline emissions from the “lower rank” sites (tCO2e) , total"
     },
     {
-      "id": "R-0001-0093",
+      "id": "R-1-0093",
       "section_id": "S-0093",
       "tags": [
         "monitoring"
@@ -281,7 +281,7 @@
       "text": "Data / Parameter: B0 , LT Data unit: m3 CH4/kg_VS_dm Description: Maximum methane producing potential of the volatile solid generated Source of data: IPCC 2006 Guidelines or directly measured Measurement Archive electronically during pro..."
     },
     {
-      "id": "R-0001-0095",
+      "id": "R-1-0095",
       "section_id": "S-0095",
       "tags": [
         "monitoring"
@@ -289,7 +289,7 @@
       "text": "Data / Parameter: Q EM ,m Data unit: m3/month Description: Monthly volume of the effluent mix entering the central treatment plant Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedur..."
     },
     {
-      "id": "R-0002-0095",
+      "id": "R-2-0095",
       "section_id": "S-0095",
       "tags": [
         "monitoring"
@@ -297,7 +297,7 @@
       "text": "This maintenance/calibration practice should be clearly stated in the CDM-PDD Any comment: This parameter shall be monitored by continuous flow meters installed after the effluent admittance point or after the equalization tanks (if exis..."
     },
     {
-      "id": "R-0001-0097",
+      "id": "R-1-0097",
       "section_id": "S-0097",
       "tags": [
         "monitoring"
@@ -305,7 +305,7 @@
       "text": "Data / Parameter: VS res ,m Data unit: Ton VS/ton residue Description: Average monthly volatile solids (VS) concentration of the residue entering the composting step Source of data: Project proponents Measurement Archive electronically d..."
     },
     {
-      "id": "R-0001-0099",
+      "id": "R-1-0099",
       "section_id": "S-0099",
       "tags": [
         "monitoring"
@@ -313,7 +313,7 @@
       "text": "Data / Parameter: [ N ] EM ,m Data unit: kg N/m3 Monthly total nitrogen concentration in the effluent mix entering the central Description: treatment plant Source of data: Project proponents Measurement Archive electronically during proj..."
     },
     {
-      "id": "R-0002-0099",
+      "id": "R-2-0099",
       "section_id": "S-0099",
       "tags": [
         "monitoring"
@@ -321,7 +321,7 @@
       "text": "Total QA/QC procedures: nitrogen determination should be performed according to the guidance provided in annex 3 Any comment: The effluent mix shall be collected after the effluent admittance point or after the equalization tanks (if exi..."
     },
     {
-      "id": "R-0001-0103",
+      "id": "R-1-0103",
       "section_id": "S-0103",
       "tags": [
         "monitoring"
@@ -329,7 +329,7 @@
       "text": "Data / Parameter: EG d , y Data unit: MWh Description: Electricity exported to grid Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annual QA/QC..."
     },
     {
-      "id": "R-0002-0103",
+      "id": "R-2-0103",
       "section_id": "S-0103",
       "tags": [
         "uncertainty"
@@ -337,7 +337,7 @@
       "text": "Uncertainty of the meters to be obtained from the manufacturers."
     },
     {
-      "id": "R-0003-0103",
+      "id": "R-3-0103",
       "section_id": "S-0103",
       "tags": [
         "uncertainty"
@@ -345,7 +345,7 @@
       "text": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM-PDD"
     },
     {
-      "id": "R-0001-0105",
+      "id": "R-1-0105",
       "section_id": "S-0105",
       "tags": [
         "monitoring"
@@ -353,7 +353,7 @@
       "text": "Data / Parameter: EFN 2O , D ,n Data unit: kg N2O-N/ kg N Description: Direct N2O emission factor for treatment stage n Source of data: Project proponents or IPCC 2006 Guidelines Measurement Archive electronically during project plus 5 y..."
     },
     {
-      "id": "R-0002-0105",
+      "id": "R-2-0105",
       "section_id": "S-0105",
       "tags": [
         "monitoring"
@@ -361,7 +361,7 @@
       "text": "The data used for this purpose shall be included in the monitoring plan of the CDM-PDD."
     },
     {
-      "id": "R-0001-0107",
+      "id": "R-1-0107",
       "section_id": "S-0107",
       "tags": [
         "monitoring"
@@ -369,7 +369,7 @@
       "text": "Data / Parameter: T2 ,m Data unit: Kelvin Description: Monthly average ambient temperature at the manure storage tanks Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any):..."
     },
     {
-      "id": "R-0001-0109",
+      "id": "R-1-0109",
       "section_id": "S-0109",
       "tags": [
         "monitoring"
@@ -377,7 +377,7 @@
       "text": "Data / Parameter: PE flare , y Data unit: tCO2e Description: Project emissions from flaring of the residual gas stream in year y Source of data: “Tool to determine project emissions from flaring gases containing Methane” Measurement The ..."
     },
     {
-      "id": "R-0001-0111",
+      "id": "R-1-0111",
       "section_id": "S-0111",
       "tags": [
         "monitoring"
@@ -385,7 +385,7 @@
       "text": "Data / parameter: N vehicles ,i , y Data unit: Number Number of trips of vehicles type i used for transportation, with similar loading Description: capacity Source of data: Project proponents Measurement On-site monitoring records proced..."
     },
     {
-      "id": "R-0001-0113",
+      "id": "R-1-0113",
       "section_id": "S-0113",
       "tags": [
         "parameter"
@@ -393,7 +393,7 @@
       "text": "Data / parameter: N LT , y Data unit: Number Average livestock population used in both baseline and project case emissions Description: estimation."
     },
     {
-      "id": "R-0002-0113",
+      "id": "R-2-0113",
       "section_id": "S-0113",
       "tags": [
         "monitoring"
@@ -401,7 +401,7 @@
       "text": "Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures: --- The PDD should describe the system on monitoring the number of liv..."
     },
     {
-      "id": "R-0001-0115",
+      "id": "R-1-0115",
       "section_id": "S-0115",
       "tags": [
         "monitoring"
@@ -409,7 +409,7 @@
       "text": "Data / parameter: Wsite Data unit: kg Description: Weight of livestock Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures:..."
     },
     {
-      "id": "R-0001-0117",
+      "id": "R-1-0117",
       "section_id": "S-0117",
       "tags": [
         "monitoring"
@@ -417,7 +417,7 @@
       "text": "Use country-specific values where available Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---"
     },
     {
-      "id": "R-0001-0119",
+      "id": "R-1-0119",
       "section_id": "S-0119",
       "tags": [
         "monitoring"
@@ -425,7 +425,7 @@
       "text": "Data / parameter: N Data unit: - Description: Total Numbers of farms Source of data: Project proponents Measurement procedures (if any): Monitoring frequency: Annually QA/QC procedures: Any comment:"
     },
     {
-      "id": "R-0001-0121",
+      "id": "R-1-0121",
       "section_id": "S-0121",
       "tags": [
         "monitoring"
@@ -433,7 +433,7 @@
       "text": "Monitoring frequency: Weekly aggregated for monthly average QA/QC procedures: Any comment:"
     },
     {
-      "id": "R-0001-0123",
+      "id": "R-1-0123",
       "section_id": "S-0123",
       "tags": [
         "monitoring"
@@ -441,7 +441,7 @@
       "text": "Monitoring frequency: Weekly aggregated for monthly average QA/QC procedures: Any comment:"
     },
     {
-      "id": "R-0001-0125",
+      "id": "R-1-0125",
       "section_id": "S-0125",
       "tags": [
         "parameter"
