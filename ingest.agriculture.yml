@@ -1,0 +1,14 @@
+version: 2
+methods:
+  - id: UNFCCC.Agriculture.AM0073
+    version: v01-0
+    sector: Agriculture
+  - id: UNFCCC.Agriculture.ACM0010
+    version: v03-0
+    sector: Agriculture
+  - id: UNFCCC.Agriculture.AMS-III.D
+    version: v21-0
+    sector: Agriculture
+  - id: UNFCCC.Agriculture.AMS-III.R
+    version: v05-0
+    sector: Agriculture

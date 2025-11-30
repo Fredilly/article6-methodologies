@@ -4,13 +4,13 @@
     "created_by": "ingest.sh"
   },
   "audit_hashes": {
-    "rules_json_sha256": "aa820a9e9ab42d2396cd890a2e248c767a8c14098dc58de2b58297a38de1c1e9",
-    "sections_json_sha256": "bb6215bfffcd2e0438335799d105fdbc2249826849311e90d2a246e218462fbf",
-    "source_pdf_sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02"
+    "rules_json_sha256": "60d24f79400a6a4fb1a8be1e71f2e55cfabce35945962d380c2a5ceeb863bb54",
+    "sections_json_sha256": "2fb333bddd764f612d2adca1b616328e10329205acea1fa6a966d4ce5e6f9f13",
+    "source_pdf_sha256": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb"
   },
   "automation": {
-    "repo_commit": "961391df9843aa675e3df874e2ec70690844a0c5",
-    "scripts_manifest_sha256": "41115b7ad998d7bd06ed77ed3bb47645b07279dd592f129bfb31253d508d8d0c"
+    "repo_commit": "3b2288b3d32a990301d33fe4e80d26cd60206988",
+    "scripts_manifest_sha256": "6436fc4a7f5aa47cc92667141161b426561f0d9f69f10accd70d7202187a74d1"
   },
   "provenance": {
     "author": "Fred Egbuedike",

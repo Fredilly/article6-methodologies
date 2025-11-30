@@ -1,266 +1,173 @@
 [
   {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0002",
-    "logic": "Approved consolidated baseline methodology ACM0010",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-1-0001",
+    "logic": "Projects consolidate manure from multiple livestock farms into a centralized anaerobic digestion and methane capture system; baseline farms employ anaerobic lagoons or tanks without methane recovery, typically deeper than 1 m with retention times above 30 days.",
+    "notes": "Maintain impermeable containment, ensure sludge is stabilized before disposal, and retain fertilizer use of treated residues so applicability conditions remain true.",
     "refs": {
       "sections": [
-        "S-0002"
+        "S-1"
+      ],
+      "tools": [
+        "UNFCCC/ACM0010@v03-0"
       ]
     },
-    "summary": "Approved consolidated baseline methodology ACM0010",
-    "type": "parameter"
+    "summary": "Projects aggregate manure from multiple farms and install a central methane capture system where the baseline lacks methane recovery.",
+    "tags": [
+      "eligibility"
+    ],
+    "type": "eligibility",
+    "when": [
+      "Baseline anaerobic systems operate without methane recovery and satisfy lagoon depth and retention requirements.",
+      "Participation agreements signed by each farm and the central plant."
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0004",
-    "logic": "• Farms where livestock populations, comprising of cattle, buffalo, swine, sheep, goats, and/or poultry, is managed under confined conditions. • Farms where manure is not discharged into natural water resources (e.g. rivers or estuaries). • In case of anaerobic lagoons treatments systems, the depth of the lagoons used for manure management under the baseline scenario should be at least 1m2. • The annual average temperature in the site where the anaerobic manure treatment facility in the baseline existed is higher than 5°C.",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-2-0002",
+    "logic": "Participants follow the four-step procedure to identify plausible alternatives for both the central plant owner and each farm, calculate IRR/NPV for every option, and select as baseline the most economically attractive scenario that does not include methane recovery.",
+    "notes": "Document costs, tariffs, and sensitivity assumptions so DOE can verify financial additionality and re-run calculations at crediting renewal.",
     "refs": {
       "sections": [
-        "S-0004"
+        "S-2"
+      ],
+      "tools": [
+        "UNFCCC/ACM0010@v03-0"
       ]
     },
-    "summary": "• Farms where livestock populations, comprising of cattle, buffalo, swine, sheep, goats, and/or poultry, is managed under confined conditions. • Farms where manure is not discharged into natural water resources (e.g. rivers or estuaries)...",
-    "type": "parameter"
+    "summary": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
+    "tags": [
+      "baseline",
+      "additionality"
+    ],
+    "type": "calc",
+    "when": [
+      "Financial model vetted during validation and updated at each crediting renewal.",
+      "Barrier analysis supports exclusion of higher emitting alternatives."
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0011",
-    "logic": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated.",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-3-0002",
+    "logic": "Barrier assessments, board minutes, and DOE-verifiable declarations confirm that the central treatment entity alone claims CERs while participating farms maintain their baseline manure handling until waste is transferred.",
+    "notes": "Declarations must stay valid throughout the crediting period and include explicit waiver of CER claims by each farm.",
     "refs": {
       "sections": [
-        "S-0011"
+        "S-2"
+      ],
+      "tools": [
+        "UNFCCC/ACM0010@v03-0"
       ]
     },
-    "summary": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated.",
-    "type": "parameter"
+    "summary": "Barrier documentation and CER transfer declarations demonstrate participation and prevent double counting.",
+    "tags": [
+      "reporting"
+    ],
+    "type": "reporting",
+    "when": [
+      "All parties provide signed statements before validation.",
+      "DOE reviews evidence whenever a farm joins or exits the aggregation."
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0046",
-    "logic": "the baseline emissions section.",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-4-0003",
+    "logic": "The project boundary spans manure collection logistics, digesters, gas treatment, flares or power units, sludge drying or composting, and the return or sale of treated residues while ensuring no leakage to groundwater.",
+    "notes": "Maintain impermeable storage and attest that treated residues continue being used as fertilizer as in the baseline scenario.",
     "refs": {
       "sections": [
-        "S-0046"
+        "S-3"
+      ],
+      "tools": [
+        "UNFCCC/ACM0010@v03-0"
       ]
     },
-    "summary": "the baseline emissions section.",
-    "type": "parameter"
+    "summary": "Project boundaries cover collection through final sludge treatment with leak-proof infrastructure and consistent fertilizer use.",
+    "tags": [
+      "project_design"
+    ],
+    "type": "parameter",
+    "when": [
+      "Transport routes, digesters, and utilization equipment are included in the emissions inventory.",
+      "Sludge is stabilized prior to final application or disposal."
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0052",
-    "logic": "Leakage",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-5-0003",
+    "logic": "Emission reductions aggregate farm-level baseline methane (from Tool 01/03 factors) minus project emissions from electricity, heat, biogas use, and onsite treatment using Tool 05/06 and the fossil fuel combustion tool where applicable.",
+    "notes": "Where project electricity displaces grid imports, document metered consumption and any exported power separately.",
     "refs": {
       "sections": [
-        "S-0052"
+        "S-3"
+      ],
+      "tools": [
+        "UNFCCC/ACM0010@v03-0"
       ]
     },
-    "summary": "Leakage",
-    "type": "leakage"
+    "summary": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
+    "tags": [
+      "calc"
+    ],
+    "type": "equation",
+    "when": [
+      "Farm-level calculations trace to monitored manure quantities and VS content.",
+      "Project electricity and thermal use reported annually with supporting data."
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0055",
-    "logic": "RN,n Fraction of NEX in manure waste that is reduced in the Baseline AWMS.",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-6-0004",
+    "logic": "Methane leakage from anaerobic digesters and pipelines (LFAD default 0.15 when direct monitoring unavailable), fossil fuel combustion, sludge transport, and offsite land application emissions are quantified and deducted whenever positive.",
+    "notes": "Include CO2 from sludge haulage vehicles and N2O/CH4 from land application that exceeds project boundary.",
     "refs": {
       "sections": [
-        "S-0055"
+        "S-4"
+      ],
+      "tools": [
+        "UNFCCC/ACM0010@v03-0"
       ]
     },
-    "summary": "RN,n Fraction of NEX in manure waste that is reduced in the Baseline AWMS.",
-    "type": "parameter"
+    "summary": "Deduct leakage from pipelines, auxiliary fuel, and offsite residue handling using monitored data or LFAD defaults.",
+    "tags": [],
+    "type": "leakage",
+    "when": [
+      "Positive leakage terms reported even when small relative to baseline emissions.",
+      "Any conservative defaults justified and revisited when monitoring improves."
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0070",
-    "logic": "• Leakage from anaerobic digester, if used.",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-7-0005",
+    "logic": "Biogas volumetric flow, methane fraction, flare/generator dispatch, and electricity consumption are measured continuously (or at least hourly), aggregated weekly, and included in monthly records alongside QA/QC checks and calibration certificates.",
+    "notes": "Fallback to conservative default values when meters fail, with corrective action logs retained for DOE review.",
     "refs": {
       "sections": [
-        "S-0070"
+        "S-5"
+      ],
+      "tools": [
+        "UNFCCC/ACM0010@v03-0"
       ]
     },
-    "summary": "• Leakage from anaerobic digester, if used.",
-    "type": "leakage"
+    "summary": "Monitor biogas, methane fraction, and energy consumption continuously and report at least monthly with QA/QC evidence.",
+    "tags": [],
+    "type": "monitoring",
+    "when": [
+      "Calibration records kept for flow meters, gas analyzers, and electricity meters.",
+      "Weekly aggregates reconcile with monthly monitoring reports."
+    ]
   },
   {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0002-0070",
-    "logic": "The default value is 15%, but in case project participants use a lower value, the appropriate measurement to support the lower value shall be monitored and reported. • The default nitrogen excretion per animal or parameters required to estimate nitrogen excretion.",
+    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-8-0005",
+    "logic": "DOE validations prioritize farms contributing 900 tCO2e or more of baseline emissions, require annual reconciliation of methane generated versus consumed at the plant, and investigate discrepancies with documented corrective actions.",
+    "notes": "Maintain evidence of site inspections, imbalance analyses, and remedial measures for at least one full crediting period beyond issuance.",
     "refs": {
       "sections": [
-        "S-0070"
+        "S-5"
+      ],
+      "tools": [
+        "UNFCCC/ACM0010@v03-0"
       ]
     },
-    "summary": "The default value is 15%, but in case project participants use a lower value, the appropriate measurement to support the lower value shall be monitored and reported. • The default nitrogen excretion per animal or parameters required to e...",
-    "type": "monitoring"
-  },
-  {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0003-0070",
-    "logic": "If N intake method is used the amount of dry matter intake by livestock shall be monitored. • Amount of electricity used in the project case.",
-    "refs": {
-      "sections": [
-        "S-0070"
-      ]
-    },
-    "summary": "If N intake method is used the amount of dry matter intake by livestock shall be monitored. • Amount of electricity used in the project case.",
-    "type": "monitoring"
-  },
-  {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0004-0070",
-    "logic": "Calculated following the latest version of “Tool to calculate project or leakage CO2 emissions from fossil fuel combustion”. • Flow of biogas to the flare, heat generation, and electricity generation.",
-    "refs": {
-      "sections": [
-        "S-0070"
-      ]
-    },
-    "summary": "Calculated following the latest version of “Tool to calculate project or leakage CO2 emissions from fossil fuel combustion”. • Flow of biogas to the flare, heat generation, and electricity generation.",
-    "type": "leakage"
-  },
-  {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0005-0070",
-    "logic": "In the case where biogas is just flared, one flow meter can be used provided that the meter used is calibrated periodically by an officially accredited entity. • Concentration of methane in biogas at outlet of anaerobic digester, this shall be measured on wet basis. • The parameters used for determining the project emissions from flaring of the residual gas stream in year y (PEflare,y) should be monitored as per the “Tool to determine project emissions from flaring gases containing Methane”. • Biogas leakage in project: through leaks in the pipeline during transportation of biogas.",
-    "refs": {
-      "sections": [
-        "S-0070"
-      ]
-    },
-    "summary": "In the case where biogas is just flared, one flow meter can be used provided that the meter used is calibrated periodically by an officially accredited entity. • Concentration of methane in biogas at outlet of anaerobic digester, this sh...",
-    "type": "monitoring"
-  },
-  {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0072",
-    "logic": "Leakage:",
-    "refs": {
-      "sections": [
-        "S-0072"
-      ]
-    },
-    "summary": "Leakage:",
-    "type": "leakage"
-  },
-  {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0074",
-    "logic": "Data and parameters monitored",
-    "refs": {
-      "sections": [
-        "S-0074"
-      ]
-    },
-    "summary": "Data and parameters monitored",
-    "type": "monitoring"
-  },
-  {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0076",
-    "logic": "Data / Parameter: VSLT,y Data unit: kg dry matter/animal/year Description: Volatile solid excretion per animal per day Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually, estimated or based on published information such as IPCC QA/QC procedures: --- Any comment: If it is required to use developed country VS values, the following should be monitored: - Genetic source of the production operations livestock originate from an Annex I Party; - The formulated feed rations (FFR).",
-    "refs": {
-      "sections": [
-        "S-0076"
-      ]
-    },
-    "summary": "Data / Parameter: VSLT,y Data unit: kg dry matter/animal/year Description: Volatile solid excretion per animal per day Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any):...",
-    "type": "monitoring"
-  },
-  {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0078",
-    "logic": "Data / Parameter: RN,n Data unit: fraction Description: Nitrogen degradation factor Source of data: Refer to Annex 1 Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: --- Any comment: Estimated from Table provided in Annex 1.",
-    "refs": {
-      "sections": [
-        "S-0078"
-      ]
-    },
-    "summary": "Data / Parameter: RN,n Data unit: fraction Description: Nitrogen degradation factor Source of data: Refer to Annex 1 Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC...",
-    "type": "monitoring"
-  },
-  {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0080",
-    "logic": "Data / Parameter: EGd,y Data unit: MWh Description: Electricity exported to grid Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annual QA/QC procedures: Electricity meters will undergo maintenance/calibration subject to appropriate industry standards.",
-    "refs": {
-      "sections": [
-        "S-0080"
-      ]
-    },
-    "summary": "Data / Parameter: EGd,y Data unit: MWh Description: Electricity exported to grid Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annual QA/QC pr...",
-    "type": "monitoring"
-  },
-  {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0002-0080",
-    "logic": "Uncertainty of the meters to be obtained from the manufacturers.",
-    "refs": {
-      "sections": [
-        "S-0080"
-      ]
-    },
-    "summary": "Uncertainty of the meters to be obtained from the manufacturers.",
-    "type": "uncertainty"
-  },
-  {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0003-0080",
-    "logic": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM-PDD.",
-    "refs": {
-      "sections": [
-        "S-0080"
-      ]
-    },
-    "summary": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM-PDD.",
-    "type": "uncertainty"
-  },
-  {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0082",
-    "logic": "Data / Parameter: Wsite Data unit: kg Description: Weight of livestock Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures: --- Any comment: The PDD should describe the system on monitoring the weight of livestock. .",
-    "refs": {
-      "sections": [
-        "S-0082"
-      ]
-    },
-    "summary": "Data / Parameter: Wsite Data unit: kg Description: Weight of livestock Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures:...",
-    "type": "monitoring"
-  },
-  {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0084",
-    "logic": "Monitoring frequency: to be decided by PPs.",
-    "refs": {
-      "sections": [
-        "S-0084"
-      ]
-    },
-    "summary": "Monitoring frequency: to be decided by PPs.",
-    "type": "monitoring"
-  },
-  {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0002-0084",
-    "logic": "QA/QC procedures: The project proponents shall define the variability of the concentration.",
-    "refs": {
-      "sections": [
-        "S-0084"
-      ]
-    },
-    "summary": "QA/QC procedures: The project proponents shall define the variability of the concentration.",
-    "type": "monitoring"
-  },
-  {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0086",
-    "logic": "Measurement As per the “Tool to calculate project emissions from electricity consumption” procedures (if any): Monitoring frequency: As per the “Tool to calculate project emissions from electricity consumption” QA/QC procedures: As per the “Tool to calculate project emissions from electricity consumption” Any comment: -",
-    "refs": {
-      "sections": [
-        "S-0086"
-      ]
-    },
-    "summary": "Measurement As per the “Tool to calculate project emissions from electricity consumption” procedures (if any): Monitoring frequency: As per the “Tool to calculate project emissions from electricity consumption” QA/QC procedures: As per t...",
-    "type": "monitoring"
-  },
-  {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0088",
-    "logic": "Data / Parameter: QDM Data unit: kg Description: Mass of manure disposed outside project boundary Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Every batch disposed QA/QC procedures: --- Any comment: ---",
-    "refs": {
-      "sections": [
-        "S-0088"
-      ]
-    },
-    "summary": "Data / Parameter: QDM Data unit: kg Description: Mass of manure disposed outside project boundary Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency...",
-    "type": "monitoring"
-  },
-  {
-    "id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0090",
-    "logic": "Source of data: --- Measurement Archive electronically during project plus 5 yrs procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---",
-    "refs": {
-      "sections": [
-        "S-0090"
-      ]
-    },
-    "summary": "Source of data: --- Measurement Archive electronically during project plus 5 yrs procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---",
-    "type": "monitoring"
+    "summary": "Focus DOE inspections on high-emitting farms and reconcile methane balances annually, documenting leak investigations and fixes.",
+    "tags": [],
+    "type": "reporting",
+    "when": [
+      "Upper-rank farms (>=900 tCO2e) are included in each validation sample.",
+      "Methane generation and consumption reconciliations submitted with monitoring reports."
+    ]
   }
 ]

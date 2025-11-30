@@ -162,9 +162,14 @@ $with_sector"
     done | jq -s '.')
   fi
   if [ -z "$source_hash" ] && [ "$tools_json" != '[]' ]; then
+    method_doc_exact="$org/$method_slug@$version_slug"
     method_doc_prefix="$org/$method_slug@"
-    source_hash=$(printf '%s' "$tools_json" | jq -r --arg prefix "$method_doc_prefix" '
+    source_hash=$(printf '%s' "$tools_json" | jq -r --arg exact "$method_doc_exact" '
+      (map(select((.doc // "") == $exact)) | .[0].sha256) // empty')
+    if [ -z "$source_hash" ]; then
+      source_hash=$(printf '%s' "$tools_json" | jq -r --arg prefix "$method_doc_prefix" '
       (map(select((.doc // "") | startswith($prefix))) | .[0].sha256) // empty')
+    fi
     if [ -z "$source_hash" ]; then
       source_hash=$(printf '%s' "$tools_json" | jq -r '
         (map(select((.path // "") | endswith("/source.pdf"))) | .[0].sha256) // empty')
