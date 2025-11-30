@@ -4,13 +4,13 @@
     "created_by": "ingest.sh"
   },
   "audit_hashes": {
-    "rules_json_sha256": "2c60c395c48a75dafac204509d2c5223c452c4837b2fd1ddd445ec00bc1dda9c",
-    "sections_json_sha256": "4d9307a2b44aca873c6ab1b63d0125eb633abfb27a5bb45d3c5a2b81a7ad6297",
-    "source_pdf_sha256": "dc6e5a0e5942fa22e7275c1a639b8f47b85384aa7845c446fa600697646c744a"
+    "rules_json_sha256": "c3675d71911226838041afb0020389291defafa865688bca998c6841674c4e09",
+    "sections_json_sha256": "2fb333bddd764f612d2adca1b616328e10329205acea1fa6a966d4ce5e6f9f13",
+    "source_pdf_sha256": "b516fd941c5d13671cb88ff7b6511cda3390f8290e3a509a1b5d22e9ad1b35bd"
   },
   "automation": {
-    "repo_commit": "961391df9843aa675e3df874e2ec70690844a0c5",
-    "scripts_manifest_sha256": "41115b7ad998d7bd06ed77ed3bb47645b07279dd592f129bfb31253d508d8d0c"
+    "repo_commit": "cde46542be0493fd37c470f19fa4f4a92245b71a",
+    "scripts_manifest_sha256": "cfa59077a59a8b972f033b0ddd04bc65ca7f6774edf43afb01365a245e09fa6f"
   },
   "provenance": {
     "author": "Fred Egbuedike",
