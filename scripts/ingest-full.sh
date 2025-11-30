@@ -21,6 +21,11 @@ fi
 echo "[ingest-full] step: ingest.sh"
 INGEST_FILE="$INGEST_YML" bash "${SCRIPT_DIR}/ingest.sh"
 
+if [ -f "${SCRIPT_DIR}/reshape-agriculture.js" ]; then
+  echo "[ingest-full] step: reshape-agriculture"
+  node "${SCRIPT_DIR}/reshape-agriculture.js"
+fi
+
 echo "[ingest-full] step: derive lean"
 node "${SCRIPT_DIR}/derive-lean-from-rich.js"
 

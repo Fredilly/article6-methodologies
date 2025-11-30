@@ -1,228 +1,72 @@
 {
   "rules": [
     {
-      "id": "R-1-0005",
-      "section_id": "S-0005",
-      "tags": [
-        "leakage"
-      ],
-      "text": "Leakage .........................................................................................................."
-    },
-    {
-      "id": "R-1-0009",
-      "section_id": "S-0009",
-      "tags": [
-        "parameter"
-      ],
-      "text": "(a) The livestock population in the farm is managed under confined conditions; (b) Manure or the streams obtained after treatment are not discharged into natural water resources (e.g. river or estuaries), otherwise “AMS-III.H Methane rec..."
-    },
-    {
-      "id": "R-1-0014",
-      "section_id": "S-0014",
+      "id": "R-1-0001",
+      "section_id": "S-1",
       "tags": [
         "eligibility"
       ],
-      "text": "If the recovered biogas is used to power auxiliary equipment of the project activity, it should be taken into account accordingly, using zero as its emission factor; however, energy used for such purposes is not eligible as an SSC CDM Ty..."
+      "text": "Projects aggregate manure from multiple farms and install a central methane capture system where the baseline lacks methane recovery."
     },
     {
-      "id": "R-1-0015",
-      "section_id": "S-0015",
+      "id": "R-2-0002",
+      "section_id": "S-2",
       "tags": [
-        "eligibility"
+        "calc",
+        "baseline",
+        "additionality"
       ],
-      "text": "compared to the baseline scenario are only eligible if they comply with the related and relevant requirements in the \"General guidelines for SSC CDM methodologies\"."
+      "text": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps."
     },
     {
-      "id": "R-1-0020",
-      "section_id": "S-0020",
+      "id": "R-3-0002",
+      "section_id": "S-2",
       "tags": [
-        "parameter"
+        "reporting"
       ],
-      "text": "methodologies and tools: (a) “ACM0010: Consolidated baseline methodology for GHG emission reductions from manure management systems”; (b) AM0073: GHG emission reductions through multi-site manure collection and treatment in a central pla..."
+      "text": "Barrier documentation and CER transfer declarations demonstrate participation and prevent double counting."
     },
     {
-      "id": "R-1-0025",
-      "section_id": "S-0025",
+      "id": "R-4-0003",
+      "section_id": "S-3",
       "tags": [
-        "parameter"
+        "parameter",
+        "project_design"
       ],
-      "text": "Baseline emissions (BEy) are calculated by using one of the following two options: (a) Using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC Tier 2 ..."
+      "text": "Project boundaries cover collection through final sludge treatment with leak-proof infrastructure and consistent fertilizer use."
     },
     {
-      "id": "R-2-0025",
-      "section_id": "S-0025",
+      "id": "R-5-0003",
+      "section_id": "S-3",
       "tags": [
-        "parameter"
+        "equation",
+        "calc"
       ],
-      "text": "For this calculation, information about the characteristics of the manure and of the management systems in the baseline is required."
+      "text": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools."
     },
     {
-      "id": "R-1-0035",
-      "section_id": "S-0035",
-      "tags": [
-        "leakage"
-      ],
-      "text": "(a) Physical leakage of biogas in the manure management systems which includes production, collection and transport of biogas to the point of flaring/combustion or gainful use (PEPL,y); (b) Emissions from flaring or combustion of the gas..."
-    },
-    {
-      "id": "R-1-0038",
-      "section_id": "S-0038",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "However, this use of the recovered biogas shall be included in the project boundary and its output shall be monitored in order to ensure that the recovered biogas is actually destroyed, even if the emission reductions from this component..."
-    },
-    {
-      "id": "R-1-0039",
-      "section_id": "S-0039",
+      "id": "R-6-0004",
+      "section_id": "S-4",
       "tags": [
         "leakage"
       ],
-      "text": "a default value of 10% of the maximum methane producing potential (Bo) for the physical leakages from anaerobic digesters."
+      "text": "Deduct leakage from pipelines, auxiliary fuel, and offsite residue handling using monitored data or LFAD defaults."
     },
     {
-      "id": "R-1-0041",
-      "section_id": "S-0041",
-      "tags": [
-        "leakage"
-      ],
-      "text": "the methodological tool “Project and leakage emissions from anaerobic digesters”, where PEPower,y is the sum of PEEC,y and PEFC,y in the tool."
-    },
-    {
-      "id": "R-1-0044",
-      "section_id": "S-0044",
-      "tags": [
-        "leakage"
-      ],
-      "text": "leakage emissions from anaerobic digesters”."
-    },
-    {
-      "id": "R-1-0048",
-      "section_id": "S-0048",
+      "id": "R-7-0005",
+      "section_id": "S-5",
       "tags": [
         "monitoring"
       ],
-      "text": "year of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting ..."
+      "text": "Monitor biogas, methane fraction, and energy consumption continuously and report at least monthly with QA/QC evidence."
     },
     {
-      "id": "R-1-0049",
-      "section_id": "S-0049",
+      "id": "R-8-0005",
+      "section_id": "S-5",
       "tags": [
-        "monitoring"
+        "reporting"
       ],
-      "text": "may be calculated as follows, based on the amount of monitored electricity generation, without monitoring methane flow and concentration:"
-    },
-    {
-      "id": "R-1-0054",
-      "section_id": "S-0054",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "When the amount of methane that is combusted for energy and that is flared is separately monitored, or when only the biogas flow to the flare is monitored and the biogas used for energy is calculated based on electricity generation, a de..."
-    },
-    {
-      "id": "R-1-0055",
-      "section_id": "S-0055",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "residual waste shall be monitored."
-    },
-    {
-      "id": "R-1-0057",
-      "section_id": "S-0057",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "(a) The PDD shall describe the system used for monitoring the fraction of the manure handled in the animal manure management system (MS%,i,y), the average weight of the livestock (Wsite) and the livestock population (NLT,y) taking into a..."
-    },
-    {
-      "id": "R-1-0060",
-      "section_id": "S-0060",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "requirements specified in the “General Guidelines for SSC CDM methodologies” (e.g. calibration requirements, sampling requirements) are also an integral part of the monitoring guidelines specified below and therefore shall be referred by..."
-    },
-    {
-      "id": "R-1-0069",
-      "section_id": "S-0069",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "Sampled group will be changed in each monitoring period."
-    },
-    {
-      "id": "R-1-0071",
-      "section_id": "S-0071",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "the date and signature; the monitor forms will be collected, summarized and kept by the project participant."
-    },
-    {
-      "id": "R-1-0081",
-      "section_id": "S-0081",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "Use country-specific values where available Monitoring frequency: - QA/QC procedures: - Any comment: -"
-    },
-    {
-      "id": "R-1-0084",
-      "section_id": "S-0084",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "programme of activities: (a) If the project activity involves the replacement of equipment, and the leakage effect of the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an inde..."
-    },
-    {
-      "id": "R-2-0084",
-      "section_id": "S-0084",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other."
-    },
-    {
-      "id": "R-1-0092",
-      "section_id": "S-0092",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "To include the monitoring table to clarify the monitoring requirements."
-    },
-    {
-      "id": "R-1-0093",
-      "section_id": "S-0093",
-      "tags": [
-        "parameter"
-      ],
-      "text": "To cover centralized treatment of animal manure collected from different farms and to include provisions for determining baseline emissions based on the direct measurement of manure quantity and volatile solids."
-    },
-    {
-      "id": "R-1-0099",
-      "section_id": "S-0099",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "To clarify that in the monitoring plan on-site inspections are to be conducted for each individual farm and includes additional guidance on how to determine the efficiency of the flaring process in an enclosed flare and in an open flare;..."
-    },
-    {
-      "id": "R-1-0107",
-      "section_id": "S-0107",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "Guidance on ‘capacity addition’ and ‘cofiring’ in Type I methodologies and monitoring of methane in AMS-III.D included."
-    },
-    {
-      "id": "R-1-0108",
-      "section_id": "S-0108",
-      "tags": [
-        "leakage"
-      ],
-      "text": "AMS-II.F was adopted, leakage due to equipment transfer was included in all Type I and Type II methodologies."
+      "text": "Focus DOE inspections on high-emitting farms and reconcile methane balances annually, documenting leak investigations and fixes."
     }
   ]
 }

@@ -9,7 +9,7 @@
       "text": "Projects aggregate manure from multiple farms and install a central methane capture system where the baseline lacks methane recovery."
     },
     {
-      "id": "R-1-0002",
+      "id": "R-2-0002",
       "section_id": "S-2",
       "tags": [
         "calc",
@@ -19,7 +19,7 @@
       "text": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps."
     },
     {
-      "id": "R-1-0003",
+      "id": "R-3-0002",
       "section_id": "S-2",
       "tags": [
         "reporting"
@@ -27,7 +27,7 @@
       "text": "Barrier documentation and CER transfer declarations demonstrate participation and prevent double counting."
     },
     {
-      "id": "R-1-0004",
+      "id": "R-4-0003",
       "section_id": "S-3",
       "tags": [
         "parameter",
@@ -36,7 +36,7 @@
       "text": "Project boundaries cover collection through final sludge treatment with leak-proof infrastructure and consistent fertilizer use."
     },
     {
-      "id": "R-1-0005",
+      "id": "R-5-0003",
       "section_id": "S-3",
       "tags": [
         "equation",
@@ -45,7 +45,7 @@
       "text": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools."
     },
     {
-      "id": "R-1-0006",
+      "id": "R-6-0004",
       "section_id": "S-4",
       "tags": [
         "leakage"
@@ -53,7 +53,7 @@
       "text": "Deduct leakage from pipelines, auxiliary fuel, and offsite residue handling using monitored data or LFAD defaults."
     },
     {
-      "id": "R-1-0007",
+      "id": "R-7-0005",
       "section_id": "S-5",
       "tags": [
         "monitoring"
@@ -61,7 +61,7 @@
       "text": "Monitor biogas, methane fraction, and energy consumption continuously and report at least monthly with QA/QC evidence."
     },
     {
-      "id": "R-1-0008",
+      "id": "R-8-0005",
       "section_id": "S-5",
       "tags": [
         "reporting"

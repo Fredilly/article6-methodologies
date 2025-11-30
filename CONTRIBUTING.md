@@ -10,7 +10,7 @@ Thanks for keeping Article6 methodologies audit-ready. This checklist focuses on
 
 ## Adding or Updating Methodologies
 1. **Create a branch**: `git switch -c feat/<ticket>`.
-2. **Modify sources**: update rich JSON, references, scripts, or evidence as needed.
+2. **Modify sources**: update rich JSON, references, scripts, or evidence as needed. Never hand-edit `sections.json` or `rules.json`; update the corresponding `*.rich.json` files and run `node scripts/derive-lean-from-rich.js` to keep lean artifacts in sync.
 3. **Refresh automation**: run `./scripts/hash-all.sh` to regenerate `META.audit_hashes`, `META.automation`, and `scripts_manifest.json`.
 4. **Validate & hash**: run `npm run mvp:check` on a clean worktree. Fix any reported drift (JSON canonicalization, lean derivation, hashes, registry) before committing.
 5. **Review git status**: only deterministic changes (including updated `META` and manifests) should appear.

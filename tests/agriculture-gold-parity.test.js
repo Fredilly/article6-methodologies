@@ -6,23 +6,22 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const repoRoot = path.resolve(__dirname, '..');
-const fixturesRoot = path.join(repoRoot, 'tests', 'fixtures', 'forestry-gold');
+const fixturesRoot = path.join(repoRoot, 'tests', 'fixtures', 'agriculture-gold');
 const manifestPath = path.join(fixturesRoot, 'manifest.json');
 
 if (!fs.existsSync(manifestPath)) {
-  throw new Error(`Forestry gold manifest missing at ${manifestPath}`);
+  throw new Error(`Agriculture gold manifest missing at ${manifestPath}`);
 }
 
 const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
-
 const diffFailures = [];
 
-const compareDirs = (rootDir, relPaths = []) => {
+function compareDirs(rootDir, relPaths = []) {
   relPaths.forEach((rel) => {
     const fixtureDir = path.join(fixturesRoot, rootDir, rel);
     const targetDir = path.join(repoRoot, rootDir, rel);
     if (!fs.existsSync(fixtureDir)) {
-      console.warn(`[forestry-gold] fixture missing for ${rootDir}/${rel}; skipping diff`);
+      console.warn(`[agriculture-gold] fixture missing for ${rootDir}/${rel}; skipping diff`);
       return;
     }
     if (!fs.existsSync(targetDir)) {
@@ -37,15 +36,15 @@ const compareDirs = (rootDir, relPaths = []) => {
       diffFailures.push(`${rootDir}/${rel}`);
     }
   });
-};
+}
 
 compareDirs('methodologies', manifest.methodologies || []);
 compareDirs('tools', manifest.tools || []);
 
 if (diffFailures.length === 0) {
-  console.log('[forestry-gold] repository output matches Forestry gold fixtures.');
+  console.log('[agriculture-gold] repository output matches Agriculture gold fixtures.');
   process.exit(0);
 }
 
-console.error('[forestry-gold] mismatch detected for:\n - ' + diffFailures.join('\n - '));
+console.error('[agriculture-gold] mismatch detected for:\n - ' + diffFailures.join('\n - '));
 process.exit(1);
