@@ -6,7 +6,13 @@ Make the `ingest` pipeline produce assets that match manually curated Forestry a
 
 ---
 
-## Phase 0 - Baseline & Branch
+## Progress Tracker
+
+The canonical list of phases and their statuses lives in `docs/projects/phase-1-ingestion/phase-status.json`. Update that file, then run `npm run plan:update:ingest` so this plan mirrors the Git-tracked truth. Checkbox legend: `[ ]` = not started, `[-]` = in progress, `[x]` = completed.
+
+---
+
+## [ ] Phase 0 - Baseline & Branch
 
 **Branch:** `feat/ingest-equals-manual-v1`
 
@@ -23,7 +29,7 @@ Freeze Forestry as the gold reference and prove ingest currently fails parity.
 
 ---
 
-## Phase 1 - Paths & Foldering
+## [ ] Phase 1 - Paths & Foldering
 
 **What**  
 Enforce canonical layout:
@@ -43,7 +49,7 @@ All Agriculture tools land under `tools/UNFCCC/Agriculture/**`.
 
 ---
 
-## Phase 2 - Rich META & Provenance
+## [ ] Phase 2 - Rich META & Provenance
 
 **What**  
 Emit full manual-grade META.
@@ -68,7 +74,7 @@ META keys align with the Forestry fixture and the AJV schema passes.
 
 ---
 
-## Phase 3 - Section Extraction (Replace Stubs)
+## [ ] Phase 3 - Section Extraction (Replace Stubs)
 
 **What**  
 Generate real `sections.json` from PDFs.
@@ -93,7 +99,7 @@ Forestry outputs pass the sanity check before pushing.
 
 ---
 
-## Phase 4 - Rules (Rich -> Lean)
+## [ ] Phase 4 - Rules (Rich -> Lean)
 
 **What**  
 Autogenerate `rules.rich.json` and derive the lean form.
@@ -124,7 +130,7 @@ Missing `logic` or empty `refs.sections` causes failure.
 
 ---
 
-## Phase 5 - Previous Versions
+## [ ] Phase 5 - Previous Versions
 
 **What**  
 Add `previous/vYY-0` support that mirrors Forestry.
@@ -140,7 +146,7 @@ Broken pointers or missing `source.pdf` trigger failure.
 
 ---
 
-## Phase 6 - Idempotency & Determinism
+## [ ] Phase 6 - Idempotency & Determinism
 
 **What**  
 Re-running produces zero diffs.
@@ -169,7 +175,7 @@ node scripts/check-quality-gates.js ingest-quality-gates.yml
 
 ---
 
-## Phase 7 - Quality Gates & CI
+## [ ] Phase 7 - Quality Gates & CI
 
 **What**  
 Prevent half-built artefacts from landing.
@@ -200,7 +206,7 @@ no_stubs: true
 
 ---
 
-## Phase 8 - Registry & App Parity
+## [ ] Phase 8 - Registry & App Parity
 
 **What**  
 Include Agriculture inside `registry.json`.
@@ -213,7 +219,7 @@ Include Agriculture inside `registry.json`.
 
 ---
 
-## Phase 9 - Migrate Agriculture
+## [ ] Phase 9 - Migrate Agriculture
 
 **What**  
 Re-ingest ACM0010, AM0073, AMS-III.D, and AMS-III.R.
