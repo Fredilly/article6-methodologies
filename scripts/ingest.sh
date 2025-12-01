@@ -307,15 +307,15 @@ PY
     else
       if ! copy_cached_asset "$pdf_url" "$pdf_path"; then
         echo "[warn] $id: failed to download main PDF $pdf_url" >&2
-        : > "$pdf_path"
+        if [ -s "$pdf_path" ]; then
+          echo "[warn] $id: keeping existing main PDF at $pdf_path" >&2
+        else
+          echo "[warn] $id: no existing main PDF at $pdf_path; leaving missing" >&2
+        fi
       fi
     fi
   else
-    echo "[warn] $id: main PDF not found; creating placeholder"
-    if [ "$DRY_RUN" = "0" ]; then
-      mkdir -p "$tools_dir"
-      : > "$pdf_path"
-    fi
+    echo "[warn] $id: main PDF not found; skipping placeholder (do not clobber)" >&2
   fi
 
   # parse all links (text + href) → JSON
