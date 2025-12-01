@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "description": "Source of truth for ARTICLE6 ingest upgrade phase statuses.",
+    "last_updated": "2024-06-07T00:00:00Z"
+  },
+  "phases": [
+    {
+      "id": "P0",
+      "title": "Phase 0 - Baseline & Branch",
+      "status": "todo",
+      "notes": "Snapshot fixtures proving ingest mismatch still pending."
+    },
+    {
+      "id": "P1",
+      "title": "Phase 1 - Paths & Foldering",
+      "status": "todo",
+      "notes": "Canonical UNFCCC folder enforcement outstanding."
+    },
+    {
+      "id": "P2",
+      "title": "Phase 2 - Rich META & Provenance",
+      "status": "todo",
+      "notes": "META parity work not started."
+    },
+    {
+      "id": "P3",
+      "title": "Phase 3 - Section Extraction (Replace Stubs)",
+      "status": "todo",
+      "notes": "Automated section extraction not landed."
+    },
+    {
+      "id": "P4",
+      "title": "Phase 4 - Rules (Rich -> Lean)",
+      "status": "todo",
+      "notes": "Rules derivation automation pending."
+    },
+    {
+      "id": "P5",
+      "title": "Phase 5 - Previous Versions",
+      "status": "todo",
+      "notes": "Previous-version pointers incomplete."
+    },
+    {
+      "id": "P6",
+      "title": "Phase 6 - Deterministic Runner + Hashing",
+      "status": "todo",
+      "notes": "Need deterministic ingest runner."
+    },
+    {
+      "id": "P7",
+      "title": "Phase 7 - Quality Gates",
+      "status": "todo",
+      "notes": "Quality gate tooling not wired."
+    },
+    {
+      "id": "P8",
+      "title": "Phase 8 - Registry & App Parity",
+      "status": "todo",
+      "notes": "Registry updates still open."
+    },
+    {
+      "id": "P9",
+      "title": "Phase 9 - Migrate Agriculture",
+      "status": "todo",
+      "notes": "Agriculture parity ingest outstanding."
+    }
+  ]
+}
