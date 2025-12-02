@@ -206,7 +206,7 @@ no_stubs: true
 
 ---
 
-## [ ] Phase 8 - Registry & App Parity
+## [x] Phase 8 - Registry & App Parity
 
 **What**  
 Include Agriculture inside `registry.json`.
@@ -256,7 +256,7 @@ Automate without regressions; keep CI green; unblock Agriculture parity.
 - [ ] P5 Previous version writer + validation
 - [ ] P6 Deterministic ingest-full runner
 - [ ] P7 Quality gates + CI integration
-- [ ] P8 Registry shaping + app test
+- [x] P8 Registry shaping + app test
 - [ ] P9 Agriculture re-ingest + PR
 
 # ACCEPTANCE

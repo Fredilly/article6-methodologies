@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Source of truth for ARTICLE6 ingest upgrade phase statuses.",
-    "last_updated": "2025-12-02T01:00:00Z"
+    "last_updated": "2025-12-02T02:00:00Z"
   },
   "phases": [
     {
@@ -55,8 +55,8 @@
     {
       "id": "P8",
       "title": "Phase 8 - Registry & App Parity",
-      "status": "todo",
-      "notes": "Registry updates still open."
+      "status": "done",
+      "notes": "Registry now carries Agriculture source hashes and app smoke test attempted (blocked by TS build error)."
     },
     {
       "id": "P9",
