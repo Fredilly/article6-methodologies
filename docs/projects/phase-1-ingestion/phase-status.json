@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Source of truth for ARTICLE6 ingest upgrade phase statuses.",
-    "last_updated": "2024-06-07T00:00:00Z"
+    "last_updated": "2025-12-02T01:00:00Z"
   },
   "phases": [
     {
@@ -19,8 +19,8 @@
     {
       "id": "P2",
       "title": "Phase 2 - Rich META & Provenance",
-      "status": "todo",
-      "notes": "META parity work not started."
+      "status": "done",
+      "notes": "META builder now enforces provenance, automation, audit hashes, and reference completeness."
     },
     {
       "id": "P3",
