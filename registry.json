@@ -7,7 +7,11 @@
     "version": "1.0",
     "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0",
     "stage": "staging",
-    "latest": true
+    "latest": true,
+    "source_pdf": {
+      "path": "source-assets/GoldStandard/LUF/GS-00XX/v1-0/source.pdf",
+      "sha256": "5a838678058f6de375e8635b5f2fea47a4e5f07cb1a882a44b10f39abc6f34ff"
+    }
   },
   {
     "kind": "active",
@@ -17,7 +21,11 @@
     "version": "03.0",
     "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0",
     "stage": "staging",
-    "latest": true
+    "latest": true,
+    "source_pdf": {
+      "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/source.pdf",
+      "sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9"
+    }
   },
   {
     "kind": "active",
@@ -27,7 +35,11 @@
     "version": "01.0",
     "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0",
     "stage": "staging",
-    "latest": true
+    "latest": true,
+    "source_pdf": {
+      "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/source.pdf",
+      "sha256": "dc6e5a0e5942fa22e7275c1a639b8f47b85384aa7845c446fa600697646c744a"
+    }
   },
   {
     "kind": "active",
@@ -37,7 +49,11 @@
     "version": "21.0",
     "path": "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0",
     "stage": "staging",
-    "latest": true
+    "latest": true,
+    "source_pdf": {
+      "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/source.pdf",
+      "sha256": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4"
+    }
   },
   {
     "kind": "active",
@@ -47,7 +63,11 @@
     "version": "05.0",
     "path": "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0",
     "stage": "staging",
-    "latest": true
+    "latest": true,
+    "source_pdf": {
+      "path": "tools/UNFCCC/Agriculture/AMS-III.R/v05-0/source.pdf",
+      "sha256": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb"
+    }
   },
   {
     "kind": "previous",
@@ -123,7 +143,11 @@
     "version": "02.0",
     "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0",
     "stage": "staging",
-    "latest": true
+    "latest": true,
+    "source_pdf": {
+      "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/EB75_repan30_AR-ACM0003_ver02.0.pdf",
+      "sha256": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e"
+    }
   },
   {
     "kind": "previous",
@@ -251,7 +275,11 @@
     "version": "03.0",
     "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0",
     "stage": "staging",
-    "latest": true
+    "latest": true,
+    "source_pdf": {
+      "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/source.pdf",
+      "sha256": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a"
+    }
   },
   {
     "kind": "active",
@@ -261,7 +289,11 @@
     "version": "01.0",
     "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0",
     "stage": "staging",
-    "latest": true
+    "latest": true,
+    "source_pdf": {
+      "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/source.pdf",
+      "sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b"
+    }
   },
   {
     "kind": "previous",
@@ -563,7 +595,11 @@
     "version": "03.1",
     "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1",
     "stage": "staging",
-    "latest": true
+    "latest": true,
+    "source_pdf": {
+      "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/source.pdf",
+      "sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9"
+    }
   },
   {
     "kind": "active",
@@ -573,6 +609,10 @@
     "version": "1.6",
     "path": "methodologies/Verra/AFOLU/VM0007/v1-6",
     "stage": "staging",
-    "latest": true
+    "latest": true,
+    "source_pdf": {
+      "path": "source-assets/Verra/AFOLU/VM0007/v1-6/source.pdf",
+      "sha256": "5a838678058f6de375e8635b5f2fea47a4e5f07cb1a882a44b10f39abc6f34ff"
+    }
   }
 ]

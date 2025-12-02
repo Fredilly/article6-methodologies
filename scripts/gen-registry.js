@@ -38,6 +38,30 @@ function sourceAssetPath(meta) {
   return segments.join('/');
 }
 
+function normalizePosix(value) {
+  return (value || '').replace(/\\/g, '/');
+}
+
+function deriveSourcePath(meta, relPath) {
+  const provenanceSource = (meta?.provenance?.source_pdfs || []).find((entry) => entry?.path);
+  if (provenanceSource?.path) {
+    return normalizePosix(provenanceSource.path);
+  }
+  const fromMeta = sourceAssetPath(meta);
+  if (fromMeta) return normalizePosix(fromMeta);
+  if (relPath) {
+    const segments = normalizePosix(relPath).split('/');
+    if (segments.length >= 5 && segments[0] === 'methodologies') {
+      const [, publisher, program, code, versionDir] = segments;
+      return ['source-assets', publisher, program, code, versionDir, 'source.pdf']
+        .filter(Boolean)
+        .join('/');
+    }
+    return `${normalizePosix(relPath)}/source.pdf`;
+  }
+  return null;
+}
+
 const entries = [];
 const standards = fs.readdirSync(baseDir).sort();
 for (const standard of standards) {
@@ -63,7 +87,7 @@ for (const standard of standards) {
         const relPath = path.relative(repoRoot, fullPath).split(path.sep).join('/');
         const audit = meta.audit_hashes || {};
         if (relPath.includes('/previous/')) {
-          const sourcePath = sourceAssetPath(meta) || `${relPath}/source.pdf`;
+          const sourcePath = deriveSourcePath(meta, relPath);
           entries.push({
             kind: 'previous',
             standard,
@@ -83,6 +107,7 @@ for (const standard of standards) {
           continue;
         }
         const stage = meta.stage || 'staging';
+        const sourcePath = deriveSourcePath(meta, relPath);
         entries.push({
           kind: 'active',
           standard,
@@ -92,6 +117,10 @@ for (const standard of standards) {
           path: relPath,
           stage,
           latest: false,
+          source_pdf: {
+            path: sourcePath,
+            sha256: audit.source_pdf_sha256 || null,
+          },
         });
 
         const previousDir = path.join(fullPath, 'previous');
@@ -106,7 +135,7 @@ for (const standard of standards) {
             if (!prevMeta) continue;
             const prevRel = path.relative(repoRoot, prevPath).split(path.sep).join('/');
             const prevAudit = prevMeta.audit_hashes || {};
-            const sourcePath = sourceAssetPath(prevMeta) || `${prevRel}/source.pdf`;
+            const sourcePath = deriveSourcePath(prevMeta, prevRel);
             entries.push({
               kind: 'previous',
               standard,

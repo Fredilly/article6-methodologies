@@ -49,7 +49,7 @@ All Agriculture tools land under `tools/UNFCCC/Agriculture/**`.
 
 ---
 
-## [ ] Phase 2 - Rich META & Provenance
+## [x] Phase 2 - Rich META & Provenance
 
 **What**  
 Emit full manual-grade META.
@@ -206,7 +206,7 @@ no_stubs: true
 
 ---
 
-## [ ] Phase 8 - Registry & App Parity
+## [x] Phase 8 - Registry & App Parity
 
 **What**  
 Include Agriculture inside `registry.json`.
@@ -250,13 +250,13 @@ Automate without regressions; keep CI green; unblock Agriculture parity.
 # TASKS
 - [ ] P0 Fixture snapshot tests (forestry-gold)
 - [ ] P1 Path enforcement
-- [ ] P2 Full META with provenance + hashes
+- [x] P2 Full META with provenance + hashes
 - [ ] P3 Section extractor (>=5 sections)
 - [ ] P4 Rules.rich generator + lean derivation
 - [ ] P5 Previous version writer + validation
 - [ ] P6 Deterministic ingest-full runner
 - [ ] P7 Quality gates + CI integration
-- [ ] P8 Registry shaping + app test
+- [x] P8 Registry shaping + app test
 - [ ] P9 Agriculture re-ingest + PR
 
 # ACCEPTANCE

@@ -28,9 +28,10 @@ async function main() {
   const toolsDir = path.join(repoRoot, 'tools', org, sector, code, version);
   const metaPath = path.join(methodDir, 'META.json');
   const sectionsPath = path.join(methodDir, 'sections.json');
+  const rulesPath = path.join(methodDir, 'rules.json');
   const rulesRichPath = path.join(methodDir, 'rules.rich.json');
 
-  const [sectionsHash, rulesHash] = [sectionsPath, rulesRichPath].map(hashFile);
+  const [sectionsHash, rulesHash] = [sectionsPath, rulesPath].map(hashFile);
   const existing = await readOptionalJson(metaPath);
   const existingSourcePaths = new Set(
     (existing?.provenance?.source_pdfs || []).map((entry) => entry.path).filter(Boolean)
@@ -98,6 +99,7 @@ async function main() {
     }
   }
 
+  assertMetaCompleteness({ meta: nextMeta, methodDoc });
   const output = JSON.stringify(nextMeta, null, 2) + '\n';
   await fsp.writeFile(metaPath, output);
   console.log(`[meta] wrote ${path.relative(repoRoot, metaPath)}`);
@@ -208,6 +210,79 @@ function deriveDoc(relPath, methodDoc, isPrimary) {
   }
   const safeStem = fileName.replace(/[^A-Za-z0-9]/g, '-');
   return `${methodDoc}#${safeStem}`;
+}
+
+function assertMetaCompleteness({ meta, methodDoc }) {
+  if (!meta || typeof meta !== 'object') {
+    throw new Error('[meta] invalid META payload generated');
+  }
+  const label = methodDoc || 'methodology';
+  const { audit_hashes: hashes, references, provenance, audit, automation } = meta;
+  if (!hashes || !hashes.sections_json_sha256 || !hashes.rules_json_sha256 || !hashes.source_pdf_sha256) {
+    throw new Error(
+      `[meta] ${label}: audit_hashes must include sections_json_sha256, rules_json_sha256, source_pdf_sha256`,
+    );
+  }
+  if (!automation || !automation.repo_commit || !automation.scripts_manifest_sha256) {
+    throw new Error(`[meta] ${label}: automation must include repo_commit and scripts_manifest_sha256`);
+  }
+  if (!audit || !audit.created_at || !audit.created_by) {
+    throw new Error(`[meta] ${label}: audit.created_at and audit.created_by must be present`);
+  }
+  if (!provenance || !provenance.author || !provenance.date) {
+    throw new Error(`[meta] ${label}: provenance.author and provenance.date are required`);
+  }
+  if (!Array.isArray(provenance.source_pdfs) || provenance.source_pdfs.length === 0) {
+    throw new Error(`[meta] ${label}: provenance.source_pdfs must include at least one entry`);
+  }
+  if (!Array.isArray(references?.tools) || references.tools.length === 0) {
+    throw new Error(`[meta] ${label}: references.tools is empty`);
+  }
+  const docPattern = /^[A-Za-z0-9.-]+\/[A-Za-z0-9.-]+@v\d{2}-\d+(?:#.*)?$/;
+  provenance.source_pdfs.forEach((entry, index) => {
+    validateToolEntry({
+      entry,
+      idx: index,
+      label,
+      docPattern,
+      allowAnchor: false,
+      kind: 'provenance.source_pdfs',
+    });
+  });
+  references.tools.forEach((entry, index) => {
+    validateToolEntry({
+      entry,
+      idx: index,
+      label,
+      docPattern,
+      allowAnchor: true,
+      kind: 'references.tools',
+    });
+  });
+}
+
+function validateToolEntry({ entry, idx, label, docPattern, allowAnchor, kind }) {
+  if (!entry || typeof entry !== 'object') {
+    throw new Error(`[meta] ${label}: ${kind}[${idx}] must be an object`);
+  }
+  const doc = entry.doc || '';
+  const docSubject = allowAnchor ? doc.replace(/#.*$/, '') : doc;
+  if (!doc || !docPattern.test(docSubject) || (!allowAnchor && doc.includes('#'))) {
+    throw new Error(`[meta] ${label}: ${kind}[${idx}] doc "${doc}" is invalid`);
+  }
+  if (!entry.path) {
+    throw new Error(`[meta] ${label}: ${kind}[${idx}] missing path`);
+  }
+  if (!entry.sha256) {
+    throw new Error(`[meta] ${label}: ${kind}[${idx}] missing sha256`);
+  }
+  if (entry.size === undefined) {
+    throw new Error(`[meta] ${label}: ${kind}[${idx}] missing size`);
+  }
+  const absolute = path.join(repoRoot, entry.path);
+  if (!fs.existsSync(absolute)) {
+    throw new Error(`[meta] ${label}: ${kind}[${idx}] path ${entry.path} does not exist`);
+  }
 }
 
 main().catch((err) => {
