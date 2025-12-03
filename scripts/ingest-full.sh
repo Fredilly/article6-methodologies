@@ -44,4 +44,8 @@ npm run -s validate:lean
 echo "[ingest-full] step: quality gates"
 node "${SCRIPT_DIR}/check-quality-gates.js" ingest-quality-gates.yml
 
+echo "[ingest-full] step: canonical-json"
+./scripts/json-canonical-check.sh --fix
+./scripts/json-canonical-check.sh
+
 popd >/dev/null
