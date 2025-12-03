@@ -20,15 +20,9 @@ files=$(
     | LC_ALL=C sort
 )
 
-# Deterministic timestamp + commit from git, not from wall clock
-generated_at=$(git log -1 --format=%cI HEAD)
-git_commit=$(git rev-parse HEAD)
-
 # Build scripts_manifest.json in a stable format
 {
   printf '{\n'
-  printf '  "generated_at": "%s",\n' "$generated_at"
-  printf '  "git_commit": "%s",\n' "$git_commit"
   printf '  "files": [\n'
   first=1
   for f in $files; do

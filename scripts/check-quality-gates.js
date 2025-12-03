@@ -85,7 +85,6 @@ function checkProvenance(meta, relFile, errors) {
 function checkAutomation(meta, relFile, errors) {
   requireField(meta.audit?.created_at, 'audit.created_at missing', errors, relFile);
   requireField(meta.audit?.created_by, 'audit.created_by missing', errors, relFile);
-  requireField(meta.automation?.repo_commit, 'automation.repo_commit missing', errors, relFile);
   requireField(
     meta.automation?.scripts_manifest_sha256,
     'automation.scripts_manifest_sha256 missing',

@@ -197,15 +197,11 @@
           "properties": {
             "automation": {
               "properties": {
-                "repo_commit": {
-                  "type": "string"
-                },
                 "scripts_manifest_sha256": {
                   "type": "string"
                 }
               },
               "required": [
-                "repo_commit",
                 "scripts_manifest_sha256"
               ],
               "type": "object"

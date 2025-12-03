@@ -3,7 +3,7 @@
 Fill provenance blocks for a target methodology version deterministically.
 
 For META.json:
-- Add provenance.author and provenance.date (UTC, from automation.repo_commit)
+- Add provenance.author and provenance.date (carried from existing audit metadata)
 - Ensure provenance.source_pdfs includes {kind,path,sha256} derived from references.tools
 
 For sections.rich.json and rules.rich.json:
@@ -15,18 +15,9 @@ Deterministic: uses recorded commit epoch for timestamp; no current time.
 */
 const fs = require('fs');
 const path = require('path');
-const cp = require('child_process');
 
 function readJSON(p){ return JSON.parse(fs.readFileSync(p,'utf8')); }
 function writeJSON(p,obj){ fs.writeFileSync(p, JSON.stringify(obj, null, 2) + '\n', 'utf8'); }
-
-function commitDateUTC(commit){
-  try {
-    const sec = cp.execSync(`git show -s --format=%ct ${commit}`, {encoding: 'utf8'}).trim();
-    const iso = new Date(Number(sec)*1000).toISOString();
-    return iso;
-  } catch(e){ return null; }
-}
 
 function normalizeToolIdFromPath(pth){
   // e.g., tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-14-v04.2.pdf → UNFCCC/AR-TOOL14@v04.2
@@ -65,9 +56,8 @@ function ensureMetaProvenance(metaPath){
   meta.provenance = meta.provenance || {};
   if (!meta.provenance.author) meta.provenance.author = 'Fred Egbuedike';
   if (!meta.provenance.date){
-    const c = (((meta||{}).automation)||{}).repo_commit;
-    const d = c ? commitDateUTC(c) : null;
-    if (d) meta.provenance.date = d;
+    const fallbackDate = meta.audit?.created_at || null;
+    if (fallbackDate) meta.provenance.date = fallbackDate;
   }
   // Fill source_pdfs array deterministically from references.tools where kind is pdf/docx and filename indicates method source or booklet
   const src = [];

@@ -62,7 +62,6 @@ derive_doc() {
     }'
 }
 
-repo_commit=$(git rev-parse HEAD)
 scripts_manifest_sha=$(./scripts/hash-scripts.sh)
 
 find methodologies -name META.json | sort | while read -r meta_file; do
@@ -192,7 +191,6 @@ $with_sector"
     --arg source "$source_hash" \
     --argjson tools "$tools_json" \
     --arg manifest "$scripts_manifest_sha" \
-    --arg commit "$repo_commit" \
     '.audit_hashes.sections_json_sha256 = $sections |
      .audit_hashes.rules_json_sha256 = $rules |
      .audit_hashes.source_pdf_sha256 = $source |
@@ -207,13 +205,11 @@ $with_sector"
                | .url = (.url // null)
                | .kind = (.kind // $t.kind)
                else . end)
-         else
-           . + [$t]
-         end
-       ) | sort_by(.path)) |
-     .automation = (.automation // {}) |
-     .automation.scripts_manifest_sha256 = $manifest |
-     .automation.repo_commit = $commit' \
+               else
+                 . + [$t]
+               end
+             ) | sort_by(.path)) |
+     .automation = {scripts_manifest_sha256: $manifest}' \
     "$meta_file" > "$tmp" && mv "$tmp" "$meta_file"
 done
 echo "OK: refreshed META.audit_hashes, references.tools, and automation pins"
