@@ -64,7 +64,7 @@ Emit full manual-grade META.
   - `audit_hashes.rules_json_sha256`
   - `audit_hashes.source_pdf_sha256`
   - `references.tools[].doc` pointing to `UNFCCC/<Code>@vXX.X`
-- Auto-fill `automation.repo_commit` and `automation.scripts_manifest_sha256`.
+- Auto-fill `automation.scripts_manifest_sha256`.
 
 **Gate**  
 Empty `doc` values or missing hashes cause the run to fail.

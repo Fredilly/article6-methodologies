@@ -3,7 +3,6 @@ const fs = require('fs');
 const fsp = require('fs/promises');
 const path = require('path');
 const crypto = require('crypto');
-const { execSync } = require('child_process');
 
 const repoRoot = path.resolve(__dirname, '..');
 
@@ -53,7 +52,6 @@ async function main() {
   const auditCreatedAt = existing?.audit?.created_at || new Date().toISOString();
   const provenanceDate = existing?.provenance?.date || auditCreatedAt;
   const createdBy = process.env.INGEST_CREATED_BY || existing?.audit?.created_by || 'ingest.sh';
-  const repoCommit = readGitHead();
   const scriptsManifestHash = hashFile(path.join(repoRoot, 'scripts_manifest.json'));
 
   const rewrittenKeys = new Set(['audit_hashes', 'automation', 'provenance', 'references', 'audit']);
@@ -65,8 +63,6 @@ async function main() {
     source_pdf_sha256: sourceRefs[0].sha256
   };
   nextMeta.automation = {
-    ...(existing?.automation || {}),
-    repo_commit: repoCommit,
     scripts_manifest_sha256: scriptsManifestHash
   };
   nextMeta.provenance = {
@@ -115,16 +111,6 @@ async function readOptionalJson(file) {
       console.warn(`[meta] skipping malformed JSON ${rel}: ${err.message}`);
     }
     return null;
-  }
-}
-
-function readGitHead() {
-  try {
-    return execSync('git rev-parse HEAD', { cwd: repoRoot, stdio: ['ignore', 'pipe', 'ignore'] })
-      .toString()
-      .trim();
-  } catch (err) {
-    throw new Error(`[meta] unable to read git HEAD: ${err.message}`);
   }
 }
 
@@ -223,8 +209,8 @@ function assertMetaCompleteness({ meta, methodDoc }) {
       `[meta] ${label}: audit_hashes must include sections_json_sha256, rules_json_sha256, source_pdf_sha256`,
     );
   }
-  if (!automation || !automation.repo_commit || !automation.scripts_manifest_sha256) {
-    throw new Error(`[meta] ${label}: automation must include repo_commit and scripts_manifest_sha256`);
+  if (!automation || !automation.scripts_manifest_sha256) {
+    throw new Error(`[meta] ${label}: automation must include scripts_manifest_sha256`);
   }
   if (!audit || !audit.created_at || !audit.created_by) {
     throw new Error(`[meta] ${label}: audit.created_at and audit.created_by must be present`);

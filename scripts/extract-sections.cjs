@@ -142,6 +142,12 @@ function extractWithPdftotext(binary, pdfPath) {
     encoding: 'utf8',
     maxBuffer: 1024 * 1024 * 40,
   });
+  if (result.status === 0) {
+    if (result.error) {
+      console.warn(`[extract-sections] pdftotext reported "${result.error.message}" but exited 0`);
+    }
+    return result.stdout || '';
+  }
   if (result.error) {
     throw new Error(`pdftotext failed for ${pdfPath}: ${result.error.message}`);
   }
@@ -158,6 +164,12 @@ function extractWithPdfminer(pdfPath) {
     ['-m', 'pdfminer.high_level', '--maxpages', '0', pdfPath],
     { encoding: 'utf8', maxBuffer: 1024 * 1024 * 40 }
   );
+  if (result.status === 0) {
+    if (result.error) {
+      console.warn(`[extract-sections] pdfminer reported "${result.error.message}" but exited 0`);
+    }
+    return result.stdout || '';
+  }
   if (result.error) {
     throw new Error(`pdfminer failed for ${pdfPath}: ${result.error.message}`);
   }
