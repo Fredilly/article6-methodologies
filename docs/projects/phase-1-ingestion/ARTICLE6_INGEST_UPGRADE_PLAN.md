@@ -1,3 +1,5 @@
+**Status:** Phases 0–9 complete on `main` (deterministic Forestry + Agriculture ingest: META, sections, rules, registry stable across back-to-back runs).
+
 # Article 6 Ingest = Manual Parity Plan
 
 ## Goal
@@ -314,3 +316,8 @@ One-shot automation that produces audit-ready outputs.
 ✅ Identical output on rerun
 ✅ Agriculture visible in registry
 ```
+## Next roadmap
+
+- Bring Verra / Gold Standard into the same ingest pipeline.
+- Polish manifest UI and demo flows for regulators and partners.
+- Tighten automation around tools, fixtures, and offline ingest.
