@@ -29,6 +29,7 @@
     { "path": "scripts/derive-rules-rich.cjs", "sha256": "af4f8dedc0e8d657a4bd20409af02a947cac9818367cd48c1737a0481680d87a" },
     { "path": "scripts/extract-sections-forestry.cjs", "sha256": "d5e6f15e512052587f610fd8b0997b4473f2f0b6b26bc18077040634328c0446" },
     { "path": "scripts/extract-sections.cjs", "sha256": "4d57cf1120e5176f109b9aab7a3d213dfde3d4f2208c3645eb3ef1fe6b65e3cd" },
+    { "path": "scripts/fetch-agriculture-previous.js", "sha256": "624527a6bc0bed4912220547ab8ee4e8c092e531c9178f84152ce56a85ba3fea" },
     { "path": "scripts/fill-provenance.js", "sha256": "74d7626c0c6647e44d3ffc9f7adbf6330c3ebcc78970cefa6fd9243f0173a961" },
     { "path": "scripts/gate-lfs.sh", "sha256": "28a13a96f4fac81fc1beeba3b1a8c8d486fcdb3eee5317673b6df52f7f3285cf" },
     { "path": "scripts/gen-dataset-params.js", "sha256": "befe8d1bdece5b2738284c2b60598e676f7f910c605ffb53fbb7a07c3342414f" },
