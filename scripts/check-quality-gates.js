@@ -1,8 +1,33 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
+const Ajv = require('ajv');
+const addFormats = require('ajv-formats');
+
+let yaml;
+try {
+  // Prefer the top-level dependency, but fall back to ajv-cli's vendored copy if necessary.
+  yaml = require('js-yaml');
+} catch (err) {
+  try {
+    // eslint-disable-next-line import/no-extraneous-dependencies, global-require
+    yaml = require('ajv-cli/node_modules/js-yaml');
+  } catch (inner) {
+    yaml = null;
+  }
+}
 
 const repoRoot = path.resolve(__dirname, '..');
+const HTTP_METHODS = ['get', 'put', 'post', 'delete', 'patch', 'options', 'head', 'trace'];
+
+let ajvInstance;
+function getAjv() {
+  if (!ajvInstance) {
+    ajvInstance = new Ajv({ allErrors: true, strict: false });
+    addFormats(ajvInstance);
+  }
+  return ajvInstance;
+}
 
 function parseConfig(configPath) {
   const content = fs.readFileSync(configPath, 'utf8');
@@ -23,6 +48,7 @@ function parseConfig(configPath) {
 
 function collectMetaFiles(dir) {
   const out = [];
+  if (!fs.existsSync(dir)) return out;
   const entries = fs.readdirSync(dir, { withFileTypes: true });
   entries.forEach((entry) => {
     const full = path.join(dir, entry.name);
@@ -30,6 +56,21 @@ function collectMetaFiles(dir) {
     else if (entry.isFile() && entry.name === 'META.json') out.push(full);
   });
   return out;
+}
+
+function collectFilesByBasename(dir, filename) {
+  const results = [];
+  if (!fs.existsSync(dir)) return results;
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  entries.forEach((entry) => {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      results.push(...collectFilesByBasename(full, filename));
+    } else if (entry.isFile() && entry.name === filename) {
+      results.push(full);
+    }
+  });
+  return results;
 }
 
 function readJson(file, errors) {
@@ -171,6 +212,106 @@ function shouldTarget(relPath, scopePrefix) {
   return relPath.startsWith(scopePrefix);
 }
 
+function compileSchema(schemaPath) {
+  const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
+  return getAjv().compile(schema);
+}
+
+function loadYamlOrJson(filePath) {
+  const raw = fs.readFileSync(filePath, 'utf8');
+  if (/\.(ya?ml)$/i.test(filePath)) {
+    if (!yaml) throw new Error('yaml parser unavailable; install js-yaml');
+    return yaml.load(raw);
+  }
+  return JSON.parse(raw);
+}
+
+function resolveRepoPath(refPath, baseDir) {
+  if (!refPath) return '';
+  if (path.isAbsolute(refPath)) return refPath;
+  if (refPath.startsWith('./') || refPath.startsWith('../')) {
+    return path.resolve(baseDir, refPath);
+  }
+  return path.resolve(repoRoot, refPath);
+}
+
+function collectToolMetaFiles() {
+  return collectFilesByBasename(path.join(repoRoot, 'tools'), 'meta.json');
+}
+
+function ajvErrorText(validator) {
+  return getAjv().errorsText(validator.errors, { separator: '; ' });
+}
+
+function ensureUniqueOperations(meta, relFile, errors) {
+  const seen = new Set();
+  meta.operations.forEach((op, idx) => {
+    const key = op.openapi_operation_id;
+    if (seen.has(key)) {
+      errors.push(`${relFile}: duplicate openapi_operation_id "${key}" at operations[${idx}]`);
+    } else {
+      seen.add(key);
+    }
+  });
+}
+
+function collectOpenApiOperations(doc, openapiRel, errors) {
+  const map = new Map();
+  if (!doc.paths || typeof doc.paths !== 'object') {
+    errors.push(`${openapiRel}: missing paths object`);
+    return map;
+  }
+  Object.entries(doc.paths).forEach(([pathKey, value]) => {
+    if (!value || typeof value !== 'object') return;
+    HTTP_METHODS.forEach((method) => {
+      const op = value[method];
+      if (!op) return;
+      if (!op.operationId) {
+        errors.push(`${openapiRel}: ${method.toUpperCase()} ${pathKey} missing operationId`);
+        return;
+      }
+      const key = op.operationId;
+      if (map.has(key)) {
+        const existing = map.get(key);
+        errors.push(
+          `${openapiRel}: duplicate operationId "${key}" for ${method.toUpperCase()} ${pathKey} (already used by ${existing.method.toUpperCase()} ${existing.path})`,
+        );
+        return;
+      }
+      map.set(key, { method: method.toUpperCase(), path: pathKey });
+    });
+  });
+  return map;
+}
+
+function compareMetaAndOpenApi(meta, openapiOps, relMeta, openapiRel, errors) {
+  meta.operations.forEach((op, idx) => {
+    const expected = openapiOps.get(op.openapi_operation_id);
+    if (!expected) {
+      errors.push(
+        `${relMeta}: operations[${idx}] references openapi_operation_id "${op.openapi_operation_id}" that does not exist in ${openapiRel}`,
+      );
+      return;
+    }
+    if (expected.method !== op.method) {
+      errors.push(
+        `${relMeta}: operations[${idx}] method ${op.method} disagrees with ${openapiRel} (${expected.method} ${expected.path})`,
+      );
+    }
+    if (expected.path !== op.path) {
+      errors.push(
+        `${relMeta}: operations[${idx}] path ${op.path} disagrees with ${openapiRel} entry ${expected.path}`,
+      );
+    }
+  });
+  openapiOps.forEach((value, key) => {
+    const exists = meta.operations.some((op) => op.openapi_operation_id === key);
+    if (!exists) {
+      errors.push(`${openapiRel}: operationId "${key}" missing in meta.json operations array`);
+    }
+  });
+}
+
 function main() {
   const configPath = path.resolve(repoRoot, process.argv[2] || 'ingest-quality-gates.yml');
   if (!fs.existsSync(configPath)) {
@@ -216,6 +357,66 @@ function main() {
 
   if (config.registry_integrity) {
     checkRegistry(activeMetaDirs, errors);
+  }
+
+  const toolMetaEnabled = Boolean(config.tool_meta_checklist || config.tool_openapi_checklist);
+  let validateToolMeta;
+  let validateToolOpenApi;
+  if (toolMetaEnabled) {
+    const toolMetas = collectToolMetaFiles();
+    if (toolMetas.length === 0) {
+      console.log('[gates] tool checklist enabled but no tool meta.json files found; skipping');
+    } else {
+      if (config.tool_meta_checklist) {
+        validateToolMeta = compileSchema(path.join(repoRoot, 'schemas', 'tool-meta.schema.json'));
+      }
+      if (config.tool_openapi_checklist) {
+        validateToolOpenApi = compileSchema(path.join(repoRoot, 'schemas', 'tool-openapi.schema.json'));
+      }
+      toolMetas.forEach((absolute) => {
+        const relMeta = path.relative(repoRoot, absolute).replace(/\\/g, '/');
+        const meta = readJson(absolute, errors);
+        if (!meta) return;
+        if (config.tool_meta_checklist) {
+          const valid = validateToolMeta(meta);
+          if (!valid) {
+            errors.push(`${relMeta}: ${ajvErrorText(validateToolMeta)}`);
+            return;
+          }
+          ensureUniqueOperations(meta, relMeta, errors);
+        }
+        if (!config.tool_openapi_checklist) return;
+        if (!meta.openapi || typeof meta.openapi.path !== 'string') {
+          errors.push(`${relMeta}: openapi.path missing while openapi checklist is enabled`);
+          return;
+        }
+        const openapiAbsolute = resolveRepoPath(meta.openapi.path, path.dirname(absolute));
+        if (!fs.existsSync(openapiAbsolute)) {
+          errors.push(`${relMeta}: openapi path ${meta.openapi.path} does not exist`);
+          return;
+        }
+        let openapiDoc;
+        try {
+          openapiDoc = loadYamlOrJson(openapiAbsolute);
+        } catch (err) {
+          errors.push(`${path.relative(repoRoot, openapiAbsolute)}: failed to parse (${err.message})`);
+          return;
+        }
+        if (validateToolOpenApi) {
+          const valid = validateToolOpenApi(openapiDoc);
+          if (!valid) {
+            errors.push(
+              `${path.relative(repoRoot, openapiAbsolute)}: ${ajvErrorText(validateToolOpenApi)}`,
+            );
+          }
+        }
+        const openapiRel = path.relative(repoRoot, openapiAbsolute).replace(/\\/g, '/');
+        const openapiOps = collectOpenApiOperations(openapiDoc, openapiRel, errors);
+        if (config.tool_meta_checklist) {
+          compareMetaAndOpenApi(meta, openapiOps, relMeta, openapiRel, errors);
+        }
+      });
+    }
   }
 
   if (errors.length > 0) {

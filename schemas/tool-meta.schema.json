@@ -1,0 +1,208 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Tool META",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "description",
+    "methodology_ids",
+    "domain",
+    "maintainer",
+    "source",
+    "repo",
+    "openapi",
+    "auth",
+    "operations"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9.-]+@v\\d{2}-\\d+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 120
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 500
+    },
+    "methodology_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9.+-]+$",
+        "minLength": 3
+      },
+      "uniqueItems": true
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 120
+    },
+    "maintainer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "email"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 120
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "maxLength": 254
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "url"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 120
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "repo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "path", "commit"],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "path": {
+          "type": "string",
+          "minLength": 3
+        },
+        "commit": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{7,40}$"
+        }
+      }
+    },
+    "openapi": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "version"],
+      "properties": {
+        "path": {
+          "type": "string",
+          "pattern": "^(\\.\\.?/)?[A-Za-z0-9._\\-/]+\\.ya?ml$|^(\\.\\.?/)?[A-Za-z0-9._\\-/]+\\.json$"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^3\\.\\d+\\.\\d+$"
+        }
+      }
+    },
+    "auth": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["none", "apiKey", "http", "oauth2", "service_http"]
+        },
+        "authorization_type": {
+          "type": "string",
+          "maxLength": 120
+        },
+        "location": {
+          "type": "string",
+          "enum": ["header", "query", "cookie", "body"]
+        },
+        "scopes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          },
+          "uniqueItems": true
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "type": { "const": "none" } }
+          },
+          "then": {
+            "not": {
+              "anyOf": [
+                { "required": ["authorization_type"] },
+                { "required": ["location"] },
+                { "required": ["scopes"] }
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "enum": ["apiKey", "http", "service_http"] } },
+            "required": ["type"]
+          },
+          "then": {
+            "required": ["authorization_type"]
+          }
+        }
+      ]
+    },
+    "operations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "method", "path", "summary", "description", "openapi_operation_id"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9._-]{1,64}$"
+          },
+          "method": {
+            "type": "string",
+            "enum": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS", "HEAD"]
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^/"
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 160
+          },
+          "description": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 500
+          },
+          "openapi_operation_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9._-]{1,128}$"
+          }
+        }
+      },
+      "uniqueItems": true
+    }
+  }
+}

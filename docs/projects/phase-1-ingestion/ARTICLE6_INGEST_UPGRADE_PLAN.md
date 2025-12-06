@@ -67,6 +67,10 @@ Emit full manual-grade META.
   - `audit_hashes.source_pdf_sha256`
   - `references.tools[].doc` pointing to `UNFCCC/<Code>@vXX.X`
 - Auto-fill `automation.scripts_manifest_sha256`.
+- Tool references (`references.tools[]`) and any future tool manifests MUST follow
+  the canonical rules captured in `docs/ingest/TOOL_METADATA_CHECKLIST.md`. Any
+  new tooling or ingest automation should validate against that checklist before
+  writing to disk.
 
 **Gate**  
 Empty `doc` values or missing hashes cause the run to fail.
@@ -196,6 +200,11 @@ no_stubs: true
 
 - Implement `scripts/check-quality-gates.js` (throw on failure).
 - Wire the gate into GitHub Actions after `npm run validate:lean`.
+- Tool-specific gating switches (`tool_meta_checklist`, `tool_openapi_checklist`)
+  live in `ingest-quality-gates.yml`. When enabled they validate every tool
+  manifest/OpenAPI pair against `docs/ingest/TOOL_METADATA_CHECKLIST.md` using
+  the schemas in `schemas/tool-meta.schema.json` and
+  `schemas/tool-openapi.schema.json`.
 
 **Fail if**
 
