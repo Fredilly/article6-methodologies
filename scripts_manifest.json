@@ -36,7 +36,7 @@
     { "path": "scripts/gen-dataset.js", "sha256": "47b58f5dc13beded4ece8a74029827669945ae5140b2dfec4a8f19894d3cc753" },
     { "path": "scripts/gen-method.sh", "sha256": "768efba1930eaca72cf134c950f49fc79d648deb2354cb974fab643a5fe9198b" },
     { "path": "scripts/gen-registry.js", "sha256": "499bcb496e232f919430c44e170b5734f0574b722c5bb93272419cdd3acf81bd" },
-    { "path": "scripts/hash-all.sh", "sha256": "b547edc5648d6a1e33aff59586dd0ad2a704bea8cc4646420436603ed9b1d3aa" },
+    { "path": "scripts/hash-all.sh", "sha256": "20f18b1e366d8afd9c05409187e86fcd685b6d97cb455ed8fa8ec597dc8cdaff" },
     { "path": "scripts/hash-scripts.sh", "sha256": "fd3a9f2e236f23c785012cfeb7210c19b5ebe182bab29d05472800598ad1694c" },
     { "path": "scripts/ingest-full.sh", "sha256": "42668d6d585d827f7e28203f4c9edc1dc9efd108d9fe9e97b91c374885223996" },
     { "path": "scripts/ingest-sanity.sh", "sha256": "387bdadf8b5cc800c8425ac455ee6dc3585c94507cb04b75d8150e292917b71b" },
