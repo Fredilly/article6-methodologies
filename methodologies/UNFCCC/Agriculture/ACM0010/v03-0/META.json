@@ -9,7 +9,7 @@
     "source_pdf_sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9"
   },
   "automation": {
-    "scripts_manifest_sha256": "045a87bf64455d9171bc321c32765cc213b3cc2d89d148179cbac71c0562b9c4"
+    "scripts_manifest_sha256": "d56f826b0793e1216a172f743335342161ad7a91536d00338853cecc9544d9e6"
   },
   "provenance": {
     "author": "Fred Egbuedike",
@@ -27,7 +27,7 @@
   "references": {
     "tools": [
       {
-        "doc": "UNFCCC/ACM0010@v03-0#am-tool-03-v1",
+        "doc": "UNFCCC/AM-TOOL03@v01",
         "kind": "pdf",
         "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-03-v1.pdf",
         "sha256": "57868a381913568599c98d331b9ff339115c38cc1070aeec43eca0d11823185a",
@@ -35,7 +35,7 @@
         "url": null
       },
       {
-        "doc": "UNFCCC/ACM0010@v03-0#am-tool-05-v1",
+        "doc": "UNFCCC/AM-TOOL05@v01",
         "kind": "pdf",
         "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-05-v1.pdf",
         "sha256": "e3f3238248e0d68d7da0a98eca93e411b3b44f7e5c44be9cbd8b62693b8b7107",
@@ -43,7 +43,7 @@
         "url": null
       },
       {
-        "doc": "UNFCCC/ACM0010@v03-0#am-tool-06-v1",
+        "doc": "UNFCCC/AM-TOOL06@v01",
         "kind": "pdf",
         "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-06-v1.pdf",
         "sha256": "6888d77e76c6b39e5de3097cc0cc2d493d6b1bd13814c985f45c20000283413d",

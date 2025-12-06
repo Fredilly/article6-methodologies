@@ -1,0 +1,65 @@
+{
+  "audit_hashes": {
+    "source_pdf_sha256": "c329a339e6582b2c62e5cdb98224ad375f49e3791d56cb60306993a74c64d951"
+  },
+  "automation": {},
+  "effective_from": "2006-12-21",
+  "effective_to": "2007-11-01",
+  "id": "UNFCCC.Agriculture.ACM0010",
+  "kind": "methodology",
+  "pointers": {
+    "active_successor": "../.."
+  },
+  "provenance": {
+    "author": "Fred Egbuedike",
+    "date": "2025-12-05T01:33:49.684Z",
+    "methodology_page": "https://cdm.unfccc.int/methodologies/DB/66DCX9DCDE8UFYYIHJEY5NRPAA8WNE/view.html",
+    "source_pdfs": [
+      {
+        "doc": "UNFCCC/ACM0010@v03-0",
+        "kind": "pdf",
+        "path": "source-assets/UNFCCC/Agriculture/ACM0010/v02-0/source.pdf",
+        "sha256": "c329a339e6582b2c62e5cdb98224ad375f49e3791d56cb60306993a74c64d951",
+        "size": 447402
+      }
+    ],
+    "source_url": "https://cdm.unfccc.int/UserManagement/FileStorage/CDMWF_AM_72UG1NTIHCHAVWKSICBMPVURGESL3O",
+    "version_number": "2.0"
+  },
+  "publisher": "UNFCCC",
+  "references": {
+    "tools": []
+  },
+  "status": "superseded",
+  "tools": [
+    {
+      "doc": "UNFCCC/AM-TOOL03@v01",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-03-v1.pdf",
+      "sha256": "57868a381913568599c98d331b9ff339115c38cc1070aeec43eca0d11823185a",
+      "size": 115214
+    },
+    {
+      "doc": "UNFCCC/AM-TOOL05@v01",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-05-v1.pdf",
+      "sha256": "e3f3238248e0d68d7da0a98eca93e411b3b44f7e5c44be9cbd8b62693b8b7107",
+      "size": 550422
+    },
+    {
+      "doc": "UNFCCC/AM-TOOL06@v01",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-06-v1.pdf",
+      "sha256": "6888d77e76c6b39e5de3097cc0cc2d493d6b1bd13814c985f45c20000283413d",
+      "size": 511852
+    },
+    {
+      "doc": "UNFCCC/ACM0010@v03-0",
+      "kind": "pdf",
+      "pointer": "../../../../../../../tools/UNFCCC/Agriculture/ACM0010/v03-0/source.pdf",
+      "sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
+      "size": 450287
+    }
+  ],
+  "version": "v02-0"
+}

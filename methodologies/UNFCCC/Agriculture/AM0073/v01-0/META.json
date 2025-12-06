@@ -9,7 +9,7 @@
     "source_pdf_sha256": "dc6e5a0e5942fa22e7275c1a639b8f47b85384aa7845c446fa600697646c744a"
   },
   "automation": {
-    "scripts_manifest_sha256": "045a87bf64455d9171bc321c32765cc213b3cc2d89d148179cbac71c0562b9c4"
+    "scripts_manifest_sha256": "d56f826b0793e1216a172f743335342161ad7a91536d00338853cecc9544d9e6"
   },
   "provenance": {
     "author": "Fred Egbuedike",
@@ -27,7 +27,7 @@
   "references": {
     "tools": [
       {
-        "doc": "UNFCCC/AM0073@v01-0#am-tool-01-v7-0-0",
+        "doc": "UNFCCC/AM-TOOL01@v07.0.0",
         "kind": "pdf",
         "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/am-tool-01-v7.0.0.pdf",
         "sha256": "b516fd941c5d13671cb88ff7b6511cda3390f8290e3a509a1b5d22e9ad1b35bd",
@@ -35,7 +35,7 @@
         "url": null
       },
       {
-        "doc": "UNFCCC/AM0073@v01-0#am-tool-03-v3",
+        "doc": "UNFCCC/AM-TOOL03@v03",
         "kind": "pdf",
         "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/am-tool-03-v3.pdf",
         "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02",
@@ -43,7 +43,7 @@
         "url": null
       },
       {
-        "doc": "UNFCCC/AM0073@v01-0#am-tool-05-v3-0",
+        "doc": "UNFCCC/AM-TOOL05@v03.0",
         "kind": "pdf",
         "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/am-tool-05-v3.0.pdf",
         "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51",
@@ -51,7 +51,7 @@
         "url": null
       },
       {
-        "doc": "UNFCCC/AM0073@v01-0#am-tool-06-v4-0",
+        "doc": "UNFCCC/AM-TOOL06@v04.0",
         "kind": "pdf",
         "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/am-tool-06-v4.0.pdf",
         "sha256": "0a806611660fab64122335bd85c8c20974c8932b3e063592692b7d2230162907",
@@ -59,7 +59,7 @@
         "url": null
       },
       {
-        "doc": "UNFCCC/AM0073@v01-0#am-tool-07-v7-0",
+        "doc": "UNFCCC/AM-TOOL07@v07.0",
         "kind": "pdf",
         "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/am-tool-07-v7.0.pdf",
         "sha256": "7f3864427916369b25b960ace50b5eed74b57530a14e421dc70ce35bae83bf5b",

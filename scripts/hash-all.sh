@@ -41,6 +41,7 @@ derive_doc() {
     {
       fileName = $NF;
       upper = toupper(fileName);
+      lower = tolower(fileName);
       if (match(upper, /^AR-[A-Z0-9]+_V[0-9]+(-[0-9]+)*\.(PDF|DOCX)$/)) {
         split(upper, a, "_V");
         tool = a[1];
@@ -48,6 +49,29 @@ derive_doc() {
         sub(/\.(PDF|DOCX)$/, "", tver);
         gsub(/-/, ".", tver);
         printf "%s/%s@v%s", org, tool, tver;
+      } else if (lower ~ /^am-tool-[0-9]+-v[0-9a-z.\-]+\.(pdf|docx)$/) {
+        tmp = lower;
+        sub(/^am-tool-/, "", tmp);
+        sub(/\.(pdf|docx)$/, "", tmp);
+        idx = index(tmp, "-v");
+        toolNumRaw = tmp;
+        verRaw = "";
+        if (idx > 0) {
+          toolNumRaw = substr(tmp, 1, idx - 1);
+          verRaw = substr(tmp, idx + 2);
+        }
+        toolNum = toolNumRaw + 0;
+        if (verRaw == "") {
+          verNorm = sprintf("v%02d", toolNum);
+        } else if (match(verRaw, /^[0-9]+/)) {
+          majorStr = substr(verRaw, RSTART, RLENGTH);
+          rest = substr(verRaw, RLENGTH + 1);
+          majorNum = majorStr + 0;
+          verNorm = sprintf("v%02d%s", majorNum, rest);
+        } else {
+          verNorm = "v" verRaw;
+        }
+        printf "%s/AM-TOOL%02d@%s", org, toolNum, verNorm;
       } else if (upper ~ /(SOURCE\.(PDF|DOCX)|METH_BOOKLET\.PDF)$/) {
         printf "%s/%s@%s", org, method, ver;
       } else {
@@ -201,7 +225,7 @@ $with_sector"
            map(if .path == $t.path then
                  .sha256 = $t.sha256
                | .size = $t.size
-               | .doc = (if (.doc // "") == "" then $t.doc else .doc end)
+               | .doc = (if ((.doc // "") == "" or ((.doc // "") | contains("#"))) then $t.doc else .doc end)
                | .url = (.url // null)
                | .kind = (.kind // $t.kind)
                else . end)
