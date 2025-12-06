@@ -11,6 +11,10 @@
   "automation": {
     "scripts_manifest_sha256": "d56f826b0793e1216a172f743335342161ad7a91536d00338853cecc9544d9e6"
   },
+  "previous_methods": [
+    "v02-0",
+    "v01-0"
+  ],
   "provenance": {
     "author": "Fred Egbuedike",
     "date": "2025-11-23T14:46:29.171Z",
@@ -18,7 +22,7 @@
       {
         "doc": "UNFCCC/ACM0010@v03-0",
         "kind": "pdf",
-        "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/source.pdf",
+        "path": "source-assets/UNFCCC/Agriculture/ACM0010/v03-0/source.pdf",
         "sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
         "size": 450287
       }
@@ -59,5 +63,7 @@
         "url": null
       }
     ]
-  }
+  },
+  "status": "active",
+  "version": "v03-0"
 }

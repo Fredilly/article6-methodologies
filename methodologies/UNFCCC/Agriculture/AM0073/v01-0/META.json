@@ -18,7 +18,7 @@
       {
         "doc": "UNFCCC/AM0073@v01-0",
         "kind": "pdf",
-        "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/source.pdf",
+        "path": "source-assets/UNFCCC/Agriculture/AM0073/v01-0/source.pdf",
         "sha256": "dc6e5a0e5942fa22e7275c1a639b8f47b85384aa7845c446fa600697646c744a",
         "size": 733424
       }
@@ -75,5 +75,7 @@
         "url": null
       }
     ]
-  }
+  },
+  "status": "active",
+  "version": "v01-0"
 }
