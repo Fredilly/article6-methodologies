@@ -1,0 +1,347 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": true,
+  "definitions": {
+    "jsonObjectSchema": {
+      "additionalProperties": true,
+      "properties": {
+        "additionalProperties": {
+          "type": "boolean"
+        },
+        "description": {
+          "type": "string"
+        },
+        "properties": {
+          "additionalProperties": {
+            "$ref": "#/definitions/propertySchema"
+          },
+          "minProperties": 1,
+          "type": "object"
+        },
+        "required": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "type": {
+          "const": "object"
+        }
+      },
+      "required": [
+        "type",
+        "properties"
+      ],
+      "type": "object"
+    },
+    "mediaType": {
+      "additionalProperties": true,
+      "properties": {
+        "schema": {
+          "$ref": "#/definitions/jsonObjectSchema"
+        }
+      },
+      "required": [
+        "schema"
+      ],
+      "type": "object"
+    },
+    "operation": {
+      "additionalProperties": true,
+      "properties": {
+        "description": {
+          "minLength": 5,
+          "type": "string"
+        },
+        "operationId": {
+          "pattern": "^[A-Za-z0-9._-]{1,128}$",
+          "type": "string"
+        },
+        "parameters": {
+          "items": {
+            "$ref": "#/definitions/parameter"
+          },
+          "type": "array"
+        },
+        "requestBody": {
+          "$ref": "#/definitions/requestBody"
+        },
+        "responses": {
+          "$ref": "#/definitions/responses"
+        },
+        "summary": {
+          "minLength": 5,
+          "type": "string"
+        },
+        "tags": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "operationId",
+        "summary",
+        "description",
+        "responses"
+      ],
+      "type": "object"
+    },
+    "parameter": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "minLength": 5,
+          "type": "string"
+        },
+        "in": {
+          "enum": [
+            "query",
+            "header",
+            "path",
+            "cookie"
+          ],
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "schema": {
+          "$ref": "#/definitions/propertySchema"
+        }
+      },
+      "required": [
+        "name",
+        "in",
+        "schema",
+        "description"
+      ],
+      "type": "object"
+    },
+    "pathItem": {
+      "additionalProperties": false,
+      "properties": {
+        "delete": {
+          "$ref": "#/definitions/operation"
+        },
+        "get": {
+          "$ref": "#/definitions/operation"
+        },
+        "head": {
+          "$ref": "#/definitions/operation"
+        },
+        "options": {
+          "$ref": "#/definitions/operation"
+        },
+        "parameters": {
+          "items": {
+            "$ref": "#/definitions/parameter"
+          },
+          "type": "array"
+        },
+        "patch": {
+          "$ref": "#/definitions/operation"
+        },
+        "post": {
+          "$ref": "#/definitions/operation"
+        },
+        "put": {
+          "$ref": "#/definitions/operation"
+        },
+        "trace": {
+          "$ref": "#/definitions/operation"
+        }
+      },
+      "type": "object"
+    },
+    "propertySchema": {
+      "additionalProperties": false,
+      "properties": {
+        "additionalProperties": {
+          "type": "boolean"
+        },
+        "description": {
+          "minLength": 5,
+          "type": "string"
+        },
+        "enum": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "items": {
+          "$ref": "#/definitions/propertySchema"
+        },
+        "maxLength": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "maximum": {
+          "type": "number"
+        },
+        "minLength": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "minimum": {
+          "type": "number"
+        },
+        "properties": {
+          "additionalProperties": {
+            "$ref": "#/definitions/propertySchema"
+          },
+          "type": "object"
+        },
+        "required": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "type": {
+          "enum": [
+            "string",
+            "integer",
+            "number",
+            "boolean",
+            "array",
+            "object"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "description"
+      ],
+      "type": "object"
+    },
+    "requestBody": {
+      "additionalProperties": false,
+      "properties": {
+        "content": {
+          "additionalProperties": false,
+          "properties": {
+            "application/json": {
+              "$ref": "#/definitions/mediaType"
+            }
+          },
+          "required": [
+            "application/json"
+          ],
+          "type": "object"
+        },
+        "required": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "content"
+      ],
+      "type": "object"
+    },
+    "response": {
+      "additionalProperties": true,
+      "properties": {
+        "content": {
+          "additionalProperties": true,
+          "properties": {
+            "application/json": {
+              "$ref": "#/definitions/mediaType"
+            }
+          },
+          "type": "object"
+        },
+        "description": {
+          "minLength": 5,
+          "type": "string"
+        }
+      },
+      "required": [
+        "description"
+      ],
+      "type": "object"
+    },
+    "responses": {
+      "additionalProperties": true,
+      "minProperties": 1,
+      "patternProperties": {
+        "^[45]\\d{2}$": {
+          "$ref": "#/definitions/response"
+        }
+      },
+      "properties": {
+        "200": {
+          "$ref": "#/definitions/response"
+        }
+      },
+      "required": [
+        "200"
+      ],
+      "type": "object"
+    }
+  },
+  "properties": {
+    "components": {
+      "type": "object"
+    },
+    "info": {
+      "additionalProperties": true,
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "title": {
+          "minLength": 3,
+          "type": "string"
+        },
+        "version": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "version"
+      ],
+      "type": "object"
+    },
+    "openapi": {
+      "pattern": "^3\\.\\d+\\.\\d+$",
+      "type": "string"
+    },
+    "paths": {
+      "additionalProperties": false,
+      "minProperties": 1,
+      "patternProperties": {
+        "^/": {
+          "$ref": "#/definitions/pathItem"
+        }
+      },
+      "type": "object"
+    },
+    "security": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "openapi",
+    "info",
+    "paths"
+  ],
+  "title": "Tool OpenAPI",
+  "type": "object"
+}

@@ -1,6 +1,6 @@
 {
   "audit_hashes": {
-    "source_pdf_sha256": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4"
+    "source_pdf_sha256": "64b1fe39ea553e203ccee7a52a99c404e23abc213275705b2d1656d2c3ed5635"
   },
   "automation": {},
   "effective_from": "2011-10-13",
@@ -19,7 +19,7 @@
         "doc": "UNFCCC/AMS-III.D@v21-0",
         "kind": "pdf",
         "path": "source-assets/UNFCCC/Agriculture/AMS-III.D/v18-0/source.pdf",
-        "sha256": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4",
+        "sha256": "64b1fe39ea553e203ccee7a52a99c404e23abc213275705b2d1656d2c3ed5635",
         "size": 313796
       }
     ],
