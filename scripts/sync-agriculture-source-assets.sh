@@ -14,8 +14,8 @@ find tools/UNFCCC/Agriculture -type f -name 'source.pdf' | while read -r tools_p
   cp "$tools_pdf" "$target"
   echo "  synced: $tools_pdf -> $target"
 
-  # Some archived versions only exist under tools/.../previous/<version>/tools/source.pdf.
-  # Ingest expects a canonical source-assets/UNFCCC/Agriculture/<Code>/<version>/source.pdf copy as well.
+  # Legacy versions may only exist under tools/.../previous/<version>/tools/source.pdf.
+  # Mirror them into source-assets/UNFCCC/Agriculture/<Code>/<version>/source.pdf so ingest can find them.
   if [[ "$tools_pdf" == */previous/*/tools/source.pdf ]]; then
     path_tail="${tools_pdf#tools/UNFCCC/Agriculture/}"  # e.g. ACM0010/v03-0/previous/v01-0/tools/source.pdf
     method="${path_tail%%/*}"                           # ACM0010
