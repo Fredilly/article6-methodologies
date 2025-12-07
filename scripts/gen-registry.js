@@ -102,7 +102,9 @@ for (const standard of standards) {
               path: sourcePath,
               sha256: audit.source_pdf_sha256 || null,
             },
-            tools: meta.tools || [],
+            tools: (Array.isArray(meta.references?.tools) && meta.references.tools.length
+              ? meta.references.tools
+              : meta.tools || []),
           });
           continue;
         }
@@ -150,10 +152,12 @@ for (const standard of standards) {
                 path: sourcePath,
                 sha256: prevAudit.source_pdf_sha256 || null,
               },
-              tools: prevMeta.tools || [],
-            });
-          }
+              tools: (Array.isArray(prevMeta.references?.tools) && prevMeta.references.tools.length
+                ? prevMeta.references.tools
+                : prevMeta.tools || []),
+          });
         }
+      }
       }
     }
   }

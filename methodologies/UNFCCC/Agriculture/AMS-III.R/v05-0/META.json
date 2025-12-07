@@ -9,7 +9,7 @@
     "source_pdf_sha256": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb"
   },
   "automation": {
-    "scripts_manifest_sha256": "d56f826b0793e1216a172f743335342161ad7a91536d00338853cecc9544d9e6"
+    "scripts_manifest_sha256": "01d76a31755823062e5a3f2b186930d941c5691591d60c9c22d44aea4309a93a"
   },
   "provenance": {
     "author": "Fred Egbuedike",
@@ -75,5 +75,7 @@
         "url": null
       }
     ]
-  }
+  },
+  "status": "active",
+  "version": "v05-0"
 }
