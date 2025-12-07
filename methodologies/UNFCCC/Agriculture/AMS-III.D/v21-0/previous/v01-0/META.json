@@ -1,6 +1,6 @@
 {
   "audit_hashes": {
-    "source_pdf_sha256": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4"
+    "source_pdf_sha256": "adf105fcb7196dbc53a23d7e5a52ea5ef86ae706bd421151354ecc0e9f41cdcc"
   },
   "automation": {},
   "effective_from": "2002-10-31",
@@ -16,10 +16,10 @@
     "methodology_page": "https://cdm.unfccc.int/methodologies/DB/H9DVSB24O7GEZQYLYNWUX23YS6G4RC/view.html",
     "source_pdfs": [
       {
-        "doc": "UNFCCC/AMS-III.D@v21-0",
+        "doc": "UNFCCC/AMS-III.D@v01-0",
         "kind": "pdf",
         "path": "source-assets/UNFCCC/Agriculture/AMS-III.D/v01-0/source.pdf",
-        "sha256": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4",
+        "sha256": "adf105fcb7196dbc53a23d7e5a52ea5ef86ae706bd421151354ecc0e9f41cdcc",
         "size": 151433
       }
     ],
