@@ -6,10 +6,10 @@
   "audit_hashes": {
     "rules_json_sha256": "60d24f79400a6a4fb1a8be1e71f2e55cfabce35945962d380c2a5ceeb863bb54",
     "sections_json_sha256": "2fb333bddd764f612d2adca1b616328e10329205acea1fa6a966d4ce5e6f9f13",
-    "source_pdf_sha256": "c946ed5cfd6198b6e0700ebf2aff710d64ad10c5e6d2536c749e735572d4a781"
+    "source_pdf_sha256": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb"
   },
   "automation": {
-    "scripts_manifest_sha256": "8661da24b3e3cb9f2aad8fe8454ba3ed42d433b66c42f25e233f12fbdf78f24d"
+    "scripts_manifest_sha256": "b35879363d614ac8458cc0381b5cb2ce8f82b34ad057ba1fe987fa0a95ce0392"
   },
   "previous_methods": [
     "v04-0",
@@ -24,8 +24,8 @@
       {
         "doc": "UNFCCC/AMS-III.R@v05-0",
         "kind": "pdf",
-        "path": "source-assets/UNFCCC/Agriculture/AMS-III.R/v05-0/source.pdf",
-        "sha256": "c946ed5cfd6198b6e0700ebf2aff710d64ad10c5e6d2536c749e735572d4a781",
+        "path": "tools/UNFCCC/Agriculture/AMS-III.R/v05-0/source.pdf",
+        "sha256": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
         "size": 293350
       }
     ]

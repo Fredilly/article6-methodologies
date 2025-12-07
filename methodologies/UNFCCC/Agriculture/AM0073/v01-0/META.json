@@ -9,7 +9,7 @@
     "source_pdf_sha256": "dc6e5a0e5942fa22e7275c1a639b8f47b85384aa7845c446fa600697646c744a"
   },
   "automation": {
-    "scripts_manifest_sha256": "8661da24b3e3cb9f2aad8fe8454ba3ed42d433b66c42f25e233f12fbdf78f24d"
+    "scripts_manifest_sha256": "b35879363d614ac8458cc0381b5cb2ce8f82b34ad057ba1fe987fa0a95ce0392"
   },
   "provenance": {
     "author": "Fred Egbuedike",
@@ -18,7 +18,7 @@
       {
         "doc": "UNFCCC/AM0073@v01-0",
         "kind": "pdf",
-        "path": "source-assets/UNFCCC/Agriculture/AM0073/v01-0/source.pdf",
+        "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/source.pdf",
         "sha256": "dc6e5a0e5942fa22e7275c1a639b8f47b85384aa7845c446fa600697646c744a",
         "size": 733424
       }
