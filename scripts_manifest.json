@@ -71,7 +71,7 @@
     { "path": "scripts/run-ajv.sh", "sha256": "fa3e40b945144c9f8dda93f44f6c00f2e404475a3074a7bc5cf450a4e38ffe0f" },
     { "path": "scripts/scaffold-method.js", "sha256": "bac5757661dd49c2dc48ba3811170e98f7dc94acc5d28573614d72e54168204e" },
     { "path": "scripts/setup/install-ingest-tools.sh", "sha256": "96135bdbe7c18a69b0123039992817b8bf10723b71b4a7f6a2359f2b08115ae4" },
-    { "path": "scripts/sync-agriculture-source-assets.sh", "sha256": "ee2dd55a227e9e35b91c97aa9fad83943234499baeeaf3031e0dcd7671b07db4" },
+    { "path": "scripts/sync-agriculture-source-assets.sh", "sha256": "7388f914c983726720131aa612f3ad28928ad1b052c3845d5f2caec9ea2177fa" },
     { "path": "scripts/sync-examples.sh", "sha256": "cfa456e1711d3fe873fa1bd19c54c38476815becd5e198efced4ff0d4dc3b728" },
     { "path": "scripts/update-ingest-plan.cjs", "sha256": "5c7407371bf63b19b0ac7b971dd0c79b6a287836e86ecd6dbf24f86cedb6ea3e" },
     { "path": "scripts/utils/jsonl.js", "sha256": "86c0723c800b41d691fcc7790895e90e2032d9c7fb4a685030917c6d5c54c8c3" },
