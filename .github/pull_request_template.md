@@ -1,15 +1,25 @@
-## What
+## WHAT
 
-- Concise scope of change (what was added/removed/modified)
-- Key files/paths touched (group by area: scripts, schemas, methodologies, tools, CI)
-- Behavior changes (user‑facing, CI/guards, validation steps)
-- Data model/schema changes (if any) and migrations/one‑offs
-- Verification performed (commands run, checks passed) and reproducible steps
+- Concise scope for the change plus the most important files/paths touched.
+- Mention whether golden fixtures or Root Cause Template entries are affected.
+- Snapshot of behavior changes (CI gates, determinism, ingest flow).
 
-## Why
+## WHY
 
-- Problem being solved and motivation
-- Determinism/integrity impact (hashes, schema, CI guarantees)
-- Alternatives considered and why rejected
-- Risks/backwards‑compatibility and mitigations
-- Related issues/links (optional)
+- Motivation, risk, and determinism/integrity impact (hashes, schema, registry).
+- Alternatives considered and why they were rejected.
+- Links/issues, stakeholder drivers, or SLAs touched.
+
+## CHANGES
+
+- Bullet list of technical changes (scripts, schemas, ingest runners, CI).
+- Commands/tests run, including the double-run health check if applicable.
+- Hash/schema/registry validation evidence.
+
+## ACCEPTANCE
+
+- Expected reviewer/CI checks and how to reproduce them.
+- Link/reference relevant Root Cause Template entries or new invariants.
+- State Agriculture/Forestry fixture status (still green?) and regression risk.
+
+Signed-off-by: Fred E <fredilly@article6.org>
