@@ -343,4 +343,6 @@ Use this when we discover a new class of pipeline failure (not just a typo).
 - **Code/tests**: scripts, schemas, or CI checks changed
 - **Golden fixtures touched**: which methods were used to confirm the fix
 
+- When we fix a new class of failure, use `docs/projects/phase-1-ingestion/ROOT_CAUSE_PROMPT.md` to capture the Root Cause entry and any matching spec or code updates.
+
 Add one short entry per new issue class.
