@@ -8,6 +8,10 @@ Make the `ingest` pipeline produce assets that match manually curated Forestry a
 
 ---
 
+- **Canonical environment**
+  - Codespaces/devcontainer is the reference environment for deciding if a phase is complete.
+  - Local Mac is for convenience only; if local behavior disagrees with Codespaces, treat the Codespaces result as truth.
+
 ## Progress Tracker
 
 The canonical list of phases and their statuses lives in `docs/projects/phase-1-ingestion/phase-status.json`. Update that file, then run `npm run plan:update:ingest` so this plan mirrors the Git-tracked truth. Checkbox legend: `[ ]` = not started, `[-]` = in progress, `[x]` = completed.
@@ -16,7 +20,7 @@ The canonical list of phases and their statuses lives in `docs/projects/phase-1-
 
 ## [ ] Phase 0 - Baseline & Branch
 
-**Branch:** `feat/ingest-equals-manual-v1`
+**Branch:** Create a dedicated feature branch for this work (never push directly to `main` or `staging`).
 
 **What**  
 Freeze Forestry as the gold reference and prove ingest currently fails parity.
@@ -179,6 +183,22 @@ npm run validate:lean
 node scripts/check-quality-gates.js ingest-quality-gates.yml
 ```
 
+**Health check**
+
+- Running the full ingest + validation sequence twice in the canonical environment must leave `git status -sb` clean and `git diff` empty.
+- This applies to methodologies artefacts, `scripts_manifest.json`, and `registry.json`; treat it as the acceptance gate for declaring Phase 6 complete and reference it whenever assessing phase stability.
+
+---
+
+## Golden fixture methods
+
+- Representative Forestry + Agriculture fixtures: ACM0010, AM0073, AMS-III.D, AMS-III.R, AR-AM0014, AR-ACM0003, AR-AMS0003, AR-AMS0007.
+- Never mask bugs by hand-editing these fixtures; every pipeline change must keep them ingestable, CI-green, and idempotent under the double-run health check.
+
+## Spec vs reality rule
+
+If the plan’s status line or checkboxes ever disagree with CI or current ingest outputs, treat it as a bug: either fix code/tests to match the spec or update the spec to match reality—never leave them divergent.
+
 ---
 
 ## [ ] Phase 7 - Quality Gates & CI
@@ -230,10 +250,13 @@ Include Agriculture inside `registry.json`.
 
 ---
 
-## [ ] Phase 9 - Migrate Agriculture
+## [ ] Phase 9 - Agriculture Migration (One-Time)
 
 **What**  
-Re-ingest ACM0010, AM0073, AMS-III.D, and AMS-III.R.
+Perform a single migration of ACM0010, AM0073, AMS-III.D, and AMS-III.R into the upgraded ingest pipeline so Agriculture matches Forestry parity.
+
+**Note**  
+Future sectors or new methods do **not** create new “Phase 9” equivalents; they follow the normal add-method recipe guarded by the golden fixtures and double-run health check.
 
 **Do**
 
@@ -249,34 +272,12 @@ npm run ingest:full -- ingest.agriculture.yml
 
 ---
 
-## Codex TODO Block
+## Next 3–5 System Tasks
 
-```
-# WHAT
-Make ingest output match manual Forestry quality (META provenance, rich sections/rules, correct tool paths, previous versions, deterministic writes, quality gates).
-
-# WHY
-Automate without regressions; keep CI green; unblock Agriculture parity.
-
-# TASKS
-- [ ] P0 Fixture snapshot tests (forestry-gold)
-- [ ] P1 Path enforcement
-- [x] P2 Full META with provenance + hashes
-- [ ] P3 Section extractor (>=5 sections)
-- [ ] P4 Rules.rich generator + lean derivation
-- [ ] P5 Previous version writer + validation
-- [ ] P6 Deterministic ingest-full runner
-- [ ] P7 Quality gates + CI integration
-- [x] P8 Registry shaping + app test
-- [ ] P9 Agriculture re-ingest + PR
-
-# ACCEPTANCE
-- Two consecutive runs produce zero diffs
-- No "TODO" anywhere in methodologies/**
-- META keys/hashes match Forestry fixture
-- tools/UNFCCC/Agriculture/** structure is correct
-- CI passes every gate
-```
+- Publish the add-method recipe doc that references the golden fixtures and requires the double-run health check before claiming a method is production-ready.
+- Align the GeoVista contract + partner communications with the Root Cause Template expectations so every new ingest issue class is documented and tied to its acceptance criteria.
+- Automate creation/review of Root Cause Template entries whenever CI detects a regression, ensuring the fix lists the updated spec bullets and links back to the health check evidence.
+- Expose a slim Codex-visible status card that reports whether the latest double-run health check in the canonical environment passed and which Root Cause Template entries were touched in the last week.
 
 ---
 
@@ -296,9 +297,8 @@ Automate without regressions; keep CI green; unblock Agriculture parity.
 
 - `npm run validate:*` passes.
 - `node scripts/check-quality-gates.js` returns 0.
-- `git diff` after a rerun is empty.
+- Double-run health check in the canonical environment leaves `git status -sb` clean and `git diff` empty for methodologies artefacts, `scripts_manifest.json`, and `registry.json`.
 - Agriculture and Forestry entries exist in `registry.json`.
-- PR title is `feat/ingest-equals-manual-v1`.
 
 ---
 
@@ -306,27 +306,41 @@ Automate without regressions; keep CI green; unblock Agriculture parity.
 
 ```
 ### WHAT
-Upgrade ingest to match manual Forestry quality; re-ingest Agriculture at parity.
+- Concise scope plus top files/paths touched.
+- Cite whether work affects golden fixtures or Root Cause Template entries.
 
 ### WHY
-One-shot automation that produces audit-ready outputs.
+- Motivations, determinism/integrity impact, and why the change matters now.
 
 ### CHANGES
-- Enforced tool path structure
-- Full META (provenance, audit, hashes)
-- Real sections + rules (rich -> lean)
-- Previous versions support
-- Deterministic runner + quality gates
-- Registry + CI updates
+- Bullet list of technical changes (scripts, schemas, ingest steps, CI gates).
+- Commands/tests run, including the double-run health check when relevant.
 
 ### ACCEPTANCE
-✅ CI green
-✅ No "TODO" or stub files
-✅ Identical output on rerun
-✅ Agriculture visible in registry
+- Evidence that all gates passed (AJV, registry, quality gates).
+- Link/reference the Root Cause Template entry when adding or updating invariants.
+- State whether Agriculture/Forestry fixtures stayed green.
+
+Signed-off-by: Fred E <fredilly@article6.org>
 ```
 ## Next roadmap
 
 - Bring Verra / Gold Standard into the same ingest pipeline.
 - Polish manifest UI and demo flows for regulators and partners.
 - Tighten automation around tools, fixtures, and offline ingest.
+
+### Root Cause Template
+
+Use this when we discover a new class of pipeline failure (not just a typo).
+
+- **Name**: short label for the issue (e.g. “previous/META hash drift”)
+- **Date**:
+- **Area**: META / sections / rules / previous / registry / CI / other
+- **Symptom**: what broke (error message, CI gate, surprising diff)
+- **Root cause**: why it actually happened
+- **New invariant**: the rule we want the pipeline to obey from now on
+- **Spec update**: where we added/updated bullets in this plan
+- **Code/tests**: scripts, schemas, or CI checks changed
+- **Golden fixtures touched**: which methods were used to confirm the fix
+
+Add one short entry per new issue class.
