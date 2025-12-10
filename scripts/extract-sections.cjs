@@ -2,6 +2,7 @@
 const { spawnSync } = require('child_process');
 const crypto = require('crypto');
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
 
 const repoRoot = path.resolve(__dirname, '..');
@@ -137,8 +138,8 @@ function findPdftotext() {
   return (found.stdout || '').trim();
 }
 
-function extractWithPdftotext(binary, pdfPath) {
-  const result = spawnSync(binary, ['-layout', '-nopgbrk', pdfPath, '-'], {
+function invokePdftotext(binary, pdfPath, outputTarget) {
+  const result = spawnSync(binary, ['-layout', '-nopgbrk', pdfPath, outputTarget], {
     encoding: 'utf8',
     maxBuffer: 1024 * 1024 * 40,
   });
@@ -146,7 +147,7 @@ function extractWithPdftotext(binary, pdfPath) {
     if (result.error) {
       console.warn(`[extract-sections] pdftotext reported "${result.error.message}" but exited 0`);
     }
-    return result.stdout || '';
+    return result;
   }
   if (result.error) {
     throw new Error(`pdftotext failed for ${pdfPath}: ${result.error.message}`);
@@ -155,7 +156,25 @@ function extractWithPdftotext(binary, pdfPath) {
     const stderr = (result.stderr || '').trim();
     throw new Error(`pdftotext exited with ${result.status} for ${pdfPath}: ${stderr}`);
   }
-  return result.stdout || '';
+  return result;
+}
+
+function extractWithPdftotext(binary, pdfPath) {
+  const stdoutResult = invokePdftotext(binary, pdfPath, '-');
+  const stdoutText = stdoutResult.stdout || '';
+  if (stdoutText && stdoutText.trim()) {
+    return stdoutText;
+  }
+
+  console.warn(`[extract-sections] pdftotext stdout was empty; retrying via temp file for ${pdfPath}`);
+  const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'pdftxt-'));
+  const tmpFile = path.join(tmpDir, 'out.txt');
+  try {
+    invokePdftotext(binary, pdfPath, tmpFile);
+    return fs.readFileSync(tmpFile, 'utf8');
+  } finally {
+    fs.rmSync(tmpDir, { recursive: true, force: true });
+  }
 }
 
 function extractWithPdfminer(pdfPath) {
@@ -213,6 +232,8 @@ function main() {
 
   const pdfHash = sha256(pdfPath);
   const text = extractText(pdfPath);
+  const textLength = text ? text.length : 0;
+  console.log(`[sections] extracted text length ${textLength} for ${docRef}`);
   if (!text || !text.trim()) {
     throw new Error(`pdftotext produced no content for ${docRef} (${pdfPath})`);
   }
