@@ -234,6 +234,7 @@ no_stubs: true
 - Sections count is below 5 or contains `TODO`.
 - Previous pointer cannot be resolved.
 - Registry integrity check fails.
+- Tool parity is broken (registry/tool pointers do not match on-disk files or the mirrored `tests/fixtures/*-gold/.../tools/` directories); see RC-2025-12-AR-AM0014-tool-parity in `docs/projects/phase-1-ingestion/ROOT_CAUSE.md`.
 
 ---
 
@@ -343,6 +344,6 @@ Use this when we discover a new class of pipeline failure (not just a typo).
 - **Code/tests**: scripts, schemas, or CI checks changed
 - **Golden fixtures touched**: which methods were used to confirm the fix
 
+- Detailed incident history lives in `docs/projects/phase-1-ingestion/ROOT_CAUSE.md` (for example RC-2025-12-AR-AM0014-tool-parity).
 - When we fix a new class of failure, use `docs/projects/phase-1-ingestion/ROOT_CAUSE_PROMPT.md` to capture the entry plus any matching spec or code updates before committing.
-
 Add one short entry per new issue class.
