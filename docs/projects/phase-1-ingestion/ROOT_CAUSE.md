@@ -38,3 +38,4 @@ This file is the living logbook for non-trivial ingest/pipeline failures in the 
 - **Golden fixtures touched:**
   - `tests/fixtures/forestry-gold/UNFCCC/Forestry/AR-AM0014/v03-0/tools/*` (primary exemplar).
   - Future Forestry/Agriculture methods with tools should follow the same pattern before being counted as gold exemplars.
+- RC-20251211-091139 | 2025-12-11 09:11:39 | Demo incident placeholder | docs/projects/phase-1-ingestion/root-causes/RC-20251211-091139.md
