@@ -38,28 +38,8 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '20.11.1'
-      # jq not required; use Node-based checks only
-      - name: Assert tool hashes (no drift)
-        run: scripts/assert-tool-hashes.sh
-      - name: Derive lean from rich (deterministic)
-        run: |
-          node scripts/derive-lean-from-rich.js
-          if ! git diff --quiet -- \
-            ':(glob)methodologies/**/sections.json' \
-            ':(glob)methodologies/**/rules.json' \
-            ':(exclude)methodologies/**/previous/**/sections.json' \
-            ':(exclude)methodologies/**/previous/**/rules.json'; then
-            echo "Lean JSON drift detected. Run: node scripts/derive-lean-from-rich.js";
-            git --no-pager diff -- methodologies/**/sections.json methodologies/**/rules.json | sed -n '1,200p';
-            exit 1;
-          fi
-      - name: Lean drift gate
-        run: scripts/check-lean-drift.sh
-      - name: Offline schema validation
-        run: node scripts/validate-offline.js
-      - name: Meta-driven source hash check (redundant gate)
-        run: node scripts/check-source-hash.js
-      - name: Trio + registry integrity
-        run: node scripts/check-trio-and-registry.js
-      - name: Supply-chain guard (pinning, no network installs)
-        run: node scripts/check-workflows-supplychain.js
+          cache: 'npm'
+      - run: npm ci || npm i
+      - run: npm run validate:rich
+      - run: npm run validate:lean
+      - run: node scripts/validate-offline.js
