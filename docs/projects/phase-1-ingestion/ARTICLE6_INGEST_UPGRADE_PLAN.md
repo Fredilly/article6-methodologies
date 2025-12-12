@@ -251,20 +251,20 @@ Include Agriculture inside `registry.json`.
 
 ---
 
-## [x] Phase 9 - Final Sector Migration & Idempotency
+## [x] Phase 9 - Sector Ingest Contract & Repo-wide Idempotency
 
 **WHAT**
 
-- Re-ingest the Agriculture methodologies (ACM0010, AM0073, AMS-III.D, AMS-III.R and tools) using `npm run ingest:full -- ingest.agriculture.yml`.
-- Bring Agriculture artefacts up to the same standard as Forestry (META audit hashes, sections/rules completeness, tool metadata, no TODO stubs).
-- Use this as the reference pattern for any future sector migrations: double-run ingest with zero diff from a clean tree.
+- Establish a single ingest contract that every sector must satisfy (Forestry, Agriculture, and all future sectors).
+- Express the contract via canonical sector ingest configs (e.g. `ingest.yml`, `ingest.agriculture.yml`, `ingest.<sector>.yml`), deterministic double-run behavior, and stable `registry.json` / `scripts_manifest.json`.
+- Apply this contract to the currently onboarded sectors using their configs (for example, Forestry and Agriculture) and treat them as the initial reference implementation and regression suite.
 
 **DONE WHEN**
 
-- From a clean working tree, running `npm run ingest:full -- ingest.agriculture.yml` once produces only the expected Agriculture updates.
-- Running the same command a second time from that state leaves `git status -sb` clean and `git diff --stat` empty (no files changed on the second pass).
-- CI (`schema-validate`, `validate-json`, `stage-gates`) is green for both Forestry and Agriculture methodologies and tools.
-- Agriculture META/sections/rules no longer contain temporary TODO stubs and match the Forestry quality bar.
+- Each sector marked as “migrated” in this plan has a checked-in sector config (`ingest.<sector>.yml` or equivalent).
+- From a clean working tree in the canonical Codespaces/devcontainer environment, running `npm run ingest:full -- <sector-config>` twice for each migrated sector leaves `git status -sb` clean and `git diff --stat` empty on the second run (no movement in methodology artefacts, `scripts_manifest.json`, or `registry.json`).
+- CI (`schema-validate`, `validate-json`, `stage-gates`) is green on `main` with all migrated sectors wired into `registry.json` and matching their `tests/fixtures/*-gold` expectations.
+- The Phase 9 sector ingest contract is referenced by the “add a new sector/methodology” recipe so any new sector must pass the same double-run, zero-diff gate before being considered production-ready.
 
 ---
 
