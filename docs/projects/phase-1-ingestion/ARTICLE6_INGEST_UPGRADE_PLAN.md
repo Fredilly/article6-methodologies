@@ -18,7 +18,7 @@ The canonical list of phases and their statuses lives in `docs/projects/phase-1-
 
 ---
 
-## [ ] Phase 0 - Baseline & Branch
+## [x] Phase 0 - Baseline & Branch
 
 **Branch:** Create a dedicated feature branch for this work (never push directly to `main` or `staging`).
 
@@ -35,7 +35,7 @@ Freeze Forestry as the gold reference and prove ingest currently fails parity.
 
 ---
 
-## [ ] Phase 1 - Paths & Foldering
+## [x] Phase 1 - Paths & Foldering
 
 **What**  
 Enforce canonical layout:
@@ -84,7 +84,7 @@ META keys align with the Forestry fixture and the AJV schema passes.
 
 ---
 
-## [ ] Phase 3 - Section Extraction (Replace Stubs)
+## [x] Phase 3 - Section Extraction (Replace Stubs)
 
 **What**  
 Generate real `sections.json` from PDFs.
@@ -109,7 +109,7 @@ Forestry outputs pass the sanity check before pushing.
 
 ---
 
-## [ ] Phase 4 - Rules (Rich -> Lean)
+## [x] Phase 4 - Rules (Rich -> Lean)
 
 **What**  
 Autogenerate `rules.rich.json` and derive the lean form.
@@ -140,7 +140,7 @@ Missing `logic` or empty `refs.sections` causes failure.
 
 ---
 
-## [ ] Phase 5 - Previous Versions
+## [x] Phase 5 - Previous Versions
 
 **What**  
 Add `previous/vYY-0` support that mirrors Forestry.
@@ -156,7 +156,7 @@ Broken pointers or missing `source.pdf` trigger failure.
 
 ---
 
-## [ ] Phase 6 - Idempotency & Determinism
+## [x] Phase 6 - Idempotency & Determinism
 
 **What**  
 Re-running produces zero diffs.
@@ -201,7 +201,7 @@ If the plan’s status line or checkboxes ever disagree with CI or current inges
 
 ---
 
-## [ ] Phase 7 - Quality Gates & CI
+## [x] Phase 7 - Quality Gates & CI
 
 **What**  
 Prevent half-built artefacts from landing.
@@ -251,25 +251,20 @@ Include Agriculture inside `registry.json`.
 
 ---
 
-## [ ] Phase 9 - Agriculture Migration (One-Time)
+## [x] Phase 9 - Sector Ingest Contract & Repo-wide Idempotency
 
-**What**  
-Perform a single migration of ACM0010, AM0073, AMS-III.D, and AMS-III.R into the upgraded ingest pipeline so Agriculture matches Forestry parity.
+**WHAT**
 
-**Note**  
-Future sectors or new methods do **not** create new “Phase 9” equivalents; they follow the normal add-method recipe guarded by the golden fixtures and double-run health check.
+- Establish a single ingest contract that every sector must satisfy (Forestry, Agriculture, and all future sectors).
+- Express the contract via canonical sector ingest configs (e.g. `ingest.yml`, `ingest.agriculture.yml`, `ingest.<sector>.yml`), deterministic double-run behavior, and stable `registry.json` / `scripts_manifest.json`.
+- Apply this contract to the currently onboarded sectors using their configs (for example, Forestry and Agriculture) and treat them as the initial reference implementation and regression suite.
 
-**Do**
+**DONE WHEN**
 
-```
-npm run ingest:full -- ingest.agriculture.yml
-```
-
-**Done when**
-
-- Artefacts mirror Forestry quality.
-- All CI gates pass.
-- No `TODO` or stub sections/rules remain.
+- Each sector marked as “migrated” in this plan has a checked-in sector config (`ingest.<sector>.yml` or equivalent).
+- From a clean working tree in the canonical Codespaces/devcontainer environment, running `npm run ingest:full -- <sector-config>` twice for each migrated sector leaves `git status -sb` clean and `git diff --stat` empty on the second run (no movement in methodology artefacts, `scripts_manifest.json`, or `registry.json`).
+- CI (`schema-validate`, `validate-json`, `stage-gates`) is green on `main` with all migrated sectors wired into `registry.json` and matching their `tests/fixtures/*-gold` expectations.
+- The Phase 9 sector ingest contract is referenced by the “add a new sector/methodology” recipe so any new sector must pass the same double-run, zero-diff gate before being considered production-ready.
 
 ---
 
