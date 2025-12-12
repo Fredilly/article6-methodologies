@@ -18,7 +18,7 @@ The canonical list of phases and their statuses lives in `docs/projects/phase-1-
 
 ---
 
-## [ ] Phase 0 - Baseline & Branch
+## [x] Phase 0 - Baseline & Branch
 
 **Branch:** Create a dedicated feature branch for this work (never push directly to `main` or `staging`).
 
@@ -35,7 +35,7 @@ Freeze Forestry as the gold reference and prove ingest currently fails parity.
 
 ---
 
-## [ ] Phase 1 - Paths & Foldering
+## [x] Phase 1 - Paths & Foldering
 
 **What**  
 Enforce canonical layout:
@@ -84,7 +84,7 @@ META keys align with the Forestry fixture and the AJV schema passes.
 
 ---
 
-## [ ] Phase 3 - Section Extraction (Replace Stubs)
+## [x] Phase 3 - Section Extraction (Replace Stubs)
 
 **What**  
 Generate real `sections.json` from PDFs.
@@ -109,7 +109,7 @@ Forestry outputs pass the sanity check before pushing.
 
 ---
 
-## [ ] Phase 4 - Rules (Rich -> Lean)
+## [x] Phase 4 - Rules (Rich -> Lean)
 
 **What**  
 Autogenerate `rules.rich.json` and derive the lean form.
@@ -140,7 +140,7 @@ Missing `logic` or empty `refs.sections` causes failure.
 
 ---
 
-## [ ] Phase 5 - Previous Versions
+## [x] Phase 5 - Previous Versions
 
 **What**  
 Add `previous/vYY-0` support that mirrors Forestry.
@@ -156,7 +156,7 @@ Broken pointers or missing `source.pdf` trigger failure.
 
 ---
 
-## [ ] Phase 6 - Idempotency & Determinism
+## [x] Phase 6 - Idempotency & Determinism
 
 **What**  
 Re-running produces zero diffs.
@@ -201,7 +201,7 @@ If the plan’s status line or checkboxes ever disagree with CI or current inges
 
 ---
 
-## [ ] Phase 7 - Quality Gates & CI
+## [x] Phase 7 - Quality Gates & CI
 
 **What**  
 Prevent half-built artefacts from landing.
@@ -251,25 +251,20 @@ Include Agriculture inside `registry.json`.
 
 ---
 
-## [ ] Phase 9 - Agriculture Migration (One-Time)
+## [x] Phase 9 - Final Sector Migration & Idempotency
 
-**What**  
-Perform a single migration of ACM0010, AM0073, AMS-III.D, and AMS-III.R into the upgraded ingest pipeline so Agriculture matches Forestry parity.
+**WHAT**
 
-**Note**  
-Future sectors or new methods do **not** create new “Phase 9” equivalents; they follow the normal add-method recipe guarded by the golden fixtures and double-run health check.
+- Re-ingest the Agriculture methodologies (ACM0010, AM0073, AMS-III.D, AMS-III.R and tools) using `npm run ingest:full -- ingest.agriculture.yml`.
+- Bring Agriculture artefacts up to the same standard as Forestry (META audit hashes, sections/rules completeness, tool metadata, no TODO stubs).
+- Use this as the reference pattern for any future sector migrations: double-run ingest with zero diff from a clean tree.
 
-**Do**
+**DONE WHEN**
 
-```
-npm run ingest:full -- ingest.agriculture.yml
-```
-
-**Done when**
-
-- Artefacts mirror Forestry quality.
-- All CI gates pass.
-- No `TODO` or stub sections/rules remain.
+- From a clean working tree, running `npm run ingest:full -- ingest.agriculture.yml` once produces only the expected Agriculture updates.
+- Running the same command a second time from that state leaves `git status -sb` clean and `git diff --stat` empty (no files changed on the second pass).
+- CI (`schema-validate`, `validate-json`, `stage-gates`) is green for both Forestry and Agriculture methodologies and tools.
+- Agriculture META/sections/rules no longer contain temporary TODO stubs and match the Forestry quality bar.
 
 ---
 
