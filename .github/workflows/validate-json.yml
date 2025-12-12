@@ -32,29 +32,13 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
+          clean: true
+          fetch-depth: 0
           lfs: true
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '20.11.1'
-      - name: Derive lean from rich (deterministic)
-        run: |
-          node scripts/derive-lean-from-rich.js
-          if ! git diff --quiet -- \
-            ':(glob)methodologies/**/sections.json' \
-            ':(glob)methodologies/**/rules.json' \
-            ':(exclude)methodologies/**/previous/**/sections.json' \
-            ':(exclude)methodologies/**/previous/**/rules.json'; then
-            echo "Lean JSON drift detected. Run: node scripts/derive-lean-from-rich.js";
-            git --no-pager diff -- methodologies/**/sections.json methodologies/**/rules.json | sed -n '1,200p';
-            exit 1;
-          fi
-      - name: Lean generation verifier
-        run: scripts/verify-generation.sh
-      - name: Offline schema validation
-        run: node scripts/validate-offline.js
-      - name: Meta-driven source hash check
-        run: node scripts/check-source-hash.js
-      - name: Trio + registry integrity
-        run: node scripts/check-trio-and-registry.js
-      - name: Supply-chain guard (pinning, no network installs)
-        run: node scripts/check-workflows-supplychain.js
+          cache: 'npm'
+      - run: npm ci || npm i
+      - run: npm run validate:rich
+      - run: npm run validate:lean

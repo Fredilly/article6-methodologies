@@ -25,10 +25,17 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
+          clean: true
+          fetch-depth: 0
           lfs: true
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '20.11.1'
+          cache: 'npm'
+      - run: npm ci || npm i
+      - run: npm run validate:rich
+      - run: npm run validate:lean
+      - run: node scripts/check-quality-gates.js ingest-quality-gates.yml
       # jq not required; use Node-based checks only
       - name: Derive lean from rich (deterministic)
         run: |

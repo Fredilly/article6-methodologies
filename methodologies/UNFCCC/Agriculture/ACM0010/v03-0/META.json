@@ -1,93 +1,65 @@
 {
-  "kind": "methodology",
-  "publisher": "UNFCCC",
-  "id": "UNFCCC.Agriculture.ACM0010",
-  "version": "v03-0",
-  "status": "superseded",
-  "effective_from": "2007-11-02",
-  "effective_to": "2008-05-29",
+  "audit": {
+    "created_at": "2025-11-23T14:46:29.171Z",
+    "created_by": "ingest.sh"
+  },
+  "audit_hashes": {
+    "rules_json_sha256": "60d24f79400a6a4fb1a8be1e71f2e55cfabce35945962d380c2a5ceeb863bb54",
+    "sections_json_sha256": "2fb333bddd764f612d2adca1b616328e10329205acea1fa6a966d4ce5e6f9f13",
+    "source_pdf_sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9"
+  },
+  "automation": {
+    "scripts_manifest_sha256": "65332f2e17da1d04562afe04fd5a69c59bf4b4a3c26c46a769afc55c24533da9"
+  },
   "provenance": {
-    "methodology_page": "https://cdm.unfccc.int/methodologies/DB/66DCX9DCDE8UFYYIHJEY5NRPAA8WNE/view.html",
-    "source_url": "https://cdm.unfccc.int/UserManagement/FileStorage/CDMWF_AM_Q7IHTIXMRJGZK38H6D0YX6M8923067",
-    "version_number": "3.0",
+    "author": "Fred Egbuedike",
+    "date": "2025-11-23T14:46:29.171Z",
     "source_pdfs": [
       {
+        "doc": "UNFCCC/ACM0010@v03-0",
         "kind": "pdf",
-        "path": "source-assets/UNFCCC/Agriculture/ACM0010/v03-0/source.pdf",
+        "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/source.pdf",
         "sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
         "size": 450287
       }
     ]
   },
-  "tools": [
-    {
-      "doc": "UNFCCC/ACM0010@v03-0",
-      "kind": "pdf",
-      "pointer": "../../../../../tools/UNFCCC/Agriculture/ACM0010/v03-0/source.pdf",
-      "sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-      "size": 450287
-    },
-    {
-      "doc": "UNFCCC/AM-TOOL06@v1",
-      "kind": "pdf",
-      "pointer": "../../../../../tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-06-v1.pdf",
-      "sha256": "6888d77e76c6b39e5de3097cc0cc2d493d6b1bd13814c985f45c20000283413d",
-      "size": 511852
-    },
-    {
-      "doc": "UNFCCC/AM-TOOL03@v1",
-      "kind": "pdf",
-      "pointer": "../../../../../tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-03-v1.pdf",
-      "sha256": "57868a381913568599c98d331b9ff339115c38cc1070aeec43eca0d11823185a",
-      "size": 115214
-    },
-    {
-      "doc": "UNFCCC/AM-TOOL05@v1",
-      "kind": "pdf",
-      "pointer": "../../../../../tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-05-v1.pdf",
-      "sha256": "e3f3238248e0d68d7da0a98eca93e411b3b44f7e5c44be9cbd8b62693b8b7107",
-      "size": 550422
-    }
-  ],
-  "audit_hashes": {
-    "source_pdf_sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
-    "sections_json_sha256": "",
-    "rules_json_sha256": ""
-  },
   "references": {
     "tools": [
       {
-        "doc": "",
+        "doc": "UNFCCC/AM-TOOL03@v01",
+        "kind": "pdf",
         "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-03-v1.pdf",
         "sha256": "57868a381913568599c98d331b9ff339115c38cc1070aeec43eca0d11823185a",
         "size": 115214,
-        "kind": "pdf"
+        "url": null
       },
       {
-        "doc": "",
+        "doc": "UNFCCC/AM-TOOL05@v01",
+        "kind": "pdf",
         "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-05-v1.pdf",
         "sha256": "e3f3238248e0d68d7da0a98eca93e411b3b44f7e5c44be9cbd8b62693b8b7107",
         "size": 550422,
-        "kind": "pdf"
+        "url": null
       },
       {
-        "doc": "",
+        "doc": "UNFCCC/AM-TOOL06@v01",
+        "kind": "pdf",
         "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-06-v1.pdf",
         "sha256": "6888d77e76c6b39e5de3097cc0cc2d493d6b1bd13814c985f45c20000283413d",
         "size": 511852,
-        "kind": "pdf"
+        "url": null
       },
       {
-        "doc": "UNFCCC/ACM0010@v03.0",
+        "doc": "UNFCCC/ACM0010@v03-0",
+        "kind": "pdf",
         "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/source.pdf",
         "sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9",
         "size": 450287,
-        "kind": "pdf"
+        "url": null
       }
     ]
   },
-  "automation": {
-    "scripts_manifest_sha256": "372afce5f96e8262de455c1ef34db98207ff5b08919b340bfd6ea74483c0ee1a",
-    "repo_commit": "c264e980d7ec809f8e4872761213111d448899f4"
-  }
+  "status": "active",
+  "version": "v03-0"
 }
