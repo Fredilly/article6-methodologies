@@ -68,6 +68,7 @@
     { "path": "scripts/reshape-agriculture.js", "sha256": "f382361c73563ec723e5aa78562950c440f9b8936788236e01d9648326e64efa" },
     { "path": "scripts/resolve-ingest-scope.mjs", "sha256": "576a1fc3ddf852bfe795b96bd56e0039a8e53a8db267c8167a2d1c35d874abc7" },
     { "path": "scripts/rewrite-forestry.js", "sha256": "c924b4fbbde41865bad05c7dcd31db9e3b8837ad693f5061789099d06bd31174" },
+    { "path": "scripts/root-cause-new.cjs", "sha256": "ade6ee6fffe4f5377c3ab43c122abe7a79eddead091b5bdaa7082f6731ba317c" },
     { "path": "scripts/run-ajv.sh", "sha256": "fa3e40b945144c9f8dda93f44f6c00f2e404475a3074a7bc5cf450a4e38ffe0f" },
     { "path": "scripts/scaffold-method.js", "sha256": "bac5757661dd49c2dc48ba3811170e98f7dc94acc5d28573614d72e54168204e" },
     { "path": "scripts/setup/install-ingest-tools.sh", "sha256": "96135bdbe7c18a69b0123039992817b8bf10723b71b4a7f6a2359f2b08115ae4" },
