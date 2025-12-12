@@ -2,6 +2,12 @@
 
 # Article 6 Ingest = Manual Parity Plan
 
+> **Sector naming note:** On disk, the internal sector slug `Forestry`
+> corresponds to UNFCCC sector 14, “Afforestation and reforestation”.
+> The folder `UNFCCC/Forestry` and fixtures `forestry-gold` keep this slug
+> for stability and hashing, but external-facing docs, dashboards, and
+> models should use the label “Afforestation and reforestation (UNFCCC 14)”.
+
 ## Goal
 
 Make the `ingest` pipeline produce assets that match manually curated Forestry artefacts (complete META, provenance, real sections and rules, canonical foldering, deterministic hashes). Once merged, any new sector (for example Agriculture) auto-ingests at manual parity.
@@ -23,7 +29,7 @@ The canonical list of phases and their statuses lives in `docs/projects/phase-1-
 **Branch:** Create a dedicated feature branch for this work (never push directly to `main` or `staging`).
 
 **What**  
-Freeze Forestry as the gold reference and prove ingest currently fails parity.
+Freeze Forestry (Afforestation and reforestation, UNFCCC sector 14) as the gold reference and prove ingest currently fails parity.
 
 **Do**
 
@@ -192,7 +198,7 @@ node scripts/check-quality-gates.js ingest-quality-gates.yml
 
 ## Golden fixture methods
 
-- Representative Forestry + Agriculture fixtures: ACM0010, AM0073, AMS-III.D, AMS-III.R, AR-AM0014, AR-ACM0003, AR-AMS0003, AR-AMS0007.
+- Representative Forestry (Afforestation and reforestation) + Agriculture fixtures: ACM0010, AM0073, AMS-III.D, AMS-III.R, AR-AM0014, AR-ACM0003, AR-AMS0003, AR-AMS0007.
 - Never mask bugs by hand-editing these fixtures; every pipeline change must keep them ingestable, CI-green, and idempotent under the double-run health check.
 
 ## Spec vs reality rule
@@ -294,7 +300,7 @@ Include Agriculture inside `registry.json`.
 - `npm run validate:*` passes.
 - `node scripts/check-quality-gates.js` returns 0.
 - Double-run health check in the canonical environment leaves `git status -sb` clean and `git diff` empty for methodologies artefacts, `scripts_manifest.json`, and `registry.json`.
-- Agriculture and Forestry entries exist in `registry.json`.
+- Agriculture and Forestry (Afforestation and reforestation) entries exist in `registry.json`.
 
 ---
 

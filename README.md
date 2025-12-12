@@ -4,6 +4,14 @@ Canonical store of methodologies: META + sections + rules (+ tools, overrides, t
 For a working example of the file layout and content, see `docs/examples/TEMPLATE_METHOD`.
 See RULESET.md for conventions and CI guardrails.
 
+## Repository layout
+
+> **Sector naming note:** The internal slug `Forestry` in paths such as
+> `methodologies/UNFCCC/Forestry` refers to UNFCCC sector 14,
+> “Afforestation and reforestation”. We keep the slug stable for hashes and
+> reproducibility; human-facing docs and models should use the full sector
+> label.
+
 ## Five Things mapping
 1. Data-first methodologies
 2. Audit-ready hashes
@@ -94,4 +102,3 @@ Use `node scripts/check-source-hash.js` to verify that all `META.references.tool
 
 ## Stable Tree v1
 This structure is normative. Changes require a "Stable Tree vX" section and CI update.
-
