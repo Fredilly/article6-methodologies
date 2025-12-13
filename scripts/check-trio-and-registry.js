@@ -5,6 +5,8 @@ const fs = require('fs');
 const path = require('path');
 
 function sourceAssetPath(meta) {
+  const provenancePath = (((meta || {}).provenance || {}).source_pdfs || [])[0]?.path;
+  if (provenancePath) return provenancePath;
   if (!meta || !meta.id || !meta.version) return null;
   const parts = String(meta.id).split('.').filter(Boolean);
   if (parts.length < 2) return null;
