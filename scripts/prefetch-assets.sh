@@ -107,4 +107,10 @@ else
   ' _ 
 fi
 
+echo "[prefetch] syncing Agriculture source-assets from tools/"
+node "${SCRIPT_DIR}/fetch-agriculture-previous.js"
+
 echo "[prefetch] cache ready under ${CACHE_ROOT}"
+
+# Keep Agriculture source-assets in sync with tools
+bash scripts/sync-agriculture-source-assets.sh

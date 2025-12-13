@@ -1,56 +1,21 @@
 #!/usr/bin/env node
 /* eslint-disable no-console */
-const fs = require('fs');
-const path = require('path');
-const crypto = require('crypto');
+const fs = require('node:fs');
+const path = require('node:path');
+const crypto = require('node:crypto');
 
 const repoRoot = path.join(__dirname, '..');
 const posixPath = (value) => value.split(path.sep).join('/');
-const ua = 'article6-codex/1.0';
 
 const methods = [
-  {
-    code: 'ACM0010',
-    currentVersion: 'v03-0',
-    viewUrl: 'https://cdm.unfccc.int/methodologies/DB/66DCX9DCDE8UFYYIHJEY5NRPAA8WNE/view.html',
-  },
-  {
-    code: 'AM0073',
-    currentVersion: 'v01-0',
-    viewUrl: 'https://cdm.unfccc.int/methodologies/DB/2N19WQ6DCXNYRNJVZQQOHG7TK0Q2D8/view.html',
-  },
-  {
-    code: 'AMS-III.D',
-    currentVersion: 'v21-0',
-    viewUrl: 'https://cdm.unfccc.int/methodologies/DB/H9DVSB24O7GEZQYLYNWUX23YS6G4RC/view.html',
-  },
-  {
-    code: 'AMS-III.R',
-    currentVersion: 'v05-0',
-    viewUrl: 'https://cdm.unfccc.int/methodologies/DB/Q8EMKMK67G1XIUKJFED8EVFL2VH1SN/view.html',
-  },
+  { code: 'ACM0010', currentVersion: 'v03-0' },
+  { code: 'AM0073', currentVersion: 'v01-0' },
+  { code: 'AMS-III.D', currentVersion: 'v21-0' },
+  { code: 'AMS-III.R', currentVersion: 'v05-0' },
 ];
 
-const monthMap = {
-  jan: '01',
-  feb: '02',
-  mar: '03',
-  apr: '04',
-  may: '05',
-  jun: '06',
-  jul: '07',
-  aug: '08',
-  sep: '09',
-  sept: '09',
-  oct: '10',
-  nov: '11',
-  dec: '12',
-};
-
 const ensureDir = (dir) => fs.mkdirSync(dir, { recursive: true });
-
 const readFile = (file) => (fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : null);
-const shaFile = (filePath) => crypto.createHash('sha256').update(fs.readFileSync(filePath)).digest('hex');
 const shaBuffer = (buf) => crypto.createHash('sha256').update(buf).digest('hex');
 
 const writeTextIfChanged = (filePath, content) => {
@@ -70,86 +35,6 @@ const writeBufferIfChanged = (filePath, buf) => {
 const writeJson = (filePath, data) => {
   const payload = `${JSON.stringify(data, null, 2)}\n`;
   writeTextIfChanged(filePath, payload);
-};
-
-const fetchText = async (url) => {
-  const res = await fetch(url, { headers: { 'User-Agent': ua } });
-  if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.status} ${res.statusText}`);
-  return res.text();
-};
-
-const fetchBuffer = async (url) => {
-  const res = await fetch(url, { headers: { 'User-Agent': ua } });
-  if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.status} ${res.statusText}`);
-  const arrayBuffer = await res.arrayBuffer();
-  return Buffer.from(arrayBuffer);
-};
-
-const stripTags = (html) => html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-
-const normalizeToolVersion = (raw) => {
-  const trimmed = raw.replace(/^v/i, '');
-  const match = trimmed.match(/^([0-9]+)/);
-  if (!match) return `v${trimmed}`;
-  const major = String(parseInt(match[1], 10));
-  const paddedMajor = major.padStart(2, '0');
-  return `v${paddedMajor}${trimmed.slice(match[1].length)}`;
-};
-
-const normalizeVersionDir = (version) => {
-  const [majorRaw, minorRaw = '0'] = version.trim().split('.');
-  const major = String(parseInt(majorRaw, 10)).padStart(2, '0');
-  const minor = String(parseInt(minorRaw, 10));
-  return `v${major}-${minor}`;
-};
-
-const parseDate = (value) => {
-  if (!value) return null;
-  const match = value.trim().match(/^([0-9]{1,2})\s+([A-Za-z]+)\s+([0-9]{2,4})$/);
-  if (!match) return null;
-  const [, dayRaw, monthNameRaw, yearRaw] = match;
-  const monthKey = monthNameRaw.toLowerCase();
-  const month = monthMap[monthKey];
-  if (!month) return null;
-  let yearNum = parseInt(yearRaw, 10);
-  if (yearRaw.length === 2) {
-    yearNum += yearNum >= 90 ? 1900 : 2000;
-  }
-  const day = dayRaw.padStart(2, '0');
-  return `${yearNum}-${month}-${day}`;
-};
-
-const parsePreviousVersions = (html) => {
-  const markerIdx = html.indexOf('Previous Versions');
-  if (markerIdx === -1) return [];
-  const section = html.slice(markerIdx);
-  const regex =
-    /<th>Title<\/th>\s*<td>([\s\S]*?)<\/td>\s*<\/tr>\s*<tr>\s*<th>Version number<\/th>\s*<td>([\s\S]*?)<\/td>\s*<\/tr>\s*<tr>\s*<th>Validity<\/th>\s*<td>([\s\S]*?)<\/td>/gi;
-  const entries = [];
-  let match;
-  while ((match = regex.exec(section)) !== null) {
-    const [_, titleCell, versionCell, validityCell] = match;
-    const linkMatch = titleCell.match(/href="([^"]+)"/i);
-    const pdfUrl = linkMatch ? linkMatch[1] : null;
-    const versionText = stripTags(versionCell);
-    const validityText = stripTags(validityCell);
-    const validityMatch = validityText.match(
-      /valid\s+from\s+([0-9]{1,2}\s+[A-Za-z]+\s+[0-9]{2,4})(?:\s+to\s+([0-9]{1,2}\s+[A-Za-z]+\s+[0-9]{2,4}|Present))?/i,
-    );
-    if (!pdfUrl || !versionText || !validityMatch) continue;
-    const validFrom = parseDate(validityMatch[1]?.trim());
-    const rawValidTo = validityMatch[2]?.trim();
-    const validTo =
-      rawValidTo && !/^present$/i.test(rawValidTo) ? parseDate(rawValidTo) : null;
-    entries.push({
-      pdfUrl,
-      versionLabel: versionText.trim(),
-      versionDir: normalizeVersionDir(versionText),
-      effectiveFrom: validFrom,
-      effectiveTo: validTo,
-    });
-  }
-  return entries;
 };
 
 const buildToolList = (method) => {
@@ -176,14 +61,14 @@ const buildToolList = (method) => {
           throw new Error(`Unrecognized tool file name: ${fileName}`);
         }
         const number = String(parseInt(match[1], 10)).padStart(2, '0');
-        const version = normalizeToolVersion(match[2]);
+        const version = match[2].startsWith('v') ? match[2] : `v${match[2]}`;
         doc = `UNFCCC/AM-TOOL${number}@${version}`;
       }
       return {
         doc,
         kind,
         path: relPath,
-        sha256: shaFile(fullPath),
+        sha256: crypto.createHash('sha256').update(fs.readFileSync(fullPath)).digest('hex'),
         size: stat.size,
         url: null,
         absolute: fullPath,
@@ -196,7 +81,7 @@ const buildToolList = (method) => {
     });
 };
 
-const updateActiveMeta = (method, tools) => {
+const updateActiveMetaTools = (method, tools) => {
   const metaPath = path.join(
     repoRoot,
     'methodologies',
@@ -206,7 +91,9 @@ const updateActiveMeta = (method, tools) => {
     method.currentVersion,
     'META.json',
   );
-  const meta = JSON.parse(readFile(metaPath));
+  const raw = readFile(metaPath);
+  if (!raw) throw new Error(`Missing META.json for ${method.code} ${method.currentVersion}`);
+  const meta = JSON.parse(raw);
   meta.references = meta.references || {};
   meta.references.tools = tools.map(({ doc, kind, path: relPath, sha256, size }) => ({
     doc,
@@ -219,68 +106,79 @@ const updateActiveMeta = (method, tools) => {
   writeJson(metaPath, meta);
 };
 
-const pointerPath = (fromDir, absoluteTarget) =>
-  posixPath(path.relative(fromDir, absoluteTarget));
+const ensureSourceEntry = (meta, method, version, entryPath, assetInfo) => {
+  const existing = Array.isArray(meta?.provenance?.source_pdfs) ? meta.provenance.source_pdfs[0] : null;
+  const entry = {
+    doc: existing?.doc || `UNFCCC/${method.code}@${version}`,
+    kind: existing?.kind || 'pdf',
+    path: entryPath,
+    sha256: assetInfo.sha,
+    size: assetInfo.size,
+  };
+  if (existing?.url) entry.url = existing.url;
+  meta.provenance = meta.provenance || {};
+  meta.provenance.source_pdfs = [entry];
+  meta.audit_hashes = meta.audit_hashes || {};
+  meta.audit_hashes.source_pdf_sha256 = assetInfo.sha;
+};
 
-const safeCodeForId = (code) => code.replace(/\./g, '-');
+const listPreviousVersionDirs = (method) => {
+  const previousDir = path.join(
+    repoRoot,
+    'methodologies',
+    'UNFCCC',
+    'Agriculture',
+    method.code,
+    method.currentVersion,
+    'previous',
+  );
+  if (!fs.existsSync(previousDir)) return [];
+  return fs
+    .readdirSync(previousDir, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && /^v\d+-\d+$/.test(entry.name))
+    .map((entry) => entry.name)
+    .sort();
+};
 
-const buildPreviousMeta = (method, entry, tools, pdfSha, pdfSize, pdfPath, sourceUrl) => {
-  const safeCode = safeCodeForId(method.code);
+const copyPdfToAssets = (method, version, sourcePdfPath) => {
+  if (!fs.existsSync(sourcePdfPath)) {
+    throw new Error(`Missing source.pdf for ${method.code} ${version} under tools`);
+  }
+  const buffer = fs.readFileSync(sourcePdfPath);
+  const assetsDir = path.join(
+    repoRoot,
+    'source-assets',
+    'UNFCCC',
+    'Agriculture',
+    method.code,
+    version,
+  );
+  ensureDir(assetsDir);
+  const assetPath = path.join(assetsDir, 'source.pdf');
+  writeBufferIfChanged(assetPath, buffer);
+  const relPath = posixPath(path.relative(repoRoot, assetPath));
   return {
-    audit_hashes: {
-      source_pdf_sha256: pdfSha,
-    },
-    automation: {},
-    effective_from: entry.effectiveFrom,
-    effective_to: entry.effectiveTo,
-    id: `UNFCCC.Agriculture.${safeCode}`,
-    kind: 'methodology',
-    pointers: {
-      active_successor: '../..',
-    },
-    provenance: {
-      author: 'Fred Egbuedike',
-      date: new Date().toISOString(),
-      methodology_page: method.viewUrl,
-      source_pdfs: [
-        {
-          doc: `UNFCCC/${method.code}@${method.currentVersion}`,
-          kind: 'pdf',
-          path: pdfPath,
-          sha256: pdfSha,
-          size: pdfSize,
-        },
-      ],
-      source_url: sourceUrl,
-      version_number: entry.versionLabel,
-    },
-    publisher: 'UNFCCC',
-    references: {
-      tools: [],
-    },
-    status: 'superseded',
-    tools: tools.map((tool) => ({
-      doc: tool.doc,
-      kind: tool.kind,
-      pointer: pointerPath(
-        path.join(
-          repoRoot,
-          'methodologies',
-          'UNFCCC',
-          'Agriculture',
-          method.code,
-          method.currentVersion,
-          'previous',
-          entry.versionDir,
-        ),
-        tool.absolute,
-      ),
-      sha256: tool.sha256,
-      size: tool.size,
-    })),
-    version: entry.versionDir,
+    relPath,
+    sha: shaBuffer(buffer),
+    size: buffer.length,
+    absolute: assetPath,
   };
 };
+
+const updateMetaSource = (metaPath, method, version, assetInfo, entryPath) => {
+  const raw = readFile(metaPath);
+  if (!raw) {
+    console.warn(`  • META missing for ${method.code} ${version}, skipping provenance Stamp.`);
+    return;
+  }
+  const meta = JSON.parse(raw);
+  const pathForEntry = entryPath || assetInfo.relPath;
+  ensureSourceEntry(meta, method, version, pathForEntry, assetInfo);
+  writeJson(metaPath, meta);
+};
+
+const pointerPath = (fromDir, absoluteTarget) =>
+  posixPath(path.relative(fromDir, absoluteTarget));
 
 const ensurePointersFile = (dir, currentVersion) => {
   const pointerFile = path.join(dir, 'POINTERS.md');
@@ -288,31 +186,58 @@ const ensurePointersFile = (dir, currentVersion) => {
   writeTextIfChanged(pointerFile, content);
 };
 
-const processMethod = async (method) => {
-  console.log(`→ Processing ${method.code}`);
+const syncPreviousToolPointers = (method, prevVersion, toolsDir) => {
+  ensureDir(toolsDir);
+  const sourcePdf = path.join(toolsDir, 'source.pdf');
+  if (!fs.existsSync(sourcePdf)) {
+    console.warn(`  • Missing tools/source.pdf for ${method.code} ${prevVersion}; skipping pointer refresh.`);
+    return null;
+  }
+  ensurePointersFile(toolsDir, method.currentVersion);
+  return sourcePdf;
+};
+
+const processMethod = (method) => {
+  console.log(`→ Syncing Agriculture assets for ${method.code}`);
   const tools = buildToolList(method);
-  updateActiveMeta(method, tools);
-  const html = await fetchText(method.viewUrl);
-  const entries = parsePreviousVersions(html);
-  if (!entries.length) {
-    console.log(`  • No previous versions detected for ${method.code}`);
+  updateActiveMetaTools(method, tools);
+
+  const activeToolPdf = path.join(
+    repoRoot,
+    'tools',
+    'UNFCCC',
+    'Agriculture',
+    method.code,
+    method.currentVersion,
+    'source.pdf',
+  );
+  const activeAssetInfo = copyPdfToAssets(method, method.currentVersion, activeToolPdf);
+  const activeMetaPath = path.join(
+    repoRoot,
+    'methodologies',
+    'UNFCCC',
+    'Agriculture',
+    method.code,
+    method.currentVersion,
+    'META.json',
+  );
+  const activeToolRelPath = posixPath(path.relative(repoRoot, activeToolPdf));
+  updateMetaSource(
+    activeMetaPath,
+    method,
+    method.currentVersion,
+    activeAssetInfo,
+    activeToolRelPath,
+  );
+  console.log(`  • Updated active source-assets for ${method.currentVersion}`);
+
+  const previousVersions = listPreviousVersionDirs(method);
+  if (!previousVersions.length) {
+    console.log('  • No previous versions found in methodologies/');
     return;
   }
-  for (const entry of entries) {
-    const pdfBuffer = await fetchBuffer(entry.pdfUrl);
-    const pdfSha = shaBuffer(pdfBuffer);
-    const pdfSize = pdfBuffer.length;
-    const sourceAssetsDir = path.join(
-      repoRoot,
-      'source-assets',
-      'UNFCCC',
-      'Agriculture',
-      method.code,
-      entry.versionDir,
-    );
-    ensureDir(sourceAssetsDir);
-    const sourceAssetsPath = path.join(sourceAssetsDir, 'source.pdf');
-    writeBufferIfChanged(sourceAssetsPath, pdfBuffer);
+
+  for (const prevVersion of previousVersions) {
     const toolsPrevDir = path.join(
       repoRoot,
       'tools',
@@ -321,15 +246,13 @@ const processMethod = async (method) => {
       method.code,
       method.currentVersion,
       'previous',
-      entry.versionDir,
+      prevVersion,
       'tools',
     );
-    ensureDir(toolsPrevDir);
-    const prevSourcePath = path.join(toolsPrevDir, 'source.pdf');
-    writeBufferIfChanged(prevSourcePath, pdfBuffer);
-    ensurePointersFile(toolsPrevDir, method.currentVersion);
-    const pdfRelPath = posixPath(path.relative(repoRoot, sourceAssetsPath));
-    const metaDir = path.join(
+    const prevToolPdf = syncPreviousToolPointers(method, prevVersion, toolsPrevDir);
+    if (!prevToolPdf) continue;
+    const assetInfo = copyPdfToAssets(method, prevVersion, prevToolPdf);
+    const prevMetaPath = path.join(
       repoRoot,
       'methodologies',
       'UNFCCC',
@@ -337,31 +260,51 @@ const processMethod = async (method) => {
       method.code,
       method.currentVersion,
       'previous',
-      entry.versionDir,
+      prevVersion,
+      'META.json',
     );
-    ensureDir(metaDir);
-    const meta = buildPreviousMeta(
-      method,
-      entry,
-      tools,
-      pdfSha,
-      pdfSize,
-      pdfRelPath,
-      entry.pdfUrl,
-    );
-    writeJson(path.join(metaDir, 'META.json'), meta);
-    console.log(`  • Added previous version ${entry.versionDir} for ${method.code}`);
+    updateMetaSource(prevMetaPath, method, prevVersion, assetInfo);
+    console.log(`  • Synced previous version ${prevVersion}`);
   }
 };
 
-async function main() {
-  for (const method of methods) {
-    await processMethod(method);
+const verifyDeterministicPointers = (method) => {
+  const previousDir = path.join(
+    repoRoot,
+    'methodologies',
+    'UNFCCC',
+    'Agriculture',
+    method.code,
+    method.currentVersion,
+    'previous',
+  );
+  if (!fs.existsSync(previousDir)) return;
+  const entries = fs.readdirSync(previousDir, { withFileTypes: true }).filter((entry) => entry.isDirectory());
+  for (const entry of entries) {
+    const toolsDir = path.join(
+      repoRoot,
+      'tools',
+      'UNFCCC',
+      'Agriculture',
+      method.code,
+      method.currentVersion,
+      'previous',
+      entry.name,
+      'tools',
+    );
+    if (!fs.existsSync(toolsDir)) continue;
+    const pointer = path.join(toolsDir, 'POINTERS.md');
+    const expected = `Normative tools: see active version ${method.currentVersion}/tools/\n`;
+    writeTextIfChanged(pointer, expected);
   }
-  console.log('✓ Agriculture previous versions updated.');
-}
+};
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+const main = () => {
+  for (const method of methods) {
+    processMethod(method);
+    verifyDeterministicPointers(method);
+  }
+  console.log('✓ Agriculture source-assets synced.');
+};
+
+main();

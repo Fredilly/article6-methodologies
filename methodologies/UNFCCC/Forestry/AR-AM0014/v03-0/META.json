@@ -9,7 +9,7 @@
     "source_pdf_sha256": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a"
   },
   "automation": {
-    "scripts_manifest_sha256": "045a87bf64455d9171bc321c32765cc213b3cc2d89d148179cbac71c0562b9c4"
+    "scripts_manifest_sha256": "65332f2e17da1d04562afe04fd5a69c59bf4b4a3c26c46a769afc55c24533da9"
   },
   "provenance": {
     "author": "Fred Egbuedike",
@@ -27,41 +27,41 @@
   "references": {
     "tools": [
       {
-        "doc": "UNFCCC/AR-TOOL02@v01",
+        "doc": "UNFCCC/AR-TOOL02@v01-0",
         "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-02-v01.pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-02-v01-0.pdf",
         "sha256": "37324fd7d9e727d006bd7e46b5410acff24acbe2195a65229a70a27041bbe4b4",
         "size": 251692,
         "url": null
       },
       {
-        "doc": "UNFCCC/AR-TOOL08@v04.0.0",
+        "doc": "UNFCCC/AR-TOOL08@v04-0",
         "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-08-v04.0.0.pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-08-v04-0.pdf",
         "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397",
         "size": 263864,
         "url": null
       },
       {
-        "doc": "UNFCCC/AR-TOOL12@v03.1",
+        "doc": "UNFCCC/AR-TOOL12@v03-1",
         "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-12-v03.1.pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-12-v03-1.pdf",
         "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4",
         "size": 275971,
         "url": null
       },
       {
-        "doc": "UNFCCC/AR-TOOL14@v04.2",
+        "doc": "UNFCCC/AR-TOOL14@v04-2",
         "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-14-v04.2.pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-14-v04-2.pdf",
         "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331",
         "size": 691428,
         "url": null
       },
       {
-        "doc": "UNFCCC/AR-TOOL15@v02.0",
+        "doc": "UNFCCC/AR-TOOL15@v02-0",
         "kind": "pdf",
-        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-15-v02.0.pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-15-v02-0.pdf",
         "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29",
         "size": 1008516,
         "url": null
