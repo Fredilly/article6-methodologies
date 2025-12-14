@@ -26,6 +26,32 @@ function groupBySector(methodsStatus) {
   return bySector;
 }
 
+function loadSectorTargets() {
+  const sectorsPath = path.join(REPO_ROOT, 'registry', 'sectors.json');
+  if (!fs.existsSync(sectorsPath)) return new Map();
+  const data = readJson(sectorsPath);
+  if (!data || typeof data !== 'object' || Array.isArray(data)) return new Map();
+
+  const map = new Map();
+  for (const [key, value] of Object.entries(data)) {
+    if (!value || typeof value !== 'object') continue;
+    const ref =
+      typeof value.reference_methods === 'number'
+        ? value.reference_methods
+        : typeof value.expected_methods === 'number'
+          ? value.expected_methods
+          : null;
+    const target =
+      typeof value.target_methods === 'number'
+        ? value.target_methods
+        : typeof ref === 'number'
+          ? ref
+          : null;
+    map.set(key, { reference_methods: ref, target_methods: target });
+  }
+  return map;
+}
+
 const inputPath = path.join(REPO_ROOT, 'registry', 'methods-status.json');
 if (!fs.existsSync(inputPath)) {
   throw new Error('Missing registry/methods-status.json. Run: npm run status:methods');
@@ -38,6 +64,7 @@ if (!methodsStatus || typeof methodsStatus !== 'object' || Array.isArray(methods
 
 const bySector = groupBySector(methodsStatus);
 const sectors = Array.from(bySector.keys()).sort((a, b) => a.localeCompare(b));
+const sectorTargets = loadSectorTargets();
 
 let out = '# Sector status report\n\n';
 out += `Source: registry/methods-status.json\n`;
@@ -51,8 +78,15 @@ for (const sector of sectors) {
     .filter((e) => e.record?.hashes_present !== true)
     .map((e) => e.method);
 
+  const sectorKey = `UNFCCC/${sector}`;
+  const targetInfo = sectorTargets.get(sectorKey);
+  const referenceMethods = targetInfo?.reference_methods;
+  const targetMethods = targetInfo?.target_methods;
+
   out += `\n## ${sector}\n\n`;
   out += `- total_methods: ${total}\n`;
+  if (typeof referenceMethods === 'number') out += `- reference_methods: ${referenceMethods}\n`;
+  if (typeof targetMethods === 'number') out += `- target_methods: ${targetMethods}\n`;
   out += `- hashes_present: ${hashesPresent}\n`;
   out += `- has_previous_versions: ${previousPresent}\n`;
   out += `- missing_hashes:\n`;
@@ -64,4 +98,3 @@ for (const sector of sectors) {
 }
 
 writeText(path.join(REPO_ROOT, 'registry', 'sector-report.md'), out);
-

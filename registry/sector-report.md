@@ -13,6 +13,8 @@ Source: registry/methods-status.json
 ## Agriculture
 
 - total_methods: 4
+- reference_methods: 4
+- target_methods: 4
 - hashes_present: 4
 - has_previous_versions: 3
 - missing_hashes:
@@ -21,6 +23,8 @@ Source: registry/methods-status.json
 ## Forestry
 
 - total_methods: 4
+- reference_methods: 4
+- target_methods: 4
 - hashes_present: 4
 - has_previous_versions: 4
 - missing_hashes:
