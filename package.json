@@ -33,6 +33,7 @@
     "cli:query": "node bin/mrv-cli.js",
     "server:http": "node bin/http-engine-adapter.js",
     "validate:guardrails": "node scripts/check-methodology-guardrails.js",
+    "status:methods": "node scripts/gen-methods-status.mjs",
     "plan:update:ingest": "node scripts/update-ingest-plan.cjs",
     "build:manifest": "node scripts/build-manifest.mjs",
     "ingest:full": "bash scripts/ingest-full.sh",
