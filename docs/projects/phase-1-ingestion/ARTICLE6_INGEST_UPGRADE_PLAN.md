@@ -12,6 +12,8 @@
 
 Make the `ingest` pipeline produce assets that match manually curated Forestry artefacts (complete META, provenance, real sections and rules, canonical foldering, deterministic hashes). Once merged, any new sector (for example Agriculture) auto-ingests at manual parity.
 
+**Scope note:** Phases 0–9 are repo-wide invariants (pipeline + schemas + gates). They are not repeated per method or sector; Forestry and Agriculture were used as validation/stress cases.
+
 ---
 
 - **Canonical environment**
@@ -330,6 +332,16 @@ Signed-off-by: Fred E <fredilly@article6.org>
 - Bring Verra / Gold Standard into the same ingest pipeline.
 - Polish manifest UI and demo flows for regulators and partners.
 - Tighten automation around tools, fixtures, and offline ingest.
+
+## After Phase 9: Adding a new method
+
+- Add the method config or update an existing sector config (`ingest.yml`, `ingest.<sector>.yml`).
+- Run `npm run ingest:full -- <sector-config>` twice; the second run must leave `git diff` empty.
+- Run `npm run validate:rich` and `npm run validate:lean`.
+- Run `bash scripts/hash-all.sh` and `node scripts/gen-registry.js`.
+- Run `node scripts/check-quality-gates.js ingest-quality-gates.yml`.
+- Update/add fixtures under `tests/fixtures/*-gold/` only via pipeline outputs (no hand edits).
+- If a new failure class is discovered, add a Root Cause entry via `node scripts/root-cause-new.cjs` and update invariants in this plan.
 
 ### Root Cause Template
 

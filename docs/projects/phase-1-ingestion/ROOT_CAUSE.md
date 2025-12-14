@@ -12,6 +12,14 @@ This file is the living logbook for non-trivial ingest/pipeline failures in the 
 - Keep RC entries concise and focused on system-level changes (scripts, tests, invariants), not one-off data fixes.
 - When adding a new RC entry, also add or update the corresponding invariant bullet in `ARTICLE6_INGEST_UPGRADE_PLAN.md`.
 
+## Tagging
+
+Each entry may include a line:
+
+- `Tags: [tag1, tag2, ...]`
+
+Recommended tags: `pdf`, `determinism`, `schema`, `registry`, `paths`, `tools`, `agriculture`, `forestry`, `ci`.
+
 ## Root Cause Entries
 
 ### RC-2025-12-AR-AM0014-tool-parity

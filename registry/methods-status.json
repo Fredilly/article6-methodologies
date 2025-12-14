@@ -1,0 +1,102 @@
+{
+  "GoldStandard/LUF/GS-00XX/v1-0": {
+    "sector": "LUF",
+    "program": "GoldStandard",
+    "code": "GS-00XX",
+    "version": "v1-0",
+    "hashes_present": true,
+    "has_previous_versions": false,
+    "idempotent_verified": false,
+    "last_root_cause": null
+  },
+  "UNFCCC/Agriculture/ACM0010/v03-0": {
+    "sector": "Agriculture",
+    "program": "UNFCCC",
+    "code": "ACM0010",
+    "version": "v03-0",
+    "hashes_present": true,
+    "has_previous_versions": true,
+    "idempotent_verified": false,
+    "last_root_cause": null
+  },
+  "UNFCCC/Agriculture/AM0073/v01-0": {
+    "sector": "Agriculture",
+    "program": "UNFCCC",
+    "code": "AM0073",
+    "version": "v01-0",
+    "hashes_present": true,
+    "has_previous_versions": false,
+    "idempotent_verified": false,
+    "last_root_cause": null
+  },
+  "UNFCCC/Agriculture/AMS-III.D/v21-0": {
+    "sector": "Agriculture",
+    "program": "UNFCCC",
+    "code": "AMS-III.D",
+    "version": "v21-0",
+    "hashes_present": true,
+    "has_previous_versions": true,
+    "idempotent_verified": false,
+    "last_root_cause": null
+  },
+  "UNFCCC/Agriculture/AMS-III.R/v05-0": {
+    "sector": "Agriculture",
+    "program": "UNFCCC",
+    "code": "AMS-III.R",
+    "version": "v05-0",
+    "hashes_present": true,
+    "has_previous_versions": true,
+    "idempotent_verified": false,
+    "last_root_cause": null
+  },
+  "UNFCCC/Forestry/AR-ACM0003/v02-0": {
+    "sector": "Forestry",
+    "program": "UNFCCC",
+    "code": "AR-ACM0003",
+    "version": "v02-0",
+    "hashes_present": true,
+    "has_previous_versions": true,
+    "idempotent_verified": false,
+    "last_root_cause": null
+  },
+  "UNFCCC/Forestry/AR-AM0014/v03-0": {
+    "sector": "Forestry",
+    "program": "UNFCCC",
+    "code": "AR-AM0014",
+    "version": "v03-0",
+    "hashes_present": true,
+    "has_previous_versions": true,
+    "idempotent_verified": false,
+    "last_root_cause": null
+  },
+  "UNFCCC/Forestry/AR-AMS0003/v01-0": {
+    "sector": "Forestry",
+    "program": "UNFCCC",
+    "code": "AR-AMS0003",
+    "version": "v01-0",
+    "hashes_present": true,
+    "has_previous_versions": true,
+    "idempotent_verified": false,
+    "last_root_cause": null
+  },
+  "UNFCCC/Forestry/AR-AMS0007/v03-1": {
+    "sector": "Forestry",
+    "program": "UNFCCC",
+    "code": "AR-AMS0007",
+    "version": "v03-1",
+    "hashes_present": true,
+    "has_previous_versions": true,
+    "idempotent_verified": false,
+    "last_root_cause": null
+  },
+  "Verra/AFOLU/VM0007/v1-6": {
+    "sector": "AFOLU",
+    "program": "Verra",
+    "code": "VM0007",
+    "version": "v1-6",
+    "hashes_present": true,
+    "has_previous_versions": false,
+    "idempotent_verified": false,
+    "last_root_cause": null
+  }
+}
