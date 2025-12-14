@@ -1,0 +1,16 @@
+{
+  "UNFCCC/Agriculture": {
+    "expected_methods": 4,
+    "status": "migrated_phase6",
+    "migrated_phase6": true,
+    "idempotent_phase9": true,
+    "notes": "Reference sector used to validate deterministic ingest + registry parity (ACM0010, AM0073, AMS-III.D, AMS-III.R)."
+  },
+  "UNFCCC/Forestry": {
+    "expected_methods": 4,
+    "status": "migrated_phase6",
+    "migrated_phase6": true,
+    "idempotent_phase9": true,
+    "notes": "Gold reference sector (Afforestation and reforestation / UNFCCC 14) used to validate deterministic ingest + fixture parity (AR-AM0014, AR-ACM0003, AR-AMS0003, AR-AMS0007)."
+  }
+}
