@@ -30,6 +30,13 @@ Goal: archive it as a repo doc/spec and connect it to existing issues.
 - `npm run validate:lean`
 - `npm run ingest:verify`
 
+## Discover UNFCCC links (codes -> links.txt)
+
+```sh
+node scripts/discover-unfccc.js --codes AMS-III.A AMS-III.AU AMS-III.BE AMS-III.BF AMS-III.BK > batches/agri-ams-iii.links.txt
+node scripts/discover-unfccc.js --codes-file batches/agri-ams-iii.codes.txt > batches/agri-ams-iii.links.txt
+```
+
 ## If tests pass
 
 ```sh

@@ -38,6 +38,7 @@
     "root-cause:index": "node scripts/gen-root-cause-index.mjs",
     "plan:update:ingest": "node scripts/update-ingest-plan.cjs",
     "build:manifest": "node scripts/build-manifest.mjs",
+    "discover:unfccc": "node scripts/discover-unfccc.js",
     "ingest:verify": "bash scripts/ingest-verify.sh",
     "ingest:full": "bash scripts/ingest-full.sh",
     "ingest:all": "bash scripts/ingest-full.sh && node scripts/build-manifest.mjs",
