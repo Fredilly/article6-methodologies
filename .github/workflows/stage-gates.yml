@@ -61,3 +61,20 @@ jobs:
         run: node scripts/check-trio-and-registry.js
       - name: Supply-chain guard (pinning, no network installs)
         run: node scripts/check-workflows-supplychain.js
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          clean: true
+          fetch-depth: 0
+          lfs: true
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '20.11.1'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci || npm i
+      - name: Run scoped ingest idempotency check (Agriculture)
+        run: npm run ingest:scoped:idempotent -- ingest.agriculture.yml
