@@ -42,6 +42,8 @@
     "ingest:verify": "bash scripts/ingest-verify.sh",
     "ingest:full": "bash scripts/ingest-full.sh",
     "ingest:all": "bash scripts/ingest-full.sh && node scripts/build-manifest.mjs",
+    "ingest:scoped": "bash scripts/ingest-scoped.sh",
+    "ingest:scoped:idempotent": "SCOPED_INGEST_RUNS=2 SCOPED_INGEST_ENFORCE_IDEMPOTENCY=1 bash scripts/ingest-scoped.sh",
     "test:agriculture-gold": "node tests/agriculture-gold-parity.test.js",
     "test:forestry-gold": "node tests/forestry-gold-parity.test.js",
     "test:paths": "bash scripts/check-ingest-paths.sh",

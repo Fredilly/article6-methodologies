@@ -272,6 +272,7 @@ Include Agriculture inside `registry.json`.
 - Each sector marked as “migrated” in this plan has a checked-in sector config (`ingest.<sector>.yml` or equivalent).
 - From a clean working tree in the canonical Codespaces/devcontainer environment, running `npm run ingest:full -- <sector-config>` twice for each migrated sector leaves `git status -sb` clean and `git diff --stat` empty on the second run (no movement in methodology artefacts, `scripts_manifest.json`, or `registry.json`).
 - CI (`schema-validate`, `validate-json`, `stage-gates`) is green on `main` with all migrated sectors wired into `registry.json` and matching their `tests/fixtures/*-gold` expectations.
+- Scoped ingest is enforced via `npm run ingest:scoped:idempotent -- <sector-config>`, which must fail if any out-of-scope path drifts or if the second run produces a diff.
 - The Phase 9 sector ingest contract is referenced by the “add a new sector/methodology” recipe so any new sector must pass the same double-run, zero-diff gate before being considered production-ready.
 
 ---
@@ -302,6 +303,7 @@ Include Agriculture inside `registry.json`.
 - `npm run validate:*` passes.
 - `node scripts/check-quality-gates.js` returns 0.
 - Double-run health check in the canonical environment leaves `git status -sb` clean and `git diff` empty for methodologies artefacts, `scripts_manifest.json`, and `registry.json`.
+- Scoped ingest runs via `npm run ingest:scoped:idempotent -- <ingest.yml>` pass without out-of-scope churn (enforced by `scripts/check-scope-drift.mjs`).
 - Agriculture and Forestry (Afforestation and reforestation) entries exist in `registry.json`.
 
 ---

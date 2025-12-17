@@ -22,3 +22,8 @@ UNFCCC sector 14, **“Afforestation and reforestation”**.
 We keep the slug stable for hashing and reproducibility, but any
 external-facing report or model should use the full label
 “Afforestation and reforestation (UNFCCC 14)”.
+
+## Scoped ingest invariant
+
+- Scoped ingest must not modify paths outside the declared ingest scope; the `node scripts/check-scope-drift.mjs` gate enforces this invariant.
+- Run `npm run ingest:scoped:idempotent -- <ingest.yml>` to execute the scoped ingest twice, assert `git diff --exit-code`, and re-check for scope drift before promoting a sector run.
