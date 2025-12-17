@@ -35,6 +35,8 @@ jobs:
           node-version: '20.11.1'
           cache: 'npm'
       - run: npm ci || npm i
+      - name: Install ingest tools (jq/yq/pup)
+        run: bash scripts/setup/install-ingest-tools.sh
       - run: npm run validate:rich
       - run: npm run validate:lean
       - run: node scripts/check-quality-gates.js ingest-quality-gates.yml
