@@ -18,7 +18,10 @@ function listWorkflows(){
   return fs.readdirSync(WF_DIR).filter(f=>f.endsWith('.yml')||f.endsWith('.yaml')).sort();
 }
 
-function read(p){ return fs.readFileSync(p, 'utf8'); }
+function read(p){
+  // Normalize to LF so regex/line scanning works even if the file is checked out with CRLF.
+  return fs.readFileSync(p, 'utf8').replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+}
 
 const results = [];
 
