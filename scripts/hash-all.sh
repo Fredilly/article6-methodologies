@@ -3,6 +3,29 @@ set -eu
 
 cd "$(dirname "$0")/.."
 
+INGEST_SCOPE_YML=""
+SCOPE_FILE=""
+while [ "${1:-}" != "" ]; do
+  case "$1" in
+    --ingest-yml)
+      INGEST_SCOPE_YML="${2:-}"
+      shift 2
+      ;;
+    --scope-file)
+      SCOPE_FILE="${2:-}"
+      shift 2
+      ;;
+    *)
+      echo "Usage: scripts/hash-all.sh [--ingest-yml <ingest.yml> | --scope-file <path>]" >&2
+      exit 2
+      ;;
+  esac
+done
+if [ -n "$INGEST_SCOPE_YML" ] && [ -n "$SCOPE_FILE" ]; then
+  echo "[hash-all] provide only one of: --ingest-yml, --scope-file" >&2
+  exit 2
+fi
+
 hash_file() {
   if command -v shasum >/dev/null 2>&1; then
     shasum -a 256 "$1" | awk '{print $1}'
@@ -88,7 +111,41 @@ derive_doc() {
 
 scripts_manifest_sha=$(./scripts/hash-scripts.sh)
 
-find methodologies -name META.json | sort | while read -r meta_file; do
+meta_files=""
+if [ -n "$INGEST_SCOPE_YML" ]; then
+  if [ ! -f "$INGEST_SCOPE_YML" ]; then
+    echo "[hash-all] ingest scope file not found: $INGEST_SCOPE_YML" >&2
+    exit 2
+  fi
+  meta_files="$(node ./scripts/ingest-scope-paths.mjs --ingest-yml "$INGEST_SCOPE_YML" --kind meta-files)"
+elif [ -n "$SCOPE_FILE" ]; then
+  if [ ! -f "$SCOPE_FILE" ]; then
+    echo "[hash-all] scope file not found: $SCOPE_FILE" >&2
+    exit 2
+  fi
+  meta_files="$(node ./scripts/ingest-scope-paths.mjs --scope-file "$SCOPE_FILE" --kind meta-files)"
+fi
+
+if [ -n "$INGEST_SCOPE_YML" ] || [ -n "$SCOPE_FILE" ]; then
+  missing=0
+  while IFS= read -r meta_file; do
+    [ -z "$meta_file" ] && continue
+    if [ ! -f "$meta_file" ]; then
+      echo "[hash-all] missing META file for scoped hash: $meta_file" >&2
+      missing=1
+    fi
+  done <<EOF
+$meta_files
+EOF
+  if [ "$missing" -ne 0 ]; then
+    exit 1
+  fi
+else
+  meta_files="$(find methodologies -name META.json | sort)"
+fi
+
+while IFS= read -r meta_file; do
+  [ -z "$meta_file" ] && continue
   dir=$(dirname "$meta_file")
 case "$dir" in
     *"/previous/"*)
@@ -235,5 +292,7 @@ $with_sector"
              ) | sort_by(.path)) |
      .automation = {scripts_manifest_sha256: $manifest}' \
     "$meta_file" > "$tmp" && mv "$tmp" "$meta_file"
-done
+done <<EOF
+$meta_files
+EOF
 echo "OK: refreshed META.audit_hashes, references.tools, and automation pins"
