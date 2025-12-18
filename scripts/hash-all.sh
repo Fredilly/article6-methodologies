@@ -4,18 +4,27 @@ set -eu
 cd "$(dirname "$0")/.."
 
 INGEST_SCOPE_YML=""
+SCOPE_FILE=""
 while [ "${1:-}" != "" ]; do
   case "$1" in
     --ingest-yml)
       INGEST_SCOPE_YML="${2:-}"
       shift 2
       ;;
+    --scope-file)
+      SCOPE_FILE="${2:-}"
+      shift 2
+      ;;
     *)
-      echo "Usage: scripts/hash-all.sh [--ingest-yml <ingest.yml>]" >&2
+      echo "Usage: scripts/hash-all.sh [--ingest-yml <ingest.yml> | --scope-file <path>]" >&2
       exit 2
       ;;
   esac
 done
+if [ -n "$INGEST_SCOPE_YML" ] && [ -n "$SCOPE_FILE" ]; then
+  echo "[hash-all] provide only one of: --ingest-yml, --scope-file" >&2
+  exit 2
+fi
 
 hash_file() {
   if command -v shasum >/dev/null 2>&1; then
@@ -109,6 +118,15 @@ if [ -n "$INGEST_SCOPE_YML" ]; then
     exit 2
   fi
   meta_files="$(node ./scripts/ingest-scope-paths.mjs --ingest-yml "$INGEST_SCOPE_YML" --kind meta-files)"
+elif [ -n "$SCOPE_FILE" ]; then
+  if [ ! -f "$SCOPE_FILE" ]; then
+    echo "[hash-all] scope file not found: $SCOPE_FILE" >&2
+    exit 2
+  fi
+  meta_files="$(node ./scripts/ingest-scope-paths.mjs --scope-file "$SCOPE_FILE" --kind meta-files)"
+fi
+
+if [ -n "$INGEST_SCOPE_YML" ] || [ -n "$SCOPE_FILE" ]; then
   missing=0
   while IFS= read -r meta_file; do
     [ -z "$meta_file" ] && continue

@@ -91,7 +91,11 @@ for ((run=1; run<=RUNS; run++)); do
   echo "[ingest-scoped] refresh META hashes (scoped)"
   bash "${SCRIPT_DIR}/hash-all.sh" --ingest-yml "$SCOPED_YML"
   echo "[ingest-scoped] gen-registry"
-  node "${SCRIPT_DIR}/gen-registry.js"
+  node "${SCRIPT_DIR}/gen-registry.js" --ingest-yml "$SCOPED_YML"
+  echo "[ingest-scoped] registry scope gate"
+  node "${SCRIPT_DIR}/check-registry-scope.mjs" \
+    --ingest-yml "$SCOPED_YML" \
+    --baseline-status "$BASELINE_STATUS"
   if [ "$scoped_dry_run" -eq 0 ]; then
     echo "[ingest-scoped] canonical-json (scoped)"
     roots="$(node "${SCRIPT_DIR}/ingest-scope-paths.mjs" --ingest-yml "$SCOPED_YML" --kind methodologies-dirs --sep ',')"

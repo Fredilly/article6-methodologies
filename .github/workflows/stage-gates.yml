@@ -5,6 +5,9 @@ on:
     paths:
       - '.github/workflows/**'
       - 'methodologies/**'
+      - 'scripts/**'
+      - 'registry.json'
+      - 'scripts_manifest.json'
       - 'schemas/**'
       - 'tools/**'
   pull_request:
@@ -15,6 +18,9 @@ on:
     paths:
       - '.github/workflows/**'
       - 'methodologies/**'
+      - 'scripts/**'
+      - 'registry.json'
+      - 'scripts_manifest.json'
       - 'schemas/**'
       - 'tools/**'
 jobs:
@@ -55,5 +61,7 @@ jobs:
         run: node scripts/check-source-hash.js
       - name: Trio + registry integrity
         run: node scripts/check-trio-and-registry.js
+      - name: Registry scope guard
+        run: node scripts/check-registry-scope.mjs --scope-from-git
       - name: Supply-chain guard (pinning, no network installs)
         run: node scripts/check-workflows-supplychain.js
