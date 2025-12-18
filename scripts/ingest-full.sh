@@ -13,6 +13,9 @@ echo "[ingest-full] mode: ${MODE}"
 
 pushd "$REPO_ROOT" >/dev/null
 
+echo "[ingest-full] step: validate batches"
+node "${SCRIPT_DIR}/validate-batches.mjs"
+
 if [ -f "${SCRIPT_DIR}/ingest-online.js" ]; then
   echo "[ingest-full] step: ingest-online"
   node "${SCRIPT_DIR}/ingest-online.js" "$INGEST_YML" || true

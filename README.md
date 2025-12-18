@@ -31,6 +31,11 @@ See RULESET.md for conventions and CI guardrails.
 3. Commit the changes.
 4. CI validates JSON, schemas, and registry consistency.
 
+## Batch files (entrypoints-first)
+- In `batches/*.links.txt`, the first N links must be UNFCCC “DB/.../view.html” entrypoints (N = number of codes).
+- Any remaining links are treated as optional extra assets (tools PDFs, glossary, FileStorage attachments).
+- Run `npm run validate:batches` (and `scripts/ingest-full.sh` runs it automatically).
+
 ## Development Setup
 - The recommended environment is the Linux devcontainer defined in `.devcontainer/`.
 - Use VS Code’s “Reopen in Container” (or GitHub Codespaces) to get Node 20, poppler-utils, qpdf, jq, yq, git-lfs, and build-essential preinstalled.

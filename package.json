@@ -24,6 +24,7 @@
     "validate:json": "npm run validate:lean",
     "gate": "npm run gate:lfs && npm run validate:all",
     "validate:offline": "node scripts/validate-offline.js",
+    "validate:batches": "node scripts/validate-batches.mjs",
     "dataset:sections": "node scripts/gen-dataset.js section-retrieval",
     "eval:sections:bm25": "node scripts/baselines/bm25-retrieval.js datasets/section-retrieval/v1",
     "dataset:params": "node scripts/gen-dataset-params.js",
