@@ -28,7 +28,7 @@
     { "path": "scripts/compile-validators.js", "sha256": "0d6d8454097445711c1a0f974061f7f426522b8c1e1c0b61998cfa1c2237949b" },
     { "path": "scripts/derive-lean-from-rich.js", "sha256": "9cd033678a59ac80ee495489c7f4972f56a583b0058bf4be4fc208c1d90c1d85" },
     { "path": "scripts/derive-lean.sh", "sha256": "30dc23357fbdd0c442368d66bfefc3bfa70c4299fe573b62380fd616c846f14b" },
-    { "path": "scripts/derive-rules-rich.cjs", "sha256": "af4f8dedc0e8d657a4bd20409af02a947cac9818367cd48c1737a0481680d87a" },
+    { "path": "scripts/derive-rules-rich.cjs", "sha256": "5cff99159a7ffdc6fbd3bb6565795fad745859a283f2f5eca0da09608d791267" },
     { "path": "scripts/discover-unfccc.js", "sha256": "36f3280fff837546758be5c227fd7ce774c25494b5c06f31e52b129161793550" },
     { "path": "scripts/extract-sections-forestry.cjs", "sha256": "d5e6f15e512052587f610fd8b0997b4473f2f0b6b26bc18077040634328c0446" },
     { "path": "scripts/extract-sections.cjs", "sha256": "ba76d06271d1801a82f5ccb5f92c595d97ea2f0455793747c82f8e2275c700f9" },

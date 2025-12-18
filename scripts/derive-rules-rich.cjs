@@ -17,6 +17,32 @@ const KEYWORD_TYPES = [
 
 const repoRoot = path.resolve(__dirname, '..');
 
+function isValidRulesRichJson(rulesPath) {
+  if (!fs.existsSync(rulesPath)) return false;
+  try {
+    const raw = fs.readFileSync(rulesPath, 'utf8');
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed) || parsed.length < 1) return false;
+    const containsTodo = (value) => typeof value === 'string' && /todo/i.test(value);
+    const hasTodoDeep = (value) => {
+      if (containsTodo(value)) return true;
+      if (!value || typeof value !== 'object') return false;
+      if (Array.isArray(value)) return value.some((entry) => hasTodoDeep(entry));
+      return Object.values(value).some((entry) => hasTodoDeep(entry));
+    };
+    return !hasTodoDeep(parsed);
+  } catch {
+    return false;
+  }
+}
+
+function pdfPathForMethod(methodDir) {
+  const parts = path.relative(repoRoot, path.resolve(methodDir)).split(path.sep);
+  if (parts.length < 5 || parts[0] !== 'methodologies') return '';
+  const [, org, program, code, version] = parts;
+  return path.join(repoRoot, 'tools', org, program, code, version, 'source.pdf');
+}
+
 function normalizeWhitespace(str) {
   return str.replace(/\s+/g, ' ').trim();
 }
@@ -132,7 +158,31 @@ function loadSections(methodDir) {
   return Array.isArray(data.sections) ? data.sections : [];
 }
 
-function deriveRulesForMethod(methodDir, strictMode) {
+async function deriveRulesForMethod(methodDir, strictMode) {
+  const rulesPath = path.join(methodDir, 'rules.rich.json');
+  const hadValidRules = isValidRulesRichJson(rulesPath);
+
+  const { isUsablePdf } = await import('./pdf-preflight.mjs');
+  const pdfPath = pdfPathForMethod(methodDir);
+  if (!isUsablePdf(pdfPath)) {
+    if (hadValidRules) {
+      console.log('[rules-rich] source.pdf unusable; keeping existing rules.rich.json (skip-safe)');
+      return true;
+    }
+    const msg1 =
+      '[rules-rich] source.pdf unusable and no valid rules.rich.json to keep (missing/placeholder/LFS-pointer/empty).';
+    const msg2 =
+      '[rules-rich] cannot generate rules.rich.json; ensure git-lfs pulled the real PDF or add the source asset.';
+    if (strictMode) {
+      console.error(msg1);
+      console.error(msg2);
+      process.exit(2);
+    }
+    console.warn(msg1);
+    console.warn(msg2);
+    return false;
+  }
+
   const sections = loadSections(methodDir);
   const rules = [];
 
@@ -166,6 +216,10 @@ function deriveRulesForMethod(methodDir, strictMode) {
 
   if (!rules.length) {
     const message = `[rules-rich] ${path.relative(repoRoot, methodDir)} produced 0 rules`;
+    if (hadValidRules) {
+      console.log('[rules-rich] generated 0 rules; keeping existing rules.rich.json (skip-safe)');
+      return true;
+    }
     if (strictMode) throw new Error(message);
     console.warn(message);
     return false;
@@ -184,7 +238,7 @@ function collectTargets(args) {
   return args.map((arg) => path.resolve(arg));
 }
 
-function main() {
+async function main() {
   const args = process.argv.slice(2);
   const strict = args.length > 0;
   const targets = collectTargets(args);
@@ -196,19 +250,22 @@ function main() {
 
   let success = 0;
 
-  targets.forEach((dir) => {
+  for (const dir of targets) {
     try {
-      const processed = deriveRulesForMethod(dir, strict);
+      const processed = await deriveRulesForMethod(dir, strict);
       if (processed) success += 1;
     } catch (err) {
       console.error(`[rules-rich] ${err.message}`);
       if (strict) process.exit(2);
     }
-  });
+  }
 
   if (!strict) {
     console.log(`[rules-rich] derived rules for ${success} method(s)`);
   }
 }
 
-main();
+main().catch((err) => {
+  console.error(`[rules-rich] ${err.message}`);
+  process.exit(2);
+});
