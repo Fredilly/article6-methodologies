@@ -2,8 +2,19 @@ import fs from 'node:fs';
 
 export function isLfsPointer(filePath) {
   try {
-    const buf = fs.readFileSync(filePath, { encoding: 'utf8' });
-    return buf.startsWith('version https://git-lfs.github.com/spec/v1');
+    const fd = fs.openSync(filePath, 'r');
+    try {
+      const chunk = Buffer.alloc(256);
+      const bytes = fs.readSync(fd, chunk, 0, chunk.length, 0);
+      if (bytes <= 0) return false;
+      const firstLine = chunk
+        .subarray(0, bytes)
+        .toString('utf8')
+        .split('\n')[0];
+      return (firstLine || '').includes('git-lfs.github.com/spec/v1');
+    } finally {
+      fs.closeSync(fd);
+    }
   } catch {
     return false;
   }

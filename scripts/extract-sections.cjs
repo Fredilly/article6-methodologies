@@ -20,12 +20,13 @@ function isGoodSectionsJson(sectionsPath) {
     const sections = Array.isArray(parsed?.sections) ? parsed.sections : [];
     if (sections.length < 5) return false;
     const containsTodo = (value) => typeof value === 'string' && /todo/i.test(value);
-    return !sections.some(
-      (section) =>
-        containsTodo(section?.title) ||
-        containsTodo(section?.content) ||
-        containsTodo(section?.anchor),
-    );
+    const hasTodoDeep = (value) => {
+      if (containsTodo(value)) return true;
+      if (!value || typeof value !== 'object') return false;
+      if (Array.isArray(value)) return value.some((entry) => hasTodoDeep(entry));
+      return Object.values(value).some((entry) => hasTodoDeep(entry));
+    };
+    return !hasTodoDeep(parsed);
   } catch {
     return false;
   }
@@ -272,12 +273,11 @@ async function main() {
       if (!fs.existsSync(richPath) || fs.statSync(richPath).size === 0) {
         ensureSectionsRichFromLean(methodDir);
       }
-      console.log('[extract-sections] source.pdf not usable; leaving existing sections.json intact');
+      console.log('[extract-sections] source.pdf unusable; keeping existing sections.json (skip-safe)');
       return;
     }
-    console.error(
-      'source.pdf missing/placeholder/LFS pointer; cannot generate sections.json. Ensure git-lfs pulled real PDF or add source asset.',
-    );
+    console.error('[extract-sections] source.pdf unusable and no valid sections.json to keep (missing/placeholder/LFS-pointer/empty).');
+    console.error('[extract-sections] cannot generate sections.json; ensure git-lfs pulled the real PDF or add the source asset.');
     process.exit(2);
   }
 
@@ -300,9 +300,8 @@ async function main() {
       console.log('[extract-sections] extracted 0 text; leaving existing sections.json intact');
       return;
     }
-    console.error(
-      'source.pdf missing/placeholder/LFS pointer; cannot generate sections.json. Ensure git-lfs pulled real PDF or add source asset.',
-    );
+    console.error('[extract-sections] extracted 0 text and no valid sections.json to keep.');
+    console.error('[extract-sections] cannot generate sections.json; ensure git-lfs pulled the real PDF or add the source asset.');
     process.exit(2);
   }
 

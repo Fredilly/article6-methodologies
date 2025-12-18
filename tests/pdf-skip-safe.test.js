@@ -69,7 +69,7 @@ function main() {
   const result1 = runExtractor(tmpMethodDir, tmpPdf);
   assert.strictEqual(result1.status, 0, `expected status 0, got ${result1.status}\n${result1.stderr}`);
   assert.ok(
-    (result1.stdout || '').includes('leaving existing sections.json intact'),
+    (result1.stdout || '').includes('[extract-sections] source.pdf unusable; keeping existing sections.json (skip-safe)'),
     `expected skip-safe log, got:\n${result1.stdout}\n${result1.stderr}`,
   );
   const afterHash = sha256File(sectionsPath);
@@ -80,7 +80,7 @@ function main() {
   const result2 = runExtractor(tmpMethodDir, tmpPdf);
   assert.notStrictEqual(result2.status, 0, 'expected non-zero exit when sections.json missing');
   assert.ok(
-    `${result2.stdout}\n${result2.stderr}`.includes('cannot generate sections.json'),
+    `${result2.stdout}\n${result2.stderr}`.includes('no valid sections.json to keep'),
     `expected actionable error, got:\n${result2.stdout}\n${result2.stderr}`,
   );
 
