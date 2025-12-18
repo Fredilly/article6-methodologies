@@ -70,11 +70,11 @@ function parseYaml(yaml) {
       continue;
     }
     if (ln.startsWith('version:')) {
-      out.version = ln.split(':')[1].trim();
+      out.version = stripQuotes(ln.split(':')[1].trim());
       continue;
     }
     if (/^\s*-\s+id:/.test(ln)) {
-      const id = ln.replace(/^\s*-\s+id:\s*/, '').trim();
+      const id = stripQuotes(ln.replace(/^\s*-\s+id:\s*/, '').trim());
       cur = { id, include_text: [], exclude_text: [] };
       out.methods.push(cur);
       listKey = null;
@@ -175,6 +175,14 @@ export function canonicalPaths({ id = '', version = '' }) {
   return canonical;
 }
 
+export function parseIngestYaml(yamlText) {
+  return parseYaml(yamlText);
+}
+
+export function dumpIngestYaml(doc) {
+  return dumpYaml(doc);
+}
+
 function extractCode(id) {
   const parts = `${id || ''}`.split('.');
   if (parts.length <= 2) return parts[parts.length - 1] || '';
@@ -183,6 +191,37 @@ function extractCode(id) {
 
 function normalizeId(value) {
   return (value || '').trim().toUpperCase();
+}
+
+function programFromId(id) {
+  const parts = `${id || ''}`.split('.');
+  return parts.length >= 2 ? parts[1] : '';
+}
+
+function assertSectorMatchesId(method, label) {
+  const sector = `${method.sector || ''}`.trim();
+  if (!sector) return;
+  const program = programFromId(method.id);
+  if (!program) {
+    throw new Error(`[resolve-ingest] ${label}: unable to derive sector from id: ${method.id}`);
+  }
+  if (sector.toLowerCase() !== program.toLowerCase()) {
+    throw new Error(
+      `[resolve-ingest] ${label}: sector "${sector}" does not match id sector "${program}" (id=${method.id})`,
+    );
+  }
+}
+
+function assertMethodDirsExist(method, label) {
+  const version = `${method.version || ''}`.trim();
+  if (!version) throw new Error(`[resolve-ingest] ${label}: missing version for ${method.id}`);
+  const canonical = canonicalPaths({ id: method.id, version });
+  if (!fs.existsSync(canonical.methodologiesDir)) {
+    throw new Error(`[resolve-ingest] ${label}: missing methodologies dir: ${canonical.methodologiesDir}`);
+  }
+  if (!fs.existsSync(canonical.toolsDir)) {
+    throw new Error(`[resolve-ingest] ${label}: missing tools dir: ${canonical.toolsDir}`);
+  }
 }
 
 function parseIssueField(body, heading) {
@@ -293,6 +332,23 @@ async function main() {
 
   const full = parseYaml(fs.readFileSync(INGEST_IN, 'utf8'));
 
+  if (SRC === 'ingest') {
+    const scoped = { version: full.version, methods: full.methods };
+    const assertSector = (args['assert-sector'] || '').toString().toLowerCase() === 'true';
+    const assertExisting = (args['assert-existing'] || '').toString().toLowerCase() === 'true';
+    if (assertSector || assertExisting) {
+      scoped.methods.forEach((method, idx) => {
+        const label = `methods[${idx}]`;
+        if (assertSector) assertSectorMatchesId(method, label);
+        if (assertExisting) assertMethodDirsExist(method, label);
+      });
+    }
+    fs.writeFileSync(OUT, dumpYaml(scoped));
+    console.log(`[resolve-ingest] ingest source: ${scoped.methods.length} method(s) from ${path.relative(process.cwd(), INGEST_IN)}`);
+    console.log(`scope=${SRC} ids=(all) → ${OUT}`);
+    return;
+  }
+
   let ids = [];
   if (SRC === 'issue' && ISSUE) ids = await collectIdsFromIssue();
   else if (SRC === 'project' && PROJECT) ids = await collectIdsFromProject();
@@ -314,7 +370,17 @@ async function main() {
     }
   } else {
     scoped.methods = full.methods;
-    console.log('[resolve-ingest] no scoped ids detected; using full ingest.yml');
+    console.log(`[resolve-ingest] no scoped ids detected; using full ${path.relative(process.cwd(), INGEST_IN)}`);
+  }
+
+  const assertSector = (args['assert-sector'] || '').toString().toLowerCase() === 'true';
+  const assertExisting = (args['assert-existing'] || '').toString().toLowerCase() === 'true';
+  if (assertSector || assertExisting) {
+    scoped.methods.forEach((method, idx) => {
+      const label = `methods[${idx}]`;
+      if (assertSector) assertSectorMatchesId(method, label);
+      if (assertExisting) assertMethodDirsExist(method, label);
+    });
   }
 
   fs.writeFileSync(OUT, dumpYaml(scoped));
