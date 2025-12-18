@@ -21,6 +21,29 @@ function normalizeWhitespace(str) {
   return str.replace(/\s+/g, ' ').trim();
 }
 
+function containsTodo(value) {
+  return typeof value === 'string' && /todo/i.test(value);
+}
+
+function hasTodoDeep(value) {
+  if (containsTodo(value)) return true;
+  if (!value || typeof value !== 'object') return false;
+  if (Array.isArray(value)) return value.some((entry) => hasTodoDeep(entry));
+  return Object.values(value).some((entry) => hasTodoDeep(entry));
+}
+
+function isGoodRulesRichJson(rulesPath) {
+  if (!fs.existsSync(rulesPath)) return false;
+  try {
+    const raw = fs.readFileSync(rulesPath, 'utf8');
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed) || parsed.length < 1) return false;
+    return !hasTodoDeep(parsed);
+  } catch {
+    return false;
+  }
+}
+
 function summarize(text) {
   const clean = normalizeWhitespace(text);
   if (clean.length <= 240) return clean;
@@ -132,7 +155,26 @@ function loadSections(methodDir) {
   return Array.isArray(data.sections) ? data.sections : [];
 }
 
-function deriveRulesForMethod(methodDir, strictMode) {
+function deriveRulesForMethod(methodDir, strictMode, isUsablePdf) {
+  const dest = path.join(methodDir, 'rules.rich.json');
+  const existingGoodRules = isGoodRulesRichJson(dest);
+
+  if (strictMode) {
+    const pdfPath = path.join(methodDir, 'tools', 'source.pdf');
+    if (typeof isUsablePdf === 'function' && !isUsablePdf(pdfPath)) {
+      if (existingGoodRules) {
+        console.log('[rules-rich] source.pdf unusable; keeping existing rules.rich.json (skip-safe)');
+        return true;
+      }
+      throw new Error(
+        [
+          '[rules-rich] source.pdf unusable and no valid rules.rich.json to keep (missing/placeholder/TODO/empty).',
+          '[rules-rich] cannot derive rules.rich.json; ensure git-lfs pulled the real PDF or commit a valid rules.rich.json.',
+        ].join('\n'),
+      );
+    }
+  }
+
   const sections = loadSections(methodDir);
   const rules = [];
 
@@ -165,13 +207,24 @@ function deriveRulesForMethod(methodDir, strictMode) {
   });
 
   if (!rules.length) {
-    const message = `[rules-rich] ${path.relative(repoRoot, methodDir)} produced 0 rules`;
-    if (strictMode) throw new Error(message);
+    if (strictMode && existingGoodRules) {
+      console.log('[rules-rich] generated 0 rules; keeping existing rules.rich.json (skip-safe)');
+      return true;
+    }
+    const rel = path.relative(repoRoot, methodDir);
+    const message = `[rules-rich] ${rel} produced 0 rules`;
+    if (strictMode) {
+      throw new Error(
+        [
+          message,
+          '[rules-rich] strict mode requires at least 1 rule; update classifier inputs (sections.json) or provide a valid rules.rich.json.',
+        ].join('\n'),
+      );
+    }
     console.warn(message);
     return false;
   }
 
-  const dest = path.join(methodDir, 'rules.rich.json');
   fs.writeFileSync(dest, `${JSON.stringify(rules, null, 2)}\n`);
   console.log(`[rules-rich] wrote ${path.relative(repoRoot, dest)}`);
   return true;
@@ -184,7 +237,7 @@ function collectTargets(args) {
   return args.map((arg) => path.resolve(arg));
 }
 
-function main() {
+async function main() {
   const args = process.argv.slice(2);
   const strict = args.length > 0;
   const targets = collectTargets(args);
@@ -194,11 +247,18 @@ function main() {
     return;
   }
 
+  let isUsablePdf = null;
+  try {
+    ({ isUsablePdf } = await import('./pdf-preflight.mjs'));
+  } catch {
+    isUsablePdf = null;
+  }
+
   let success = 0;
 
   targets.forEach((dir) => {
     try {
-      const processed = deriveRulesForMethod(dir, strict);
+      const processed = deriveRulesForMethod(dir, strict, isUsablePdf);
       if (processed) success += 1;
     } catch (err) {
       console.error(`[rules-rich] ${err.message}`);

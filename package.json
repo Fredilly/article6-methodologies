@@ -45,7 +45,7 @@
     "ingest:scoped": "bash scripts/ingest-scoped.sh",
     "ingest:scoped:idempotent": "SCOPED_INGEST_RUNS=2 SCOPED_INGEST_ENFORCE_IDEMPOTENCY=1 bash scripts/ingest-scoped.sh",
     "ingest:scope:check": "node scripts/check-ingest-yml.mjs",
-    "test": "node tests/pdf-skip-safe.test.js",
+    "test": "node tests/run-tests.js",
     "test:agriculture-gold": "node tests/agriculture-gold-parity.test.js",
     "test:forestry-gold": "node tests/forestry-gold-parity.test.js",
     "test:paths": "bash scripts/check-ingest-paths.sh",
