@@ -47,3 +47,26 @@ Recommended tags: `pdf`, `determinism`, `schema`, `registry`, `paths`, `tools`, 
   - `tests/fixtures/forestry-gold/UNFCCC/Forestry/AR-AM0014/v03-0/tools/*` (primary exemplar).
   - Future Forestry/Agriculture methods with tools should follow the same pattern before being counted as gold exemplars.
 - RC-20251211-091139 | 2025-12-11 09:11:39 | Demo incident placeholder | docs/projects/phase-1-ingestion/root-causes/RC-20251211-091139.md
+
+### RC-2025-12-scope-drift-guard
+
+- **Name:** Out-of-scope churn during scoped ingest
+- **Date:** 2025-12-17
+- **Area:** registry / META / CI
+- **Symptom:**
+  - Agriculture ingest runs rewrote Forestry’s `methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/META.json` (source PDF SHA) and touched `registry.json`.
+  - `git diff --exit-code` failed during the scoped Agriculture PR even though Forestry was not part of the ingest request.
+- **Root cause:**
+  - Shared ingest generators recomputed Forestry artefacts when Agriculture inputs changed, but no guardrail compared the resulting diff against the ingest scope.
+  - Lacking a scoped ingest contract, CI let out-of-scope churn progress until the manual `git diff` gate tripped.
+- **New invariant:**
+  - Scoped ingest runs must not modify files outside the declared methodology/tool roots (except approved artefacts like `registry.json`), and we must fail as soon as `git diff` reveals out-of-scope paths.
+- **Spec update:**
+  - Phase 9 (“Sector Ingest Contract & Repo-wide Idempotency”) plus the Final CI checklist now require `npm run ingest:scoped:idempotent -- <ingest.yml>` and the scope drift gate.
+- **Code/tests:**
+  - Added `scripts/check-scope-drift.mjs`, `scripts/ingest-scoped.sh`, and the `npm run ingest:scoped(:idempotent)` commands.
+  - Stage-gates workflow now runs the scoped idempotency command for Agriculture to catch drift automatically.
+- **Golden fixtures touched:**
+  - Forestry exemplar `methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/*`.
+  - Agriculture ingest plan + fixtures (`ingest.agriculture.yml`, `methodologies/UNFCCC/Agriculture/**`).
+- RC-20251217-151121 | 2025-12-17 15:11:21 | Out-of-scope churn during scoped ingest | docs/projects/phase-1-ingestion/root-causes/RC-20251217-151121.md

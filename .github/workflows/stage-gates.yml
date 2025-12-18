@@ -35,6 +35,10 @@ jobs:
           node-version: '20.11.1'
           cache: 'npm'
       - run: npm ci || npm i
+      - name: Install ingest tools (jq/yq/pup)
+        run: bash scripts/setup/install-ingest-tools.sh
+      - name: Add local-tools to PATH
+        run: echo "$PWD/local-tools/bin" >> "$GITHUB_PATH"
       - run: npm run validate:rich
       - run: npm run validate:lean
       - run: node scripts/check-quality-gates.js ingest-quality-gates.yml
@@ -57,3 +61,30 @@ jobs:
         run: node scripts/check-trio-and-registry.js
       - name: Supply-chain guard (pinning, no network installs)
         run: node scripts/check-workflows-supplychain.js
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          clean: true
+          fetch-depth: 0
+          lfs: true
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '20.11.1'
+          cache: 'npm'
+      - name: Install Python 3, Ruby, and dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3 python3-pip ruby
+          python3 -m pip install pdfminer.six
+      - name: Install dependencies
+        run: npm ci
+      - name: Install ingest tools (jq/yq/pup)
+        run: bash scripts/setup/install-ingest-tools.sh
+      - name: Run scoped ingest idempotency checks (Agriculture, Forestry)
+        run: |
+          export PATH="$PWD/local-tools/bin:$PATH"
+          npm run ingest:scoped:idempotent -- ingest.agriculture.yml
+          npm run ingest:scoped:idempotent -- ingest.forestry.yml

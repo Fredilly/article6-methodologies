@@ -12,6 +12,46 @@ function usage() {
   process.exit(2);
 }
 
+function isGoodSectionsJson(sectionsPath) {
+  if (!fs.existsSync(sectionsPath)) return false;
+  try {
+    const raw = fs.readFileSync(sectionsPath, 'utf8');
+    const parsed = JSON.parse(raw);
+    const sections = Array.isArray(parsed?.sections) ? parsed.sections : [];
+    if (sections.length < 5) return false;
+    const containsTodo = (value) => typeof value === 'string' && /todo/i.test(value);
+    const hasTodoDeep = (value) => {
+      if (containsTodo(value)) return true;
+      if (!value || typeof value !== 'object') return false;
+      if (Array.isArray(value)) return value.some((entry) => hasTodoDeep(entry));
+      return Object.values(value).some((entry) => hasTodoDeep(entry));
+    };
+    return !hasTodoDeep(parsed);
+  } catch {
+    return false;
+  }
+}
+
+function ensureSectionsRichFromLean(methodDir) {
+  const sectionsPath = path.join(methodDir, 'sections.json');
+  const richPath = path.join(methodDir, 'sections.rich.json');
+  if (!fs.existsSync(sectionsPath)) return false;
+  try {
+    const lean = JSON.parse(fs.readFileSync(sectionsPath, 'utf8'));
+    const sections = Array.isArray(lean?.sections) ? lean.sections : [];
+    if (!sections.length) return false;
+    const rich = sections.map((section) => ({
+      id: section.id,
+      title: section.title,
+      anchor: section.anchor,
+    }));
+    fs.writeFileSync(richPath, `${JSON.stringify(rich, null, 2)}\n`);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 function sha256(filePath) {
   try {
     const buf = fs.readFileSync(filePath);
@@ -210,7 +250,7 @@ function extractText(pdfPath) {
   return extractWithPdfminer(pdfPath);
 }
 
-function main() {
+async function main() {
   const methodArg = process.argv[2];
   if (!methodArg) usage();
   const sourceOverride = process.argv[3];
@@ -222,24 +262,57 @@ function main() {
     sourceOverride && sourceOverride !== '-'
       ? path.resolve(sourceOverride)
       : path.join(repoRoot, 'tools', org, program, code, version, 'source.pdf');
-  if (!fs.existsSync(pdfPath)) {
-    throw new Error(`primary PDF missing for ${docRef} (${pdfPath})`);
-  }
-  const pdfStats = fs.statSync(pdfPath);
-  if (!pdfStats.isFile() || pdfStats.size === 0) {
-    throw new Error(`primary PDF empty for ${docRef} (${pdfPath})`);
+
+  const sectionsPath = path.join(methodDir, 'sections.json');
+  const existingGoodSections = isGoodSectionsJson(sectionsPath);
+
+  const { isUsablePdf } = await import('./pdf-preflight.mjs');
+  if (!isUsablePdf(pdfPath)) {
+    if (existingGoodSections) {
+      const richPath = path.join(methodDir, 'sections.rich.json');
+      if (!fs.existsSync(richPath) || fs.statSync(richPath).size === 0) {
+        ensureSectionsRichFromLean(methodDir);
+      }
+      console.log('[extract-sections] source.pdf unusable; keeping existing sections.json (skip-safe)');
+      return;
+    }
+    console.error('[extract-sections] source.pdf unusable and no valid sections.json to keep (missing/placeholder/LFS-pointer/empty).');
+    console.error('[extract-sections] cannot generate sections.json; ensure git-lfs pulled the real PDF or add the source asset.');
+    process.exit(2);
   }
 
   const pdfHash = sha256(pdfPath);
-  const text = extractText(pdfPath);
+  let text = '';
+  try {
+    text = extractText(pdfPath);
+  } catch (err) {
+    if (existingGoodSections) {
+      console.log('[extract-sections] source.pdf extraction failed; leaving existing sections.json intact');
+      return;
+    }
+    throw err;
+  }
+
   const textLength = text ? text.length : 0;
   console.log(`[sections] extracted text length ${textLength} for ${docRef}`);
   if (!text || !text.trim()) {
-    throw new Error(`pdftotext produced no content for ${docRef} (${pdfPath})`);
+    if (existingGoodSections) {
+      console.log('[extract-sections] extracted 0 text; leaving existing sections.json intact');
+      return;
+    }
+    console.error('[extract-sections] extracted 0 text and no valid sections.json to keep.');
+    console.error('[extract-sections] cannot generate sections.json; ensure git-lfs pulled the real PDF or add the source asset.');
+    process.exit(2);
   }
+
   const sections = parseSections(text);
   if (sections.length < 5) {
-    throw new Error(`extracted ${sections.length} sections for ${docRef}; require at least 5`);
+    if (existingGoodSections) {
+      console.log('[extract-sections] extracted <5 sections; leaving existing sections.json intact');
+      return;
+    }
+    console.error(`[extract-sections] extracted ${sections.length} sections; require at least 5`);
+    process.exit(2);
   }
 
   const anchorSet = new Set();
@@ -275,10 +348,8 @@ function main() {
 }
 
 if (require.main === module) {
-  try {
-    main();
-  } catch (err) {
+  main().catch((err) => {
     console.error(`[sections] ${err.message}`);
     process.exit(2);
-  }
+  });
 }
