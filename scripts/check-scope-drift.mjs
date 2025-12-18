@@ -2,7 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
-import { canonicalPaths } from './resolve-ingest-scope.mjs';
+import { canonicalPaths, parseIngestYaml } from './resolve-ingest-scope.mjs';
 
 function parseArgs(argv) {
   const out = { allow: [] };
@@ -27,38 +27,6 @@ function parseArgs(argv) {
     i += 1;
   }
   return out;
-}
-
-function stripQuotes(value) {
-  return value.replace(/^['"]/, '').replace(/['"]$/, '');
-}
-
-function parseIngestYaml(contents) {
-  const lines = contents.split(/\r?\n/);
-  const doc = { version: '', methods: [] };
-  let current = null;
-  for (const rawLine of lines) {
-    const line = rawLine.replace(/\r$/, '');
-    const trimmed = line.trim();
-    if (!trimmed || trimmed.startsWith('#')) continue;
-    if (trimmed.startsWith('version:')) {
-      const [, versionRaw = ''] = trimmed.split(':');
-      doc.version = stripQuotes(versionRaw.trim());
-      continue;
-    }
-    const methodMatch = line.match(/^\s*-\s+id:\s*(.+)$/);
-    if (methodMatch) {
-      current = { id: stripQuotes(methodMatch[1].trim()) };
-      doc.methods.push(current);
-      continue;
-    }
-    if (!current) continue;
-    const propMatch = line.match(/^\s+([A-Za-z0-9_]+):\s*(.+)?$/);
-    if (!propMatch) continue;
-    const [, key, rawValue = ''] = propMatch;
-    current[key] = stripQuotes(rawValue.trim());
-  }
-  return doc;
 }
 
 function globToRegExp(glob) {
@@ -126,22 +94,40 @@ function deriveScopeRoots(methods) {
   return Array.from(roots).filter(Boolean);
 }
 
-function runGitDiff() {
-  const result = spawnSync('git', ['diff', '--name-only'], { encoding: 'utf8' });
-  if (result.status !== 0) {
-    throw new Error(`git diff --name-only failed: ${result.stderr || result.stdout}`);
+function parseGitStatusPorcelainZ(porcelainZ) {
+  const tokens = (porcelainZ || '').split('\0').filter(Boolean);
+  const paths = [];
+  for (let i = 0; i < tokens.length; i += 1) {
+    const entry = tokens[i];
+    if (entry.length < 4) continue;
+    const status = entry.slice(0, 2);
+    const primaryPath = entry.slice(3);
+    if (primaryPath) paths.push(primaryPath);
+    const isRenameOrCopy = status.includes('R') || status.includes('C');
+    if (isRenameOrCopy) {
+      const secondaryPath = tokens[i + 1];
+      if (secondaryPath) paths.push(secondaryPath);
+      i += 1;
+    }
   }
-  return result.stdout
-    .split(/\r?\n/)
-    .map((line) => line.trim())
-    .filter(Boolean);
+  return Array.from(new Set(paths));
+}
+
+function runGitStatusPaths() {
+  const result = spawnSync('git', ['status', '--porcelain=v1', '-z'], { encoding: 'utf8' });
+  if (result.status !== 0) {
+    throw new Error(`git status --porcelain=v1 -z failed: ${result.stderr || result.stdout}`);
+  }
+  return parseGitStatusPorcelainZ(result.stdout);
 }
 
 function main() {
   const args = parseArgs(process.argv.slice(2));
   const ingestFile = args['ingest-yml'];
   if (!ingestFile) {
-    console.error('Usage: node scripts/check-scope-drift.mjs --ingest-yml <path> [--allow <path|glob> ...]');
+    console.error(
+      'Usage: node scripts/check-scope-drift.mjs --ingest-yml <path> [--allow <path|glob> ...] [--baseline-status <file>]',
+    );
     process.exit(1);
   }
   const ingestPath = path.resolve(process.cwd(), ingestFile);
@@ -160,9 +146,21 @@ function main() {
     process.exit(1);
   }
   const allowPatterns = normalizeAllowPatterns(args.allow);
-  const changes = runGitDiff();
+  const baselineStatusPath = args['baseline-status'];
+  const changesAll = runGitStatusPaths();
+  let changes = changesAll;
+  if (baselineStatusPath) {
+    const baselineAbs = path.resolve(process.cwd(), baselineStatusPath);
+    if (!fs.existsSync(baselineAbs)) {
+      console.error(`[scope-drift] baseline status file not found: ${baselineAbs}`);
+      process.exit(2);
+    }
+    const baselinePaths = parseGitStatusPorcelainZ(fs.readFileSync(baselineAbs, 'utf8'));
+    const baselineSet = new Set(baselinePaths.map((p) => p.replace(/\\/g, '/')));
+    changes = changesAll.filter((p) => !baselineSet.has(p.replace(/\\/g, '/')));
+  }
   if (!changes.length) {
-    console.log('[scope-drift] no changes detected by git diff');
+    console.log('[scope-drift] no changes detected by git status');
     return;
   }
   const offenders = changes.filter((filePath) => {

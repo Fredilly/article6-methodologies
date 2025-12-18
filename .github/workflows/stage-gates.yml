@@ -42,8 +42,6 @@ jobs:
       - run: npm run validate:rich
       - run: npm run validate:lean
       - run: node scripts/check-quality-gates.js ingest-quality-gates.yml
-      - name: Scoped ingest idempotency (Agriculture)
-        run: npm run ingest:scoped:idempotent -- ingest.agriculture.yml
       # jq not required; use Node-based checks only
       - name: Derive lean from rich (deterministic)
         run: |
@@ -85,7 +83,8 @@ jobs:
         run: npm ci
       - name: Install ingest tools (jq/yq/pup)
         run: bash scripts/setup/install-ingest-tools.sh
-      - name: Run scoped ingest idempotency check (Agriculture)
+      - name: Run scoped ingest idempotency checks (Agriculture, Forestry)
         run: |
           export PATH="$PWD/local-tools/bin:$PATH"
           npm run ingest:scoped:idempotent -- ingest.agriculture.yml
+          npm run ingest:scoped:idempotent -- ingest.forestry.yml
