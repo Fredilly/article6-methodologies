@@ -24,30 +24,81 @@ function uniqueSorted(items) {
   return Array.from(new Set(items)).sort();
 }
 
+function parseScopeFileJson(doc) {
+  if (Array.isArray(doc)) return doc;
+  if (doc && typeof doc === 'object' && Array.isArray(doc.methods)) return doc.methods;
+  throw new Error('[ingest-scope-paths] scope-file JSON must be an array or {methods:[...]}');
+}
+
+function parseScopeFileText(raw) {
+  return raw
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter((line) => line && !line.startsWith('#'))
+    .map((line) => {
+      const [id, version = ''] = line.split('@');
+      return { id: `${id || ''}`.trim(), version: `${version || ''}`.trim() };
+    });
+}
+
+function readScopeMethods({ ingestFile, scopeFile }) {
+  if (ingestFile && scopeFile) {
+    throw new Error('[ingest-scope-paths] provide only one of: --ingest-yml, --scope-file');
+  }
+  if (!ingestFile && !scopeFile) {
+    throw new Error('[ingest-scope-paths] missing --ingest-yml or --scope-file');
+  }
+
+  const input = ingestFile || scopeFile;
+  const inputPath = path.resolve(process.cwd(), input);
+  if (!fs.existsSync(inputPath)) {
+    throw new Error(`[ingest-scope-paths] scope file not found: ${input}`);
+  }
+
+  if (ingestFile || /\.(ya?ml)$/i.test(input)) {
+    const ingestDoc = parseIngestYaml(fs.readFileSync(inputPath, 'utf8'));
+    const methods = ingestDoc.methods || [];
+    if (!methods.length) {
+      throw new Error(`[ingest-scope-paths] no methods found in ${input}`);
+    }
+    return methods;
+  }
+
+  if (/\.json$/i.test(input)) {
+    const methods = parseScopeFileJson(JSON.parse(fs.readFileSync(inputPath, 'utf8')));
+    if (!methods.length) {
+      throw new Error(`[ingest-scope-paths] no methods found in ${input}`);
+    }
+    return methods;
+  }
+
+  const methods = parseScopeFileText(fs.readFileSync(inputPath, 'utf8'));
+  if (!methods.length) {
+    throw new Error(`[ingest-scope-paths] no methods found in ${input}`);
+  }
+  return methods;
+}
+
 function main() {
   const args = parseArgs(process.argv.slice(2));
   const ingestFile = args['ingest-yml'];
+  const scopeFile = args['scope-file'];
   const kind = (args.kind || 'methodologies-dirs').toString();
   const sep = args.sep === 'null' ? '' : (args.sep || '\n').toString();
 
-  if (!ingestFile) {
+  if (!ingestFile && !scopeFile) {
     console.error(
-      'Usage: node scripts/ingest-scope-paths.mjs --ingest-yml <path> --kind <methodologies-dirs|tools-dirs|methodologies-roots|tools-roots|meta-files> [--sep <sep>]',
+      'Usage: node scripts/ingest-scope-paths.mjs (--ingest-yml <path> | --scope-file <path>) --kind <methodologies-dirs|tools-dirs|methodologies-roots|tools-roots|meta-files> [--sep <sep>]',
     );
     process.exit(1);
   }
 
-  const ingestPath = path.resolve(process.cwd(), ingestFile);
-  if (!fs.existsSync(ingestPath)) {
-    console.error(`[ingest-scope-paths] ingest file not found: ${ingestPath}`);
+  let methods = [];
+  try {
+    methods = readScopeMethods({ ingestFile, scopeFile });
+  } catch (err) {
+    console.error(err?.message || String(err));
     process.exit(2);
-  }
-
-  const ingestDoc = parseIngestYaml(fs.readFileSync(ingestPath, 'utf8'));
-  const methods = ingestDoc.methods || [];
-  if (!methods.length) {
-    console.error(`[ingest-scope-paths] no methods found in ${ingestFile}`);
-    process.exit(3);
   }
 
   const methodDirs = [];
@@ -103,4 +154,3 @@ function main() {
 }
 
 main();
-

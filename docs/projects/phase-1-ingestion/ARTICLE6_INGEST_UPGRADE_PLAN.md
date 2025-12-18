@@ -184,8 +184,8 @@ MODE="${2:---offline}"
 node scripts/ingest-online.js "$INGEST_YML" || true
 bash scripts/ingest.sh "$INGEST_YML" "$MODE"
 node scripts/derive-lean-from-rich.js
-bash scripts/hash-all.sh
-node scripts/gen-registry.js
+bash scripts/hash-all.sh --ingest-yml "$INGEST_YML"
+node scripts/gen-registry.js --ingest-yml "$INGEST_YML"
 npm run validate:rich
 npm run validate:lean
 node scripts/check-quality-gates.js ingest-quality-gates.yml
@@ -338,10 +338,11 @@ Signed-off-by: Fred E <fredilly@article6.org>
 - Add the method config or update an existing sector config (`ingest.yml`, `ingest.<sector>.yml`).
 - Run `npm run ingest:full -- <sector-config>` twice; the second run must leave `git diff` empty.
 - Run `npm run validate:rich` and `npm run validate:lean`.
-- Run `bash scripts/hash-all.sh` and `node scripts/gen-registry.js`.
+- Run `bash scripts/hash-all.sh --ingest-yml <ingest.yml>` and `node scripts/gen-registry.js --ingest-yml <ingest.yml>` (scoped modes; full mode is still supported).
 - Run `node scripts/check-quality-gates.js ingest-quality-gates.yml`.
 - Update/add fixtures under `tests/fixtures/*-gold/` only via pipeline outputs (no hand edits).
 - If a new failure class is discovered, add a Root Cause entry via `node scripts/root-cause-new.cjs` and update invariants in this plan.
+- Scoped ingests (`npm run ingest:scoped:idempotent -- <ingest.yml>`) should not churn out-of-scope methods; `registry.json` may change, but only for in-scope codes (guarded by `scripts/check-registry-scope.mjs`).
 
 ### Root Cause Template
 
