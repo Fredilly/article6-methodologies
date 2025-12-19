@@ -141,4 +141,8 @@ if [ "$IDEMPOTENT" = "1" ]; then
     --baseline-status "$BASELINE_STATUS"
 fi
 
+if [ "${ARTICLE6_WORKSTATE:-0}" = "1" ]; then
+  node "${SCRIPT_DIR}/workstate-update.mjs" --task "ingest:scoped" --scope "$INGEST_YML"
+fi
+
 popd >/dev/null

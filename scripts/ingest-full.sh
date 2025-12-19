@@ -51,4 +51,8 @@ echo "[ingest-full] step: canonical-json"
 ./scripts/json-canonical-check.sh --fix
 ./scripts/json-canonical-check.sh
 
+if [ "${ARTICLE6_WORKSTATE:-0}" = "1" ]; then
+  node "${SCRIPT_DIR}/workstate-update.mjs" --task "ingest:full" --scope "$INGEST_YML"
+fi
+
 popd >/dev/null
