@@ -201,6 +201,11 @@ if ! [[ "$method_count" =~ ^[0-9]+$ ]]; then
   exit 1
 fi
 
+if [ "$method_count" -eq 0 ]; then
+  echo "[ingest] methods: 0 (nothing to do)"
+  exit 0
+fi
+
 if [ -n "${INGEST_METHOD_INDEX:-}" ]; then
   if ! [[ "$INGEST_METHOD_INDEX" =~ ^[0-9]+$ ]] || [ "$INGEST_METHOD_INDEX" -lt 0 ] || [ "$INGEST_METHOD_INDEX" -ge "$method_count" ]; then
     echo "[ingest] INGEST_METHOD_INDEX=$INGEST_METHOD_INDEX is out of range (0..$((method_count-1)))" >&2
