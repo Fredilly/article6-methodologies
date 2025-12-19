@@ -13,10 +13,10 @@ INGEST_YML="$1"
 RUNS="${SCOPED_INGEST_RUNS:-1}"
 IDEMPOTENT="${SCOPED_INGEST_ENFORCE_IDEMPOTENCY:-0}"
 
-SCOPED_YML="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.scoped.XXXXXX.yml")"
-BASELINE_STATUS="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.baseline.status.XXXXXX.z")"
-BASELINE_DIFF="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.baseline.diff.XXXXXX.patch")"
-BASELINE_CACHED_DIFF="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.baseline.cached.XXXXXX.patch")"
+SCOPED_YML="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.scoped.XXXXXX")"
+BASELINE_STATUS="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.baseline.status.XXXXXX")"
+BASELINE_DIFF="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.baseline.diff.XXXXXX")"
+BASELINE_CACHED_DIFF="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.baseline.cached.XXXXXX")"
 cleanup() { rm -f "$SCOPED_YML" "$BASELINE_STATUS" "$BASELINE_DIFF" "$BASELINE_CACHED_DIFF"; }
 trap cleanup EXIT
 
@@ -56,7 +56,10 @@ node "${SCRIPT_DIR}/resolve-ingest-scope.mjs" \
 
 for ((run=1; run<=RUNS; run++)); do
   echo "[ingest-scoped] run ${run}/${RUNS} ingest=${INGEST_YML}"
-  mapfile -t scoped_method_dirs < <(node "${SCRIPT_DIR}/ingest-scope-paths.mjs" --ingest-yml "$SCOPED_YML" --kind methodologies-dirs)
+  scoped_method_dirs=()
+  while IFS= read -r line; do
+    [ -n "$line" ] && scoped_method_dirs+=("$line")
+  done < <(node "${SCRIPT_DIR}/ingest-scope-paths.mjs" --ingest-yml "$SCOPED_YML" --kind methodologies-dirs)
 
   has_agriculture=0
   has_forestry=0
@@ -119,8 +122,8 @@ done
 
 if [ "$IDEMPOTENT" = "1" ]; then
   echo "[ingest-scoped] enforcing zero net diffs vs baseline"
-  tmp_diff="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.current.diff.XXXXXX.patch")"
-  tmp_cached="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.current.cached.XXXXXX.patch")"
+  tmp_diff="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.current.diff.XXXXXX")"
+  tmp_cached="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.current.cached.XXXXXX")"
   git diff > "$tmp_diff"
   git diff --cached > "$tmp_cached"
   if ! cmp -s "$BASELINE_DIFF" "$tmp_diff"; then
