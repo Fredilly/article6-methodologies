@@ -45,10 +45,10 @@
     { "path": "scripts/gen-sector-report.mjs", "sha256": "30e8b19020269c0be537b1f2d4571a34d494242200e0691e88718e11933d94c5" },
     { "path": "scripts/hash-all.sh", "sha256": "dfd55e897b17a19a51f4b7079873aa3504ad83db126708cebb5bbcfa4d0133ef" },
     { "path": "scripts/hash-scripts.sh", "sha256": "fd3a9f2e236f23c785012cfeb7210c19b5ebe182bab29d05472800598ad1694c" },
-    { "path": "scripts/ingest-full.sh", "sha256": "dd63d873d956e62247b5c9790f2fdf5240c84e46f1f8b9bead63254fbec991ea" },
+    { "path": "scripts/ingest-full.sh", "sha256": "1df1915f9715cb3d90c0f5f5c37305ab3faf9b2e53252d33c215f0e537f7c70b" },
     { "path": "scripts/ingest-sanity.sh", "sha256": "387bdadf8b5cc800c8425ac455ee6dc3585c94507cb04b75d8150e292917b71b" },
     { "path": "scripts/ingest-scope-paths.mjs", "sha256": "7ca4089e73cec012ac2078a6ca6f8440bcb22d08cfb4d40872440f806cda1feb" },
-    { "path": "scripts/ingest-scoped.sh", "sha256": "8b099c11c1f85efbcabb416a57962fe0c956797db10886cedbbf36fbd48dc9e4" },
+    { "path": "scripts/ingest-scoped.sh", "sha256": "b45a8ac15b02e2c8fbbd5e9357194f47d9b78793b7252c0af73af086eb62beb1" },
     { "path": "scripts/ingest-verify.sh", "sha256": "257acda700c5d64292507bc10e7ba0a9acb4f5533030852b3262a76b0f7315d0" },
     { "path": "scripts/ingest.sh", "sha256": "4b5793fa4f03206321c9008c2a6405e3d122bdb53cf43eb435f6f85c273eb87d" },
     { "path": "scripts/inject-anchors.js", "sha256": "0541bc16ebc87a2cb54c2b8b251e96d64512a6e8607ed70948195af4f6fc2953" },
@@ -83,6 +83,7 @@
     { "path": "scripts/run-ajv.sh", "sha256": "fa3e40b945144c9f8dda93f44f6c00f2e404475a3074a7bc5cf450a4e38ffe0f" },
     { "path": "scripts/scaffold-method.js", "sha256": "bac5757661dd49c2dc48ba3811170e98f7dc94acc5d28573614d72e54168204e" },
     { "path": "scripts/setup/install-ingest-tools.sh", "sha256": "96135bdbe7c18a69b0123039992817b8bf10723b71b4a7f6a2359f2b08115ae4" },
+    { "path": "scripts/status.mjs", "sha256": "548fed548813bf021d9b43792e1ee3055d5a29db94b8a94b855c1f506fe1c2d8" },
     { "path": "scripts/sync-agriculture-source-assets.sh", "sha256": "7c882a5047c83aad37d74ebee5c1b3a0497b94c1c8b67755319425d9accf53bc" },
     { "path": "scripts/sync-examples.sh", "sha256": "cfa456e1711d3fe873fa1bd19c54c38476815becd5e198efced4ff0d4dc3b728" },
     { "path": "scripts/update-ingest-plan.cjs", "sha256": "5c7407371bf63b19b0ac7b971dd0c79b6a287836e86ecd6dbf24f86cedb6ea3e" },
@@ -100,6 +101,7 @@
     { "path": "scripts/validators/sections.cjs", "sha256": "812eb20411226726a39cc64946de6089fda3ce81ef2c17ef169fb05f91dab4de" },
     { "path": "scripts/validators/sections.rich.cjs", "sha256": "311f33fa38931cf16aee7f61fe096a119c9df5159ece995d813821997712966a" },
     { "path": "scripts/verify-generation.sh", "sha256": "b469f61ae79a2aa9688d5a3a810813263954eb4226cae6accbaf058ddc5aa04c" },
+    { "path": "scripts/workstate-update.mjs", "sha256": "1ec1071e8be5d5d1cda67c6d27e608c05d4b55256e4ceb72fce61fa2f2d014df" },
     { "path": "scripts/write-previous-meta.cjs", "sha256": "8a6eb524c113b6f9e10566d06f161b4ef460050d3e7b2be0564fb32103323da0" }
   ]
 }
