@@ -1,10 +1,18 @@
-name: Ingest Forestry Batch
+name: Ingest Batch
 on:
   workflow_dispatch:
     inputs:
+      codes_file:
+        description: Path to batches/*.codes.txt (preferred; generates an ingest yml and runs scoped ingest)
+        required: false
+        default: ''
+      sector:
+        description: Optional override: Agriculture|Forestry (only used with codes_file)
+        required: false
+        default: ''
       ingest_file:
-        description: Path to ingest.yml consumed by scripts/ingest.sh
-        required: true
+        description: Path to ingest.yml consumed by scripts/ingest.sh (fallback if codes_file is empty)
+        required: false
         default: ingest.yml
 
 permissions:
@@ -49,16 +57,32 @@ jobs:
 
       - name: Run ingestion
         env:
+          CODES_FILE: ${{ github.event.inputs.codes_file }}
+          SECTOR: ${{ github.event.inputs.sector }}
           INGEST_FILE: ${{ github.event.inputs.ingest_file }}
         run: |
           set -euxo pipefail
           export PATH="$PWD/local-tools/bin:$PATH"
-          if [ ! -f "$INGEST_FILE" ]; then
-            echo "Missing $INGEST_FILE" >&2
-            exit 1
+          if [ -n "${CODES_FILE:-}" ]; then
+            if [ ! -f "$CODES_FILE" ]; then
+              echo "Missing codes file: $CODES_FILE" >&2
+              exit 1
+            fi
+            out=".tmp/ingest.batch.yml"
+            mkdir -p .tmp
+            extra=()
+            if [ -n "${SECTOR:-}" ]; then
+              extra+=(--sector "$SECTOR")
+            fi
+            npm run -s ingest:batch -- --codes "$CODES_FILE" --out "$out" "${extra[@]}" 2>&1 | tee ingest.log
+          else
+            if [ ! -f "$INGEST_FILE" ]; then
+              echo "Missing ingest file: $INGEST_FILE" >&2
+              exit 1
+            fi
+            chmod +x scripts/ingest.sh
+            ./scripts/ingest.sh 2>&1 | tee ingest.log
           fi
-          chmod +x scripts/ingest.sh
-          ./scripts/ingest.sh 2>&1 | tee ingest.log
       - name: Commit artefacts
         run: |
           git config user.name "github-actions[bot]"

@@ -160,7 +160,10 @@ function deriveRulesForMethod(methodDir, strictMode, isUsablePdf) {
   const existingGoodRules = isGoodRulesRichJson(dest);
 
   if (strictMode) {
-    const pdfPath = path.join(methodDir, 'tools', 'source.pdf');
+    const rel = path.relative(repoRoot, methodDir);
+    const relParts = rel.split(path.sep);
+    const toolsParts = relParts[0] === 'methodologies' ? ['tools', ...relParts.slice(1)] : [...relParts];
+    const pdfPath = path.join(repoRoot, ...toolsParts, 'source.pdf');
     if (typeof isUsablePdf === 'function' && !isUsablePdf(pdfPath)) {
       if (existingGoodRules) {
         console.log('[rules-rich] source.pdf unusable; keeping existing rules.rich.json (skip-safe)');

@@ -3,6 +3,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { pathToFileURL } = require('url');
 
 const REPO_ROOT = path.resolve(__dirname, '..');
 const CACHE_PATH = path.join(REPO_ROOT, 'codes', 'index', 'unfccc-cache.json');
@@ -21,7 +22,12 @@ function usage(message) {
       '  node scripts/discover-unfccc.js --codes <CODE...>',
       '  node scripts/discover-unfccc.js --codes-file <path>',
       '',
-      'Output: one URL per line (sorted, unique).',
+      'Emit (default):',
+      '  one URL per line (sorted, unique).',
+      '',
+      'Emit ingest-yml:',
+      '  node scripts/discover-unfccc.js --codes-file <path> --emit ingest-yml --out <path> [--sector Agriculture|Forestry]',
+      '',
     ].join('\n') + '\n',
   );
 }
@@ -72,7 +78,7 @@ function readCodesFromFile(filePath) {
 }
 
 function parseArgs(argv) {
-  const out = { codes: [], codesFile: null };
+  const out = { codes: [], codesFile: null, emit: 'urls', outPath: null, sector: null };
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === '--codes') {
@@ -82,6 +88,15 @@ function parseArgs(argv) {
       }
     } else if (arg === '--codes-file') {
       out.codesFile = argv[i + 1] || null;
+      i += 1;
+    } else if (arg === '--emit') {
+      out.emit = argv[i + 1] || null;
+      i += 1;
+    } else if (arg === '--out') {
+      out.outPath = argv[i + 1] || null;
+      i += 1;
+    } else if (arg === '--sector') {
+      out.sector = argv[i + 1] || null;
       i += 1;
     } else if (arg === '--help' || arg === '-h') {
       usage();
@@ -144,6 +159,24 @@ function toAbsoluteUrl(baseUrl, href) {
 
 function uniqueSorted(list) {
   return Array.from(new Set(list)).sort((a, b) => a.localeCompare(b));
+}
+
+function formatIngestVersion(versionNumber) {
+  const major = Number(versionNumber.major);
+  const minor = Number(versionNumber.minor);
+  if (!Number.isFinite(major) || major < 0) return null;
+  if (!Number.isFinite(minor) || minor < 0) return null;
+  const majorStr = major < 10 ? `0${major}` : String(major);
+  return `v${majorStr}-${minor}`;
+}
+
+function extractLatestVersionFromHtml(html) {
+  const text = String(html || '');
+  const m = text.match(/\bVersion\s+(\d+)(?:\.(\d+))?\b/i);
+  if (!m) return null;
+  const major = m[1];
+  const minor = m[2] || '0';
+  return formatIngestVersion({ major, minor });
 }
 
 async function fetchText(url) {
@@ -260,14 +293,70 @@ function extractToolUrls(html, baseUrl) {
   return uniqueSorted(urls);
 }
 
+function extractPrimaryPdfUrl(html, baseUrl, code) {
+  const anchors = extractAnchors(html);
+  const normalizedCode = normalizeCode(code);
+  const codeTokenUnderscore = normalizedCode ? normalizedCode.replace(/[^A-Z0-9]+/g, '_') : '';
+  const codeTokenFlat = normalizedCode ? normalizedCode.replace(/[^A-Z0-9]+/g, '') : '';
+
+  const candidates = [];
+  for (let i = 0; i < anchors.length; i += 1) {
+    const a = anchors[i];
+    const abs = toAbsoluteUrl(baseUrl, a.href);
+    if (!abs || !isToolPdfUrl(abs)) continue;
+    const urlLower = abs.toLowerCase();
+    const textLower = String(a.text || '').toLowerCase();
+
+    let score = 0;
+    if (urlLower.includes('/usermanagement/filestorage/')) score += 100;
+    if (urlLower.includes('/methodologies/documentation/')) score += 60;
+
+    if (codeTokenUnderscore) {
+      const tokenLower = codeTokenUnderscore.toLowerCase();
+      if (urlLower.includes(tokenLower)) score += 40;
+      if (textLower.includes(tokenLower)) score += 40;
+    }
+    if (codeTokenFlat) {
+      const tokenLower = codeTokenFlat.toLowerCase();
+      if (urlLower.includes(tokenLower)) score += 25;
+      if (textLower.includes(tokenLower)) score += 25;
+    }
+
+    if (textLower.includes('methodology')) score += 20;
+
+    if (urlLower.includes('/reference/')) score -= 80;
+    if (urlLower.includes('glos_cdm') || textLower.includes('glossary')) score -= 60;
+
+    candidates.push({ url: abs, score, order: i });
+  }
+
+  if (candidates.length === 0) return null;
+  candidates.sort((a, b) => b.score - a.score || a.order - b.order || a.url.localeCompare(b.url));
+  return candidates[0].url;
+}
+
+function inferSectorForCode(code) {
+  const c = normalizeCode(code);
+  if (!c) return 'Agriculture';
+  if (c.startsWith('AR')) return 'Forestry';
+  return 'Agriculture';
+}
+
 async function discoverForCode(code, cache) {
   const normalized = normalizeCode(code);
   if (!normalized) {
     return { ok: false, code, error: 'empty code' };
   }
 
-  if (cache.codes?.[normalized]?.resolved) {
-    return { ok: true, code: normalized, fromCache: true, data: cache.codes[normalized] };
+  const cached = cache.codes?.[normalized];
+  if (
+    cached &&
+    typeof cached.latest_version_page_url === 'string' &&
+    typeof cached.latest_version === 'string' &&
+    typeof cached.latest_primary_pdf_url === 'string' &&
+    !cached.latest_primary_pdf_url.includes('/Reference/Guidclarif/glos_CDM.pdf')
+  ) {
+    return { ok: true, code: normalized, fromCache: true, data: cached };
   }
 
   const methodUrl = resolveCodeToMethodPage(normalized, cache);
@@ -276,6 +365,14 @@ async function discoverForCode(code, cache) {
   }
 
   const latestHtml = await fetchText(methodUrl);
+  const latestVersion = extractLatestVersionFromHtml(latestHtml);
+  if (!latestVersion) {
+    return { ok: false, code: normalized, error: `unable to extract latest version from ${methodUrl}` };
+  }
+  const primaryPdfUrl = extractPrimaryPdfUrl(latestHtml, methodUrl, normalized);
+  if (!primaryPdfUrl) {
+    return { ok: false, code: normalized, error: `unable to extract primary PDF url from ${methodUrl}` };
+  }
   const versionUrls = uniqueSorted([methodUrl].concat(extractDbViewUrls(latestHtml, methodUrl)));
   const toolsByVersion = {};
   for (const versionUrl of versionUrls) {
@@ -287,6 +384,8 @@ async function discoverForCode(code, cache) {
 
   const resolved = {
     latest_version_page_url: methodUrl,
+    latest_version: latestVersion,
+    latest_primary_pdf_url: primaryPdfUrl,
     version_page_urls: versionUrls,
     tool_urls: allToolUrls,
   };
@@ -309,6 +408,26 @@ async function main() {
   }
 
   const uniqueCodes = uniqueSorted(codes);
+
+  const emit = String(args.emit || 'urls').trim().toLowerCase();
+  if (!emit) {
+    usage('Missing --emit value.');
+    process.exit(2);
+  }
+  if (emit !== 'urls' && emit !== 'ingest-yml') {
+    usage(`Unknown --emit value: ${args.emit}`);
+    process.exit(2);
+  }
+  if (emit === 'ingest-yml' && !args.outPath) {
+    usage('Missing required --out <path> when --emit ingest-yml.');
+    process.exit(2);
+  }
+
+  const forcedSector = args.sector ? String(args.sector).trim() : '';
+  if (forcedSector && forcedSector !== 'Agriculture' && forcedSector !== 'Forestry') {
+    usage(`Invalid --sector: ${forcedSector} (expected Agriculture|Forestry)`);
+    process.exit(2);
+  }
 
   let cache = readJsonIfExists(CACHE_PATH) || {};
   cache = { index_pages: cache.index_pages || {}, codes: cache.codes || {} };
@@ -337,7 +456,37 @@ async function main() {
     outUrls.push(...(entry.data.tool_urls || []));
   }
 
-  process.stdout.write(uniqueSorted(outUrls).join('\n') + '\n');
+  if (emit === 'ingest-yml') {
+    const dumpModule = await import(pathToFileURL(path.join(__dirname, 'resolve-ingest-scope.mjs')).toString());
+    const dumpIngestYaml = dumpModule.dumpIngestYaml;
+    if (typeof dumpIngestYaml !== 'function') {
+      process.stderr.write('[discover-unfccc] FATAL: dumpIngestYaml export missing from scripts/resolve-ingest-scope.mjs\n');
+      process.exit(2);
+    }
+
+    const methods = discovered
+      .slice()
+      .sort((a, b) => a.code.localeCompare(b.code))
+      .map((entry) => {
+        const sector = forcedSector || inferSectorForCode(entry.code);
+        return {
+          id: `UNFCCC.${sector}.${entry.code}`,
+          version: entry.data.latest_version,
+          sector,
+          source_page: entry.data.latest_version_page_url,
+          pdf_url: entry.data.latest_primary_pdf_url,
+        };
+      });
+
+    const doc = { version: 2, methods };
+    const outText = dumpIngestYaml(doc);
+    const outPath = path.resolve(process.cwd(), args.outPath);
+    ensureDir(path.dirname(outPath));
+    fs.writeFileSync(outPath, outText, 'utf8');
+    process.stdout.write(`${outText}`);
+  } else {
+    process.stdout.write(uniqueSorted(outUrls).join('\n') + '\n');
+  }
 
   const stableCache = {
     index_pages: cache.index_pages,
