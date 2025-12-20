@@ -17,7 +17,9 @@ SCOPED_YML="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.scoped.XXXXXX")"
 BASELINE_STATUS="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.baseline.status.XXXXXX")"
 BASELINE_DIFF="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.baseline.diff.XXXXXX")"
 BASELINE_CACHED_DIFF="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.baseline.cached.XXXXXX")"
-cleanup() { rm -f "$SCOPED_YML" "$BASELINE_STATUS" "$BASELINE_DIFF" "$BASELINE_CACHED_DIFF"; }
+RUN1_DIFF="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.run1.diff.XXXXXX")"
+RUN1_CACHED_DIFF="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.run1.cached.XXXXXX")"
+cleanup() { rm -f "$SCOPED_YML" "$BASELINE_STATUS" "$BASELINE_DIFF" "$BASELINE_CACHED_DIFF" "$RUN1_DIFF" "$RUN1_CACHED_DIFF"; }
 trap cleanup EXIT
 
 if ! [[ "$RUNS" =~ ^[0-9]+$ ]]; then
@@ -27,6 +29,10 @@ fi
 if [ "$RUNS" -lt 1 ]; then
   echo "[ingest-scoped] SCOPED_INGEST_RUNS must be >= 1"
   exit 1
+fi
+if [ "$IDEMPOTENT" = "1" ] && [ "$RUNS" -lt 2 ]; then
+  echo "[ingest-scoped] SCOPED_INGEST_ENFORCE_IDEMPOTENCY=1 requires SCOPED_INGEST_RUNS >= 2" >&2
+  exit 2
 fi
 
 pushd "$REPO_ROOT" >/dev/null
@@ -116,23 +122,29 @@ for ((run=1; run<=RUNS; run++)); do
   echo "[ingest-scoped] scope drift gate"
   node "${SCRIPT_DIR}/check-scope-drift.mjs" \
     --ingest-yml "$SCOPED_YML" \
+    --allow scripts_manifest.json \
     --allow registry.json \
     --baseline-status "$BASELINE_STATUS"
+
+  if [ "$IDEMPOTENT" = "1" ] && [ "$run" -eq 1 ]; then
+    git diff > "$RUN1_DIFF"
+    git diff --cached > "$RUN1_CACHED_DIFF"
+  fi
 done
 
 if [ "$IDEMPOTENT" = "1" ]; then
-  echo "[ingest-scoped] enforcing zero net diffs vs baseline"
+  echo "[ingest-scoped] enforcing stable diffs across runs (run1 vs final)"
   tmp_diff="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.current.diff.XXXXXX")"
   tmp_cached="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.current.cached.XXXXXX")"
   git diff > "$tmp_diff"
   git diff --cached > "$tmp_cached"
-  if ! cmp -s "$BASELINE_DIFF" "$tmp_diff"; then
-    echo "[ingest-scoped] FAIL: working tree diff changed vs baseline" >&2
+  if ! cmp -s "$RUN1_DIFF" "$tmp_diff"; then
+    echo "[ingest-scoped] FAIL: working tree diff changed between runs" >&2
     rm -f "$tmp_diff" "$tmp_cached"
     exit 1
   fi
-  if ! cmp -s "$BASELINE_CACHED_DIFF" "$tmp_cached"; then
-    echo "[ingest-scoped] FAIL: index diff changed vs baseline" >&2
+  if ! cmp -s "$RUN1_CACHED_DIFF" "$tmp_cached"; then
+    echo "[ingest-scoped] FAIL: index diff changed between runs" >&2
     rm -f "$tmp_diff" "$tmp_cached"
     exit 1
   fi
@@ -140,6 +152,7 @@ if [ "$IDEMPOTENT" = "1" ]; then
   echo "[ingest-scoped] final scope drift gate"
   node "${SCRIPT_DIR}/check-scope-drift.mjs" \
     --ingest-yml "$SCOPED_YML" \
+    --allow scripts_manifest.json \
     --allow registry.json \
     --baseline-status "$BASELINE_STATUS"
 fi

@@ -14,6 +14,10 @@ Keep ledger updates in sync with the invariants captured inside `ARTICLE6_INGEST
 - `npm run root-cause:open` — open the ledger in read-only mode to review prior incidents.
 - `npm run root-cause:new "[short title]"` — create a timestamped RC scaffold under `docs/projects/phase-1-ingestion/root-causes/`, append a pointer to the ledger, and print the new file path for immediate editing.
 
+## Ingest a batch
+
+`npm run ingest:batch -- --codes batches/agri-ams-iii.codes.txt --out ingest.agri-ams-iii.yml`
+
 ### Sector naming
 
 The internal sector code `forestry` (used in folder names like

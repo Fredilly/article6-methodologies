@@ -133,6 +133,7 @@ function dumpYaml(doc) {
     if (m.version) lines.push(`    version: ${m.version}`);
     if (m.sector) lines.push(`    sector: ${m.sector}`);
     if (m.source_page) lines.push(`    source_page: ${quote(m.source_page)}`);
+    if (m.pdf_url) lines.push(`    pdf_url: ${quote(m.pdf_url)}`);
     if (m.include_text?.length) {
       lines.push('    include_text:');
       for (const t of m.include_text) lines.push(`      - ${quote(t)}`);

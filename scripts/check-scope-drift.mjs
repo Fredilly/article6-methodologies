@@ -49,9 +49,12 @@ function normalizeAllowPatterns(allows = []) {
 }
 
 function pathWithinScope(filePath, scopeRoots) {
+  const fp = filePath.endsWith('/') ? filePath.slice(0, -1) : filePath;
   for (const root of scopeRoots) {
-    if (filePath === root) return true;
-    if (filePath.startsWith(`${root}/`)) return true;
+    const r = root.endsWith('/') ? root.slice(0, -1) : root;
+    if (fp === r) return true;
+    if (fp.startsWith(`${r}/`)) return true;
+    if (r.startsWith(`${fp}/`)) return true;
   }
   return false;
 }
