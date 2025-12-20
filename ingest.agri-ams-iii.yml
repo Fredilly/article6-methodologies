@@ -1,0 +1,27 @@
+version: 2
+methods:
+  - id: UNFCCC.Agriculture.AMS-III.A
+    version: v03-0
+    sector: Agriculture
+    source_page: "https://cdm.unfccc.int/methodologies/DB/5G3VVUHIXHA0OYIBYJKX7JV02LEUHH/view.html"
+    pdf_url: "https://cdm.unfccc.int/UserManagement/FileStorage/Q4SB65F3LMR9VPEIG7CDHYZA08TW1X"
+  - id: UNFCCC.Agriculture.AMS-III.AU
+    version: v04-0
+    sector: Agriculture
+    source_page: "https://cdm.unfccc.int/methodologies/DB/D14KAKRJEW4OTHEA4YJICOHM26M6BM/view.html"
+    pdf_url: "https://cdm.unfccc.int/UserManagement/FileStorage/5IP163JN4RKG2D0XOQZS9T7W8MEYAC"
+  - id: UNFCCC.Agriculture.AMS-III.BE
+    version: v01-0
+    sector: Agriculture
+    source_page: "https://cdm.unfccc.int/methodologies/DB/EO0133GH79SZ4W9DNZK3E34ZTABRRD/view.html"
+    pdf_url: "https://cdm.unfccc.int/UserManagement/FileStorage/CDM_AMSDWI7T2VXSH7VX54BCDP2SOZNTKD8U3"
+  - id: UNFCCC.Agriculture.AMS-III.BF
+    version: v02-0
+    sector: Agriculture
+    source_page: "https://cdm.unfccc.int/methodologies/DB/OTVXR8XN35SRHTBO426YXJ140MTKXZ/view.html"
+    pdf_url: "https://cdm.unfccc.int/UserManagement/FileStorage/UNPYOV5B6ECR9SD2MT1QFI7KA48GJX"
+  - id: UNFCCC.Agriculture.AMS-III.BK
+    version: v02-0
+    sector: Agriculture
+    source_page: "https://cdm.unfccc.int/methodologies/DB/V2AIKU3OM6H40CHX1QKYDLPE1CXTO5/view.html"
+    pdf_url: "https://cdm.unfccc.int/UserManagement/FileStorage/4QTOV5S6YDAKIFNU3RPL97E0GMWBH2"

@@ -92,6 +92,76 @@
     }
   },
   {
+    "kind": "active",
+    "standard": "UNFCCC",
+    "program": "Agriculture",
+    "code": "AMS-III.A",
+    "version": "03.0",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.A/v03-0",
+    "stage": "staging",
+    "latest": true,
+    "source_pdf": {
+      "path": "tools/UNFCCC/Agriculture/AMS-III.A/v03-0/source.pdf",
+      "sha256": "2f54401790b35a616ddac72452cd81f250fa2070d72514b4490429598bc11c15"
+    }
+  },
+  {
+    "kind": "active",
+    "standard": "UNFCCC",
+    "program": "Agriculture",
+    "code": "AMS-III.AU",
+    "version": "04.0",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.AU/v04-0",
+    "stage": "staging",
+    "latest": true,
+    "source_pdf": {
+      "path": "tools/UNFCCC/Agriculture/AMS-III.AU/v04-0/source.pdf",
+      "sha256": "7b6e3669218211f95faf34dd85a1de9bbc5bf356b60e124da596405beed0a160"
+    }
+  },
+  {
+    "kind": "active",
+    "standard": "UNFCCC",
+    "program": "Agriculture",
+    "code": "AMS-III.BE",
+    "version": "01.0",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BE/v01-0",
+    "stage": "staging",
+    "latest": true,
+    "source_pdf": {
+      "path": "tools/UNFCCC/Agriculture/AMS-III.BE/v01-0/source.pdf",
+      "sha256": "9aefd048a7d6380f2ddb1aa646fd4cef6303ea9d79abdb16cb35612687deb1ed"
+    }
+  },
+  {
+    "kind": "active",
+    "standard": "UNFCCC",
+    "program": "Agriculture",
+    "code": "AMS-III.BF",
+    "version": "02.0",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BF/v02-0",
+    "stage": "staging",
+    "latest": true,
+    "source_pdf": {
+      "path": "tools/UNFCCC/Agriculture/AMS-III.BF/v02-0/source.pdf",
+      "sha256": "69d15565628ffd0d9084548f6b797ba65a0a743c0de70bcb8f940a682d681005"
+    }
+  },
+  {
+    "kind": "active",
+    "standard": "UNFCCC",
+    "program": "Agriculture",
+    "code": "AMS-III.BK",
+    "version": "02.0",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BK/v02-0",
+    "stage": "staging",
+    "latest": true,
+    "source_pdf": {
+      "path": "tools/UNFCCC/Agriculture/AMS-III.BK/v02-0/source.pdf",
+      "sha256": "bdcb4309350656fbc307453144fd111f4ab3bf8edf09d1a7860e7b8906118673"
+    }
+  },
+  {
     "kind": "previous",
     "standard": "UNFCCC",
     "program": "Agriculture",

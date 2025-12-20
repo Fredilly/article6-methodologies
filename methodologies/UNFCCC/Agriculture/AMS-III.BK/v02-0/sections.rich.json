@@ -1,0 +1,42 @@
+[
+  {
+    "id": "S-1",
+    "provenance": {
+      "source_hash": "bdcb4309350656fbc307453144fd111f4ab3bf8edf09d1a7860e7b8906118673",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Scope and applicability"
+  },
+  {
+    "id": "S-2",
+    "provenance": {
+      "source_hash": "bdcb4309350656fbc307453144fd111f4ab3bf8edf09d1a7860e7b8906118673",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Baseline scenario and additionality"
+  },
+  {
+    "id": "S-3",
+    "provenance": {
+      "source_hash": "bdcb4309350656fbc307453144fd111f4ab3bf8edf09d1a7860e7b8906118673",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Project boundary and emission reductions"
+  },
+  {
+    "id": "S-4",
+    "provenance": {
+      "source_hash": "bdcb4309350656fbc307453144fd111f4ab3bf8edf09d1a7860e7b8906118673",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Leakage and residue management"
+  },
+  {
+    "id": "S-5",
+    "provenance": {
+      "source_hash": "bdcb4309350656fbc307453144fd111f4ab3bf8edf09d1a7860e7b8906118673",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Monitoring, QA/QC, and reporting"
+  }
+]
