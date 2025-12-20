@@ -1,0 +1,47 @@
+{
+  "audit": {
+    "created_at": "2025-12-20T23:13:12.744Z",
+    "created_by": "ingest.sh"
+  },
+  "audit_hashes": {
+    "rules_json_sha256": "60d24f79400a6a4fb1a8be1e71f2e55cfabce35945962d380c2a5ceeb863bb54",
+    "sections_json_sha256": "2fb333bddd764f612d2adca1b616328e10329205acea1fa6a966d4ce5e6f9f13",
+    "source_pdf_sha256": "2f54401790b35a616ddac72452cd81f250fa2070d72514b4490429598bc11c15"
+  },
+  "automation": {
+    "scripts_manifest_sha256": "793dfb8e2e05c9d8b32edbc72b5560b2ff65530d8827dd192d07810091de4fac"
+  },
+  "provenance": {
+    "author": "Fred Egbuedike",
+    "date": "2025-12-20T23:13:12.744Z",
+    "source_pdfs": [
+      {
+        "doc": "UNFCCC/AMS-III.A@v03-0",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Agriculture/AMS-III.A/v03-0/source.pdf",
+        "sha256": "2f54401790b35a616ddac72452cd81f250fa2070d72514b4490429598bc11c15",
+        "size": 423754
+      }
+    ]
+  },
+  "references": {
+    "tools": [
+      {
+        "doc": "UNFCCC/AMS-III.A@v03.0#glos-CDM",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Agriculture/AMS-III.A/v03-0/glos_CDM.pdf",
+        "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c",
+        "size": 277555,
+        "url": null
+      },
+      {
+        "doc": "UNFCCC/AMS-III.A@v03-0",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Agriculture/AMS-III.A/v03-0/source.pdf",
+        "sha256": "2f54401790b35a616ddac72452cd81f250fa2070d72514b4490429598bc11c15",
+        "size": 423754,
+        "url": null
+      }
+    ]
+  }
+}
