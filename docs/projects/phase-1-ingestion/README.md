@@ -12,7 +12,7 @@ Keep ledger updates in sync with the invariants captured inside `ARTICLE6_INGEST
 `ROOT_CAUSE.md` holds the full incident history, and `ARTICLE6_INGEST_UPGRADE_PLAN.md` is the source of truth for ingest invariants.
 
 - `npm run root-cause:open` — open the ledger in read-only mode to review prior incidents.
-- `npm run root-cause:new "[short title]"` — create a timestamped RC scaffold under `docs/projects/phase-1-ingestion/root-causes/`, append a pointer to the ledger, and print the new file path for immediate editing.
+- `npm run root-cause:new -- --title "[short title]"` — create a timestamped RC entry under `docs/projects/phase-1-ingestion/root-causes/` and print the new file path.
 
 ## Ingest a batch
 
