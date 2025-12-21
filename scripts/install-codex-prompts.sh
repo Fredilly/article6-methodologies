@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-SRC_DIR="$ROOT/tools/codex-prompts"
+SRC_DIR="$ROOT/docs/projects/phase-1-ingestion/codex-prompts"
 DST_DIR="${HOME}/.codex/prompts"
 
 mkdir -p "$DST_DIR"
@@ -22,4 +22,3 @@ for src in "${prompts[@]}"; do
 done
 
 echo "[codex-prompts] installed ${#prompts[@]} prompt(s) to $DST_DIR"
-
