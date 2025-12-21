@@ -2,22 +2,21 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-SELF_REL="scripts/check-root-cause-index-path.sh"
 
 search_repo() {
   local needle="$1"
   if command -v rg >/dev/null 2>&1; then
-    rg -n --fixed-strings "$needle" "$ROOT" --glob "!$SELF_REL"
+    rg -n --fixed-strings "$needle" "$ROOT"
     return
   fi
 
   if command -v git >/dev/null 2>&1 && git -C "$ROOT" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-    git -C "$ROOT" grep -n -F "$needle" -- . ":!$SELF_REL"
+    git -C "$ROOT" grep -n -F "$needle" -- .
     return
   fi
 
   # Portable fallback for environments without rg/git.
-  grep -R -n -F --exclude="$(basename "$SELF_REL")" "$needle" "$ROOT"
+  grep -R -n -F "$needle" "$ROOT"
 }
 
 search_file_fixed() {
@@ -30,10 +29,13 @@ search_file_fixed() {
   fi
 }
 
-if search_repo 'docs/ROOT_CAUSE_INDEX.md' >/dev/null; then
-  echo "[root-cause:index-path] FAIL: found stale reference to docs/ROOT_CAUSE_INDEX.md" >&2
+STALE_PREFIX="docs/ROOT_CAUSE_INDEX"
+STALE_SUFFIX=".md"
+STALE="${STALE_PREFIX}${STALE_SUFFIX}"
+if search_repo "$STALE" >/dev/null; then
+  echo "[root-cause:index-path] FAIL: found stale reference to ${STALE}" >&2
   echo "[root-cause:index-path] Hint: use docs/projects/phase-1-ingestion/ROOT_CAUSE_INDEX.md" >&2
-  search_repo 'docs/ROOT_CAUSE_INDEX.md' >&2 || true
+  search_repo "$STALE" >&2 || true
   exit 1
 fi
 
