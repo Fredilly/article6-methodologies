@@ -41,7 +41,7 @@
     { "path": "scripts/gen-method.sh", "sha256": "768efba1930eaca72cf134c950f49fc79d648deb2354cb974fab643a5fe9198b" },
     { "path": "scripts/gen-methods-status.mjs", "sha256": "8ca31159bc1a65a0fd9e3ee76a8df6341b2ae3e0184790bd9875cbda9e4b5c55" },
     { "path": "scripts/gen-registry.js", "sha256": "a5c0c42a4937232707ed4e602d6f2eb10c4dd61340b5d0e45faedb8440486b6b" },
-    { "path": "scripts/gen-root-cause-index.mjs", "sha256": "f5153e66a2181919bd226d30dfc858450e4c288e6295d78478100646ec74cfa6" },
+    { "path": "scripts/gen-root-cause-index.mjs", "sha256": "8d62fdc4f8358193d9fc92386755c6e29fbbe3889d9becc1f7fb2fa86f33fb6b" },
     { "path": "scripts/gen-sector-report.mjs", "sha256": "30e8b19020269c0be537b1f2d4571a34d494242200e0691e88718e11933d94c5" },
     { "path": "scripts/hash-all.sh", "sha256": "dfd55e897b17a19a51f4b7079873aa3504ad83db126708cebb5bbcfa4d0133ef" },
     { "path": "scripts/hash-scripts.sh", "sha256": "fd3a9f2e236f23c785012cfeb7210c19b5ebe182bab29d05472800598ad1694c" },
