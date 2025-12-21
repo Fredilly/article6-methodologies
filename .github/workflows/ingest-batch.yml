@@ -7,7 +7,7 @@ on:
         required: false
         default: ''
       sector:
-        description: Optional override: Agriculture|Forestry (only used with codes_file)
+        description: "Optional override: Agriculture|Forestry (only used with codes_file)"
         required: false
         default: ''
       ingest_file:
