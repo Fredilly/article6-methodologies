@@ -22,5 +22,28 @@ Recommended tags: `pdf`, `determinism`, `schema`, `registry`, `paths`, `tools`, 
 
 ## Where to look
 
-- See `docs/ROOT_CAUSE_INDEX.md` for the generated list of incidents.
+- See `docs/projects/phase-1-ingestion/ROOT_CAUSE_INDEX.md` for the generated list of incidents.
 - Full entries live in `docs/projects/phase-1-ingestion/root-causes/`.
+
+## RC Entry Template
+
+```md
+# RC-YYYYMMDD-HHMMSS — <short title>
+- Date:
+- Area:
+- Tags: [ ... ]   (optional)
+
+## Symptom
+## Impact
+## Root cause
+## Fix
+## New invariants / guardrails
+## Proof / tests
+## Follow-ups
+```
+
+## Quick Commands
+
+- Create entry: `npm run root-cause:new`
+- Regenerate index: `npm run root-cause:index`
+- Sanity: `npm run validate:json`

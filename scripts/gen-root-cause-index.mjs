@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ROOT_CAUSE_ENTRIES_DIR = path.join(REPO_ROOT, 'docs', 'projects', 'phase-1-ingestion', 'root-causes');
+const OUTPUT_PATH = path.join(REPO_ROOT, 'docs', 'projects', 'phase-1-ingestion', 'ROOT_CAUSE_INDEX.md');
 
 function readText(filePath) {
   return fs.readFileSync(filePath, 'utf8');
@@ -70,13 +71,7 @@ function buildEntries() {
   const files = listEntryFiles();
   return files.map((fileName) => {
     const rcId = path.basename(fileName, '.md');
-    const relPath = path.posix.join(
-      'docs',
-      'projects',
-      'phase-1-ingestion',
-      'root-causes',
-      fileName,
-    );
+    const relPath = path.posix.join('root-causes', fileName);
     const filePath = path.join(ROOT_CAUSE_ENTRIES_DIR, fileName);
     const markdown = readText(filePath);
     const lines = markdown.split('\n');
@@ -101,11 +96,6 @@ function buildIndex(entries) {
   return out;
 }
 
-const docsDir = path.join(REPO_ROOT, 'docs');
-const outputPath = fs.existsSync(docsDir)
-  ? path.join(docsDir, 'ROOT_CAUSE_INDEX.md')
-  : path.join(REPO_ROOT, 'ROOT_CAUSE_INDEX.md');
-
 const entries = buildEntries();
 const index = buildIndex(entries);
-writeText(outputPath, index);
+writeText(OUTPUT_PATH, index);
