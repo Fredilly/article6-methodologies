@@ -20,10 +20,7 @@ Each entry may include a line:
 
 Recommended tags: `pdf`, `determinism`, `schema`, `registry`, `paths`, `tools`, `agriculture`, `forestry`, `ci`.
 
-## Root Cause Index
+## Where to look
 
-Full writeups live in `docs/projects/phase-1-ingestion/root-causes/`. This file is a scannable ledger of entries.
-
-- RC-2025-12-AR-AM0014-tool-parity | 2025-12-10 00:00:00 | AR-AM0014 tool ref mismatch (registry/tools/fixtures) | docs/projects/phase-1-ingestion/root-causes/RC-20251210-000000.md
-- RC-20251221-120000 | 2025-12-21 12:00:00 | Batch ingest missing first-class batch→scope entrypoint | docs/projects/phase-1-ingestion/root-causes/RC-20251221-120000.md
-- RC-20251221-120500 | 2025-12-21 12:05:00 | Scoped ingest portability failure (macOS mktemp/mapfile bashisms) | docs/projects/phase-1-ingestion/root-causes/RC-20251221-120500.md
+- See `docs/ROOT_CAUSE_INDEX.md` for the generated list of incidents.
+- Full entries live in `docs/projects/phase-1-ingestion/root-causes/`.
