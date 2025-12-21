@@ -28,7 +28,7 @@ function listEntryFiles() {
 
 function parseTags(lines) {
   for (const line of lines) {
-    const tagLine = line.match(/^\s*-\s*Tags:\s*\[(.*)\]\s*$/);
+    const tagLine = line.match(/^\s*(?:-\s*)?Tags:\s*\[(.*)\]\s*$/);
     if (!tagLine) continue;
     const raw = tagLine[1].trim();
     return raw
@@ -43,7 +43,7 @@ function parseTags(lines) {
 
 function parseDate(lines, rcId) {
   for (const line of lines) {
-    const match = line.match(/^\s*-\s*\*\*Date:\*\*\s*(.+?)\s*$/);
+    const match = line.match(/^\s*-\s*(?:\*\*Date:\*\*|Date:)\s*(.+?)\s*$/);
     if (match) return match[1].trim();
   }
   const ts = rcId.match(/^RC-(\d{4})(\d{2})(\d{2})-\d{6}$/);
@@ -60,8 +60,11 @@ function parseTitle(lines, rcId) {
     const h1 = line.match(/^#\s+(.*)$/);
     if (!h1) continue;
     const raw = h1[1].trim();
-    const parts = raw.split(' - ');
-    if (parts.length >= 2 && parts[0].trim() === rcId) return parts.slice(1).join(' - ').trim();
+    const separators = [' — ', ' – ', ' - '];
+    for (const sep of separators) {
+      const parts = raw.split(sep);
+      if (parts.length >= 2 && parts[0].trim() === rcId) return parts.slice(1).join(sep).trim();
+    }
     return raw;
   }
   return '';

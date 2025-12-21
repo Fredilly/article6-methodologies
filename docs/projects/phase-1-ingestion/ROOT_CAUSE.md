@@ -31,7 +31,7 @@ Recommended tags: `pdf`, `determinism`, `schema`, `registry`, `paths`, `tools`, 
 # RC-YYYYMMDD-HHMMSS — <short title>
 - Date:
 - Area:
-- Tags: [ ... ]   (optional)
+Tags: [ ... ]   (optional)
 
 ## Symptom
 ## Impact
@@ -44,6 +44,7 @@ Recommended tags: `pdf`, `determinism`, `schema`, `registry`, `paths`, `tools`, 
 
 ## Quick Commands
 
-- Create entry: `npm run root-cause:new`
+- Create entry (one-shot): `npm run root-cause:new -- --title "Registry scope drift" --area "registry" --tags "registry, ci" --symptom "CI failed with: ... " --root-cause "We used ... " --fix "Pin ... " --proof "npm run validate:json" --follow-ups "- [ ] Add regression test"`
 - Regenerate index: `npm run root-cause:index`
+- Dev smoke check (creates + cleans up): `node scripts/smoke-root-cause-new.mjs`
 - Sanity: `npm run validate:json`
