@@ -19,7 +19,7 @@
     "compile:all": "node scripts/compile-audit.js",
     "gate:lfs": "bash scripts/gate-lfs.sh",
     "validate:rich": "./scripts/run-ajv.sh validate -s schemas/sections.rich.schema.json -d 'methodologies/**/sections.rich.json' && ./scripts/run-ajv.sh validate -s schemas/rules.rich.schema.json -d 'methodologies/**/rules.rich.json'",
-    "validate:lean": "./scripts/validate-meta.sh && ./scripts/run-ajv.sh validate -s schemas/sections.schema.json -d 'methodologies/**/sections.json' && ./scripts/run-ajv.sh validate -s schemas/rules.schema.json -d 'methodologies/**/rules.json'",
+    "validate:lean": "./scripts/validate-meta.sh && ./scripts/run-ajv.sh validate -s schemas/sections.schema.json -d 'methodologies/**/sections.json' && ./scripts/run-ajv.sh validate -s schemas/rules.schema.json -d 'methodologies/**/rules.json' && bash scripts/check-root-cause-index-path.sh",
     "validate:all": "npm run validate:rich || true && npm run validate:lean",
     "validate:json": "npm run validate:lean",
     "gate": "npm run gate:lfs && npm run validate:all",
