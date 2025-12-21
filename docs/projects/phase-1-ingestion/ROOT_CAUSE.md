@@ -47,3 +47,5 @@ Recommended tags: `pdf`, `determinism`, `schema`, `registry`, `paths`, `tools`, 
   - `tests/fixtures/forestry-gold/UNFCCC/Forestry/AR-AM0014/v03-0/tools/*` (primary exemplar).
   - Future Forestry/Agriculture methods with tools should follow the same pattern before being counted as gold exemplars.
 - RC-20251211-091139 | 2025-12-11 09:11:39 | Demo incident placeholder | docs/projects/phase-1-ingestion/root-causes/RC-20251211-091139.md
+- RC-20251221-120000 | 2025-12-21 12:00:00 | Batch ingest missing first-class batch→scope entrypoint | docs/projects/phase-1-ingestion/root-causes/RC-20251221-120000.md
+- RC-20251221-120500 | 2025-12-21 12:05:00 | Scoped ingest portability failure (macOS mktemp/mapfile bashisms) | docs/projects/phase-1-ingestion/root-causes/RC-20251221-120500.md
