@@ -3,6 +3,7 @@
 * Automate changes in `Fredilly/article6-methodologies`.
 * Work in **small, auditable steps**.
 * If unclear, output `QUESTIONS:` only.
+* Root Cause logging: follow `docs/projects/phase-1-ingestion/ROOT_CAUSE.md` and use `npm run root-cause:new -- --title ...` to create/fill entries, then `npm run root-cause:index`, then commit with `-s`.
 
 **NON-NEGOTIABLES**
 

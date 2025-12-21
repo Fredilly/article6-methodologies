@@ -53,6 +53,7 @@
     { "path": "scripts/ingest-verify.sh", "sha256": "257acda700c5d64292507bc10e7ba0a9acb4f5533030852b3262a76b0f7315d0" },
     { "path": "scripts/ingest.sh", "sha256": "4b5793fa4f03206321c9008c2a6405e3d122bdb53cf43eb435f6f85c273eb87d" },
     { "path": "scripts/inject-anchors.js", "sha256": "0541bc16ebc87a2cb54c2b8b251e96d64512a6e8607ed70948195af4f6fc2953" },
+    { "path": "scripts/install-codex-prompts.sh", "sha256": "dbf0103c08521eac4c2a9f9d04cc6cb1a9b344fdb64718eed049f7a07600be6a" },
     { "path": "scripts/install-hooks.sh", "sha256": "fcd91a8dc76ea68cf703f388c0fc99282f8cefacd30e348ca27a238049123ac3" },
     { "path": "scripts/install-vendored-ajv.sh", "sha256": "58d98426bb0dc94f73e53d535495d629df276e876534ffb2d8227557f4ccfc2c" },
     { "path": "scripts/json-canonical-check.sh", "sha256": "a28760529bfa17f0e8e4fe2df1914029ee77341034ab841bf7fe3a7fa7199c42" },

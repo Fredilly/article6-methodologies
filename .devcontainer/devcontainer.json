@@ -15,7 +15,7 @@
     }
   },
   "runArgs": ["--init"],
-  "postCreateCommand": "git lfs install --system && git lfs install",
+  "postCreateCommand": "git lfs install --system && git lfs install && bash scripts/install-codex-prompts.sh",
   "customizations": {
     "vscode": {
       "settings": {},
