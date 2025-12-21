@@ -4,7 +4,8 @@ import { fileURLToPath } from 'node:url';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ROOT_CAUSE_ENTRIES_DIR = path.join(REPO_ROOT, 'docs', 'projects', 'phase-1-ingestion', 'root-causes');
-const OUTPUT_PATH = path.join(REPO_ROOT, 'docs', 'projects', 'phase-1-ingestion', 'ROOT_CAUSE_INDEX.md');
+const OUTPUT_REL_PATH = 'docs/projects/phase-1-ingestion/ROOT_CAUSE_INDEX.md';
+const OUTPUT_PATH = path.join(REPO_ROOT, ...OUTPUT_REL_PATH.split('/'));
 
 function readText(filePath) {
   return fs.readFileSync(filePath, 'utf8');
