@@ -301,35 +301,35 @@ PY
     fi
   fi
 
-  if [ -n "${pdf_url:-}" ]; then
-    case "$pdf_url" in
-      http*) true ;;
-      *) # make relative absolute
-         base="$(echo "$page" | sed -E 's#(/view\.html)?$##')"
-         pdf_url="${base%/}/${pdf_url#./}"
-         ;;
-    esac
-    echo "[pdf] $pdf_url"
-    if [ "$DRY_RUN" = "1" ]; then
-      if ! ensure_cached_asset "$pdf_url" >/dev/null; then
-        echo "[error] cache miss for $pdf_url" >&2
-        rm -f "$html_tmp"
-        continue
-      fi
-    else
-      if ! copy_cached_asset "$pdf_url" "$pdf_path"; then
-        echo "[warn] $id: failed to download main PDF $pdf_url" >&2
-        if [ -s "$pdf_path" ]; then
-          echo "[warn] $id: keeping existing main PDF at $pdf_path" >&2
-        else
-          echo "[warn] $id: no existing main PDF at $pdf_path; leaving missing" >&2
-        fi
-      fi
-    fi
+	  if [ -n "${pdf_url:-}" ]; then
+	    case "$pdf_url" in
+	      http*) true ;;
+	      *) # make relative absolute
+	         base="$(echo "$page" | sed -E 's#(/view\.html)?$##')"
+	         pdf_url="${base%/}/${pdf_url#./}"
+	         ;;
+	    esac
+	    echo "[pdf] $pdf_url"
+	    if [ "$DRY_RUN" = "1" ]; then
+	      if ! ensure_cached_asset "$pdf_url" >/dev/null; then
+	        echo "[error] cache miss for $pdf_url" >&2
+	        rm -f "$html_tmp"
+	        continue
+	      fi
+	    else
+	      if ! copy_cached_asset "$pdf_url" "$pdf_path"; then
+	        echo "[warn] $id: failed to download main PDF $pdf_url" >&2
+	        if [ -s "$pdf_path" ]; then
+	          echo "[warn] $id: keeping existing main PDF at $pdf_path" >&2
+	        else
+	          echo "[warn] $id: no existing main PDF at $pdf_path; leaving missing" >&2
+	        fi
+	      fi
+	    fi
 	  else
 	    echo "[warn] $id: main PDF not found; skipping placeholder (do not clobber)" >&2
 	  fi
-
+	
 	  # no-clobber: if main PDF is missing (or only a git-lfs pointer) and derived outputs already exist,
 	  # skip this method entirely to avoid rewriting artifacts in CI.
 	  meta_path="$dest_dir/META.json"
@@ -337,19 +337,19 @@ PY
 	  rules_path="$dest_dir/rules.json"
 	  rules_rich_path="$dest_dir/rules.rich.json"
 	  sections_rich_path="$dest_dir/sections.rich.json"
-
+	
 	  outputs_exist=0
 	  if [ -s "$meta_path" ] && [ -s "$sections_path" ] && [ -s "$rules_path" ] && [ -s "$rules_rich_path" ] && [ -s "$sections_rich_path" ]; then
 	    outputs_exist=1
 	  fi
-
+	
 	  pdf_missing=0
 	  if [ ! -s "$pdf_path" ]; then
 	    pdf_missing=1
 	  elif head -n1 "$pdf_path" 2>/dev/null | grep -q '^version https://git-lfs.github.com/spec/v1$'; then
 	    pdf_missing=1
 	  fi
-
+	
 	  if [ "$pdf_missing" -eq 1 ]; then
 	    rm -f "$html_tmp"
 	    if [ "$outputs_exist" -eq 1 ]; then
@@ -359,15 +359,15 @@ PY
 	    echo "[warn] $id: main PDF missing; outputs absent; skipping ingest (no partial writes)" >&2
 	    continue
 	  fi
-
+	
 	  # parse all links (text + href) → JSON (only when we have a source page)
 	  if [ "$html_parsing" = "1" ]; then
 	    need pup
-    links_json="$(pup 'a json{}' < "$html_tmp" 2>/dev/null || echo '[]')"
-  else
-    links_json='[]'
-  fi
-  rm -f "$html_tmp"
+	    links_json="$(pup 'a json{}' < "$html_tmp" 2>/dev/null || echo '[]')"
+	  else
+	    links_json='[]'
+	  fi
+	  rm -f "$html_tmp"
 
   include_count="$(yq ".methods[$i].include_text | length" "$INGEST_FILE" 2>/dev/null || echo 0)"
   exclude_count="$(yq ".methods[$i].exclude_text | length" "$INGEST_FILE" 2>/dev/null || echo 0)"
