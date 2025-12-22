@@ -125,7 +125,6 @@ fi
 
 need yq
 need jq
-need pup
 need curl
 need python3
 
@@ -227,6 +226,12 @@ for i in "${method_indexes[@]}"; do
   sector="$(yq -r ".methods[$i].sector // \"\"" "$INGEST_FILE")"
   page="$(yq -r ".methods[$i].source_page // \"\"" "$INGEST_FILE")"
   pdf_url_override="$(yq -r ".methods[$i].pdf_url // \"\"" "$INGEST_FILE")"
+  if [[ "$page" == "null" ]]; then page=""; fi
+  if [[ "$pdf_url_override" == "null" ]]; then pdf_url_override=""; fi
+  html_parsing=0
+  if [ -n "$page" ]; then
+    html_parsing=1
+  fi
 
   echo "———"
   echo "[ingest] $id $ver"
@@ -263,7 +268,7 @@ for i in "${method_indexes[@]}"; do
   fi
   # fetch page html (for link parsing) unless we have direct pdf_url
   html_tmp="$(mktemp)"
-  if [ -n "$page" ]; then
+  if [ "$html_parsing" = "1" ]; then
     if ! page_cache="$(ensure_cached_asset "$page")"; then
       echo "[error] failed to fetch source page for $id ($page)" >&2
       rm -f "$html_tmp"
@@ -289,9 +294,11 @@ PY
   if [ -n "$pdf_url_override" ]; then
     pdf_url="$pdf_url_override"
   else
-    # heuristic: first PDF whose link text contains "methodology" OR the first PDF on the page
-    # (unfccc pages usually label the main doc; else we fall back)
-    pdf_url="$(pup 'a' attr{href} < "$html_tmp" | grep -i '\.pdf' | head -n1 || true)"
+    # heuristic: first PDF on the source page (if present)
+    if [ "$html_parsing" = "1" ]; then
+      need pup
+      pdf_url="$(pup 'a' attr{href} < "$html_tmp" | grep -i '\.pdf' | head -n1 || true)"
+    fi
   fi
 
   if [ -n "${pdf_url:-}" ]; then
@@ -323,8 +330,13 @@ PY
     echo "[warn] $id: main PDF not found; skipping placeholder (do not clobber)" >&2
   fi
 
-  # parse all links (text + href) → JSON
-  links_json="$(pup 'a json{}' < "$html_tmp" 2>/dev/null || echo '[]')"
+  # parse all links (text + href) → JSON (only when we have a source page)
+  if [ "$html_parsing" = "1" ]; then
+    need pup
+    links_json="$(pup 'a json{}' < "$html_tmp" 2>/dev/null || echo '[]')"
+  else
+    links_json='[]'
+  fi
   rm -f "$html_tmp"
 
   include_count="$(yq ".methods[$i].include_text | length" "$INGEST_FILE" 2>/dev/null || echo 0)"

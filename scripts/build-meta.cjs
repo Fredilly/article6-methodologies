@@ -98,8 +98,8 @@ async function main() {
     scripts_manifest_sha256: scriptsManifestHash,
     ...(isPrevious
       ? {
-          repo_commit: repoCommit,
-          node_version: nodeVersion
+          repo_commit: existing?.automation?.repo_commit || repoCommit,
+          node_version: existing?.automation?.node_version || nodeVersion
         }
       : {})
   };
