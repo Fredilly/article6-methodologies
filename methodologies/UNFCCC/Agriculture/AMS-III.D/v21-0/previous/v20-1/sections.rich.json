@@ -1,0 +1,1102 @@
+[
+  {
+    "anchor": "ams-iii-d",
+    "id": "S-0001",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "ams-iii-d-2",
+    "id": "S-0002",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "scope-applicability-and-entry-into-force-3",
+    "id": "S-0003",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "SCOPE, APPLICABILITY, AND ENTRY INTO FORCE ........................................... 3"
+  },
+  {
+    "anchor": "project-boundary-7",
+    "id": "S-0004",
+    "level": 2,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Project boundary ............................................................................................ 7"
+  },
+  {
+    "anchor": "project-activity-emissions-11",
+    "id": "S-0005",
+    "level": 2,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Project activity emissions ............................................................................... 11"
+  },
+  {
+    "anchor": "ams-iii-d-3",
+    "id": "S-0006",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "the-following-table-describes-the-key-elements-of-the-methodology",
+    "id": "S-0007",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "The following table describes the key elements of the methodology:"
+  },
+  {
+    "anchor": "this-methodology-covers-project-activities-involving-the-replacement-or-modification-of",
+    "id": "S-0008",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "This methodology covers project activities involving the replacement or modification of"
+  },
+  {
+    "anchor": "this-methodology-is-only-applicable-under-the-following-conditions",
+    "id": "S-0009",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "This methodology is only applicable under the following conditions:"
+  },
+  {
+    "anchor": "the-project-activity-shall-satisfy-the-following-conditions",
+    "id": "S-0010",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "The project activity shall satisfy the following conditions:"
+  },
+  {
+    "anchor": "ams-iii-d-4",
+    "id": "S-0011",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "ams-iii-d-5",
+    "id": "S-0012",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "projects-that-recover-methane-from-landfills-shall-use-ams-iii-g-landfill-methane",
+    "id": "S-0013",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Projects that recover methane from landfills shall use “AMS-III.G Landfill methane"
+  },
+  {
+    "anchor": "utilization-of-the-recovered-biogas-in-one-of-the-options-detailed-in-ams-iii-h-is-also",
+    "id": "S-0014",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Utilization of the recovered biogas in one of the options detailed in AMS-III.H is also"
+  },
+  {
+    "anchor": "ams-iii-d-6",
+    "id": "S-0015",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "new-facilities-greenfield-projects-and-project-activities-involving-capacity-additions",
+    "id": "S-0016",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "New facilities (Greenfield projects) and project activities involving capacity additions"
+  },
+  {
+    "anchor": "the-requirements-concerning-demonstration-of-the-remaining-lifetime-of-the-replaced",
+    "id": "S-0017",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "The requirements concerning demonstration of the remaining lifetime of the replaced"
+  },
+  {
+    "anchor": "measures-are-limited-to-those-that-result-in-aggregate-emission-reductions-of-less-than-or",
+    "id": "S-0018",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Measures are limited to those that result in aggregate emission reductions of less than or"
+  },
+  {
+    "anchor": "project-participants-shall-take-into-account-the-general-guidelines-for-ssc-cdm",
+    "id": "S-0019",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Project participants shall take into account the “General guidelines for SSC CDM"
+  },
+  {
+    "anchor": "this-methodology-also-refers-to-the-latest-approved-versions-of-the-following",
+    "id": "S-0020",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "This methodology also refers to the latest approved versions of the following"
+  },
+  {
+    "anchor": "ams-iii-d-7",
+    "id": "S-0021",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "the-project-boundary-includes-the-physical-geographical-site-s-of",
+    "id": "S-0022",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "The project boundary includes the physical, geographical site(s) of:"
+  },
+  {
+    "anchor": "project-activities-may-demonstrate-the-additionality-by-showing-that-there-is-no-regulation",
+    "id": "S-0023",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Project activities may demonstrate the additionality by showing that there is no regulation"
+  },
+  {
+    "anchor": "this-additionality-condition-also-applies-to-greenfield-project-activities-furthermore-for",
+    "id": "S-0024",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "This additionality condition also applies to Greenfield project activities. Furthermore, for"
+  },
+  {
+    "anchor": "the-baseline-scenario-is-the-situation-where-in-the-absence-of-the-project-activity",
+    "id": "S-0025",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "The baseline scenario is the situation where, in the absence of the project activity,"
+  },
+  {
+    "anchor": "ams-iii-d-8",
+    "id": "S-0026",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "if-option-in-paragraph-16-a-is-chosen-baseline-emissions-are-determined-as-follows",
+    "id": "S-0027",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "If option in paragraph 16(a) is chosen, baseline emissions are determined as follows:"
+  },
+  {
+    "anchor": "ipcc-guidelines-for-national-greenhouse-gas-inventories-volume-4",
+    "id": "S-0028",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "IPCC Guidelines for National Greenhouse Gas Inventories volume 4"
+  },
+  {
+    "anchor": "ams-iii-d-9",
+    "id": "S-0029",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "a-4-to-10-a-9-can-be-used-provided-that-the-project-participants-assess-the",
+    "id": "S-0030",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "A-4 to 10 A-9 can be used provided that the project participants assess the"
+  },
+  {
+    "anchor": "w",
+    "id": "S-0031",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": " W "
+  },
+  {
+    "anchor": "ams-iii-d-10",
+    "id": "S-0032",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "if-option-in-paragraph-16-b-is-chosen-baseline-emissions-are-determined-based-on",
+    "id": "S-0033",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "If option in paragraph 16(b) is chosen, baseline emissions are determined based on"
+  },
+  {
+    "anchor": "ams-iii-d-11",
+    "id": "S-0034",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "project-activity-emissions-consist-of",
+    "id": "S-0035",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Project activity emissions consist of:"
+  },
+  {
+    "anchor": "project-emissions-due-to-physical-leakage-of-biogas-from-the-animal-manure",
+    "id": "S-0036",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Project emissions due to physical leakage of biogas from the animal manure"
+  },
+  {
+    "anchor": "ipcc-guidelines-for-national-greenhouse-gas-inventories-volume-4-chapter-10-guidelines",
+    "id": "S-0037",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "IPCC Guidelines for National Greenhouse Gas Inventories Volume 4 Chapter 10 guidelines"
+  },
+  {
+    "anchor": "ams-iii-d-12",
+    "id": "S-0038",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "in-the-case-of-flaring-of-the-recovered-biogas-project-emissions-are-estimated-using-the",
+    "id": "S-0039",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "In the case of flaring of the recovered biogas, project emissions are estimated using the"
+  },
+  {
+    "anchor": "project-emissions-from-electricity-and-fossil-fuel-consumption-are-determined-by",
+    "id": "S-0040",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Project emissions from electricity and fossil fuel consumption are determined by"
+  },
+  {
+    "anchor": "ams-iii-d-13",
+    "id": "S-0041",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "project-emissions-on-account-of-storage-of-manure-before-being-fed-into-the-anaerobic",
+    "id": "S-0042",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Project emissions on account of storage of manure before being fed into the anaerobic"
+  },
+  {
+    "anchor": "the-following-method-shall-be-used-to-calculate-project-emissions-from-manure-storage",
+    "id": "S-0043",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "The following method shall be used to calculate project emissions from manure storage:"
+  },
+  {
+    "anchor": "it-is-determined-by-following-the-relevant-procedure-in-the-methodological-tool-project",
+    "id": "S-0044",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "It is determined by following the relevant procedure in the methodological tool “Project"
+  },
+  {
+    "anchor": "ams-iii-d-14",
+    "id": "S-0045",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "the-emission-reductions-achieved-by-the-project-activity-will-be-determined-ex-post",
+    "id": "S-0046",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "The emission reductions achieved by the project activity will be determined ex post"
+  },
+  {
+    "anchor": "biogas-flared-or-combusted-mdy-shall-be-determined-using-the-flare-efficiency-and",
+    "id": "S-0047",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Biogas flared or combusted, (MDy) shall be determined using the flare efficiency and"
+  },
+  {
+    "anchor": "the-method-for-integration-of-the-terms-in-equation-above-to-obtain-the-results-for-one",
+    "id": "S-0048",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "The method for integration of the terms in equation above to obtain the results for one"
+  },
+  {
+    "anchor": "ams-iii-d-15",
+    "id": "S-0049",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "alternatively-if-project-activities-utilize-the-recovered-methane-for-power-generation",
+    "id": "S-0050",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Alternatively, if project activities utilize the recovered methane for power generation,"
+  },
+  {
+    "anchor": "conversion-factor-1-mwh-3600-mj",
+    "id": "S-0051",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "= Conversion factor (1 MWh = 3600 MJ)"
+  },
+  {
+    "anchor": "project-proponents-shall-provide-evidence-to-a-validating-doe-that-only-the-biogas",
+    "id": "S-0052",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Project proponents shall provide evidence to a validating DOE that only the biogas"
+  },
+  {
+    "anchor": "in-case-of-project-activities-covered-under-paragraph-6-the-relevant-procedure-in",
+    "id": "S-0053",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "In case of project activities covered under paragraph 6, the relevant procedure in"
+  },
+  {
+    "anchor": "project-activities-where-a-portion-of-the-biogas-is-destroyed-through-flaring-and-the-other",
+    "id": "S-0054",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Project activities where a portion of the biogas is destroyed through flaring and the other"
+  },
+  {
+    "anchor": "where-applicable-the-proper-soil-application-not-resulting-in-methane-emissions-of-the",
+    "id": "S-0055",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Where applicable, the proper soil application (not resulting in methane emissions) of the"
+  },
+  {
+    "anchor": "the-monitoring-plan-should-include-on-site-inspections-for-each-individual-farm-included",
+    "id": "S-0056",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "The monitoring plan should include on-site inspections for each individual farm included"
+  },
+  {
+    "anchor": "ams-iii-d-16",
+    "id": "S-0057",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "if-the-option-in-paragraph-16-a-is-chosen-for-baseline-emission-determination",
+    "id": "S-0058",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "If the option in paragraph 16(a) is chosen for baseline emission determination,"
+  },
+  {
+    "anchor": "relevant-parameters-shall-be-monitored-as-indicated-in-section-5-1-below-the",
+    "id": "S-0059",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Relevant parameters shall be monitored as indicated in section 5.1 below. The"
+  },
+  {
+    "anchor": "data-and-parameters-monitored",
+    "id": "S-0060",
+    "level": 2,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Data and parameters monitored"
+  },
+  {
+    "anchor": "ams-iii-d-17",
+    "id": "S-0061",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "ams-iii-d-18",
+    "id": "S-0062",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "ams-iii-d-19",
+    "id": "S-0063",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "objective-and-reliability-requirements-the-objective-of-the-sampling-plan-is-to-determine-the-average",
+    "id": "S-0064",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Objective and reliability requirements: The objective of the sampling plan is to determine the average"
+  },
+  {
+    "anchor": "target-population-the-target-population-is-the-30-000-cattle-in-the-farm-classified-into-5-age",
+    "id": "S-0065",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Target population: The target population is the 30,000 cattle in the farm, classified into 5 age"
+  },
+  {
+    "anchor": "sampling-method-stratified-random-sampling-will-be-carried-out-the-cattle-population-will-be",
+    "id": "S-0066",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Sampling method: Stratified random sampling will be carried out. The cattle population will be"
+  },
+  {
+    "anchor": "sample-size-approximate-equation-from-the-section-2-1-8-of-appendix-1-of-guideline-sampling",
+    "id": "S-0067",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Sample size: Approximate equation from the section 2.1.8 of Appendix 1 of “Guideline: Sampling"
+  },
+  {
+    "anchor": "sampling-frame-sampling-frame-is-worked-out-independently-by-taking-categories-as-sampling-unit",
+    "id": "S-0068",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Sampling frame: Sampling frame is worked out independently by taking categories as sampling unit."
+  },
+  {
+    "anchor": "field-measurements-for-each-sampled-cow-the-weight-will-be-monthly-monitored-with-the-scale",
+    "id": "S-0069",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Field Measurements: For each sampled cow, the weight will be monthly monitored with the scale"
+  },
+  {
+    "anchor": "quality-assurance-quality-control-every-technician-to-monitor-the-sampled-cow-will-fill-in-the-date",
+    "id": "S-0070",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Quality Assurance/Quality Control: Every technician to monitor the sampled cow will fill in the date"
+  },
+  {
+    "anchor": "data-analysis-the-primary-monitoring-data-are-collected-and-used-to-calculate-ghg-emission",
+    "id": "S-0071",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "Data analysis: The primary monitoring data are collected and used to calculate GHG emission"
+  },
+  {
+    "anchor": "ams-iii-d-20",
+    "id": "S-0072",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "ams-iii-d-21",
+    "id": "S-0073",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "ams-iii-d-22",
+    "id": "S-0074",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "ams-iii-d-23",
+    "id": "S-0075",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "ams-iii-d-24",
+    "id": "S-0076",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "ams-iii-d-25",
+    "id": "S-0077",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "ams-iii-d-26",
+    "id": "S-0078",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "ams-iii-d-27",
+    "id": "S-0079",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "for-ruminants-fed-with-85-or-more-grain-in-the-diet-or-for",
+    "id": "S-0080",
+    "level": 2,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "for ruminants fed with 85% or more grain in the diet or for"
+  },
+  {
+    "anchor": "ams-iii-d-28",
+    "id": "S-0081",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "ams-iii-d-29",
+    "id": "S-0082",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "the-following-conditions-apply-for-use-of-this-methodology-in-a-project-activity-under-a",
+    "id": "S-0083",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "The following conditions apply for use of this methodology in a project activity under a"
+  },
+  {
+    "anchor": "ams-iii-d-30",
+    "id": "S-0084",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "hrt-cod-ts-vs-tn-p-k",
+    "id": "S-0085",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "HRT COD TS VS TN P K"
+  },
+  {
+    "anchor": "23-october-2015-editorial-revision-to-reflect-the-decision-of-eb-85-to-classify-the",
+    "id": "S-0086",
+    "level": 2,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "23 October 2015 Editorial revision to reflect the decision of EB 85 to classify the"
+  },
+  {
+    "anchor": "16-october-2015-eb-86-annex-15",
+    "id": "S-0087",
+    "level": 2,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "16 October 2015 EB 86, Annex 15"
+  },
+  {
+    "anchor": "23-november-2012-eb-70-annex-31",
+    "id": "S-0088",
+    "level": 2,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "23 November 2012 EB 70, Annex 31."
+  },
+  {
+    "anchor": "ams-iii-d-31",
+    "id": "S-0089",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "29-september-2011-eb-63-annex-22",
+    "id": "S-0090",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "29 September 2011 EB 63, Annex 22."
+  },
+  {
+    "anchor": "26-november-2010-eb-58-annex-20",
+    "id": "S-0091",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "26 November 2010 EB 58, Annex 20."
+  },
+  {
+    "anchor": "01-june-2010-editorial-revision-in-paragraph-2-c",
+    "id": "S-0092",
+    "level": 2,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "01 June 2010 Editorial revision in paragraph 2(c):"
+  },
+  {
+    "anchor": "26-march-2010-eb-53-annex-16",
+    "id": "S-0093",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "26 March 2010 EB 53, Annex 16."
+  },
+  {
+    "anchor": "17-july-2009-eb-48-annex-18",
+    "id": "S-0094",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "17 July 2009 EB 48, Annex 18."
+  },
+  {
+    "anchor": "14-march-2008-eb-38-annex-11",
+    "id": "S-0095",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "14 March 2008 EB 38, Annex 11."
+  },
+  {
+    "anchor": "27-july-2007-eb-33-annex-32",
+    "id": "S-0096",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "27 July 2007 EB 33, Annex 32."
+  },
+  {
+    "anchor": "04-may-2007-eb-31-annex-22",
+    "id": "S-0097",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "04 May 2007 EB 31, Annex 22."
+  },
+  {
+    "anchor": "ams-iii-d-32",
+    "id": "S-0098",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "23-december-2006-eb-28-meeting-report-para-64",
+    "id": "S-0099",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "23 December 2006 EB 28, Meeting report, Para. 64."
+  },
+  {
+    "anchor": "28-july-2006-eb-25-annex-25",
+    "id": "S-0100",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "28 July 2006 EB 25, Annex 25."
+  },
+  {
+    "anchor": "12-may-2006-eb-24-meeting-report-para-64",
+    "id": "S-0101",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "12 May 2006 EB 24, Meeting report, Para. 64."
+  },
+  {
+    "anchor": "03-march-2006-eb-23-annex-25",
+    "id": "S-0102",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "03 March 2006 EB 23, Annex 25."
+  },
+  {
+    "anchor": "25-november-2005-eb-22-para-59",
+    "id": "S-0103",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "25 November 2005 EB 22, Para. 59."
+  },
+  {
+    "anchor": "20-september-2005-eb-21-annex-22",
+    "id": "S-0104",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "20 September 2005 EB 21, Annex 22."
+  },
+  {
+    "anchor": "25-february-2005-eb-18-annex-6",
+    "id": "S-0105",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "25 February 2005 EB 18, Annex 6."
+  },
+  {
+    "anchor": "ams-iii-d-33",
+    "id": "S-0106",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "AMS-III.D"
+  },
+  {
+    "anchor": "22-october-2004-eb-16-annex-2",
+    "id": "S-0107",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "22 October 2004 EB 16, Annex 2."
+  },
+  {
+    "anchor": "30-june-2004-eb-14-annex-2",
+    "id": "S-0108",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "30 June 2004 EB 14, Annex 2."
+  },
+  {
+    "anchor": "28-november-2003-eb-12-annex-2",
+    "id": "S-0109",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "28 November 2003 EB 12, Annex 2."
+  },
+  {
+    "anchor": "21-january-2003-eb-7-annex-6",
+    "id": "S-0110",
+    "level": 1,
+    "provenance": {
+      "source_hash": "2977b6b65ee03d459e00443a3e2cd68be653236bdae55f7b944fb0f2ce713761",
+      "source_ref": "UNFCCC/AMS-III.D@v21-0"
+    },
+    "title": "21 January 2003 EB 7, Annex 6."
+  }
+]

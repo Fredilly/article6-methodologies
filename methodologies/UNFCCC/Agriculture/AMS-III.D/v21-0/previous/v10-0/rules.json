@@ -1,0 +1,44 @@
+{
+  "rules": [
+    {
+      "id": "R-0001-0002",
+      "section_id": "S-0002",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+    },
+    {
+      "id": "R-0001-0011",
+      "section_id": "S-0011",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+    },
+    {
+      "id": "R-0001-0012",
+      "section_id": "S-0012",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "For each year during the crediting period, emissions are calculated as specified in paragraph a and paragraph b below and lower of the two values is used (a) Actual monitored amount of methane captured and destroyed by the project activi..."
+    },
+    {
+      "id": "R-0001-0014",
+      "section_id": "S-0014",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Monitoring"
+    },
+    {
+      "id": "R-0001-0016",
+      "section_id": "S-0016",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored."
+    }
+  ]
+}

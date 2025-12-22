@@ -1,0 +1,123 @@
+[
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v04-0.R-0001-0007",
+    "logic": "Systems with annual emission reduction higher than five tonnes of CO2e are eligible under “AMS-III.D.: Methane recovery in animal manure management systems”.",
+    "refs": {
+      "sections": [
+        "S-0007"
+      ]
+    },
+    "summary": "Systems with annual emission reduction higher than five tonnes of CO2e are eligible under “AMS-III.D.: Methane recovery in animal manure management systems”.",
+    "type": "eligibility"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v04-0.R-0001-0015",
+    "logic": "TOOL21: Demonstration of additionality of small-scale project activities and TOOL22: Leakage in biomass small-scale project activities available at <http://cdm.unfccc.int/Reference/Guidclarif/index.html#meth> mutatis mutandis.",
+    "refs": {
+      "sections": [
+        "S-0015"
+      ]
+    },
+    "summary": "TOOL21: Demonstration of additionality of small-scale project activities and TOOL22: Leakage in biomass small-scale project activities available at <http://cdm.unfccc.int/Reference/Guidclarif/index.html#meth> mutatis mutandis.",
+    "type": "leakage"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v04-0.R-0001-0016",
+    "logic": "methodologies and tools: (a) “AMS-I.C.: “Thermal energy production with or without electricity”; (b) “AMS-I.E.: Switch from non-renewable biomass for thermal applications by the user”; (c) “AMS-I.I.: Biogas/biomass thermal applications for households/small users”; (d) “AMS-III.D.: Methane recovery in animal manure management systems”; (e) “Standard for sampling and surveys for CDM project activities and programme of activities”; (f) “TOOL03: Tool to calculate project or leakage CO2 emissions from fossil fuel combustion”; (g) “TOOL05: Baseline, project and/or leakage emissions from electricity consumption and monitoring of electricity generation”.",
+    "refs": {
+      "sections": [
+        "S-0016"
+      ]
+    },
+    "summary": "methodologies and tools: (a) “AMS-I.C.: “Thermal energy production with or without electricity”; (b) “AMS-I.E.: Switch from non-renewable biomass for thermal applications by the user”; (c) “AMS-I.I.: Biogas/biomass thermal applications f...",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v04-0.R-0001-0020",
+    "logic": "operation of the system and the physical leakages of methane from the recovery system.",
+    "refs": {
+      "sections": [
+        "S-0020"
+      ]
+    },
+    "summary": "operation of the system and the physical leakages of methane from the recovery system.",
+    "type": "leakage"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v04-0.R-0002-0020",
+    "logic": "The relevant methodological tools “TOOL03: Tool to calculate project or leakage CO2 emissions from fossil fuel combustion” and “TOOL05: Baseline, project and/or leakage emissions from electricity consumption and monitoring of electricity generation” shall be followed.",
+    "refs": {
+      "sections": [
+        "S-0020"
+      ]
+    },
+    "summary": "The relevant methodological tools “TOOL03: Tool to calculate project or leakage CO2 emissions from fossil fuel combustion” and “TOOL05: Baseline, project and/or leakage emissions from electricity consumption and monitoring of electricity...",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v04-0.R-0001-0022",
+    "logic": "The survey should determine the baseline animal manure management practices applied.",
+    "refs": {
+      "sections": [
+        "S-0022"
+      ]
+    },
+    "summary": "The survey should determine the baseline animal manure management practices applied.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v04-0.R-0002-0022",
+    "logic": "If the livestock is raised in shared centralized farms,1 the project proponent shall be able to show the baseline animal manure management practices at each farm, either individually or through sampling.",
+    "refs": {
+      "sections": [
+        "S-0022"
+      ]
+    },
+    "summary": "If the livestock is raised in shared centralized farms,1 the project proponent shall be able to show the baseline animal manure management practices at each farm, either individually or through sampling.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v04-0.R-0001-0027",
+    "logic": "activities” shall be followed to calculate leakage related to use of biomass.",
+    "refs": {
+      "sections": [
+        "S-0027"
+      ]
+    },
+    "summary": "activities” shall be followed to calculate leakage related to use of biomass.",
+    "type": "leakage"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v04-0.R-0001-0039",
+    "logic": "estimations are necessary other than that indicated under leakage section above.",
+    "refs": {
+      "sections": [
+        "S-0039"
+      ]
+    },
+    "summary": "estimations are necessary other than that indicated under leakage section above.",
+    "type": "leakage"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v04-0.R-0001-0042",
+    "logic": "To introduce the IPCC Tier 1 approach as an alternative method for calculation of baseline emissions.",
+    "refs": {
+      "sections": [
+        "S-0042"
+      ]
+    },
+    "summary": "To introduce the IPCC Tier 1 approach as an alternative method for calculation of baseline emissions.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-R.v04-0.R-0001-0044",
+    "logic": "• To revise the guidance on calculation of project emissions from physical leakage and baseline emissions; • To revise sampling requirements; • To remove the conditions for PoA.",
+    "refs": {
+      "sections": [
+        "S-0044"
+      ]
+    },
+    "summary": "• To revise the guidance on calculation of project emissions from physical leakage and baseline emissions; • To revise sampling requirements; • To remove the conditions for PoA.",
+    "type": "parameter"
+  }
+]

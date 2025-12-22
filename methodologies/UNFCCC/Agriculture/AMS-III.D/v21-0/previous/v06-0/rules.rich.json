@@ -1,0 +1,35 @@
+[
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v06-0.R-0001-0004",
+    "logic": "Baseline",
+    "refs": {
+      "sections": [
+        "S-0004"
+      ]
+    },
+    "summary": "Baseline",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v06-0.R-0001-0008",
+    "logic": "Monitoring",
+    "refs": {
+      "sections": [
+        "S-0008"
+      ]
+    },
+    "summary": "Monitoring",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v06-0.R-0001-0010",
+    "logic": "fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
+    "refs": {
+      "sections": [
+        "S-0010"
+      ]
+    },
+    "summary": "fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
+    "type": "monitoring"
+  }
+]

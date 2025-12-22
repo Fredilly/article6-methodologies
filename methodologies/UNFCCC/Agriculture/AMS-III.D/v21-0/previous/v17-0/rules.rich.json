@@ -1,0 +1,420 @@
+[
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0002",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0002"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0004",
+    "logic": "This methodology is only applicable under the following conditions: (a) The livestock population in the farm is managed under confined conditions; (b) Manure or the streams obtained after treatment are not discharged into natural water resources (e.g. river or estuaries), otherwise AMS-III.H “Methane recovery in wastewater treatment” shall be applied; (c) The annual average temperature of baseline site where anaerobic manure treatment facility is located is higher than 5°C; (d) In the baseline scenario the retention time of manure waste in the anaerobic treatment system is greater than one month, and in case of anaerobic lagoons in the baseline, their depths are at least 1 m; (e) No methane recovery and destruction by flaring, combustion or gainful use takes place in the baseline scenario.",
+    "refs": {
+      "sections": [
+        "S-0004"
+      ]
+    },
+    "summary": "This methodology is only applicable under the following conditions: (a) The livestock population in the farm is managed under confined conditions; (b) Manure or the streams obtained after treatment are not discharged into natural water r...",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0007",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0007"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0009",
+    "logic": "are also eligible for use under this methodology.",
+    "refs": {
+      "sections": [
+        "S-0009"
+      ]
+    },
+    "summary": "are also eligible for use under this methodology.",
+    "type": "eligibility"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0010",
+    "logic": "compared to the baseline scenario are only eligible if they comply with the related and relevant requirements in the “General Guidelines to SSC CDM methodologies”.",
+    "refs": {
+      "sections": [
+        "S-0010"
+      ]
+    },
+    "summary": "compared to the baseline scenario are only eligible if they comply with the related and relevant requirements in the “General Guidelines to SSC CDM methodologies”.",
+    "type": "eligibility"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0013",
+    "logic": "Baseline",
+    "refs": {
+      "sections": [
+        "S-0013"
+      ]
+    },
+    "summary": "Baseline",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0014",
+    "logic": "Baseline emissions (BEy) are calculated by using one of the following two options: (a) Using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC tier 2 approach (please refer to the chapter ‘Emissions from Livestock and Manure Management’ under the volume ‘Agriculture, Forestry and other Land use’ of the 2006 IPCC Guidelines for National Greenhouse Gas Inventories).",
+    "refs": {
+      "sections": [
+        "S-0014"
+      ]
+    },
+    "summary": "Baseline emissions (BEy) are calculated by using one of the following two options: (a) Using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC tier 2 ...",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0002-0014",
+    "logic": "For this calculation, information about the characteristics of the manure and of the management systems in the baseline is required.",
+    "refs": {
+      "sections": [
+        "S-0014"
+      ]
+    },
+    "summary": "For this calculation, information about the characteristics of the manure and of the management systems in the baseline is required.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0016",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0016"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0020",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0020"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0023",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0023"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0026",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0026"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0027",
+    "logic": "(a) Physical leakage of biogas in the manure management systems which includes production, collection and transport of biogas to the point of flaring/combustion or gainful use (PEPL,y); (b) Emissions from flaring or combustion of the gas stream (PEflare,y); (c) CO2 emissions from use of fossil fuels or electricity for the operation of all the installed facilities (PEpower,y); (d) CO2 emissions from incremental transportation distances; (e) Emissions from the storage of manure before being fed into the anaerobic digester (PEstorage,y).",
+    "refs": {
+      "sections": [
+        "S-0027"
+      ]
+    },
+    "summary": "(a) Physical leakage of biogas in the manure management systems which includes production, collection and transport of biogas to the point of flaring/combustion or gainful use (PEPL,y); (b) Emissions from flaring or combustion of the gas...",
+    "type": "leakage"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0030",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0030"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0034",
+    "logic": "a default value of 10% of the maximum methane producing potential (Bo) for the physical leakages from anaerobic digesters.",
+    "refs": {
+      "sections": [
+        "S-0034"
+      ]
+    },
+    "summary": "a default value of 10% of the maximum methane producing potential (Bo) for the physical leakages from anaerobic digesters.",
+    "type": "leakage"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0036",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0036"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0038",
+    "logic": "MCFl Annual methane conversion factor for the project manure storage device l from Table 10.17, Chapter 10, Volume 4 Leakage",
+    "refs": {
+      "sections": [
+        "S-0038"
+      ]
+    },
+    "summary": "MCFl Annual methane conversion factor for the project manure storage device l from Table 10.17, Chapter 10, Volume 4 Leakage",
+    "type": "leakage"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0039",
+    "logic": "Monitoring",
+    "refs": {
+      "sections": [
+        "S-0039"
+      ]
+    },
+    "summary": "Monitoring",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0040",
+    "logic": "It is likely that the project activity involves manure treatment steps with higher methane conversion factors (MCF) than the MCF for the manure treatment systems used in the baseline situation, therefore the emission reductions achieved by the project activity is limited to the ex post calculated baseline emissions minus project emissions using the actual monitored data for the project activity (NLT,y, MS% i,y, MS% l, AIl, and in case adjusted values for animal weight are used as defined in paragraph 10 (c): VSLT,y).",
+    "refs": {
+      "sections": [
+        "S-0040"
+      ]
+    },
+    "summary": "It is likely that the project activity involves manure treatment steps with higher methane conversion factors (MCF) than the MCF for the manure treatment systems used in the baseline situation, therefore the emission reductions achieved ...",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0042",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0042"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0044",
+    "logic": "of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting period.",
+    "refs": {
+      "sections": [
+        "S-0044"
+      ]
+    },
+    "summary": "of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting period.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0046",
+    "logic": "4 If the biogas flared and fuelled (or utilized) are continuously monitored separately, the two fractions can be added to determine the biogas recovered.",
+    "refs": {
+      "sections": [
+        "S-0046"
+      ]
+    },
+    "summary": "4 If the biogas flared and fuelled (or utilized) are continuously monitored separately, the two fractions can be added to determine the biogas recovered.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0002-0046",
+    "logic": "In that case, recovered biogas need not be monitored separately.",
+    "refs": {
+      "sections": [
+        "S-0046"
+      ]
+    },
+    "summary": "In that case, recovered biogas need not be monitored separately.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0048",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0048"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0049",
+    "logic": "defined as the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored and calculated as per the provision in the “Tool to determine project emissions from flaring gases containing methane”.",
+    "refs": {
+      "sections": [
+        "S-0049"
+      ]
+    },
+    "summary": "defined as the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored and calculated as per the provision in the “Tool to determine project emissions from flar...",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0050",
+    "logic": "When the amount of methane that is combusted for energy and that is flared is separately monitored, a destruction efficiency of 100% can be used for the amount that is combusted for energy.",
+    "refs": {
+      "sections": [
+        "S-0050"
+      ]
+    },
+    "summary": "When the amount of methane that is combusted for energy and that is flared is separately monitored, a destruction efficiency of 100% can be used for the amount that is combusted for energy.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0052",
+    "logic": "equipment shall be monitored.",
+    "refs": {
+      "sections": [
+        "S-0052"
+      ]
+    },
+    "summary": "equipment shall be monitored.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0053",
+    "logic": "storage devices (MS%l) and the interval between manure collection and commencement of treatment in anaerobic digester (AI l) shall be monitored.",
+    "refs": {
+      "sections": [
+        "S-0053"
+      ]
+    },
+    "summary": "storage devices (MS%l) and the interval between manure collection and commencement of treatment in anaerobic digester (AI l) shall be monitored.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0054",
+    "logic": "residual waste shall be monitored.",
+    "refs": {
+      "sections": [
+        "S-0054"
+      ]
+    },
+    "summary": "residual waste shall be monitored.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0056",
+    "logic": "(a) The PDD shall describe the system used for monitoring the fraction of the manure handled in the animal manure management system (MS%,i,y), the average weight of the livestock (Wsite) and the livestock population (NLT,y) taking into account the average number of days the animals are alive in the farm in a specific year.",
+    "refs": {
+      "sections": [
+        "S-0056"
+      ]
+    },
+    "summary": "(a) The PDD shall describe the system used for monitoring the fraction of the manure handled in the animal manure management system (MS%,i,y), the average weight of the livestock (Wsite) and the livestock population (NLT,y) taking into a...",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0002-0056",
+    "logic": "Significant changes in livestock population and average weight shall be explained. (b) The number of days that the animal manure management system capturing methane and flaring/combusting or gainfully using methane was operational (ndy) shall be monitored;",
+    "refs": {
+      "sections": [
+        "S-0056"
+      ]
+    },
+    "summary": "Significant changes in livestock population and average weight shall be explained. (b) The number of days that the animal manure management system capturing methane and flaring/combusting or gainfully using methane was operational (ndy) ...",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0058",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0058"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0059",
+    "logic": "Recording of the baseline animal manure management system where the animal manure would have been treated anaerobically is also required.",
+    "refs": {
+      "sections": [
+        "S-0059"
+      ]
+    },
+    "summary": "Recording of the baseline animal manure management system where the animal manure would have been treated anaerobically is also required.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0060",
+    "logic": "programme of activities: In case the project activity involves the replacement of equipment, and the leakage effect of the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an independent monitoring of scrapping of replaced equipment needs to be implemented.",
+    "refs": {
+      "sections": [
+        "S-0060"
+      ]
+    },
+    "summary": "programme of activities: In case the project activity involves the replacement of equipment, and the leakage effect of the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an ind...",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0002-0060",
+    "logic": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other.",
+    "refs": {
+      "sections": [
+        "S-0060"
+      ]
+    },
+    "summary": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0062",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0062"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0065",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0065"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v17-0.R-0001-0076",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0076"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  }
+]

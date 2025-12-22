@@ -1,0 +1,222 @@
+[
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0002",
+    "logic": "Revision to the approved consolidated baseline methodology ACM0010",
+    "refs": {
+      "sections": [
+        "S-0002"
+      ]
+    },
+    "summary": "Revision to the approved consolidated baseline methodology ACM0010",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0004",
+    "logic": "• In case of anaerobic lagoons treatments systems, the depth of the lagoons used for manure management under the baseline scenario should be at least 1m2. • The annual average temperature in the site where the anaerobic manure treatment facility in the baseline existed is higher than 5°C.",
+    "refs": {
+      "sections": [
+        "S-0004"
+      ]
+    },
+    "summary": "• In case of anaerobic lagoons treatments systems, the depth of the lagoons used for manure management under the baseline scenario should be at least 1m2. • The annual average temperature in the site where the anaerobic manure treatment ...",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0013",
+    "logic": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated.",
+    "refs": {
+      "sections": [
+        "S-0013"
+      ]
+    },
+    "summary": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0053",
+    "logic": "LEB,N2O Are the N2O emissions released during baseline scenario from land application of the treated manure, in tCO2e/year.",
+    "refs": {
+      "sections": [
+        "S-0053"
+      ]
+    },
+    "summary": "LEB,N2O Are the N2O emissions released during baseline scenario from land application of the treated manure, in tCO2e/year.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0002-0053",
+    "logic": "LEB,CH4 Are the CH4 emissions released during baseline scenario from land application of the treated manure, in tCO2e/year.",
+    "refs": {
+      "sections": [
+        "S-0053"
+      ]
+    },
+    "summary": "LEB,CH4 Are the CH4 emissions released during baseline scenario from land application of the treated manure, in tCO2e/year.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0056",
+    "logic": "RN,n Fraction of NEX in manure waste that is reduced in the Baseline AWMS.",
+    "refs": {
+      "sections": [
+        "S-0056"
+      ]
+    },
+    "summary": "RN,n Fraction of NEX in manure waste that is reduced in the Baseline AWMS.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0067",
+    "logic": "Uncertainty of the meters to be obtained from the manufacturers.",
+    "refs": {
+      "sections": [
+        "S-0067"
+      ]
+    },
+    "summary": "Uncertainty of the meters to be obtained from the manufacturers.",
+    "type": "uncertainty"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0002-0067",
+    "logic": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM- PDD.",
+    "refs": {
+      "sections": [
+        "S-0067"
+      ]
+    },
+    "summary": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM- PDD.",
+    "type": "uncertainty"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0071",
+    "logic": "• EFN2O and RN for estimating nitrogen emission from AWMS in the baseline; • Ambient temperature at the AWMS site; • Amount of electricity used for the operation of the AWMS in the baseline; • Amount of fossil fuel used for the operation of the AWMS in the baseline; • Biogas based electricity exported to the grid, needs to be monitored only if emissions reduction for electricity generation from biogas are claimed; • Data and parameters for estimating heat and electricity emission factors.",
+    "refs": {
+      "sections": [
+        "S-0071"
+      ]
+    },
+    "summary": "• EFN2O and RN for estimating nitrogen emission from AWMS in the baseline; • Ambient temperature at the AWMS site; • Amount of electricity used for the operation of the AWMS in the baseline; • Amount of fossil fuel used for the operation...",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0073",
+    "logic": "Leakage: • Nitrogen concentration and COD in waste water/sludge disposed outside the project boundary;",
+    "refs": {
+      "sections": [
+        "S-0073"
+      ]
+    },
+    "summary": "Leakage: • Nitrogen concentration and COD in waste water/sludge disposed outside the project boundary;",
+    "type": "leakage"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0075",
+    "logic": "Data and parameters monitored",
+    "refs": {
+      "sections": [
+        "S-0075"
+      ]
+    },
+    "summary": "Data and parameters monitored",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0077",
+    "logic": "Data / Parameter: VSLT,y Data unit: kg dry matter/animal/year Description: Volatile solid excretion per animal per day Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually, estimated or based on published information such as IPCC QA/QC procedures: --- Any comment: If it is required to use developed country VS values, the following should be monitored: - Genetic source of the production operations livestock originate from an Annex I Party; - The formulated feed rations (FFR).",
+    "refs": {
+      "sections": [
+        "S-0077"
+      ]
+    },
+    "summary": "Data / Parameter: VSLT,y Data unit: kg dry matter/animal/year Description: Volatile solid excretion per animal per day Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any):...",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0079",
+    "logic": "Data / Parameter: CEFPr,therm,y Data unit: tCO2/MJ Description: Emission factor for thermal energy Source of data: Refer to baseline methodology Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: At the start of the project activity QA/QC procedures: --- Any comment: Calculated as per procedure described in the baseline methodology.",
+    "refs": {
+      "sections": [
+        "S-0079"
+      ]
+    },
+    "summary": "Data / Parameter: CEFPr,therm,y Data unit: tCO2/MJ Description: Emission factor for thermal energy Source of data: Refer to baseline methodology Measurement Archive electronically during project plus 5 years procedures (if any): Monitori...",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0081",
+    "logic": "Data / Parameter: CP Data unit: % Description: Crude protein percent Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: --- Any comment: ---",
+    "refs": {
+      "sections": [
+        "S-0081"
+      ]
+    },
+    "summary": "Data / Parameter: CP Data unit: % Description: Crude protein percent Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: ...",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0083",
+    "logic": "Data / Parameter: Regulations Data unit: --- Description: Existence and enforcement of relevant regulation Source of data: Project proponents Measurement --- procedures (if any): Monitoring frequency: At start of crediting period QA/QC procedures: Quality control for the existence and enforcement of relevant regulations and incentives is beyond the bounds of the project activity.",
+    "refs": {
+      "sections": [
+        "S-0083"
+      ]
+    },
+    "summary": "Data / Parameter: Regulations Data unit: --- Description: Existence and enforcement of relevant regulation Source of data: Project proponents Measurement --- procedures (if any): Monitoring frequency: At start of crediting period QA/QC p...",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0085",
+    "logic": "Data / Parameter: FAer Data unit: Fraction Description: Fraction of volatile solids directed to aerobic treatment Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: --- Any comment: ---",
+    "refs": {
+      "sections": [
+        "S-0085"
+      ]
+    },
+    "summary": "Data / Parameter: FAer Data unit: Fraction Description: Fraction of volatile solids directed to aerobic treatment Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Moni...",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0087",
+    "logic": "But if the project participants can demonstrate that leakage in distribution pipeline is zero, it need be measured at any three points.",
+    "refs": {
+      "sections": [
+        "S-0087"
+      ]
+    },
+    "summary": "But if the project participants can demonstrate that leakage in distribution pipeline is zero, it need be measured at any three points.",
+    "type": "leakage"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0002-0087",
+    "logic": "The biogas flow to electricity or heat equipment in a moment can be considered destroyed, by monitoring that the equipment was working at this time.",
+    "refs": {
+      "sections": [
+        "S-0087"
+      ]
+    },
+    "summary": "The biogas flow to electricity or heat equipment in a moment can be considered destroyed, by monitoring that the equipment was working at this time.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0089",
+    "logic": "Data / Parameter: QDM Data unit: kg Description: Mass of manure disposed outside project boundary Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Every batch disposed QA/QC procedures: --- Any comment: ---",
+    "refs": {
+      "sections": [
+        "S-0089"
+      ]
+    },
+    "summary": "Data / Parameter: QDM Data unit: kg Description: Mass of manure disposed outside project boundary Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency...",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v02-0.R-0001-0091",
+    "logic": "procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---",
+    "refs": {
+      "sections": [
+        "S-0091"
+      ]
+    },
+    "summary": "procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---",
+    "type": "monitoring"
+  }
+]

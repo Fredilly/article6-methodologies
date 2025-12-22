@@ -1,0 +1,452 @@
+[
+  {
+    "anchor": "ams-iii-r",
+    "id": "S-0001",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "AMS-III.R."
+  },
+  {
+    "anchor": "ams-iii-r-2",
+    "id": "S-0002",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "AMS-III.R."
+  },
+  {
+    "anchor": "normative-references-4",
+    "id": "S-0003",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "NORMATIVE REFERENCES .................................................................................. 4"
+  },
+  {
+    "anchor": "ams-iii-r-3",
+    "id": "S-0004",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "AMS-III.R."
+  },
+  {
+    "anchor": "the-following-table-describes-the-key-elements-of-the-methodology",
+    "id": "S-0005",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "The following table describes the key elements of the methodology:"
+  },
+  {
+    "anchor": "this-project-category-comprises-recovery-and-destruction-of-methane-from-manure-and",
+    "id": "S-0006",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "This project category comprises recovery and destruction of methane from manure and"
+  },
+  {
+    "anchor": "the-category-is-limited-to-measures-at-individual-households-or-small-farms-e-g",
+    "id": "S-0007",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "The category is limited to measures at individual households or small farms (e.g."
+  },
+  {
+    "anchor": "this-project-category-is-only-applicable-in-combination-with-ams-i-c-thermal-energy",
+    "id": "S-0008",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "This project category is only applicable in combination with “AMS-I.C.: Thermal energy"
+  },
+  {
+    "anchor": "ams-iii-r-4",
+    "id": "S-0009",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "AMS-III.R."
+  },
+  {
+    "anchor": "the-project-activity-shall-satisfy-the-following-conditions",
+    "id": "S-0010",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "The project activity shall satisfy the following conditions:"
+  },
+  {
+    "anchor": "this-methodology-is-applicable-only-to-the-portion-of-the-manure-which-would-decay",
+    "id": "S-0011",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "This methodology is applicable only to the portion of the manure, which would decay"
+  },
+  {
+    "anchor": "aggregated-annual-emission-reductions-of-all-systems-included-shall-be-less-than-or-equal",
+    "id": "S-0012",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "Aggregated annual emission reductions of all systems included shall be less than or equal"
+  },
+  {
+    "anchor": "the-date-of-entry-into-force-is-the-date-of-the-publication-of-the-eb-110-meeting-report-on",
+    "id": "S-0013",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "The date of entry into force is the date of the publication of the EB 110 meeting report on"
+  },
+  {
+    "anchor": "for-validation-and-verification-of-cdm-projects-and-programme-of-activities-by-a",
+    "id": "S-0014",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "For validation and verification of CDM projects and programme of activities by a"
+  },
+  {
+    "anchor": "project-participants-shall-apply-the-general-guidelines-for-ssc-cdm-methodologies",
+    "id": "S-0015",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "Project participants shall apply the General guidelines for SSC CDM methodologies,"
+  },
+  {
+    "anchor": "this-methodology-also-refers-to-the-latest-approved-versions-of-the-following-approved",
+    "id": "S-0016",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "This methodology also refers to the latest approved versions of the following approved"
+  },
+  {
+    "anchor": "ams-iii-r-5",
+    "id": "S-0017",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "AMS-III.R."
+  },
+  {
+    "anchor": "the-project-boundary-is-the-physical-geographical-site-of-the-methane-recovery-and",
+    "id": "S-0018",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "The project boundary is the physical, geographical site of the methane recovery and"
+  },
+  {
+    "anchor": "project-emissions-due-to-physical-leakage-of-biogas-digester-is-estimated-using-one-of-the",
+    "id": "S-0019",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "Project emissions due to physical leakage of biogas digester is estimated using one of the"
+  },
+  {
+    "anchor": "project-emissions-consist-of-co2-emissions-from-use-of-fossil-fuels-or-electricity-for-the",
+    "id": "S-0020",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "Project emissions consist of CO2 emissions from use of fossil fuels or electricity for the"
+  },
+  {
+    "anchor": "the-baseline-scenario-is-the-situation-where-in-the-absence-of-the-project-activity-biomass",
+    "id": "S-0021",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "The baseline scenario is the situation where, in the absence of the project activity, biomass"
+  },
+  {
+    "anchor": "the-amount-of-waste-or-raw-materials-that-would-decay-anaerobically-in-the-absence-of",
+    "id": "S-0022",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "The amount of waste or raw materials that would decay anaerobically in the absence of"
+  },
+  {
+    "anchor": "baseline-emissions-bey-are-calculated-ex-ante-using-one-of-the-following-methods",
+    "id": "S-0023",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "Baseline emissions (BEy) are calculated ex ante, using one of the following methods:"
+  },
+  {
+    "anchor": "ams-iii-r-6",
+    "id": "S-0024",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "AMS-III.R."
+  },
+  {
+    "anchor": "if-option-in-paragraph-18-a-is-chosen-baseline-emissions-are-determined-as-follows",
+    "id": "S-0025",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "If option in paragraph 18 (a) is chosen, baseline emissions are determined as follows:"
+  },
+  {
+    "anchor": "and-10-15-of-chapter-emissions-from-livestock-and-manure",
+    "id": "S-0026",
+    "level": 2,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "and 10.15 of chapter ‘Emissions from Livestock and Manure"
+  },
+  {
+    "anchor": "the-applicable-requirements-from-tool22-leakage-in-biomass-small-scale-project",
+    "id": "S-0027",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "The applicable requirements from “TOOL22: Leakage in biomass small-scale project"
+  },
+  {
+    "anchor": "the-emission-reduction-achieved-by-the-project-activity-should-be-calculated-as-below",
+    "id": "S-0028",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "The emission reduction achieved by the project activity should be calculated as below"
+  },
+  {
+    "anchor": "ams-iii-r-7",
+    "id": "S-0029",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "AMS-III.R."
+  },
+  {
+    "anchor": "the-emission-reductions-of-the-project-activity-should-be-determined-based-on-monitoring",
+    "id": "S-0030",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "The emission reductions of the project activity should be determined based on monitoring"
+  },
+  {
+    "anchor": "the-co2-emission-factor-is-calculated-as-follows",
+    "id": "S-0031",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "The CO2 emission factor is calculated as follows:"
+  },
+  {
+    "anchor": "emission-reductions-can-only-be-applied-to-systems-that-are-demonstrated-to-be",
+    "id": "S-0032",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "Emission reductions can only be applied to systems that are demonstrated to be"
+  },
+  {
+    "anchor": "survey-methods-are-used-to-determine-the-annual-average-animal-population-nlt-the",
+    "id": "S-0033",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "Survey methods are used to determine the annual average animal population (NLT), the"
+  },
+  {
+    "anchor": "ams-iii-r-8",
+    "id": "S-0034",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "AMS-III.R."
+  },
+  {
+    "anchor": "the-proper-soil-application-not-resulting-in-methane-emissions-of-the-final-sludge-shall",
+    "id": "S-0035",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "The proper soil application (not resulting in methane emissions) of the final sludge shall"
+  },
+  {
+    "anchor": "data-and-parameters-monitored",
+    "id": "S-0036",
+    "level": 2,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "Data and parameters monitored"
+  },
+  {
+    "anchor": "ams-iii-r-9",
+    "id": "S-0037",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "AMS-III.R."
+  },
+  {
+    "anchor": "ams-iii-r-10",
+    "id": "S-0038",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "AMS-III.R."
+  },
+  {
+    "anchor": "the-methodology-is-applicable-to-a-programme-of-activities-no-additional-leakage",
+    "id": "S-0039",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "The methodology is applicable to a programme of activities, no additional leakage"
+  },
+  {
+    "anchor": "ams-iii-r-11",
+    "id": "S-0040",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "AMS-III.R."
+  },
+  {
+    "anchor": "27-may-2021-eb-110-annex-7",
+    "id": "S-0041",
+    "level": 2,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "27 May 2021 EB 110, Annex 7"
+  },
+  {
+    "anchor": "13-september-2012-eb-69-annex-23",
+    "id": "S-0042",
+    "level": 2,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "13 September 2012 EB 69, Annex 23"
+  },
+  {
+    "anchor": "18-february-2011-eb-59-annex-4",
+    "id": "S-0043",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "18 February 2011 EB 59, Annex 4"
+  },
+  {
+    "anchor": "ams-i-e",
+    "id": "S-0044",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "AMS-I.E.;"
+  },
+  {
+    "anchor": "19-october-2007-eb-35-annex-27",
+    "id": "S-0045",
+    "level": 1,
+    "provenance": {
+      "source_hash": "5b1b820f39fc8d19f0d17a5211c11a7aba6c494790162e9d3e7ad0c2aaa1935f",
+      "source_ref": "UNFCCC/AMS-III.R@v05-0"
+    },
+    "title": "19 October 2007 EB 35, Annex 27"
+  }
+]

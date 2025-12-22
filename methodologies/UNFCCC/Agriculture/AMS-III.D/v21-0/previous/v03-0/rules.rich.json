@@ -1,0 +1,112 @@
+[
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v03-0.R-0001-0004",
+    "logic": "Baseline",
+    "refs": {
+      "sections": [
+        "S-0004"
+      ]
+    },
+    "summary": "Baseline",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v03-0.R-0001-0007",
+    "logic": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D.",
+    "refs": {
+      "sections": [
+        "S-0007"
+      ]
+    },
+    "summary": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D.",
+    "type": "eligibility"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v03-0.R-0002-0007",
+    "logic": "If the recovered methane is used for heat generation it is also eligible under category I.C.",
+    "refs": {
+      "sections": [
+        "S-0007"
+      ]
+    },
+    "summary": "If the recovered methane is used for heat generation it is also eligible under category I.C.",
+    "type": "eligibility"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v03-0.R-0001-0008",
+    "logic": "Monitoring",
+    "refs": {
+      "sections": [
+        "S-0008"
+      ]
+    },
+    "summary": "Monitoring",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v03-0.R-0001-0012",
+    "logic": "small-scale CDM project activity categories, including recommendations for determining the project boundary, leakage, baseline and monitoring.",
+    "refs": {
+      "sections": [
+        "S-0012"
+      ]
+    },
+    "summary": "small-scale CDM project activity categories, including recommendations for determining the project boundary, leakage, baseline and monitoring.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v03-0.R-0001-0013",
+    "logic": "small-scale CDM project activities (annex II to decision 21/CP.8 contained in document FCCC/CP/2002/7/Add.3), project participants involved in small-scale CDM project activities may propose changes to the simplified baseline and monitoring methodologies specified in this appendix or propose additional project categories for consideration by the Executive Board.",
+    "refs": {
+      "sections": [
+        "S-0013"
+      ]
+    },
+    "summary": "small-scale CDM project activities (annex II to decision 21/CP.8 contained in document FCCC/CP/2002/7/Add.3), project participants involved in small-scale CDM project activities may propose changes to the simplified baseline and monitori...",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v03-0.R-0002-0013",
+    "logic": "Project participants willing to submit a new small-scale project activity category or revisions to a methodology shall make a request in writing to the Board providing information about the technology/activity and proposals on how a simplified baseline and monitoring methodology would be applied to this category.",
+    "refs": {
+      "sections": [
+        "S-0013"
+      ]
+    },
+    "summary": "Project participants willing to submit a new small-scale project activity category or revisions to a methodology shall make a request in writing to the Board providing information about the technology/activity and proposals on how a simp...",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v03-0.R-0001-0014",
+    "logic": "CDM project activities, a simplified baseline and monitoring methodology listed in this appendix may be used for a small-scale CDM project activity if project participants are able to demonstrate to a designated operational entity that the project activity would otherwise not be implemented due to the existence of one or more barrier(s) listed in attachment A of this appendix.",
+    "refs": {
+      "sections": [
+        "S-0014"
+      ]
+    },
+    "summary": "CDM project activities, a simplified baseline and monitoring methodology listed in this appendix may be used for a small-scale CDM project activity if project participants are able to demonstrate to a designated operational entity that t...",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v03-0.R-0001-0015",
+    "logic": "boundary, biomass projects, leakage and use of Intergovernmental Panel on Climate Change (IPCC) default values for emission coefficients.",
+    "refs": {
+      "sections": [
+        "S-0015"
+      ]
+    },
+    "summary": "boundary, biomass projects, leakage and use of Intergovernmental Panel on Climate Change (IPCC) default values for emission coefficients.",
+    "type": "leakage"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v03-0.R-0001-0020",
+    "logic": "be the most up-to-date values available in the “IPCC Good Practice and Guidance and Uncertainty Management in National Greenhouse Gas Inventories” and the “Revised 1996 IPCC Guidelines for National Greenhouse Gas Inventories”.",
+    "refs": {
+      "sections": [
+        "S-0020"
+      ]
+    },
+    "summary": "be the most up-to-date values available in the “IPCC Good Practice and Guidance and Uncertainty Management in National Greenhouse Gas Inventories” and the “Revised 1996 IPCC Guidelines for National Greenhouse Gas Inventories”.",
+    "type": "uncertainty"
+  }
+]

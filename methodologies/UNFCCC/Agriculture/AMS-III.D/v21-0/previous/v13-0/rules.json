@@ -1,0 +1,116 @@
+{
+  "rules": [
+    {
+      "id": "R-0001-0002",
+      "section_id": "S-0002",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+    },
+    {
+      "id": "R-0001-0003",
+      "section_id": "S-0003",
+      "tags": [
+        "leakage"
+      ],
+      "text": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at http://cdm.unfccc.int/methodologies/SSCmethodologies/approved..."
+    },
+    {
+      "id": "R-0001-0010",
+      "section_id": "S-0010",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Baseline emissions (BEy) are calculated ex ante using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the"
+    },
+    {
+      "id": "R-0001-0012",
+      "section_id": "S-0012",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+    },
+    {
+      "id": "R-0001-0014",
+      "section_id": "S-0014",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Monitoring"
+    },
+    {
+      "id": "R-0001-0017",
+      "section_id": "S-0017",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "defined as the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored."
+    },
+    {
+      "id": "R-0002-0017",
+      "section_id": "S-0017",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "One of the two following options shall be used to determine the efficiency of the flaring process in an enclosed flare: (a) to adopt a 90% default value or (b) to perform a continuous monitoring of the efficiency.1 If option (a) is chose..."
+    },
+    {
+      "id": "R-0003-0017",
+      "section_id": "S-0017",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "For open flare 50% default value should be used, as it is not possible in this case to monitor the efficiency."
+    },
+    {
+      "id": "R-0001-0020",
+      "section_id": "S-0020",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+    },
+    {
+      "id": "R-0001-0021",
+      "section_id": "S-0021",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting period."
+    },
+    {
+      "id": "R-0001-0023",
+      "section_id": "S-0023",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "monitored."
+    },
+    {
+      "id": "R-0001-0026",
+      "section_id": "S-0026",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+    },
+    {
+      "id": "R-0001-0027",
+      "section_id": "S-0027",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an independent monitoring of scrapping of replaced equipment needs to be implemented."
+    },
+    {
+      "id": "R-0002-0027",
+      "section_id": "S-0027",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other."
+    }
+  ]
+}

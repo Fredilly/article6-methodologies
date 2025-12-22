@@ -1,0 +1,108 @@
+{
+  "rules": [
+    {
+      "id": "R-0001-0002",
+      "section_id": "S-0002",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+    },
+    {
+      "id": "R-0001-0003",
+      "section_id": "S-0003",
+      "tags": [
+        "leakage"
+      ],
+      "text": "Project participants shall apply the general guidelines to the SSC CDM methodologies, information on additionality, abbreviations and general guidance on leakage in biomass project activities provided at: <http://cdm.unfccc.int/methodolo..."
+    },
+    {
+      "id": "R-0001-0005",
+      "section_id": "S-0005",
+      "tags": [
+        "eligibility"
+      ],
+      "text": "Systems with annual emission reduction higher than five tonnes of CO2e are eligible under AMS-III.D “Methane recovery in animal manure management systems”."
+    },
+    {
+      "id": "R-0001-0011",
+      "section_id": "S-0011",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+    },
+    {
+      "id": "R-0001-0012",
+      "section_id": "S-0012",
+      "tags": [
+        "leakage"
+      ],
+      "text": "operation of the system and the physical leakages of methane from the recovery system."
+    },
+    {
+      "id": "R-0001-0014",
+      "section_id": "S-0014",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Baseline emissions (BEy) are calculated ex ante using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC tier 2 approach (please refer to the chapter ‘..."
+    },
+    {
+      "id": "R-0002-0014",
+      "section_id": "S-0014",
+      "tags": [
+        "parameter"
+      ],
+      "text": "The option in paragraph 9 (a) and relevant formulae shown in paragraph 10 of AMS-III.D “Methane recovery in animal manure management systems” shall be used to calculate baseline emissions."
+    },
+    {
+      "id": "R-0001-0015",
+      "section_id": "S-0015",
+      "tags": [
+        "parameter"
+      ],
+      "text": "The survey should determine the baseline animal manure management practices applied."
+    },
+    {
+      "id": "R-0001-0016",
+      "section_id": "S-0016",
+      "tags": [
+        "leakage"
+      ],
+      "text": "if the existing equipment is transferred to another activity, leakage is to be considered."
+    },
+    {
+      "id": "R-0002-0016",
+      "section_id": "S-0016",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Monitoring"
+    },
+    {
+      "id": "R-0001-0019",
+      "section_id": "S-0019",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+    },
+    {
+      "id": "R-0001-0020",
+      "section_id": "S-0020",
+      "tags": [
+        "leakage"
+      ],
+      "text": "ERy =BE y − PE y − Leakage (1)"
+    },
+    {
+      "id": "R-0001-0022",
+      "section_id": "S-0022",
+      "tags": [
+        "parameter"
+      ],
+      "text": "• To revise the guidance on calculation of project emissions from physical leakage and baseline emissions; • To revise sampling requirements; • To remove the conditions for PoA."
+    }
+  ]
+}
