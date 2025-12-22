@@ -58,7 +58,7 @@
     { "path": "scripts/ingest-scope.mjs", "sha256": "ebaa8a1c305601c220d45bd5b7326dea6521300e9475d8ff82d74a7165842c05" },
     { "path": "scripts/ingest-scoped.sh", "sha256": "3f291c0281490628bf71f9a7c3de161af9e94db6637dd8c1a2cbc88552eec119" },
     { "path": "scripts/ingest-verify.sh", "sha256": "257acda700c5d64292507bc10e7ba0a9acb4f5533030852b3262a76b0f7315d0" },
-    { "path": "scripts/ingest.sh", "sha256": "e2fe9d277cfa93b104084916f83b42d96fa9846380f6eaea31775c036d4d98f3" },
+    { "path": "scripts/ingest.sh", "sha256": "57c479e0248f4e4eb20f3459d3cb5d2ed392e65a259d67b2a264caa2409d70ac" },
     { "path": "scripts/inject-anchors.js", "sha256": "0541bc16ebc87a2cb54c2b8b251e96d64512a6e8607ed70948195af4f6fc2953" },
     { "path": "scripts/install-codex-prompts.sh", "sha256": "879a7f0e207d2fb685251d0c0d4f2e9e1492212c2ab1ba1fdffcade8469144de" },
     { "path": "scripts/install-hooks.sh", "sha256": "fcd91a8dc76ea68cf703f388c0fc99282f8cefacd30e348ca27a238049123ac3" },
