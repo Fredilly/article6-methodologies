@@ -1,6 +1,10 @@
 node_modules/
 local-tools/
-source-assets/
+source-assets/*
+!source-assets/UNFCCC/
+source-assets/UNFCCC/*
+!source-assets/UNFCCC/Agriculture/
+source-assets/UNFCCC/Agriculture/*
 outputs/*
 !outputs/mvp/
 outputs/mvp/*
