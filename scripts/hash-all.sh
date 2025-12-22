@@ -143,18 +143,20 @@ EOF
 
   # Also refresh any previous-version META files nested under scoped active versions:
   # methodologies/<Org>/<Sector>/<Code>/<Active>/previous/<Prev>/META.json
-  expanded="$(mktemp "${TMPDIR:-/tmp}/article6.meta-files.expanded.XXXXXX")"
-  printf '%s\n' "$meta_files" | sed '/^$/d' > "$expanded"
+  base_list="$(mktemp "${TMPDIR:-/tmp}/article6.meta-files.base.XXXXXX")"
+  extra_list="$(mktemp "${TMPDIR:-/tmp}/article6.meta-files.extra.XXXXXX")"
+  printf '%s\n' "$meta_files" | sed '/^$/d' > "$base_list"
+  : > "$extra_list"
   while IFS= read -r meta_file; do
     [ -z "$meta_file" ] && continue
     dir=$(dirname "$meta_file")
     prev_dir="$dir/previous"
     if [ -d "$prev_dir" ]; then
-      find "$prev_dir" -type f -name META.json -print | LC_ALL=C sort >> "$expanded"
+      find "$prev_dir" -type f -name META.json -print | LC_ALL=C sort >> "$extra_list"
     fi
-  done < "$expanded"
-  meta_files="$(LC_ALL=C sort -u "$expanded")"
-  rm -f "$expanded"
+  done < "$base_list"
+  meta_files="$(cat "$base_list" "$extra_list" | LC_ALL=C sort -u)"
+  rm -f "$base_list" "$extra_list"
 else
   meta_files="$(find methodologies -name META.json | sort)"
 fi
