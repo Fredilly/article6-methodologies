@@ -1,0 +1,57 @@
+[
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v09-0.R-0001-0002",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0002"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v09-0.R-0001-0007",
+    "logic": "Baseline",
+    "refs": {
+      "sections": [
+        "S-0007"
+      ]
+    },
+    "summary": "Baseline",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v09-0.R-0001-0011",
+    "logic": "Monitoring",
+    "refs": {
+      "sections": [
+        "S-0011"
+      ]
+    },
+    "summary": "Monitoring",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v09-0.R-0001-0013",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0013"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v09-0.R-0001-0015",
+    "logic": "the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
+    "refs": {
+      "sections": [
+        "S-0015"
+      ]
+    },
+    "summary": "the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
+    "type": "monitoring"
+  }
+]

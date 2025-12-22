@@ -1,0 +1,84 @@
+{
+  "rules": [
+    {
+      "id": "R-0001-0004",
+      "section_id": "S-0004",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Baseline"
+    },
+    {
+      "id": "R-0001-0007",
+      "section_id": "S-0007",
+      "tags": [
+        "eligibility"
+      ],
+      "text": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D."
+    },
+    {
+      "id": "R-0002-0007",
+      "section_id": "S-0007",
+      "tags": [
+        "eligibility"
+      ],
+      "text": "If the recovered methane is used for heat generation it is also eligible under category I.C."
+    },
+    {
+      "id": "R-0001-0008",
+      "section_id": "S-0008",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Monitoring"
+    },
+    {
+      "id": "R-0001-0012",
+      "section_id": "S-0012",
+      "tags": [
+        "parameter"
+      ],
+      "text": "small-scale CDM project activity categories, including recommendations for determining the project boundary, leakage, baseline and monitoring."
+    },
+    {
+      "id": "R-0001-0013",
+      "section_id": "S-0013",
+      "tags": [
+        "parameter"
+      ],
+      "text": "small-scale CDM project activities (annex II to decision 21/CP.8 contained in document FCCC/CP/2002/7/Add.3), project participants involved in small-scale CDM project activities may propose changes to the simplified baseline and monitori..."
+    },
+    {
+      "id": "R-0002-0013",
+      "section_id": "S-0013",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Project participants willing to submit a new small-scale project activity category or revisions to a methodology shall make a request in writing to the Board providing information about the technology/activity and proposals on how a simp..."
+    },
+    {
+      "id": "R-0001-0014",
+      "section_id": "S-0014",
+      "tags": [
+        "parameter"
+      ],
+      "text": "CDM project activities, a simplified baseline and monitoring methodology listed in this appendix may be used for a small-scale CDM project activity if project participants are able to demonstrate to a designated operational entity that t..."
+    },
+    {
+      "id": "R-0001-0015",
+      "section_id": "S-0015",
+      "tags": [
+        "leakage"
+      ],
+      "text": "boundary, biomass projects, leakage and use of Intergovernmental Panel on Climate Change (IPCC) default values for emission coefficients."
+    },
+    {
+      "id": "R-0001-0020",
+      "section_id": "S-0020",
+      "tags": [
+        "uncertainty"
+      ],
+      "text": "be the most up-to-date values available in the “IPCC Good Practice and Guidance and Uncertainty Management in National Greenhouse Gas Inventories” and the “Revised 1996 IPCC Guidelines for National Greenhouse Gas Inventories”."
+    }
+  ]
+}

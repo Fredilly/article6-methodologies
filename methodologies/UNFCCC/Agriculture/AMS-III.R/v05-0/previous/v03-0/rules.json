@@ -1,0 +1,140 @@
+{
+  "rules": [
+    {
+      "id": "R-0001-0002",
+      "section_id": "S-0002",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+    },
+    {
+      "id": "R-0001-0003",
+      "section_id": "S-0003",
+      "tags": [
+        "leakage"
+      ],
+      "text": "Project participants shall apply the general guidelines to small-scale (SSC) clean development mechanism (CDM) methodologies, abbreviations and general guidance on leakage in biomass project activities and the “Guidelines on the demonstr..."
+    },
+    {
+      "id": "R-0001-0005",
+      "section_id": "S-0005",
+      "tags": [
+        "eligibility"
+      ],
+      "text": "Systems with annual emission reduction higher than five tonnes of CO2e are eligible under AMS-III.D “Methane recovery in animal manure management systems”."
+    },
+    {
+      "id": "R-0001-0011",
+      "section_id": "S-0011",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+    },
+    {
+      "id": "R-0001-0013",
+      "section_id": "S-0013",
+      "tags": [
+        "leakage"
+      ],
+      "text": "operation of the system and the physical leakages of methane from the recovery system."
+    },
+    {
+      "id": "R-0002-0013",
+      "section_id": "S-0013",
+      "tags": [
+        "parameter"
+      ],
+      "text": "The relevant methodological tools “Tool to calculate baseline, project and/or leakage emissions from electricity consumption” and “Tool to calculate project or leakage CO2 emissions from fossil fuel combustion” shall be followed."
+    },
+    {
+      "id": "R-0001-0014",
+      "section_id": "S-0014",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Baseline emissions (BEy) are calculated ex ante, using one of the following methods: (a) A simplified method with the most recent IPCC Tier 1 approach (please refer to the chapter ‘Emissions from Livestock and Manure Management’ under th..."
+    },
+    {
+      "id": "R-0002-0014",
+      "section_id": "S-0014",
+      "tags": [
+        "parameter"
+      ],
+      "text": "The option in paragraph 9(a) and relevant formulae shown in paragraph 10 of AMS-III.D “Methane recovery in animal manure management systems” shall be used to calculate baseline emissions."
+    },
+    {
+      "id": "R-0001-0015",
+      "section_id": "S-0015",
+      "tags": [
+        "parameter"
+      ],
+      "text": "The survey should determine the baseline animal manure management practices applied."
+    },
+    {
+      "id": "R-0002-0015",
+      "section_id": "S-0015",
+      "tags": [
+        "parameter"
+      ],
+      "text": "If the livestock is raised in shared centralized farms,1 the project proponent shall be able to show the baseline animal manure management practices at each farm, either individually or through sampling."
+    },
+    {
+      "id": "R-0001-0017",
+      "section_id": "S-0017",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+    },
+    {
+      "id": "R-0001-0018",
+      "section_id": "S-0018",
+      "tags": [
+        "leakage"
+      ],
+      "text": "leakage is to be considered."
+    },
+    {
+      "id": "R-0001-0020",
+      "section_id": "S-0020",
+      "tags": [
+        "leakage"
+      ],
+      "text": "ERy BE y  PE y  Leakage (1)"
+    },
+    {
+      "id": "R-0001-0022",
+      "section_id": "S-0022",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+    },
+    {
+      "id": "R-0001-0023",
+      "section_id": "S-0023",
+      "tags": [
+        "leakage"
+      ],
+      "text": "estimations are necessary other than that indicated under leakage section above. -----"
+    },
+    {
+      "id": "R-0001-0024",
+      "section_id": "S-0024",
+      "tags": [
+        "parameter"
+      ],
+      "text": " To introduce the IPCC Tier 1 approach as an alternative method for calculation of baseline emissions."
+    },
+    {
+      "id": "R-0001-0025",
+      "section_id": "S-0025",
+      "tags": [
+        "parameter"
+      ],
+      "text": " To revise the guidance on calculation of project emissions from physical leakage and baseline emissions;  To revise sampling requirements;  To remove the conditions for PoA."
+    }
+  ]
+}

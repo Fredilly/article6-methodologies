@@ -3,8 +3,17 @@ const fs = require('fs');
 const fsp = require('fs/promises');
 const path = require('path');
 const crypto = require('crypto');
+const { execFileSync } = require('child_process');
 
 const repoRoot = path.resolve(__dirname, '..');
+
+function gitHead() {
+  try {
+    return execFileSync('git', ['rev-parse', 'HEAD'], { cwd: repoRoot, encoding: 'utf8' }).trim();
+  } catch (err) {
+    return null;
+  }
+}
 
 async function main() {
   const methodArg = process.argv[2];
@@ -22,9 +31,27 @@ async function main() {
     console.error('[meta] method path must look like methodologies/<Org>/<Sector>/<Code>/<Version>');
     process.exit(2);
   }
-  const [, org, sector, code, version] = relMethod;
+  const previousIndex = relMethod.indexOf('previous');
+  const isPrevious = previousIndex !== -1;
+  let org = '';
+  let sector = '';
+  let code = '';
+  let activeVersion = '';
+  let version = '';
+  if (isPrevious) {
+    if (previousIndex < 4 || relMethod.length < previousIndex + 2) {
+      console.error('[meta] previous path must look like methodologies/<Org>/<Sector>/<Code>/<Active>/previous/<Prev>');
+      process.exit(2);
+    }
+    [, org, sector, code, activeVersion] = relMethod;
+    version = relMethod[previousIndex + 1];
+  } else {
+    [, org, sector, code, version] = relMethod;
+  }
   const methodDoc = `${org}/${code}@${version}`;
-  const toolsDir = path.join(repoRoot, 'tools', org, sector, code, version);
+  const toolsDir = isPrevious
+    ? path.join(repoRoot, 'tools', org, sector, code, activeVersion, 'previous', version, 'tools')
+    : path.join(repoRoot, 'tools', org, sector, code, version);
   const metaPath = path.join(methodDir, 'META.json');
   const sectionsPath = path.join(methodDir, 'sections.json');
   const rulesPath = path.join(methodDir, 'rules.json');
@@ -35,6 +62,9 @@ async function main() {
   const existingSourcePaths = new Set(
     (existing?.provenance?.source_pdfs || []).map((entry) => entry.path).filter(Boolean)
   );
+  if (isPrevious && existingSourcePaths.size) {
+    existingSourcePaths.clear();
+  }
   const preferredTools = new Set(
     (existing?.references?.tools || []).map((entry) => entry.path).filter(Boolean)
   );
@@ -53,6 +83,8 @@ async function main() {
   const provenanceDate = existing?.provenance?.date || auditCreatedAt;
   const createdBy = process.env.INGEST_CREATED_BY || existing?.audit?.created_by || 'ingest.sh';
   const scriptsManifestHash = hashFile(path.join(repoRoot, 'scripts_manifest.json'));
+  const nodeVersion = process.versions.node;
+  const repoCommit = gitHead();
 
   const rewrittenKeys = new Set(['audit_hashes', 'automation', 'provenance', 'references', 'audit']);
   const nextMeta = {};
@@ -63,7 +95,13 @@ async function main() {
     source_pdf_sha256: sourceRefs[0].sha256
   };
   nextMeta.automation = {
-    scripts_manifest_sha256: scriptsManifestHash
+    scripts_manifest_sha256: scriptsManifestHash,
+    ...(isPrevious
+      ? {
+          repo_commit: repoCommit,
+          node_version: nodeVersion
+        }
+      : {})
   };
   nextMeta.provenance = {
     ...(existing?.provenance || {}),

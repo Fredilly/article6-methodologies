@@ -1,0 +1,164 @@
+{
+  "rules": [
+    {
+      "id": "R-0001-0002",
+      "section_id": "S-0002",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Revision to the approved consolidated baseline methodology ACM0010"
+    },
+    {
+      "id": "R-0001-0004",
+      "section_id": "S-0004",
+      "tags": [
+        "parameter"
+      ],
+      "text": "• In case of anaerobic lagoons treatments systems, the depth of the lagoons used for manure management under the baseline scenario should be at least 1m2. • The annual average temperature in the site where the anaerobic manure treatment ..."
+    },
+    {
+      "id": "R-0001-0013",
+      "section_id": "S-0013",
+      "tags": [
+        "parameter"
+      ],
+      "text": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated."
+    },
+    {
+      "id": "R-0001-0053",
+      "section_id": "S-0053",
+      "tags": [
+        "parameter"
+      ],
+      "text": "LEB,N2O Are the N2O emissions released during baseline scenario from land application of the treated manure, in tCO2e/year."
+    },
+    {
+      "id": "R-0002-0053",
+      "section_id": "S-0053",
+      "tags": [
+        "parameter"
+      ],
+      "text": "LEB,CH4 Are the CH4 emissions released during baseline scenario from land application of the treated manure, in tCO2e/year."
+    },
+    {
+      "id": "R-0001-0056",
+      "section_id": "S-0056",
+      "tags": [
+        "parameter"
+      ],
+      "text": "RN,n Fraction of NEX in manure waste that is reduced in the Baseline AWMS."
+    },
+    {
+      "id": "R-0001-0067",
+      "section_id": "S-0067",
+      "tags": [
+        "uncertainty"
+      ],
+      "text": "Uncertainty of the meters to be obtained from the manufacturers."
+    },
+    {
+      "id": "R-0002-0067",
+      "section_id": "S-0067",
+      "tags": [
+        "uncertainty"
+      ],
+      "text": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM- PDD."
+    },
+    {
+      "id": "R-0001-0071",
+      "section_id": "S-0071",
+      "tags": [
+        "parameter"
+      ],
+      "text": "• EFN2O and RN for estimating nitrogen emission from AWMS in the baseline; • Ambient temperature at the AWMS site; • Amount of electricity used for the operation of the AWMS in the baseline; • Amount of fossil fuel used for the operation..."
+    },
+    {
+      "id": "R-0001-0073",
+      "section_id": "S-0073",
+      "tags": [
+        "leakage"
+      ],
+      "text": "Leakage: • Nitrogen concentration and COD in waste water/sludge disposed outside the project boundary;"
+    },
+    {
+      "id": "R-0001-0075",
+      "section_id": "S-0075",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Data and parameters monitored"
+    },
+    {
+      "id": "R-0001-0077",
+      "section_id": "S-0077",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Data / Parameter: VSLT,y Data unit: kg dry matter/animal/year Description: Volatile solid excretion per animal per day Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any):..."
+    },
+    {
+      "id": "R-0001-0079",
+      "section_id": "S-0079",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Data / Parameter: CEFPr,therm,y Data unit: tCO2/MJ Description: Emission factor for thermal energy Source of data: Refer to baseline methodology Measurement Archive electronically during project plus 5 years procedures (if any): Monitori..."
+    },
+    {
+      "id": "R-0001-0081",
+      "section_id": "S-0081",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Data / Parameter: CP Data unit: % Description: Crude protein percent Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: ..."
+    },
+    {
+      "id": "R-0001-0083",
+      "section_id": "S-0083",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Data / Parameter: Regulations Data unit: --- Description: Existence and enforcement of relevant regulation Source of data: Project proponents Measurement --- procedures (if any): Monitoring frequency: At start of crediting period QA/QC p..."
+    },
+    {
+      "id": "R-0001-0085",
+      "section_id": "S-0085",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Data / Parameter: FAer Data unit: Fraction Description: Fraction of volatile solids directed to aerobic treatment Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Moni..."
+    },
+    {
+      "id": "R-0001-0087",
+      "section_id": "S-0087",
+      "tags": [
+        "leakage"
+      ],
+      "text": "But if the project participants can demonstrate that leakage in distribution pipeline is zero, it need be measured at any three points."
+    },
+    {
+      "id": "R-0002-0087",
+      "section_id": "S-0087",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "The biogas flow to electricity or heat equipment in a moment can be considered destroyed, by monitoring that the equipment was working at this time."
+    },
+    {
+      "id": "R-0001-0089",
+      "section_id": "S-0089",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Data / Parameter: QDM Data unit: kg Description: Mass of manure disposed outside project boundary Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency..."
+    },
+    {
+      "id": "R-0001-0091",
+      "section_id": "S-0091",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---"
+    }
+  ]
+}

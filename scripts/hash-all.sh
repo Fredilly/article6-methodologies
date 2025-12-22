@@ -149,6 +149,21 @@ while IFS= read -r meta_file; do
   dir=$(dirname "$meta_file")
 case "$dir" in
     *"/previous/"*)
+      # Previous versions are stored under the active version directory:
+      # methodologies/<Org>/<Sector>/<Code>/<Active>/previous/<Prev>
+      rel_dir="${dir#methodologies/}"
+      org="$(printf '%s' "$rel_dir" | awk -F/ '{print $1}')"
+      sector="$(printf '%s' "$rel_dir" | awk -F/ '{print $2}')"
+      code="$(printf '%s' "$rel_dir" | awk -F/ '{print $3}')"
+      active_version="$(printf '%s' "$rel_dir" | awk -F/ '{print $4}')"
+      prev_version="$(printf '%s' "$rel_dir" | awk -F/ '{print $6}')"
+
+      if [ -z "$org" ] || [ -z "$sector" ] || [ -z "$code" ] || [ -z "$active_version" ] || [ -z "$prev_version" ]; then
+        echo "[hash-all] unexpected previous dir layout: $dir" >&2
+        exit 2
+      fi
+
+      prev_tools_dir="tools/${org}/${sector}/${code}/${active_version}/previous/${prev_version}/tools"
       source_pdf=$(jq -r '
         ([
           (.provenance.source_pdfs[]?.path // ""),
@@ -157,7 +172,13 @@ case "$dir" in
         | map(select((. // "") | endswith("/source.pdf")))
         | map(select(. != ""))
         | .[0]) // ""' "$meta_file")
-      if [ -z "$source_pdf" ]; then
+      if [ -z "$source_pdf" ] || [ ! -f "$source_pdf" ]; then
+        prev_source_pdf="${prev_tools_dir}/source.pdf"
+        if [ -f "$prev_source_pdf" ]; then
+          source_pdf="$prev_source_pdf"
+        fi
+      fi
+      if [ -z "$source_pdf" ] || [ ! -f "$source_pdf" ]; then
         id=$(jq -r '.id // ""' "$meta_file")
         ver=$(jq -r '.version // ""' "$meta_file")
         if [ -n "$id" ] && [ -n "$ver" ]; then
@@ -169,13 +190,65 @@ case "$dir" in
         echo "[hash-all] missing previous source PDF reference for $meta_file (expected: ${source_pdf:-unknown})" >&2
         exit 1
       fi
+
       source_hash=$(hash_file "$source_pdf")
+
+      # Legacy previous dirs may only contain META.json; if so, only pin source_pdf_sha256 + scripts manifest.
+      if [ ! -f "$dir/sections.json" ] || [ ! -f "$dir/rules.json" ]; then
+        tmp="$meta_file.tmp"
+        jq \
+          --arg source "$source_hash" \
+          --arg manifest "$scripts_manifest_sha" \
+          '.audit_hashes = (.audit_hashes // {}) |
+           .audit_hashes.source_pdf_sha256 = $source |
+           .references = (.references // {}) |
+           .references.tools = (.references.tools // []) |
+           .automation = (.automation // {}) |
+           .automation.scripts_manifest_sha256 = $manifest' \
+          "$meta_file" > "$tmp" && mv "$tmp" "$meta_file"
+        continue
+      fi
+
+      sections_hash=$(hash_file "$dir/sections.json")
+      rules_hash=$(hash_file "$dir/rules.json")
+
+      # Gather PDF tools under the previous tools dir (stable order), then update references.tools.
+      tools_json=$(find "$prev_tools_dir" -type f -name '*.pdf' -print | LC_ALL=C sort | while IFS= read -r f; do
+        [ -f "$f" ] || continue
+        set -- $(tool_digest "$f")
+        sha="$1"
+        size="$2"
+        doc=$(derive_doc "$f" "$org" "$code" "$(printf '%s\n' "$prev_version" | tr '-' '.')")
+        printf '{"doc":"%s","path":"%s","sha256":"%s","size":%s,"kind":"pdf"}\n' "$doc" "$f" "$sha" "$size"
+      done | jq -s '.')
+
       tmp="$meta_file.tmp"
-      jq --arg source "$source_hash" \
-        '.audit_hashes = (.audit_hashes // {}) |
+      jq \
+        --arg sections "$sections_hash" \
+        --arg rules "$rules_hash" \
+        --arg source "$source_hash" \
+        --argjson tools "$tools_json" \
+        --arg manifest "$scripts_manifest_sha" \
+        '.audit_hashes.sections_json_sha256 = $sections |
+         .audit_hashes.rules_json_sha256 = $rules |
          .audit_hashes.source_pdf_sha256 = $source |
-         .references = (.references // {}) |
-         .references.tools = (.references.tools // [])' \
+         .references.tools = ((.references.tools // []) |
+           reduce $tools[] as $t (
+             .;
+             if (map(.path == $t.path) | any) then
+               map(if .path == $t.path then
+                     .sha256 = $t.sha256
+                   | .size = $t.size
+                   | .doc = (if ((.doc // "") == "" or ((.doc // "") | contains("#"))) then $t.doc else .doc end)
+                   | .url = (.url // null)
+                   | .kind = (.kind // $t.kind)
+                   else . end)
+                   else
+                     . + [$t]
+                   end
+                 ) | sort_by(.path)) |
+         .automation = (.automation // {}) |
+         .automation.scripts_manifest_sha256 = $manifest' \
         "$meta_file" > "$tmp" && mv "$tmp" "$meta_file"
       continue
       ;;

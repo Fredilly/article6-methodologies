@@ -1,0 +1,92 @@
+{
+  "rules": [
+    {
+      "id": "R-0001-0007",
+      "section_id": "S-0007",
+      "tags": [
+        "eligibility"
+      ],
+      "text": "Systems with annual emission reduction higher than five tonnes of CO2e are eligible under “AMS-III.D.: Methane recovery in animal manure management systems”."
+    },
+    {
+      "id": "R-0001-0015",
+      "section_id": "S-0015",
+      "tags": [
+        "leakage"
+      ],
+      "text": "TOOL21: Demonstration of additionality of small-scale project activities and TOOL22: Leakage in biomass small-scale project activities available at <http://cdm.unfccc.int/Reference/Guidclarif/index.html#meth> mutatis mutandis."
+    },
+    {
+      "id": "R-0001-0016",
+      "section_id": "S-0016",
+      "tags": [
+        "parameter"
+      ],
+      "text": "methodologies and tools: (a) “AMS-I.C.: “Thermal energy production with or without electricity”; (b) “AMS-I.E.: Switch from non-renewable biomass for thermal applications by the user”; (c) “AMS-I.I.: Biogas/biomass thermal applications f..."
+    },
+    {
+      "id": "R-0001-0020",
+      "section_id": "S-0020",
+      "tags": [
+        "leakage"
+      ],
+      "text": "operation of the system and the physical leakages of methane from the recovery system."
+    },
+    {
+      "id": "R-0002-0020",
+      "section_id": "S-0020",
+      "tags": [
+        "parameter"
+      ],
+      "text": "The relevant methodological tools “TOOL03: Tool to calculate project or leakage CO2 emissions from fossil fuel combustion” and “TOOL05: Baseline, project and/or leakage emissions from electricity consumption and monitoring of electricity..."
+    },
+    {
+      "id": "R-0001-0022",
+      "section_id": "S-0022",
+      "tags": [
+        "parameter"
+      ],
+      "text": "The survey should determine the baseline animal manure management practices applied."
+    },
+    {
+      "id": "R-0002-0022",
+      "section_id": "S-0022",
+      "tags": [
+        "parameter"
+      ],
+      "text": "If the livestock is raised in shared centralized farms,1 the project proponent shall be able to show the baseline animal manure management practices at each farm, either individually or through sampling."
+    },
+    {
+      "id": "R-0001-0027",
+      "section_id": "S-0027",
+      "tags": [
+        "leakage"
+      ],
+      "text": "activities” shall be followed to calculate leakage related to use of biomass."
+    },
+    {
+      "id": "R-0001-0039",
+      "section_id": "S-0039",
+      "tags": [
+        "leakage"
+      ],
+      "text": "estimations are necessary other than that indicated under leakage section above."
+    },
+    {
+      "id": "R-0001-0042",
+      "section_id": "S-0042",
+      "tags": [
+        "parameter"
+      ],
+      "text": "To introduce the IPCC Tier 1 approach as an alternative method for calculation of baseline emissions."
+    },
+    {
+      "id": "R-0001-0044",
+      "section_id": "S-0044",
+      "tags": [
+        "parameter"
+      ],
+      "text": "• To revise the guidance on calculation of project emissions from physical leakage and baseline emissions; • To revise sampling requirements; • To remove the conditions for PoA."
+    }
+  ]
+}

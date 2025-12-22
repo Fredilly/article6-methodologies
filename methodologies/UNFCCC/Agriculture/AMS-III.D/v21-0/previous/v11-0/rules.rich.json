@@ -1,0 +1,68 @@
+[
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v11-0.R-0001-0002",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0002"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v11-0.R-0001-0003",
+    "logic": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at http://cdm.unfccc.int/methodologies/SSCmethodologies/approved.html .",
+    "refs": {
+      "sections": [
+        "S-0003"
+      ]
+    },
+    "summary": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at http://cdm.unfccc.int/methodologies/SSCmethodologies/approved...",
+    "type": "leakage"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v11-0.R-0001-0010",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0010"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v11-0.R-0001-0011",
+    "logic": "For each year during the crediting period, emissions are calculated as specified in paragraph a and paragraph b below and lower of the two values is used (a) Actual monitored amount of methane captured and destroyed by the project activity. (b) The methane emissions calculated ex ante using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC tier 2 approach (please refer to the chapter ‘Emissions from Livestock and Manure Management’ under the volume ‘Agriculture, Forestry and other Land use’ of the 2006 IPCC Guidelines for National Greenhouse Gas Inventories).",
+    "refs": {
+      "sections": [
+        "S-0011"
+      ]
+    },
+    "summary": "For each year during the crediting period, emissions are calculated as specified in paragraph a and paragraph b below and lower of the two values is used (a) Actual monitored amount of methane captured and destroyed by the project activi...",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v11-0.R-0001-0013",
+    "logic": "Monitoring",
+    "refs": {
+      "sections": [
+        "S-0013"
+      ]
+    },
+    "summary": "Monitoring",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v11-0.R-0001-0015",
+    "logic": "the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
+    "refs": {
+      "sections": [
+        "S-0015"
+      ]
+    },
+    "summary": "the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
+    "type": "monitoring"
+  }
+]

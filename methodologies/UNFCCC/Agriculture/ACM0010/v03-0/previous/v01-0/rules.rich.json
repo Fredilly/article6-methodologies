@@ -1,0 +1,255 @@
+[
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0002",
+    "logic": "Approved consolidated baseline methodology ACM0010",
+    "refs": {
+      "sections": [
+        "S-0002"
+      ]
+    },
+    "summary": "Approved consolidated baseline methodology ACM0010",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0004",
+    "logic": "• The annual average temperature in the site where the anaerobic manure treatment facility in the baseline existed is higher than 5°C.",
+    "refs": {
+      "sections": [
+        "S-0004"
+      ]
+    },
+    "summary": "• The annual average temperature in the site where the anaerobic manure treatment facility in the baseline existed is higher than 5°C.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0011",
+    "logic": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated.",
+    "refs": {
+      "sections": [
+        "S-0011"
+      ]
+    },
+    "summary": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0035",
+    "logic": "BEN2O,y Annual baseline N2O emissions in t CO2e / yr GWPN2O Global Warming Potential (GWP) for N2O.",
+    "refs": {
+      "sections": [
+        "S-0035"
+      ]
+    },
+    "summary": "BEN2O,y Annual baseline N2O emissions in t CO2e / yr GWPN2O Global Warming Potential (GWP) for N2O.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0039",
+    "logic": "small-scale project activity (15 MW), the method for the calculation of the grid emission factor in the simplified baseline methodology for small-scale CDM project activity AMS.I.D could be used.",
+    "refs": {
+      "sections": [
+        "S-0039"
+      ]
+    },
+    "summary": "small-scale project activity (15 MW), the method for the calculation of the grid emission factor in the simplified baseline methodology for small-scale CDM project activity AMS.I.D could be used.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0042",
+    "logic": "LFAD Methane leakage from Anaerobic digesters, default of 0.15 multiplied by methane content of biogas.",
+    "refs": {
+      "sections": [
+        "S-0042"
+      ]
+    },
+    "summary": "LFAD Methane leakage from Anaerobic digesters, default of 0.15 multiplied by methane content of biogas.",
+    "type": "leakage"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0002-0042",
+    "logic": "LT Index for livestock type B0,LT CH4 production capacity from manure for livestock type LT, in m3 CH4/kg-VS, to be chosen based on procedure provided for in the baseline methodology section.",
+    "refs": {
+      "sections": [
+        "S-0042"
+      ]
+    },
+    "summary": "LT Index for livestock type B0,LT CH4 production capacity from manure for livestock type LT, in m3 CH4/kg-VS, to be chosen based on procedure provided for in the baseline methodology section.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0053",
+    "logic": "• In case the electricity is generated in an on-site fossil fuel fired power plant in the baseline, the default emission factor for a diesel generator with a capacity of more than 200 kW for small-scale project activities should be used (0.8 tCO2/MWh, see Table I.D.1 in the simplified baseline and monitoring methodology AMS.I.D for selected small-scale CDM project activity categories).",
+    "refs": {
+      "sections": [
+        "S-0053"
+      ]
+    },
+    "summary": "• In case the electricity is generated in an on-site fossil fuel fired power plant in the baseline, the default emission factor for a diesel generator with a capacity of more than 200 kW for small-scale project activities should be used ...",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0056",
+    "logic": "RN,n Fraction of NEX in manure waste that is reduced in the Baseline AWMS.",
+    "refs": {
+      "sections": [
+        "S-0056"
+      ]
+    },
+    "summary": "RN,n Fraction of NEX in manure waste that is reduced in the Baseline AWMS.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0073",
+    "logic": "• Flare operation, i.e., time of the year when the flare is operational when the biogas is flowing through the flare; • Concentration of methane in biogas at outlet of anaerobic digester; • Concentration of methane in flue gases of the flare; • Biogas leakage in project: through leaks in the pipeline during transportation of biogas.",
+    "refs": {
+      "sections": [
+        "S-0073"
+      ]
+    },
+    "summary": "• Flare operation, i.e., time of the year when the flare is operational when the biogas is flowing through the flare; • Concentration of methane in biogas at outlet of anaerobic digester; • Concentration of methane in flue gases of the f...",
+    "type": "leakage"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0075",
+    "logic": "Leakage: • Nitrogen concentration and COD in waste water/sludge disposed outside the project boundary;",
+    "refs": {
+      "sections": [
+        "S-0075"
+      ]
+    },
+    "summary": "Leakage: • Nitrogen concentration and COD in waste water/sludge disposed outside the project boundary;",
+    "type": "leakage"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0077",
+    "logic": "Data and parameters monitored",
+    "refs": {
+      "sections": [
+        "S-0077"
+      ]
+    },
+    "summary": "Data and parameters monitored",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0079",
+    "logic": "QA/QC procedures: --- Any comment: If it is required to use developed country VS values, the following should be monitored: - Genetic source of the production operations livestock originate from an Annex I Party; - The formulated feed rations (FFR).",
+    "refs": {
+      "sections": [
+        "S-0079"
+      ]
+    },
+    "summary": "QA/QC procedures: --- Any comment: If it is required to use developed country VS values, the following should be monitored: - Genetic source of the production operations livestock originate from an Annex I Party; - The formulated feed ra...",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0081",
+    "logic": "QA/QC procedures: --- Any comment: Calculated as per procedure described in the baseline methodology.",
+    "refs": {
+      "sections": [
+        "S-0081"
+      ]
+    },
+    "summary": "QA/QC procedures: --- Any comment: Calculated as per procedure described in the baseline methodology.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0083",
+    "logic": "Data / Parameter: GE Data unit: MJ/d Description: Gross energy intake of the animal Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: --- Any comment: ---",
+    "refs": {
+      "sections": [
+        "S-0083"
+      ]
+    },
+    "summary": "Data / Parameter: GE Data unit: MJ/d Description: Gross energy intake of the animal Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/...",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0085",
+    "logic": "Data / Parameter: NLT Data unit: Number Description: Average livestock population used in both baseline and project case emissions estimation.",
+    "refs": {
+      "sections": [
+        "S-0085"
+      ]
+    },
+    "summary": "Data / Parameter: NLT Data unit: Number Description: Average livestock population used in both baseline and project case emissions estimation.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0002-0085",
+    "logic": "Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures: --- Any comment: The PDD should describe the system on monitoring the number of livestock population.",
+    "refs": {
+      "sections": [
+        "S-0085"
+      ]
+    },
+    "summary": "Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures: --- Any comment: The PDD should describe the system on monitoring the ...",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0087",
+    "logic": "Description: Electricity used in Project AWMSs Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: Electricity meters will undergo maintenance/calibration subject to appropriate industry standards.",
+    "refs": {
+      "sections": [
+        "S-0087"
+      ]
+    },
+    "summary": "Description: Electricity used in Project AWMSs Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: Electricity meters wil...",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0002-0087",
+    "logic": "Uncertainty of the meters to be obtained from the manufacturers.",
+    "refs": {
+      "sections": [
+        "S-0087"
+      ]
+    },
+    "summary": "Uncertainty of the meters to be obtained from the manufacturers.",
+    "type": "uncertainty"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0003-0087",
+    "logic": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM-PDD.",
+    "refs": {
+      "sections": [
+        "S-0087"
+      ]
+    },
+    "summary": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM-PDD.",
+    "type": "uncertainty"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0089",
+    "logic": "QA/QC procedures: The project proponents shall define the variability of the concentration.",
+    "refs": {
+      "sections": [
+        "S-0089"
+      ]
+    },
+    "summary": "QA/QC procedures: The project proponents shall define the variability of the concentration.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0091",
+    "logic": "Monitoring frequency: Annually QA/QC procedures: --- Any comment: ---",
+    "refs": {
+      "sections": [
+        "S-0091"
+      ]
+    },
+    "summary": "Monitoring frequency: Annually QA/QC procedures: --- Any comment: ---",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0093",
+    "logic": "Source of data: --- Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---",
+    "refs": {
+      "sections": [
+        "S-0093"
+      ]
+    },
+    "summary": "Source of data: --- Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---",
+    "type": "monitoring"
+  }
+]

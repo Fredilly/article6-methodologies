@@ -1,0 +1,123 @@
+[
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v12-0.R-0001-0002",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0002"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v12-0.R-0001-0003",
+    "logic": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at http://cdm.unfccc.int/methodologies/SSCmethodologies/approved.html.",
+    "refs": {
+      "sections": [
+        "S-0003"
+      ]
+    },
+    "summary": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at http://cdm.unfccc.int/methodologies/SSCmethodologies/approved...",
+    "type": "leakage"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v12-0.R-0001-0010",
+    "logic": "Baseline emissions (BEy) are calculated ex ante using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity,",
+    "refs": {
+      "sections": [
+        "S-0010"
+      ]
+    },
+    "summary": "Baseline emissions (BEy) are calculated ex ante using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity,",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v12-0.R-0001-0012",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0012"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v12-0.R-0001-0014",
+    "logic": "Monitoring",
+    "refs": {
+      "sections": [
+        "S-0014"
+      ]
+    },
+    "summary": "Monitoring",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v12-0.R-0001-0017",
+    "logic": "defined as the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
+    "refs": {
+      "sections": [
+        "S-0017"
+      ]
+    },
+    "summary": "defined as the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v12-0.R-0002-0017",
+    "logic": "One of the two following options shall be used to determine the efficiency of the flaring process in an enclosed flare: a. to adopt a 90% default value or b. to perform a continuous monitoring of the efficiency.1 If option (a) is chosen, continuous check of compliance with the manufacturer’s specification of the flare device (temperature, biogas flow rate) should be done.",
+    "refs": {
+      "sections": [
+        "S-0017"
+      ]
+    },
+    "summary": "One of the two following options shall be used to determine the efficiency of the flaring process in an enclosed flare: a. to adopt a 90% default value or b. to perform a continuous monitoring of the efficiency.1 If option (a) is chosen,...",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v12-0.R-0003-0017",
+    "logic": "For open flare 50% default value should be used, as it is not possible in this case to monitor the efficiency.",
+    "refs": {
+      "sections": [
+        "S-0017"
+      ]
+    },
+    "summary": "For open flare 50% default value should be used, as it is not possible in this case to monitor the efficiency.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v12-0.R-0001-0019",
+    "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "refs": {
+      "sections": [
+        "S-0019"
+      ]
+    },
+    "summary": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v12-0.R-0001-0021",
+    "logic": "of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting period.",
+    "refs": {
+      "sections": [
+        "S-0021"
+      ]
+    },
+    "summary": "of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting period.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v12-0.R-0001-0023",
+    "logic": "monitored.",
+    "refs": {
+      "sections": [
+        "S-0023"
+      ]
+    },
+    "summary": "monitored.",
+    "type": "monitoring"
+  }
+]

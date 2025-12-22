@@ -1,0 +1,52 @@
+{
+  "rules": [
+    {
+      "id": "R-0001-0002",
+      "section_id": "S-0002",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+    },
+    {
+      "id": "R-0001-0003",
+      "section_id": "S-0003",
+      "tags": [
+        "leakage"
+      ],
+      "text": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at http://cdm.unfccc.int/methodologies/SSCmethodologies/approved..."
+    },
+    {
+      "id": "R-0001-0010",
+      "section_id": "S-0010",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+    },
+    {
+      "id": "R-0001-0011",
+      "section_id": "S-0011",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "For each year during the crediting period, emissions are calculated as specified in paragraph a and paragraph b below and lower of the two values is used (a) Actual monitored amount of methane captured and destroyed by the project activi..."
+    },
+    {
+      "id": "R-0001-0013",
+      "section_id": "S-0013",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Monitoring"
+    },
+    {
+      "id": "R-0001-0015",
+      "section_id": "S-0015",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored."
+    }
+  ]
+}

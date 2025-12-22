@@ -1,0 +1,36 @@
+{
+  "rules": [
+    {
+      "id": "R-0001-0002",
+      "section_id": "S-0002",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+    },
+    {
+      "id": "R-0001-0006",
+      "section_id": "S-0006",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Baseline"
+    },
+    {
+      "id": "R-0001-0010",
+      "section_id": "S-0010",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "Monitoring"
+    },
+    {
+      "id": "R-0001-0012",
+      "section_id": "S-0012",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored."
+    }
+  ]
+}

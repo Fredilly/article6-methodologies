@@ -91,6 +91,17 @@ for ((run=1; run<=RUNS; run++)); do
     node "${SCRIPT_DIR}/reshape-agriculture.js" "${agri_dirs[@]}"
   fi
 
+  if [ "$scoped_dry_run" -eq 0 ] && [ "${ARTICLE6_INCLUDE_PREVIOUS:-0}" = "1" ] && [ "${#agri_dirs[@]}" -gt 0 ]; then
+    if [ -z "${ARTICLE6_PREVIOUS_LOCK:-}" ]; then
+      echo "[ingest-scoped] ARTICLE6_INCLUDE_PREVIOUS=1 requires ARTICLE6_PREVIOUS_LOCK=<path>" >&2
+      exit 2
+    fi
+    echo "[ingest-scoped] include previous versions from lockfile"
+    node "${SCRIPT_DIR}/ingest-previous-from-lock.mjs" \
+      --ingest-yml "$SCOPED_YML" \
+      --previous-lock "${ARTICLE6_PREVIOUS_LOCK}"
+  fi
+
   node "${SCRIPT_DIR}/resolve-ingest-scope.mjs" \
     --source ingest \
     --in "$SCOPED_YML" \

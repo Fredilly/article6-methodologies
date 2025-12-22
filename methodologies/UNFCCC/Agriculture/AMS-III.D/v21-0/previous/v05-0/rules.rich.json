@@ -1,0 +1,57 @@
+[
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v05-0.R-0001-0004",
+    "logic": "Baseline",
+    "refs": {
+      "sections": [
+        "S-0004"
+      ]
+    },
+    "summary": "Baseline",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v05-0.R-0001-0007",
+    "logic": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D.",
+    "refs": {
+      "sections": [
+        "S-0007"
+      ]
+    },
+    "summary": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D.",
+    "type": "eligibility"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v05-0.R-0002-0007",
+    "logic": "If the recovered methane is used for heat generation it is also eligible under category I.C.",
+    "refs": {
+      "sections": [
+        "S-0007"
+      ]
+    },
+    "summary": "If the recovered methane is used for heat generation it is also eligible under category I.C.",
+    "type": "eligibility"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v05-0.R-0001-0008",
+    "logic": "Monitoring",
+    "refs": {
+      "sections": [
+        "S-0008"
+      ]
+    },
+    "summary": "Monitoring",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-D.v05-0.R-0001-0010",
+    "logic": "fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
+    "refs": {
+      "sections": [
+        "S-0010"
+      ]
+    },
+    "summary": "fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
+    "type": "monitoring"
+  }
+]

@@ -1,8 +1,18 @@
 {
+  "audit": {
+    "created_at": "2025-12-22T07:20:33.548Z",
+    "created_by": "ingest.sh"
+  },
   "audit_hashes": {
+    "rules_json_sha256": "c93227d1e7aa0d53b0eb1344a33ab502ca31152df9e8f55ccd549a85440d3227",
+    "sections_json_sha256": "46246c4febfb71b093f36a08455b30ec75295ae840cef297a3442eaac151bf0f",
     "source_pdf_sha256": "fb3fc8e643f6845a8e4ec88ad67f64db320636ee3f13138afc6eba963c7a4846"
   },
-  "automation": {},
+  "automation": {
+    "node_version": "20.19.5",
+    "repo_commit": "a4346cb5b650b75464d1ccf1d012fa27bfd7fe67",
+    "scripts_manifest_sha256": "70b225f7c4f0b785d7dc767bc599ec7362771290161c480e2b5aed206f6ef489"
+  },
   "effective_from": "2011-03-04",
   "effective_to": "2012-09-27",
   "id": "UNFCCC.Agriculture.AMS-III.R",
@@ -16,9 +26,9 @@
     "methodology_page": "https://cdm.unfccc.int/methodologies/DB/Q8EMKMK67G1XIUKJFED8EVFL2VH1SN/view.html",
     "source_pdfs": [
       {
-        "doc": "UNFCCC/AMS-III.R@v05-0",
+        "doc": "UNFCCC/AMS-III.R@v02-0",
         "kind": "pdf",
-        "path": "source-assets/UNFCCC/Agriculture/AMS-III.R/v05-0/previous/v02-0/tools/source.pdf",
+        "path": "tools/UNFCCC/Agriculture/AMS-III.R/v05-0/previous/v02-0/tools/source.pdf",
         "sha256": "fb3fc8e643f6845a8e4ec88ad67f64db320636ee3f13138afc6eba963c7a4846",
         "size": 201280
       }
@@ -30,46 +40,12 @@
   "references": {
     "tools": [
       {
-        "doc": "UNFCCC/AM-TOOL03@v03",
+        "doc": "UNFCCC/AMS-III.R@v02-0",
         "kind": "pdf",
-        "pointer": "../../../../../../../tools/UNFCCC/Agriculture/AMS-III.R/v05-0/am-tool-03-v3.pdf",
-        "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02",
-        "size": 447750
-      },
-      {
-        "doc": "UNFCCC/AM-TOOL05@v03.0",
-        "kind": "pdf",
-        "pointer": "../../../../../../../tools/UNFCCC/Agriculture/AMS-III.R/v05-0/am-tool-05-v3.0.pdf",
-        "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51",
-        "size": 572432
-      },
-      {
-        "doc": "UNFCCC/AM-TOOL14@v03",
-        "kind": "pdf",
-        "pointer": "../../../../../../../tools/UNFCCC/Agriculture/AMS-III.R/v05-0/am-tool-14-v3.pdf",
-        "sha256": "0788effccd28e867dfee522e5c413ca4d47240c75acce3a05d6d0cf759a3d1d0",
-        "size": 325737
-      },
-      {
-        "doc": "UNFCCC/AM-TOOL21@v13.1",
-        "kind": "pdf",
-        "pointer": "../../../../../../../tools/UNFCCC/Agriculture/AMS-III.R/v05-0/am-tool-21-v13.1.pdf",
-        "sha256": "c3a9fbb19b500f6ab70dfd29c3765921bb348251c8c7387e20ed50f96b29993d",
-        "size": 205794
-      },
-      {
-        "doc": "UNFCCC/AM-TOOL22@v01",
-        "kind": "pdf",
-        "pointer": "../../../../../../../tools/UNFCCC/Agriculture/AMS-III.R/v05-0/am-tool-22-v1.pdf",
-        "sha256": "13a14ce8ae638e0b2ae87873c854d60e8b129934611a4d41f2ac6d10caae03df",
-        "size": 115899
-      },
-      {
-        "doc": "UNFCCC/AMS-III.R@v05-0",
-        "kind": "pdf",
-        "pointer": "../../../../../../../tools/UNFCCC/Agriculture/AMS-III.R/v05-0/source.pdf",
-        "sha256": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb",
-        "size": 293350
+        "path": "tools/UNFCCC/Agriculture/AMS-III.R/v05-0/previous/v02-0/tools/source.pdf",
+        "sha256": "fb3fc8e643f6845a8e4ec88ad67f64db320636ee3f13138afc6eba963c7a4846",
+        "size": 201280,
+        "url": null
       }
     ]
   },
