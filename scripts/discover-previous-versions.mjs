@@ -5,7 +5,7 @@ import { deterministicGeneratedAt, parseArgs, writeJson } from './utils/previous
 
 function usage() {
   console.error(
-    'Usage: node scripts/discover-previous-versions.mjs --program UNFCCC --sector Agriculture --out source-assets/UNFCCC/Agriculture/previous-versions.json',
+    'Usage: node scripts/discover-previous-versions.mjs --program UNFCCC --sector Agriculture --out registry/UNFCCC/Agriculture/previous-versions.json',
   );
   process.exit(2);
 }

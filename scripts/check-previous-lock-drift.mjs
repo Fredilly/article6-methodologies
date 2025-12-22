@@ -12,7 +12,7 @@ import { discoverPreviousVersions } from './discover-previous-versions.shared.mj
 
 function usage() {
   console.error(
-    'Usage: node scripts/check-previous-lock-drift.mjs --program UNFCCC --sector Agriculture --lock source-assets/UNFCCC/Agriculture/previous-versions.lock.json',
+    'Usage: node scripts/check-previous-lock-drift.mjs --program UNFCCC --sector Agriculture --lock registry/UNFCCC/Agriculture/previous-versions.lock.json',
   );
   process.exit(2);
 }

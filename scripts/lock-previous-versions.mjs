@@ -14,7 +14,7 @@ import {
 
 function usage() {
   console.error(
-    'Usage: node scripts/lock-previous-versions.mjs --in source-assets/UNFCCC/Agriculture/previous-versions.json --out source-assets/UNFCCC/Agriculture/previous-versions.lock.json',
+    'Usage: node scripts/lock-previous-versions.mjs --in registry/UNFCCC/Agriculture/previous-versions.json --out registry/UNFCCC/Agriculture/previous-versions.lock.json',
   );
   process.exit(2);
 }
@@ -89,4 +89,3 @@ function main() {
 }
 
 main();
-
