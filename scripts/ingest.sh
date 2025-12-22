@@ -326,13 +326,43 @@ PY
         fi
       fi
     fi
-  else
-    echo "[warn] $id: main PDF not found; skipping placeholder (do not clobber)" >&2
-  fi
+	  else
+	    echo "[warn] $id: main PDF not found; skipping placeholder (do not clobber)" >&2
+	  fi
 
-  # parse all links (text + href) → JSON (only when we have a source page)
-  if [ "$html_parsing" = "1" ]; then
-    need pup
+	  # no-clobber: if main PDF is missing (or only a git-lfs pointer) and derived outputs already exist,
+	  # skip this method entirely to avoid rewriting artifacts in CI.
+	  meta_path="$dest_dir/META.json"
+	  sections_path="$dest_dir/sections.json"
+	  rules_path="$dest_dir/rules.json"
+	  rules_rich_path="$dest_dir/rules.rich.json"
+	  sections_rich_path="$dest_dir/sections.rich.json"
+
+	  outputs_exist=0
+	  if [ -s "$meta_path" ] && [ -s "$sections_path" ] && [ -s "$rules_path" ] && [ -s "$rules_rich_path" ] && [ -s "$sections_rich_path" ]; then
+	    outputs_exist=1
+	  fi
+
+	  pdf_missing=0
+	  if [ ! -s "$pdf_path" ]; then
+	    pdf_missing=1
+	  elif head -n1 "$pdf_path" 2>/dev/null | grep -q '^version https://git-lfs.github.com/spec/v1$'; then
+	    pdf_missing=1
+	  fi
+
+	  if [ "$pdf_missing" -eq 1 ]; then
+	    rm -f "$html_tmp"
+	    if [ "$outputs_exist" -eq 1 ]; then
+	      echo "[warn] $id: main PDF missing; outputs exist; skipping derive (do not clobber)" >&2
+	      continue
+	    fi
+	    echo "[warn] $id: main PDF missing; outputs absent; skipping ingest (no partial writes)" >&2
+	    continue
+	  fi
+
+	  # parse all links (text + href) → JSON (only when we have a source page)
+	  if [ "$html_parsing" = "1" ]; then
+	    need pup
     links_json="$(pup 'a json{}' < "$html_tmp" 2>/dev/null || echo '[]')"
   else
     links_json='[]'
@@ -439,16 +469,20 @@ PY
   rules_rich="$dest_dir/rules.rich.json"
   sections_rich="$dest_dir/sections.rich.json"
 
-  if [ "$DRY_RUN" = "0" ]; then
-    if [ ! -s "$pdf_path" ]; then
-      echo "[ingest] missing primary PDF for $id $ver ($pdf_path)" >&2
-      exit 1
-    fi
-    node scripts/extract-sections.cjs "$dest_dir" "$pdf_path"
-    if [ ! -s "$sections" ]; then
-      echo "[ingest] section extractor failed for $id $ver" >&2
-      exit 1
-    fi
+	  if [ "$DRY_RUN" = "0" ]; then
+	    if [ ! -s "$pdf_path" ] || head -n1 "$pdf_path" 2>/dev/null | grep -q '^version https://git-lfs.github.com/spec/v1$'; then
+	      if [ -s "$meta" ] && [ -s "$sections" ] && [ -s "$rules" ] && [ -s "$rules_rich" ] && [ -s "$sections_rich" ]; then
+	        echo "[warn] $id: main PDF missing; outputs exist; skipping derive (do not clobber)" >&2
+	        continue
+	      fi
+	      echo "[warn] $id: main PDF missing; outputs absent; skipping ingest (no partial writes)" >&2
+	      continue
+	    fi
+	    node scripts/extract-sections.cjs "$dest_dir" "$pdf_path"
+	    if [ ! -s "$sections" ]; then
+	      echo "[ingest] section extractor failed for $id $ver" >&2
+	      exit 1
+	    fi
     if [ ! -s "$sections_rich" ]; then
       echo "[ingest] sections.rich.json missing after extraction for $id $ver" >&2
       exit 1

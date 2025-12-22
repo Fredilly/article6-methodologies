@@ -10,6 +10,8 @@ fail_diag() {
   git status --porcelain=v1 >&2 || true
   echo "-- git diff --name-only" >&2
   git diff --name-only >&2 || true
+  echo "-- git diff --stat" >&2
+  git diff --stat >&2 || true
   if ! git diff --quiet; then
     echo "-- git diff (first 200 lines)" >&2
     git --no-pager diff | sed -n '1,200p' >&2 || true
@@ -48,4 +50,3 @@ run_once
 run_once
 
 echo "== agriculture idempotency gate: OK =="
-
