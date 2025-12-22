@@ -6,6 +6,9 @@ on:
       - 'methodologies/**/v*/META.json'
       - 'methodologies/**/v*/sections.json'
       - 'methodologies/**/v*/rules.json'
+      - 'ingest.agriculture.yml'
+      - 'source-assets/UNFCCC/Agriculture/previous-versions.json'
+      - 'source-assets/UNFCCC/Agriculture/previous-versions.lock.json'
       - 'schemas/**'
       - 'tools/**'
       - 'scripts/**'
@@ -18,6 +21,9 @@ on:
       - 'methodologies/**/v*/META.json'
       - 'methodologies/**/v*/sections.json'
       - 'methodologies/**/v*/rules.json'
+      - 'ingest.agriculture.yml'
+      - 'source-assets/UNFCCC/Agriculture/previous-versions.json'
+      - 'source-assets/UNFCCC/Agriculture/previous-versions.lock.json'
       - 'schemas/**'
       - 'tools/**'
       - 'scripts/**'
@@ -43,3 +49,4 @@ jobs:
       - run: npm run validate:rich
       - run: npm run validate:lean
       - run: node scripts/validate-offline.js
+      - run: npm run previous:drift:agriculture
