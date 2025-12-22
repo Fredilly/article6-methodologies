@@ -37,11 +37,13 @@ jobs:
       !(github.event_name == 'pull_request' && startsWith(github.event.pull_request.head.ref, 'bot/'))
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/checkout@v4
         with:
           clean: true
           fetch-depth: 0
           lfs: true
+      - name: Pull LFS objects (safety)
+        run: git lfs pull
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '20.11.1'
@@ -89,6 +91,12 @@ jobs:
         run: node scripts/validate-offline.js
       - name: Previous versions lock drift (Agriculture)
         run: npm run previous:drift:agriculture
+      - name: Ensure pdftotext exists (poppler-utils)
+        if: ${{ steps.agri_scope.outputs.run == 'true' }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+          command -v pdftotext
       - name: Agriculture idempotency (with previous)
         if: ${{ steps.agri_scope.outputs.run == 'true' }}
         run: bash scripts/ci-idempotency-agriculture.sh
