@@ -194,6 +194,9 @@ node scripts/check-quality-gates.js ingest-quality-gates.yml
 **Health check**
 
 - Running the full ingest + validation sequence twice in the canonical environment must leave `git status -sb` clean and `git diff` empty.
+- Idempotency includes `methodologies/**/previous/**` (and the corresponding `tools/**/previous/**` pointers) — previous versions are part of the deterministic contract.
+- Validations must include previous outputs via the existing globs (`methodologies/**/...`) and offline validation where enabled in CI.
+- Canonical reference gate for UNFCCC Agriculture (with previous): `bash scripts/ci-idempotency-agriculture.sh`.
 - This applies to methodologies artefacts, `scripts_manifest.json`, and `registry.json`; treat it as the acceptance gate for declaring Phase 6 complete and reference it whenever assessing phase stability.
 
 ---
