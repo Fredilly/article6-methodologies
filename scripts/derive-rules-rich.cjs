@@ -86,15 +86,25 @@ function classify(sentence) {
 
 /** Build UNFCCC.<Sector>.<Code>.<vXX-X> from disk path */
 function getMethodKeyFromDir(methodDir) {
-  // Expects: methodologies/UNFCCC/Agriculture/ACM0010/v03-0
   const parts = methodDir.split(path.sep);
-  const n = parts.length;
+  const previousIndex = parts.lastIndexOf('previous');
+  if (previousIndex !== -1) {
+    // Expects: methodologies/UNFCCC/Agriculture/ACM0010/v03-0/previous/v02-0
+    const versionTag = parts[previousIndex + 1];
+    const rawCode = parts[previousIndex - 2];
+    const code = rawCode.replace(/\./g, '-');
+    const sector = parts[previousIndex - 3];
+    const program = parts[previousIndex - 4];
+    return `${program}.${sector}.${code}.${versionTag}`;
+  }
 
-  const versionTag = parts[n - 1];       // v03-0
-  const rawCode    = parts[n - 2];       // ACM0010, AM0073, AMS-III.D, AMS-III.R
-  const code       = rawCode.replace(/\./g, '-'); // normalize dots → dashes
-  const sector     = parts[n - 3];       // Agriculture / Forestry / ...
-  const program    = parts[n - 4];       // UNFCCC
+  // Expects: methodologies/UNFCCC/Agriculture/ACM0010/v03-0
+  const n = parts.length;
+  const versionTag = parts[n - 1]; // v03-0
+  const rawCode = parts[n - 2]; // ACM0010, AM0073, AMS-III.D, AMS-III.R
+  const code = rawCode.replace(/\./g, '-'); // normalize dots → dashes
+  const sector = parts[n - 3]; // Agriculture / Forestry / ...
+  const program = parts[n - 4]; // UNFCCC
 
   // Final: UNFCCC.Agriculture.ACM0010.v03-0
   return `${program}.${sector}.${code}.${versionTag}`;
@@ -163,7 +173,9 @@ function deriveRulesForMethod(methodDir, strictMode, isUsablePdf) {
     const rel = path.relative(repoRoot, methodDir);
     const relParts = rel.split(path.sep);
     const toolsParts = relParts[0] === 'methodologies' ? ['tools', ...relParts.slice(1)] : [...relParts];
-    const pdfPath = path.join(repoRoot, ...toolsParts, 'source.pdf');
+    const pdfPath = toolsParts.includes('previous')
+      ? path.join(repoRoot, ...toolsParts, 'tools', 'source.pdf')
+      : path.join(repoRoot, ...toolsParts, 'source.pdf');
     if (typeof isUsablePdf === 'function' && !isUsablePdf(pdfPath)) {
       if (existingGoodRules) {
         console.log('[rules-rich] source.pdf unusable; keeping existing rules.rich.json (skip-safe)');

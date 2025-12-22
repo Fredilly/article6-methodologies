@@ -25,15 +25,15 @@ function isPreviousDir(p){
   return p.includes(PREVIOUS_SEGMENT) || p.endsWith(PREVIOUS_SUFFIX);
 }
 
-function listDirs(root){
+function listDirs(root, allowPrevious){
   const out = [];
   (function walk(d){
     if (!fs.existsSync(d)) return;
-    if (d !== root && isPreviousDir(d)) return;
+    if (!allowPrevious && d !== root && isPreviousDir(d)) return;
     const ents = fs.readdirSync(d, { withFileTypes: true });
     let has = 0;
     for (const e of ents) if (e.isFile() && (e.name === 'sections.rich.json' || e.name === 'rules.rich.json')) has++;
-    if (has >= 2 && !isPreviousDir(d)) out.push(d);
+    if (has >= 2 && (allowPrevious || !isPreviousDir(d))) out.push(d);
     for (const e of ents) if (e.isDirectory()) walk(path.join(d, e.name));
   }) (root);
   return out;
@@ -90,6 +90,9 @@ function derive(dir){
   return true;
 }
 
-const base = path.resolve(process.argv[2] || path.join(process.cwd(), 'methodologies'));
-let n = 0; for (const d of listDirs(base)) if (derive(d)) n++;
+const rawArgs = process.argv.slice(2);
+const allowPrevious = rawArgs.includes('--include-previous');
+const positional = rawArgs.filter((arg) => arg !== '--include-previous');
+const base = path.resolve(positional[0] || path.join(process.cwd(), 'methodologies'));
+let n = 0; for (const d of listDirs(base, allowPrevious)) if (derive(d)) n++;
 console.log(`OK: derived lean JSON for ${n} method folder(s).`);
