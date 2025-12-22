@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import path from 'node:path';
 import { discoverPreviousVersions } from './discover-previous-versions.shared.mjs';
-import { deterministicGeneratedAt, parseArgs, writeJson } from './utils/previous-versions.mjs';
+import { deterministicGeneratedAt, parseArgs, writeJson } from './utils/cli.mjs';
 
 function usage() {
   console.error(

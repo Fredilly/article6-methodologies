@@ -10,7 +10,7 @@ import {
   sectorToken,
   readJson,
   writeJson
-} from './utils/previous-versions.mjs';
+} from './utils/cli.mjs';
 
 function usage() {
   console.error(

@@ -7,7 +7,7 @@ import {
   parseArgs,
   readJson,
   writeJson
-} from './utils/previous-versions.mjs';
+} from './utils/cli.mjs';
 import { discoverPreviousVersions } from './discover-previous-versions.shared.mjs';
 
 function usage() {

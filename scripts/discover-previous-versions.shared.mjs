@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { parseIngestYaml } from './resolve-ingest-scope.mjs';
-import { compareVersionsDesc, extractCodeFromId, sectorToken } from './utils/previous-versions.mjs';
+import { compareVersionsDesc, extractCodeFromId, sectorToken } from './utils/cli.mjs';
 
 function listCodesFromIngest({ program, sector }) {
   const token = sectorToken(sector);
@@ -48,4 +48,3 @@ export async function discoverPreviousVersions({ program, sector, generated_at }
     methods
   };
 }
-
