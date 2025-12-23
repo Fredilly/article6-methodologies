@@ -53,6 +53,7 @@
     "ingest:all": "bash scripts/ingest-full.sh && node scripts/build-manifest.mjs",
     "ingest:scope": "node scripts/ingest-scope.mjs",
     "ingest:agriculture:with-previous": "npm run ingest:scope -- --sector Agriculture --include-previous --previous-lock registry/UNFCCC/Agriculture/previous-versions.lock.json",
+    "ingest:forestry:with-previous": "npm run ingest:scope -- --sector Forestry --include-previous --previous-lock source-assets/UNFCCC/Forestry/previous-versions.lock.json",
     "ingest:scoped": "bash scripts/ingest-scoped.sh",
     "ingest:scoped:idempotent": "SCOPED_INGEST_RUNS=2 SCOPED_INGEST_ENFORCE_IDEMPOTENCY=1 bash scripts/ingest-scoped.sh",
     "ingest:scope:check": "node scripts/check-ingest-yml.mjs",

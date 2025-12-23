@@ -83,15 +83,17 @@ for ((run=1; run<=RUNS; run++)); do
   DRY_RUN="$scoped_dry_run" RUN_VALIDATE=0 INGEST_FILE="$SCOPED_YML" bash "${SCRIPT_DIR}/ingest.sh"
 
   agri_dirs=()
+  forestry_dirs=()
   for d in "${scoped_method_dirs[@]}"; do
     [[ "$d" == *"/Agriculture/"* ]] && agri_dirs+=("$d")
+    [[ "$d" == *"/Forestry/"* ]] && forestry_dirs+=("$d")
   done
   if [ "$scoped_dry_run" -eq 0 ] && [ "${#agri_dirs[@]}" -gt 0 ] && [ -f "${SCRIPT_DIR}/reshape-agriculture.js" ]; then
     echo "[ingest-scoped] reshape-agriculture (scoped)"
     node "${SCRIPT_DIR}/reshape-agriculture.js" "${agri_dirs[@]}"
   fi
 
-  if [ "$scoped_dry_run" -eq 0 ] && [ "${ARTICLE6_INCLUDE_PREVIOUS:-0}" = "1" ] && [ "${#agri_dirs[@]}" -gt 0 ]; then
+  if [ "${ARTICLE6_INCLUDE_PREVIOUS:-0}" = "1" ] && { [ "${#agri_dirs[@]}" -gt 0 ] || [ "${#forestry_dirs[@]}" -gt 0 ]; }; then
     if [ -z "${ARTICLE6_PREVIOUS_LOCK:-}" ]; then
       echo "[ingest-scoped] ARTICLE6_INCLUDE_PREVIOUS=1 requires ARTICLE6_PREVIOUS_LOCK=<path>" >&2
       exit 2
