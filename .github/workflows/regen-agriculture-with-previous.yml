@@ -1,0 +1,50 @@
+name: Regen Agriculture With Previous (artefact only)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  regen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          clean: true
+          fetch-depth: 0
+          lfs: true
+      - name: Pull LFS objects (safety)
+        run: git lfs pull
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '20.11.1'
+          cache: 'npm'
+      - name: Ensure pdftotext exists (poppler-utils)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+          command -v pdftotext
+      - name: Install deps
+        run: npm ci || npm i
+      - name: Run ingest (agriculture with previous)
+        env:
+          SOURCE_DATE_EPOCH: "0"
+        run: npm run -s ingest:agriculture:with-previous
+      - name: Capture diff
+        run: |
+          set -euo pipefail
+          git status --porcelain=v1 > ci-status.txt
+          git diff > ci-changes.patch
+          git diff --name-only > ci-files.txt
+          if [ -s ci-files.txt ]; then
+            tar -czf ci-changed-files.tgz -T ci-files.txt
+          else
+            tar -czf ci-changed-files.tgz --files-from /dev/null
+          fi
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: regen-agriculture-with-previous
+          path: |
+            ci-status.txt
+            ci-changes.patch
+            ci-files.txt
+            ci-changed-files.tgz
