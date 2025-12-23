@@ -80,8 +80,9 @@ async function main() {
   }
 
   console.error('Fix by updating the lockfile:');
-  console.error('  npm run previous:discover:agriculture');
-  console.error('  npm run previous:lock:agriculture');
+  const token = sector.toLowerCase();
+  console.error(`  npm run previous:discover:${token}`);
+  console.error(`  npm run previous:lock:${token}`);
   process.exit(1);
 }
 
