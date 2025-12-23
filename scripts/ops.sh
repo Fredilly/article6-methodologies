@@ -51,6 +51,21 @@ case "$TASK" in
     OFFLINE="${OFFLINE_ENV}" BATCH="${BATCH_ENV}" OUTDIR="${OUTDIR}" ./scripts/ingest.sh
     ;;
 
+  regen-agri-with-previous)
+    log "regen-agri-with-previous -> $OUTDIR  args: ${ARGS[*]:-}"
+    mkdir -p "$OUTDIR"
+
+    # Produce deterministic artefacts (CI should set this too, but keep stable if run elsewhere).
+    export SOURCE_DATE_EPOCH="${SOURCE_DATE_EPOCH:-0}"
+
+    npm ci || npm i
+    npm run -s ingest:agriculture:with-previous
+
+    git status --porcelain=v1 > "$OUTDIR/status.txt" || true
+    git diff > "$OUTDIR/changes.patch" || true
+    git diff --name-only > "$OUTDIR/files.txt" || true
+    ;;
+
   derive-lean)
     log "derive-lean -> $OUTDIR  args: ${ARGS[*]:-}"
     mkdir -p "$OUTDIR"
