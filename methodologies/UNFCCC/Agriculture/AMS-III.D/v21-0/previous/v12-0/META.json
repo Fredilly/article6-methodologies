@@ -5,13 +5,13 @@
   },
   "audit_hashes": {
     "rules_json_sha256": "0d020b23552537a2889b8bccd24cba5682969387c08898fe9d78c8bbe900c3f1",
-    "sections_json_sha256": "9e572f8ff294d7434bdcae1270db2fa3ea7c0bcc6ffb7b021144be71865673a6",
+    "sections_json_sha256": "2b3aa04c7dbbd5730e801ba349801ffa34f26f429606092ceca4f5610ed6fd53",
     "source_pdf_sha256": "166696abf491090bce2c073f1d85504862dfb03631a2ccc20a71a9e81f8ca359"
   },
   "automation": {
     "node_version": "20.19.5",
     "repo_commit": "a4346cb5b650b75464d1ccf1d012fa27bfd7fe67",
-    "scripts_manifest_sha256": "1b30a54cd79fdcbc1f6d4ef4e6c03db41ad968740cd24b0b7754803c9fd86164"
+    "scripts_manifest_sha256": "3cd837fbe07fc50e583e29b80b030aeede3a287d0eb8c8f2132a6c316f3a0c68"
   },
   "effective_from": "2007-05-18",
   "effective_to": "2007-08-09",

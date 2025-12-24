@@ -1,35 +1,12 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
-import { parseIngestYaml } from './resolve-ingest-scope.mjs';
 import {
   compareVersionsDesc,
   deterministicGeneratedAt,
-  extractCodeFromId,
   readJson,
-  sectorToken,
   writeJson
 } from './utils/cli.mjs';
-
-function listCodesFromIngest({ program, sector }) {
-  const token = sectorToken(sector);
-  const ingestPath = path.resolve(process.cwd(), `ingest.${token}.yml`);
-  if (!fs.existsSync(ingestPath)) {
-    console.error(`[previous:lock] ingest file not found: ${path.relative(process.cwd(), ingestPath)}`);
-    process.exit(2);
-  }
-  const doc = parseIngestYaml(fs.readFileSync(ingestPath, 'utf8'));
-  const methods = Array.isArray(doc?.methods) ? doc.methods : [];
-  const codes = new Set();
-  for (const m of methods) {
-    const id = String(m?.id || '').trim();
-    if (!id) continue;
-    if (!id.toLowerCase().startsWith(`${program.toLowerCase()}.${sector.toLowerCase()}.`)) continue;
-    const code = extractCodeFromId(id);
-    if (code) codes.add(code);
-  }
-  return codes;
-}
 
 function normalizeDiscovered(doc) {
   const program = String(doc?.program || '').trim();
@@ -38,14 +15,12 @@ function normalizeDiscovered(doc) {
     console.error('[previous:lock] invalid input: missing program/sector');
     process.exit(2);
   }
-  const ingestCodes = listCodesFromIngest({ program, sector });
   const methodsIn = Array.isArray(doc?.methods) ? doc.methods : [];
 
   const byCode = new Map();
   for (const m of methodsIn) {
     const code = String(m?.code || '').trim();
     if (!code) continue;
-    if (!ingestCodes.has(code)) continue;
     const versions = Array.isArray(m?.versions) ? m.versions.map((v) => String(v).trim()).filter(Boolean) : [];
     byCode.set(code, Array.from(new Set(versions)).sort(compareVersionsDesc));
   }
