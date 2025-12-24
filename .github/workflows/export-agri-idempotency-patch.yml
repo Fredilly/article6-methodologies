@@ -1,0 +1,42 @@
+name: export-agri-idempotency-patch
+on:
+  workflow_dispatch: {}
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+      - name: Pull LFS objects (safety)
+        run: git lfs pull
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - name: Install
+        run: npm ci || npm i
+      - name: Ensure pdftotext exists (poppler-utils)
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+          command -v pdftotext
+      - name: Run Agriculture idempotency (allow dirty)
+        run: |
+          set -euo pipefail
+          bash scripts/ci-idempotency-agriculture.sh || true
+          git status --porcelain=v1 || true
+          git diff --name-only || true
+          git diff > /tmp/ci.patch || true
+          git diff --name-only > /tmp/ci.name-only || true
+          git status --porcelain=v1 > /tmp/ci.status || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ci-agri-idempotency-patch
+          path: |
+            /tmp/ci.patch
+            /tmp/ci.name-only
+            /tmp/ci.status
