@@ -17,6 +17,13 @@ function normalizeProgram(methodId) {
   return parts.length >= 2 ? parts[1] : '';
 }
 
+function matchesScope({ methodId, program, sector }) {
+  const id = String(methodId || '').trim();
+  if (!id) return false;
+  if (!id.toLowerCase().startsWith(`${String(program).toLowerCase()}.`)) return false;
+  return normalizeProgram(id).toLowerCase() === String(sector).toLowerCase();
+}
+
 function assertFile(filePath, label) {
   if (!fs.existsSync(filePath)) {
     console.error(`[previous:ingest] missing ${label}: ${filePath}`);
@@ -50,8 +57,8 @@ function main() {
   const lock = readJson(lockPath);
   const lockProgram = String(lock?.program || '').trim();
   const lockSector = String(lock?.sector || '').trim();
-  if (lockProgram !== 'UNFCCC' || lockSector !== 'Agriculture') {
-    console.error(`[previous:ingest] lockfile mismatch: expected UNFCCC/Agriculture, got ${lockProgram}/${lockSector}`);
+  if (!lockProgram || !lockSector) {
+    console.error('[previous:ingest] invalid lockfile: missing program/sector');
     process.exit(2);
   }
 
@@ -69,10 +76,10 @@ function main() {
       version: String(m?.version || '').trim(),
     }))
     .filter((m) => m.id && m.version)
-    .filter((m) => String(m.id).toUpperCase().startsWith('UNFCCC.') && normalizeProgram(m.id).toLowerCase() === 'agriculture');
+    .filter((m) => matchesScope({ methodId: m.id, program: lockProgram, sector: lockSector }));
 
   if (!scope.length) {
-    console.log('[previous:ingest] no UNFCCC Agriculture methods in scope; skipping');
+    console.log(`[previous:ingest] no ${lockProgram} ${lockSector} methods in scope; skipping`);
     return;
   }
 
