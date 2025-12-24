@@ -81,6 +81,8 @@
     { "path": "scripts/pdf-preflight.mjs", "sha256": "464b4c588f138749b8f93a8e381b68df25acdeab7b42b5f6034f44c1c2ddda92" },
     { "path": "scripts/policy-tools.sh", "sha256": "7eab93c4d426458b5d6c315b64bb20b6d3798d31590c9a03b3d634e0a581203b" },
     { "path": "scripts/prefetch-assets.sh", "sha256": "10fcae972f7ad165fdd2de8fbed9a436dc6d56517d423107fb79e57c7bdf0bfa" },
+    { "path": "scripts/previous-discover-unfccc-forestry.mjs", "sha256": "17604288ee425caafe0acb09687b495847770cdb858ae255a8fc90cff73d5824" },
+    { "path": "scripts/previous-lock-unfccc-forestry.mjs", "sha256": "75828ffb9a4a6adfe1decaaa0bd687e9835e990e2e286d898e098edbbe75c75c" },
     { "path": "scripts/py/extract_rules.py", "sha256": "6e57781f4c1f57d4e46a3c1df35f19a9680048fc19833a812461da385736231e" },
     { "path": "scripts/py/extract_sections.py", "sha256": "c419e385956a8e1cd960a4d2e6352ffbd49132195b6447ac220102a63b4a0b2a" },
     { "path": "scripts/rehydrate-agriculture-from-tools.cjs", "sha256": "2d0f0904ab30c0f36483441aa5286afce0b329b9493463effaaf2d502e4f1151" },
