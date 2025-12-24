@@ -5,6 +5,10 @@ source-assets/*
 source-assets/UNFCCC/*
 !source-assets/UNFCCC/Agriculture/
 source-assets/UNFCCC/Agriculture/*
+!source-assets/UNFCCC/Forestry/
+source-assets/UNFCCC/Forestry/*
+!source-assets/UNFCCC/Forestry/previous-versions.json
+!source-assets/UNFCCC/Forestry/previous-versions.lock.json
 outputs/*
 !outputs/mvp/
 outputs/mvp/*
