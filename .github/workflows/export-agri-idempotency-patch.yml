@@ -1,6 +1,9 @@
 name: export-agri-idempotency-patch
 on:
   workflow_dispatch: {}
+  push:
+    branches:
+      - feat/unfccc-forestry-include-previous-v2
 
 jobs:
   patch:
