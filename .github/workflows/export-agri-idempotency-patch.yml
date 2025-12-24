@@ -9,13 +9,17 @@ jobs:
   patch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        # actions/checkout@v4.2.2
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           fetch-depth: 0
           lfs: true
       - name: Pull LFS objects (safety)
         run: git lfs pull
-      - uses: actions/setup-node@v4
+      - name: Setup Node
+        # actions/setup-node@v4.0.4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version-file: .nvmrc
           cache: npm
@@ -36,7 +40,9 @@ jobs:
           git diff > /tmp/ci.patch || true
           git diff --name-only > /tmp/ci.name-only || true
           git status --porcelain=v1 > /tmp/ci.status || true
-      - uses: actions/upload-artifact@v4
+      - name: Upload patch artifact
+        # actions/upload-artifact@v4.3.1
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: ci-agri-idempotency-patch
           path: |
