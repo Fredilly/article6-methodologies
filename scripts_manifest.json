@@ -55,7 +55,7 @@
     { "path": "scripts/ingest-previous-from-lock.mjs", "sha256": "00a29e6a89e0242fd6be67d526d72e8389789a1689f2f287c00cae49f058c7f6" },
     { "path": "scripts/ingest-sanity.sh", "sha256": "387bdadf8b5cc800c8425ac455ee6dc3585c94507cb04b75d8150e292917b71b" },
     { "path": "scripts/ingest-scope-paths.mjs", "sha256": "7ca4089e73cec012ac2078a6ca6f8440bcb22d08cfb4d40872440f806cda1feb" },
-    { "path": "scripts/ingest-scope.mjs", "sha256": "ebaa8a1c305601c220d45bd5b7326dea6521300e9475d8ff82d74a7165842c05" },
+    { "path": "scripts/ingest-scope.mjs", "sha256": "22d64b17dc39803fa4ed231f3c854f88e87e9ace50a447d4656931df119746fe" },
     { "path": "scripts/ingest-scoped.sh", "sha256": "4ab5f38287dfa74237616d679c10b3d8897117c6c9b24563fcd69348ce8518bd" },
     { "path": "scripts/ingest-verify.sh", "sha256": "257acda700c5d64292507bc10e7ba0a9acb4f5533030852b3262a76b0f7315d0" },
     { "path": "scripts/ingest.sh", "sha256": "e2fe9d277cfa93b104084916f83b42d96fa9846380f6eaea31775c036d4d98f3" },
