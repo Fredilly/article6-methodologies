@@ -29,11 +29,15 @@ function main() {
     process.exit(2);
   }
   if (includePrevious && previousLock && !fs.existsSync(previousLock)) {
-    const legacy = 'source-assets/UNFCCC/Agriculture/previous-versions.lock.json';
-    const relocated = 'registry/UNFCCC/Agriculture/previous-versions.lock.json';
-    if (previousLock === legacy && fs.existsSync(relocated)) {
-      console.warn(`[ingest-scope] lockfile moved: using ${relocated} (was ${legacy})`);
-      previousLock = relocated;
+    if (previousLock.startsWith('source-assets/')) {
+      const relocated = previousLock.replace(/^source-assets\//, 'registry/');
+      if (fs.existsSync(relocated)) {
+        console.warn(`[ingest-scope] lockfile moved: using ${relocated} (was ${previousLock})`);
+        previousLock = relocated;
+      } else {
+        console.error(`[ingest-scope] previous lockfile not found: ${previousLock} (also missing: ${relocated})`);
+        process.exit(2);
+      }
     } else {
       console.error(`[ingest-scope] previous lockfile not found: ${previousLock}`);
       process.exit(2);
