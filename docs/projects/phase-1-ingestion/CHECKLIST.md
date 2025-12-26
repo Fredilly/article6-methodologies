@@ -15,8 +15,8 @@ Rule: ignore GitHub folder/file check badges unless the corresponding workflow i
 - `npm run validate:rich`
 - `npm run validate:lean`
 - `node scripts/validate-offline.js`
+- `bash scripts/ci-idempotency-agriculture.sh`
 
 ## Previous versions (canonical paths)
 
 - Previous versions indices/locks live under `registry/<Program>/<Sector>/previous-versions.json` and `registry/<Program>/<Sector>/previous-versions.lock.json` (no `source-assets/**` duplication).
-

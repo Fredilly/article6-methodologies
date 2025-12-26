@@ -1,0 +1,63 @@
+name: agriculture-idempotency
+on:
+  push:
+    branches-ignore: ['bot/**']
+    paths:
+      - 'methodologies/UNFCCC/Agriculture/**'
+      - 'tools/UNFCCC/Agriculture/**'
+      - 'ingest.agriculture.yml'
+      - 'registry/UNFCCC/Agriculture/**'
+      - 'scripts/**'
+      - 'core/**'
+      - 'schemas/**'
+  pull_request:
+    branches:
+      - 'main'
+      - 'feat/**'
+    paths:
+      - 'methodologies/UNFCCC/Agriculture/**'
+      - 'tools/UNFCCC/Agriculture/**'
+      - 'ingest.agriculture.yml'
+      - 'registry/UNFCCC/Agriculture/**'
+      - 'scripts/**'
+      - 'core/**'
+      - 'schemas/**'
+
+jobs:
+  idempotency:
+    if: |
+      !contains(github.event.head_commit.message, '[skip ci]') &&
+      !startsWith(github.ref_name, 'bot/') &&
+      !(github.event_name == 'pull_request' && startsWith(github.event.pull_request.head.ref, 'bot/'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          clean: true
+          fetch-depth: 0
+          lfs: true
+      - name: Pull LFS objects (safety)
+        run: git lfs pull
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '20.11.1'
+          cache: 'npm'
+      - run: npm ci || npm i
+      - name: UNFCCC Agriculture idempotency (with previous)
+        run: bash scripts/ci-idempotency-agriculture.sh
+      - name: Capture git diff (on failure)
+        if: failure()
+        run: |
+          git status --porcelain=v1 > ci-git-status.txt || true
+          git diff --name-only > ci-git-diff-names.txt || true
+          git --no-pager diff > ci-git-diff.patch || true
+      - name: Upload git diff (on failure)
+        if: failure()
+        # actions/upload-artifact@v4.3.1
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: agriculture-idempotency-diff
+          path: |
+            ci-git-status.txt
+            ci-git-diff-names.txt
+            ci-git-diff.patch
