@@ -43,11 +43,6 @@ jobs:
           node-version: '20.11.1'
           cache: 'npm'
       - run: npm ci || npm i
-      - name: Ensure pdftotext exists (poppler-utils)
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y poppler-utils
-          command -v pdftotext
       - name: UNFCCC Agriculture idempotency (with previous)
         run: bash scripts/ci-idempotency-agriculture.sh
       - name: Capture git diff (on failure)
