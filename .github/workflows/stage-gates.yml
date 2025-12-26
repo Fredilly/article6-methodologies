@@ -127,6 +127,18 @@ jobs:
       - name: Agriculture idempotency (with previous)
         if: ${{ steps.agri_scope.outputs.run == 'true' }}
         run: bash scripts/ci-idempotency-agriculture.sh
+      - name: Preflight pdftotext (Forestry idempotency)
+        id: forestry_pdftotext
+        if: ${{ steps.forestry_scope.outputs.run == 'true' }}
+        continue-on-error: true
+        run: |
+          command -v pdftotext >/dev/null || (echo "Missing pdftotext (poppler-utils) on runner"; exit 2)
+      - name: Install poppler-utils (Forestry idempotency)
+        if: ${{ steps.forestry_scope.outputs.run == 'true' && steps.forestry_pdftotext.outcome == 'failure' }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+          command -v pdftotext >/dev/null
       - name: Forestry idempotency (with previous)
         if: ${{ steps.forestry_scope.outputs.run == 'true' }}
         run: bash scripts/ci-idempotency-forestry.sh
