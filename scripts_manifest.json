@@ -15,7 +15,7 @@
     { "path": "scripts/check-ingest-yml.mjs", "sha256": "00b2b899a08b7bcfacf9599e07b8da410bfd881ade34823cd7adf43e76b765e2" },
     { "path": "scripts/check-lean-drift.sh", "sha256": "6c482f7b7ed321f6612c8e1a347921894613cf500fa013f0f1c3904e9b78713f" },
     { "path": "scripts/check-methodology-guardrails.js", "sha256": "b1ed068574c8a9d9399f11e122ca21b9d7c39a3e6a4deccfb6cb218a32145cd4" },
-    { "path": "scripts/check-previous-lock-drift.mjs", "sha256": "5e2da28e157e1417d97d014c97b01f19315198c8d3233c9949996ffeb318feb5" },
+    { "path": "scripts/check-previous-lock-drift.mjs", "sha256": "d6f1f88d82f31d81eb2b121338a4df4c87b612bb4e9ad29a8a8a21e8854bc74c" },
     { "path": "scripts/check-quality-gates.js", "sha256": "0295cfa15111e42d228e76a06dfdfee6c46c4bce09290f7cd489116f90d95de4" },
     { "path": "scripts/check-registry-scope.mjs", "sha256": "642ddc8135d27ce5d2571e476b7acff1fd09c26e54ea9ee6f9e1f2434cc64c6d" },
     { "path": "scripts/check-registry.sh", "sha256": "d66f360cfc7350e5056a81825c2a6aeb3edea448487d2c89829799d64ea2f968" },
