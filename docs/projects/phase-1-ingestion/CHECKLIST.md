@@ -1,21 +1,33 @@
 # Phase 1 Ingestion — Persistent Checklist
 
-## Start here
+## Where am I (60 seconds)
 
-Run these first to answer “where are we?” before reading CI badges or guessing:
+- [ ] `npm run status`
+- [ ] `npm run status:sectors`
+- [ ] `npm run status:methods`
+- [ ] `npm run validate:rich`
+- [ ] `npm run validate:lean`
+- [ ] `npm run validate:offline`
+- [ ] `bash scripts/ci-idempotency-agriculture.sh`
 
-- `npm run status`
-- `npm run status:sectors`
-- `npm run status:methods`
+## Interpretation notes
 
-Rule: ignore GitHub folder/file check badges unless the corresponding workflow is failing on `main` **HEAD** (prefer `gh pr checks <PR>` / `gh run list --branch main` over folder badges).
+- Exit `0` = command ran successfully; non-zero = actionable failure.
+- Ignore per-file commit “red X” checks in the GitHub UI; trust `main` **HEAD** checks instead.
 
-## Baseline hygiene
+## CI truth (main HEAD)
 
-- `npm run validate:rich`
-- `npm run validate:lean`
-- `node scripts/validate-offline.js`
-- `bash scripts/ci-idempotency-agriculture.sh`
+```sh
+MAIN_SHA="$(git rev-parse HEAD)"
+gh run list --branch main --limit 10 \
+  --json conclusion,headSha,createdAt,displayTitle \
+  -q '.[] | select(.headSha=="'"$MAIN_SHA"'")'
+```
+
+## Before starting Forestry idempotency
+
+- [ ] `npm run status:sectors` exits `0`
+- [ ] `npm run validate:rich`, `npm run validate:lean`, `npm run validate:offline` all pass
 
 ## Previous versions (canonical paths)
 
