@@ -1,0 +1,145 @@
+[
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v01-0.R-0001-0002",
+    "type": "parameter",
+    "summary": "Approved afforestation and reforestation baseline and monitoring methodology",
+    "logic": "Approved afforestation and reforestation baseline and monitoring methodology",
+    "refs": {
+      "sections": [
+        "S-0002"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v01-0.R-0001-0011",
+    "type": "eligibility",
+    "summary": "The “Procedures to demonstrate the eligibility of lands for afforestation and reforestation CDM project activities” shall be used for demonstrating that each discrete area of land to be included in the project boundary is eligible for an...",
+    "logic": "The “Procedures to demonstrate the eligibility of lands for afforestation and reforestation CDM project activities” shall be used for demonstrating that each discrete area of land to be included in the project boundary is eligible for an A/R CDM project activity.",
+    "refs": {
+      "sections": [
+        "S-0011"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v01-0.R-0001-0014",
+    "type": "parameter",
+    "summary": "This methodology uses the “Combined tool to identify the baseline scenario and demonstrate additionality in A/R CDM project activities” for the purpose of identification of the baseline scenario and demonstration of additionality.",
+    "logic": "This methodology uses the “Combined tool to identify the baseline scenario and demonstrate additionality in A/R CDM project activities” for the purpose of identification of the baseline scenario and demonstration of additionality.",
+    "refs": {
+      "sections": [
+        "S-0014"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v01-0.R-0001-0015",
+    "type": "parameter",
+    "summary": "Different stratifications may be required for the baseline and project",
+    "logic": "Different stratifications may be required for the baseline and project",
+    "refs": {
+      "sections": [
+        "S-0015"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v01-0.R-0001-0017",
+    "type": "parameter",
+    "summary": "In particular: (a) For baseline net GHG removals by sinks, it is usually sufficient to stratify the area according to major vegetation types and their crown cover and/or land use type; (b) For actual net GHG removals by sinks in mangrove...",
+    "logic": "In particular: (a) For baseline net GHG removals by sinks, it is usually sufficient to stratify the area according to major vegetation types and their crown cover and/or land use type; (b) For actual net GHG removals by sinks in mangroves the stratification for ex ante estimations is based on the project planting/management plan and/or tidal regime.",
+    "refs": {
+      "sections": [
+        "S-0017"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v01-0.R-0001-0018",
+    "type": "parameter",
+    "summary": "Under the applicability conditions of this methodology: It is expected that the baseline carbon stocks in dead wood, litter, and soil organic carbon pools will not show a permanent net increase.",
+    "logic": "Under the applicability conditions of this methodology: It is expected that the baseline carbon stocks in dead wood, litter, and soil organic carbon pools will not show a permanent net increase.",
+    "refs": {
+      "sections": [
+        "S-0018"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v01-0.R-0002-0018",
+    "type": "parameter",
+    "summary": "It is therefore conservative to assume that the sum of the changes in the carbon stocks in these pools is zero for all strata in the baseline scenario.",
+    "logic": "It is therefore conservative to assume that the sum of the changes in the carbon stocks in these pools is zero for all strata in the baseline scenario.",
+    "refs": {
+      "sections": [
+        "S-0018"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v01-0.R-0003-0018",
+    "type": "parameter",
+    "summary": "The baseline net GHG removals by sinks is therefore calculated as follows:",
+    "logic": "The baseline net GHG removals by sinks is therefore calculated as follows:",
+    "refs": {
+      "sections": [
+        "S-0018"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v01-0.R-0001-0025",
+    "type": "leakage",
+    "summary": "Under applicability conditions of this methodology leakage emissions can occur from displaced fuelwood collection.",
+    "logic": "Under applicability conditions of this methodology leakage emissions can occur from displaced fuelwood collection.",
+    "refs": {
+      "sections": [
+        "S-0025"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v01-0.R-0001-0026",
+    "type": "leakage",
+    "summary": "Unless it is demonstrated that there is no fuelwood collection in pre-project conditions, leakage due to fuelwood collection in year t is estimated by using the following simplified default equation:",
+    "logic": "Unless it is demonstrated that there is no fuelwood collection in pre-project conditions, leakage due to fuelwood collection in year t is estimated by using the following simplified default equation:",
+    "refs": {
+      "sections": [
+        "S-0026"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v01-0.R-0001-0030",
+    "type": "monitoring",
+    "summary": "All data collected as part of monitoring should be archived electronically and be kept at least for two years after the end of the last crediting period.",
+    "logic": "All data collected as part of monitoring should be archived electronically and be kept at least for two years after the end of the last crediting period.",
+    "refs": {
+      "sections": [
+        "S-0030"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v01-0.R-0002-0030",
+    "type": "monitoring",
+    "summary": "In addition, the monitoring provisions contained in the tools used in this methodology apply.",
+    "logic": "In addition, the monitoring provisions contained in the tools used in this methodology apply.",
+    "refs": {
+      "sections": [
+        "S-0030"
+      ]
+    }
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AM0014.v01-0.R-0001-0032",
+    "type": "monitoring",
+    "summary": "In the absence of these, standard operating procedures (SOPs) and quality control/quality assurance (QA/QC) procedures for inventory operations, including field data collection and data management, shall be identified, recorded and applied.",
+    "logic": "In the absence of these, standard operating procedures (SOPs) and quality control/quality assurance (QA/QC) procedures for inventory operations, including field data collection and data management, shall be identified, recorded and applied.",
+    "refs": {
+      "sections": [
+        "S-0032"
+      ]
+    }
+  }
+]

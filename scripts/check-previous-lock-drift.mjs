@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {
+  compareVersionsDesc,
   deterministicGeneratedAt,
   parseArgs,
   readJson,
@@ -12,9 +13,51 @@ import { discoverPreviousVersions } from './discover-previous-versions.shared.mj
 
 function usage() {
   console.error(
-    'Usage: node scripts/check-previous-lock-drift.mjs --program UNFCCC --sector Agriculture --lock registry/UNFCCC/Agriculture/previous-versions.lock.json',
+    'Usage: node scripts/check-previous-lock-drift.mjs --program UNFCCC --sector Agriculture --lock registry/UNFCCC/Agriculture/previous-versions.lock.json [--discovery source-assets|repo-tree]',
   );
   process.exit(2);
+}
+
+function discoverUnfcccForestryFromRepoTree() {
+  const baseDir = path.resolve(process.cwd(), 'methodologies/UNFCCC/Forestry');
+  if (!fs.existsSync(baseDir)) {
+    console.error(`[previous:drift] missing directory: ${path.relative(process.cwd(), baseDir)}`);
+    process.exit(2);
+  }
+
+  const methods = [];
+  const codeEntries = fs.readdirSync(baseDir, { withFileTypes: true });
+  for (const codeEntry of codeEntries) {
+    if (!codeEntry.isDirectory()) continue;
+    const code = codeEntry.name;
+    const codeDir = path.join(baseDir, code);
+    const versionEntries = fs.readdirSync(codeDir, { withFileTypes: true });
+    const versionSet = new Set();
+
+    for (const entry of versionEntries) {
+      if (!entry.isDirectory()) continue;
+      const version = entry.name;
+      if (!/^v\d+-\d+$/.test(version)) continue;
+      versionSet.add(version);
+
+      const prevDir = path.join(codeDir, version, 'previous');
+      if (!fs.existsSync(prevDir) || !fs.statSync(prevDir).isDirectory()) continue;
+      const prevEntries = fs.readdirSync(prevDir, { withFileTypes: true });
+      for (const prevEntry of prevEntries) {
+        if (!prevEntry.isDirectory()) continue;
+        const prevVersion = prevEntry.name;
+        if (!/^v\d+-\d+$/.test(prevVersion)) continue;
+        versionSet.add(prevVersion);
+      }
+    }
+
+    const versions = Array.from(versionSet).sort(compareVersionsDesc);
+    if (versions.length === 0) continue;
+    methods.push({ code, versions });
+  }
+
+  methods.sort((a, b) => a.code.localeCompare(b.code, 'en', { sensitivity: 'variant' }));
+  return methods;
 }
 
 function diffMethods({ discovered = [], locked = [] }) {
@@ -44,6 +87,7 @@ async function main() {
   const program = String(args.program || '').trim();
   const sector = String(args.sector || '').trim();
   const lockPath = String(args.lock || '').trim();
+  const discovery = String(args.discovery || 'source-assets').trim();
   if (!program || !sector || !lockPath) usage();
 
   const absLock = path.resolve(process.cwd(), lockPath);
@@ -52,7 +96,17 @@ async function main() {
     process.exit(2);
   }
 
-  const discovered = await discoverPreviousVersions({ program, sector, generated_at: deterministicGeneratedAt() });
+  let discovered;
+  if (discovery === 'repo-tree' && program === 'UNFCCC' && sector === 'Forestry') {
+    discovered = {
+      generated_at: deterministicGeneratedAt(),
+      program,
+      sector,
+      methods: discoverUnfcccForestryFromRepoTree()
+    };
+  } else {
+    discovered = await discoverPreviousVersions({ program, sector, generated_at: deterministicGeneratedAt() });
+  }
   const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'article6-prev-'));
   const tmpPath = path.join(tmpDir, `${program}.${sector}.previous-versions.json`);
   writeJson(tmpPath, discovered);
@@ -80,8 +134,8 @@ async function main() {
   }
 
   console.error('Fix by updating the lockfile:');
-  console.error('  npm run previous:discover:agriculture');
-  console.error('  npm run previous:lock:agriculture');
+  console.error(`  npm run previous:discover:${sector.toLowerCase()}`);
+  console.error(`  npm run previous:lock:${sector.toLowerCase()}`);
   process.exit(1);
 }
 

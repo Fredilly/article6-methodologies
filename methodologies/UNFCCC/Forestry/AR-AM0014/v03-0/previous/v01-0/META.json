@@ -1,14 +1,13 @@
 {
   "audit_hashes": {
-    "source_pdf_sha256": "8505376f7987ae68159db4c570a3daab136432a05112e406c46aa83653d7040a"
+    "source_pdf_sha256": "8505376f7987ae68159db4c570a3daab136432a05112e406c46aa83653d7040a",
+    "rules_json_sha256": "1c3b5c81a0ae80643c6157416e42f7d17134544e93f5f66cd6263cceb18ee0e6",
+    "sections_json_sha256": "8d76e2db825805bc15c4212ce051c32850fd760b0fc48b04934f07acb302054b"
   },
-  "automation": {},
-  "effective_from": "2011-06-03",
-  "effective_to": "2012-11-22",
-  "id": "UNFCCC.Forestry.AR-AM0014",
-  "kind": "methodology",
-  "pointers": {
-    "active_successor": "../.."
+  "automation": {
+    "scripts_manifest_sha256": "25b5df02d480dc4c77302371c02c959947933d097970163b034733b8228a0089",
+    "repo_commit": "b5c627a2a19fc70c7545d951ad7a914b421a031d",
+    "node_version": "20.11.1"
   },
   "provenance": {
     "author": "Fred Egbuedike",
@@ -16,9 +15,9 @@
     "methodology_page": "https://cdm.unfccc.int/methodologies/DB/KMH6O8T6RL3P5XKNBQE2N359QG7KOE",
     "source_pdfs": [
       {
-        "doc": "UNFCCC/AR-AM0014@v03-0",
+        "doc": "UNFCCC/AR-AM0014@v01-0",
         "kind": "pdf",
-        "path": "source-assets/UNFCCC/Forestry/AR-AM0014/v01-0/source.pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/previous/v01-0/tools/source.pdf",
         "sha256": "8505376f7987ae68159db4c570a3daab136432a05112e406c46aa83653d7040a",
         "size": 240716
       }
@@ -26,10 +25,30 @@
     "source_url": "https://cdm.unfccc.int/UserManagement/FileStorage/GLFDQWIB3ZHPSAMO9C6XR1E74KT205",
     "version_number": "1.0.0"
   },
-  "publisher": "UNFCCC",
   "references": {
-    "tools": []
+    "tools": [
+      {
+        "doc": "UNFCCC/AR-AM0014@v01-0",
+        "kind": "pdf",
+        "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/previous/v01-0/tools/source.pdf",
+        "sha256": "8505376f7987ae68159db4c570a3daab136432a05112e406c46aa83653d7040a",
+        "size": 240716,
+        "url": null
+      }
+    ]
   },
+  "audit": {
+    "created_at": "2025-12-26T14:30:20.408Z",
+    "created_by": "ingest.sh"
+  },
+  "effective_from": "2011-06-03",
+  "effective_to": "2012-11-22",
+  "id": "UNFCCC.Forestry.AR-AM0014",
+  "kind": "methodology",
+  "pointers": {
+    "active_successor": "../.."
+  },
+  "publisher": "UNFCCC",
   "status": "superseded",
   "tools": [
     {

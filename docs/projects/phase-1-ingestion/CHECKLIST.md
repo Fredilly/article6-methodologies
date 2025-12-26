@@ -28,6 +28,7 @@ gh run list --branch main --limit 10 \
 
 - [ ] `npm run status:sectors` exits `0`
 - [ ] `npm run validate:rich`, `npm run validate:lean`, `npm run validate:offline` all pass
+- [ ] `bash scripts/ci-idempotency-forestry.sh`
 
 ## Previous versions (canonical paths)
 
