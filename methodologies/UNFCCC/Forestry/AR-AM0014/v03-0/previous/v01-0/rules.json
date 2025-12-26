@@ -1,0 +1,108 @@
+{
+  "rules": [
+    {
+      "id": "R-0001-0002",
+      "section_id": "S-0002",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Approved afforestation and reforestation baseline and monitoring methodology"
+    },
+    {
+      "id": "R-0001-0011",
+      "section_id": "S-0011",
+      "tags": [
+        "eligibility"
+      ],
+      "text": "The “Procedures to demonstrate the eligibility of lands for afforestation and reforestation CDM project activities” shall be used for demonstrating that each discrete area of land to be included in the project boundary is eligible for an..."
+    },
+    {
+      "id": "R-0001-0014",
+      "section_id": "S-0014",
+      "tags": [
+        "parameter"
+      ],
+      "text": "This methodology uses the “Combined tool to identify the baseline scenario and demonstrate additionality in A/R CDM project activities” for the purpose of identification of the baseline scenario and demonstration of additionality."
+    },
+    {
+      "id": "R-0001-0015",
+      "section_id": "S-0015",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Different stratifications may be required for the baseline and project"
+    },
+    {
+      "id": "R-0001-0017",
+      "section_id": "S-0017",
+      "tags": [
+        "parameter"
+      ],
+      "text": "In particular: (a) For baseline net GHG removals by sinks, it is usually sufficient to stratify the area according to major vegetation types and their crown cover and/or land use type; (b) For actual net GHG removals by sinks in mangrove..."
+    },
+    {
+      "id": "R-0001-0018",
+      "section_id": "S-0018",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Under the applicability conditions of this methodology: It is expected that the baseline carbon stocks in dead wood, litter, and soil organic carbon pools will not show a permanent net increase."
+    },
+    {
+      "id": "R-0002-0018",
+      "section_id": "S-0018",
+      "tags": [
+        "parameter"
+      ],
+      "text": "It is therefore conservative to assume that the sum of the changes in the carbon stocks in these pools is zero for all strata in the baseline scenario."
+    },
+    {
+      "id": "R-0003-0018",
+      "section_id": "S-0018",
+      "tags": [
+        "parameter"
+      ],
+      "text": "The baseline net GHG removals by sinks is therefore calculated as follows:"
+    },
+    {
+      "id": "R-0001-0025",
+      "section_id": "S-0025",
+      "tags": [
+        "leakage"
+      ],
+      "text": "Under applicability conditions of this methodology leakage emissions can occur from displaced fuelwood collection."
+    },
+    {
+      "id": "R-0001-0026",
+      "section_id": "S-0026",
+      "tags": [
+        "leakage"
+      ],
+      "text": "Unless it is demonstrated that there is no fuelwood collection in pre-project conditions, leakage due to fuelwood collection in year t is estimated by using the following simplified default equation:"
+    },
+    {
+      "id": "R-0001-0030",
+      "section_id": "S-0030",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "All data collected as part of monitoring should be archived electronically and be kept at least for two years after the end of the last crediting period."
+    },
+    {
+      "id": "R-0002-0030",
+      "section_id": "S-0030",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "In addition, the monitoring provisions contained in the tools used in this methodology apply."
+    },
+    {
+      "id": "R-0001-0032",
+      "section_id": "S-0032",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "In the absence of these, standard operating procedures (SOPs) and quality control/quality assurance (QA/QC) procedures for inventory operations, including field data collection and data management, shall be identified, recorded and applied."
+    }
+  ]
+}
