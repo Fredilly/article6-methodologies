@@ -147,6 +147,8 @@ jobs:
         run: |
           git status --porcelain=v1 > ci-git-status.txt || true
           git diff --name-only > ci-git-diff-names.txt || true
+          # Include newly created files in the patch (git diff omits untracked files by default).
+          git add -N -- methodologies registry.json || true
           git --no-pager diff > ci-git-diff.patch || true
       - name: Upload git diff (on failure)
         if: failure()
