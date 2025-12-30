@@ -49,7 +49,7 @@
     { "path": "scripts/gen-registry.js", "sha256": "a5c0c42a4937232707ed4e602d6f2eb10c4dd61340b5d0e45faedb8440486b6b" },
     { "path": "scripts/gen-root-cause-index.mjs", "sha256": "fd2018719d688f95afcebf6befa0a3199b9949ba4160a8cf6b486273a10726c4" },
     { "path": "scripts/gen-sector-report.mjs", "sha256": "30e8b19020269c0be537b1f2d4571a34d494242200e0691e88718e11933d94c5" },
-    { "path": "scripts/hash-all.sh", "sha256": "829195855c09031527ceedde3523bc4bc0086c6a233df183fde82c173bc4b43a" },
+    { "path": "scripts/hash-all.sh", "sha256": "d47566434ac830c1d90f897f39ef550c5ede019c2c96cf051544e50bf8aaa162" },
     { "path": "scripts/hash-scripts.sh", "sha256": "fd3a9f2e236f23c785012cfeb7210c19b5ebe182bab29d05472800598ad1694c" },
     { "path": "scripts/ingest-batch.mjs", "sha256": "b60e3197e37a933cfe127b1450542b7d40b6ef898ddc9c25442a4dcfb2411b13" },
     { "path": "scripts/ingest-full.sh", "sha256": "1df1915f9715cb3d90c0f5f5c37305ab3faf9b2e53252d33c215f0e537f7c70b" },

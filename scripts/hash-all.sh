@@ -204,7 +204,7 @@ case "$dir" in
            .references = (.references // {}) |
            .references.tools = (.references.tools // []) |
            .automation = (.automation // {}) |
-           .automation.scripts_manifest_sha256 = $manifest' \
+           .automation.scripts_manifest_sha256 = (.automation.scripts_manifest_sha256 // $manifest)' \
           "$meta_file" > "$tmp" && mv "$tmp" "$meta_file"
         continue
       fi
@@ -248,7 +248,7 @@ case "$dir" in
                    end
                  ) | sort_by(.path)) |
          .automation = (.automation // {}) |
-         .automation.scripts_manifest_sha256 = $manifest' \
+         .automation.scripts_manifest_sha256 = (.automation.scripts_manifest_sha256 // $manifest)' \
         "$meta_file" > "$tmp" && mv "$tmp" "$meta_file"
       continue
       ;;
@@ -363,7 +363,8 @@ $with_sector"
                  . + [$t]
                end
              ) | sort_by(.path)) |
-     .automation = {scripts_manifest_sha256: $manifest}' \
+     .automation = (.automation // {}) |
+     .automation.scripts_manifest_sha256 = (.automation.scripts_manifest_sha256 // $manifest)' \
     "$meta_file" > "$tmp" && mv "$tmp" "$meta_file"
 done <<EOF
 $meta_files
