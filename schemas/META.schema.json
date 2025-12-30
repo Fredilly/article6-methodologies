@@ -197,6 +197,9 @@
           "properties": {
             "automation": {
               "properties": {
+                "node_version": {
+                  "type": "string"
+                },
                 "scripts_manifest_sha256": {
                   "type": "string"
                 }

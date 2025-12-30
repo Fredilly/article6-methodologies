@@ -82,8 +82,9 @@ async function main() {
   const auditCreatedAt = existing?.audit?.created_at || new Date().toISOString();
   const provenanceDate = existing?.provenance?.date || auditCreatedAt;
   const createdBy = process.env.INGEST_CREATED_BY || existing?.audit?.created_by || 'ingest.sh';
-  const scriptsManifestHash = hashFile(path.join(repoRoot, 'scripts_manifest.json'));
-  const nodeVersion = process.versions.node;
+  const scriptsManifestHash =
+    existing?.automation?.scripts_manifest_sha256 || hashFile(path.join(repoRoot, 'scripts_manifest.json'));
+  const nodeVersion = process.version;
   const repoCommit = gitHead();
 
   const rewrittenKeys = new Set(['audit_hashes', 'automation', 'provenance', 'references', 'audit']);
@@ -99,9 +100,13 @@ async function main() {
     ...(isPrevious
       ? {
           repo_commit: existing?.automation?.repo_commit || repoCommit,
-          node_version: existing?.automation?.node_version || nodeVersion
+          ...(existing?.automation?.node_version ? { node_version: existing.automation.node_version } : {}),
+          ...(!existing ? { node_version: nodeVersion } : {})
         }
-      : {})
+      : {
+          ...(existing?.automation?.node_version ? { node_version: existing.automation.node_version } : {}),
+          ...(!existing ? { node_version: nodeVersion } : {})
+        })
   };
   nextMeta.provenance = {
     ...(existing?.provenance || {}),
