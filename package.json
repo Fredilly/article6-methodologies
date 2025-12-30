@@ -46,7 +46,7 @@
     "previous:drift:agriculture": "node scripts/check-previous-lock-drift.mjs --program UNFCCC --sector Agriculture --lock registry/UNFCCC/Agriculture/previous-versions.lock.json",
     "previous:discover:forestry": "node scripts/previous-discover-unfccc-forestry.mjs",
     "previous:lock:forestry": "node scripts/previous-lock-unfccc-forestry.mjs",
-    "previous:drift:forestry": "node scripts/check-previous-lock-drift.mjs --program UNFCCC --sector Forestry --lock registry/UNFCCC/Forestry/previous-versions.lock.json",
+    "previous:drift:forestry": "node scripts/check-previous-lock-drift.mjs --program UNFCCC --sector Forestry --lock registry/UNFCCC/Forestry/previous-versions.lock.json --discovery repo-tree",
     "ingest:batch": "node scripts/ingest-batch.mjs",
     "ingest:verify": "bash scripts/ingest-verify.sh",
     "ingest:full": "bash scripts/ingest-full.sh",
