@@ -29,6 +29,7 @@
     { "path": "scripts/ci-idempotency-agriculture.sh", "sha256": "6f2d8071810b1015651a497083d01ffca57ab2e5205c66fa0b268b46aa533d94" },
     { "path": "scripts/ci-idempotency-forestry.sh", "sha256": "bcdb19d540e004f4a30bbe754cbf2f788c9fa94ec64d94374d5cd623c5e8c417" },
     { "path": "scripts/ci-run-tests.sh", "sha256": "9fe1d8bce3c97fd0c4ed6667f520b41b178372019c501810f2df5480898e229a" },
+    { "path": "scripts/commit-truth.sh", "sha256": "819c922a7908508b8c8a0fd3fbbdfb6291cac7f51ce00bb548fc7e29951500b3" },
     { "path": "scripts/compile-audit.js", "sha256": "917ee7d5fabef37ec7d4bfa9503ac498da225426bf5fbd05fd710d35699a1a14" },
     { "path": "scripts/compile-validators.js", "sha256": "0d6d8454097445711c1a0f974061f7f426522b8c1e1c0b61998cfa1c2237949b" },
     { "path": "scripts/derive-lean-from-rich.js", "sha256": "248f325e10eaab4db7773fc56ac2baf40dc452bc1f5af4a132da4ef994f5f2c2" },
