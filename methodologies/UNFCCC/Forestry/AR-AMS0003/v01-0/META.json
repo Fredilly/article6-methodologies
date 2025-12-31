@@ -1,15 +1,12 @@
 {
-  "audit": {
-    "created_at": "2025-11-16T12:22:54.789Z",
-    "created_by": "ingest.sh"
-  },
   "audit_hashes": {
     "rules_json_sha256": "5ea5311927c5e1c9f18e37828f0cdfffd460d170edfdc77f048c96c07fdd0d75",
     "sections_json_sha256": "80a90d64d3f6ba202560d8f50d8243140a2f982157060e43d181f8a7860f690e",
     "source_pdf_sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b"
   },
   "automation": {
-    "scripts_manifest_sha256": "f0c3625d85fcae15f4ede3b3cc5a1d79a1f2be36adc8a519705edee34c694fd8"
+    "scripts_manifest_sha256": "f0c3625d85fcae15f4ede3b3cc5a1d79a1f2be36adc8a519705edee34c694fd8",
+    "node_version": "v20.11.1"
   },
   "provenance": {
     "author": "Fred Egbuedike",
@@ -67,5 +64,9 @@
         "url": null
       }
     ]
+  },
+  "audit": {
+    "created_at": "2025-11-16T12:22:54.789Z",
+    "created_by": "ingest.sh"
   }
 }
