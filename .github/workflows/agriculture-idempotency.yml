@@ -1,12 +1,17 @@
-name: agriculture-idempotency
+name: idempotency
 on:
   push:
     branches-ignore: ['bot/**']
     paths:
+      - '.github/workflows/**'
       - 'methodologies/UNFCCC/Agriculture/**'
+      - 'methodologies/UNFCCC/Forestry/**'
       - 'tools/UNFCCC/Agriculture/**'
+      - 'tools/UNFCCC/Forestry/**'
       - 'ingest.agriculture.yml'
+      - 'ingest.forestry.yml'
       - 'registry/UNFCCC/Agriculture/**'
+      - 'registry/UNFCCC/Forestry/**'
       - 'scripts/**'
       - 'core/**'
       - 'schemas/**'
@@ -15,21 +20,31 @@ on:
       - 'main'
       - 'feat/**'
     paths:
+      - '.github/workflows/**'
       - 'methodologies/UNFCCC/Agriculture/**'
+      - 'methodologies/UNFCCC/Forestry/**'
       - 'tools/UNFCCC/Agriculture/**'
+      - 'tools/UNFCCC/Forestry/**'
       - 'ingest.agriculture.yml'
+      - 'ingest.forestry.yml'
       - 'registry/UNFCCC/Agriculture/**'
+      - 'registry/UNFCCC/Forestry/**'
       - 'scripts/**'
       - 'core/**'
       - 'schemas/**'
 
 jobs:
   idempotency:
+    name: idempotency (${{ matrix.sector }})
     if: |
       !contains(github.event.head_commit.message, '[skip ci]') &&
       !startsWith(github.ref_name, 'bot/') &&
       !(github.event_name == 'pull_request' && startsWith(github.event.pull_request.head.ref, 'bot/'))
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        sector: [agriculture, forestry]
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -43,8 +58,20 @@ jobs:
           node-version: '20.11.1'
           cache: 'npm'
       - run: npm ci || npm i
-      - name: UNFCCC Agriculture idempotency (with previous)
-        run: bash scripts/ci-idempotency-agriculture.sh
+      - name: Preflight pdftotext (Forestry)
+        id: forestry_pdftotext
+        if: ${{ matrix.sector == 'forestry' }}
+        continue-on-error: true
+        run: |
+          command -v pdftotext >/dev/null || (echo "Missing pdftotext (poppler-utils) on runner"; exit 2)
+      - name: Install poppler-utils (Forestry)
+        if: ${{ matrix.sector == 'forestry' && steps.forestry_pdftotext.outcome == 'failure' }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+          command -v pdftotext >/dev/null
+      - name: UNFCCC ${{ matrix.sector }} idempotency (with previous)
+        run: bash scripts/ci-idempotency-${{ matrix.sector }}.sh
       - name: Capture git diff (on failure)
         if: failure()
         run: |
@@ -56,7 +83,7 @@ jobs:
         # actions/upload-artifact@v4.3.1
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: agriculture-idempotency-diff
+          name: idempotency-diff-${{ matrix.sector }}
           path: |
             ci-git-status.txt
             ci-git-diff-names.txt
