@@ -9,7 +9,7 @@
     "source_pdf_sha256": "5bb38848e2d3f082ea34813bda062df825a95d099eeaf293ee4c7338a1039747"
   },
   "automation": {
-    "node_version": "20.19.5",
+    "node_version": "v20.11.1",
     "repo_commit": "a4346cb5b650b75464d1ccf1d012fa27bfd7fe67",
     "scripts_manifest_sha256": "0579fddb39e14da4cfcdc9920b83d2650519eadea5bc49b1838d2360fe56a54f"
   },

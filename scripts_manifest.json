@@ -4,6 +4,7 @@
     { "path": "core/metrics/request-metrics.js", "sha256": "2049892d9f2e44841f82ee7bcd3659317f2b940cd998b3fa5fd93cc78babf2aa" },
     { "path": "scripts/assert-offline.sh", "sha256": "b7f69664148270ded298a4d9fb638075a21063ad7fc8e7c8b3e2d49ed88bcffd" },
     { "path": "scripts/assert-tool-hashes.sh", "sha256": "df6b46b70aaee6bbe0e107afbb9a64c50e125d8ae22479d1d3f4722d84cc316a" },
+    { "path": "scripts/backfill-meta-node-version.cjs", "sha256": "2d719c1e2cd3f3b552bea9f30ae88cf5637cfde66ee2b35bda68f5d9eecdb922" },
     { "path": "scripts/baselines/bm25-retrieval.js", "sha256": "a4fecca2f1d899bcf892de00c3dd09b9cac5d7b51049fc0401b94c1710a587c9" },
     { "path": "scripts/baselines/param-extraction-linear-json.js", "sha256": "95c48577722e227d980fd650331262b928daee2288f715379c878624c52962b2" },
     { "path": "scripts/baselines/param-extraction-linear.js", "sha256": "13f483627ff922c5d41d5d2d60f03c53a207d30eee1ba9a3758b863b2323c2ea" },
