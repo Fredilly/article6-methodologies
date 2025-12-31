@@ -63,6 +63,7 @@
     "test:paths": "bash scripts/check-ingest-paths.sh",
     "sanity": "bash scripts/ingest-sanity.sh",
     "pr:truth": "bash scripts/pr-truth.sh",
+    "pr:proof": "bash scripts/pr-proof.sh",
     "commit:truth": "bash scripts/commit-truth.sh",
     "root-cause:open": "less docs/projects/phase-1-ingestion/ROOT_CAUSE.md",
     "root-cause:new": "node scripts/root-cause-new.cjs"
