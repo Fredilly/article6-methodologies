@@ -148,19 +148,34 @@ Missing `logic` or empty `refs.sections` causes failure.
 
 ---
 
-## [x] Phase 5 - Previous Versions
+## [x] Phase 5.1 - Previous lock + drift
 
 **What**  
-Add `previous/vYY-0` support that mirrors Forestry.
+Add deterministic “previous versions” coverage via a discovery + lock + drift mechanism.
 
 **Do**
 
-- Write `methodologies/.../<active>/previous/vYY-0/`.
-- Add `source-assets/**` plus tool pointers to the active version.
-- Validate `effective_from` and `effective_to` if present in HTML or PDFs.
+- Canonical indices/locks live under:
+  - `registry/UNFCCC/<Sector>/previous-versions.json`
+  - `registry/UNFCCC/<Sector>/previous-versions.lock.json`
+- Operator proof (drift checks):
+  - `npm run previous:drift:agriculture`
+  - `npm run previous:drift:forestry`
 
 **Gate**  
 Broken pointers or missing `source.pdf` trigger failure.
+
+---
+
+## [x] Phase 5.2 - Toolchain capture (minimum viable reproducibility)
+
+**What**  
+Capture minimum toolchain details in META to make emitted artefacts reproducible.
+
+**Do**
+
+- Newly generated `META.json` must include `automation.node_version` (from `process.version`).
+- No backfill in Phase 5.2 PR A; backfill is a separate intentional churn PR.
 
 ---
 
@@ -196,10 +211,18 @@ node scripts/check-quality-gates.js ingest-quality-gates.yml
 - Running the full ingest + validation sequence twice in the canonical environment must leave `git status -sb` clean and `git diff` empty.
 - Idempotency includes `methodologies/**/previous/**` (and the corresponding `tools/**/previous/**` pointers) — previous versions are part of the deterministic contract.
 - Validations must include previous outputs via the existing globs (`methodologies/**/...`) and offline validation where enabled in CI.
-- Canonical reference gate for UNFCCC Agriculture (with previous): `bash scripts/ci-idempotency-agriculture.sh`.
+- Canonical reference gates (with previous):
+  - `bash scripts/ci-idempotency-agriculture.sh`
+  - `bash scripts/ci-idempotency-forestry.sh`
+- CI enforcement runs both sectors via a matrix (`sector=[agriculture, forestry]`).
 - This applies to methodologies artefacts, `scripts_manifest.json`, and `registry.json`; treat it as the acceptance gate for declaring Phase 6 complete and reference it whenever assessing phase stability.
 
 ---
+
+## Proof
+
+- Full proof (recommended): `npm run pr:proof -- <PR_NUMBER>`
+- PR-only: `npm run pr:truth -- <PR_NUMBER>`
 
 ## Golden fixture methods
 
