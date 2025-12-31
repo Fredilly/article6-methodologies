@@ -82,6 +82,7 @@
     { "path": "scripts/parse-previous-versions.cjs", "sha256": "16e5f296e97dadba7eceb16615f9af0e3079aeebc5becaa6b3f13e77d9d77cc8" },
     { "path": "scripts/pdf-preflight.mjs", "sha256": "464b4c588f138749b8f93a8e381b68df25acdeab7b42b5f6034f44c1c2ddda92" },
     { "path": "scripts/policy-tools.sh", "sha256": "7eab93c4d426458b5d6c315b64bb20b6d3798d31590c9a03b3d634e0a581203b" },
+    { "path": "scripts/pr-proof.sh", "sha256": "3399d89854d8da50925f28d308eb1062fbae361133655f84bfe73c61ac9836bb" },
     { "path": "scripts/pr-truth.sh", "sha256": "87799766c4899fbd19548708b9d1da4d24a1de2496d77e1c4fc50bfe02384a8a" },
     { "path": "scripts/prefetch-assets.sh", "sha256": "10fcae972f7ad165fdd2de8fbed9a436dc6d56517d423107fb79e57c7bdf0bfa" },
     { "path": "scripts/previous-discover-unfccc-forestry.mjs", "sha256": "9ad273fb3d5bbb523d6bfe01b51322691e024b26580c2fca53edae5db419355c" },
