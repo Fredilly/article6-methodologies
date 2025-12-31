@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
-set -x
 
 fail_diag() {
   rc="${1:-1}"
-  set +x
   echo "== agriculture idempotency gate: FAIL (rc=${rc}) ==" >&2
-  echo "-- git status --porcelain" >&2
-  git status --porcelain=v1 >&2 || true
+  echo "-- git status -sb" >&2
+  git status -sb >&2 || true
   echo "-- git diff --name-only" >&2
   git diff --name-only >&2 || true
   echo "-- git diff --stat" >&2
@@ -32,7 +30,8 @@ assert_clean_tree() {
 
 if [ -n "$(git status --porcelain=v1)" ]; then
   echo "Working tree must be clean before running this gate." >&2
-  fail_diag 2
+  git status -sb >&2 || true
+  exit 1
 fi
 
 export PATH="$PWD/local-tools/bin:$PATH"
