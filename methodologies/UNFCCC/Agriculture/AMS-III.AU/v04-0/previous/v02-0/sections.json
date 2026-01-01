@@ -1,24 +1,244 @@
 {
   "sections": [
     {
-      "id": "S-1",
-      "title": "Scope and applicability"
+      "anchor": "unfccc-ccnucc",
+      "content": "III.AU./Version 02.0 Sectoral Scope: 15",
+      "id": "S-0001",
+      "title": "UNFCCC/CCNUCC"
     },
     {
-      "id": "S-2",
-      "title": "Baseline scenario and additionality"
+      "anchor": "eb-66",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0002",
+      "title": "EB 66"
     },
     {
-      "id": "S-3",
-      "title": "Project boundary and emission reductions"
+      "anchor": "type-iii-other-project-activities",
+      "content": "Project participants shall apply the general guidelines to SSC CDM methodologies, information on additionality (attachment A to Appendix B) and general guidance on leakage in biomass project activities (attachment C to Appendix B) provided at <http://cdm.unfccc.int/methodologies/SSCmethodologies/approved.html> mutatis mutandis.",
+      "id": "S-0003",
+      "title": "TYPE III - OTHER PROJECT ACTIVITIES"
     },
     {
-      "id": "S-4",
-      "title": "Leakage and residue management"
+      "anchor": "a-switch-from-transplanted-rice-with-continuously-flooded-fields-to-dsr-leads-to-a-reduced-flooding",
+      "content": "period since DSR requires non-flooded conditions after sowing until the seed has fully germinated and developed into a viable, young plantlet (at the (cid:147)2 to 4 leaf stage(cid:148)).",
+      "id": "S-0004",
+      "title": "A switch from transplanted rice with continuously flooded fields to DSR leads to a reduced flooding"
     },
     {
-      "id": "S-5",
-      "title": "Monitoring, QA/QC, and reporting"
+      "anchor": "unfccc-ccnucc-2",
+      "content": "III.AU./Version 02.0 Sectoral Scope: 15",
+      "id": "S-0005",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-66-2",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0006",
+      "title": "EB 66"
+    },
+    {
+      "anchor": "unfccc-ccnucc-3",
+      "content": "III.AU./Version 02.0 Sectoral Scope: 15",
+      "id": "S-0007",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-66-3",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0008",
+      "title": "EB 66"
+    },
+    {
+      "anchor": "water-regime-cid-150",
+      "content": "on-seasonc",
+      "id": "S-0009",
+      "title": "Water regime (cid:150)"
+    },
+    {
+      "anchor": "water-regime-cid-150-2",
+      "content": "pre-season",
+      "id": "S-0010",
+      "title": "Water regime (cid:150)"
+    },
+    {
+      "anchor": "organic",
+      "content": "Dynamic",
+      "id": "S-0011",
+      "title": "Organic"
+    },
+    {
+      "anchor": "soil-ph",
+      "content": "Static",
+      "id": "S-0012",
+      "title": "Soil pH"
+    },
+    {
+      "anchor": "soil-organic",
+      "content": "Carbon",
+      "id": "S-0013",
+      "title": "Soil Organic"
+    },
+    {
+      "anchor": "climate",
+      "content": "Static",
+      "id": "S-0014",
+      "title": "Climate"
+    },
+    {
+      "anchor": "cid-150-5-5",
+      "content": "> 5.5 < 1%",
+      "id": "S-0015",
+      "title": "(cid:150) 5.5"
+    },
+    {
+      "anchor": "cid-150-3",
+      "content": "> 3% [AEZ]f",
+      "id": "S-0016",
+      "title": "(cid:150) 3 %"
+    },
+    {
+      "anchor": "unfccc-ccnucc-4",
+      "content": "III.AU./Version 02.0 Sectoral Scope: 15",
+      "id": "S-0017",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-66-4",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0018",
+      "title": "EB 66"
+    },
+    {
+      "anchor": "unfccc-ccnucc-5",
+      "content": "III.AU./Version 02.0 Sectoral Scope: 15",
+      "id": "S-0019",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-66-5",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0020",
+      "title": "EB 66"
+    },
+    {
+      "anchor": "unfccc-ccnucc-6",
+      "content": "III.AU./Version 02.0 Sectoral Scope: 15",
+      "id": "S-0021",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-66-6",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0022",
+      "title": "EB 66"
+    },
+    {
+      "anchor": "unfccc-ccnucc-7",
+      "content": "III.AU./Version 02.0 Sectoral Scope: 15",
+      "id": "S-0023",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-66-7",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0024",
+      "title": "EB 66"
+    },
+    {
+      "anchor": "of-the-ipcc-guidelines",
+      "content": "As per the instructions in the annex (Guidelines for measuring methane emissions from rice fields) and chapter",
+      "id": "S-0025",
+      "title": "of the IPCC guidelines"
+    },
+    {
+      "anchor": "of-the-ipcc-guidelines-2",
+      "content": "To be determined by collecting the project field sizes in a project database. The size of project fields shall be determined by GPS or satellite data. Should such technologies not be available, established field size measurement approaches shall be used provided that uncertainties are taken into account in a conservative manner",
+      "id": "S-0026",
+      "title": "of the IPCC guidelines"
+    },
+    {
+      "anchor": "unfccc-ccnucc-8",
+      "content": "III.AU./Version 02.0 Sectoral Scope: 15",
+      "id": "S-0027",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-66-8",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0028",
+      "title": "EB 66"
+    },
+    {
+      "anchor": "unfccc-ccnucc-9",
+      "content": "III.AU./Version 02.0 Sectoral Scope: 15",
+      "id": "S-0029",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-66-9",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0030",
+      "title": "EB 66"
+    },
+    {
+      "anchor": "guidelines-for-measuring-methane-emissions-from-rice-fields",
+      "content": "The implementation of methane measurement in rice fields requires the involvement of experts in this field or at least experienced staff trained by experts (i.e. from research institutions). These guidelines cannot replace expertise in setting up chamber measurements. They rather set minimum requirements that serve for standardizing the conditions under which methane emissions are measured for projects under this methodology.",
+      "id": "S-0031",
+      "title": "GUIDELINES FOR MEASURING METHANE EMISSIONS FROM RICE FIELDS"
+    },
+    {
+      "anchor": "unfccc-ccnucc-10",
+      "content": "III.AU./Version 02.0 Sectoral Scope: 15",
+      "id": "S-0032",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-66-10",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0033",
+      "title": "EB 66"
+    },
+    {
+      "anchor": "minutes",
+      "content": "Morning",
+      "id": "S-0034",
+      "title": "minutes"
+    },
+    {
+      "anchor": "unfccc-ccnucc-11",
+      "content": "III.AU./Version 02.0 Sectoral Scope: 15",
+      "id": "S-0035",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-66-11",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0036",
+      "title": "EB 66"
+    },
+    {
+      "anchor": "unfccc-ccnucc-12",
+      "content": "III.AU./Version 02.0 Sectoral Scope: 15",
+      "id": "S-0037",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-66-12",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0038",
+      "title": "EB 66"
+    },
+    {
+      "anchor": "march-2012",
+      "content": "EB 60, Annex 16",
+      "id": "S-0039",
+      "title": "March 2012"
+    },
+    {
+      "anchor": "april-2011",
+      "content": "Decision Class: Regulatory Document Type: Standard Business Function: Methodology",
+      "id": "S-0040",
+      "title": "April 2011"
     }
   ]
 }

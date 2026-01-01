@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-BF.v01-0.R-0001-0027",
+    "logic": "change over time (no matter whether intended by the project activity or due to other reasons) and shall be monitored in the project fields.",
+    "refs": {
+      "sections": [
+        "S-0027"
+      ]
+    },
+    "summary": "change over time (no matter whether intended by the project activity or due to other reasons) and shall be monitored in the project fields.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-BF.v01-0.R-0001-0033",
+    "logic": "Project proponents may refer to existing literature on model validation for the specific project area and crops used in baseline as well as project scenarios.",
+    "refs": {
+      "sections": [
+        "S-0033"
+      ]
+    },
+    "summary": "Project proponents may refer to existing literature on model validation for the specific project area and crops used in baseline as well as project scenarios.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Agriculture.AMS-III-BF.v01-0.R-0002-0033",
+    "logic": "Model validation must be carried out for the baseline crop and area parameters as well as the NUE crop and parameters in the project scenario.",
+    "refs": {
+      "sections": [
+        "S-0033"
+      ]
+    },
+    "summary": "Model validation must be carried out for the baseline crop and area parameters as well as the NUE crop and parameters in the project scenario.",
+    "type": "parameter"
+  }
+]

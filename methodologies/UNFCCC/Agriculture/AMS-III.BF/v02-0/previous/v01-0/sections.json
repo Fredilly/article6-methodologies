@@ -1,24 +1,466 @@
 {
   "sections": [
     {
-      "id": "S-1",
-      "title": "Scope and applicability"
+      "anchor": "ams-iii-bf",
+      "content": "Small-scale Methodology",
+      "id": "S-0001",
+      "title": "AMS-III.BF"
     },
     {
-      "id": "S-2",
-      "title": "Baseline scenario and additionality"
+      "anchor": "ams-iii-bf-2",
+      "content": "Small-scale Methodology: Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0002",
+      "title": "AMS-III.BF"
     },
     {
-      "id": "S-3",
-      "title": "Project boundary and emission reductions"
+      "anchor": "table-of-contents",
+      "content": "Page",
+      "id": "S-0003",
+      "title": "TABLE OF CONTENTS"
     },
     {
-      "id": "S-4",
-      "title": "Leakage and residue management"
+      "anchor": "emissions-from-crop-fields",
+      "content": "3",
+      "id": "S-0004",
+      "title": "EMISSIONS FROM CROP FIELDS ....................................................."
     },
     {
-      "id": "S-5",
-      "title": "Monitoring, QA/QC, and reporting"
+      "anchor": "ams-iii-bf-3",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0005",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "scope",
+      "content": "2.",
+      "id": "S-0006",
+      "title": "Scope"
+    },
+    {
+      "anchor": "applicability",
+      "content": "3.",
+      "id": "S-0007",
+      "title": "Applicability"
+    },
+    {
+      "anchor": "the-nue-seeds-are-based-on-patented-technology-that-has-also-been-published-in-peer-reviewed",
+      "content": "journals (e.g. Sharwat, A.K. et. al. 2008. Sept 6(7):722-32 and Good, A.G., et. al. 2007. Can. J. Bot. 85:2522-262).",
+      "id": "S-0008",
+      "title": "The NUE seeds are based on patented technology that has also been published in peer reviewed"
+    },
+    {
+      "anchor": "ams-iii-bf-4",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0009",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "entry-into-force",
+      "content": "4.",
+      "id": "S-0010",
+      "title": "Entry into force"
+    },
+    {
+      "anchor": "normative-references",
+      "content": "5.",
+      "id": "S-0011",
+      "title": "Normative references"
+    },
+    {
+      "anchor": "examples-of-changes-in-management-practices-that-are-not-eligible-include-what-is-commonly-known-as",
+      "content": "the \"4Rs\", specifically changes in practices to apply the right fertilizer at the right time, right rate and right place.",
+      "id": "S-0012",
+      "title": "Examples of changes in management practices that are not eligible include what is commonly known as"
+    },
+    {
+      "anchor": "ams-iii-bf-5",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0013",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "definitions",
+      "content": "6.",
+      "id": "S-0014",
+      "title": "Definitions"
+    },
+    {
+      "anchor": "project-boundary",
+      "content": "7.",
+      "id": "S-0015",
+      "title": "Project boundary"
+    },
+    {
+      "anchor": "baseline-emissions",
+      "content": "8.",
+      "id": "S-0016",
+      "title": "Baseline emissions"
+    },
+    {
+      "anchor": "emission-reduction",
+      "content": "9.",
+      "id": "S-0017",
+      "title": "Emission reduction"
+    },
+    {
+      "anchor": "the-most-recent-version-of-the-dndc-model-and-user-guide-can-be-downloaded-from-the-university-of",
+      "content": "New Hampshire website at <http://www.dndc.sr.unh.edu/>.",
+      "id": "S-0018",
+      "title": "The most recent version of the DNDC model and user guide can be downloaded from the University of"
+    },
+    {
+      "anchor": "ams-iii-bf-6",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0019",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "crop-production-ppj-y",
+      "content": "10.",
+      "id": "S-0020",
+      "title": "Crop production (Ppj,y)"
+    },
+    {
+      "anchor": "an-uncertainty-factor-is-applied-taking-into-account-the-uncertainty-related-to-the-external-data-that-are",
+      "content": "not necessarily representative of the project specific static and dynamic conditions.",
+      "id": "S-0021",
+      "title": "An uncertainty factor is applied, taking into account the uncertainty related to the external data that are"
+    },
+    {
+      "anchor": "ams-iii-bf-7",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0022",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "nitrogen-utilization-efficiencies-nuebl-y-and-nuepj-y",
+      "content": "12.",
+      "id": "S-0023",
+      "title": "Nitrogen utilization efficiencies (NUEbl,y and NUEpj,y)"
+    },
+    {
+      "anchor": "the-independent-third-party-may-be-a-national-or-international-accredited-entity-for-certification-of-quality",
+      "content": "management or environmental management systems, or a governmental body.",
+      "id": "S-0024",
+      "title": "The independent third party may be a national or international accredited entity for certification of quality"
+    },
+    {
+      "anchor": "ams-iii-bf-8",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0025",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "emission-factor-for-nitrogen-fertilizer-application-efnf",
+      "content": "16.",
+      "id": "S-0026",
+      "title": "Emission factor for nitrogen fertilizer application (EFNF)"
+    },
+    {
+      "anchor": "dynamic-conditions-are-those-that-are-connected-to-the-management-practice-of-a-field-thus-can",
+      "content": "change over time (no matter whether intended by the project activity or due to other reasons) and shall be monitored in the project fields. Static conditions are site-specific parameters that characterize a soil and do not (relevantly) change over time and thus do in principle only have to be determined once for a project and the corresponding fields.",
+      "id": "S-0027",
+      "title": "Dynamic conditions are those that are connected to the management practice of a field, thus can"
+    },
+    {
+      "anchor": "ams-iii-bf-9",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0028",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "option-1-using-ipcc-default-value",
+      "content": "19.",
+      "id": "S-0029",
+      "title": "Option 1: using IPCC default value"
+    },
+    {
+      "anchor": "ams-iii-bf-10",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0030",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "ams-iii-bf-11",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0031",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "option-2-using-the-dndc-model",
+      "content": "21.",
+      "id": "S-0032",
+      "title": "Option 2: using the DNDC model"
+    },
+    {
+      "anchor": "t-co2-t-n-till-december-2012-and-37-93-t-co2-t-n-onward-january-2013",
+      "content": "The DNDC model shall be validated to the specific crop and region of project implementation. This requires the most infrastructure and cost but is likely to provide a more accurate calculation of actual emissions. Refer to appendix 3 for reference. Project proponents may refer to existing literature on model validation for the specific project area and crops used in baseline as well as project scenarios. Model validation through literature reference is only applicable if project proponents are able to demonstrate that the studies referred to have used the updated version of the model and have validated application for the same set of conditions/parameters of where crop is grown in the project activity. A literature review of DNDC model validations is provided in appendix 2 for reference. Alternatively, project proponents may wish to undertake a model validation study prior to project implementation. Model validation must be carried out for the baseline crop and area parameters as well as the NUE crop and parameters in the project scenario. Project proponents can follow methodologies provided in model validation studies available the University of New Hampshire website <http://www.dndc.sr.unh.edu/>. The DNDC model requires inputs of various soil characteristics like texture, density and soil organic carbon content as well as inputs of crop characteristics like tillage, fertilization and irrigation. These input data are required for the project site. Since the project activity is based on the use of NUE seed the only parameters that could change are the fertilizer requirements and crop characteristics of the alternative seed.",
+      "id": "S-0033",
+      "title": "t CO2/t-N (till December 2012) and 37.93 t CO2/t-N (onward January 2013)."
+    },
+    {
+      "anchor": "this-was-obtained-by-multiplying-the-sum-of-highest-value-with-uncertainty-range-for-ipcc-conversion",
+      "content": "factors for direct and indirect N2O emissions from nitrogen fertilizer application by the ratio of molecular weight of N to N2O i.e. 44/28 multiplied by the GWP of N2O as applicable during the crediting period.",
+      "id": "S-0034",
+      "title": "This was obtained by multiplying the sum of highest value with uncertainty range for IPCC conversion"
+    },
+    {
+      "anchor": "ams-iii-bf-12",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0035",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "blonef",
+      "content": ",2",
+      "id": "S-0036",
+      "title": "BLONEF"
+    },
+    {
+      "anchor": "option-3-direct-monitoring",
+      "content": "5.3.6.1.",
+      "id": "S-0037",
+      "title": "Option 3: Direct monitoring"
+    },
+    {
+      "anchor": "ams-iii-bf-13",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0038",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "leakage",
+      "content": "26.",
+      "id": "S-0039",
+      "title": "Leakage"
+    },
+    {
+      "anchor": "monitoring-methodology",
+      "content": "27.",
+      "id": "S-0040",
+      "title": "Monitoring methodology"
+    },
+    {
+      "anchor": "the-independent-third-party-may-be-a-doe-a-national-or-international-accredited-entity-for-certification",
+      "content": "of quality management or environmental management systems, or a governmental body.",
+      "id": "S-0041",
+      "title": "The independent third party may be a DOE, a national or international accredited entity for certification"
+    },
+    {
+      "anchor": "ams-iii-bf-14",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0042",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "data-and-parameters-monitored",
+      "content": "Data / Parameter table 1.",
+      "id": "S-0043",
+      "title": "Data and parameters monitored"
+    },
+    {
+      "anchor": "ams-iii-bf-15",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0044",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "ams-iii-bf-16",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0045",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "ams-iii-bf-17",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0046",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "ams-iii-bf-18",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0047",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "ams-iii-bf-19",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0048",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "ams-iii-bf-20",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0049",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "ams-iii-bf-21",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0050",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "ams-iii-bf-22",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0051",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "project-activity-under-a-programme-of-activities",
+      "content": "31.",
+      "id": "S-0052",
+      "title": "Project activity under a programme of activities"
+    },
+    {
+      "anchor": "ams-iii-bf-23",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0053",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "ams-iii-bf-24",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0054",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "depthsa",
+      "content": "number date surface / injection typeb",
+      "id": "S-0055",
+      "title": "depthsa"
+    },
+    {
+      "anchor": "ams-iii-bf-25",
+      "content": "Small-scale Methodology Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0056",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "typesc",
+      "content": "mm",
+      "id": "S-0057",
+      "title": "typesc"
+    },
+    {
+      "anchor": "ams-iii-bf-26",
+      "content": "Small-scale Methodology: Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0058",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "ams-iii-bf-27",
+      "content": "Small-scale Methodology: Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0059",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "kg-c-if-local-data-are-not-available-then-literature-values-can-be-used",
+      "content": "Biomass fraction - The grain, leaves + stem, and root fractions of total biomass at maturity;",
+      "id": "S-0060",
+      "title": "kg C). If local data are not available, then literature values can be used;"
+    },
+    {
+      "anchor": "ams-iii-bf-28",
+      "content": "Small-scale Methodology: Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0061",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "ams-iii-bf-29",
+      "content": "Small-scale Methodology: Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0062",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "samples-must-be-collected-for-one-field-farm-per-stratum-derived-based-on-a",
+      "content": "90% confidence level and 10% acceptable error); 16 samples at 0-5 cm depth and 4 samples at 0-10 cm depth;",
+      "id": "S-0063",
+      "title": "samples must be collected for one field/farm per stratum (derived based on a"
+    },
+    {
+      "anchor": "ams-iii-bf-30",
+      "content": "Small-scale Methodology: Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0064",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "ams-iii-bf-31",
+      "content": "Small-scale Methodology: Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0065",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "ams-iii-bf-32",
+      "content": "Small-scale Methodology: Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0066",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "cid-3398-1",
+      "content": "(cid:1845)(cid:3017),(cid:3036) (cid:3404) (cid:3496)",
+      "id": "S-0067",
+      "title": "(cid:3398) 1"
+    },
+    {
+      "anchor": "cid-3398-1-2",
+      "content": "Equation (3)",
+      "id": "S-0068",
+      "title": "(cid:3398) 1"
+    },
+    {
+      "anchor": "ams-iii-bf-33",
+      "content": "Small-scale Methodology: Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0069",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "ams-iii-bf-34",
+      "content": "Small-scale Methodology: Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0070",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "mm-in-diameter-e-g-1-4-stainless-steel-tubing",
+      "content": "Chambers should have a sampling port to enable the removal of gas samples. Possible options include: butyl rubber septa or a nylon/polyethylene stopcock",
+      "id": "S-0071",
+      "title": "mm in diameter (e.g. 1/4\"stainless steel tubing)"
+    },
+    {
+      "anchor": "parking-t-b-and-venterea-r-t-2010-sampling-protocols-chapter-3-chamber-based-trace-gas",
+      "content": "Flux Measurements, IN Sampling Protocols, R.F. Follett, editor, p.3-1 to 3-39, available at: <www.ars.usda.gov/research/GRACEnet>.",
+      "id": "S-0072",
+      "title": "Parking, T.B. and Venterea, R.T., 2010, Sampling Protocols, Chapter 3, Chamber-Based Trace Gas"
+    },
+    {
+      "anchor": "ams-iii-bf-35",
+      "content": "Small-scale Methodology: Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0073",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "ams-iii-bf-36",
+      "content": "Small-scale Methodology: Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0074",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "of-37",
+      "content": "Equation (2)",
+      "id": "S-0075",
+      "title": "of 37"
+    },
+    {
+      "anchor": "ams-iii-bf-37",
+      "content": "Small-scale Methodology: Reduction of N2O emissions from use of Nitrogen Use Efficient (NUE) seeds that require less fertilizer application Version 01.0",
+      "id": "S-0076",
+      "title": "AMS-III.BF"
+    },
+    {
+      "anchor": "november-2012",
+      "content": "EB 70, Annex 26",
+      "id": "S-0077",
+      "title": "November 2012"
     }
   ]
 }

@@ -1,22 +1,662 @@
 [
   {
-    "id": "S-1",
-    "title": "Scope and applicability"
+    "anchor": "ams-iii-bk",
+    "id": "S-0001",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BK"
   },
   {
-    "id": "S-2",
-    "title": "Baseline scenario and additionality"
+    "anchor": "ams-iii-bkms-iii-bk",
+    "id": "S-0002",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
   },
   {
-    "id": "S-3",
-    "title": "Project boundary and emission reductions"
+    "anchor": "table-of-contents",
+    "id": "S-0003",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "TABLE OF CONTENTS"
   },
   {
-    "id": "S-4",
-    "title": "Leakage and residue management"
+    "anchor": "scope-applicability-and-entry-into-force",
+    "id": "S-0004",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "SCOPE, APPLICABILITY, AND ENTRY INTO FORCE ..........................................."
   },
   {
-    "id": "S-5",
-    "title": "Monitoring, QA/QC, and reporting"
+    "anchor": "normative-references",
+    "id": "S-0005",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "NORMATIVE REFERENCES ...................................................................................."
+  },
+  {
+    "anchor": "baseline-methodology",
+    "id": "S-0006",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "BASELINE METHODOLOGY ...................................................................................."
+  },
+  {
+    "anchor": "monitoring-methodology",
+    "id": "S-0007",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "MONITORING METHODOLOGY .............................................................................."
+  },
+  {
+    "anchor": "project-survey",
+    "id": "S-0008",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "PROJECT SURVEY ................................................................................."
+  },
+  {
+    "anchor": "analysis",
+    "id": "S-0009",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "ANALYSIS ................................................................................................"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-2",
+    "id": "S-0010",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "scope",
+    "id": "S-0011",
+    "level": 2,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Scope"
+  },
+  {
+    "anchor": "applicability",
+    "id": "S-0012",
+    "level": 2,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Applicability"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-3",
+    "id": "S-0013",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "entry-into-force",
+    "id": "S-0014",
+    "level": 2,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Entry into force"
+  },
+  {
+    "anchor": "normative-references-2",
+    "id": "S-0015",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Normative references"
+  },
+  {
+    "anchor": "definitions",
+    "id": "S-0016",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Definitions"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-4",
+    "id": "S-0017",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "per-cent-or-3-2-per-cent-butterfat-content",
+    "id": "S-0018",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "per cent or 3.2 per cent butterfat content;"
+  },
+  {
+    "anchor": "project-boundary",
+    "id": "S-0019",
+    "level": 2,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Project boundary"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-5",
+    "id": "S-0020",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "baseline-scenario",
+    "id": "S-0021",
+    "level": 2,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Baseline scenario"
+  },
+  {
+    "anchor": "baseline-emissions",
+    "id": "S-0022",
+    "level": 3,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Baseline emissions"
+  },
+  {
+    "anchor": "possible-methane-emissions-from-animal-manure-are-not-included-in-both-baseline-and-project",
+    "id": "S-0023",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Possible methane emissions from animal manure are not included in both baseline and project"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-6",
+    "id": "S-0024",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "per-cent-shall-be-applied3-for-both-baseline-and-project",
+    "id": "S-0025",
+    "level": 2,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "per cent shall be applied3 for both baseline and project"
+  },
+  {
+    "anchor": "table-10-12-ipcc-guidelines-for-national-greenhouse-gas-inventories-2006-volume-4-agriculture",
+    "id": "S-0026",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Table 10.12, IPCC Guidelines for National Greenhouse Gas Inventories 2006,Volume 4: Agriculture,"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-7",
+    "id": "S-0027",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "for-example-in-a-project-area-with-two-seasons-i-e-wet-and-dry-for-year-y-there-will-be-a-sdbl-lac-wet-y",
+    "id": "S-0028",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "For example, in a project area with two seasons (i.e. wet and dry) for year y, there will be a SDBL,lac,wet,y,"
+  },
+  {
+    "anchor": "dry-matter-intake-estimates-are-calculated-using-the-approach-outlined-in-nutrient-requirements-of",
+    "id": "S-0029",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Dry Matter Intake estimates are calculated using the approach outlined in Nutrient Requirements of"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-8",
+    "id": "S-0030",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-9",
+    "id": "S-0031",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "project-emissions",
+    "id": "S-0032",
+    "level": 2,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Project emissions"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-10",
+    "id": "S-0033",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-11",
+    "id": "S-0034",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-12",
+    "id": "S-0035",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "leakage",
+    "id": "S-0036",
+    "level": 2,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Leakage"
+  },
+  {
+    "anchor": "emission-reductions",
+    "id": "S-0037",
+    "level": 2,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Emission reductions"
+  },
+  {
+    "anchor": "monitoring-methodology-2",
+    "id": "S-0038",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Monitoring methodology"
+  },
+  {
+    "anchor": "see-2006-ipcc-guidelines-for-national-greenhouse-gas-inventories-volume-3-industrial-processes",
+    "id": "S-0039",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "See 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 3: Industrial Processes"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-13",
+    "id": "S-0040",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-14",
+    "id": "S-0041",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "test-the-produced-milk-for-its-butterfat-content-according-to",
+    "id": "S-0042",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Test the produced milk for its butterfat content according to"
+  },
+  {
+    "anchor": "use-the-sales-receipt-from-participating-farmers-either-on-the-basis",
+    "id": "S-0043",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Use the sales receipt from participating farmers, either on the basis"
+  },
+  {
+    "anchor": "james-ceirwyn-s-1994-analytical-chemistry-of-foods-springer-pp-50-51-isbn-978-0-8342",
+    "id": "S-0044",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "James, Ceirwyn S. (1994). Analytical Chemistry of Foods. Springer. pp. 50–51. ISBN 978-0-8342-"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-15",
+    "id": "S-0045",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "days-and-the-following-ovulation-cycle-i-e-21-days",
+    "id": "S-0046",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "days, and the following ovulation cycle, i.e. 21 days)"
+  },
+  {
+    "anchor": "page-10-21-ipcc-guidelines-for-national-greenhouse-gas-inventories-2006-volume-4-agriculture",
+    "id": "S-0047",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Page 10.21, IPCC Guidelines for National Greenhouse Gas Inventories 2006, Volume 4: Agriculture,"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-16",
+    "id": "S-0048",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-17",
+    "id": "S-0049",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-18",
+    "id": "S-0050",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "project-activity-under-a-programme-of-activities",
+    "id": "S-0051",
+    "level": 2,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Project activity under a programme of activities"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-19",
+    "id": "S-0052",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "baseline-survey",
+    "id": "S-0053",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Baseline survey"
+  },
+  {
+    "anchor": "as-such-data-regarding-the-support-animal-group-i-e-males-and-immature-females-are-not-to-be",
+    "id": "S-0054",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "As such, data regarding the support animal group, i.e. males and immature females, are not to be"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-20",
+    "id": "S-0055",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "it-is-possible-that-some-combinations-will-not-be-found-in-a-given-location-for-example-ca-and-ac-are",
+    "id": "S-0056",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "It is possible that some combinations will not be found in a given location. For example, Ca and Ac are"
+  },
+  {
+    "anchor": "the-quality-and-quantity-of-the-feed-inputs-may-vary-significantly-by-season-and-the-animals-stage-of",
+    "id": "S-0057",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "The quality and quantity of the feed inputs may vary significantly by season and the animals’ stage of"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-21",
+    "id": "S-0058",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "project-survey-2",
+    "id": "S-0059",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Project survey"
+  },
+  {
+    "anchor": "where-gis-information-is-available-or-as-it-is-collected-during-sample-surveys-it-should-also-be-added",
+    "id": "S-0060",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Where GIS information is available, or as it is collected during sample surveys, it should also be added"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-22",
+    "id": "S-0061",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "part-of-the-survey-given-to-randomly-sampled-beneficiaries-must-ask-for-a-physical-demonstration-of",
+    "id": "S-0062",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Part of the survey given to randomly sampled beneficiaries must ask for a physical demonstration of"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-23",
+    "id": "S-0063",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "global-impact-domain-methane-emissions-feed-characteristics-section-2-2-food-and-agriculture",
+    "id": "S-0064",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "Global Impact Domain: “Methane Emissions”, Feed Characteristics, section 2.2, Food and Agriculture"
+  },
+  {
+    "anchor": "ams-iii-bkms-iii-bk-24",
+    "id": "S-0065",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "AMS-III.BKMS-III.BK"
+  },
+  {
+    "anchor": "june-2014",
+    "id": "S-0066",
+    "level": 1,
+    "provenance": {
+      "source_hash": "e888437949cd7031edc866a090b7b58019ee0e170bfe03409d64e3f1fce0cc1a",
+      "source_ref": "UNFCCC/AMS-III.BK@v02-0"
+    },
+    "title": "June 2014"
   }
 ]

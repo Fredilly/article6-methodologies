@@ -4,11 +4,12 @@
     "created_by": "ingest.sh"
   },
   "audit_hashes": {
-    "rules_json_sha256": "e1095bab5e6ca59b7c8d3fa2b164bfe7f831c9eb6c81a66bff22811276e35d99",
-    "sections_json_sha256": "2fb333bddd764f612d2adca1b616328e10329205acea1fa6a966d4ce5e6f9f13",
+    "rules_json_sha256": "fa6df59732fca592a00e8c12ca0badf4f97ff7967e000d274c92c6b6237c7660",
+    "sections_json_sha256": "2b3fd71a15c1e1b99d64bd8b5f156caa724eb5f1dda9149c806bfd568055448c",
     "source_pdf_sha256": "55aefc7b42f4e49975d063f332aeed28794115268fa634c45f58b467f2bc12e9"
   },
   "automation": {
+    "repo_commit": "f9dadf4eb5d337544e9aeefb836b67ef3a1b0ff4",
     "scripts_manifest_sha256": "793dfb8e2e05c9d8b32edbc72b5560b2ff65530d8827dd192d07810091de4fac"
   },
   "id": "UNFCCC.Agriculture.AMS-III.AU",

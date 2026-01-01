@@ -73,6 +73,25 @@ function ensureMethodPath(methodDir) {
   return { absolute, parts };
 }
 
+function methodFragments(parts) {
+  const org = parts[1];
+  const program = parts[2];
+  const code = parts[3];
+  const version = parts[4];
+  const previousIndex = parts.indexOf('previous');
+  if (previousIndex !== -1 && parts[previousIndex + 1]) {
+    return {
+      org,
+      program,
+      code,
+      version: parts[previousIndex + 1],
+      activeVersion: version,
+      isPrevious: true,
+    };
+  }
+  return { org, program, code, version, activeVersion: version, isPrevious: false };
+}
+
 function slugify(title, collisions) {
   let base = title
     .toLowerCase()
@@ -218,11 +237,16 @@ function extractWithPdftotext(binary, pdfPath) {
 }
 
 function extractWithPdfminer(pdfPath) {
-  const result = spawnSync(
-    'python3',
-    ['-m', 'pdfminer.high_level', '--maxpages', '0', pdfPath],
-    { encoding: 'utf8', maxBuffer: 1024 * 1024 * 40 }
-  );
+  const script = [
+    'import sys',
+    'from pdfminer.high_level import extract_text',
+    'pdf_path = sys.argv[1]',
+    "sys.stdout.write(extract_text(pdf_path) or '')",
+  ].join('\n');
+  const result = spawnSync('python3', ['-c', script, pdfPath], {
+    encoding: 'utf8',
+    maxBuffer: 1024 * 1024 * 40,
+  });
   if (result.status === 0) {
     if (result.error) {
       console.warn(`[extract-sections] pdfminer reported "${result.error.message}" but exited 0`);
@@ -255,13 +279,16 @@ async function main() {
   if (!methodArg) usage();
   const sourceOverride = process.argv[3];
   const { absolute: methodDir, parts } = ensureMethodPath(methodArg);
-  const [, org, program, code, version] = parts;
-  const docRef = `${org}/${code}@${version}`;
+  const { org, program, code, version, activeVersion, isPrevious } = methodFragments(parts);
+  // Keep provenance stable: previous versions reference the active version (idempotency across CI runs).
+  const docRef = `${org}/${code}@${activeVersion}`;
 
   const pdfPath =
     sourceOverride && sourceOverride !== '-'
       ? path.resolve(sourceOverride)
-      : path.join(repoRoot, 'tools', org, program, code, version, 'source.pdf');
+      : isPrevious
+        ? path.join(repoRoot, 'tools', org, program, code, activeVersion, 'previous', version, 'tools', 'source.pdf')
+        : path.join(repoRoot, 'tools', org, program, code, version, 'source.pdf');
 
   const sectionsPath = path.join(methodDir, 'sections.json');
   const existingGoodSections = isGoodSectionsJson(sectionsPath);

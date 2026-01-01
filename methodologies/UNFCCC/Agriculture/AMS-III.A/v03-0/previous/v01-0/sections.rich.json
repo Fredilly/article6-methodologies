@@ -1,22 +1,392 @@
 [
   {
-    "id": "S-1",
-    "title": "Scope and applicability"
+    "anchor": "unfccc-ccnucc",
+    "id": "S-0001",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "UNFCCC/CCNUCC"
   },
   {
-    "id": "S-2",
-    "title": "Baseline scenario and additionality"
+    "anchor": "eb-39",
+    "id": "S-0002",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "EB 39"
   },
   {
-    "id": "S-3",
-    "title": "Project boundary and emission reductions"
+    "anchor": "type-iii-other-project-types",
+    "id": "S-0003",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "TYPE III – OTHER PROJECT TYPES"
   },
   {
-    "id": "S-4",
-    "title": "Leakage and residue management"
+    "anchor": "in-a-two-year-cropping-sequence-this-corresponds-to-the-previous-six-years-in-a-one-year-cropping",
+    "id": "S-0004",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "In a two-year cropping sequence this corresponds to the previous six years. In a one-year cropping"
   },
   {
-    "id": "S-5",
-    "title": "Monitoring, QA/QC, and reporting"
+    "anchor": "unfccc-ccnucc-2",
+    "id": "S-0005",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-39-2",
+    "id": "S-0006",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "EB 39"
+  },
+  {
+    "anchor": "kt-co2-equivalent-annually",
+    "id": "S-0007",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "kt CO2 equivalent annually."
+  },
+  {
+    "anchor": "unfccc-ccnucc-3",
+    "id": "S-0008",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-39-3",
+    "id": "S-0009",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "EB 39"
+  },
+  {
+    "anchor": "1-to-3",
+    "id": "S-0010",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "1 to 3"
+  },
+  {
+    "anchor": "fine",
+    "id": "S-0011",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "Fine"
+  },
+  {
+    "anchor": "cold-temperate",
+    "id": "S-0012",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "Cold temperate"
+  },
+  {
+    "anchor": "cold-temperate-2",
+    "id": "S-0013",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "Cold temperate"
+  },
+  {
+    "anchor": "poorly-drained",
+    "id": "S-0014",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "Poorly drained"
+  },
+  {
+    "anchor": "sandy-loamy-sandy-sandy",
+    "id": "S-0015",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "Sandy, loamy sandy, sandy"
+  },
+  {
+    "anchor": "sandy-clay-loam-clay",
+    "id": "S-0016",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "Sandy clay loam, clay"
+  },
+  {
+    "anchor": "sandy-clay-silty-clay-clay",
+    "id": "S-0017",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "Sandy clay, silty clay, clay"
+  },
+  {
+    "anchor": "stehfest-e-2005-modelling-of-global-crop-production-and-resulting-n2o-emissions-dissertation",
+    "id": "S-0018",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "Stehfest, E. (2005): Modelling of global crop production and resulting N2O emissions. Dissertation."
+  },
+  {
+    "anchor": "ipcc-2006-ipcc-good-practice-guidance-and-uncertainty-management-in-national-ghg-inventories",
+    "id": "S-0019",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "IPCC (2006): IPCC Good Practice Guidance and Uncertainty Management in National GHG Inventories."
+  },
+  {
+    "anchor": "unfccc-ccnucc-4",
+    "id": "S-0020",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-39-4",
+    "id": "S-0021",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "EB 39"
+  },
+  {
+    "anchor": "in-the-absence-of-reliable-project-specific-data-a-conservative-value-from-referenced-scientific-literature-may",
+    "id": "S-0022",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "In the absence of reliable project specific data, a conservative value from referenced scientific literature may"
+  },
+  {
+    "anchor": "unfccc-ccnucc-5",
+    "id": "S-0023",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-39-5",
+    "id": "S-0024",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "EB 39"
+  },
+  {
+    "anchor": "unfccc-ccnucc-6",
+    "id": "S-0025",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-39-6",
+    "id": "S-0026",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "EB 39"
+  },
+  {
+    "anchor": "monitoring-shall-include-all-farmers-i-that-take-part-in-the-project-activity-the-following",
+    "id": "S-0027",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "Monitoring shall include all farmers i that take part in the project activity. The following"
+  },
+  {
+    "anchor": "unfccc-ccnucc-7",
+    "id": "S-0028",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-39-7",
+    "id": "S-0029",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "EB 39"
+  },
+  {
+    "anchor": "while-visiting-the-fields-the-independent-third-party-will-also-check-the-farmers-records-on",
+    "id": "S-0030",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "While visiting the fields the independent third party will also check the farmers’ records on"
+  },
+  {
+    "anchor": "unfccc-ccnucc-8",
+    "id": "S-0031",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-39-8",
+    "id": "S-0032",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "EB 39"
+  },
+  {
+    "anchor": "unfccc-ccnucc-9",
+    "id": "S-0033",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-39-9",
+    "id": "S-0034",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "EB 39"
+  },
+  {
+    "anchor": "field-visit-monitoring-protocol-for-urea-and-inoculant-application",
+    "id": "S-0035",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "FIELD VISIT MONITORING PROTOCOL FOR UREA AND INOCULANT APPLICATION"
+  },
+  {
+    "anchor": "sampling-by-dr-h-reetz-http-www-rainbowplantfood-com-agronomics-efu-sampling-pdf-accessed-on",
+    "id": "S-0036",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "“Sampling”, by Dr. H. Reetz, http://www.rainbowplantfood.com/agronomics/efu/sampling.pdf accessed on"
+  },
+  {
+    "anchor": "unfccc-ccnucc-10",
+    "id": "S-0037",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-39-10",
+    "id": "S-0038",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "EB 39"
+  },
+  {
+    "anchor": "may-2008",
+    "id": "S-0039",
+    "level": 1,
+    "provenance": {
+      "source_hash": "935e29f330997989ae723c5cd3c777eaa6a4d5fcc8d7a3946e41751607674e3a",
+      "source_ref": "UNFCCC/AMS-III.A@v03-0"
+    },
+    "title": "May 2008"
   }
 ]

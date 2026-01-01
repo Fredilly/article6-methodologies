@@ -1,22 +1,772 @@
 [
   {
-    "id": "S-1",
-    "title": "Scope and applicability"
+    "anchor": "ams-iii-bf",
+    "id": "S-0001",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
   },
   {
-    "id": "S-2",
-    "title": "Baseline scenario and additionality"
+    "anchor": "ams-iii-bf-2",
+    "id": "S-0002",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
   },
   {
-    "id": "S-3",
-    "title": "Project boundary and emission reductions"
+    "anchor": "table-of-contents",
+    "id": "S-0003",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "TABLE OF CONTENTS"
   },
   {
-    "id": "S-4",
-    "title": "Leakage and residue management"
+    "anchor": "emissions-from-crop-fields",
+    "id": "S-0004",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "EMISSIONS FROM CROP FIELDS ....................................................."
   },
   {
-    "id": "S-5",
-    "title": "Monitoring, QA/QC, and reporting"
+    "anchor": "ams-iii-bf-3",
+    "id": "S-0005",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "scope",
+    "id": "S-0006",
+    "level": 2,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Scope"
+  },
+  {
+    "anchor": "applicability",
+    "id": "S-0007",
+    "level": 2,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Applicability"
+  },
+  {
+    "anchor": "the-nue-seeds-are-based-on-patented-technology-that-has-also-been-published-in-peer-reviewed",
+    "id": "S-0008",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "The NUE seeds are based on patented technology that has also been published in peer reviewed"
+  },
+  {
+    "anchor": "ams-iii-bf-4",
+    "id": "S-0009",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "entry-into-force",
+    "id": "S-0010",
+    "level": 2,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Entry into force"
+  },
+  {
+    "anchor": "normative-references",
+    "id": "S-0011",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Normative references"
+  },
+  {
+    "anchor": "examples-of-changes-in-management-practices-that-are-not-eligible-include-what-is-commonly-known-as",
+    "id": "S-0012",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Examples of changes in management practices that are not eligible include what is commonly known as"
+  },
+  {
+    "anchor": "ams-iii-bf-5",
+    "id": "S-0013",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "definitions",
+    "id": "S-0014",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Definitions"
+  },
+  {
+    "anchor": "project-boundary",
+    "id": "S-0015",
+    "level": 2,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Project boundary"
+  },
+  {
+    "anchor": "baseline-emissions",
+    "id": "S-0016",
+    "level": 2,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Baseline emissions"
+  },
+  {
+    "anchor": "emission-reduction",
+    "id": "S-0017",
+    "level": 2,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Emission reduction"
+  },
+  {
+    "anchor": "the-most-recent-version-of-the-dndc-model-and-user-guide-can-be-downloaded-from-the-university-of",
+    "id": "S-0018",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "The most recent version of the DNDC model and user guide can be downloaded from the University of"
+  },
+  {
+    "anchor": "ams-iii-bf-6",
+    "id": "S-0019",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "crop-production-ppj-y",
+    "id": "S-0020",
+    "level": 3,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Crop production (Ppj,y)"
+  },
+  {
+    "anchor": "an-uncertainty-factor-is-applied-taking-into-account-the-uncertainty-related-to-the-external-data-that-are",
+    "id": "S-0021",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "An uncertainty factor is applied, taking into account the uncertainty related to the external data that are"
+  },
+  {
+    "anchor": "ams-iii-bf-7",
+    "id": "S-0022",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "nitrogen-utilization-efficiencies-nuebl-y-and-nuepj-y",
+    "id": "S-0023",
+    "level": 3,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Nitrogen utilization efficiencies (NUEbl,y and NUEpj,y)"
+  },
+  {
+    "anchor": "the-independent-third-party-may-be-a-national-or-international-accredited-entity-for-certification-of-quality",
+    "id": "S-0024",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "The independent third party may be a national or international accredited entity for certification of quality"
+  },
+  {
+    "anchor": "ams-iii-bf-8",
+    "id": "S-0025",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "emission-factor-for-nitrogen-fertilizer-application-efnf",
+    "id": "S-0026",
+    "level": 3,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Emission factor for nitrogen fertilizer application (EFNF)"
+  },
+  {
+    "anchor": "dynamic-conditions-are-those-that-are-connected-to-the-management-practice-of-a-field-thus-can",
+    "id": "S-0027",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Dynamic conditions are those that are connected to the management practice of a field, thus can"
+  },
+  {
+    "anchor": "ams-iii-bf-9",
+    "id": "S-0028",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "option-1-using-ipcc-default-value",
+    "id": "S-0029",
+    "level": 3,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Option 1: using IPCC default value"
+  },
+  {
+    "anchor": "ams-iii-bf-10",
+    "id": "S-0030",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "ams-iii-bf-11",
+    "id": "S-0031",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "option-2-using-the-dndc-model",
+    "id": "S-0032",
+    "level": 3,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Option 2: using the DNDC model"
+  },
+  {
+    "anchor": "t-co2-t-n-till-december-2012-and-37-93-t-co2-t-n-onward-january-2013",
+    "id": "S-0033",
+    "level": 2,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "t CO2/t-N (till December 2012) and 37.93 t CO2/t-N (onward January 2013)."
+  },
+  {
+    "anchor": "this-was-obtained-by-multiplying-the-sum-of-highest-value-with-uncertainty-range-for-ipcc-conversion",
+    "id": "S-0034",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "This was obtained by multiplying the sum of highest value with uncertainty range for IPCC conversion"
+  },
+  {
+    "anchor": "ams-iii-bf-12",
+    "id": "S-0035",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "blonef",
+    "id": "S-0036",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "BLONEF"
+  },
+  {
+    "anchor": "option-3-direct-monitoring",
+    "id": "S-0037",
+    "level": 3,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Option 3: Direct monitoring"
+  },
+  {
+    "anchor": "ams-iii-bf-13",
+    "id": "S-0038",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "leakage",
+    "id": "S-0039",
+    "level": 2,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Leakage"
+  },
+  {
+    "anchor": "monitoring-methodology",
+    "id": "S-0040",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Monitoring methodology"
+  },
+  {
+    "anchor": "the-independent-third-party-may-be-a-doe-a-national-or-international-accredited-entity-for-certification",
+    "id": "S-0041",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "The independent third party may be a DOE, a national or international accredited entity for certification"
+  },
+  {
+    "anchor": "ams-iii-bf-14",
+    "id": "S-0042",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "data-and-parameters-monitored",
+    "id": "S-0043",
+    "level": 2,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Data and parameters monitored"
+  },
+  {
+    "anchor": "ams-iii-bf-15",
+    "id": "S-0044",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "ams-iii-bf-16",
+    "id": "S-0045",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "ams-iii-bf-17",
+    "id": "S-0046",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "ams-iii-bf-18",
+    "id": "S-0047",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "ams-iii-bf-19",
+    "id": "S-0048",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "ams-iii-bf-20",
+    "id": "S-0049",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "ams-iii-bf-21",
+    "id": "S-0050",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "ams-iii-bf-22",
+    "id": "S-0051",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "project-activity-under-a-programme-of-activities",
+    "id": "S-0052",
+    "level": 2,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Project activity under a programme of activities"
+  },
+  {
+    "anchor": "ams-iii-bf-23",
+    "id": "S-0053",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "ams-iii-bf-24",
+    "id": "S-0054",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "depthsa",
+    "id": "S-0055",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "depthsa"
+  },
+  {
+    "anchor": "ams-iii-bf-25",
+    "id": "S-0056",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "typesc",
+    "id": "S-0057",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "typesc"
+  },
+  {
+    "anchor": "ams-iii-bf-26",
+    "id": "S-0058",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "ams-iii-bf-27",
+    "id": "S-0059",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "kg-c-if-local-data-are-not-available-then-literature-values-can-be-used",
+    "id": "S-0060",
+    "level": 2,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "kg C). If local data are not available, then literature values can be used;"
+  },
+  {
+    "anchor": "ams-iii-bf-28",
+    "id": "S-0061",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "ams-iii-bf-29",
+    "id": "S-0062",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "samples-must-be-collected-for-one-field-farm-per-stratum-derived-based-on-a",
+    "id": "S-0063",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "samples must be collected for one field/farm per stratum (derived based on a"
+  },
+  {
+    "anchor": "ams-iii-bf-30",
+    "id": "S-0064",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "ams-iii-bf-31",
+    "id": "S-0065",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "ams-iii-bf-32",
+    "id": "S-0066",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "cid-3398-1",
+    "id": "S-0067",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "(cid:3398) 1"
+  },
+  {
+    "anchor": "cid-3398-1-2",
+    "id": "S-0068",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "(cid:3398) 1"
+  },
+  {
+    "anchor": "ams-iii-bf-33",
+    "id": "S-0069",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "ams-iii-bf-34",
+    "id": "S-0070",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "mm-in-diameter-e-g-1-4-stainless-steel-tubing",
+    "id": "S-0071",
+    "level": 2,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "mm in diameter (e.g. 1/4\"stainless steel tubing)"
+  },
+  {
+    "anchor": "parking-t-b-and-venterea-r-t-2010-sampling-protocols-chapter-3-chamber-based-trace-gas",
+    "id": "S-0072",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "Parking, T.B. and Venterea, R.T., 2010, Sampling Protocols, Chapter 3, Chamber-Based Trace Gas"
+  },
+  {
+    "anchor": "ams-iii-bf-35",
+    "id": "S-0073",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "ams-iii-bf-36",
+    "id": "S-0074",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "of-37",
+    "id": "S-0075",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "of 37"
+  },
+  {
+    "anchor": "ams-iii-bf-37",
+    "id": "S-0076",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "AMS-III.BF"
+  },
+  {
+    "anchor": "november-2012",
+    "id": "S-0077",
+    "level": 1,
+    "provenance": {
+      "source_hash": "30fe4e528484d6383fc6be9f04b364de05519c7ba071a2f43b9aa474fa3042f9",
+      "source_ref": "UNFCCC/AMS-III.BF@v02-0"
+    },
+    "title": "November 2012"
   }
 ]

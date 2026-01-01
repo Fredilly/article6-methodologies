@@ -5,7 +5,12 @@ const { spawnSync } = require('node:child_process');
 const path = require('node:path');
 
 const repoRoot = path.resolve(__dirname, '..');
-const tests = ['tests/pdf-skip-safe.test.js', 'tests/rules-skip-safe.test.js'];
+const tests = [
+  'tests/pdf-skip-safe.test.js',
+  'tests/rules-skip-safe.test.js',
+  'tests/extract-sections-pdfminer.test.js',
+  'tests/agri-ams-iii-rules-coverage.test.js',
+];
 
 function main() {
   for (const testFile of tests) {
@@ -21,4 +26,3 @@ function main() {
 }
 
 main();
-

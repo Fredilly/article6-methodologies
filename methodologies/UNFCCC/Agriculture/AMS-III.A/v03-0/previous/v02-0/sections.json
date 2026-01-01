@@ -1,24 +1,286 @@
 {
   "sections": [
     {
-      "id": "S-1",
-      "title": "Scope and applicability"
+      "anchor": "unfccc-ccnucc",
+      "content": "III.A./Version 02 Sectoral Scope: 15",
+      "id": "S-0001",
+      "title": "UNFCCC/CCNUCC"
     },
     {
-      "id": "S-2",
-      "title": "Baseline scenario and additionality"
+      "anchor": "eb-48",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0002",
+      "title": "EB 48"
     },
     {
-      "id": "S-3",
-      "title": "Project boundary and emission reductions"
+      "anchor": "type-iii-other-project-types",
+      "content": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at <http://cdm.unfccc.int/methodologies/SSCmethodologies/approved.html>.",
+      "id": "S-0003",
+      "title": "TYPE III – OTHER PROJECT TYPES"
     },
     {
-      "id": "S-4",
-      "title": "Leakage and residue management"
+      "anchor": "in-a-two-year-cropping-sequence-this-corresponds-to-the-previous-six-years-in-a-one-year-cropping",
+      "content": "sequence this corresponds to the previous three years.",
+      "id": "S-0004",
+      "title": "In a two-year cropping sequence this corresponds to the previous six years. In a one-year cropping"
     },
     {
-      "id": "S-5",
-      "title": "Monitoring, QA/QC, and reporting"
+      "anchor": "n-p-k-nitrogen-phosphorous-and-potash-or-potassium-are-the-basic-nutrients-required-for-plant-growth",
+      "content": "that are usually supplied by fertiliser applications. The measures under this methodology are related to",
+      "id": "S-0005",
+      "title": "N, P, K (Nitrogen, Phosphorous, and Potash or Potassium) are the basic nutrients required for plant growth"
+    },
+    {
+      "anchor": "unfccc-ccnucc-2",
+      "content": "III.A./Version 02 Sectoral Scope: 15",
+      "id": "S-0006",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-48-2",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0007",
+      "title": "EB 48"
+    },
+    {
+      "anchor": "kt-co2-equivalent-annually",
+      "content": "4.",
+      "id": "S-0008",
+      "title": "kt CO2 equivalent annually."
+    },
+    {
+      "anchor": "unfccc-ccnucc-3",
+      "content": "III.A./Version 02 Sectoral Scope: 15",
+      "id": "S-0009",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-48-3",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0010",
+      "title": "EB 48"
+    },
+    {
+      "anchor": "1-to-3",
+      "content": "3. >3",
+      "id": "S-0011",
+      "title": "1 to 3"
+    },
+    {
+      "anchor": "fine",
+      "content": "Remark",
+      "id": "S-0012",
+      "title": "Fine"
+    },
+    {
+      "anchor": "sandy-loamy-sandy-sandy",
+      "content": "loam, silt loam, silt",
+      "id": "S-0013",
+      "title": "Sandy, loamy sandy, sandy"
+    },
+    {
+      "anchor": "sandy-clay-loam-clay-loam",
+      "content": "silty clay loam",
+      "id": "S-0014",
+      "title": "Sandy clay loam, clay loam,"
+    },
+    {
+      "anchor": "sandy-clay-silty-clay-clay",
+      "content": "Climate",
+      "id": "S-0015",
+      "title": "Sandy clay, silty clay, clay"
+    },
+    {
+      "anchor": "cold-temperate",
+      "content": "dry",
+      "id": "S-0016",
+      "title": "Cold temperate"
+    },
+    {
+      "anchor": "cold-temperate-2",
+      "content": "wet",
+      "id": "S-0017",
+      "title": "Cold temperate"
+    },
+    {
+      "anchor": "poorly-drained",
+      "content": "Reference See Stehfest3 (2005)",
+      "id": "S-0018",
+      "title": "Poorly drained"
+    },
+    {
+      "anchor": "stehfest-e-2005-modelling-of-global-crop-production-and-resulting-n2o-emissions-dissertation",
+      "content": "Universiy of Kassel.",
+      "id": "S-0019",
+      "title": "Stehfest, E. (2005): Modelling of global crop production and resulting N2O emissions. Dissertation."
+    },
+    {
+      "anchor": "ipcc-2006-ipcc-good-practice-guidance-and-uncertainty-management-in-national-ghg-inventories",
+      "content": "3/12",
+      "id": "S-0020",
+      "title": "IPCC (2006): IPCC Good Practice Guidance and Uncertainty Management in National GHG Inventories."
+    },
+    {
+      "anchor": "unfccc-ccnucc-4",
+      "content": "III.A./Version 02 Sectoral Scope: 15",
+      "id": "S-0021",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-48-4",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0022",
+      "title": "EB 48"
+    },
+    {
+      "anchor": "unfccc-ccnucc-5",
+      "content": "III.A./Version 02 Sectoral Scope: 15",
+      "id": "S-0023",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-48-5",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0024",
+      "title": "EB 48"
+    },
+    {
+      "anchor": "coef-2",
+      "content": "inoc",
+      "id": "S-0025",
+      "title": "COEF ,2"
+    },
+    {
+      "anchor": "unfccc-ccnucc-6",
+      "content": "III.A./Version 02 Sectoral Scope: 15",
+      "id": "S-0026",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-48-6",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0027",
+      "title": "EB 48"
+    },
+    {
+      "anchor": "monitoring-shall-include-all-farmers-i-that-take-part-in-the-project-activity-the-following",
+      "content": "parameters shall be monitored:",
+      "id": "S-0028",
+      "title": "Monitoring shall include all farmers i that take part in the project activity. The following"
+    },
+    {
+      "anchor": "unfccc-ccnucc-7",
+      "content": "III.A./Version 02 Sectoral Scope: 15",
+      "id": "S-0029",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-48-7",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0030",
+      "title": "EB 48"
+    },
+    {
+      "anchor": "unfccc-ccnucc-8",
+      "content": "III.A./Version 02 Sectoral Scope: 15",
+      "id": "S-0031",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-48-8",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0032",
+      "title": "EB 48"
+    },
+    {
+      "anchor": "while-visiting-the-fields-the-independent-third-party-will-also-check-the-farmers-records-on",
+      "content": "use of synthetic nitrogen fertilizer, inoculant, and organic fertilizers.",
+      "id": "S-0033",
+      "title": "While visiting the fields the independent third party will also check the farmers’ records on"
+    },
+    {
+      "anchor": "unfccc-ccnucc-9",
+      "content": "III.A./Version 02 Sectoral Scope: 15",
+      "id": "S-0034",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-48-9",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0035",
+      "title": "EB 48"
+    },
+    {
+      "anchor": "inoculant-application",
+      "content": "1. The following monitoring procedure shall be implemented to monitor the fields where legumes and grass is cultivated in rotations. It shall be administered by a qualified independent agronomist or field technician.",
+      "id": "S-0036",
+      "title": "INOCULANT APPLICATION"
+    },
+    {
+      "anchor": "unfccc-ccnucc-10",
+      "content": "III.A./Version 02 Sectoral Scope: 15",
+      "id": "S-0037",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-48-10",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0038",
+      "title": "EB 48"
+    },
+    {
+      "anchor": "synthetic-n-fertilizers-other-than-urea",
+      "content": "A conservative emission factor for any synthetic nitrogen fertilizer can be calculated as long as the mass ratio of N in the fertilizer is known using the following formula:",
+      "id": "S-0039",
+      "title": "SYNTHETIC N FERTILIZERS OTHER THAN UREA"
+    },
+    {
+      "anchor": "coef-2-2",
+      "content": "f",
+      "id": "S-0040",
+      "title": "COEF ,2"
+    },
+    {
+      "anchor": "unfccc-ccnucc-11",
+      "content": "III.A./Version 02 Sectoral Scope: 15",
+      "id": "S-0041",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-48-11",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0042",
+      "title": "EB 48"
+    },
+    {
+      "anchor": "eligible-legume-rhizobia-combinations",
+      "content": "Species (rhizobia)",
+      "id": "S-0043",
+      "title": "ELIGIBLE LEGUME-RHIZOBIA COMBINATIONS"
+    },
+    {
+      "anchor": "unfccc-ccnucc-12",
+      "content": "III.A./Version 02 Sectoral Scope: 15",
+      "id": "S-0044",
+      "title": "UNFCCC/CCNUCC"
+    },
+    {
+      "anchor": "eb-48-12",
+      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "id": "S-0045",
+      "title": "EB 48"
+    },
+    {
+      "anchor": "july-2009",
+      "content": "01",
+      "id": "S-0046",
+      "title": "July 2009"
+    },
+    {
+      "anchor": "may-2008",
+      "content": "Decision Class: Regulatory Document Type: Standard Business Function: Methodology",
+      "id": "S-0047",
+      "title": "May 2008"
     }
   ]
 }
