@@ -12,6 +12,24 @@ function usage() {
   process.exit(2);
 }
 
+function sortKeysDeep(value) {
+  if (Array.isArray(value)) return value.map(sortKeysDeep);
+  if (value && typeof value === 'object') {
+    const out = {};
+    Object.keys(value)
+      .sort()
+      .forEach((key) => {
+        out[key] = sortKeysDeep(value[key]);
+      });
+    return out;
+  }
+  return value;
+}
+
+function stableStringify(value) {
+  return `${JSON.stringify(sortKeysDeep(value), null, 2)}\n`;
+}
+
 function isGoodSectionsJson(sectionsPath) {
   if (!fs.existsSync(sectionsPath)) return false;
   try {
@@ -45,7 +63,7 @@ function ensureSectionsRichFromLean(methodDir) {
       title: section.title,
       anchor: section.anchor,
     }));
-    fs.writeFileSync(richPath, `${JSON.stringify(rich, null, 2)}\n`);
+    fs.writeFileSync(richPath, stableStringify(rich));
     return true;
   } catch {
     return false;
@@ -309,6 +327,24 @@ async function main() {
   }
 
   const pdfHash = sha256(pdfPath);
+  if (isPrevious && existingGoodSections) {
+    const richPath = path.join(methodDir, 'sections.rich.json');
+    if (fs.existsSync(richPath) && fs.statSync(richPath).size > 0) {
+      try {
+        const rich = JSON.parse(fs.readFileSync(richPath, 'utf8'));
+        const first = Array.isArray(rich) ? rich[0] : null;
+        const prov = first && first.provenance ? first.provenance : null;
+        const sourceHash = prov && prov.source_hash ? String(prov.source_hash) : '';
+        const sourceRef = prov && prov.source_ref ? String(prov.source_ref) : '';
+        if (sourceHash === pdfHash && sourceRef === docRef) {
+          console.log('[extract-sections] previous sections already pinned to current source; skipping rewrite (idempotent)');
+          return;
+        }
+      } catch {
+        // fall through to regeneration
+      }
+    }
+  }
   let text = '';
   try {
     text = extractText(pdfPath);
@@ -368,8 +404,8 @@ async function main() {
     })),
   };
 
-  fs.writeFileSync(path.join(methodDir, 'sections.rich.json'), `${JSON.stringify(rich, null, 2)}\n`);
-  fs.writeFileSync(path.join(methodDir, 'sections.json'), `${JSON.stringify(lean, null, 2)}\n`);
+  fs.writeFileSync(path.join(methodDir, 'sections.rich.json'), stableStringify(rich));
+  fs.writeFileSync(path.join(methodDir, 'sections.json'), stableStringify(lean));
 
   console.log(`[sections] extracted ${sections.length} sections for ${docRef}`);
 }

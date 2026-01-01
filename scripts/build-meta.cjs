@@ -7,6 +7,24 @@ const { execFileSync } = require('child_process');
 
 const repoRoot = path.resolve(__dirname, '..');
 
+function sortKeysDeep(value) {
+  if (Array.isArray(value)) return value.map(sortKeysDeep);
+  if (value && typeof value === 'object') {
+    const out = {};
+    Object.keys(value)
+      .sort()
+      .forEach((key) => {
+        out[key] = sortKeysDeep(value[key]);
+      });
+    return out;
+  }
+  return value;
+}
+
+function stableStringify(value) {
+  return `${JSON.stringify(sortKeysDeep(value), null, 2)}\n`;
+}
+
 function gitHead() {
   try {
     return execFileSync('git', ['rev-parse', 'HEAD'], { cwd: repoRoot, encoding: 'utf8' }).trim();
@@ -139,7 +157,14 @@ async function main() {
   }
 
   assertMetaCompleteness({ meta: nextMeta, methodDoc });
-  const output = JSON.stringify(nextMeta, null, 2) + '\n';
+  const output = stableStringify(nextMeta);
+  if (fs.existsSync(metaPath)) {
+    const before = await fsp.readFile(metaPath, 'utf8');
+    if (before === output) {
+      console.log(`[meta] unchanged ${path.relative(repoRoot, metaPath)}`);
+      return;
+    }
+  }
   await fsp.writeFile(metaPath, output);
   console.log(`[meta] wrote ${path.relative(repoRoot, metaPath)}`);
 }
