@@ -2,6 +2,1122 @@
   {
     "id": "R-1-0001",
     "rule_id": "R-1-0001",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Projects aggregate manure from multiple farms and install a central methane capture system where the baseline lacks methane recovery.",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "dda75505ea56d05a6e04e2721cbd17d08d0e581a87ba7d4417d3dc606c27cd9c",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-2-0002",
+    "rule_id": "R-2-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
+    "tags": [
+      "calc",
+      "baseline",
+      "additionality"
+    ],
+    "sha256": "3420748023f30d04ed1fd562ef7ae3e30f38f9e1a49659763b0d9c4dea8abec9",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-3-0002",
+    "rule_id": "R-3-0002",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Barrier documentation and CER transfer declarations demonstrate participation and prevent double counting.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "3e6d9dc97d3ab90962de8b95b71b27bacbf040cc634478a40479dece85c5f339",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-4-0003",
+    "rule_id": "R-4-0003",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Project boundaries cover collection through final sludge treatment with leak-proof infrastructure and consistent fertilizer use.",
+    "tags": [
+      "parameter",
+      "project_design"
+    ],
+    "sha256": "eb7121e84d51ec80ad2b551753dab1cc8372f05f330538a26b9062a52712a02d",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-5-0003",
+    "rule_id": "R-5-0003",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
+    "tags": [
+      "equation",
+      "calc"
+    ],
+    "sha256": "b836353c122af881334f9fbb7713caf9d7377a723e247fc5c8b6af1f018bff85",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-6-0004",
+    "rule_id": "R-6-0004",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Deduct leakage from pipelines, auxiliary fuel, and offsite residue handling using monitored data or LFAD defaults.",
+    "tags": [
+      "leakage"
+    ],
+    "sha256": "24164a04c1515ff1539afad170510d4a05115d7b3e4471c8d736ef7b1f6793d2",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-7-0005",
+    "rule_id": "R-7-0005",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Monitor biogas, methane fraction, and energy consumption continuously and report at least monthly with QA/QC evidence.",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "7b0f8c7ba29f81946dd5dc6f5b86e8e187c38d44a5faf9297dda219cc13a3bf7",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-8-0005",
+    "rule_id": "R-8-0005",
+    "methodology": "ACM0010",
+    "version": "v03-0",
+    "rule": "Focus DOE inspections on high-emitting farms and reconcile methane balances annually, documenting leak investigations and fixes.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "2ce9a69b9840193ff2a6b0c99120831bb2934ef90092d7c3d75d9de479b89891",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0001",
+    "rule_id": "R-1-0001",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Projects aggregate manure from multiple farms and install a central methane capture system where the baseline lacks methane recovery.",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "29b2ef4098b56891ad498e5e038219ac1d6244cb7ece2df439ef18378384fcfd",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-2-0002",
+    "rule_id": "R-2-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
+    "tags": [
+      "calc",
+      "baseline",
+      "additionality"
+    ],
+    "sha256": "6ea9b9eb161d6857de39724c8e8757a7cf52d8fd04ac4798fb264745a05290f0",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-3-0002",
+    "rule_id": "R-3-0002",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Barrier documentation and CER transfer declarations demonstrate participation and prevent double counting.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "5eda0d15e4ec4d17de633acc84c7c724c22fe8aeb64b523b18b53931725ccf06",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-4-0003",
+    "rule_id": "R-4-0003",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Project boundaries cover collection through final sludge treatment with leak-proof infrastructure and consistent fertilizer use.",
+    "tags": [
+      "parameter",
+      "project_design"
+    ],
+    "sha256": "20c4996b305e04cbd1907c186aee3e1ef08082f95d2de683674f285d23ecc97b",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-5-0003",
+    "rule_id": "R-5-0003",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
+    "tags": [
+      "equation",
+      "calc"
+    ],
+    "sha256": "3b91069bc370b9a965d26d3faee834db1004fcb9659d97084493ff1af9e711a6",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-6-0004",
+    "rule_id": "R-6-0004",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Deduct leakage from pipelines, auxiliary fuel, and offsite residue handling using monitored data or LFAD defaults.",
+    "tags": [
+      "leakage"
+    ],
+    "sha256": "c349af08750d4b4d7526b3c7999ebcc1e03cd526a0b9253920000f178f7dc3b8",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-7-0005",
+    "rule_id": "R-7-0005",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Monitor biogas, methane fraction, and energy consumption continuously and report at least monthly with QA/QC evidence.",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "2676222d60300e1605a9d9bcdbb479eb9c1096f76bc70ff493e6115b854d931d",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-8-0005",
+    "rule_id": "R-8-0005",
+    "methodology": "AM0073",
+    "version": "v01-0",
+    "rule": "Focus DOE inspections on high-emitting farms and reconcile methane balances annually, documenting leak investigations and fixes.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "03c397b3c64afdba007a0e87e98b5ff79d9d0304a02dfa846fc6aaa547e052c5",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0001",
+    "rule_id": "R-1-0001",
+    "methodology": "AMS-III.A",
+    "version": "v03-0",
+    "rule": "Projects aggregate manure from multiple farms and install a central methane capture system where the baseline lacks methane recovery.",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "b5067038bbc518bbf209ddbbe97e812d685fc513a8290926774023c2d6340201",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.A/v03-0/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-2-0002",
+    "rule_id": "R-2-0002",
+    "methodology": "AMS-III.A",
+    "version": "v03-0",
+    "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
+    "tags": [
+      "calc",
+      "baseline",
+      "additionality"
+    ],
+    "sha256": "b8ef92643663b064f3889e9c7d06e104f33901eb5ffae012bc8fc8883ea4421f",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.A/v03-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-3-0002",
+    "rule_id": "R-3-0002",
+    "methodology": "AMS-III.A",
+    "version": "v03-0",
+    "rule": "Barrier documentation and CER transfer declarations demonstrate participation and prevent double counting.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "37cdb4cb33286096f952b709f6ae3499103c69b9a07456eb6c35d24d1438ee10",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.A/v03-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-4-0003",
+    "rule_id": "R-4-0003",
+    "methodology": "AMS-III.A",
+    "version": "v03-0",
+    "rule": "Project boundaries cover collection through final sludge treatment with leak-proof infrastructure and consistent fertilizer use.",
+    "tags": [
+      "parameter",
+      "project_design"
+    ],
+    "sha256": "1bfecf0c2476a089e8a726966647d674b53fa5ba051500905c5b410a4f30e0c1",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.A/v03-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-5-0003",
+    "rule_id": "R-5-0003",
+    "methodology": "AMS-III.A",
+    "version": "v03-0",
+    "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
+    "tags": [
+      "equation",
+      "calc"
+    ],
+    "sha256": "6ac8f8f06fad17187646a7cf5f4ac56698ba085e3ba63f3acf4ba5ad2017f1ad",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.A/v03-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-6-0004",
+    "rule_id": "R-6-0004",
+    "methodology": "AMS-III.A",
+    "version": "v03-0",
+    "rule": "Deduct leakage from pipelines, auxiliary fuel, and offsite residue handling using monitored data or LFAD defaults.",
+    "tags": [
+      "leakage"
+    ],
+    "sha256": "d871354ad066fdb9f1ec7bffcd5fc6c1c4b0e7fb9660b54f4abbcd988b92e9df",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.A/v03-0/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-7-0005",
+    "rule_id": "R-7-0005",
+    "methodology": "AMS-III.A",
+    "version": "v03-0",
+    "rule": "Monitor biogas, methane fraction, and energy consumption continuously and report at least monthly with QA/QC evidence.",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "fdc987e374d07e624faed87eaf99eb58404902a72011265c3cc00b16d57b7790",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.A/v03-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-8-0005",
+    "rule_id": "R-8-0005",
+    "methodology": "AMS-III.A",
+    "version": "v03-0",
+    "rule": "Focus DOE inspections on high-emitting farms and reconcile methane balances annually, documenting leak investigations and fixes.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "2305d403605e0561f895e75402326bb23a9d6e1a0430c1f43054a1cdc9c4e595",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.A/v03-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0001",
+    "rule_id": "R-1-0001",
+    "methodology": "AMS-III.AU",
+    "version": "v04-0",
+    "rule": "Projects aggregate manure from multiple farms and install a central methane capture system where the baseline lacks methane recovery.",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "0814be70f1ec12030d9b39366a052ada9443feb2c7bffc78e28dc8a785619157",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.AU/v04-0/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-2-0002",
+    "rule_id": "R-2-0002",
+    "methodology": "AMS-III.AU",
+    "version": "v04-0",
+    "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
+    "tags": [
+      "calc",
+      "baseline",
+      "additionality"
+    ],
+    "sha256": "71868565dcf19698cff692c08cdea382db4431b10a85894c70b82d700fb00e86",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.AU/v04-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-3-0002",
+    "rule_id": "R-3-0002",
+    "methodology": "AMS-III.AU",
+    "version": "v04-0",
+    "rule": "Barrier documentation and CER transfer declarations demonstrate participation and prevent double counting.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "0009c2bcaaababf9b26c2082de2b7112f4698b334d59f223335bb675b004f952",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.AU/v04-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-4-0003",
+    "rule_id": "R-4-0003",
+    "methodology": "AMS-III.AU",
+    "version": "v04-0",
+    "rule": "Project boundaries cover collection through final sludge treatment with leak-proof infrastructure and consistent fertilizer use.",
+    "tags": [
+      "parameter",
+      "project_design"
+    ],
+    "sha256": "0a5a377acfd73e3c17ff89374a5191b022565b30174500bf4c962f797245515c",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.AU/v04-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-5-0003",
+    "rule_id": "R-5-0003",
+    "methodology": "AMS-III.AU",
+    "version": "v04-0",
+    "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
+    "tags": [
+      "equation",
+      "calc"
+    ],
+    "sha256": "c088c80c7ae515c740c85f161dab9b24b9cfb32f8844ce259b8fd9d75446b007",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.AU/v04-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-6-0004",
+    "rule_id": "R-6-0004",
+    "methodology": "AMS-III.AU",
+    "version": "v04-0",
+    "rule": "Deduct leakage from pipelines, auxiliary fuel, and offsite residue handling using monitored data or LFAD defaults.",
+    "tags": [
+      "leakage"
+    ],
+    "sha256": "289968dc611c2b89d8898e970b60b4fd2b10704ff6d2be085064622b67040627",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.AU/v04-0/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-7-0005",
+    "rule_id": "R-7-0005",
+    "methodology": "AMS-III.AU",
+    "version": "v04-0",
+    "rule": "Monitor biogas, methane fraction, and energy consumption continuously and report at least monthly with QA/QC evidence.",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "f243a012a774b639baddacec11a069b159c33ec2618360eda8ccee7e2ca31fcd",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.AU/v04-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-8-0005",
+    "rule_id": "R-8-0005",
+    "methodology": "AMS-III.AU",
+    "version": "v04-0",
+    "rule": "Focus DOE inspections on high-emitting farms and reconcile methane balances annually, documenting leak investigations and fixes.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "3c6bf2cdf13f1a1408980e529993f9bb94a5fe308deb22727357e8cf0507ec8e",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.AU/v04-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0001",
+    "rule_id": "R-1-0001",
+    "methodology": "AMS-III.BE",
+    "version": "v01-0",
+    "rule": "Projects aggregate manure from multiple farms and install a central methane capture system where the baseline lacks methane recovery.",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "74788de192f5d5b220f91918dc133bd51b8e9a1686c388d9062dd669afb74edd",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BE/v01-0/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-2-0002",
+    "rule_id": "R-2-0002",
+    "methodology": "AMS-III.BE",
+    "version": "v01-0",
+    "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
+    "tags": [
+      "calc",
+      "baseline",
+      "additionality"
+    ],
+    "sha256": "a0a617f9fe13964c50bd8b5dc58dd304c2bab63b1d74c84800acedef3fe7e05f",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BE/v01-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-3-0002",
+    "rule_id": "R-3-0002",
+    "methodology": "AMS-III.BE",
+    "version": "v01-0",
+    "rule": "Barrier documentation and CER transfer declarations demonstrate participation and prevent double counting.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "631057d14aad5e7e3b325cc2d9bba65888136a1876e3ee4997c70b0e6a40a391",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BE/v01-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-4-0003",
+    "rule_id": "R-4-0003",
+    "methodology": "AMS-III.BE",
+    "version": "v01-0",
+    "rule": "Project boundaries cover collection through final sludge treatment with leak-proof infrastructure and consistent fertilizer use.",
+    "tags": [
+      "parameter",
+      "project_design"
+    ],
+    "sha256": "0f3a85be1e0a76f195631e8b72dcaeac71ef53bddfc8177c2b1745764d299c9f",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BE/v01-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-5-0003",
+    "rule_id": "R-5-0003",
+    "methodology": "AMS-III.BE",
+    "version": "v01-0",
+    "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
+    "tags": [
+      "equation",
+      "calc"
+    ],
+    "sha256": "3a5636c87d19c9a92aae7be62257721649da2131e8e53eb71bd052a89739b93a",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BE/v01-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-6-0004",
+    "rule_id": "R-6-0004",
+    "methodology": "AMS-III.BE",
+    "version": "v01-0",
+    "rule": "Deduct leakage from pipelines, auxiliary fuel, and offsite residue handling using monitored data or LFAD defaults.",
+    "tags": [
+      "leakage"
+    ],
+    "sha256": "5930a2f59157c6f4745adf88b94e21ff07fd7722d278bb8cdb40458c97ef348a",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BE/v01-0/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-7-0005",
+    "rule_id": "R-7-0005",
+    "methodology": "AMS-III.BE",
+    "version": "v01-0",
+    "rule": "Monitor biogas, methane fraction, and energy consumption continuously and report at least monthly with QA/QC evidence.",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "c7198799c228071940532a1dacf1f91bf0c6e7ababcb6897fd4471d80f7b9ebc",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BE/v01-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-8-0005",
+    "rule_id": "R-8-0005",
+    "methodology": "AMS-III.BE",
+    "version": "v01-0",
+    "rule": "Focus DOE inspections on high-emitting farms and reconcile methane balances annually, documenting leak investigations and fixes.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "bd2e26d55da7b91b02e7c09d7f3cbf7e708832f2759f184b3820eae07a092edb",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BE/v01-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0001",
+    "rule_id": "R-1-0001",
+    "methodology": "AMS-III.BF",
+    "version": "v02-0",
+    "rule": "Projects aggregate manure from multiple farms and install a central methane capture system where the baseline lacks methane recovery.",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "16041f22af6f90e9e125fcafbe57b354cd5dd489fb649ab31f7027de66adca69",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BF/v02-0/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-2-0002",
+    "rule_id": "R-2-0002",
+    "methodology": "AMS-III.BF",
+    "version": "v02-0",
+    "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
+    "tags": [
+      "calc",
+      "baseline",
+      "additionality"
+    ],
+    "sha256": "cc347b243b452c03cc7abf0e0cd1c538669a47620c2b2218103e0518c2251036",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BF/v02-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-3-0002",
+    "rule_id": "R-3-0002",
+    "methodology": "AMS-III.BF",
+    "version": "v02-0",
+    "rule": "Barrier documentation and CER transfer declarations demonstrate participation and prevent double counting.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "c11febe64a3e89b01415a0aeaa291e2bff1a140ae6c7f498b35dfc6db9590096",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BF/v02-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-4-0003",
+    "rule_id": "R-4-0003",
+    "methodology": "AMS-III.BF",
+    "version": "v02-0",
+    "rule": "Project boundaries cover collection through final sludge treatment with leak-proof infrastructure and consistent fertilizer use.",
+    "tags": [
+      "parameter",
+      "project_design"
+    ],
+    "sha256": "52720d639b921877ee35f62eee37d34b8c585cd658d4b1751882650455f0e944",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BF/v02-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-5-0003",
+    "rule_id": "R-5-0003",
+    "methodology": "AMS-III.BF",
+    "version": "v02-0",
+    "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
+    "tags": [
+      "equation",
+      "calc"
+    ],
+    "sha256": "a1acb32157719ba66d4c1605737385c8f11d1e26561ea94de1acefb0be933ba0",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BF/v02-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-6-0004",
+    "rule_id": "R-6-0004",
+    "methodology": "AMS-III.BF",
+    "version": "v02-0",
+    "rule": "Deduct leakage from pipelines, auxiliary fuel, and offsite residue handling using monitored data or LFAD defaults.",
+    "tags": [
+      "leakage"
+    ],
+    "sha256": "e20c00e65ed13531d8224988615f3917850aabfc5c6a3887070445db9a5b87d9",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BF/v02-0/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-7-0005",
+    "rule_id": "R-7-0005",
+    "methodology": "AMS-III.BF",
+    "version": "v02-0",
+    "rule": "Monitor biogas, methane fraction, and energy consumption continuously and report at least monthly with QA/QC evidence.",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "52d2f255e6bc258f20c351cebc9120257327eecedd9b78816ed12963db25d08f",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BF/v02-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-8-0005",
+    "rule_id": "R-8-0005",
+    "methodology": "AMS-III.BF",
+    "version": "v02-0",
+    "rule": "Focus DOE inspections on high-emitting farms and reconcile methane balances annually, documenting leak investigations and fixes.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "57f21eb568cce0572edd0826855a945244cd6a5fc3b71f602b97c00eab931802",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BF/v02-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0001",
+    "rule_id": "R-1-0001",
+    "methodology": "AMS-III.BK",
+    "version": "v02-0",
+    "rule": "Projects aggregate manure from multiple farms and install a central methane capture system where the baseline lacks methane recovery.",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "ea44d1d49641eb17382c414214dd7ccb8dcad4676435c1749a5dc361cf93635f",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BK/v02-0/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-2-0002",
+    "rule_id": "R-2-0002",
+    "methodology": "AMS-III.BK",
+    "version": "v02-0",
+    "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
+    "tags": [
+      "calc",
+      "baseline",
+      "additionality"
+    ],
+    "sha256": "cd0e18c0aab13280fb249671afa56b07d92e8f0c65fda1132cb7257d3c3b2c67",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BK/v02-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-3-0002",
+    "rule_id": "R-3-0002",
+    "methodology": "AMS-III.BK",
+    "version": "v02-0",
+    "rule": "Barrier documentation and CER transfer declarations demonstrate participation and prevent double counting.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "467b70fde8e5393ee41a863efb183c1b38f6fc489a17e9c8ba3ff4c11bacf6a6",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BK/v02-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-4-0003",
+    "rule_id": "R-4-0003",
+    "methodology": "AMS-III.BK",
+    "version": "v02-0",
+    "rule": "Project boundaries cover collection through final sludge treatment with leak-proof infrastructure and consistent fertilizer use.",
+    "tags": [
+      "parameter",
+      "project_design"
+    ],
+    "sha256": "20a27172fedc6779a20afd5a48de1135fd20f8acfcefef59a42d07f90bdd0467",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BK/v02-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-5-0003",
+    "rule_id": "R-5-0003",
+    "methodology": "AMS-III.BK",
+    "version": "v02-0",
+    "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
+    "tags": [
+      "equation",
+      "calc"
+    ],
+    "sha256": "b64114982889338ac6fc9e1069733f21bc291f0713414f59723a030cd5623f25",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BK/v02-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-6-0004",
+    "rule_id": "R-6-0004",
+    "methodology": "AMS-III.BK",
+    "version": "v02-0",
+    "rule": "Deduct leakage from pipelines, auxiliary fuel, and offsite residue handling using monitored data or LFAD defaults.",
+    "tags": [
+      "leakage"
+    ],
+    "sha256": "be9519bfc3fc41638f96a8f66766ace8214142e3a873155279ba3efb268195e8",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BK/v02-0/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-7-0005",
+    "rule_id": "R-7-0005",
+    "methodology": "AMS-III.BK",
+    "version": "v02-0",
+    "rule": "Monitor biogas, methane fraction, and energy consumption continuously and report at least monthly with QA/QC evidence.",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "bea6913d384dc6ab5be278877c9f896ed85e470ef6e9b52721c27b0fad5effa9",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BK/v02-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-8-0005",
+    "rule_id": "R-8-0005",
+    "methodology": "AMS-III.BK",
+    "version": "v02-0",
+    "rule": "Focus DOE inspections on high-emitting farms and reconcile methane balances annually, documenting leak investigations and fixes.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "03f12eed38215522368715d15df371614c0b2aaca2603395009db5b08bf792dc",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.BK/v02-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0001",
+    "rule_id": "R-1-0001",
+    "methodology": "AMS-III.D",
+    "version": "v21-0",
+    "rule": "Projects aggregate manure from multiple farms and install a central methane capture system where the baseline lacks methane recovery.",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "cb78b937f1994e694662506366ac7079671caf24fd269c6e8ef1bd02c6c6dc8d",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-2-0002",
+    "rule_id": "R-2-0002",
+    "methodology": "AMS-III.D",
+    "version": "v21-0",
+    "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
+    "tags": [
+      "calc",
+      "baseline",
+      "additionality"
+    ],
+    "sha256": "6b6828ba488fdb33ee8142e8a8a0265201a21d4fd9dadce3c18b8991aba16f7b",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-3-0002",
+    "rule_id": "R-3-0002",
+    "methodology": "AMS-III.D",
+    "version": "v21-0",
+    "rule": "Barrier documentation and CER transfer declarations demonstrate participation and prevent double counting.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "bb458652be0522548b5e73b6332d5c3b7b1c65f4236662985b578a675d642bb3",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-4-0003",
+    "rule_id": "R-4-0003",
+    "methodology": "AMS-III.D",
+    "version": "v21-0",
+    "rule": "Project boundaries cover collection through final sludge treatment with leak-proof infrastructure and consistent fertilizer use.",
+    "tags": [
+      "parameter",
+      "project_design"
+    ],
+    "sha256": "6812ea9d7b8ec14234409560c7d4917de8b494a2147f8f8d7eca60e9200fd5b0",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-5-0003",
+    "rule_id": "R-5-0003",
+    "methodology": "AMS-III.D",
+    "version": "v21-0",
+    "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
+    "tags": [
+      "equation",
+      "calc"
+    ],
+    "sha256": "a33d7a35e4a068d762a10552f8d47f5e58959afa1f6ed617e0ca95d2e0b80fa2",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-6-0004",
+    "rule_id": "R-6-0004",
+    "methodology": "AMS-III.D",
+    "version": "v21-0",
+    "rule": "Deduct leakage from pipelines, auxiliary fuel, and offsite residue handling using monitored data or LFAD defaults.",
+    "tags": [
+      "leakage"
+    ],
+    "sha256": "c7a9bf0cb4952dc409f13c3eb70dff8cf89093e1a64ee50aae0600361937e4f1",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-7-0005",
+    "rule_id": "R-7-0005",
+    "methodology": "AMS-III.D",
+    "version": "v21-0",
+    "rule": "Monitor biogas, methane fraction, and energy consumption continuously and report at least monthly with QA/QC evidence.",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "efc2669a2c21e6d301551fd1b2d563764be32c5fec450ce0a209e54b337b62c6",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-8-0005",
+    "rule_id": "R-8-0005",
+    "methodology": "AMS-III.D",
+    "version": "v21-0",
+    "rule": "Focus DOE inspections on high-emitting farms and reconcile methane balances annually, documenting leak investigations and fixes.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "13dbb8701e6e76005c901bced0da1afc88dff6a81c6ff67e1aca73d262c95b47",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0001",
+    "rule_id": "R-1-0001",
+    "methodology": "AMS-III.R",
+    "version": "v05-0",
+    "rule": "Projects aggregate manure from multiple farms and install a central methane capture system where the baseline lacks methane recovery.",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "3d8157b65645035b468fe288c6f9bff9a4752c5d312905dc6b3b609c7dc74718",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-2-0002",
+    "rule_id": "R-2-0002",
+    "methodology": "AMS-III.R",
+    "version": "v05-0",
+    "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
+    "tags": [
+      "calc",
+      "baseline",
+      "additionality"
+    ],
+    "sha256": "88eca210295bdb5ea0765918798579d3944f17160e0279eca675971870d811a9",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-3-0002",
+    "rule_id": "R-3-0002",
+    "methodology": "AMS-III.R",
+    "version": "v05-0",
+    "rule": "Barrier documentation and CER transfer declarations demonstrate participation and prevent double counting.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "2cc535980017189aa384534504a2fb533557bf77abcddae7733e8a6bb843e585",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-4-0003",
+    "rule_id": "R-4-0003",
+    "methodology": "AMS-III.R",
+    "version": "v05-0",
+    "rule": "Project boundaries cover collection through final sludge treatment with leak-proof infrastructure and consistent fertilizer use.",
+    "tags": [
+      "parameter",
+      "project_design"
+    ],
+    "sha256": "9689b5e04009603d02dfe96ac56d50157cd29636763ff652221e77e41e311109",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-5-0003",
+    "rule_id": "R-5-0003",
+    "methodology": "AMS-III.R",
+    "version": "v05-0",
+    "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
+    "tags": [
+      "equation",
+      "calc"
+    ],
+    "sha256": "d2d807643dff0e419e6218fd01bbd301cf42b558c70959ac1ce699a875ddd614",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-6-0004",
+    "rule_id": "R-6-0004",
+    "methodology": "AMS-III.R",
+    "version": "v05-0",
+    "rule": "Deduct leakage from pipelines, auxiliary fuel, and offsite residue handling using monitored data or LFAD defaults.",
+    "tags": [
+      "leakage"
+    ],
+    "sha256": "777c34e0d1c109b6f238ec64c9ce98a218f4d91158e8877e26aa9b4f7f156bda",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-7-0005",
+    "rule_id": "R-7-0005",
+    "methodology": "AMS-III.R",
+    "version": "v05-0",
+    "rule": "Monitor biogas, methane fraction, and energy consumption continuously and report at least monthly with QA/QC evidence.",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "1e9582bc71098076295b8afa76f501d281460e4030a95e1bead709bd4c4a1a47",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-8-0005",
+    "rule_id": "R-8-0005",
+    "methodology": "AMS-III.R",
+    "version": "v05-0",
+    "rule": "Focus DOE inspections on high-emitting farms and reconcile methane balances annually, documenting leak investigations and fixes.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "ac906d090a593d33882ad2ea451875baa64e1c0835aba565f4f4895ee49b17cc",
+    "provider": "UNFCCC",
+    "category": "Agriculture",
+    "path": "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0001",
+    "rule_id": "R-1-0001",
     "methodology": "AR-ACM0003",
     "version": "v02-0",
     "rule": "Project restores degraded forest lands and meets additionality tests per Tool 01.",

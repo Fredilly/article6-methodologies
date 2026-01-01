@@ -191,6 +191,9 @@ function deriveRulesForMethod(methodDir, strictMode, isUsablePdf) {
   }
 
   const sections = loadSections(methodDir);
+  const contentfulSections = sections.filter(
+    (section) => typeof section.content === 'string' && section.content.trim().length > 0,
+  ).length;
   const rules = [];
 
   sections.forEach((section) => {
@@ -227,13 +230,18 @@ function deriveRulesForMethod(methodDir, strictMode, isUsablePdf) {
       return true;
     }
     const rel = path.relative(repoRoot, methodDir);
-    const message = `[rules-rich] ${rel} produced 0 rules`;
+    const message = `[rules-rich] ${rel} produced 0 rules (contentful_sections=${contentfulSections})`;
     if (strictMode) {
       throw new Error(
         [
           message,
+          contentfulSections === 0
+            ? '[rules-rich] sections.json contains no extractable content; re-run scripts/extract-sections.cjs and verify text extraction (image-only PDFs require OCR).'
+            : null,
           '[rules-rich] strict mode requires at least 1 rule; update classifier inputs (sections.json) or provide a valid rules.rich.json.',
-        ].join('\n'),
+        ]
+          .filter(Boolean)
+          .join('\n'),
       );
     }
     console.warn(message);

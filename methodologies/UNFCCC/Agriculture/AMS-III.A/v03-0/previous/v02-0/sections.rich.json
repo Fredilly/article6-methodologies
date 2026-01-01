@@ -1,22 +1,472 @@
 [
   {
-    "id": "S-1",
-    "title": "Scope and applicability"
+    "anchor": "unfccc-ccnucc",
+    "id": "S-0001",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
   },
   {
-    "id": "S-2",
-    "title": "Baseline scenario and additionality"
+    "anchor": "eb-48",
+    "id": "S-0002",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "EB 48"
   },
   {
-    "id": "S-3",
-    "title": "Project boundary and emission reductions"
+    "anchor": "type-iii-other-project-types",
+    "id": "S-0003",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "TYPE III – OTHER PROJECT TYPES"
   },
   {
-    "id": "S-4",
-    "title": "Leakage and residue management"
+    "anchor": "in-a-two-year-cropping-sequence-this-corresponds-to-the-previous-six-years-in-a-one-year-cropping",
+    "id": "S-0004",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "In a two-year cropping sequence this corresponds to the previous six years. In a one-year cropping"
   },
   {
-    "id": "S-5",
-    "title": "Monitoring, QA/QC, and reporting"
+    "anchor": "n-p-k-nitrogen-phosphorous-and-potash-or-potassium-are-the-basic-nutrients-required-for-plant-growth",
+    "id": "S-0005",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "N, P, K (Nitrogen, Phosphorous, and Potash or Potassium) are the basic nutrients required for plant growth"
+  },
+  {
+    "anchor": "unfccc-ccnucc-2",
+    "id": "S-0006",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-48-2",
+    "id": "S-0007",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "EB 48"
+  },
+  {
+    "anchor": "kt-co2-equivalent-annually",
+    "id": "S-0008",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "kt CO2 equivalent annually."
+  },
+  {
+    "anchor": "unfccc-ccnucc-3",
+    "id": "S-0009",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-48-3",
+    "id": "S-0010",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "EB 48"
+  },
+  {
+    "anchor": "1-to-3",
+    "id": "S-0011",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "1 to 3"
+  },
+  {
+    "anchor": "fine",
+    "id": "S-0012",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "Fine"
+  },
+  {
+    "anchor": "sandy-loamy-sandy-sandy",
+    "id": "S-0013",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "Sandy, loamy sandy, sandy"
+  },
+  {
+    "anchor": "sandy-clay-loam-clay-loam",
+    "id": "S-0014",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "Sandy clay loam, clay loam,"
+  },
+  {
+    "anchor": "sandy-clay-silty-clay-clay",
+    "id": "S-0015",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "Sandy clay, silty clay, clay"
+  },
+  {
+    "anchor": "cold-temperate",
+    "id": "S-0016",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "Cold temperate"
+  },
+  {
+    "anchor": "cold-temperate-2",
+    "id": "S-0017",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "Cold temperate"
+  },
+  {
+    "anchor": "poorly-drained",
+    "id": "S-0018",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "Poorly drained"
+  },
+  {
+    "anchor": "stehfest-e-2005-modelling-of-global-crop-production-and-resulting-n2o-emissions-dissertation",
+    "id": "S-0019",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "Stehfest, E. (2005): Modelling of global crop production and resulting N2O emissions. Dissertation."
+  },
+  {
+    "anchor": "ipcc-2006-ipcc-good-practice-guidance-and-uncertainty-management-in-national-ghg-inventories",
+    "id": "S-0020",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "IPCC (2006): IPCC Good Practice Guidance and Uncertainty Management in National GHG Inventories."
+  },
+  {
+    "anchor": "unfccc-ccnucc-4",
+    "id": "S-0021",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-48-4",
+    "id": "S-0022",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "EB 48"
+  },
+  {
+    "anchor": "unfccc-ccnucc-5",
+    "id": "S-0023",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-48-5",
+    "id": "S-0024",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "EB 48"
+  },
+  {
+    "anchor": "coef-2",
+    "id": "S-0025",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "COEF ,2"
+  },
+  {
+    "anchor": "unfccc-ccnucc-6",
+    "id": "S-0026",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-48-6",
+    "id": "S-0027",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "EB 48"
+  },
+  {
+    "anchor": "monitoring-shall-include-all-farmers-i-that-take-part-in-the-project-activity-the-following",
+    "id": "S-0028",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "Monitoring shall include all farmers i that take part in the project activity. The following"
+  },
+  {
+    "anchor": "unfccc-ccnucc-7",
+    "id": "S-0029",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-48-7",
+    "id": "S-0030",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "EB 48"
+  },
+  {
+    "anchor": "unfccc-ccnucc-8",
+    "id": "S-0031",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-48-8",
+    "id": "S-0032",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "EB 48"
+  },
+  {
+    "anchor": "while-visiting-the-fields-the-independent-third-party-will-also-check-the-farmers-records-on",
+    "id": "S-0033",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "While visiting the fields the independent third party will also check the farmers’ records on"
+  },
+  {
+    "anchor": "unfccc-ccnucc-9",
+    "id": "S-0034",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-48-9",
+    "id": "S-0035",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "EB 48"
+  },
+  {
+    "anchor": "inoculant-application",
+    "id": "S-0036",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "INOCULANT APPLICATION"
+  },
+  {
+    "anchor": "unfccc-ccnucc-10",
+    "id": "S-0037",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-48-10",
+    "id": "S-0038",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "EB 48"
+  },
+  {
+    "anchor": "synthetic-n-fertilizers-other-than-urea",
+    "id": "S-0039",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "SYNTHETIC N FERTILIZERS OTHER THAN UREA"
+  },
+  {
+    "anchor": "coef-2-2",
+    "id": "S-0040",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "COEF ,2"
+  },
+  {
+    "anchor": "unfccc-ccnucc-11",
+    "id": "S-0041",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-48-11",
+    "id": "S-0042",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "EB 48"
+  },
+  {
+    "anchor": "eligible-legume-rhizobia-combinations",
+    "id": "S-0043",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "ELIGIBLE LEGUME-RHIZOBIA COMBINATIONS"
+  },
+  {
+    "anchor": "unfccc-ccnucc-12",
+    "id": "S-0044",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-48-12",
+    "id": "S-0045",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "EB 48"
+  },
+  {
+    "anchor": "july-2009",
+    "id": "S-0046",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "July 2009"
+  },
+  {
+    "anchor": "may-2008",
+    "id": "S-0047",
+    "level": 1,
+    "provenance": {
+      "source_hash": "a72e6e899748eb2f962bb6b758cc87b91fe38a7ec356a6cc56692fff271a7381",
+      "source_ref": "UNFCCC/AMS-III.A@v02-0"
+    },
+    "title": "May 2008"
   }
 ]

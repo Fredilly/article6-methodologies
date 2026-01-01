@@ -43,7 +43,31 @@ function writeLfsPointerPdf(filePath) {
 }
 
 function writePdfHeaderOnly(filePath) {
-  fs.writeFileSync(filePath, '%PDF-1.4\n%fake\n', 'utf8');
+  // Minimal valid PDF (kept tiny so `pdf-preflight` considers it usable).
+  const content = ['BT', '/F1 12 Tf', '14 TL', '72 720 Td', '(Hello) Tj', 'ET'].join('\n') + '\n';
+  const objects = [
+    '1 0 obj\n<< /Type /Catalog /Pages 2 0 R >>\nendobj\n',
+    '2 0 obj\n<< /Type /Pages /Kids [3 0 R] /Count 1 >>\nendobj\n',
+    '3 0 obj\n<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>\nendobj\n',
+    `4 0 obj\n<< /Length ${Buffer.byteLength(content, 'utf8')} >>\nstream\n${content}endstream\nendobj\n`,
+    '5 0 obj\n<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>\nendobj\n',
+  ];
+
+  let pdf = '%PDF-1.4\n';
+  const offsets = [0];
+  for (const obj of objects) {
+    offsets.push(Buffer.byteLength(pdf, 'utf8'));
+    pdf += obj;
+  }
+  const xrefOffset = Buffer.byteLength(pdf, 'utf8');
+  const pad10 = (n) => String(n).padStart(10, '0');
+  pdf += `xref\n0 ${objects.length + 1}\n`;
+  pdf += '0000000000 65535 f \n';
+  for (let i = 1; i <= objects.length; i += 1) {
+    pdf += `${pad10(offsets[i])} 00000 n \n`;
+  }
+  pdf += `trailer\n<< /Size ${objects.length + 1} /Root 1 0 R >>\nstartxref\n${xrefOffset}\n%%EOF\n`;
+  fs.writeFileSync(filePath, pdf, 'utf8');
 }
 
 function validRulesRichPayload() {
@@ -72,12 +96,14 @@ function sectionsWithNoClassifiableSentences() {
 
 function main() {
   const tmpMethodDir = path.join(repoRoot, 'methodologies', 'TEST', 'Program', 'AM0073', 'v00-0');
-  const toolsDir = path.join(tmpMethodDir, 'tools');
+  const toolsDir = path.join(repoRoot, 'tools', 'TEST', 'Program', 'AM0073', 'v00-0');
   const tmpPdf = path.join(toolsDir, 'source.pdf');
   const sectionsPath = path.join(tmpMethodDir, 'sections.json');
   const rulesRichPath = path.join(tmpMethodDir, 'rules.rich.json');
 
   rmrf(tmpMethodDir);
+  rmrf(toolsDir);
+  fs.mkdirSync(tmpMethodDir, { recursive: true });
   fs.mkdirSync(toolsDir, { recursive: true });
   writeJson(sectionsPath, sectionsWithNoClassifiableSentences());
 
@@ -117,8 +143,8 @@ function main() {
   );
 
   rmrf(tmpMethodDir);
+  rmrf(toolsDir);
   console.log('ok');
 }
 
 main();
-

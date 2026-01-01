@@ -1,24 +1,400 @@
 {
   "sections": [
     {
-      "id": "S-1",
-      "title": "Scope and applicability"
+      "anchor": "ams-iii-bk",
+      "content": "Small-scale Methodology",
+      "id": "S-0001",
+      "title": "AMS-III.BK"
     },
     {
-      "id": "S-2",
-      "title": "Baseline scenario and additionality"
+      "anchor": "ams-iii-bkms-iii-bk",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0002",
+      "title": "AMS-III.BKMS-III.BK"
     },
     {
-      "id": "S-3",
-      "title": "Project boundary and emission reductions"
+      "anchor": "table-of-contents",
+      "content": "Page",
+      "id": "S-0003",
+      "title": "TABLE OF CONTENTS"
     },
     {
-      "id": "S-4",
-      "title": "Leakage and residue management"
+      "anchor": "scope-applicability-and-entry-into-force",
+      "content": "2.1.",
+      "id": "S-0004",
+      "title": "SCOPE, APPLICABILITY, AND ENTRY INTO FORCE ..........................................."
     },
     {
-      "id": "S-5",
-      "title": "Monitoring, QA/QC, and reporting"
+      "anchor": "normative-references",
+      "content": "DEFINITIONS .............................................................................................................",
+      "id": "S-0005",
+      "title": "NORMATIVE REFERENCES ...................................................................................."
+    },
+    {
+      "anchor": "baseline-methodology",
+      "content": "5.1.",
+      "id": "S-0006",
+      "title": "BASELINE METHODOLOGY ...................................................................................."
+    },
+    {
+      "anchor": "monitoring-methodology",
+      "content": "6.1.",
+      "id": "S-0007",
+      "title": "MONITORING METHODOLOGY .............................................................................."
+    },
+    {
+      "anchor": "project-survey",
+      "content": "1.",
+      "id": "S-0008",
+      "title": "PROJECT SURVEY ................................................................................."
+    },
+    {
+      "anchor": "analysis",
+      "content": "3",
+      "id": "S-0009",
+      "title": "ANALYSIS ................................................................................................"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-2",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0010",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "scope",
+      "content": "2.",
+      "id": "S-0011",
+      "title": "Scope"
+    },
+    {
+      "anchor": "applicability",
+      "content": "4.",
+      "id": "S-0012",
+      "title": "Applicability"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-3",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0013",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "entry-into-force",
+      "content": "5.",
+      "id": "S-0014",
+      "title": "Entry into force"
+    },
+    {
+      "anchor": "normative-references-2",
+      "content": "6.",
+      "id": "S-0015",
+      "title": "Normative references"
+    },
+    {
+      "anchor": "definitions",
+      "content": "9.",
+      "id": "S-0016",
+      "title": "Definitions"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-4",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0017",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "per-cent-or-3-2-per-cent-butterfat-content",
+      "content": "Inter-calving interval - the time between the birth of a calf to a large ruminant and the birth of the subsequent calf;",
+      "id": "S-0018",
+      "title": "per cent or 3.2 per cent butterfat content;"
+    },
+    {
+      "anchor": "project-boundary",
+      "content": "11.",
+      "id": "S-0019",
+      "title": "Project boundary"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-5",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0020",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "baseline-scenario",
+      "content": "12.",
+      "id": "S-0021",
+      "title": "Baseline scenario"
+    },
+    {
+      "anchor": "baseline-emissions",
+      "content": "13.",
+      "id": "S-0022",
+      "title": "Baseline emissions"
+    },
+    {
+      "anchor": "possible-methane-emissions-from-animal-manure-are-not-included-in-both-baseline-and-project",
+      "content": "emission reductions, since it is assumed that animal manure management system in the pre-project and project scenarios are kept the same. In addition, it is acknowledged that the supplement increases the digestibility of the basal diet, and enhances overall consumption of feed gross energy and manure production. However, the improved digestion also reduces the volatile solids content in manure and its methane generation potential. Projects that include changes in animal manure management technologies to reduce emissions may apply the corresponding methodologies (AMS-III.D, AMS-III.F, AMS-III.R, etc.) as additional scopes and components.",
+      "id": "S-0023",
+      "title": "Possible methane emissions from animal manure are not included in both baseline and project"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-6",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0024",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "per-cent-shall-be-applied3-for-both-baseline-and-project",
+      "content": "emissions calculation",
+      "id": "S-0025",
+      "title": "per cent shall be applied3 for both baseline and project"
+    },
+    {
+      "anchor": "table-10-12-ipcc-guidelines-for-national-greenhouse-gas-inventories-2006-volume-4-agriculture",
+      "content": "Forestry and Other Land Use, Chapter 10: Emissions from Livestock and Manure Management.",
+      "id": "S-0026",
+      "title": "Table 10.12, IPCC Guidelines for National Greenhouse Gas Inventories 2006,Volume 4: Agriculture,"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-7",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0027",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "for-example-in-a-project-area-with-two-seasons-i-e-wet-and-dry-for-year-y-there-will-be-a-sdbl-lac-wet-y",
+      "content": "a SDBL,lac,dry,y, a SDBL,non-lac,wet,y and a SDBL,non-lac,dry,y.",
+      "id": "S-0028",
+      "title": "For example, in a project area with two seasons (i.e. wet and dry) for year y, there will be a SDBL,lac,wet,y,"
+    },
+    {
+      "anchor": "dry-matter-intake-estimates-are-calculated-using-the-approach-outlined-in-nutrient-requirements-of",
+      "content": "Dairy Cattle, National Research Council, 1989 pg. 4, which is cited as Equation 10.18b, IPCC Guidelines for National Greenhouse Gas Inventories 2006,Volume 4: Agriculture, Forestry and Other Land Use, Chapter 10: Emissions from Livestock and Manure Management.",
+      "id": "S-0029",
+      "title": "Dry Matter Intake estimates are calculated using the approach outlined in Nutrient Requirements of"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-8",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0030",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-9",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0031",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "project-emissions",
+      "content": "16.",
+      "id": "S-0032",
+      "title": "Project emissions"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-10",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0033",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-11",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0034",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-12",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0035",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "leakage",
+      "content": "21.",
+      "id": "S-0036",
+      "title": "Leakage"
+    },
+    {
+      "anchor": "emission-reductions",
+      "content": "Equation (17)",
+      "id": "S-0037",
+      "title": "Emission reductions"
+    },
+    {
+      "anchor": "monitoring-methodology-2",
+      "content": "22.",
+      "id": "S-0038",
+      "title": "Monitoring methodology"
+    },
+    {
+      "anchor": "see-2006-ipcc-guidelines-for-national-greenhouse-gas-inventories-volume-3-industrial-processes",
+      "content": "and Product Use; Chapter 3.2 Ammonia Production.",
+      "id": "S-0039",
+      "title": "See 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 3: Industrial Processes"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-13",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0040",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-14",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0041",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "test-the-produced-milk-for-its-butterfat-content-according-to",
+      "content": "standard in the dairy sector in the country or using the method included in James, Ceirwyn S. (1994)7 and correct the milk production at a 4 per cent or 3.2 per cent butterfat basis; or",
+      "id": "S-0042",
+      "title": "Test the produced milk for its butterfat content according to"
+    },
+    {
+      "anchor": "use-the-sales-receipt-from-participating-farmers-either-on-the-basis",
+      "content": "of fat corrected milk or volume of milk without correction. In such a case the use of milk production with or without fact correction shall be consistent in the baseline and project -",
+      "id": "S-0043",
+      "title": "Use the sales receipt from participating farmers, either on the basis"
+    },
+    {
+      "anchor": "james-ceirwyn-s-1994-analytical-chemistry-of-foods-springer-pp-50-51-isbn-978-0-8342",
+      "content": "1298-5.",
+      "id": "S-0044",
+      "title": "James, Ceirwyn S. (1994). Analytical Chemistry of Foods. Springer. pp. 50–51. ISBN 978-0-8342-"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-15",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0045",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "days-and-the-following-ovulation-cycle-i-e-21-days",
+      "content": "-",
+      "id": "S-0046",
+      "title": "days, and the following ovulation cycle, i.e. 21 days)"
+    },
+    {
+      "anchor": "page-10-21-ipcc-guidelines-for-national-greenhouse-gas-inventories-2006-volume-4-agriculture",
+      "content": "Forestry and Other Land Use, Chapter 10: Emissions from Livestock and Manure Management.",
+      "id": "S-0047",
+      "title": "Page 10.21, IPCC Guidelines for National Greenhouse Gas Inventories 2006, Volume 4: Agriculture,"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-16",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0048",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-17",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0049",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-18",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0050",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "project-activity-under-a-programme-of-activities",
+      "content": "24.",
+      "id": "S-0051",
+      "title": "Project activity under a programme of activities"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-19",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0052",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "baseline-survey",
+      "content": "1.",
+      "id": "S-0053",
+      "title": "Baseline survey"
+    },
+    {
+      "anchor": "as-such-data-regarding-the-support-animal-group-i-e-males-and-immature-females-are-not-to-be",
+      "content": "collected. This is because the supplementation in this methodology targets only the productive (lactating) animals. For the purpose of conservativeness, the possible resultant decrease in methane emissions from the support animal group (i.e. males for breeding and replacement females) in the project activities is not considered.",
+      "id": "S-0054",
+      "title": "As such, data regarding the support animal group, i.e. males and immature females, are not to be"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-20",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0055",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "it-is-possible-that-some-combinations-will-not-be-found-in-a-given-location-for-example-ca-and-ac-are",
+      "content": "less likely combinations.",
+      "id": "S-0056",
+      "title": "It is possible that some combinations will not be found in a given location. For example, Ca and Ac are"
+    },
+    {
+      "anchor": "the-quality-and-quantity-of-the-feed-inputs-may-vary-significantly-by-season-and-the-animals-stage-of",
+      "content": "production.",
+      "id": "S-0057",
+      "title": "The quality and quantity of the feed inputs may vary significantly by season and the animals’ stage of"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-21",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0058",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "project-survey-2",
+      "content": "7.",
+      "id": "S-0059",
+      "title": "Project survey"
+    },
+    {
+      "anchor": "where-gis-information-is-available-or-as-it-is-collected-during-sample-surveys-it-should-also-be-added",
+      "content": "to the customer database to facilitate validation.",
+      "id": "S-0060",
+      "title": "Where GIS information is available, or as it is collected during sample surveys, it should also be added"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-22",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0061",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "part-of-the-survey-given-to-randomly-sampled-beneficiaries-must-ask-for-a-physical-demonstration-of",
+      "content": "the quantity of supplement given to an animal. The enumeration team then measures the amount of feed supplement demonstrated by the producer and records the data.",
+      "id": "S-0062",
+      "title": "Part of the survey given to randomly sampled beneficiaries must ask for a physical demonstration of"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-23",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0063",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "global-impact-domain-methane-emissions-feed-characteristics-section-2-2-food-and-agriculture",
+      "content": "Organization, 2000 <http://www.fao.org/wairdocs/lead/x6116e/x6116e02.htm#b2- 2.2%20Feed%20Characteristics>.",
+      "id": "S-0064",
+      "title": "Global Impact Domain: “Methane Emissions”, Feed Characteristics, section 2.2, Food and Agriculture"
+    },
+    {
+      "anchor": "ams-iii-bkms-iii-bk-24",
+      "content": "Small-scale Methodology: Strategic feed supplementation in smallholder dairy sector to increase productivity Version 01.0 Sectoral scope(s): 15",
+      "id": "S-0065",
+      "title": "AMS-III.BKMS-III.BK"
+    },
+    {
+      "anchor": "june-2014",
+      "content": "EB 79, Annex 13",
+      "id": "S-0066",
+      "title": "June 2014"
     }
   ]
 }

@@ -1,22 +1,402 @@
 [
   {
-    "id": "S-1",
-    "title": "Scope and applicability"
+    "anchor": "unfccc-ccnucc",
+    "id": "S-0001",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
   },
   {
-    "id": "S-2",
-    "title": "Baseline scenario and additionality"
+    "anchor": "eb-66",
+    "id": "S-0002",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "EB 66"
   },
   {
-    "id": "S-3",
-    "title": "Project boundary and emission reductions"
+    "anchor": "type-iii-other-project-activities",
+    "id": "S-0003",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "TYPE III - OTHER PROJECT ACTIVITIES"
   },
   {
-    "id": "S-4",
-    "title": "Leakage and residue management"
+    "anchor": "a-switch-from-transplanted-rice-with-continuously-flooded-fields-to-dsr-leads-to-a-reduced-flooding",
+    "id": "S-0004",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "A switch from transplanted rice with continuously flooded fields to DSR leads to a reduced flooding"
   },
   {
-    "id": "S-5",
-    "title": "Monitoring, QA/QC, and reporting"
+    "anchor": "unfccc-ccnucc-2",
+    "id": "S-0005",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-66-2",
+    "id": "S-0006",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "EB 66"
+  },
+  {
+    "anchor": "unfccc-ccnucc-3",
+    "id": "S-0007",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-66-3",
+    "id": "S-0008",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "EB 66"
+  },
+  {
+    "anchor": "water-regime-cid-150",
+    "id": "S-0009",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "Water regime (cid:150)"
+  },
+  {
+    "anchor": "water-regime-cid-150-2",
+    "id": "S-0010",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "Water regime (cid:150)"
+  },
+  {
+    "anchor": "organic",
+    "id": "S-0011",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "Organic"
+  },
+  {
+    "anchor": "soil-ph",
+    "id": "S-0012",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "Soil pH"
+  },
+  {
+    "anchor": "soil-organic",
+    "id": "S-0013",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "Soil Organic"
+  },
+  {
+    "anchor": "climate",
+    "id": "S-0014",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "Climate"
+  },
+  {
+    "anchor": "cid-150-5-5",
+    "id": "S-0015",
+    "level": 2,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "(cid:150) 5.5"
+  },
+  {
+    "anchor": "cid-150-3",
+    "id": "S-0016",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "(cid:150) 3 %"
+  },
+  {
+    "anchor": "unfccc-ccnucc-4",
+    "id": "S-0017",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-66-4",
+    "id": "S-0018",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "EB 66"
+  },
+  {
+    "anchor": "unfccc-ccnucc-5",
+    "id": "S-0019",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-66-5",
+    "id": "S-0020",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "EB 66"
+  },
+  {
+    "anchor": "unfccc-ccnucc-6",
+    "id": "S-0021",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-66-6",
+    "id": "S-0022",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "EB 66"
+  },
+  {
+    "anchor": "unfccc-ccnucc-7",
+    "id": "S-0023",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-66-7",
+    "id": "S-0024",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "EB 66"
+  },
+  {
+    "anchor": "of-the-ipcc-guidelines",
+    "id": "S-0025",
+    "level": 3,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "of the IPCC guidelines"
+  },
+  {
+    "anchor": "of-the-ipcc-guidelines-2",
+    "id": "S-0026",
+    "level": 3,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "of the IPCC guidelines"
+  },
+  {
+    "anchor": "unfccc-ccnucc-8",
+    "id": "S-0027",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-66-8",
+    "id": "S-0028",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "EB 66"
+  },
+  {
+    "anchor": "unfccc-ccnucc-9",
+    "id": "S-0029",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-66-9",
+    "id": "S-0030",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "EB 66"
+  },
+  {
+    "anchor": "guidelines-for-measuring-methane-emissions-from-rice-fields",
+    "id": "S-0031",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "GUIDELINES FOR MEASURING METHANE EMISSIONS FROM RICE FIELDS"
+  },
+  {
+    "anchor": "unfccc-ccnucc-10",
+    "id": "S-0032",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-66-10",
+    "id": "S-0033",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "EB 66"
+  },
+  {
+    "anchor": "minutes",
+    "id": "S-0034",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "minutes"
+  },
+  {
+    "anchor": "unfccc-ccnucc-11",
+    "id": "S-0035",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-66-11",
+    "id": "S-0036",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "EB 66"
+  },
+  {
+    "anchor": "unfccc-ccnucc-12",
+    "id": "S-0037",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-66-12",
+    "id": "S-0038",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "EB 66"
+  },
+  {
+    "anchor": "march-2012",
+    "id": "S-0039",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "March 2012"
+  },
+  {
+    "anchor": "april-2011",
+    "id": "S-0040",
+    "level": 1,
+    "provenance": {
+      "source_hash": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb",
+      "source_ref": "UNFCCC/AMS-III.AU@v02-0"
+    },
+    "title": "April 2011"
   }
 ]

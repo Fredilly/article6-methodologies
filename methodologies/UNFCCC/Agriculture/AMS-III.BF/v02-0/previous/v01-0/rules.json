@@ -1,3 +1,28 @@
 {
-  "rules": []
+  "rules": [
+    {
+      "id": "R-0001-0027",
+      "section_id": "S-0027",
+      "tags": [
+        "monitoring"
+      ],
+      "text": "change over time (no matter whether intended by the project activity or due to other reasons) and shall be monitored in the project fields."
+    },
+    {
+      "id": "R-0001-0033",
+      "section_id": "S-0033",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Project proponents may refer to existing literature on model validation for the specific project area and crops used in baseline as well as project scenarios."
+    },
+    {
+      "id": "R-0002-0033",
+      "section_id": "S-0033",
+      "tags": [
+        "parameter"
+      ],
+      "text": "Model validation must be carried out for the baseline crop and area parameters as well as the NUE crop and parameters in the project scenario."
+    }
+  ]
 }

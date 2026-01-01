@@ -1,3 +1,12 @@
 {
-  "rules": []
+  "rules": [
+    {
+      "id": "R-0001-0043",
+      "section_id": "S-0043",
+      "tags": [
+        "parameter"
+      ],
+      "text": "In such a case the use of milk production with or without fact correction shall be consistent in the baseline and project -"
+    }
+  ]
 }
