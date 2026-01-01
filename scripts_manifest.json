@@ -41,7 +41,7 @@
     { "path": "scripts/discover-previous-versions.shared.mjs", "sha256": "f0e7296d76e0a9c0b4962bcc2a371f3f163a51beaceeefa0f02c73076e20743f" },
     { "path": "scripts/discover-unfccc.js", "sha256": "c8deb16d239c80904ab4888a96fc97ec6b4c5849cfb44bc24713df08575582cf" },
     { "path": "scripts/extract-sections-forestry.cjs", "sha256": "d5e6f15e512052587f610fd8b0997b4473f2f0b6b26bc18077040634328c0446" },
-    { "path": "scripts/extract-sections.cjs", "sha256": "fcbefe8bcfd24a421a935a7e39b006a8d3114266e1aa7bd2fe39908521a08474" },
+    { "path": "scripts/extract-sections.cjs", "sha256": "2cc9a19cc68432e0fab5e3b60faeb21f6ad517bad9e21f859fe2c4282f3bbde9" },
     { "path": "scripts/fetch-agriculture-previous.js", "sha256": "967077b3da71c129a8d394679beaf59280bcc66291e6a278b81ac085ae5e561b" },
     { "path": "scripts/fill-provenance.js", "sha256": "74d7626c0c6647e44d3ffc9f7adbf6330c3ebcc78970cefa6fd9243f0173a961" },
     { "path": "scripts/gate-lfs.sh", "sha256": "28a13a96f4fac81fc1beeba3b1a8c8d486fcdb3eee5317673b6df52f7f3285cf" },

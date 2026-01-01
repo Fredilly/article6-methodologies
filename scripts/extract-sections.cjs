@@ -280,7 +280,8 @@ async function main() {
   const sourceOverride = process.argv[3];
   const { absolute: methodDir, parts } = ensureMethodPath(methodArg);
   const { org, program, code, version, activeVersion, isPrevious } = methodFragments(parts);
-  const docRef = `${org}/${code}@${version}`;
+  // Keep provenance stable: previous versions reference the active version (idempotency across CI runs).
+  const docRef = `${org}/${code}@${activeVersion}`;
 
   const pdfPath =
     sourceOverride && sourceOverride !== '-'

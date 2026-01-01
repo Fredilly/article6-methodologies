@@ -1,12 +1,21 @@
 {
+  "audit": {
+    "created_at": "2025-12-20T23:13:13.854Z",
+    "created_by": "ingest.sh"
+  },
   "audit_hashes": {
     "rules_json_sha256": "fa6df59732fca592a00e8c12ca0badf4f97ff7967e000d274c92c6b6237c7660",
-    "sections_json_sha256": "e21c95ed5a80fe0cf3671beadcaa177ed005a822781492b2fa038e93c23ad310",
+    "sections_json_sha256": "04a16e37e339680192400c3be4317311c57a2cae4f95c4c1198209540d37e0b2",
     "source_pdf_sha256": "cc3a995255dea17c5401f4287b8f8c7857c64adf5360eff8a5b327575763eccb"
   },
   "automation": {
-    "scripts_manifest_sha256": "793dfb8e2e05c9d8b32edbc72b5560b2ff65530d8827dd192d07810091de4fac",
-    "repo_commit": "f9dadf4eb5d337544e9aeefb836b67ef3a1b0ff4"
+    "repo_commit": "f9dadf4eb5d337544e9aeefb836b67ef3a1b0ff4",
+    "scripts_manifest_sha256": "793dfb8e2e05c9d8b32edbc72b5560b2ff65530d8827dd192d07810091de4fac"
+  },
+  "id": "UNFCCC.Agriculture.AMS-III.AU",
+  "kind": "methodology",
+  "pointers": {
+    "active_successor": "../.."
   },
   "provenance": {
     "author": "Fred Egbuedike",
@@ -24,6 +33,7 @@
     "source_url": "https://cdm.unfccc.int/UserManagement/FileStorage/WHQ95K7JGOXRUDTYL0SN214B8V6ACP",
     "version_number": "2.0"
   },
+  "publisher": "UNFCCC",
   "references": {
     "tools": [
       {
@@ -36,16 +46,6 @@
       }
     ]
   },
-  "audit": {
-    "created_at": "2025-12-20T23:13:13.854Z",
-    "created_by": "ingest.sh"
-  },
-  "id": "UNFCCC.Agriculture.AMS-III.AU",
-  "kind": "methodology",
-  "pointers": {
-    "active_successor": "../.."
-  },
-  "publisher": "UNFCCC",
   "status": "superseded",
   "version": "v02-0"
 }
