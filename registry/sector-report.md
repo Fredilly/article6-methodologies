@@ -12,11 +12,11 @@ Source: registry/methods-status.json
 
 ## Agriculture
 
-- total_methods: 4
+- total_methods: 9
 - reference_methods: 4
 - target_methods: 4
-- hashes_present: 4
-- has_previous_versions: 3
+- hashes_present: 9
+- has_previous_versions: 7
 - missing_hashes:
   - (none)
 

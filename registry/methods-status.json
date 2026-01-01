@@ -29,6 +29,56 @@
     "idempotent_verified": false,
     "last_root_cause": null
   },
+  "UNFCCC/Agriculture/AMS-III.A/v03-0": {
+    "sector": "Agriculture",
+    "program": "UNFCCC",
+    "code": "AMS-III.A",
+    "version": "v03-0",
+    "hashes_present": true,
+    "has_previous_versions": true,
+    "idempotent_verified": false,
+    "last_root_cause": null
+  },
+  "UNFCCC/Agriculture/AMS-III.AU/v04-0": {
+    "sector": "Agriculture",
+    "program": "UNFCCC",
+    "code": "AMS-III.AU",
+    "version": "v04-0",
+    "hashes_present": true,
+    "has_previous_versions": true,
+    "idempotent_verified": false,
+    "last_root_cause": null
+  },
+  "UNFCCC/Agriculture/AMS-III.BE/v01-0": {
+    "sector": "Agriculture",
+    "program": "UNFCCC",
+    "code": "AMS-III.BE",
+    "version": "v01-0",
+    "hashes_present": true,
+    "has_previous_versions": false,
+    "idempotent_verified": false,
+    "last_root_cause": null
+  },
+  "UNFCCC/Agriculture/AMS-III.BF/v02-0": {
+    "sector": "Agriculture",
+    "program": "UNFCCC",
+    "code": "AMS-III.BF",
+    "version": "v02-0",
+    "hashes_present": true,
+    "has_previous_versions": true,
+    "idempotent_verified": false,
+    "last_root_cause": null
+  },
+  "UNFCCC/Agriculture/AMS-III.BK/v02-0": {
+    "sector": "Agriculture",
+    "program": "UNFCCC",
+    "code": "AMS-III.BK",
+    "version": "v02-0",
+    "hashes_present": true,
+    "has_previous_versions": true,
+    "idempotent_verified": false,
+    "last_root_cause": null
+  },
   "UNFCCC/Agriculture/AMS-III.D/v21-0": {
     "sector": "Agriculture",
     "program": "UNFCCC",

@@ -1,68 +1,68 @@
 [
   {
     "id": "UNFCCC.Forestry.AR-AM0014.v02-0.R-0001-0011",
-    "type": "parameter",
-    "summary": "(a) Clean development mechanism project standard; (b) A/R methodological tools: (i) “Combined tool to identify the baseline scenario and demonstrate additionality in A/R CDM project activities;” (ii) “Estimation of carbon stocks and chan...",
     "logic": "(a) Clean development mechanism project standard; (b) A/R methodological tools: (i) “Combined tool to identify the baseline scenario and demonstrate additionality in A/R CDM project activities;” (ii) “Estimation of carbon stocks and change in carbon stocks of trees and shrubs in A/R CDM project activities;” (iii) “Estimation of carbon stocks and change in carbon stocks in dead wood and litter in A/R CDM project activities;” (iv) “Tool for estimation of change in soil organic carbon stocks due to the implementation of A/R CDM project activities;” (v) “Estimation of non-CO2 GHG emissions resulting from burning of biomass attributable to an A/R CDM project activity;” (vi) “Estimation of the increase in GHG emissions attributable to displacement of pre-project agricultural activities in A/R CDM project activity;”",
     "refs": {
       "sections": [
         "S-0011"
       ]
-    }
+    },
+    "summary": "(a) Clean development mechanism project standard; (b) A/R methodological tools: (i) “Combined tool to identify the baseline scenario and demonstrate additionality in A/R CDM project activities;” (ii) “Estimation of carbon stocks and chan...",
+    "type": "parameter"
   },
   {
     "id": "UNFCCC.Forestry.AR-AM0014.v02-0.R-0001-0018",
-    "type": "parameter",
-    "summary": "A/R CDM project activities” shall be applied for the purpose of identification of the baseline scenario and demonstration of additionality.",
     "logic": "A/R CDM project activities” shall be applied for the purpose of identification of the baseline scenario and demonstration of additionality.",
     "refs": {
       "sections": [
         "S-0018"
       ]
-    }
+    },
+    "summary": "A/R CDM project activities” shall be applied for the purpose of identification of the baseline scenario and demonstration of additionality.",
+    "type": "parameter"
   },
   {
     "id": "UNFCCC.Forestry.AR-AM0014.v02-0.R-0001-0019",
-    "type": "parameter",
-    "summary": "Different stratifications may be appropriate for the baseline and project scenarios in order to achieve optimal precision of estimation of net GHG removals by sinks.",
     "logic": "Different stratifications may be appropriate for the baseline and project scenarios in order to achieve optimal precision of estimation of net GHG removals by sinks.",
     "refs": {
       "sections": [
         "S-0019"
       ]
-    }
+    },
+    "summary": "Different stratifications may be appropriate for the baseline and project scenarios in order to achieve optimal precision of estimation of net GHG removals by sinks.",
+    "type": "parameter"
   },
   {
     "id": "UNFCCC.Forestry.AR-AM0014.v02-0.R-0002-0019",
-    "type": "parameter",
-    "summary": "In particular: (a) For baseline net GHG removals by sinks, it is usually sufficient to stratify the area according to major vegetation types and their crown cover and/or land use types; (b) For actual net GHG removals by sinks the strati...",
     "logic": "In particular: (a) For baseline net GHG removals by sinks, it is usually sufficient to stratify the area according to major vegetation types and their crown cover and/or land use types; (b) For actual net GHG removals by sinks the stratification for ex ante estimations is based on the project planting/management plan and the stratification for ex post estimations is based on the actual implementation of the project planting/management plan.",
     "refs": {
       "sections": [
         "S-0019"
       ]
-    }
+    },
+    "summary": "In particular: (a) For baseline net GHG removals by sinks, it is usually sufficient to stratify the area according to major vegetation types and their crown cover and/or land use types; (b) For actual net GHG removals by sinks the strati...",
+    "type": "parameter"
   },
   {
     "id": "UNFCCC.Forestry.AR-AM0014.v02-0.R-0001-0033",
-    "type": "leakage",
-    "summary": "(a) Verification that the applicability conditions listed under paragraphs 3 and 4 have been met; (b) Verification of changes in carbon stocks in the pools selected; and (c) Verification of project emissions and leakage emissions.",
     "logic": "(a) Verification that the applicability conditions listed under paragraphs 3 and 4 have been met; (b) Verification of changes in carbon stocks in the pools selected; and (c) Verification of project emissions and leakage emissions.",
     "refs": {
       "sections": [
         "S-0033"
       ]
-    }
+    },
+    "summary": "(a) Verification that the applicability conditions listed under paragraphs 3 and 4 have been met; (b) Verification of changes in carbon stocks in the pools selected; and (c) Verification of project emissions and leakage emissions.",
+    "type": "leakage"
   },
   {
     "id": "UNFCCC.Forestry.AR-AM0014.v02-0.R-0001-0035",
-    "type": "monitoring",
-    "summary": "If such principles and practices are not known or available, standard operating procedures (SOPs) and quality control/quality assurance (QA/QC) procedures for inventory operations, including field data collection and data management, sha...",
     "logic": "If such principles and practices are not known or available, standard operating procedures (SOPs) and quality control/quality assurance (QA/QC) procedures for inventory operations, including field data collection and data management, shall be identified, recorded and applied.",
     "refs": {
       "sections": [
         "S-0035"
       ]
-    }
+    },
+    "summary": "If such principles and practices are not known or available, standard operating procedures (SOPs) and quality control/quality assurance (QA/QC) procedures for inventory operations, including field data collection and data management, sha...",
+    "type": "monitoring"
   }
 ]

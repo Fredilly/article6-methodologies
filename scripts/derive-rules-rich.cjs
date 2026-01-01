@@ -21,6 +21,24 @@ function normalizeWhitespace(str) {
   return str.replace(/\s+/g, ' ').trim();
 }
 
+function sortKeysDeep(value) {
+  if (Array.isArray(value)) return value.map(sortKeysDeep);
+  if (value && typeof value === 'object') {
+    const out = {};
+    Object.keys(value)
+      .sort()
+      .forEach((key) => {
+        out[key] = sortKeysDeep(value[key]);
+      });
+    return out;
+  }
+  return value;
+}
+
+function stableStringify(value) {
+  return `${JSON.stringify(sortKeysDeep(value), null, 2)}\n`;
+}
+
 function containsTodo(value) {
   return typeof value === 'string' && /todo/i.test(value);
 }
@@ -248,8 +266,16 @@ function deriveRulesForMethod(methodDir, strictMode, isUsablePdf) {
     return false;
   }
 
-  fs.writeFileSync(dest, `${JSON.stringify(rules, null, 2)}\n`);
-  console.log(`[rules-rich] wrote ${path.relative(repoRoot, dest)}`);
+  const payload = stableStringify(rules);
+  if (fs.existsSync(dest)) {
+    const before = fs.readFileSync(dest, 'utf8');
+    if (before === payload) {
+      console.log(`[rules-rich] unchanged ${path.relative(repoRoot, dest)}`);
+      return true;
+    }
+  }
+  fs.writeFileSync(dest, payload);
+  console.log(`[rules-rich] wrote ${path.relative(repoRoot, dest)} (canonical)`);
   return true;
 }
 
