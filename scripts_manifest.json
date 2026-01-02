@@ -81,6 +81,7 @@
     { "path": "scripts/offline/read-batch.cjs", "sha256": "967e10dd8add00199e5f3f1991b78e42e374e51c4b3cc4beec30c81066f297f7" },
     { "path": "scripts/offline/update-registry.cjs", "sha256": "11b2ef249a112a0551cb19858dcbfdcd5b2c6dcb534424b0d4bd9134f6323d54" },
     { "path": "scripts/ops.sh", "sha256": "797ca9be37c35b9fdaeee972066ab84390fecab8b0f92a549f09de866d3111d5" },
+    { "path": "scripts/pack-methodologies.sh", "sha256": "0f378fe120f58bb34f4c15f4c9af747c8d4d9c299f014bd5132cf97142e41754" },
     { "path": "scripts/parse-previous-versions.cjs", "sha256": "16e5f296e97dadba7eceb16615f9af0e3079aeebc5becaa6b3f13e77d9d77cc8" },
     { "path": "scripts/pdf-preflight.mjs", "sha256": "464b4c588f138749b8f93a8e381b68df25acdeab7b42b5f6034f44c1c2ddda92" },
     { "path": "scripts/policy-tools.sh", "sha256": "7eab93c4d426458b5d6c315b64bb20b6d3798d31590c9a03b3d634e0a581203b" },
