@@ -28,4 +28,7 @@ vendor/ajv-cli/
 logs/
 drafts/
 
+.cache/
+artifacts/
+
 .article6/workstate.json
