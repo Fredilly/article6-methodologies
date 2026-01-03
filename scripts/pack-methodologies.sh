@@ -14,13 +14,18 @@ iso_utc_from_epoch() {
   date -u -r "${epoch}" +%Y-%m-%dT%H:%M:%SZ
 }
 
+OUT_DIR="$(dirname "$OUT")"
+
 EPOCH="${SOURCE_DATE_EPOCH:-}"
 if [[ -z "${EPOCH}" || "${EPOCH}" == "0" ]]; then
   EPOCH="$(git show -s --format=%ct HEAD)"
 fi
 
+echo "[pack] sha12=${SHA} out=${OUT} tmp=${TMP} epoch=${EPOCH}" >&2
+
 rm -rf "$TMP"
 mkdir -p "$TMP/methodologies-pack"
+mkdir -p "$OUT_DIR"
 
 # Copy only what the UI needs. Keep directory structure.
 # 1) methodologies subtree
@@ -55,11 +60,17 @@ fi
 
 if ! "$TAR_BIN" --help 2>/dev/null | grep -q -- '--sort'; then
   echo "❌ ${TAR_BIN} does not support --sort; run this script in Linux/Codespaces or install GNU tar (gtar)."
+  "$TAR_BIN" --version 2>/dev/null || true
   exit 1
 fi
 
 # Ensure the gzip wrapper does not embed timestamps/filenames (reproducible bytes).
 export GZIP='-n'
+
+echo "[pack] tar_bin=${TAR_BIN} out_dir=${OUT_DIR}" >&2
+ls -la "$OUT_DIR" >&2 || true
+ls -la "$TMP" >&2 || true
+ls -la "$TMP/methodologies-pack" >&2 || true
 
 "$TAR_BIN" --sort=name --mtime='UTC 1970-01-01' --owner=0 --group=0 --numeric-owner \
   -czf "$OUT" -C "$TMP" methodologies-pack
