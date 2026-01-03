@@ -1,0 +1,98 @@
+name: publish-pack
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag name (defaults to methodologies-pack-<sha12>)'
+        required: false
+        type: string
+        default: ''
+  push:
+    tags:
+      - 'methodologies-pack-*'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    if: |
+      !startsWith(github.ref_name, 'bot/')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          clean: true
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '20.11.1'
+      - name: Build pack archive
+        run: bash scripts/pack-methodologies.sh
+      - name: Derive release tag + provenance artifact
+        id: meta
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          INPUT_TAG: ${{ inputs.tag }}
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          sha12="$(git rev-parse --short=12 HEAD)"
+
+          tag=""
+          if [[ "${EVENT_NAME}" == "push" ]]; then
+            tag="${REF_NAME}"
+          else
+            tag="${INPUT_TAG}"
+          fi
+          if [[ -z "${tag}" ]]; then
+            tag="methodologies-pack-${sha12}"
+          fi
+
+          if [[ "${tag}" =~ ^methodologies-pack-([0-9a-f]{12})$ ]]; then
+            if [[ "${BASH_REMATCH[1]}" != "${sha12}" ]]; then
+              echo "tag=${tag} does not match HEAD sha12=${sha12}" >&2
+              exit 2
+            fi
+          fi
+
+          if git show-ref --tags --verify --quiet "refs/tags/${tag}"; then
+            if [[ "$(git rev-list -n1 "${tag}")" != "$(git rev-parse HEAD)" ]]; then
+              echo "tag ${tag} exists but does not point at HEAD" >&2
+              exit 2
+            fi
+          else
+            git tag "${tag}"
+            git push origin "refs/tags/${tag}"
+          fi
+
+          out="artifacts/methodologies-pack-${sha12}.tar.gz"
+          if [[ ! -f "${out}" ]]; then
+            echo "missing pack archive: ${out}" >&2
+            exit 2
+          fi
+
+          tar -xOf "${out}" "methodologies-pack/PROVENANCE.json" > artifacts/methodologies_PROVENANCE.json
+          echo "tag=${tag}" >> "$GITHUB_OUTPUT"
+          echo "sha12=${sha12}" >> "$GITHUB_OUTPUT"
+          echo "archive=${out}" >> "$GITHUB_OUTPUT"
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: methodologies-pack-${{ steps.meta.outputs.sha12 }}
+          path: |
+            ${{ steps.meta.outputs.archive }}
+            artifacts/methodologies_PROVENANCE.json
+      - name: Create or update GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.meta.outputs.tag }}
+          ARCHIVE: ${{ steps.meta.outputs.archive }}
+        run: |
+          set -euo pipefail
+          if gh release view "${TAG}" >/dev/null 2>&1; then
+            gh release upload "${TAG}" "${ARCHIVE}" artifacts/methodologies_PROVENANCE.json --clobber
+          else
+            gh release create "${TAG}" "${ARCHIVE}" artifacts/methodologies_PROVENANCE.json --title "${TAG}" --notes "Automated methodologies pack for ${TAG}."
+          fi
