@@ -28,6 +28,8 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '20.11.1'
+      - name: Preflight pack script
+        run: bash -n scripts/pack-methodologies.sh
       - name: Build pack archive
         run: bash scripts/pack-methodologies.sh
       - name: Derive release tag + provenance artifact
