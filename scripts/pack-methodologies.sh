@@ -53,7 +53,7 @@ if command -v gtar >/dev/null 2>&1; then
   TAR_BIN="gtar"
 fi
 
-if ! "$TAR_BIN" --help 2>/dev/null | rg -q -- '--sort'; then
+if ! "$TAR_BIN" --help 2>/dev/null | grep -q -- '--sort'; then
   echo "❌ ${TAR_BIN} does not support --sort; run this script in Linux/Codespaces or install GNU tar (gtar)."
   exit 1
 fi
