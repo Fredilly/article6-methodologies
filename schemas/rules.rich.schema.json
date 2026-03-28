@@ -169,6 +169,117 @@
         ],
         "type": "object"
       },
+      "requirement_coverage": {
+        "additionalProperties": false,
+        "properties": {
+          "coverage_key": {
+            "type": "string"
+          },
+          "coverage_scope": {
+            "enum": [
+              "rule"
+            ],
+            "type": "string"
+          },
+          "section_refs": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "relationship": {
+                  "enum": [
+                    "source_section"
+                  ],
+                  "type": "string"
+                },
+                "section_id": {
+                  "pattern": "^S-\\d+(?:-\\d+)*$",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section_id",
+                "relationship"
+              ],
+              "type": "object"
+            },
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "coverage_key",
+          "coverage_scope"
+        ],
+        "type": "object"
+      },
+      "requirement_kind": {
+        "type": "string"
+      },
+      "requirement_text": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "rule_detail": {
+        "additionalProperties": false,
+        "properties": {
+          "conditions": {
+            "items": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "exceptions": {
+            "items": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "outputs": {
+            "items": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "summary": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "section_context": {
+        "additionalProperties": false,
+        "properties": {
+          "section_id": {
+            "pattern": "^S-\\d+(?:-\\d+)*$",
+            "type": "string"
+          },
+          "section_ref": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "section_title": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "section_id",
+          "section_title",
+          "section_ref"
+        ],
+        "type": "object"
+      },
+      "source_span_text": {
+        "minLength": 1,
+        "type": "string"
+      },
       "stable_id": {
         "type": "string"
       },
