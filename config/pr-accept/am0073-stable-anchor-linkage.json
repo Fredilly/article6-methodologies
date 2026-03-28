@@ -1,0 +1,26 @@
+{
+  "name": "am0073-stable-anchor-linkage",
+  "proof_tests": [
+    "node tests/am0073-requirement-coverage-proof.test.js",
+    "node tests/am0073-richer-rule-detail-proof.test.js",
+    "node tests/ar-ams0007-stable-anchor-linkage-proof.test.js"
+  ],
+  "validators": [
+    "./scripts/run-ajv.sh validate -s schemas/sections.rich.schema.json -d methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/sections.rich.json",
+    "./scripts/run-ajv.sh validate -s schemas/rules.rich.schema.json -d methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.rich.json"
+  ],
+  "rerun_commands": [
+    "node scripts/enrich-methodology-outputs.js methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1"
+  ],
+  "must_be_zero_diff_after_rerun": [
+    "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/sections.rich.json",
+    "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.rich.json"
+  ],
+  "must_not_change": [
+    "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/sections.json",
+    "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "methodologies/UNFCCC/Agriculture/AM0073/v01-0/sections.rich.json",
+    "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.rich.json",
+    "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/sections.rich.json"
+  ]
+}
