@@ -10,6 +10,13 @@ Make canonical methodology outputs rich enough to support requirement-to-evidenc
 - Make section, page, and anchor linkage stable enough for app navigation and reconciliation workflows.
 - Preserve deterministic generation, auditability, and existing ingest and pack publishing guarantees.
 
+## Layering rules
+
+- `rules.json` and `sections.json` stay relatively thin for retrieval, indexing, and lightweight consumers.
+- New requirement-coverage metadata lands in `rules.rich.json` and `sections.rich.json` first unless a lean consumer explicitly requires it.
+- Lean and rich artifacts are separate contracts with different purposes.
+- Do not bloat lean artifacts to satisfy app rendering needs when rich artifacts are the correct layer.
+
 ## Phases
 
 ### RC-S1 — Rich schema foundation
