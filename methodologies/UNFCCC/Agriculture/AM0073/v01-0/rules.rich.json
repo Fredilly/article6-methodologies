@@ -11,6 +11,16 @@
         "UNFCCC/AM0073@v01-0"
       ]
     },
+    "requirement_coverage": {
+      "coverage_key": "UNFCCC.Agriculture.AM0073.v01-0.R-1-0001",
+      "coverage_scope": "rule",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-1"
+        }
+      ]
+    },
     "summary": "Projects aggregate manure from multiple farms and install a central methane capture system where the baseline lacks methane recovery.",
     "tags": [
       "eligibility"
@@ -31,6 +41,16 @@
       ],
       "tools": [
         "UNFCCC/AM0073@v01-0"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "UNFCCC.Agriculture.AM0073.v01-0.R-2-0002",
+      "coverage_scope": "rule",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-2"
+        }
       ]
     },
     "summary": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
@@ -56,6 +76,16 @@
         "UNFCCC/AM0073@v01-0"
       ]
     },
+    "requirement_coverage": {
+      "coverage_key": "UNFCCC.Agriculture.AM0073.v01-0.R-3-0002",
+      "coverage_scope": "rule",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-2"
+        }
+      ]
+    },
     "summary": "Barrier documentation and CER transfer declarations demonstrate participation and prevent double counting.",
     "tags": [
       "reporting"
@@ -76,6 +106,16 @@
       ],
       "tools": [
         "UNFCCC/AM0073@v01-0"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "UNFCCC.Agriculture.AM0073.v01-0.R-4-0003",
+      "coverage_scope": "rule",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-3"
+        }
       ]
     },
     "summary": "Project boundaries cover collection through final sludge treatment with leak-proof infrastructure and consistent fertilizer use.",
@@ -100,6 +140,16 @@
         "UNFCCC/AM0073@v01-0"
       ]
     },
+    "requirement_coverage": {
+      "coverage_key": "UNFCCC.Agriculture.AM0073.v01-0.R-5-0003",
+      "coverage_scope": "rule",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-3"
+        }
+      ]
+    },
     "summary": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
     "tags": [
       "calc"
@@ -122,6 +172,16 @@
         "UNFCCC/AM0073@v01-0"
       ]
     },
+    "requirement_coverage": {
+      "coverage_key": "UNFCCC.Agriculture.AM0073.v01-0.R-6-0004",
+      "coverage_scope": "rule",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-4"
+        }
+      ]
+    },
     "summary": "Deduct leakage from pipelines, auxiliary fuel, and offsite residue handling using monitored data or LFAD defaults.",
     "tags": [],
     "type": "leakage",
@@ -142,6 +202,16 @@
         "UNFCCC/AM0073@v01-0"
       ]
     },
+    "requirement_coverage": {
+      "coverage_key": "UNFCCC.Agriculture.AM0073.v01-0.R-7-0005",
+      "coverage_scope": "rule",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-5"
+        }
+      ]
+    },
     "summary": "Monitor biogas, methane fraction, and energy consumption continuously and report at least monthly with QA/QC evidence.",
     "tags": [],
     "type": "monitoring",
@@ -160,6 +230,16 @@
       ],
       "tools": [
         "UNFCCC/AM0073@v01-0"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "UNFCCC.Agriculture.AM0073.v01-0.R-8-0005",
+      "coverage_scope": "rule",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-5"
+        }
       ]
     },
     "summary": "Focus DOE inspections on high-emitting farms and reconcile methane balances annually, documenting leak investigations and fixes.",
