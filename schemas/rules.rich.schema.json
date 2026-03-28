@@ -169,6 +169,49 @@
         ],
         "type": "object"
       },
+      "requirement_coverage": {
+        "additionalProperties": false,
+        "properties": {
+          "coverage_key": {
+            "type": "string"
+          },
+          "coverage_scope": {
+            "enum": [
+              "rule"
+            ],
+            "type": "string"
+          },
+          "section_refs": {
+            "minItems": 1,
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "relationship": {
+                  "enum": [
+                    "source_section"
+                  ],
+                  "type": "string"
+                },
+                "section_id": {
+                  "pattern": "^S-\\d+(?:-\\d+)*$",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "section_id",
+                "relationship"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "coverage_key",
+          "coverage_scope"
+        ],
+        "type": "object"
+      },
       "stable_id": {
         "type": "string"
       },
