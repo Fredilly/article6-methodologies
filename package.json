@@ -14,7 +14,6 @@
     "ajv-formats": "file:vendor/npm/ajv-formats-2.1.1.tgz"
   },
   "scripts": {
-    "build": "npm run build:manifest",
     "hooks:install": "./scripts/install-hooks.sh",
     "lint": "./scripts/json-canonical-check.sh && npm run validate:rich && npm run validate:lean && npm run validate:guardrails",
     "mvp:check": "./scripts/mvp-check.sh",
