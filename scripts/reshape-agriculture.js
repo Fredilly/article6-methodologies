@@ -21,6 +21,9 @@ const DEFAULT_METHODS = [
 const REQUIREMENT_COVERAGE_METHODS = new Set([
   'UNFCCC/Agriculture/AM0073/v01-0',
 ]);
+const RICHER_RULE_DETAIL_METHODS = new Set([
+  'UNFCCC/Agriculture/AM0073/v01-0',
+]);
 
 function relToDir(rel) {
   return path.join(ROOT, 'methodologies', ...rel.split('/'));
@@ -84,6 +87,28 @@ function buildRequirementCoverage(ruleId, sectionIds) {
   };
 }
 
+function buildSectionContext(section) {
+  if (!section || typeof section.id !== 'string' || typeof section.title !== 'string') {
+    return undefined;
+  }
+  return {
+    section_id: section.id,
+    section_ref: section.id,
+    section_title: section.title,
+  };
+}
+
+function buildRuleDetail(rule) {
+  const detail = {};
+  if (typeof rule.summary === 'string' && rule.summary.length > 0) {
+    detail.summary = rule.summary;
+  }
+  if (Array.isArray(rule.when) && rule.when.length > 0) {
+    detail.conditions = rule.when;
+  }
+  return Object.keys(detail).length > 0 ? detail : undefined;
+}
+
 function deriveLean(dir) {
   const script = path.join(ROOT, 'scripts', 'derive-lean-from-rich.js');
   const res = spawnSync('node', [script, dir], { stdio: 'inherit' });
@@ -103,6 +128,7 @@ function reshape(dir) {
     return;
   }
   const includeRequirementCoverage = REQUIREMENT_COVERAGE_METHODS.has(methodRel(dir));
+  const includeRicherRuleDetail = RICHER_RULE_DETAIL_METHODS.has(methodRel(dir));
   const meta = loadJSON(metaPath);
   const docId = (meta.provenance && meta.provenance.source_pdfs && meta.provenance.source_pdfs[0]?.doc) || methodDoc(dir);
   const sourceHash = (meta.provenance && meta.provenance.source_pdfs && meta.provenance.source_pdfs[0]?.sha256) || meta.audit_hashes?.source_pdf_sha256;
@@ -122,11 +148,18 @@ function reshape(dir) {
     title: section.title,
   }));
   writeJSON(path.join(dir, 'sections.rich.json'), sectionsRich);
+  const sectionIndex = new Map(sectionsRich.map((section) => [section.id, section]));
 
   const rulesRich = TEMPLATE.rules.map((rule, idx) => {
     const ruleId = buildRuleId(dir, idx, rule.section);
     const requirementCoverage = includeRequirementCoverage
       ? buildRequirementCoverage(ruleId, [rule.section])
+      : undefined;
+    const sectionContext = includeRicherRuleDetail
+      ? buildSectionContext(sectionIndex.get(rule.section))
+      : undefined;
+    const ruleDetail = includeRicherRuleDetail
+      ? buildRuleDetail(rule)
       : undefined;
     return {
       id: ruleId,
@@ -137,6 +170,14 @@ function reshape(dir) {
         tools: [docId],
       },
       ...(requirementCoverage ? { requirement_coverage: requirementCoverage } : {}),
+      ...(includeRicherRuleDetail && typeof rule.logic === 'string' && rule.logic.length > 0
+        ? { requirement_text: rule.logic }
+        : {}),
+      ...(includeRicherRuleDetail && typeof rule.type === 'string' && rule.type.length > 0
+        ? { requirement_kind: rule.type }
+        : {}),
+      ...(sectionContext ? { section_context: sectionContext } : {}),
+      ...(ruleDetail ? { rule_detail: ruleDetail } : {}),
       summary: rule.summary,
       tags: rule.tags || [],
       type: rule.type,
