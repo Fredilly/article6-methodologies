@@ -18,6 +18,9 @@ const DEFAULT_METHODS = [
   'UNFCCC/Agriculture/AMS-III.D/v21-0',
   'UNFCCC/Agriculture/AMS-III.R/v05-0'
 ];
+const REQUIREMENT_COVERAGE_METHODS = new Set([
+  'UNFCCC/Agriculture/AM0073/v01-0',
+]);
 
 function relToDir(rel) {
   return path.join(ROOT, 'methodologies', ...rel.split('/'));
@@ -46,6 +49,10 @@ function methodFragments(dir) {
   return { program, sector, code, version };
 }
 
+function methodRel(dir) {
+  return path.relative(path.join(ROOT, 'methodologies'), dir).replace(/\\/g, '/');
+}
+
 function methodDoc(dir) {
   const { program, code, version } = methodFragments(dir);
   return `${program}/${code}@${version}`;
@@ -60,6 +67,21 @@ function methodKey(dir) {
 function buildRuleId(dir, index, section) {
   const sectionNum = String(section).replace(/^S-/, '') || '1';
   return `${methodKey(dir)}.R-${index + 1}-${sectionNum.padStart(4, '0')}`;
+}
+
+function buildRequirementCoverage(ruleId, sectionIds) {
+  const refs = (sectionIds || [])
+    .filter((sectionId) => typeof sectionId === 'string' && /^S-\d+(?:-\d+)*$/.test(sectionId))
+    .map((sectionId) => ({
+      relationship: 'source_section',
+      section_id: sectionId,
+    }));
+  if (refs.length === 0) return undefined;
+  return {
+    coverage_key: ruleId,
+    coverage_scope: 'rule',
+    section_refs: refs,
+  };
 }
 
 function deriveLean(dir) {
@@ -80,6 +102,7 @@ function reshape(dir) {
     console.warn(`[reshape-agriculture] skip ${dir} (missing META.json)`);
     return;
   }
+  const includeRequirementCoverage = REQUIREMENT_COVERAGE_METHODS.has(methodRel(dir));
   const meta = loadJSON(metaPath);
   const docId = (meta.provenance && meta.provenance.source_pdfs && meta.provenance.source_pdfs[0]?.doc) || methodDoc(dir);
   const sourceHash = (meta.provenance && meta.provenance.source_pdfs && meta.provenance.source_pdfs[0]?.sha256) || meta.audit_hashes?.source_pdf_sha256;
@@ -92,27 +115,34 @@ function reshape(dir) {
 
   const sectionsRich = TEMPLATE.sections.map((section) => ({
     id: section.id,
-    title: section.title,
     provenance: {
       source_hash: sourceHash,
       source_ref: docId,
     },
+    title: section.title,
   }));
   writeJSON(path.join(dir, 'sections.rich.json'), sectionsRich);
 
-  const rulesRich = TEMPLATE.rules.map((rule, idx) => ({
-    id: buildRuleId(dir, idx, rule.section),
-    logic: rule.logic,
-    notes: rule.notes,
-    refs: {
-      sections: [rule.section],
-      tools: [docId],
-    },
-    summary: rule.summary,
-    tags: rule.tags || [],
-    type: rule.type,
-    when: rule.when,
-  }));
+  const rulesRich = TEMPLATE.rules.map((rule, idx) => {
+    const ruleId = buildRuleId(dir, idx, rule.section);
+    const requirementCoverage = includeRequirementCoverage
+      ? buildRequirementCoverage(ruleId, [rule.section])
+      : undefined;
+    return {
+      id: ruleId,
+      logic: rule.logic,
+      notes: rule.notes,
+      refs: {
+        sections: [rule.section],
+        tools: [docId],
+      },
+      ...(requirementCoverage ? { requirement_coverage: requirementCoverage } : {}),
+      summary: rule.summary,
+      tags: rule.tags || [],
+      type: rule.type,
+      when: rule.when,
+    };
+  });
   writeJSON(path.join(dir, 'rules.rich.json'), rulesRich);
 
   deriveLean(dir);
