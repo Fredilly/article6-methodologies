@@ -1,0 +1,24 @@
+{
+  "name": "am0073-richer-rule-detail",
+  "proof_tests": [
+    "node tests/am0073-requirement-coverage-proof.test.js",
+    "node tests/am0073-richer-rule-detail-proof.test.js"
+  ],
+  "validators": [
+    "./scripts/run-ajv.sh validate -s schemas/rules.rich.schema.json -d methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.rich.json"
+  ],
+  "rerun_commands": [
+    "node scripts/reshape-agriculture.js methodologies/UNFCCC/Agriculture/AM0073/v01-0"
+  ],
+  "must_be_zero_diff_after_rerun": [
+    "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.rich.json",
+    "methodologies/UNFCCC/Agriculture/AM0073/v01-0/META.json"
+  ],
+  "must_not_change": [
+    "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "methodologies/UNFCCC/Agriculture/AM0073/v01-0/sections.json",
+    "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.rich.json",
+    "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0/rules.rich.json",
+    "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0/rules.rich.json"
+  ]
+}
