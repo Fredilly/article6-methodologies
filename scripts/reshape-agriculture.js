@@ -62,6 +62,21 @@ function buildRuleId(dir, index, section) {
   return `${methodKey(dir)}.R-${index + 1}-${sectionNum.padStart(4, '0')}`;
 }
 
+function buildRequirementCoverage(ruleId, sectionIds) {
+  const refs = (sectionIds || [])
+    .filter((sectionId) => typeof sectionId === 'string' && /^S-\d+(?:-\d+)*$/.test(sectionId))
+    .map((sectionId) => ({
+      section_id: sectionId,
+      relationship: 'source_section',
+    }));
+  if (refs.length === 0) return undefined;
+  return {
+    coverage_key: ruleId,
+    coverage_scope: 'rule',
+    section_refs: refs,
+  };
+}
+
 function deriveLean(dir) {
   const script = path.join(ROOT, 'scripts', 'derive-lean-from-rich.js');
   const res = spawnSync('node', [script, dir], { stdio: 'inherit' });
@@ -100,19 +115,24 @@ function reshape(dir) {
   }));
   writeJSON(path.join(dir, 'sections.rich.json'), sectionsRich);
 
-  const rulesRich = TEMPLATE.rules.map((rule, idx) => ({
-    id: buildRuleId(dir, idx, rule.section),
-    logic: rule.logic,
-    notes: rule.notes,
-    refs: {
-      sections: [rule.section],
-      tools: [docId],
-    },
-    summary: rule.summary,
-    tags: rule.tags || [],
-    type: rule.type,
-    when: rule.when,
-  }));
+  const rulesRich = TEMPLATE.rules.map((rule, idx) => {
+    const ruleId = buildRuleId(dir, idx, rule.section);
+    const requirementCoverage = buildRequirementCoverage(ruleId, [rule.section]);
+    return {
+      id: ruleId,
+      logic: rule.logic,
+      notes: rule.notes,
+      ...(requirementCoverage ? { requirement_coverage: requirementCoverage } : {}),
+      refs: {
+        sections: [rule.section],
+        tools: [docId],
+      },
+      summary: rule.summary,
+      tags: rule.tags || [],
+      type: rule.type,
+      when: rule.when,
+    };
+  });
   writeJSON(path.join(dir, 'rules.rich.json'), rulesRich);
 
   deriveLean(dir);
