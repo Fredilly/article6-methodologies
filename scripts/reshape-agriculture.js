@@ -132,11 +132,11 @@ function reshape(dir) {
       id: ruleId,
       logic: rule.logic,
       notes: rule.notes,
-      ...(requirementCoverage ? { requirement_coverage: requirementCoverage } : {}),
       refs: {
         sections: [rule.section],
         tools: [docId],
       },
+      ...(requirementCoverage ? { requirement_coverage: requirementCoverage } : {}),
       summary: rule.summary,
       tags: rule.tags || [],
       type: rule.type,
