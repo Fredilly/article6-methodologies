@@ -1,9 +1,9 @@
 {
   "sections": [
     {
+      "anchor": "scope-and-applicability",
       "id": "S-1",
       "title": "Scope and applicability",
-      "anchor": "scope-and-applicability",
       "pages": [
         2
       ],
@@ -11,30 +11,30 @@
       "stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-1"
     },
     {
+      "anchor": "definitions",
       "id": "S-2",
       "title": "Definitions",
-      "anchor": "definitions",
       "section_number": "2",
       "stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-2"
     },
     {
+      "anchor": "project-boundary-and-carbon-pools",
       "id": "S-3",
       "title": "Project boundary and carbon pools",
-      "anchor": "project-boundary-and-carbon-pools",
       "section_number": "3",
       "stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-3"
     },
     {
+      "anchor": "baseline-scenario-and-net-ghg-emissions",
       "id": "S-4",
       "title": "Baseline scenario and net GHG emissions",
-      "anchor": "baseline-scenario-and-net-ghg-emissions",
       "section_number": "4",
       "stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-4"
     },
     {
+      "anchor": "project-scenario-and-net-ghg-removals",
       "id": "S-5",
       "title": "Project scenario and net GHG removals",
-      "anchor": "project-scenario-and-net-ghg-removals",
       "pages": [
         10
       ],
@@ -42,58 +42,58 @@
       "stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-5"
     },
     {
+      "anchor": "leakage",
       "id": "S-6",
       "title": "Leakage",
-      "anchor": "leakage",
       "section_number": "6",
       "stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-6"
     },
     {
+      "anchor": "monitoring-plan",
       "id": "S-7",
       "title": "Monitoring plan",
-      "anchor": "monitoring-plan",
       "section_number": "7",
       "stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-7"
     },
     {
+      "anchor": "data-and-parameters",
       "id": "S-8",
       "title": "Data and parameters",
-      "anchor": "data-and-parameters",
       "section_number": "8",
       "stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-8"
     },
     {
+      "anchor": "uncertainty-precision-qa-qc",
       "id": "S-9",
       "title": "Uncertainty, precision, QA/QC",
-      "anchor": "uncertainty-precision-qa-qc",
       "section_number": "9",
       "stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-9"
     },
     {
+      "anchor": "permanence-tcers-lcers",
       "id": "S-10",
       "title": "Permanence (tCERs/lCERs)",
-      "anchor": "permanence-tcers-lcers",
       "section_number": "10",
       "stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-10"
     },
     {
+      "anchor": "normative-tools-and-references",
       "id": "S-11",
       "title": "Normative tools and references",
-      "anchor": "normative-tools-and-references",
       "section_number": "11",
       "stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-11"
     },
     {
+      "anchor": "calculation-procedures-and-equations",
       "id": "S-12",
       "title": "Calculation procedures and equations",
-      "anchor": "calculation-procedures-and-equations",
       "section_number": "12",
       "stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-12"
     },
     {
+      "anchor": "annexes",
       "id": "S-13",
       "title": "Annexes",
-      "anchor": "annexes",
       "section_number": "13",
       "stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-13"
     }
