@@ -96,7 +96,7 @@
     { "path": "scripts/rehydrate-agriculture-from-tools.cjs", "sha256": "2d0f0904ab30c0f36483441aa5286afce0b329b9493463effaaf2d502e4f1151" },
     { "path": "scripts/remove-previous-methods.js", "sha256": "7d2b05537f6c2ee2d02208e21f76bcc014b07b4e908e918e5b56b3c4ccfa75c7" },
     { "path": "scripts/require-vendor-ajv.sh", "sha256": "fc58376b1e5dfb4c1cf4a22cbcf574c151e58ec90222c32144a018fc98f02389" },
-    { "path": "scripts/reshape-agriculture.js", "sha256": "92026a321073d5f77a6202214b0498144df8c2861eabbb370bce0e0c9f478926" },
+    { "path": "scripts/reshape-agriculture.js", "sha256": "381a049421ca9e1d0306c8781a253b524c365450c0803f210f41ae2a395a3f2d" },
     { "path": "scripts/resolve-ingest-scope.mjs", "sha256": "79bb9b5e5450715e1e956ce3ef0285351655d6458fe41b23aef4bf0e5acee8b6" },
     { "path": "scripts/rewrite-forestry.js", "sha256": "c924b4fbbde41865bad05c7dcd31db9e3b8837ad693f5061789099d06bd31174" },
     { "path": "scripts/root-cause-new.cjs", "sha256": "e4c792afffbafde8b3487336fd919e47c14566e86d5d300a5c477e63d05a157e" },

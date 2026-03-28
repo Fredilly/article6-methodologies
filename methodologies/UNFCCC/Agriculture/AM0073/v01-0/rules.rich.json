@@ -16,8 +16,8 @@
       "coverage_scope": "rule",
       "section_refs": [
         {
-          "section_id": "S-1",
-          "relationship": "source_section"
+          "relationship": "source_section",
+          "section_id": "S-1"
         }
       ]
     },
@@ -48,8 +48,8 @@
       "coverage_scope": "rule",
       "section_refs": [
         {
-          "section_id": "S-2",
-          "relationship": "source_section"
+          "relationship": "source_section",
+          "section_id": "S-2"
         }
       ]
     },
@@ -81,8 +81,8 @@
       "coverage_scope": "rule",
       "section_refs": [
         {
-          "section_id": "S-2",
-          "relationship": "source_section"
+          "relationship": "source_section",
+          "section_id": "S-2"
         }
       ]
     },
@@ -113,8 +113,8 @@
       "coverage_scope": "rule",
       "section_refs": [
         {
-          "section_id": "S-3",
-          "relationship": "source_section"
+          "relationship": "source_section",
+          "section_id": "S-3"
         }
       ]
     },
@@ -145,8 +145,8 @@
       "coverage_scope": "rule",
       "section_refs": [
         {
-          "section_id": "S-3",
-          "relationship": "source_section"
+          "relationship": "source_section",
+          "section_id": "S-3"
         }
       ]
     },
@@ -177,8 +177,8 @@
       "coverage_scope": "rule",
       "section_refs": [
         {
-          "section_id": "S-4",
-          "relationship": "source_section"
+          "relationship": "source_section",
+          "section_id": "S-4"
         }
       ]
     },
@@ -207,8 +207,8 @@
       "coverage_scope": "rule",
       "section_refs": [
         {
-          "section_id": "S-5",
-          "relationship": "source_section"
+          "relationship": "source_section",
+          "section_id": "S-5"
         }
       ]
     },
@@ -237,8 +237,8 @@
       "coverage_scope": "rule",
       "section_refs": [
         {
-          "section_id": "S-5",
-          "relationship": "source_section"
+          "relationship": "source_section",
+          "section_id": "S-5"
         }
       ]
     },

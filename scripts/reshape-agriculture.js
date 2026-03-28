@@ -73,8 +73,8 @@ function buildRequirementCoverage(ruleId, sectionIds) {
   const refs = (sectionIds || [])
     .filter((sectionId) => typeof sectionId === 'string' && /^S-\d+(?:-\d+)*$/.test(sectionId))
     .map((sectionId) => ({
-      section_id: sectionId,
       relationship: 'source_section',
+      section_id: sectionId,
     }));
   if (refs.length === 0) return undefined;
   return {
