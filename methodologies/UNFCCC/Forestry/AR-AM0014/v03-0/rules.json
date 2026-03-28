@@ -1,7 +1,7 @@
 {
   "rules": [
     {
-      "id": "R-1-0001",
+      "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0001",
       "logic": "Eligible areas lack forest cover since 31 December 1989 and meet host-country forest thresholds at maturity.",
       "section_anchor": "scope-and-applicability",
       "section_id": "S-1",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "id": "R-1-0002",
+      "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0002",
       "logic": "Baseline carbon stock estimates rely on Tool 02 sampling guidance or conservative IPCC defaults.",
       "section_anchor": "baseline-scenario-and-leakage-considerations",
       "section_id": "S-2",
@@ -30,7 +30,6 @@
       "section_stable_id": "UNFCCC.Forestry.AR-AM0014.v03-0.S-2",
       "stable_id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0002",
       "tags": [
-        "calc",
         "baseline"
       ],
       "text": "Baseline biomass estimated using IPCC defaults or site-specific sampling following Tool 02.",
@@ -45,7 +44,7 @@
       ]
     },
     {
-      "id": "R-1-0003",
+      "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0003",
       "logic": "Net anthropogenic GHG removals computed by summing project removals and subtracting baseline emissions and leakage deductions.",
       "section_anchor": "project-scenario-and-carbon-accounting",
       "section_id": "S-3",
@@ -67,7 +66,7 @@
       ]
     },
     {
-      "id": "R-1-0004",
+      "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0004",
       "logic": "Activity shifting leakage calculated with Tool 14 standardized factors and subtracted from project removals each monitoring period.",
       "section_anchor": "leakage-assessment-and-mitigation",
       "section_id": "S-4",
@@ -89,7 +88,7 @@
       ]
     },
     {
-      "id": "R-1-0005",
+      "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0005",
       "logic": "Buffer share determined using Tool 15 risk analysis and recorded with registry documentation.",
       "section_anchor": "monitoring-qa-qc-and-reporting",
       "section_id": "S-5",
@@ -111,7 +110,7 @@
       ]
     },
     {
-      "id": "R-1-0006",
+      "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0006",
       "logic": "Permanent sample plots measured at ≤5-year intervals with QA/QC re-measurement requirements.",
       "section_anchor": "monitoring-qa-qc-and-reporting",
       "section_id": "S-5",
@@ -133,7 +132,7 @@
       ]
     },
     {
-      "id": "R-1-0007",
+      "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0007",
       "logic": "When sampling precision exceeds 10%, apply Tool 12 conservative deductions before issuing credits.",
       "section_anchor": "monitoring-qa-qc-and-reporting",
       "section_id": "S-5",
@@ -155,7 +154,7 @@
       ]
     },
     {
-      "id": "R-1-0008",
+      "id": "UNFCCC.Forestry.AR-AM0014.v03-0.R-1-0008",
       "logic": "Monitoring submissions include updated spatial data, field measurements, leakage results, and QA/QC documentation.",
       "section_anchor": "monitoring-qa-qc-and-reporting",
       "section_id": "S-5",
