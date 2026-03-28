@@ -182,10 +182,14 @@
             "type": "string"
           },
           "section_refs": {
+            "minItems": 1,
             "items": {
               "additionalProperties": false,
               "properties": {
                 "relationship": {
+                  "enum": [
+                    "source_section"
+                  ],
                   "type": "string"
                 },
                 "section_id": {
