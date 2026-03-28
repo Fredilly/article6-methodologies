@@ -6,38 +6,53 @@ Make canonical methodology outputs rich enough to support requirement-to-evidenc
 
 ## Scope for this roadmap
 
-- Enrich rule outputs so app consumers can render requirement summaries, logic, provenance, and linked context.
+- Evolve rich methodology outputs so app consumers can render requirement summaries, logic, provenance, and linked context without depending on ad hoc transforms.
 - Make section, page, and anchor linkage stable enough for app navigation and reconciliation workflows.
 - Preserve deterministic generation, auditability, and existing ingest and pack publishing guarantees.
 
 ## Phases
 
-### 1. Richer rule detail
+### RC-S1 — Rich schema foundation
 
-- Add app-facing rule display fields that preserve canonical summary, logic, conditions, and tool references.
-- Keep lean outputs backward-compatible while exposing materially better renderable metadata.
-- Preserve deterministic IDs so requirement coverage state can link to canonical rule records.
+- Make schema evolution additive and backward-compatible where possible, with changes focused on rich outputs rather than a full canonical rewrite.
+- Add explicit rich-schema space for richer rule display fields, requirement class or modality markers where feasible, conditions, and stronger section linkage or locator carry-through.
+- Preserve stable IDs and reserve stable placeholders for expected-evidence hints so later phases can build on consistent rich output contracts.
 
-### 2. Stable section/page/anchor linkage
+### RC-S2 — Richer rule detail
 
-- Normalize section anchors and stable section identifiers.
-- Carry section lineage and anchor metadata into app-facing outputs.
-- Attach page and locator metadata where source anchors exist, without inventing provenance.
+- Populate the additive rich-schema fields with materially better rule summaries, display text, logic, conditions, and methodology context.
+- Carry requirement class, modality, and conditions where feasible from canonical sources without inventing unsupported structure.
+- Keep lean outputs stable for existing consumers while improving the richness of app-facing rule rendering data.
 
-### 3. Methodology tool/module relationships
+### RC-S3 — Stable section/page/anchor linkage
 
-- Expose clearer rule-to-tool and methodology-to-tool relationships from canonical artifacts.
+- Normalize stable section identifiers, anchors, and locator carry-through in rich outputs.
+- Attach page, section lineage, and anchor metadata where provenance exists, without fabricating navigation hints.
+- Ensure rule-to-section cross-links are stable enough for requirement reconciliation and audit review.
+
+### RC-S4 — Methodology tool/module relationships
+
+- Expose clearer rule-to-tool, methodology-to-tool, and methodology-to-module relationships from canonical artifacts.
 - Keep `META.references.tools` as the auditable source of truth for tool artifacts and hashes.
+- Preserve provenance so relationship enrichment remains reviewable and compatible with strict gates.
 
-### 4. Version relationship + diff support
+### RC-S5 — Version relationship + diff support
 
 - Add explicit version lineage metadata for methodology families.
 - Make previous and next version relationships available for app navigation and future diff workflows.
+- Keep diff-oriented metadata additive so version support can land before any heavier comparison tooling.
 
-### 5. Optional expected-evidence metadata support
+### RC-S6 — Optional expected-evidence metadata support
 
-- Reserve a stable place for future expected-evidence hints without requiring project-evidence ingestion in this repo.
-- Keep this optional and provenance-safe so the app can adopt it incrementally.
+- Use the stable placeholders introduced in RC-S1 for optional expected-evidence hints.
+- Keep this provenance-safe and optional so the app can adopt richer requirement-to-evidence guidance incrementally.
+- Do not introduce project evidence ingestion in this repo as part of this phase.
+
+### RC-S7 — Ingestion automation hardening later
+
+- Treat GitHub Issues and Projects as intake and tracking only, not as a substitute for the execution pipeline.
+- Keep `ingest.sh`, CI, and workflows as the execution layer, phased in later only when schema and output contracts are stable enough to support automation safely.
+- Any automation hardening must remain scoped, reviewable, and friendly to strict repository gates rather than becoming a broad first move.
 
 ## Delivery constraints
 
@@ -48,5 +63,5 @@ Make canonical methodology outputs rich enough to support requirement-to-evidenc
 ## Current PR
 
 - Seed this roadmap and status tracker.
-- Enrich canonical methodology outputs with stable IDs, richer rule display fields, deeper section linkage, optional locator/page carry-through, and version relationships.
+- Land additive rich-schema and canonical output improvements that keep the roadmap schema-first and gate-safe.
 - Keep existing validation, ingest, and pack-related flows green.

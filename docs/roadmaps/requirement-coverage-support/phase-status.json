@@ -1,31 +1,41 @@
 {
   "roadmap": "requirement-coverage-support",
   "goal": "Make methodology outputs rich enough to support requirement-to-evidence reconciliation in the app.",
-  "last_updated_at": "2026-03-28T00:00:00Z",
+  "last_updated_at": "2026-03-28T00:30:00Z",
   "phases": [
     {
-      "id": "phase-1-richer-rule-detail",
+      "id": "rc-s1-rich-schema-foundation",
+      "name": "Rich schema foundation",
+      "status": "in_progress"
+    },
+    {
+      "id": "rc-s2-richer-rule-detail",
       "name": "Richer rule detail",
-      "status": "in_progress"
+      "status": "planned"
     },
     {
-      "id": "phase-2-stable-section-page-anchor-linkage",
+      "id": "rc-s3-stable-section-page-anchor-linkage",
       "name": "Stable section/page/anchor linkage",
-      "status": "in_progress"
+      "status": "planned"
     },
     {
-      "id": "phase-3-methodology-tool-module-relationships",
+      "id": "rc-s4-methodology-tool-module-relationships",
       "name": "Methodology tool/module relationships",
-      "status": "in_progress"
+      "status": "planned"
     },
     {
-      "id": "phase-4-version-relationship-diff-support",
+      "id": "rc-s5-version-relationship-diff-support",
       "name": "Version relationship + diff support",
-      "status": "in_progress"
+      "status": "planned"
     },
     {
-      "id": "phase-5-expected-evidence-metadata-support",
+      "id": "rc-s6-optional-expected-evidence-metadata-support",
       "name": "Optional expected-evidence metadata support",
+      "status": "planned"
+    },
+    {
+      "id": "rc-s7-ingestion-automation-hardening-later",
+      "name": "Ingestion automation hardening later",
       "status": "planned"
     }
   ]
