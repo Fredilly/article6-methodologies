@@ -23,6 +23,19 @@ function readJSON(p) {
   return JSON.parse(fs.readFileSync(p, 'utf8'));
 }
 
+function listSchemaFiles(dir) {
+  const out = [];
+  (function walk(currentDir) {
+    if (!fs.existsSync(currentDir)) return;
+    for (const entry of fs.readdirSync(currentDir, { withFileTypes: true })) {
+      const currentPath = path.join(currentDir, entry.name);
+      if (entry.isDirectory()) walk(currentPath);
+      else if (entry.isFile() && currentPath.endsWith('.schema.json')) out.push(currentPath);
+    }
+  })(dir);
+  return out.sort();
+}
+
 function buildOne(name, schemaPath) {
   const ajv = new Ajv({ allErrors: true, code: { source: true, esm: false } });
   addFormats(ajv);
@@ -35,9 +48,7 @@ function buildOne(name, schemaPath) {
 }
 
 function updateSchemaHashRecord() {
-  const schemaFiles = Object.values(SCHEMAS)
-    .filter((p) => fs.existsSync(p))
-    .sort();
+  const schemaFiles = listSchemaFiles(path.join(ROOT, 'schemas'));
   const payload = schemaFiles.map((p) => `${p}\n${fs.readFileSync(p, 'utf8')}`).join('\n');
   const digest = crypto.createHash('sha256').update(payload).digest('hex');
   fs.writeFileSync(path.join(OUTDIR, 'schemas.sha256'), `${digest}\n`, 'utf8');

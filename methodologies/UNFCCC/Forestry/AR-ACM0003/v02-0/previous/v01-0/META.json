@@ -3,7 +3,8 @@
     "source_pdf_sha256": "903762ef3141d114e4312792cc7752d8132967bfe842b91ef1bfdfc1cc57dee7"
   },
   "automation": {
-    "node_version": "v20.11.1"
+    "node_version": "v20.11.1",
+    "scripts_manifest_sha256": "f7b5a5b12987aac4db313feb6cc1ec2081b2a77b75c532e1bfd680cc63a1a215"
   },
   "effective_from": "2012-11-23",
   "effective_to": "2013-10-03",
