@@ -13,6 +13,7 @@ const tests = [
   'tests/am0073-requirement-coverage-proof.test.js',
   'tests/am0073-richer-rule-detail-proof.test.js',
   'tests/ar-ams0007-stable-anchor-linkage-proof.test.js',
+  'tests/roadmap-status-sync.test.js',
   'tests/pr-accept-harness.test.js',
 ];
 
