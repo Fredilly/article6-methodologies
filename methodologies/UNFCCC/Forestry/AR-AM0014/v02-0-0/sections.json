@@ -1,39 +1,39 @@
 {
   "sections": [
     {
-      "anchor": "scope-and-applicability",
       "id": "S-1",
+      "title": "Scope and applicability",
+      "anchor": "scope-and-applicability",
       "section_number": "1",
-      "stable_id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.S-1",
-      "title": "Scope and applicability"
+      "stable_id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.S-1"
     },
     {
-      "anchor": "baseline-scenario-and-leakage-considerations",
       "id": "S-2",
+      "title": "Baseline scenario and leakage considerations",
+      "anchor": "baseline-scenario-and-leakage-considerations",
       "section_number": "2",
-      "stable_id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.S-2",
-      "title": "Baseline scenario and leakage considerations"
+      "stable_id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.S-2"
     },
     {
-      "anchor": "project-scenario-and-carbon-accounting",
       "id": "S-3",
+      "title": "Project scenario and carbon accounting",
+      "anchor": "project-scenario-and-carbon-accounting",
       "section_number": "3",
-      "stable_id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.S-3",
-      "title": "Project scenario and carbon accounting"
+      "stable_id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.S-3"
     },
     {
-      "anchor": "leakage-assessment-and-mitigation",
       "id": "S-4",
+      "title": "Leakage assessment and mitigation",
+      "anchor": "leakage-assessment-and-mitigation",
       "section_number": "4",
-      "stable_id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.S-4",
-      "title": "Leakage assessment and mitigation"
+      "stable_id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.S-4"
     },
     {
-      "anchor": "monitoring-qa-qc-and-reporting",
       "id": "S-5",
+      "title": "Monitoring, QA/QC, and reporting",
+      "anchor": "monitoring-qa-qc-and-reporting",
       "section_number": "5",
-      "stable_id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.S-5",
-      "title": "Monitoring, QA/QC, and reporting"
+      "stable_id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.S-5"
     }
   ]
 }

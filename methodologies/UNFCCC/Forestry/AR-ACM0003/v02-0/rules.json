@@ -37,7 +37,7 @@
       "title": "Baseline net GHG removals derived from historical land-use data per Tool 02 guidance.",
       "tools": [
         "UNFCCC/AR-ACM0003@v02-0",
-        "UNFCCC/AR-TOOL02@v1.0"
+        "UNFCCC/AR-TOOL02@v01.0"
       ],
       "when": [
         "Baseline strata delineated and documented.",
@@ -60,7 +60,7 @@
       "title": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08.",
       "tools": [
         "UNFCCC/AR-ACM0003@v02-0",
-        "UNFCCC/AR-TOOL08@v4.0.0"
+        "UNFCCC/AR-TOOL08@v04.0.0"
       ],
       "when": [
         "Fuel consumption metered or logged with auditable records.",
@@ -82,7 +82,7 @@
       "title": "Leakage from activity shifting and market effects addressed using Tool 14 default factors.",
       "tools": [
         "UNFCCC/AR-ACM0003@v02-0",
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-TOOL14@v04.2"
       ],
       "when": [
         "Leakage monitoring plan implemented with annual review.",
@@ -104,7 +104,7 @@
       "title": "Non-permanence buffer determined via Tool 15 risk analysis and recorded in registry accounts.",
       "tools": [
         "UNFCCC/AR-ACM0003@v02-0",
-        "UNFCCC/AR-TOOL15@v2.0"
+        "UNFCCC/AR-TOOL15@v02.0"
       ],
       "when": [
         "Updated risk assessment provided during verification.",
@@ -126,7 +126,7 @@
       "title": "Permanent sample plots re-measured at least every five years per Tool 16 QA/QC guidance.",
       "tools": [
         "UNFCCC/AR-ACM0003@v02-0",
-        "UNFCCC/AR-TOOL16@v1.1.0"
+        "UNFCCC/AR-TOOL16@v01.1.0"
       ],
       "when": [
         "Plot coordinates archived and accessible for re-measurement.",
@@ -148,7 +148,7 @@
       "title": "Sampling uncertainty kept below 10% at 90% confidence or conservatively adjusted using Tool 12.",
       "tools": [
         "UNFCCC/AR-ACM0003@v02-0",
-        "UNFCCC/AR-TOOL12@v3.1"
+        "UNFCCC/AR-TOOL12@v03.1"
       ],
       "when": [
         "Uncertainty worksheet provided at verification.",

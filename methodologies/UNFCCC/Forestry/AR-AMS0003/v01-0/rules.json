@@ -103,7 +103,7 @@
       "title": "Project removals calculated by summing carbon stock changes per pool minus fossil fuel and fertilizer emissions.",
       "tools": [
         "UNFCCC/AR-AMS0003@v01-0",
-        "UNFCCC/AR-TOOL08@v4.0.0"
+        "UNFCCC/AR-TOOL08@v04.0.0"
       ],
       "when": [
         "Activity data for fossil fuel and fertilizer use collected annually.",
@@ -125,7 +125,7 @@
       "title": "Leakage from activity shifting or market effects monitored and deducted using Tool 14 default factors.",
       "tools": [
         "UNFCCC/AR-AMS0003@v01-0",
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-TOOL14@v04.2"
       ],
       "when": [
         "Leakage belt activities surveyed annually.",
@@ -147,7 +147,7 @@
       "title": "Monitoring plan requires permanent plots measured every five years plus tracking of grouped participant compliance.",
       "tools": [
         "UNFCCC/AR-AMS0003@v01-0",
-        "UNFCCC/AR-TOOL16@v1.1.0"
+        "UNFCCC/AR-TOOL16@v01.1.0"
       ],
       "when": [
         "Plot measurements occur at ≤5-year intervals.",
@@ -170,7 +170,7 @@
       "title": "Data and parameters table specifies default biomass factors and sampling requirements.",
       "tools": [
         "UNFCCC/AR-AMS0003@v01-0",
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-TOOL14@v04.2"
       ],
       "when": [
         "Project data registry kept current for all parameters.",
@@ -192,7 +192,7 @@
       "title": "Uncertainty calculated per Tool 12; apply deductions when precision exceeds 10%.",
       "tools": [
         "UNFCCC/AR-AMS0003@v01-0",
-        "UNFCCC/AR-TOOL12@v3.1"
+        "UNFCCC/AR-TOOL12@v03.1"
       ],
       "when": [
         "Confidence interval wider than ±10%.",
@@ -215,7 +215,7 @@
       "title": "Non-permanence risk buffer determined via Tool 15 and updated when risk profile changes.",
       "tools": [
         "UNFCCC/AR-AMS0003@v01-0",
-        "UNFCCC/AR-TOOL15@v2.0"
+        "UNFCCC/AR-TOOL15@v02.0"
       ],
       "when": [
         "Risk assessment reviewed every verification.",
@@ -258,7 +258,7 @@
       "title": "Annual net removals computed as sum of pool changes minus leakage and emissions, divided by years between measurements.",
       "tools": [
         "UNFCCC/AR-AMS0003@v01-0",
-        "UNFCCC/AR-TOOL14@v4.2"
+        "UNFCCC/AR-TOOL14@v04.2"
       ],
       "when": [
         "Measurement interval T documented in monitoring report.",
