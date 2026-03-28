@@ -1,0 +1,47 @@
+version: 2
+methods:
+  - id: UNFCCC.Agriculture.AM0073
+    version: v01-0
+    sector: Agriculture
+    source_page: "https://cdm.unfccc.int/methodologies/DB/2N19WQ6DCXNYRNJVZQQOHG7TK0Q2D8"
+    include_text:
+      - "GHG emission reductions through multi-site manure collection and treatment in a central plant"
+      - "Project emissions from flaring"
+      - "Tool to calculate project or leakage CO2 emissions from fossil fuel combustion"
+      - "Tool to calculate the emission factor for an electricity system"
+      - "Baseline, project and/or leakage emissions from electricity consumption and monitoring of electricity generation"
+      - "Tool for the demonstration and assessment of additionality"
+    exclude_text: ["Word version", "summary", "Clarification", "approval history"]
+  - id: UNFCCC.Agriculture.ACM0010
+    version: v03-0
+    sector: Agriculture
+    source_page: "https://cdm.unfccc.int/methodologies/DB/66DCX9DCDE8UFYYIHJEY5NRPAA8WNE/view.html"
+    include_text:
+      - "Consolidated methodology for GHG emission reductions from manure management systems"
+      - "Tool to determine project emissions from flaring gases containing methane"
+      - "Tool to calculate project or leakage CO2 emissions from fossil fuel combustion"
+      - "Tool to calculate baseline, project and/or leakage emissions from electricity consumption"
+    exclude_text: ["Word version", "summary", "Clarification", "approval history"]
+  - id: UNFCCC.Agriculture.AMS-III.D
+    version: v21-0
+    sector: Agriculture
+    source_page: "https://cdm.unfccc.int/methodologies/DB/H9DVSB24O7GEZQYLYNWUX23YS6G4RC"
+    include_text:
+      - "Methane recovery in animal manure management systems"
+      - "Tool to calculate project or leakage CO2 emissions from fossil fuel combustion"
+      - "Baseline, project and/or leakage emissions from electricity consumption and monitoring of electricity generation"
+      - "Project emissions from flaring"
+      - "Project and leakage emissions from anaerobic digesters"
+    exclude_text: ["Word version", "summary", "Clarification", "approval history"]
+  - id: UNFCCC.Agriculture.AMS-III.R
+    version: v05-0
+    sector: Agriculture
+    source_page: "https://cdm.unfccc.int/methodologies/DB/Q8EMKMK67G1XIUKJFED8EVFL2VH1SN"
+    include_text:
+      - "Methane recovery from livestock and manure management at households and small farms"
+      - "Tool to calculate project or leakage CO2 emissions from fossil fuel combustion"
+      - "Baseline, project and/or leakage emissions from electricity consumption and monitoring of electricity generation"
+      - "Project and leakage emissions from anaerobic digesters"
+      - "Demonstration of additionality of small-scale project activities"
+      - "Leakage in biomass small-scale project activities"
+    exclude_text: ["Word version", "summary", "Clarification", "approval history"]

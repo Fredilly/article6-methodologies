@@ -1,7 +1,7 @@
 {
   "rules": [
     {
-      "id": "R-1-0001",
+      "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0001",
       "logic": "Project restores degraded forest lands and demonstrates additionality using the UNFCCC barrier or investment analysis.",
       "section_anchor": "scope-and-boundary",
       "section_id": "S-1",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "id": "R-1-0002",
+      "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0002",
       "logic": "Baseline net removals estimated using historical land-use/land-cover data and default parameters from Tool 02.",
       "section_anchor": "baseline-and-additionality",
       "section_id": "S-2",
@@ -30,7 +30,6 @@
       "section_stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-2",
       "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0002",
       "tags": [
-        "calc",
         "baseline"
       ],
       "text": "Baseline net GHG removals derived from historical land-use data per Tool 02 guidance.",
@@ -45,7 +44,7 @@
       ]
     },
     {
-      "id": "R-1-0003",
+      "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0003",
       "logic": "Project emissions include fossil fuel consumption, biomass burning, and fertilizer use calculated with Tool 08 default factors.",
       "section_anchor": "project-emissions-and-removals",
       "section_id": "S-3",
@@ -53,7 +52,6 @@
       "section_stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-3",
       "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0003",
       "tags": [
-        "calc",
         "emissions"
       ],
       "text": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08.",
@@ -68,7 +66,7 @@
       ]
     },
     {
-      "id": "R-1-0004",
+      "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0004",
       "logic": "Activity shifting and market leakage quantified annually with Tool 14 standardized coefficients.",
       "section_anchor": "leakage-and-displacement-risks",
       "section_id": "S-4",
@@ -90,7 +88,7 @@
       ]
     },
     {
-      "id": "R-1-0005",
+      "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0005",
       "logic": "Buffer contribution calculated with Tool 15 risk scoring and documented alongside issuance.",
       "section_anchor": "monitoring-data-and-reporting",
       "section_id": "S-5",
@@ -112,7 +110,7 @@
       ]
     },
     {
-      "id": "R-1-0006",
+      "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0006",
       "logic": "Plot network re-measured at ≤5-year intervals using standard mensuration and Tool 16 QA/QC checks.",
       "section_anchor": "monitoring-data-and-reporting",
       "section_id": "S-5",
@@ -134,7 +132,7 @@
       ]
     },
     {
-      "id": "R-1-0007",
+      "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0007",
       "logic": "Calculate combined sampling uncertainty and apply Tool 12 deductions when precision >10% at 90% confidence.",
       "section_anchor": "monitoring-data-and-reporting",
       "section_id": "S-5",
@@ -156,7 +154,7 @@
       ]
     },
     {
-      "id": "R-1-0008",
+      "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0008",
       "logic": "Monitoring reports include updated maps, field measurements, emission source logs, leakage deductions, and buffer transactions.",
       "section_anchor": "monitoring-data-and-reporting",
       "section_id": "S-5",
