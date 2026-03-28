@@ -3,6 +3,30 @@
   "items": {
     "additionalProperties": false,
     "properties": {
+      "display": {
+        "additionalProperties": false,
+        "properties": {
+          "logic": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "when": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
       "id": {
         "pattern": "^[A-Za-z0-9]+\\.[A-Za-z0-9]+\\.[A-Za-z0-9-]+\\.[vV][0-9][A-Za-z0-9\\.-]*\\.R-\\d+(?:-\\d+)*-\\d{4}$",
         "type": "string"
@@ -72,6 +96,58 @@
             },
             "type": "array"
           },
+          "locators": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "hint": {
+                  "type": "string"
+                },
+                "pages": {
+                  "items": {
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "quote": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type",
+                "quote"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "methodology": {
+            "type": "string"
+          },
+          "pages": {
+            "items": {
+              "minimum": 1,
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          "primary_section": {
+            "pattern": "^S-\\d+(?:-\\d+)*$",
+            "type": "string"
+          },
+          "section_anchor": {
+            "type": "string"
+          },
+          "section_number": {
+            "type": "string"
+          },
+          "section_stable_id": {
+            "type": "string"
+          },
           "sections": {
             "items": {
               "pattern": "^S-\\d+(?:-\\d+)*$",
@@ -92,6 +168,9 @@
           "sections"
         ],
         "type": "object"
+      },
+      "stable_id": {
+        "type": "string"
       },
       "summary": {
         "minLength": 1,

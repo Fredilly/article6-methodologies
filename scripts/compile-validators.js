@@ -3,6 +3,7 @@
 // Output: scripts/validators/{meta,sections,rules}.cjs
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 
 const Ajv = require('ajv');
 const addFormats = require('ajv-formats');
@@ -33,12 +34,22 @@ function buildOne(name, schemaPath) {
   return out;
 }
 
+function updateSchemaHashRecord() {
+  const schemaFiles = Object.values(SCHEMAS)
+    .filter((p) => fs.existsSync(p))
+    .sort();
+  const payload = schemaFiles.map((p) => `${p}\n${fs.readFileSync(p, 'utf8')}`).join('\n');
+  const digest = crypto.createHash('sha256').update(payload).digest('hex');
+  fs.writeFileSync(path.join(OUTDIR, 'schemas.sha256'), `${digest}\n`, 'utf8');
+}
+
 fs.mkdirSync(OUTDIR, { recursive: true });
 
 const built = [];
 for (const [name, p] of Object.entries(SCHEMAS)) {
   if (fs.existsSync(p)) built.push(buildOne(name, p));
 }
+updateSchemaHashRecord();
 
 console.log('OK: wrote standalone validators:');
 for (const f of built) console.log(' -', path.relative(ROOT, f));

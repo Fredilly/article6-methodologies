@@ -4,8 +4,8 @@
     "sections_json_sha256": "71e76af99f13c08c01c7ae879f476ac55557a93dd954a8c20027c5079d935c91"
   },
   "automation": {
-    "repo_commit": "e5fcdb1d30308fba0e6479d54b6ffa8ed593fa4a",
-    "scripts_manifest_sha256": "602e9c1619789e067fff405dddf9cf493ad2620fcbfc8b747607a1f4b4a47625"
+    "repo_commit": "9afe4ce1620cdc2fc5e8a2273d0f2a4dbd5ba3fc",
+    "scripts_manifest_sha256": "88bcdd99683b2d97f4ba0ff9265507a767c809b9f97841110494c1b284a9c59c"
   },
   "domain": "Stub",
   "files": [
@@ -33,6 +33,16 @@
         "url": null
       }
     ]
+  },
+  "relationships": {
+    "version": {
+      "family": "GoldStandard.LUF.GS-00XX",
+      "lineage": [
+        "v1-0"
+      ],
+      "next_version": null,
+      "previous_version": null
+    }
   },
   "standard": "Stub",
   "title": "Stub methodology",

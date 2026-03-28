@@ -1,11 +1,11 @@
 {
   "audit_hashes": {
-    "rules_json_sha256": "41fa1a2bd574636a08da21c8a0e9dfc226972a3b2ed7beb4d282fcb1a99ff909",
-    "sections_json_sha256": "4b9f1e1c6c2e57a48e9119a63c0c0c5b7cc0bf87ee041e679acadd0bd3e76b60"
+    "rules_json_sha256": "598c64ae936339dae76f92e582cbdfe1c6902b1d5a515f6c150513d70aa150c3",
+    "sections_json_sha256": "0a986aaf78179def0122425c7cc9ea8069861850a4aa6f847aff8ef688bb0e8f"
   },
   "automation": {
-    "repo_commit": "e5fcdb1d30308fba0e6479d54b6ffa8ed593fa4a",
-    "scripts_manifest_sha256": "602e9c1619789e067fff405dddf9cf493ad2620fcbfc8b747607a1f4b4a47625"
+    "repo_commit": "9afe4ce1620cdc2fc5e8a2273d0f2a4dbd5ba3fc",
+    "scripts_manifest_sha256": "88bcdd99683b2d97f4ba0ff9265507a767c809b9f97841110494c1b284a9c59c"
   },
   "provenance": {
     "author": "Fred Egbuedike",
@@ -71,6 +71,18 @@
         "url": null
       }
     ]
+  },
+  "relationships": {
+    "version": {
+      "family": "UNFCCC.Forestry.AR-AM0014",
+      "lineage": [
+        "v01-0-0",
+        "v02-0-0",
+        "v03-0"
+      ],
+      "next_version": null,
+      "previous_version": "v02-0-0"
+    }
   },
   "stage": "staging"
 }

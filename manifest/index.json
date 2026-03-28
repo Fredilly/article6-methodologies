@@ -1241,6 +1241,248 @@
     "id": "R-1-0001",
     "rule_id": "R-1-0001",
     "methodology": "AR-AM0014",
+    "version": "v01-0-0",
+    "rule": "Projects reforest lands without forest cover since 1989 and comply with national forest definitions.",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "8325d2c2acc25b29e276cf5c2fa4188f7bdaf93b9b0c477664c9a354e4071ca0",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0002",
+    "rule_id": "R-1-0002",
+    "methodology": "AR-AM0014",
+    "version": "v01-0-0",
+    "rule": "Baseline biomass estimated using IPCC defaults or site-specific sampling following Tool 02.",
+    "tags": [
+      "calc",
+      "baseline"
+    ],
+    "sha256": "ee2d6ee8abf583705c655b42a02d1ad5357eae3ee11e40bce6682ac114275e54",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-1-0003",
+    "rule_id": "R-1-0003",
+    "methodology": "AR-AM0014",
+    "version": "v01-0-0",
+    "rule": "Net anthropogenic removals equal project removals minus baseline emissions and leakage.",
+    "tags": [
+      "equation"
+    ],
+    "sha256": "a383bb5f48fdd8bed37e4530aed83fd5e7b9e43231815ff1914228d7e76f1938",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-1-0004",
+    "rule_id": "R-1-0004",
+    "methodology": "AR-AM0014",
+    "version": "v01-0-0",
+    "rule": "Activity shifting leakage quantified annually using Tool 14 and deducted from net removals.",
+    "tags": [
+      "leakage"
+    ],
+    "sha256": "d08cea9473b9e4bb3b639a198f3c945015d557842004f263e6b055a6eb29066a",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-1-0005",
+    "rule_id": "R-1-0005",
+    "methodology": "AR-AM0014",
+    "version": "v01-0-0",
+    "rule": "Non-permanence risks addressed through buffer contributions per Tool 15 guidance.",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "31e9e094fae22f7f103800d0ff8b8a634f818e57ff03692a9c5542b49787ab5c",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0006",
+    "rule_id": "R-1-0006",
+    "methodology": "AR-AM0014",
+    "version": "v01-0-0",
+    "rule": "Field biomass measurements conducted at least every five years using permanent plots.",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "63ec85acd9f599d7563b46b3872ed7ed19d5e8e1e7c2f17347d29099a22be65e",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0007",
+    "rule_id": "R-1-0007",
+    "methodology": "AR-AM0014",
+    "version": "v01-0-0",
+    "rule": "Sampling uncertainty above 10% addressed with Tool 12 conservative adjustments.",
+    "tags": [
+      "uncertainty"
+    ],
+    "sha256": "dfa248d956e092a2efb8cdf4429bedf593e91ee6186d6a6fb1554e8d8341e5d0",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0008",
+    "rule_id": "R-1-0008",
+    "methodology": "AR-AM0014",
+    "version": "v01-0-0",
+    "rule": "Monitoring reports consolidate maps, inventory data, leakage deductions, and QA/QC evidence.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "8634f721c43e7646acc7bb1e5fd2af32de753cbaaec269d8618854dd4f5e07f1",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0001",
+    "rule_id": "R-1-0001",
+    "methodology": "AR-AM0014",
+    "version": "v02-0-0",
+    "rule": "Projects reforest lands without forest cover since 1989 and comply with national forest definitions.",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "8e22791a6d2f8040a87a3aba72a4f87d9675b9c047a0ae3c39a310708ea68660",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0002",
+    "rule_id": "R-1-0002",
+    "methodology": "AR-AM0014",
+    "version": "v02-0-0",
+    "rule": "Baseline biomass estimated using IPCC defaults or site-specific sampling following Tool 02.",
+    "tags": [
+      "calc",
+      "baseline"
+    ],
+    "sha256": "8413316f37eb0d8e148615c73ae4bf34519c0c74a49a7cebf3abdd997652d7a4",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-1-0003",
+    "rule_id": "R-1-0003",
+    "methodology": "AR-AM0014",
+    "version": "v02-0-0",
+    "rule": "Net anthropogenic removals equal project removals minus baseline emissions and leakage.",
+    "tags": [
+      "equation"
+    ],
+    "sha256": "eeb5d2640da9799b96c014dcc97aa674ca9acbb9d5319301986c10b9dcc80760",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-1-0004",
+    "rule_id": "R-1-0004",
+    "methodology": "AR-AM0014",
+    "version": "v02-0-0",
+    "rule": "Activity shifting leakage quantified annually using Tool 14 and deducted from net removals.",
+    "tags": [
+      "leakage"
+    ],
+    "sha256": "fe074b4c07590df37ab1560ae7e68843765dd4a8293d1cc8629b63e0011bad49",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-1-0005",
+    "rule_id": "R-1-0005",
+    "methodology": "AR-AM0014",
+    "version": "v02-0-0",
+    "rule": "Non-permanence risks addressed through buffer contributions per Tool 15 guidance.",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "3d876ab92d4f925edc27fafd19dbdb120c96f6766830bcfff99606fbd354b864",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0006",
+    "rule_id": "R-1-0006",
+    "methodology": "AR-AM0014",
+    "version": "v02-0-0",
+    "rule": "Field biomass measurements conducted at least every five years using permanent plots.",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "7d7d654273a489a558d19944d1df22c94975418daf2b4040cd91e156cea92925",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0007",
+    "rule_id": "R-1-0007",
+    "methodology": "AR-AM0014",
+    "version": "v02-0-0",
+    "rule": "Sampling uncertainty above 10% addressed with Tool 12 conservative adjustments.",
+    "tags": [
+      "uncertainty"
+    ],
+    "sha256": "542871daf1ab93b1b11f8713b93b6f3ac63143b4bd83ef2cf8d5fecdacd546f9",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0008",
+    "rule_id": "R-1-0008",
+    "methodology": "AR-AM0014",
+    "version": "v02-0-0",
+    "rule": "Monitoring reports consolidate maps, inventory data, leakage deductions, and QA/QC evidence.",
+    "tags": [
+      "reporting"
+    ],
+    "sha256": "bf8d70c4a3589a646d45bcd6840b08f57df9d2130a62516455579eed0ae1841f",
+    "provider": "UNFCCC",
+    "category": "Forestry",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0001",
+    "rule_id": "R-1-0001",
+    "methodology": "AR-AM0014",
     "version": "v03-0",
     "rule": "Projects reforest lands without forest cover since 1989 and comply with national forest definitions.",
     "tags": [
@@ -1761,247 +2003,5 @@
     "category": "Forestry",
     "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
     "sectionId": "S-13"
-  },
-  {
-    "id": "R-1-0001",
-    "rule_id": "R-1-0001",
-    "methodology": "AR-AM0014",
-    "version": "v02-0-0",
-    "rule": "Projects reforest lands without forest cover since 1989 and comply with national forest definitions.",
-    "tags": [
-      "eligibility"
-    ],
-    "sha256": "73415d3b1d58fb838bfd3cc188231ef779ef2a2560a5a66c37808395886dd301",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
-    "sectionId": "S-1"
-  },
-  {
-    "id": "R-1-0002",
-    "rule_id": "R-1-0002",
-    "methodology": "AR-AM0014",
-    "version": "v02-0-0",
-    "rule": "Baseline biomass estimated using IPCC defaults or site-specific sampling following Tool 02.",
-    "tags": [
-      "calc",
-      "baseline"
-    ],
-    "sha256": "cdaf04f3bed14be94067ef94f2159d3d4f6b71ea0f2d2512282ea61b5d4aefb5",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
-    "sectionId": "S-2"
-  },
-  {
-    "id": "R-1-0003",
-    "rule_id": "R-1-0003",
-    "methodology": "AR-AM0014",
-    "version": "v02-0-0",
-    "rule": "Net anthropogenic removals equal project removals minus baseline emissions and leakage.",
-    "tags": [
-      "equation"
-    ],
-    "sha256": "4f95a0ec1cf79744f7e5eae4fd1f8d8b4db5d1dada39095018a1dae0b8cf6f07",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
-    "sectionId": "S-3"
-  },
-  {
-    "id": "R-1-0004",
-    "rule_id": "R-1-0004",
-    "methodology": "AR-AM0014",
-    "version": "v02-0-0",
-    "rule": "Activity shifting leakage quantified annually using Tool 14 and deducted from net removals.",
-    "tags": [
-      "leakage"
-    ],
-    "sha256": "2ada7e76aa6a323502c4db5c983c7b53a13aabac17b84173fc8b430e262b202c",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
-    "sectionId": "S-4"
-  },
-  {
-    "id": "R-1-0005",
-    "rule_id": "R-1-0005",
-    "methodology": "AR-AM0014",
-    "version": "v02-0-0",
-    "rule": "Non-permanence risks addressed through buffer contributions per Tool 15 guidance.",
-    "tags": [
-      "monitoring"
-    ],
-    "sha256": "a8f77f6e8f00f6ef02c0f25722cc224f1239788e8e91966ee00a4e84c60d866b",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
-    "sectionId": "S-5"
-  },
-  {
-    "id": "R-1-0006",
-    "rule_id": "R-1-0006",
-    "methodology": "AR-AM0014",
-    "version": "v02-0-0",
-    "rule": "Field biomass measurements conducted at least every five years using permanent plots.",
-    "tags": [
-      "monitoring"
-    ],
-    "sha256": "e8d04cccdef2d3e9f309ecfc105e1276519b0eb0c6bb4e1d0a1016775118aacd",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
-    "sectionId": "S-5"
-  },
-  {
-    "id": "R-1-0007",
-    "rule_id": "R-1-0007",
-    "methodology": "AR-AM0014",
-    "version": "v02-0-0",
-    "rule": "Sampling uncertainty above 10% addressed with Tool 12 conservative adjustments.",
-    "tags": [
-      "uncertainty"
-    ],
-    "sha256": "1de71d3735f225ca725ace153b75a3c182a77a35bd4b4454ad9cbca01f4f92e5",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
-    "sectionId": "S-5"
-  },
-  {
-    "id": "R-1-0008",
-    "rule_id": "R-1-0008",
-    "methodology": "AR-AM0014",
-    "version": "v02-0-0",
-    "rule": "Monitoring reports consolidate maps, inventory data, leakage deductions, and QA/QC evidence.",
-    "tags": [
-      "reporting"
-    ],
-    "sha256": "20392924b5cb87f77dc2c9c8e80fd0e6a07b7c42f36f62c5e6719bcb79139253",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
-    "sectionId": "S-5"
-  },
-  {
-    "id": "R-1-0001",
-    "rule_id": "R-1-0001",
-    "methodology": "AR-AM0014",
-    "version": "v01-0-0",
-    "rule": "Projects reforest lands without forest cover since 1989 and comply with national forest definitions.",
-    "tags": [
-      "eligibility"
-    ],
-    "sha256": "73415d3b1d58fb838bfd3cc188231ef779ef2a2560a5a66c37808395886dd301",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
-    "sectionId": "S-1"
-  },
-  {
-    "id": "R-1-0002",
-    "rule_id": "R-1-0002",
-    "methodology": "AR-AM0014",
-    "version": "v01-0-0",
-    "rule": "Baseline biomass estimated using IPCC defaults or site-specific sampling following Tool 02.",
-    "tags": [
-      "calc",
-      "baseline"
-    ],
-    "sha256": "cdaf04f3bed14be94067ef94f2159d3d4f6b71ea0f2d2512282ea61b5d4aefb5",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
-    "sectionId": "S-2"
-  },
-  {
-    "id": "R-1-0003",
-    "rule_id": "R-1-0003",
-    "methodology": "AR-AM0014",
-    "version": "v01-0-0",
-    "rule": "Net anthropogenic removals equal project removals minus baseline emissions and leakage.",
-    "tags": [
-      "equation"
-    ],
-    "sha256": "4f95a0ec1cf79744f7e5eae4fd1f8d8b4db5d1dada39095018a1dae0b8cf6f07",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
-    "sectionId": "S-3"
-  },
-  {
-    "id": "R-1-0004",
-    "rule_id": "R-1-0004",
-    "methodology": "AR-AM0014",
-    "version": "v01-0-0",
-    "rule": "Activity shifting leakage quantified annually using Tool 14 and deducted from net removals.",
-    "tags": [
-      "leakage"
-    ],
-    "sha256": "2ada7e76aa6a323502c4db5c983c7b53a13aabac17b84173fc8b430e262b202c",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
-    "sectionId": "S-4"
-  },
-  {
-    "id": "R-1-0005",
-    "rule_id": "R-1-0005",
-    "methodology": "AR-AM0014",
-    "version": "v01-0-0",
-    "rule": "Non-permanence risks addressed through buffer contributions per Tool 15 guidance.",
-    "tags": [
-      "monitoring"
-    ],
-    "sha256": "a8f77f6e8f00f6ef02c0f25722cc224f1239788e8e91966ee00a4e84c60d866b",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
-    "sectionId": "S-5"
-  },
-  {
-    "id": "R-1-0006",
-    "rule_id": "R-1-0006",
-    "methodology": "AR-AM0014",
-    "version": "v01-0-0",
-    "rule": "Field biomass measurements conducted at least every five years using permanent plots.",
-    "tags": [
-      "monitoring"
-    ],
-    "sha256": "e8d04cccdef2d3e9f309ecfc105e1276519b0eb0c6bb4e1d0a1016775118aacd",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
-    "sectionId": "S-5"
-  },
-  {
-    "id": "R-1-0007",
-    "rule_id": "R-1-0007",
-    "methodology": "AR-AM0014",
-    "version": "v01-0-0",
-    "rule": "Sampling uncertainty above 10% addressed with Tool 12 conservative adjustments.",
-    "tags": [
-      "uncertainty"
-    ],
-    "sha256": "1de71d3735f225ca725ace153b75a3c182a77a35bd4b4454ad9cbca01f4f92e5",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
-    "sectionId": "S-5"
-  },
-  {
-    "id": "R-1-0008",
-    "rule_id": "R-1-0008",
-    "methodology": "AR-AM0014",
-    "version": "v01-0-0",
-    "rule": "Monitoring reports consolidate maps, inventory data, leakage deductions, and QA/QC evidence.",
-    "tags": [
-      "reporting"
-    ],
-    "sha256": "20392924b5cb87f77dc2c9c8e80fd0e6a07b7c42f36f62c5e6719bcb79139253",
-    "provider": "UNFCCC",
-    "category": "Forestry",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
-    "sectionId": "S-5"
   }
 ]
