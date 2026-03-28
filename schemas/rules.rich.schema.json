@@ -256,6 +256,26 @@
       "section_context": {
         "additionalProperties": false,
         "properties": {
+          "anchor": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "lineage": {
+            "items": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "page_end": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "page_start": {
+            "minimum": 1,
+            "type": "integer"
+          },
           "section_id": {
             "pattern": "^S-\\d+(?:-\\d+)*$",
             "type": "string"

@@ -53,6 +53,14 @@
         },
         "type": "array"
       },
+      "page_end": {
+        "minimum": 1,
+        "type": "integer"
+      },
+      "page_start": {
+        "minimum": 1,
+        "type": "integer"
+      },
       "provenance": {
         "additionalProperties": false,
         "properties": {
@@ -74,6 +82,14 @@
       },
       "section_number": {
         "type": "string"
+      },
+      "lineage": {
+        "items": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "minItems": 1,
+        "type": "array"
       },
       "stable_id": {
         "type": "string"

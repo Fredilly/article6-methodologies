@@ -96,6 +96,14 @@ function collectPages(locators) {
   return [...new Set((locators || []).flatMap((locator) => Array.isArray(locator.pages) ? locator.pages : []))].sort((a, b) => a - b);
 }
 
+function pageBounds(pages) {
+  if (!Array.isArray(pages) || pages.length === 0) return {};
+  return {
+    page_start: pages[0],
+    page_end: pages[pages.length - 1]
+  };
+}
+
 function loadAnchors(methodDir) {
   const candidates = ['anchors.real.json', 'anchors.example.json']
     .map((name) => path.join(methodDir, name))
@@ -142,11 +150,15 @@ function enrichMethod(methodDir) {
       ...((anchors.sections || {})[section.id] || [])
     ]);
     const pages = collectPages(locators);
+    const pageRange = pageBounds(pages);
+    const lineage = Array.isArray(section.lineage) && section.lineage.length > 0 ? [...section.lineage] : undefined;
     const enriched = {
       ...section,
       anchor,
       locators,
       pages,
+      ...pageRange,
+      ...(lineage ? { lineage } : {}),
       section_number: number || undefined,
       stable_id: stableId
     };
@@ -155,6 +167,9 @@ function enrichMethod(methodDir) {
     if (pages.length === 0) delete enriched.pages;
     sectionMap.set(section.id, {
       anchor,
+      lineage,
+      pageEnd: pageRange.page_end,
+      pageStart: pageRange.page_start,
       number,
       stableId,
       title: section.title
@@ -188,10 +203,23 @@ function enrichMethod(methodDir) {
     if (locators.length > 0) refs.locators = locators;
     if (pages.length > 0) refs.pages = pages;
     const stableId = `${info.methodologyId}.${rule.id.split('.').slice(-1)[0]}`;
+    const sectionContext = sectionInfo
+      ? {
+        ...(rule.section_context || {}),
+        section_id: primarySectionId,
+        section_ref: primarySectionId,
+        section_title: sectionInfo.title,
+        ...(sectionInfo.anchor ? { anchor: sectionInfo.anchor } : {}),
+        ...(sectionInfo.pageStart ? { page_start: sectionInfo.pageStart } : {}),
+        ...(sectionInfo.pageEnd ? { page_end: sectionInfo.pageEnd } : {}),
+        ...(sectionInfo.lineage ? { lineage: [...sectionInfo.lineage] } : {})
+      }
+      : rule.section_context;
     return {
       ...rule,
       display,
       refs,
+      ...(sectionContext ? { section_context: sectionContext } : {}),
       stable_id: stableId
     };
   });
@@ -252,9 +280,11 @@ function applyVersionRelationships(methodDirs) {
 }
 
 function main() {
-  const methodDirs = listMethodDirs(METHODOLOGIES_ROOT);
+  const args = process.argv.slice(2);
+  const methodDirs = (args.length > 0 ? args.map((value) => path.resolve(value)) : listMethodDirs(METHODOLOGIES_ROOT))
+    .sort();
   for (const methodDir of methodDirs) enrichMethod(methodDir);
-  applyVersionRelationships(methodDirs);
+  if (args.length === 0) applyVersionRelationships(methodDirs);
   console.log(`OK: enriched ${methodDirs.length} methodology output folder(s).`);
 }
 
