@@ -1,7 +1,11 @@
 {
   "audit_hashes": {
-    "rules_json_sha256": "41fa1a2bd574636a08da21c8a0e9dfc226972a3b2ed7beb4d282fcb1a99ff909",
-    "sections_json_sha256": "4b9f1e1c6c2e57a48e9119a63c0c0c5b7cc0bf87ee041e679acadd0bd3e76b60"
+    "rules_json_sha256": "e3c74df7c20e58e132181a200a206446feb66a1872b21b5c4443c371c6412c8e",
+    "sections_json_sha256": "8127757d0817ac26cb51574949d4377925891d93bd0db61aad8b7614982d1570"
+  },
+  "automation": {
+    "repo_commit": "9afe4ce1620cdc2fc5e8a2273d0f2a4dbd5ba3fc",
+    "scripts_manifest_sha256": "88bcdd99683b2d97f4ba0ff9265507a767c809b9f97841110494c1b284a9c59c"
   },
   "provenance": {
     "author": null,
@@ -29,9 +33,17 @@
       }
     ]
   },
-  "stage": "staging",
-  "automation": {
-    "scripts_manifest_sha256": "602e9c1619789e067fff405dddf9cf493ad2620fcbfc8b747607a1f4b4a47625",
-    "repo_commit": "e5fcdb1d30308fba0e6479d54b6ffa8ed593fa4a"
-  }
+  "relationships": {
+    "version": {
+      "family": "UNFCCC.Forestry.AR-AM0014",
+      "lineage": [
+        "v01-0-0",
+        "v02-0-0",
+        "v03-0"
+      ],
+      "next_version": "v02-0-0",
+      "previous_version": null
+    }
+  },
+  "stage": "staging"
 }

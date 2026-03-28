@@ -1,0 +1,32 @@
+{
+  "roadmap": "requirement-coverage-support",
+  "goal": "Make methodology outputs rich enough to support requirement-to-evidence reconciliation in the app.",
+  "last_updated_at": "2026-03-28T00:00:00Z",
+  "phases": [
+    {
+      "id": "phase-1-richer-rule-detail",
+      "name": "Richer rule detail",
+      "status": "in_progress"
+    },
+    {
+      "id": "phase-2-stable-section-page-anchor-linkage",
+      "name": "Stable section/page/anchor linkage",
+      "status": "in_progress"
+    },
+    {
+      "id": "phase-3-methodology-tool-module-relationships",
+      "name": "Methodology tool/module relationships",
+      "status": "in_progress"
+    },
+    {
+      "id": "phase-4-version-relationship-diff-support",
+      "name": "Version relationship + diff support",
+      "status": "in_progress"
+    },
+    {
+      "id": "phase-5-expected-evidence-metadata-support",
+      "name": "Optional expected-evidence metadata support",
+      "status": "planned"
+    }
+  ]
+}
