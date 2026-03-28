@@ -2,27 +2,36 @@
   "rules": [
     {
       "id": "R-0001-0004",
+      "logic": "Baseline",
+      "section_anchor": "the-project-boundary-is-the-physical-geographical-site-of-the-methane-recovery-facility",
       "section_id": "S-0004",
       "tags": [
         "parameter"
       ],
-      "text": "Baseline"
+      "text": "Baseline",
+      "title": "Baseline"
     },
     {
       "id": "R-0001-0008",
+      "logic": "Monitoring",
+      "section_anchor": "no-leakage-calculation-is-required",
       "section_id": "S-0008",
       "tags": [
         "monitoring"
       ],
-      "text": "Monitoring"
+      "text": "Monitoring",
+      "title": "Monitoring"
     },
     {
       "id": "R-0001-0010",
+      "logic": "fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
+      "section_anchor": "regular-maintenance-should-ensure-optimal-operation-of-flares-the-flare-efficiency-defined-as-the",
       "section_id": "S-0010",
       "tags": [
         "monitoring"
       ],
-      "text": "fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored."
+      "text": "fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
+      "title": "fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored."
     }
   ]
 }

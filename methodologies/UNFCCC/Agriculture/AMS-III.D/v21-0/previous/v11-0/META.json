@@ -4,8 +4,8 @@
     "created_by": "ingest.sh"
   },
   "audit_hashes": {
-    "rules_json_sha256": "c958779b8f91922551c0fa1da1e6dde0e66916ed68f9cd8d6091922f79646e92",
-    "sections_json_sha256": "f9d1a81313e2d0baa37eed7ba8830fbde56c6c21f39dd18a0320d607c52fa50f",
+    "rules_json_sha256": "6dbe071a78a01da136b4688011bd29cc8e7c07b246a8e8c158d86ba62fc56af5",
+    "sections_json_sha256": "83771c46c3733f3a0282c18d50c7dcf6893a0efd3c55bc7fd67fd5f8521ce3c3",
     "source_pdf_sha256": "3b46c4ecb8469d61f315c8c64f0d445d8ce6f1f86f52509e7795a13070a740c3"
   },
   "automation": {

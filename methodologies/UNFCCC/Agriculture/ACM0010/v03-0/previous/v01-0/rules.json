@@ -2,187 +2,256 @@
   "rules": [
     {
       "id": "R-0001-0002",
+      "logic": "Approved consolidated baseline methodology ACM0010",
+      "section_anchor": "september-2006",
       "section_id": "S-0002",
       "tags": [
         "parameter"
       ],
-      "text": "Approved consolidated baseline methodology ACM0010"
+      "text": "Approved consolidated baseline methodology ACM0010",
+      "title": "Approved consolidated baseline methodology ACM0010"
     },
     {
       "id": "R-0001-0004",
+      "logic": "• The annual average temperature in the site where the anaerobic manure treatment facility in the baseline existed is higher than 5°C.",
+      "section_anchor": "september-2006-2",
       "section_id": "S-0004",
       "tags": [
         "parameter"
       ],
-      "text": "• The annual average temperature in the site where the anaerobic manure treatment facility in the baseline existed is higher than 5°C."
+      "text": "• The annual average temperature in the site where the anaerobic manure treatment facility in the baseline existed is higher than 5°C.",
+      "title": "• The annual average temperature in the site where the anaerobic manure treatment facility in the baseline existed is higher than 5°C."
     },
     {
       "id": "R-0001-0011",
+      "logic": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated.",
+      "section_anchor": "irr",
       "section_id": "S-0011",
       "tags": [
         "parameter"
       ],
-      "text": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated."
+      "text": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated.",
+      "title": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated."
     },
     {
       "id": "R-0001-0035",
+      "logic": "BEN2O,y Annual baseline N2O emissions in t CO2e / yr GWPN2O Global Warming Potential (GWP) for N2O.",
+      "section_anchor": "september-2006-11",
       "section_id": "S-0035",
       "tags": [
         "parameter"
       ],
-      "text": "BEN2O,y Annual baseline N2O emissions in t CO2e / yr GWPN2O Global Warming Potential (GWP) for N2O."
+      "text": "BEN2O,y Annual baseline N2O emissions in t CO2e / yr GWPN2O Global Warming Potential (GWP) for N2O.",
+      "title": "BEN2O,y Annual baseline N2O emissions in t CO2e / yr GWPN2O Global Warming Potential (GWP) for N2O."
     },
     {
       "id": "R-0001-0039",
+      "logic": "small-scale project activity (15 MW), the method for the calculation of the grid emission factor in the simplified baseline methodology for small-scale CDM project activity AMS.I.D could be used.",
+      "section_anchor": "september-2006-13",
       "section_id": "S-0039",
       "tags": [
         "parameter"
       ],
-      "text": "small-scale project activity (15 MW), the method for the calculation of the grid emission factor in the simplified baseline methodology for small-scale CDM project activity AMS.I.D could be used."
+      "text": "small-scale project activity (15 MW), the method for the calculation of the grid emission factor in the simplified baseline methodology for small-scale CDM project activity AMS.I.D could be used.",
+      "title": "small-scale project activity (15 MW), the method for the calculation of the grid emission factor in the simplified baseline methodology for small-scale CDM project activity AMS.I.D could be used."
     },
     {
       "id": "R-0001-0042",
+      "logic": "LFAD Methane leakage from Anaerobic digesters, default of 0.15 multiplied by methane content of biogas.",
+      "section_anchor": "september-2006-14",
       "section_id": "S-0042",
       "tags": [
         "leakage"
       ],
-      "text": "LFAD Methane leakage from Anaerobic digesters, default of 0.15 multiplied by methane content of biogas."
+      "text": "LFAD Methane leakage from Anaerobic digesters, default of 0.15 multiplied by methane content of biogas.",
+      "title": "LFAD Methane leakage from Anaerobic digesters, default of 0.15 multiplied by methane content of biogas."
     },
     {
       "id": "R-0002-0042",
+      "logic": "LT Index for livestock type B0,LT CH4 production capacity from manure for livestock type LT, in m3 CH4/kg-VS, to be chosen based on procedure provided for in the baseline methodology section.",
+      "section_anchor": "september-2006-14",
       "section_id": "S-0042",
       "tags": [
         "parameter"
       ],
-      "text": "LT Index for livestock type B0,LT CH4 production capacity from manure for livestock type LT, in m3 CH4/kg-VS, to be chosen based on procedure provided for in the baseline methodology section."
+      "text": "LT Index for livestock type B0,LT CH4 production capacity from manure for livestock type LT, in m3 CH4/kg-VS, to be chosen based on procedure provided for in the baseline methodology section.",
+      "title": "LT Index for livestock type B0,LT CH4 production capacity from manure for livestock type LT, in m3 CH4/kg-VS, to be chosen based on procedure provided for in the baseline methodology section."
     },
     {
       "id": "R-0001-0053",
+      "logic": "• In case the electricity is generated in an on-site fossil fuel fired power plant in the baseline, the default emission factor for a diesel generator with a capacity of more than 200 kW for small-scale project activities should be used (0.8 tCO2/MWh, see Table I.D.1 in the simplified baseline and monitoring methodology AMS.I.D for selected small-scale CDM project activity categories).",
+      "section_anchor": "september-2006-17",
       "section_id": "S-0053",
       "tags": [
         "parameter"
       ],
-      "text": "• In case the electricity is generated in an on-site fossil fuel fired power plant in the baseline, the default emission factor for a diesel generator with a capacity of more than 200 kW for small-scale project activities should be used ..."
+      "text": "• In case the electricity is generated in an on-site fossil fuel fired power plant in the baseline, the default emission factor for a diesel generator with a capacity of more than 200 kW for small-scale project activities should be used ...",
+      "title": "• In case the electricity is generated in an on-site fossil fuel fired power plant in the baseline, the default emission factor for a diesel generator with a capacity of more than 200 kW for small-scale project activities should be used ..."
     },
     {
       "id": "R-0001-0056",
+      "logic": "RN,n Fraction of NEX in manure waste that is reduced in the Baseline AWMS.",
+      "section_anchor": "guidelines-can-be-used",
       "section_id": "S-0056",
       "tags": [
         "parameter"
       ],
-      "text": "RN,n Fraction of NEX in manure waste that is reduced in the Baseline AWMS."
+      "text": "RN,n Fraction of NEX in manure waste that is reduced in the Baseline AWMS.",
+      "title": "RN,n Fraction of NEX in manure waste that is reduced in the Baseline AWMS."
     },
     {
       "id": "R-0001-0073",
+      "logic": "• Flare operation, i.e., time of the year when the flare is operational when the biogas is flowing through the flare; • Concentration of methane in biogas at outlet of anaerobic digester; • Concentration of methane in flue gases of the flare; • Biogas leakage in project: through leaks in the pipeline during transportation of biogas.",
+      "section_anchor": "september-2006-25",
       "section_id": "S-0073",
       "tags": [
         "leakage"
       ],
-      "text": "• Flare operation, i.e., time of the year when the flare is operational when the biogas is flowing through the flare; • Concentration of methane in biogas at outlet of anaerobic digester; • Concentration of methane in flue gases of the f..."
+      "text": "• Flare operation, i.e., time of the year when the flare is operational when the biogas is flowing through the flare; • Concentration of methane in biogas at outlet of anaerobic digester; • Concentration of methane in flue gases of the f...",
+      "title": "• Flare operation, i.e., time of the year when the flare is operational when the biogas is flowing through the flare; • Concentration of methane in biogas at outlet of anaerobic digester; • Concentration of methane in flue gases of the f..."
     },
     {
       "id": "R-0001-0075",
+      "logic": "Leakage: • Nitrogen concentration and COD in waste water/sludge disposed outside the project boundary;",
+      "section_anchor": "september-2006-26",
       "section_id": "S-0075",
       "tags": [
         "leakage"
       ],
-      "text": "Leakage: • Nitrogen concentration and COD in waste water/sludge disposed outside the project boundary;"
+      "text": "Leakage: • Nitrogen concentration and COD in waste water/sludge disposed outside the project boundary;",
+      "title": "Leakage: • Nitrogen concentration and COD in waste water/sludge disposed outside the project boundary;"
     },
     {
       "id": "R-0001-0077",
+      "logic": "Data and parameters monitored",
+      "section_anchor": "september-2006-27",
       "section_id": "S-0077",
       "tags": [
         "monitoring"
       ],
-      "text": "Data and parameters monitored"
+      "text": "Data and parameters monitored",
+      "title": "Data and parameters monitored"
     },
     {
       "id": "R-0001-0079",
+      "logic": "QA/QC procedures: --- Any comment: If it is required to use developed country VS values, the following should be monitored: - Genetic source of the production operations livestock originate from an Annex I Party; - The formulated feed rations (FFR).",
+      "section_anchor": "september-2006-28",
       "section_id": "S-0079",
       "tags": [
         "monitoring"
       ],
-      "text": "QA/QC procedures: --- Any comment: If it is required to use developed country VS values, the following should be monitored: - Genetic source of the production operations livestock originate from an Annex I Party; - The formulated feed ra..."
+      "text": "QA/QC procedures: --- Any comment: If it is required to use developed country VS values, the following should be monitored: - Genetic source of the production operations livestock originate from an Annex I Party; - The formulated feed ra...",
+      "title": "QA/QC procedures: --- Any comment: If it is required to use developed country VS values, the following should be monitored: - Genetic source of the production operations livestock originate from an Annex I Party; - The formulated feed ra..."
     },
     {
       "id": "R-0001-0081",
+      "logic": "QA/QC procedures: --- Any comment: Calculated as per procedure described in the baseline methodology.",
+      "section_anchor": "september-2006-29",
       "section_id": "S-0081",
       "tags": [
         "parameter"
       ],
-      "text": "QA/QC procedures: --- Any comment: Calculated as per procedure described in the baseline methodology."
+      "text": "QA/QC procedures: --- Any comment: Calculated as per procedure described in the baseline methodology.",
+      "title": "QA/QC procedures: --- Any comment: Calculated as per procedure described in the baseline methodology."
     },
     {
       "id": "R-0001-0083",
+      "logic": "Data / Parameter: GE Data unit: MJ/d Description: Gross energy intake of the animal Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: --- Any comment: ---",
+      "section_anchor": "september-2006-30",
       "section_id": "S-0083",
       "tags": [
         "monitoring"
       ],
-      "text": "Data / Parameter: GE Data unit: MJ/d Description: Gross energy intake of the animal Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/..."
+      "text": "Data / Parameter: GE Data unit: MJ/d Description: Gross energy intake of the animal Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/...",
+      "title": "Data / Parameter: GE Data unit: MJ/d Description: Gross energy intake of the animal Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/..."
     },
     {
       "id": "R-0001-0085",
+      "logic": "Data / Parameter: NLT Data unit: Number Description: Average livestock population used in both baseline and project case emissions estimation.",
+      "section_anchor": "september-2006-31",
       "section_id": "S-0085",
       "tags": [
         "parameter"
       ],
-      "text": "Data / Parameter: NLT Data unit: Number Description: Average livestock population used in both baseline and project case emissions estimation."
+      "text": "Data / Parameter: NLT Data unit: Number Description: Average livestock population used in both baseline and project case emissions estimation.",
+      "title": "Data / Parameter: NLT Data unit: Number Description: Average livestock population used in both baseline and project case emissions estimation."
     },
     {
       "id": "R-0002-0085",
+      "logic": "Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures: --- Any comment: The PDD should describe the system on monitoring the number of livestock population.",
+      "section_anchor": "september-2006-31",
       "section_id": "S-0085",
       "tags": [
         "monitoring"
       ],
-      "text": "Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures: --- Any comment: The PDD should describe the system on monitoring the ..."
+      "text": "Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures: --- Any comment: The PDD should describe the system on monitoring the ...",
+      "title": "Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures: --- Any comment: The PDD should describe the system on monitoring the ..."
     },
     {
       "id": "R-0001-0087",
+      "logic": "Description: Electricity used in Project AWMSs Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: Electricity meters will undergo maintenance/calibration subject to appropriate industry standards.",
+      "section_anchor": "september-2006-32",
       "section_id": "S-0087",
       "tags": [
         "monitoring"
       ],
-      "text": "Description: Electricity used in Project AWMSs Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: Electricity meters wil..."
+      "text": "Description: Electricity used in Project AWMSs Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: Electricity meters wil...",
+      "title": "Description: Electricity used in Project AWMSs Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: Electricity meters wil..."
     },
     {
       "id": "R-0002-0087",
+      "logic": "Uncertainty of the meters to be obtained from the manufacturers.",
+      "section_anchor": "september-2006-32",
       "section_id": "S-0087",
       "tags": [
         "uncertainty"
       ],
-      "text": "Uncertainty of the meters to be obtained from the manufacturers."
+      "text": "Uncertainty of the meters to be obtained from the manufacturers.",
+      "title": "Uncertainty of the meters to be obtained from the manufacturers."
     },
     {
       "id": "R-0003-0087",
+      "logic": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM-PDD.",
+      "section_anchor": "september-2006-32",
       "section_id": "S-0087",
       "tags": [
         "uncertainty"
       ],
-      "text": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM-PDD."
+      "text": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM-PDD.",
+      "title": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM-PDD."
     },
     {
       "id": "R-0001-0089",
+      "logic": "QA/QC procedures: The project proponents shall define the variability of the concentration.",
+      "section_anchor": "september-2006-33",
       "section_id": "S-0089",
       "tags": [
         "monitoring"
       ],
-      "text": "QA/QC procedures: The project proponents shall define the variability of the concentration."
+      "text": "QA/QC procedures: The project proponents shall define the variability of the concentration.",
+      "title": "QA/QC procedures: The project proponents shall define the variability of the concentration."
     },
     {
       "id": "R-0001-0091",
+      "logic": "Monitoring frequency: Annually QA/QC procedures: --- Any comment: ---",
+      "section_anchor": "september-2006-34",
       "section_id": "S-0091",
       "tags": [
         "monitoring"
       ],
-      "text": "Monitoring frequency: Annually QA/QC procedures: --- Any comment: ---"
+      "text": "Monitoring frequency: Annually QA/QC procedures: --- Any comment: ---",
+      "title": "Monitoring frequency: Annually QA/QC procedures: --- Any comment: ---"
     },
     {
       "id": "R-0001-0093",
+      "logic": "Source of data: --- Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---",
+      "section_anchor": "september-2006-35",
       "section_id": "S-0093",
       "tags": [
         "monitoring"
       ],
-      "text": "Source of data: --- Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---"
+      "text": "Source of data: --- Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---",
+      "title": "Source of data: --- Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---"
     }
   ]
 }
