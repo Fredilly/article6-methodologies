@@ -13,3 +13,4 @@ Generated from root-cause entry files under `docs/projects/phase-1-ingestion/roo
 | RC-20260101-081624 | 2026-01-01 | pdfminer CLI fallback returns empty text (tags: pdf, agriculture, ci) | [RC-20260101-081624](root-causes/RC-20260101-081624.md) |
 | RC-20260102-162359 | 2026-01-02 | CI idempotency: scripts_manifest.json drift after adding pack script (tags: ci, determinism) | [RC-20260102-162359](root-causes/RC-20260102-162359.md) |
 | RC-20260328-094005 | 2026-03-28 | Forestry lean derivation drift from JS key ordering | [RC-20260328-094005](root-causes/RC-20260328-094005.md) |
+| RC-20260328-094756 | 2026-03-28 | Agriculture previous META sections hash drift from stale committed audit hashes | [RC-20260328-094756](root-causes/RC-20260328-094756.md) |
