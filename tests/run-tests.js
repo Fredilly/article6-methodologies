@@ -10,6 +10,7 @@ const tests = [
   'tests/rules-skip-safe.test.js',
   'tests/extract-sections-pdfminer.test.js',
   'tests/agri-ams-iii-rules-coverage.test.js',
+  'tests/am0073-requirement-coverage-proof.test.js',
 ];
 
 function main() {

@@ -1,39 +1,39 @@
 {
   "sections": [
     {
-      "id": "S-1",
-      "title": "Scope and boundary",
       "anchor": "scope-and-boundary",
+      "id": "S-1",
       "section_number": "1",
-      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-1"
+      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-1",
+      "title": "Scope and boundary"
     },
     {
-      "id": "S-2",
-      "title": "Baseline and additionality",
       "anchor": "baseline-and-additionality",
+      "id": "S-2",
       "section_number": "2",
-      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-2"
+      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-2",
+      "title": "Baseline and additionality"
     },
     {
-      "id": "S-3",
-      "title": "Project emissions and removals",
       "anchor": "project-emissions-and-removals",
+      "id": "S-3",
       "section_number": "3",
-      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-3"
+      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-3",
+      "title": "Project emissions and removals"
     },
     {
-      "id": "S-4",
-      "title": "Leakage and displacement risks",
       "anchor": "leakage-and-displacement-risks",
+      "id": "S-4",
       "section_number": "4",
-      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-4"
+      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-4",
+      "title": "Leakage and displacement risks"
     },
     {
-      "id": "S-5",
-      "title": "Monitoring, data, and reporting",
       "anchor": "monitoring-data-and-reporting",
+      "id": "S-5",
       "section_number": "5",
-      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-5"
+      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-5",
+      "title": "Monitoring, data, and reporting"
     }
   ]
 }

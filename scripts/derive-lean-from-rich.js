@@ -9,8 +9,22 @@ function readJSON(p){
     throw new Error(`[derive-lean] failed to read ${path.relative(process.cwd(), p)}: ${err.message}`);
   }
 }
+function sortKeys(value) {
+  if (Array.isArray(value)) {
+    return value.map(sortKeys);
+  }
+  if (!value || typeof value !== 'object') {
+    return value;
+  }
+  const out = {};
+  for (const key of Object.keys(value).sort()) {
+    if (value[key] === undefined) continue;
+    out[key] = sortKeys(value[key]);
+  }
+  return out;
+}
 function writeJSON(p, data){
-  const payload = JSON.stringify(data, null, 2) + '\n';
+  const payload = JSON.stringify(sortKeys(data), null, 2) + '\n';
   if (fs.existsSync(p)) {
     const before = fs.readFileSync(p, 'utf8');
     if (before === payload) return;
