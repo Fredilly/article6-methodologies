@@ -34,7 +34,7 @@
     { "path": "scripts/commit-truth.sh", "sha256": "819c922a7908508b8c8a0fd3fbbdfb6291cac7f51ce00bb548fc7e29951500b3" },
     { "path": "scripts/compile-audit.js", "sha256": "917ee7d5fabef37ec7d4bfa9503ac498da225426bf5fbd05fd710d35699a1a14" },
     { "path": "scripts/compile-validators.js", "sha256": "c553cbfa1481c1e6cb7797269c8fdb36d9969b5582696bc8aa93476d19cb6927" },
-    { "path": "scripts/derive-lean-from-rich.js", "sha256": "de4a5d9dae29332f789ede942d59c486e6af8e4805ca66f25a37dbfd5dc1cfd5" },
+    { "path": "scripts/derive-lean-from-rich.js", "sha256": "7019759967b8a3dfa65ed12d000a5182482acdb01fdda5c181eb26232ccd827c" },
     { "path": "scripts/derive-lean.sh", "sha256": "e3acf41838a4afea2a09c3527e3cf4e6f9f87e94812d117102cfd8a52dd76767" },
     { "path": "scripts/derive-rules-rich.cjs", "sha256": "dba36d1092877f5e8bfc00c7ee848e611bc6eed22f3f452a744a1e581d0dfd2c" },
     { "path": "scripts/discover-previous-versions.mjs", "sha256": "bc850cabf86dcd60ef2253d2a40d3e9ecad07b855417f6f8f08fa67193b0e081" },

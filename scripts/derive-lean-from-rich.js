@@ -88,6 +88,15 @@ function derive(dir){
       section_number: s.section_number ?? undefined,
       stable_id: s.stable_id ?? undefined
     };
+    if (lean.anchor !== undefined) {
+      const { id, title, anchor, pages, section_number, stable_id } = lean;
+      const ordered = { anchor, id, title };
+      if (pages !== undefined) ordered.pages = pages;
+      if (section_number !== undefined) ordered.section_number = section_number;
+      if (stable_id !== undefined) ordered.stable_id = stable_id;
+      sectionLookup.set(s.id, ordered);
+      return ordered;
+    }
     sectionLookup.set(s.id, lean);
     return lean;
   }).sort(cmpSections);
