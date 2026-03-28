@@ -12,6 +12,7 @@ const tests = [
   'tests/agri-ams-iii-rules-coverage.test.js',
   'tests/am0073-requirement-coverage-proof.test.js',
   'tests/am0073-richer-rule-detail-proof.test.js',
+  'tests/pr-accept-harness.test.js',
 ];
 
 function main() {

@@ -100,11 +100,11 @@ function buildSectionContext(section) {
 
 function buildRuleDetail(rule) {
   const detail = {};
-  if (typeof rule.summary === 'string' && rule.summary.length > 0) {
-    detail.summary = rule.summary;
-  }
   if (Array.isArray(rule.when) && rule.when.length > 0) {
     detail.conditions = rule.when;
+  }
+  if (typeof rule.summary === 'string' && rule.summary.length > 0) {
+    detail.summary = rule.summary;
   }
   return Object.keys(detail).length > 0 ? detail : undefined;
 }
@@ -170,14 +170,14 @@ function reshape(dir) {
         tools: [docId],
       },
       ...(requirementCoverage ? { requirement_coverage: requirementCoverage } : {}),
-      ...(includeRicherRuleDetail && typeof rule.logic === 'string' && rule.logic.length > 0
-        ? { requirement_text: rule.logic }
-        : {}),
       ...(includeRicherRuleDetail && typeof rule.type === 'string' && rule.type.length > 0
         ? { requirement_kind: rule.type }
         : {}),
-      ...(sectionContext ? { section_context: sectionContext } : {}),
+      ...(includeRicherRuleDetail && typeof rule.logic === 'string' && rule.logic.length > 0
+        ? { requirement_text: rule.logic }
+        : {}),
       ...(ruleDetail ? { rule_detail: ruleDetail } : {}),
+      ...(sectionContext ? { section_context: sectionContext } : {}),
       summary: rule.summary,
       tags: rule.tags || [],
       type: rule.type,
