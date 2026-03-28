@@ -18,6 +18,9 @@ const DEFAULT_METHODS = [
   'UNFCCC/Agriculture/AMS-III.D/v21-0',
   'UNFCCC/Agriculture/AMS-III.R/v05-0'
 ];
+const REQUIREMENT_COVERAGE_METHODS = new Set([
+  'UNFCCC/Agriculture/AM0073/v01-0',
+]);
 
 function relToDir(rel) {
   return path.join(ROOT, 'methodologies', ...rel.split('/'));
@@ -44,6 +47,10 @@ function methodFragments(dir) {
   const sector = parts[parts.length - 3];
   const program = parts[parts.length - 4];
   return { program, sector, code, version };
+}
+
+function methodRel(dir) {
+  return path.relative(path.join(ROOT, 'methodologies'), dir).replace(/\\/g, '/');
 }
 
 function methodDoc(dir) {
@@ -95,6 +102,7 @@ function reshape(dir) {
     console.warn(`[reshape-agriculture] skip ${dir} (missing META.json)`);
     return;
   }
+  const includeRequirementCoverage = REQUIREMENT_COVERAGE_METHODS.has(methodRel(dir));
   const meta = loadJSON(metaPath);
   const docId = (meta.provenance && meta.provenance.source_pdfs && meta.provenance.source_pdfs[0]?.doc) || methodDoc(dir);
   const sourceHash = (meta.provenance && meta.provenance.source_pdfs && meta.provenance.source_pdfs[0]?.sha256) || meta.audit_hashes?.source_pdf_sha256;
@@ -107,17 +115,19 @@ function reshape(dir) {
 
   const sectionsRich = TEMPLATE.sections.map((section) => ({
     id: section.id,
-    title: section.title,
     provenance: {
       source_hash: sourceHash,
       source_ref: docId,
     },
+    title: section.title,
   }));
   writeJSON(path.join(dir, 'sections.rich.json'), sectionsRich);
 
   const rulesRich = TEMPLATE.rules.map((rule, idx) => {
     const ruleId = buildRuleId(dir, idx, rule.section);
-    const requirementCoverage = buildRequirementCoverage(ruleId, [rule.section]);
+    const requirementCoverage = includeRequirementCoverage
+      ? buildRequirementCoverage(ruleId, [rule.section])
+      : undefined;
     return {
       id: ruleId,
       logic: rule.logic,
