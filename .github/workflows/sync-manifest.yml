@@ -20,23 +20,55 @@ jobs:
       - run: npm ci || npm i
       - run: npm run build:manifest
 
+      - name: Preflight app sync token
+        id: app_sync
+        env:
+          APP_REPO_PAT: ${{ secrets.APP_REPO_PAT }}
+        run: |
+          set -euo pipefail
+          if [[ -z "${APP_REPO_PAT:-}" ]]; then
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "APP_REPO_PAT is not configured; skipping manifest sync."
+            exit 0
+          fi
+
+          status="$(curl -sS -o /tmp/app-sync-check.json -w "%{http_code}" \
+            -H "Authorization: Bearer ${APP_REPO_PAT}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/Fredilly/app.article6)"
+
+          if [[ "$status" == "200" ]]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "enabled=false" >> "$GITHUB_OUTPUT"
+          echo "APP_REPO_PAT cannot access Fredilly/app.article6; skipping manifest sync."
+          cat /tmp/app-sync-check.json
+
       - name: Checkout app repo
+        if: ${{ steps.app_sync.outputs.enabled == 'true' }}
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           clean: true
           fetch-depth: 0
           repository: Fredilly/app.article6
-          token: ${{ secrets.APP_REPO_PAT }}
           path: app.article6
 
       - name: Replace manifest
+        if: ${{ steps.app_sync.outputs.enabled == 'true' }}
         run: |
           mkdir -p app.article6/public/manifest
           cp manifest/index.json app.article6/public/manifest/index.json
           cd app.article6
           git checkout main
 
+      - name: Skip manifest sync
+        if: ${{ steps.app_sync.outputs.enabled != 'true' }}
+        run: echo "Manifest sync skipped because app-repo authentication is unavailable."
+
       - name: Open PR
+        if: ${{ steps.app_sync.outputs.enabled == 'true' }}
         uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c
         with:
           token: ${{ secrets.APP_REPO_PAT }}

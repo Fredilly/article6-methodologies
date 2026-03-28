@@ -2,23 +2,38 @@
   "sections": [
     {
       "id": "S-1",
-      "title": "Scope and applicability"
+      "title": "Scope and applicability",
+      "anchor": "scope-and-applicability",
+      "section_number": "1",
+      "stable_id": "UNFCCC.Forestry.AR-AM0014.v03-0.S-1"
     },
     {
       "id": "S-2",
-      "title": "Baseline scenario and leakage considerations"
+      "title": "Baseline scenario and leakage considerations",
+      "anchor": "baseline-scenario-and-leakage-considerations",
+      "section_number": "2",
+      "stable_id": "UNFCCC.Forestry.AR-AM0014.v03-0.S-2"
     },
     {
       "id": "S-3",
-      "title": "Project scenario and carbon accounting"
+      "title": "Project scenario and carbon accounting",
+      "anchor": "project-scenario-and-carbon-accounting",
+      "section_number": "3",
+      "stable_id": "UNFCCC.Forestry.AR-AM0014.v03-0.S-3"
     },
     {
       "id": "S-4",
-      "title": "Leakage assessment and mitigation"
+      "title": "Leakage assessment and mitigation",
+      "anchor": "leakage-assessment-and-mitigation",
+      "section_number": "4",
+      "stable_id": "UNFCCC.Forestry.AR-AM0014.v03-0.S-4"
     },
     {
       "id": "S-5",
-      "title": "Monitoring, QA/QC, and reporting"
+      "title": "Monitoring, QA/QC, and reporting",
+      "anchor": "monitoring-qa-qc-and-reporting",
+      "section_number": "5",
+      "stable_id": "UNFCCC.Forestry.AR-AM0014.v03-0.S-5"
     }
   ]
 }

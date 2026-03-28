@@ -2,91 +2,124 @@
   "rules": [
     {
       "id": "R-0001-0004",
+      "logic": "Baseline",
+      "section_anchor": "the-project-boundary-is-the-physical-geographical-site-of-the-methane-recovery-facility",
       "section_id": "S-0004",
       "tags": [
         "parameter"
       ],
-      "text": "Baseline"
+      "text": "Baseline",
+      "title": "Baseline"
     },
     {
       "id": "R-0001-0007",
+      "logic": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D.",
+      "section_anchor": "in-the-case-of-landfill-gas-waste-gas-waste-water-treatment-and-agro-industries-projects-if-the",
       "section_id": "S-0007",
       "tags": [
         "eligibility"
       ],
-      "text": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D."
+      "text": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D.",
+      "title": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D."
     },
     {
       "id": "R-0002-0007",
+      "logic": "If the recovered methane is used for heat generation it is also eligible under category I.C.",
+      "section_anchor": "in-the-case-of-landfill-gas-waste-gas-waste-water-treatment-and-agro-industries-projects-if-the",
       "section_id": "S-0007",
       "tags": [
         "eligibility"
       ],
-      "text": "If the recovered methane is used for heat generation it is also eligible under category I.C."
+      "text": "If the recovered methane is used for heat generation it is also eligible under category I.C.",
+      "title": "If the recovered methane is used for heat generation it is also eligible under category I.C."
     },
     {
       "id": "R-0001-0008",
+      "logic": "Monitoring",
+      "section_anchor": "no-leakage-calculation-is-required",
       "section_id": "S-0008",
       "tags": [
         "monitoring"
       ],
-      "text": "Monitoring"
+      "text": "Monitoring",
+      "title": "Monitoring"
     },
     {
       "id": "R-0001-0011",
+      "logic": "small-scale CDM project activity categories, including recommendations for determining the project boundary, leakage, baseline and monitoring.",
+      "section_anchor": "this-appendix-contains-indicative-simplified-baseline-and-monitoring-methodologies-for-selected",
       "section_id": "S-0011",
       "tags": [
         "parameter"
       ],
-      "text": "small-scale CDM project activity categories, including recommendations for determining the project boundary, leakage, baseline and monitoring."
+      "text": "small-scale CDM project activity categories, including recommendations for determining the project boundary, leakage, baseline and monitoring.",
+      "title": "small-scale CDM project activity categories, including recommendations for determining the project boundary, leakage, baseline and monitoring."
     },
     {
       "id": "R-0001-0012",
+      "logic": "small-scale CDM project activities (annex II to decision 21/CP.8 contained in document FCCC/CP/2002/7/Add.3), project participants involved in small-scale CDM project activities may propose changes to the simplified baseline and monitoring methodologies specified in this appendix or propose additional project categories for consideration by the Executive Board.",
+      "section_anchor": "in-accordance-with-paragraphs-15-and-16-of-the-simplified-modalities-and-procedures-for",
       "section_id": "S-0012",
       "tags": [
         "parameter"
       ],
-      "text": "small-scale CDM project activities (annex II to decision 21/CP.8 contained in document FCCC/CP/2002/7/Add.3), project participants involved in small-scale CDM project activities may propose changes to the simplified baseline and monitori..."
+      "text": "small-scale CDM project activities (annex II to decision 21/CP.8 contained in document FCCC/CP/2002/7/Add.3), project participants involved in small-scale CDM project activities may propose changes to the simplified baseline and monitori...",
+      "title": "small-scale CDM project activities (annex II to decision 21/CP.8 contained in document FCCC/CP/2002/7/Add.3), project participants involved in small-scale CDM project activities may propose changes to the simplified baseline and monitori..."
     },
     {
       "id": "R-0002-0012",
+      "logic": "Project participants willing to submit a new small-scale project activity category or revisions to a methodology shall make a request in writing to the Board providing information about the technology/activity and proposals on how a simplified baseline and monitoring methodology would be applied to this category.",
+      "section_anchor": "in-accordance-with-paragraphs-15-and-16-of-the-simplified-modalities-and-procedures-for",
       "section_id": "S-0012",
       "tags": [
         "parameter"
       ],
-      "text": "Project participants willing to submit a new small-scale project activity category or revisions to a methodology shall make a request in writing to the Board providing information about the technology/activity and proposals on how a simp..."
+      "text": "Project participants willing to submit a new small-scale project activity category or revisions to a methodology shall make a request in writing to the Board providing information about the technology/activity and proposals on how a simp...",
+      "title": "Project participants willing to submit a new small-scale project activity category or revisions to a methodology shall make a request in writing to the Board providing information about the technology/activity and proposals on how a simp..."
     },
     {
       "id": "R-0001-0013",
+      "logic": "CDM project activities, a simplified baseline and monitoring methodology listed in this appendix may be used for a small-scale CDM project activity if project participants are able to demonstrate to a designated operational entity that the project activity would otherwise not be implemented due to the existence of one or more barrier(s) listed in attachment A of this appendix.",
+      "section_anchor": "in-accordance-with-paragraph-28-of-the-simplified-modalities-and-procedures-for-small-scale",
       "section_id": "S-0013",
       "tags": [
         "parameter"
       ],
-      "text": "CDM project activities, a simplified baseline and monitoring methodology listed in this appendix may be used for a small-scale CDM project activity if project participants are able to demonstrate to a designated operational entity that t..."
+      "text": "CDM project activities, a simplified baseline and monitoring methodology listed in this appendix may be used for a small-scale CDM project activity if project participants are able to demonstrate to a designated operational entity that t...",
+      "title": "CDM project activities, a simplified baseline and monitoring methodology listed in this appendix may be used for a small-scale CDM project activity if project participants are able to demonstrate to a designated operational entity that t..."
     },
     {
       "id": "R-0001-0014",
+      "logic": "boundary, biomass projects, leakage and use of Intergovernmental Panel on Climate Change (IPCC) default values for emission coefficients.",
+      "section_anchor": "the-appendix-reflects-the-following-guidance-regarding-equipment-performance-project",
       "section_id": "S-0014",
       "tags": [
         "leakage"
       ],
-      "text": "boundary, biomass projects, leakage and use of Intergovernmental Panel on Climate Change (IPCC) default values for emission coefficients."
+      "text": "boundary, biomass projects, leakage and use of Intergovernmental Panel on Climate Change (IPCC) default values for emission coefficients.",
+      "title": "boundary, biomass projects, leakage and use of Intergovernmental Panel on Climate Change (IPCC) default values for emission coefficients."
     },
     {
       "id": "R-0001-0019",
+      "logic": "be the most up-to-date values available in the “IPCC Good Practice and Guidance and Uncertainty Management in National Greenhouse Gas Inventories” and the “Revised 1996 IPCC Guidelines for National Greenhouse Gas Inventories”.",
+      "section_anchor": "in-the-case-of-project-participants-using-ipcc-default-values-for-emission-coefficients-these-shall",
       "section_id": "S-0019",
       "tags": [
         "uncertainty"
       ],
-      "text": "be the most up-to-date values available in the “IPCC Good Practice and Guidance and Uncertainty Management in National Greenhouse Gas Inventories” and the “Revised 1996 IPCC Guidelines for National Greenhouse Gas Inventories”."
+      "text": "be the most up-to-date values available in the “IPCC Good Practice and Guidance and Uncertainty Management in National Greenhouse Gas Inventories” and the “Revised 1996 IPCC Guidelines for National Greenhouse Gas Inventories”.",
+      "title": "be the most up-to-date values available in the “IPCC Good Practice and Guidance and Uncertainty Management in National Greenhouse Gas Inventories” and the “Revised 1996 IPCC Guidelines for National Greenhouse Gas Inventories”."
     },
     {
       "id": "R-0001-0020",
+      "logic": "occurred anyway due to at least one of the following barriers: (a) Investment barrier: a financially more viable alternative to the project activity would have led to higher emissions; (b) Technological barrier: a less technologically advanced alternative to the project activity involves lower risks due to the performance uncertainty or low market share of the new technology adopted for the project activity and so would have led to higher emissions; (c) Barrier due to prevailing practice: prevailing practice or existing regulatory or policy requirements would have led to implementation of a technology with higher emissions; (d) Other barriers: without the project activity, for another specific reason identified by the project participant, such as institutional barriers or limited information, managerial resources, organizational capacity, financial resources, or capacity to absorb new technologies, emissions would have been higher.",
+      "section_anchor": "project-participants-shall-provide-an-explanation-to-show-that-the-project-activity-would-not-have",
       "section_id": "S-0020",
       "tags": [
         "uncertainty"
       ],
-      "text": "occurred anyway due to at least one of the following barriers: (a) Investment barrier: a financially more viable alternative to the project activity would have led to higher emissions; (b) Technological barrier: a less technologically ad..."
+      "text": "occurred anyway due to at least one of the following barriers: (a) Investment barrier: a financially more viable alternative to the project activity would have led to higher emissions; (b) Technological barrier: a less technologically ad...",
+      "title": "occurred anyway due to at least one of the following barriers: (a) Investment barrier: a financially more viable alternative to the project activity would have led to higher emissions; (b) Technological barrier: a less technologically ad..."
     }
   ]
 }

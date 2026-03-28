@@ -28,8 +28,9 @@ RUN apt-get update \
       docker.io \
     && rm -rf /var/lib/apt/lists/*
 
-# Install pup via Go (pinned)
-RUN GOBIN=/usr/local/bin GO111MODULE=on go install "github.com/ericchiang/pup@v${PUP_VERSION}" \
+# Install pup via Go (pinned). The upstream module graph now resolves dependencies
+# requiring Go 1.25+, so pin the toolchain explicitly for deterministic CI builds.
+RUN GOBIN=/usr/local/bin GO111MODULE=on GOTOOLCHAIN=go1.25.1+auto go install "github.com/ericchiang/pup@v${PUP_VERSION}" \
     && pup --version
 
 # Git LFS + repo safety
@@ -38,4 +39,3 @@ RUN git config --system --add safe.directory /workspaces/article6-methodologies
 
 # Default workdir
 WORKDIR /workspaces/article6-methodologies
-

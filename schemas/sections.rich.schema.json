@@ -14,8 +14,44 @@
         "minimum": 1,
         "type": "integer"
       },
+      "locators": {
+        "items": {
+          "additionalProperties": false,
+          "properties": {
+            "hint": {
+              "type": "string"
+            },
+            "pages": {
+              "items": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "quote": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "type",
+            "quote"
+          ],
+          "type": "object"
+        },
+        "type": "array"
+      },
       "notes": {
         "type": "string"
+      },
+      "pages": {
+        "items": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "type": "array"
       },
       "provenance": {
         "additionalProperties": false,
@@ -35,6 +71,12 @@
           }
         },
         "type": "object"
+      },
+      "section_number": {
+        "type": "string"
+      },
+      "stable_id": {
+        "type": "string"
       },
       "title": {
         "minLength": 1,

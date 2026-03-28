@@ -2,115 +2,157 @@
   "rules": [
     {
       "id": "R-0001-0002",
+      "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "section_anchor": "eb-33",
       "section_id": "S-0002",
       "tags": [
         "parameter"
       ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
     },
     {
       "id": "R-0001-0003",
+      "logic": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at http://cdm.unfccc.int/methodologies/SSCmethodologies/approved.html.",
+      "section_anchor": "type-iii-other-project-activities",
       "section_id": "S-0003",
       "tags": [
         "leakage"
       ],
-      "text": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at http://cdm.unfccc.int/methodologies/SSCmethodologies/approved..."
+      "text": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at http://cdm.unfccc.int/methodologies/SSCmethodologies/approved...",
+      "title": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at http://cdm.unfccc.int/methodologies/SSCmethodologies/approved..."
     },
     {
       "id": "R-0001-0010",
+      "logic": "Baseline emissions (BEy) are calculated ex ante using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the",
+      "section_anchor": "the-baseline-scenario-is-the-situation-where-in-the-absence-of-the-project-activity-biomass",
       "section_id": "S-0010",
       "tags": [
         "parameter"
       ],
-      "text": "Baseline emissions (BEy) are calculated ex ante using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the"
+      "text": "Baseline emissions (BEy) are calculated ex ante using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the",
+      "title": "Baseline emissions (BEy) are calculated ex ante using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the"
     },
     {
       "id": "R-0001-0012",
+      "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "section_anchor": "eb-33-2",
       "section_id": "S-0012",
       "tags": [
         "parameter"
       ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
     },
     {
       "id": "R-0001-0014",
+      "logic": "Monitoring",
+      "section_anchor": "no-leakage-calculation-is-required",
       "section_id": "S-0014",
       "tags": [
         "monitoring"
       ],
-      "text": "Monitoring"
+      "text": "Monitoring",
+      "title": "Monitoring"
     },
     {
       "id": "R-0001-0017",
+      "logic": "defined as the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
+      "section_anchor": "regular-maintenance-should-ensure-optimal-operation-of-flares-the-flare-efficiency",
       "section_id": "S-0017",
       "tags": [
         "monitoring"
       ],
-      "text": "defined as the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored."
+      "text": "defined as the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
+      "title": "defined as the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored."
     },
     {
       "id": "R-0002-0017",
+      "logic": "One of the two following options shall be used to determine the efficiency of the flaring process in an enclosed flare: (a) to adopt a 90% default value or (b) to perform a continuous monitoring of the efficiency.1 If option (a) is chosen, continuous check of compliance with the manufacturer’s specification of the flare device (temperature, biogas flow rate) should be done.",
+      "section_anchor": "regular-maintenance-should-ensure-optimal-operation-of-flares-the-flare-efficiency",
       "section_id": "S-0017",
       "tags": [
         "monitoring"
       ],
-      "text": "One of the two following options shall be used to determine the efficiency of the flaring process in an enclosed flare: (a) to adopt a 90% default value or (b) to perform a continuous monitoring of the efficiency.1 If option (a) is chose..."
+      "text": "One of the two following options shall be used to determine the efficiency of the flaring process in an enclosed flare: (a) to adopt a 90% default value or (b) to perform a continuous monitoring of the efficiency.1 If option (a) is chose...",
+      "title": "One of the two following options shall be used to determine the efficiency of the flaring process in an enclosed flare: (a) to adopt a 90% default value or (b) to perform a continuous monitoring of the efficiency.1 If option (a) is chose..."
     },
     {
       "id": "R-0003-0017",
+      "logic": "For open flare 50% default value should be used, as it is not possible in this case to monitor the efficiency.",
+      "section_anchor": "regular-maintenance-should-ensure-optimal-operation-of-flares-the-flare-efficiency",
       "section_id": "S-0017",
       "tags": [
         "monitoring"
       ],
-      "text": "For open flare 50% default value should be used, as it is not possible in this case to monitor the efficiency."
+      "text": "For open flare 50% default value should be used, as it is not possible in this case to monitor the efficiency.",
+      "title": "For open flare 50% default value should be used, as it is not possible in this case to monitor the efficiency."
     },
     {
       "id": "R-0001-0020",
+      "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "section_anchor": "eb-33-3",
       "section_id": "S-0020",
       "tags": [
         "parameter"
       ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
     },
     {
       "id": "R-0001-0021",
+      "logic": "of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting period.",
+      "section_anchor": "the-method-for-integration-of-the-terms-in-equation-above-to-obtain-the-results-for-one-year",
       "section_id": "S-0021",
       "tags": [
         "monitoring"
       ],
-      "text": "of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting period."
+      "text": "of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting period.",
+      "title": "of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting period."
     },
     {
       "id": "R-0001-0023",
+      "logic": "monitored.",
+      "section_anchor": "the-proper-soil-application-not-resulting-in-methane-emissions-of-the-final-sludge-must-be",
       "section_id": "S-0023",
       "tags": [
         "monitoring"
       ],
-      "text": "monitored."
+      "text": "monitored.",
+      "title": "monitored."
     },
     {
       "id": "R-0001-0026",
+      "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "section_anchor": "eb-33-4",
       "section_id": "S-0026",
       "tags": [
         "parameter"
       ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
     },
     {
       "id": "R-0001-0027",
+      "logic": "the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an independent monitoring of scrapping of replaced equipment needs to be implemented.",
+      "section_anchor": "in-case-the-project-activity-involves-the-replacement-of-equipment-and-the-leakage-effect-of",
       "section_id": "S-0027",
       "tags": [
         "monitoring"
       ],
-      "text": "the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an independent monitoring of scrapping of replaced equipment needs to be implemented."
+      "text": "the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an independent monitoring of scrapping of replaced equipment needs to be implemented.",
+      "title": "the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an independent monitoring of scrapping of replaced equipment needs to be implemented."
     },
     {
       "id": "R-0002-0027",
+      "logic": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other.",
+      "section_anchor": "in-case-the-project-activity-involves-the-replacement-of-equipment-and-the-leakage-effect-of",
       "section_id": "S-0027",
       "tags": [
         "monitoring"
       ],
-      "text": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other."
+      "text": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other.",
+      "title": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other."
     }
   ]
 }

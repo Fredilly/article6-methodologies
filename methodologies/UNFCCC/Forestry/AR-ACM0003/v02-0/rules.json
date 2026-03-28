@@ -2,69 +2,179 @@
   "rules": [
     {
       "id": "R-1-0001",
+      "logic": "Project restores degraded forest lands and demonstrates additionality using the UNFCCC barrier or investment analysis.",
+      "section_anchor": "scope-and-boundary",
       "section_id": "S-1",
+      "section_number": "1",
+      "section_stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-1",
+      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0001",
       "tags": [
         "eligibility"
       ],
-      "text": "Project restores degraded forest lands and meets additionality tests per Tool 01."
+      "text": "Project restores degraded forest lands and meets additionality tests per Tool 01.",
+      "title": "Project restores degraded forest lands and meets additionality tests per Tool 01.",
+      "tools": [
+        "UNFCCC/AR-ACM0003@v02-0"
+      ],
+      "when": [
+        "Target areas classified as degraded forest land prior to start date.",
+        "Additionality analysis completed per UNFCCC requirements."
+      ]
     },
     {
       "id": "R-1-0002",
+      "logic": "Baseline net removals estimated using historical land-use/land-cover data and default parameters from Tool 02.",
+      "section_anchor": "baseline-and-additionality",
       "section_id": "S-2",
+      "section_number": "2",
+      "section_stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-2",
+      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0002",
       "tags": [
         "calc",
         "baseline"
       ],
-      "text": "Baseline net GHG removals derived from historical land-use data per Tool 02 guidance."
+      "text": "Baseline net GHG removals derived from historical land-use data per Tool 02 guidance.",
+      "title": "Baseline net GHG removals derived from historical land-use data per Tool 02 guidance.",
+      "tools": [
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL02@v01.0"
+      ],
+      "when": [
+        "Baseline strata delineated and documented.",
+        "Default biomass parameters justified when field data absent."
+      ]
     },
     {
       "id": "R-1-0003",
+      "logic": "Project emissions include fossil fuel consumption, biomass burning, and fertilizer use calculated with Tool 08 default factors.",
+      "section_anchor": "project-emissions-and-removals",
       "section_id": "S-3",
+      "section_number": "3",
+      "section_stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-3",
+      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0003",
       "tags": [
         "calc",
         "emissions"
       ],
-      "text": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08."
+      "text": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08.",
+      "title": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08.",
+      "tools": [
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL08@v04.0.0"
+      ],
+      "when": [
+        "Fuel consumption metered or logged with auditable records.",
+        "Fertilizer application data retained for verification."
+      ]
     },
     {
       "id": "R-1-0004",
+      "logic": "Activity shifting and market leakage quantified annually with Tool 14 standardized coefficients.",
+      "section_anchor": "leakage-and-displacement-risks",
       "section_id": "S-4",
+      "section_number": "4",
+      "section_stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-4",
+      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0004",
       "tags": [
         "leakage"
       ],
-      "text": "Leakage from activity shifting and market effects addressed using Tool 14 default factors."
+      "text": "Leakage from activity shifting and market effects addressed using Tool 14 default factors.",
+      "title": "Leakage from activity shifting and market effects addressed using Tool 14 default factors.",
+      "tools": [
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL14@v04.2"
+      ],
+      "when": [
+        "Leakage monitoring plan implemented with annual review.",
+        "Leakage deductions applied before credit issuance."
+      ]
     },
     {
       "id": "R-1-0005",
+      "logic": "Buffer contribution calculated with Tool 15 risk scoring and documented alongside issuance.",
+      "section_anchor": "monitoring-data-and-reporting",
       "section_id": "S-5",
+      "section_number": "5",
+      "section_stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-5",
+      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0005",
       "tags": [
         "monitoring"
       ],
-      "text": "Non-permanence buffer determined via Tool 15 risk analysis and recorded in registry accounts."
+      "text": "Non-permanence buffer determined via Tool 15 risk analysis and recorded in registry accounts.",
+      "title": "Non-permanence buffer determined via Tool 15 risk analysis and recorded in registry accounts.",
+      "tools": [
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL15@v02.0"
+      ],
+      "when": [
+        "Updated risk assessment provided during verification.",
+        "Evidence of buffer account entries retained."
+      ]
     },
     {
       "id": "R-1-0006",
+      "logic": "Plot network re-measured at ≤5-year intervals using standard mensuration and Tool 16 QA/QC checks.",
+      "section_anchor": "monitoring-data-and-reporting",
       "section_id": "S-5",
+      "section_number": "5",
+      "section_stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-5",
+      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0006",
       "tags": [
         "monitoring"
       ],
-      "text": "Permanent sample plots re-measured at least every five years per Tool 16 QA/QC guidance."
+      "text": "Permanent sample plots re-measured at least every five years per Tool 16 QA/QC guidance.",
+      "title": "Permanent sample plots re-measured at least every five years per Tool 16 QA/QC guidance.",
+      "tools": [
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL16@v01.1.0"
+      ],
+      "when": [
+        "Plot coordinates archived and accessible for re-measurement.",
+        "QA/QC procedures documented for each monitoring campaign."
+      ]
     },
     {
       "id": "R-1-0007",
+      "logic": "Calculate combined sampling uncertainty and apply Tool 12 deductions when precision >10% at 90% confidence.",
+      "section_anchor": "monitoring-data-and-reporting",
       "section_id": "S-5",
+      "section_number": "5",
+      "section_stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-5",
+      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0007",
       "tags": [
         "uncertainty"
       ],
-      "text": "Sampling uncertainty kept below 10% at 90% confidence or conservatively adjusted using Tool 12."
+      "text": "Sampling uncertainty kept below 10% at 90% confidence or conservatively adjusted using Tool 12.",
+      "title": "Sampling uncertainty kept below 10% at 90% confidence or conservatively adjusted using Tool 12.",
+      "tools": [
+        "UNFCCC/AR-ACM0003@v02-0",
+        "UNFCCC/AR-TOOL12@v03.1"
+      ],
+      "when": [
+        "Uncertainty worksheet provided at verification.",
+        "Deductions applied prior to credit issuance if threshold exceeded."
+      ]
     },
     {
       "id": "R-1-0008",
+      "logic": "Monitoring reports include updated maps, field measurements, emission source logs, leakage deductions, and buffer transactions.",
+      "section_anchor": "monitoring-data-and-reporting",
       "section_id": "S-5",
+      "section_number": "5",
+      "section_stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-5",
+      "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0008",
       "tags": [
         "reporting"
       ],
-      "text": "Monitoring reports compile geospatial data, emissions sources, and buffer transactions with full audit trail."
+      "text": "Monitoring reports compile geospatial data, emissions sources, and buffer transactions with full audit trail.",
+      "title": "Monitoring reports compile geospatial data, emissions sources, and buffer transactions with full audit trail.",
+      "tools": [
+        "UNFCCC/AR-ACM0003@v02-0"
+      ],
+      "when": [
+        "All datasets version-controlled with metadata.",
+        "DOE confirms completeness of supporting records."
+      ]
     }
   ]
 }

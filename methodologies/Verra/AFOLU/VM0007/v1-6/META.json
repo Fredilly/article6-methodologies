@@ -5,7 +5,8 @@
     "source_pdf_sha256": "5a838678058f6de375e8635b5f2fea47a4e5f07cb1a882a44b10f39abc6f34ff"
   },
   "automation": {
-    "scripts_manifest_sha256": "f0c3625d85fcae15f4ede3b3cc5a1d79a1f2be36adc8a519705edee34c694fd8"
+    "repo_commit": "9afe4ce1620cdc2fc5e8a2273d0f2a4dbd5ba3fc",
+    "scripts_manifest_sha256": "88bcdd99683b2d97f4ba0ff9265507a767c809b9f97841110494c1b284a9c59c"
   },
   "domain": "Stub",
   "files": [
@@ -33,6 +34,16 @@
         "url": null
       }
     ]
+  },
+  "relationships": {
+    "version": {
+      "family": "Verra.AFOLU.VM0007",
+      "lineage": [
+        "v1-6"
+      ],
+      "next_version": null,
+      "previous_version": null
+    }
   },
   "standard": "Stub",
   "title": "Stub methodology",
