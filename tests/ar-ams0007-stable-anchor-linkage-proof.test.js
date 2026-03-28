@@ -60,6 +60,7 @@ function assertLocatorContract() {
   const sections = readJson(path.join(methodDir, 'sections.rich.json'));
   const rules = readJson(path.join(methodDir, 'rules.rich.json'));
   const sectionById = new Map(sections.map((section) => [section.id, section]));
+  const sectionByStableId = new Map(sections.map((section) => [section.stable_id, section]));
   const supportedSections = sections.filter((section) => Array.isArray(section.locators) && section.locators.length > 0);
 
   assert.ok(supportedSections.length > 0, 'expected proving methodology to have supported section locators');
@@ -79,13 +80,26 @@ function assertLocatorContract() {
   for (const rule of rules) {
     const primarySectionId = rule.refs.primary_section || rule.refs.sections[0];
     const section = sectionById.get(primarySectionId);
+    const stableSection = sectionByStableId.get(rule.refs.section_stable_id);
     assert.ok(section, `${rule.id}: referenced section should exist`);
+    assert.ok(stableSection, `${rule.id}: refs.section_stable_id should resolve to a real section`);
+    assert.strictEqual(stableSection.id, section.id, `${rule.id}: section_stable_id and primary_section should resolve to the same section`);
+    assert.strictEqual(rule.refs.primary_section, section.id, `${rule.id}: refs.primary_section should match the linked section id`);
+    assert.strictEqual(rule.refs.section_stable_id, section.stable_id, `${rule.id}: refs.section_stable_id should match the linked section stable id`);
+    if ('anchor' in section) {
+      assert.strictEqual(rule.refs.section_anchor, section.anchor, `${rule.id}: refs.section_anchor mismatch`);
+    } else {
+      assert.ok(!('section_anchor' in rule.refs), `${rule.id}: refs.section_anchor should be omitted when section anchor is absent`);
+    }
     assert.ok(rule.section_context, `${rule.id}: section_context should be present`);
     assert.strictEqual(rule.section_context.section_id, section.id, `${rule.id}: section_context.section_id mismatch`);
     assert.strictEqual(rule.section_context.section_ref, section.id, `${rule.id}: section_context.section_ref mismatch`);
     assert.strictEqual(rule.section_context.section_title, section.title, `${rule.id}: section_context.section_title mismatch`);
-    assert.strictEqual(rule.section_context.anchor, section.anchor, `${rule.id}: section_context.anchor mismatch`);
-    assert.strictEqual(rule.refs.section_anchor, section.anchor, `${rule.id}: refs.section_anchor mismatch`);
+    if ('anchor' in section) {
+      assert.strictEqual(rule.section_context.anchor, section.anchor, `${rule.id}: section_context.anchor mismatch`);
+    } else {
+      assert.ok(!('anchor' in rule.section_context), `${rule.id}: section_context.anchor should be omitted when section anchor is absent`);
+    }
     if ('page_start' in section) {
       assert.strictEqual(rule.section_context.page_start, section.page_start, `${rule.id}: section_context.page_start mismatch`);
       assert.strictEqual(rule.section_context.page_end, section.page_end, `${rule.id}: section_context.page_end mismatch`);
