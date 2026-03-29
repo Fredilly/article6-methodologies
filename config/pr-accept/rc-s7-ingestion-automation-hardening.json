@@ -1,0 +1,25 @@
+{
+  "name": "rc-s7-ingestion-automation-hardening",
+  "proof_tests": [
+    "node tests/rc-s7-ingestion-hardening-proof.test.js"
+  ],
+  "validators": [
+    "node scripts/check-roadmap-status-sync.js --base main",
+    "node scripts/check-quality-gates.js ingest-quality-gates.yml"
+  ],
+  "rerun_commands": [
+    "tmp_base=\"$(mktemp -t article6.rcs7.accept)\" && tmp=\"${tmp_base}.yml\" && mv \"$tmp_base\" \"$tmp\" && trap 'rm -f \"$tmp\"' EXIT && printf 'version: 2\\nmethods:\\n  - id: UNFCCC.Agriculture.AM0073\\n    version: v01-0\\n    sector: Agriculture\\n' > \"$tmp\" && PATH=\"$PWD/local-tools/bin:$PATH\" SCOPED_INGEST_RUNS=2 SCOPED_INGEST_ENFORCE_IDEMPOTENCY=1 bash scripts/ingest-scoped.sh \"$tmp\""
+  ],
+  "must_be_zero_diff_after_rerun": [
+    "methodologies/UNFCCC/Agriculture/AM0073/v01-0/META.json",
+    "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+    "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.rich.json",
+    "methodologies/UNFCCC/Agriculture/AM0073/v01-0/sections.json"
+  ],
+  "must_not_change": [
+    "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.rich.json",
+    "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0/rules.rich.json",
+    "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0/rules.rich.json",
+    "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/META.json"
+  ]
+}

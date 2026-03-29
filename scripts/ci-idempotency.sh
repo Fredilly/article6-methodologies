@@ -65,6 +65,19 @@ case "${program}" in
 esac
 
 gate_name="${sector}"
+CURRENT_PHASE="preflight"
+
+phase() {
+  CURRENT_PHASE="$1"
+  echo "== ${gate_name} idempotency phase: ${CURRENT_PHASE} =="
+}
+
+need_cmd() {
+  command -v "$1" >/dev/null 2>&1 || {
+    echo "[idempotency:${gate_name}] missing required command: $1" >&2
+    exit 2
+  }
+}
 
 if [[ "${sector}" == "forestry" ]]; then
   gate_name="forestry"
@@ -81,7 +94,7 @@ fail_diag() {
   if [[ "${sector}" == "forestry" ]]; then
     set +x
   fi
-  echo "== ${gate_name} idempotency gate: FAIL (rc=${rc}) ==" >&2
+  echo "== ${gate_name} idempotency gate: FAIL phase=${CURRENT_PHASE} rc=${rc} ==" >&2
   if [[ "${sector}" == "forestry" ]]; then
     echo "-- git status --porcelain" >&2
     git status --porcelain=v1 >&2 || true
@@ -123,16 +136,29 @@ fi
 
 export PATH="$PWD/local-tools/bin:$PATH"
 export SOURCE_DATE_EPOCH="${SOURCE_DATE_EPOCH:-0}"
+phase "preflight:commands"
+need_cmd bash
+need_cmd git
+need_cmd node
+need_cmd npm
+need_cmd yq
+need_cmd jq
 
 run_once() {
+  local run_label="$1"
+  phase "${run_label}:ingest"
   npm run -s "ingest:${sector}:with-previous"
+  phase "${run_label}:validate-rich"
   npm run -s validate:rich
+  phase "${run_label}:validate-lean"
   npm run -s validate:lean
+  phase "${run_label}:validate-offline"
   npm run -s validate:offline
+  phase "${run_label}:assert-clean"
   assert_clean_tree
 }
 
-run_once
-run_once
+run_once "run1"
+run_once "run2"
 
 echo "== ${gate_name} idempotency gate: OK =="
