@@ -8,7 +8,7 @@
     "node scripts/check-quality-gates.js ingest-quality-gates.yml"
   ],
   "rerun_commands": [
-    "tmp=\"$(mktemp \\\"${TMPDIR:-/tmp}/article6.rcs7.accept.XXXXXX.yml\\\")\" && trap 'rm -f \"$tmp\"' EXIT && printf 'version: 2\\nmethods:\\n  - id: UNFCCC.Agriculture.AM0073\\n    version: v01-0\\n    sector: Agriculture\\n' > \"$tmp\" && PATH=\"$PWD/local-tools/bin:$PATH\" SCOPED_INGEST_RUNS=2 SCOPED_INGEST_ENFORCE_IDEMPOTENCY=1 bash scripts/ingest-scoped.sh \"$tmp\""
+    "tmp_base=\"$(mktemp -t article6.rcs7.accept)\" && tmp=\"${tmp_base}.yml\" && mv \"$tmp_base\" \"$tmp\" && trap 'rm -f \"$tmp\"' EXIT && printf 'version: 2\\nmethods:\\n  - id: UNFCCC.Agriculture.AM0073\\n    version: v01-0\\n    sector: Agriculture\\n' > \"$tmp\" && PATH=\"$PWD/local-tools/bin:$PATH\" SCOPED_INGEST_RUNS=2 SCOPED_INGEST_ENFORCE_IDEMPOTENCY=1 bash scripts/ingest-scoped.sh \"$tmp\""
   ],
   "must_be_zero_diff_after_rerun": [
     "methodologies/UNFCCC/Agriculture/AM0073/v01-0/META.json",
