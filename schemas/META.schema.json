@@ -1,6 +1,83 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "additionalProperties": true,
+  "properties": {
+    "tool_module_relationships": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "module_id": {
+            "type": "string"
+          },
+          "module_label": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "relationship": {
+            "enum": [
+              "uses_tool"
+            ],
+            "type": "string"
+          },
+          "source_refs": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "page_end": {
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "page_start": {
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "rule_id": {
+                  "type": "string"
+                },
+                "section_anchor": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "section_id": {
+                  "pattern": "^S-\\d+(?:-\\d+)*$",
+                  "type": "string"
+                },
+                "section_stable_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "rule_id",
+                "section_id",
+                "section_stable_id"
+              ],
+              "type": "object"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "tool_id": {
+            "pattern": "^[A-Za-z0-9\\-/.]+@v[0-9][A-Za-z0-9\\.-]*$",
+            "type": "string"
+          },
+          "tool_label": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "tool_id",
+          "tool_label",
+          "module_id",
+          "module_label",
+          "relationship",
+          "source_refs"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
   "allOf": [
     {
       "else": {
