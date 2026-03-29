@@ -1,7 +1,7 @@
 {
   "roadmap": "requirement-coverage-support",
   "goal": "Make methodology outputs rich enough to support requirement-to-evidence reconciliation in the app.",
-  "last_updated_at": "2026-03-29T12:00:00Z",
+  "last_updated_at": "2026-03-29T13:00:00Z",
   "phases": [
     {
       "id": "rc-s1-rich-schema-foundation",
@@ -31,7 +31,7 @@
     {
       "id": "rc-s6-optional-expected-evidence-metadata-support",
       "name": "Optional expected-evidence metadata support",
-      "status": "planned"
+      "status": "done"
     },
     {
       "id": "rc-s7-ingestion-automation-hardening-later",

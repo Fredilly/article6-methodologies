@@ -60,6 +60,20 @@
     "requirement_coverage": {
       "coverage_key": "UNFCCC.Agriculture.AM0073.v01-0.R-2-0002",
       "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "IRR or NPV calculations and supporting cost assumptions used to identify the baseline alternative.",
+          "id": "financial-model",
+          "label": "Financial model",
+          "required": true
+        },
+        {
+          "description": "Barrier analysis records or supporting statements used to justify exclusion of higher-emitting alternatives.",
+          "id": "barrier-analysis",
+          "label": "Barrier analysis",
+          "required": true
+        }
+      ],
       "section_refs": [
         {
           "relationship": "source_section",
@@ -107,6 +121,20 @@
     "requirement_coverage": {
       "coverage_key": "UNFCCC.Agriculture.AM0073.v01-0.R-3-0002",
       "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Signed declarations or waivers showing that participating farms do not claim CERs for the transferred manure.",
+          "id": "cer-transfer-declarations",
+          "label": "CER transfer declarations",
+          "required": true
+        },
+        {
+          "description": "Board minutes or participation records substantiating the central entity claim structure.",
+          "id": "governance-records",
+          "label": "Governance records",
+          "required": true
+        }
+      ],
       "section_refs": [
         {
           "relationship": "source_section",
@@ -199,6 +227,20 @@
     "requirement_coverage": {
       "coverage_key": "UNFCCC.Agriculture.AM0073.v01-0.R-5-0003",
       "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Monitored manure quantities, volatile solids content, and related farm-level data used in emission reduction calculations.",
+          "id": "activity-data",
+          "label": "Activity data",
+          "required": true
+        },
+        {
+          "description": "Electricity and thermal consumption records supporting project emission calculations.",
+          "id": "energy-metering",
+          "label": "Energy metering",
+          "required": true
+        }
+      ],
       "section_refs": [
         {
           "relationship": "source_section",
@@ -289,6 +331,20 @@
     "requirement_coverage": {
       "coverage_key": "UNFCCC.Agriculture.AM0073.v01-0.R-7-0005",
       "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Recorded biogas flow, methane fraction, dispatch, and electricity measurements aggregated into the required monitoring records.",
+          "id": "monitoring-records",
+          "label": "Monitoring records",
+          "required": true
+        },
+        {
+          "description": "Calibration and QA/QC records for flow meters, gas analyzers, and electricity meters used in monitoring.",
+          "id": "calibration-certificates",
+          "label": "Calibration certificates",
+          "required": true
+        }
+      ],
       "section_refs": [
         {
           "relationship": "source_section",
@@ -333,6 +389,20 @@
     "requirement_coverage": {
       "coverage_key": "UNFCCC.Agriculture.AM0073.v01-0.R-8-0005",
       "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Inspection records for high-emitting farms and associated corrective-action documentation retained for DOE review.",
+          "id": "site-inspection-records",
+          "label": "Site inspection records",
+          "required": true
+        },
+        {
+          "description": "Annual reconciliation records comparing methane generated and consumed at the plant, including discrepancy investigations.",
+          "id": "methane-balance-reconciliation",
+          "label": "Methane balance reconciliation",
+          "required": true
+        }
+      ],
       "section_refs": [
         {
           "relationship": "source_section",
