@@ -24,6 +24,81 @@ const REQUIREMENT_COVERAGE_METHODS = new Set([
 const RICHER_RULE_DETAIL_METHODS = new Set([
   'UNFCCC/Agriculture/AM0073/v01-0',
 ]);
+const EXPECTED_EVIDENCE_METHODS = new Set([
+  'UNFCCC/Agriculture/AM0073/v01-0',
+]);
+const EXPECTED_EVIDENCE_BY_RULE_ID = {
+  'UNFCCC.Agriculture.AM0073.v01-0.R-2-0002': [
+    {
+      description: 'IRR or NPV calculations and supporting cost assumptions used to identify the baseline alternative.',
+      id: 'financial-model',
+      label: 'Financial model',
+      required: true,
+    },
+    {
+      description: 'Barrier analysis records or supporting statements used to justify exclusion of higher-emitting alternatives.',
+      id: 'barrier-analysis',
+      label: 'Barrier analysis',
+      required: true,
+    },
+  ],
+  'UNFCCC.Agriculture.AM0073.v01-0.R-3-0002': [
+    {
+      description: 'Signed declarations or waivers showing that participating farms do not claim CERs for the transferred manure.',
+      id: 'cer-transfer-declarations',
+      label: 'CER transfer declarations',
+      required: true,
+    },
+    {
+      description: 'Board minutes or participation records substantiating the central entity claim structure.',
+      id: 'governance-records',
+      label: 'Governance records',
+      required: true,
+    },
+  ],
+  'UNFCCC.Agriculture.AM0073.v01-0.R-5-0003': [
+    {
+      description: 'Monitored manure quantities, volatile solids content, and related farm-level data used in emission reduction calculations.',
+      id: 'activity-data',
+      label: 'Activity data',
+      required: true,
+    },
+    {
+      description: 'Electricity and thermal consumption records supporting project emission calculations.',
+      id: 'energy-metering',
+      label: 'Energy metering',
+      required: true,
+    },
+  ],
+  'UNFCCC.Agriculture.AM0073.v01-0.R-7-0005': [
+    {
+      description: 'Recorded biogas flow, methane fraction, dispatch, and electricity measurements aggregated into the required monitoring records.',
+      id: 'monitoring-records',
+      label: 'Monitoring records',
+      required: true,
+    },
+    {
+      description: 'Calibration and QA/QC records for flow meters, gas analyzers, and electricity meters used in monitoring.',
+      id: 'calibration-certificates',
+      label: 'Calibration certificates',
+      required: true,
+    },
+  ],
+  'UNFCCC.Agriculture.AM0073.v01-0.R-8-0005': [
+    {
+      description: 'Inspection records for high-emitting farms and associated corrective-action documentation retained for DOE review.',
+      id: 'site-inspection-records',
+      label: 'Site inspection records',
+      required: true,
+    },
+    {
+      description: 'Annual reconciliation records comparing methane generated and consumed at the plant, including discrepancy investigations.',
+      id: 'methane-balance-reconciliation',
+      label: 'Methane balance reconciliation',
+      required: true,
+    },
+  ],
+};
 
 function relToDir(rel) {
   return path.join(ROOT, 'methodologies', ...rel.split('/'));
@@ -72,7 +147,13 @@ function buildRuleId(dir, index, section) {
   return `${methodKey(dir)}.R-${index + 1}-${sectionNum.padStart(4, '0')}`;
 }
 
-function buildRequirementCoverage(ruleId, sectionIds) {
+function buildExpectedEvidence(ruleId) {
+  const entries = EXPECTED_EVIDENCE_BY_RULE_ID[ruleId];
+  if (!Array.isArray(entries) || entries.length === 0) return undefined;
+  return entries.map((entry) => ({ ...entry }));
+}
+
+function buildRequirementCoverage(ruleId, sectionIds, expectedEvidence) {
   const refs = (sectionIds || [])
     .filter((sectionId) => typeof sectionId === 'string' && /^S-\d+(?:-\d+)*$/.test(sectionId))
     .map((sectionId) => ({
@@ -83,6 +164,7 @@ function buildRequirementCoverage(ruleId, sectionIds) {
   return {
     coverage_key: ruleId,
     coverage_scope: 'rule',
+    ...(expectedEvidence ? { expected_evidence: expectedEvidence } : {}),
     section_refs: refs,
   };
 }
@@ -129,6 +211,7 @@ function reshape(dir) {
   }
   const includeRequirementCoverage = REQUIREMENT_COVERAGE_METHODS.has(methodRel(dir));
   const includeRicherRuleDetail = RICHER_RULE_DETAIL_METHODS.has(methodRel(dir));
+  const includeExpectedEvidence = EXPECTED_EVIDENCE_METHODS.has(methodRel(dir));
   const meta = loadJSON(metaPath);
   const docId = (meta.provenance && meta.provenance.source_pdfs && meta.provenance.source_pdfs[0]?.doc) || methodDoc(dir);
   const sourceHash = (meta.provenance && meta.provenance.source_pdfs && meta.provenance.source_pdfs[0]?.sha256) || meta.audit_hashes?.source_pdf_sha256;
@@ -152,8 +235,11 @@ function reshape(dir) {
 
   const rulesRich = TEMPLATE.rules.map((rule, idx) => {
     const ruleId = buildRuleId(dir, idx, rule.section);
+    const expectedEvidence = includeExpectedEvidence
+      ? buildExpectedEvidence(ruleId)
+      : undefined;
     const requirementCoverage = includeRequirementCoverage
-      ? buildRequirementCoverage(ruleId, [rule.section])
+      ? buildRequirementCoverage(ruleId, [rule.section], expectedEvidence)
       : undefined;
     const sectionContext = includeRicherRuleDetail
       ? buildSectionContext(sectionIndex.get(rule.section))
