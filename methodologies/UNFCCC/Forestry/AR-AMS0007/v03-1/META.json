@@ -11,7 +11,7 @@
   "automation": {
     "node_version": "v20.11.1",
     "repo_commit": "9afe4ce1620cdc2fc5e8a2273d0f2a4dbd5ba3fc",
-    "scripts_manifest_sha256": "96da3aa5ac967e2220c5d4b951aa7e627d2e87d594ba4ca7ef9dd55f9f8f3bcb"
+    "scripts_manifest_sha256": "ff94756db5d8bc79f64246bf2ae568cd7c014ed30abe74770ff218d3486eed26"
   },
   "provenance": {
     "author": "Fred Egbuedike",
@@ -88,5 +88,114 @@
       "previous_version": null
     }
   },
-  "stage": "staging"
+  "stage": "staging",
+  "tool_module_relationships": [
+    {
+      "module_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-5",
+      "module_label": "Project scenario and net GHG removals",
+      "relationship": "uses_tool",
+      "source_refs": [
+        {
+          "page_end": 10,
+          "page_start": 10,
+          "rule_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0005",
+          "section_anchor": "project-scenario-and-net-ghg-removals",
+          "section_id": "S-5",
+          "section_stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-5"
+        }
+      ],
+      "tool_id": "UNFCCC/AR-TOOL08@v04.0.0",
+      "tool_label": "AR-TOOL08"
+    },
+    {
+      "module_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-9",
+      "module_label": "Uncertainty, precision, QA/QC",
+      "relationship": "uses_tool",
+      "source_refs": [
+        {
+          "rule_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0009",
+          "section_anchor": "uncertainty-precision-qa-qc",
+          "section_id": "S-9",
+          "section_stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-9"
+        }
+      ],
+      "tool_id": "UNFCCC/AR-TOOL12@v03.1",
+      "tool_label": "AR-TOOL12"
+    },
+    {
+      "module_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-12",
+      "module_label": "Calculation procedures and equations",
+      "relationship": "uses_tool",
+      "source_refs": [
+        {
+          "rule_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0012",
+          "section_anchor": "calculation-procedures-and-equations",
+          "section_id": "S-12",
+          "section_stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-12"
+        }
+      ],
+      "tool_id": "UNFCCC/AR-TOOL14@v04.2",
+      "tool_label": "AR-TOOL14"
+    },
+    {
+      "module_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-6",
+      "module_label": "Leakage",
+      "relationship": "uses_tool",
+      "source_refs": [
+        {
+          "rule_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0006",
+          "section_anchor": "leakage",
+          "section_id": "S-6",
+          "section_stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-6"
+        }
+      ],
+      "tool_id": "UNFCCC/AR-TOOL14@v04.2",
+      "tool_label": "AR-TOOL14"
+    },
+    {
+      "module_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-8",
+      "module_label": "Data and parameters",
+      "relationship": "uses_tool",
+      "source_refs": [
+        {
+          "rule_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0008",
+          "section_anchor": "data-and-parameters",
+          "section_id": "S-8",
+          "section_stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-8"
+        }
+      ],
+      "tool_id": "UNFCCC/AR-TOOL14@v04.2",
+      "tool_label": "AR-TOOL14"
+    },
+    {
+      "module_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-10",
+      "module_label": "Permanence (tCERs/lCERs)",
+      "relationship": "uses_tool",
+      "source_refs": [
+        {
+          "rule_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0010",
+          "section_anchor": "permanence-tcers-lcers",
+          "section_id": "S-10",
+          "section_stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-10"
+        }
+      ],
+      "tool_id": "UNFCCC/AR-TOOL15@v02.0",
+      "tool_label": "AR-TOOL15"
+    },
+    {
+      "module_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-7",
+      "module_label": "Monitoring plan",
+      "relationship": "uses_tool",
+      "source_refs": [
+        {
+          "rule_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.R-1-0007",
+          "section_anchor": "monitoring-plan",
+          "section_id": "S-7",
+          "section_stable_id": "UNFCCC.Forestry.AR-AMS0007.v03-1.S-7"
+        }
+      ],
+      "tool_id": "UNFCCC/AR-TOOL16@v01.1.0",
+      "tool_label": "AR-TOOL16"
+    }
+  ]
 }

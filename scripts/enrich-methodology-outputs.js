@@ -6,6 +6,9 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const METHODOLOGIES_ROOT = path.join(ROOT, 'methodologies');
+const TOOL_MODULE_RELATIONSHIP_METHODS = new Set([
+  'UNFCCC.Forestry.AR-AMS0007.v03-1'
+]);
 
 function readJSON(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -75,6 +78,31 @@ function sortLocators(locators) {
   });
 }
 
+function summarizeToolLabel(toolId) {
+  const normalized = String(toolId || '').split('/').pop() || String(toolId || '');
+  return normalized.split('@')[0] || normalized;
+}
+
+function sortSourceRefs(sourceRefs) {
+  return [...(sourceRefs || [])].sort((a, b) => {
+    return JSON.stringify([
+      a.rule_id || '',
+      a.section_stable_id || '',
+      a.section_id || '',
+      a.section_anchor || '',
+      a.page_start || 0,
+      a.page_end || 0
+    ]).localeCompare(JSON.stringify([
+      b.rule_id || '',
+      b.section_stable_id || '',
+      b.section_id || '',
+      b.section_anchor || '',
+      b.page_start || 0,
+      b.page_end || 0
+    ]));
+  });
+}
+
 function normalizeLocators(locators) {
   return sortLocators(dedupeByKey(
     (locators || [])
@@ -137,8 +165,10 @@ function enrichMethod(methodDir) {
   const anchors = loadAnchors(methodDir);
   const sectionsPath = path.join(methodDir, 'sections.rich.json');
   const rulesPath = path.join(methodDir, 'rules.rich.json');
+  const metaPath = path.join(methodDir, 'META.json');
   const sections = readJSON(sectionsPath);
   const rules = readJSON(rulesPath);
+  const meta = readJSON(metaPath);
 
   const sectionMap = new Map();
   const enrichedSections = sections.map((section) => {
@@ -226,6 +256,58 @@ function enrichMethod(methodDir) {
 
   writeJSON(sectionsPath, enrichedSections);
   writeJSON(rulesPath, enrichedRules);
+
+  if (TOOL_MODULE_RELATIONSHIP_METHODS.has(info.methodologyId)) {
+    const relationshipsByKey = new Map();
+    const declaredToolIds = new Set((((meta.references || {}).tools) || []).map((tool) => tool.doc));
+    for (const rule of enrichedRules) {
+      const sectionStableId = rule.refs?.section_stable_id;
+      const sectionId = rule.refs?.primary_section || rule.section_context?.section_id;
+      const section = sectionId ? sectionMap.get(sectionId) : null;
+      if (!sectionStableId || !section || !Array.isArray(rule.refs?.tools)) continue;
+      const externalToolIds = rule.refs.tools.filter((toolId) => toolId !== info.methodologyRef && declaredToolIds.has(toolId));
+      for (const toolId of externalToolIds) {
+        const key = JSON.stringify([toolId, sectionStableId, 'uses_tool']);
+        const entry = relationshipsByKey.get(key) || {
+          tool_id: toolId,
+          tool_label: summarizeToolLabel(toolId),
+          module_id: sectionStableId,
+          module_label: section.title,
+          relationship: 'uses_tool',
+          source_refs: []
+        };
+        const sourceRef = {
+          rule_id: rule.stable_id || rule.id,
+          section_id: sectionId,
+          section_stable_id: sectionStableId,
+          ...(section.anchor ? { section_anchor: section.anchor } : {}),
+          ...(section.pageStart ? { page_start: section.pageStart } : {}),
+          ...(section.pageEnd ? { page_end: section.pageEnd } : {})
+        };
+        entry.source_refs = dedupeByKey([...entry.source_refs, sourceRef], (value) => JSON.stringify(value));
+        relationshipsByKey.set(key, entry);
+      }
+    }
+    const toolModuleRelationships = [...relationshipsByKey.values()]
+      .map((entry) => ({
+        ...entry,
+        source_refs: sortSourceRefs(entry.source_refs)
+      }))
+      .sort((a, b) => JSON.stringify([
+        a.tool_id,
+        a.module_id,
+        a.relationship
+      ]).localeCompare(JSON.stringify([
+        b.tool_id,
+        b.module_id,
+        b.relationship
+      ])));
+    if (toolModuleRelationships.length > 0) meta.tool_module_relationships = toolModuleRelationships;
+    else delete meta.tool_module_relationships;
+  } else {
+    delete meta.tool_module_relationships;
+  }
+  writeJSON(metaPath, meta);
 
   return info;
 }
