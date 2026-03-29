@@ -9,6 +9,9 @@ const METHODOLOGIES_ROOT = path.join(ROOT, 'methodologies');
 const TOOL_MODULE_RELATIONSHIP_METHODS = new Set([
   'UNFCCC.Forestry.AR-AMS0007.v03-1'
 ]);
+const VERSION_RELATIONSHIP_FAMILIES = new Set([
+  'UNFCCC/Forestry/AR-AM0014'
+]);
 
 function readJSON(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -42,6 +45,10 @@ function listMethodDirs(root) {
     }
   })(root);
   return out.sort();
+}
+
+function isCanonicalMethodDir(methodDir) {
+  return path.relative(METHODOLOGIES_ROOT, methodDir).split(path.sep).length === 4;
 }
 
 function sectionNumberFromId(sectionId) {
@@ -101,6 +108,10 @@ function sortSourceRefs(sourceRefs) {
       b.page_end || 0
     ]));
   });
+}
+
+function versionPairKey(familyKey, fromVersion, toVersion) {
+  return `${familyKey.replace(/\//g, '.')}:${fromVersion}..${toVersion}`;
 }
 
 function normalizeLocators(locators) {
@@ -349,13 +360,31 @@ function applyVersionRelationships(methodDirs) {
       const item = items[index];
       const metaPath = path.join(item.methodDir, 'META.json');
       const meta = readJSON(metaPath);
+      const familyKeyDot = item.familyKey.replace(/\//g, '.');
+      const previousVersion = index > 0 ? items[index - 1].version : null;
+      const nextVersion = index < items.length - 1 ? items[index + 1].version : null;
       meta.relationships = meta.relationships || {};
       meta.relationships.version = {
-        family: item.familyKey.replace(/\//g, '.'),
+        family: familyKeyDot,
         lineage,
-        next_version: index < items.length - 1 ? items[index + 1].version : null,
-        previous_version: index > 0 ? items[index - 1].version : null
+        next_version: nextVersion,
+        previous_version: previousVersion
       };
+      if (VERSION_RELATIONSHIP_FAMILIES.has(item.familyKey)) {
+        const diffHints = {};
+        if (previousVersion) diffHints.previous_pair_key = versionPairKey(item.familyKey, previousVersion, item.version);
+        if (nextVersion) diffHints.next_pair_key = versionPairKey(item.familyKey, item.version, nextVersion);
+        meta.version_relationships = {
+          family_key: familyKeyDot,
+          current_version: item.version,
+          previous_version: previousVersion,
+          next_version: nextVersion,
+          lineage,
+          diff_hints: diffHints
+        };
+      } else {
+        delete meta.version_relationships;
+      }
       writeJSON(metaPath, meta);
     }
   }
@@ -363,10 +392,20 @@ function applyVersionRelationships(methodDirs) {
 
 function main() {
   const args = process.argv.slice(2);
-  const methodDirs = (args.length > 0 ? args.map((value) => path.resolve(value)) : listMethodDirs(METHODOLOGIES_ROOT))
+  const allMethodDirs = listMethodDirs(METHODOLOGIES_ROOT);
+  const methodDirs = (args.length > 0 ? args.map((value) => path.resolve(value)) : allMethodDirs)
     .sort();
-  for (const methodDir of methodDirs) enrichMethod(methodDir);
-  if (args.length === 0) applyVersionRelationships(methodDirs);
+  const targetFamilies = new Set(methodDirs.map((methodDir) => getMethodInfo(methodDir).familyKey));
+  const scopedVersionOnly = args.length > 0 && [...targetFamilies].every((familyKey) => VERSION_RELATIONSHIP_FAMILIES.has(familyKey));
+  if (!scopedVersionOnly) {
+    for (const methodDir of methodDirs) enrichMethod(methodDir);
+  }
+  if (args.length === 0) {
+    applyVersionRelationships(allMethodDirs.filter(isCanonicalMethodDir));
+  } else {
+    const familyMethodDirs = allMethodDirs.filter((methodDir) => isCanonicalMethodDir(methodDir) && targetFamilies.has(getMethodInfo(methodDir).familyKey));
+    applyVersionRelationships(familyMethodDirs);
+  }
   console.log(`OK: enriched ${methodDirs.length} methodology output folder(s).`);
 }
 

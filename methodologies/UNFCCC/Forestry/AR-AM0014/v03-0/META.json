@@ -11,7 +11,7 @@
   "automation": {
     "node_version": "v20.11.1",
     "repo_commit": "9afe4ce1620cdc2fc5e8a2273d0f2a4dbd5ba3fc",
-    "scripts_manifest_sha256": "88bcdd99683b2d97f4ba0ff9265507a767c809b9f97841110494c1b284a9c59c"
+    "scripts_manifest_sha256": "c2bdba1302c7c00fb881e0a64cf803a2507be4f09b26ce148accadd8ec8d8963"
   },
   "provenance": {
     "author": "Fred Egbuedike",
@@ -90,5 +90,19 @@
       "previous_version": "v02-0-0"
     }
   },
-  "stage": "staging"
+  "stage": "staging",
+  "version_relationships": {
+    "current_version": "v03-0",
+    "diff_hints": {
+      "previous_pair_key": "UNFCCC.Forestry.AR-AM0014:v02-0-0..v03-0"
+    },
+    "family_key": "UNFCCC.Forestry.AR-AM0014",
+    "lineage": [
+      "v01-0-0",
+      "v02-0-0",
+      "v03-0"
+    ],
+    "next_version": null,
+    "previous_version": "v02-0-0"
+  }
 }
