@@ -1,7 +1,7 @@
 {
   "roadmap": "requirement-coverage-support",
   "goal": "Make methodology outputs rich enough to support requirement-to-evidence reconciliation in the app.",
-  "last_updated_at": "2026-03-29T08:30:00Z",
+  "last_updated_at": "2026-03-29T12:00:00Z",
   "phases": [
     {
       "id": "rc-s1-rich-schema-foundation",
@@ -26,7 +26,7 @@
     {
       "id": "rc-s5-version-relationship-diff-support",
       "name": "Version relationship + diff support",
-      "status": "planned"
+      "status": "done"
     },
     {
       "id": "rc-s6-optional-expected-evidence-metadata-support",
