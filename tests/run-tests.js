@@ -18,6 +18,7 @@ const tests = [
   'tests/roadmap-status-sync.test.js',
   'tests/ar-ams0007-tool-module-relationships-proof.test.js',
   'tests/pr-accept-harness.test.js',
+  'tests/rc-s7-ingestion-hardening-proof.test.js',
 ];
 
 function main() {

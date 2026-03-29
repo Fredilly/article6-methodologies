@@ -3,6 +3,21 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+CURRENT_PHASE="preflight"
+
+phase() {
+  CURRENT_PHASE="$1"
+  echo "[ingest-scoped] phase=${CURRENT_PHASE}"
+}
+
+die() {
+  echo "[ingest-scoped] ${CURRENT_PHASE}: $1" >&2
+  exit "${2:-1}"
+}
+
+need_cmd() {
+  command -v "$1" >/dev/null 2>&1 || die "missing required command: $1" 2
+}
 
 if [ "$#" -lt 1 ]; then
   echo "Usage: scripts/ingest-scoped.sh <ingest-yml>"
@@ -21,6 +36,7 @@ RUN1_DIFF="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.run1.diff.XXXXXX")"
 RUN1_CACHED_DIFF="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.run1.cached.XXXXXX")"
 cleanup() { rm -f "$SCOPED_YML" "$BASELINE_STATUS" "$BASELINE_DIFF" "$BASELINE_CACHED_DIFF" "$RUN1_DIFF" "$RUN1_CACHED_DIFF"; }
 trap cleanup EXIT
+trap 'rc=$?; if [ "$rc" -ne 0 ]; then echo "[ingest-scoped] FAIL phase=${CURRENT_PHASE} rc=${rc}" >&2; fi' ERR
 
 if ! [[ "$RUNS" =~ ^[0-9]+$ ]]; then
   echo "[ingest-scoped] invalid SCOPED_INGEST_RUNS value: ${RUNS}"
@@ -37,36 +53,42 @@ fi
 
 pushd "$REPO_ROOT" >/dev/null
 
-if [ ! -f "$INGEST_YML" ]; then
-  echo "[ingest-scoped] ingest file not found: $INGEST_YML" >&2
-  exit 2
-fi
+phase "preflight"
+need_cmd bash
+need_cmd git
+need_cmd jq
+need_cmd node
+need_cmd npm
+need_cmd yq
 
-if [ ! -f "registry.json" ]; then
-  echo "[ingest-scoped] missing required artefact: registry.json" >&2
-  exit 2
-fi
+[ -f "$INGEST_YML" ] || die "ingest file not found: $INGEST_YML" 2
+[ -f "registry.json" ] || die "missing required artefact: registry.json" 2
+[ -f "${SCRIPT_DIR}/ingest.sh" ] || die "missing required script: scripts/ingest.sh" 2
+[ -f "${SCRIPT_DIR}/check-scope-drift.mjs" ] || die "missing required script: scripts/check-scope-drift.mjs" 2
 
-echo "[ingest-scoped] parse check"
+echo "[ingest-scoped] parse check: ${INGEST_YML}"
 node "${SCRIPT_DIR}/check-ingest-yml.mjs" "$INGEST_YML" >/dev/null
-
-git status --porcelain=v1 -z > "$BASELINE_STATUS"
-git diff > "$BASELINE_DIFF"
-git diff --cached > "$BASELINE_CACHED_DIFF"
-
+phase "preflight:resolve-scope"
 node "${SCRIPT_DIR}/resolve-ingest-scope.mjs" \
   --source ingest \
   --in "$INGEST_YML" \
   --out "$SCOPED_YML" \
   --assert-sector true
 
+scoped_method_dirs=()
+while IFS= read -r line; do
+  [ -n "$line" ] && scoped_method_dirs+=("$line")
+done < <(node "${SCRIPT_DIR}/ingest-scope-paths.mjs" --ingest-yml "$SCOPED_YML" --kind methodologies-dirs)
+if [ "${#scoped_method_dirs[@]}" -eq 0 ]; then
+  die "scope resolved to zero methodology directories: ${INGEST_YML}" 2
+fi
+
+git status --porcelain=v1 -z > "$BASELINE_STATUS"
+git diff > "$BASELINE_DIFF"
+git diff --cached > "$BASELINE_CACHED_DIFF"
+
 for ((run=1; run<=RUNS; run++)); do
   echo "[ingest-scoped] run ${run}/${RUNS} ingest=${INGEST_YML}"
-  scoped_method_dirs=()
-  while IFS= read -r line; do
-    [ -n "$line" ] && scoped_method_dirs+=("$line")
-  done < <(node "${SCRIPT_DIR}/ingest-scope-paths.mjs" --ingest-yml "$SCOPED_YML" --kind methodologies-dirs)
-
   has_agriculture=0
   has_forestry=0
   for d in "${scoped_method_dirs[@]}"; do
@@ -80,6 +102,7 @@ for ((run=1; run<=RUNS; run++)); do
     echo "[ingest-scoped] forestry-only scope detected → DRY_RUN=1 (guardrails only; no regeneration)"
   fi
 
+  phase "generation:ingest"
   DRY_RUN="$scoped_dry_run" RUN_VALIDATE=0 INGEST_FILE="$SCOPED_YML" bash "${SCRIPT_DIR}/ingest.sh"
 
   agri_dirs=()
@@ -89,36 +112,49 @@ for ((run=1; run<=RUNS; run++)); do
     [[ "$d" == *"/Forestry/"* ]] && forestry_dirs+=("$d")
   done
   if [ "$scoped_dry_run" -eq 0 ] && [ "${#agri_dirs[@]}" -gt 0 ] && [ -f "${SCRIPT_DIR}/reshape-agriculture.js" ]; then
+    phase "generation:reshape-agriculture"
     echo "[ingest-scoped] reshape-agriculture (scoped)"
     node "${SCRIPT_DIR}/reshape-agriculture.js" "${agri_dirs[@]}"
   fi
 
   if [ "${ARTICLE6_INCLUDE_PREVIOUS:-0}" = "1" ] && { [ "${#agri_dirs[@]}" -gt 0 ] || [ "${#forestry_dirs[@]}" -gt 0 ]; }; then
     if [ -z "${ARTICLE6_PREVIOUS_LOCK:-}" ]; then
-      echo "[ingest-scoped] ARTICLE6_INCLUDE_PREVIOUS=1 requires ARTICLE6_PREVIOUS_LOCK=<path>" >&2
-      exit 2
+      die "ARTICLE6_INCLUDE_PREVIOUS=1 requires ARTICLE6_PREVIOUS_LOCK=<path>" 2
     fi
+    phase "generation:previous"
     echo "[ingest-scoped] include previous versions from lockfile"
     node "${SCRIPT_DIR}/ingest-previous-from-lock.mjs" \
       --ingest-yml "$SCOPED_YML" \
       --previous-lock "${ARTICLE6_PREVIOUS_LOCK}"
   fi
 
+  phase "drift:post-generation"
+  node "${SCRIPT_DIR}/check-scope-drift.mjs" \
+    --ingest-yml "$SCOPED_YML" \
+    --allow scripts_manifest.json \
+    --allow registry.json \
+    --baseline-status "$BASELINE_STATUS"
+
+  phase "preflight:assert-existing"
   node "${SCRIPT_DIR}/resolve-ingest-scope.mjs" \
     --source ingest \
     --in "$SCOPED_YML" \
     --out "$SCOPED_YML" \
     --assert-sector true \
     --assert-existing true
+  phase "generation:hash-all"
   echo "[ingest-scoped] refresh META hashes (scoped)"
   bash "${SCRIPT_DIR}/hash-all.sh" --ingest-yml "$SCOPED_YML"
+  phase "generation:registry"
   echo "[ingest-scoped] gen-registry"
   node "${SCRIPT_DIR}/gen-registry.js" --ingest-yml "$SCOPED_YML"
+  phase "drift:registry-scope"
   echo "[ingest-scoped] registry scope gate"
   node "${SCRIPT_DIR}/check-registry-scope.mjs" \
     --ingest-yml "$SCOPED_YML" \
     --baseline-status "$BASELINE_STATUS"
   if [ "$scoped_dry_run" -eq 0 ]; then
+    phase "canonical-json"
     echo "[ingest-scoped] canonical-json (scoped)"
     roots="$(node "${SCRIPT_DIR}/ingest-scope-paths.mjs" --ingest-yml "$SCOPED_YML" --kind methodologies-dirs --sep ',')"
     ./scripts/json-canonical-check.sh --fix --roots="${roots%,}"
@@ -126,12 +162,16 @@ for ((run=1; run<=RUNS; run++)); do
   else
     echo "[ingest-scoped] skip: canonical-json (forestry-only DRY_RUN)"
   fi
+  phase "validate:rich"
   echo "[ingest-scoped] validations (rich)"
   npm run -s validate:rich
+  phase "validate:lean"
   echo "[ingest-scoped] validations (lean)"
   npm run -s validate:lean
+  phase "quality-gates"
   echo "[ingest-scoped] quality gates"
   node "${SCRIPT_DIR}/check-quality-gates.js" ingest-quality-gates.yml
+  phase "drift:scope"
   echo "[ingest-scoped] scope drift gate"
   node "${SCRIPT_DIR}/check-scope-drift.mjs" \
     --ingest-yml "$SCOPED_YML" \
@@ -146,22 +186,24 @@ for ((run=1; run<=RUNS; run++)); do
 done
 
 if [ "$IDEMPOTENT" = "1" ]; then
+  phase "idempotency:compare-run-diffs"
   echo "[ingest-scoped] enforcing stable diffs across runs (run1 vs final)"
   tmp_diff="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.current.diff.XXXXXX")"
   tmp_cached="$(mktemp "${TMPDIR:-/tmp}/article6.ingest.current.cached.XXXXXX")"
   git diff > "$tmp_diff"
   git diff --cached > "$tmp_cached"
   if ! cmp -s "$RUN1_DIFF" "$tmp_diff"; then
-    echo "[ingest-scoped] FAIL: working tree diff changed between runs" >&2
+    echo "[ingest-scoped] idempotency: working tree diff changed between runs" >&2
     rm -f "$tmp_diff" "$tmp_cached"
     exit 1
   fi
   if ! cmp -s "$RUN1_CACHED_DIFF" "$tmp_cached"; then
-    echo "[ingest-scoped] FAIL: index diff changed between runs" >&2
+    echo "[ingest-scoped] idempotency: index diff changed between runs" >&2
     rm -f "$tmp_diff" "$tmp_cached"
     exit 1
   fi
   rm -f "$tmp_diff" "$tmp_cached"
+  phase "drift:final-scope"
   echo "[ingest-scoped] final scope drift gate"
   node "${SCRIPT_DIR}/check-scope-drift.mjs" \
     --ingest-yml "$SCOPED_YML" \

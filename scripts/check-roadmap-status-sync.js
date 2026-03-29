@@ -10,16 +10,23 @@ const roadmapStatusPath = 'docs/roadmaps/requirement-coverage-support/phase-stat
 const implementationTargets = [
   'config/pr-accept/am0073-richer-rule-detail.json',
   'config/pr-accept/am0073-stable-anchor-linkage.json',
+  'config/pr-accept/rc-s7-ingestion-automation-hardening.json',
+  'docs/projects/requirement-coverage-methodology-adjustments/',
   'methodologies/UNFCCC/Agriculture/AM0073/v01-0/',
   'methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/',
+  '.github/workflows/agriculture-idempotency.yml',
+  '.github/workflows/stage-gates.yml',
   'schemas/rules.rich.schema.json',
   'schemas/sections.rich.schema.json',
+  'scripts/ci-idempotency.sh',
+  'scripts/ingest-scoped.sh',
   'scripts/enrich-methodology-outputs.js',
   'scripts/pr-accept.js',
   'scripts/reshape-agriculture.js',
   'tests/am0073-requirement-coverage-proof.test.js',
   'tests/am0073-richer-rule-detail-proof.test.js',
   'tests/ar-ams0007-stable-anchor-linkage-proof.test.js',
+  'tests/rc-s7-ingestion-hardening-proof.test.js',
 ];
 
 function fail(message, details, exitCode = 1) {

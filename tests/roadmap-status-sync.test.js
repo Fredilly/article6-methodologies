@@ -11,6 +11,7 @@ const repoRoot = path.resolve(__dirname, '..');
 const scriptPath = path.join(repoRoot, 'scripts', 'check-roadmap-status-sync.js');
 const phaseStatusPath = path.join('docs', 'roadmaps', 'requirement-coverage-support', 'phase-status.json');
 const implementationPath = path.join('schemas', 'rules.rich.schema.json');
+const executionImplementationPath = path.join('scripts', 'ingest-scoped.sh');
 
 function run(command, args, cwd) {
   return spawnSync(command, args, { cwd, encoding: 'utf8' });
@@ -143,11 +144,26 @@ function testNoOpPath() {
   }
 }
 
+function testRcS7ExecutionPathRequiresStatusSync() {
+  const tmpDir = setupRepo();
+  try {
+    writeFile(path.join(tmpDir, executionImplementationPath), '#!/usr/bin/env bash\necho scoped\n');
+    commitAll(tmpDir);
+    const result = runGuard(tmpDir);
+    assert.notStrictEqual(result.status, 0, 'rc-s7 execution path should trigger the roadmap sync guard');
+    assert.match(result.stderr, /FAIL requirement-coverage implementation changed without phase-status update/);
+    assert.match(result.stderr, /scripts\/ingest-scoped\.sh/);
+  } finally {
+    fs.rmSync(tmpDir, { recursive: true, force: true });
+  }
+}
+
 function main() {
   testHappyPath();
   testMissingPhaseStatusUpdate();
   testMissingTimestampUpdate();
   testNoOpPath();
+  testRcS7ExecutionPathRequiresStatusSync();
   console.log('ok');
 }
 
