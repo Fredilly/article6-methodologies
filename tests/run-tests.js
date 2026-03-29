@@ -12,6 +12,7 @@ const tests = [
   'tests/agri-ams-iii-rules-coverage.test.js',
   'tests/am0073-requirement-coverage-proof.test.js',
   'tests/am0073-richer-rule-detail-proof.test.js',
+  'tests/ar-am0014-version-relationships-proof.test.js',
   'tests/ar-ams0007-stable-anchor-linkage-proof.test.js',
   'tests/roadmap-status-sync.test.js',
   'tests/ar-ams0007-tool-module-relationships-proof.test.js',

@@ -76,6 +76,57 @@
         "type": "object"
       },
       "type": "array"
+    },
+    "version_relationships": {
+      "additionalProperties": false,
+      "properties": {
+        "current_version": {
+          "type": "string"
+        },
+        "diff_hints": {
+          "additionalProperties": false,
+          "properties": {
+            "next_pair_key": {
+              "type": "string"
+            },
+            "previous_pair_key": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "family_key": {
+          "type": "string"
+        },
+        "lineage": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "next_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "previous_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "family_key",
+        "current_version",
+        "previous_version",
+        "next_version",
+        "lineage",
+        "diff_hints"
+      ],
+      "type": "object"
     }
   },
   "allOf": [
