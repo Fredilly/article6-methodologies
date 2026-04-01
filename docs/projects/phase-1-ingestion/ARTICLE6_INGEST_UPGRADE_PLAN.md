@@ -19,6 +19,7 @@ Make the `ingest` pipeline produce assets that match manually curated Forestry a
 - **Canonical environment**
   - Codespaces/devcontainer is the reference environment for deciding if a phase is complete.
   - Local Mac is for convenience only; if local behavior disagrees with Codespaces, treat the Codespaces result as truth.
+  - Canonical methodology schema and artifact contract changes must originate in `article6-methodologies`; downstream app or evidence-intake phases consume these fields and do not define canon locally.
 
 ## Progress Tracker
 

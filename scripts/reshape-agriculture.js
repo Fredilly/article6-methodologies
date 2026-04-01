@@ -75,6 +75,10 @@ const EXPECTED_EVIDENCE_BY_RULE_ID = {
       description: 'Recorded biogas flow, methane fraction, dispatch, and electricity measurements aggregated into the required monitoring records.',
       id: 'monitoring-records',
       label: 'Monitoring records',
+      monitoring_report: {
+        expectation: 'Weekly aggregates reconcile with monthly monitoring reports.',
+        frequency: 'monthly',
+      },
       required: true,
     },
     {
@@ -95,6 +99,10 @@ const EXPECTED_EVIDENCE_BY_RULE_ID = {
       description: 'Annual reconciliation records comparing methane generated and consumed at the plant, including discrepancy investigations.',
       id: 'methane-balance-reconciliation',
       label: 'Methane balance reconciliation',
+      monitoring_report: {
+        expectation: 'Methane generation and consumption reconciliations submitted with monitoring reports.',
+        frequency: 'annual',
+      },
       required: true,
     },
   ],
