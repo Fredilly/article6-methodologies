@@ -23,6 +23,22 @@ const expectedEvidenceRuleIds = new Set([
   'UNFCCC.Agriculture.AM0073.v01-0.R-7-0005',
   'UNFCCC.Agriculture.AM0073.v01-0.R-8-0005',
 ]);
+const expectedMonitoringReportEvidence = new Map([
+  [
+    'UNFCCC.Agriculture.AM0073.v01-0.R-7-0005::monitoring-records',
+    {
+      expectation: 'Weekly aggregates reconcile with monthly monitoring reports.',
+      frequency: 'monthly',
+    },
+  ],
+  [
+    'UNFCCC.Agriculture.AM0073.v01-0.R-8-0005::methane-balance-reconciliation',
+    {
+      expectation: 'Methane generation and consumption reconciliations submitted with monitoring reports.',
+      frequency: 'annual',
+    },
+  ],
+]);
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -87,8 +103,30 @@ function assertExpectedEvidenceContract() {
       assert.ok(typeof item.label === 'string' && item.label.length > 0, `${rule.id}: label should be present`);
       assert.ok(typeof item.description === 'string' && item.description.length > 0, `${rule.id}: description should be present`);
       assert.strictEqual(typeof item.required, 'boolean', `${rule.id}: required should be boolean`);
+      const key = `${rule.id}::${item.id}`;
+      const expectedMonitoringReport = expectedMonitoringReportEvidence.get(key);
+      if (expectedMonitoringReport) {
+        assert.deepStrictEqual(
+          item.monitoring_report,
+          expectedMonitoringReport,
+          `${key}: monitoring_report should match the canonical proving shape`,
+        );
+        continue;
+      }
+      assert.ok(!('monitoring_report' in item), `${key}: monitoring_report should be omitted when unsupported`);
     }
   }
+
+  const reportBoundEvidence = rulesWithEvidence.flatMap((rule) =>
+    rule.requirement_coverage.expected_evidence
+      .filter((item) => item.monitoring_report)
+      .map((item) => `${rule.id}::${item.id}`),
+  );
+  assert.deepStrictEqual(
+    new Set(reportBoundEvidence),
+    new Set(expectedMonitoringReportEvidence.keys()),
+    'monitoring_report should be limited to the grounded report-bound evidence items',
+  );
 
   const rulesWithoutEvidence = rulesRich.filter(
     (rule) => rule.requirement_coverage && !('expected_evidence' in rule.requirement_coverage),
@@ -99,7 +137,11 @@ function assertExpectedEvidenceContract() {
 function assertNoBleed() {
   for (const filePath of unrelatedAgricultureRichPaths) {
     const rules = readJson(filePath);
-    const leakingRule = rules.find((rule) => 'expected_evidence' in (rule.requirement_coverage || {}));
+    const leakingRule = rules.find(
+      (rule) =>
+        'expected_evidence' in (rule.requirement_coverage || {}) ||
+        (rule.requirement_coverage?.expected_evidence || []).some((item) => 'monitoring_report' in item),
+    );
     assert.ok(!leakingRule, `${path.relative(repoRoot, filePath)} unexpectedly gained expected_evidence`);
   }
 }

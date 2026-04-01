@@ -197,6 +197,27 @@
                   "minLength": 1,
                   "type": "string"
                 },
+                "monitoring_report": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "expectation": {
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "frequency": {
+                      "enum": [
+                        "monthly",
+                        "annual"
+                      ],
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "frequency",
+                    "expectation"
+                  ],
+                  "type": "object"
+                },
                 "required": {
                   "type": "boolean"
                 }
