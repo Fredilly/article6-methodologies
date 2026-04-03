@@ -1,6 +1,5 @@
 [
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001",
     "logic": "Project qualifies as small-scale afforestation/reforestation when aggregated area under the plan remains below the UNFCCC threshold and land eligibility evidence is maintained.",
     "notes": "Document land-use history, stakeholder consent, and aggregation structure.",
@@ -26,7 +25,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0002",
     "logic": "The methodology defines grouped project participant roles, monitoring entity responsibilities, and leakage belt boundaries.",
     "notes": "Retain participant enrollment agreements and leakage belt maps.",
@@ -55,7 +53,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0003",
     "logic": "Project boundary encompasses all significant carbon pools and on-site emissions sources; excluded pools set to zero emissions by rule.",
     "notes": "Document rationale for any excluded pools including monitoring constraints.",
@@ -84,7 +81,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0004",
     "logic": "Baseline carbon stock change set to zero under conservative assumption that lands remain degraded without project intervention.",
     "notes": "Provide evidence that alternative activities would not increase carbon stocks absent the project.",
@@ -113,7 +109,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0005",
     "logic": "Net project removals equal the sum of pool-based carbon stock changes minus project emissions from fuel use, vehicles, and fertilizer application.",
     "notes": "Maintain emission factor sources and activity data records.",
@@ -143,7 +138,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0006",
     "logic": "Leakage emissions from displaced activities quantified with standardized coefficients from Tool 14 and deducted from net removals.",
     "notes": "Implement leakage mitigation plan engaging local communities.",
@@ -170,7 +164,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0007",
     "logic": "Implement monitoring plan with permanent sample plots, participant reporting forms, and QA/QC checks consistent with Tool 16.",
     "notes": "Provide plot re-measurement schedule and participant monitoring templates.",
@@ -197,7 +190,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0008",
     "logic": "Maintain dataset of project parameters including default biomass expansion factors, root-shoot ratios, and wood density values.",
     "notes": "Parameter updates documented if national data become available.",
@@ -227,7 +219,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0009",
     "logic": "Combine sampling and model uncertainty and apply Tool 12 deduction factors when required precision not achieved.",
     "notes": "Uncertainty worksheets stored with monitoring archives.",
@@ -254,7 +245,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0010",
     "logic": "Allocate a proportional buffer contribution using Tool 15 risk matrix and adjust if threats or safeguards evolve.",
     "notes": "Risk assessment and buffer transactions retained with monitoring records.",
@@ -284,7 +274,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0011",
     "logic": "Project maintains accessible copies of required normative tools and references listed in the methodology.",
     "notes": "Document distribution of normative tools to monitoring staff.",
@@ -312,7 +301,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0012",
     "logic": "Annualized carbon stock change ΔC_year = (C_t2 - C_t1) / T applied for each pool before emissions and leakage are deducted.",
     "notes": "Track measurement intervals precisely to avoid bias.",
@@ -339,7 +327,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0013",
     "logic": "Annex materials capture supporting evidence such as participant lists, training certificates, and grievance records.",
     "notes": "Maintain annex files for at least two crediting periods.",

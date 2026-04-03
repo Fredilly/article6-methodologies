@@ -1,6 +1,5 @@
 [
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.R-1-0001",
     "logic": "Eligible areas lack forest cover since 31 December 1989 and meet host-country forest thresholds at maturity.",
     "notes": "Document legal right and stakeholder consultation outcomes.",
@@ -26,7 +25,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.R-1-0002",
     "logic": "Baseline carbon stock estimates rely on Tool 02 sampling guidance or conservative IPCC defaults.",
     "notes": "Describe sampling design and justify default values.",
@@ -56,7 +54,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.R-1-0003",
     "logic": "Net anthropogenic GHG removals computed by summing project removals and subtracting baseline emissions and leakage deductions.",
     "notes": "Include harvested wood products where applicable.",
@@ -83,7 +80,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.R-1-0004",
     "logic": "Activity shifting leakage calculated with Tool 14 standardized factors and subtracted from project removals each monitoring period.",
     "notes": "Describe mitigation with community agreements and land-use controls.",
@@ -110,7 +106,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.R-1-0005",
     "logic": "Buffer share determined using Tool 15 risk analysis and recorded with registry documentation.",
     "notes": "Update risk analysis if management conditions or tenure change.",
@@ -137,7 +132,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.R-1-0006",
     "logic": "Permanent sample plots measured at ≤5-year intervals with QA/QC re-measurement requirements.",
     "notes": "Calibration records maintained for all instruments.",
@@ -164,7 +158,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.R-1-0007",
     "logic": "When sampling precision exceeds 10%, apply Tool 12 conservative deductions before issuing credits.",
     "notes": "Include uncertainty worksheets in monitoring report annexes.",
@@ -191,7 +184,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-AM0014.v02-0-0.R-1-0008",
     "logic": "Monitoring submissions include updated spatial data, field measurements, leakage results, and QA/QC documentation.",
     "notes": "Maintain records for at least two crediting periods.",

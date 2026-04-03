@@ -237,6 +237,7 @@ function enrichMethod(methodDir) {
   });
 
   const enrichedRules = rules.map((rule) => {
+    const { display: _display, ...ruleWithoutDisplay } = rule;
     const primarySectionId = (((rule.refs || {}).sections) || [])[0] || null;
     const sectionInfo = primarySectionId ? sectionMap.get(primarySectionId) : null;
     const locators = normalizeLocators([
@@ -251,6 +252,9 @@ function enrichMethod(methodDir) {
       title: keepDistinctDisplayText(rule.summary, rule.summary),
       when: keepDistinctDisplayArray(rule.when, rule.when)
     };
+    const displayFields = Object.fromEntries(
+      Object.entries(display).filter(([, value]) => value !== undefined)
+    );
     const refs = {
       ...(rule.refs || {}),
       methodology: info.methodologyRef,
@@ -275,8 +279,8 @@ function enrichMethod(methodDir) {
       }
       : rule.section_context;
     return {
-      ...rule,
-      display,
+      ...ruleWithoutDisplay,
+      ...(Object.keys(displayFields).length > 0 ? { display: displayFields } : {}),
       refs,
       ...(sectionContext ? { section_context: sectionContext } : {}),
       stable_id: stableId

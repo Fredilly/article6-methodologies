@@ -24,6 +24,10 @@ function main() {
     const rules = readJson(path.join(repoRoot, relPath));
     for (const rule of rules) {
       const display = rule.display || {};
+      assert.ok(
+        !rule.display || Object.keys(rule.display).length > 0,
+        `${relPath} ${rule.id}: empty display objects should be omitted entirely`,
+      );
       assert.notStrictEqual(
         display.logic,
         rule.logic,

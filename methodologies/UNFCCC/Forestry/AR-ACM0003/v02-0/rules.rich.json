@@ -1,6 +1,5 @@
 [
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0001",
     "logic": "Project restores degraded forest lands and demonstrates additionality using the UNFCCC barrier or investment analysis.",
     "notes": "Record baseline scenario analysis and legal right to implement A/R activities.",
@@ -26,7 +25,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0002",
     "logic": "Baseline net removals estimated using historical land-use/land-cover data and default parameters from Tool 02.",
     "notes": "Use conservative defaults where national data unavailable; document stratification.",
@@ -56,7 +54,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0003",
     "logic": "Project emissions include fossil fuel consumption, biomass burning, and fertilizer use calculated with Tool 08 default factors.",
     "notes": "Exclude sources only with transparent justification and monitoring evidence.",
@@ -86,7 +83,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0004",
     "logic": "Activity shifting and market leakage quantified annually with Tool 14 standardized coefficients.",
     "notes": "Describe mitigation measures and community engagement to minimize leakage.",
@@ -113,7 +109,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0005",
     "logic": "Buffer contribution calculated with Tool 15 risk scoring and documented alongside issuance.",
     "notes": "Reassess risk when management conditions change.",
@@ -164,7 +159,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0006",
     "logic": "Plot network re-measured at ≤5-year intervals using standard mensuration and Tool 16 QA/QC checks.",
     "notes": "Remote sensing may supplement but not replace ground plots.",
@@ -215,7 +209,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0007",
     "logic": "Calculate combined sampling uncertainty and apply Tool 12 deductions when precision >10% at 90% confidence.",
     "notes": "Variance calculations retained within monitoring report appendices.",
@@ -266,7 +259,6 @@
     ]
   },
   {
-    "display": {},
     "id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0008",
     "logic": "Monitoring reports include updated maps, field measurements, emission source logs, leakage deductions, and buffer transactions.",
     "notes": "Retain monitoring datasets for at least two crediting periods for audit.",
