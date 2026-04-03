@@ -29,6 +29,16 @@ function main() {
         rule.logic,
         `${relPath} ${rule.id}: display.logic should be omitted when it duplicates logic`,
       );
+      assert.notStrictEqual(
+        display.notes,
+        rule.notes,
+        `${relPath} ${rule.id}: display.notes should be omitted when it duplicates notes`,
+      );
+      assert.notDeepStrictEqual(
+        display.when,
+        rule.when,
+        `${relPath} ${rule.id}: display.when should be omitted when it duplicates when`,
+      );
 
       const hasCollapsedTitleSummary =
         typeof display.title === 'string' &&

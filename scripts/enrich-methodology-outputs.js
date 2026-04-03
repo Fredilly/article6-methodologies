@@ -127,6 +127,11 @@ function keepDistinctDisplayText(value, canonical) {
   return typeof value === 'string' && value !== canonical ? value : undefined;
 }
 
+function keepDistinctDisplayArray(value, canonical) {
+  if (!Array.isArray(value)) return undefined;
+  return JSON.stringify(value) !== JSON.stringify(canonical) ? value : undefined;
+}
+
 function normalizeLocators(locators) {
   return sortLocators(dedupeByKey(
     (locators || [])
@@ -241,10 +246,10 @@ function enrichMethod(methodDir) {
     const pages = collectPages(locators);
     const display = {
       logic: keepDistinctDisplayText(rule.logic, rule.logic),
-      notes: typeof rule.notes === 'string' ? rule.notes : undefined,
+      notes: keepDistinctDisplayText(rule.notes, rule.notes),
       summary: keepDistinctDisplayText(rule.summary, rule.summary),
       title: keepDistinctDisplayText(rule.summary, rule.summary),
-      when: Array.isArray(rule.when) ? rule.when : undefined
+      when: keepDistinctDisplayArray(rule.when, rule.when)
     };
     const refs = {
       ...(rule.refs || {}),
