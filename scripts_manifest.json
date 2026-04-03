@@ -41,7 +41,7 @@
     { "path": "scripts/discover-previous-versions.mjs", "sha256": "bc850cabf86dcd60ef2253d2a40d3e9ecad07b855417f6f8f08fa67193b0e081" },
     { "path": "scripts/discover-previous-versions.shared.mjs", "sha256": "f0e7296d76e0a9c0b4962bcc2a371f3f163a51beaceeefa0f02c73076e20743f" },
     { "path": "scripts/discover-unfccc.js", "sha256": "c8deb16d239c80904ab4888a96fc97ec6b4c5849cfb44bc24713df08575582cf" },
-    { "path": "scripts/enrich-methodology-outputs.js", "sha256": "f7b42a29b4854820dfb5e746c0f4517cdba62102149d03b8fb526ff0473d1409" },
+    { "path": "scripts/enrich-methodology-outputs.js", "sha256": "b083ac18d68b9252aac93e83be5e287af3409bee5273517496ffc8e6a9ef9172" },
     { "path": "scripts/extract-sections-forestry.cjs", "sha256": "d5e6f15e512052587f610fd8b0997b4473f2f0b6b26bc18077040634328c0446" },
     { "path": "scripts/extract-sections.cjs", "sha256": "5f6e1c489e107e11ec7bcda9face663eb69ed16d05611595e3bdae77b21f3b42" },
     { "path": "scripts/fetch-agriculture-previous.js", "sha256": "967077b3da71c129a8d394679beaf59280bcc66291e6a278b81ac085ae5e561b" },
