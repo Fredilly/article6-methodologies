@@ -10,6 +10,13 @@ const TOOL_MODULE_RELATIONSHIP_METHODS = new Set([
   'UNFCCC.Forestry.AR-AMS0007.v03-1'
 ]);
 const VERSION_RELATIONSHIP_FAMILIES = new Set([
+  'UNFCCC/Forestry/AR-ACM0003',
+  'UNFCCC/Forestry/AR-AM0014'
+]);
+const ARCHIVED_LINEAGE_FAMILIES = new Set([
+  'UNFCCC/Forestry/AR-ACM0003'
+]);
+const SCOPED_VERSION_ONLY_FAMILIES = new Set([
   'UNFCCC/Forestry/AR-AM0014'
 ]);
 
@@ -244,9 +251,9 @@ function enrichMethod(methodDir) {
     if (locators.length > 0) refs.locators = locators;
     if (pages.length > 0) refs.pages = pages;
     const stableId = `${info.methodologyId}.${rule.id.split('.').slice(-1)[0]}`;
-    const sectionContext = sectionInfo
+    const sectionContext = rule.section_context && sectionInfo
       ? {
-        ...(rule.section_context || {}),
+        ...rule.section_context,
         section_id: primarySectionId,
         section_ref: primarySectionId,
         section_title: sectionInfo.title,
@@ -355,14 +362,25 @@ function applyVersionRelationships(methodDirs) {
 
   for (const items of families.values()) {
     items.sort((a, b) => compareVersions(a.version, b.version));
-    const lineage = items.map((item) => item.version);
+    const lineage = dedupeByKey([
+      ...items.map((item) => item.version),
+      ...items.flatMap((item) => {
+        if (!ARCHIVED_LINEAGE_FAMILIES.has(item.familyKey)) return [];
+        const previousRoot = path.join(item.methodDir, 'previous');
+        if (!fs.existsSync(previousRoot)) return [];
+        return fs.readdirSync(previousRoot, { withFileTypes: true })
+          .filter((entry) => entry.isDirectory())
+          .map((entry) => entry.name);
+      })
+    ], (value) => value).sort(compareVersions);
     for (let index = 0; index < items.length; index += 1) {
       const item = items[index];
       const metaPath = path.join(item.methodDir, 'META.json');
       const meta = readJSON(metaPath);
       const familyKeyDot = item.familyKey.replace(/\//g, '.');
-      const previousVersion = index > 0 ? items[index - 1].version : null;
-      const nextVersion = index < items.length - 1 ? items[index + 1].version : null;
+      const lineageIndex = lineage.indexOf(item.version);
+      const previousVersion = lineageIndex > 0 ? lineage[lineageIndex - 1] : null;
+      const nextVersion = lineageIndex >= 0 && lineageIndex < lineage.length - 1 ? lineage[lineageIndex + 1] : null;
       meta.relationships = meta.relationships || {};
       meta.relationships.version = {
         family: familyKeyDot,
@@ -396,7 +414,7 @@ function main() {
   const methodDirs = (args.length > 0 ? args.map((value) => path.resolve(value)) : allMethodDirs)
     .sort();
   const targetFamilies = new Set(methodDirs.map((methodDir) => getMethodInfo(methodDir).familyKey));
-  const scopedVersionOnly = args.length > 0 && [...targetFamilies].every((familyKey) => VERSION_RELATIONSHIP_FAMILIES.has(familyKey));
+  const scopedVersionOnly = args.length > 0 && [...targetFamilies].every((familyKey) => SCOPED_VERSION_ONLY_FAMILIES.has(familyKey));
   if (!scopedVersionOnly) {
     for (const methodDir of methodDirs) enrichMethod(methodDir);
   }

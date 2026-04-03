@@ -176,6 +176,30 @@
         "UNFCCC/AR-TOOL15@v02.0"
       ]
     },
+    "requirement_coverage": {
+      "coverage_key": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0005",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Updated Tool 15 risk assessments supporting the non-permanence buffer determination.",
+          "id": "risk-assessment",
+          "label": "Risk assessment",
+          "required": true
+        },
+        {
+          "description": "Registry or account records evidencing the buffer contribution entries retained for verification.",
+          "id": "buffer-account-records",
+          "label": "Buffer account records",
+          "required": true
+        }
+      ],
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-5"
+        }
+      ]
+    },
     "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0005",
     "summary": "Non-permanence buffer determined via Tool 15 risk analysis and recorded in registry accounts.",
     "type": "monitoring",
@@ -210,6 +234,30 @@
       "tools": [
         "UNFCCC/AR-ACM0003@v02-0",
         "UNFCCC/AR-TOOL16@v01.1.0"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0006",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Archived plot coordinates and remeasurement records that allow the permanent sample plot network to be revisited.",
+          "id": "plot-remeasurement-records",
+          "label": "Plot remeasurement records",
+          "required": true
+        },
+        {
+          "description": "Documented QA/QC procedures and checks applied to each monitoring campaign.",
+          "id": "qaqc-procedures",
+          "label": "QA/QC procedures",
+          "required": true
+        }
+      ],
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-5"
+        }
       ]
     },
     "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0006",
@@ -248,6 +296,30 @@
         "UNFCCC/AR-TOOL12@v03.1"
       ]
     },
+    "requirement_coverage": {
+      "coverage_key": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0007",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "The combined sampling uncertainty worksheet and supporting calculations provided during verification.",
+          "id": "uncertainty-worksheet",
+          "label": "Uncertainty worksheet",
+          "required": true
+        },
+        {
+          "description": "Records showing any Tool 12 conservative deductions applied before credit issuance when the threshold is exceeded.",
+          "id": "deduction-calculation-records",
+          "label": "Deduction calculation records",
+          "required": false
+        }
+      ],
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-5"
+        }
+      ]
+    },
     "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0007",
     "summary": "Sampling uncertainty kept below 10% at 90% confidence or conservatively adjusted using Tool 12.",
     "type": "uncertainty",
@@ -281,6 +353,30 @@
       ],
       "tools": [
         "UNFCCC/AR-ACM0003@v02-0"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0008",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Monitoring report materials covering updated maps, field measurements, emission source logs, leakage deductions, and buffer transactions.",
+          "id": "monitoring-report-package",
+          "label": "Monitoring report package",
+          "required": true
+        },
+        {
+          "description": "Version-controlled datasets with metadata that substantiate the monitoring report package and audit trail.",
+          "id": "versioned-monitoring-datasets",
+          "label": "Versioned monitoring datasets",
+          "required": true
+        }
+      ],
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-5"
+        }
       ]
     },
     "stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0008",

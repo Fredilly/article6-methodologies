@@ -1,0 +1,27 @@
+{
+  "must_be_zero_diff_after_rerun": [
+    "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/META.json",
+    "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.rich.json",
+    "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
+    "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/sections.rich.json",
+    "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/sections.json"
+  ],
+  "must_not_change": [
+    "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/META.json",
+    "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.rich.json",
+    "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.rich.json",
+    "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.rich.json"
+  ],
+  "name": "ar-acm0003-rc-s5-rc-s6",
+  "proof_tests": [
+    ". ~/.nvm/nvm.sh && nvm use 20.11.1 >/dev/null && node tests/ar-acm0003-version-relationships-proof.test.js",
+    ". ~/.nvm/nvm.sh && nvm use 20.11.1 >/dev/null && node tests/ar-acm0003-expected-evidence-proof.test.js"
+  ],
+  "rerun_commands": [
+    ". ~/.nvm/nvm.sh && nvm use 20.11.1 >/dev/null && node scripts/rewrite-forestry.js methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0 && node scripts/enrich-methodology-outputs.js methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0 && node scripts/derive-lean-from-rich.js methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0"
+  ],
+  "validators": [
+    "./scripts/run-ajv.sh validate -s schemas/META.schema.json -d methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/META.json",
+    "./scripts/run-ajv.sh validate -s schemas/rules.rich.schema.json -d methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.rich.json"
+  ]
+}
