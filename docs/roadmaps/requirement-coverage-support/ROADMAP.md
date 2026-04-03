@@ -61,6 +61,13 @@ Make canonical methodology outputs rich enough to support requirement-to-evidenc
 - Keep `ingest.sh`, CI, and workflows as the execution layer, phased in later only when schema and output contracts are stable enough to support automation safely.
 - Any automation hardening must remain scoped, reviewable, and friendly to strict repository gates rather than becoming a broad first move.
 
+### RC-S8 — Lock rich-rule v1 contract
+
+- Lock the rich-rule v1 baseline contract to `summary`, `logic`, `notes`, `when`, `refs`, and `requirement_coverage.expected_evidence` where grounded.
+- Treat duplicate or empty `display.*` fields as out of contract for the baseline and do not reintroduce cleanup churn around them.
+- Future methodology work in this area should be additive enrichment only, not another round of field-shape cleanup.
+- Additive enrichment examples include provenance excerpts, failure modes, review questions, and broader `expected_evidence` coverage where grounded.
+
 ## Delivery constraints
 
 - Do not build app UI here.
