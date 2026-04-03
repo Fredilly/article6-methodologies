@@ -14,7 +14,6 @@ const familyDirs = [
   path.join(repoRoot, 'methodologies', 'UNFCCC', 'Forestry', 'AR-AM0014', 'v03-0'),
 ];
 const unrelatedMetaPaths = [
-  path.join(repoRoot, 'methodologies', 'UNFCCC', 'Forestry', 'AR-AMS0007', 'v03-1', 'META.json'),
   path.join(repoRoot, 'methodologies', 'UNFCCC', 'Agriculture', 'AM0073', 'v01-0', 'META.json'),
 ];
 

@@ -8,7 +8,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const repoRoot = path.resolve(__dirname, '..');
-const methodDir = path.join(repoRoot, 'methodologies', 'UNFCCC', 'Forestry', 'AR-ACM0003', 'v02-0');
+const methodDir = path.join(repoRoot, 'methodologies', 'UNFCCC', 'Forestry', 'AR-AMS0007', 'v03-1');
 const unrelatedMetaPaths = [
   path.join(repoRoot, 'methodologies', 'UNFCCC', 'Agriculture', 'AM0073', 'v01-0', 'META.json'),
 ];
@@ -43,18 +43,18 @@ function validateMetaSchema() {
 
 function assertFamilyContract() {
   const meta = readJson(path.join(methodDir, 'META.json'));
-  assert.ok(meta.version_relationships, 'AR-ACM0003 should emit version_relationships');
-  assert.strictEqual(meta.version_relationships.family_key, 'UNFCCC.Forestry.AR-ACM0003');
-  assert.strictEqual(meta.version_relationships.current_version, 'v02-0');
-  assert.strictEqual(meta.version_relationships.previous_version, 'v01-0');
+  assert.ok(meta.version_relationships, 'AR-AMS0007 should emit version_relationships');
+  assert.strictEqual(meta.version_relationships.family_key, 'UNFCCC.Forestry.AR-AMS0007');
+  assert.strictEqual(meta.version_relationships.current_version, 'v03-1');
+  assert.strictEqual(meta.version_relationships.previous_version, 'v02-0');
   assert.strictEqual(meta.version_relationships.next_version, null);
-  assert.deepStrictEqual(meta.version_relationships.lineage, ['v01-0', 'v02-0']);
+  assert.deepStrictEqual(meta.version_relationships.lineage, ['v01-1', 'v02-0', 'v03-1']);
   assert.deepStrictEqual(meta.version_relationships.lineage, meta.relationships.version.lineage);
-  assert.strictEqual(meta.relationships.version.previous_version, 'v01-0');
+  assert.strictEqual(meta.relationships.version.previous_version, 'v02-0');
   assert.strictEqual(meta.relationships.version.next_version, null);
   assert.strictEqual(
     meta.version_relationships.diff_hints.previous_pair_key,
-    'UNFCCC.Forestry.AR-ACM0003:v01-0..v02-0',
+    'UNFCCC.Forestry.AR-AMS0007:v02-0..v03-1',
   );
   assert.ok(!('next_pair_key' in meta.version_relationships.diff_hints), 'current latest version should omit next_pair_key');
 }
@@ -73,7 +73,7 @@ function rerunScopedEnrichmentTwice() {
     assert.strictEqual(
       result.status,
       0,
-      `scoped AR-ACM0003 enrichment should pass\nstdout:\n${result.stdout}\nstderr:\n${result.stderr}`,
+      `scoped AR-AMS0007 enrichment should pass\nstdout:\n${result.stdout}\nstderr:\n${result.stderr}`,
     );
   }
 }
@@ -81,10 +81,6 @@ function rerunScopedEnrichmentTwice() {
 function main() {
   const trackedPaths = [
     path.join(methodDir, 'META.json'),
-    path.join(methodDir, 'rules.rich.json'),
-    path.join(methodDir, 'sections.rich.json'),
-    path.join(methodDir, 'rules.json'),
-    path.join(methodDir, 'sections.json'),
     ...unrelatedMetaPaths,
   ];
   const baselineHashes = new Map(trackedPaths.map((filePath) => [filePath, sha256File(filePath)]));

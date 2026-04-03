@@ -1,0 +1,45 @@
+{
+  "name": "forestry-lineage-display-cleanup",
+  "proof_tests": [
+    "node tests/ar-ams0007-version-relationships-proof.test.js",
+    "node tests/ar-acm0003-version-relationships-proof.test.js",
+    "node tests/ar-am0014-version-relationships-proof.test.js",
+    "node tests/forestry-rich-display-dedup-proof.test.js"
+  ],
+  "validators": [
+    "./scripts/run-ajv.sh validate -s schemas/META.schema.json -d methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/META.json",
+    "./scripts/run-ajv.sh validate -s schemas/rules.rich.schema.json -d methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.rich.json",
+    "./scripts/run-ajv.sh validate -s schemas/rules.rich.schema.json -d methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.rich.json",
+    "./scripts/run-ajv.sh validate -s schemas/rules.rich.schema.json -d methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.rich.json",
+    "./scripts/run-ajv.sh validate -s schemas/rules.rich.schema.json -d methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.rich.json",
+    "./scripts/run-ajv.sh validate -s schemas/rules.rich.schema.json -d methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.rich.json",
+    "./scripts/run-ajv.sh validate -s schemas/rules.rich.schema.json -d methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.rich.json",
+    "./scripts/json-canonical-check.sh methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/META.json methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.rich.json methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.rich.json methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.rich.json methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.rich.json methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.rich.json methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.rich.json"
+  ],
+  "rerun_commands": [
+    "node scripts/enrich-methodology-outputs.js methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1 methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0 methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0 methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0 methodologies/UNFCCC/Forestry/AR-AM0014/v03-0 methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0"
+  ],
+  "must_be_zero_diff_after_rerun": [
+    "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/META.json",
+    "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.rich.json",
+    "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.rich.json",
+    "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.rich.json",
+    "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.rich.json",
+    "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.rich.json",
+    "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.rich.json"
+  ],
+  "must_not_change": [
+    "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
+    "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
+    "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
+    "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
+    "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+    "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+    "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/sections.json",
+    "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/sections.json",
+    "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/sections.json",
+    "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/sections.json",
+    "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/sections.json",
+    "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/sections.json"
+  ]
+}

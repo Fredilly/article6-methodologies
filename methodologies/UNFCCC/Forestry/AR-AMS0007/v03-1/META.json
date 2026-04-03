@@ -82,10 +82,12 @@
     "version": {
       "family": "UNFCCC.Forestry.AR-AMS0007",
       "lineage": [
+        "v01-1",
+        "v02-0",
         "v03-1"
       ],
       "next_version": null,
-      "previous_version": null
+      "previous_version": "v02-0"
     }
   },
   "stage": "staging",
@@ -197,5 +199,19 @@
       "tool_id": "UNFCCC/AR-TOOL16@v01.1.0",
       "tool_label": "AR-TOOL16"
     }
-  ]
+  ],
+  "version_relationships": {
+    "current_version": "v03-1",
+    "diff_hints": {
+      "previous_pair_key": "UNFCCC.Forestry.AR-AMS0007:v02-0..v03-1"
+    },
+    "family_key": "UNFCCC.Forestry.AR-AMS0007",
+    "lineage": [
+      "v01-1",
+      "v02-0",
+      "v03-1"
+    ],
+    "next_version": null,
+    "previous_version": "v02-0"
+  }
 }

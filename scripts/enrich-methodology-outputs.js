@@ -11,10 +11,12 @@ const TOOL_MODULE_RELATIONSHIP_METHODS = new Set([
 ]);
 const VERSION_RELATIONSHIP_FAMILIES = new Set([
   'UNFCCC/Forestry/AR-ACM0003',
-  'UNFCCC/Forestry/AR-AM0014'
+  'UNFCCC/Forestry/AR-AM0014',
+  'UNFCCC/Forestry/AR-AMS0007'
 ]);
 const ARCHIVED_LINEAGE_FAMILIES = new Set([
-  'UNFCCC/Forestry/AR-ACM0003'
+  'UNFCCC/Forestry/AR-ACM0003',
+  'UNFCCC/Forestry/AR-AMS0007'
 ]);
 const SCOPED_VERSION_ONLY_FAMILIES = new Set([
   'UNFCCC/Forestry/AR-AM0014'
@@ -119,6 +121,15 @@ function sortSourceRefs(sourceRefs) {
 
 function versionPairKey(familyKey, fromVersion, toVersion) {
   return `${familyKey.replace(/\//g, '.')}:${fromVersion}..${toVersion}`;
+}
+
+function keepDistinctDisplayText(value, canonical) {
+  return typeof value === 'string' && value !== canonical ? value : undefined;
+}
+
+function keepDistinctDisplayArray(value, canonical) {
+  if (!Array.isArray(value)) return undefined;
+  return JSON.stringify(value) !== JSON.stringify(canonical) ? value : undefined;
 }
 
 function normalizeLocators(locators) {
@@ -226,6 +237,7 @@ function enrichMethod(methodDir) {
   });
 
   const enrichedRules = rules.map((rule) => {
+    const { display: _display, ...ruleWithoutDisplay } = rule;
     const primarySectionId = (((rule.refs || {}).sections) || [])[0] || null;
     const sectionInfo = primarySectionId ? sectionMap.get(primarySectionId) : null;
     const locators = normalizeLocators([
@@ -234,12 +246,15 @@ function enrichMethod(methodDir) {
     ]);
     const pages = collectPages(locators);
     const display = {
-      logic: typeof rule.logic === 'string' ? rule.logic : undefined,
-      notes: typeof rule.notes === 'string' ? rule.notes : undefined,
-      summary: rule.summary,
-      title: rule.summary,
-      when: Array.isArray(rule.when) ? rule.when : undefined
+      logic: keepDistinctDisplayText(rule.logic, rule.logic),
+      notes: keepDistinctDisplayText(rule.notes, rule.notes),
+      summary: keepDistinctDisplayText(rule.summary, rule.summary),
+      title: keepDistinctDisplayText(rule.summary, rule.summary),
+      when: keepDistinctDisplayArray(rule.when, rule.when)
     };
+    const displayFields = Object.fromEntries(
+      Object.entries(display).filter(([, value]) => value !== undefined)
+    );
     const refs = {
       ...(rule.refs || {}),
       methodology: info.methodologyRef,
@@ -264,8 +279,8 @@ function enrichMethod(methodDir) {
       }
       : rule.section_context;
     return {
-      ...rule,
-      display,
+      ...ruleWithoutDisplay,
+      ...(Object.keys(displayFields).length > 0 ? { display: displayFields } : {}),
       refs,
       ...(sectionContext ? { section_context: sectionContext } : {}),
       stable_id: stableId
