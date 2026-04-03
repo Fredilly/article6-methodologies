@@ -1,10 +1,7 @@
 [
   {
     "display": {
-      "logic": "Project qualifies as small-scale afforestation/reforestation when aggregated area under the plan remains below the UNFCCC threshold and land eligibility evidence is maintained.",
       "notes": "Document land-use history, stakeholder consent, and aggregation structure.",
-      "summary": "Small-scale A/R activities eligible when total area < 16,000 ha and participants grouped as defined.",
-      "title": "Small-scale A/R activities eligible when total area < 16,000 ha and participants grouped as defined.",
       "when": [
         "Aggregated project area < 16,000 ha throughout crediting period.",
         "Land-use history demonstrates non-forest status at project start."
@@ -36,10 +33,7 @@
   },
   {
     "display": {
-      "logic": "The methodology defines grouped project participant roles, monitoring entity responsibilities, and leakage belt boundaries.",
       "notes": "Retain participant enrollment agreements and leakage belt maps.",
-      "summary": "Definitions for grouped smallholder projects include participants, monitoring entity, and leakage belt.",
-      "title": "Definitions for grouped smallholder projects include participants, monitoring entity, and leakage belt.",
       "when": [
         "Participant list updated prior to verification.",
         "Leakage belt delineated and archived with geospatial data."
@@ -74,10 +68,7 @@
   },
   {
     "display": {
-      "logic": "Project boundary encompasses all significant carbon pools and on-site emissions sources; excluded pools set to zero emissions by rule.",
       "notes": "Document rationale for any excluded pools including monitoring constraints.",
-      "summary": "Project boundary includes above- and below-ground biomass, dead wood, litter, and soil carbon pools unless excluded with justification.",
-      "title": "Project boundary includes above- and below-ground biomass, dead wood, litter, and soil carbon pools unless excluded with justification.",
       "when": [
         "Boundary map maintained and updated with parcel additions.",
         "Excluded pools recorded with zero-change assumption."
@@ -112,10 +103,7 @@
   },
   {
     "display": {
-      "logic": "Baseline carbon stock change set to zero under conservative assumption that lands remain degraded without project intervention.",
       "notes": "Provide evidence that alternative activities would not increase carbon stocks absent the project.",
-      "summary": "Baseline scenario assumes continuation of pre-project land use with carbon stock change set to zero.",
-      "title": "Baseline scenario assumes continuation of pre-project land use with carbon stock change set to zero.",
       "when": [
         "Baseline justification renewed if socio-economic conditions shift.",
         "Alternative land-use scenarios documented during validation."
@@ -150,10 +138,7 @@
   },
   {
     "display": {
-      "logic": "Net project removals equal the sum of pool-based carbon stock changes minus project emissions from fuel use, vehicles, and fertilizer application.",
       "notes": "Maintain emission factor sources and activity data records.",
-      "summary": "Project removals calculated by summing carbon stock changes per pool minus fossil fuel and fertilizer emissions.",
-      "title": "Project removals calculated by summing carbon stock changes per pool minus fossil fuel and fertilizer emissions.",
       "when": [
         "Activity data for fossil fuel and fertilizer use collected annually.",
         "Emission factors conform to latest IPCC or national guidance."
@@ -189,10 +174,7 @@
   },
   {
     "display": {
-      "logic": "Leakage emissions from displaced activities quantified with standardized coefficients from Tool 14 and deducted from net removals.",
       "notes": "Implement leakage mitigation plan engaging local communities.",
-      "summary": "Leakage from activity shifting or market effects monitored and deducted using Tool 14 default factors.",
-      "title": "Leakage from activity shifting or market effects monitored and deducted using Tool 14 default factors.",
       "when": [
         "Leakage belt activities surveyed annually.",
         "Leakage deductions documented prior to credit issuance."
@@ -225,10 +207,7 @@
   },
   {
     "display": {
-      "logic": "Implement monitoring plan with permanent sample plots, participant reporting forms, and QA/QC checks consistent with Tool 16.",
       "notes": "Provide plot re-measurement schedule and participant monitoring templates.",
-      "summary": "Monitoring plan requires permanent plots measured every five years plus tracking of grouped participant compliance.",
-      "title": "Monitoring plan requires permanent plots measured every five years plus tracking of grouped participant compliance.",
       "when": [
         "Plot measurements occur at ≤5-year intervals.",
         "Participant compliance logs reviewed each verification."
@@ -261,10 +240,7 @@
   },
   {
     "display": {
-      "logic": "Maintain dataset of project parameters including default biomass expansion factors, root-shoot ratios, and wood density values.",
       "notes": "Parameter updates documented if national data become available.",
-      "summary": "Data and parameters table specifies default biomass factors and sampling requirements.",
-      "title": "Data and parameters table specifies default biomass factors and sampling requirements.",
       "when": [
         "Project data registry kept current for all parameters.",
         "Any parameter change approved by DOE prior to use."
@@ -300,10 +276,7 @@
   },
   {
     "display": {
-      "logic": "Combine sampling and model uncertainty and apply Tool 12 deduction factors when required precision not achieved.",
       "notes": "Uncertainty worksheets stored with monitoring archives.",
-      "summary": "Uncertainty calculated per Tool 12; apply deductions when precision exceeds 10%.",
-      "title": "Uncertainty calculated per Tool 12; apply deductions when precision exceeds 10%.",
       "when": [
         "Confidence interval wider than ±10%.",
         "DOE verifies uncertainty computation spreadsheets."
@@ -336,10 +309,7 @@
   },
   {
     "display": {
-      "logic": "Allocate a proportional buffer contribution using Tool 15 risk matrix and adjust if threats or safeguards evolve.",
       "notes": "Risk assessment and buffer transactions retained with monitoring records.",
-      "summary": "Non-permanence risk buffer determined via Tool 15 and updated when risk profile changes.",
-      "title": "Non-permanence risk buffer determined via Tool 15 and updated when risk profile changes.",
       "when": [
         "Risk assessment reviewed every verification.",
         "Buffer ledger entries retained for DOE review."
@@ -375,10 +345,7 @@
   },
   {
     "display": {
-      "logic": "Project maintains accessible copies of required normative tools and references listed in the methodology.",
       "notes": "Document distribution of normative tools to monitoring staff.",
-      "summary": "Normative tools and references (Tools 02, 08, 12, 14, 15, 16) must be accessible to grouped project manager.",
-      "title": "Normative tools and references (Tools 02, 08, 12, 14, 15, 16) must be accessible to grouped project manager.",
       "when": [
         "Normative tools catalog updated when UNFCCC issues revisions."
       ]
@@ -411,10 +378,7 @@
   },
   {
     "display": {
-      "logic": "Annualized carbon stock change ΔC_year = (C_t2 - C_t1) / T applied for each pool before emissions and leakage are deducted.",
       "notes": "Track measurement intervals precisely to avoid bias.",
-      "summary": "Annual net removals computed as sum of pool changes minus leakage and emissions, divided by years between measurements.",
-      "title": "Annual net removals computed as sum of pool changes minus leakage and emissions, divided by years between measurements.",
       "when": [
         "Measurement interval T documented in monitoring report.",
         "Pools aligned with UNFCCC reporting templates."
@@ -447,10 +411,7 @@
   },
   {
     "display": {
-      "logic": "Annex materials capture supporting evidence such as participant lists, training certificates, and grievance records.",
       "notes": "Maintain annex files for at least two crediting periods.",
-      "summary": "Annexes include participant enrollment records, training logs, and dispute resolution evidence.",
-      "title": "Annexes include participant enrollment records, training logs, and dispute resolution evidence.",
       "when": [
         "Annex contents reviewed during verification.",
         "Updates provided when participants join or exit the program."

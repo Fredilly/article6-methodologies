@@ -1,10 +1,7 @@
 [
   {
     "display": {
-      "logic": "Project restores degraded forest lands and demonstrates additionality using the UNFCCC barrier or investment analysis.",
       "notes": "Record baseline scenario analysis and legal right to implement A/R activities.",
-      "summary": "Project restores degraded forest lands and meets additionality tests per Tool 01.",
-      "title": "Project restores degraded forest lands and meets additionality tests per Tool 01.",
       "when": [
         "Target areas classified as degraded forest land prior to start date.",
         "Additionality analysis completed per UNFCCC requirements."
@@ -36,10 +33,7 @@
   },
   {
     "display": {
-      "logic": "Baseline net removals estimated using historical land-use/land-cover data and default parameters from Tool 02.",
       "notes": "Use conservative defaults where national data unavailable; document stratification.",
-      "summary": "Baseline net GHG removals derived from historical land-use data per Tool 02 guidance.",
-      "title": "Baseline net GHG removals derived from historical land-use data per Tool 02 guidance.",
       "when": [
         "Baseline strata delineated and documented.",
         "Default biomass parameters justified when field data absent."
@@ -75,10 +69,7 @@
   },
   {
     "display": {
-      "logic": "Project emissions include fossil fuel consumption, biomass burning, and fertilizer use calculated with Tool 08 default factors.",
       "notes": "Exclude sources only with transparent justification and monitoring evidence.",
-      "summary": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08.",
-      "title": "Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08.",
       "when": [
         "Fuel consumption metered or logged with auditable records.",
         "Fertilizer application data retained for verification."
@@ -114,10 +105,7 @@
   },
   {
     "display": {
-      "logic": "Activity shifting and market leakage quantified annually with Tool 14 standardized coefficients.",
       "notes": "Describe mitigation measures and community engagement to minimize leakage.",
-      "summary": "Leakage from activity shifting and market effects addressed using Tool 14 default factors.",
-      "title": "Leakage from activity shifting and market effects addressed using Tool 14 default factors.",
       "when": [
         "Leakage monitoring plan implemented with annual review.",
         "Leakage deductions applied before credit issuance."
@@ -150,10 +138,7 @@
   },
   {
     "display": {
-      "logic": "Buffer contribution calculated with Tool 15 risk scoring and documented alongside issuance.",
       "notes": "Reassess risk when management conditions change.",
-      "summary": "Non-permanence buffer determined via Tool 15 risk analysis and recorded in registry accounts.",
-      "title": "Non-permanence buffer determined via Tool 15 risk analysis and recorded in registry accounts.",
       "when": [
         "Updated risk assessment provided during verification.",
         "Evidence of buffer account entries retained."
@@ -210,10 +195,7 @@
   },
   {
     "display": {
-      "logic": "Plot network re-measured at ≤5-year intervals using standard mensuration and Tool 16 QA/QC checks.",
       "notes": "Remote sensing may supplement but not replace ground plots.",
-      "summary": "Permanent sample plots re-measured at least every five years per Tool 16 QA/QC guidance.",
-      "title": "Permanent sample plots re-measured at least every five years per Tool 16 QA/QC guidance.",
       "when": [
         "Plot coordinates archived and accessible for re-measurement.",
         "QA/QC procedures documented for each monitoring campaign."
@@ -270,10 +252,7 @@
   },
   {
     "display": {
-      "logic": "Calculate combined sampling uncertainty and apply Tool 12 deductions when precision >10% at 90% confidence.",
       "notes": "Variance calculations retained within monitoring report appendices.",
-      "summary": "Sampling uncertainty kept below 10% at 90% confidence or conservatively adjusted using Tool 12.",
-      "title": "Sampling uncertainty kept below 10% at 90% confidence or conservatively adjusted using Tool 12.",
       "when": [
         "Uncertainty worksheet provided at verification.",
         "Deductions applied prior to credit issuance if threshold exceeded."
@@ -330,10 +309,7 @@
   },
   {
     "display": {
-      "logic": "Monitoring reports include updated maps, field measurements, emission source logs, leakage deductions, and buffer transactions.",
       "notes": "Retain monitoring datasets for at least two crediting periods for audit.",
-      "summary": "Monitoring reports compile geospatial data, emissions sources, and buffer transactions with full audit trail.",
-      "title": "Monitoring reports compile geospatial data, emissions sources, and buffer transactions with full audit trail.",
       "when": [
         "All datasets version-controlled with metadata.",
         "DOE confirms completeness of supporting records."
