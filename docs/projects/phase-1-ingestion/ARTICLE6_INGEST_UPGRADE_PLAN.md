@@ -211,6 +211,7 @@ node scripts/check-quality-gates.js ingest-quality-gates.yml
 
 - Running the full ingest + validation sequence twice in the canonical environment must leave `git status -sb` clean and `git diff` empty.
 - Idempotency includes `methodologies/**/previous/**` (and the corresponding `tools/**/previous/**` pointers) — previous versions are part of the deterministic contract.
+- Current canonical `META.json` lineage for previous-version-aware families must include archived predecessors discoverable under `methodologies/**/previous/**`, not just concurrently canonical directories.
 - Validations must include previous outputs via the existing globs (`methodologies/**/...`) and offline validation where enabled in CI.
 - Canonical reference gates (with previous):
   - `bash scripts/ci-idempotency-agriculture.sh`
@@ -228,6 +229,7 @@ node scripts/check-quality-gates.js ingest-quality-gates.yml
 ## Golden fixture methods
 
 - Representative Forestry (Afforestation and reforestation) + Agriculture fixtures: ACM0010, AM0073, AMS-III.D, AMS-III.R, AR-AM0014, AR-ACM0003, AR-AMS0003, AR-AMS0007.
+- Rich expected-evidence hints stay additive and provenance-safe: emit them only where the canonical rule text or supporting notes already ground the evidence expectation, and omit them entirely otherwise.
 - Never mask bugs by hand-editing these fixtures; every pipeline change must keep them ingestable, CI-green, and idempotent under the double-run health check.
 
 ## Spec vs reality rule

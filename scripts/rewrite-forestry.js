@@ -42,6 +42,18 @@ function dedupeSorted(array) {
   return result;
 }
 
+function normalizeMethodKey(value) {
+  const trimmed = String(value || '').trim().replace(/\/+$/, '');
+  if (!trimmed) return '';
+  if (trimmed.startsWith(METHODOLOGY_ROOT)) {
+    return path.relative(METHODOLOGY_ROOT, trimmed).split(path.sep).join('/');
+  }
+  if (trimmed.startsWith('methodologies/')) {
+    return trimmed.replace(/^methodologies\//, '');
+  }
+  return trimmed;
+}
+
 const METHODS = {
   'UNFCCC/Forestry/AR-ACM0003/v02-0': {
     tools: [
@@ -68,7 +80,8 @@ const METHODS = {
       },
       {
         section: 'S-2',
-        type: 'baseline',
+        type: 'calc',
+        tags: ['baseline'],
         summary: 'Baseline net GHG removals derived from historical land-use data per Tool 02 guidance.',
         logic: 'Baseline net removals estimated using historical land-use/land-cover data and default parameters from Tool 02.',
         notes: 'Use conservative defaults where national data unavailable; document stratification.',
@@ -80,7 +93,8 @@ const METHODS = {
       },
       {
         section: 'S-3',
-        type: 'emissions',
+        type: 'calc',
+        tags: ['emissions'],
         summary: 'Project emissions include fossil fuel use, biomass burning, and fertilizer application as per Tool 08.',
         logic: 'Project emissions include fossil fuel consumption, biomass burning, and fertilizer use calculated with Tool 08 default factors.',
         notes: 'Exclude sources only with transparent justification and monitoring evidence.',
@@ -112,6 +126,20 @@ const METHODS = {
         when: [
           'Updated risk assessment provided during verification.',
           'Evidence of buffer account entries retained.'
+        ],
+        expected_evidence: [
+          {
+            id: 'risk-assessment',
+            label: 'Risk assessment',
+            description: 'Updated Tool 15 risk assessments supporting the non-permanence buffer determination.',
+            required: true
+          },
+          {
+            id: 'buffer-account-records',
+            label: 'Buffer account records',
+            description: 'Registry or account records evidencing the buffer contribution entries retained for verification.',
+            required: true
+          }
         ]
       },
       {
@@ -124,6 +152,20 @@ const METHODS = {
         when: [
           'Plot coordinates archived and accessible for re-measurement.',
           'QA/QC procedures documented for each monitoring campaign.'
+        ],
+        expected_evidence: [
+          {
+            id: 'plot-remeasurement-records',
+            label: 'Plot remeasurement records',
+            description: 'Archived plot coordinates and remeasurement records that allow the permanent sample plot network to be revisited.',
+            required: true
+          },
+          {
+            id: 'qaqc-procedures',
+            label: 'QA/QC procedures',
+            description: 'Documented QA/QC procedures and checks applied to each monitoring campaign.',
+            required: true
+          }
         ]
       },
       {
@@ -136,6 +178,20 @@ const METHODS = {
         when: [
           'Uncertainty worksheet provided at verification.',
           'Deductions applied prior to credit issuance if threshold exceeded.'
+        ],
+        expected_evidence: [
+          {
+            id: 'uncertainty-worksheet',
+            label: 'Uncertainty worksheet',
+            description: 'The combined sampling uncertainty worksheet and supporting calculations provided during verification.',
+            required: true
+          },
+          {
+            id: 'deduction-calculation-records',
+            label: 'Deduction calculation records',
+            description: 'Records showing any Tool 12 conservative deductions applied before credit issuance when the threshold is exceeded.',
+            required: false
+          }
         ]
       },
       {
@@ -148,6 +204,20 @@ const METHODS = {
         when: [
           'All datasets version-controlled with metadata.',
           'DOE confirms completeness of supporting records.'
+        ],
+        expected_evidence: [
+          {
+            id: 'monitoring-report-package',
+            label: 'Monitoring report package',
+            description: 'Monitoring report materials covering updated maps, field measurements, emission source logs, leakage deductions, and buffer transactions.',
+            required: true
+          },
+          {
+            id: 'versioned-monitoring-datasets',
+            label: 'Versioned monitoring datasets',
+            description: 'Version-controlled datasets with metadata that substantiate the monitoring report package and audit trail.',
+            required: true
+          }
         ]
       }
     ]
@@ -594,12 +664,25 @@ const METHODS = {
 };
 
 function makeRichRule(methodKey, index, spec) {
- const serial = String(index + 1).padStart(4, '0');
+  const serial = String(index + 1).padStart(4, '0');
   const slug = methodKey.replace(/\//g, '.');
   const ruleId = `${slug}.R-1-${serial}`;
   const refs = {
     sections: [spec.section],
     tools: dedupeSorted(spec.tools)
+  };
+  const requirementCoverage = {
+    coverage_key: ruleId,
+    coverage_scope: 'rule',
+    section_refs: [
+      {
+        relationship: 'source_section',
+        section_id: spec.section
+      }
+    ],
+    ...(Array.isArray(spec.expected_evidence) && spec.expected_evidence.length > 0
+      ? { expected_evidence: spec.expected_evidence.map((item) => ({ ...item })) }
+      : {})
   };
   const rule = {
     id: ruleId,
@@ -608,6 +691,10 @@ function makeRichRule(methodKey, index, spec) {
     logic: spec.logic,
     notes: spec.notes || undefined,
     inputs: Array.isArray(spec.inputs) ? spec.inputs : undefined,
+    requirement_coverage: Array.isArray(spec.expected_evidence) && spec.expected_evidence.length > 0
+      ? requirementCoverage
+      : undefined,
+    tags: Array.isArray(spec.tags) ? dedupeSorted(spec.tags) : undefined,
     when: Array.isArray(spec.when) ? spec.when : undefined,
     refs
   };
@@ -635,8 +722,8 @@ function makeToolEntry(filePath) {
  const doc = (() => {
    const parts = filePath.split('/');
    const org = parts[1];
-   const method = parts[2];
-   const version = parts[3];
+   const method = parts[3];
+   const version = parts[4];
    const filename = parts[parts.length - 1];
    const toolMatch = filename.match(/^(ar-[a-z]+-tool-\d+)-v([\d]+(?:[.-][\d]+)*)\.(pdf|docx)$/i);
    if (toolMatch) {
@@ -660,7 +747,18 @@ function makeToolEntry(filePath) {
   });
 }
 
-for (const [methodKey, config] of Object.entries(METHODS)) {
+const requestedMethodKeys = process.argv.slice(2).map(normalizeMethodKey).filter(Boolean);
+const selectedMethods = requestedMethodKeys.length > 0
+  ? Object.entries(METHODS).filter(([methodKey]) => requestedMethodKeys.includes(methodKey))
+  : Object.entries(METHODS);
+
+for (const requestedMethodKey of requestedMethodKeys) {
+  if (!METHODS[requestedMethodKey]) {
+    console.warn(`Skipping ${requestedMethodKey} (method not configured)`);
+  }
+}
+
+for (const [methodKey, config] of selectedMethods) {
   const methodDir = path.join(METHODOLOGY_ROOT, methodKey);
   if (!fs.existsSync(methodDir)) {
     console.warn(`Skipping ${methodKey} (directory missing)`);
@@ -681,4 +779,4 @@ for (const [methodKey, config] of Object.entries(METHODS)) {
   writeJSON(metaPath, meta);
 }
 
-console.log('OK: rewrote forestry rules and META references.');
+console.log(`OK: rewrote forestry rules and META references for ${selectedMethods.length} method(s).`);

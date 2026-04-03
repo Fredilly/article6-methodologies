@@ -90,11 +90,25 @@
     "version": {
       "family": "UNFCCC.Forestry.AR-ACM0003",
       "lineage": [
+        "v01-0",
         "v02-0"
       ],
       "next_version": null,
-      "previous_version": null
+      "previous_version": "v01-0"
     }
   },
-  "stage": "staging"
+  "stage": "staging",
+  "version_relationships": {
+    "current_version": "v02-0",
+    "diff_hints": {
+      "previous_pair_key": "UNFCCC.Forestry.AR-ACM0003:v01-0..v02-0"
+    },
+    "family_key": "UNFCCC.Forestry.AR-ACM0003",
+    "lineage": [
+      "v01-0",
+      "v02-0"
+    ],
+    "next_version": null,
+    "previous_version": "v01-0"
+  }
 }
