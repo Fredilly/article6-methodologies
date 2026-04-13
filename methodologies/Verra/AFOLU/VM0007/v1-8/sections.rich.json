@@ -8,30 +8,7 @@
     "provenance": {
       "source_ref": "Verra/VM0007@v1-8",
       "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
-    },
-    "summary": "Defines which REDD and WRC activity types are eligible under this methodology, including applicability conditions for avoiding planned/unplanned deforestation, peatland rewetting, tidal wetland restoration, and conservation. Includes prohibitions on water table lowering, organic soil burning, and nitrogen fertilizer use.",
-    "workflow_role": "gatekeeper \u2014 must pass all applicability conditions before proceeding to boundary definition",
-    "source_span": {
-      "start_page": 13,
-      "end_page": 18
-    },
-    "rule_ids": [
-      "R-1-0001",
-      "R-1-0002",
-      "R-1-0003",
-      "R-1-0004",
-      "R-1-0005",
-      "R-1-0006",
-      "R-1-0007",
-      "R-1-0008",
-      "R-1-0009",
-      "R-1-0010",
-      "R-1-0011",
-      "R-1-0012",
-      "R-1-0013",
-      "R-1-0014",
-      "R-1-0015"
-    ]
+    }
   },
   {
     "id": "S-2",
@@ -42,31 +19,7 @@
     "provenance": {
       "source_ref": "Verra/VM0007@v1-8",
       "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
-    },
-    "summary": "Defines the spatial, temporal, carbon pool, and GHG source boundaries of the project. Includes geographic boundary requirements, stratification, carbon pool selection per activity type, GHG source inclusion/exclusion, historical reference period, and crediting period duration.",
-    "workflow_role": "foundation \u2014 project boundaries must be established before baseline and quantification",
-    "source_span": {
-      "start_page": 18,
-      "end_page": 25
-    },
-    "rule_ids": [
-      "R-2-0001",
-      "R-2-0002",
-      "R-2-0003",
-      "R-2-0004",
-      "R-2-0005",
-      "R-2-0006",
-      "R-2-0007",
-      "R-2-0008",
-      "R-2-0009",
-      "R-2-0010",
-      "R-2-0011",
-      "R-2-0012",
-      "R-2-0013",
-      "R-2-0014",
-      "R-2-0015",
-      "R-2-0016"
-    ]
+    }
   },
   {
     "id": "S-3",
@@ -77,23 +30,7 @@
     "provenance": {
       "source_ref": "Verra/VM0007@v1-8",
       "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
-    },
-    "summary": "Determines the most plausible baseline scenario using VT0001 barrier/investment analysis. Defines minimum alternative scenarios, module selection for baseline estimation (BL-PL, BL-UP, BL-PEAT, BL-TW), reassessment frequency, and JNR data use provisions.",
-    "workflow_role": "baseline \u2014 establishes the counterfactual scenario against which emission reductions are measured",
-    "source_span": {
-      "start_page": 25,
-      "end_page": 28
-    },
-    "rule_ids": [
-      "R-3-0001",
-      "R-3-0002",
-      "R-3-0003",
-      "R-3-0004",
-      "R-3-0005",
-      "R-3-0006",
-      "R-3-0007",
-      "R-3-0008"
-    ]
+    }
   },
   {
     "id": "S-4",
@@ -104,17 +41,7 @@
     "provenance": {
       "source_ref": "Verra/VM0007@v1-8",
       "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
-    },
-    "summary": "Requires demonstration of additionality using VT0001 for all non-tidal-wetland activities, or ADD-AM for tidal wetland conservation and restoration activities.",
-    "workflow_role": "eligibility \u2014 additionality must be demonstrated before quantification",
-    "source_span": {
-      "start_page": 28,
-      "end_page": 28
-    },
-    "rule_ids": [
-      "R-4-0001",
-      "R-4-0002"
-    ]
+    }
   },
   {
     "id": "S-5",
@@ -125,24 +52,7 @@
     "provenance": {
       "source_ref": "Verra/VM0007@v1-8",
       "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
-    },
-    "summary": "Provides equations and procedures for calculating baseline emissions, project emissions, leakage, buffer pool contributions, uncertainty adjustments, and Verified Carbon Units. References carbon pool modules (VMD0001-0005), baseline modules, monitoring modules, and leakage modules.",
-    "workflow_role": "calculation \u2014 core quantification of emission reductions using modular equations",
-    "source_span": {
-      "start_page": 28,
-      "end_page": 39
-    },
-    "rule_ids": [
-      "R-5-0001",
-      "R-5-0002",
-      "R-5-0003",
-      "R-5-0004",
-      "R-5-0005",
-      "R-5-0006",
-      "R-5-0007",
-      "R-5-0008",
-      "R-5-0009"
-    ]
+    }
   },
   {
     "id": "S-6",
@@ -153,22 +63,6 @@
     "provenance": {
       "source_ref": "Verra/VM0007@v1-8",
       "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
-    },
-    "summary": "Defines monitoring plan requirements including four mandatory tasks, content elements per task, geographic position recording, SOP/QA/QC requirements, forest cover monitoring frequency, WRC compliance monitoring, expert judgment documentation, and uncertainty reduction requirements.",
-    "workflow_role": "ongoing \u2014 monitoring requirements apply throughout the crediting period and at each verification",
-    "source_span": {
-      "start_page": 39,
-      "end_page": 49
-    },
-    "rule_ids": [
-      "R-6-0001",
-      "R-6-0002",
-      "R-6-0003",
-      "R-6-0004",
-      "R-6-0005",
-      "R-6-0006",
-      "R-6-0007",
-      "R-6-0008"
-    ]
+    }
   }
 ]
