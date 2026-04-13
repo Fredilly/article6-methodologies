@@ -1,0 +1,514 @@
+{
+  "rules": [
+    {
+      "id": "R-1-0001",
+      "title": "Applicable activity types",
+      "text": "The methodology applies to REDD project activities (avoiding planned and unplanned deforestation and forest degradation), Wetland Restoration and Conservation (WRC) activities (including coastal intact wetland, rewetted degraded, and restored wetlands on peatland and tidal wetlands), and combined REDD-WRC activities.",
+      "section_id": "S-1",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-1",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0001",
+      "type": "eligibility",
+      "tags": [
+        "eligibility"
+      ],
+      "logic": "The methodology applies to REDD project activities (avoiding planned and unplanned deforestation and forest degradation), Wetland Restoration and Conservation (WRC) activities (including coastal intac",
+      "when": [],
+      "tools": [],
+      "section_anchor": "scope-and-applicability",
+      "section_number": "1"
+    },
+    {
+      "id": "R-1-0002",
+      "title": "Eligible land types",
+      "text": "The methodology is applicable to forest lands, forested wetlands, forested peatlands and tidal wetlands that would be deforested or degraded in the absence of the project activity.",
+      "section_id": "S-1",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-1",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0002",
+      "type": "eligibility",
+      "tags": [
+        "eligibility"
+      ],
+      "logic": "The methodology is applicable to forest lands, forested wetlands, forested peatlands and tidal wetlands that would be deforested or degraded in the absence of the project activity.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "scope-and-applicability",
+      "section_number": "1"
+    },
+    {
+      "id": "R-1-0003",
+      "title": "Peatland applicability condition",
+      "text": "For peatland project activities: the water table has not been lowered in the project scenario, except where the project converts open water to tidal wetlands or improves hydrological connection to impounded waters.",
+      "section_id": "S-1",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-1",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0003",
+      "type": "eligibility",
+      "tags": [
+        "eligibility"
+      ],
+      "logic": "For peatland project activities: the water table has not been lowered in the project scenario, except where the project converts open water to tidal wetlands or improves hydrological connection to imp",
+      "when": [],
+      "tools": [],
+      "section_anchor": "scope-and-applicability",
+      "section_number": "1"
+    },
+    {
+      "id": "R-1-0004",
+      "title": "Tidal wetland applicability condition",
+      "text": "For tidal wetland project activities: the project does not involve burning of organic soil as a project activity.",
+      "section_id": "S-1",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-1",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0004",
+      "type": "eligibility",
+      "tags": [
+        "eligibility"
+      ],
+      "logic": "For tidal wetland project activities: the project does not involve burning of organic soil as a project activity.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "scope-and-applicability",
+      "section_number": "1"
+    },
+    {
+      "id": "R-4-0001",
+      "title": "Project boundary geographic definition",
+      "text": "The project boundary must be defined by geographic coordinates recorded for all areas of land, established by field survey (GPS) or georeferenced spatial data.",
+      "section_id": "S-4",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-4",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-4-0001",
+      "type": "eligibility",
+      "tags": [
+        "eligibility"
+      ],
+      "logic": "The project boundary must be defined by geographic coordinates recorded for all areas of land, established by field survey (GPS) or georeferenced spatial data.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "project-boundary",
+      "section_number": "4"
+    },
+    {
+      "id": "R-4-0002",
+      "title": "Stratification requirement",
+      "text": "The project area must be stratified into strata based on activity type, land use, and/or carbon pool characteristics. Strata must be defined and mapped at project validation.",
+      "section_id": "S-4",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-4",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-4-0002",
+      "type": "eligibility",
+      "tags": [
+        "eligibility"
+      ],
+      "logic": "The project area must be stratified into strata based on activity type, land use, and/or carbon pool characteristics. Strata must be defined and mapped at project validation.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "project-boundary",
+      "section_number": "4"
+    },
+    {
+      "id": "R-4-0003",
+      "title": "Carbon pool selection",
+      "text": "For each activity type, the project must identify which carbon pools (above-ground biomass, below-ground biomass, dead wood, litter, soil organic carbon) are included or excluded, with justification.",
+      "section_id": "S-4",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-4",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-4-0003",
+      "type": "eligibility",
+      "tags": [
+        "eligibility"
+      ],
+      "logic": "For each activity type, the project must identify which carbon pools (above-ground biomass, below-ground biomass, dead wood, litter, soil organic carbon) are included or excluded, with justification.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "project-boundary",
+      "section_number": "4"
+    },
+    {
+      "id": "R-4-0004",
+      "title": "GHG source identification",
+      "text": "The project must identify all GHG sources (CO2, CH4, N2O) included in or excluded from the project boundary for baseline and project scenarios, with justification for each exclusion.",
+      "section_id": "S-4",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-4",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-4-0004",
+      "type": "eligibility",
+      "tags": [
+        "eligibility"
+      ],
+      "logic": "The project must identify all GHG sources (CO2, CH4, N2O) included in or excluded from the project boundary for baseline and project scenarios, with justification for each exclusion.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "project-boundary",
+      "section_number": "4"
+    },
+    {
+      "id": "R-4-0005",
+      "title": "Reference region definition",
+      "text": "For unplanned deforestation projects, a Reference Region for Deforestation (RRD) must be defined within the same jurisdiction as the project area, with similar characteristics.",
+      "section_id": "S-4",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-4",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-4-0005",
+      "type": "eligibility",
+      "tags": [
+        "eligibility"
+      ],
+      "logic": "For unplanned deforestation projects, a Reference Region for Deforestation (RRD) must be defined within the same jurisdiction as the project area, with similar characteristics.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "project-boundary",
+      "section_number": "4"
+    },
+    {
+      "id": "R-5-0001",
+      "title": "Baseline scenario determination",
+      "text": "The most plausible baseline scenario must be determined using VT0001 and the stepwise approach in Section 6. The scenario must be consistent with conditions prior to the project start date.",
+      "section_id": "S-5",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-5",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0001",
+      "type": "calculation",
+      "tags": [
+        "calculation"
+      ],
+      "logic": "The most plausible baseline scenario must be determined using VT0001 and the stepwise approach in Section 6. The scenario must be consistent with conditions prior to the project start date.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "baseline-scenario",
+      "section_number": "6"
+    },
+    {
+      "id": "R-5-0002",
+      "title": "Alternative scenario minimum list",
+      "text": "The plausible alternative land use scenarios must include at minimum: (1) continuation of pre-project land use, (2) project activity without VCS registration, and (3) similar activities on part of the project land.",
+      "section_id": "S-5",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-5",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0002",
+      "type": "eligibility",
+      "tags": [
+        "eligibility"
+      ],
+      "logic": "The plausible alternative land use scenarios must include at minimum: (1) continuation of pre-project land use, (2) project activity without VCS registration, and (3) similar activities on part of the",
+      "when": [],
+      "tools": [],
+      "section_anchor": "baseline-scenario",
+      "section_number": "6"
+    },
+    {
+      "id": "R-5-0003",
+      "title": "Baseline reassessment frequency",
+      "text": "The project baseline must be revised at the frequency set out in the latest VCS Standard. The date of the next scheduled revision must be specified.",
+      "section_id": "S-5",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-5",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0003",
+      "type": "monitoring",
+      "tags": [
+        "monitoring"
+      ],
+      "logic": "The project baseline must be revised at the frequency set out in the latest VCS Standard. The date of the next scheduled revision must be specified.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "baseline-scenario",
+      "section_number": "6"
+    },
+    {
+      "id": "R-5-0004",
+      "title": "REDD baseline modules",
+      "text": "For REDD projects, baseline estimation must use Module BL-PL for planned deforestation/degradation and Module BL-UP for unplanned deforestation.",
+      "section_id": "S-5",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-5",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0004",
+      "type": "calculation",
+      "tags": [
+        "calculation"
+      ],
+      "logic": "For REDD projects, baseline estimation must use Module BL-PL for planned deforestation/degradation and Module BL-UP for unplanned deforestation.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "baseline-scenario",
+      "section_number": "6"
+    },
+    {
+      "id": "R-5-0005",
+      "title": "WRC baseline modules",
+      "text": "For WRC projects, baseline net emissions from the SOC pool must be estimated using Module BL-PEAT or BL-TW, whichever is relevant.",
+      "section_id": "S-5",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-5",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0005",
+      "type": "calculation",
+      "tags": [
+        "calculation"
+      ],
+      "logic": "For WRC projects, baseline net emissions from the SOC pool must be estimated using Module BL-PEAT or BL-TW, whichever is relevant.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "baseline-scenario",
+      "section_number": "6"
+    },
+    {
+      "id": "R-6-0001",
+      "title": "VT0001 additionality requirement",
+      "text": "VT0001 Tool for Demonstration and Assessment of Additionality in VCS AFOLU Project Activities must be used to demonstrate additionality for all project activities other than tidal wetland conservation and restoration.",
+      "section_id": "S-6",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-6",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-6-0001",
+      "type": "eligibility",
+      "tags": [
+        "eligibility"
+      ],
+      "logic": "VT0001 Tool for Demonstration and Assessment of Additionality in VCS AFOLU Project Activities must be used to demonstrate additionality for all project activities other than tidal wetland conservation",
+      "when": [],
+      "tools": [],
+      "section_anchor": "additionality",
+      "section_number": "7"
+    },
+    {
+      "id": "R-6-0002",
+      "title": "Tidal wetland additionality method",
+      "text": "For tidal wetland conservation and restoration project activities, the activity method ADD-AM must be used for additionality demonstration.",
+      "section_id": "S-6",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-6",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-6-0002",
+      "type": "eligibility",
+      "tags": [
+        "eligibility"
+      ],
+      "logic": "For tidal wetland conservation and restoration project activities, the activity method ADD-AM must be used for additionality demonstration.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "additionality",
+      "section_number": "7"
+    },
+    {
+      "id": "R-7-0001",
+      "title": "REDD net emission reduction calculation",
+      "text": "Total net GHG emission reductions for REDD: NER_REDD = GHG_BSL-REDD - GHG_WPS-REDD - GHG_LK-REDD.",
+      "section_id": "S-7",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-7",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-7-0001",
+      "type": "calculation",
+      "tags": [
+        "calculation"
+      ],
+      "logic": "Total net GHG emission reductions for REDD: NER_REDD = GHG_BSL-REDD - GHG_WPS-REDD - GHG_LK-REDD.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "quantification",
+      "section_number": "8"
+    },
+    {
+      "id": "R-7-0002",
+      "title": "WRC net emission reduction calculation",
+      "text": "Total net GHG emission reductions for WRC: NER_WRC = GHG_BSL-WRC - GHG_WPS-WRC - GHG_LK-WRC.",
+      "section_id": "S-7",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-7",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-7-0002",
+      "type": "calculation",
+      "tags": [
+        "calculation"
+      ],
+      "logic": "Total net GHG emission reductions for WRC: NER_WRC = GHG_BSL-WRC - GHG_WPS-WRC - GHG_LK-WRC.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "quantification",
+      "section_number": "8"
+    },
+    {
+      "id": "R-7-0003",
+      "title": "Activity shifting leakage",
+      "text": "Activity shifting leakage must be quantified using Module LK-ASP for planned deforestation and Module LK-ASU for unplanned deforestation.",
+      "section_id": "S-7",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-7",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-7-0003",
+      "type": "calculation",
+      "tags": [
+        "calculation"
+      ],
+      "logic": "Activity shifting leakage must be quantified using Module LK-ASP for planned deforestation and Module LK-ASU for unplanned deforestation.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "quantification",
+      "section_number": "8"
+    },
+    {
+      "id": "R-7-0004",
+      "title": "Market effects leakage",
+      "text": "Market effects leakage must be quantified using Module LK-ME where applicable.",
+      "section_id": "S-7",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-7",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-7-0004",
+      "type": "calculation",
+      "tags": [
+        "calculation"
+      ],
+      "logic": "Market effects leakage must be quantified using Module LK-ME where applicable.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "quantification",
+      "section_number": "8"
+    },
+    {
+      "id": "R-7-0005",
+      "title": "Ecological leakage for WRC",
+      "text": "For WRC projects, ecological leakage must be quantified using Module LK-ECO.",
+      "section_id": "S-7",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-7",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-7-0005",
+      "type": "calculation",
+      "tags": [
+        "calculation"
+      ],
+      "logic": "For WRC projects, ecological leakage must be quantified using Module LK-ECO.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "quantification",
+      "section_number": "8"
+    },
+    {
+      "id": "R-7-0006",
+      "title": "Buffer pool contribution",
+      "text": "AFOLU pooled buffer account contribution is determined as a percentage of total carbon stock benefits, calculated separately for planned, unplanned, and WRC components using T-BAR risk classification.",
+      "section_id": "S-7",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-7",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-7-0006",
+      "type": "calculation",
+      "tags": [
+        "calculation"
+      ],
+      "logic": "AFOLU pooled buffer account contribution is determined as a percentage of total carbon stock benefits, calculated separately for planned, unplanned, and WRC components using T-BAR risk classification.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "quantification",
+      "section_number": "8"
+    },
+    {
+      "id": "R-7-0007",
+      "title": "Uncertainty adjustment",
+      "text": "Net GHG emission reductions must be adjusted using Module X-UNC. Allowable uncertainty is +/-15% of NER_REDD+ at 90% confidence. Where exceeded, deduction equals the excess.",
+      "section_id": "S-7",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-7",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-7-0007",
+      "type": "calculation",
+      "tags": [
+        "calculation"
+      ],
+      "logic": "Net GHG emission reductions must be adjusted using Module X-UNC. Allowable uncertainty is +/-15% of NER_REDD+ at 90% confidence. Where exceeded, deduction equals the excess.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "quantification",
+      "section_number": "8"
+    },
+    {
+      "id": "R-7-0008",
+      "title": "VCU calculation",
+      "text": "Verified Carbon Units for monitoring period t: VCU_t = (Adjusted_NER_REDD+,t2 - Adjusted_NER_REDD+,t1) - Buffer_Total.",
+      "section_id": "S-7",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-7",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-7-0008",
+      "type": "calculation",
+      "tags": [
+        "calculation"
+      ],
+      "logic": "Verified Carbon Units for monitoring period t: VCU_t = (Adjusted_NER_REDD+,t2 - Adjusted_NER_REDD+,t1) - Buffer_Total.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "quantification",
+      "section_number": "8"
+    },
+    {
+      "id": "R-8-0001",
+      "title": "Monitoring plan scope",
+      "text": "The monitoring plan must address: (1) project implementation, (2) actual carbon stock changes and GHG emissions, (3) leakage carbon stock changes, (4) ex post estimation of net changes.",
+      "section_id": "S-8",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-8",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-8-0001",
+      "type": "monitoring",
+      "tags": [
+        "monitoring"
+      ],
+      "logic": "The monitoring plan must address: (1) project implementation, (2) actual carbon stock changes and GHG emissions, (3) leakage carbon stock changes, (4) ex post estimation of net changes.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "monitoring",
+      "section_number": "9"
+    },
+    {
+      "id": "R-8-0002",
+      "title": "Monitoring plan content",
+      "text": "For each monitoring task: technical description, data to collect, collection procedures, QA/QC procedures, data archiving, organizational responsibilities.",
+      "section_id": "S-8",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-8",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-8-0002",
+      "type": "monitoring",
+      "tags": [
+        "monitoring"
+      ],
+      "logic": "For each monitoring task: technical description, data to collect, collection procedures, QA/QC procedures, data archiving, organizational responsibilities.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "monitoring",
+      "section_number": "9"
+    },
+    {
+      "id": "R-8-0003",
+      "title": "Forest cover monitoring frequency",
+      "text": "Changes in forest cover in the RRD must be monitored at minimum every 10 years, per Module M-REDD and Module BL-UP.",
+      "section_id": "S-8",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-8",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-8-0003",
+      "type": "monitoring",
+      "tags": [
+        "monitoring"
+      ],
+      "logic": "Changes in forest cover in the RRD must be monitored at minimum every 10 years, per Module M-REDD and Module BL-UP.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "monitoring",
+      "section_number": "9"
+    },
+    {
+      "id": "R-8-0004",
+      "title": "Quality management",
+      "text": "Quality management procedures required including uncertainty assessment. Key parameters identified with local values from peer-reviewed literature, IPCC defaults, or expert opinion.",
+      "section_id": "S-8",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-8",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-8-0004",
+      "type": "monitoring",
+      "tags": [
+        "monitoring"
+      ],
+      "logic": "Quality management procedures required including uncertainty assessment. Key parameters identified with local values from peer-reviewed literature, IPCC defaults, or expert opinion.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "monitoring",
+      "section_number": "9"
+    },
+    {
+      "id": "R-8-0005",
+      "title": "SOP requirements",
+      "text": "Documented SOPs required: field measurement documentation, training procedures, check cruise protocols, outlier/transcription assessment, data archiving for project lifetime.",
+      "section_id": "S-8",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-8",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-8-0005",
+      "type": "monitoring",
+      "tags": [
+        "monitoring"
+      ],
+      "logic": "Documented SOPs required: field measurement documentation, training procedures, check cruise protocols, outlier/transcription assessment, data archiving for project lifetime.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "monitoring",
+      "section_number": "9"
+    },
+    {
+      "id": "R-8-0006",
+      "title": "WRC compliance monitoring",
+      "text": "WRC projects must monitor: water table levels, peatland fire occurrence, absence of nitrogen fertilizer use within project area.",
+      "section_id": "S-8",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-8",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-8-0006",
+      "type": "monitoring",
+      "tags": [
+        "monitoring"
+      ],
+      "logic": "WRC projects must monitor: water table levels, peatland fire occurrence, absence of nitrogen fertilizer use within project area.",
+      "when": [],
+      "tools": [],
+      "section_anchor": "monitoring",
+      "section_number": "9"
+    }
+  ]
+}
