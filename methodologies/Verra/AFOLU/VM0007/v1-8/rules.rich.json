@@ -44,12 +44,14 @@
         {
           "id": "forest-definition-documentation",
           "label": "Forest Definition Documentation",
-          "description": "Required: forest definition documentation"
+          "description": "Required: forest definition documentation",
+          "required": true
         },
         {
           "id": "10-year-land-cover-history",
           "label": "10 Year Land Cover History",
-          "description": "Required: 10 year land cover history"
+          "description": "Required: 10 year land cover history",
+          "required": true
         }
       ]
     }
@@ -99,12 +101,14 @@
         {
           "id": "legal-land-use-documents",
           "label": "Legal Land Use Documents",
-          "description": "Required: legal land use documents"
+          "description": "Required: legal land use documents",
+          "required": true
         },
         {
           "id": "deforestation-driver-analysis",
           "label": "Deforestation Driver Analysis",
-          "description": "Required: deforestation driver analysis"
+          "description": "Required: deforestation driver analysis",
+          "required": true
         }
       ]
     }
@@ -155,17 +159,20 @@
         {
           "id": "agent-identification",
           "label": "Agent Identification",
-          "description": "Required: agent identification"
+          "description": "Required: agent identification",
+          "required": true
         },
         {
           "id": "legal-rights-assessment",
           "label": "Legal Rights Assessment",
-          "description": "Required: legal rights assessment"
+          "description": "Required: legal rights assessment",
+          "required": true
         },
         {
           "id": "historical-deforestation-records",
           "label": "Historical Deforestation Records",
-          "description": "Required: historical deforestation records"
+          "description": "Required: historical deforestation records",
+          "required": true
         }
       ]
     }
@@ -216,12 +223,14 @@
         {
           "id": "legal-conversion-permits",
           "label": "Legal Conversion Permits",
-          "description": "Required: legal conversion permits"
+          "description": "Required: legal conversion permits",
+          "required": true
         },
         {
           "id": "land-use-authorization-documents",
           "label": "Land Use Authorization Documents",
-          "description": "Required: land use authorization documents"
+          "description": "Required: land use authorization documents",
+          "required": true
         }
       ]
     }
@@ -271,12 +280,14 @@
         {
           "id": "water-table-monitoring-data",
           "label": "Water Table Monitoring Data",
-          "description": "Required: water table monitoring data"
+          "description": "Required: water table monitoring data",
+          "required": true
         },
         {
           "id": "hydrological-assessment",
           "label": "Hydrological Assessment",
-          "description": "Required: hydrological assessment"
+          "description": "Required: hydrological assessment",
+          "required": true
         }
       ]
     }
@@ -326,12 +337,14 @@
         {
           "id": "fire-monitoring-records",
           "label": "Fire Monitoring Records",
-          "description": "Required: fire monitoring records"
+          "description": "Required: fire monitoring records",
+          "required": true
         },
         {
           "id": "soil-type-assessment",
           "label": "Soil Type Assessment",
-          "description": "Required: soil type assessment"
+          "description": "Required: soil type assessment",
+          "required": true
         }
       ]
     }
@@ -381,12 +394,14 @@
         {
           "id": "fertilizer-use-records",
           "label": "Fertilizer Use Records",
-          "description": "Required: fertilizer use records"
+          "description": "Required: fertilizer use records",
+          "required": true
         },
         {
           "id": "land-management-practices",
           "label": "Land Management Practices",
-          "description": "Required: land management practices"
+          "description": "Required: land management practices",
+          "required": true
         }
       ]
     }
@@ -437,12 +452,14 @@
         {
           "id": "hydrological-connectivity-assessment",
           "label": "Hydrological Connectivity Assessment",
-          "description": "Required: hydrological connectivity assessment"
+          "description": "Required: hydrological connectivity assessment",
+          "required": true
         },
         {
           "id": "off-site-ghg-impact-analysis",
           "label": "Off Site Ghg Impact Analysis",
-          "description": "Required: off site ghg impact analysis"
+          "description": "Required: off site ghg impact analysis",
+          "required": true
         }
       ]
     }
@@ -493,12 +510,14 @@
         {
           "id": "prior-land-use-assessment",
           "label": "Prior Land Use Assessment",
-          "description": "Required: prior land use assessment"
+          "description": "Required: prior land use assessment",
+          "required": true
         },
         {
           "id": "displacement-analysis",
           "label": "Displacement Analysis",
-          "description": "Required: displacement analysis"
+          "description": "Required: displacement analysis",
+          "required": true
         }
       ]
     }
@@ -549,12 +568,14 @@
         {
           "id": "soil-organic-carbon-sampling",
           "label": "Soil Organic Carbon Sampling",
-          "description": "Required: soil organic carbon sampling"
+          "description": "Required: soil organic carbon sampling",
+          "required": true
         },
         {
           "id": "peat-depth-measurements",
           "label": "Peat Depth Measurements",
-          "description": "Required: peat depth measurements"
+          "description": "Required: peat depth measurements",
+          "required": true
         }
       ]
     }
@@ -605,12 +626,14 @@
         {
           "id": "restoration-activity-documentation",
           "label": "Restoration Activity Documentation",
-          "description": "Required: restoration activity documentation"
+          "description": "Required: restoration activity documentation",
+          "required": true
         },
         {
           "id": "site-condition-assessment",
           "label": "Site Condition Assessment",
-          "description": "Required: site condition assessment"
+          "description": "Required: site condition assessment",
+          "required": true
         }
       ]
     }
@@ -660,12 +683,14 @@
         {
           "id": "conservation-activity-records",
           "label": "Conservation Activity Records",
-          "description": "Required: conservation activity records"
+          "description": "Required: conservation activity records",
+          "required": true
         },
         {
           "id": "wetland-risk-assessment",
           "label": "Wetland Risk Assessment",
-          "description": "Required: wetland risk assessment"
+          "description": "Required: wetland risk assessment",
+          "required": true
         }
       ]
     }
@@ -716,17 +741,20 @@
         {
           "id": "agent-identification",
           "label": "Agent Identification",
-          "description": "Required: agent identification"
+          "description": "Required: agent identification",
+          "required": true
         },
         {
           "id": "legal-rights-assessment",
           "label": "Legal Rights Assessment",
-          "description": "Required: legal rights assessment"
+          "description": "Required: legal rights assessment",
+          "required": true
         },
         {
           "id": "historical-degradation-records",
           "label": "Historical Degradation Records",
-          "description": "Required: historical degradation records"
+          "description": "Required: historical degradation records",
+          "required": true
         }
       ]
     }
@@ -777,12 +805,14 @@
         {
           "id": "activity-type-classification",
           "label": "Activity Type Classification",
-          "description": "Required: activity type classification"
+          "description": "Required: activity type classification",
+          "required": true
         },
         {
           "id": "methodology-selection-justification",
           "label": "Methodology Selection Justification",
-          "description": "Required: methodology selection justification"
+          "description": "Required: methodology selection justification",
+          "required": true
         }
       ]
     }
@@ -832,12 +862,14 @@
         {
           "id": "leakage-prevention-activity-list",
           "label": "Leakage Prevention Activity List",
-          "description": "Required: leakage prevention activity list"
+          "description": "Required: leakage prevention activity list",
+          "required": true
         },
         {
           "id": "activity-impact-assessment",
           "label": "Activity Impact Assessment",
-          "description": "Required: activity impact assessment"
+          "description": "Required: activity impact assessment",
+          "required": true
         }
       ]
     }
@@ -887,17 +919,20 @@
         {
           "id": "geographic-boundary-maps",
           "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps"
+          "description": "Required: geographic boundary maps",
+          "required": true
         },
         {
           "id": "carbon-pool-inventory",
           "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory"
+          "description": "Required: carbon pool inventory",
+          "required": true
         },
         {
           "id": "ghg-source-assessment",
           "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment"
+          "description": "Required: ghg source assessment",
+          "required": true
         }
       ]
     }
@@ -947,17 +982,20 @@
         {
           "id": "geographic-boundary-maps",
           "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps"
+          "description": "Required: geographic boundary maps",
+          "required": true
         },
         {
           "id": "carbon-pool-inventory",
           "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory"
+          "description": "Required: carbon pool inventory",
+          "required": true
         },
         {
           "id": "ghg-source-assessment",
           "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment"
+          "description": "Required: ghg source assessment",
+          "required": true
         }
       ]
     }
@@ -1007,17 +1045,20 @@
         {
           "id": "geographic-boundary-maps",
           "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps"
+          "description": "Required: geographic boundary maps",
+          "required": true
         },
         {
           "id": "carbon-pool-inventory",
           "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory"
+          "description": "Required: carbon pool inventory",
+          "required": true
         },
         {
           "id": "ghg-source-assessment",
           "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment"
+          "description": "Required: ghg source assessment",
+          "required": true
         }
       ]
     }
@@ -1068,17 +1109,20 @@
         {
           "id": "geographic-boundary-maps",
           "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps"
+          "description": "Required: geographic boundary maps",
+          "required": true
         },
         {
           "id": "carbon-pool-inventory",
           "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory"
+          "description": "Required: carbon pool inventory",
+          "required": true
         },
         {
           "id": "ghg-source-assessment",
           "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment"
+          "description": "Required: ghg source assessment",
+          "required": true
         }
       ]
     }
@@ -1129,17 +1173,20 @@
         {
           "id": "geographic-boundary-maps",
           "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps"
+          "description": "Required: geographic boundary maps",
+          "required": true
         },
         {
           "id": "carbon-pool-inventory",
           "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory"
+          "description": "Required: carbon pool inventory",
+          "required": true
         },
         {
           "id": "ghg-source-assessment",
           "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment"
+          "description": "Required: ghg source assessment",
+          "required": true
         }
       ]
     }
@@ -1190,17 +1237,20 @@
         {
           "id": "geographic-boundary-maps",
           "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps"
+          "description": "Required: geographic boundary maps",
+          "required": true
         },
         {
           "id": "carbon-pool-inventory",
           "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory"
+          "description": "Required: carbon pool inventory",
+          "required": true
         },
         {
           "id": "ghg-source-assessment",
           "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment"
+          "description": "Required: ghg source assessment",
+          "required": true
         }
       ]
     }
@@ -1251,17 +1301,20 @@
         {
           "id": "geographic-boundary-maps",
           "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps"
+          "description": "Required: geographic boundary maps",
+          "required": true
         },
         {
           "id": "carbon-pool-inventory",
           "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory"
+          "description": "Required: carbon pool inventory",
+          "required": true
         },
         {
           "id": "ghg-source-assessment",
           "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment"
+          "description": "Required: ghg source assessment",
+          "required": true
         }
       ]
     }
@@ -1322,17 +1375,20 @@
         {
           "id": "geographic-boundary-maps",
           "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps"
+          "description": "Required: geographic boundary maps",
+          "required": true
         },
         {
           "id": "carbon-pool-inventory",
           "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory"
+          "description": "Required: carbon pool inventory",
+          "required": true
         },
         {
           "id": "ghg-source-assessment",
           "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment"
+          "description": "Required: ghg source assessment",
+          "required": true
         }
       ]
     }
@@ -1392,17 +1448,20 @@
         {
           "id": "geographic-boundary-maps",
           "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps"
+          "description": "Required: geographic boundary maps",
+          "required": true
         },
         {
           "id": "carbon-pool-inventory",
           "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory"
+          "description": "Required: carbon pool inventory",
+          "required": true
         },
         {
           "id": "ghg-source-assessment",
           "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment"
+          "description": "Required: ghg source assessment",
+          "required": true
         }
       ]
     }
@@ -1453,17 +1512,20 @@
         {
           "id": "geographic-boundary-maps",
           "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps"
+          "description": "Required: geographic boundary maps",
+          "required": true
         },
         {
           "id": "carbon-pool-inventory",
           "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory"
+          "description": "Required: carbon pool inventory",
+          "required": true
         },
         {
           "id": "ghg-source-assessment",
           "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment"
+          "description": "Required: ghg source assessment",
+          "required": true
         }
       ]
     }
@@ -1513,17 +1575,20 @@
         {
           "id": "geographic-boundary-maps",
           "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps"
+          "description": "Required: geographic boundary maps",
+          "required": true
         },
         {
           "id": "carbon-pool-inventory",
           "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory"
+          "description": "Required: carbon pool inventory",
+          "required": true
         },
         {
           "id": "ghg-source-assessment",
           "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment"
+          "description": "Required: ghg source assessment",
+          "required": true
         }
       ]
     }
@@ -1573,17 +1638,20 @@
         {
           "id": "geographic-boundary-maps",
           "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps"
+          "description": "Required: geographic boundary maps",
+          "required": true
         },
         {
           "id": "carbon-pool-inventory",
           "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory"
+          "description": "Required: carbon pool inventory",
+          "required": true
         },
         {
           "id": "ghg-source-assessment",
           "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment"
+          "description": "Required: ghg source assessment",
+          "required": true
         }
       ]
     }
@@ -1633,17 +1701,20 @@
         {
           "id": "geographic-boundary-maps",
           "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps"
+          "description": "Required: geographic boundary maps",
+          "required": true
         },
         {
           "id": "carbon-pool-inventory",
           "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory"
+          "description": "Required: carbon pool inventory",
+          "required": true
         },
         {
           "id": "ghg-source-assessment",
           "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment"
+          "description": "Required: ghg source assessment",
+          "required": true
         }
       ]
     }
@@ -1693,17 +1764,20 @@
         {
           "id": "geographic-boundary-maps",
           "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps"
+          "description": "Required: geographic boundary maps",
+          "required": true
         },
         {
           "id": "carbon-pool-inventory",
           "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory"
+          "description": "Required: carbon pool inventory",
+          "required": true
         },
         {
           "id": "ghg-source-assessment",
           "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment"
+          "description": "Required: ghg source assessment",
+          "required": true
         }
       ]
     }
@@ -1762,17 +1836,20 @@
         {
           "id": "geographic-boundary-maps",
           "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps"
+          "description": "Required: geographic boundary maps",
+          "required": true
         },
         {
           "id": "carbon-pool-inventory",
           "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory"
+          "description": "Required: carbon pool inventory",
+          "required": true
         },
         {
           "id": "ghg-source-assessment",
           "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment"
+          "description": "Required: ghg source assessment",
+          "required": true
         }
       ]
     }
@@ -1823,17 +1900,20 @@
         {
           "id": "geographic-boundary-maps",
           "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps"
+          "description": "Required: geographic boundary maps",
+          "required": true
         },
         {
           "id": "carbon-pool-inventory",
           "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory"
+          "description": "Required: carbon pool inventory",
+          "required": true
         },
         {
           "id": "ghg-source-assessment",
           "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment"
+          "description": "Required: ghg source assessment",
+          "required": true
         }
       ]
     }
@@ -1892,12 +1972,14 @@
         {
           "id": "baseline-scenario-analysis",
           "label": "Baseline Scenario Analysis",
-          "description": "Required: baseline scenario analysis"
+          "description": "Required: baseline scenario analysis",
+          "required": true
         },
         {
           "id": "alternative-scenario-assessment",
           "label": "Alternative Scenario Assessment",
-          "description": "Required: alternative scenario assessment"
+          "description": "Required: alternative scenario assessment",
+          "required": true
         }
       ]
     }
@@ -1948,12 +2030,14 @@
         {
           "id": "baseline-scenario-analysis",
           "label": "Baseline Scenario Analysis",
-          "description": "Required: baseline scenario analysis"
+          "description": "Required: baseline scenario analysis",
+          "required": true
         },
         {
           "id": "alternative-scenario-assessment",
           "label": "Alternative Scenario Assessment",
-          "description": "Required: alternative scenario assessment"
+          "description": "Required: alternative scenario assessment",
+          "required": true
         }
       ]
     }
@@ -2012,12 +2096,14 @@
         {
           "id": "baseline-scenario-analysis",
           "label": "Baseline Scenario Analysis",
-          "description": "Required: baseline scenario analysis"
+          "description": "Required: baseline scenario analysis",
+          "required": true
         },
         {
           "id": "alternative-scenario-assessment",
           "label": "Alternative Scenario Assessment",
-          "description": "Required: alternative scenario assessment"
+          "description": "Required: alternative scenario assessment",
+          "required": true
         }
       ]
     }
@@ -2076,12 +2162,14 @@
         {
           "id": "baseline-scenario-analysis",
           "label": "Baseline Scenario Analysis",
-          "description": "Required: baseline scenario analysis"
+          "description": "Required: baseline scenario analysis",
+          "required": true
         },
         {
           "id": "alternative-scenario-assessment",
           "label": "Alternative Scenario Assessment",
-          "description": "Required: alternative scenario assessment"
+          "description": "Required: alternative scenario assessment",
+          "required": true
         }
       ]
     }
@@ -2141,12 +2229,14 @@
         {
           "id": "baseline-scenario-analysis",
           "label": "Baseline Scenario Analysis",
-          "description": "Required: baseline scenario analysis"
+          "description": "Required: baseline scenario analysis",
+          "required": true
         },
         {
           "id": "alternative-scenario-assessment",
           "label": "Alternative Scenario Assessment",
-          "description": "Required: alternative scenario assessment"
+          "description": "Required: alternative scenario assessment",
+          "required": true
         }
       ]
     }
@@ -2206,12 +2296,14 @@
         {
           "id": "baseline-scenario-analysis",
           "label": "Baseline Scenario Analysis",
-          "description": "Required: baseline scenario analysis"
+          "description": "Required: baseline scenario analysis",
+          "required": true
         },
         {
           "id": "alternative-scenario-assessment",
           "label": "Alternative Scenario Assessment",
-          "description": "Required: alternative scenario assessment"
+          "description": "Required: alternative scenario assessment",
+          "required": true
         }
       ]
     }
@@ -2261,12 +2353,14 @@
         {
           "id": "baseline-scenario-analysis",
           "label": "Baseline Scenario Analysis",
-          "description": "Required: baseline scenario analysis"
+          "description": "Required: baseline scenario analysis",
+          "required": true
         },
         {
           "id": "alternative-scenario-assessment",
           "label": "Alternative Scenario Assessment",
-          "description": "Required: alternative scenario assessment"
+          "description": "Required: alternative scenario assessment",
+          "required": true
         }
       ]
     }
@@ -2324,12 +2418,14 @@
         {
           "id": "baseline-scenario-analysis",
           "label": "Baseline Scenario Analysis",
-          "description": "Required: baseline scenario analysis"
+          "description": "Required: baseline scenario analysis",
+          "required": true
         },
         {
           "id": "alternative-scenario-assessment",
           "label": "Alternative Scenario Assessment",
-          "description": "Required: alternative scenario assessment"
+          "description": "Required: alternative scenario assessment",
+          "required": true
         }
       ]
     }
@@ -2380,7 +2476,8 @@
         {
           "id": "additionality-demonstration",
           "label": "Additionality Demonstration",
-          "description": "Required: additionality demonstration"
+          "description": "Required: additionality demonstration",
+          "required": true
         }
       ]
     }
@@ -2431,7 +2528,8 @@
         {
           "id": "additionality-demonstration",
           "label": "Additionality Demonstration",
-          "description": "Required: additionality demonstration"
+          "description": "Required: additionality demonstration",
+          "required": true
         }
       ]
     }
@@ -2489,17 +2587,20 @@
         {
           "id": "carbon-stock-data",
           "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data"
+          "description": "Required: carbon stock data",
+          "required": true
         },
         {
           "id": "emission-factor-data",
           "label": "Emission Factor Data",
-          "description": "Required: emission factor data"
+          "description": "Required: emission factor data",
+          "required": true
         },
         {
           "id": "monitoring-data",
           "label": "Monitoring Data",
-          "description": "Required: monitoring data"
+          "description": "Required: monitoring data",
+          "required": true
         }
       ]
     }
@@ -2557,17 +2658,20 @@
         {
           "id": "carbon-stock-data",
           "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data"
+          "description": "Required: carbon stock data",
+          "required": true
         },
         {
           "id": "emission-factor-data",
           "label": "Emission Factor Data",
-          "description": "Required: emission factor data"
+          "description": "Required: emission factor data",
+          "required": true
         },
         {
           "id": "monitoring-data",
           "label": "Monitoring Data",
-          "description": "Required: monitoring data"
+          "description": "Required: monitoring data",
+          "required": true
         }
       ]
     }
@@ -2627,17 +2731,20 @@
         {
           "id": "carbon-stock-data",
           "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data"
+          "description": "Required: carbon stock data",
+          "required": true
         },
         {
           "id": "emission-factor-data",
           "label": "Emission Factor Data",
-          "description": "Required: emission factor data"
+          "description": "Required: emission factor data",
+          "required": true
         },
         {
           "id": "monitoring-data",
           "label": "Monitoring Data",
-          "description": "Required: monitoring data"
+          "description": "Required: monitoring data",
+          "required": true
         }
       ]
     }
@@ -2697,17 +2804,20 @@
         {
           "id": "carbon-stock-data",
           "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data"
+          "description": "Required: carbon stock data",
+          "required": true
         },
         {
           "id": "emission-factor-data",
           "label": "Emission Factor Data",
-          "description": "Required: emission factor data"
+          "description": "Required: emission factor data",
+          "required": true
         },
         {
           "id": "monitoring-data",
           "label": "Monitoring Data",
-          "description": "Required: monitoring data"
+          "description": "Required: monitoring data",
+          "required": true
         }
       ]
     }
@@ -2766,17 +2876,20 @@
         {
           "id": "carbon-stock-data",
           "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data"
+          "description": "Required: carbon stock data",
+          "required": true
         },
         {
           "id": "emission-factor-data",
           "label": "Emission Factor Data",
-          "description": "Required: emission factor data"
+          "description": "Required: emission factor data",
+          "required": true
         },
         {
           "id": "monitoring-data",
           "label": "Monitoring Data",
-          "description": "Required: monitoring data"
+          "description": "Required: monitoring data",
+          "required": true
         }
       ]
     }
@@ -2830,17 +2943,20 @@
         {
           "id": "carbon-stock-data",
           "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data"
+          "description": "Required: carbon stock data",
+          "required": true
         },
         {
           "id": "emission-factor-data",
           "label": "Emission Factor Data",
-          "description": "Required: emission factor data"
+          "description": "Required: emission factor data",
+          "required": true
         },
         {
           "id": "monitoring-data",
           "label": "Monitoring Data",
-          "description": "Required: monitoring data"
+          "description": "Required: monitoring data",
+          "required": true
         }
       ]
     }
@@ -2898,17 +3014,20 @@
         {
           "id": "carbon-stock-data",
           "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data"
+          "description": "Required: carbon stock data",
+          "required": true
         },
         {
           "id": "emission-factor-data",
           "label": "Emission Factor Data",
-          "description": "Required: emission factor data"
+          "description": "Required: emission factor data",
+          "required": true
         },
         {
           "id": "monitoring-data",
           "label": "Monitoring Data",
-          "description": "Required: monitoring data"
+          "description": "Required: monitoring data",
+          "required": true
         }
       ]
     }
@@ -2970,17 +3089,20 @@
         {
           "id": "carbon-stock-data",
           "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data"
+          "description": "Required: carbon stock data",
+          "required": true
         },
         {
           "id": "emission-factor-data",
           "label": "Emission Factor Data",
-          "description": "Required: emission factor data"
+          "description": "Required: emission factor data",
+          "required": true
         },
         {
           "id": "monitoring-data",
           "label": "Monitoring Data",
-          "description": "Required: monitoring data"
+          "description": "Required: monitoring data",
+          "required": true
         }
       ]
     }
@@ -3040,17 +3162,20 @@
         {
           "id": "carbon-stock-data",
           "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data"
+          "description": "Required: carbon stock data",
+          "required": true
         },
         {
           "id": "emission-factor-data",
           "label": "Emission Factor Data",
-          "description": "Required: emission factor data"
+          "description": "Required: emission factor data",
+          "required": true
         },
         {
           "id": "monitoring-data",
           "label": "Monitoring Data",
-          "description": "Required: monitoring data"
+          "description": "Required: monitoring data",
+          "required": true
         }
       ]
     }
@@ -3100,17 +3225,20 @@
         {
           "id": "monitoring-plan",
           "label": "Monitoring Plan",
-          "description": "Required: monitoring plan"
+          "description": "Required: monitoring plan",
+          "required": true
         },
         {
           "id": "field-measurement-protocols",
           "label": "Field Measurement Protocols",
-          "description": "Required: field measurement protocols"
+          "description": "Required: field measurement protocols",
+          "required": true
         },
         {
           "id": "qa-qc-procedures",
           "label": "Qa Qc Procedures",
-          "description": "Required: qa qc procedures"
+          "description": "Required: qa qc procedures",
+          "required": true
         }
       ]
     }
@@ -3160,17 +3288,20 @@
         {
           "id": "monitoring-plan",
           "label": "Monitoring Plan",
-          "description": "Required: monitoring plan"
+          "description": "Required: monitoring plan",
+          "required": true
         },
         {
           "id": "field-measurement-protocols",
           "label": "Field Measurement Protocols",
-          "description": "Required: field measurement protocols"
+          "description": "Required: field measurement protocols",
+          "required": true
         },
         {
           "id": "qa-qc-procedures",
           "label": "Qa Qc Procedures",
-          "description": "Required: qa qc procedures"
+          "description": "Required: qa qc procedures",
+          "required": true
         }
       ]
     }
@@ -3220,17 +3351,20 @@
         {
           "id": "monitoring-plan",
           "label": "Monitoring Plan",
-          "description": "Required: monitoring plan"
+          "description": "Required: monitoring plan",
+          "required": true
         },
         {
           "id": "field-measurement-protocols",
           "label": "Field Measurement Protocols",
-          "description": "Required: field measurement protocols"
+          "description": "Required: field measurement protocols",
+          "required": true
         },
         {
           "id": "qa-qc-procedures",
           "label": "Qa Qc Procedures",
-          "description": "Required: qa qc procedures"
+          "description": "Required: qa qc procedures",
+          "required": true
         }
       ]
     }
@@ -3280,17 +3414,20 @@
         {
           "id": "monitoring-plan",
           "label": "Monitoring Plan",
-          "description": "Required: monitoring plan"
+          "description": "Required: monitoring plan",
+          "required": true
         },
         {
           "id": "field-measurement-protocols",
           "label": "Field Measurement Protocols",
-          "description": "Required: field measurement protocols"
+          "description": "Required: field measurement protocols",
+          "required": true
         },
         {
           "id": "qa-qc-procedures",
           "label": "Qa Qc Procedures",
-          "description": "Required: qa qc procedures"
+          "description": "Required: qa qc procedures",
+          "required": true
         }
       ]
     }
@@ -3342,17 +3479,20 @@
         {
           "id": "monitoring-plan",
           "label": "Monitoring Plan",
-          "description": "Required: monitoring plan"
+          "description": "Required: monitoring plan",
+          "required": true
         },
         {
           "id": "field-measurement-protocols",
           "label": "Field Measurement Protocols",
-          "description": "Required: field measurement protocols"
+          "description": "Required: field measurement protocols",
+          "required": true
         },
         {
           "id": "qa-qc-procedures",
           "label": "Qa Qc Procedures",
-          "description": "Required: qa qc procedures"
+          "description": "Required: qa qc procedures",
+          "required": true
         }
       ]
     }
@@ -3404,17 +3544,20 @@
         {
           "id": "monitoring-plan",
           "label": "Monitoring Plan",
-          "description": "Required: monitoring plan"
+          "description": "Required: monitoring plan",
+          "required": true
         },
         {
           "id": "field-measurement-protocols",
           "label": "Field Measurement Protocols",
-          "description": "Required: field measurement protocols"
+          "description": "Required: field measurement protocols",
+          "required": true
         },
         {
           "id": "qa-qc-procedures",
           "label": "Qa Qc Procedures",
-          "description": "Required: qa qc procedures"
+          "description": "Required: qa qc procedures",
+          "required": true
         }
       ]
     }
@@ -3464,17 +3607,20 @@
         {
           "id": "monitoring-plan",
           "label": "Monitoring Plan",
-          "description": "Required: monitoring plan"
+          "description": "Required: monitoring plan",
+          "required": true
         },
         {
           "id": "field-measurement-protocols",
           "label": "Field Measurement Protocols",
-          "description": "Required: field measurement protocols"
+          "description": "Required: field measurement protocols",
+          "required": true
         },
         {
           "id": "qa-qc-procedures",
           "label": "Qa Qc Procedures",
-          "description": "Required: qa qc procedures"
+          "description": "Required: qa qc procedures",
+          "required": true
         }
       ]
     }
@@ -3527,17 +3673,20 @@
         {
           "id": "monitoring-plan",
           "label": "Monitoring Plan",
-          "description": "Required: monitoring plan"
+          "description": "Required: monitoring plan",
+          "required": true
         },
         {
           "id": "field-measurement-protocols",
           "label": "Field Measurement Protocols",
-          "description": "Required: field measurement protocols"
+          "description": "Required: field measurement protocols",
+          "required": true
         },
         {
           "id": "qa-qc-procedures",
           "label": "Qa Qc Procedures",
-          "description": "Required: qa qc procedures"
+          "description": "Required: qa qc procedures",
+          "required": true
         }
       ]
     }
