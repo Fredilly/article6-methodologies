@@ -4,9 +4,9 @@
     "sections_json_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
     "source_pdf_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
   },
-  "domain": "Stub",
+  "domain": "AFOLU",
   "files": [],
-  "method": "Stub",
+  "method": "REDD+ Methodology Framework",
   "provenance": {
     "source_pdfs": [
       {
@@ -28,8 +28,8 @@
       "previous_version": "v1-6"
     }
   },
-  "standard": "Stub",
-  "title": "VM0007 REDD+ MF v1-7 (stub)",
+  "standard": "VCS",
+  "title": "VM0007 REDD+ MF v1-7",
   "version": "v1-7",
   "stage": "Superseded"
 }
