@@ -1409,14 +1409,6 @@
         "Verra/VMD0005@v1-8"
       ]
     },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
-    },
     "source_span_text": "AGB always mandatory. HWP and dead wood conditionally mandatory based on baseline/project comparison.",
     "section_context": {
       "anchor": "project-boundary",
@@ -1484,14 +1476,6 @@
         "Verra/VMD0042@v1-8",
         "Verra/VMD0050@v1-8"
       ]
-    },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
     },
     "source_span_text": "WRC focuses on SOC pool. Biomass pools excluded unless ARR applies.",
     "section_context": {
@@ -1891,14 +1875,6 @@
         "Verra/VMD0016@v1-8"
       ]
     },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
-    },
     "source_span_text": "100-year SOC horizon test. Must show significant difference. Assessed ex-ante conservatively.",
     "section_context": {
       "anchor": "project-boundary",
@@ -2033,14 +2009,6 @@
         "Verra/VT0001@v1-8"
       ]
     },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
-    },
     "source_span_text": "VT0001 mandatory. Stepwise approach: list alternatives, barrier/investment analysis, select most plausible.",
     "section_context": {
       "anchor": "baseline-scenario",
@@ -2163,14 +2131,6 @@
         "Verra/VT0001@v1-8"
       ]
     },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
-    },
     "source_span_text": "Two-step: barrier analysis first, then investment analysis or qualitative GHG estimation as fallback.",
     "section_context": {
       "anchor": "baseline-scenario",
@@ -2231,14 +2191,6 @@
         "Verra/VM0007@v1-8",
         "Verra/VT0001@v1-8"
       ]
-    },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
     },
     "source_span_text": "Three options with different selection criteria. Option I is cost-only, Option II is IRR/NPV, Option III is benchmark-based.",
     "section_context": {
@@ -2302,14 +2254,6 @@
         "Verra/VMD0007@v1-8"
       ]
     },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
-    },
     "source_span_text": "Module selection based on deforestation category.",
     "section_context": {
       "anchor": "baseline-scenario",
@@ -2371,14 +2315,6 @@
         "Verra/VMD0042@v1-8",
         "Verra/VMD0050@v1-8"
       ]
-    },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
     },
     "source_span_text": "Module selection depends on substrate (peat vs tidal) and activity type (CIW vs RWE vs combined).",
     "section_context": {
@@ -2499,14 +2435,6 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
     },
     "source_span_text": "JNR data is acceptable as a conservative source even if less accurate.",
     "section_context": {
@@ -2678,14 +2606,6 @@
         "Verra/VM0007@v1-8"
       ]
     },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
-    },
     "source_span_text": "Standard REDD equation. Three components summed over monitoring period.",
     "section_context": {
       "anchor": "quantification",
@@ -2751,14 +2671,6 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
     },
     "source_span_text": "Parallel to REDD equation. Components use peat/tidal wetland modules.",
     "section_context": {
@@ -2828,14 +2740,6 @@
         "Verra/VMD0010@v1-8"
       ]
     },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
-    },
     "source_span_text": "Three leakage components. Activity shifting via LK-ASP and LK-ASU modules. Market effects via LK-ME.",
     "section_context": {
       "anchor": "quantification",
@@ -2904,14 +2808,6 @@
         "Verra/VMD0010@v1-8"
       ]
     },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
-    },
     "source_span_text": "Three components including ecological leakage specific to wetlands.",
     "section_context": {
       "anchor": "quantification",
@@ -2978,14 +2874,6 @@
         "Verra/VM0007@v1-8",
         "Verra/T-BAR@v1-8"
       ]
-    },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
     },
     "source_span_text": "Three buffer components. Each = (baseline - project) \u00d7 Buffer%. Buffer% from T-BAR.",
     "section_context": {
@@ -3054,9 +2942,6 @@
         "Verra/VMD0017@v1-8"
       ]
     },
-    "uncertainty": {
-      "treatment": "15% threshold at 90% CI. Excess deducted proportionally. Below threshold, no deduction."
-    },
     "source_span_text": "15% threshold at 90% CI. Excess deducted proportionally. Below threshold, no deduction.",
     "section_context": {
       "anchor": "quantification",
@@ -3122,14 +3007,6 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
     },
     "source_span_text": "Period credits = incremental adjusted NER minus buffer withholding.",
     "section_context": {
@@ -3201,14 +3078,6 @@
         "Verra/VMD0005@v1-8"
       ]
     },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
-    },
     "source_span_text": "Five carbon pool modules. Each optional except AG biomass per R-2-0008.",
     "section_context": {
       "anchor": "quantification",
@@ -3276,14 +3145,6 @@
         "Verra/VMD0046@v1-8",
         "Verra/VMD0051@v1-8"
       ]
-    },
-    "formula": {
-      "variables": [],
-      "equation": "",
-      "outputs": []
-    },
-    "uncertainty": {
-      "treatment": "Per Module X-UNC or equivalent"
     },
     "source_span_text": "Module selection by activity type and emission source.",
     "section_context": {
@@ -3816,9 +3677,6 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    },
-    "uncertainty": {
-      "treatment": "Three data source tiers: literature > IPCC defaults > expert opinion."
     },
     "source_span_text": "Three data source tiers: literature > IPCC defaults > expert opinion.",
     "section_context": {
