@@ -19,7 +19,30 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 13,
+      "clause": "4.2.1",
+      "paragraph": 1
+    },
+    "source_excerpt": "Land in the project area has qualified as forest (following the definition used by the VCS; in addition, see Section 5.1.2) for at least the 10 years prior to the project start date.",
+    "evidence": {
+      "required": [
+        "forest_definition_documentation",
+        "10_year_land_cover_history"
+      ],
+      "sources": [
+        "host_country_forest_registry",
+        "satellite_imagery",
+        "field_survey"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Project area documented as meeting host-country forest definition for 10+ years prior to project start",
+    "fail_condition": "Cannot demonstrate 10-year forest qualification or forest definition not met",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0002",
@@ -41,7 +64,30 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 13,
+      "clause": "4.2.1",
+      "paragraph": 3
+    },
+    "source_excerpt": "Baseline deforestation in the project area falls within either of the following categories: (a) Unplanned deforestation (VCS category AUDef) (b) Planned deforestation (VCS category APDef)",
+    "evidence": {
+      "required": [
+        "legal_land_use_documents",
+        "deforestation_driver_analysis"
+      ],
+      "sources": [
+        "government_records",
+        "land_use_plans",
+        "field_investigation"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Baseline deforestation categorized as AUDef or APDef with supporting evidence",
+    "fail_condition": "Cannot determine deforestation category or deforestation does not fall into AUDef/APDef",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0003",
@@ -64,7 +110,32 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 14,
+      "clause": "4.2.2",
+      "paragraph": 1
+    },
+    "source_excerpt": "Baseline agents of deforestation meet all of the following criteria: a) Clear the land for tree harvesting, settlements, crop production, ranching or aquaculture; b) Have no documented and uncontested legal right to deforest; c) Have caused deforestation in the historical reference period.",
+    "evidence": {
+      "required": [
+        "agent_identification",
+        "legal_rights_assessment",
+        "historical_deforestation_records"
+      ],
+      "sources": [
+        "field_investigation",
+        "legal_documents",
+        "satellite_time_series"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "All three agent criteria demonstrated with verifiable evidence",
+    "fail_condition": "Any of the three criteria not met or insufficient evidence",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0004",
@@ -87,7 +158,30 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0006@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 15,
+      "clause": "4.2.3",
+      "paragraph": 1
+    },
+    "source_excerpt": "Where conversion of forest lands to a deforested condition is legally authorized and documented.",
+    "evidence": {
+      "required": [
+        "legal_conversion_permits",
+        "land_use_authorization_documents"
+      ],
+      "sources": [
+        "government_permits",
+        "legal_registry"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Legal authorization for forest conversion documented and verified",
+    "fail_condition": "No legal authorization exists or authorization is contested",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0006@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0005",
@@ -109,7 +203,31 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 15,
+      "clause": "4.3.1",
+      "paragraph": 1
+    },
+    "source_excerpt": "Project activities lower the water table, unless the project converts open water to tidal wetlands, or improves the hydrological connection to impounded waters.",
+    "evidence": {
+      "required": [
+        "water_table_monitoring_data",
+        "hydrological_assessment"
+      ],
+      "sources": [
+        "field_measurements",
+        "hydrological_models"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Water table not lowered, or documented exception (open water conversion/hydrological improvement)",
+    "fail_condition": "Water table lowered without qualifying exception",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0046@v1-8",
+      "Verra/VMD0051@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0006",
@@ -131,7 +249,29 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 15,
+      "clause": "4.3.1",
+      "paragraph": 4
+    },
+    "source_excerpt": "Project activities include the burning of organic soil.",
+    "evidence": {
+      "required": [
+        "fire_monitoring_records",
+        "soil_type_assessment"
+      ],
+      "sources": [
+        "field_monitoring",
+        "satellite_fire_detection"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "No organic soil burning documented in project area",
+    "fail_condition": "Organic soil burning occurs as project activity",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0007",
@@ -153,7 +293,29 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 15,
+      "clause": "4.3.1",
+      "paragraph": 5
+    },
+    "source_excerpt": "Nitrogen fertilizer(s), such as chemical fertilizer or manure, are applied in the project area during the project crediting period.",
+    "evidence": {
+      "required": [
+        "fertilizer_use_records",
+        "land_management_practices"
+      ],
+      "sources": [
+        "field_monitoring",
+        "farm_records"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "No nitrogen fertilizer application during crediting period",
+    "fail_condition": "Nitrogen fertilizers applied in project area",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0008",
@@ -176,7 +338,31 @@
         "Verra/VM0007@v1-8",
         "Verra/T-SIG@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 15,
+      "clause": "4.3.1",
+      "paragraph": 3
+    },
+    "source_excerpt": "Hydrological connectivity of the project area with adjacent areas leads to a significant increase in GHG emissions outside the project area.",
+    "evidence": {
+      "required": [
+        "hydrological_connectivity_assessment",
+        "off_site_ghg_impact_analysis"
+      ],
+      "sources": [
+        "hydrological_models",
+        "ghg_assessment",
+        "T-SIG_analysis"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Hydrological connectivity assessed; no significant off-site GHG increase",
+    "fail_condition": "Significant GHG emissions increase outside project area due to hydrological changes",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/T-SIG@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0009",
@@ -199,7 +385,32 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0052@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 16,
+      "clause": "4.3.2",
+      "paragraph": 1
+    },
+    "source_excerpt": "Prior to the project start date, the project area meets one of: (a) free of any land use that may be displaced; (b) under land use where displacement is prohibited by enforced law; (c) under land use that continues at similar or greater level.",
+    "evidence": {
+      "required": [
+        "prior_land_use_assessment",
+        "displacement_analysis"
+      ],
+      "sources": [
+        "laws_and_regulations",
+        "management_plans",
+        "annual_reports",
+        "market_studies"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "One of three conditions (a, b, or c) demonstrated with verifiable evidence",
+    "fail_condition": "Cannot demonstrate any of the three conditions",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0052@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0010",
@@ -222,7 +433,30 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0042@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 16,
+      "clause": "4.3.2",
+      "paragraph": 5
+    },
+    "source_excerpt": "Rewetting drained peatland (RDP) activities occur on project areas that meet the VCS definition for peatland.",
+    "evidence": {
+      "required": [
+        "soil_organic_carbon_sampling",
+        "peat_depth_measurements"
+      ],
+      "sources": [
+        "field_soil_analysis",
+        "laboratory_testing"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Soil sampling confirms organic soil meets IPCC Wetlands supplement thresholds",
+    "fail_condition": "Soil does not meet organic soil thresholds",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0042@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0011",
@@ -245,7 +479,30 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0050@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 16,
+      "clause": "4.3.2",
+      "paragraph": 6
+    },
+    "source_excerpt": "Project activities restoring tidal wetlands include any of: creating/restoring hydrology, altering sediment supply, changing salinity, managing vegetation, prescribed burning.",
+    "evidence": {
+      "required": [
+        "restoration_activity_documentation",
+        "site_condition_assessment"
+      ],
+      "sources": [
+        "project_design_documents",
+        "field_records"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "At least one defined restoration activity type documented and implemented",
+    "fail_condition": "No qualifying restoration activity documented",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0050@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0012",
@@ -267,7 +524,29 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 17,
+      "clause": "4.3.3",
+      "paragraph": 2
+    },
+    "source_excerpt": "Project activities conserving tidal wetlands include: protecting at-risk wetlands, improving water management, maintaining water quality, recharging sediment, creating accommodation space.",
+    "evidence": {
+      "required": [
+        "conservation_activity_records",
+        "wetland_risk_assessment"
+      ],
+      "sources": [
+        "management_plans",
+        "field_monitoring"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "At least one defined conservation activity documented",
+    "fail_condition": "No qualifying conservation activity documented",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0013",
@@ -290,7 +569,32 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 17,
+      "clause": "4.3.3",
+      "paragraph": 4
+    },
+    "source_excerpt": "Baseline agents of wetland degradation meet all of: (a) cause alteration in hydrology or loss of SOC; (b) have no documented legal right; (c) have degraded wetlands in historical reference period.",
+    "evidence": {
+      "required": [
+        "agent_identification",
+        "legal_rights_assessment",
+        "historical_degradation_records"
+      ],
+      "sources": [
+        "field_investigation",
+        "legal_documents",
+        "satellite_time_series"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "All three agent criteria demonstrated",
+    "fail_condition": "Any criteria not met or insufficient evidence",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0014",
@@ -313,7 +617,29 @@
         "Verra/VM0007@v1-8",
         "Verra/VM0047@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 18,
+      "clause": "4.3.4",
+      "paragraph": 1
+    },
+    "source_excerpt": "This methodology does not apply to ARR project activities. Where WRC projects using this methodology also implement ARR activities, projects must use an appropriate ARR methodology (e.g., VM0047).",
+    "evidence": {
+      "required": [
+        "activity_type_classification",
+        "methodology_selection_justification"
+      ],
+      "sources": [
+        "project_design_document"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "IFM/ARR activities not claimed under this methodology; separate methodology used if applicable",
+    "fail_condition": "IFM or ARR activities claimed under VM0007",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VM0047@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0015",
@@ -335,7 +661,29 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 14,
+      "clause": "4.2.1",
+      "paragraph": 4
+    },
+    "source_excerpt": "Leakage prevention activities include: (a) Flooding agricultural lands to increase production; and/or (b) Intensifying livestock production through use of feed-lots and/or manure lagoons.",
+    "evidence": {
+      "required": [
+        "leakage_prevention_activity_list",
+        "activity_impact_assessment"
+      ],
+      "sources": [
+        "project_design_document",
+        "field_monitoring"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Leakage prevention does not include prohibited activities",
+    "fail_condition": "Prohibited leakage prevention activities identified",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0001",
@@ -357,7 +705,31 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 19,
+      "clause": "5",
+      "paragraph": 1
+    },
+    "source_excerpt": "Six required data elements for each discrete land parcel.",
+    "evidence": {
+      "required": [
+        "geographic_boundary_maps",
+        "carbon_pool_inventory",
+        "ghg_source_assessment"
+      ],
+      "sources": [
+        "gps_survey",
+        "satellite_imagery",
+        "field_measurements"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Requirement satisfied: Geographic boundary definition",
+    "fail_condition": "Requirement not satisfied: Geographic boundary definition",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0002",
@@ -379,7 +751,31 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 19,
+      "clause": "5",
+      "paragraph": 1
+    },
+    "source_excerpt": "Strict no-overlap rule. REDD+WRC combination is the sole exception.",
+    "evidence": {
+      "required": [
+        "geographic_boundary_maps",
+        "carbon_pool_inventory",
+        "ghg_source_assessment"
+      ],
+      "sources": [
+        "gps_survey",
+        "satellite_imagery",
+        "field_measurements"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Requirement satisfied: No spatial overlap between baselines",
+    "fail_condition": "Requirement not satisfied: No spatial overlap between baselines",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0003",
@@ -401,7 +797,31 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 19,
+      "clause": "5",
+      "paragraph": 1
+    },
+    "source_excerpt": "Double-counting prevention. Must track and report exclusions.",
+    "evidence": {
+      "required": [
+        "geographic_boundary_maps",
+        "carbon_pool_inventory",
+        "ghg_source_assessment"
+      ],
+      "sources": [
+        "gps_survey",
+        "satellite_imagery",
+        "field_measurements"
+      ]
+    },
+    "verification_stage": "monitoring",
+    "pass_condition": "Requirement satisfied: Exclusion of land in other GHG programs",
+    "fail_condition": "Requirement not satisfied: Exclusion of land in other GHG programs",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0004",
@@ -424,7 +844,32 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 19,
+      "clause": "5",
+      "paragraph": 1
+    },
+    "source_excerpt": "RRD required for baseline modeling. Must be in same jurisdiction with similar characteristics.",
+    "evidence": {
+      "required": [
+        "geographic_boundary_maps",
+        "carbon_pool_inventory",
+        "ghg_source_assessment"
+      ],
+      "sources": [
+        "gps_survey",
+        "satellite_imagery",
+        "field_measurements"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Requirement satisfied: REDD reference region definition",
+    "fail_condition": "Requirement not satisfied: REDD reference region definition",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0005",
@@ -447,7 +892,32 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0006@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 19,
+      "clause": "5",
+      "paragraph": 1
+    },
+    "source_excerpt": "Proxy areas required for planned deforestation baseline.",
+    "evidence": {
+      "required": [
+        "geographic_boundary_maps",
+        "carbon_pool_inventory",
+        "ghg_source_assessment"
+      ],
+      "sources": [
+        "gps_survey",
+        "satellite_imagery",
+        "field_measurements"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Requirement satisfied: REDD proxy area definition",
+    "fail_condition": "Requirement not satisfied: REDD proxy area definition",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0006@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0006",
@@ -470,7 +940,32 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0016@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 19,
+      "clause": "5",
+      "paragraph": 1
+    },
+    "source_excerpt": "Stratification mandatory. Different activity types must be in separate strata.",
+    "evidence": {
+      "required": [
+        "geographic_boundary_maps",
+        "carbon_pool_inventory",
+        "ghg_source_assessment"
+      ],
+      "sources": [
+        "gps_survey",
+        "satellite_imagery",
+        "field_measurements"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Requirement satisfied: Stratification requirement",
+    "fail_condition": "Requirement not satisfied: Stratification requirement",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0016@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0007",
@@ -493,7 +988,32 @@
         "Verra/VM0007@v1-8",
         "Verra/T-SIG@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 19,
+      "clause": "5",
+      "paragraph": 1
+    },
+    "source_excerpt": "Pool inclusion/exclusion must be justified. If included in baseline, must also be in project and leakage.",
+    "evidence": {
+      "required": [
+        "geographic_boundary_maps",
+        "carbon_pool_inventory",
+        "ghg_source_assessment"
+      ],
+      "sources": [
+        "gps_survey",
+        "satellite_imagery",
+        "field_measurements"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Requirement satisfied: Carbon pool selection per activity type",
+    "fail_condition": "Requirement not satisfied: Carbon pool selection per activity type",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/T-SIG@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0008",
@@ -518,6 +1038,41 @@
         "Verra/VMD0002@v1-8",
         "Verra/VMD0005@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 19,
+      "clause": "5",
+      "paragraph": 1
+    },
+    "source_excerpt": "AGB always mandatory. HWP and dead wood conditionally mandatory based on baseline/project comparison.",
+    "evidence": {
+      "required": [
+        "geographic_boundary_maps",
+        "carbon_pool_inventory",
+        "ghg_source_assessment"
+      ],
+      "sources": [
+        "gps_survey",
+        "satellite_imagery",
+        "field_measurements"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: REDD mandatory carbon pools",
+    "fail_condition": "Requirement not satisfied: REDD mandatory carbon pools",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0001@v1-8",
+      "Verra/VMD0002@v1-8",
+      "Verra/VMD0005@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -542,6 +1097,40 @@
         "Verra/VMD0042@v1-8",
         "Verra/VMD0050@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 19,
+      "clause": "5",
+      "paragraph": 1
+    },
+    "source_excerpt": "WRC focuses on SOC pool. Biomass pools excluded unless ARR applies.",
+    "evidence": {
+      "required": [
+        "geographic_boundary_maps",
+        "carbon_pool_inventory",
+        "ghg_source_assessment"
+      ],
+      "sources": [
+        "gps_survey",
+        "satellite_imagery",
+        "field_measurements"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: WRC carbon pools",
+    "fail_condition": "Requirement not satisfied: WRC carbon pools",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0042@v1-8",
+      "Verra/VMD0050@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -565,7 +1154,32 @@
         "Verra/VM0007@v1-8",
         "Verra/T-SIG@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 19,
+      "clause": "5",
+      "paragraph": 1
+    },
+    "source_excerpt": "GHG sources must be identified per Table 7 with inclusion/exclusion justification.",
+    "evidence": {
+      "required": [
+        "geographic_boundary_maps",
+        "carbon_pool_inventory",
+        "ghg_source_assessment"
+      ],
+      "sources": [
+        "gps_survey",
+        "satellite_imagery",
+        "field_measurements"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Requirement satisfied: REDD GHG source identification",
+    "fail_condition": "Requirement not satisfied: REDD GHG source identification",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/T-SIG@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0011",
@@ -587,7 +1201,31 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 19,
+      "clause": "5",
+      "paragraph": 1
+    },
+    "source_excerpt": "GHG sources per Tables 8-9. Mandatory for CO2 from SOC, CH4 from SOC, combustion gases.",
+    "evidence": {
+      "required": [
+        "geographic_boundary_maps",
+        "carbon_pool_inventory",
+        "ghg_source_assessment"
+      ],
+      "sources": [
+        "gps_survey",
+        "satellite_imagery",
+        "field_measurements"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Requirement satisfied: WRC GHG source identification",
+    "fail_condition": "Requirement not satisfied: WRC GHG source identification",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0012",
@@ -609,7 +1247,31 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 19,
+      "clause": "5",
+      "paragraph": 1
+    },
+    "source_excerpt": "Symmetric accounting: baseline inclusion implies project inclusion.",
+    "evidence": {
+      "required": [
+        "geographic_boundary_maps",
+        "carbon_pool_inventory",
+        "ghg_source_assessment"
+      ],
+      "sources": [
+        "gps_survey",
+        "satellite_imagery",
+        "field_measurements"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Requirement satisfied: Consistency rule: baseline-project source matching",
+    "fail_condition": "Requirement not satisfied: Consistency rule: baseline-project source matching",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0013",
@@ -631,7 +1293,31 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 19,
+      "clause": "5",
+      "paragraph": 1
+    },
+    "source_excerpt": "Fixed period for baseline modeling. Duration per VCS Standard.",
+    "evidence": {
+      "required": [
+        "geographic_boundary_maps",
+        "carbon_pool_inventory",
+        "ghg_source_assessment"
+      ],
+      "sources": [
+        "gps_survey",
+        "satellite_imagery",
+        "field_measurements"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Requirement satisfied: Historical reference period",
+    "fail_condition": "Requirement not satisfied: Historical reference period",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0014",
@@ -653,7 +1339,31 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 19,
+      "clause": "5",
+      "paragraph": 1
+    },
+    "source_excerpt": "20-100 year range. Must be specified in PD.",
+    "evidence": {
+      "required": [
+        "geographic_boundary_maps",
+        "carbon_pool_inventory",
+        "ghg_source_assessment"
+      ],
+      "sources": [
+        "gps_survey",
+        "satellite_imagery",
+        "field_measurements"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Requirement satisfied: Crediting period duration",
+    "fail_condition": "Requirement not satisfied: Crediting period duration",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0015",
@@ -676,6 +1386,39 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0016@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 19,
+      "clause": "5",
+      "paragraph": 1
+    },
+    "source_excerpt": "100-year SOC horizon test. Must show significant difference. Assessed ex-ante conservatively.",
+    "evidence": {
+      "required": [
+        "geographic_boundary_maps",
+        "carbon_pool_inventory",
+        "ghg_source_assessment"
+      ],
+      "sources": [
+        "gps_survey",
+        "satellite_imagery",
+        "field_measurements"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: WRC 100-year SOC difference requirement",
+    "fail_condition": "Requirement not satisfied: WRC 100-year SOC difference requirement",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0016@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -699,7 +1442,32 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0016@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 19,
+      "clause": "5",
+      "paragraph": 1
+    },
+    "source_excerpt": "Sea-level rise must be factored into boundary delineation for tidal projects.",
+    "evidence": {
+      "required": [
+        "geographic_boundary_maps",
+        "carbon_pool_inventory",
+        "ghg_source_assessment"
+      ],
+      "sources": [
+        "gps_survey",
+        "satellite_imagery",
+        "field_measurements"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Requirement satisfied: Tidal wetland sea-level rise boundary",
+    "fail_condition": "Requirement not satisfied: Tidal wetland sea-level rise boundary",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0016@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-3-0001",
@@ -722,6 +1490,38 @@
         "Verra/VM0007@v1-8",
         "Verra/VT0001@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 25,
+      "clause": "6",
+      "paragraph": 1
+    },
+    "source_excerpt": "VT0001 mandatory. Stepwise approach: list alternatives, barrier/investment analysis, select most plausible.",
+    "evidence": {
+      "required": [
+        "baseline_scenario_analysis",
+        "alternative_scenario_assessment"
+      ],
+      "sources": [
+        "vt0001_analysis",
+        "historical_data",
+        "economic_analysis"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: Baseline scenario determination via VT0001",
+    "fail_condition": "Requirement not satisfied: Baseline scenario determination via VT0001",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VT0001@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -745,7 +1545,31 @@
         "Verra/VM0007@v1-8",
         "Verra/VT0001@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 25,
+      "clause": "6",
+      "paragraph": 1
+    },
+    "source_excerpt": "Three mandatory alternatives unless demonstrated not credible or non-compliant.",
+    "evidence": {
+      "required": [
+        "baseline_scenario_analysis",
+        "alternative_scenario_assessment"
+      ],
+      "sources": [
+        "vt0001_analysis",
+        "historical_data",
+        "economic_analysis"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Requirement satisfied: Minimum alternative scenario list",
+    "fail_condition": "Requirement not satisfied: Minimum alternative scenario list",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VT0001@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-3-0003",
@@ -768,6 +1592,38 @@
         "Verra/VM0007@v1-8",
         "Verra/VT0001@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 25,
+      "clause": "6",
+      "paragraph": 1
+    },
+    "source_excerpt": "Two-step: barrier analysis first, then investment analysis or qualitative GHG estimation as fallback.",
+    "evidence": {
+      "required": [
+        "baseline_scenario_analysis",
+        "alternative_scenario_assessment"
+      ],
+      "sources": [
+        "vt0001_analysis",
+        "historical_data",
+        "economic_analysis"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: Barrier analysis baseline selection",
+    "fail_condition": "Requirement not satisfied: Barrier analysis baseline selection",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VT0001@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -791,6 +1647,38 @@
         "Verra/VM0007@v1-8",
         "Verra/VT0001@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 25,
+      "clause": "6",
+      "paragraph": 1
+    },
+    "source_excerpt": "Three options with different selection criteria. Option I is cost-only, Option II is IRR/NPV, Option III is benchmark-based.",
+    "evidence": {
+      "required": [
+        "baseline_scenario_analysis",
+        "alternative_scenario_assessment"
+      ],
+      "sources": [
+        "vt0001_analysis",
+        "historical_data",
+        "economic_analysis"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: Investment analysis baseline selection",
+    "fail_condition": "Requirement not satisfied: Investment analysis baseline selection",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VT0001@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -815,6 +1703,39 @@
         "Verra/VMD0006@v1-8",
         "Verra/VMD0007@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 25,
+      "clause": "6",
+      "paragraph": 1
+    },
+    "source_excerpt": "Module selection based on deforestation category.",
+    "evidence": {
+      "required": [
+        "baseline_scenario_analysis",
+        "alternative_scenario_assessment"
+      ],
+      "sources": [
+        "vt0001_analysis",
+        "historical_data",
+        "economic_analysis"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: REDD baseline modules",
+    "fail_condition": "Requirement not satisfied: REDD baseline modules",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0006@v1-8",
+      "Verra/VMD0007@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -839,6 +1760,39 @@
         "Verra/VMD0042@v1-8",
         "Verra/VMD0050@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 25,
+      "clause": "6",
+      "paragraph": 1
+    },
+    "source_excerpt": "Module selection depends on substrate (peat vs tidal) and activity type (CIW vs RWE vs combined).",
+    "evidence": {
+      "required": [
+        "baseline_scenario_analysis",
+        "alternative_scenario_assessment"
+      ],
+      "sources": [
+        "vt0001_analysis",
+        "historical_data",
+        "economic_analysis"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: WRC baseline modules",
+    "fail_condition": "Requirement not satisfied: WRC baseline modules",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0042@v1-8",
+      "Verra/VMD0050@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -861,7 +1815,30 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 25,
+      "clause": "6",
+      "paragraph": 1
+    },
+    "source_excerpt": "Periodic reassessment per VCS Standard. Must capture changes in deforestation drivers/behavior.",
+    "evidence": {
+      "required": [
+        "baseline_scenario_analysis",
+        "alternative_scenario_assessment"
+      ],
+      "sources": [
+        "vt0001_analysis",
+        "historical_data",
+        "economic_analysis"
+      ]
+    },
+    "verification_stage": "monitoring",
+    "pass_condition": "Requirement satisfied: Baseline reassessment frequency",
+    "fail_condition": "Requirement not satisfied: Baseline reassessment frequency",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-3-0008",
@@ -883,6 +1860,37 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 25,
+      "clause": "6",
+      "paragraph": 1
+    },
+    "source_excerpt": "JNR data is acceptable as a conservative source even if less accurate.",
+    "evidence": {
+      "required": [
+        "baseline_scenario_analysis",
+        "alternative_scenario_assessment"
+      ],
+      "sources": [
+        "vt0001_analysis",
+        "historical_data",
+        "economic_analysis"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: JNR data use",
+    "fail_condition": "Requirement not satisfied: JNR data use",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -906,7 +1914,30 @@
         "Verra/VM0007@v1-8",
         "Verra/VT0001@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 28,
+      "clause": "7",
+      "paragraph": 1
+    },
+    "source_excerpt": "VT0001 mandatory for all non-tidal-wetland activities.",
+    "evidence": {
+      "required": [
+        "additionality_demonstration"
+      ],
+      "sources": [
+        "vt0001_tool",
+        "add-am_tool",
+        "barrier_analysis"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Requirement satisfied: VT0001 additionality requirement",
+    "fail_condition": "Requirement not satisfied: VT0001 additionality requirement",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VT0001@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-4-0002",
@@ -929,7 +1960,30 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0052@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 28,
+      "clause": "7",
+      "paragraph": 1
+    },
+    "source_excerpt": "Activity method (ADD-AM) replaces project method (VT0001) for tidal wetlands only.",
+    "evidence": {
+      "required": [
+        "additionality_demonstration"
+      ],
+      "sources": [
+        "vt0001_tool",
+        "add-am_tool",
+        "barrier_analysis"
+      ]
+    },
+    "verification_stage": "validation",
+    "pass_condition": "Requirement satisfied: Tidal wetland additionality method",
+    "fail_condition": "Requirement not satisfied: Tidal wetland additionality method",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0052@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-5-0001",
@@ -951,6 +2005,38 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 29,
+      "clause": "8",
+      "paragraph": 1
+    },
+    "source_excerpt": "Standard REDD equation. Three components summed over monitoring period.",
+    "evidence": {
+      "required": [
+        "carbon_stock_data",
+        "emission_factor_data",
+        "monitoring_data"
+      ],
+      "sources": [
+        "field_inventory",
+        "ipcc_defaults",
+        "peer_reviewed_literature"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: REDD net emission reduction equation",
+    "fail_condition": "Requirement not satisfied: REDD net emission reduction equation",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -973,6 +2059,38 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 29,
+      "clause": "8",
+      "paragraph": 1
+    },
+    "source_excerpt": "Parallel to REDD equation. Components use peat/tidal wetland modules.",
+    "evidence": {
+      "required": [
+        "carbon_stock_data",
+        "emission_factor_data",
+        "monitoring_data"
+      ],
+      "sources": [
+        "field_inventory",
+        "ipcc_defaults",
+        "peer_reviewed_literature"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: WRC net emission reduction equation",
+    "fail_condition": "Requirement not satisfied: WRC net emission reduction equation",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -997,6 +2115,40 @@
         "Verra/VMD0009@v1-8",
         "Verra/VMD0010@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 29,
+      "clause": "8",
+      "paragraph": 1
+    },
+    "source_excerpt": "Three leakage components. Activity shifting via LK-ASP and LK-ASU modules. Market effects via LK-ME.",
+    "evidence": {
+      "required": [
+        "carbon_stock_data",
+        "emission_factor_data",
+        "monitoring_data"
+      ],
+      "sources": [
+        "field_inventory",
+        "ipcc_defaults",
+        "peer_reviewed_literature"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: REDD leakage components",
+    "fail_condition": "Requirement not satisfied: REDD leakage components",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0009@v1-8",
+      "Verra/VMD0010@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -1021,6 +2173,40 @@
         "Verra/VMD0009@v1-8",
         "Verra/VMD0010@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 29,
+      "clause": "8",
+      "paragraph": 1
+    },
+    "source_excerpt": "Three components including ecological leakage specific to wetlands.",
+    "evidence": {
+      "required": [
+        "carbon_stock_data",
+        "emission_factor_data",
+        "monitoring_data"
+      ],
+      "sources": [
+        "field_inventory",
+        "ipcc_defaults",
+        "peer_reviewed_literature"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: WRC leakage components",
+    "fail_condition": "Requirement not satisfied: WRC leakage components",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0009@v1-8",
+      "Verra/VMD0010@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -1044,6 +2230,39 @@
         "Verra/VM0007@v1-8",
         "Verra/T-BAR@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 29,
+      "clause": "8",
+      "paragraph": 1
+    },
+    "source_excerpt": "Three buffer components. Each = (baseline - project) \u00d7 Buffer%. Buffer% from T-BAR.",
+    "evidence": {
+      "required": [
+        "carbon_stock_data",
+        "emission_factor_data",
+        "monitoring_data"
+      ],
+      "sources": [
+        "field_inventory",
+        "ipcc_defaults",
+        "peer_reviewed_literature"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: Buffer pool contribution calculation",
+    "fail_condition": "Requirement not satisfied: Buffer pool contribution calculation",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/T-BAR@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -1067,6 +2286,34 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0017@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 29,
+      "clause": "8",
+      "paragraph": 1
+    },
+    "source_excerpt": "15% threshold at 90% CI. Excess deducted proportionally. Below threshold, no deduction.",
+    "evidence": {
+      "required": [
+        "carbon_stock_data",
+        "emission_factor_data",
+        "monitoring_data"
+      ],
+      "sources": [
+        "field_inventory",
+        "ipcc_defaults",
+        "peer_reviewed_literature"
+      ]
+    },
+    "verification_stage": "verification",
+    "pass_condition": "Requirement satisfied: Uncertainty adjustment",
+    "fail_condition": "Requirement not satisfied: Uncertainty adjustment",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0017@v1-8"
+    ],
+    "uncertainty": {
+      "treatment": "15% threshold at 90% CI. Excess deducted proportionally. Below threshold, no deduction."
     }
   },
   {
@@ -1089,6 +2336,38 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 29,
+      "clause": "8",
+      "paragraph": 1
+    },
+    "source_excerpt": "Period credits = incremental adjusted NER minus buffer withholding.",
+    "evidence": {
+      "required": [
+        "carbon_stock_data",
+        "emission_factor_data",
+        "monitoring_data"
+      ],
+      "sources": [
+        "field_inventory",
+        "ipcc_defaults",
+        "peer_reviewed_literature"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: VCU calculation",
+    "fail_condition": "Requirement not satisfied: VCU calculation",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -1115,6 +2394,42 @@
         "Verra/VMD0004@v1-8",
         "Verra/VMD0005@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 29,
+      "clause": "8",
+      "paragraph": 1
+    },
+    "source_excerpt": "Five carbon pool modules. Each optional except AG biomass per R-2-0008.",
+    "evidence": {
+      "required": [
+        "carbon_stock_data",
+        "emission_factor_data",
+        "monitoring_data"
+      ],
+      "sources": [
+        "field_inventory",
+        "ipcc_defaults",
+        "peer_reviewed_literature"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: Carbon pool modules for REDD",
+    "fail_condition": "Requirement not satisfied: Carbon pool modules for REDD",
+    "dependencies": [
+      "Verra/VMD0001@v1-8",
+      "Verra/VMD0002@v1-8",
+      "Verra/VMD0003@v1-8",
+      "Verra/VMD0004@v1-8",
+      "Verra/VMD0005@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -1139,6 +2454,40 @@
         "Verra/VMD0046@v1-8",
         "Verra/VMD0051@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 29,
+      "clause": "8",
+      "paragraph": 1
+    },
+    "source_excerpt": "Module selection by activity type and emission source.",
+    "evidence": {
+      "required": [
+        "carbon_stock_data",
+        "emission_factor_data",
+        "monitoring_data"
+      ],
+      "sources": [
+        "field_inventory",
+        "ipcc_defaults",
+        "peer_reviewed_literature"
+      ]
+    },
+    "verification_stage": "all",
+    "pass_condition": "Requirement satisfied: Project emissions modules",
+    "fail_condition": "Requirement not satisfied: Project emissions modules",
+    "dependencies": [
+      "Verra/VMD0015@v1-8",
+      "Verra/VMD0046@v1-8",
+      "Verra/VMD0051@v1-8"
+    ],
+    "formula": {
+      "variables": [],
+      "equation": "",
+      "outputs": []
+    },
+    "uncertainty": {
+      "treatment": "Per Module X-UNC or equivalent"
     }
   },
   {
@@ -1161,7 +2510,31 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 39,
+      "clause": "9",
+      "paragraph": 1
+    },
+    "source_excerpt": "Four mandatory monitoring tasks. Each requires technical description, data list, procedures, QA/QC, archiving, responsibilities.",
+    "evidence": {
+      "required": [
+        "monitoring_plan",
+        "field_measurement_protocols",
+        "qa_qc_procedures"
+      ],
+      "sources": [
+        "monitoring_reports",
+        "field_records",
+        "calibration_records"
+      ]
+    },
+    "verification_stage": "monitoring",
+    "pass_condition": "Requirement satisfied: Monitoring plan four tasks",
+    "fail_condition": "Requirement not satisfied: Monitoring plan four tasks",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-6-0002",
@@ -1183,7 +2556,31 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 39,
+      "clause": "9",
+      "paragraph": 1
+    },
+    "source_excerpt": "Six required content elements per task.",
+    "evidence": {
+      "required": [
+        "monitoring_plan",
+        "field_measurement_protocols",
+        "qa_qc_procedures"
+      ],
+      "sources": [
+        "monitoring_reports",
+        "field_records",
+        "calibration_records"
+      ]
+    },
+    "verification_stage": "monitoring",
+    "pass_condition": "Requirement satisfied: Monitoring plan content requirements",
+    "fail_condition": "Requirement not satisfied: Monitoring plan content requirements",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-6-0003",
@@ -1205,7 +2602,31 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 39,
+      "clause": "9",
+      "paragraph": 1
+    },
+    "source_excerpt": "GPS or georeferenced data mandatory. Strata included.",
+    "evidence": {
+      "required": [
+        "monitoring_plan",
+        "field_measurement_protocols",
+        "qa_qc_procedures"
+      ],
+      "sources": [
+        "monitoring_reports",
+        "field_records",
+        "calibration_records"
+      ]
+    },
+    "verification_stage": "monitoring",
+    "pass_condition": "Requirement satisfied: Geographic position recording",
+    "fail_condition": "Requirement not satisfied: Geographic position recording",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-6-0004",
@@ -1227,7 +2648,31 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 39,
+      "clause": "9",
+      "paragraph": 1
+    },
+    "source_excerpt": "Six minimum SOP/QA/QC elements.",
+    "evidence": {
+      "required": [
+        "monitoring_plan",
+        "field_measurement_protocols",
+        "qa_qc_procedures"
+      ],
+      "sources": [
+        "monitoring_reports",
+        "field_records",
+        "calibration_records"
+      ]
+    },
+    "verification_stage": "monitoring",
+    "pass_condition": "Requirement satisfied: SOP and QA/QC requirements",
+    "fail_condition": "Requirement not satisfied: SOP and QA/QC requirements",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-6-0005",
@@ -1251,7 +2696,33 @@
         "Verra/VMD0015@v1-8",
         "Verra/VMD0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 39,
+      "clause": "9",
+      "paragraph": 1
+    },
+    "source_excerpt": "10-year minimum frequency. Spatial variables must be refreshed.",
+    "evidence": {
+      "required": [
+        "monitoring_plan",
+        "field_measurement_protocols",
+        "qa_qc_procedures"
+      ],
+      "sources": [
+        "monitoring_reports",
+        "field_records",
+        "calibration_records"
+      ]
+    },
+    "verification_stage": "monitoring",
+    "pass_condition": "Requirement satisfied: REDD forest cover monitoring",
+    "fail_condition": "Requirement not satisfied: REDD forest cover monitoring",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0015@v1-8",
+      "Verra/VMD0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-6-0006",
@@ -1275,7 +2746,33 @@
         "Verra/VMD0046@v1-8",
         "Verra/VMD0051@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 39,
+      "clause": "9",
+      "paragraph": 1
+    },
+    "source_excerpt": "Three ongoing compliance checks. Fire triggers premium cancellation.",
+    "evidence": {
+      "required": [
+        "monitoring_plan",
+        "field_measurement_protocols",
+        "qa_qc_procedures"
+      ],
+      "sources": [
+        "monitoring_reports",
+        "field_records",
+        "calibration_records"
+      ]
+    },
+    "verification_stage": "monitoring",
+    "pass_condition": "Requirement satisfied: WRC compliance monitoring",
+    "fail_condition": "Requirement not satisfied: WRC compliance monitoring",
+    "dependencies": [
+      "Verra/VM0007@v1-8",
+      "Verra/VMD0046@v1-8",
+      "Verra/VMD0051@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-6-0007",
@@ -1297,7 +2794,31 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    }
+    },
+    "source_locator": {
+      "page": 39,
+      "clause": "9",
+      "paragraph": 1
+    },
+    "source_excerpt": "IPCC 2006 expert judgment protocol mandatory. Rationale must be documented.",
+    "evidence": {
+      "required": [
+        "monitoring_plan",
+        "field_measurement_protocols",
+        "qa_qc_procedures"
+      ],
+      "sources": [
+        "monitoring_reports",
+        "field_records",
+        "calibration_records"
+      ]
+    },
+    "verification_stage": "monitoring",
+    "pass_condition": "Requirement satisfied: Expert judgment documentation",
+    "fail_condition": "Requirement not satisfied: Expert judgment documentation",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-6-0008",
@@ -1319,6 +2840,33 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
+    },
+    "source_locator": {
+      "page": 39,
+      "clause": "9",
+      "paragraph": 1
+    },
+    "source_excerpt": "Three data source tiers: literature > IPCC defaults > expert opinion.",
+    "evidence": {
+      "required": [
+        "monitoring_plan",
+        "field_measurement_protocols",
+        "qa_qc_procedures"
+      ],
+      "sources": [
+        "monitoring_reports",
+        "field_records",
+        "calibration_records"
+      ]
+    },
+    "verification_stage": "verification",
+    "pass_condition": "Requirement satisfied: Uncertainty reduction requirements",
+    "fail_condition": "Requirement not satisfied: Uncertainty reduction requirements",
+    "dependencies": [
+      "Verra/VM0007@v1-8"
+    ],
+    "uncertainty": {
+      "treatment": "Three data source tiers: literature > IPCC defaults > expert opinion."
     }
   }
 ]
