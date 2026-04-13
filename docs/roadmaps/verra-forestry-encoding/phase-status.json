@@ -1,16 +1,16 @@
 {
   "goal": "Encode Verra and Gold Standard forestry methodology rules so app.article6 can offer verification against the standards VVBs actually use.",
-  "last_updated_at": "2026-04-13T00:00:00Z",
+  "last_updated_at": "2026-04-13T17:30:00Z",
   "phases": [
     {
       "id": "vf1-source-vm0007-pdf",
       "name": "Source real Verra VM0007 PDF",
-      "status": "next"
+      "status": "done"
     },
     {
       "id": "vf2-extract-vm0007-sections",
       "name": "Extract VM0007 sections",
-      "status": "not_started"
+      "status": "next"
     },
     {
       "id": "vf3-encode-vm0007-rules",
