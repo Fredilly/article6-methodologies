@@ -269,7 +269,7 @@
       "when": [],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VM0047@latest"
+        "Verra/VM0047@v1-8"
       ],
       "section_anchor": "applicability-conditions",
       "section_number": "4"
@@ -624,7 +624,7 @@
       "when": [],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VT0001@latest"
+        "Verra/VT0001@v1-8"
       ],
       "section_anchor": "baseline-scenario",
       "section_number": "6"
@@ -644,7 +644,7 @@
       "when": [],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VT0001@latest"
+        "Verra/VT0001@v1-8"
       ],
       "section_anchor": "baseline-scenario",
       "section_number": "6"
@@ -664,7 +664,7 @@
       "when": [],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VT0001@latest"
+        "Verra/VT0001@v1-8"
       ],
       "section_anchor": "baseline-scenario",
       "section_number": "6"
@@ -684,7 +684,7 @@
       "when": [],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VT0001@latest"
+        "Verra/VT0001@v1-8"
       ],
       "section_anchor": "baseline-scenario",
       "section_number": "6"
@@ -784,7 +784,7 @@
       "when": [],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VT0001@latest"
+        "Verra/VT0001@v1-8"
       ],
       "section_anchor": "additionality",
       "section_number": "7"
@@ -904,7 +904,7 @@
       "when": [],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/T-BAR@latest"
+        "Verra/T-BAR@v1-8"
       ],
       "section_anchor": "quantification",
       "section_number": "8"
