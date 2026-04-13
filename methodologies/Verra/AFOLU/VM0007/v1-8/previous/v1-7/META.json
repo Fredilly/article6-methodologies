@@ -8,7 +8,12 @@
   "files": [],
   "method": "Stub",
   "provenance": {
-    "author": "Fred Egbuedike"
+    "source_pdfs": [
+      {
+        "path": "source-assets/Verra/AFOLU/VM0007/v1-7/source.pdf",
+        "sha256": "0f93ce1030d11f2a4a90dbc3a74cde1b903d7c51530d57582eb8d93f858b3a5e"
+      }
+    ]
   },
   "references": {
     "tools": []
