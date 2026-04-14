@@ -73,6 +73,7 @@ function cmpRules(a,b){
 function derive(dir){
   const secR = path.join(dir, 'sections.rich.json');
   const ruleR = path.join(dir, 'rules.rich.json');
+  const leanRulesPath = path.join(dir, 'rules.json');
   if (!fs.existsSync(secR) || !fs.existsSync(ruleR)) {
     console.warn(`[derive-lean] skip ${path.relative(process.cwd(), dir)} (missing rich sections/rules)`);
     return false;
@@ -92,27 +93,48 @@ function derive(dir){
     return lean;
   }).sort(cmpSections);
   const rulesRich = readJSON(ruleR);
+  const existingLeanRules = fs.existsSync(leanRulesPath)
+    ? (((readJSON(leanRulesPath) || {}).rules) || [])
+    : [];
+  const existingLeanById = new Map(existingLeanRules.map((rule) => [rule.id, rule]));
+  const existingLeanByStableId = new Map(
+    existingLeanRules
+      .filter((rule) => typeof rule.stable_id === 'string' && rule.stable_id.length > 0)
+      .map((rule) => [rule.stable_id, rule]),
+  );
   const rulesLean = rulesRich.map(r => {
-    if (!r.summary || !r.refs || !Array.isArray(r.refs.sections) || !r.refs.sections[0]) {
-      throw new Error(`Missing summary/refs.sections: ${r.id}`);
+    const legacySectionId = r.refs?.sections?.[0];
+    if (legacySectionId) {
+      const { sec, serial } = parseRuleId(r.id);
+      const tags = Array.from(new Set([r.type, ...(r.tags||[])]));
+      const section = sectionLookup.get(legacySectionId) || {};
+      const title = r.display?.title ?? r.title ?? r.summary;
+      const lean = {
+        id: `R-${sec}-${serial}`,
+        logic: typeof r.logic === 'string' ? r.logic : undefined,
+        pages: Array.isArray(r.refs.pages) && r.refs.pages.length ? r.refs.pages : undefined,
+        section_anchor: r.refs.section_anchor ?? section.anchor ?? undefined,
+        section_id: legacySectionId,
+        section_number: r.refs.section_number ?? section.section_number ?? undefined,
+        section_stable_id: r.refs.section_stable_id ?? section.stable_id ?? undefined,
+        stable_id: r.stable_id ?? undefined,
+        tags: tags.filter(Boolean),
+        text: typeof r.summary === 'string' && r.summary.length > 0 ? r.summary : undefined,
+        title,
+        tools: Array.isArray(r.refs.tools) ? r.refs.tools : undefined,
+        when: Array.isArray(r.when) && r.when.length ? r.when : undefined
+      };
+      return lean;
     }
-    const { sec, serial } = parseRuleId(r.id);
-    const tags = Array.from(new Set([r.type, ...(r.tags||[])]));
-    const section = sectionLookup.get(r.refs.sections[0]) || {};
+
+    const leanId = String(r.id).split('.').pop();
+    const existingLean = existingLeanByStableId.get(r.stable_id) || existingLeanById.get(leanId);
+    if (!existingLean) {
+      throw new Error(`Missing base lean rule for overlay-only rich rule: ${r.id}`);
+    }
     return {
-      id: `R-${sec}-${serial}`,
-      logic: typeof r.logic === 'string' ? r.logic : undefined,
-      pages: Array.isArray(r.refs.pages) && r.refs.pages.length ? r.refs.pages : undefined,
-      section_anchor: r.refs.section_anchor ?? section.anchor ?? undefined,
-      section_id: r.refs.sections[0],
-      section_number: r.refs.section_number ?? section.section_number ?? undefined,
-      section_stable_id: r.refs.section_stable_id ?? section.stable_id ?? undefined,
-      stable_id: r.stable_id ?? undefined,
-      tags: tags.filter(Boolean),
-      text: r.summary,
-      title: r.display?.title ?? r.summary,
-      tools: Array.isArray(r.refs.tools) ? r.refs.tools : undefined,
-      when: Array.isArray(r.when) && r.when.length ? r.when : undefined
+      ...existingLean,
+      id: leanId
     };
   }).sort(cmpRules);
   writeJSON(path.join(dir,'sections.json'), { sections: sectionsLean });

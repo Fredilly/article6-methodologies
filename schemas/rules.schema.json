@@ -9,6 +9,24 @@
           "id": {
             "type": "string"
           },
+          "logic": {
+            "type": "string"
+          },
+          "section_anchor": {
+            "type": "string"
+          },
+          "section_id": {
+            "type": "string"
+          },
+          "section_number": {
+            "type": "string"
+          },
+          "section_stable_id": {
+            "type": "string"
+          },
+          "stable_id": {
+            "type": "string"
+          },
           "tags": {
             "items": {
               "type": "string"
@@ -17,11 +35,37 @@
           },
           "text": {
             "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "tools": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "when": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
           }
         },
         "required": [
-          "id",
-          "text"
+          "id"
+        ],
+        "anyOf": [
+          {
+            "required": [
+              "title"
+            ]
+          },
+          {
+            "required": [
+              "text"
+            ]
+          }
         ],
         "type": "object"
       },

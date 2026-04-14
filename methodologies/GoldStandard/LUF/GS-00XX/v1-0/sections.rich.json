@@ -1,1 +1,67 @@
-[]
+[
+  {
+    "id": "S-1",
+    "title": "Scope and Applicability",
+    "anchor": "scope-and-applicability",
+    "section_number": "1",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-1",
+    "provenance": {
+      "source_ref": "GoldStandard/GS-00XX@v1-0",
+      "source_hash": "d776d0979de7e14f1a038e9e54f023d12daafce464849286281fe2539309703a"
+    },
+    "summary": "Defines the LUF Requirements as part of the Gold Standard certification pathway and links them to the core principles and product requirements.",
+    "workflow_role": "Entry-point scope and governing-document linkage."
+  },
+  {
+    "id": "S-2",
+    "title": "General Eligibility Criteria",
+    "anchor": "general-eligibility-criteria",
+    "section_number": "2",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+    "provenance": {
+      "source_ref": "GoldStandard/GS-00XX@v1-0",
+      "source_hash": "d776d0979de7e14f1a038e9e54f023d12daafce464849286281fe2539309703a"
+    },
+    "summary": "Sets the main project eligibility gates, including activity types, rights and permits, area expansion, and double-counting treatment.",
+    "workflow_role": "Upfront eligibility and legal-rights screening."
+  },
+  {
+    "id": "S-3",
+    "title": "Eligibility Principles and Requirements",
+    "anchor": "eligibility-principles",
+    "section_number": "3",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+    "provenance": {
+      "source_ref": "GoldStandard/GS-00XX@v1-0",
+      "source_hash": "d776d0979de7e14f1a038e9e54f023d12daafce464849286281fe2539309703a"
+    },
+    "summary": "Covers the substantive safeguards and operating requirements around safeguarding, biodiversity, consultation, additionality, and verification cadence.",
+    "workflow_role": "Substantive safeguards and ongoing compliance controls."
+  },
+  {
+    "id": "S-4",
+    "title": "Technical Requirements",
+    "anchor": "technical-requirements",
+    "section_number": "4",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-4",
+    "provenance": {
+      "source_ref": "GoldStandard/GS-00XX@v1-0",
+      "source_hash": "d776d0979de7e14f1a038e9e54f023d12daafce464849286281fe2539309703a"
+    },
+    "summary": "Specifies the geospatial and mapping evidence needed to define the project footprint and related technical boundaries.",
+    "workflow_role": "Technical evidence package for mapping and delineation."
+  },
+  {
+    "id": "S-5",
+    "title": "Uncertainty of LUF Parameters",
+    "anchor": "uncertainty",
+    "section_number": "A",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-5",
+    "provenance": {
+      "source_ref": "GoldStandard/GS-00XX@v1-0",
+      "source_hash": "d776d0979de7e14f1a038e9e54f023d12daafce464849286281fe2539309703a"
+    },
+    "summary": "Defines how uncertainty must be assessed and how deductions affect issuance when the precision target is missed.",
+    "workflow_role": "Quantification QA and issuance adjustment rules."
+  }
+]

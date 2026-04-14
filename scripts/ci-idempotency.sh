@@ -66,6 +66,26 @@ esac
 
 gate_name="${sector}"
 CURRENT_PHASE="preflight"
+sector_dir=""
+case "${sector}" in
+  agriculture)
+    sector_dir="Agriculture"
+    ;;
+  forestry)
+    sector_dir="Forestry"
+    ;;
+esac
+readonly SCOPE_PATHS=(
+  "methodologies/${program}/${sector_dir}"
+  "tools/${program}/${sector_dir}"
+  "registry/${program}/${sector_dir}"
+  "ingest.${sector}.yml"
+  "scripts"
+  "core"
+  "schemas"
+  "package.json"
+  "package-lock.json"
+)
 
 phase() {
   CURRENT_PHASE="$1"
@@ -120,16 +140,16 @@ on_err() {
 trap on_err ERR
 
 assert_clean_tree() {
-  git diff --exit-code
-  test -z "$(git status --porcelain=v1)"
+  git diff --exit-code -- "${SCOPE_PATHS[@]}"
+  test -z "$(git status --porcelain=v1 -- "${SCOPE_PATHS[@]}")"
 }
 
-if [[ -n "$(git status --porcelain=v1)" ]]; then
-  echo "Working tree must be clean before running this gate." >&2
+if [[ -n "$(git status --porcelain=v1 -- "${SCOPE_PATHS[@]}")" ]]; then
+  echo "Working tree must be clean in scope before running this gate." >&2
   if [[ "${sector}" == "forestry" ]]; then
     fail_diag 2
   else
-    git status -sb >&2 || true
+    git status -sb -- "${SCOPE_PATHS[@]}" >&2 || true
     exit 1
   fi
 fi

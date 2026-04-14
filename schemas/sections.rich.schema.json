@@ -83,6 +83,10 @@
       "section_number": {
         "type": "string"
       },
+      "summary": {
+        "minLength": 1,
+        "type": "string"
+      },
       "lineage": {
         "items": {
           "minLength": 1,
@@ -95,6 +99,10 @@
         "type": "string"
       },
       "title": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "workflow_role": {
         "minLength": 1,
         "type": "string"
       }

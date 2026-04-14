@@ -19,6 +19,7 @@ const tests = [
   'tests/ar-ams0007-stable-anchor-linkage-proof.test.js',
   'tests/roadmap-status-sync.test.js',
   'tests/ar-ams0007-tool-module-relationships-proof.test.js',
+  'tests/gs-luf-thin-rich-contract.test.js',
   'tests/pr-accept-harness.test.js',
   'tests/rc-s7-ingestion-hardening-proof.test.js',
 ];
