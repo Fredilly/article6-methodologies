@@ -1,0 +1,55 @@
+{
+  "audit_hashes": {
+    "rules_json_sha256": "101ab18685872a0db6735ded3c254bc72d7868dd0d6bc2b591aeb210a96d3fdd",
+    "sections_json_sha256": "0687c653116aedfa1e5717f781d64a2dd0ba7ca88b5ec5d9ede6b606f4fdfad6",
+    "source_pdf_sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
+  },
+  "automation": {
+    "repo_commit": "",
+    "scripts_manifest_sha256": ""
+  },
+  "domain": "AFOLU",
+  "files": [
+    {
+      "path": "sections.json",
+      "sha256": "0687c653116aedfa1e5717f781d64a2dd0ba7ca88b5ec5d9ede6b606f4fdfad6"
+    },
+    {
+      "path": "rules.json",
+      "sha256": "101ab18685872a0db6735ded3c254bc72d7868dd0d6bc2b591aeb210a96d3fdd"
+    }
+  ],
+  "method": "REDD+ Methodology Framework",
+  "provenance": {
+    "author": "Fred Egbuedike"
+  },
+  "references": {
+    "tools": [
+      {
+        "doc": "Verra/VM0007@v1-8",
+        "kind": "pdf",
+        "path": "tools/Verra/VM0007/v1-8/source.pdf",
+        "sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
+        "size": 963486,
+        "url": "https://verra.org/documents/vm0007-redd-methodology-framework-v1-8-clean/"
+      }
+    ]
+  },
+  "relationships": {
+    "version": {
+      "family": "Verra.AFOLU.VM0007",
+      "lineage": [
+        "v1-6",
+        "v1-7",
+        "v1-8"
+      ],
+      "next_version": null,
+      "previous_version": "v1-7"
+    }
+  },
+  "standard": "VCS",
+  "title": "VM0007 REDD+ Methodology Framework (REDD+MF), v1.8",
+  "version": "v1-8",
+  "stage": "Active",
+  "active_date": "2024-06-04"
+}

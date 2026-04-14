@@ -1,6 +1,33 @@
 [
   {
     "kind": "active",
+    "standard": "Verra",
+    "program": "AFOLU",
+    "code": "VM0007",
+    "version": "1.8",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8",
+    "stage": "active",
+    "latest": true,
+    "source_pdf": {
+      "path": "source-assets/Verra/AFOLU/VM0007/v1-8/source.pdf",
+      "sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
+    }
+  },
+  {
+    "kind": "previous",
+    "standard": "Verra",
+    "program": "AFOLU",
+    "code": "VM0007",
+    "version": "1.7",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/previous/v1-7",
+    "status": "superseded",
+    "source_pdf": {
+      "path": "source-assets/Verra/AFOLU/VM0007/v1-7/source.pdf",
+      "sha256": "0f93ce1030d11f2a4a90dbc3a74cde1b903d7c51530d57582eb8d93f858b3a5e"
+    }
+  },
+  {
+    "kind": "active",
     "standard": "GoldStandard",
     "program": "LUF",
     "code": "GS-00XX",
@@ -1482,17 +1509,17 @@
     }
   },
   {
-    "kind": "active",
+    "kind": "previous",
     "standard": "Verra",
     "program": "AFOLU",
     "code": "VM0007",
     "version": "1.6",
-    "path": "methodologies/Verra/AFOLU/VM0007/v1-6",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/previous/v1-6",
     "stage": "staging",
-    "latest": true,
+    "latest": false,
     "source_pdf": {
       "path": "source-assets/Verra/AFOLU/VM0007/v1-6/source.pdf",
-      "sha256": "5a838678058f6de375e8635b5f2fea47a4e5f07cb1a882a44b10f39abc6f34ff"
+      "sha256": "0f93ce1030d11f2a4a90dbc3a74cde1b903d7c51530d57582eb8d93f858b3a5e"
     }
   }
 ]

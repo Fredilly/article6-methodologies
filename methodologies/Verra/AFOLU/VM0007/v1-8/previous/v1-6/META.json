@@ -1,0 +1,35 @@
+{
+  "audit_hashes": {
+    "rules_json_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sections_json_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "source_pdf_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "domain": "AFOLU",
+  "files": [],
+  "method": "REDD+ Methodology Framework",
+  "provenance": {
+    "source_pdfs": [
+      {
+        "path": "source-assets/Verra/AFOLU/VM0007/v1-6/source.pdf",
+        "sha256": "0f93ce1030d11f2a4a90dbc3a74cde1b903d7c51530d57582eb8d93f858b3a5e"
+      }
+    ]
+  },
+  "references": {
+    "tools": []
+  },
+  "relationships": {
+    "version": {
+      "family": "Verra.AFOLU.VM0007",
+      "lineage": [
+        "v1-6"
+      ],
+      "next_version": "v1-7",
+      "previous_version": null
+    }
+  },
+  "standard": "VCS",
+  "title": "VM0007 REDD+ MF v1-6",
+  "version": "v1-6",
+  "stage": "Superseded"
+}

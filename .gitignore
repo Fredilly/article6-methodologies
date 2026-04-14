@@ -5,6 +5,12 @@ source-assets/*
 source-assets/UNFCCC/*
 !source-assets/UNFCCC/Agriculture/
 source-assets/UNFCCC/Agriculture/*
+!source-assets/Verra/
+source-assets/Verra/*
+!source-assets/Verra/AFOLU/
+source-assets/Verra/AFOLU/*
+!source-assets/Verra/AFOLU/VM0007/
+source-assets/Verra/AFOLU/VM0007/*
 outputs/*
 !outputs/mvp/
 outputs/mvp/*
