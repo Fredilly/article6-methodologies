@@ -94,7 +94,11 @@
     "logic": "AGR projects shall hold FSC certification valid throughout the crediting period.",
     "notes": "See GS LUF v1.2.1 Section 2.",
     "type": "eligibility",
-    "when": [],
+    "when": [
+      "at design certification",
+      "throughout crediting period",
+      "at performance certification"
+    ],
     "refs": {
       "methodology": "GoldStandard/GS-00XX@v1-0",
       "primary_section": "S-2",
@@ -106,6 +110,43 @@
       ],
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ]
+    },
+    "source_span_text": "AGR projects shall hold FSC certification valid throughout the crediting period. FSC certification report required.",
+    "section_context": {
+      "section_id": "S-2",
+      "section_title": "General Eligibility Criteria",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+      "page_start": 10,
+      "page_end": 10,
+      "lineage": [
+        "2.1.3"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0003",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "fsc-certificate",
+          "label": "FSC Certificate",
+          "description": "Valid FSC dual certification certificate",
+          "required": true
+        },
+        {
+          "id": "fsc-report",
+          "label": "FSC Certification Report",
+          "description": "FSC certification report document",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "FSC certification valid throughout crediting period"
+      ],
+      "exceptions": [
+        "FSC certification lapses \u2192 project not eligible for GS VERs"
       ]
     }
   },
@@ -116,7 +157,11 @@
     "logic": "Project Developer shall: own CO2 user rights, hold uncontested legal land title, own timber/non-timber forest product rights, hold all necessary permits.",
     "notes": "See GS LUF v1.2.1 Section 2.",
     "type": "eligibility",
-    "when": [],
+    "when": [
+      "throughout crediting period",
+      "at design certification",
+      "at performance certification"
+    ],
     "refs": {
       "methodology": "GoldStandard/GS-00XX@v1-0",
       "primary_section": "S-2",
@@ -129,6 +174,56 @@
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
       ]
+    },
+    "source_span_text": "For the duration of the crediting period the Project Developer shall: where a Gold Standard Certified Statement or Product (e.g. GSVERs) is sought, Project Developers must own the CO2 user rights or carbon sequestration rights for the project area, AND hold an uncontested legal land title for the Project Area, AND own the rights for timber and non-timber forest products for the project area, AND hold all necessary permits to implement the project (planting permits, infrastructure permits, harvesting permits, etc.)",
+    "section_context": {
+      "section_id": "S-2",
+      "section_title": "General Eligibility Criteria",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+      "page_start": 10,
+      "page_end": 10,
+      "lineage": [
+        "2.1.9"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0004",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "co2-user-rights",
+          "label": "CO2 User Rights Documentation",
+          "description": "Legal document proving PD owns carbon sequestration rights",
+          "required": true
+        },
+        {
+          "id": "land-title",
+          "label": "Uncontested Legal Land Title",
+          "description": "Land title documentation valid for crediting period",
+          "required": true
+        },
+        {
+          "id": "forest-product-rights",
+          "label": "Timber and Non-Timber Forest Product Rights",
+          "description": "Documentation of harvesting and product rights",
+          "required": true
+        },
+        {
+          "id": "implementation-permits",
+          "label": "Implementation Permits",
+          "description": "Planting, infrastructure, and harvesting permits",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "CO2 user rights owned by PD for crediting period duration",
+        "Legal land title uncontested and documented",
+        "Timber and non-timber forest product rights owned",
+        "All necessary implementation permits held"
+      ],
+      "exceptions": []
     }
   },
   {
@@ -204,7 +299,10 @@
     "logic": "If host country accounts for land-based activities nationally, projects must conform to GHG Product Requirements Annex A Double Counting.",
     "notes": "See GS LUF v1.2.1 Section 2.",
     "type": "eligibility",
-    "when": [],
+    "when": [
+      "at design certification",
+      "at crediting period renewal"
+    ],
     "refs": {
       "methodology": "GoldStandard/GS-00XX@v1-0",
       "primary_section": "S-2",
@@ -216,6 +314,43 @@
       ],
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ]
+    },
+    "source_span_text": "If the host country accounts for greenhouse-gas (GHG) emissions, and hereby accounts for its own land-based activities under its national or subnational accounting, then projects seeking GSVERs shall conform to the GHG Emissions Reduction and Sequestration Product Requirements - Annex A Double Counting Requirements.",
+    "section_context": {
+      "section_id": "S-2",
+      "section_title": "General Eligibility Criteria",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+      "page_start": 9,
+      "page_end": 9,
+      "lineage": [
+        "2.1.1"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0008",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "host-country-ndc",
+          "label": "Host Country NDC Status",
+          "description": "Evidence of whether host country includes LULUCF in NDC",
+          "required": true
+        },
+        {
+          "id": "double-counting-assessment",
+          "label": "Double Counting Assessment",
+          "description": "Assessment per GHG Product Requirements Annex A",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "Host country accounts for land-based activities nationally/subnationally"
+      ],
+      "exceptions": [
+        "Host country does not include LULUCF in national accounting"
       ]
     }
   },
@@ -248,7 +383,11 @@
     "logic": "PD conducts Safeguarding Principles assessment per Risks & Capacities Guideline. Submitted Preliminary Review, updated for Design and Performance Certification.",
     "notes": "See GS LUF v1.2.1 Section 3.",
     "type": "eligibility",
-    "when": [],
+    "when": [
+      "at preliminary review",
+      "at design certification",
+      "at performance certification"
+    ],
     "refs": {
       "methodology": "GoldStandard/GS-00XX@v1-0",
       "primary_section": "S-3",
@@ -260,6 +399,44 @@
       ],
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ]
+    },
+    "source_span_text": "The Project Developer shall conduct the Safeguarding Principles assessment following Safeguarding Principles & Requirements and Risks & Capacities Guideline assessed for the Project Area, taking into account likely issues in the context of the Project Region. The assessment outcome shall be submitted for Preliminary Review and updated as required for Design Certification and Performance Certification.",
+    "section_context": {
+      "section_id": "S-3",
+      "section_title": "Eligibility Principles and Requirements",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "page_start": 14,
+      "page_end": 14,
+      "lineage": [
+        "3.1.4"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0002",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "safeguarding-assessment",
+          "label": "Safeguarding Principles Assessment",
+          "description": "Completed assessment per Safeguarding P&R and R&C Guideline",
+          "required": true
+        },
+        {
+          "id": "risk-capacities-assessment",
+          "label": "Risks and Capacities Assessment",
+          "description": "Risks & Capacities Guideline assessment for project area",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "Assessment conducted per Safeguarding Principles & Requirements",
+        "Risks & Capacities Guideline applied to Project Area",
+        "Project Region context considered",
+        "Submitted for Preliminary Review",
+        "Updated for Design and Performance Certification"
       ]
     }
   },
@@ -270,7 +447,11 @@
     "logic": "Minimum 10% of total Project Area for biodiversity protection following HCV approach: native tree patches, solitary stems, endangered species habitats, connectivity areas.",
     "notes": "See GS LUF v1.2.1 Section 3.",
     "type": "eligibility",
-    "when": [],
+    "when": [
+      "at design certification",
+      "at performance certification",
+      "throughout crediting period"
+    ],
     "refs": {
       "methodology": "GoldStandard/GS-00XX@v1-0",
       "primary_section": "S-3",
@@ -282,6 +463,53 @@
       ],
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ]
+    },
+    "source_span_text": "A minimum of 10% of the total Project Area shall be identified and used to protect or enhance the biological diversity following High Conservation Value (HCV) approach. The designated protected area shall be located within the Project Area and managed by the Project Developer. The protected area can include buffer zone areas for water bodies.",
+    "section_context": {
+      "section_id": "S-3",
+      "section_title": "Eligibility Principles and Requirements",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "page_start": 14,
+      "page_end": 15,
+      "lineage": [
+        "3.1.5"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0003",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "biodiversity-area-map",
+          "label": "Biodiversity Protection Area Map",
+          "description": "GIS map showing 10%+ area designated for biodiversity",
+          "required": true
+        },
+        {
+          "id": "hcv-assessment",
+          "label": "HCV Assessment",
+          "description": "High Conservation Value assessment identifying native species, habitats, connectivity",
+          "required": true
+        },
+        {
+          "id": "management-plan",
+          "label": "Biodiversity Management Plan",
+          "description": "Plan for managing the protected area within project",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "Minimum 10% of total Project Area designated",
+        "Located within Project Area boundaries",
+        "Managed by Project Developer",
+        "Follows HCV approach",
+        "Identifies: native patches, solitary stems, endangered habitats, connectivity areas"
+      ],
+      "exceptions": [
+        "Buffer zones for water bodies can count toward 10%"
       ]
     }
   },
@@ -292,7 +520,10 @@
     "logic": "15-meter buffer on both sides of water bodies. In buffer: keep native trees, no fertilizer/pesticides, no logging, no heavy machinery, no cropping. Planted trees must be native.",
     "notes": "See GS LUF v1.2.1 Section 3.",
     "type": "eligibility",
-    "when": [],
+    "when": [
+      "throughout crediting period",
+      "at performance certification"
+    ],
     "refs": {
       "methodology": "GoldStandard/GS-00XX@v1-0",
       "primary_section": "S-3",
@@ -304,6 +535,49 @@
       ],
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ]
+    },
+    "source_span_text": "The Project Developer shall maintain a buffer zone of 15 meters for water bodies on both sides of any permanent or temporary water bodies such as lakes, streams, rivers, wetlands, etc. Irrigation channels are excluded from this requirement. In these buffer zones: (a) All existing native trees shall be kept, AND (b) No fertilizer and pesticides shall be used, AND (c) No logging activities shall take place, AND (d) No heavy machinery shall be used, AND (e) No cropping is allowed, AND (f) In case trees are being planted, these need to be native tree species.",
+    "section_context": {
+      "section_id": "S-3",
+      "section_title": "Eligibility Principles and Requirements",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "page_start": 15,
+      "page_end": 15,
+      "lineage": [
+        "3.1.6"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0004",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "water-body-map",
+          "label": "Water Body Map",
+          "description": "GIS map showing all permanent and temporary water bodies with 15m buffer zones",
+          "required": true
+        },
+        {
+          "id": "buffer-compliance-monitoring",
+          "label": "Buffer Zone Compliance Records",
+          "description": "Monitoring records confirming no prohibited activities in buffer zones",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "15-meter buffer maintained on both sides",
+        "Existing native trees kept in buffer",
+        "No fertilizer/pesticides in buffer",
+        "No logging in buffer",
+        "No heavy machinery in buffer",
+        "No cropping in buffer",
+        "Planted trees must be native species"
+      ],
+      "exceptions": [
+        "Irrigation channels excluded from buffer requirement"
       ]
     }
   },
@@ -314,7 +588,10 @@
     "logic": "Stakeholder Consultation before project start date. Refer to Stakeholder Consultation Engagement Requirements.",
     "notes": "See GS LUF v1.2.1 Section 3.",
     "type": "eligibility",
-    "when": [],
+    "when": [
+      "before project start date",
+      "at design certification"
+    ],
     "refs": {
       "methodology": "GoldStandard/GS-00XX@v1-0",
       "primary_section": "S-3",
@@ -327,6 +604,41 @@
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
       ]
+    },
+    "source_span_text": "The Stakeholder Consultation shall be conducted prior to the project start date. The Project Developer shall refer to Stakeholder Consultation Engagement Requirements for further details.",
+    "section_context": {
+      "section_id": "S-3",
+      "section_title": "Eligibility Principles and Requirements",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "page_start": 15,
+      "page_end": 15,
+      "lineage": [
+        "3.1.7"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0005",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "stakeholder-consultation-report",
+          "label": "Stakeholder Consultation Report",
+          "description": "Completed consultation report per SC Engagement Requirements",
+          "required": true
+        },
+        {
+          "id": "consultation-timing-proof",
+          "label": "Consultation Timing Evidence",
+          "description": "Evidence consultation occurred before project start date",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "Stakeholder Consultation completed before project start date"
+      ],
+      "exceptions": []
     }
   },
   {
@@ -336,7 +648,11 @@
     "logic": "AGR: first within 2 years. A/R: every 5 years. All: crediting renewal every 5th year with baseline update.",
     "notes": "See GS LUF v1.2.1 Section 3.",
     "type": "monitoring",
-    "when": [],
+    "when": [
+      "within 2 years of start (AGR)",
+      "every 5 years (A/R)",
+      "every 5th year renewal"
+    ],
     "refs": {
       "methodology": "GoldStandard/GS-00XX@v1-0",
       "primary_section": "S-3",
@@ -348,6 +664,43 @@
       ],
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ]
+    },
+    "source_span_text": "AGR specific: The first Verification shall be completed either within two years of project start date or Project Design Certification, whichever is later. A/R specific: Verification shall be completed at least every 5 years until the end of the crediting period. According to the Principles & Requirements, all projects shall seek Crediting Period Renewal every 5th year.",
+    "section_context": {
+      "section_id": "S-3",
+      "section_title": "Eligibility Principles and Requirements",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "page_start": 16,
+      "page_end": 16,
+      "lineage": [
+        "3.1.11",
+        "3.1.12"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0006",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "verification-schedule",
+          "label": "Verification Schedule",
+          "description": "Documented verification schedule meeting frequency requirements",
+          "required": true
+        },
+        {
+          "id": "baseline-update",
+          "label": "Baseline Update at Renewal",
+          "description": "Updated baseline per Impact Quantification Methodology at 5-year renewal",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "AGR: first verification within 2 years of start or Design Certification (whichever later)",
+        "A/R: verification at least every 5 years",
+        "All: crediting period renewal every 5th year with baseline update"
       ]
     }
   },
@@ -468,7 +821,10 @@
     "logic": "All projects submit GIS layers: Project Region, Project Area, Eligible Areas, Modelling Units, Infrastructure, Land use, Water bodies, Carbon pools.",
     "notes": "See GS LUF v1.2.1 Section 4.",
     "type": "eligibility",
-    "when": [],
+    "when": [
+      "at preliminary review",
+      "at design certification"
+    ],
     "refs": {
       "methodology": "GoldStandard/GS-00XX@v1-0",
       "primary_section": "S-4",
@@ -480,6 +836,36 @@
       ],
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ]
+    },
+    "source_span_text": "All projects shall submit GIS vector layers (Table 4). The GIS vector layers shall be labelled comprehensively: Project Region, Project Area, Eligible Areas, Individual Modelling Units, Infrastructure (road, houses, etc.), Land use, Water bodies, Carbon pools.",
+    "section_context": {
+      "section_id": "S-4",
+      "section_title": "Technical Requirements",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-4",
+      "page_start": 20,
+      "page_end": 20,
+      "lineage": [
+        "4.1.3"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-4-0001",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "gis-vector-layers",
+          "label": "GIS Vector Layers",
+          "description": "Complete set of labelled GIS layers per Table 4",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "All required GIS layers submitted",
+        "Layers comprehensively labelled",
+        "Includes: Project Region, Project Area, Eligible Areas, Modelling Units, Infrastructure, Land use, Water bodies, Carbon pools"
       ]
     }
   },
@@ -512,7 +898,10 @@
     "logic": "Target precision: 20% of mean at 90% confidence level for all GHG estimates.",
     "notes": "See GS LUF v1.2.1 Section A.",
     "type": "uncertainty",
-    "when": [],
+    "when": [
+      "at performance certification",
+      "at every verification"
+    ],
     "refs": {
       "methodology": "GoldStandard/GS-00XX@v1-0",
       "primary_section": "S-5",
@@ -524,6 +913,45 @@
       ],
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ]
+    },
+    "source_span_text": "Estimated greenhouse gas emissions and removals resulting from Land Use and Forestry (LUF) activities have uncertainties associated with the measurements/estimates of various parameters, especially area or other activity data, carbon stocks, biomass growth rates, expansion factors, emission factors and other coefficients. This guideline provides a step-by-step approach on how to treat uncertainties in LUF projects and how to comply with the required target precision of 20% of the mean at a 90% confidence level.",
+    "section_context": {
+      "section_id": "S-5",
+      "section_title": "Uncertainty of LUF Parameters",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-5",
+      "page_start": 22,
+      "page_end": 22,
+      "lineage": [
+        "1.1.1",
+        "1.1.2"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-5-0001",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "uncertainty-analysis",
+          "label": "Uncertainty Analysis",
+          "description": "Quantified uncertainty for all key parameters showing compliance with 20% threshold",
+          "required": true
+        },
+        {
+          "id": "approach-documentation",
+          "label": "Approach Documentation",
+          "description": "Documentation of which approach (1, 2, or 3) was used and justification",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "Uncertainty of estimated GHG reductions is \u226420% of mean at 90% confidence"
+      ],
+      "exceptions": [
+        "Uncertainty >20% triggers deduction per Table 1",
+        "Uncertainty >50% means no credits issued"
       ]
     }
   },
@@ -556,7 +984,10 @@
     "logic": "If uncertainty >20%: 20-30% \u2192 50% UD, 30-40% \u2192 75% UD, 40-50% \u2192 100% UD. No credits if >50%.",
     "notes": "See GS LUF v1.2.1 Section A.",
     "type": "uncertainty",
-    "when": [],
+    "when": [
+      "at performance certification",
+      "when default factors used"
+    ],
     "refs": {
       "methodology": "GoldStandard/GS-00XX@v1-0",
       "primary_section": "S-5",
@@ -568,6 +999,39 @@
       ],
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ]
+    },
+    "source_span_text": "If the uncertainty is greater than 20% of the mean value, then the project owner shall use the estimated value subject to an Uncertainty Deduction (UD). Table: 20<U\u226430% \u2192 50% UD, 30<U\u226440% \u2192 75% UD, 40<U\u226450% \u2192 100% UD.",
+    "section_context": {
+      "section_id": "S-5",
+      "section_title": "Uncertainty of LUF Parameters",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-5",
+      "page_start": 25,
+      "page_end": 25,
+      "lineage": [
+        "1.1.9"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-5-0003",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "uncertainty-deduction-calc",
+          "label": "Uncertainty Deduction Calculation",
+          "description": "Calculation showing UD applied per Table 1",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "If uncertainty 20-30%: 50% deduction applied",
+        "If uncertainty 30-40%: 75% deduction applied",
+        "If uncertainty 40-50%: 100% deduction applied"
+      ],
+      "exceptions": [
+        "Uncertainty >50%: no credits issued for that period"
       ]
     }
   }
