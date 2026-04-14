@@ -8,6 +8,19 @@
  */
 const fs = require('fs');
 const path = require('path');
+const {
+  canonicalizeLeanRuleFromLean,
+  canonicalizeLeanSection,
+  getMethodInfo
+} = require('../core/methodology-artifact-contract.cjs');
+
+function realpathMaybe(inputPath) {
+  try {
+    return fs.realpathSync.native ? fs.realpathSync.native(inputPath) : fs.realpathSync(inputPath);
+  } catch {
+    return path.resolve(inputPath);
+  }
+}
 
 function sortKeysDeep(obj) {
   if (Array.isArray(obj)) return obj.map(sortKeysDeep);
@@ -25,6 +38,35 @@ function sortKeysDeep(obj) {
 
 function stableStringify(obj) {
   return JSON.stringify(sortKeysDeep(obj), null, 2) + '\n';
+}
+
+function isMethodologyLeanFile(absPath) {
+  const rel = path.relative(rootDir, realpathMaybe(absPath)).split(path.sep);
+  if (rel[0] !== 'methodologies') return false;
+  const base = path.basename(absPath);
+  return base === 'sections.json' || base === 'rules.json';
+}
+
+function stableStringifyMethodologyLean(absPath, parsed) {
+  if (!isMethodologyLeanFile(absPath)) return null;
+
+  const methodDir = path.dirname(absPath);
+  const info = getMethodInfo(methodDir);
+  const base = path.basename(absPath);
+
+  if (base === 'sections.json') {
+    const sections = (parsed.sections || []).map((section) => canonicalizeLeanSection(section, info));
+    return JSON.stringify({ sections }, null, 2) + '\n';
+  }
+
+  const sectionsPath = path.join(methodDir, 'sections.json');
+  const sectionsJson = absPath === sectionsPath
+    ? parsed
+    : JSON.parse(fs.readFileSync(sectionsPath, 'utf8'));
+  const canonicalSections = (sectionsJson.sections || []).map((section) => canonicalizeLeanSection(section, info));
+  const sectionLookup = new Map(canonicalSections.map((section) => [section.id, section]));
+  const rules = (parsed.rules || []).map((rule) => canonicalizeLeanRuleFromLean(rule, sectionLookup, info));
+  return JSON.stringify({ rules }, null, 2) + '\n';
 }
 
 function listJsonFiles(dir) {
@@ -45,10 +87,10 @@ function dedupe(items) {
   return Array.from(new Set(items));
 }
 
-const rootDir = process.cwd();
+const rootDir = realpathMaybe(process.cwd());
 
 function toRelative(absPath) {
-  return path.relative(rootDir, absPath) || absPath;
+  return path.relative(rootDir, realpathMaybe(absPath)) || absPath;
 }
 
 const argv = process.argv.slice(2);
@@ -65,11 +107,11 @@ const filesFromArgs = argv.filter((arg) => !arg.startsWith('--'));
 
 let files = [];
 if (filesFromArgs.length) {
-  files = dedupe(filesFromArgs.map((p) => path.resolve(p))).filter((p) => p.endsWith('.json'));
+  files = dedupe(filesFromArgs.map((p) => realpathMaybe(p))).filter((p) => p.endsWith('.json'));
 } else {
   roots.forEach((root) => {
     if (!root) return;
-    const abs = path.resolve(root);
+    const abs = realpathMaybe(root);
     if (fs.existsSync(abs)) {
       files = files.concat(listJsonFiles(abs));
     }
@@ -97,7 +139,7 @@ files.forEach((absPath) => {
   }
   try {
     const parsed = JSON.parse(raw);
-    const stable = stableStringify(parsed);
+    const stable = stableStringifyMethodologyLean(absPath, parsed) || stableStringify(parsed);
     if (stable !== raw) {
       changed.push(absPath);
       if (fix) {
