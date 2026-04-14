@@ -83,6 +83,11 @@
       "title": "FSC dual certification",
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ],
+      "when": [
+        "at design certification",
+        "throughout crediting period",
+        "at performance certification"
       ]
     },
     {
@@ -100,6 +105,11 @@
       "title": "A/R secured titles",
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ],
+      "when": [
+        "throughout crediting period",
+        "at design certification",
+        "at performance certification"
       ]
     },
     {
@@ -168,6 +178,10 @@
       "title": "Double counting prevention",
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ],
+      "when": [
+        "at design certification",
+        "at crediting period renewal"
       ]
     },
     {
@@ -202,6 +216,11 @@
       "title": "Safeguarding assessment",
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ],
+      "when": [
+        "at preliminary review",
+        "at design certification",
+        "at performance certification"
       ]
     },
     {
@@ -219,6 +238,11 @@
       "title": "10% biodiversity protection",
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ],
+      "when": [
+        "at design certification",
+        "at performance certification",
+        "throughout crediting period"
       ]
     },
     {
@@ -236,6 +260,10 @@
       "title": "Water body buffer zone",
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ],
+      "when": [
+        "throughout crediting period",
+        "at performance certification"
       ]
     },
     {
@@ -253,6 +281,10 @@
       "title": "Stakeholder consultation timing",
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ],
+      "when": [
+        "before project start date",
+        "at design certification"
       ]
     },
     {
@@ -270,6 +302,11 @@
       "title": "Verification frequency",
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ],
+      "when": [
+        "within 2 years of start (AGR)",
+        "every 5 years (A/R)",
+        "every 5th year renewal"
       ]
     },
     {
@@ -372,6 +409,10 @@
       "title": "GIS vector layers",
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ],
+      "when": [
+        "at preliminary review",
+        "at design certification"
       ]
     },
     {
@@ -406,6 +447,10 @@
       "title": "Uncertainty target",
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ],
+      "when": [
+        "at performance certification",
+        "at every verification"
       ]
     },
     {
@@ -440,6 +485,10 @@
       "title": "Uncertainty deduction table",
       "tools": [
         "GoldStandard/GS-00XX@v1-0"
+      ],
+      "when": [
+        "at performance certification",
+        "when default factors used"
       ]
     }
   ]
