@@ -1,79 +1,86 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
   "additionalProperties": false,
   "properties": {
     "rules": {
+      "type": "array",
       "items": {
-        "additionalProperties": true,
+        "type": "object",
+        "additionalProperties": false,
         "properties": {
           "id": {
-            "type": "string"
-          },
-          "logic": {
-            "type": "string"
-          },
-          "section_anchor": {
-            "type": "string"
-          },
-          "section_id": {
-            "type": "string"
-          },
-          "section_number": {
-            "type": "string"
-          },
-          "section_stable_id": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^R-\\d+(?:-\\d+)*-\\d{4}$"
           },
           "stable_id": {
-            "type": "string"
-          },
-          "tags": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "text": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
           "title": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
+          },
+          "logic": {
+            "type": "string",
+            "minLength": 1
+          },
+          "section_anchor": {
+            "type": "string",
+            "minLength": 1
+          },
+          "section_id": {
+            "type": "string",
+            "pattern": "^S-\\d+(?:-\\d+)*$"
+          },
+          "section_number": {
+            "type": "string",
+            "minLength": 1
+          },
+          "section_stable_id": {
+            "type": "string",
+            "minLength": 1
           },
           "tools": {
+            "type": "array",
+            "minItems": 1,
             "items": {
-              "type": "string"
-            },
-            "type": "array"
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "tags": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
           },
           "when": {
+            "type": "array",
+            "minItems": 1,
             "items": {
-              "type": "string"
-            },
-            "type": "array"
+              "type": "string",
+              "minLength": 1
+            }
           }
         },
         "required": [
-          "id"
-        ],
-        "anyOf": [
-          {
-            "required": [
-              "title"
-            ]
-          },
-          {
-            "required": [
-              "text"
-            ]
-          }
-        ],
-        "type": "object"
-      },
-      "type": "array"
+          "id",
+          "stable_id",
+          "title",
+          "logic",
+          "section_anchor",
+          "section_id",
+          "section_number",
+          "section_stable_id",
+          "tools"
+        ]
+      }
     }
   },
   "required": [
     "rules"
-  ],
-  "type": "object"
+  ]
 }
