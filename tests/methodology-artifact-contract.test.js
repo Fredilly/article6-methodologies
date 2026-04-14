@@ -116,11 +116,37 @@ function verifyRepresentativeCrossMethodSignature() {
   });
 }
 
+function verifyMethodInfoNormalization() {
+  const activeDir = path.join(
+    METHODOLOGIES_ROOT,
+    'UNFCCC',
+    'Agriculture',
+    'ACM0010',
+    'v03-0'
+  );
+  const previousDir = path.join(
+    activeDir,
+    'previous',
+    'v01-0'
+  );
+  const viaSymlinkedTmp = activeDir.replace('/private/tmp/', '/tmp/');
+
+  const activeInfo = getMethodInfo(activeDir);
+  const previousInfo = getMethodInfo(previousDir);
+  const symlinkInfo = getMethodInfo(viaSymlinkedTmp);
+
+  assert.equal(activeInfo.methodologyId, 'UNFCCC.Agriculture.ACM0010.v03-0');
+  assert.equal(previousInfo.methodologyId, activeInfo.methodologyId);
+  assert.equal(symlinkInfo.methodologyId, activeInfo.methodologyId);
+  assert.equal(previousInfo.relPath, 'UNFCCC/Agriculture/ACM0010/v03-0');
+}
+
 function main() {
   for (const methodDir of methodDirs()) {
     verifyLeanContract(methodDir);
     verifyRichModes(methodDir);
   }
+  verifyMethodInfoNormalization();
   verifyRepresentativeCrossMethodSignature();
   console.log(`ok methodology artifact contract (${methodDirs().length} methods)`);
 }
