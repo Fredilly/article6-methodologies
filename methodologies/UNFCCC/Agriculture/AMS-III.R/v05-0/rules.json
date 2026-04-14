@@ -2,15 +2,18 @@
   "rules": [
     {
       "id": "R-1-0001",
-      "logic": "Projects consolidate manure from multiple livestock farms into a centralized anaerobic digestion and methane capture system; baseline farms employ anaerobic lagoons or tanks without methane recovery, typically deeper than 1 m with retention times above 30 days.",
-      "section_id": "S-1",
-      "tags": [
-        "eligibility"
-      ],
-      "text": "Projects aggregate manure from multiple farms and install a central methane capture system where the baseline lacks methane recovery.",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-1-0001",
       "title": "Projects aggregate manure from multiple farms and install a central methane capture system where the baseline lacks methane recovery.",
+      "logic": "Projects consolidate manure from multiple livestock farms into a centralized anaerobic digestion and methane capture system; baseline farms employ anaerobic lagoons or tanks without methane recovery, typically deeper than 1 m with retention times above 30 days.",
+      "section_anchor": "scope-and-applicability",
+      "section_id": "S-1",
+      "section_number": "1",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-1",
       "tools": [
         "UNFCCC/AMS-III.R@v05-0"
+      ],
+      "tags": [
+        "eligibility"
       ],
       "when": [
         "Baseline anaerobic systems operate without methane recovery and satisfy lagoon depth and retention requirements.",
@@ -19,17 +22,20 @@
     },
     {
       "id": "R-2-0002",
-      "logic": "Participants follow the four-step procedure to identify plausible alternatives for both the central plant owner and each farm, calculate IRR/NPV for every option, and select as baseline the most economically attractive scenario that does not include methane recovery.",
-      "section_id": "S-2",
-      "tags": [
-        "calc",
-        "baseline",
-        "additionality"
-      ],
-      "text": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-2-0002",
       "title": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
+      "logic": "Participants follow the four-step procedure to identify plausible alternatives for both the central plant owner and each farm, calculate IRR/NPV for every option, and select as baseline the most economically attractive scenario that does not include methane recovery.",
+      "section_anchor": "baseline-scenario-and-additionality",
+      "section_id": "S-2",
+      "section_number": "2",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-2",
       "tools": [
         "UNFCCC/AMS-III.R@v05-0"
+      ],
+      "tags": [
+        "additionality",
+        "baseline",
+        "calc"
       ],
       "when": [
         "Financial model vetted during validation and updated at each crediting renewal.",
@@ -38,15 +44,18 @@
     },
     {
       "id": "R-3-0002",
-      "logic": "Barrier assessments, board minutes, and DOE-verifiable declarations confirm that the central treatment entity alone claims CERs while participating farms maintain their baseline manure handling until waste is transferred.",
-      "section_id": "S-2",
-      "tags": [
-        "reporting"
-      ],
-      "text": "Barrier documentation and CER transfer declarations demonstrate participation and prevent double counting.",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-3-0002",
       "title": "Barrier documentation and CER transfer declarations demonstrate participation and prevent double counting.",
+      "logic": "Barrier assessments, board minutes, and DOE-verifiable declarations confirm that the central treatment entity alone claims CERs while participating farms maintain their baseline manure handling until waste is transferred.",
+      "section_anchor": "baseline-scenario-and-additionality",
+      "section_id": "S-2",
+      "section_number": "2",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-2",
       "tools": [
         "UNFCCC/AMS-III.R@v05-0"
+      ],
+      "tags": [
+        "reporting"
       ],
       "when": [
         "All parties provide signed statements before validation.",
@@ -55,16 +64,19 @@
     },
     {
       "id": "R-4-0003",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-4-0003",
+      "title": "Project boundaries cover collection through final sludge treatment with leak-proof infrastructure and consistent fertilizer use.",
       "logic": "The project boundary spans manure collection logistics, digesters, gas treatment, flares or power units, sludge drying or composting, and the return or sale of treated residues while ensuring no leakage to groundwater.",
+      "section_anchor": "project-boundary-and-emission-reductions",
       "section_id": "S-3",
+      "section_number": "3",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-3",
+      "tools": [
+        "UNFCCC/AMS-III.R@v05-0"
+      ],
       "tags": [
         "parameter",
         "project_design"
-      ],
-      "text": "Project boundaries cover collection through final sludge treatment with leak-proof infrastructure and consistent fertilizer use.",
-      "title": "Project boundaries cover collection through final sludge treatment with leak-proof infrastructure and consistent fertilizer use.",
-      "tools": [
-        "UNFCCC/AMS-III.R@v05-0"
       ],
       "when": [
         "Transport routes, digesters, and utilization equipment are included in the emissions inventory.",
@@ -73,16 +85,19 @@
     },
     {
       "id": "R-5-0003",
-      "logic": "Emission reductions aggregate farm-level baseline methane (from Tool 01/03 factors) minus project emissions from electricity, heat, biogas use, and onsite treatment using Tool 05/06 and the fossil fuel combustion tool where applicable.",
-      "section_id": "S-3",
-      "tags": [
-        "equation",
-        "calc"
-      ],
-      "text": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-5-0003",
       "title": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
+      "logic": "Emission reductions aggregate farm-level baseline methane (from Tool 01/03 factors) minus project emissions from electricity, heat, biogas use, and onsite treatment using Tool 05/06 and the fossil fuel combustion tool where applicable.",
+      "section_anchor": "project-boundary-and-emission-reductions",
+      "section_id": "S-3",
+      "section_number": "3",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-3",
       "tools": [
         "UNFCCC/AMS-III.R@v05-0"
+      ],
+      "tags": [
+        "calc",
+        "equation"
       ],
       "when": [
         "Farm-level calculations trace to monitored manure quantities and VS content.",
@@ -91,15 +106,18 @@
     },
     {
       "id": "R-6-0004",
-      "logic": "Methane leakage from anaerobic digesters and pipelines (LFAD default 0.15 when direct monitoring unavailable), fossil fuel combustion, sludge transport, and offsite land application emissions are quantified and deducted whenever positive.",
-      "section_id": "S-4",
-      "tags": [
-        "leakage"
-      ],
-      "text": "Deduct leakage from pipelines, auxiliary fuel, and offsite residue handling using monitored data or LFAD defaults.",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-6-0004",
       "title": "Deduct leakage from pipelines, auxiliary fuel, and offsite residue handling using monitored data or LFAD defaults.",
+      "logic": "Methane leakage from anaerobic digesters and pipelines (LFAD default 0.15 when direct monitoring unavailable), fossil fuel combustion, sludge transport, and offsite land application emissions are quantified and deducted whenever positive.",
+      "section_anchor": "leakage-and-residue-management",
+      "section_id": "S-4",
+      "section_number": "4",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-4",
       "tools": [
         "UNFCCC/AMS-III.R@v05-0"
+      ],
+      "tags": [
+        "leakage"
       ],
       "when": [
         "Positive leakage terms reported even when small relative to baseline emissions.",
@@ -108,15 +126,18 @@
     },
     {
       "id": "R-7-0005",
-      "logic": "Biogas volumetric flow, methane fraction, flare/generator dispatch, and electricity consumption are measured continuously (or at least hourly), aggregated weekly, and included in monthly records alongside QA/QC checks and calibration certificates.",
-      "section_id": "S-5",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "Monitor biogas, methane fraction, and energy consumption continuously and report at least monthly with QA/QC evidence.",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-7-0005",
       "title": "Monitor biogas, methane fraction, and energy consumption continuously and report at least monthly with QA/QC evidence.",
+      "logic": "Biogas volumetric flow, methane fraction, flare/generator dispatch, and electricity consumption are measured continuously (or at least hourly), aggregated weekly, and included in monthly records alongside QA/QC checks and calibration certificates.",
+      "section_anchor": "monitoring-qa-qc-and-reporting",
+      "section_id": "S-5",
+      "section_number": "5",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-5",
       "tools": [
         "UNFCCC/AMS-III.R@v05-0"
+      ],
+      "tags": [
+        "monitoring"
       ],
       "when": [
         "Calibration records kept for flow meters, gas analyzers, and electricity meters.",
@@ -125,15 +146,18 @@
     },
     {
       "id": "R-8-0005",
-      "logic": "DOE validations prioritize farms contributing 900 tCO2e or more of baseline emissions, require annual reconciliation of methane generated versus consumed at the plant, and investigate discrepancies with documented corrective actions.",
-      "section_id": "S-5",
-      "tags": [
-        "reporting"
-      ],
-      "text": "Focus DOE inspections on high-emitting farms and reconcile methane balances annually, documenting leak investigations and fixes.",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-8-0005",
       "title": "Focus DOE inspections on high-emitting farms and reconcile methane balances annually, documenting leak investigations and fixes.",
+      "logic": "DOE validations prioritize farms contributing 900 tCO2e or more of baseline emissions, require annual reconciliation of methane generated versus consumed at the plant, and investigate discrepancies with documented corrective actions.",
+      "section_anchor": "monitoring-qa-qc-and-reporting",
+      "section_id": "S-5",
+      "section_number": "5",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-5",
       "tools": [
         "UNFCCC/AMS-III.R@v05-0"
+      ],
+      "tags": [
+        "reporting"
       ],
       "when": [
         "Upper-rank farms (>=900 tCO2e) are included in each validation sample.",

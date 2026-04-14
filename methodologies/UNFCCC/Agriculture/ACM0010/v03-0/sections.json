@@ -2,23 +2,38 @@
   "sections": [
     {
       "id": "S-1",
-      "title": "Scope and applicability"
+      "title": "Scope and applicability",
+      "anchor": "scope-and-applicability",
+      "section_number": "1",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-1"
     },
     {
       "id": "S-2",
-      "title": "Baseline scenario and additionality"
+      "title": "Baseline scenario and additionality",
+      "anchor": "baseline-scenario-and-additionality",
+      "section_number": "2",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-2"
     },
     {
       "id": "S-3",
-      "title": "Project boundary and emission reductions"
+      "title": "Project boundary and emission reductions",
+      "anchor": "project-boundary-and-emission-reductions",
+      "section_number": "3",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-3"
     },
     {
       "id": "S-4",
-      "title": "Leakage and residue management"
+      "title": "Leakage and residue management",
+      "anchor": "leakage-and-residue-management",
+      "section_number": "4",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-4"
     },
     {
       "id": "S-5",
-      "title": "Monitoring, QA/QC, and reporting"
+      "title": "Monitoring, QA/QC, and reporting",
+      "anchor": "monitoring-qa-qc-and-reporting",
+      "section_number": "5",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-5"
     }
   ]
 }

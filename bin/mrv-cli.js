@@ -62,7 +62,7 @@ function collectRules(){
       // Only include lean when rich not present
       if (fs.existsSync(path.join(dir,'rules.rich.json'))) continue;
       const arr = (loadJSON(p)||{}).rules||[];
-      for (const r of arr){ rules.push({ id: r.id, text: String(r.text||''), methodDir: dir, sections: [r.section_id], tools: [], docMap: new Map() }); }
+      for (const r of arr){ rules.push({ id: r.id, text: String(r.title||r.text||''), methodDir: dir, sections: [r.section_id], tools: [], docMap: new Map() }); }
     }
   }
   // Deterministic ordering

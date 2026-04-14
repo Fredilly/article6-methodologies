@@ -2,47 +2,67 @@
   "rules": [
     {
       "id": "R-0001-0004",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.R-0001-0004",
+      "title": "Baseline",
       "logic": "Baseline",
       "section_anchor": "the-project-boundary-is-the-physical-geographical-site-of-the-methane-recovery-facility",
       "section_id": "S-0004",
+      "section_number": "0004",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0004",
+      "tools": [
+        "UNFCCC/AMS-III.D@v21-0"
+      ],
       "tags": [
         "parameter"
-      ],
-      "text": "Baseline",
-      "title": "Baseline"
+      ]
     },
     {
       "id": "R-0001-0007",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.R-0001-0007",
+      "title": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D.",
       "logic": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D.",
       "section_anchor": "in-the-case-of-landfill-gas-waste-gas-waste-water-treatment-and-agro-industries-projects-if-the",
       "section_id": "S-0007",
+      "section_number": "0007",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0007",
+      "tools": [
+        "UNFCCC/AMS-III.D@v21-0"
+      ],
       "tags": [
         "eligibility"
-      ],
-      "text": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D.",
-      "title": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D."
+      ]
     },
     {
       "id": "R-0002-0007",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.R-0002-0007",
+      "title": "If the recovered methane is used for heat generation it is also eligible under category I.C.",
       "logic": "If the recovered methane is used for heat generation it is also eligible under category I.C.",
       "section_anchor": "in-the-case-of-landfill-gas-waste-gas-waste-water-treatment-and-agro-industries-projects-if-the",
       "section_id": "S-0007",
+      "section_number": "0007",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0007",
+      "tools": [
+        "UNFCCC/AMS-III.D@v21-0"
+      ],
       "tags": [
         "eligibility"
-      ],
-      "text": "If the recovered methane is used for heat generation it is also eligible under category I.C.",
-      "title": "If the recovered methane is used for heat generation it is also eligible under category I.C."
+      ]
     },
     {
       "id": "R-0001-0008",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.R-0001-0008",
+      "title": "Monitoring",
       "logic": "Monitoring",
       "section_anchor": "no-leakage-calculation-is-required",
       "section_id": "S-0008",
+      "section_number": "0008",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0008",
+      "tools": [
+        "UNFCCC/AMS-III.D@v21-0"
+      ],
       "tags": [
         "monitoring"
-      ],
-      "text": "Monitoring",
-      "title": "Monitoring"
+      ]
     }
   ]
 }

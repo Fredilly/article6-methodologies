@@ -1,124 +1,172 @@
 {
   "sections": [
     {
-      "anchor": "unfccc-ccnucc",
       "id": "S-0001",
-      "title": "UNFCCC/CCNUCC"
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc",
+      "section_number": "0001",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0001"
     },
     {
-      "anchor": "eb-31",
       "id": "S-0002",
-      "title": "EB 31"
+      "title": "EB 31",
+      "anchor": "eb-31",
+      "section_number": "0002",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0002"
     },
     {
-      "anchor": "type-iii-other-project-activities",
       "id": "S-0003",
-      "title": "TYPE III - OTHER PROJECT ACTIVITIES"
+      "title": "TYPE III - OTHER PROJECT ACTIVITIES",
+      "anchor": "type-iii-other-project-activities",
+      "section_number": "0003",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0003"
     },
     {
-      "anchor": "this-project-category-comprises-methane-recovery-and-destruction-from-manure-and-wastes",
       "id": "S-0004",
-      "title": "This project category comprises methane recovery and destruction from manure and wastes"
+      "title": "This project category comprises methane recovery and destruction from manure and wastes",
+      "anchor": "this-project-category-comprises-methane-recovery-and-destruction-from-manure-and-wastes",
+      "section_number": "0004",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0004"
     },
     {
-      "anchor": "the-project-activity-shall-satisfy-the-following-conditions",
       "id": "S-0005",
-      "title": "The project activity shall satisfy the following conditions:"
+      "title": "The project activity shall satisfy the following conditions:",
+      "anchor": "the-project-activity-shall-satisfy-the-following-conditions",
+      "section_number": "0005",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0005"
     },
     {
-      "anchor": "projects-that-recover-methane-from-landfills-shall-use-category-iii-g-and-projects-for",
       "id": "S-0006",
-      "title": "Projects that recover methane from landfills shall use category III-G and projects for"
+      "title": "Projects that recover methane from landfills shall use category III-G and projects for",
+      "anchor": "projects-that-recover-methane-from-landfills-shall-use-category-iii-g-and-projects-for",
+      "section_number": "0006",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0006"
     },
     {
-      "anchor": "kt-co2-equivalent-annually",
       "id": "S-0007",
-      "title": "kt CO2 equivalent annually."
+      "title": "kt CO2 equivalent annually.",
+      "anchor": "kt-co2-equivalent-annually",
+      "section_number": "0007",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0007"
     },
     {
-      "anchor": "the-project-boundary-is-the-physical-geographical-site-of-the-methane-recovery-facility",
       "id": "S-0008",
-      "title": "The project boundary is the physical, geographical site of the methane recovery facility."
+      "title": "The project boundary is the physical, geographical site of the methane recovery facility.",
+      "anchor": "the-project-boundary-is-the-physical-geographical-site-of-the-methane-recovery-facility",
+      "section_number": "0008",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0008"
     },
     {
-      "anchor": "project-emissions-consist-of-co2-emissions-from-use-of-fossil-fuels-or-electricity-for-the",
       "id": "S-0009",
-      "title": "Project emissions consist of CO2 emissions from use of fossil fuels or electricity for the"
+      "title": "Project emissions consist of CO2 emissions from use of fossil fuels or electricity for the",
+      "anchor": "project-emissions-consist-of-co2-emissions-from-use-of-fossil-fuels-or-electricity-for-the",
+      "section_number": "0009",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0009"
     },
     {
-      "anchor": "the-baseline-scenario-is-the-situation-where-in-the-absence-of-the-project-activity-biomass",
       "id": "S-0010",
-      "title": "The baseline scenario is the situation where, in the absence of the project activity, biomass"
+      "title": "The baseline scenario is the situation where, in the absence of the project activity, biomass",
+      "anchor": "the-baseline-scenario-is-the-situation-where-in-the-absence-of-the-project-activity-biomass",
+      "section_number": "0010",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0010"
     },
     {
-      "anchor": "unfccc-ccnucc-2",
       "id": "S-0011",
-      "title": "UNFCCC/CCNUCC"
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-2",
+      "section_number": "0011",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0011"
     },
     {
-      "anchor": "eb-31-2",
       "id": "S-0012",
-      "title": "EB 31"
+      "title": "EB 31",
+      "anchor": "eb-31-2",
+      "section_number": "0012",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0012"
     },
     {
-      "anchor": "if-the-recovered-methane-is-used-for-heat-or-electricity-generation-the-corresponding",
       "id": "S-0013",
-      "title": "If the recovered methane is used for heat or electricity generation, the corresponding"
+      "title": "If the recovered methane is used for heat or electricity generation, the corresponding",
+      "anchor": "if-the-recovered-methane-is-used-for-heat-or-electricity-generation-the-corresponding",
+      "section_number": "0013",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0013"
     },
     {
-      "anchor": "no-leakage-calculation-is-required",
       "id": "S-0014",
-      "title": "No leakage calculation is required."
+      "title": "No leakage calculation is required.",
+      "anchor": "no-leakage-calculation-is-required",
+      "section_number": "0014",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0014"
     },
     {
-      "anchor": "emission-reductions-achieved-by-the-project-activity-in-each-year-will-be-assessed-ex-post",
       "id": "S-0015",
-      "title": "Emission reductions achieved by the project activity in each year will be assessed ex-post"
+      "title": "Emission reductions achieved by the project activity in each year will be assessed ex-post",
+      "anchor": "emission-reductions-achieved-by-the-project-activity-in-each-year-will-be-assessed-ex-post",
+      "section_number": "0015",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0015"
     },
     {
-      "anchor": "the-amount-of-methane-recovered-and-fuelled-or-flared-shall-be-monitored-ex-post-using",
       "id": "S-0016",
-      "title": "The amount of methane recovered and fuelled or flared shall be monitored ex-post, using"
+      "title": "The amount of methane recovered and fuelled or flared shall be monitored ex-post, using",
+      "anchor": "the-amount-of-methane-recovered-and-fuelled-or-flared-shall-be-monitored-ex-post-using",
+      "section_number": "0016",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0016"
     },
     {
-      "anchor": "regular-maintenance-should-ensure-optimal-operation-of-flares-the-flare-efficiency",
       "id": "S-0017",
-      "title": "Regular maintenance should ensure optimal operation of flares. The flare efficiency,"
+      "title": "Regular maintenance should ensure optimal operation of flares. The flare efficiency,",
+      "anchor": "regular-maintenance-should-ensure-optimal-operation-of-flares-the-flare-efficiency",
+      "section_number": "0017",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0017"
     },
     {
-      "anchor": "unfccc-ccnucc-3",
       "id": "S-0018",
-      "title": "UNFCCC/CCNUCC"
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-3",
+      "section_number": "0018",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0018"
     },
     {
-      "anchor": "eb-31-3",
       "id": "S-0019",
-      "title": "EB 31"
+      "title": "EB 31",
+      "anchor": "eb-31-3",
+      "section_number": "0019",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0019"
     },
     {
-      "anchor": "the-emission-reduction-achieved-by-the-project-activity-can-be-estimated-ex-ante-in-the",
       "id": "S-0020",
-      "title": "The emission reduction achieved by the project activity can be estimated ex-ante in the"
+      "title": "The emission reduction achieved by the project activity can be estimated ex-ante in the",
+      "anchor": "the-emission-reduction-achieved-by-the-project-activity-can-be-estimated-ex-ante-in-the",
+      "section_number": "0020",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0020"
     },
     {
-      "anchor": "the-method-for-integration-of-the-terms-in-equation-above-to-obtain-the-results-for-one-year",
       "id": "S-0021",
-      "title": "The method for integration of the terms in equation above to obtain the results for one year"
+      "title": "The method for integration of the terms in equation above to obtain the results for one year",
+      "anchor": "the-method-for-integration-of-the-terms-in-equation-above-to-obtain-the-results-for-one-year",
+      "section_number": "0021",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0021"
     },
     {
-      "anchor": "flow-meters-sampling-devices-and-gas-analysers-shall-be-subject-to-regular-maintenance",
       "id": "S-0022",
-      "title": "Flow meters, sampling devices and gas analysers shall be subject to regular maintenance,"
+      "title": "Flow meters, sampling devices and gas analysers shall be subject to regular maintenance,",
+      "anchor": "flow-meters-sampling-devices-and-gas-analysers-shall-be-subject-to-regular-maintenance",
+      "section_number": "0022",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0022"
     },
     {
-      "anchor": "the-proper-soil-application-not-resulting-in-methane-emissions-of-the-final-sludge-must-be",
       "id": "S-0023",
-      "title": "The proper soil application (not resulting in methane emissions) of the final sludge must be"
+      "title": "The proper soil application (not resulting in methane emissions) of the final sludge must be",
+      "anchor": "the-proper-soil-application-not-resulting-in-methane-emissions-of-the-final-sludge-must-be",
+      "section_number": "0023",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0023"
     },
     {
-      "anchor": "the-monitoring-plan-should-include-on-site-inspections-for-each-individual-farm-included",
       "id": "S-0024",
-      "title": "The monitoring plan should include on site inspections for each individual farm included"
+      "title": "The monitoring plan should include on site inspections for each individual farm included",
+      "anchor": "the-monitoring-plan-should-include-on-site-inspections-for-each-individual-farm-included",
+      "section_number": "0024",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v21-0.S-0024"
     }
   ]
 }

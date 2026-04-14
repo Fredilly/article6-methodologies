@@ -213,6 +213,7 @@ node scripts/check-quality-gates.js ingest-quality-gates.yml
 - Idempotency includes `methodologies/**/previous/**` (and the corresponding `tools/**/previous/**` pointers) — previous versions are part of the deterministic contract.
 - Current canonical `META.json` lineage for previous-version-aware families must include archived predecessors discoverable under `methodologies/**/previous/**`, not just concurrently canonical directories.
 - Validations must include previous outputs via the existing globs (`methodologies/**/...`) and offline validation where enabled in CI.
+- Canonical lean artifacts (`rules.json`, `sections.json`) must emit one shared field contract across active and previous methodologies: stable IDs, section anchors/numbers, deterministic key order, and no duplicate `text` shadowing `title`. Any non-lean rich-shape exception must be declared explicitly rather than inferred from whatever a method happens to emit.
 - Canonical reference gates (with previous):
   - `bash scripts/ci-idempotency-agriculture.sh`
   - `bash scripts/ci-idempotency-forestry.sh`

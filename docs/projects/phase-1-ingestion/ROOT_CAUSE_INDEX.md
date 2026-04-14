@@ -15,3 +15,4 @@ Generated from root-cause entry files under `docs/projects/phase-1-ingestion/roo
 | RC-20260331-235111 | 2026-03-31 | RC4 upstream monitoring-report canon ownership (tags: schema, determinism, ci, agriculture) | [RC-20260331-235111](root-causes/RC-20260331-235111.md) |
 | RC-20260403-142107 | 2026-04-03 | AR-ACM0003 RC-S5 lineage allowlist gap and RC-S6 expected-evidence proving support (tags: forestry, determinism, schema, ci) | [RC-20260403-142107](root-causes/RC-20260403-142107.md) |
 | RC-20260403-221045 | 2026-04-03 | Forestry archived lineage follow-up and redundant rich-rule display suppression (tags: forestry, determinism, schema) | [RC-20260403-221045](root-causes/RC-20260403-221045.md) |
+| RC-20260414-060135 | 2026-04-14 | Canonical lean artifact drift (tags: schema, determinism, ci, agriculture, forestry) | [RC-20260414-060135](root-causes/RC-20260414-060135.md) |
