@@ -1,4 +1,5 @@
 #!/bin/bash
+# task-queue test
 # Local validation - run before pushing to catch CI failures
 set -e
 cd "$(dirname "$0")"
