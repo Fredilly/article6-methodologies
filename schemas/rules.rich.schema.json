@@ -387,10 +387,21 @@
       }
     },
     "required": [
-      "id",
-      "type",
-      "refs",
-      "summary"
+      "id"
+    ],
+    "anyOf": [
+      {
+        "required": [
+          "type",
+          "refs",
+          "summary"
+        ]
+      },
+      {
+        "required": [
+          "stable_id"
+        ]
+      }
     ],
     "type": "object"
   },
