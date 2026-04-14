@@ -136,9 +136,9 @@ function verifyMethodInfoNormalization() {
   const symlinkInfo = getMethodInfo(viaSymlinkedTmp);
 
   assert.equal(activeInfo.methodologyId, 'UNFCCC.Agriculture.ACM0010.v03-0');
-  assert.equal(previousInfo.methodologyId, activeInfo.methodologyId);
+  assert.equal(previousInfo.methodologyId, 'UNFCCC.Agriculture.ACM0010.v01-0');
   assert.equal(symlinkInfo.methodologyId, activeInfo.methodologyId);
-  assert.equal(previousInfo.relPath, 'UNFCCC/Agriculture/ACM0010/v03-0');
+  assert.equal(previousInfo.relPath, 'UNFCCC/Agriculture/ACM0010/v01-0');
 }
 
 function main() {
