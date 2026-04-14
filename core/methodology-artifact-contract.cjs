@@ -2,9 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const METHODOLOGIES_ROOT = fs.realpathSync.native
-  ? fs.realpathSync.native(path.join(ROOT, 'methodologies'))
-  : fs.realpathSync(path.join(ROOT, 'methodologies'));
+const METHODOLOGIES_ROOT = path.join(ROOT, 'methodologies');
 
 const RULE_KEY_ORDER = [
   'id',
@@ -16,7 +14,6 @@ const RULE_KEY_ORDER = [
   'section_number',
   'section_stable_id',
   'tools',
-  'expectedEvidence',
   'tags',
   'when'
 ];
@@ -30,29 +27,12 @@ const SECTION_KEY_ORDER = [
   'pages'
 ];
 
-function realpathMaybe(inputPath) {
-  try {
-    return fs.realpathSync.native ? fs.realpathSync.native(inputPath) : fs.realpathSync(inputPath);
-  } catch {
-    return path.resolve(inputPath);
-  }
-}
-
-function relativeMethodSegments(methodDir) {
-  const rel = path.relative(METHODOLOGIES_ROOT, realpathMaybe(methodDir));
-  const segments = rel.split(path.sep).filter(Boolean);
-  if (segments.length >= 6 && segments[4] === 'previous') {
-    return [...segments.slice(0, 3), segments[5]];
-  }
-  return segments;
-}
-
 function toRelativeMethodDir(methodDir) {
-  return relativeMethodSegments(methodDir).join('/');
+  return path.relative(METHODOLOGIES_ROOT, methodDir).split(path.sep).join('/');
 }
 
 function getMethodInfo(methodDir) {
-  const rel = relativeMethodSegments(methodDir);
+  const rel = path.relative(METHODOLOGIES_ROOT, methodDir).split(path.sep);
   if (rel.length < 4) {
     throw new Error(`Bad methodology directory: ${methodDir}`);
   }
@@ -89,14 +69,6 @@ function buildStableId(info, localId) {
   return `${info.methodologyId}.${localId}`;
 }
 
-function canonicalStableIdOrUndefined(value, expectedPrefix) {
-  if (typeof value !== 'string') return undefined;
-  const trimmed = value.trim();
-  if (!trimmed) return undefined;
-  if (!expectedPrefix) return trimmed;
-  return trimmed.startsWith(`${expectedPrefix}.`) ? trimmed : undefined;
-}
-
 function sanitizeStringArray(values, { sort = false } = {}) {
   if (!Array.isArray(values)) return undefined;
   const filtered = values
@@ -105,19 +77,6 @@ function sanitizeStringArray(values, { sort = false } = {}) {
   if (!filtered.length) return undefined;
   const unique = Array.from(new Set(filtered));
   return sort ? unique.sort((a, b) => a.localeCompare(b)) : unique;
-}
-
-function leanExpectedEvidenceProjectionEnabled(info) {
-  return info.relPath === 'UNFCCC/Forestry/AR-ACM0003/v02-0';
-}
-
-function deriveLeanExpectedEvidenceFromRich(rule, info) {
-  if (!leanExpectedEvidenceProjectionEnabled(info)) return undefined;
-  const evidenceItems = rule.requirement_coverage?.expected_evidence;
-  if (!Array.isArray(evidenceItems)) return undefined;
-  return sanitizeStringArray(
-    evidenceItems.map((item) => (item && typeof item.id === 'string' ? item.id : ''))
-  );
 }
 
 function orderKeys(value, keyOrder) {
@@ -138,8 +97,9 @@ function canonicalizeLeanSection(section, info) {
     section_number: typeof section.section_number === 'string' && section.section_number.trim()
       ? section.section_number.trim()
       : sectionNumberFromId(section.id),
-    stable_id: canonicalStableIdOrUndefined(section.stable_id, info.methodologyId)
-      || buildStableId(info, String(section.id)),
+    stable_id: typeof section.stable_id === 'string' && section.stable_id.trim()
+      ? section.stable_id.trim()
+      : buildStableId(info, String(section.id)),
     pages: Array.isArray(section.pages) && section.pages.length ? section.pages.slice() : undefined
   };
   return orderKeys(canonical, SECTION_KEY_ORDER);
@@ -162,8 +122,9 @@ function canonicalizeLeanRuleFromLegacyRich(rule, sectionLookup, info) {
   const tools = sanitizeStringArray(rule.refs?.tools, { sort: true }) || [info.methodologyRef];
   const canonical = {
     id: localId,
-    stable_id: canonicalStableIdOrUndefined(rule.stable_id, info.methodologyId)
-      || buildStableId(info, localId),
+    stable_id: typeof rule.stable_id === 'string' && rule.stable_id.trim()
+      ? rule.stable_id.trim()
+      : buildStableId(info, localId),
     title: typeof title === 'string' && title.trim()
       ? title.trim()
       : undefined,
@@ -171,10 +132,8 @@ function canonicalizeLeanRuleFromLegacyRich(rule, sectionLookup, info) {
     section_anchor: rule.refs?.section_anchor ?? section.anchor,
     section_id: sectionId,
     section_number: rule.refs?.section_number ?? section.section_number,
-    section_stable_id: canonicalStableIdOrUndefined(rule.refs?.section_stable_id, info.methodologyId)
-      || section.stable_id,
+    section_stable_id: rule.refs?.section_stable_id ?? section.stable_id,
     tools,
-    expectedEvidence: deriveLeanExpectedEvidenceFromRich(rule, info),
     tags,
     when: sanitizeStringArray(rule.when)
   };
@@ -188,8 +147,9 @@ function canonicalizeLeanRuleFromLean(rule, sectionLookup, info) {
   const tools = sanitizeStringArray(rule.tools, { sort: true }) || [info.methodologyRef];
   const canonical = {
     id: String(rule.id),
-    stable_id: canonicalStableIdOrUndefined(rule.stable_id, info.methodologyId)
-      || buildStableId(info, String(rule.id)),
+    stable_id: typeof rule.stable_id === 'string' && rule.stable_id.trim()
+      ? rule.stable_id.trim()
+      : buildStableId(info, String(rule.id)),
     title: typeof title === 'string' && title.trim() ? title.trim() : undefined,
     logic: typeof rule.logic === 'string' ? rule.logic : undefined,
     section_anchor: typeof rule.section_anchor === 'string' && rule.section_anchor.trim()
@@ -199,10 +159,10 @@ function canonicalizeLeanRuleFromLean(rule, sectionLookup, info) {
     section_number: typeof rule.section_number === 'string' && rule.section_number.trim()
       ? rule.section_number.trim()
       : section.section_number,
-    section_stable_id: canonicalStableIdOrUndefined(rule.section_stable_id, info.methodologyId)
-      || section.stable_id,
+    section_stable_id: typeof rule.section_stable_id === 'string' && rule.section_stable_id.trim()
+      ? rule.section_stable_id.trim()
+      : section.stable_id,
     tools,
-    expectedEvidence: sanitizeStringArray(rule.expectedEvidence),
     tags: sanitizeStringArray(rule.tags, { sort: true }),
     when: sanitizeStringArray(rule.when)
   };
@@ -253,13 +213,10 @@ module.exports = {
   canonicalizeLeanRuleFromLegacyRich,
   canonicalizeLeanSection,
   classifyRulesRichMode,
-  deriveLeanExpectedEvidenceFromRich,
   getMethodInfo,
-  leanExpectedEvidenceProjectionEnabled,
   listMethodDirs,
   localRuleIdFromLegacyRichId,
   sanitizeStringArray,
-  canonicalStableIdOrUndefined,
   sectionNumberFromId,
   slugify,
   toRelativeMethodDir

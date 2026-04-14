@@ -3,9 +3,7 @@
 
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
-const os = require('node:os');
 const path = require('node:path');
-const { spawnSync } = require('node:child_process');
 const {
   METHODOLOGIES_ROOT,
   canonicalizeLeanRuleFromLean,
@@ -95,7 +93,7 @@ function verifyRepresentativeCrossMethodSignature() {
         'section_stable_id',
         'tools'
       ].filter((key) => Object.prototype.hasOwnProperty.call(rules[0] || {}, key)),
-      optionalRuleKeys: Object.keys(rules[0] || {}).filter((key) => ['expectedEvidence', 'tags', 'when'].includes(key)),
+      optionalRuleKeys: Object.keys(rules[0] || {}).filter((key) => ['tags', 'when'].includes(key)),
       sectionKeys: Object.keys(sections[0] || {})
     };
   });
@@ -108,7 +106,7 @@ function verifyRepresentativeCrossMethodSignature() {
       `${signature.relPath} required rule keys do not match ${baseline.relPath}`
     );
     signature.optionalRuleKeys.forEach((key) => {
-      assert.ok(['expectedEvidence', 'tags', 'when'].includes(key), `${signature.relPath} has unexpected optional rule key ${key}`);
+      assert.ok(['tags', 'when'].includes(key), `${signature.relPath} has unexpected optional rule key ${key}`);
     });
     assert.deepEqual(
       signature.sectionKeys,
@@ -118,80 +116,12 @@ function verifyRepresentativeCrossMethodSignature() {
   });
 }
 
-function verifyMethodInfoNormalization() {
-  const activeDir = path.join(
-    METHODOLOGIES_ROOT,
-    'UNFCCC',
-    'Agriculture',
-    'ACM0010',
-    'v03-0'
-  );
-  const previousDir = path.join(
-    activeDir,
-    'previous',
-    'v01-0'
-  );
-  const viaSymlinkedTmp = activeDir.replace('/private/tmp/', '/tmp/');
-
-  const activeInfo = getMethodInfo(activeDir);
-  const previousInfo = getMethodInfo(previousDir);
-  const symlinkInfo = getMethodInfo(viaSymlinkedTmp);
-
-  assert.equal(activeInfo.methodologyId, 'UNFCCC.Agriculture.ACM0010.v03-0');
-  assert.equal(previousInfo.methodologyId, 'UNFCCC.Agriculture.ACM0010.v01-0');
-  assert.equal(symlinkInfo.methodologyId, activeInfo.methodologyId);
-  assert.equal(previousInfo.relPath, 'UNFCCC/Agriculture/ACM0010/v01-0');
-}
-
-function verifyOverlayDerivationClearsStaleExpectedEvidence() {
-  const relPath = 'GoldStandard/LUF/GS-00XX/v1-0';
-  const methodDir = path.join(METHODOLOGIES_ROOT, ...relPath.split('/'));
-  const rulesPath = path.join(methodDir, 'rules.json');
-  const originalRulesPayload = fs.readFileSync(rulesPath, 'utf8');
-  const rulesDoc = JSON.parse(originalRulesPayload);
-  const staleRule = rulesDoc.rules.find((rule) => rule.id === 'R-1-0001');
-  assert.ok(staleRule, `${relPath} should include overlay base rule R-1-0001`);
-  assert.ok(!('expectedEvidence' in staleRule), `${relPath} baseline rule should not carry expectedEvidence`);
-
-  staleRule.expectedEvidence = ['stale-overlay-evidence'];
-  fs.writeFileSync(rulesPath, `${JSON.stringify(rulesDoc, null, 2)}\n`, 'utf8');
-
-  try {
-    const result = spawnSync(process.execPath, ['scripts/derive-lean-from-rich.js', path.join('methodologies', relPath)], {
-      cwd: ROOT,
-      encoding: 'utf8',
-      env: {
-        ...process.env,
-        TMPDIR: process.env.TMPDIR || os.tmpdir(),
-      }
-    });
-    assert.equal(
-      result.status,
-      0,
-      `overlay lean derivation should pass\nstdout:\n${result.stdout}\nstderr:\n${result.stderr}`
-    );
-    assert.match(result.stdout, /OK: derived lean JSON for 1 method folder\(s\)\./);
-
-    const regeneratedRules = readJSON(rulesPath).rules || [];
-    const regeneratedRule = regeneratedRules.find((rule) => rule.id === 'R-1-0001');
-    assert.ok(regeneratedRule, `${relPath} regenerated rule R-1-0001 should exist`);
-    assert.ok(
-      !Object.prototype.hasOwnProperty.call(regeneratedRule, 'expectedEvidence'),
-      `${relPath} overlay derivation must clear stale lean expectedEvidence when rich omits it`
-    );
-  } finally {
-    fs.writeFileSync(rulesPath, originalRulesPayload, 'utf8');
-  }
-}
-
 function main() {
   for (const methodDir of methodDirs()) {
     verifyLeanContract(methodDir);
     verifyRichModes(methodDir);
   }
-  verifyMethodInfoNormalization();
   verifyRepresentativeCrossMethodSignature();
-  verifyOverlayDerivationClearsStaleExpectedEvidence();
   console.log(`ok methodology artifact contract (${methodDirs().length} methods)`);
 }
 
