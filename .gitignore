@@ -38,3 +38,10 @@ drafts/
 artifacts/
 
 .article6/workstate.json
+
+!source-assets/GoldStandard/
+source-assets/GoldStandard/*
+!source-assets/GoldStandard/LUF/
+source-assets/GoldStandard/LUF/*
+!source-assets/GoldStandard/LUF/GS-00XX/
+source-assets/GoldStandard/LUF/GS-00XX/*

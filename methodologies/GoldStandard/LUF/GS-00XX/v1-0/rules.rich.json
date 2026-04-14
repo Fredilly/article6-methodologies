@@ -1,1 +1,574 @@
-[]
+[
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-1-0001",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-1-0001",
+    "summary": "LUF pathway to certification",
+    "logic": "The LUF Requirements function as part of a pathway to certification within Gold Standard for the Global Goals, enabling eligible forestry and agriculture activities to undergo Design and Performance Certification.",
+    "notes": "See GS LUF v1.2.1 Section 1.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-1",
+      "section_anchor": "scope-and-applicability",
+      "section_number": "1",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-1",
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-1-0002",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-1-0002",
+    "summary": "Conjunction with P&R and Product Requirements",
+    "logic": "LUF Projects shall apply these Requirements in conjunction with the Principles & Requirements and GHG Emissions Reduction & Sequestration Product Requirements to issue GS VERs.",
+    "notes": "See GS LUF v1.2.1 Section 1.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-1",
+      "section_anchor": "scope-and-applicability",
+      "section_number": "1",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-1",
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0001",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0001",
+    "summary": "A/R activity types",
+    "logic": "A/R projects can include: planting trees, single-species plantations, all silvicultural systems (conservation forests, selective harvesting, rotation forestry), and agriculture (agroforestry) or pasture (silvopasture).",
+    "notes": "See GS LUF v1.2.1 Section 2.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-2",
+      "section_anchor": "general-eligibility-criteria",
+      "section_number": "2",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+      "sections": [
+        "S-2"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0002",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0002",
+    "summary": "AGR activity types",
+    "logic": "AGR projects include eligible activities covered by an approved Gold Standard SDG Impact Quantification methodology.",
+    "notes": "See GS LUF v1.2.1 Section 2.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-2",
+      "section_anchor": "general-eligibility-criteria",
+      "section_number": "2",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+      "sections": [
+        "S-2"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0003",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0003",
+    "summary": "FSC dual certification",
+    "logic": "AGR projects shall hold FSC certification valid throughout the crediting period.",
+    "notes": "See GS LUF v1.2.1 Section 2.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-2",
+      "section_anchor": "general-eligibility-criteria",
+      "section_number": "2",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+      "sections": [
+        "S-2"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0004",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0004",
+    "summary": "A/R secured titles",
+    "logic": "Project Developer shall: own CO2 user rights, hold uncontested legal land title, own timber/non-timber forest product rights, hold all necessary permits.",
+    "notes": "See GS LUF v1.2.1 Section 2.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-2",
+      "section_anchor": "general-eligibility-criteria",
+      "section_number": "2",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+      "sections": [
+        "S-2"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0005",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0005",
+    "summary": "AGR secured titles - developer on behalf",
+    "logic": "Where PD acts on behalf: each participant signs agreement confirming CO2 user rights passed to PD, rights to implement activities, uncontested land title.",
+    "notes": "See GS LUF v1.2.1 Section 2.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-2",
+      "section_anchor": "general-eligibility-criteria",
+      "section_number": "2",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+      "sections": [
+        "S-2"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0006",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0006",
+    "summary": "AGR secured titles - developer acts alone",
+    "logic": "Where PD acts alone: PD holds CO2 user rights, rights to implement activities, uncontested land title.",
+    "notes": "See GS LUF v1.2.1 Section 2.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-2",
+      "section_anchor": "general-eligibility-criteria",
+      "section_number": "2",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+      "sections": [
+        "S-2"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0007",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0007",
+    "summary": "New area addition",
+    "logic": "New areas added after Registered status via Design Certification process. VVB site visit and opinion required.",
+    "notes": "See GS LUF v1.2.1 Section 2.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-2",
+      "section_anchor": "general-eligibility-criteria",
+      "section_number": "2",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+      "sections": [
+        "S-2"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0008",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0008",
+    "summary": "Double counting prevention",
+    "logic": "If host country accounts for land-based activities nationally, projects must conform to GHG Product Requirements Annex A Double Counting.",
+    "notes": "See GS LUF v1.2.1 Section 2.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-2",
+      "section_anchor": "general-eligibility-criteria",
+      "section_number": "2",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+      "sections": [
+        "S-2"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0001",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0001",
+    "summary": "Climate resilience - AGR",
+    "logic": "Preserving adaptive capacity integral to every AGR project. Demonstrated via training, knowledge sharing, livelihood diversification, soil fertility improvement.",
+    "notes": "See GS LUF v1.2.1 Section 3.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-3",
+      "section_anchor": "eligibility-principles",
+      "section_number": "3",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "sections": [
+        "S-3"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0002",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0002",
+    "summary": "Safeguarding assessment",
+    "logic": "PD conducts Safeguarding Principles assessment per Risks & Capacities Guideline. Submitted Preliminary Review, updated for Design and Performance Certification.",
+    "notes": "See GS LUF v1.2.1 Section 3.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-3",
+      "section_anchor": "eligibility-principles",
+      "section_number": "3",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "sections": [
+        "S-3"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0003",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0003",
+    "summary": "10% biodiversity protection",
+    "logic": "Minimum 10% of total Project Area for biodiversity protection following HCV approach: native tree patches, solitary stems, endangered species habitats, connectivity areas.",
+    "notes": "See GS LUF v1.2.1 Section 3.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-3",
+      "section_anchor": "eligibility-principles",
+      "section_number": "3",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "sections": [
+        "S-3"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0004",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0004",
+    "summary": "Water body buffer zone",
+    "logic": "15-meter buffer on both sides of water bodies. In buffer: keep native trees, no fertilizer/pesticides, no logging, no heavy machinery, no cropping. Planted trees must be native.",
+    "notes": "See GS LUF v1.2.1 Section 3.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-3",
+      "section_anchor": "eligibility-principles",
+      "section_number": "3",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "sections": [
+        "S-3"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0005",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0005",
+    "summary": "Stakeholder consultation timing",
+    "logic": "Stakeholder Consultation before project start date. Refer to Stakeholder Consultation Engagement Requirements.",
+    "notes": "See GS LUF v1.2.1 Section 3.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-3",
+      "section_anchor": "eligibility-principles",
+      "section_number": "3",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "sections": [
+        "S-3"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0006",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0006",
+    "summary": "Verification frequency",
+    "logic": "AGR: first within 2 years. A/R: every 5 years. All: crediting renewal every 5th year with baseline update.",
+    "notes": "See GS LUF v1.2.1 Section 3.",
+    "type": "monitoring",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-3",
+      "section_anchor": "eligibility-principles",
+      "section_number": "3",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "sections": [
+        "S-3"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0007",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0007",
+    "summary": "Additionality - CDM tool A/R",
+    "logic": "Option 1: Apply A/R CDM Combined tool for baseline and additionality. CDM terms interpreted in Gold Standard context.",
+    "notes": "See GS LUF v1.2.1 Section 3.",
+    "type": "calc",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-3",
+      "section_anchor": "eligibility-principles",
+      "section_number": "3",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "sections": [
+        "S-3"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0008",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0008",
+    "summary": "Additionality - CDM tool AGR",
+    "logic": "Option 1: Apply CDM standardized baselines guidelines or Combined tool.",
+    "notes": "See GS LUF v1.2.1 Section 3.",
+    "type": "calc",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-3",
+      "section_anchor": "eligibility-principles",
+      "section_number": "3",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "sections": [
+        "S-3"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0009",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0009",
+    "summary": "Additionality - positive list A/R",
+    "logic": "Option 2: Must meet LDC/low HDI, not mandatory, degraded land, plus one of: native species, community benefit, 5+ species in 50%+ area, HDI<0.5 or SIDS.",
+    "notes": "See GS LUF v1.2.1 Section 3.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-3",
+      "section_anchor": "eligibility-principles",
+      "section_number": "3",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "sections": [
+        "S-3"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0010",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0010",
+    "summary": "Additionality - positive list AGR",
+    "logic": "Option 2: HDI<=0.7, not mandatory/enforced, plus one of: <600mm rain, 5+ native crop species, smallholder <5% adoption, HDI<0.5 or SIDS.",
+    "notes": "See GS LUF v1.2.1 Section 3.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-3",
+      "section_anchor": "eligibility-principles",
+      "section_number": "3",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "sections": [
+        "S-3"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0011",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0011",
+    "summary": "Retroactive issuance limit",
+    "logic": "Maximum 3 years retroactive, from Project Start Date or 3 years before Design Certification, whichever is later.",
+    "notes": "See GS LUF v1.2.1 Section 3.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-3",
+      "section_anchor": "eligibility-principles",
+      "section_number": "3",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "sections": [
+        "S-3"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-4-0001",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-4-0001",
+    "summary": "GIS vector layers",
+    "logic": "All projects submit GIS layers: Project Region, Project Area, Eligible Areas, Modelling Units, Infrastructure, Land use, Water bodies, Carbon pools.",
+    "notes": "See GS LUF v1.2.1 Section 4.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-4",
+      "section_anchor": "technical-requirements",
+      "section_number": "4",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-4",
+      "sections": [
+        "S-4"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-4-0002",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-4-0002",
+    "summary": "GPS and mapping",
+    "logic": "A/R: 1 GPS per 5ha with hand-drawn map. AGR: 1 GPS per participant with map. Protected areas via UNESCO/national park maps.",
+    "notes": "See GS LUF v1.2.1 Section 4.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-4",
+      "section_anchor": "technical-requirements",
+      "section_number": "4",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-4",
+      "sections": [
+        "S-4"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-5-0001",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-5-0001",
+    "summary": "Uncertainty target",
+    "logic": "Target precision: 20% of mean at 90% confidence level for all GHG estimates.",
+    "notes": "See GS LUF v1.2.1 Section A.",
+    "type": "uncertainty",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-5",
+      "section_anchor": "uncertainty",
+      "section_number": "A",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-5",
+      "sections": [
+        "S-5"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-5-0002",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-5-0002",
+    "summary": "Three uncertainty approaches",
+    "logic": "Approach 1: on-site measurements. Approach 2: peer-reviewed literature. Approach 3: default factors with deduction if threshold not met.",
+    "notes": "See GS LUF v1.2.1 Section A.",
+    "type": "eligibility",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-5",
+      "section_anchor": "uncertainty",
+      "section_number": "A",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-5",
+      "sections": [
+        "S-5"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  },
+  {
+    "id": "GoldStandard.LUF.GS-00XX.v1-0.R-5-0003",
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-5-0003",
+    "summary": "Uncertainty deduction table",
+    "logic": "If uncertainty >20%: 20-30% \u2192 50% UD, 30-40% \u2192 75% UD, 40-50% \u2192 100% UD. No credits if >50%.",
+    "notes": "See GS LUF v1.2.1 Section A.",
+    "type": "uncertainty",
+    "when": [],
+    "refs": {
+      "methodology": "GoldStandard/GS-00XX@v1-0",
+      "primary_section": "S-5",
+      "section_anchor": "uncertainty",
+      "section_number": "A",
+      "section_stable_id": "GoldStandard.LUF.GS-00XX.v1-0.S-5",
+      "sections": [
+        "S-5"
+      ],
+      "tools": [
+        "GoldStandard/GS-00XX@v1-0"
+      ]
+    }
+  }
+]
