@@ -2,146 +2,172 @@
   "rules": [
     {
       "id": "R-0001-0002",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-35",
-      "section_id": "S-0002",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0002",
+        "section_anchor": "eb-35",
+        "sections": [
+          "S-0002"
+        ]
+      }
     },
     {
       "id": "R-0001-0003",
+      "title": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at http://cdm.unfccc.int/methodologies/SSCmethodologies/approved...",
       "logic": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at http://cdm.unfccc.int/methodologies/SSCmethodologies/approved.html.",
-      "section_anchor": "type-iii-other-project-activities",
-      "section_id": "S-0003",
-      "tags": [
-        "leakage"
-      ],
-      "text": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at http://cdm.unfccc.int/methodologies/SSCmethodologies/approved...",
-      "title": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at http://cdm.unfccc.int/methodologies/SSCmethodologies/approved..."
+      "type": "leakage",
+      "refs": {
+        "primary_section": "S-0003",
+        "section_anchor": "type-iii-other-project-activities",
+        "sections": [
+          "S-0003"
+        ]
+      }
     },
     {
       "id": "R-0001-0005",
+      "title": "Systems with annual emission reduction higher than 5 tonnes of CO2e are eligible under",
       "logic": "Systems with annual emission reduction higher than 5 tonnes of CO2e are eligible under",
-      "section_anchor": "the-category-is-limited-to-measures-at-individual-households-or-small-farms-e-g",
-      "section_id": "S-0005",
-      "tags": [
-        "eligibility"
-      ],
-      "text": "Systems with annual emission reduction higher than 5 tonnes of CO2e are eligible under",
-      "title": "Systems with annual emission reduction higher than 5 tonnes of CO2e are eligible under"
+      "type": "eligibility",
+      "refs": {
+        "primary_section": "S-0005",
+        "section_anchor": "the-category-is-limited-to-measures-at-individual-households-or-small-farms-e-g",
+        "sections": [
+          "S-0005"
+        ]
+      }
     },
     {
       "id": "R-0001-0010",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-35-2",
-      "section_id": "S-0010",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0010",
+        "section_anchor": "eb-35-2",
+        "sections": [
+          "S-0010"
+        ]
+      }
     },
     {
       "id": "R-0001-0011",
+      "title": "operation of the system and the physical leakages of methane from the recovery system.",
       "logic": "operation of the system and the physical leakages of methane from the recovery system.",
-      "section_anchor": "project-emissions-consist-of-co2-emissions-from-use-of-fossil-fuels-or-electricity-for-the",
-      "section_id": "S-0011",
-      "tags": [
-        "leakage"
-      ],
-      "text": "operation of the system and the physical leakages of methane from the recovery system.",
-      "title": "operation of the system and the physical leakages of methane from the recovery system."
+      "type": "leakage",
+      "refs": {
+        "primary_section": "S-0011",
+        "section_anchor": "project-emissions-consist-of-co2-emissions-from-use-of-fossil-fuels-or-electricity-for-the",
+        "sections": [
+          "S-0011"
+        ]
+      }
     },
     {
       "id": "R-0001-0012",
+      "title": "Baseline emissions (BEy) are calculated ex ante using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC tier 2 approach (please refer to the chapter ‘...",
       "logic": "Baseline emissions (BEy) are calculated ex ante using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC tier 2 approach (please refer to the chapter ‘Emissions from Livestock and Manure Management’ under the volume ‘Agriculture, Forestry and other Land use’ of the",
-      "section_anchor": "the-baseline-scenario-is-the-situation-where-in-the-absence-of-the-project-activity-biomass",
-      "section_id": "S-0012",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Baseline emissions (BEy) are calculated ex ante using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC tier 2 approach (please refer to the chapter ‘...",
-      "title": "Baseline emissions (BEy) are calculated ex ante using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC tier 2 approach (please refer to the chapter ‘..."
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0012",
+        "section_anchor": "the-baseline-scenario-is-the-situation-where-in-the-absence-of-the-project-activity-biomass",
+        "sections": [
+          "S-0012"
+        ]
+      }
     },
     {
       "id": "R-0001-0014",
+      "title": "The survey should determine the baseline animal manure management practices applied.",
       "logic": "The survey should determine the baseline animal manure management practices applied.",
-      "section_anchor": "the-amount-of-waste-or-raw-materials-that-would-decay-anaerobically-in-the-absence-of-the",
-      "section_id": "S-0014",
-      "tags": [
-        "parameter"
-      ],
-      "text": "The survey should determine the baseline animal manure management practices applied.",
-      "title": "The survey should determine the baseline animal manure management practices applied."
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0014",
+        "section_anchor": "the-amount-of-waste-or-raw-materials-that-would-decay-anaerobically-in-the-absence-of-the",
+        "sections": [
+          "S-0014"
+        ]
+      }
     },
     {
       "id": "R-0001-0016",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-35-3",
-      "section_id": "S-0016",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0016",
+        "section_anchor": "eb-35-3",
+        "sections": [
+          "S-0016"
+        ]
+      }
     },
     {
       "id": "R-0001-0017",
+      "title": "if the existing equipment is transferred to another activity, leakage is to be considered.",
       "logic": "if the existing equipment is transferred to another activity, leakage is to be considered.",
-      "section_anchor": "if-the-methane-recovery-and-combustion-equipment-is-transferred-from-another-activity-or",
-      "section_id": "S-0017",
-      "tags": [
-        "leakage"
-      ],
-      "text": "if the existing equipment is transferred to another activity, leakage is to be considered.",
-      "title": "if the existing equipment is transferred to another activity, leakage is to be considered."
+      "type": "leakage",
+      "refs": {
+        "primary_section": "S-0017",
+        "section_anchor": "if-the-methane-recovery-and-combustion-equipment-is-transferred-from-another-activity-or",
+        "sections": [
+          "S-0017"
+        ]
+      }
     },
     {
       "id": "R-0001-0019",
+      "title": "ERy, = BEy – PEy - Leakage (2)",
       "logic": "ERy, = BEy – PEy - Leakage (2)",
-      "section_anchor": "the-emission-reduction-achieved-by-the-project-activity-are-calculated-by",
-      "section_id": "S-0019",
-      "tags": [
-        "leakage"
-      ],
-      "text": "ERy, = BEy – PEy - Leakage (2)",
-      "title": "ERy, = BEy – PEy - Leakage (2)"
+      "type": "leakage",
+      "refs": {
+        "primary_section": "S-0019",
+        "section_anchor": "the-emission-reduction-achieved-by-the-project-activity-are-calculated-by",
+        "sections": [
+          "S-0019"
+        ]
+      }
     },
     {
       "id": "R-0001-0020",
+      "title": "of the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an independent monitoring of scrapping of replaced equipment needs to be implemented.",
       "logic": "of the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an independent monitoring of scrapping of replaced equipment needs to be implemented.",
-      "section_anchor": "in-case-the-project-activity-involves-the-replacement-of-equipment-and-the-leakage-effect",
-      "section_id": "S-0020",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "of the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an independent monitoring of scrapping of replaced equipment needs to be implemented.",
-      "title": "of the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an independent monitoring of scrapping of replaced equipment needs to be implemented."
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0020",
+        "section_anchor": "in-case-the-project-activity-involves-the-replacement-of-equipment-and-the-leakage-effect",
+        "sections": [
+          "S-0020"
+        ]
+      }
     },
     {
       "id": "R-0002-0020",
+      "title": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other.",
       "logic": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other.",
-      "section_anchor": "in-case-the-project-activity-involves-the-replacement-of-equipment-and-the-leakage-effect",
-      "section_id": "S-0020",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other.",
-      "title": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other."
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0020",
+        "section_anchor": "in-case-the-project-activity-involves-the-replacement-of-equipment-and-the-leakage-effect",
+        "sections": [
+          "S-0020"
+        ]
+      }
     },
     {
       "id": "R-0001-0022",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-35-4",
-      "section_id": "S-0022",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0022",
+        "section_anchor": "eb-35-4",
+        "sections": [
+          "S-0022"
+        ]
+      }
     }
   ]
 }

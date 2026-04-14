@@ -2,115 +2,185 @@
   "rules": [
     {
       "id": "R-0001-0002",
-      "section_id": "S-0002",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0002",
+        "section_anchor": "eb-60",
+        "sections": [
+          "S-0002"
+        ]
+      }
     },
     {
       "id": "R-0001-0003",
-      "section_id": "S-0003",
-      "tags": [
-        "leakage"
-      ],
-      "text": "Project participants shall apply the general guidelines to SSC CDM methodologies, information on additionality (attachment A to Appendix B) and general guidance on leakage in biomass project activities (attachment C to Appendix B) provid..."
+      "title": "Project participants shall apply the general guidelines to SSC CDM methodologies, information on additionality (attachment A to Appendix B) and general guidance on leakage in biomass project activities (attachment C to Appendix B) provid...",
+      "logic": "Project participants shall apply the general guidelines to SSC CDM methodologies, information on additionality (attachment A to Appendix B) and general guidance on leakage in biomass project activities (attachment C to Appendix B) provided at <http://cdm.unfccc.int/methodologies/SSCmethodologies/approved.html> mutatis mutandis.",
+      "type": "leakage",
+      "refs": {
+        "primary_section": "S-0003",
+        "section_anchor": "type-iii-other-project-activities",
+        "sections": [
+          "S-0003"
+        ]
+      }
     },
     {
       "id": "R-0001-0006",
-      "section_id": "S-0006",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0006",
+        "section_anchor": "eb-60-2",
+        "sections": [
+          "S-0006"
+        ]
+      }
     },
     {
       "id": "R-0001-0008",
-      "section_id": "S-0008",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0008",
+        "section_anchor": "eb-60-3",
+        "sections": [
+          "S-0008"
+        ]
+      }
     },
     {
       "id": "R-0001-0018",
-      "section_id": "S-0018",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0018",
+        "section_anchor": "eb-60-4",
+        "sections": [
+          "S-0018"
+        ]
+      }
     },
     {
       "id": "R-0001-0020",
-      "section_id": "S-0020",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0020",
+        "section_anchor": "eb-60-5",
+        "sections": [
+          "S-0020"
+        ]
+      }
     },
     {
       "id": "R-0001-0022",
-      "section_id": "S-0022",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0022",
+        "section_anchor": "eb-60-6",
+        "sections": [
+          "S-0022"
+        ]
+      }
     },
     {
       "id": "R-0001-0024",
-      "section_id": "S-0024",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0024",
+        "section_anchor": "eb-60-7",
+        "sections": [
+          "S-0024"
+        ]
+      }
     },
     {
       "id": "R-0001-0026",
-      "section_id": "S-0026",
-      "tags": [
-        "uncertainty"
-      ],
-      "text": "Should such technologies not be available, established field size measurement approaches shall be used provided that uncertainties are taken into account in a conservative manner"
+      "title": "Should such technologies not be available, established field size measurement approaches shall be used provided that uncertainties are taken into account in a conservative manner",
+      "logic": "Should such technologies not be available, established field size measurement approaches shall be used provided that uncertainties are taken into account in a conservative manner",
+      "type": "uncertainty",
+      "refs": {
+        "primary_section": "S-0026",
+        "section_anchor": "of-the-ipcc-guidelines-2",
+        "sections": [
+          "S-0026"
+        ]
+      }
     },
     {
       "id": "R-0001-0028",
-      "section_id": "S-0028",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0028",
+        "section_anchor": "eb-60-8",
+        "sections": [
+          "S-0028"
+        ]
+      }
     },
     {
       "id": "R-0001-0030",
-      "section_id": "S-0030",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0030",
+        "section_anchor": "eb-60-9",
+        "sections": [
+          "S-0030"
+        ]
+      }
     },
     {
       "id": "R-0001-0033",
-      "section_id": "S-0033",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0033",
+        "section_anchor": "eb-60-10",
+        "sections": [
+          "S-0033"
+        ]
+      }
     },
     {
       "id": "R-0001-0036",
-      "section_id": "S-0036",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0036",
+        "section_anchor": "eb-60-11",
+        "sections": [
+          "S-0036"
+        ]
+      }
     },
     {
       "id": "R-0001-0038",
-      "section_id": "S-0038",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0038",
+        "section_anchor": "eb-60-12",
+        "sections": [
+          "S-0038"
+        ]
+      }
     }
   ]
 }

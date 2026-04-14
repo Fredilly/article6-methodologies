@@ -17,14 +17,14 @@ npm run validate:lean 2>&1 | tail -3
 
 echo ""
 echo "3. Derive lean from rich..."
-node scripts/derive-lean-from-rich.js
+node scripts/derive-lean-from-rich.js --include-previous
 
 echo ""
 echo "4. Check lean drift..."
 if git diff --quiet -- methodologies/**/sections.json methodologies/**/rules.json; then
     echo "Lean drift: NONE"
 else
-    echo "Lean drift: DETECTED - run node scripts/derive-lean-from-rich.js and commit"
+    echo "Lean drift: DETECTED - run node scripts/derive-lean-from-rich.js --include-previous and commit"
     exit 1
 fi
 

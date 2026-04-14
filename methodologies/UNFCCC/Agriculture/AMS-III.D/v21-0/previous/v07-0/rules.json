@@ -2,36 +2,42 @@
   "rules": [
     {
       "id": "R-0001-0004",
+      "title": "Baseline",
       "logic": "Baseline",
-      "section_anchor": "the-project-boundary-is-the-physical-geographical-site-of-the-methane-recovery-facility",
-      "section_id": "S-0004",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Baseline",
-      "title": "Baseline"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0004",
+        "section_anchor": "the-project-boundary-is-the-physical-geographical-site-of-the-methane-recovery-facility",
+        "sections": [
+          "S-0004"
+        ]
+      }
     },
     {
       "id": "R-0001-0008",
+      "title": "Monitoring",
       "logic": "Monitoring",
-      "section_anchor": "no-leakage-calculation-is-required",
-      "section_id": "S-0008",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "Monitoring",
-      "title": "Monitoring"
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0008",
+        "section_anchor": "no-leakage-calculation-is-required",
+        "sections": [
+          "S-0008"
+        ]
+      }
     },
     {
       "id": "R-0001-0010",
+      "title": "fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
       "logic": "fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
-      "section_anchor": "regular-maintenance-should-ensure-optimal-operation-of-flares-the-flare-efficiency-defined-as-the",
-      "section_id": "S-0010",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
-      "title": "fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored."
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0010",
+        "section_anchor": "regular-maintenance-should-ensure-optimal-operation-of-flares-the-flare-efficiency-defined-as-the",
+        "sections": [
+          "S-0010"
+        ]
+      }
     }
   ]
 }

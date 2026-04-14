@@ -2,47 +2,55 @@
   "rules": [
     {
       "id": "R-0001-0004",
+      "title": "Baseline",
       "logic": "Baseline",
-      "section_anchor": "the-project-boundary-is-the-physical-geographical-site-of-the-methane-recovery-facility",
-      "section_id": "S-0004",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Baseline",
-      "title": "Baseline"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0004",
+        "section_anchor": "the-project-boundary-is-the-physical-geographical-site-of-the-methane-recovery-facility",
+        "sections": [
+          "S-0004"
+        ]
+      }
     },
     {
       "id": "R-0001-0007",
+      "title": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D.",
       "logic": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D.",
-      "section_anchor": "in-the-case-of-landfill-gas-waste-gas-waste-water-treatment-and-agro-industries-projects-if-the",
-      "section_id": "S-0007",
-      "tags": [
-        "eligibility"
-      ],
-      "text": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D.",
-      "title": "recovered methane is used for electricity generation, the project activity is also eligible under category I.D."
+      "type": "eligibility",
+      "refs": {
+        "primary_section": "S-0007",
+        "section_anchor": "in-the-case-of-landfill-gas-waste-gas-waste-water-treatment-and-agro-industries-projects-if-the",
+        "sections": [
+          "S-0007"
+        ]
+      }
     },
     {
       "id": "R-0002-0007",
+      "title": "If the recovered methane is used for heat generation it is also eligible under category I.C.",
       "logic": "If the recovered methane is used for heat generation it is also eligible under category I.C.",
-      "section_anchor": "in-the-case-of-landfill-gas-waste-gas-waste-water-treatment-and-agro-industries-projects-if-the",
-      "section_id": "S-0007",
-      "tags": [
-        "eligibility"
-      ],
-      "text": "If the recovered methane is used for heat generation it is also eligible under category I.C.",
-      "title": "If the recovered methane is used for heat generation it is also eligible under category I.C."
+      "type": "eligibility",
+      "refs": {
+        "primary_section": "S-0007",
+        "section_anchor": "in-the-case-of-landfill-gas-waste-gas-waste-water-treatment-and-agro-industries-projects-if-the",
+        "sections": [
+          "S-0007"
+        ]
+      }
     },
     {
       "id": "R-0001-0008",
+      "title": "Monitoring",
       "logic": "Monitoring",
-      "section_anchor": "no-leakage-calculation-is-required",
-      "section_id": "S-0008",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "Monitoring",
-      "title": "Monitoring"
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0008",
+        "section_anchor": "no-leakage-calculation-is-required",
+        "sections": [
+          "S-0008"
+        ]
+      }
     }
   ]
 }

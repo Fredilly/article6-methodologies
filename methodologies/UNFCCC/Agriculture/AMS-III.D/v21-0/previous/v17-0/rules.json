@@ -2,421 +2,497 @@
   "rules": [
     {
       "id": "R-0001-0002",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-58",
-      "section_id": "S-0002",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0002",
+        "section_anchor": "eb-58",
+        "sections": [
+          "S-0002"
+        ]
+      }
     },
     {
       "id": "R-0001-0004",
+      "title": "This methodology is only applicable under the following conditions: (a) The livestock population in the farm is managed under confined conditions; (b) Manure or the streams obtained after treatment are not discharged into natural water r...",
       "logic": "This methodology is only applicable under the following conditions: (a) The livestock population in the farm is managed under confined conditions; (b) Manure or the streams obtained after treatment are not discharged into natural water resources (e.g. river or estuaries), otherwise AMS-III.H “Methane recovery in wastewater treatment” shall be applied; (c) The annual average temperature of baseline site where anaerobic manure treatment facility is located is higher than 5°C; (d) In the baseline scenario the retention time of manure waste in the anaerobic treatment system is greater than one month, and in case of anaerobic lagoons in the baseline, their depths are at least 1 m; (e) No methane recovery and destruction by flaring, combustion or gainful use takes place in the baseline scenario.",
-      "section_anchor": "this-methodology-covers-project-activities-involving-the-replacement-or-modification-of",
-      "section_id": "S-0004",
-      "tags": [
-        "parameter"
-      ],
-      "text": "This methodology is only applicable under the following conditions: (a) The livestock population in the farm is managed under confined conditions; (b) Manure or the streams obtained after treatment are not discharged into natural water r...",
-      "title": "This methodology is only applicable under the following conditions: (a) The livestock population in the farm is managed under confined conditions; (b) Manure or the streams obtained after treatment are not discharged into natural water r..."
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0004",
+        "section_anchor": "this-methodology-covers-project-activities-involving-the-replacement-or-modification-of",
+        "sections": [
+          "S-0004"
+        ]
+      }
     },
     {
       "id": "R-0001-0007",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-58-2",
-      "section_id": "S-0007",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0007",
+        "section_anchor": "eb-58-2",
+        "sections": [
+          "S-0007"
+        ]
+      }
     },
     {
       "id": "R-0001-0009",
+      "title": "are also eligible for use under this methodology.",
       "logic": "are also eligible for use under this methodology.",
-      "section_anchor": "different-options-to-utilise-the-recovered-biogas-as-detailed-in-paragraph-3-of-ams-iii-h",
-      "section_id": "S-0009",
-      "tags": [
-        "eligibility"
-      ],
-      "text": "are also eligible for use under this methodology.",
-      "title": "are also eligible for use under this methodology."
+      "type": "eligibility",
+      "refs": {
+        "primary_section": "S-0009",
+        "section_anchor": "different-options-to-utilise-the-recovered-biogas-as-detailed-in-paragraph-3-of-ams-iii-h",
+        "sections": [
+          "S-0009"
+        ]
+      }
     },
     {
       "id": "R-0001-0010",
+      "title": "compared to the baseline scenario are only eligible if they comply with the related and relevant requirements in the “General Guidelines to SSC CDM methodologies”.",
       "logic": "compared to the baseline scenario are only eligible if they comply with the related and relevant requirements in the “General Guidelines to SSC CDM methodologies”.",
-      "section_anchor": "new-facilities-greenfield-projects-and-project-activities-involving-capacity-additions",
-      "section_id": "S-0010",
-      "tags": [
-        "eligibility"
-      ],
-      "text": "compared to the baseline scenario are only eligible if they comply with the related and relevant requirements in the “General Guidelines to SSC CDM methodologies”.",
-      "title": "compared to the baseline scenario are only eligible if they comply with the related and relevant requirements in the “General Guidelines to SSC CDM methodologies”."
+      "type": "eligibility",
+      "refs": {
+        "primary_section": "S-0010",
+        "section_anchor": "new-facilities-greenfield-projects-and-project-activities-involving-capacity-additions",
+        "sections": [
+          "S-0010"
+        ]
+      }
     },
     {
       "id": "R-0001-0013",
+      "title": "Baseline",
       "logic": "Baseline",
-      "section_anchor": "the-project-boundary-includes-the-physical-geographical-site-s-of",
-      "section_id": "S-0013",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Baseline",
-      "title": "Baseline"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0013",
+        "section_anchor": "the-project-boundary-includes-the-physical-geographical-site-s-of",
+        "sections": [
+          "S-0013"
+        ]
+      }
     },
     {
       "id": "R-0001-0014",
+      "title": "Baseline emissions (BEy) are calculated by using one of the following two options: (a) Using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC tier 2 ...",
       "logic": "Baseline emissions (BEy) are calculated by using one of the following two options: (a) Using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC tier 2 approach (please refer to the chapter ‘Emissions from Livestock and Manure Management’ under the volume ‘Agriculture, Forestry and other Land use’ of the 2006 IPCC Guidelines for National Greenhouse Gas Inventories).",
-      "section_anchor": "the-baseline-scenario-is-the-situation-where-in-the-absence-of-the-project-activity-animal",
-      "section_id": "S-0014",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Baseline emissions (BEy) are calculated by using one of the following two options: (a) Using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC tier 2 ...",
-      "title": "Baseline emissions (BEy) are calculated by using one of the following two options: (a) Using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC tier 2 ..."
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0014",
+        "section_anchor": "the-baseline-scenario-is-the-situation-where-in-the-absence-of-the-project-activity-animal",
+        "sections": [
+          "S-0014"
+        ]
+      }
     },
     {
       "id": "R-0002-0014",
+      "title": "For this calculation, information about the characteristics of the manure and of the management systems in the baseline is required.",
       "logic": "For this calculation, information about the characteristics of the manure and of the management systems in the baseline is required.",
-      "section_anchor": "the-baseline-scenario-is-the-situation-where-in-the-absence-of-the-project-activity-animal",
-      "section_id": "S-0014",
-      "tags": [
-        "parameter"
-      ],
-      "text": "For this calculation, information about the characteristics of the manure and of the management systems in the baseline is required.",
-      "title": "For this calculation, information about the characteristics of the manure and of the management systems in the baseline is required."
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0014",
+        "section_anchor": "the-baseline-scenario-is-the-situation-where-in-the-absence-of-the-project-activity-animal",
+        "sections": [
+          "S-0014"
+        ]
+      }
     },
     {
       "id": "R-0001-0016",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-58-3",
-      "section_id": "S-0016",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0016",
+        "section_anchor": "eb-58-3",
+        "sections": [
+          "S-0016"
+        ]
+      }
     },
     {
       "id": "R-0001-0020",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-58-4",
-      "section_id": "S-0020",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0020",
+        "section_anchor": "eb-58-4",
+        "sections": [
+          "S-0020"
+        ]
+      }
     },
     {
       "id": "R-0001-0023",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-58-5",
-      "section_id": "S-0023",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0023",
+        "section_anchor": "eb-58-5",
+        "sections": [
+          "S-0023"
+        ]
+      }
     },
     {
       "id": "R-0001-0026",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-58-6",
-      "section_id": "S-0026",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0026",
+        "section_anchor": "eb-58-6",
+        "sections": [
+          "S-0026"
+        ]
+      }
     },
     {
       "id": "R-0001-0027",
+      "title": "(a) Physical leakage of biogas in the manure management systems which includes production, collection and transport of biogas to the point of flaring/combustion or gainful use (PEPL,y); (b) Emissions from flaring or combustion of the gas...",
       "logic": "(a) Physical leakage of biogas in the manure management systems which includes production, collection and transport of biogas to the point of flaring/combustion or gainful use (PEPL,y); (b) Emissions from flaring or combustion of the gas stream (PEflare,y); (c) CO2 emissions from use of fossil fuels or electricity for the operation of all the installed facilities (PEpower,y); (d) CO2 emissions from incremental transportation distances; (e) Emissions from the storage of manure before being fed into the anaerobic digester (PEstorage,y).",
-      "section_anchor": "project-activity-emissions-consist-of",
-      "section_id": "S-0027",
-      "tags": [
-        "leakage"
-      ],
-      "text": "(a) Physical leakage of biogas in the manure management systems which includes production, collection and transport of biogas to the point of flaring/combustion or gainful use (PEPL,y); (b) Emissions from flaring or combustion of the gas...",
-      "title": "(a) Physical leakage of biogas in the manure management systems which includes production, collection and transport of biogas to the point of flaring/combustion or gainful use (PEPL,y); (b) Emissions from flaring or combustion of the gas..."
+      "type": "leakage",
+      "refs": {
+        "primary_section": "S-0027",
+        "section_anchor": "project-activity-emissions-consist-of",
+        "sections": [
+          "S-0027"
+        ]
+      }
     },
     {
       "id": "R-0001-0030",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-58-7",
-      "section_id": "S-0030",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0030",
+        "section_anchor": "eb-58-7",
+        "sections": [
+          "S-0030"
+        ]
+      }
     },
     {
       "id": "R-0001-0034",
+      "title": "a default value of 10% of the maximum methane producing potential (Bo) for the physical leakages from anaerobic digesters.",
       "logic": "a default value of 10% of the maximum methane producing potential (Bo) for the physical leakages from anaerobic digesters.",
-      "section_anchor": "ipcc-guidelines-for-national-greenhouse-gas-inventories-volume-4-chapter-10-guidelines-specify",
-      "section_id": "S-0034",
-      "tags": [
-        "leakage"
-      ],
-      "text": "a default value of 10% of the maximum methane producing potential (Bo) for the physical leakages from anaerobic digesters.",
-      "title": "a default value of 10% of the maximum methane producing potential (Bo) for the physical leakages from anaerobic digesters."
+      "type": "leakage",
+      "refs": {
+        "primary_section": "S-0034",
+        "section_anchor": "ipcc-guidelines-for-national-greenhouse-gas-inventories-volume-4-chapter-10-guidelines-specify",
+        "sections": [
+          "S-0034"
+        ]
+      }
     },
     {
       "id": "R-0001-0036",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-58-8",
-      "section_id": "S-0036",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0036",
+        "section_anchor": "eb-58-8",
+        "sections": [
+          "S-0036"
+        ]
+      }
     },
     {
       "id": "R-0001-0038",
+      "title": "MCFl Annual methane conversion factor for the project manure storage device l from Table 10.17, Chapter 10, Volume 4 Leakage",
       "logic": "MCFl Annual methane conversion factor for the project manure storage device l from Table 10.17, Chapter 10, Volume 4 Leakage",
-      "section_anchor": "and-to-be-run-from-1-up-to-ai-l",
-      "section_id": "S-0038",
-      "tags": [
-        "leakage"
-      ],
-      "text": "MCFl Annual methane conversion factor for the project manure storage device l from Table 10.17, Chapter 10, Volume 4 Leakage",
-      "title": "MCFl Annual methane conversion factor for the project manure storage device l from Table 10.17, Chapter 10, Volume 4 Leakage"
+      "type": "leakage",
+      "refs": {
+        "primary_section": "S-0038",
+        "section_anchor": "and-to-be-run-from-1-up-to-ai-l",
+        "sections": [
+          "S-0038"
+        ]
+      }
     },
     {
       "id": "R-0001-0039",
+      "title": "Monitoring",
       "logic": "Monitoring",
-      "section_anchor": "no-leakage-calculation-is-required",
-      "section_id": "S-0039",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "Monitoring",
-      "title": "Monitoring"
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0039",
+        "section_anchor": "no-leakage-calculation-is-required",
+        "sections": [
+          "S-0039"
+        ]
+      }
     },
     {
       "id": "R-0001-0040",
+      "title": "It is likely that the project activity involves manure treatment steps with higher methane conversion factors (MCF) than the MCF for the manure treatment systems used in the baseline situation, therefore the emission reductions achieved ...",
       "logic": "It is likely that the project activity involves manure treatment steps with higher methane conversion factors (MCF) than the MCF for the manure treatment systems used in the baseline situation, therefore the emission reductions achieved by the project activity is limited to the ex post calculated baseline emissions minus project emissions using the actual monitored data for the project activity (NLT,y, MS% i,y, MS% l, AIl, and in case adjusted values for animal weight are used as defined in paragraph 10 (c): VSLT,y).",
-      "section_anchor": "the-emission-reductions-achieved-by-the-project-activity-will-be-determined-ex-post",
-      "section_id": "S-0040",
-      "tags": [
-        "parameter"
-      ],
-      "text": "It is likely that the project activity involves manure treatment steps with higher methane conversion factors (MCF) than the MCF for the manure treatment systems used in the baseline situation, therefore the emission reductions achieved ...",
-      "title": "It is likely that the project activity involves manure treatment steps with higher methane conversion factors (MCF) than the MCF for the manure treatment systems used in the baseline situation, therefore the emission reductions achieved ..."
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0040",
+        "section_anchor": "the-emission-reductions-achieved-by-the-project-activity-will-be-determined-ex-post",
+        "sections": [
+          "S-0040"
+        ]
+      }
     },
     {
       "id": "R-0001-0042",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-58-9",
-      "section_id": "S-0042",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0042",
+        "section_anchor": "eb-58-9",
+        "sections": [
+          "S-0042"
+        ]
+      }
     },
     {
       "id": "R-0001-0044",
+      "title": "of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting period.",
       "logic": "of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting period.",
-      "section_anchor": "the-method-for-integration-of-the-terms-in-equation-above-to-obtain-the-results-for-one-year",
-      "section_id": "S-0044",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting period.",
-      "title": "of measurements within the confidence level, as well as the methods and instruments used for metering, recording and processing the data obtained, shall be described in the project design document and monitored during the crediting period."
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0044",
+        "section_anchor": "the-method-for-integration-of-the-terms-in-equation-above-to-obtain-the-results-for-one-year",
+        "sections": [
+          "S-0044"
+        ]
+      }
     },
     {
       "id": "R-0001-0046",
+      "title": "4 If the biogas flared and fuelled (or utilized) are continuously monitored separately, the two fractions can be added to determine the biogas recovered.",
       "logic": "4 If the biogas flared and fuelled (or utilized) are continuously monitored separately, the two fractions can be added to determine the biogas recovered.",
-      "section_anchor": "the-amount-of-biogas-recovered-and-fuelled-4-flared-or-used-gainfully-shall-be-monitored",
-      "section_id": "S-0046",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "4 If the biogas flared and fuelled (or utilized) are continuously monitored separately, the two fractions can be added to determine the biogas recovered.",
-      "title": "4 If the biogas flared and fuelled (or utilized) are continuously monitored separately, the two fractions can be added to determine the biogas recovered."
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0046",
+        "section_anchor": "the-amount-of-biogas-recovered-and-fuelled-4-flared-or-used-gainfully-shall-be-monitored",
+        "sections": [
+          "S-0046"
+        ]
+      }
     },
     {
       "id": "R-0002-0046",
+      "title": "In that case, recovered biogas need not be monitored separately.",
       "logic": "In that case, recovered biogas need not be monitored separately.",
-      "section_anchor": "the-amount-of-biogas-recovered-and-fuelled-4-flared-or-used-gainfully-shall-be-monitored",
-      "section_id": "S-0046",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "In that case, recovered biogas need not be monitored separately.",
-      "title": "In that case, recovered biogas need not be monitored separately."
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0046",
+        "section_anchor": "the-amount-of-biogas-recovered-and-fuelled-4-flared-or-used-gainfully-shall-be-monitored",
+        "sections": [
+          "S-0046"
+        ]
+      }
     },
     {
       "id": "R-0001-0048",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-58-10",
-      "section_id": "S-0048",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0048",
+        "section_anchor": "eb-58-10",
+        "sections": [
+          "S-0048"
+        ]
+      }
     },
     {
       "id": "R-0001-0049",
+      "title": "defined as the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored and calculated as per the provision in the “Tool to determine project emissions from flar...",
       "logic": "defined as the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored and calculated as per the provision in the “Tool to determine project emissions from flaring gases containing methane”.",
-      "section_anchor": "regular-maintenance-should-ensure-optimal-operation-of-flares-the-flare-efficiency",
-      "section_id": "S-0049",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "defined as the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored and calculated as per the provision in the “Tool to determine project emissions from flar...",
-      "title": "defined as the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored and calculated as per the provision in the “Tool to determine project emissions from flar..."
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0049",
+        "section_anchor": "regular-maintenance-should-ensure-optimal-operation-of-flares-the-flare-efficiency",
+        "sections": [
+          "S-0049"
+        ]
+      }
     },
     {
       "id": "R-0001-0050",
+      "title": "When the amount of methane that is combusted for energy and that is flared is separately monitored, a destruction efficiency of 100% can be used for the amount that is combusted for energy.",
       "logic": "When the amount of methane that is combusted for energy and that is flared is separately monitored, a destruction efficiency of 100% can be used for the amount that is combusted for energy.",
-      "section_anchor": "project-activities-where-a-portion-of-the-biogas-is-destroyed-through-flaring-and-the-other",
-      "section_id": "S-0050",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "When the amount of methane that is combusted for energy and that is flared is separately monitored, a destruction efficiency of 100% can be used for the amount that is combusted for energy.",
-      "title": "When the amount of methane that is combusted for energy and that is flared is separately monitored, a destruction efficiency of 100% can be used for the amount that is combusted for energy."
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0050",
+        "section_anchor": "project-activities-where-a-portion-of-the-biogas-is-destroyed-through-flaring-and-the-other",
+        "sections": [
+          "S-0050"
+        ]
+      }
     },
     {
       "id": "R-0001-0052",
+      "title": "equipment shall be monitored.",
       "logic": "equipment shall be monitored.",
-      "section_anchor": "the-annual-fossil-fuel-or-electricity-used-to-operate-the-facility-or-power-auxiliary",
-      "section_id": "S-0052",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "equipment shall be monitored.",
-      "title": "equipment shall be monitored."
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0052",
+        "section_anchor": "the-annual-fossil-fuel-or-electricity-used-to-operate-the-facility-or-power-auxiliary",
+        "sections": [
+          "S-0052"
+        ]
+      }
     },
     {
       "id": "R-0001-0053",
+      "title": "storage devices (MS%l) and the interval between manure collection and commencement of treatment in anaerobic digester (AI l) shall be monitored.",
       "logic": "storage devices (MS%l) and the interval between manure collection and commencement of treatment in anaerobic digester (AI l) shall be monitored.",
-      "section_anchor": "where-relevant-in-accordance-with-paragraph-16-the-fraction-of-manure-handled-in-the",
-      "section_id": "S-0053",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "storage devices (MS%l) and the interval between manure collection and commencement of treatment in anaerobic digester (AI l) shall be monitored.",
-      "title": "storage devices (MS%l) and the interval between manure collection and commencement of treatment in anaerobic digester (AI l) shall be monitored."
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0053",
+        "section_anchor": "where-relevant-in-accordance-with-paragraph-16-the-fraction-of-manure-handled-in-the",
+        "sections": [
+          "S-0053"
+        ]
+      }
     },
     {
       "id": "R-0001-0054",
+      "title": "residual waste shall be monitored.",
       "logic": "residual waste shall be monitored.",
-      "section_anchor": "where-applicable-the-proper-soil-application-not-resulting-in-methane-emissions-of-the",
-      "section_id": "S-0054",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "residual waste shall be monitored.",
-      "title": "residual waste shall be monitored."
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0054",
+        "section_anchor": "where-applicable-the-proper-soil-application-not-resulting-in-methane-emissions-of-the",
+        "sections": [
+          "S-0054"
+        ]
+      }
     },
     {
       "id": "R-0001-0056",
+      "title": "(a) The PDD shall describe the system used for monitoring the fraction of the manure handled in the animal manure management system (MS%,i,y), the average weight of the livestock (Wsite) and the livestock population (NLT,y) taking into a...",
       "logic": "(a) The PDD shall describe the system used for monitoring the fraction of the manure handled in the animal manure management system (MS%,i,y), the average weight of the livestock (Wsite) and the livestock population (NLT,y) taking into account the average number of days the animals are alive in the farm in a specific year.",
-      "section_anchor": "in-case-option-in-paragraph-9-a-is-chosen-for-baseline-emission-determination",
-      "section_id": "S-0056",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "(a) The PDD shall describe the system used for monitoring the fraction of the manure handled in the animal manure management system (MS%,i,y), the average weight of the livestock (Wsite) and the livestock population (NLT,y) taking into a...",
-      "title": "(a) The PDD shall describe the system used for monitoring the fraction of the manure handled in the animal manure management system (MS%,i,y), the average weight of the livestock (Wsite) and the livestock population (NLT,y) taking into a..."
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0056",
+        "section_anchor": "in-case-option-in-paragraph-9-a-is-chosen-for-baseline-emission-determination",
+        "sections": [
+          "S-0056"
+        ]
+      }
     },
     {
       "id": "R-0002-0056",
+      "title": "Significant changes in livestock population and average weight shall be explained. (b) The number of days that the animal manure management system capturing methane and flaring/combusting or gainfully using methane was operational (ndy) ...",
       "logic": "Significant changes in livestock population and average weight shall be explained. (b) The number of days that the animal manure management system capturing methane and flaring/combusting or gainfully using methane was operational (ndy) shall be monitored;",
-      "section_anchor": "in-case-option-in-paragraph-9-a-is-chosen-for-baseline-emission-determination",
-      "section_id": "S-0056",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "Significant changes in livestock population and average weight shall be explained. (b) The number of days that the animal manure management system capturing methane and flaring/combusting or gainfully using methane was operational (ndy) ...",
-      "title": "Significant changes in livestock population and average weight shall be explained. (b) The number of days that the animal manure management system capturing methane and flaring/combusting or gainfully using methane was operational (ndy) ..."
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0056",
+        "section_anchor": "in-case-option-in-paragraph-9-a-is-chosen-for-baseline-emission-determination",
+        "sections": [
+          "S-0056"
+        ]
+      }
     },
     {
       "id": "R-0001-0058",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-58-11",
-      "section_id": "S-0058",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0058",
+        "section_anchor": "eb-58-11",
+        "sections": [
+          "S-0058"
+        ]
+      }
     },
     {
       "id": "R-0001-0059",
+      "title": "Recording of the baseline animal manure management system where the animal manure would have been treated anaerobically is also required.",
       "logic": "Recording of the baseline animal manure management system where the animal manure would have been treated anaerobically is also required.",
-      "section_anchor": "in-case-option-in-paragraph-9-b-is-chosen-for-baseline-emission-determination-direct",
-      "section_id": "S-0059",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Recording of the baseline animal manure management system where the animal manure would have been treated anaerobically is also required.",
-      "title": "Recording of the baseline animal manure management system where the animal manure would have been treated anaerobically is also required."
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0059",
+        "section_anchor": "in-case-option-in-paragraph-9-b-is-chosen-for-baseline-emission-determination-direct",
+        "sections": [
+          "S-0059"
+        ]
+      }
     },
     {
       "id": "R-0001-0060",
+      "title": "programme of activities: In case the project activity involves the replacement of equipment, and the leakage effect of the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an ind...",
       "logic": "programme of activities: In case the project activity involves the replacement of equipment, and the leakage effect of the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an independent monitoring of scrapping of replaced equipment needs to be implemented.",
-      "section_anchor": "the-following-conditions-apply-for-use-of-this-methodology-in-a-project-activity-under-a",
-      "section_id": "S-0060",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "programme of activities: In case the project activity involves the replacement of equipment, and the leakage effect of the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an ind...",
-      "title": "programme of activities: In case the project activity involves the replacement of equipment, and the leakage effect of the use of the replaced equipment in another activity is neglected, because the replaced equipment is scrapped, an ind..."
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0060",
+        "section_anchor": "the-following-conditions-apply-for-use-of-this-methodology-in-a-project-activity-under-a",
+        "sections": [
+          "S-0060"
+        ]
+      }
     },
     {
       "id": "R-0002-0060",
+      "title": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other.",
       "logic": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other.",
-      "section_anchor": "the-following-conditions-apply-for-use-of-this-methodology-in-a-project-activity-under-a",
-      "section_id": "S-0060",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other.",
-      "title": "The monitoring should include a check if the number of project activity equipment distributed by the project and the number of scrapped equipment correspond with each other."
+      "type": "monitoring",
+      "refs": {
+        "primary_section": "S-0060",
+        "section_anchor": "the-following-conditions-apply-for-use-of-this-methodology-in-a-project-activity-under-a",
+        "sections": [
+          "S-0060"
+        ]
+      }
     },
     {
       "id": "R-0001-0062",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-58-12",
-      "section_id": "S-0062",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0062",
+        "section_anchor": "eb-58-12",
+        "sections": [
+          "S-0062"
+        ]
+      }
     },
     {
       "id": "R-0001-0065",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-58-13",
-      "section_id": "S-0065",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0065",
+        "section_anchor": "eb-58-13",
+        "sections": [
+          "S-0065"
+        ]
+      }
     },
     {
       "id": "R-0001-0076",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "section_anchor": "eb-58-14",
-      "section_id": "S-0076",
-      "tags": [
-        "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      "type": "parameter",
+      "refs": {
+        "primary_section": "S-0076",
+        "section_anchor": "eb-58-14",
+        "sections": [
+          "S-0076"
+        ]
+      }
     }
   ]
 }

@@ -2,35 +2,100 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "additionalProperties": false,
-  "required": ["rules"],
+  "required": [
+    "rules"
+  ],
   "properties": {
     "rules": {
       "type": "array",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["id", "stable_id", "title", "logic", "type", "refs"],
+        "required": [
+          "id",
+          "title",
+          "logic",
+          "type",
+          "refs"
+        ],
         "properties": {
-          "id": { "type": "string", "pattern": "^R-\\d+(?:-\\d+)*-\\d{4}$" },
-          "stable_id": { "type": "string", "minLength": 1 },
-          "title": { "type": "string", "minLength": 1 },
-          "logic": { "type": "string", "minLength": 1 },
-          "type": { "type": "string", "enum": ["eligibility", "calc", "equation", "monitoring", "uncertainty", "leakage", "parameter", "reporting"] },
+          "id": {
+            "type": "string",
+            "pattern": "^R-\\d+(?:-\\d+)*-\\d{4}$"
+          },
+          "stable_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "logic": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "eligibility",
+              "calc",
+              "equation",
+              "monitoring",
+              "uncertainty",
+              "leakage",
+              "parameter",
+              "reporting"
+            ]
+          },
           "refs": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["methodology", "primary_section", "sections"],
+            "required": [
+              "methodology",
+              "primary_section",
+              "sections"
+            ],
             "properties": {
-              "methodology": { "type": "string", "minLength": 1 },
-              "primary_section": { "type": "string", "pattern": "^S-\\d+" },
-              "section_anchor": { "type": "string" },
-              "section_number": { "type": "string" },
-              "section_stable_id": { "type": "string" },
-              "sections": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
-              "tools": { "type": "array", "items": { "type": "string", "pattern": "^[A-Za-z0-9\\-/.]+@v[0-9][A-Za-z0-9\\.-]*$" } }
+              "methodology": {
+                "type": "string",
+                "minLength": 1
+              },
+              "primary_section": {
+                "type": "string",
+                "pattern": "^S-\\d+"
+              },
+              "section_anchor": {
+                "type": "string"
+              },
+              "section_number": {
+                "type": "string"
+              },
+              "section_stable_id": {
+                "type": "string"
+              },
+              "sections": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1
+              },
+              "tools": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9\\-/.]+@v[0-9][A-Za-z0-9\\.-]*$"
+                }
+              }
             }
           },
-          "tags": { "type": "array", "items": { "type": "string" } }
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
         }
       }
     }
