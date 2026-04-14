@@ -52,7 +52,6 @@
             "type": "object",
             "additionalProperties": false,
             "required": [
-              "methodology",
               "primary_section",
               "sections"
             ],
