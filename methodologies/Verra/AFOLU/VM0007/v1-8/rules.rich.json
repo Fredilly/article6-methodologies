@@ -939,50 +939,6 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    },
-    "source_span_text": "Six required data elements for each discrete land parcel.",
-    "section_context": {
-      "anchor": "project-boundary",
-      "page_start": 19,
-      "page_end": 19,
-      "lineage": [
-        "project-boundary"
-      ],
-      "section_id": "S-2",
-      "section_title": "Project Boundary",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Geographic boundary definition"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Geographic boundary definition"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0001",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "geographic-boundary-maps",
-          "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps",
-          "required": true
-        },
-        {
-          "id": "carbon-pool-inventory",
-          "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory",
-          "required": true
-        },
-        {
-          "id": "ghg-source-assessment",
-          "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -1005,50 +961,6 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    },
-    "source_span_text": "Strict no-overlap rule. REDD+WRC combination is the sole exception.",
-    "section_context": {
-      "anchor": "project-boundary",
-      "page_start": 19,
-      "page_end": 19,
-      "lineage": [
-        "project-boundary"
-      ],
-      "section_id": "S-2",
-      "section_title": "Project Boundary",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: No spatial overlap between baselines"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: No spatial overlap between baselines"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0002",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "geographic-boundary-maps",
-          "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps",
-          "required": true
-        },
-        {
-          "id": "carbon-pool-inventory",
-          "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory",
-          "required": true
-        },
-        {
-          "id": "ghg-source-assessment",
-          "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -1070,50 +982,6 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8"
-      ]
-    },
-    "source_span_text": "Double-counting prevention. Must track and report exclusions.",
-    "section_context": {
-      "anchor": "project-boundary",
-      "page_start": 19,
-      "page_end": 19,
-      "lineage": [
-        "project-boundary"
-      ],
-      "section_id": "S-2",
-      "section_title": "Project Boundary",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Exclusion of land in other GHG programs"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Exclusion of land in other GHG programs"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0003",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "geographic-boundary-maps",
-          "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps",
-          "required": true
-        },
-        {
-          "id": "carbon-pool-inventory",
-          "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory",
-          "required": true
-        },
-        {
-          "id": "ghg-source-assessment",
-          "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment",
-          "required": true
-        }
       ]
     }
   },
@@ -1138,50 +1006,6 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0007@v1-8"
       ]
-    },
-    "source_span_text": "RRD required for baseline modeling. Must be in same jurisdiction with similar characteristics.",
-    "section_context": {
-      "anchor": "project-boundary",
-      "page_start": 19,
-      "page_end": 19,
-      "lineage": [
-        "project-boundary"
-      ],
-      "section_id": "S-2",
-      "section_title": "Project Boundary",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: REDD reference region definition"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: REDD reference region definition"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0004",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "geographic-boundary-maps",
-          "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps",
-          "required": true
-        },
-        {
-          "id": "carbon-pool-inventory",
-          "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory",
-          "required": true
-        },
-        {
-          "id": "ghg-source-assessment",
-          "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -1204,50 +1028,6 @@
       "tools": [
         "Verra/VM0007@v1-8",
         "Verra/VMD0006@v1-8"
-      ]
-    },
-    "source_span_text": "Proxy areas required for planned deforestation baseline.",
-    "section_context": {
-      "anchor": "project-boundary",
-      "page_start": 19,
-      "page_end": 19,
-      "lineage": [
-        "project-boundary"
-      ],
-      "section_id": "S-2",
-      "section_title": "Project Boundary",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: REDD proxy area definition"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: REDD proxy area definition"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0005",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "geographic-boundary-maps",
-          "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps",
-          "required": true
-        },
-        {
-          "id": "carbon-pool-inventory",
-          "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory",
-          "required": true
-        },
-        {
-          "id": "ghg-source-assessment",
-          "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment",
-          "required": true
-        }
       ]
     }
   },
@@ -1272,50 +1052,6 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0016@v1-8"
       ]
-    },
-    "source_span_text": "Stratification mandatory. Different activity types must be in separate strata.",
-    "section_context": {
-      "anchor": "project-boundary",
-      "page_start": 19,
-      "page_end": 19,
-      "lineage": [
-        "project-boundary"
-      ],
-      "section_id": "S-2",
-      "section_title": "Project Boundary",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Stratification requirement"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Stratification requirement"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0006",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "geographic-boundary-maps",
-          "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps",
-          "required": true
-        },
-        {
-          "id": "carbon-pool-inventory",
-          "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory",
-          "required": true
-        },
-        {
-          "id": "ghg-source-assessment",
-          "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -1338,50 +1074,6 @@
       "tools": [
         "Verra/VM0007@v1-8",
         "Verra/T-SIG@v1-8"
-      ]
-    },
-    "source_span_text": "Pool inclusion/exclusion must be justified. If included in baseline, must also be in project and leakage.",
-    "section_context": {
-      "anchor": "project-boundary",
-      "page_start": 19,
-      "page_end": 19,
-      "lineage": [
-        "project-boundary"
-      ],
-      "section_id": "S-2",
-      "section_title": "Project Boundary",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Carbon pool selection per activity type"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Carbon pool selection per activity type"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0007",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "geographic-boundary-maps",
-          "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps",
-          "required": true
-        },
-        {
-          "id": "carbon-pool-inventory",
-          "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory",
-          "required": true
-        },
-        {
-          "id": "ghg-source-assessment",
-          "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment",
-          "required": true
-        }
       ]
     }
   },
@@ -1408,50 +1100,6 @@
         "Verra/VMD0002@v1-8",
         "Verra/VMD0005@v1-8"
       ]
-    },
-    "source_span_text": "AGB always mandatory. HWP and dead wood conditionally mandatory based on baseline/project comparison.",
-    "section_context": {
-      "anchor": "project-boundary",
-      "page_start": 19,
-      "page_end": 19,
-      "lineage": [
-        "project-boundary"
-      ],
-      "section_id": "S-2",
-      "section_title": "Project Boundary",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: REDD mandatory carbon pools"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: REDD mandatory carbon pools"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0008",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "geographic-boundary-maps",
-          "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps",
-          "required": true
-        },
-        {
-          "id": "carbon-pool-inventory",
-          "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory",
-          "required": true
-        },
-        {
-          "id": "ghg-source-assessment",
-          "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -1476,50 +1124,6 @@
         "Verra/VMD0042@v1-8",
         "Verra/VMD0050@v1-8"
       ]
-    },
-    "source_span_text": "WRC focuses on SOC pool. Biomass pools excluded unless ARR applies.",
-    "section_context": {
-      "anchor": "project-boundary",
-      "page_start": 19,
-      "page_end": 19,
-      "lineage": [
-        "project-boundary"
-      ],
-      "section_id": "S-2",
-      "section_title": "Project Boundary",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: WRC carbon pools"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: WRC carbon pools"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0009",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "geographic-boundary-maps",
-          "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps",
-          "required": true
-        },
-        {
-          "id": "carbon-pool-inventory",
-          "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory",
-          "required": true
-        },
-        {
-          "id": "ghg-source-assessment",
-          "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -1543,50 +1147,6 @@
         "Verra/VM0007@v1-8",
         "Verra/T-SIG@v1-8"
       ]
-    },
-    "source_span_text": "GHG sources must be identified per Table 7 with inclusion/exclusion justification.",
-    "section_context": {
-      "anchor": "project-boundary",
-      "page_start": 19,
-      "page_end": 19,
-      "lineage": [
-        "project-boundary"
-      ],
-      "section_id": "S-2",
-      "section_title": "Project Boundary",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: REDD GHG source identification"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: REDD GHG source identification"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0010",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "geographic-boundary-maps",
-          "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps",
-          "required": true
-        },
-        {
-          "id": "carbon-pool-inventory",
-          "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory",
-          "required": true
-        },
-        {
-          "id": "ghg-source-assessment",
-          "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -1608,50 +1168,6 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8"
-      ]
-    },
-    "source_span_text": "GHG sources per Tables 8-9. Mandatory for CO2 from SOC, CH4 from SOC, combustion gases.",
-    "section_context": {
-      "anchor": "project-boundary",
-      "page_start": 19,
-      "page_end": 19,
-      "lineage": [
-        "project-boundary"
-      ],
-      "section_id": "S-2",
-      "section_title": "Project Boundary",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: WRC GHG source identification"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: WRC GHG source identification"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0011",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "geographic-boundary-maps",
-          "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps",
-          "required": true
-        },
-        {
-          "id": "carbon-pool-inventory",
-          "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory",
-          "required": true
-        },
-        {
-          "id": "ghg-source-assessment",
-          "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment",
-          "required": true
-        }
       ]
     }
   },
@@ -1675,50 +1191,6 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    },
-    "source_span_text": "Symmetric accounting: baseline inclusion implies project inclusion.",
-    "section_context": {
-      "anchor": "project-boundary",
-      "page_start": 19,
-      "page_end": 19,
-      "lineage": [
-        "project-boundary"
-      ],
-      "section_id": "S-2",
-      "section_title": "Project Boundary",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Consistency rule: baseline-project source matching"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Consistency rule: baseline-project source matching"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0012",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "geographic-boundary-maps",
-          "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps",
-          "required": true
-        },
-        {
-          "id": "carbon-pool-inventory",
-          "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory",
-          "required": true
-        },
-        {
-          "id": "ghg-source-assessment",
-          "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -1741,50 +1213,6 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    },
-    "source_span_text": "Fixed period for baseline modeling. Duration per VCS Standard.",
-    "section_context": {
-      "anchor": "project-boundary",
-      "page_start": 19,
-      "page_end": 19,
-      "lineage": [
-        "project-boundary"
-      ],
-      "section_id": "S-2",
-      "section_title": "Project Boundary",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Historical reference period"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Historical reference period"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0013",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "geographic-boundary-maps",
-          "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps",
-          "required": true
-        },
-        {
-          "id": "carbon-pool-inventory",
-          "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory",
-          "required": true
-        },
-        {
-          "id": "ghg-source-assessment",
-          "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -1806,50 +1234,6 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8"
-      ]
-    },
-    "source_span_text": "20-100 year range. Must be specified in PD.",
-    "section_context": {
-      "anchor": "project-boundary",
-      "page_start": 19,
-      "page_end": 19,
-      "lineage": [
-        "project-boundary"
-      ],
-      "section_id": "S-2",
-      "section_title": "Project Boundary",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Crediting period duration"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Crediting period duration"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0014",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "geographic-boundary-maps",
-          "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps",
-          "required": true
-        },
-        {
-          "id": "carbon-pool-inventory",
-          "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory",
-          "required": true
-        },
-        {
-          "id": "ghg-source-assessment",
-          "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment",
-          "required": true
-        }
       ]
     }
   },
@@ -1874,50 +1258,6 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0016@v1-8"
       ]
-    },
-    "source_span_text": "100-year SOC horizon test. Must show significant difference. Assessed ex-ante conservatively.",
-    "section_context": {
-      "anchor": "project-boundary",
-      "page_start": 19,
-      "page_end": 19,
-      "lineage": [
-        "project-boundary"
-      ],
-      "section_id": "S-2",
-      "section_title": "Project Boundary",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: WRC 100-year SOC difference requirement"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: WRC 100-year SOC difference requirement"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0015",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "geographic-boundary-maps",
-          "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps",
-          "required": true
-        },
-        {
-          "id": "carbon-pool-inventory",
-          "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory",
-          "required": true
-        },
-        {
-          "id": "ghg-source-assessment",
-          "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -1940,50 +1280,6 @@
       "tools": [
         "Verra/VM0007@v1-8",
         "Verra/VMD0016@v1-8"
-      ]
-    },
-    "source_span_text": "Sea-level rise must be factored into boundary delineation for tidal projects.",
-    "section_context": {
-      "anchor": "project-boundary",
-      "page_start": 19,
-      "page_end": 19,
-      "lineage": [
-        "project-boundary"
-      ],
-      "section_id": "S-2",
-      "section_title": "Project Boundary",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Tidal wetland sea-level rise boundary"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Tidal wetland sea-level rise boundary"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0016",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "geographic-boundary-maps",
-          "label": "Geographic Boundary Maps",
-          "description": "Required: geographic boundary maps",
-          "required": true
-        },
-        {
-          "id": "carbon-pool-inventory",
-          "label": "Carbon Pool Inventory",
-          "description": "Required: carbon pool inventory",
-          "required": true
-        },
-        {
-          "id": "ghg-source-assessment",
-          "label": "Ghg Source Assessment",
-          "description": "Required: ghg source assessment",
-          "required": true
-        }
       ]
     }
   },
@@ -2008,44 +1304,6 @@
         "Verra/VM0007@v1-8",
         "Verra/VT0001@v1-8"
       ]
-    },
-    "source_span_text": "VT0001 mandatory. Stepwise approach: list alternatives, barrier/investment analysis, select most plausible.",
-    "section_context": {
-      "anchor": "baseline-scenario",
-      "page_start": 25,
-      "page_end": 25,
-      "lineage": [
-        "baseline-scenario"
-      ],
-      "section_id": "S-3",
-      "section_title": "Baseline Scenario",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Baseline scenario determination via VT0001"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Baseline scenario determination via VT0001"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-3-0001",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "baseline-scenario-analysis",
-          "label": "Baseline Scenario Analysis",
-          "description": "Required: baseline scenario analysis",
-          "required": true
-        },
-        {
-          "id": "alternative-scenario-assessment",
-          "label": "Alternative Scenario Assessment",
-          "description": "Required: alternative scenario assessment",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -2068,44 +1326,6 @@
       "tools": [
         "Verra/VM0007@v1-8",
         "Verra/VT0001@v1-8"
-      ]
-    },
-    "source_span_text": "Three mandatory alternatives unless demonstrated not credible or non-compliant.",
-    "section_context": {
-      "anchor": "baseline-scenario",
-      "page_start": 25,
-      "page_end": 25,
-      "lineage": [
-        "baseline-scenario"
-      ],
-      "section_id": "S-3",
-      "section_title": "Baseline Scenario",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Minimum alternative scenario list"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Minimum alternative scenario list"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-3-0002",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "baseline-scenario-analysis",
-          "label": "Baseline Scenario Analysis",
-          "description": "Required: baseline scenario analysis",
-          "required": true
-        },
-        {
-          "id": "alternative-scenario-assessment",
-          "label": "Alternative Scenario Assessment",
-          "description": "Required: alternative scenario assessment",
-          "required": true
-        }
       ]
     }
   },
@@ -2130,44 +1350,6 @@
         "Verra/VM0007@v1-8",
         "Verra/VT0001@v1-8"
       ]
-    },
-    "source_span_text": "Two-step: barrier analysis first, then investment analysis or qualitative GHG estimation as fallback.",
-    "section_context": {
-      "anchor": "baseline-scenario",
-      "page_start": 25,
-      "page_end": 25,
-      "lineage": [
-        "baseline-scenario"
-      ],
-      "section_id": "S-3",
-      "section_title": "Baseline Scenario",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Barrier analysis baseline selection"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Barrier analysis baseline selection"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-3-0003",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "baseline-scenario-analysis",
-          "label": "Baseline Scenario Analysis",
-          "description": "Required: baseline scenario analysis",
-          "required": true
-        },
-        {
-          "id": "alternative-scenario-assessment",
-          "label": "Alternative Scenario Assessment",
-          "description": "Required: alternative scenario assessment",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -2190,44 +1372,6 @@
       "tools": [
         "Verra/VM0007@v1-8",
         "Verra/VT0001@v1-8"
-      ]
-    },
-    "source_span_text": "Three options with different selection criteria. Option I is cost-only, Option II is IRR/NPV, Option III is benchmark-based.",
-    "section_context": {
-      "anchor": "baseline-scenario",
-      "page_start": 25,
-      "page_end": 25,
-      "lineage": [
-        "baseline-scenario"
-      ],
-      "section_id": "S-3",
-      "section_title": "Baseline Scenario",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Investment analysis baseline selection"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Investment analysis baseline selection"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-3-0004",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "baseline-scenario-analysis",
-          "label": "Baseline Scenario Analysis",
-          "description": "Required: baseline scenario analysis",
-          "required": true
-        },
-        {
-          "id": "alternative-scenario-assessment",
-          "label": "Alternative Scenario Assessment",
-          "description": "Required: alternative scenario assessment",
-          "required": true
-        }
       ]
     }
   },
@@ -2253,44 +1397,6 @@
         "Verra/VMD0006@v1-8",
         "Verra/VMD0007@v1-8"
       ]
-    },
-    "source_span_text": "Module selection based on deforestation category.",
-    "section_context": {
-      "anchor": "baseline-scenario",
-      "page_start": 25,
-      "page_end": 25,
-      "lineage": [
-        "baseline-scenario"
-      ],
-      "section_id": "S-3",
-      "section_title": "Baseline Scenario",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: REDD baseline modules"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: REDD baseline modules"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-3-0005",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "baseline-scenario-analysis",
-          "label": "Baseline Scenario Analysis",
-          "description": "Required: baseline scenario analysis",
-          "required": true
-        },
-        {
-          "id": "alternative-scenario-assessment",
-          "label": "Alternative Scenario Assessment",
-          "description": "Required: alternative scenario assessment",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -2315,44 +1421,6 @@
         "Verra/VMD0042@v1-8",
         "Verra/VMD0050@v1-8"
       ]
-    },
-    "source_span_text": "Module selection depends on substrate (peat vs tidal) and activity type (CIW vs RWE vs combined).",
-    "section_context": {
-      "anchor": "baseline-scenario",
-      "page_start": 25,
-      "page_end": 25,
-      "lineage": [
-        "baseline-scenario"
-      ],
-      "section_id": "S-3",
-      "section_title": "Baseline Scenario",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: WRC baseline modules"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: WRC baseline modules"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-3-0006",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "baseline-scenario-analysis",
-          "label": "Baseline Scenario Analysis",
-          "description": "Required: baseline scenario analysis",
-          "required": true
-        },
-        {
-          "id": "alternative-scenario-assessment",
-          "label": "Alternative Scenario Assessment",
-          "description": "Required: alternative scenario assessment",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -2375,44 +1443,6 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    },
-    "source_span_text": "Periodic reassessment per VCS Standard. Must capture changes in deforestation drivers/behavior.",
-    "section_context": {
-      "anchor": "baseline-scenario",
-      "page_start": 25,
-      "page_end": 25,
-      "lineage": [
-        "baseline-scenario"
-      ],
-      "section_id": "S-3",
-      "section_title": "Baseline Scenario",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Baseline reassessment frequency"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Baseline reassessment frequency"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-3-0007",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "baseline-scenario-analysis",
-          "label": "Baseline Scenario Analysis",
-          "description": "Required: baseline scenario analysis",
-          "required": true
-        },
-        {
-          "id": "alternative-scenario-assessment",
-          "label": "Alternative Scenario Assessment",
-          "description": "Required: alternative scenario assessment",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -2434,44 +1464,6 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8"
-      ]
-    },
-    "source_span_text": "JNR data is acceptable as a conservative source even if less accurate.",
-    "section_context": {
-      "anchor": "baseline-scenario",
-      "page_start": 25,
-      "page_end": 25,
-      "lineage": [
-        "baseline-scenario"
-      ],
-      "section_id": "S-3",
-      "section_title": "Baseline Scenario",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: JNR data use"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: JNR data use"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-3-0008",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "baseline-scenario-analysis",
-          "label": "Baseline Scenario Analysis",
-          "description": "Required: baseline scenario analysis",
-          "required": true
-        },
-        {
-          "id": "alternative-scenario-assessment",
-          "label": "Alternative Scenario Assessment",
-          "description": "Required: alternative scenario assessment",
-          "required": true
-        }
       ]
     }
   },
@@ -2496,38 +1488,6 @@
         "Verra/VM0007@v1-8",
         "Verra/VT0001@v1-8"
       ]
-    },
-    "source_span_text": "VT0001 mandatory for all non-tidal-wetland activities.",
-    "section_context": {
-      "anchor": "additionality",
-      "page_start": 28,
-      "page_end": 28,
-      "lineage": [
-        "additionality"
-      ],
-      "section_id": "S-4",
-      "section_title": "Additionality",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-4"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: VT0001 additionality requirement"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: VT0001 additionality requirement"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-4-0001",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "additionality-demonstration",
-          "label": "Additionality Demonstration",
-          "description": "Required: additionality demonstration",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -2551,38 +1511,6 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0052@v1-8"
       ]
-    },
-    "source_span_text": "Activity method (ADD-AM) replaces project method (VT0001) for tidal wetlands only.",
-    "section_context": {
-      "anchor": "additionality",
-      "page_start": 28,
-      "page_end": 28,
-      "lineage": [
-        "additionality"
-      ],
-      "section_id": "S-4",
-      "section_title": "Additionality",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-4"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Tidal wetland additionality method"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Tidal wetland additionality method"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-4-0002",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "additionality-demonstration",
-          "label": "Additionality Demonstration",
-          "description": "Required: additionality demonstration",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -2605,50 +1533,6 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    },
-    "source_span_text": "Standard REDD equation. Three components summed over monitoring period.",
-    "section_context": {
-      "anchor": "quantification",
-      "page_start": 29,
-      "page_end": 29,
-      "lineage": [
-        "quantification"
-      ],
-      "section_id": "S-5",
-      "section_title": "Quantification",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-5"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: REDD net emission reduction equation"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: REDD net emission reduction equation"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-5-0001",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "carbon-stock-data",
-          "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data",
-          "required": true
-        },
-        {
-          "id": "emission-factor-data",
-          "label": "Emission Factor Data",
-          "description": "Required: emission factor data",
-          "required": true
-        },
-        {
-          "id": "monitoring-data",
-          "label": "Monitoring Data",
-          "description": "Required: monitoring data",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -2670,50 +1554,6 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8"
-      ]
-    },
-    "source_span_text": "Parallel to REDD equation. Components use peat/tidal wetland modules.",
-    "section_context": {
-      "anchor": "quantification",
-      "page_start": 29,
-      "page_end": 29,
-      "lineage": [
-        "quantification"
-      ],
-      "section_id": "S-5",
-      "section_title": "Quantification",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-5"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: WRC net emission reduction equation"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: WRC net emission reduction equation"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-5-0002",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "carbon-stock-data",
-          "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data",
-          "required": true
-        },
-        {
-          "id": "emission-factor-data",
-          "label": "Emission Factor Data",
-          "description": "Required: emission factor data",
-          "required": true
-        },
-        {
-          "id": "monitoring-data",
-          "label": "Monitoring Data",
-          "description": "Required: monitoring data",
-          "required": true
-        }
       ]
     }
   },
@@ -2739,50 +1579,6 @@
         "Verra/VMD0009@v1-8",
         "Verra/VMD0010@v1-8"
       ]
-    },
-    "source_span_text": "Three leakage components. Activity shifting via LK-ASP and LK-ASU modules. Market effects via LK-ME.",
-    "section_context": {
-      "anchor": "quantification",
-      "page_start": 29,
-      "page_end": 29,
-      "lineage": [
-        "quantification"
-      ],
-      "section_id": "S-5",
-      "section_title": "Quantification",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-5"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: REDD leakage components"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: REDD leakage components"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-5-0003",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "carbon-stock-data",
-          "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data",
-          "required": true
-        },
-        {
-          "id": "emission-factor-data",
-          "label": "Emission Factor Data",
-          "description": "Required: emission factor data",
-          "required": true
-        },
-        {
-          "id": "monitoring-data",
-          "label": "Monitoring Data",
-          "description": "Required: monitoring data",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -2807,50 +1603,6 @@
         "Verra/VMD0009@v1-8",
         "Verra/VMD0010@v1-8"
       ]
-    },
-    "source_span_text": "Three components including ecological leakage specific to wetlands.",
-    "section_context": {
-      "anchor": "quantification",
-      "page_start": 29,
-      "page_end": 29,
-      "lineage": [
-        "quantification"
-      ],
-      "section_id": "S-5",
-      "section_title": "Quantification",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-5"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: WRC leakage components"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: WRC leakage components"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-5-0004",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "carbon-stock-data",
-          "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data",
-          "required": true
-        },
-        {
-          "id": "emission-factor-data",
-          "label": "Emission Factor Data",
-          "description": "Required: emission factor data",
-          "required": true
-        },
-        {
-          "id": "monitoring-data",
-          "label": "Monitoring Data",
-          "description": "Required: monitoring data",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -2873,50 +1625,6 @@
       "tools": [
         "Verra/VM0007@v1-8",
         "Verra/T-BAR@v1-8"
-      ]
-    },
-    "source_span_text": "Three buffer components. Each = (baseline - project) \u00d7 Buffer%. Buffer% from T-BAR.",
-    "section_context": {
-      "anchor": "quantification",
-      "page_start": 29,
-      "page_end": 29,
-      "lineage": [
-        "quantification"
-      ],
-      "section_id": "S-5",
-      "section_title": "Quantification",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-5"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Buffer pool contribution calculation"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Buffer pool contribution calculation"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-5-0005",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "carbon-stock-data",
-          "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data",
-          "required": true
-        },
-        {
-          "id": "emission-factor-data",
-          "label": "Emission Factor Data",
-          "description": "Required: emission factor data",
-          "required": true
-        },
-        {
-          "id": "monitoring-data",
-          "label": "Monitoring Data",
-          "description": "Required: monitoring data",
-          "required": true
-        }
       ]
     }
   },
@@ -2941,50 +1649,6 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0017@v1-8"
       ]
-    },
-    "source_span_text": "15% threshold at 90% CI. Excess deducted proportionally. Below threshold, no deduction.",
-    "section_context": {
-      "anchor": "quantification",
-      "page_start": 29,
-      "page_end": 29,
-      "lineage": [
-        "quantification"
-      ],
-      "section_id": "S-5",
-      "section_title": "Quantification",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-5"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Uncertainty adjustment"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Uncertainty adjustment"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-5-0006",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "carbon-stock-data",
-          "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data",
-          "required": true
-        },
-        {
-          "id": "emission-factor-data",
-          "label": "Emission Factor Data",
-          "description": "Required: emission factor data",
-          "required": true
-        },
-        {
-          "id": "monitoring-data",
-          "label": "Monitoring Data",
-          "description": "Required: monitoring data",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -3006,50 +1670,6 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8"
-      ]
-    },
-    "source_span_text": "Period credits = incremental adjusted NER minus buffer withholding.",
-    "section_context": {
-      "anchor": "quantification",
-      "page_start": 29,
-      "page_end": 29,
-      "lineage": [
-        "quantification"
-      ],
-      "section_id": "S-5",
-      "section_title": "Quantification",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-5"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: VCU calculation"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: VCU calculation"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-5-0007",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "carbon-stock-data",
-          "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data",
-          "required": true
-        },
-        {
-          "id": "emission-factor-data",
-          "label": "Emission Factor Data",
-          "description": "Required: emission factor data",
-          "required": true
-        },
-        {
-          "id": "monitoring-data",
-          "label": "Monitoring Data",
-          "description": "Required: monitoring data",
-          "required": true
-        }
       ]
     }
   },
@@ -3077,50 +1697,6 @@
         "Verra/VMD0004@v1-8",
         "Verra/VMD0005@v1-8"
       ]
-    },
-    "source_span_text": "Five carbon pool modules. Each optional except AG biomass per R-2-0008.",
-    "section_context": {
-      "anchor": "quantification",
-      "page_start": 29,
-      "page_end": 29,
-      "lineage": [
-        "quantification"
-      ],
-      "section_id": "S-5",
-      "section_title": "Quantification",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-5"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Carbon pool modules for REDD"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Carbon pool modules for REDD"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-5-0008",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "carbon-stock-data",
-          "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data",
-          "required": true
-        },
-        {
-          "id": "emission-factor-data",
-          "label": "Emission Factor Data",
-          "description": "Required: emission factor data",
-          "required": true
-        },
-        {
-          "id": "monitoring-data",
-          "label": "Monitoring Data",
-          "description": "Required: monitoring data",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -3145,50 +1721,6 @@
         "Verra/VMD0046@v1-8",
         "Verra/VMD0051@v1-8"
       ]
-    },
-    "source_span_text": "Module selection by activity type and emission source.",
-    "section_context": {
-      "anchor": "quantification",
-      "page_start": 29,
-      "page_end": 29,
-      "lineage": [
-        "quantification"
-      ],
-      "section_id": "S-5",
-      "section_title": "Quantification",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-5"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Project emissions modules"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Project emissions modules"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-5-0009",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "carbon-stock-data",
-          "label": "Carbon Stock Data",
-          "description": "Required: carbon stock data",
-          "required": true
-        },
-        {
-          "id": "emission-factor-data",
-          "label": "Emission Factor Data",
-          "description": "Required: emission factor data",
-          "required": true
-        },
-        {
-          "id": "monitoring-data",
-          "label": "Monitoring Data",
-          "description": "Required: monitoring data",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -3210,50 +1742,6 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8"
-      ]
-    },
-    "source_span_text": "Four mandatory monitoring tasks. Each requires technical description, data list, procedures, QA/QC, archiving, responsibilities.",
-    "section_context": {
-      "anchor": "monitoring",
-      "page_start": 39,
-      "page_end": 39,
-      "lineage": [
-        "monitoring"
-      ],
-      "section_id": "S-6",
-      "section_title": "Monitoring",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-6"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Monitoring plan four tasks"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Monitoring plan four tasks"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-6-0001",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "monitoring-plan",
-          "label": "Monitoring Plan",
-          "description": "Required: monitoring plan",
-          "required": true
-        },
-        {
-          "id": "field-measurement-protocols",
-          "label": "Field Measurement Protocols",
-          "description": "Required: field measurement protocols",
-          "required": true
-        },
-        {
-          "id": "qa-qc-procedures",
-          "label": "Qa Qc Procedures",
-          "description": "Required: qa qc procedures",
-          "required": true
-        }
       ]
     }
   },
@@ -3277,50 +1765,6 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    },
-    "source_span_text": "Six required content elements per task.",
-    "section_context": {
-      "anchor": "monitoring",
-      "page_start": 39,
-      "page_end": 39,
-      "lineage": [
-        "monitoring"
-      ],
-      "section_id": "S-6",
-      "section_title": "Monitoring",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-6"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Monitoring plan content requirements"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Monitoring plan content requirements"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-6-0002",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "monitoring-plan",
-          "label": "Monitoring Plan",
-          "description": "Required: monitoring plan",
-          "required": true
-        },
-        {
-          "id": "field-measurement-protocols",
-          "label": "Field Measurement Protocols",
-          "description": "Required: field measurement protocols",
-          "required": true
-        },
-        {
-          "id": "qa-qc-procedures",
-          "label": "Qa Qc Procedures",
-          "description": "Required: qa qc procedures",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -3343,50 +1787,6 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    },
-    "source_span_text": "GPS or georeferenced data mandatory. Strata included.",
-    "section_context": {
-      "anchor": "monitoring",
-      "page_start": 39,
-      "page_end": 39,
-      "lineage": [
-        "monitoring"
-      ],
-      "section_id": "S-6",
-      "section_title": "Monitoring",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-6"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Geographic position recording"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Geographic position recording"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-6-0003",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "monitoring-plan",
-          "label": "Monitoring Plan",
-          "description": "Required: monitoring plan",
-          "required": true
-        },
-        {
-          "id": "field-measurement-protocols",
-          "label": "Field Measurement Protocols",
-          "description": "Required: field measurement protocols",
-          "required": true
-        },
-        {
-          "id": "qa-qc-procedures",
-          "label": "Qa Qc Procedures",
-          "description": "Required: qa qc procedures",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -3408,50 +1808,6 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8"
-      ]
-    },
-    "source_span_text": "Six minimum SOP/QA/QC elements.",
-    "section_context": {
-      "anchor": "monitoring",
-      "page_start": 39,
-      "page_end": 39,
-      "lineage": [
-        "monitoring"
-      ],
-      "section_id": "S-6",
-      "section_title": "Monitoring",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-6"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: SOP and QA/QC requirements"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: SOP and QA/QC requirements"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-6-0004",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "monitoring-plan",
-          "label": "Monitoring Plan",
-          "description": "Required: monitoring plan",
-          "required": true
-        },
-        {
-          "id": "field-measurement-protocols",
-          "label": "Field Measurement Protocols",
-          "description": "Required: field measurement protocols",
-          "required": true
-        },
-        {
-          "id": "qa-qc-procedures",
-          "label": "Qa Qc Procedures",
-          "description": "Required: qa qc procedures",
-          "required": true
-        }
       ]
     }
   },
@@ -3477,50 +1833,6 @@
         "Verra/VMD0015@v1-8",
         "Verra/VMD0007@v1-8"
       ]
-    },
-    "source_span_text": "10-year minimum frequency. Spatial variables must be refreshed.",
-    "section_context": {
-      "anchor": "monitoring",
-      "page_start": 39,
-      "page_end": 39,
-      "lineage": [
-        "monitoring"
-      ],
-      "section_id": "S-6",
-      "section_title": "Monitoring",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-6"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: REDD forest cover monitoring"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: REDD forest cover monitoring"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-6-0005",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "monitoring-plan",
-          "label": "Monitoring Plan",
-          "description": "Required: monitoring plan",
-          "required": true
-        },
-        {
-          "id": "field-measurement-protocols",
-          "label": "Field Measurement Protocols",
-          "description": "Required: field measurement protocols",
-          "required": true
-        },
-        {
-          "id": "qa-qc-procedures",
-          "label": "Qa Qc Procedures",
-          "description": "Required: qa qc procedures",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -3545,50 +1857,6 @@
         "Verra/VMD0046@v1-8",
         "Verra/VMD0051@v1-8"
       ]
-    },
-    "source_span_text": "Three ongoing compliance checks. Fire triggers premium cancellation.",
-    "section_context": {
-      "anchor": "monitoring",
-      "page_start": 39,
-      "page_end": 39,
-      "lineage": [
-        "monitoring"
-      ],
-      "section_id": "S-6",
-      "section_title": "Monitoring",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-6"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: WRC compliance monitoring"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: WRC compliance monitoring"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-6-0006",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "monitoring-plan",
-          "label": "Monitoring Plan",
-          "description": "Required: monitoring plan",
-          "required": true
-        },
-        {
-          "id": "field-measurement-protocols",
-          "label": "Field Measurement Protocols",
-          "description": "Required: field measurement protocols",
-          "required": true
-        },
-        {
-          "id": "qa-qc-procedures",
-          "label": "Qa Qc Procedures",
-          "description": "Required: qa qc procedures",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -3611,50 +1879,6 @@
       "tools": [
         "Verra/VM0007@v1-8"
       ]
-    },
-    "source_span_text": "IPCC 2006 expert judgment protocol mandatory. Rationale must be documented.",
-    "section_context": {
-      "anchor": "monitoring",
-      "page_start": 39,
-      "page_end": 39,
-      "lineage": [
-        "monitoring"
-      ],
-      "section_id": "S-6",
-      "section_title": "Monitoring",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-6"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Expert judgment documentation"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Expert judgment documentation"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-6-0007",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "monitoring-plan",
-          "label": "Monitoring Plan",
-          "description": "Required: monitoring plan",
-          "required": true
-        },
-        {
-          "id": "field-measurement-protocols",
-          "label": "Field Measurement Protocols",
-          "description": "Required: field measurement protocols",
-          "required": true
-        },
-        {
-          "id": "qa-qc-procedures",
-          "label": "Qa Qc Procedures",
-          "description": "Required: qa qc procedures",
-          "required": true
-        }
-      ]
     }
   },
   {
@@ -3676,50 +1900,6 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8"
-      ]
-    },
-    "source_span_text": "Three data source tiers: literature > IPCC defaults > expert opinion.",
-    "section_context": {
-      "anchor": "monitoring",
-      "page_start": 39,
-      "page_end": 39,
-      "lineage": [
-        "monitoring"
-      ],
-      "section_id": "S-6",
-      "section_title": "Monitoring",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-6"
-    },
-    "rule_detail": {
-      "conditions": [
-        "Requirement satisfied: Uncertainty reduction requirements"
-      ],
-      "exceptions": [
-        "Requirement not satisfied: Uncertainty reduction requirements"
-      ]
-    },
-    "requirement_coverage": {
-      "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-6-0008",
-      "coverage_scope": "rule",
-      "expected_evidence": [
-        {
-          "id": "monitoring-plan",
-          "label": "Monitoring Plan",
-          "description": "Required: monitoring plan",
-          "required": true
-        },
-        {
-          "id": "field-measurement-protocols",
-          "label": "Field Measurement Protocols",
-          "description": "Required: field measurement protocols",
-          "required": true
-        },
-        {
-          "id": "qa-qc-procedures",
-          "label": "Qa Qc Procedures",
-          "description": "Required: qa qc procedures",
-          "required": true
-        }
       ]
     }
   }
