@@ -2,36 +2,51 @@
   "rules": [
     {
       "id": "R-0001-0004",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v07-0.R-0001-0004",
+      "title": "Baseline",
       "logic": "Baseline",
       "section_anchor": "the-project-boundary-is-the-physical-geographical-site-of-the-methane-recovery-facility",
       "section_id": "S-0004",
+      "section_number": "0004",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.D.v07-0.S-0004",
+      "tools": [
+        "UNFCCC/AMS-III.D@v07-0"
+      ],
       "tags": [
         "parameter"
-      ],
-      "text": "Baseline",
-      "title": "Baseline"
+      ]
     },
     {
       "id": "R-0001-0008",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v07-0.R-0001-0008",
+      "title": "Monitoring",
       "logic": "Monitoring",
       "section_anchor": "no-leakage-calculation-is-required",
       "section_id": "S-0008",
+      "section_number": "0008",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.D.v07-0.S-0008",
+      "tools": [
+        "UNFCCC/AMS-III.D@v07-0"
+      ],
       "tags": [
         "monitoring"
-      ],
-      "text": "Monitoring",
-      "title": "Monitoring"
+      ]
     },
     {
       "id": "R-0001-0010",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v07-0.R-0001-0010",
+      "title": "fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
       "logic": "fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
       "section_anchor": "regular-maintenance-should-ensure-optimal-operation-of-flares-the-flare-efficiency-defined-as-the",
       "section_id": "S-0010",
+      "section_number": "0010",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.D.v07-0.S-0010",
+      "tools": [
+        "UNFCCC/AMS-III.D@v07-0"
+      ],
       "tags": [
         "monitoring"
-      ],
-      "text": "fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
-      "title": "fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored."
+      ]
     }
   ]
 }

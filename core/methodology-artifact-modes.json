@@ -1,0 +1,9 @@
+{
+  "default_rules_rich_mode": "legacy_v1",
+  "overrides": {
+    "GoldStandard/LUF/GS-00XX/v1-0": {
+      "rules_rich_mode": "overlay_v1",
+      "justification": "Gold Standard LUF uses the thin-base plus selective-rich-overlay contract."
+    }
+  }
+}

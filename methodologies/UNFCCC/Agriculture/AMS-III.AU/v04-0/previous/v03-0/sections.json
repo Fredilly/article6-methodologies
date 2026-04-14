@@ -1,250 +1,291 @@
 {
   "sections": [
     {
-      "anchor": "unfccc-ccnucc",
-      "content": "III.AU./Version 03.0 Sectoral scope: 15",
       "id": "S-0001",
-      "title": "UNFCCC/CCNUCC"
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc",
+      "section_number": "0001",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0001"
     },
     {
-      "anchor": "eb-68",
-      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "id": "S-0002",
-      "title": "EB 68"
+      "title": "EB 68",
+      "anchor": "eb-68",
+      "section_number": "0002",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0002"
     },
     {
-      "anchor": "type-iii-other-project-activities",
-      "content": "Project participants shall apply the general guidelines to small-scale (SSC) clean development mechanism (CDM) methodologies, Guidelines on the demonstrating of additionality of SSC project activities and general guidance on leakage in biomass project activities (attachment C to appendix B) available at <http://cdm.unfccc.int/Reference/Guidclarif/index.html#meth> mutatis mutandis.",
       "id": "S-0003",
-      "title": "TYPE III - OTHER PROJECT ACTIVITIES"
+      "title": "TYPE III - OTHER PROJECT ACTIVITIES",
+      "anchor": "type-iii-other-project-activities",
+      "section_number": "0003",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0003"
     },
     {
-      "anchor": "a-switch-from-transplanted-rice-with-continuously-flooded-fields-to-dsr-leads-to-a-reduced-flooding",
-      "content": "period since DSR requires non-flooded conditions after sowing until the seed has fully germinated and developed into a viable, young plantlet (at the (cid:147)2 to 4 leaf stage(cid:148)).",
       "id": "S-0004",
-      "title": "A switch from transplanted rice with continuously flooded fields to DSR leads to a reduced flooding"
+      "title": "A switch from transplanted rice with continuously flooded fields to DSR leads to a reduced flooding",
+      "anchor": "a-switch-from-transplanted-rice-with-continuously-flooded-fields-to-dsr-leads-to-a-reduced-flooding",
+      "section_number": "0004",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0004"
     },
     {
-      "anchor": "unfccc-ccnucc-2",
-      "content": "III.AU./Version 03.0 Sectoral scope: 15",
       "id": "S-0005",
-      "title": "UNFCCC/CCNUCC"
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-2",
+      "section_number": "0005",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0005"
     },
     {
-      "anchor": "eb-68-2",
-      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "id": "S-0006",
-      "title": "EB 68"
+      "title": "EB 68",
+      "anchor": "eb-68-2",
+      "section_number": "0006",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0006"
     },
     {
-      "anchor": "unfccc-ccnucc-3",
-      "content": "III.AU./Version 03.0 Sectoral scope: 15",
       "id": "S-0007",
-      "title": "UNFCCC/CCNUCC"
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-3",
+      "section_number": "0007",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0007"
     },
     {
-      "anchor": "eb-68-3",
-      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "id": "S-0008",
-      "title": "EB 68"
+      "title": "EB 68",
+      "anchor": "eb-68-3",
+      "section_number": "0008",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0008"
     },
     {
-      "anchor": "water-regime-cid-150",
-      "content": "on-seasonc",
       "id": "S-0009",
-      "title": "Water regime (cid:150)"
+      "title": "Water regime (cid:150)",
+      "anchor": "water-regime-cid-150",
+      "section_number": "0009",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0009"
     },
     {
-      "anchor": "water-regime-cid-150-2",
-      "content": "pre-season",
       "id": "S-0010",
-      "title": "Water regime (cid:150)"
+      "title": "Water regime (cid:150)",
+      "anchor": "water-regime-cid-150-2",
+      "section_number": "0010",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0010"
     },
     {
-      "anchor": "organic",
-      "content": "Dynamic",
       "id": "S-0011",
-      "title": "Organic"
+      "title": "Organic",
+      "anchor": "organic",
+      "section_number": "0011",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0011"
     },
     {
-      "anchor": "soil-ph",
-      "content": "Static",
       "id": "S-0012",
-      "title": "Soil pH"
+      "title": "Soil pH",
+      "anchor": "soil-ph",
+      "section_number": "0012",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0012"
     },
     {
-      "anchor": "soil-organic",
-      "content": "Carbon",
       "id": "S-0013",
-      "title": "Soil Organic"
+      "title": "Soil Organic",
+      "anchor": "soil-organic",
+      "section_number": "0013",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0013"
     },
     {
-      "anchor": "climate",
-      "content": "Static",
       "id": "S-0014",
-      "title": "Climate"
+      "title": "Climate",
+      "anchor": "climate",
+      "section_number": "0014",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0014"
     },
     {
-      "anchor": "cid-150-5-5",
-      "content": "> 5.5 < 1%",
       "id": "S-0015",
-      "title": "(cid:150) 5.5"
+      "title": "(cid:150) 5.5",
+      "anchor": "cid-150-5-5",
+      "section_number": "0015",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0015"
     },
     {
-      "anchor": "cid-150-3",
-      "content": "> 3% [AEZ]f",
       "id": "S-0016",
-      "title": "(cid:150) 3 %"
+      "title": "(cid:150) 3 %",
+      "anchor": "cid-150-3",
+      "section_number": "0016",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0016"
     },
     {
-      "anchor": "unfccc-ccnucc-4",
-      "content": "III.AU./Version 03.0 Sectoral scope: 15",
       "id": "S-0017",
-      "title": "UNFCCC/CCNUCC"
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-4",
+      "section_number": "0017",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0017"
     },
     {
-      "anchor": "eb-68-4",
-      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "id": "S-0018",
-      "title": "EB 68"
+      "title": "EB 68",
+      "anchor": "eb-68-4",
+      "section_number": "0018",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0018"
     },
     {
-      "anchor": "unfccc-ccnucc-5",
-      "content": "III.AU./Version 03.0 Sectoral scope: 15",
       "id": "S-0019",
-      "title": "UNFCCC/CCNUCC"
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-5",
+      "section_number": "0019",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0019"
     },
     {
-      "anchor": "eb-68-5",
-      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "id": "S-0020",
-      "title": "EB 68"
+      "title": "EB 68",
+      "anchor": "eb-68-5",
+      "section_number": "0020",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0020"
     },
     {
-      "anchor": "unfccc-ccnucc-6",
-      "content": "III.AU./Version 03.0 Sectoral scope: 15",
       "id": "S-0021",
-      "title": "UNFCCC/CCNUCC"
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-6",
+      "section_number": "0021",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0021"
     },
     {
-      "anchor": "eb-68-6",
-      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "id": "S-0022",
-      "title": "EB 68"
+      "title": "EB 68",
+      "anchor": "eb-68-6",
+      "section_number": "0022",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0022"
     },
     {
-      "anchor": "unfccc-ccnucc-7",
-      "content": "III.AU./Version 03.0 Sectoral scope: 15",
       "id": "S-0023",
-      "title": "UNFCCC/CCNUCC"
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-7",
+      "section_number": "0023",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0023"
     },
     {
-      "anchor": "eb-68-7",
-      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "id": "S-0024",
-      "title": "EB 68"
+      "title": "EB 68",
+      "anchor": "eb-68-7",
+      "section_number": "0024",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0024"
     },
     {
-      "anchor": "unfccc-ccnucc-8",
-      "content": "III.AU./Version 03.0 Sectoral scope: 15",
       "id": "S-0025",
-      "title": "UNFCCC/CCNUCC"
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-8",
+      "section_number": "0025",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0025"
     },
     {
-      "anchor": "eb-68-8",
-      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "id": "S-0026",
-      "title": "EB 68"
+      "title": "EB 68",
+      "anchor": "eb-68-8",
+      "section_number": "0026",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0026"
     },
     {
-      "anchor": "unfccc-ccnucc-9",
-      "content": "III.AU./Version 03.0 Sectoral scope: 15",
       "id": "S-0027",
-      "title": "UNFCCC/CCNUCC"
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-9",
+      "section_number": "0027",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0027"
     },
     {
-      "anchor": "eb-68-9",
-      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "id": "S-0028",
-      "title": "EB 68"
+      "title": "EB 68",
+      "anchor": "eb-68-9",
+      "section_number": "0028",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0028"
     },
     {
-      "anchor": "unfccc-ccnucc-10",
-      "content": "III.AU./Version 03.0 Sectoral scope: 15",
       "id": "S-0029",
-      "title": "UNFCCC/CCNUCC"
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-10",
+      "section_number": "0029",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0029"
     },
     {
-      "anchor": "eb-68-10",
-      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "id": "S-0030",
-      "title": "EB 68"
+      "title": "EB 68",
+      "anchor": "eb-68-10",
+      "section_number": "0030",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0030"
     },
     {
-      "anchor": "guidelines-for-measuring-methane-emissions-from-rice-fields",
-      "content": "The implementation of methane measurement in rice fields requires the involvement of experts in this field or at least experienced staff trained by experts (i.e. from research institutions). These guidelines cannot replace expertise in setting up chamber measurements. They rather set minimum requirements that serve for standardizing the conditions under which methane emissions are measured for projects under this methodology.",
       "id": "S-0031",
-      "title": "GUIDELINES FOR MEASURING METHANE EMISSIONS FROM RICE FIELDS"
+      "title": "GUIDELINES FOR MEASURING METHANE EMISSIONS FROM RICE FIELDS",
+      "anchor": "guidelines-for-measuring-methane-emissions-from-rice-fields",
+      "section_number": "0031",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0031"
     },
     {
-      "anchor": "unfccc-ccnucc-11",
-      "content": "III.AU./Version 03.0 Sectoral scope: 15",
       "id": "S-0032",
-      "title": "UNFCCC/CCNUCC"
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-11",
+      "section_number": "0032",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0032"
     },
     {
-      "anchor": "eb-68-11",
-      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "id": "S-0033",
-      "title": "EB 68"
+      "title": "EB 68",
+      "anchor": "eb-68-11",
+      "section_number": "0033",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0033"
     },
     {
-      "anchor": "minutes",
-      "content": "Morning",
       "id": "S-0034",
-      "title": "minutes"
+      "title": "minutes",
+      "anchor": "minutes",
+      "section_number": "0034",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0034"
     },
     {
-      "anchor": "unfccc-ccnucc-12",
-      "content": "III.AU./Version 03.0 Sectoral scope: 15",
       "id": "S-0035",
-      "title": "UNFCCC/CCNUCC"
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-12",
+      "section_number": "0035",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0035"
     },
     {
-      "anchor": "eb-68-12",
-      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "id": "S-0036",
-      "title": "EB 68"
+      "title": "EB 68",
+      "anchor": "eb-68-12",
+      "section_number": "0036",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0036"
     },
     {
-      "anchor": "unfccc-ccnucc-13",
-      "content": "III.AU./Version 03.0 Sectoral scope: 15",
       "id": "S-0037",
-      "title": "UNFCCC/CCNUCC"
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-13",
+      "section_number": "0037",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0037"
     },
     {
-      "anchor": "eb-68-13",
-      "content": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "id": "S-0038",
-      "title": "EB 68"
+      "title": "EB 68",
+      "anchor": "eb-68-13",
+      "section_number": "0038",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0038"
     },
     {
-      "anchor": "july-2012",
-      "content": "01",
       "id": "S-0039",
-      "title": "July 2012"
+      "title": "July 2012",
+      "anchor": "july-2012",
+      "section_number": "0039",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0039"
     },
     {
-      "anchor": "march-2012",
-      "content": "EB 60, Annex 16",
       "id": "S-0040",
-      "title": "March 2012"
+      "title": "March 2012",
+      "anchor": "march-2012",
+      "section_number": "0040",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0040"
     },
     {
-      "anchor": "april-2011",
-      "content": "Decision Class: Regulatory Document Type: Standard Business Function: Methodology",
       "id": "S-0041",
-      "title": "April 2011"
+      "title": "April 2011",
+      "anchor": "april-2011",
+      "section_number": "0041",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.AU.v03-0.S-0041"
     }
   ]
 }

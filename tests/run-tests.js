@@ -20,6 +20,8 @@ const tests = [
   'tests/roadmap-status-sync.test.js',
   'tests/ar-ams0007-tool-module-relationships-proof.test.js',
   'tests/gs-luf-thin-rich-contract.test.js',
+  'tests/methodology-artifact-contract.test.js',
+  'tests/json-canonical-check-lean-order.test.js',
   'tests/pr-accept-harness.test.js',
   'tests/rc-s7-ingestion-hardening-proof.test.js',
 ];

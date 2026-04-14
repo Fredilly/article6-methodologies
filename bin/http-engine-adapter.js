@@ -117,7 +117,7 @@ function buildCorpus() {
       const ruleId = String(rule.id || '');
       const sectionId = String(rule.section_id || '');
       const section = sectionById.get(sectionId) || { id: sectionId, title: '' };
-      const ruleText = String(rule.text || '');
+      const ruleText = String(rule.title || rule.text || '');
       const compositeText = section.title ? `${section.title} - ${ruleText}` : ruleText;
       const tokens = tokenize(compositeText);
       const docKey = `${cfg.methodology_id}@${cfg.version}:${ruleId}`;

@@ -2,27 +2,51 @@
   "rules": [
     {
       "id": "R-0001-0027",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.BF.v01-0.R-0001-0027",
+      "title": "change over time (no matter whether intended by the project activity or due to other reasons) and shall be monitored in the project fields.",
+      "logic": "change over time (no matter whether intended by the project activity or due to other reasons) and shall be monitored in the project fields.",
+      "section_anchor": "dynamic-conditions-are-those-that-are-connected-to-the-management-practice-of-a-field-thus-can",
       "section_id": "S-0027",
+      "section_number": "0027",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.BF.v01-0.S-0027",
+      "tools": [
+        "UNFCCC/AMS-III.BF@v01-0"
+      ],
       "tags": [
         "monitoring"
-      ],
-      "text": "change over time (no matter whether intended by the project activity or due to other reasons) and shall be monitored in the project fields."
+      ]
     },
     {
       "id": "R-0001-0033",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.BF.v01-0.R-0001-0033",
+      "title": "Project proponents may refer to existing literature on model validation for the specific project area and crops used in baseline as well as project scenarios.",
+      "logic": "Project proponents may refer to existing literature on model validation for the specific project area and crops used in baseline as well as project scenarios.",
+      "section_anchor": "t-co2-t-n-till-december-2012-and-37-93-t-co2-t-n-onward-january-2013",
       "section_id": "S-0033",
+      "section_number": "0033",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.BF.v01-0.S-0033",
+      "tools": [
+        "UNFCCC/AMS-III.BF@v01-0"
+      ],
       "tags": [
         "parameter"
-      ],
-      "text": "Project proponents may refer to existing literature on model validation for the specific project area and crops used in baseline as well as project scenarios."
+      ]
     },
     {
       "id": "R-0002-0033",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.BF.v01-0.R-0002-0033",
+      "title": "Model validation must be carried out for the baseline crop and area parameters as well as the NUE crop and parameters in the project scenario.",
+      "logic": "Model validation must be carried out for the baseline crop and area parameters as well as the NUE crop and parameters in the project scenario.",
+      "section_anchor": "t-co2-t-n-till-december-2012-and-37-93-t-co2-t-n-onward-january-2013",
       "section_id": "S-0033",
+      "section_number": "0033",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.BF.v01-0.S-0033",
+      "tools": [
+        "UNFCCC/AMS-III.BF@v01-0"
+      ],
       "tags": [
         "parameter"
-      ],
-      "text": "Model validation must be carried out for the baseline crop and area parameters as well as the NUE crop and parameters in the project scenario."
+      ]
     }
   ]
 }

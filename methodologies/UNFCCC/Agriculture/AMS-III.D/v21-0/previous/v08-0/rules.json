@@ -2,47 +2,67 @@
   "rules": [
     {
       "id": "R-0001-0002",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v08-0.R-0001-0002",
+      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "section_anchor": "march-2006",
       "section_id": "S-0002",
+      "section_number": "0002",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.D.v08-0.S-0002",
+      "tools": [
+        "UNFCCC/AMS-III.D@v08-0"
+      ],
       "tags": [
         "parameter"
-      ],
-      "text": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
-      "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories"
+      ]
     },
     {
       "id": "R-0001-0006",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v08-0.R-0001-0006",
+      "title": "Baseline",
       "logic": "Baseline",
       "section_anchor": "the-project-boundary-is-the-physical-geographical-site-of-the-methane-recovery-facility",
       "section_id": "S-0006",
+      "section_number": "0006",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.D.v08-0.S-0006",
+      "tools": [
+        "UNFCCC/AMS-III.D@v08-0"
+      ],
       "tags": [
         "parameter"
-      ],
-      "text": "Baseline",
-      "title": "Baseline"
+      ]
     },
     {
       "id": "R-0001-0010",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v08-0.R-0001-0010",
+      "title": "Monitoring",
       "logic": "Monitoring",
       "section_anchor": "no-leakage-calculation-is-required",
       "section_id": "S-0010",
+      "section_number": "0010",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.D.v08-0.S-0010",
+      "tools": [
+        "UNFCCC/AMS-III.D@v08-0"
+      ],
       "tags": [
         "monitoring"
-      ],
-      "text": "Monitoring",
-      "title": "Monitoring"
+      ]
     },
     {
       "id": "R-0001-0012",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.D.v08-0.R-0001-0012",
+      "title": "the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
       "logic": "the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
       "section_anchor": "regular-maintenance-should-ensure-optimal-operation-of-flares-the-flare-efficiency-defined-as",
       "section_id": "S-0012",
+      "section_number": "0012",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.D.v08-0.S-0012",
+      "tools": [
+        "UNFCCC/AMS-III.D@v08-0"
+      ],
       "tags": [
         "monitoring"
-      ],
-      "text": "the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored.",
-      "title": "the fraction of time in which the gas is combusted in the flare, multiplied by the efficiency of the flaring process, shall be monitored."
+      ]
     }
   ]
 }
