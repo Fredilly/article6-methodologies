@@ -41,7 +41,7 @@ function relativeMethodSegments(methodDir) {
   const rel = path.relative(METHODOLOGIES_ROOT, realpathMaybe(methodDir));
   const segments = rel.split(path.sep).filter(Boolean);
   if (segments.length >= 6 && segments[4] === 'previous') {
-    return segments.slice(0, 4);
+    return [...segments.slice(0, 3), segments[5]];
   }
   return segments;
 }

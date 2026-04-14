@@ -2,15 +2,15 @@
   "rules": [
     {
       "id": "R-0001-0002",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0002",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0002",
       "title": "Approved consolidated baseline methodology ACM0010",
       "logic": "Approved consolidated baseline methodology ACM0010",
       "section_anchor": "september-2006",
       "section_id": "S-0002",
       "section_number": "0002",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0002",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0002",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "parameter"
@@ -18,15 +18,15 @@
     },
     {
       "id": "R-0001-0004",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0004",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0004",
       "title": "• The annual average temperature in the site where the anaerobic manure treatment facility in the baseline existed is higher than 5°C.",
       "logic": "• The annual average temperature in the site where the anaerobic manure treatment facility in the baseline existed is higher than 5°C.",
       "section_anchor": "september-2006-2",
       "section_id": "S-0004",
       "section_number": "0004",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0004",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0004",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "parameter"
@@ -34,15 +34,15 @@
     },
     {
       "id": "R-0001-0011",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0011",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0011",
       "title": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated.",
       "logic": "For each alternative baseline scenario, the internal rate of return (IRR) and/or the net present value (NPV) should be calculated.",
       "section_anchor": "irr",
       "section_id": "S-0011",
       "section_number": "0011",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0011",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0011",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "parameter"
@@ -50,15 +50,15 @@
     },
     {
       "id": "R-0001-0035",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0035",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0035",
       "title": "BEN2O,y Annual baseline N2O emissions in t CO2e / yr GWPN2O Global Warming Potential (GWP) for N2O.",
       "logic": "BEN2O,y Annual baseline N2O emissions in t CO2e / yr GWPN2O Global Warming Potential (GWP) for N2O.",
       "section_anchor": "september-2006-11",
       "section_id": "S-0035",
       "section_number": "0035",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0035",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0035",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "parameter"
@@ -66,15 +66,15 @@
     },
     {
       "id": "R-0001-0039",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0039",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0039",
       "title": "small-scale project activity (15 MW), the method for the calculation of the grid emission factor in the simplified baseline methodology for small-scale CDM project activity AMS.I.D could be used.",
       "logic": "small-scale project activity (15 MW), the method for the calculation of the grid emission factor in the simplified baseline methodology for small-scale CDM project activity AMS.I.D could be used.",
       "section_anchor": "september-2006-13",
       "section_id": "S-0039",
       "section_number": "0039",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0039",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0039",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "parameter"
@@ -82,15 +82,15 @@
     },
     {
       "id": "R-0001-0042",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0042",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0042",
       "title": "LFAD Methane leakage from Anaerobic digesters, default of 0.15 multiplied by methane content of biogas.",
       "logic": "LFAD Methane leakage from Anaerobic digesters, default of 0.15 multiplied by methane content of biogas.",
       "section_anchor": "september-2006-14",
       "section_id": "S-0042",
       "section_number": "0042",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0042",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0042",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "leakage"
@@ -98,15 +98,15 @@
     },
     {
       "id": "R-0002-0042",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0002-0042",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0002-0042",
       "title": "LT Index for livestock type B0,LT CH4 production capacity from manure for livestock type LT, in m3 CH4/kg-VS, to be chosen based on procedure provided for in the baseline methodology section.",
       "logic": "LT Index for livestock type B0,LT CH4 production capacity from manure for livestock type LT, in m3 CH4/kg-VS, to be chosen based on procedure provided for in the baseline methodology section.",
       "section_anchor": "september-2006-14",
       "section_id": "S-0042",
       "section_number": "0042",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0042",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0042",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "parameter"
@@ -114,15 +114,15 @@
     },
     {
       "id": "R-0001-0053",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0053",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0053",
       "title": "• In case the electricity is generated in an on-site fossil fuel fired power plant in the baseline, the default emission factor for a diesel generator with a capacity of more than 200 kW for small-scale project activities should be used ...",
       "logic": "• In case the electricity is generated in an on-site fossil fuel fired power plant in the baseline, the default emission factor for a diesel generator with a capacity of more than 200 kW for small-scale project activities should be used (0.8 tCO2/MWh, see Table I.D.1 in the simplified baseline and monitoring methodology AMS.I.D for selected small-scale CDM project activity categories).",
       "section_anchor": "september-2006-17",
       "section_id": "S-0053",
       "section_number": "0053",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0053",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0053",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "parameter"
@@ -130,15 +130,15 @@
     },
     {
       "id": "R-0001-0056",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0056",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0056",
       "title": "RN,n Fraction of NEX in manure waste that is reduced in the Baseline AWMS.",
       "logic": "RN,n Fraction of NEX in manure waste that is reduced in the Baseline AWMS.",
       "section_anchor": "guidelines-can-be-used",
       "section_id": "S-0056",
       "section_number": "0056",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0056",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0056",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "parameter"
@@ -146,15 +146,15 @@
     },
     {
       "id": "R-0001-0073",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0073",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0073",
       "title": "• Flare operation, i.e., time of the year when the flare is operational when the biogas is flowing through the flare; • Concentration of methane in biogas at outlet of anaerobic digester; • Concentration of methane in flue gases of the f...",
       "logic": "• Flare operation, i.e., time of the year when the flare is operational when the biogas is flowing through the flare; • Concentration of methane in biogas at outlet of anaerobic digester; • Concentration of methane in flue gases of the flare; • Biogas leakage in project: through leaks in the pipeline during transportation of biogas.",
       "section_anchor": "september-2006-25",
       "section_id": "S-0073",
       "section_number": "0073",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0073",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0073",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "leakage"
@@ -162,15 +162,15 @@
     },
     {
       "id": "R-0001-0075",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0075",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0075",
       "title": "Leakage: • Nitrogen concentration and COD in waste water/sludge disposed outside the project boundary;",
       "logic": "Leakage: • Nitrogen concentration and COD in waste water/sludge disposed outside the project boundary;",
       "section_anchor": "september-2006-26",
       "section_id": "S-0075",
       "section_number": "0075",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0075",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0075",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "leakage"
@@ -178,15 +178,15 @@
     },
     {
       "id": "R-0001-0077",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0077",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0077",
       "title": "Data and parameters monitored",
       "logic": "Data and parameters monitored",
       "section_anchor": "september-2006-27",
       "section_id": "S-0077",
       "section_number": "0077",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0077",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0077",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "monitoring"
@@ -194,15 +194,15 @@
     },
     {
       "id": "R-0001-0079",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0079",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0079",
       "title": "QA/QC procedures: --- Any comment: If it is required to use developed country VS values, the following should be monitored: - Genetic source of the production operations livestock originate from an Annex I Party; - The formulated feed ra...",
       "logic": "QA/QC procedures: --- Any comment: If it is required to use developed country VS values, the following should be monitored: - Genetic source of the production operations livestock originate from an Annex I Party; - The formulated feed rations (FFR).",
       "section_anchor": "september-2006-28",
       "section_id": "S-0079",
       "section_number": "0079",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0079",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0079",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "monitoring"
@@ -210,15 +210,15 @@
     },
     {
       "id": "R-0001-0081",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0081",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0081",
       "title": "QA/QC procedures: --- Any comment: Calculated as per procedure described in the baseline methodology.",
       "logic": "QA/QC procedures: --- Any comment: Calculated as per procedure described in the baseline methodology.",
       "section_anchor": "september-2006-29",
       "section_id": "S-0081",
       "section_number": "0081",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0081",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0081",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "parameter"
@@ -226,15 +226,15 @@
     },
     {
       "id": "R-0001-0083",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0083",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0083",
       "title": "Data / Parameter: GE Data unit: MJ/d Description: Gross energy intake of the animal Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/...",
       "logic": "Data / Parameter: GE Data unit: MJ/d Description: Gross energy intake of the animal Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: --- Any comment: ---",
       "section_anchor": "september-2006-30",
       "section_id": "S-0083",
       "section_number": "0083",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0083",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0083",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "monitoring"
@@ -242,15 +242,15 @@
     },
     {
       "id": "R-0001-0085",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0085",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0085",
       "title": "Data / Parameter: NLT Data unit: Number Description: Average livestock population used in both baseline and project case emissions estimation.",
       "logic": "Data / Parameter: NLT Data unit: Number Description: Average livestock population used in both baseline and project case emissions estimation.",
       "section_anchor": "september-2006-31",
       "section_id": "S-0085",
       "section_number": "0085",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0085",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0085",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "parameter"
@@ -258,15 +258,15 @@
     },
     {
       "id": "R-0002-0085",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0002-0085",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0002-0085",
       "title": "Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures: --- Any comment: The PDD should describe the system on monitoring the ...",
       "logic": "Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Monthly QA/QC procedures: --- Any comment: The PDD should describe the system on monitoring the number of livestock population.",
       "section_anchor": "september-2006-31",
       "section_id": "S-0085",
       "section_number": "0085",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0085",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0085",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "monitoring"
@@ -274,15 +274,15 @@
     },
     {
       "id": "R-0001-0087",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0087",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0087",
       "title": "Description: Electricity used in Project AWMSs Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: Electricity meters wil...",
       "logic": "Description: Electricity used in Project AWMSs Source of data: Project proponents Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: Annually QA/QC procedures: Electricity meters will undergo maintenance/calibration subject to appropriate industry standards.",
       "section_anchor": "september-2006-32",
       "section_id": "S-0087",
       "section_number": "0087",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0087",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0087",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "monitoring"
@@ -290,15 +290,15 @@
     },
     {
       "id": "R-0002-0087",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0002-0087",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0002-0087",
       "title": "Uncertainty of the meters to be obtained from the manufacturers.",
       "logic": "Uncertainty of the meters to be obtained from the manufacturers.",
       "section_anchor": "september-2006-32",
       "section_id": "S-0087",
       "section_number": "0087",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0087",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0087",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "uncertainty"
@@ -306,15 +306,15 @@
     },
     {
       "id": "R-0003-0087",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0003-0087",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0003-0087",
       "title": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM-PDD.",
       "logic": "This uncertainty to be included in a conservative manner while calculating CERs and procedure for doing so should be described in the CDM-PDD.",
       "section_anchor": "september-2006-32",
       "section_id": "S-0087",
       "section_number": "0087",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0087",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0087",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "uncertainty"
@@ -322,15 +322,15 @@
     },
     {
       "id": "R-0001-0089",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0089",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0089",
       "title": "QA/QC procedures: The project proponents shall define the variability of the concentration.",
       "logic": "QA/QC procedures: The project proponents shall define the variability of the concentration.",
       "section_anchor": "september-2006-33",
       "section_id": "S-0089",
       "section_number": "0089",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0089",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0089",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "monitoring"
@@ -338,15 +338,15 @@
     },
     {
       "id": "R-0001-0091",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0091",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0091",
       "title": "Monitoring frequency: Annually QA/QC procedures: --- Any comment: ---",
       "logic": "Monitoring frequency: Annually QA/QC procedures: --- Any comment: ---",
       "section_anchor": "september-2006-34",
       "section_id": "S-0091",
       "section_number": "0091",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0091",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0091",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "monitoring"
@@ -354,15 +354,15 @@
     },
     {
       "id": "R-0001-0093",
-      "stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.R-0001-0093",
+      "stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.R-0001-0093",
       "title": "Source of data: --- Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---",
       "logic": "Source of data: --- Measurement Archive electronically during project plus 5 years procedures (if any): Monitoring frequency: --- QA/QC procedures: --- Any comment: ---",
       "section_anchor": "september-2006-35",
       "section_id": "S-0093",
       "section_number": "0093",
-      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v03-0.S-0093",
+      "section_stable_id": "UNFCCC.Agriculture.ACM0010.v01-0.S-0093",
       "tools": [
-        "UNFCCC/ACM0010@v03-0"
+        "UNFCCC/ACM0010@v01-0"
       ],
       "tags": [
         "monitoring"
