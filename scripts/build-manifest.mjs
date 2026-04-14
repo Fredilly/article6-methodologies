@@ -26,6 +26,7 @@ for (const file of files) {
 
     const ruleTxt =
       (typeof r.rule === "string" && r.rule) ||
+      (typeof r.title === "string" && r.title) ||
       (typeof r.text === "string" && r.text) ||
       (typeof r.section_title === "string" && r.section_title) ||
       "";
