@@ -2,15 +2,15 @@
   "rules": [
     {
       "id": "R-0001-0002",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.R-0001-0002",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.R-0001-0002",
       "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "section_anchor": "eb-48",
       "section_id": "S-0002",
       "section_number": "0002",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.S-0002",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.S-0002",
       "tools": [
-        "UNFCCC/AMS-III.A@v03-0"
+        "UNFCCC/AMS-III.A@v02-0"
       ],
       "tags": [
         "parameter"
@@ -18,15 +18,15 @@
     },
     {
       "id": "R-0001-0003",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.R-0001-0003",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.R-0001-0003",
       "title": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at <http://cdm.unfccc.int/methodologies/SSCmethodologies/approve...",
       "logic": "Project participants shall take into account the general guidance to the methodologies, information on additionality, abbreviations and general guidance on leakage provided at <http://cdm.unfccc.int/methodologies/SSCmethodologies/approved.html>.",
       "section_anchor": "type-iii-other-project-types",
       "section_id": "S-0003",
       "section_number": "0003",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.S-0003",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.S-0003",
       "tools": [
-        "UNFCCC/AMS-III.A@v03-0"
+        "UNFCCC/AMS-III.A@v02-0"
       ],
       "tags": [
         "leakage"
@@ -34,15 +34,15 @@
     },
     {
       "id": "R-0001-0007",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.R-0001-0007",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.R-0001-0007",
       "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "section_anchor": "eb-48-2",
       "section_id": "S-0007",
       "section_number": "0007",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.S-0007",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.S-0007",
       "tools": [
-        "UNFCCC/AMS-III.A@v03-0"
+        "UNFCCC/AMS-III.A@v02-0"
       ],
       "tags": [
         "parameter"
@@ -50,15 +50,15 @@
     },
     {
       "id": "R-0001-0010",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.R-0001-0010",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.R-0001-0010",
       "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "section_anchor": "eb-48-3",
       "section_id": "S-0010",
       "section_number": "0010",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.S-0010",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.S-0010",
       "tools": [
-        "UNFCCC/AMS-III.A@v03-0"
+        "UNFCCC/AMS-III.A@v02-0"
       ],
       "tags": [
         "parameter"
@@ -66,15 +66,15 @@
     },
     {
       "id": "R-0001-0022",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.R-0001-0022",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.R-0001-0022",
       "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "section_anchor": "eb-48-4",
       "section_id": "S-0022",
       "section_number": "0022",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.S-0022",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.S-0022",
       "tools": [
-        "UNFCCC/AMS-III.A@v03-0"
+        "UNFCCC/AMS-III.A@v02-0"
       ],
       "tags": [
         "parameter"
@@ -82,15 +82,15 @@
     },
     {
       "id": "R-0001-0024",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.R-0001-0024",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.R-0001-0024",
       "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "section_anchor": "eb-48-5",
       "section_id": "S-0024",
       "section_number": "0024",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.S-0024",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.S-0024",
       "tools": [
-        "UNFCCC/AMS-III.A@v03-0"
+        "UNFCCC/AMS-III.A@v02-0"
       ],
       "tags": [
         "parameter"
@@ -98,15 +98,15 @@
     },
     {
       "id": "R-0001-0027",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.R-0001-0027",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.R-0001-0027",
       "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "section_anchor": "eb-48-6",
       "section_id": "S-0027",
       "section_number": "0027",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.S-0027",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.S-0027",
       "tools": [
-        "UNFCCC/AMS-III.A@v03-0"
+        "UNFCCC/AMS-III.A@v02-0"
       ],
       "tags": [
         "parameter"
@@ -114,15 +114,15 @@
     },
     {
       "id": "R-0001-0028",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.R-0001-0028",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.R-0001-0028",
       "title": "parameters shall be monitored:",
       "logic": "parameters shall be monitored:",
       "section_anchor": "monitoring-shall-include-all-farmers-i-that-take-part-in-the-project-activity-the-following",
       "section_id": "S-0028",
       "section_number": "0028",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.S-0028",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.S-0028",
       "tools": [
-        "UNFCCC/AMS-III.A@v03-0"
+        "UNFCCC/AMS-III.A@v02-0"
       ],
       "tags": [
         "monitoring"
@@ -130,15 +130,15 @@
     },
     {
       "id": "R-0001-0030",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.R-0001-0030",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.R-0001-0030",
       "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "section_anchor": "eb-48-7",
       "section_id": "S-0030",
       "section_number": "0030",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.S-0030",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.S-0030",
       "tools": [
-        "UNFCCC/AMS-III.A@v03-0"
+        "UNFCCC/AMS-III.A@v02-0"
       ],
       "tags": [
         "parameter"
@@ -146,15 +146,15 @@
     },
     {
       "id": "R-0001-0032",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.R-0001-0032",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.R-0001-0032",
       "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "section_anchor": "eb-48-8",
       "section_id": "S-0032",
       "section_number": "0032",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.S-0032",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.S-0032",
       "tools": [
-        "UNFCCC/AMS-III.A@v03-0"
+        "UNFCCC/AMS-III.A@v02-0"
       ],
       "tags": [
         "parameter"
@@ -162,15 +162,15 @@
     },
     {
       "id": "R-0001-0035",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.R-0001-0035",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.R-0001-0035",
       "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "section_anchor": "eb-48-9",
       "section_id": "S-0035",
       "section_number": "0035",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.S-0035",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.S-0035",
       "tools": [
-        "UNFCCC/AMS-III.A@v03-0"
+        "UNFCCC/AMS-III.A@v02-0"
       ],
       "tags": [
         "parameter"
@@ -178,15 +178,15 @@
     },
     {
       "id": "R-0001-0036",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.R-0001-0036",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.R-0001-0036",
       "title": "The following monitoring procedure shall be implemented to monitor the fields where legumes and grass is cultivated in rotations.",
       "logic": "The following monitoring procedure shall be implemented to monitor the fields where legumes and grass is cultivated in rotations.",
       "section_anchor": "inoculant-application",
       "section_id": "S-0036",
       "section_number": "0036",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.S-0036",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.S-0036",
       "tools": [
-        "UNFCCC/AMS-III.A@v03-0"
+        "UNFCCC/AMS-III.A@v02-0"
       ],
       "tags": [
         "monitoring"
@@ -194,15 +194,15 @@
     },
     {
       "id": "R-0001-0038",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.R-0001-0038",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.R-0001-0038",
       "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "section_anchor": "eb-48-10",
       "section_id": "S-0038",
       "section_number": "0038",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.S-0038",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.S-0038",
       "tools": [
-        "UNFCCC/AMS-III.A@v03-0"
+        "UNFCCC/AMS-III.A@v02-0"
       ],
       "tags": [
         "parameter"
@@ -210,15 +210,15 @@
     },
     {
       "id": "R-0001-0042",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.R-0001-0042",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.R-0001-0042",
       "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "section_anchor": "eb-48-11",
       "section_id": "S-0042",
       "section_number": "0042",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.S-0042",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.S-0042",
       "tools": [
-        "UNFCCC/AMS-III.A@v03-0"
+        "UNFCCC/AMS-III.A@v02-0"
       ],
       "tags": [
         "parameter"
@@ -226,15 +226,15 @@
     },
     {
       "id": "R-0001-0045",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.R-0001-0045",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.R-0001-0045",
       "title": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "logic": "Indicative simplified baseline and monitoring methodologies for selected small-scale CDM project activity categories",
       "section_anchor": "eb-48-12",
       "section_id": "S-0045",
       "section_number": "0045",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v03-0.S-0045",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.A.v02-0.S-0045",
       "tools": [
-        "UNFCCC/AMS-III.A@v03-0"
+        "UNFCCC/AMS-III.A@v02-0"
       ],
       "tags": [
         "parameter"

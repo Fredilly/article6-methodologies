@@ -2,15 +2,15 @@
   "rules": [
     {
       "id": "R-0001-0007",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-0001-0007",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.R-0001-0007",
       "title": "Systems with annual emission reduction higher than five tonnes of CO2e are eligible under “AMS-III.D.: Methane recovery in animal manure management systems”.",
       "logic": "Systems with annual emission reduction higher than five tonnes of CO2e are eligible under “AMS-III.D.: Methane recovery in animal manure management systems”.",
       "section_anchor": "the-category-is-limited-to-measures-at-individual-households-or-small-farms-e-g",
       "section_id": "S-0007",
       "section_number": "0007",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-0007",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.S-0007",
       "tools": [
-        "UNFCCC/AMS-III.R@v05-0"
+        "UNFCCC/AMS-III.R@v04-0"
       ],
       "tags": [
         "eligibility"
@@ -18,15 +18,15 @@
     },
     {
       "id": "R-0001-0015",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-0001-0015",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.R-0001-0015",
       "title": "TOOL21: Demonstration of additionality of small-scale project activities and TOOL22: Leakage in biomass small-scale project activities available at <http://cdm.unfccc.int/Reference/Guidclarif/index.html#meth> mutatis mutandis.",
       "logic": "TOOL21: Demonstration of additionality of small-scale project activities and TOOL22: Leakage in biomass small-scale project activities available at <http://cdm.unfccc.int/Reference/Guidclarif/index.html#meth> mutatis mutandis.",
       "section_anchor": "project-participants-shall-apply-the-general-guidelines-for-ssc-cdm-methodologies",
       "section_id": "S-0015",
       "section_number": "0015",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-0015",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.S-0015",
       "tools": [
-        "UNFCCC/AMS-III.R@v05-0"
+        "UNFCCC/AMS-III.R@v04-0"
       ],
       "tags": [
         "leakage"
@@ -34,15 +34,15 @@
     },
     {
       "id": "R-0001-0016",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-0001-0016",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.R-0001-0016",
       "title": "methodologies and tools: (a) “AMS-I.C.: “Thermal energy production with or without electricity”; (b) “AMS-I.E.: Switch from non-renewable biomass for thermal applications by the user”; (c) “AMS-I.I.: Biogas/biomass thermal applications f...",
       "logic": "methodologies and tools: (a) “AMS-I.C.: “Thermal energy production with or without electricity”; (b) “AMS-I.E.: Switch from non-renewable biomass for thermal applications by the user”; (c) “AMS-I.I.: Biogas/biomass thermal applications for households/small users”; (d) “AMS-III.D.: Methane recovery in animal manure management systems”; (e) “Standard for sampling and surveys for CDM project activities and programme of activities”; (f) “TOOL03: Tool to calculate project or leakage CO2 emissions from fossil fuel combustion”; (g) “TOOL05: Baseline, project and/or leakage emissions from electricity consumption and monitoring of electricity generation”.",
       "section_anchor": "this-methodology-also-refers-to-the-latest-approved-versions-of-the-following-approved",
       "section_id": "S-0016",
       "section_number": "0016",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-0016",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.S-0016",
       "tools": [
-        "UNFCCC/AMS-III.R@v05-0"
+        "UNFCCC/AMS-III.R@v04-0"
       ],
       "tags": [
         "parameter"
@@ -50,15 +50,15 @@
     },
     {
       "id": "R-0001-0020",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-0001-0020",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.R-0001-0020",
       "title": "operation of the system and the physical leakages of methane from the recovery system.",
       "logic": "operation of the system and the physical leakages of methane from the recovery system.",
       "section_anchor": "project-emissions-consist-of-co2-emissions-from-use-of-fossil-fuels-or-electricity-for-the",
       "section_id": "S-0020",
       "section_number": "0020",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-0020",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.S-0020",
       "tools": [
-        "UNFCCC/AMS-III.R@v05-0"
+        "UNFCCC/AMS-III.R@v04-0"
       ],
       "tags": [
         "leakage"
@@ -66,15 +66,15 @@
     },
     {
       "id": "R-0002-0020",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-0002-0020",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.R-0002-0020",
       "title": "The relevant methodological tools “TOOL03: Tool to calculate project or leakage CO2 emissions from fossil fuel combustion” and “TOOL05: Baseline, project and/or leakage emissions from electricity consumption and monitoring of electricity...",
       "logic": "The relevant methodological tools “TOOL03: Tool to calculate project or leakage CO2 emissions from fossil fuel combustion” and “TOOL05: Baseline, project and/or leakage emissions from electricity consumption and monitoring of electricity generation” shall be followed.",
       "section_anchor": "project-emissions-consist-of-co2-emissions-from-use-of-fossil-fuels-or-electricity-for-the",
       "section_id": "S-0020",
       "section_number": "0020",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-0020",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.S-0020",
       "tools": [
-        "UNFCCC/AMS-III.R@v05-0"
+        "UNFCCC/AMS-III.R@v04-0"
       ],
       "tags": [
         "parameter"
@@ -82,15 +82,15 @@
     },
     {
       "id": "R-0001-0022",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-0001-0022",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.R-0001-0022",
       "title": "The survey should determine the baseline animal manure management practices applied.",
       "logic": "The survey should determine the baseline animal manure management practices applied.",
       "section_anchor": "the-amount-of-waste-or-raw-materials-that-would-decay-anaerobically-in-the-absence-of",
       "section_id": "S-0022",
       "section_number": "0022",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-0022",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.S-0022",
       "tools": [
-        "UNFCCC/AMS-III.R@v05-0"
+        "UNFCCC/AMS-III.R@v04-0"
       ],
       "tags": [
         "parameter"
@@ -98,15 +98,15 @@
     },
     {
       "id": "R-0002-0022",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-0002-0022",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.R-0002-0022",
       "title": "If the livestock is raised in shared centralized farms,1 the project proponent shall be able to show the baseline animal manure management practices at each farm, either individually or through sampling.",
       "logic": "If the livestock is raised in shared centralized farms,1 the project proponent shall be able to show the baseline animal manure management practices at each farm, either individually or through sampling.",
       "section_anchor": "the-amount-of-waste-or-raw-materials-that-would-decay-anaerobically-in-the-absence-of",
       "section_id": "S-0022",
       "section_number": "0022",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-0022",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.S-0022",
       "tools": [
-        "UNFCCC/AMS-III.R@v05-0"
+        "UNFCCC/AMS-III.R@v04-0"
       ],
       "tags": [
         "parameter"
@@ -114,15 +114,15 @@
     },
     {
       "id": "R-0001-0027",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-0001-0027",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.R-0001-0027",
       "title": "activities” shall be followed to calculate leakage related to use of biomass.",
       "logic": "activities” shall be followed to calculate leakage related to use of biomass.",
       "section_anchor": "the-applicable-requirements-from-tool22-leakage-in-biomass-small-scale-project",
       "section_id": "S-0027",
       "section_number": "0027",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-0027",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.S-0027",
       "tools": [
-        "UNFCCC/AMS-III.R@v05-0"
+        "UNFCCC/AMS-III.R@v04-0"
       ],
       "tags": [
         "leakage"
@@ -130,15 +130,15 @@
     },
     {
       "id": "R-0001-0039",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-0001-0039",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.R-0001-0039",
       "title": "estimations are necessary other than that indicated under leakage section above.",
       "logic": "estimations are necessary other than that indicated under leakage section above.",
       "section_anchor": "the-methodology-is-applicable-to-a-programme-of-activities-no-additional-leakage",
       "section_id": "S-0039",
       "section_number": "0039",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-0039",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.S-0039",
       "tools": [
-        "UNFCCC/AMS-III.R@v05-0"
+        "UNFCCC/AMS-III.R@v04-0"
       ],
       "tags": [
         "leakage"
@@ -146,15 +146,15 @@
     },
     {
       "id": "R-0001-0042",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-0001-0042",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.R-0001-0042",
       "title": "To introduce the IPCC Tier 1 approach as an alternative method for calculation of baseline emissions.",
       "logic": "To introduce the IPCC Tier 1 approach as an alternative method for calculation of baseline emissions.",
       "section_anchor": "13-september-2012-eb-69-annex-23",
       "section_id": "S-0042",
       "section_number": "0042",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-0042",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.S-0042",
       "tools": [
-        "UNFCCC/AMS-III.R@v05-0"
+        "UNFCCC/AMS-III.R@v04-0"
       ],
       "tags": [
         "parameter"
@@ -162,15 +162,15 @@
     },
     {
       "id": "R-0001-0044",
-      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.R-0001-0044",
+      "stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.R-0001-0044",
       "title": "• To revise the guidance on calculation of project emissions from physical leakage and baseline emissions; • To revise sampling requirements; • To remove the conditions for PoA.",
       "logic": "• To revise the guidance on calculation of project emissions from physical leakage and baseline emissions; • To revise sampling requirements; • To remove the conditions for PoA.",
       "section_anchor": "ams-i-e",
       "section_id": "S-0044",
       "section_number": "0044",
-      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v05-0.S-0044",
+      "section_stable_id": "UNFCCC.Agriculture.AMS-III.R.v04-0.S-0044",
       "tools": [
-        "UNFCCC/AMS-III.R@v05-0"
+        "UNFCCC/AMS-III.R@v04-0"
       ],
       "tags": [
         "parameter"
