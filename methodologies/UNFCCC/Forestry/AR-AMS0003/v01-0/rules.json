@@ -2,289 +2,291 @@
   "rules": [
     {
       "id": "R-1-0001",
-      "logic": "Project qualifies as small-scale afforestation/reforestation when aggregated area under the plan remains below the UNFCCC threshold and land eligibility evidence is maintained.",
-      "section_anchor": "scope-and-applicability",
-      "section_id": "S-1",
-      "section_number": "1",
-      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-1",
       "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0001",
-      "tags": [
-        "eligibility"
-      ],
-      "text": "Small-scale A/R activities eligible when total area < 16,000 ha and participants grouped as defined.",
       "title": "Small-scale A/R activities eligible when total area < 16,000 ha and participants grouped as defined.",
-      "tools": [
-        "UNFCCC/AR-AMS0003@v01-0"
-      ],
-      "when": [
-        "Aggregated project area < 16,000 ha throughout crediting period.",
-        "Land-use history demonstrates non-forest status at project start."
-      ]
-    },
-    {
-      "id": "R-1-0002",
-      "logic": "The methodology defines grouped project participant roles, monitoring entity responsibilities, and leakage belt boundaries.",
-      "section_anchor": "definitions",
-      "section_id": "S-2",
-      "section_number": "2",
-      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-2",
-      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0002",
-      "tags": [
-        "eligibility",
-        "definition"
-      ],
-      "text": "Definitions for grouped smallholder projects include participants, monitoring entity, and leakage belt.",
-      "title": "Definitions for grouped smallholder projects include participants, monitoring entity, and leakage belt.",
-      "tools": [
-        "UNFCCC/AR-AMS0003@v01-0"
-      ],
-      "when": [
-        "Participant list updated prior to verification.",
-        "Leakage belt delineated and archived with geospatial data."
-      ]
-    },
-    {
-      "id": "R-1-0003",
-      "logic": "Project boundary encompasses all significant carbon pools and on-site emissions sources; excluded pools set to zero emissions by rule.",
-      "section_anchor": "project-boundary-and-carbon-pools",
-      "section_id": "S-3",
-      "section_number": "3",
-      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-3",
-      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0003",
-      "tags": [
-        "eligibility",
-        "boundary"
-      ],
-      "text": "Project boundary includes above- and below-ground biomass, dead wood, litter, and soil carbon pools unless excluded with justification.",
-      "title": "Project boundary includes above- and below-ground biomass, dead wood, litter, and soil carbon pools unless excluded with justification.",
-      "tools": [
-        "UNFCCC/AR-AMS0003@v01-0"
-      ],
-      "when": [
-        "Boundary map maintained and updated with parcel additions.",
-        "Excluded pools recorded with zero-change assumption."
-      ]
-    },
-    {
-      "id": "R-1-0004",
-      "logic": "Baseline carbon stock change set to zero under conservative assumption that lands remain degraded without project intervention.",
-      "section_anchor": "baseline-scenario-and-net-ghg-emissions",
-      "section_id": "S-4",
-      "section_number": "4",
-      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-4",
-      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0004",
-      "tags": [
-        "calc",
-        "baseline"
-      ],
-      "text": "Baseline scenario assumes continuation of pre-project land use with carbon stock change set to zero.",
-      "title": "Baseline scenario assumes continuation of pre-project land use with carbon stock change set to zero.",
-      "tools": [
-        "UNFCCC/AR-AMS0003@v01-0"
-      ],
-      "when": [
-        "Baseline justification renewed if socio-economic conditions shift.",
-        "Alternative land-use scenarios documented during validation."
-      ]
-    },
-    {
-      "id": "R-1-0005",
-      "logic": "Net project removals equal the sum of pool-based carbon stock changes minus project emissions from fuel use, vehicles, and fertilizer application.",
-      "section_anchor": "project-scenario-and-net-ghg-removals",
-      "section_id": "S-5",
-      "section_number": "5",
-      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-5",
-      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0005",
-      "tags": [
-        "calc",
-        "emissions"
-      ],
-      "text": "Project removals calculated by summing carbon stock changes per pool minus fossil fuel and fertilizer emissions.",
-      "title": "Project removals calculated by summing carbon stock changes per pool minus fossil fuel and fertilizer emissions.",
-      "tools": [
-        "UNFCCC/AR-AMS0003@v01-0",
-        "UNFCCC/AR-TOOL08@v04.0.0"
-      ],
-      "when": [
-        "Activity data for fossil fuel and fertilizer use collected annually.",
-        "Emission factors conform to latest IPCC or national guidance."
-      ]
-    },
-    {
-      "id": "R-1-0006",
-      "logic": "Leakage emissions from displaced activities quantified with standardized coefficients from Tool 14 and deducted from net removals.",
-      "section_anchor": "leakage",
-      "section_id": "S-6",
-      "section_number": "6",
-      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-6",
-      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0006",
-      "tags": [
-        "leakage"
-      ],
-      "text": "Leakage from activity shifting or market effects monitored and deducted using Tool 14 default factors.",
-      "title": "Leakage from activity shifting or market effects monitored and deducted using Tool 14 default factors.",
-      "tools": [
-        "UNFCCC/AR-AMS0003@v01-0",
-        "UNFCCC/AR-TOOL14@v04.2"
-      ],
-      "when": [
-        "Leakage belt activities surveyed annually.",
-        "Leakage deductions documented prior to credit issuance."
-      ]
-    },
-    {
-      "id": "R-1-0007",
-      "logic": "Implement monitoring plan with permanent sample plots, participant reporting forms, and QA/QC checks consistent with Tool 16.",
-      "section_anchor": "monitoring-plan",
-      "section_id": "S-7",
-      "section_number": "7",
-      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-7",
-      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0007",
-      "tags": [
-        "monitoring"
-      ],
-      "text": "Monitoring plan requires permanent plots measured every five years plus tracking of grouped participant compliance.",
-      "title": "Monitoring plan requires permanent plots measured every five years plus tracking of grouped participant compliance.",
-      "tools": [
-        "UNFCCC/AR-AMS0003@v01-0",
-        "UNFCCC/AR-TOOL16@v01.1.0"
-      ],
-      "when": [
-        "Plot measurements occur at ≤5-year intervals.",
-        "Participant compliance logs reviewed each verification."
-      ]
-    },
-    {
-      "id": "R-1-0008",
-      "logic": "Maintain dataset of project parameters including default biomass expansion factors, root-shoot ratios, and wood density values.",
-      "section_anchor": "data-and-parameters",
-      "section_id": "S-8",
-      "section_number": "8",
-      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-8",
-      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0008",
-      "tags": [
-        "parameter",
-        "data"
-      ],
-      "text": "Data and parameters table specifies default biomass factors and sampling requirements.",
-      "title": "Data and parameters table specifies default biomass factors and sampling requirements.",
-      "tools": [
-        "UNFCCC/AR-AMS0003@v01-0",
-        "UNFCCC/AR-TOOL14@v04.2"
-      ],
-      "when": [
-        "Project data registry kept current for all parameters.",
-        "Any parameter change approved by DOE prior to use."
-      ]
-    },
-    {
-      "id": "R-1-0009",
-      "logic": "Combine sampling and model uncertainty and apply Tool 12 deduction factors when required precision not achieved.",
-      "section_anchor": "uncertainty-precision-qa-qc",
-      "section_id": "S-9",
-      "section_number": "9",
-      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-9",
-      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0009",
-      "tags": [
-        "uncertainty"
-      ],
-      "text": "Uncertainty calculated per Tool 12; apply deductions when precision exceeds 10%.",
-      "title": "Uncertainty calculated per Tool 12; apply deductions when precision exceeds 10%.",
-      "tools": [
-        "UNFCCC/AR-AMS0003@v01-0",
-        "UNFCCC/AR-TOOL12@v03.1"
-      ],
-      "when": [
-        "Confidence interval wider than ±10%.",
-        "DOE verifies uncertainty computation spreadsheets."
-      ]
+      "logic": "Project qualifies as small-scale afforestation/reforestation when aggregated area under the plan remains below the UNFCCC threshold and land eligibility evidence is maintained.",
+      "type": "eligibility",
+      "refs": {
+        "methodology": "UNFCCC/AR-AMS0003@v01-0",
+        "primary_section": "S-1",
+        "section_anchor": "scope-and-applicability",
+        "section_number": "1",
+        "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-1",
+        "sections": [
+          "S-1"
+        ],
+        "tools": [
+          "UNFCCC/AR-AMS0003@v01-0"
+        ]
+      }
     },
     {
       "id": "R-1-0010",
-      "logic": "Allocate a proportional buffer contribution using Tool 15 risk matrix and adjust if threats or safeguards evolve.",
-      "section_anchor": "permanence-tcers-lcers",
-      "section_id": "S-10",
-      "section_number": "10",
-      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-10",
       "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0010",
-      "tags": [
-        "uncertainty",
-        "permanence"
-      ],
-      "text": "Non-permanence risk buffer determined via Tool 15 and updated when risk profile changes.",
       "title": "Non-permanence risk buffer determined via Tool 15 and updated when risk profile changes.",
-      "tools": [
-        "UNFCCC/AR-AMS0003@v01-0",
-        "UNFCCC/AR-TOOL15@v02.0"
-      ],
-      "when": [
-        "Risk assessment reviewed every verification.",
-        "Buffer ledger entries retained for DOE review."
+      "logic": "Allocate a proportional buffer contribution using Tool 15 risk matrix and adjust if threats or safeguards evolve.",
+      "type": "uncertainty",
+      "refs": {
+        "methodology": "UNFCCC/AR-AMS0003@v01-0",
+        "primary_section": "S-10",
+        "section_anchor": "permanence-tcers-lcers",
+        "section_number": "10",
+        "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-10",
+        "sections": [
+          "S-10"
+        ],
+        "tools": [
+          "UNFCCC/AR-AMS0003@v01-0",
+          "UNFCCC/AR-TOOL15@v02.0"
+        ]
+      },
+      "tags": [
+        "permanence"
       ]
     },
     {
       "id": "R-1-0011",
-      "logic": "Project maintains accessible copies of required normative tools and references listed in the methodology.",
-      "section_anchor": "normative-tools-and-references",
-      "section_id": "S-11",
-      "section_number": "11",
-      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-11",
       "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0011",
-      "tags": [
-        "reporting",
-        "reference"
-      ],
-      "text": "Normative tools and references (Tools 02, 08, 12, 14, 15, 16) must be accessible to grouped project manager.",
       "title": "Normative tools and references (Tools 02, 08, 12, 14, 15, 16) must be accessible to grouped project manager.",
-      "tools": [
-        "UNFCCC/AR-AMS0003@v01-0"
-      ],
-      "when": [
-        "Normative tools catalog updated when UNFCCC issues revisions."
+      "logic": "Project maintains accessible copies of required normative tools and references listed in the methodology.",
+      "type": "reporting",
+      "refs": {
+        "methodology": "UNFCCC/AR-AMS0003@v01-0",
+        "primary_section": "S-11",
+        "section_anchor": "normative-tools-and-references",
+        "section_number": "11",
+        "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-11",
+        "sections": [
+          "S-11"
+        ],
+        "tools": [
+          "UNFCCC/AR-AMS0003@v01-0"
+        ]
+      },
+      "tags": [
+        "reference"
       ]
     },
     {
       "id": "R-1-0012",
-      "logic": "Annualized carbon stock change ΔC_year = (C_t2 - C_t1) / T applied for each pool before emissions and leakage are deducted.",
-      "section_anchor": "calculation-procedures-and-equations",
-      "section_id": "S-12",
-      "section_number": "12",
-      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-12",
       "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0012",
-      "tags": [
-        "equation"
-      ],
-      "text": "Annual net removals computed as sum of pool changes minus leakage and emissions, divided by years between measurements.",
       "title": "Annual net removals computed as sum of pool changes minus leakage and emissions, divided by years between measurements.",
-      "tools": [
-        "UNFCCC/AR-AMS0003@v01-0",
-        "UNFCCC/AR-TOOL14@v04.2"
-      ],
-      "when": [
-        "Measurement interval T documented in monitoring report.",
-        "Pools aligned with UNFCCC reporting templates."
-      ]
+      "logic": "Annualized carbon stock change ΔC_year = (C_t2 - C_t1) / T applied for each pool before emissions and leakage are deducted.",
+      "type": "equation",
+      "refs": {
+        "methodology": "UNFCCC/AR-AMS0003@v01-0",
+        "primary_section": "S-12",
+        "section_anchor": "calculation-procedures-and-equations",
+        "section_number": "12",
+        "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-12",
+        "sections": [
+          "S-12"
+        ],
+        "tools": [
+          "UNFCCC/AR-AMS0003@v01-0",
+          "UNFCCC/AR-TOOL14@v04.2"
+        ]
+      }
     },
     {
       "id": "R-1-0013",
-      "logic": "Annex materials capture supporting evidence such as participant lists, training certificates, and grievance records.",
-      "section_anchor": "annexes",
-      "section_id": "S-13",
-      "section_number": "13",
-      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-13",
       "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0013",
-      "tags": [
-        "reporting"
-      ],
-      "text": "Annexes include participant enrollment records, training logs, and dispute resolution evidence.",
       "title": "Annexes include participant enrollment records, training logs, and dispute resolution evidence.",
-      "tools": [
-        "UNFCCC/AR-AMS0003@v01-0"
-      ],
-      "when": [
-        "Annex contents reviewed during verification.",
-        "Updates provided when participants join or exit the program."
+      "logic": "Annex materials capture supporting evidence such as participant lists, training certificates, and grievance records.",
+      "type": "reporting",
+      "refs": {
+        "methodology": "UNFCCC/AR-AMS0003@v01-0",
+        "primary_section": "S-13",
+        "section_anchor": "annexes",
+        "section_number": "13",
+        "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-13",
+        "sections": [
+          "S-13"
+        ],
+        "tools": [
+          "UNFCCC/AR-AMS0003@v01-0"
+        ]
+      }
+    },
+    {
+      "id": "R-1-0002",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0002",
+      "title": "Definitions for grouped smallholder projects include participants, monitoring entity, and leakage belt.",
+      "logic": "The methodology defines grouped project participant roles, monitoring entity responsibilities, and leakage belt boundaries.",
+      "type": "eligibility",
+      "refs": {
+        "methodology": "UNFCCC/AR-AMS0003@v01-0",
+        "primary_section": "S-2",
+        "section_anchor": "definitions",
+        "section_number": "2",
+        "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-2",
+        "sections": [
+          "S-2"
+        ],
+        "tools": [
+          "UNFCCC/AR-AMS0003@v01-0"
+        ]
+      },
+      "tags": [
+        "definition"
       ]
+    },
+    {
+      "id": "R-1-0003",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0003",
+      "title": "Project boundary includes above- and below-ground biomass, dead wood, litter, and soil carbon pools unless excluded with justification.",
+      "logic": "Project boundary encompasses all significant carbon pools and on-site emissions sources; excluded pools set to zero emissions by rule.",
+      "type": "eligibility",
+      "refs": {
+        "methodology": "UNFCCC/AR-AMS0003@v01-0",
+        "primary_section": "S-3",
+        "section_anchor": "project-boundary-and-carbon-pools",
+        "section_number": "3",
+        "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-3",
+        "sections": [
+          "S-3"
+        ],
+        "tools": [
+          "UNFCCC/AR-AMS0003@v01-0"
+        ]
+      },
+      "tags": [
+        "boundary"
+      ]
+    },
+    {
+      "id": "R-1-0004",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0004",
+      "title": "Baseline scenario assumes continuation of pre-project land use with carbon stock change set to zero.",
+      "logic": "Baseline carbon stock change set to zero under conservative assumption that lands remain degraded without project intervention.",
+      "type": "calc",
+      "refs": {
+        "methodology": "UNFCCC/AR-AMS0003@v01-0",
+        "primary_section": "S-4",
+        "section_anchor": "baseline-scenario-and-net-ghg-emissions",
+        "section_number": "4",
+        "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-4",
+        "sections": [
+          "S-4"
+        ],
+        "tools": [
+          "UNFCCC/AR-AMS0003@v01-0"
+        ]
+      },
+      "tags": [
+        "baseline"
+      ]
+    },
+    {
+      "id": "R-1-0005",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0005",
+      "title": "Project removals calculated by summing carbon stock changes per pool minus fossil fuel and fertilizer emissions.",
+      "logic": "Net project removals equal the sum of pool-based carbon stock changes minus project emissions from fuel use, vehicles, and fertilizer application.",
+      "type": "calc",
+      "refs": {
+        "methodology": "UNFCCC/AR-AMS0003@v01-0",
+        "primary_section": "S-5",
+        "section_anchor": "project-scenario-and-net-ghg-removals",
+        "section_number": "5",
+        "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-5",
+        "sections": [
+          "S-5"
+        ],
+        "tools": [
+          "UNFCCC/AR-AMS0003@v01-0",
+          "UNFCCC/AR-TOOL08@v04.0.0"
+        ]
+      },
+      "tags": [
+        "emissions"
+      ]
+    },
+    {
+      "id": "R-1-0006",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0006",
+      "title": "Leakage from activity shifting or market effects monitored and deducted using Tool 14 default factors.",
+      "logic": "Leakage emissions from displaced activities quantified with standardized coefficients from Tool 14 and deducted from net removals.",
+      "type": "leakage",
+      "refs": {
+        "methodology": "UNFCCC/AR-AMS0003@v01-0",
+        "primary_section": "S-6",
+        "section_anchor": "leakage",
+        "section_number": "6",
+        "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-6",
+        "sections": [
+          "S-6"
+        ],
+        "tools": [
+          "UNFCCC/AR-AMS0003@v01-0",
+          "UNFCCC/AR-TOOL14@v04.2"
+        ]
+      }
+    },
+    {
+      "id": "R-1-0007",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0007",
+      "title": "Monitoring plan requires permanent plots measured every five years plus tracking of grouped participant compliance.",
+      "logic": "Implement monitoring plan with permanent sample plots, participant reporting forms, and QA/QC checks consistent with Tool 16.",
+      "type": "monitoring",
+      "refs": {
+        "methodology": "UNFCCC/AR-AMS0003@v01-0",
+        "primary_section": "S-7",
+        "section_anchor": "monitoring-plan",
+        "section_number": "7",
+        "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-7",
+        "sections": [
+          "S-7"
+        ],
+        "tools": [
+          "UNFCCC/AR-AMS0003@v01-0",
+          "UNFCCC/AR-TOOL16@v01.1.0"
+        ]
+      }
+    },
+    {
+      "id": "R-1-0008",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0008",
+      "title": "Data and parameters table specifies default biomass factors and sampling requirements.",
+      "logic": "Maintain dataset of project parameters including default biomass expansion factors, root-shoot ratios, and wood density values.",
+      "type": "parameter",
+      "refs": {
+        "methodology": "UNFCCC/AR-AMS0003@v01-0",
+        "primary_section": "S-8",
+        "section_anchor": "data-and-parameters",
+        "section_number": "8",
+        "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-8",
+        "sections": [
+          "S-8"
+        ],
+        "tools": [
+          "UNFCCC/AR-AMS0003@v01-0",
+          "UNFCCC/AR-TOOL14@v04.2"
+        ]
+      },
+      "tags": [
+        "data"
+      ]
+    },
+    {
+      "id": "R-1-0009",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0009",
+      "title": "Uncertainty calculated per Tool 12; apply deductions when precision exceeds 10%.",
+      "logic": "Combine sampling and model uncertainty and apply Tool 12 deduction factors when required precision not achieved.",
+      "type": "uncertainty",
+      "refs": {
+        "methodology": "UNFCCC/AR-AMS0003@v01-0",
+        "primary_section": "S-9",
+        "section_anchor": "uncertainty-precision-qa-qc",
+        "section_number": "9",
+        "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-9",
+        "sections": [
+          "S-9"
+        ],
+        "tools": [
+          "UNFCCC/AR-AMS0003@v01-0",
+          "UNFCCC/AR-TOOL12@v03.1"
+        ]
+      }
     }
   ]
 }

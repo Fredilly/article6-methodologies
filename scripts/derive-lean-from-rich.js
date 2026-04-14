@@ -3,27 +3,18 @@ const fs = require('fs');
 const path = require('path');
 
 function readJSON(p){
-  try {
-    return JSON.parse(fs.readFileSync(p,'utf8'));
-  } catch (err) {
-    throw new Error(`[derive-lean] failed to read ${path.relative(process.cwd(), p)}: ${err.message}`);
-  }
+  try { return JSON.parse(fs.readFileSync(p,'utf8')); }
+  catch (err) { throw new Error(`[derive] failed to read ${path.relative(process.cwd(), p)}: ${err.message}`); }
 }
 function writeJSON(p, data){
   const payload = JSON.stringify(data, null, 2) + '\n';
-  if (fs.existsSync(p)) {
-    const before = fs.readFileSync(p, 'utf8');
-    if (before === payload) return;
-  }
+  if (fs.existsSync(p)) { if (fs.readFileSync(p, 'utf8') === payload) return; }
   fs.writeFileSync(p, payload, 'utf8');
 }
 
-const PREVIOUS_SEGMENT = `${path.sep}previous${path.sep}`;
-const PREVIOUS_SUFFIX = `${path.sep}previous`;
+const PREV = `${path.sep}previous${path.sep}`;
 
-function isPreviousDir(p){
-  return p.includes(PREVIOUS_SEGMENT) || p.endsWith(PREVIOUS_SUFFIX);
-}
+function isPreviousDir(p){ return p.includes(PREV); }
 
 function listDirs(root, allowPrevious){
   const out = [];
@@ -35,12 +26,11 @@ function listDirs(root, allowPrevious){
     for (const e of ents) if (e.isFile() && (e.name === 'sections.rich.json' || e.name === 'rules.rich.json')) has++;
     if (has >= 2 && (allowPrevious || !isPreviousDir(d))) out.push(d);
     for (const e of ents) if (e.isDirectory()) walk(path.join(d, e.name));
-  }) (root);
+  })(root);
   return out;
 }
 
 function splitSecId(id){
-  // Expect forms like 'S-1', 'S-1-2', etc.
   const m = String(id).match(/^S-(\d+(?:-\d+)*)/);
   if (!m) return [];
   return m[1].split('-').map(n=>parseInt(n,10)).filter(Number.isFinite);
@@ -51,78 +41,85 @@ function cmpSections(a,b){
   for (let i=0;i<L;i++){ const x=A[i]||0, y=B[i]||0; if (x!==y) return x-y; }
   return 0;
 }
-function parseRuleId(id){
-  const s = String(id);
-  // Style A: 'S-1.R-0001' or 'S-1-2.R-0001'
-  let m = s.match(/^S-(\d+(?:-\d+)*)\.R-(\d{4})$/);
-  if (m) return { sec: m[1], serial: m[2] };
-  // Style B: '...R-1-0001' or '...R-1-2-0001'
-  m = s.match(/\.R-(\d+(?:-\d+)*)-(\d{4})$/);
-  if (m) return { sec: m[1], serial: m[2] };
-  throw new Error(`Bad rule id: ${id}`);
-}
-function cmpRules(a,b){
-  const s = cmpSections({id: a.section_id},{id: b.section_id});
-  if (s !== 0) return s;
-  const ma = String(a.id).match(/^R-\d+(?:-\d+)*-(\d{4})$/);
-  const mb = String(b.id).match(/^R-\d+(?:-\d+)*-(\d{4})$/);
-  if (ma && mb) return parseInt(ma[1],10) - parseInt(mb[1],10);
-  return String(a.id).localeCompare(String(b.id));
-}
 
 function derive(dir){
   const secR = path.join(dir, 'sections.rich.json');
   const ruleR = path.join(dir, 'rules.rich.json');
   if (!fs.existsSync(secR) || !fs.existsSync(ruleR)) {
-    console.warn(`[derive-lean] skip ${path.relative(process.cwd(), dir)} (missing rich sections/rules)`);
+    console.warn(`[derive] skip ${path.relative(process.cwd(), dir)} (missing rich)`);
     return false;
   }
+
   const sectionsRich = readJSON(secR);
   const sectionLookup = new Map();
-  const sectionsLean = sectionsRich.map(s=>{
+
+  // Derive lean sections (unchanged shape)
+  const sectionsLean = sectionsRich.map(s => {
     const lean = {
       id: s.id,
       title: s.title,
       anchor: s.anchor ?? undefined,
-      pages: Array.isArray(s.pages) && s.pages.length ? s.pages : undefined,
       section_number: s.section_number ?? undefined,
       stable_id: s.stable_id ?? undefined
     };
     sectionLookup.set(s.id, lean);
     return lean;
   }).sort(cmpSections);
+
   const rulesRich = readJSON(ruleR);
+
+  // Canonical base contract:
+  // { id, stable_id, title, logic, type, refs: { methodology, primary_section, section_anchor, section_number, section_stable_id, sections, tools }, tags? }
   const rulesLean = rulesRich.map(r => {
-    if (!r.summary || !r.refs || !Array.isArray(r.refs.sections) || !r.refs.sections[0]) {
-      throw new Error(`Missing summary/refs.sections: ${r.id}`);
-    }
-    const { sec, serial } = parseRuleId(r.id);
-    const tags = Array.from(new Set([r.type, ...(r.tags||[])]));
-    const section = sectionLookup.get(r.refs.sections[0]) || {};
+    const refs = r.refs || {};
+    const primarySection = refs.sections?.[0] || refs.primary_section || '';
+    const section = sectionLookup.get(primarySection) || {};
+
+    // Extract short rule ID (e.g., R-1-0001) from stable_id
+    const shortIdMatch = (r.stable_id || r.id || '').match(/\.(R-\d+(?:-\d+)*-\d{4})$/);
+    const shortId = shortIdMatch ? shortIdMatch[1] : r.id;
+
     return {
-      id: `R-${sec}-${serial}`,
+      id: shortId,
+      stable_id: r.stable_id,
+      title: r.summary || r.display?.title || '',
       logic: typeof r.logic === 'string' ? r.logic : undefined,
-      pages: Array.isArray(r.refs.pages) && r.refs.pages.length ? r.refs.pages : undefined,
-      section_anchor: r.refs.section_anchor ?? section.anchor ?? undefined,
-      section_id: r.refs.sections[0],
-      section_number: r.refs.section_number ?? section.section_number ?? undefined,
-      section_stable_id: r.refs.section_stable_id ?? section.stable_id ?? undefined,
-      stable_id: r.stable_id ?? undefined,
-      tags: tags.filter(Boolean),
-      text: r.summary,
-      title: r.display?.title ?? r.summary,
-      tools: Array.isArray(r.refs.tools) ? r.refs.tools : undefined,
-      when: Array.isArray(r.when) && r.when.length ? r.when : undefined
+      type: r.type || (Array.isArray(r.tags) ? r.tags[0] : undefined),
+      refs: {
+        methodology: refs.methodology,
+        primary_section: primarySection,
+        section_anchor: refs.section_anchor ?? section.anchor,
+        section_number: refs.section_number ?? section.section_number,
+        section_stable_id: refs.section_stable_id ?? section.stable_id,
+        sections: refs.sections || [primarySection],
+        tools: Array.isArray(refs.tools) ? refs.tools : undefined
+      },
+      tags: Array.isArray(r.tags) && r.tags.length ? r.tags : undefined
     };
-  }).sort(cmpRules);
-  writeJSON(path.join(dir,'sections.json'), { sections: sectionsLean });
-  writeJSON(path.join(dir,'rules.json'), { rules: rulesLean });
+  }).sort((a, b) => {
+    const sa = a.refs.primary_section, sb = b.refs.primary_section;
+    if (sa !== sb) return (sa || '').localeCompare(sb || '');
+    return (a.id || '').localeCompare(b.id || '');
+  });
+
+  // Clean refs: remove undefined values
+  for (const r of rulesLean) {
+    for (const k of Object.keys(r.refs)) {
+      if (r.refs[k] === undefined) delete r.refs[k];
+    }
+    if (Object.keys(r.tags || {}).length === 0) delete r.tags;
+  }
+
+  writeJSON(path.join(dir, 'sections.json'), { sections: sectionsLean });
+  writeJSON(path.join(dir, 'rules.json'), { rules: rulesLean });
   return true;
 }
 
 const rawArgs = process.argv.slice(2);
 const allowPrevious = rawArgs.includes('--include-previous');
-const positional = rawArgs.filter((arg) => arg !== '--include-previous');
+const positional = rawArgs.filter(a => a !== '--include-previous');
 const base = path.resolve(positional[0] || path.join(process.cwd(), 'methodologies'));
-let n = 0; for (const d of listDirs(base, allowPrevious)) if (derive(d)) n++;
+
+let n = 0;
+for (const d of listDirs(base, allowPrevious)) if (derive(d)) n++;
 console.log(`OK: derived lean JSON for ${n} method folder(s).`);
