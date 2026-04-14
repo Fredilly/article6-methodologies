@@ -119,13 +119,11 @@ function derive(dir){
         section_stable_id: r.refs.section_stable_id ?? section.stable_id ?? undefined,
         stable_id: r.stable_id ?? undefined,
         tags: tags.filter(Boolean),
+        text: typeof r.summary === 'string' && r.summary.length > 0 ? r.summary : undefined,
         title,
         tools: Array.isArray(r.refs.tools) ? r.refs.tools : undefined,
         when: Array.isArray(r.when) && r.when.length ? r.when : undefined
       };
-      if (typeof r.summary === 'string' && r.summary.length > 0) {
-        lean.text = r.summary;
-      }
       return lean;
     }
 
