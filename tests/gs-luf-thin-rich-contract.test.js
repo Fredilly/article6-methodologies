@@ -37,6 +37,8 @@ function main() {
   const enrichedStableIds = new Set([
     'GoldStandard.LUF.GS-00XX.v1-0.R-2-0003',
     'GoldStandard.LUF.GS-00XX.v1-0.R-2-0004',
+    'GoldStandard.LUF.GS-00XX.v1-0.R-2-0005',
+    'GoldStandard.LUF.GS-00XX.v1-0.R-2-0006',
     'GoldStandard.LUF.GS-00XX.v1-0.R-2-0008',
     'GoldStandard.LUF.GS-00XX.v1-0.R-3-0002',
     'GoldStandard.LUF.GS-00XX.v1-0.R-3-0003',
@@ -45,6 +47,7 @@ function main() {
     'GoldStandard.LUF.GS-00XX.v1-0.R-3-0006',
     'GoldStandard.LUF.GS-00XX.v1-0.R-4-0001',
     'GoldStandard.LUF.GS-00XX.v1-0.R-5-0001',
+    'GoldStandard.LUF.GS-00XX.v1-0.R-5-0002',
     'GoldStandard.LUF.GS-00XX.v1-0.R-5-0003',
   ]);
   const legacyRichKeys = ['summary', 'refs', 'type', 'notes', 'title', 'logic', 'text'];

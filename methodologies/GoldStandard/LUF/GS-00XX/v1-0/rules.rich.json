@@ -18,15 +18,15 @@
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0003",
     "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0003",
-    "source_span_text": "AGR projects shall hold FSC certification valid throughout the crediting period. FSC certification report required.",
+    "source_span_text": "When applying a dual certification, the Project Developer shall provide the ‘FSC Audit Report’ alongside the Project Design Document (PDD) - the PDD may reference the FSC Audit Report for relevant sections but is not required to duplicate. Project Developers shall also provide the ‘FSC Annual Surveillance Report’ instead of the template for the ‘Annual Report’. For dual certification, FSC certification is required to be valid throughout the crediting period.",
     "section_context": {
       "section_id": "S-2",
       "section_title": "General Eligibility Criteria",
       "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
-      "page_start": 10,
+      "page_start": 9,
       "page_end": 10,
       "lineage": [
-        "2.1.3"
+        "2.1.8"
       ]
     },
     "requirement_coverage": {
@@ -109,11 +109,100 @@
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0005",
-    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0005"
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0005",
+    "source_span_text": "2.1.13 Requirement 1: The Project Developer acts on behalf of project participants. For such cases, each project participant shall sign an agreement with the Project Developer, which confirms that: (a) The project participant holds the CO2 user rights3 that are associated with the project activities and has passed these on to the Project Developer, AND (b) The project participant holds all necessary rights to implement the project activities (e.g., rights to harvest), AND (c) The legal land title or similar entitlement4 for the land on which the project activities are implemented is uncontested. These agreements shall include the: (a) Contact details of the project participants, AND (b) The legal registration number and documentation by the governing jurisdiction that proves that the entity is in good standing (in case of an organisation), AND (c) Contact details of the land owner (if differing), AND (d) Length of lease contract (if applicable), AND (e) The liabilities and benefits for the person or entity to implement the project activities (e.g., switch to another crop and get access to the seeds).",
+    "section_context": {
+      "section_id": "S-2",
+      "section_title": "General Eligibility Criteria",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+      "page_start": 11,
+      "page_end": 11,
+      "lineage": [
+        "2.1.12",
+        "2.1.13"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0005",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "participant-agreements",
+          "label": "Participant Agreements",
+          "description": "Signed agreements between each project participant and the project developer covering transferred CO2 user rights, implementation rights, and uncontested land title or similar entitlement.",
+          "required": true
+        },
+        {
+          "id": "participant-registration-docs",
+          "label": "Participant Registration Documentation",
+          "description": "Contact details plus legal registration and good-standing documentation for each participating organisation, where applicable.",
+          "required": true
+        },
+        {
+          "id": "land-owner-lease-details",
+          "label": "Land Owner and Lease Details",
+          "description": "Land owner contact details and lease-duration information where those fields apply to the participant agreement package.",
+          "required": false
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "Each project participant signs an agreement with the project developer.",
+        "The agreement confirms that the participant holds the CO2 user rights associated with the project activities and has passed them to the project developer.",
+        "The agreement confirms that the participant holds the necessary rights to implement the project activities.",
+        "The agreement confirms that the legal land title or similar entitlement for the project land is uncontested.",
+        "The agreement package includes participant contact details, legal registration and good-standing documentation, and any applicable land-owner or lease details."
+      ]
+    }
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0006",
-    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0006"
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0006",
+    "source_span_text": "2.1.14 Requirement 2: The Project Developer acts on its own. In such cases, the Project Developer shall provide evidence that: (a) It holds the CO2 user rights5 and the rights for any other Certified SDG Impact Statement or Product that are associated with the project activities, AND (b) It holds all necessary rights to implement the project activities (e.g., rights to harvest), AND (c) The legal land title or similar entitlement for the land on which the project activities are implemented is uncontested.",
+    "section_context": {
+      "section_id": "S-2",
+      "section_title": "General Eligibility Criteria",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+      "page_start": 12,
+      "page_end": 12,
+      "lineage": [
+        "2.1.12",
+        "2.1.14"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0006",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "developer-rights-evidence",
+          "label": "Developer Rights Evidence",
+          "description": "Evidence that the project developer holds the CO2 user rights and any other certified SDG impact statement or product rights associated with the project activities.",
+          "required": true
+        },
+        {
+          "id": "implementation-rights-evidence",
+          "label": "Implementation Rights Evidence",
+          "description": "Evidence that the project developer holds the rights needed to implement the project activities, such as harvest rights where relevant.",
+          "required": true
+        },
+        {
+          "id": "uncontested-title-evidence",
+          "label": "Uncontested Title Evidence",
+          "description": "Evidence that the legal land title or similar entitlement for the project land is uncontested.",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "The project developer acts on its own rather than on behalf of project participants.",
+        "The project developer provides evidence that it holds the CO2 user rights and any associated certified SDG impact statement or product rights.",
+        "The project developer provides evidence that it holds the rights needed to implement the project activities.",
+        "The project developer provides evidence that the legal land title or similar entitlement for the project land is uncontested."
+      ]
+    }
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0007",
@@ -343,15 +432,14 @@
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0006",
     "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0006",
-    "source_span_text": "AGR specific: The first Verification shall be completed either within two years of project start date or Project Design Certification, whichever is later. A/R specific: Verification shall be completed at least every 5 years until the end of the crediting period. According to the Principles & Requirements, all projects shall seek Crediting Period Renewal every 5th year.",
+    "source_span_text": "3.1.12 Verification & Issuance review (Performance Certification): The performance review may take place either alongside or after Project Design Certification and must occur at least once during the 5-year Certification cycle. (a) AGR specific: The first Verification shall be completed either within two years of project start date or Project Design Certification, whichever is later. (b) A/R specific: Verification shall be completed at least every 5 years until the end of the crediting period. (c) According to the Principles & Requirements, all projects shall seek Crediting Period Renewal every 5th year. At the time of project renewal, The A/R and AGR projects shall update the baseline following the applied Impact Quantification Methodology requirements.",
     "section_context": {
       "section_id": "S-3",
       "section_title": "Eligibility Principles and Requirements",
       "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
-      "page_start": 16,
+      "page_start": 15,
       "page_end": 16,
       "lineage": [
-        "3.1.11",
         "3.1.12"
       ]
     },
@@ -404,7 +492,7 @@
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-4-0001",
     "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-4-0001",
-    "source_span_text": "All projects shall submit GIS vector layers (Table 4). The GIS vector layers shall be labelled comprehensively: Project Region, Project Area, Eligible Areas, Individual Modelling Units, Infrastructure (road, houses, etc.), Land use, Water bodies, Carbon pools.",
+    "source_span_text": "4.1.3. All projects shall submit GIS vector layers (Table 4). The GIS vector layers shall be labelled comprehensively: Project Region; Project Area; Eligible Areas; Individual Modelling Units; Infrastructure (road, houses, etc.); Water Bodies; Protected Areas; Biodiversity Areas; Where Affected People are situated; Sites with special cultural, ecological, economic, religious or spiritual significance; Sites with special significance for indigenous people and local communities – resulting from the Local Stakeholder Consultation (LSC); Where indigenous people and local communities are situated; Where indigenous people and local communities have legal rights, customary rights or sites with special cultural, ecological, economic, religious or spiritual significance.",
     "section_context": {
       "section_id": "S-4",
       "section_title": "Technical Requirements",
@@ -422,13 +510,13 @@
         {
           "id": "gis-layer-package",
           "label": "GIS Layer Package",
-          "description": "GIS vector files covering the required project region, project area, eligible area, modelling unit, infrastructure, land use, water body, and carbon pool layers.",
+          "description": "GIS vector files covering the required project region, project area, eligible areas, individual modelling units, infrastructure, water bodies, protected areas, biodiversity areas, and the required people-and-rights location layers where applicable.",
           "required": true
         },
         {
           "id": "gis-layer-labels",
           "label": "GIS Layer Labels",
-          "description": "Layer naming or legend evidence showing the required comprehensive labels from Table 4.",
+          "description": "Layer naming or legend evidence showing the required comprehensive labels from clause 4.1.3 and its associated table.",
           "required": true
         }
       ]
@@ -437,7 +525,7 @@
       "conditions": [
         "All projects submit GIS vector layers as specified in Table 4.",
         "The submitted GIS vector layers are labelled comprehensively.",
-        "The layer set covers Project Region, Project Area, Eligible Areas, Individual Modelling Units, Infrastructure, Land use, Water bodies, and Carbon pools."
+        "The layer set covers the core area, infrastructure, water body, biodiversity, affected-people, and indigenous-people or rights locations identified in clause 4.1.3."
       ]
     }
   },
@@ -482,21 +570,61 @@
       "conditions": [
         "The uncertainty treatment covers the parameters used to estimate greenhouse gas emissions and removals from the LUF activity.",
         "The project complies with the target precision of 20% of the mean at the 90% confidence level, or applies the required deduction treatment when it does not."
-      ],
-      "exceptions": [
-        "If the uncertainty exceeds 20% of the mean, the project applies the uncertainty deduction rules set out in Table 1.",
-        "If the uncertainty exceeds 50%, credits are not issued for the affected reporting period."
       ]
     }
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-5-0002",
-    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-5-0002"
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-5-0002",
+    "source_span_text": "1.1.4 To accommodate that measurements are not always available to projects, and IPCC default factors following tier 1 approach do not meet Gold Standard requirements for project data and precision level, this guideline incorporates three approaches for baseline and project activity quantification: (a) Approach 1: requires on-site measurements to directly document pre-project and project activity data. (b) Approach 2: uses peer-reviewed publications to quantify baseline and project activity data. Project owners need to prove that the research results are conservative and applicable to the project site and management practice. (c) Approach 3: applies default factors to quantify changes but a discounting factor (Uncertainty Deduction) must be applied if compliance with the uncertainty threshold of ±20% at a 90% confidence interval is not satisfied. 1.1.5 Generally, the most specific approach possible with the data available must be chosen.",
+    "section_context": {
+      "section_id": "S-5",
+      "section_title": "Uncertainty of LUF Parameters",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-5",
+      "page_start": 22,
+      "page_end": 22,
+      "lineage": [
+        "1.1.4",
+        "1.1.5"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-5-0002",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "approach-selection-basis",
+          "label": "Approach Selection Basis",
+          "description": "Documentation showing which uncertainty approach was chosen and why it is the most specific approach possible with the available data.",
+          "required": true
+        },
+        {
+          "id": "measurement-or-literature-basis",
+          "label": "Measurement or Literature Basis",
+          "description": "The on-site measurement package or peer-reviewed literature package used when Approach 1 or Approach 2 is selected, including applicability support for the project site where relevant.",
+          "required": false
+        },
+        {
+          "id": "default-factor-deduction-basis",
+          "label": "Default Factor and Deduction Basis",
+          "description": "The default factors and associated uncertainty-deduction basis used when Approach 3 is selected.",
+          "required": false
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "Approach 1 uses on-site measurements to directly document pre-project and project activity data.",
+        "Approach 2 uses peer-reviewed publications and requires the project owner to prove the results are conservative and applicable to the project site and management practice.",
+        "Approach 3 uses default factors and applies an uncertainty deduction if the ±20% at 90% confidence threshold is not satisfied.",
+        "The most specific approach possible with the data available is chosen."
+      ]
+    }
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-5-0003",
     "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-5-0003",
-    "source_span_text": "If the uncertainty is greater than 20% of the mean value, then the project owner shall use the estimated value subject to an Uncertainty Deduction (UD). Table: 20<U≤30% → 50% UD, 30<U≤40% → 75% UD, 40<U≤50% → 100% UD.",
+    "source_span_text": "If the uncertainty is less than or equal to 20% of the mean change value then the project owner may use the estimated value without any deduction for uncertainty, i.e. UD = 0. If the uncertainty is greater than 20% of the mean value, then the project owner shall use the estimated value subject to an Uncertainty Deduction (UD) in Table 1: Table 2: Uncertainty discounting approach Uncertainty [U] Uncertainty Deduction [UD] (% of U) 20<U≤30% 50% 30<U≤40% 75% 40<U≤50% 100%.",
     "section_context": {
       "section_id": "S-5",
       "section_title": "Uncertainty of LUF Parameters",
@@ -520,7 +648,7 @@
         {
           "id": "issuance-adjustment-record",
           "label": "Issuance Adjustment Record",
-          "description": "Record showing the issuance impact from the applied uncertainty deduction or the no-credit outcome above 50% uncertainty.",
+          "description": "Record showing how the applicable uncertainty deduction was carried into the conservative estimate used for issuance.",
           "required": true
         }
       ]
@@ -530,9 +658,6 @@
         "If uncertainty is greater than 20% and up to 30% of the mean, a 50% uncertainty deduction is applied.",
         "If uncertainty is greater than 30% and up to 40% of the mean, a 75% uncertainty deduction is applied.",
         "If uncertainty is greater than 40% and up to 50% of the mean, a 100% uncertainty deduction is applied."
-      ],
-      "exceptions": [
-        "If uncertainty exceeds 50% of the mean, no credits are issued for the affected reporting period."
       ]
     }
   }
