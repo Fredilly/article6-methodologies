@@ -22,7 +22,9 @@ function list(dir){
 
 const schemaDir = path.join(ROOT, 'schemas');
 const files = list(schemaDir).filter(p => /\.(schema\.json)$/.test(p));
-const concat = files.map(p => p + '\n' + fs.readFileSync(p)).join('\n');
+const concat = files
+  .map((p) => `${path.relative(ROOT, p)}\n${fs.readFileSync(p)}`)
+  .join('\n');
 const current = sha256(concat);
 const recPath = path.join(ROOT, 'scripts/validators/schemas.sha256');
 if (!fs.existsSync(recPath)){
@@ -38,4 +40,3 @@ if (recorded !== current){
   process.exit(1);
 }
 console.log('✓ Validators in sync with schemas');
-
