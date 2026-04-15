@@ -1,0 +1,69 @@
+{
+  "roadmap": "traceable-rule-review-mvp",
+  "repo": "article6-methodologies",
+  "repo_boundary": "Methodology semantics, schema definitions, data quality. Does NOT own UI, workflow, persistence, or export execution.",
+  "goal": "Provide canonical rule contract support so the app can build a traceable rule review workspace.",
+  "last_updated_at": "2026-04-15T00:00:00Z",
+  "status": "active",
+  "current_focus": ["T-1: Rule Review Record (data contract)"],
+  "phases": [
+    {
+      "id": "t-1-rule-review-record",
+      "name": "Rule Review Record (data contract)",
+      "week": 1,
+      "status": "active",
+      "depends_on": []
+    },
+    {
+      "id": "t-2-defensible-verification",
+      "name": "Defensible Verification (evidence contract)",
+      "week": 2,
+      "status": "planned",
+      "depends_on": ["t-1-rule-review-record"]
+    },
+    {
+      "id": "t-3-stac-aoi-support-facts",
+      "name": "STAC / AOI Support Facts (eligibility flags)",
+      "week": 3,
+      "status": "planned",
+      "depends_on": ["t-2-defensible-verification"]
+    },
+    {
+      "id": "t-4-document-workbook-support",
+      "name": "Document and Workbook Support (extraction contracts)",
+      "week": 4,
+      "status": "planned",
+      "depends_on": ["t-3-stac-aoi-support-facts"]
+    },
+    {
+      "id": "t-5-exportable-verification-output",
+      "name": "Exportable Verification Output (schema contracts)",
+      "week": 5,
+      "status": "planned",
+      "depends_on": ["t-4-document-workbook-support"]
+    }
+  ],
+  "pr_evidence": {},
+  "pr_meta": {
+    "T-1": {
+      "title": "Rule Review Record (data contract)",
+      "summary": "Ensure every rule has text, section anchors, type, tags. Minimum data for app review panel."
+    },
+    "T-2": {
+      "title": "Defensible Verification (evidence contract)",
+      "summary": "Define evidence type taxonomy. Populate expected_evidence and requirement_kind per rule."
+    },
+    "T-3": {
+      "title": "STAC / AOI Support Facts (eligibility flags)",
+      "summary": "Define STAC eligibility via tags. Tag taxonomy. Satellite eligibility heuristic."
+    },
+    "T-4": {
+      "title": "Document and Workbook Support (extraction contracts)",
+      "summary": "Document calculation formulas, workbook field expectations, PDD section mappings."
+    },
+    "T-5": {
+      "title": "Exportable Verification Output (schema contracts)",
+      "summary": "Define verification snapshot schema. JSON Schema for export validation."
+    }
+  }
+}
