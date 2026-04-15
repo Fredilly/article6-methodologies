@@ -3,8 +3,8 @@
     "status": "active",
     "summary": "Provide canonical rule contract support so the app can build a traceable rule review workspace. Owns schemas, data quality, and evidence type definitions.",
     "current_focus": [
-      "Phase 0: freeze roadmap contract across both repos",
-      "Phase 1: verify AR-ACM0003 v02-0 rules.rich.json has text, anchors, type, tags"
+      "Phase 1 complete \u2014 AR-ACM0003 data contract verified",
+      "Phase 2 next: evidence type taxonomy, expected_evidence population"
     ],
     "not_active_now": [
       "New methodology encoding (after AR-ACM0003 contract is solid)",
@@ -18,12 +18,12 @@
     "summary": "Lock roadmap, phase sequence, repo boundaries, and SSOT conventions. Both repos match."
   },
   "phase_1_rule_review_record": {
-    "status": "planned",
+    "status": "done",
     "title": "Rule Review Record (data contract)",
     "summary": "Ensure every rule has text, section anchors, type, tags. Minimum data for app review panel display."
   },
   "phase_2_defensible_verification": {
-    "status": "planned",
+    "status": "next",
     "title": "Defensible Verification (evidence contract)",
     "summary": "Evidence type taxonomy, expected_evidence population, requirement_kind. Map rule types to supportable evidence."
   },
