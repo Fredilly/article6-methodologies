@@ -1,0 +1,41 @@
+{
+  "phase_meta": {
+    "status": "active",
+    "summary": "Provide canonical rule contract support so the app can build a traceable rule review workspace. Owns schemas, data quality, and evidence type definitions.",
+    "current_focus": [
+      "Verify AR-ACM0003 v02-0 rules.rich.json has text, anchors, type, tags for every rule"
+    ],
+    "not_active_now": [
+      "New methodology encoding (after AR-ACM0003 contract is solid)",
+      "Schema redesign (RC-S1-S7 locked the contract)",
+      "App UI work (owned by app repo)"
+    ]
+  },
+  "phase_1_rule_review_record": {
+    "status": "active",
+    "title": "Rule Review Record (data contract)",
+    "summary": "Ensure every rule has text, section anchors, type, tags. Minimum data for app review panel display."
+  },
+  "phase_2_defensible_verification": {
+    "status": "planned",
+    "title": "Defensible Verification (evidence contract)",
+    "summary": "Evidence type taxonomy, expected_evidence population, requirement_kind. Map rule types to supportable evidence."
+  },
+  "phase_3_stac_aoi_support_facts": {
+    "status": "planned",
+    "title": "STAC / AOI Support Facts (eligibility flags)",
+    "summary": "Tag taxonomy for satellite eligibility. STAC eligibility heuristic documented."
+  },
+  "phase_4_document_workbook_support": {
+    "status": "planned",
+    "title": "Document and Workbook Support (extraction contracts)",
+    "summary": "Calculation formulas, workbook field expectations, PDD section mappings."
+  },
+  "phase_5_exportable_verification_output": {
+    "status": "planned",
+    "title": "Exportable Verification Output (schema contracts)",
+    "summary": "Verification snapshot JSON Schema. Example validation. CI test."
+  },
+  "pr_evidence": {},
+  "pr_notes": {}
+}
