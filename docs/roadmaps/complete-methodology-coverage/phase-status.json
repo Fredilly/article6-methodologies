@@ -1,0 +1,56 @@
+{
+  "roadmap": "complete-methodology-coverage",
+  "goal": "Encode enough methodologies so the app can serve any VVB working with UNFCCC CDM forestry and agriculture methods.",
+  "last_updated_at": "2026-04-15T00:00:00Z",
+  "status": "active",
+  "parallel_dependency": "app.article6/docs/roadmaps/verifiable-review-record",
+  "current_focus": ["CMC-1: AR-ACM0003 Completeness"],
+  "phases": [
+    {
+      "id": "cmc-1-ar-acm0003-completeness",
+      "name": "AR-ACM0003 Completeness",
+      "week": 1,
+      "status": "active"
+    },
+    {
+      "id": "cmc-2-one-agriculture-methodology",
+      "name": "One Agriculture Methodology",
+      "week": 2,
+      "status": "planned",
+      "depends_on": ["cmc-1-ar-acm0003-completeness"]
+    },
+    {
+      "id": "cmc-3-encoding-playbook",
+      "name": "Encoding Playbook",
+      "week": 3,
+      "status": "planned",
+      "depends_on": ["cmc-2-one-agriculture-methodology"]
+    },
+    {
+      "id": "cmc-4-batch-encoding-for-pilots",
+      "name": "Batch Encoding for Pilots",
+      "weeks": "4-5",
+      "status": "planned",
+      "depends_on": ["cmc-3-encoding-playbook"]
+    }
+  ],
+  "pr_evidence": {},
+  "pr_meta": {
+    "CMC-1": {
+      "title": "AR-ACM0003 Completeness",
+      "summary": "Verify and fix AR-ACM0003 v02-0 so every rule has text, logic, refs, and valid section anchors."
+    },
+    "CMC-2": {
+      "title": "One Agriculture Methodology",
+      "summary": "Encode one complete agriculture methodology end-to-end for multi-methodology demo."
+    },
+    "CMC-3": {
+      "title": "Encoding Playbook",
+      "summary": "Document the encoding process so new methodologies can be added in <1 day."
+    },
+    "CMC-4": {
+      "title": "Batch Encoding for Pilots",
+      "summary": "Encode top 3-5 methodologies VVB pilots are most likely to request."
+    }
+  }
+}
