@@ -1,188 +1,57 @@
 {
-  "roadmap_id": "traceable-rule-review-mvp",
-  "goal": "Turn Article6 into a methodology-aware verification workspace built around traceable, defensible, reviewable rule review records for VVB-style workflows.",
-  "current_phase": {
-    "id": "phase-0-roadmap-contract-freeze",
-    "title": "Roadmap + contract freeze",
-    "status": "in_progress"
+  "phase_meta": {
+    "status": "active",
+    "summary": "Provide canonical rule contract support so the app can build a traceable rule review workspace. Owns schemas, data quality, and evidence type definitions.",
+    "current_focus": [
+      "Phase 0: freeze roadmap contract across both repos",
+      "Phase 1: verify AR-ACM0003 v02-0 rules.rich.json has text, anchors, type, tags"
+    ],
+    "not_active_now": [
+      "New methodology encoding (after AR-ACM0003 contract is solid)",
+      "Schema redesign (RC-S1-S7 locked the contract)",
+      "App UI work (owned by app repo)"
+    ]
   },
-  "immediate_next_action": "Implement Phase 0 and Phase 1 only. Freeze the roadmap and contract now; defer product implementation to the Phase 1 workstream.",
-  "vvb_ready_criteria": [
-    "At least one target method can be reviewed end-to-end.",
-    "Every verified rule has rationale, support, and provenance.",
-    "AOI and STAC facts appear where relevant and never auto-verify a rule.",
-    "Document and workbook evidence can be linked where needed.",
-    "Export is reviewable outside the app.",
-    "The system does not overclaim or fake certainty.",
-    "The workflow saves meaningful reviewer time."
-  ],
-  "non_goals": [
-    "Do not market this as full automated verification.",
-    "Do not let STAC auto-verify rules.",
-    "Do not allow unsupported green checks.",
-    "Do not imply fake confidence.",
-    "Do not claim a formal certification opinion.",
-    "Do not broaden this roadmap into a general redesign or refactor.",
-    "Do not mix repository responsibilities."
-  ],
-  "phases": [
-    {
-      "id": "phase-0-roadmap-contract-freeze",
-      "title": "Roadmap + contract freeze",
-      "status": "in_progress",
-      "owner_repo": "both",
-      "key_deliverables": [
-        "Roadmap doc in both repos.",
-        "phase-status.json in both repos.",
-        "Shared roadmap id and phase sequence.",
-        "Explicit repo boundaries.",
-        "Explicit definition of the rule review record."
-      ],
-      "blockers": [],
-      "exit_criteria": [
-        "No ambiguity about what gets built first.",
-        "No ambiguity about which repo owns what."
-      ]
-    },
-    {
-      "id": "phase-1-rule-review-record",
-      "title": "Rule review record",
-      "status": "planned",
-      "owner_repo": "both",
-      "key_deliverables": [
-        "Real rule review panel in app.article6.",
-        "Persistence for rationale, support, and provenance in app.article6.",
-        "Full rule text and source anchors exposed cleanly by article6-methodologies.",
-        "Stable rule-review contract consumed by the app."
-      ],
-      "blockers": [
-        "Phase 0 contract freeze must land first."
-      ],
-      "exit_criteria": [
-        "Clicking a rule opens a real review record.",
-        "A reviewer can understand the rule and record rationale and support.",
-        "The UI shape can grow without redesign."
-      ]
-    },
-    {
-      "id": "phase-2-defensible-verification",
-      "title": "Defensible verification",
-      "status": "planned",
-      "owner_repo": "both",
-      "key_deliverables": [
-        "Verified requires rationale in app.article6.",
-        "Verified requires support reference and or linked evidence in app.article6.",
-        "Reviewer identity and timestamp capture in app.article6.",
-        "Manual-review and support-type metadata where needed in article6-methodologies."
-      ],
-      "blockers": [
-        "Phase 1 rule review record must exist first."
-      ],
-      "exit_criteria": [
-        "Every verified rule has visible rationale and support.",
-        "A reviewer can inspect why a rule is green.",
-        "Unsupported green checks are no longer possible."
-      ]
-    },
-    {
-      "id": "phase-3-aoi-stac-support-facts",
-      "title": "AOI + STAC support facts",
-      "status": "planned",
-      "owner_repo": "both",
-      "key_deliverables": [
-        "Rule-level AOI and STAC support rendering in app.article6.",
-        "Scene, source, temporal, overlap, and cloud fact display in app.article6.",
-        "STAC eligibility and expected fact shapes by rule in article6-methodologies.",
-        "Explicit support-only language in the app."
-      ],
-      "blockers": [
-        "Phase 2 defensible verification must land first."
-      ],
-      "exit_criteria": [
-        "STAC appears only where appropriate.",
-        "STAC facts are inspectable and traceable.",
-        "STAC does not directly flip statuses."
-      ]
-    },
-    {
-      "id": "phase-4-document-workbook-support",
-      "title": "Document + workbook support",
-      "status": "planned",
-      "owner_repo": "both",
-      "key_deliverables": [
-        "Document and workbook upload and linking flows in app.article6.",
-        "Fragment-level evidence references in app.article6.",
-        "Expected evidence-type contracts in article6-methodologies.",
-        "Optional fact templates per rule in article6-methodologies where credible."
-      ],
-      "blockers": [
-        "Phase 3 AOI and STAC support facts must land first."
-      ],
-      "exit_criteria": [
-        "A reviewer can support rules with document, workbook, and report references.",
-        "Linked evidence is inspectable at source-fragment level.",
-        "Evidence is traceable, not loosely attached."
-      ]
-    },
-    {
-      "id": "phase-5-method-completeness-target-methods",
-      "title": "Method completeness on target methods",
-      "status": "planned",
-      "owner_repo": "both",
-      "key_deliverables": [
-        "Full AR-ACM0003 coverage in article6-methodologies.",
-        "A second target method after AR-ACM0003 in article6-methodologies.",
-        "A method expansion playbook in article6-methodologies.",
-        "UI compatibility with richer contracts in app.article6."
-      ],
-      "blockers": [
-        "Phase 4 document and workbook support must land first."
-      ],
-      "exit_criteria": [
-        "One real target method can be reviewed end-to-end.",
-        "A second method proves repeatability.",
-        "Methodology expansion has a clear playbook."
-      ]
-    },
-    {
-      "id": "phase-6-exportable-verification-output",
-      "title": "Exportable verification output",
-      "status": "planned",
-      "owner_repo": "both",
-      "key_deliverables": [
-        "PDF and JSON export generation in app.article6.",
-        "Rule-by-rule rationale, support, and provenance in exports.",
-        "Unresolved gaps remain explicit in exports.",
-        "Canonical export support fields added upstream only if needed."
-      ],
-      "blockers": [
-        "Phase 5 method completeness must land first."
-      ],
-      "exit_criteria": [
-        "Exported packs are understandable outside the app.",
-        "Every verified rule in export has visible support.",
-        "Unresolved rules remain explicit."
-      ]
-    },
-    {
-      "id": "phase-7-pilot-ready-vvb-workflow",
-      "title": "Pilot-ready VVB workflow",
-      "status": "planned",
-      "owner_repo": "both",
-      "key_deliverables": [
-        "Workflow hardening in app.article6.",
-        "Pilot-ready demo path and reviewer instructions in app.article6.",
-        "Pricing and scope boundaries for pilot delivery.",
-        "No methodology contract drift from article6-methodologies."
-      ],
-      "blockers": [
-        "Phase 6 exportable verification output must land first."
-      ],
-      "exit_criteria": [
-        "One complete demo or pilot path works without hand-waving.",
-        "A VVB or project developer can understand the value quickly.",
-        "Exports and review records hold up under scrutiny."
-      ]
-    }
-  ]
+  "phase_0_roadmap_contract_freeze": {
+    "status": "active",
+    "title": "Roadmap Contract Freeze",
+    "summary": "Lock roadmap, phase sequence, repo boundaries, and SSOT conventions. Both repos match."
+  },
+  "phase_1_rule_review_record": {
+    "status": "planned",
+    "title": "Rule Review Record (data contract)",
+    "summary": "Ensure every rule has text, section anchors, type, tags. Minimum data for app review panel display."
+  },
+  "phase_2_defensible_verification": {
+    "status": "planned",
+    "title": "Defensible Verification (evidence contract)",
+    "summary": "Evidence type taxonomy, expected_evidence population, requirement_kind. Map rule types to supportable evidence."
+  },
+  "phase_3_aoi_stac_support_facts": {
+    "status": "planned",
+    "title": "AOI / STAC Support Facts (eligibility flags)",
+    "summary": "Tag taxonomy for satellite eligibility. STAC eligibility heuristic documented."
+  },
+  "phase_4_document_workbook_support": {
+    "status": "planned",
+    "title": "Document and Workbook Support (extraction contracts)",
+    "summary": "Calculation formulas, workbook field expectations, PDD section mappings."
+  },
+  "phase_5_method_completeness_target_methods": {
+    "status": "planned",
+    "title": "Method Completeness (target methods)",
+    "summary": "Encode enough methodologies for pilot demos. AR-ACM0003 + agriculture. Encoding playbook."
+  },
+  "phase_6_exportable_verification_output": {
+    "status": "planned",
+    "title": "Exportable Verification Output (schema contracts)",
+    "summary": "Verification snapshot JSON Schema. Example validation. CI test."
+  },
+  "phase_7_pilot_ready_vvb_workflow": {
+    "status": "planned",
+    "title": "Pilot-Ready VVB Workflow (methodology supply)",
+    "summary": "Top 3-5 methodologies encoded for pilots. All pass CI. Manifest complete."
+  },
+  "pr_evidence": {},
+  "pr_notes": {}
 }
