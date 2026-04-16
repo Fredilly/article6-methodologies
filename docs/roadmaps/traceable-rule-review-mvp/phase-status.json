@@ -3,14 +3,15 @@
     "status": "active",
     "summary": "Provide canonical rule contract support so the app can build a traceable rule review workspace. Owns schemas, data quality, and evidence type definitions.",
     "current_focus": [
-      "Phase 1 complete \u2014 AR-ACM0003 data contract verified",
-      "Phase 2 next: evidence type taxonomy, expected_evidence population"
+      "Phase 1 + 2 complete",
+      "Phase 3 next: STAC eligibility flags, tag taxonomy"
     ],
     "not_active_now": [
       "New methodology encoding (after AR-ACM0003 contract is solid)",
       "Schema redesign (RC-S1-S7 locked the contract)",
       "App UI work (owned by app repo)"
-    ]
+    ],
+    "last_updated_at": "2026-04-16T00:00:00Z"
   },
   "phase_0_roadmap_contract_freeze": {
     "status": "active",
@@ -23,12 +24,12 @@
     "summary": "Ensure every rule has text, section anchors, type, tags. Minimum data for app review panel display."
   },
   "phase_2_defensible_verification": {
-    "status": "next",
+    "status": "done",
     "title": "Defensible Verification (evidence contract)",
     "summary": "Evidence type taxonomy, expected_evidence population, requirement_kind. Map rule types to supportable evidence."
   },
   "phase_3_aoi_stac_support_facts": {
-    "status": "planned",
+    "status": "next",
     "title": "AOI / STAC Support Facts (eligibility flags)",
     "summary": "Tag taxonomy for satellite eligibility. STAC eligibility heuristic documented."
   },
