@@ -3,7 +3,7 @@
     "status": "active",
     "summary": "Provide canonical rule contract support so the app can build a traceable rule review workspace. Owns schemas, data quality, and evidence type definitions.",
     "current_focus": [
-      "Phase 1 + 2 complete",
+      "Phase 1 + 2 complete \u2014 data contract and evidence contract verified",
       "Phase 3 next: STAC eligibility flags, tag taxonomy"
     ],
     "not_active_now": [
