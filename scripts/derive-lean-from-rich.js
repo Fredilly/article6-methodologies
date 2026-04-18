@@ -5,6 +5,7 @@ const {
   canonicalizeLeanRuleFromLean,
   canonicalizeLeanRuleFromLegacyRich,
   canonicalizeLeanSection,
+  deriveLeanExpectedEvidenceFromRich,
   getMethodInfo
 } = require('../core/methodology-artifact-contract.cjs');
 
@@ -113,9 +114,11 @@ function derive(dir){
     if (!existingLean) {
       throw new Error(`Missing base lean rule for overlay-only rich rule: ${r.id}`);
     }
+    const derivedExpectedEvidence = deriveLeanExpectedEvidenceFromRich(r, info);
     return canonicalizeLeanRuleFromLean({
       ...existingLean,
-      id: leanId
+      id: leanId,
+      ...(derivedExpectedEvidence ? { expectedEvidence: derivedExpectedEvidence } : {})
     }, sectionLookup, info);
   }).sort(cmpRules);
   writeJSON(path.join(dir,'sections.json'), { sections: sectionsLean });

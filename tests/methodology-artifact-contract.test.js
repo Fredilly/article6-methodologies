@@ -93,7 +93,7 @@ function verifyRepresentativeCrossMethodSignature() {
         'section_stable_id',
         'tools'
       ].filter((key) => Object.prototype.hasOwnProperty.call(rules[0] || {}, key)),
-      optionalRuleKeys: Object.keys(rules[0] || {}).filter((key) => ['tags', 'when'].includes(key)),
+      optionalRuleKeys: Object.keys(rules[0] || {}).filter((key) => ['expectedEvidence', 'tags', 'when'].includes(key)),
       sectionKeys: Object.keys(sections[0] || {})
     };
   });
@@ -106,7 +106,7 @@ function verifyRepresentativeCrossMethodSignature() {
       `${signature.relPath} required rule keys do not match ${baseline.relPath}`
     );
     signature.optionalRuleKeys.forEach((key) => {
-      assert.ok(['tags', 'when'].includes(key), `${signature.relPath} has unexpected optional rule key ${key}`);
+      assert.ok(['expectedEvidence', 'tags', 'when'].includes(key), `${signature.relPath} has unexpected optional rule key ${key}`);
     });
     assert.deepEqual(
       signature.sectionKeys,

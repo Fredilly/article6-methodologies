@@ -16,6 +16,7 @@ const RULE_KEY_ORDER = [
   'section_number',
   'section_stable_id',
   'tools',
+  'expectedEvidence',
   'tags',
   'when'
 ];
@@ -106,6 +107,19 @@ function sanitizeStringArray(values, { sort = false } = {}) {
   return sort ? unique.sort((a, b) => a.localeCompare(b)) : unique;
 }
 
+function leanExpectedEvidenceProjectionEnabled(info) {
+  return info.relPath === 'UNFCCC/Forestry/AR-ACM0003/v02-0';
+}
+
+function deriveLeanExpectedEvidenceFromRich(rule, info) {
+  if (!leanExpectedEvidenceProjectionEnabled(info)) return undefined;
+  const evidenceItems = rule.requirement_coverage?.expected_evidence;
+  if (!Array.isArray(evidenceItems)) return undefined;
+  return sanitizeStringArray(
+    evidenceItems.map((item) => (item && typeof item.id === 'string' ? item.id : ''))
+  );
+}
+
 function orderKeys(value, keyOrder) {
   const out = {};
   for (const key of keyOrder) {
@@ -160,6 +174,7 @@ function canonicalizeLeanRuleFromLegacyRich(rule, sectionLookup, info) {
     section_stable_id: canonicalStableIdOrUndefined(rule.refs?.section_stable_id, info.methodologyId)
       || section.stable_id,
     tools,
+    expectedEvidence: deriveLeanExpectedEvidenceFromRich(rule, info),
     tags,
     when: sanitizeStringArray(rule.when)
   };
@@ -187,6 +202,7 @@ function canonicalizeLeanRuleFromLean(rule, sectionLookup, info) {
     section_stable_id: canonicalStableIdOrUndefined(rule.section_stable_id, info.methodologyId)
       || section.stable_id,
     tools,
+    expectedEvidence: sanitizeStringArray(rule.expectedEvidence),
     tags: sanitizeStringArray(rule.tags, { sort: true }),
     when: sanitizeStringArray(rule.when)
   };
@@ -237,7 +253,9 @@ module.exports = {
   canonicalizeLeanRuleFromLegacyRich,
   canonicalizeLeanSection,
   classifyRulesRichMode,
+  deriveLeanExpectedEvidenceFromRich,
   getMethodInfo,
+  leanExpectedEvidenceProjectionEnabled,
   listMethodDirs,
   localRuleIdFromLegacyRichId,
   sanitizeStringArray,

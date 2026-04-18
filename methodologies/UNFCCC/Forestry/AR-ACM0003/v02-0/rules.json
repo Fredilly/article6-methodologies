@@ -98,6 +98,10 @@
         "UNFCCC/AR-ACM0003@v02-0",
         "UNFCCC/AR-TOOL15@v02.0"
       ],
+      "expectedEvidence": [
+        "risk-assessment",
+        "buffer-account-records"
+      ],
       "tags": [
         "monitoring"
       ],
@@ -118,6 +122,10 @@
       "tools": [
         "UNFCCC/AR-ACM0003@v02-0",
         "UNFCCC/AR-TOOL16@v01.1.0"
+      ],
+      "expectedEvidence": [
+        "plot-remeasurement-records",
+        "qaqc-procedures"
       ],
       "tags": [
         "monitoring"
@@ -140,6 +148,10 @@
         "UNFCCC/AR-ACM0003@v02-0",
         "UNFCCC/AR-TOOL12@v03.1"
       ],
+      "expectedEvidence": [
+        "uncertainty-worksheet",
+        "deduction-calculation-records"
+      ],
       "tags": [
         "uncertainty"
       ],
@@ -159,6 +171,10 @@
       "section_stable_id": "UNFCCC.Forestry.AR-ACM0003.v02-0.S-5",
       "tools": [
         "UNFCCC/AR-ACM0003@v02-0"
+      ],
+      "expectedEvidence": [
+        "monitoring-report-package",
+        "versioned-monitoring-datasets"
       ],
       "tags": [
         "reporting"
