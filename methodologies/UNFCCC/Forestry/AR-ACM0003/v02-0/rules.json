@@ -18,11 +18,6 @@
       "when": [
         "Target areas classified as degraded forest land prior to start date.",
         "Additionality analysis completed per UNFCCC requirements."
-      ],
-      "expectedEvidence": [
-        "land-classification-records",
-        "additionality-analysis",
-        "historical-imagery"
       ]
     },
     {
@@ -45,12 +40,6 @@
       "when": [
         "Baseline strata delineated and documented.",
         "Default biomass parameters justified when field data absent."
-      ],
-      "expectedEvidence": [
-        "land-use-records",
-        "biomass-parameters",
-        "baseline-strata-maps",
-        "ipcc-defaults-reference"
       ]
     },
     {
@@ -73,11 +62,6 @@
       "when": [
         "Fuel consumption metered or logged with auditable records.",
         "Fertilizer application data retained for verification."
-      ],
-      "expectedEvidence": [
-        "fuel-consumption-logs",
-        "fertilizer-application-records",
-        "emissions-calculation-worksheet"
       ]
     },
     {
@@ -99,11 +83,6 @@
       "when": [
         "Leakage monitoring plan implemented with annual review.",
         "Leakage deductions applied before credit issuance."
-      ],
-      "expectedEvidence": [
-        "leakage-monitoring-plan",
-        "annual-leakage-deductions",
-        "activity-shifting-assessment"
       ]
     },
     {
@@ -125,11 +104,6 @@
       "when": [
         "Updated risk assessment provided during verification.",
         "Evidence of buffer account entries retained."
-      ],
-      "expectedEvidence": [
-        "risk-assessment-report",
-        "buffer-account-entries",
-        "registry-statement"
       ]
     },
     {
@@ -151,12 +125,6 @@
       "when": [
         "Plot coordinates archived and accessible for re-measurement.",
         "QA/QC procedures documented for each monitoring campaign."
-      ],
-      "expectedEvidence": [
-        "plot-coordinates",
-        "qa-qc-procedures",
-        "remeasurement-records",
-        "mensuration-data"
       ]
     },
     {
@@ -178,11 +146,6 @@
       "when": [
         "Uncertainty worksheet provided at verification.",
         "Deductions applied prior to credit issuance if threshold exceeded."
-      ],
-      "expectedEvidence": [
-        "uncertainty-worksheet",
-        "sampling-error-calculations",
-        "tool-12-deductions"
       ]
     },
     {
@@ -203,13 +166,6 @@
       "when": [
         "All datasets version-controlled with metadata.",
         "DOE confirms completeness of supporting records."
-      ],
-      "expectedEvidence": [
-        "monitoring-report",
-        "geospatial-datasets",
-        "emission-source-logs",
-        "audit-trail",
-        "doe-completeness-confirmation"
       ]
     }
   ]
