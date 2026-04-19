@@ -13,11 +13,20 @@ const unrelatedForestryRichPaths = [
   path.join(repoRoot, 'methodologies', 'UNFCCC', 'Forestry', 'AR-AM0014', 'v03-0', 'rules.rich.json'),
   path.join(repoRoot, 'methodologies', 'UNFCCC', 'Forestry', 'AR-AMS0007', 'v03-1', 'rules.rich.json'),
 ];
+const unrelatedLeanRulePaths = [
+  path.join(repoRoot, 'methodologies', 'UNFCCC', 'Agriculture', 'AM0073', 'v01-0', 'rules.json'),
+];
 const expectedEvidenceRuleIds = new Set([
   'UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0005',
   'UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0006',
   'UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0007',
   'UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0008',
+]);
+const expectedLeanProjection = new Map([
+  ['R-1-0005', ['risk-assessment', 'buffer-account-records']],
+  ['R-1-0006', ['plot-remeasurement-records', 'qaqc-procedures']],
+  ['R-1-0007', ['uncertainty-worksheet', 'deduction-calculation-records']],
+  ['R-1-0008', ['monitoring-report-package', 'versioned-monitoring-datasets']],
 ]);
 
 function readJson(filePath) {
@@ -50,6 +59,7 @@ function assertRulesRichSchema() {
 
 function assertExpectedEvidenceContract() {
   const rulesRich = readJson(path.join(methodDir, 'rules.rich.json'));
+  const leanRules = readJson(path.join(methodDir, 'rules.json')).rules;
   const rulesWithEvidence = rulesRich.filter(
     (rule) => Array.isArray(rule.requirement_coverage?.expected_evidence),
   );
@@ -87,6 +97,24 @@ function assertExpectedEvidenceContract() {
     (rule) => !Array.isArray(rule.requirement_coverage?.expected_evidence),
   );
   assert.ok(rulesWithoutEvidence.length > 0, 'expected omission path for unsupported rules');
+
+  const leanRulesWithEvidence = leanRules.filter((rule) => Array.isArray(rule.expectedEvidence));
+  assert.deepStrictEqual(
+    new Set(leanRulesWithEvidence.map((rule) => rule.stable_id)),
+    expectedEvidenceRuleIds,
+    'lean expectedEvidence projection should stay limited to the grounded AR-ACM0003 rules',
+  );
+
+  for (const rule of leanRulesWithEvidence) {
+    assert.deepStrictEqual(
+      rule.expectedEvidence,
+      expectedLeanProjection.get(rule.id),
+      `${rule.id}: lean expectedEvidence should be derived from rich expected_evidence ids`,
+    );
+  }
+
+  const leanRulesWithoutEvidence = leanRules.filter((rule) => !Array.isArray(rule.expectedEvidence));
+  assert.ok(leanRulesWithoutEvidence.length > 0, 'expected lean omission path for unsupported rules');
 }
 
 function assertNoBleed() {
@@ -94,6 +122,12 @@ function assertNoBleed() {
     const rules = readJson(filePath);
     const leakingRule = rules.find((rule) => 'expected_evidence' in (rule.requirement_coverage || {}));
     assert.ok(!leakingRule, `${path.relative(repoRoot, filePath)} unexpectedly gained expected_evidence`);
+  }
+
+  for (const filePath of unrelatedLeanRulePaths) {
+    const rules = readJson(filePath).rules;
+    const leakingRule = rules.find((rule) => 'expectedEvidence' in rule);
+    assert.ok(!leakingRule, `${path.relative(repoRoot, filePath)} unexpectedly gained lean expectedEvidence`);
   }
 }
 

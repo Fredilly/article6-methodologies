@@ -15,4 +15,7 @@ Generated from root-cause entry files under `docs/projects/phase-1-ingestion/roo
 | RC-20260331-235111 | 2026-03-31 | RC4 upstream monitoring-report canon ownership (tags: schema, determinism, ci, agriculture) | [RC-20260331-235111](root-causes/RC-20260331-235111.md) |
 | RC-20260403-142107 | 2026-04-03 | AR-ACM0003 RC-S5 lineage allowlist gap and RC-S6 expected-evidence proving support (tags: forestry, determinism, schema, ci) | [RC-20260403-142107](root-causes/RC-20260403-142107.md) |
 | RC-20260403-221045 | 2026-04-03 | Forestry archived lineage follow-up and redundant rich-rule display suppression (tags: forestry, determinism, schema) | [RC-20260403-221045](root-causes/RC-20260403-221045.md) |
+| RC-20260414-060135 | 2026-04-14 | Canonical lean artifact drift (tags: schema, determinism, ci, agriculture, forestry) | [RC-20260414-060135](root-causes/RC-20260414-060135.md) |
+| RC-20260414-064630 | 2026-04-14 | json canonicalizer drifted lean contract order (tags: ci, determinism, schema, agriculture, forestry) | [RC-20260414-064630](root-causes/RC-20260414-064630.md) |
 | RC-20260418-155903 | 2026-04-18 | AR-ACM0003 demo-ready forestry gold fixture contract (tags: forestry, ci, determinism) | [RC-20260418-155903](root-causes/RC-20260418-155903.md) |
+| RC-20260418-231958 | 2026-04-18 | Lean expectedEvidence must be derived from rich requirement coverage (tags: schema, determinism, forestry) | [RC-20260418-231958](root-causes/RC-20260418-231958.md) |
