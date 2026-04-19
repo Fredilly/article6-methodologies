@@ -16,6 +16,15 @@ const unrelatedForestryRichPaths = [
 const unrelatedLeanRulePaths = [
   path.join(repoRoot, 'methodologies', 'UNFCCC', 'Agriculture', 'AM0073', 'v01-0', 'rules.json'),
 ];
+const expectedToolPaths = [
+  'tools/UNFCCC/Forestry/AR-ACM0003/v02-0/EB75_repan30_AR-ACM0003_ver02.0.pdf',
+  'tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-02-v01.pdf',
+  'tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-08-v04.0.0.pdf',
+  'tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-12-v03.1.pdf',
+  'tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-14-v04.2.pdf',
+  'tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-15-v02.0.pdf',
+  'tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-16-v01.1.0.pdf',
+];
 const expectedEvidenceRuleIds = new Set([
   'UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0005',
   'UNFCCC.Forestry.AR-ACM0003.v02-0.R-1-0006',
@@ -35,6 +44,53 @@ function readJson(filePath) {
 
 function sha256File(filePath) {
   return crypto.createHash('sha256').update(fs.readFileSync(filePath)).digest('hex');
+}
+
+function assertMetaToolReferencesTruth() {
+  const meta = readJson(path.join(methodDir, 'META.json'));
+  const toolRefs = meta.references?.tools || [];
+  const sourcePdfs = meta.provenance?.source_pdfs || [];
+
+  assert.deepStrictEqual(
+    toolRefs.map((tool) => tool.path),
+    expectedToolPaths,
+    'META references.tools should remain pinned to the real AR-ACM0003 tool PDFs',
+  );
+
+  assert.strictEqual(sourcePdfs.length, 1, 'META provenance.source_pdfs should retain one methodology source PDF');
+  assert.strictEqual(
+    sourcePdfs[0].path,
+    expectedToolPaths[0],
+    'META provenance.source_pdfs[0] should continue to point to the primary methodology PDF',
+  );
+
+  for (const tool of toolRefs) {
+    const absolutePath = path.join(repoRoot, tool.path);
+    assert.ok(fs.existsSync(absolutePath), `${tool.path}: referenced tool PDF must exist`);
+    const actualSize = fs.statSync(absolutePath).size;
+    const actualSha = sha256File(absolutePath);
+    assert.strictEqual(tool.size, actualSize, `${tool.path}: META size must match the real PDF`);
+    assert.strictEqual(tool.sha256, actualSha, `${tool.path}: META sha256 must match the real PDF`);
+    assert.ok(actualSize > 1024, `${tool.path}: tool reference should not collapse to a tiny placeholder artifact`);
+  }
+
+  const sourceAbsolutePath = path.join(repoRoot, sourcePdfs[0].path);
+  assert.ok(fs.existsSync(sourceAbsolutePath), `${sourcePdfs[0].path}: provenance source PDF must exist`);
+  assert.strictEqual(
+    sourcePdfs[0].size,
+    fs.statSync(sourceAbsolutePath).size,
+    `${sourcePdfs[0].path}: provenance source PDF size must match the real PDF`,
+  );
+  assert.strictEqual(
+    sourcePdfs[0].sha256,
+    sha256File(sourceAbsolutePath),
+    `${sourcePdfs[0].path}: provenance source PDF sha256 must match the real PDF`,
+  );
+  assert.strictEqual(
+    meta.audit_hashes?.source_pdf_sha256,
+    sourcePdfs[0].sha256,
+    'META audit_hashes.source_pdf_sha256 should stay aligned with provenance.source_pdfs[0]',
+  );
 }
 
 function run(command, args) {
@@ -163,12 +219,14 @@ function main() {
   assertRulesRichSchema();
   assertExpectedEvidenceContract();
   assertNoBleed();
+  assertMetaToolReferencesTruth();
 
   rerunScopedGenerationTwice();
 
   assertRulesRichSchema();
   assertExpectedEvidenceContract();
   assertNoBleed();
+  assertMetaToolReferencesTruth();
 
   for (const [filePath, baselineHash] of baselineHashes.entries()) {
     assert.strictEqual(sha256File(filePath), baselineHash, `${path.relative(repoRoot, filePath)} changed after rerun`);

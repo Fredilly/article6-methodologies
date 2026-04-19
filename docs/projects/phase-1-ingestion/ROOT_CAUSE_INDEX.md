@@ -19,3 +19,4 @@ Generated from root-cause entry files under `docs/projects/phase-1-ingestion/roo
 | RC-20260414-064630 | 2026-04-14 | json canonicalizer drifted lean contract order (tags: ci, determinism, schema, agriculture, forestry) | [RC-20260414-064630](root-causes/RC-20260414-064630.md) |
 | RC-20260418-155903 | 2026-04-18 | AR-ACM0003 demo-ready forestry gold fixture contract (tags: forestry, ci, determinism) | [RC-20260418-155903](root-causes/RC-20260418-155903.md) |
 | RC-20260418-231958 | 2026-04-18 | Lean expectedEvidence must be derived from rich requirement coverage (tags: schema, determinism, forestry) | [RC-20260418-231958](root-causes/RC-20260418-231958.md) |
+| RC-20260419-042352 | 2026-04-19 | AR-ACM0003 proof must validate META tool truth, not just hash stability (tags: determinism, forestry, tools) | [RC-20260419-042352](root-causes/RC-20260419-042352.md) |
