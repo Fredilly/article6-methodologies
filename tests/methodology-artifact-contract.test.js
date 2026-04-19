@@ -3,7 +3,9 @@
 
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
+const os = require('node:os');
 const path = require('node:path');
+const { spawnSync } = require('node:child_process');
 const {
   METHODOLOGIES_ROOT,
   canonicalizeLeanRuleFromLean,
@@ -141,6 +143,47 @@ function verifyMethodInfoNormalization() {
   assert.equal(previousInfo.relPath, 'UNFCCC/Agriculture/ACM0010/v01-0');
 }
 
+function verifyOverlayDerivationClearsStaleExpectedEvidence() {
+  const relPath = 'GoldStandard/LUF/GS-00XX/v1-0';
+  const methodDir = path.join(METHODOLOGIES_ROOT, ...relPath.split('/'));
+  const rulesPath = path.join(methodDir, 'rules.json');
+  const originalRulesPayload = fs.readFileSync(rulesPath, 'utf8');
+  const rulesDoc = JSON.parse(originalRulesPayload);
+  const staleRule = rulesDoc.rules.find((rule) => rule.id === 'R-1-0001');
+  assert.ok(staleRule, `${relPath} should include overlay base rule R-1-0001`);
+  assert.ok(!('expectedEvidence' in staleRule), `${relPath} baseline rule should not carry expectedEvidence`);
+
+  staleRule.expectedEvidence = ['stale-overlay-evidence'];
+  fs.writeFileSync(rulesPath, `${JSON.stringify(rulesDoc, null, 2)}\n`, 'utf8');
+
+  try {
+    const result = spawnSync(process.execPath, ['scripts/derive-lean-from-rich.js', path.join('methodologies', relPath)], {
+      cwd: ROOT,
+      encoding: 'utf8',
+      env: {
+        ...process.env,
+        TMPDIR: process.env.TMPDIR || os.tmpdir(),
+      }
+    });
+    assert.equal(
+      result.status,
+      0,
+      `overlay lean derivation should pass\nstdout:\n${result.stdout}\nstderr:\n${result.stderr}`
+    );
+    assert.match(result.stdout, /OK: derived lean JSON for 1 method folder\(s\)\./);
+
+    const regeneratedRules = readJSON(rulesPath).rules || [];
+    const regeneratedRule = regeneratedRules.find((rule) => rule.id === 'R-1-0001');
+    assert.ok(regeneratedRule, `${relPath} regenerated rule R-1-0001 should exist`);
+    assert.ok(
+      !Object.prototype.hasOwnProperty.call(regeneratedRule, 'expectedEvidence'),
+      `${relPath} overlay derivation must clear stale lean expectedEvidence when rich omits it`
+    );
+  } finally {
+    fs.writeFileSync(rulesPath, originalRulesPayload, 'utf8');
+  }
+}
+
 function main() {
   for (const methodDir of methodDirs()) {
     verifyLeanContract(methodDir);
@@ -148,6 +191,7 @@ function main() {
   }
   verifyMethodInfoNormalization();
   verifyRepresentativeCrossMethodSignature();
+  verifyOverlayDerivationClearsStaleExpectedEvidence();
   console.log(`ok methodology artifact contract (${methodDirs().length} methods)`);
 }
 

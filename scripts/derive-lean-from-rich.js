@@ -118,7 +118,8 @@ function derive(dir){
     return canonicalizeLeanRuleFromLean({
       ...existingLean,
       id: leanId,
-      ...(derivedExpectedEvidence ? { expectedEvidence: derivedExpectedEvidence } : {})
+      // Overlay derivation must clear stale lean state when rich omits expected evidence.
+      expectedEvidence: derivedExpectedEvidence
     }, sectionLookup, info);
   }).sort(cmpRules);
   writeJSON(path.join(dir,'sections.json'), { sections: sectionsLean });
