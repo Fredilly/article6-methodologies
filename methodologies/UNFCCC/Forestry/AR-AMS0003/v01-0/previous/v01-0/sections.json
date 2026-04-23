@@ -1,0 +1,732 @@
+{
+  "sections": [
+    {
+      "id": "S-0001",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc",
+      "section_number": "0001",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0001"
+    },
+    {
+      "id": "S-0002",
+      "title": "The simplified baseline and monitoring methodologies are applicable if all the conditions (a)-(g)",
+      "anchor": "the-simplified-baseline-and-monitoring-methodologies-are-applicable-if-all-the-conditions-a-g",
+      "section_number": "0002",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0002"
+    },
+    {
+      "id": "S-0003",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-2",
+      "section_number": "0003",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0003"
+    },
+    {
+      "id": "S-0004",
+      "title": "Carbon pools to be considered by these methodologies are above- and below-ground biomass (i.e.",
+      "anchor": "carbon-pools-to-be-considered-by-these-methodologies-are-above-and-below-ground-biomass-i-e",
+      "section_number": "0004",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0004"
+    },
+    {
+      "id": "S-0005",
+      "title": "Project emissions attributable to A/R activities implemented on wetlands are assumed to be",
+      "anchor": "project-emissions-attributable-to-a-r-activities-implemented-on-wetlands-are-assumed-to-be",
+      "section_number": "0005",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0005"
+    },
+    {
+      "id": "S-0006",
+      "title": "Before using simplified methodologies, project participants shall demonstrate whether:",
+      "anchor": "before-using-simplified-methodologies-project-participants-shall-demonstrate-whether",
+      "section_number": "0006",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0006"
+    },
+    {
+      "id": "S-0007",
+      "title": "The most likely baseline scenario of the small-scale A/R CDM project activity is considered to be",
+      "anchor": "the-most-likely-baseline-scenario-of-the-small-scale-a-r-cdm-project-activity-is-considered-to-be",
+      "section_number": "0007",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0007"
+    },
+    {
+      "id": "S-0008",
+      "title": "Stratification of the project area should be carried out to improve the accuracy and precision of",
+      "anchor": "stratification-of-the-project-area-should-be-carried-out-to-improve-the-accuracy-and-precision-of",
+      "section_number": "0008",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0008"
+    },
+    {
+      "id": "S-0009",
+      "title": "For the ex ante calculation of the project biomass, the project area should be stratified according to",
+      "anchor": "for-the-ex-ante-calculation-of-the-project-biomass-the-project-area-should-be-stratified-according-to",
+      "section_number": "0009",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0009"
+    },
+    {
+      "id": "S-0010",
+      "title": "Actual net GHG removals by sinks consider the changes in above and below ground carbon pools",
+      "anchor": "actual-net-ghg-removals-by-sinks-consider-the-changes-in-above-and-below-ground-carbon-pools",
+      "section_number": "0010",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0010"
+    },
+    {
+      "id": "S-0011",
+      "title": "Changes in above and below ground carbon pools for trees should be calculated as follows",
+      "anchor": "changes-in-above-and-below-ground-carbon-pools-for-trees-should-be-calculated-as-follows",
+      "section_number": "0011",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0011"
+    },
+    {
+      "id": "S-0012",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-3",
+      "section_number": "0012",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0012"
+    },
+    {
+      "id": "S-0013",
+      "title": "Degraded or degrading wetlands may have significant number of trees at the time of start of the",
+      "anchor": "degraded-or-degrading-wetlands-may-have-significant-number-of-trees-at-the-time-of-start-of-the",
+      "section_number": "0013",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0013"
+    },
+    {
+      "id": "S-0014",
+      "title": "CAB,i,t is calculated per stratum i as follows:",
+      "anchor": "cab-i-t-is-calculated-per-stratum-i-as-follows",
+      "section_number": "0014",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0014"
+    },
+    {
+      "id": "S-0015",
+      "title": "= Carbon fraction of dry matter; t C (t dm)-1",
+      "anchor": "carbon-fraction-of-dry-matter-t-c-t-dm-1",
+      "section_number": "0015",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0015"
+    },
+    {
+      "id": "S-0016",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-4",
+      "section_number": "0016",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0016"
+    },
+    {
+      "id": "S-0017",
+      "title": "Documented existing local species-specific data from peer-reviewed studies or official reports (such",
+      "anchor": "documented-existing-local-species-specific-data-from-peer-reviewed-studies-or-official-reports-such",
+      "section_number": "0017",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0017"
+    },
+    {
+      "id": "S-0018",
+      "title": "Documented local values for BEF2,j should be used. In the absence of such values, national default",
+      "anchor": "documented-local-values-for-bef2-j-should-be-used-in-the-absence-of-such-values-national-default",
+      "section_number": "0018",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0018"
+    },
+    {
+      "id": "S-0019",
+      "title": "Documented local values for Dj should be used. In the absence of such values, national default",
+      "anchor": "documented-local-values-for-dj-should-be-used-in-the-absence-of-such-values-national-default",
+      "section_number": "0019",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0019"
+    },
+    {
+      "id": "S-0020",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-5",
+      "section_number": "0020",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0020"
+    },
+    {
+      "id": "S-0021",
+      "title": "CBB i, t is calculated per stratum i as follows",
+      "anchor": "cbb-i-t-is-calculated-per-stratum-i-as-follows",
+      "section_number": "0021",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0021"
+    },
+    {
+      "id": "S-0022",
+      "title": "Documented local or national values for Rj should be used. If national values are not available, a",
+      "anchor": "documented-local-or-national-values-for-rj-should-be-used-if-national-values-are-not-available-a",
+      "section_number": "0022",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0022"
+    },
+    {
+      "id": "S-0023",
+      "title": "Project emissions are assumed to be negligible hence, they are accounted for as zero in this",
+      "anchor": "project-emissions-are-assumed-to-be-negligible-hence-they-are-accounted-for-as-zero-in-this",
+      "section_number": "0023",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0023"
+    },
+    {
+      "id": "S-0024",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-6",
+      "section_number": "0024",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0024"
+    },
+    {
+      "id": "S-0025",
+      "title": "According to decision 6/CMP.1, annex, appendix B, paragraph 9: “If project participants",
+      "anchor": "according-to-decision-6-cmp-1-annex-appendix-b-paragraph-9-if-project-participants",
+      "section_number": "0025",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0025"
+    },
+    {
+      "id": "S-0026",
+      "title": "Leakage (Lt ) can be considered zero if evidence can be provided that:",
+      "anchor": "leakage-lt-can-be-considered-zero-if-evidence-can-be-provided-that",
+      "section_number": "0026",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0026"
+    },
+    {
+      "id": "S-0027",
+      "title": "If the possibility of leakage from displacement of grazing animals is not excluded using approach",
+      "anchor": "if-the-possibility-of-leakage-from-displacement-of-grazing-animals-is-not-excluded-using-approach",
+      "section_number": "0027",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0027"
+    },
+    {
+      "id": "S-0028",
+      "title": "In cases, where the possibility of leakage from displacement of agricultural activities other than",
+      "anchor": "in-cases-where-the-possibility-of-leakage-from-displacement-of-agricultural-activities-other-than",
+      "section_number": "0028",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0028"
+    },
+    {
+      "id": "S-0029",
+      "title": "If the area under agricultural activities within the project boundary displaced due to the project",
+      "anchor": "if-the-area-under-agricultural-activities-within-the-project-boundary-displaced-due-to-the-project",
+      "section_number": "0029",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0029"
+    },
+    {
+      "id": "S-0030",
+      "title": "If the area under agricultural activities within the project boundary displaced due to the project",
+      "anchor": "if-the-area-under-agricultural-activities-within-the-project-boundary-displaced-due-to-the-project-2",
+      "section_number": "0030",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0030"
+    },
+    {
+      "id": "S-0031",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-7",
+      "section_number": "0031",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0031"
+    },
+    {
+      "id": "S-0032",
+      "title": "In cases where the possibility of leakage displacement due to fuel wood collection is not excluded as",
+      "anchor": "in-cases-where-the-possibility-of-leakage-displacement-due-to-fuel-wood-collection-is-not-excluded-as",
+      "section_number": "0032",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0032"
+    },
+    {
+      "id": "S-0033",
+      "title": "Total leakage is calculated as the sum of leakage due to displacement of agricultural activities and",
+      "anchor": "total-leakage-is-calculated-as-the-sum-of-leakage-due-to-displacement-of-agricultural-activities-and",
+      "section_number": "0033",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0033"
+    },
+    {
+      "id": "S-0034",
+      "title": "The net anthropogenic GHG removals by sinks for each year during the first crediting period are",
+      "anchor": "the-net-anthropogenic-ghg-removals-by-sinks-for-each-year-during-the-first-crediting-period-are",
+      "section_number": "0034",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0034"
+    },
+    {
+      "id": "S-0035",
+      "title": "The resulting temporary certified emission reductions (tCERs) at the year of assumed verification tv",
+      "anchor": "the-resulting-temporary-certified-emission-reductions-tcers-at-the-year-of-assumed-verification-tv",
+      "section_number": "0035",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0035"
+    },
+    {
+      "id": "S-0036",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-8",
+      "section_number": "0036",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0036"
+    },
+    {
+      "id": "S-0037",
+      "title": "The resulting long-term certified emission reductions (lCERs) at the year of assumed verification tv",
+      "anchor": "the-resulting-long-term-certified-emission-reductions-lcers-at-the-year-of-assumed-verification-tv",
+      "section_number": "0037",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0037"
+    },
+    {
+      "id": "S-0038",
+      "title": "The baseline net GHG removals by sinks is estimated at zero in this methodology. Therefore",
+      "anchor": "the-baseline-net-ghg-removals-by-sinks-is-estimated-at-zero-in-this-methodology-therefore",
+      "section_number": "0038",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0038"
+    },
+    {
+      "id": "S-0039",
+      "title": "Stratification of the project area should be carried out to improve the accuracy and precision of",
+      "anchor": "stratification-of-the-project-area-should-be-carried-out-to-improve-the-accuracy-and-precision-of-2",
+      "section_number": "0039",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0039"
+    },
+    {
+      "id": "S-0040",
+      "title": "For ex post estimation of project GHG removals by sinks, strata shall be defined by:",
+      "anchor": "for-ex-post-estimation-of-project-ghg-removals-by-sinks-strata-shall-be-defined-by",
+      "section_number": "0040",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0040"
+    },
+    {
+      "id": "S-0041",
+      "title": "The carbon stocks in above-ground biomass of trees within the project boundary at the starting date",
+      "anchor": "the-carbon-stocks-in-above-ground-biomass-of-trees-within-the-project-boundary-at-the-starting-date",
+      "section_number": "0041",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0041"
+    },
+    {
+      "id": "S-0042",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-9",
+      "section_number": "0042",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0042"
+    },
+    {
+      "id": "S-0043",
+      "title": "For above-ground biomass CAB,i,t is calculated per stratum i as follows:",
+      "anchor": "for-above-ground-biomass-cab-i-t-is-calculated-per-stratum-i-as-follows",
+      "section_number": "0043",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0043"
+    },
+    {
+      "id": "S-0044",
+      "title": "Estimate of above-ground biomass of trees at the start of the project activity BAB,i,t=0 and at time t",
+      "anchor": "estimate-of-above-ground-biomass-of-trees-at-the-start-of-the-project-activity-bab-i-t-0-and-at-time-t",
+      "section_number": "0044",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0044"
+    },
+    {
+      "id": "S-0045",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-10",
+      "section_number": "0045",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0045"
+    },
+    {
+      "id": "S-0046",
+      "title": "Stem volume SVi,j,t shall be estimated from the on-site measurements of diameter at breast height",
+      "anchor": "stem-volume-svi-j-t-shall-be-estimated-from-the-on-site-measurements-of-diameter-at-breast-height",
+      "section_number": "0046",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0046"
+    },
+    {
+      "id": "S-0047",
+      "title": "Documented local values for Dj should be used. In the absence of such values, national default values",
+      "anchor": "documented-local-values-for-dj-should-be-used-in-the-absence-of-such-values-national-default-values",
+      "section_number": "0047",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0047"
+    },
+    {
+      "id": "S-0048",
+      "title": "The above-ground biomass of trees in the stratum shall be estimated as follows:",
+      "anchor": "the-above-ground-biomass-of-trees-in-the-stratum-shall-be-estimated-as-follows",
+      "section_number": "0048",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0048"
+    },
+    {
+      "id": "S-0049",
+      "title": "Carbon stocks in below-ground biomass at time t achieved by the project activity during the",
+      "anchor": "carbon-stocks-in-below-ground-biomass-at-time-t-achieved-by-the-project-activity-during-the",
+      "section_number": "0049",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0049"
+    },
+    {
+      "id": "S-0050",
+      "title": "Documented local or national values for Rj should be used. If national values are not available, the",
+      "anchor": "documented-local-or-national-values-for-rj-should-be-used-if-national-values-are-not-available-the",
+      "section_number": "0050",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0050"
+    },
+    {
+      "id": "S-0051",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-11",
+      "section_number": "0051",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0051"
+    },
+    {
+      "id": "S-0052",
+      "title": "As indicated in paragraph 19, if it is demonstrated that there is no leakage due to displacement of",
+      "anchor": "as-indicated-in-paragraph-19-if-it-is-demonstrated-that-there-is-no-leakage-due-to-displacement-of",
+      "section_number": "0052",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0052"
+    },
+    {
+      "id": "S-0053",
+      "title": "In order to estimate leakage due to displacement of agricultural activities, during the first crediting",
+      "anchor": "in-order-to-estimate-leakage-due-to-displacement-of-agricultural-activities-during-the-first-crediting",
+      "section_number": "0053",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0053"
+    },
+    {
+      "id": "S-0054",
+      "title": "If the project participants cannot demonstrate that the displacement of agricultural activities and fuel",
+      "anchor": "if-the-project-participants-cannot-demonstrate-that-the-displacement-of-agricultural-activities-and-fuel",
+      "section_number": "0054",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0054"
+    },
+    {
+      "id": "S-0055",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-12",
+      "section_number": "0055",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0055"
+    },
+    {
+      "id": "S-0056",
+      "title": "LCP1 =",
+      "anchor": "lcp1",
+      "section_number": "0056",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0056"
+    },
+    {
+      "id": "S-0057",
+      "title": "Net anthropogenic greenhouse gas removals by sinks is the actual net greenhouse gas removals by",
+      "anchor": "net-anthropogenic-greenhouse-gas-removals-by-sinks-is-the-actual-net-greenhouse-gas-removals-by",
+      "section_number": "0057",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0057"
+    },
+    {
+      "id": "S-0058",
+      "title": "The resulting tCERs at the year of verification tv are calculated as follows",
+      "anchor": "the-resulting-tcers-at-the-year-of-verification-tv-are-calculated-as-follows",
+      "section_number": "0058",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0058"
+    },
+    {
+      "id": "S-0059",
+      "title": "The resulting lCERs at the year of verification tv are calculated as follows:",
+      "anchor": "the-resulting-lcers-at-the-year-of-verification-tv-are-calculated-as-follows",
+      "section_number": "0059",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0059"
+    },
+    {
+      "id": "S-0060",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-13",
+      "section_number": "0060",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0060"
+    },
+    {
+      "id": "S-0061",
+      "title": "Monitoring frequency for each variable is defined in the Tables 1 and 2.",
+      "anchor": "monitoring-frequency-for-each-variable-is-defined-in-the-tables-1-and-2",
+      "section_number": "0061",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0061"
+    },
+    {
+      "id": "S-0062",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-14",
+      "section_number": "0062",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0062"
+    },
+    {
+      "id": "S-0063",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-15",
+      "section_number": "0063",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0063"
+    },
+    {
+      "id": "S-0064",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-16",
+      "section_number": "0064",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0064"
+    },
+    {
+      "id": "S-0065",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-17",
+      "section_number": "0065",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0065"
+    },
+    {
+      "id": "S-0066",
+      "title": "Vegetation degradation:",
+      "anchor": "vegetation-degradation",
+      "section_number": "0066",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0066"
+    },
+    {
+      "id": "S-0067",
+      "title": "Anthropogenic influences leading to degradation, for example:",
+      "anchor": "anthropogenic-influences-leading-to-degradation-for-example",
+      "section_number": "0067",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0067"
+    },
+    {
+      "id": "S-0068",
+      "title": "Provision of any other evidence that transparently demonstrates project lands are degraded or",
+      "anchor": "provision-of-any-other-evidence-that-transparently-demonstrates-project-lands-are-degraded-or",
+      "section_number": "0068",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0068"
+    },
+    {
+      "id": "S-0069",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-18",
+      "section_number": "0069",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0069"
+    },
+    {
+      "id": "S-0070",
+      "title": "Eligibility of the A/R CDM project activities under Article 12 of the Kyoto Protocol shall be",
+      "anchor": "eligibility-of-the-a-r-cdm-project-activities-under-article-12-of-the-kyoto-protocol-shall-be",
+      "section_number": "0070",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0070"
+    },
+    {
+      "id": "S-0071",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-19",
+      "section_number": "0071",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0071"
+    },
+    {
+      "id": "S-0072",
+      "title": "Project participants shall provide an explanation to show that the project activity would not have",
+      "anchor": "project-participants-shall-provide-an-explanation-to-show-that-the-project-activity-would-not-have",
+      "section_number": "0072",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0072"
+    },
+    {
+      "id": "S-0073",
+      "title": "Investment barriers, other than economic/financial barriers, inter alia:",
+      "anchor": "investment-barriers-other-than-economic-financial-barriers-inter-alia",
+      "section_number": "0073",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0073"
+    },
+    {
+      "id": "S-0074",
+      "title": "Institutional barriers, inter alia:",
+      "anchor": "institutional-barriers-inter-alia",
+      "section_number": "0074",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0074"
+    },
+    {
+      "id": "S-0075",
+      "title": "Technological barriers, inter alia:",
+      "anchor": "technological-barriers-inter-alia",
+      "section_number": "0075",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0075"
+    },
+    {
+      "id": "S-0076",
+      "title": "Barriers relating to local tradition, inter alia:",
+      "anchor": "barriers-relating-to-local-tradition-inter-alia",
+      "section_number": "0076",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0076"
+    },
+    {
+      "id": "S-0077",
+      "title": "Barriers due to prevailing practice, inter alia:",
+      "anchor": "barriers-due-to-prevailing-practice-inter-alia",
+      "section_number": "0077",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0077"
+    },
+    {
+      "id": "S-0078",
+      "title": "Barriers due to local ecological conditions, inter alia:",
+      "anchor": "barriers-due-to-local-ecological-conditions-inter-alia",
+      "section_number": "0078",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0078"
+    },
+    {
+      "id": "S-0079",
+      "title": "Barriers due to social conditions, inter alia:",
+      "anchor": "barriers-due-to-social-conditions-inter-alia",
+      "section_number": "0079",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0079"
+    },
+    {
+      "id": "S-0080",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-20",
+      "section_number": "0080",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0080"
+    },
+    {
+      "id": "S-0081",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-21",
+      "section_number": "0081",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0081"
+    },
+    {
+      "id": "S-0082",
+      "title": "DBH 2",
+      "anchor": "dbh-2",
+      "section_number": "0082",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0082"
+    },
+    {
+      "id": "S-0083",
+      "title": "0.6589*(DBH ) 7 (1989)",
+      "anchor": "0-6589-dbh-7-1989",
+      "section_number": "0083",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0083"
+    },
+    {
+      "id": "S-0084",
+      "title": "1.242*(DBH) 4 (1989)",
+      "anchor": "1-242-dbh-4-1989",
+      "section_number": "0084",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0084"
+    },
+    {
+      "id": "S-0085",
+      "title": "0.740*(DBH ) 2",
+      "anchor": "0-740-dbh-2",
+      "section_number": "0085",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0085"
+    },
+    {
+      "id": "S-0086",
+      "title": "ln(WD), or 9 (2005)",
+      "anchor": "ln-wd-or-9-2005",
+      "section_number": "0086",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0086"
+    },
+    {
+      "id": "S-0087",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-22",
+      "section_number": "0087",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0087"
+    },
+    {
+      "id": "S-0088",
+      "title": "DBH 2",
+      "anchor": "dbh-2-2",
+      "section_number": "0088",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0088"
+    },
+    {
+      "id": "S-0089",
+      "title": "Chan (1986)",
+      "anchor": "chan-1986",
+      "section_number": "0089",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0089"
+    },
+    {
+      "id": "S-0090",
+      "title": "Scott (1989)",
+      "anchor": "scott-1989",
+      "section_number": "0090",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0090"
+    },
+    {
+      "id": "S-0091",
+      "title": "Food and Agriculture Organization of the United Nations, Rome, Italy.",
+      "anchor": "food-and-agriculture-organization-of-the-united-nations-rome-italy",
+      "section_number": "0091",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0091"
+    },
+    {
+      "id": "S-0092",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-23",
+      "section_number": "0092",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0092"
+    },
+    {
+      "id": "S-0093",
+      "title": "Sustainable grazing capacity is calculated by assuming that the grazing animals should not consume",
+      "anchor": "sustainable-grazing-capacity-is-calculated-by-assuming-that-the-grazing-animals-should-not-consume",
+      "section_number": "0093",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0093"
+    },
+    {
+      "id": "S-0094",
+      "title": "∗ DMI",
+      "anchor": "dmi",
+      "section_number": "0094",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0094"
+    },
+    {
+      "id": "S-0095",
+      "title": "Annual net primary production ANPP can be calculated from local measurements or default values",
+      "anchor": "annual-net-primary-production-anpp-can-be-calculated-from-local-measurements-or-default-values",
+      "section_number": "0095",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0095"
+    },
+    {
+      "id": "S-0096",
+      "title": "The daily biomass consumption can be calculate from local measurements or estimated based on the",
+      "anchor": "the-daily-biomass-consumption-can-be-calculate-from-local-measurements-or-estimated-based-on-the",
+      "section_number": "0096",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0096"
+    },
+    {
+      "id": "S-0097",
+      "title": "DMI = (2)",
+      "anchor": "dmi-2",
+      "section_number": "0097",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0097"
+    },
+    {
+      "id": "S-0098",
+      "title": "Daily gross energy intake for cattle and sheep can be calculated using equations 10.3 through 10.16",
+      "anchor": "daily-gross-energy-intake-for-cattle-and-sheep-can-be-calculated-using-equations-10-3-through-10-16",
+      "section_number": "0098",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0098"
+    },
+    {
+      "id": "S-0099",
+      "title": "of the same 2006 IPCC Guidelines.",
+      "anchor": "of-the-same-2006-ipcc-guidelines",
+      "section_number": "0099",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0099"
+    },
+    {
+      "id": "S-0100",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-24",
+      "section_number": "0100",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0100"
+    },
+    {
+      "id": "S-0101",
+      "title": "ABOVEGROUND NET PRIMARY PRODUCTION, CLASSIFIED BY IPCC CLIMATE ZONES.",
+      "anchor": "aboveground-net-primary-production-classified-by-ipcc-climate-zones",
+      "section_number": "0101",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0101"
+    },
+    {
+      "id": "S-0102",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-25",
+      "section_number": "0102",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0102"
+    },
+    {
+      "id": "S-0103",
+      "title": "UNFCCC/CCNUCC",
+      "anchor": "unfccc-ccnucc-26",
+      "section_number": "0103",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0103"
+    },
+    {
+      "id": "S-0104",
+      "title": "Calculated using equation listed in Table 10.8",
+      "anchor": "calculated-using-equation-listed-in-table-10-8",
+      "section_number": "0104",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0104"
+    }
+  ]
+}

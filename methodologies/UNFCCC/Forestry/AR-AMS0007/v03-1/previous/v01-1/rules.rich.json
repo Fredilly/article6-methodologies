@@ -1,0 +1,233 @@
+[
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0002",
+    "logic": "Simplified baseline and monitoring methodology for small-scale A/R CDM project activities implemented on grasslands or croplands",
+    "refs": {
+      "sections": [
+        "S-0002"
+      ]
+    },
+    "summary": "Simplified baseline and monitoring methodology for small-scale A/R CDM project activities implemented on grasslands or croplands",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0004",
+    "logic": "Arable and tillage land that contains annual and/or perennial crops and/or woody vegetation that does not impair its eligibility for A/R CDM project activities.",
+    "refs": {
+      "sections": [
+        "S-0004"
+      ]
+    },
+    "summary": "Arable and tillage land that contains annual and/or perennial crops and/or woody vegetation that does not impair its eligibility for A/R CDM project activities.",
+    "type": "eligibility"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0005",
+    "logic": "(a) The baseline land-use category is cropland or grassland as defined above; (b) Any area of land included in the project boundary:",
+    "refs": {
+      "sections": [
+        "S-0005"
+      ]
+    },
+    "summary": "(a) The baseline land-use category is cropland or grassland as defined above; (b) Any area of land included in the project boundary:",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0006",
+    "logic": "guidelines and guidances: (a) Procedures to demonstrate the eligibility of lands for afforestation and reforestation CDM project activities; (b) Guidance on application of the definition of the project boundary to A/R CDM project activities; (c) Estimation of non-CO2 GHG emissions resulting from burning of biomass attributable to an A/R CDM project activity;",
+    "refs": {
+      "sections": [
+        "S-0006"
+      ]
+    },
+    "summary": "guidelines and guidances: (a) Procedures to demonstrate the eligibility of lands for afforestation and reforestation CDM project activities; (b) Guidance on application of the definition of the project boundary to A/R CDM project activit...",
+    "type": "eligibility"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0009",
+    "logic": "Project boundary and eligibility of land",
+    "refs": {
+      "sections": [
+        "S-0009"
+      ]
+    },
+    "summary": "Project boundary and eligibility of land",
+    "type": "eligibility"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0011",
+    "logic": "boundary is eligible for an A/R CDM project activity using the current version of the “Procedures to demonstrate the eligibility of lands for afforestation and reforestation CDM project activities”.",
+    "refs": {
+      "sections": [
+        "S-0011"
+      ]
+    },
+    "summary": "boundary is eligible for an A/R CDM project activity using the current version of the “Procedures to demonstrate the eligibility of lands for afforestation and reforestation CDM project activities”.",
+    "type": "eligibility"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0018",
+    "logic": "variables in the method (e.g. growth models or yield curves/tables) used to estimate changes in biomass stocks: (a) For baseline net GHG removals by sinks.",
+    "refs": {
+      "sections": [
+        "S-0018"
+      ]
+    },
+    "summary": "variables in the method (e.g. growth models or yield curves/tables) used to estimate changes in biomass stocks: (a) For baseline net GHG removals by sinks.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0022",
+    "logic": "change in carbon stock in SOC may be conservatively assumed to be zero for all strata in the baseline scenario.",
+    "refs": {
+      "sections": [
+        "S-0022"
+      ]
+    },
+    "summary": "change in carbon stock in SOC may be conservatively assumed to be zero for all strata in the baseline scenario.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0023",
+    "logic": "existing live woody vegetation are insignificant” does not lead to a conclusion that the change in carbon stocks in the existing live woody vegetation in the baseline is insignificant, then the change in carbon stock of tree and shrub biomass in the baseline is estimated as follows:",
+    "refs": {
+      "sections": [
+        "S-0023"
+      ]
+    },
+    "summary": "existing live woody vegetation are insignificant” does not lead to a conclusion that the change in carbon stocks in the existing live woody vegetation in the baseline is insignificant, then the change in carbon stock of tree and shrub bi...",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0024",
+    "logic": "under the baseline conditions.",
+    "refs": {
+      "sections": [
+        "S-0024"
+      ]
+    },
+    "summary": "under the baseline conditions.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0002-0024",
+    "logic": "Under steady state the growth of the living trees in the baseline becomes negligible and therefore baseline removals by sinks shall be accounted as zero.",
+    "refs": {
+      "sections": [
+        "S-0024"
+      ]
+    },
+    "summary": "Under steady state the growth of the living trees in the baseline becomes negligible and therefore baseline removals by sinks shall be accounted as zero.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0003-0024",
+    "logic": "This assessment shall be based on transparent and verifiable information originating as appropriate from available literature, data from comparable areas, from field measurements in the planned project area, or from other sources relevant to the baseline circumstances.",
+    "refs": {
+      "sections": [
+        "S-0024"
+      ]
+    },
+    "summary": "This assessment shall be based on transparent and verifiable information originating as appropriate from available literature, data from comparable areas, from field measurements in the planned project area, or from other sources relevan...",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0025",
+    "logic": "removals by sinks, PPs shall provide approximate values of those data and parameters that are not available before the commencement of the monitoring activities.",
+    "refs": {
+      "sections": [
+        "S-0025"
+      ]
+    },
+    "summary": "removals by sinks, PPs shall provide approximate values of those data and parameters that are not available before the commencement of the monitoring activities.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0031",
+    "logic": "evidence should be provided (e.g. in the relevant part of the monitoring plan of project",
+    "refs": {
+      "sections": [
+        "S-0031"
+      ]
+    },
+    "summary": "evidence should be provided (e.g. in the relevant part of the monitoring plan of project",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0035",
+    "logic": "attributable to displacement of pre-project crop cultivation activities in A/R CDM project activity is insignificant” and/or the “Guidelines on conditions under which increase in GHG emissions related to displacement of pre-project grazing activities in A/R CDM project activity is insignificant” does not lead to the conclusion that the applicable increase in GHG emissions is insignificant, then leakage from displacement of agricultural activities shall be estimated as: t* LK = ∑ LK AGRIC ,t (5) t =1",
+    "refs": {
+      "sections": [
+        "S-0035"
+      ]
+    },
+    "summary": "attributable to displacement of pre-project crop cultivation activities in A/R CDM project activity is insignificant” and/or the “Guidelines on conditions under which increase in GHG emissions related to displacement of pre-project grazi...",
+    "type": "leakage"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0036",
+    "logic": "minus the baseline net GHG removals by sinks minus leakage.",
+    "refs": {
+      "sections": [
+        "S-0036"
+      ]
+    },
+    "summary": "minus the baseline net GHG removals by sinks minus leakage.",
+    "type": "parameter"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0041",
+    "logic": "In addition, the monitoring provisions contained in the tools referred to in this methodology apply.",
+    "refs": {
+      "sections": [
+        "S-0041"
+      ]
+    },
+    "summary": "In addition, the monitoring provisions contained in the tools referred to in this methodology apply.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0002-0041",
+    "logic": "Monitoring of project implementation",
+    "refs": {
+      "sections": [
+        "S-0041"
+      ]
+    },
+    "summary": "Monitoring of project implementation",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0042",
+    "logic": "In absence of these, standard operating procedures (SOPs) and quality control/quality assurance (QA/QC) procedures for inventory operations, including field data collection and data management, shall be identified, recorded and applied.",
+    "refs": {
+      "sections": [
+        "S-0042"
+      ]
+    },
+    "summary": "In absence of these, standard operating procedures (SOPs) and quality control/quality assurance (QA/QC) procedures for inventory operations, including field data collection and data management, shall be identified, recorded and applied.",
+    "type": "monitoring"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0049",
+    "logic": "choice and application of default data in estimation of the net anthropogenic GHG removals by sinks” are followed for addressing uncertainty.",
+    "refs": {
+      "sections": [
+        "S-0049"
+      ]
+    },
+    "summary": "choice and application of default data in estimation of the net anthropogenic GHG removals by sinks” are followed for addressing uncertainty.",
+    "type": "uncertainty"
+  },
+  {
+    "id": "UNFCCC.Forestry.AR-AMS0007.v01-1.R-0001-0050",
+    "logic": "For ex ante calculation of net anthropogenic GHG removals by sinks, PPs shall provide transparent estimations for the parameters that are monitored during the crediting period.",
+    "refs": {
+      "sections": [
+        "S-0050"
+      ]
+    },
+    "summary": "For ex ante calculation of net anthropogenic GHG removals by sinks, PPs shall provide transparent estimations for the parameters that are monitored during the crediting period.",
+    "type": "monitoring"
+  }
+]

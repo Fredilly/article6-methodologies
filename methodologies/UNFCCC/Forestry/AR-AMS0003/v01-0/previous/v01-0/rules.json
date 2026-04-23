@@ -1,0 +1,276 @@
+{
+  "rules": [
+    {
+      "id": "R-0001-0002",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0001-0002",
+      "title": "Therefore, the A/R project activities are specifically restricted to the following wetland categories: (i) Degraded intertidal wetlands (e.g. mangroves); (ii) Undrained peat swamps that are degraded with respect to vegetation cover3; (ii...",
+      "logic": "Therefore, the A/R project activities are specifically restricted to the following wetland categories: (i) Degraded intertidal wetlands (e.g. mangroves); (ii) Undrained peat swamps that are degraded with respect to vegetation cover3; (iii) Degraded flood plain areas on inorganic soils and (iv) Seasonally flooded areas on the margin of water bodies/reservoirs. (d) This methodology is not applicable to project activities that are implemented on wetlands where the predominant vegetation comprises of herbaceous species in its natural state. (e) Project activities are implemented on lands where in the pre-project situation, areas used for agricultural activities (other than grazing) within the project boundary are not greater than 10% of the total project area. (f) Project activities are implemented on lands where displacement of grazing animals does not result in leakage (see Section IV).",
+      "section_anchor": "the-simplified-baseline-and-monitoring-methodologies-are-applicable-if-all-the-conditions-a-g",
+      "section_id": "S-0002",
+      "section_number": "0002",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0002",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "leakage"
+      ]
+    },
+    {
+      "id": "R-0002-0002",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0002-0002",
+      "title": "If the possibility of leakage from displacement of grazing",
+      "logic": "If the possibility of leakage from displacement of grazing",
+      "section_anchor": "the-simplified-baseline-and-monitoring-methodologies-are-applicable-if-all-the-conditions-a-g",
+      "section_id": "S-0002",
+      "section_number": "0002",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0002",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "leakage"
+      ]
+    },
+    {
+      "id": "R-0001-0006",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0001-0006",
+      "title": "(a) The land of the project activity is eligible, using the approach for the demonstration of land eligibility contained in appendix B; (b) The project activity is additional, using the procedures for the assessment of additionality cont...",
+      "logic": "(a) The land of the project activity is eligible, using the approach for the demonstration of land eligibility contained in appendix B; (b) The project activity is additional, using the procedures for the assessment of additionality contained in appendix C.",
+      "section_anchor": "before-using-simplified-methodologies-project-participants-shall-demonstrate-whether",
+      "section_id": "S-0006",
+      "section_number": "0006",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0006",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-0001-0007",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0001-0007",
+      "title": "the land-use prior to the implementation of the project activity, that is degraded or degrading wetlands, where, the changes in carbon stocks in the living biomass pools of trees and non tree vegetation under the baseline scenario are ex...",
+      "logic": "the land-use prior to the implementation of the project activity, that is degraded or degrading wetlands, where, the changes in carbon stocks in the living biomass pools of trees and non tree vegetation under the baseline scenario are expected to be in steady state or declining.",
+      "section_anchor": "the-most-likely-baseline-scenario-of-the-small-scale-a-r-cdm-project-activity-is-considered-to-be",
+      "section_id": "S-0007",
+      "section_number": "0007",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0007",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "parameter"
+      ]
+    },
+    {
+      "id": "R-0001-0025",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0001-0025",
+      "title": "demonstrate that the small-scale afforestation or reforestation project activity under the CDM does not result in the displacement of activities or people, or does not trigger activities outside the project boundary, that would be attrib...",
+      "logic": "demonstrate that the small-scale afforestation or reforestation project activity under the CDM does not result in the displacement of activities or people, or does not trigger activities outside the project boundary, that would be attributable to the small-scale afforestation or reforestation project activity under the CDM, such that an increase in greenhouse gas emissions by sources occurs, a leakage estimation is not required.",
+      "section_anchor": "according-to-decision-6-cmp-1-annex-appendix-b-paragraph-9-if-project-participants",
+      "section_id": "S-0025",
+      "section_number": "0025",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0025",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "leakage"
+      ]
+    },
+    {
+      "id": "R-0002-0025",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0002-0025",
+      "title": "In all other cases leakage estimation is required.”",
+      "logic": "In all other cases leakage estimation is required.”",
+      "section_anchor": "according-to-decision-6-cmp-1-annex-appendix-b-paragraph-9-if-project-participants",
+      "section_id": "S-0025",
+      "section_number": "0025",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0025",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "leakage"
+      ]
+    },
+    {
+      "id": "R-0001-0028",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0001-0028",
+      "title": "from grazing is not excluded as provided in para 19 above, project participants should assess the possibility of leakage by considering the area used for agricultural activities within the project boundary displaced due to the project ac...",
+      "logic": "from grazing is not excluded as provided in para 19 above, project participants should assess the possibility of leakage by considering the area used for agricultural activities within the project boundary displaced due to the project activity.",
+      "section_anchor": "in-cases-where-the-possibility-of-leakage-from-displacement-of-agricultural-activities-other-than",
+      "section_id": "S-0028",
+      "section_number": "0028",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0028",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "leakage"
+      ]
+    },
+    {
+      "id": "R-0001-0029",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0001-0029",
+      "title": "activity is lower than 10 per cent of the total project area then for the ex ante calculation it is assumed that entire leakage shall be equal to 20 per cent of the ex ante actual net GHG removals by sinks accumulated during the first cr...",
+      "logic": "activity is lower than 10 per cent of the total project area then for the ex ante calculation it is assumed that entire leakage shall be equal to 20 per cent of the ex ante actual net GHG removals by sinks accumulated during the first crediting period, that is the average annual leakage is equal to:",
+      "section_anchor": "if-the-area-under-agricultural-activities-within-the-project-boundary-displaced-due-to-the-project",
+      "section_id": "S-0029",
+      "section_number": "0029",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0029",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "leakage"
+      ]
+    },
+    {
+      "id": "R-0001-0032",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0001-0032",
+      "title": "in para 19 above, leakage shall be equal to 5 per cent of the ex ante actual net GHG removals by sinks accumulated during the first crediting period.",
+      "logic": "in para 19 above, leakage shall be equal to 5 per cent of the ex ante actual net GHG removals by sinks accumulated during the first crediting period.",
+      "section_anchor": "in-cases-where-the-possibility-of-leakage-displacement-due-to-fuel-wood-collection-is-not-excluded-as",
+      "section_id": "S-0032",
+      "section_number": "0032",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0032",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "leakage"
+      ]
+    },
+    {
+      "id": "R-0002-0032",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0002-0032",
+      "title": "The average annual leakage is equal to:",
+      "logic": "The average annual leakage is equal to:",
+      "section_anchor": "in-cases-where-the-possibility-of-leakage-displacement-due-to-fuel-wood-collection-is-not-excluded-as",
+      "section_id": "S-0032",
+      "section_number": "0032",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0032",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "leakage"
+      ]
+    },
+    {
+      "id": "R-0001-0038",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0001-0038",
+      "title": "monitoring of the baseline is not required.",
+      "logic": "monitoring of the baseline is not required.",
+      "section_anchor": "the-baseline-net-ghg-removals-by-sinks-is-estimated-at-zero-in-this-methodology-therefore",
+      "section_id": "S-0038",
+      "section_number": "0038",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0038",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "parameter"
+      ]
+    },
+    {
+      "id": "R-0001-0049",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0001-0049",
+      "title": "monitoring interval CBB i, t shall be estimated for each stratum i as follows: Sps C BB ,i ,t = ∑ C BB ,i , j ,t (21) j =1",
+      "logic": "monitoring interval CBB i, t shall be estimated for each stratum i as follows: Sps C BB ,i ,t = ∑ C BB ,i , j ,t (21) j =1",
+      "section_anchor": "carbon-stocks-in-below-ground-biomass-at-time-t-achieved-by-the-project-activity-during-the",
+      "section_id": "S-0049",
+      "section_number": "0049",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0049",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-0001-0053",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0001-0053",
+      "title": "period project participants shall monitor the area used for agricultural activities within the project boundary displaced due to the project activity.",
+      "logic": "period project participants shall monitor the area used for agricultural activities within the project boundary displaced due to the project activity.",
+      "section_anchor": "in-order-to-estimate-leakage-due-to-displacement-of-agricultural-activities-during-the-first-crediting",
+      "section_id": "S-0053",
+      "section_number": "0053",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0053",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-0001-0054",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0001-0054",
+      "title": "wood collection does not result in leakage (as provided in para 19) then leakage shall be determined at the time of verification using the following equations: For the first verification period of the first crediting period: (a) Leakage ...",
+      "logic": "wood collection does not result in leakage (as provided in para 19) then leakage shall be determined at the time of verification using the following equations: For the first verification period of the first crediting period: (a) Leakage due to displacement of agricultural activity (Ltv_A ) equals to:",
+      "section_anchor": "if-the-project-participants-cannot-demonstrate-that-the-displacement-of-agricultural-activities-and-fuel",
+      "section_id": "S-0054",
+      "section_number": "0054",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0054",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "leakage"
+      ]
+    },
+    {
+      "id": "R-0001-0057",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0001-0057",
+      "title": "sinks minus the baseline net greenhouse gas removals by sinks minus leakage as appropriate.",
+      "logic": "sinks minus the baseline net greenhouse gas removals by sinks minus leakage as appropriate.",
+      "section_anchor": "net-anthropogenic-greenhouse-gas-removals-by-sinks-is-the-actual-net-greenhouse-gas-removals-by",
+      "section_id": "S-0057",
+      "section_number": "0057",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0057",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "parameter"
+      ]
+    },
+    {
+      "id": "R-0001-0061",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0001-0061",
+      "title": "Data to be collected or used to monitor the verifiable changes in carbon stock in the carbon pools within the project boundary from the proposed afforestation and reforestation project activity under the clean development mechanism, and ...",
+      "logic": "Data to be collected or used to monitor the verifiable changes in carbon stock in the carbon pools within the project boundary from the proposed afforestation and reforestation project activity under the clean development mechanism, and how these data will be archived.",
+      "section_anchor": "monitoring-frequency-for-each-variable-is-defined-in-the-tables-1-and-2",
+      "section_id": "S-0061",
+      "section_number": "0061",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0061",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-0001-0070",
+      "stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.R-0001-0070",
+      "title": "demonstrated based on definitions provided in paragraph 1 of the annex to the Decision 16/CMP.1 (“Land use, land-use change and forestry”), as requested by Decision 5/CMP.1 (“Modalities and procedures for afforestation and reforestation ...",
+      "logic": "demonstrated based on definitions provided in paragraph 1 of the annex to the Decision 16/CMP.1 (“Land use, land-use change and forestry”), as requested by Decision 5/CMP.1 (“Modalities and procedures for afforestation and reforestation project activities under the clean development mechanism in the first commitment period of the Kyoto Protocol”), until new procedures to demonstrate the eligibility of lands for afforestation and reforestation project activities under the clean development mechanism are recommended by the EB.",
+      "section_anchor": "eligibility-of-the-a-r-cdm-project-activities-under-article-12-of-the-kyoto-protocol-shall-be",
+      "section_id": "S-0070",
+      "section_number": "0070",
+      "section_stable_id": "UNFCCC.Forestry.AR-AMS0003.v01-0.S-0070",
+      "tools": [
+        "UNFCCC/AR-AMS0003@v01-0"
+      ],
+      "tags": [
+        "eligibility"
+      ]
+    }
+  ]
+}
