@@ -23,3 +23,4 @@ Generated from root-cause entry files under `docs/projects/phase-1-ingestion/roo
 | RC-20260419-053113 | 2026-04-19 | rewrite-forestry must preserve truthful tool metadata for LFS-backed PDFs (tags: determinism, forestry, tools) | [RC-20260419-053113](root-causes/RC-20260419-053113.md) |
 | RC-20260507-135214 | 2026-05-07 | Previous-version META audit hash drift (superseded stub) (tags: ci, determinism, previous, agriculture, forestry) | [RC-20260507-135214](root-causes/RC-20260507-135214.md) |
 | RC-20260507-135220 | 2026-05-07 | Previous-version META audit hash drift (tags: ci, determinism, previous, agriculture, forestry) | [RC-20260507-135220](root-causes/RC-20260507-135220.md) |
+| RC-20260507-141409 | 2026-05-07 | Offline standalone validators still required ajv runtime (tags: ci, determinism, schema) | [RC-20260507-141409](root-causes/RC-20260507-141409.md) |
