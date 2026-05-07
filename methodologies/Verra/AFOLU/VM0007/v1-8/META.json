@@ -21,7 +21,17 @@
   ],
   "method": "REDD+ Methodology Framework",
   "provenance": {
-    "author": "Fred Egbuedike"
+    "author": "Fred Egbuedike",
+    "date": "2026-05-07T22:03:56Z",
+    "source_pdfs": [
+      {
+        "doc": "Verra/VM0007@v1-8",
+        "kind": "pdf",
+        "path": "tools/Verra/VM0007/v1-8/source.pdf",
+        "sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
+        "size": 963486
+      }
+    ]
   },
   "references": {
     "tools": [

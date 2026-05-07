@@ -1,16 +1,16 @@
 {
   "goal": "Encode Verra forestry methodology support so methodology-linked reviews can be consumed by app.article6 after encoding, starting with VM0007 and leaving room for later Verra forestry methods.",
-  "last_updated_at": "2026-05-07T00:00:00Z",
+  "last_updated_at": "2026-05-07T22:03:56Z",
   "phases": [
     {
       "id": "vf1-source-vm0007-pdf",
       "name": "Source real Verra VM0007 PDF",
-      "status": "next"
+      "status": "completed"
     },
     {
       "id": "vf2-extract-vm0007-sections",
       "name": "Extract VM0007 sections",
-      "status": "not_started"
+      "status": "next"
     },
     {
       "id": "vf3-encode-vm0007-rules",

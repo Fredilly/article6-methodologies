@@ -10,7 +10,7 @@ The app can currently verify against UNFCCC forestry methods (AR-AM0014, AR-ACM0
 
 ## Scope for this roadmap
 
-- Source and ingest real Verra VM0007 v1.6 (Improved Forest Management) methodology PDF and canonical metadata
+- Source and verify the real Verra VM0007 v1.8 REDD+ Methodology Framework PDF and canonical metadata
 - Extract VM0007 sections first, then encode VM0007 rules as a separate phase
 - Add explicit tool/module dependency handling for Verra-specific dependencies and references
 - Leave room for follow-on Verra forestry methods such as VM0047 and VM0048 after VM0007
@@ -29,24 +29,25 @@ The app can currently verify against UNFCCC forestry methods (AR-AM0014, AR-ACM0
 
 ### VF1 — Source real Verra VM0007 PDF
 
-Objective: replace the 45-byte ASCII placeholder with the actual VM0007 v1.6 methodology PDF from Verra.
+Objective: verify the canonical Verra source for VM0007 and capture truthful provenance for the active `v1.8` methodology PDF.
 
 Scope:
-- Download VM0007 v1.6 from verra.org
-- Place in `tools/Verra/VM0007/v1-6/source.pdf`
-- Update META.json with real PDF hash, size, and URL provenance
-- Capture canonical Verra forestry PDF and metadata only; do not imply rule support exists yet
+- Use Verra's canonical VM0007 methodology page as the source of truth
+- Target `VM0007 REDD+ Methodology Framework (REDD+MF), v1.8`, active since `2024-06-04`
+- Verify the real methodology PDF at `tools/Verra/VM0007/v1-8/source.pdf`
+- Record the canonical methodology page URL, canonical download URL, SHA-256, file size, and the fact that older versions exist only for lineage/history
+- Do not imply section extraction or rule coverage exists yet
 
 Acceptance:
-- `tools/Verra/VM0007/v1-6/source.pdf` is a real PDF (>100KB)
-- META.json references.tools entry has correct sha256 and url
+- `tools/Verra/VM0007/v1-8/source.pdf` is the real Verra PDF and matches the canonical download
+- `methodologies/Verra/AFOLU/VM0007/v1-8/META.json` and `docs/roadmaps/verra-forestry-encoding/vf1-source-vm0007-pdf.json` record truthful provenance for `v1.8`
 
 ### VF2 — Extract VM0007 sections
 
-Objective: define the section structure for VM0007 before encoding individual rules.
+Objective: define the section structure for VM0007 `v1.8` before encoding individual rules.
 
 Scope:
-- Read VM0007 v1.6 PDF and identify major sections (applicability conditions, baseline scenario, demonstration of additionality, monitoring, etc.)
+- Read VM0007 v1.8 PDF and identify major sections (applicability conditions, baseline scenario, demonstration of additionality, monitoring, etc.)
 - Create `sections.json` and `sections.rich.json` with section IDs, titles, and page anchors
 - Match the section schema used by UNFCCC forestry methods
 
