@@ -13,6 +13,29 @@ function sha256(filePath) {
   return crypto.createHash('sha256').update(data).digest('hex');
 }
 
+function gitLfsPointerInfo(filePath) {
+  const data = fs.readFileSync(filePath, 'utf8');
+  const lines = data.split(/\r?\n/);
+  if (lines[0] !== 'version https://git-lfs.github.com/spec/v1') return null;
+  const oidLine = lines.find((line) => line.startsWith('oid sha256:'));
+  const sizeLine = lines.find((line) => line.startsWith('size '));
+  if (!oidLine || !sizeLine) return null;
+  const oid = oidLine.slice('oid sha256:'.length).trim();
+  const size = Number.parseInt(sizeLine.slice('size '.length).trim(), 10);
+  if (!/^[a-f0-9]{64}$/.test(oid) || !Number.isFinite(size) || size < 0) return null;
+  return { sha256: oid, size };
+}
+
+function fileDigest(filePath) {
+  const pointer = gitLfsPointerInfo(filePath);
+  if (pointer) return pointer;
+  const stat = fs.statSync(filePath);
+  return {
+    sha256: sha256(filePath),
+    size: stat.size
+  };
+}
+
 function sortKeysDeep(value) {
   if (Array.isArray(value)) return value.map(sortKeysDeep);
   if (value && typeof value === 'object') {
@@ -717,7 +740,7 @@ function makeLeanRule(index, spec) {
 
 function makeToolEntry(filePath) {
   const absPath = path.join(ROOT, filePath);
-  const stat = fs.statSync(absPath);
+  const digest = fileDigest(absPath);
   const kind = filePath.split('.').pop();
  const doc = (() => {
    const parts = filePath.split('/');
@@ -740,43 +763,56 @@ function makeToolEntry(filePath) {
   return sortKeysDeep({
     doc,
     path: filePath,
-    sha256: sha256(absPath),
-    size: stat.size,
+    sha256: digest.sha256,
+    size: digest.size,
     kind,
     url: null
   });
 }
 
-const requestedMethodKeys = process.argv.slice(2).map(normalizeMethodKey).filter(Boolean);
-const selectedMethods = requestedMethodKeys.length > 0
-  ? Object.entries(METHODS).filter(([methodKey]) => requestedMethodKeys.includes(methodKey))
-  : Object.entries(METHODS);
+function main(argv = process.argv.slice(2)) {
+  const requestedMethodKeys = argv.map(normalizeMethodKey).filter(Boolean);
+  const selectedMethods = requestedMethodKeys.length > 0
+    ? Object.entries(METHODS).filter(([methodKey]) => requestedMethodKeys.includes(methodKey))
+    : Object.entries(METHODS);
 
-for (const requestedMethodKey of requestedMethodKeys) {
-  if (!METHODS[requestedMethodKey]) {
-    console.warn(`Skipping ${requestedMethodKey} (method not configured)`);
-  }
-}
-
-for (const [methodKey, config] of selectedMethods) {
-  const methodDir = path.join(METHODOLOGY_ROOT, methodKey);
-  if (!fs.existsSync(methodDir)) {
-    console.warn(`Skipping ${methodKey} (directory missing)`);
-    continue;
+  for (const requestedMethodKey of requestedMethodKeys) {
+    if (!METHODS[requestedMethodKey]) {
+      console.warn(`Skipping ${requestedMethodKey} (method not configured)`);
+    }
   }
 
-  const richRules = config.rules.map((rule, idx) => makeRichRule(methodKey, idx, rule));
-  const leanRules = config.rules.map((rule, idx) => makeLeanRule(idx, rule));
+  for (const [methodKey, config] of selectedMethods) {
+    const methodDir = path.join(METHODOLOGY_ROOT, methodKey);
+    if (!fs.existsSync(methodDir)) {
+      console.warn(`Skipping ${methodKey} (directory missing)`);
+      continue;
+    }
 
-  writeJSON(path.join(methodDir, 'rules.rich.json'), richRules);
-  writeJSON(path.join(methodDir, 'rules.json'), { rules: leanRules });
+    const richRules = config.rules.map((rule, idx) => makeRichRule(methodKey, idx, rule));
+    const leanRules = config.rules.map((rule, idx) => makeLeanRule(idx, rule));
 
-  const metaPath = path.join(methodDir, 'META.json');
-  const meta = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
-  const toolEntries = config.tools.map(makeToolEntry);
-  meta.references = meta.references || {};
-  meta.references.tools = sortKeysDeep(toolEntries);
-  writeJSON(metaPath, meta);
+    writeJSON(path.join(methodDir, 'rules.rich.json'), richRules);
+    writeJSON(path.join(methodDir, 'rules.json'), { rules: leanRules });
+
+    const metaPath = path.join(methodDir, 'META.json');
+    const meta = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
+    const toolEntries = config.tools.map(makeToolEntry);
+    meta.references = meta.references || {};
+    meta.references.tools = sortKeysDeep(toolEntries);
+    writeJSON(metaPath, meta);
+  }
+
+  console.log(`OK: rewrote forestry rules and META references for ${selectedMethods.length} method(s).`);
 }
 
-console.log(`OK: rewrote forestry rules and META references for ${selectedMethods.length} method(s).`);
+module.exports = {
+  fileDigest,
+  gitLfsPointerInfo,
+  main,
+  makeToolEntry
+};
+
+if (require.main === module) {
+  main();
+}
