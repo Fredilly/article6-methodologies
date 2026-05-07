@@ -212,6 +212,7 @@ node scripts/check-quality-gates.js ingest-quality-gates.yml
 - Running the full ingest + validation sequence twice in the canonical environment must leave `git status -sb` clean and `git diff` empty.
 - Idempotency includes `methodologies/**/previous/**` (and the corresponding `tools/**/previous/**` pointers) — previous versions are part of the deterministic contract.
 - Current canonical `META.json` lineage for previous-version-aware families must include archived predecessors discoverable under `methodologies/**/previous/**`, not just concurrently canonical directories.
+- Archived `META.audit_hashes.{rules_json_sha256,sections_json_sha256}` for previous-version outputs must already match the canonical lean bytes emitted by scoped ingest; CI must not rewrite previous-version META hashes on the first idempotency pass.
 - Validations must include previous outputs via the existing globs (`methodologies/**/...`) and offline validation where enabled in CI.
 - Canonical lean artifacts (`rules.json`, `sections.json`) must emit one shared field contract across active and previous methodologies: stable IDs, section anchors/numbers, deterministic key order, and no duplicate `text` shadowing `title`. Any non-lean rich-shape exception must be declared explicitly rather than inferred from whatever a method happens to emit.
 - Canonical reference gates (with previous):
