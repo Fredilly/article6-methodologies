@@ -2,17 +2,19 @@
 
 Status is sourced from `docs/roadmaps/verra-forestry-encoding/phase-status.json`; docs must not drift.
 
-Goal: encode Verra and Gold Standard forestry methodology rules so `app.article6` can offer end-to-end verification against the standards VVBs actually use, not just UNFCCC.
+Goal: encode Verra forestry methodology support so methodology-linked reviews can be consumed by `app.article6` after encoding, starting with VM0007 and leaving room for later Verra forestry methods.
 
 ## Why this matters
 
-The app can currently verify against UNFCCC forestry methods (AR-AM0014, AR-ACM0003, AR-AMS0003, AR-AMS0007 — 4 methods, 42 rules total across versions). Verra VM0007 and Gold Standard GS-00XX are stubs with zero rules. VVBs doing Article 6 forestry verification primarily use Verra VCS. Without encoded Verra rules, the product cannot claim to support the market it targets.
+The app can currently verify against UNFCCC forestry methods (AR-AM0014, AR-ACM0003, AR-AMS0003, AR-AMS0007 - 4 methods, 42 rules total across versions). Verra VM0007 and related forestry methods are stubs with zero rules. VVBs doing Article 6 forestry verification primarily use Verra VCS. Without encoded Verra forestry artefacts, the product cannot claim to support that market.
 
 ## Scope for this roadmap
 
-- Source and ingest real Verra VM0007 v1.6 (Improved Forest Management) methodology PDF
-- Extract and encode applicability conditions, eligibility criteria, and monitoring requirements as structured rules
-- Do the same for Gold Standard LUF methodology
+- Source and ingest real Verra VM0007 v1.6 (Improved Forest Management) methodology PDF and canonical metadata
+- Extract VM0007 sections first, then encode VM0007 rules as a separate phase
+- Add explicit tool/module dependency handling for Verra-specific dependencies and references
+- Leave room for follow-on Verra forestry methods such as VM0047 and VM0048 after VM0007
+- Treat `app.article6` as a downstream consumer only; do not place UI or app implementation work in this repo
 - Maintain the same rule schema, rich-rule contract, and section structure already established for UNFCCC methods
 - Preserve deterministic generation, auditability, and pack publishing guarantees
 
@@ -33,6 +35,7 @@ Scope:
 - Download VM0007 v1.6 from verra.org
 - Place in `tools/Verra/VM0007/v1-6/source.pdf`
 - Update META.json with real PDF hash, size, and URL provenance
+- Capture canonical Verra forestry PDF and metadata only; do not imply rule support exists yet
 
 Acceptance:
 - `tools/Verra/VM0007/v1-6/source.pdf` is a real PDF (>100KB)
@@ -67,31 +70,44 @@ Acceptance:
 - Rules cover: applicability, baseline, additionality, leakage, carbon accounting, monitoring, uncertainty
 - `rules.rich.json` has enriched logic and refs for each rule
 
-### VF4 — Source and encode Gold Standard LUF
+### VF4 — Handle Verra tool/module dependencies
 
-Objective: repeat the process for Gold Standard Land-use & Forests methodology.
-
-Scope:
-- Source the GS LUF methodology PDF
-- Extract sections and rules following the same schema
-- Create rules.json, rules.rich.json, sections.json, sections.rich.json for GS-00XX
-
-Acceptance:
-- GS-00XX has real source PDF
-- 15+ rules encoded covering GS LUF requirements
-
-### VF5 — Cross-method tool references
-
-Objective: link shared tools (IPCC defaults, leakage tools, permanence buffers) across methods where they apply.
+Objective: track the Verra-specific tools, modules, and dependency references needed to support VM0007 and later Verra forestry methods.
 
 Scope:
-- Identify tools referenced by VM0007 that overlap with UNFCCC tools already in the repo
-- Add cross-references in META.json and rules.rich.json refs
-- Keep tool references auditable with path and hash
+- Identify Verra forestry tool/module references used by VM0007
+- Preserve canonical references and hashes in META.json and related manifests
+- Keep repository boundaries explicit: methodology artefacts live here, app consumption lives downstream
 
 Acceptance:
-- Shared tools (e.g., IPCC Tier 1 defaults, leakage assessment) are referenced consistently across UNFCCC and Verra methods
-- No duplicate tool files; references point to canonical locations
+- Verra tool/module references are auditable and stable
+- No app.article6 implementation details are added to this repo
+
+### VF5 — Expand to modern Verra forestry methods
+
+Objective: leave a roadmap slot for later Verra forestry methods after VM0007.
+
+Scope:
+- Add follow-on support for methods such as VM0047 and VM0048 after VM0007 is proven
+- Reuse the same deterministic source, section, and rule contracts
+- Keep VM0007 as the first Verra forestry proof target, not the entire strategy
+
+Acceptance:
+- The roadmap clearly leaves room for VM0047 and VM0048
+- No phase claims completed Verra support before artifacts are encoded
+
+### VF6 — Downstream app.article6 consumption
+
+Objective: define the downstream consumer milestone without moving app implementation work into this repo.
+
+Scope:
+- Describe app.article6 as the consumer of encoded methodology artefacts
+- Keep this milestone limited to consuming encoded Verra artefacts after they exist
+- Avoid UI, workflow, or repository ownership details for app.article6
+
+Acceptance:
+- Repo boundary wording is explicit
+- Verra appears in app.article6 only after methodology artefacts are encoded and consumed downstream
 
 ## Delivery constraints
 
