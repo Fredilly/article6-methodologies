@@ -14,6 +14,14 @@
         "minimum": 1,
         "type": "integer"
       },
+      "lineage": {
+        "items": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "minItems": 1,
+        "type": "array"
+      },
       "locators": {
         "items": {
           "additionalProperties": false,
@@ -46,13 +54,6 @@
       "notes": {
         "type": "string"
       },
-      "pages": {
-        "items": {
-          "minimum": 1,
-          "type": "integer"
-        },
-        "type": "array"
-      },
       "page_end": {
         "minimum": 1,
         "type": "integer"
@@ -60,6 +61,13 @@
       "page_start": {
         "minimum": 1,
         "type": "integer"
+      },
+      "pages": {
+        "items": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "type": "array"
       },
       "provenance": {
         "additionalProperties": false,
@@ -83,19 +91,11 @@
       "section_number": {
         "type": "string"
       },
-      "summary": {
-        "minLength": 1,
+      "stable_id": {
         "type": "string"
       },
-      "lineage": {
-        "items": {
-          "minLength": 1,
-          "type": "string"
-        },
-        "minItems": 1,
-        "type": "array"
-      },
-      "stable_id": {
+      "summary": {
+        "minLength": 1,
         "type": "string"
       },
       "title": {

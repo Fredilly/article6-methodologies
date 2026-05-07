@@ -1,4 +1,5 @@
 {
+  "active_date": "2024-06-04",
   "audit_hashes": {
     "rules_json_sha256": "70a632f577adf827d1ed65c330bed31e85cd374054df7dd798244ac86a8d174b",
     "sections_json_sha256": "7e5bba65921fe5370517f83e6a773798d1ec88132b675dc2e6a4f5bb4753e86f",
@@ -47,9 +48,8 @@
       "previous_version": "v1-7"
     }
   },
+  "stage": "Active",
   "standard": "VCS",
   "title": "VM0007 REDD+ Methodology Framework (REDD+MF), v1.8",
-  "version": "v1-8",
-  "stage": "Active",
-  "active_date": "2024-06-04"
+  "version": "v1-8"
 }

@@ -58,7 +58,9 @@ function sanitizeStandaloneCode(code) {
 
 function updateSchemaHashRecord() {
   const schemaFiles = listSchemaFiles(path.join(ROOT, 'schemas'));
-  const payload = schemaFiles.map((p) => `${p}\n${fs.readFileSync(p, 'utf8')}`).join('\n');
+  const payload = schemaFiles
+    .map((p) => `${path.relative(ROOT, p)}\n${fs.readFileSync(p, 'utf8')}`)
+    .join('\n');
   const digest = crypto.createHash('sha256').update(payload).digest('hex');
   fs.writeFileSync(path.join(OUTDIR, 'schemas.sha256'), `${digest}\n`, 'utf8');
 }
