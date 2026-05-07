@@ -1,41 +1,38 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
   "additionalProperties": false,
   "properties": {
     "sections": {
-      "type": "array",
       "items": {
-        "type": "object",
         "additionalProperties": false,
         "properties": {
-          "id": {
-            "type": "string",
-            "pattern": "^S-\\d+(?:-\\d+)*$"
-          },
-          "title": {
-            "type": "string",
-            "minLength": 1
-          },
           "anchor": {
-            "type": "string",
-            "minLength": 1
+            "minLength": 1,
+            "type": "string"
           },
-          "section_number": {
-            "type": "string",
-            "minLength": 1
-          },
-          "stable_id": {
-            "type": "string",
-            "minLength": 1
+          "id": {
+            "pattern": "^S-\\d+(?:-\\d+)*$",
+            "type": "string"
           },
           "pages": {
-            "type": "array",
-            "minItems": 1,
             "items": {
-              "type": "integer",
-              "minimum": 1
-            }
+              "minimum": 1,
+              "type": "integer"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "section_number": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "stable_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": {
+            "minLength": 1,
+            "type": "string"
           }
         },
         "required": [
@@ -44,11 +41,14 @@
           "anchor",
           "section_number",
           "stable_id"
-        ]
-      }
+        ],
+        "type": "object"
+      },
+      "type": "array"
     }
   },
   "required": [
     "sections"
-  ]
+  ],
+  "type": "object"
 }

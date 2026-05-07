@@ -2,6 +2,20 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "items": {
     "additionalProperties": false,
+    "anyOf": [
+      {
+        "required": [
+          "type",
+          "refs",
+          "summary"
+        ]
+      },
+      {
+        "required": [
+          "stable_id"
+        ]
+      }
+    ],
     "properties": {
       "display": {
         "additionalProperties": false,
@@ -388,20 +402,6 @@
     },
     "required": [
       "id"
-    ],
-    "anyOf": [
-      {
-        "required": [
-          "type",
-          "refs",
-          "summary"
-        ]
-      },
-      {
-        "required": [
-          "stable_id"
-        ]
-      }
     ],
     "type": "object"
   },

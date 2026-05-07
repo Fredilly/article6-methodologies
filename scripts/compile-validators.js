@@ -18,6 +18,8 @@ const SCHEMAS = {
   'rules.rich': path.join(ROOT, 'schemas', 'rules.rich.schema.json'),
 };
 const OUTDIR = path.join(__dirname, 'validators');
+const UCS2_IMPORT_RE = /const (func\d+) = require\("ajv\/dist\/runtime\/ucs2length"\)\.default;/;
+const UCS2_HELPER = 'function ucs2length(str){ return Array.from(str).length; }';
 
 function readJSON(p) {
   return JSON.parse(fs.readFileSync(p, 'utf8'));
@@ -41,15 +43,24 @@ function buildOne(name, schemaPath) {
   addFormats(ajv);
   const schema = readJSON(schemaPath);
   const validate = ajv.compile(schema);
-  const mod = standaloneCode(ajv, validate);
+  const mod = sanitizeStandaloneCode(standaloneCode(ajv, validate));
   const out = path.join(OUTDIR, `${name}.cjs`);
   fs.writeFileSync(out, mod, 'utf8');
   return out;
 }
 
+function sanitizeStandaloneCode(code) {
+  const match = code.match(UCS2_IMPORT_RE);
+  if (!match) return code;
+  const replacement = `const ${match[1]} = ucs2length;\n${UCS2_HELPER}`;
+  return code.replace(UCS2_IMPORT_RE, replacement);
+}
+
 function updateSchemaHashRecord() {
   const schemaFiles = listSchemaFiles(path.join(ROOT, 'schemas'));
-  const payload = schemaFiles.map((p) => `${p}\n${fs.readFileSync(p, 'utf8')}`).join('\n');
+  const payload = schemaFiles
+    .map((p) => `${path.relative(ROOT, p)}\n${fs.readFileSync(p, 'utf8')}`)
+    .join('\n');
   const digest = crypto.createHash('sha256').update(payload).digest('hex');
   fs.writeFileSync(path.join(OUTDIR, 'schemas.sha256'), `${digest}\n`, 'utf8');
 }

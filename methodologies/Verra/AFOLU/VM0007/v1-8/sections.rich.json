@@ -1,68 +1,68 @@
 [
   {
-    "id": "S-1",
-    "title": "Applicability Conditions",
     "anchor": "applicability-conditions",
+    "id": "S-1",
+    "provenance": {
+      "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
+      "source_ref": "Verra/VM0007@v1-8"
+    },
     "section_number": "4",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.S-1",
-    "provenance": {
-      "source_ref": "Verra/VM0007@v1-8",
-      "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
-    }
+    "title": "Applicability Conditions"
   },
   {
-    "id": "S-2",
-    "title": "Project Boundary",
     "anchor": "project-boundary",
+    "id": "S-2",
+    "provenance": {
+      "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
+      "source_ref": "Verra/VM0007@v1-8"
+    },
     "section_number": "5",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.S-2",
-    "provenance": {
-      "source_ref": "Verra/VM0007@v1-8",
-      "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
-    }
+    "title": "Project Boundary"
   },
   {
-    "id": "S-3",
-    "title": "Baseline Scenario",
     "anchor": "baseline-scenario",
+    "id": "S-3",
+    "provenance": {
+      "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
+      "source_ref": "Verra/VM0007@v1-8"
+    },
     "section_number": "6",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.S-3",
-    "provenance": {
-      "source_ref": "Verra/VM0007@v1-8",
-      "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
-    }
+    "title": "Baseline Scenario"
   },
   {
-    "id": "S-4",
-    "title": "Additionality",
     "anchor": "additionality",
+    "id": "S-4",
+    "provenance": {
+      "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
+      "source_ref": "Verra/VM0007@v1-8"
+    },
     "section_number": "7",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.S-4",
-    "provenance": {
-      "source_ref": "Verra/VM0007@v1-8",
-      "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
-    }
+    "title": "Additionality"
   },
   {
-    "id": "S-5",
-    "title": "Quantification",
     "anchor": "quantification",
+    "id": "S-5",
+    "provenance": {
+      "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
+      "source_ref": "Verra/VM0007@v1-8"
+    },
     "section_number": "8",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.S-5",
-    "provenance": {
-      "source_ref": "Verra/VM0007@v1-8",
-      "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
-    }
+    "title": "Quantification"
   },
   {
-    "id": "S-6",
-    "title": "Monitoring",
     "anchor": "monitoring",
+    "id": "S-6",
+    "provenance": {
+      "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
+      "source_ref": "Verra/VM0007@v1-8"
+    },
     "section_number": "9",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.S-6",
-    "provenance": {
-      "source_ref": "Verra/VM0007@v1-8",
-      "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
-    }
+    "title": "Monitoring"
   }
 ]
