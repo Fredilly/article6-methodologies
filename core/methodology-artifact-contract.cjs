@@ -123,14 +123,20 @@ function localRuleIdFromLegacyRichId(ruleId) {
 }
 
 function canonicalizeLeanRuleFromLegacyRich(rule, sectionLookup, info) {
+  const useQualityStandard = usesArtifactQualityStandard(info.methodDir);
   const localId = localRuleIdFromLegacyRichId(rule.id);
   const sectionId = rule.refs?.sections?.[0];
   if (!sectionId) throw new Error(`Legacy rich rule missing refs.sections[0]: ${rule.id}`);
   const section = sectionLookup.get(sectionId);
   if (!section) throw new Error(`Legacy rich rule references unknown section ${sectionId}: ${rule.id}`);
   const title = rule.display?.title ?? rule.title ?? rule.summary;
-  const tags = sanitizeStringArray([rule.type, ...(rule.tags || [])], { sort: true });
+  const tags = useQualityStandard
+    ? (sanitizeStringArray([rule.type, ...(rule.tags || [])], { sort: true }) || [])
+    : sanitizeStringArray([rule.type, ...(rule.tags || [])], { sort: true });
   const tools = sanitizeStringArray(rule.refs?.tools, { sort: true }) || [info.methodologyRef];
+  const normalizedWhen = useQualityStandard
+    ? (Array.isArray(rule.when) ? (sanitizeStringArray(rule.when) || []) : [])
+    : sanitizeStringArray(rule.when);
   const canonical = {
     id: localId,
     stable_id: typeof rule.stable_id === 'string' && rule.stable_id.trim()
@@ -140,15 +146,16 @@ function canonicalizeLeanRuleFromLegacyRich(rule, sectionLookup, info) {
       ? title.trim()
       : undefined,
     logic: typeof rule.logic === 'string' ? rule.logic : undefined,
-    section_anchor: rule.refs?.section_anchor ?? section.anchor,
     section_id: sectionId,
-    section_number: rule.refs?.section_number ?? section.section_number,
     section_stable_id: rule.refs?.section_stable_id ?? section.stable_id,
+    section_number: rule.refs?.section_number ?? section.section_number,
+    section_anchor: rule.refs?.section_anchor ?? section.anchor,
     tools,
     tags,
-    when: sanitizeStringArray(rule.when)
+    quality_status: useQualityStandard ? 'draft_unverified' : undefined,
+    when: normalizedWhen
   };
-  return orderKeys(canonical, RULE_KEY_ORDER);
+  return orderKeys(canonical, useQualityStandard ? QUALITY_LEAN_RULE_KEY_ORDER : RULE_KEY_ORDER);
 }
 
 function canonicalizeLeanRuleFromLean(rule, sectionLookup, info) {

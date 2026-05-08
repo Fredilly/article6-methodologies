@@ -216,6 +216,7 @@ node scripts/check-quality-gates.js ingest-quality-gates.yml
 - Validations must include previous outputs via the existing globs (`methodologies/**/...`) and offline validation where enabled in CI.
 - Standalone offline validators under `scripts/validators/*.cjs` must execute without `node_modules`; generated validators may not depend on `ajv/dist/runtime/*` or any external package at runtime.
 - Canonical lean artifacts (`rules.json`, `sections.json`) must emit one shared field contract across active and previous methodologies: stable IDs, section anchors/numbers, deterministic key order, and no duplicate `text` shadowing `title`. Any non-lean rich-shape exception must be declared explicitly rather than inferred from whatever a method happens to emit.
+- When a methodology opts into a richer artifact standard, every canonical lean-generation path must emit the same bytes for that method, including lean-from-lean validation and lean-from-rich regeneration in CI.
 - Canonical reference gates (with previous):
   - `bash scripts/ci-idempotency-agriculture.sh`
   - `bash scripts/ci-idempotency-forestry.sh`
