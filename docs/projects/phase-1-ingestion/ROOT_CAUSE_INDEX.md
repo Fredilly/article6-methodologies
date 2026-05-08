@@ -26,3 +26,4 @@ Generated from root-cause entry files under `docs/projects/phase-1-ingestion/roo
 | RC-20260507-141409 | 2026-05-07 | Offline standalone validators still required ajv runtime (tags: ci, determinism, schema) | [RC-20260507-141409](root-causes/RC-20260507-141409.md) |
 | RC-20260507-220452 | 2026-05-07 | VM0007 source provenance drift (tags: pdf, forestry, tools, ci) | [RC-20260507-220452](root-causes/RC-20260507-220452.md) |
 | RC-20260508-014340 | 2026-05-08 | VM0007 draft artifacts overstated coverage (tags: forestry, schema, ci, tools) | [RC-20260508-014340](root-causes/RC-20260508-014340.md) |
+| RC-20260508-022428 | 2026-05-08 | VM0007 draft artifacts lacked explicit quality shape (tags: schema, forestry, ci, determinism) | [RC-20260508-022428](root-causes/RC-20260508-022428.md) |

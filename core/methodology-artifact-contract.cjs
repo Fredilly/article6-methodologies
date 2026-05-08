@@ -1,5 +1,10 @@
 const fs = require('fs');
 const path = require('path');
+const {
+  QUALITY_LEAN_RULE_KEY_ORDER,
+  QUALITY_LEAN_SECTION_KEY_ORDER,
+  usesArtifactQualityStandard
+} = require('./methodology-artifact-quality.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
 const METHODOLOGIES_ROOT = path.join(ROOT, 'methodologies');
@@ -88,8 +93,12 @@ function orderKeys(value, keyOrder) {
 }
 
 function canonicalizeLeanSection(section, info) {
+  const useQualityStandard = usesArtifactQualityStandard(info.methodDir);
   const canonical = {
     id: String(section.id),
+    stable_id: typeof section.stable_id === 'string' && section.stable_id.trim()
+      ? section.stable_id.trim()
+      : buildStableId(info, String(section.id)),
     title: String(section.title),
     anchor: typeof section.anchor === 'string' && section.anchor.trim()
       ? section.anchor.trim()
@@ -97,12 +106,14 @@ function canonicalizeLeanSection(section, info) {
     section_number: typeof section.section_number === 'string' && section.section_number.trim()
       ? section.section_number.trim()
       : sectionNumberFromId(section.id),
-    stable_id: typeof section.stable_id === 'string' && section.stable_id.trim()
-      ? section.stable_id.trim()
-      : buildStableId(info, String(section.id)),
-    pages: Array.isArray(section.pages) && section.pages.length ? section.pages.slice() : undefined
+    pages: !useQualityStandard && Array.isArray(section.pages) && section.pages.length ? section.pages.slice() : undefined,
+    section_level: useQualityStandard ? section.section_level : undefined,
+    parent_id: useQualityStandard ? (section.parent_id === null ? null : section.parent_id) : undefined,
+    page_start: useQualityStandard ? (section.page_start === null ? null : section.page_start) : undefined,
+    page_end: useQualityStandard ? (section.page_end === null ? null : section.page_end) : undefined,
+    locator_status: useQualityStandard ? section.locator_status : undefined
   };
-  return orderKeys(canonical, SECTION_KEY_ORDER);
+  return orderKeys(canonical, useQualityStandard ? QUALITY_LEAN_SECTION_KEY_ORDER : SECTION_KEY_ORDER);
 }
 
 function localRuleIdFromLegacyRichId(ruleId) {
@@ -141,10 +152,17 @@ function canonicalizeLeanRuleFromLegacyRich(rule, sectionLookup, info) {
 }
 
 function canonicalizeLeanRuleFromLean(rule, sectionLookup, info) {
+  const useQualityStandard = usesArtifactQualityStandard(info.methodDir);
   const section = sectionLookup.get(rule.section_id);
   if (!section) throw new Error(`Lean rule references unknown section ${rule.section_id}: ${rule.id}`);
   const title = rule.title ?? rule.text;
   const tools = sanitizeStringArray(rule.tools, { sort: true }) || [info.methodologyRef];
+  const normalizedTags = useQualityStandard
+    ? (Array.isArray(rule.tags) ? (sanitizeStringArray(rule.tags, { sort: true }) || []) : [])
+    : sanitizeStringArray(rule.tags, { sort: true });
+  const normalizedWhen = useQualityStandard
+    ? (Array.isArray(rule.when) ? (sanitizeStringArray(rule.when) || []) : [])
+    : sanitizeStringArray(rule.when);
   const canonical = {
     id: String(rule.id),
     stable_id: typeof rule.stable_id === 'string' && rule.stable_id.trim()
@@ -163,10 +181,11 @@ function canonicalizeLeanRuleFromLean(rule, sectionLookup, info) {
       ? rule.section_stable_id.trim()
       : section.stable_id,
     tools,
-    tags: sanitizeStringArray(rule.tags, { sort: true }),
-    when: sanitizeStringArray(rule.when)
+    tags: normalizedTags,
+    quality_status: useQualityStandard ? rule.quality_status : undefined,
+    when: normalizedWhen
   };
-  return orderKeys(canonical, RULE_KEY_ORDER);
+  return orderKeys(canonical, useQualityStandard ? QUALITY_LEAN_RULE_KEY_ORDER : RULE_KEY_ORDER);
 }
 
 function listMethodDirs(rootDir, { includePrevious = false } = {}) {

@@ -1,10 +1,11 @@
 {
   "goal": "Encode Verra forestry methodology support so methodology-linked reviews can be consumed by app.article6 after encoding, starting with VM0007 and leaving room for later Verra forestry methods.",
-  "last_updated_at": "2026-05-08T01:42:23Z",
+  "last_updated_at": "2026-05-08T02:24:28Z",
   "notes": [
     "VF1 source PDF provenance is verified for VM0007 v1.8.",
     "Existing VM0007 sections and rules are retained as draft seed artifacts pending VF2/VF3 audit against the verified source PDF.",
-    "VM0007 remains not ready for methodology-linked review while those artifacts stay draft_unverified."
+    "VM0007 remains not ready for methodology-linked review while those artifacts stay draft_unverified.",
+    "VM0007 is the first methodology adopting the repo-wide review_contract_v1 artifact quality standard."
   ],
   "phases": [
     {

@@ -1,13 +1,18 @@
 {
   "active_date": "2024-06-04",
+  "artifact_quality_standard": {
+    "adoption_status": "draft_seed_normalized",
+    "note": "VM0007 is the first methodology using the review_contract_v1 artifact quality standard. Lean artifacts stay runtime-safe and rich artifacts expose explicit pending enrichment states.",
+    "version": "review_contract_v1"
+  },
   "artifact_status": {
     "rules": "draft_unverified",
     "sections": "draft_unverified",
     "source_pdf": "verified"
   },
   "audit_hashes": {
-    "rules_json_sha256": "70a632f577adf827d1ed65c330bed31e85cd374054df7dd798244ac86a8d174b",
-    "sections_json_sha256": "7e5bba65921fe5370517f83e6a773798d1ec88132b675dc2e6a4f5bb4753e86f",
+    "rules_json_sha256": "1137f9122390c9e98f953f4bf8dc9c4613ebc56d91800d64e8c3578239a9b57c",
+    "sections_json_sha256": "f294031941f462155d03cad3ceffcca6acdae51d2fe6d0aaede616ad62efafa3",
     "source_pdf_sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
   },
   "automation": {
@@ -16,7 +21,7 @@
   },
   "domain": "AFOLU",
   "draft_seed_artifacts": {
-    "note": "Current VM0007 v1.8 sections and rules are retained as draft seed artifacts pending VF2/VF3 audit against the verified source PDF. They must not be treated as completed methodology coverage.",
+    "note": "Current VM0007 v1.8 sections and rules are retained draft seed artifacts normalized to the review_contract_v1 quality shape pending VF2/VF3 audit against the verified source PDF. They must not be treated as completed methodology coverage.",
     "retained": true,
     "source_audit_pending": [
       "sections",
@@ -137,18 +142,19 @@
   "files": [
     {
       "path": "sections.json",
-      "sha256": "0687c653116aedfa1e5717f781d64a2dd0ba7ca88b5ec5d9ede6b606f4fdfad6"
+      "sha256": "f294031941f462155d03cad3ceffcca6acdae51d2fe6d0aaede616ad62efafa3"
     },
     {
       "path": "rules.json",
-      "sha256": "101ab18685872a0db6735ded3c254bc72d7868dd0d6bc2b591aeb210a96d3fdd"
+      "sha256": "1137f9122390c9e98f953f4bf8dc9c4613ebc56d91800d64e8c3578239a9b57c"
     }
   ],
   "method": "REDD+ Methodology Framework",
   "methodology_linked_review_blockers": [
-    "Sections remain draft_unverified pending VF2 audit against the verified VM0007 v1.8 source PDF.",
-    "Rules remain draft_unverified pending VF3 audit against the verified VM0007 v1.8 source PDF.",
-    "External Verra modules and tools referenced by the retained draft rules are not encoded in this repo."
+    "Sections remain draft_unverified pending VF2 audit against the verified VM0007 v1.8 source PDF and locator validation.",
+    "Rules remain draft_unverified pending VF3 audit against the verified VM0007 v1.8 source PDF and source-span validation.",
+    "External Verra modules and tools referenced by the retained draft rules are not encoded in this repo.",
+    "Rich VM0007 artifacts still contain explicit pending_source_audit placeholders for incomplete enrichment."
   ],
   "methodology_linked_review_ready": false,
   "provenance": {

@@ -24,6 +24,8 @@ The app can currently verify against UNFCCC forestry methods (AR-AM0014, AR-ACM0
 - `rules.rich.json` carries logic, notes, refs, stable_id, summary, when, requirement_coverage
 - `sections.json` and `sections.rich.json` follow existing schema
 - All new methods follow the same META.json structure with proper provenance, audit hashes, and tool references
+- `review_contract_v1` is the first repo-wide high-quality artifact standard: lean artifacts stay stable runtime payloads, rich artifacts expose verifier-grade review shape, and missing enrichment must be explicit and machine-readable
+- VM0007 `v1.8` is the first methodology adopting `review_contract_v1`; other methodologies may remain on the older shape until explicitly migrated
 
 ## Phases
 
@@ -52,6 +54,7 @@ Scope:
 - Create `sections.json` and `sections.rich.json` with section IDs, titles, and page anchors
 - Match the section schema used by UNFCCC forestry methods
 - Treat the current retained section artifacts as draft seeds only until that audit is completed
+- Normalize retained draft sections to the `review_contract_v1` field shape so missing locator quality remains explicit during audit
 
 Acceptance:
 - `sections.json` has 8-15 sections covering VM0007's full structure
@@ -68,6 +71,7 @@ Scope:
 - Create `rules.rich.json` with logic, notes, refs, stable_id, summary, when fields
 - Target: 25-40 rules covering the full VM0007 methodology
 - Treat the current retained rule artifacts as draft seeds only until they are source-audited and any external dependencies are separately encoded or explicitly left external
+- Normalize retained draft rules to the `review_contract_v1` field shape so missing source spans, rule detail, and expected evidence remain explicit during audit
 
 Acceptance:
 - `rules.json` has 25+ rules

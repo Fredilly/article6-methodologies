@@ -101,6 +101,10 @@
         },
         "type": "object"
       },
+      "quality_status": {
+        "minLength": 1,
+        "type": "string"
+      },
       "refs": {
         "additionalProperties": false,
         "properties": {
@@ -247,6 +251,9 @@
             "minItems": 1,
             "type": "array"
           },
+          "expected_evidence_status": {
+            "type": "string"
+          },
           "section_refs": {
             "items": {
               "additionalProperties": false,
@@ -270,6 +277,9 @@
             },
             "minItems": 1,
             "type": "array"
+          },
+          "section_refs_status": {
+            "type": "string"
           }
         },
         "required": [
@@ -312,6 +322,9 @@
             "minItems": 1,
             "type": "array"
           },
+          "status": {
+            "type": "string"
+          },
           "summary": {
             "minLength": 1,
             "type": "string"
@@ -334,13 +347,23 @@
             "minItems": 1,
             "type": "array"
           },
+          "locator_status": {
+            "minLength": 1,
+            "type": "string"
+          },
           "page_end": {
             "minimum": 1,
-            "type": "integer"
+            "type": [
+              "integer",
+              "null"
+            ]
           },
           "page_start": {
             "minimum": 1,
-            "type": "integer"
+            "type": [
+              "integer",
+              "null"
+            ]
           },
           "section_id": {
             "pattern": "^S-\\d+(?:-\\d+)*$",
@@ -361,6 +384,10 @@
           "section_ref"
         ],
         "type": "object"
+      },
+      "source_span_status": {
+        "minLength": 1,
+        "type": "string"
       },
       "source_span_text": {
         "minLength": 1,
