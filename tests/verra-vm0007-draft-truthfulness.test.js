@@ -19,6 +19,7 @@ function main() {
   assert.equal(meta.artifact_status?.source_pdf, 'verified', 'VM0007 source PDF must remain verified');
   assert.equal(meta.artifact_status?.sections, 'draft_unverified', 'VM0007 sections must remain draft_unverified');
   assert.equal(meta.artifact_status?.rules, 'draft_unverified', 'VM0007 rules must remain draft_unverified');
+  assert.equal(meta.artifact_quality_standard?.version, 'review_contract_v1', 'VM0007 should opt into review_contract_v1');
   assert.equal(meta.methodology_linked_review_ready, false, 'VM0007 must not be marked review-ready while draft artifacts remain');
   assert.ok(Array.isArray(meta.methodology_linked_review_blockers) && meta.methodology_linked_review_blockers.length >= 2, 'VM0007 must explain why review readiness is blocked');
   assert.equal(meta.draft_seed_artifacts?.retained, true, 'VM0007 draft seed artifacts must be explicitly retained');

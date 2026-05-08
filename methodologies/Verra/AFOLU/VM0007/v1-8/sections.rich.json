@@ -1,67 +1,115 @@
 [
   {
     "anchor": "applicability-conditions",
+    "children": [],
+    "heading_text": "Applicability Conditions",
     "id": "S-1",
+    "locator_status": "draft_derived_rule_context_pending_source_audit",
+    "page_end": 18,
+    "page_start": 13,
+    "parent_id": null,
     "provenance": {
       "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
       "source_ref": "Verra/VM0007@v1-8"
     },
+    "section_level": 1,
     "section_number": "4",
+    "source_span_status": "draft_derived_rule_context_pending_source_audit",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.S-1",
     "title": "Applicability Conditions"
   },
   {
     "anchor": "project-boundary",
+    "children": [],
+    "heading_text": "Project Boundary",
     "id": "S-2",
+    "locator_status": "pending_source_audit",
+    "page_end": null,
+    "page_start": null,
+    "parent_id": null,
     "provenance": {
       "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
       "source_ref": "Verra/VM0007@v1-8"
     },
+    "section_level": 1,
     "section_number": "5",
+    "source_span_status": "pending_source_audit",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.S-2",
     "title": "Project Boundary"
   },
   {
     "anchor": "baseline-scenario",
+    "children": [],
+    "heading_text": "Baseline Scenario",
     "id": "S-3",
+    "locator_status": "pending_source_audit",
+    "page_end": null,
+    "page_start": null,
+    "parent_id": null,
     "provenance": {
       "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
       "source_ref": "Verra/VM0007@v1-8"
     },
+    "section_level": 1,
     "section_number": "6",
+    "source_span_status": "pending_source_audit",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.S-3",
     "title": "Baseline Scenario"
   },
   {
     "anchor": "additionality",
+    "children": [],
+    "heading_text": "Additionality",
     "id": "S-4",
+    "locator_status": "pending_source_audit",
+    "page_end": null,
+    "page_start": null,
+    "parent_id": null,
     "provenance": {
       "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
       "source_ref": "Verra/VM0007@v1-8"
     },
+    "section_level": 1,
     "section_number": "7",
+    "source_span_status": "pending_source_audit",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.S-4",
     "title": "Additionality"
   },
   {
     "anchor": "quantification",
+    "children": [],
+    "heading_text": "Quantification",
     "id": "S-5",
+    "locator_status": "pending_source_audit",
+    "page_end": null,
+    "page_start": null,
+    "parent_id": null,
     "provenance": {
       "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
       "source_ref": "Verra/VM0007@v1-8"
     },
+    "section_level": 1,
     "section_number": "8",
+    "source_span_status": "pending_source_audit",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.S-5",
     "title": "Quantification"
   },
   {
     "anchor": "monitoring",
+    "children": [],
+    "heading_text": "Monitoring",
     "id": "S-6",
+    "locator_status": "pending_source_audit",
+    "page_end": null,
+    "page_start": null,
+    "parent_id": null,
     "provenance": {
       "source_hash": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
       "source_ref": "Verra/VM0007@v1-8"
     },
+    "section_level": 1,
     "section_number": "9",
+    "source_span_status": "pending_source_audit",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.S-6",
     "title": "Monitoring"
   }

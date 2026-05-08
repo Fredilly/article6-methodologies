@@ -14,6 +14,24 @@
             "pattern": "^S-\\d+(?:-\\d+)*$",
             "type": "string"
           },
+          "locator_status": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "page_end": {
+            "minimum": 1,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "page_start": {
+            "minimum": 1,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
           "pages": {
             "items": {
               "minimum": 1,
@@ -21,6 +39,16 @@
             },
             "minItems": 1,
             "type": "array"
+          },
+          "parent_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "section_level": {
+            "minimum": 1,
+            "type": "integer"
           },
           "section_number": {
             "minLength": 1,

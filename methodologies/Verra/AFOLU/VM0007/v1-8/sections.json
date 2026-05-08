@@ -2,45 +2,75 @@
   "sections": [
     {
       "id": "S-1",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-1",
       "title": "Applicability Conditions",
       "anchor": "applicability-conditions",
       "section_number": "4",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-1"
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 13,
+      "page_end": 18,
+      "locator_status": "draft_derived_rule_context_pending_source_audit"
     },
     {
       "id": "S-2",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-2",
       "title": "Project Boundary",
       "anchor": "project-boundary",
       "section_number": "5",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-2"
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": null,
+      "page_end": null,
+      "locator_status": "pending_source_audit"
     },
     {
       "id": "S-3",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-3",
       "title": "Baseline Scenario",
       "anchor": "baseline-scenario",
       "section_number": "6",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-3"
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": null,
+      "page_end": null,
+      "locator_status": "pending_source_audit"
     },
     {
       "id": "S-4",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-4",
       "title": "Additionality",
       "anchor": "additionality",
       "section_number": "7",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-4"
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": null,
+      "page_end": null,
+      "locator_status": "pending_source_audit"
     },
     {
       "id": "S-5",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-5",
       "title": "Quantification",
       "anchor": "quantification",
       "section_number": "8",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-5"
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": null,
+      "page_end": null,
+      "locator_status": "pending_source_audit"
     },
     {
       "id": "S-6",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-6",
       "title": "Monitoring",
       "anchor": "monitoring",
       "section_number": "9",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-6"
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": null,
+      "page_end": null,
+      "locator_status": "pending_source_audit"
     }
   ]
 }

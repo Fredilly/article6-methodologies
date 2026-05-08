@@ -6,6 +6,17 @@
       "anchor": {
         "type": "string"
       },
+      "children": {
+        "items": {
+          "pattern": "^S-\\d+(?:-\\d+)*$",
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "heading_text": {
+        "minLength": 1,
+        "type": "string"
+      },
       "id": {
         "pattern": "^S-\\d+(?:-\\d+)*$",
         "type": "string"
@@ -21,6 +32,10 @@
         },
         "minItems": 1,
         "type": "array"
+      },
+      "locator_status": {
+        "minLength": 1,
+        "type": "string"
       },
       "locators": {
         "items": {
@@ -56,11 +71,17 @@
       },
       "page_end": {
         "minimum": 1,
-        "type": "integer"
+        "type": [
+          "integer",
+          "null"
+        ]
       },
       "page_start": {
         "minimum": 1,
-        "type": "integer"
+        "type": [
+          "integer",
+          "null"
+        ]
       },
       "pages": {
         "items": {
@@ -68,6 +89,12 @@
           "type": "integer"
         },
         "type": "array"
+      },
+      "parent_id": {
+        "type": [
+          "string",
+          "null"
+        ]
       },
       "provenance": {
         "additionalProperties": false,
@@ -88,7 +115,15 @@
         },
         "type": "object"
       },
+      "section_level": {
+        "minimum": 1,
+        "type": "integer"
+      },
       "section_number": {
+        "type": "string"
+      },
+      "source_span_status": {
+        "minLength": 1,
         "type": "string"
       },
       "stable_id": {
