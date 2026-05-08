@@ -1,0 +1,46 @@
+{
+  "artifacts": [
+    {
+      "kind": "methodology_pdf",
+      "local_path": "tools/Verra/VM0007/v1-8/source.pdf",
+      "required": true,
+      "sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
+      "size_bytes": 963486,
+      "status": "downloaded"
+    }
+  ],
+  "canonical_download_url": "https://verra.org/documents/vm0007-redd-methodology-framework-v1-8-clean/",
+  "canonical_methodology_page_url": "https://verra.org/methodologies/vm0007-redd-methodology-framework-redd-mf-v1-8/",
+  "historical_lineage": {
+    "note": "Older VM0007 versions exist for lineage/history only and are not the VF1 target.",
+    "versions": [
+      "v1.7",
+      "v1.6",
+      "v1.5",
+      "v1.4",
+      "v1.3",
+      "v1.2",
+      "v1.1",
+      "v1.0"
+    ]
+  },
+  "manual_action_required": null,
+  "phase": "vf1-source-vm0007-pdf",
+  "sector_scope": "AFOLU / REDD+",
+  "source_recorded_at": "2026-05-07T22:03:56Z",
+  "source_url_used": "https://verra.org/methodologies/vm0007-redd-methodology-framework-redd-mf-v1-8/",
+  "standard": "Verra / VCS",
+  "status": "source_complete",
+  "target_methodology": "VM0007",
+  "target_version": "v1.8",
+  "verification": {
+    "downloaded_from_canonical_source": true,
+    "existing_repo_artifact_matches_download": true,
+    "verified_by": "curl -L https://verra.org/documents/vm0007-redd-methodology-framework-v1-8-clean/ && shasum -a 256",
+    "verified_local_artifact": {
+      "path": "tools/Verra/VM0007/v1-8/source.pdf",
+      "sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
+      "size_bytes": 963486
+    }
+  }
+}

@@ -24,3 +24,5 @@ Generated from root-cause entry files under `docs/projects/phase-1-ingestion/roo
 | RC-20260507-135214 | 2026-05-07 | Previous-version META audit hash drift (superseded stub) (tags: ci, determinism, previous, agriculture, forestry) | [RC-20260507-135214](root-causes/RC-20260507-135214.md) |
 | RC-20260507-135220 | 2026-05-07 | Previous-version META audit hash drift (tags: ci, determinism, previous, agriculture, forestry) | [RC-20260507-135220](root-causes/RC-20260507-135220.md) |
 | RC-20260507-141409 | 2026-05-07 | Offline standalone validators still required ajv runtime (tags: ci, determinism, schema) | [RC-20260507-141409](root-causes/RC-20260507-141409.md) |
+| RC-20260507-220452 | 2026-05-07 | VM0007 source provenance drift (tags: pdf, forestry, tools, ci) | [RC-20260507-220452](root-causes/RC-20260507-220452.md) |
+| RC-20260508-014340 | 2026-05-08 | VM0007 draft artifacts overstated coverage (tags: forestry, schema, ci, tools) | [RC-20260508-014340](root-causes/RC-20260508-014340.md) |
