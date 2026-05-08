@@ -11,7 +11,7 @@
     "source_pdf": "verified"
   },
   "audit_hashes": {
-    "rules_json_sha256": "1137f9122390c9e98f953f4bf8dc9c4613ebc56d91800d64e8c3578239a9b57c",
+    "rules_json_sha256": "08641da16ee2b74998be66df9f7d5a27ff58394fd00a831e96234792bac08473",
     "sections_json_sha256": "f294031941f462155d03cad3ceffcca6acdae51d2fe6d0aaede616ad62efafa3",
     "source_pdf_sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
   },
@@ -146,7 +146,7 @@
     },
     {
       "path": "rules.json",
-      "sha256": "1137f9122390c9e98f953f4bf8dc9c4613ebc56d91800d64e8c3578239a9b57c"
+      "sha256": "08641da16ee2b74998be66df9f7d5a27ff58394fd00a831e96234792bac08473"
     }
   ],
   "method": "REDD+ Methodology Framework",
