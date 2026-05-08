@@ -1,4 +1,10 @@
 {
+  "active_date": "2024-06-04",
+  "artifact_status": {
+    "rules": "draft_unverified",
+    "sections": "draft_unverified",
+    "source_pdf": "verified"
+  },
   "audit_hashes": {
     "rules_json_sha256": "70a632f577adf827d1ed65c330bed31e85cd374054df7dd798244ac86a8d174b",
     "sections_json_sha256": "7e5bba65921fe5370517f83e6a773798d1ec88132b675dc2e6a4f5bb4753e86f",
@@ -9,6 +15,125 @@
     "scripts_manifest_sha256": ""
   },
   "domain": "AFOLU",
+  "draft_seed_artifacts": {
+    "note": "Current VM0007 v1.8 sections and rules are retained as draft seed artifacts pending VF2/VF3 audit against the verified source PDF. They must not be treated as completed methodology coverage.",
+    "retained": true,
+    "source_audit_pending": [
+      "sections",
+      "rules"
+    ]
+  },
+  "external_dependencies": {
+    "methodology_and_tool_refs": [
+      {
+        "id": "Verra/T-BAR@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/T-SIG@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VM0047@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0001@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0002@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0003@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0004@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0005@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0006@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0007@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0009@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0010@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0015@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0016@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0017@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0042@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0046@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0050@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0051@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VMD0052@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "Verra/VT0001@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      }
+    ],
+    "note": "These external Verra dependencies are referenced by retained draft rules but are not encoded as local methodology/tool artifacts in this repo.",
+    "status": "external_unencoded"
+  },
   "files": [
     {
       "path": "sections.json",
@@ -20,6 +145,12 @@
     }
   ],
   "method": "REDD+ Methodology Framework",
+  "methodology_linked_review_blockers": [
+    "Sections remain draft_unverified pending VF2 audit against the verified VM0007 v1.8 source PDF.",
+    "Rules remain draft_unverified pending VF3 audit against the verified VM0007 v1.8 source PDF.",
+    "External Verra modules and tools referenced by the retained draft rules are not encoded in this repo."
+  ],
+  "methodology_linked_review_ready": false,
   "provenance": {
     "author": "Fred Egbuedike",
     "date": "2026-05-07T22:03:56Z",
@@ -57,9 +188,8 @@
       "previous_version": "v1-7"
     }
   },
+  "stage": "Active",
   "standard": "VCS",
   "title": "VM0007 REDD+ Methodology Framework (REDD+MF), v1.8",
-  "version": "v1-8",
-  "stage": "Active",
-  "active_date": "2024-06-04"
+  "version": "v1-8"
 }
