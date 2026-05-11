@@ -2,7 +2,7 @@
   "active_date": "2024-06-04",
   "artifact_quality_standard": {
     "adoption_status": "source_audited",
-    "note": "VF2 section audit completed. Sections expanded from 6 to 31 entries with full TOC-derived hierarchy, page ranges, and source_audited locator_status. Deeper subsections (e.g., 4.2.1, 5.1.1) remain unmapped pending future refinement. Rules remain draft_unverified pending VF3.",
+    "note": "VF2 section audit completed. Sections expanded from 6 to 32 entries (26 new: front matter, subsections, appendix, document history) with full TOC-derived hierarchy, page ranges, and source_audited locator_status. Deeper subsections (e.g., 4.2.1, 5.1.1) remain unmapped pending future refinement. Rules remain draft_unverified pending VF3.",
     "version": "review_contract_v1"
   },
   "artifact_status": {
