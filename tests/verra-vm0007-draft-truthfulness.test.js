@@ -17,7 +17,7 @@ function main() {
   const rules = readJSON(path.join(METHOD_DIR, 'rules.json')).rules || [];
 
   assert.equal(meta.artifact_status?.source_pdf, 'verified', 'VM0007 source PDF must remain verified');
-  assert.equal(meta.artifact_status?.sections, 'draft_unverified', 'VM0007 sections must remain draft_unverified');
+  assert.equal(meta.artifact_status?.sections, 'source_audited', 'VM0007 sections must be source_audited after VF2');
   assert.equal(meta.artifact_status?.rules, 'draft_unverified', 'VM0007 rules must remain draft_unverified');
   assert.equal(meta.artifact_quality_standard?.version, 'review_contract_v1', 'VM0007 should opt into review_contract_v1');
   assert.equal(meta.methodology_linked_review_ready, false, 'VM0007 must not be marked review-ready while draft artifacts remain');

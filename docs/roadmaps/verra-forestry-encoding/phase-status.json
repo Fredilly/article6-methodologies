@@ -1,11 +1,11 @@
 {
   "goal": "Encode Verra forestry methodology support so methodology-linked reviews can be consumed by app.article6 after encoding, starting with VM0007 and leaving room for later Verra forestry methods.",
-  "last_updated_at": "2026-05-08T02:24:28Z",
+  "last_updated_at": "2026-05-12T10:00:00Z",
   "notes": [
     "VF1 source PDF provenance is verified for VM0007 v1.8.",
-    "Existing VM0007 sections and rules are retained as draft seed artifacts pending VF2/VF3 audit against the verified source PDF.",
-    "VM0007 remains not ready for methodology-linked review while those artifacts stay draft_unverified.",
-    "VM0007 is the first methodology adopting the repo-wide review_contract_v1 artifact quality standard."
+    "VF2 section audit completed: expanded from 6 to 32 entries with TOC-derived hierarchy, page ranges, and source_audited locator status.",
+    "VM0007 remains not ready for methodology-linked review while rules stay draft_unverified and external Verra dependencies remain unencoded.",
+    "Deeper subsections (e.g., 4.2.1, 5.1.1) from extracted text are not yet mapped as separate sections."
   ],
   "phases": [
     {
@@ -16,12 +16,12 @@
     {
       "id": "vf2-extract-vm0007-sections",
       "name": "Extract VM0007 sections",
-      "status": "next"
+      "status": "completed"
     },
     {
       "id": "vf3-encode-vm0007-rules",
       "name": "Encode VM0007 rules",
-      "status": "not_started"
+      "status": "next"
     },
     {
       "id": "vf4-verra-tool-module-dependencies",
