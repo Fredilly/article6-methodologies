@@ -1,6 +1,66 @@
 {
   "sections": [
     {
+      "id": "S-7",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-7",
+      "title": "SOURCES",
+      "anchor": "sources",
+      "section_number": "1",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 5,
+      "page_end": 5,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-8",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-8",
+      "title": "Summary Description of the Methodology",
+      "anchor": "summary-description-of-the-methodology",
+      "section_number": "2",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 6,
+      "page_end": 10,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-9",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-9",
+      "title": "Definitions and Acronyms",
+      "anchor": "definitions-and-acronyms",
+      "section_number": "3",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 11,
+      "page_end": 12,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-9-1",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-9-1",
+      "title": "Definitions",
+      "anchor": "definitions",
+      "section_number": "3.1",
+      "section_level": 2,
+      "parent_id": "S-9",
+      "page_start": 11,
+      "page_end": 11,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-9-2",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-9-2",
+      "title": "Acronyms",
+      "anchor": "acronyms",
+      "section_number": "3.2",
+      "section_level": 2,
+      "parent_id": "S-9",
+      "page_start": 12,
+      "page_end": 12,
+      "locator_status": "source_audited"
+    },
+    {
       "id": "S-1",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.S-1",
       "title": "Applicability Conditions",
@@ -9,8 +69,44 @@
       "section_level": 1,
       "parent_id": null,
       "page_start": 13,
-      "page_end": 18,
-      "locator_status": "draft_derived_rule_context_pending_source_audit"
+      "page_end": 17,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-1-1",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-1-1",
+      "title": "General",
+      "anchor": "general",
+      "section_number": "4.1",
+      "section_level": 2,
+      "parent_id": "S-1",
+      "page_start": 13,
+      "page_end": 13,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-1-2",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-1-2",
+      "title": "REDD",
+      "anchor": "redd",
+      "section_number": "4.2",
+      "section_level": 2,
+      "parent_id": "S-1",
+      "page_start": 13,
+      "page_end": 14,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-1-3",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-1-3",
+      "title": "WRC",
+      "anchor": "wrc",
+      "section_number": "4.3",
+      "section_level": 2,
+      "parent_id": "S-1",
+      "page_start": 15,
+      "page_end": 17,
+      "locator_status": "source_audited"
     },
     {
       "id": "S-2",
@@ -20,9 +116,57 @@
       "section_number": "5",
       "section_level": 1,
       "parent_id": null,
-      "page_start": null,
-      "page_end": null,
-      "locator_status": "pending_source_audit"
+      "page_start": 18,
+      "page_end": 24,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-2-1",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-2-1",
+      "title": "Geographical Boundaries",
+      "anchor": "geographical-boundaries",
+      "section_number": "5.1",
+      "section_level": 2,
+      "parent_id": "S-2",
+      "page_start": 18,
+      "page_end": 19,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-2-2",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-2-2",
+      "title": "Temporal Boundaries",
+      "anchor": "temporal-boundaries",
+      "section_number": "5.2",
+      "section_level": 2,
+      "parent_id": "S-2",
+      "page_start": 20,
+      "page_end": 20,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-2-3",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-2-3",
+      "title": "Carbon Pools",
+      "anchor": "carbon-pools",
+      "section_number": "5.3",
+      "section_level": 2,
+      "parent_id": "S-2",
+      "page_start": 21,
+      "page_end": 22,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-2-4",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-2-4",
+      "title": "Sources of GHG Emissions",
+      "anchor": "sources-of-ghg-emissions",
+      "section_number": "5.4",
+      "section_level": 2,
+      "parent_id": "S-2",
+      "page_start": 23,
+      "page_end": 24,
+      "locator_status": "source_audited"
     },
     {
       "id": "S-3",
@@ -32,9 +176,33 @@
       "section_number": "6",
       "section_level": 1,
       "parent_id": null,
-      "page_start": null,
-      "page_end": null,
-      "locator_status": "pending_source_audit"
+      "page_start": 25,
+      "page_end": 27,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-3-1",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-3-1",
+      "title": "Determination of the Most Plausible Baseline Scenario",
+      "anchor": "determination-of-the-most-plausible-baseline-scenario",
+      "section_number": "6.1",
+      "section_level": 2,
+      "parent_id": "S-3",
+      "page_start": 25,
+      "page_end": 26,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-3-2",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-3-2",
+      "title": "Re-assessing the Baseline Scenario",
+      "anchor": "re-assessing-the-baseline-scenario",
+      "section_number": "6.2",
+      "section_level": 2,
+      "parent_id": "S-3",
+      "page_start": 27,
+      "page_end": 27,
+      "locator_status": "source_audited"
     },
     {
       "id": "S-4",
@@ -44,21 +212,93 @@
       "section_number": "7",
       "section_level": 1,
       "parent_id": null,
-      "page_start": null,
-      "page_end": null,
-      "locator_status": "pending_source_audit"
+      "page_start": 28,
+      "page_end": 28,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-4-1",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-4-1",
+      "title": "Project Method – All Project Activities Other Than Tidal Wetland Conservation and Restoration",
+      "anchor": "project-method-all-project-activities-other-than-tidal-wetland-conservation-and-restoration",
+      "section_number": "7.1",
+      "section_level": 2,
+      "parent_id": "S-4",
+      "page_start": 28,
+      "page_end": 28,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-4-2",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-4-2",
+      "title": "Activity Method – All Tidal Wetlands Conservation and Restoration Project Activities",
+      "anchor": "activity-method-all-tidal-wetlands-conservation-and-restoration-project-activities",
+      "section_number": "7.2",
+      "section_level": 2,
+      "parent_id": "S-4",
+      "page_start": 28,
+      "page_end": 28,
+      "locator_status": "source_audited"
     },
     {
       "id": "S-5",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.S-5",
-      "title": "Quantification",
-      "anchor": "quantification",
+      "title": "Quantification of Estimated GHG Emission Reductions and Removals",
+      "anchor": "quantification-of-estimated-ghg-emission-reductions-and-removals",
       "section_number": "8",
       "section_level": 1,
       "parent_id": null,
-      "page_start": null,
-      "page_end": null,
-      "locator_status": "pending_source_audit"
+      "page_start": 28,
+      "page_end": 38,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-5-1",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-5-1",
+      "title": "Baseline Emissions",
+      "anchor": "baseline-emissions",
+      "section_number": "8.1",
+      "section_level": 2,
+      "parent_id": "S-5",
+      "page_start": 28,
+      "page_end": 28,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-5-2",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-5-2",
+      "title": "Project Emissions",
+      "anchor": "project-emissions",
+      "section_number": "8.2",
+      "section_level": 2,
+      "parent_id": "S-5",
+      "page_start": 29,
+      "page_end": 29,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-5-3",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-5-3",
+      "title": "Leakage",
+      "anchor": "leakage",
+      "section_number": "8.3",
+      "section_level": 2,
+      "parent_id": "S-5",
+      "page_start": 30,
+      "page_end": 30,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-5-4",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-5-4",
+      "title": "Summary of GHG Emission Reduction and/or Removals",
+      "anchor": "summary-of-ghg-emission-reduction-and-or-removals",
+      "section_number": "8.4",
+      "section_level": 2,
+      "parent_id": "S-5",
+      "page_start": 31,
+      "page_end": 38,
+      "locator_status": "source_audited"
     },
     {
       "id": "S-6",
@@ -68,9 +308,81 @@
       "section_number": "9",
       "section_level": 1,
       "parent_id": null,
-      "page_start": null,
-      "page_end": null,
-      "locator_status": "pending_source_audit"
+      "page_start": 39,
+      "page_end": 49,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-6-1",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-6-1",
+      "title": "Data and Parameters Available at Validation",
+      "anchor": "data-and-parameters-available-at-validation",
+      "section_number": "9.1",
+      "section_level": 2,
+      "parent_id": "S-6",
+      "page_start": 39,
+      "page_end": 40,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-6-2",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-6-2",
+      "title": "Data and Parameters Monitored",
+      "anchor": "data-and-parameters-monitored",
+      "section_number": "9.2",
+      "section_level": 2,
+      "parent_id": "S-6",
+      "page_start": 41,
+      "page_end": 44,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-6-3",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-6-3",
+      "title": "Description of the Monitoring Plan",
+      "anchor": "description-of-the-monitoring-plan",
+      "section_number": "9.3",
+      "section_level": 2,
+      "parent_id": "S-6",
+      "page_start": 45,
+      "page_end": 49,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-10",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-10",
+      "title": "References",
+      "anchor": "references",
+      "section_number": "10",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 50,
+      "page_end": 50,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-11",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-11",
+      "title": "Appendix 1: Testing Significance of GHG Emissions",
+      "anchor": "appendix-1-testing-significance-of-ghg-emissions",
+      "section_number": "A-1",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 51,
+      "page_end": 52,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-12",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.S-12",
+      "title": "Document History",
+      "anchor": "document-history",
+      "section_number": "DH",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 53,
+      "page_end": 54,
+      "locator_status": "source_audited"
     }
   ]
 }

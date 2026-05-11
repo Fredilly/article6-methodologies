@@ -1,18 +1,19 @@
 {
   "active_date": "2024-06-04",
   "artifact_quality_standard": {
-    "adoption_status": "draft_seed_normalized",
-    "note": "VM0007 is the first methodology using the review_contract_v1 artifact quality standard. Lean artifacts stay runtime-safe and rich artifacts expose explicit pending enrichment states.",
+    "adoption_status": "source_audited",
+    "note": "VF2 section audit completed. Sections expanded from 6 to 31 entries with full TOC-derived hierarchy, page ranges, and source_audited locator_status. Deeper subsections (e.g., 4.2.1, 5.1.1) remain unmapped pending future refinement. Rules remain draft_unverified pending VF3.",
     "version": "review_contract_v1"
   },
   "artifact_status": {
     "rules": "draft_unverified",
-    "sections": "draft_unverified",
+    "sections": "source_audited",
     "source_pdf": "verified"
   },
   "audit_hashes": {
     "rules_json_sha256": "08641da16ee2b74998be66df9f7d5a27ff58394fd00a831e96234792bac08473",
-    "sections_json_sha256": "f294031941f462155d03cad3ceffcca6acdae51d2fe6d0aaede616ad62efafa3",
+    "sections_json_sha256": "531547a50fac467db1ed3bb8744bc88dce28c6cf3539e000782f20d852dcf2f6",
+    "sections_rich_json_sha256": "4506bb488417a940fc4e84228bff7abcc7e7921fcb9a824fa140bf6e2687b5e3",
     "source_pdf_sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
   },
   "automation": {
@@ -21,10 +22,9 @@
   },
   "domain": "AFOLU",
   "draft_seed_artifacts": {
-    "note": "Current VM0007 v1.8 sections and rules are retained draft seed artifacts normalized to the review_contract_v1 quality shape pending VF2/VF3 audit against the verified source PDF. They must not be treated as completed methodology coverage.",
+    "note": "VM0007 v1.8 sections are now source_audited (VF2 completed). Rules remain draft_seed artifacts pending VF3 audit against source PDF.",
     "retained": true,
     "source_audit_pending": [
-      "sections",
       "rules"
     ]
   },
@@ -142,7 +142,11 @@
   "files": [
     {
       "path": "sections.json",
-      "sha256": "f294031941f462155d03cad3ceffcca6acdae51d2fe6d0aaede616ad62efafa3"
+      "sha256": "531547a50fac467db1ed3bb8744bc88dce28c6cf3539e000782f20d852dcf2f6"
+    },
+    {
+      "path": "sections.rich.json",
+      "sha256": "4506bb488417a940fc4e84228bff7abcc7e7921fcb9a824fa140bf6e2687b5e3"
     },
     {
       "path": "rules.json",
@@ -151,15 +155,14 @@
   ],
   "method": "REDD+ Methodology Framework",
   "methodology_linked_review_blockers": [
-    "Sections remain draft_unverified pending VF2 audit against the verified VM0007 v1.8 source PDF and locator validation.",
     "Rules remain draft_unverified pending VF3 audit against the verified VM0007 v1.8 source PDF and source-span validation.",
     "External Verra modules and tools referenced by the retained draft rules are not encoded in this repo.",
-    "Rich VM0007 artifacts still contain explicit pending_source_audit placeholders for incomplete enrichment."
+    "Deeper subsection hierarchy (e.g., 4.2.1, 5.1.1, 8.1.2) identified from extracted text but not yet mapped as separate sections."
   ],
   "methodology_linked_review_ready": false,
   "provenance": {
     "author": "Fred Egbuedike",
-    "date": "2026-05-07T22:03:56Z",
+    "date": "2026-05-12T10:00:00Z",
     "source_pdfs": [
       {
         "doc": "Verra/VM0007@v1-8",
