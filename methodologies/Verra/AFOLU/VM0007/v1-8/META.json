@@ -2,7 +2,7 @@
   "active_date": "2024-06-04",
   "artifact_quality_standard": {
     "adoption_status": "source_audited",
-    "note": "VF2 section audit completed. Sections expanded from 6 to 32 entries (26 new: front matter, subsections, appendix, document history) with full TOC-derived hierarchy, page ranges, and source_audited locator_status. Deeper subsections (e.g., 4.2.1, 5.1.1) remain unmapped pending future refinement. Rules remain draft_unverified pending VF3.",
+    "note": "VF3 rule audit completed for 25 VM0007-backed rules (source_audited). 33 rules depending on unencoded external modules/tools remain draft_unverified. VF2 section audit completed: sections expanded from 6 to 32 entries. Deeper subsections remain unmapped.",
     "version": "review_contract_v1"
   },
   "artifact_status": {
@@ -11,7 +11,8 @@
     "source_pdf": "verified"
   },
   "audit_hashes": {
-    "rules_json_sha256": "08641da16ee2b74998be66df9f7d5a27ff58394fd00a831e96234792bac08473",
+    "rules_json_sha256": "811306a595c0f0fdae9aece72d433682962f9987f7e1eb0d9b10d85285e9af3b",
+    "rules_rich_json_sha256": "0723999dd14c66c171291408f47b23501f4e61dae093e2dbaaaf4a53c1e52601",
     "sections_json_sha256": "852125cacbe9d09f0560886fb27621548939033a382d2b1718f50b7694f41201",
     "sections_rich_json_sha256": "4506bb488417a940fc4e84228bff7abcc7e7921fcb9a824fa140bf6e2687b5e3",
     "source_pdf_sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
@@ -22,10 +23,10 @@
   },
   "domain": "AFOLU",
   "draft_seed_artifacts": {
-    "note": "VM0007 v1.8 sections are now source_audited (VF2 completed). Rules remain draft_seed artifacts pending VF3 audit against source PDF.",
+    "note": "VF3 partial: 25 VM0007-backed rules source_audited. 33 rules with external dependencies remain draft_unverified.",
     "retained": true,
     "source_audit_pending": [
-      "rules"
+      "rules_blocked_by_external_deps"
     ]
   },
   "external_dependencies": {
@@ -150,19 +151,23 @@
     },
     {
       "path": "rules.json",
-      "sha256": "08641da16ee2b74998be66df9f7d5a27ff58394fd00a831e96234792bac08473"
+      "sha256": "811306a595c0f0fdae9aece72d433682962f9987f7e1eb0d9b10d85285e9af3b"
+    },
+    {
+      "path": "rules.rich.json",
+      "sha256": "0723999dd14c66c171291408f47b23501f4e61dae093e2dbaaaf4a53c1e52601"
     }
   ],
   "method": "REDD+ Methodology Framework",
   "methodology_linked_review_blockers": [
-    "Rules remain draft_unverified pending VF3 audit against the verified VM0007 v1.8 source PDF and source-span validation.",
+    "25 VM0007-backed rules are source_audited but 33 rules depending on unencoded external Verra modules/tools remain draft_unverified.",
     "External Verra modules and tools referenced by the retained draft rules are not encoded in this repo.",
     "Deeper subsection hierarchy (e.g., 4.2.1, 5.1.1, 8.1.2) identified from extracted text but not yet mapped as separate sections."
   ],
   "methodology_linked_review_ready": false,
   "provenance": {
     "author": "Fred Egbuedike",
-    "date": "2026-05-12T10:00:00Z",
+    "date": "2026-05-12T12:00:00Z",
     "source_pdfs": [
       {
         "doc": "Verra/VM0007@v1-8",
