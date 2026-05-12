@@ -71,7 +71,7 @@ the reference template for all future Verra forestry methods.
 |----------|------------|
 | `META.json` | `adoption_status: grade_a`, `rules: source_audited`, `methodology_linked_review_ready: true` |
 | `sections.json` | All sections `locator_status: source_audited` with verified page ranges |
-| `rules.json` | All 58 rules `quality_status: source_audited`, no external deps in `tools` |
+| `rules.json` | All `quality_status: source_audited`, no external deps in `tools` |
 | `rules.rich.json` | Every rule has `source_span_status`, `rule_detail.status: source_audited`, non-empty `source_span_text`, >=1 condition, no placeholder exceptions |
 | `blocked-external-dependencies.json` | `blocked_rule_count: 0`, `status: no_active_blockers` |
 | `METHOD_GRADE.json` | Not used. Grade A is computed from canonical artifacts via `scripts/grade-method.js`. |
