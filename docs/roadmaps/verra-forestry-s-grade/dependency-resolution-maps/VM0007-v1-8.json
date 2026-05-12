@@ -1,18 +1,12 @@
 {
   "dependencies": [
     {
-      "blocked_rule_count": 5,
-      "blocked_rule_ids": [
-        "R-1-0003",
-        "R-1-0013",
-        "R-2-0004",
-        "R-3-0005",
-        "R-6-0005"
-      ],
-      "classification": "active_required",
-      "evidence_note": "Unplanned deforestation baseline module. VM0007 Section 5.1.2 and Section 6 call VMD0007 equations.",
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "VMD0007 encoded. 3 rules promoted (R-1-0003, R-1-0013, R-2-0004). R-3-0005 and R-6-0005 kept draft (still blocked by VMD0006/VMD0015).",
       "id": "Verra/VMD0007@v1-8",
-      "next_action": "encode_as_local_artifact"
+      "next_action": "completed"
     },
     {
       "blocked_rule_count": 5,
@@ -236,18 +230,18 @@
       "next_action": "encode_as_local_artifact"
     }
   ],
-  "draft_unverified_rule_count": 31,
+  "draft_unverified_rule_count": 28,
   "methodology": "Verra/VM0007@v1-8",
   "recommended_encoding_order": [
-    "1. VM0047 dep resolved (META edit, R-1-0014 promoted) — DONE",
-    "2. T-SIG Appendix 1 resolved for R-1-0008 — DONE (R-2-0007, R-2-0010 still pending)",
-    "3. Encode VMD0007 (5 rules)",
+    "1. VM0047 dep resolved — DONE",
+    "2. T-SIG via Appendix 1 for R-1-0008 — DONE",
+    "3. VMD0007 encoded — DONE (3 rules promoted)",
     "4. Encode VMD0006 (3 rules)",
     "5. Encode VMD0050 + VMD0051 (tidal wetland pair)",
     "6. Encode VMD0042 (peatland baseline)",
     "7. Remainder in dependency-order"
   ],
-  "source_audited_rule_count": 27,
+  "source_audited_rule_count": 30,
   "status": "has_active_blockers",
   "total_dependencies": 21
 }

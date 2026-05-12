@@ -1,0 +1,216 @@
+[
+  {
+    "id": "S-1",
+    "stable_id": "Verra.VMD0007.v3-3.S-1",
+    "title": "Sources",
+    "anchor": "sources",
+    "heading_text": "Sources",
+    "section_number": "1",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 4,
+    "page_end": 4,
+    "locator_status": "source_audited",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "c5f81df7bd65affae8686a40e27f1cfa0c90ca88b3c1fbf6a9ad5ee30398d499",
+      "source_ref": "Verra/VMD0007@v3-3"
+    }
+  },
+  {
+    "id": "S-2",
+    "stable_id": "Verra.VMD0007.v3-3.S-2",
+    "title": "Summary Description of the Module",
+    "anchor": "summary-description-of-the-module",
+    "heading_text": "Summary Description of the Module",
+    "section_number": "2",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 5,
+    "page_end": 5,
+    "locator_status": "source_audited",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "c5f81df7bd65affae8686a40e27f1cfa0c90ca88b3c1fbf6a9ad5ee30398d499",
+      "source_ref": "Verra/VMD0007@v3-3"
+    }
+  },
+  {
+    "id": "S-3",
+    "stable_id": "Verra.VMD0007.v3-3.S-3",
+    "title": "Definitions and Acronyms",
+    "anchor": "definitions-and-acronyms",
+    "heading_text": "Definitions and Acronyms",
+    "section_number": "3",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 5,
+    "page_end": 6,
+    "locator_status": "source_audited",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "c5f81df7bd65affae8686a40e27f1cfa0c90ca88b3c1fbf6a9ad5ee30398d499",
+      "source_ref": "Verra/VMD0007@v3-3"
+    }
+  },
+  {
+    "id": "S-4",
+    "stable_id": "Verra.VMD0007.v3-3.S-4",
+    "title": "Applicability Conditions",
+    "anchor": "applicability-conditions",
+    "heading_text": "Applicability Conditions",
+    "section_number": "4",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 7,
+    "page_end": 7,
+    "locator_status": "source_audited",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "c5f81df7bd65affae8686a40e27f1cfa0c90ca88b3c1fbf6a9ad5ee30398d499",
+      "source_ref": "Verra/VMD0007@v3-3"
+    }
+  },
+  {
+    "id": "S-5",
+    "stable_id": "Verra.VMD0007.v3-3.S-5",
+    "title": "Procedures",
+    "anchor": "procedures",
+    "heading_text": "Procedures",
+    "section_number": "5",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 7,
+    "page_end": 35,
+    "locator_status": "source_audited",
+    "source_span_status": "source_audited",
+    "children": [
+      "S-5-1",
+      "S-5-2",
+      "S-5-3",
+      "S-5-4"
+    ],
+    "provenance": {
+      "source_hash": "c5f81df7bd65affae8686a40e27f1cfa0c90ca88b3c1fbf6a9ad5ee30398d499",
+      "source_ref": "Verra/VMD0007@v3-3"
+    }
+  },
+  {
+    "id": "S-5-1",
+    "stable_id": "Verra.VMD0007.v3-3.S-5-1",
+    "title": "Part 1: Definition of Boundaries",
+    "anchor": "part-1-definition-of-boundaries",
+    "heading_text": "Part 1: Definition of Boundaries",
+    "section_number": "5.1",
+    "section_level": 2,
+    "parent_id": "S-5",
+    "page_start": 8,
+    "page_end": 14,
+    "locator_status": "source_audited",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "c5f81df7bd65affae8686a40e27f1cfa0c90ca88b3c1fbf6a9ad5ee30398d499",
+      "source_ref": "Verra/VMD0007@v3-3"
+    }
+  },
+  {
+    "id": "S-5-2",
+    "stable_id": "Verra.VMD0007.v3-3.S-5-2",
+    "title": "Part 2: Estimation of Annual Areas of Unplanned Deforestation",
+    "anchor": "part-2-estimation-of-annual-areas-of-unplanned-deforestation",
+    "heading_text": "Part 2: Estimation of Annual Areas of Unplanned Deforestation",
+    "section_number": "5.2",
+    "section_level": 2,
+    "parent_id": "S-5",
+    "page_start": 15,
+    "page_end": 24,
+    "locator_status": "source_audited",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "c5f81df7bd65affae8686a40e27f1cfa0c90ca88b3c1fbf6a9ad5ee30398d499",
+      "source_ref": "Verra/VMD0007@v3-3"
+    }
+  },
+  {
+    "id": "S-5-3",
+    "stable_id": "Verra.VMD0007.v3-3.S-5-3",
+    "title": "Part 3: Location and Quantification of Threat",
+    "anchor": "part-3-location-and-quantification-of-threat",
+    "heading_text": "Part 3: Location and Quantification of Threat",
+    "section_number": "5.3",
+    "section_level": 2,
+    "parent_id": "S-5",
+    "page_start": 25,
+    "page_end": 29,
+    "locator_status": "source_audited",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "c5f81df7bd65affae8686a40e27f1cfa0c90ca88b3c1fbf6a9ad5ee30398d499",
+      "source_ref": "Verra/VMD0007@v3-3"
+    }
+  },
+  {
+    "id": "S-5-4",
+    "stable_id": "Verra.VMD0007.v3-3.S-5-4",
+    "title": "Part 4: Estimation of Carbon Stock Changes and GHG Emissions",
+    "anchor": "part-4-estimation-of-carbon-stock-changes-and-ghg-emissions",
+    "heading_text": "Part 4: Estimation of Carbon Stock Changes and GHG Emissions",
+    "section_number": "5.4",
+    "section_level": 2,
+    "parent_id": "S-5",
+    "page_start": 30,
+    "page_end": 35,
+    "locator_status": "source_audited",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "c5f81df7bd65affae8686a40e27f1cfa0c90ca88b3c1fbf6a9ad5ee30398d499",
+      "source_ref": "Verra/VMD0007@v3-3"
+    }
+  },
+  {
+    "id": "S-6",
+    "stable_id": "Verra.VMD0007.v3-3.S-6",
+    "title": "Parameters",
+    "anchor": "parameters",
+    "heading_text": "Parameters",
+    "section_number": "6",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 36,
+    "page_end": 46,
+    "locator_status": "source_audited",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "c5f81df7bd65affae8686a40e27f1cfa0c90ca88b3c1fbf6a9ad5ee30398d499",
+      "source_ref": "Verra/VMD0007@v3-3"
+    }
+  },
+  {
+    "id": "S-7",
+    "stable_id": "Verra.VMD0007.v3-3.S-7",
+    "title": "References and Other Information",
+    "anchor": "references-and-other-information",
+    "heading_text": "References and Other Information",
+    "section_number": "7",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 47,
+    "page_end": 49,
+    "locator_status": "source_audited",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "c5f81df7bd65affae8686a40e27f1cfa0c90ca88b3c1fbf6a9ad5ee30398d499",
+      "source_ref": "Verra/VMD0007@v3-3"
+    }
+  }
+]

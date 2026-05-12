@@ -1,0 +1,81 @@
+{
+  "rules": [
+    {
+      "id": "R-1-0001",
+      "stable_id": "Verra.VMD0007.v3-3.R-1-0001",
+      "title": "Boundary definition for unplanned deforestation",
+      "logic": "Project area, reference region, and leakage belt boundaries must be defined per Part 1 procedures.",
+      "section_id": "S-5-1",
+      "section_stable_id": "Verra.VMD0007.v3-3.S-5-1",
+      "section_number": "5.1",
+      "section_anchor": "part-1-definition-of-boundaries",
+      "tools": [
+        "Verra/VMD0007@v3-3"
+      ],
+      "tags": [
+        "eligibility"
+      ],
+      "quality_status": "source_audited",
+      "when": []
+    },
+    {
+      "id": "R-1-0002",
+      "stable_id": "Verra.VMD0007.v3-3.R-1-0002",
+      "title": "Baseline deforestation rate estimation",
+      "logic": "Annual deforestation area estimated using historical reference period data per Part 2.",
+      "section_id": "S-5-2",
+      "section_stable_id": "Verra.VMD0007.v3-3.S-5-2",
+      "section_number": "5.2",
+      "section_anchor": "part-2-estimation-of-annual-areas-of-unplanned-deforestation",
+      "tools": [
+        "Verra/VMD0007@v3-3"
+      ],
+      "tags": [
+        "calc"
+      ],
+      "quality_status": "source_audited",
+      "when": []
+    },
+    {
+      "id": "R-1-0003",
+      "stable_id": "Verra.VMD0007.v3-3.R-1-0003",
+      "title": "Deforestation threat location and quantification",
+      "logic": "Location and quantification of deforestation threat determined per Part 3.",
+      "section_id": "S-5-3",
+      "section_stable_id": "Verra.VMD0007.v3-3.S-5-3",
+      "section_number": "5.3",
+      "section_anchor": "part-3-location-and-quantification-of-threat",
+      "tools": [
+        "Verra/VMD0007@v3-3"
+      ],
+      "tags": [
+        "calc"
+      ],
+      "quality_status": "source_audited",
+      "when": []
+    },
+    {
+      "id": "R-1-0004",
+      "stable_id": "Verra.VMD0007.v3-3.R-1-0004",
+      "title": "Carbon stock change estimation",
+      "logic": "Carbon stock changes and GHG emissions estimated per Part 4 using carbon pool modules.",
+      "section_id": "S-5-4",
+      "section_stable_id": "Verra.VMD0007.v3-3.S-5-4",
+      "section_number": "5.4",
+      "section_anchor": "part-4-estimation-of-carbon-stock-changes-and-ghg-emissions",
+      "tools": [
+        "Verra/VMD0007@v3-3",
+        "Verra/VMD0001@v1-8",
+        "Verra/VMD0002@v1-8",
+        "Verra/VMD0003@v1-8",
+        "Verra/VMD0004@v1-8",
+        "Verra/VMD0005@v1-8"
+      ],
+      "tags": [
+        "calc"
+      ],
+      "quality_status": "draft_unverified",
+      "when": []
+    }
+  ]
+}

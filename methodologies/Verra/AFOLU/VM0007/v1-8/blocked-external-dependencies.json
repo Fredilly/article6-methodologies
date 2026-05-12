@@ -1,16 +1,6 @@
 {
-  "blocked_rule_count": 31,
+  "blocked_rule_count": 28,
   "blocked_rules": [
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VMD0007@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-1-0003",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0003",
-      "title": "AUDef agent criteria"
-    },
     {
       "blocking_reason": "external_dependency_unencoded",
       "external_dependencies": [
@@ -50,26 +40,6 @@
       "rule_id": "R-1-0011",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0011",
       "title": "Tidal wetland restoration activities"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VMD0007@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-1-0013",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0013",
-      "title": "AUWD agent criteria"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VMD0007@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-2-0004",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0004",
-      "title": "REDD reference region definition"
     },
     {
       "blocking_reason": "external_dependency_unencoded",
@@ -197,17 +167,6 @@
     {
       "blocking_reason": "external_dependency_unencoded",
       "external_dependencies": [
-        "Verra/VMD0006@v1-8",
-        "Verra/VMD0007@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-3-0005",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0005",
-      "title": "REDD baseline modules"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
         "Verra/VMD0042@v1-8",
         "Verra/VMD0050@v1-8"
       ],
@@ -307,17 +266,6 @@
     {
       "blocking_reason": "external_dependency_unencoded",
       "external_dependencies": [
-        "Verra/VMD0007@v1-8",
-        "Verra/VMD0015@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-6-0005",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-6-0005",
-      "title": "REDD forest cover monitoring"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
         "Verra/VMD0046@v1-8",
         "Verra/VMD0051@v1-8"
       ],
@@ -325,6 +273,26 @@
       "rule_id": "R-6-0006",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.R-6-0006",
       "title": "WRC compliance monitoring"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0006@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-3-0005",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0005",
+      "title": "REDD baseline modules"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0015@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-6-0005",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-6-0005",
+      "title": "REDD forest cover monitoring"
     }
   ],
   "methodology": "Verra/VM0007@v1-8",

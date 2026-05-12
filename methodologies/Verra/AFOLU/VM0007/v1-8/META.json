@@ -2,7 +2,7 @@
   "active_date": "2024-06-04",
   "artifact_quality_standard": {
     "adoption_status": "source_audited",
-    "note": "VF3: 25 VM0007-backed rules source_audited, 31 remain draft_unverified. VM0047 dep resolved (repo_resolved). T-SIG resolved for R-1-0008 via Appendix 1. 33 blocked rules reduced to 31.",
+    "note": "VF S3 + S4: 30 VM0007-backed rules source_audited, 28 remain draft_unverified. VMD0007 encoded (3 rules promoted: R-1-0003, R-1-0013, R-2-0004). R-3-0005 and R-6-0005 kept draft_unverified due to remaining VMD0006/VMD0015 deps.",
     "version": "review_contract_v1"
   },
   "artifact_status": {
@@ -11,11 +11,11 @@
     "source_pdf": "verified"
   },
   "audit_hashes": {
-    "blocked_external_dependencies_sha256": "f895887a1eccd6579ca57b285a8e3ecf33ebfec7403c070206df16c38b64dd4d",
-    "rules.rich_sha256": "b458d4e59b639a86ac709735cb1a8836206dce49dbd5c240720b5e1eb7711088",
-    "rules_json_sha256": "cb5518fb31bd7b1d4c772e06b84fa23cc2c160664d254dee8805a2aff6283072",
-    "rules_rich_json_sha256": "b458d4e59b639a86ac709735cb1a8836206dce49dbd5c240720b5e1eb7711088",
-    "rules_sha256": "cb5518fb31bd7b1d4c772e06b84fa23cc2c160664d254dee8805a2aff6283072",
+    "blocked_external_dependencies_sha256": "8a7b0c18141d9e6c01972b0eb793e1e699d7b33db386c60a7f4341b2fe7c8706",
+    "rules.rich_sha256": "adb49b70ace9768a16bfee6ff77a4cb6bb936fe8b5bba5c5f6c9a5864e2272fd",
+    "rules_json_sha256": "0a53ee5da2d6ec9876cbee926cb5a451495f8a5dddebce473c19f526710a65d5",
+    "rules_rich_json_sha256": "adb49b70ace9768a16bfee6ff77a4cb6bb936fe8b5bba5c5f6c9a5864e2272fd",
+    "rules_sha256": "0a53ee5da2d6ec9876cbee926cb5a451495f8a5dddebce473c19f526710a65d5",
     "sections_json_sha256": "852125cacbe9d09f0560886fb27621548939033a382d2b1718f50b7694f41201",
     "sections_rich_json_sha256": "4506bb488417a940fc4e84228bff7abcc7e7921fcb9a824fa140bf6e2687b5e3",
     "source_pdf_sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
@@ -81,8 +81,8 @@
       },
       {
         "id": "Verra/VMD0007@v1-8",
-        "local_artifact_present": false,
-        "status": "external_unencoded"
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
       },
       {
         "id": "Verra/VMD0009@v1-8",
@@ -154,18 +154,19 @@
     },
     {
       "path": "rules.json",
-      "sha256": "cb5518fb31bd7b1d4c772e06b84fa23cc2c160664d254dee8805a2aff6283072"
+      "sha256": "0a53ee5da2d6ec9876cbee926cb5a451495f8a5dddebce473c19f526710a65d5"
     },
     {
       "path": "rules.rich.json",
-      "sha256": "b458d4e59b639a86ac709735cb1a8836206dce49dbd5c240720b5e1eb7711088"
+      "sha256": "adb49b70ace9768a16bfee6ff77a4cb6bb936fe8b5bba5c5f6c9a5864e2272fd"
     }
   ],
   "method": "REDD+ Methodology Framework",
   "methodology_linked_review_blockers": [
-    "31 rules remain draft_unverified. 1 dep resolved (VM0047, repo_resolved). 1 T-SIG ref resolved via Appendix 1.",
-    "External Verra modules and tools referenced by the retained draft rules are not encoded in this repo.",
-    "Deeper subsection hierarchy (e.g., 4.2.1, 5.1.1, 8.1.2) identified from extracted text but not yet mapped as separate sections."
+    "28 rules remain draft_unverified. VMD0007 encoded (3 rules promoted).",
+    "R-3-0005 still blocked by VMD0006; R-6-0005 still blocked by VMD0015.",
+    "External Verra modules and tools referenced by the retained draft rules are not encoded.",
+    "Deeper subsection hierarchy not fully mapped."
   ],
   "methodology_linked_review_ready": false,
   "provenance": {
@@ -190,6 +191,14 @@
         "sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
         "size": 963486,
         "url": "https://verra.org/documents/vm0007-redd-methodology-framework-v1-8-clean/"
+      },
+      {
+        "doc": "Verra/VMD0007@v3-3",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0007/v3-3/source.pdf",
+        "sha256": "c5f81df7bd65affae8686a40e27f1cfa0c90ca88b3c1fbf6a9ad5ee30398d499",
+        "size": 800330,
+        "url": null
       }
     ]
   },
