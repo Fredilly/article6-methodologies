@@ -11,9 +11,9 @@
     "source_pdf": "verified"
   },
   "audit_hashes": {
-    "rules.rich_sha256": "a5fc45e4f83957c879c77eb277c6e0587dfd6eed53a79e81e219ca75085192aa",
+    "rules.rich_sha256": "6b2aad8177be3e050dce6cb08b2a64248725217732483d1ac93a1bc969081de7",
     "rules_json_sha256": "29a210e7b68737cbb891cee64b8dfb0a1c77122630ca0790e9a808fdd6d174a7",
-    "rules_rich_json_sha256": "fd766d83450e331660216b91c5380cb54d8221ce941ab3e7779a0d5017a63849",
+    "rules_rich_json_sha256": "d1189c5dbfa905528d48da8f7fdf0d203a3d331df7cfc7b46e84415bdfae1b16",
     "rules_sha256": "86c1f651c6c82683cc431ba0461328547d58fe1e5e37a544eda93cb25882cdf1",
     "sections.rich_sha256": "4d98351663ec55a7ea8705f36160910e5349b1c0987f0a6e6ab01f1b4218a5aa",
     "sections_json_sha256": "8c07f0a3ce505eba9b3a46bb5fb48e028046e95d0514c3e6fcae6e6a701d22a1",
@@ -62,7 +62,7 @@
     },
     {
       "path": "rules.rich.json",
-      "sha256": "a5fc45e4f83957c879c77eb277c6e0587dfd6eed53a79e81e219ca75085192aa"
+      "sha256": "6b2aad8177be3e050dce6cb08b2a64248725217732483d1ac93a1bc969081de7"
     }
   ],
   "method": "ARR Methodology Framework",

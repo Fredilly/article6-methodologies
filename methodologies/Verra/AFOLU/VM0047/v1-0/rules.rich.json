@@ -40,7 +40,9 @@
       "conditions": [
         "Land must not be forest at project start. Must meet host-country forest definition if applicable."
       ],
-      "exceptions": [],
+      "exceptions": [
+        "Not specified in VF5 draft seed"
+      ],
       "status": "source_audited",
       "summary": "Forest definition threshold"
     },
@@ -57,7 +59,7 @@
       "section_title": "SOURCES"
     },
     "source_span_status": "source_audited",
-    "source_span_text": "",
+    "source_span_text": "Land in the project area has qualified as non-forest for at least the 10 years prior to the project start date.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-1-0001",
     "summary": "Forest definition threshold",
     "type": "eligibility",
@@ -105,7 +107,9 @@
       "conditions": [
         "Land must be non-forest or managed non-forest for 10+ years. Excludes wetlands, peatlands, and certain AR-ACM0003 exclusion categories."
       ],
-      "exceptions": [],
+      "exceptions": [
+        "Not specified in VF5 draft seed"
+      ],
       "status": "seed_unverified",
       "summary": "ARR applicability land eligibility"
     },
@@ -122,7 +126,7 @@
       "section_title": "Applicability Conditions"
     },
     "source_span_status": "seed_extracted_pending_source_audit",
-    "source_span_text": "",
+    "source_span_text": "This methodology applies to afforestation, reforestation, and revegetation (ARR) activities that establish, increase, or restore vegetative cover.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-4-0001",
     "summary": "ARR applicability land eligibility",
     "type": "eligibility",
@@ -169,7 +173,9 @@
       "conditions": [
         "Two approaches: area-based (plot sampling) or census-based (complete enumeration). Must select based on project characteristics."
       ],
-      "exceptions": [],
+      "exceptions": [
+        "Not specified in VF5 draft seed"
+      ],
       "status": "source_audited",
       "summary": "ARR quantification approach selection"
     },
@@ -186,7 +192,7 @@
       "section_title": "Applicability Conditions"
     },
     "source_span_status": "source_audited",
-    "source_span_text": "",
+    "source_span_text": "Two quantification approaches are provided: area-based and census-based.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-4-0002",
     "summary": "ARR quantification approach selection",
     "type": "eligibility",
@@ -233,7 +239,9 @@
       "conditions": [
         "Project boundary must be fixed ex-ante. Stratification by land cover, soil type, and management regime."
       ],
-      "exceptions": [],
+      "exceptions": [
+        "Not specified in VF5 draft seed"
+      ],
       "status": "seed_unverified",
       "summary": "Geographic boundary and stratification"
     },
@@ -250,7 +258,7 @@
       "section_title": "Project Boundary"
     },
     "source_span_status": "seed_extracted_pending_source_audit",
-    "source_span_text": "",
+    "source_span_text": "The project boundary shall be determined and documented in the project description.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-5-0001",
     "summary": "Geographic boundary and stratification",
     "type": "eligibility",
@@ -298,7 +306,9 @@
       "conditions": [
         "AGB and BGB mandatory. Litter, dead wood, SOC optional per significance test. If included in baseline must also be in project scenario."
       ],
-      "exceptions": [],
+      "exceptions": [
+        "Not specified in VF5 draft seed"
+      ],
       "status": "seed_unverified",
       "summary": "Carbon pool selection"
     },
@@ -315,7 +325,7 @@
       "section_title": "Project Boundary"
     },
     "source_span_status": "seed_extracted_pending_source_audit",
-    "source_span_text": "",
+    "source_span_text": "Carbon pools included in the baseline must also be included in the project scenario.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-5-0002",
     "summary": "Carbon pool selection",
     "type": "eligibility",
@@ -363,7 +373,9 @@
       "conditions": [
         "Two methods: 1) Performance Method via dynamic benchmark, 2) Project Method via VT0001 additionality + baseline scenario analysis."
       ],
-      "exceptions": [],
+      "exceptions": [
+        "Not specified in VF5 draft seed"
+      ],
       "status": "seed_unverified",
       "summary": "Baseline scenario determination"
     },
@@ -380,7 +392,7 @@
       "section_title": "Baseline Scenario"
     },
     "source_span_status": "seed_extracted_pending_source_audit",
-    "source_span_text": "",
+    "source_span_text": "The baseline scenario shall be determined using either the Performance Method or the Project Method.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-6-0001",
     "summary": "Baseline scenario determination",
     "type": "calc",
@@ -428,7 +440,9 @@
       "conditions": [
         "Project Method requires VT0001 demonstration. Performance Method uses automatic additionality via benchmark exceedance."
       ],
-      "exceptions": [],
+      "exceptions": [
+        "Not specified in VF5 draft seed"
+      ],
       "status": "seed_unverified",
       "summary": "VT0001 additionality requirement"
     },
@@ -445,7 +459,7 @@
       "section_title": "Additionality"
     },
     "source_span_status": "seed_extracted_pending_source_audit",
-    "source_span_text": "",
+    "source_span_text": "The Project Method requires application of VT0001 Tool for the Demonstration and Assessment of Additionality.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-7-0001",
     "summary": "VT0001 additionality requirement",
     "type": "eligibility",
@@ -492,7 +506,9 @@
       "conditions": [
         "Removals = min(project C change, project C change x (1 - PB)) - leakage - uncertainty. PB from ex-post reference region observations."
       ],
-      "exceptions": [],
+      "exceptions": [
+        "Not specified in VF5 draft seed"
+      ],
       "status": "source_audited",
       "summary": "Area-based quantification equation"
     },
@@ -509,7 +525,7 @@
       "section_title": "Project"
     },
     "source_span_status": "source_audited",
-    "source_span_text": "",
+    "source_span_text": "Carbon dioxide removals are calculated by comparing the carbon stock at the current monitoring year.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-8-0001",
     "summary": "Area-based quantification equation",
     "type": "equation",
@@ -556,7 +572,9 @@
       "conditions": [
         "Activity shifting leakage must be assessed. Market leakage is de minimis for ARR. Fossil fuel and biomass burning emissions must be included."
       ],
-      "exceptions": [],
+      "exceptions": [
+        "Not specified in VF5 draft seed"
+      ],
       "status": "source_audited",
       "summary": "Leakage quantification"
     },
@@ -573,7 +591,7 @@
       "section_title": "Leakage"
     },
     "source_span_status": "source_audited",
-    "source_span_text": "",
+    "source_span_text": "Leakage shall be assessed and deducted from the net carbon stock changes.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-8-0002",
     "summary": "Leakage quantification",
     "type": "calc",
@@ -620,7 +638,9 @@
       "conditions": [
         "15% threshold at 90% CI. If exceeded, excess deducted proportionally from removals. Below threshold, no deduction."
       ],
-      "exceptions": [],
+      "exceptions": [
+        "Not specified in VF5 draft seed"
+      ],
       "status": "source_audited",
       "summary": "Uncertainty deduction"
     },
@@ -637,7 +657,7 @@
       "section_title": "Uncertainty"
     },
     "source_span_status": "source_audited",
-    "source_span_text": "",
+    "source_span_text": "Uncertainty analysis must be carried out to ensure conservative estimates.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-8-0003",
     "summary": "Uncertainty deduction",
     "type": "uncertainty",
@@ -684,7 +704,9 @@
       "conditions": [
         "Four mandatory components: data list, QA/QC, responsibilities, archiving. REDD MRV procedures via M-REDD module."
       ],
-      "exceptions": [],
+      "exceptions": [
+        "Not specified in VF5 draft seed"
+      ],
       "status": "source_audited",
       "summary": "Monitoring plan requirements"
     },
@@ -701,7 +723,7 @@
       "section_title": "Description of the Monitoring Plan"
     },
     "source_span_status": "source_audited",
-    "source_span_text": "",
+    "source_span_text": "The monitoring plan shall include data collection, QA/QC, archiving, and responsibilities.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-9-0001",
     "summary": "Monitoring plan requirements",
     "type": "monitoring",
