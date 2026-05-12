@@ -1,16 +1,13 @@
 {
-  "app_ready": false,
-  "blocked_rule_count": 3,
-  "draft_unverified_rule_count": 3,
-  "grade": "not_grade_a",
+  "app_ready": true,
+  "blocked_rule_count": 0,
+  "draft_unverified_rule_count": 0,
+  "grade": "grade_a",
   "methodology": "Verra/VM0047@v1-0",
-  "methodology_linked_review_ready": false,
-  "next_upgrade_target": "Resolve AR-ACM0003 and VT0001 dependencies to promote R-4-0001, R-6-0001, R-7-0001",
+  "methodology_linked_review_ready": true,
+  "next_upgrade_target": "Maintain Grade A as external dependencies evolve",
   "rule_count": 11,
   "section_count": 27,
-  "source_audited_rule_count": 8,
-  "unresolved_external_dependencies": [
-    "CDM/AR-ACM0003@v02-0",
-    "Verra/VT0001@v1-8"
-  ]
+  "source_audited_rule_count": 11,
+  "unresolved_external_dependencies": []
 }

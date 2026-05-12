@@ -70,7 +70,7 @@
   {
     "id": "Verra.AFOLU.VM0047.v1-0.R-4-0001",
     "logic": "Land must be non-forest or managed non-forest for 10+ years. Excludes wetlands, peatlands, and certain AR-ACM0003 exclusion categories.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0047@v1-0",
       "primary_section": "S-4",
@@ -81,8 +81,7 @@
         "S-4"
       ],
       "tools": [
-        "Verra/VM0047@v1-0",
-        "CDM/AR-ACM0003@v02-0"
+        "Verra/VM0047@v1-0"
       ]
     },
     "requirement_coverage": {
@@ -96,23 +95,26 @@
           "required": true
         }
       ],
-      "expected_evidence_status": "seed_unverified",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-4"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
       "conditions": [
-        "Land must be non-forest or managed non-forest for 10+ years. Excludes wetlands, peatlands, and certain AR-ACM0003 exclusion categories."
+        "Land must be non-forest at project start for 10+ years",
+        "Tidal wetland areas excluded (condition 4)",
+        "Organic soil/water table manipulation excluded unless combined with WRC methodology (condition 5)",
+        "Mechanical removal or burning of pre-existing dead wood prohibited unless all material remains onsite (condition 3)"
       ],
       "exceptions": [
-        "Not specified in VF5 draft seed"
+        "Wetland activities may be combined with VM0036 or WRC methodology under condition 5"
       ],
-      "status": "seed_unverified",
+      "status": "source_audited",
       "summary": "ARR applicability land eligibility"
     },
     "section_context": {
@@ -120,15 +122,15 @@
       "lineage": [
         "applicability-conditions"
       ],
-      "locator_status": "draft_derived_rule_context_pending_source_audit",
+      "locator_status": "source_audited",
       "page_end": 8,
       "page_start": 7,
       "section_id": "S-4",
       "section_ref": "Verra.AFOLU.VM0047.v1-0.S-4",
       "section_title": "Applicability Conditions"
     },
-    "source_span_status": "seed_extracted_pending_source_audit",
-    "source_span_text": "This methodology applies to afforestation, reforestation, and revegetation (ARR) activities that establish, increase, or restore vegetative cover.",
+    "source_span_status": "source_audited",
+    "source_span_text": "This methodology is not applicable under the following conditions: 3) Project activities involve mechanical removal offsite or burning of significant stocks of pre-existing dead wood. 4) Project activities take place in tidal wetlands (e.g., mangroves, salt marshes). 5) Project activities that occur on organic soils or in wetlands and result in a manipulation of the water table.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-4-0001",
     "summary": "ARR applicability land eligibility",
     "type": "eligibility",
@@ -343,7 +345,7 @@
   {
     "id": "Verra.AFOLU.VM0047.v1-0.R-6-0001",
     "logic": "Two methods: 1) Performance Method via dynamic benchmark, 2) Project Method via VT0001 additionality + baseline scenario analysis.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0047@v1-0",
       "primary_section": "S-6",
@@ -354,8 +356,7 @@
         "S-6"
       ],
       "tools": [
-        "Verra/VM0047@v1-0",
-        "Verra/VT0001@v1-8"
+        "Verra/VM0047@v1-0"
       ]
     },
     "requirement_coverage": {
@@ -369,23 +370,25 @@
           "required": true
         }
       ],
-      "expected_evidence_status": "seed_unverified",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-6"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
       "conditions": [
-        "Two methods: 1) Performance Method via dynamic benchmark, 2) Project Method via VT0001 additionality + baseline scenario analysis."
+        "Area-based approach uses performance benchmark from Appendix 1",
+        "Census-based approach: pre-existing woody biomass <10% or continuous cropping area",
+        "Census-based crediting baseline may be set to zero if criteria are met"
       ],
       "exceptions": [
-        "Not specified in VF5 draft seed"
+        "Area-based approach may not apply where control plots cannot be established as representative"
       ],
-      "status": "seed_unverified",
+      "status": "source_audited",
       "summary": "Baseline scenario determination"
     },
     "section_context": {
@@ -393,15 +396,15 @@
       "lineage": [
         "baseline-scenario"
       ],
-      "locator_status": "draft_derived_rule_context_pending_source_audit",
+      "locator_status": "source_audited",
       "page_end": 12,
       "page_start": 12,
       "section_id": "S-6",
       "section_ref": "Verra.AFOLU.VM0047.v1-0.S-6",
       "section_title": "Baseline Scenario"
     },
-    "source_span_status": "seed_extracted_pending_source_audit",
-    "source_span_text": "The baseline scenario shall be determined using either the Performance Method or the Project Method.",
+    "source_span_status": "source_audited",
+    "source_span_text": "Area-based approach: A performance benchmark is used to set the crediting baseline, defined as the business-as-usual increase in vegetative cover relative to the project, based on data from representative control plots. Census-based approach: The project activity must occur within an area with pre-existing woody biomass cover of less than ten percent and/or in an area subject to continuous cropping. If these criteria are met, the crediting baseline may be set to zero.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-6-0001",
     "summary": "Baseline scenario determination",
     "type": "calc",
@@ -410,7 +413,7 @@
   {
     "id": "Verra.AFOLU.VM0047.v1-0.R-7-0001",
     "logic": "Project Method requires VT0001 demonstration. Performance Method uses automatic additionality via benchmark exceedance.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0047@v1-0",
       "primary_section": "S-7",
@@ -421,8 +424,7 @@
         "S-7"
       ],
       "tools": [
-        "Verra/VM0047@v1-0",
-        "Verra/VT0001@v1-8"
+        "Verra/VM0047@v1-0"
       ]
     },
     "requirement_coverage": {
@@ -436,23 +438,26 @@
           "required": true
         }
       ],
-      "expected_evidence_status": "seed_unverified",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-7"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
       "conditions": [
-        "Project Method requires VT0001 demonstration. Performance Method uses automatic additionality via benchmark exceedance."
+        "Area-based: regulatory surplus + performance benchmark (Z test, Appendix 1)",
+        "Area-based: investment barrier only when non-carbon revenues exist",
+        "Census-based: regulatory surplus + investment barrier + common practice (<15% adoption rate)",
+        "Additionality must be reassessed at each verification for area-based approach"
       ],
       "exceptions": [
-        "Not specified in VF5 draft seed"
+        "Performance method demonstrates additionality automatically via benchmark exceedance without VT0001"
       ],
-      "status": "seed_unverified",
+      "status": "source_audited",
       "summary": "VT0001 additionality requirement"
     },
     "section_context": {
@@ -460,15 +465,15 @@
       "lineage": [
         "additionality"
       ],
-      "locator_status": "draft_derived_rule_context_pending_source_audit",
+      "locator_status": "source_audited",
       "page_end": 14,
       "page_start": 13,
       "section_id": "S-7",
       "section_ref": "Verra.AFOLU.VM0047.v1-0.S-7",
       "section_title": "Additionality"
     },
-    "source_span_status": "seed_extracted_pending_source_audit",
-    "source_span_text": "The Project Method requires application of VT0001 Tool for the Demonstration and Assessment of Additionality.",
+    "source_span_status": "source_audited",
+    "source_span_text": "The projects must apply a performance method (area-based approach) or a project method (census-based approach) for the demonstration of additionality. Area-based approach: Step 1 Regulatory surplus, Step 2 Performance benchmark, Step 3 Investment barrier (only when revenues/incentives exist). Census-based approach: Step 1 Regulatory surplus, Step 3 Investment barrier, Step 4 Common practice.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-7-0001",
     "summary": "VT0001 additionality requirement",
     "type": "eligibility",

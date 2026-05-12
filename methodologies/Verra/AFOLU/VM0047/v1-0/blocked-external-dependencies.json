@@ -1,38 +1,7 @@
 {
-  "blocked_rule_count": 3,
-  "blocked_rules": [
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "CDM/AR-ACM0003@v02-0"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-4-0001",
-      "stable_id": "Verra.AFOLU.VM0047.v1-0.R-4-0001",
-      "title": "ARR applicability land eligibility"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VT0001@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-6-0001",
-      "stable_id": "Verra.AFOLU.VM0047.v1-0.R-6-0001",
-      "title": "Baseline scenario determination"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VT0001@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-7-0001",
-      "stable_id": "Verra.AFOLU.VM0047.v1-0.R-7-0001",
-      "title": "VT0001 additionality requirement"
-    }
-  ],
+  "blocked_rule_count": 0,
+  "blocked_rules": [],
   "methodology": "Verra/VM0047@v1-0",
-  "note": "Rules listed here remain draft_unverified because they depend on external Verra/CDM modules/tools that are not encoded as local artifacts.",
+  "note": "All VM0047 rules are now source-audited. No active blocked external dependencies. CDM/T-SIG@v1 was never an active blocker (Appendix 2). CDM/AR-ACM0003@v02-0 exclusion criteria are self-contained in VM0047 Section 4. Verra/VT0001@v1-8 additionality steps are self-contained in VM0047 Section 7 and Appendix 1.",
   "status": "external_unencoded"
 }
