@@ -13,8 +13,8 @@
   "audit_hashes": {
     "blocked_external_dependencies_sha256": "8a7b0c18141d9e6c01972b0eb793e1e699d7b33db386c60a7f4341b2fe7c8706",
     "rules.rich_sha256": "adb49b70ace9768a16bfee6ff77a4cb6bb936fe8b5bba5c5f6c9a5864e2272fd",
-    "rules_json_sha256": "cb5518fb31bd7b1d4c772e06b84fa23cc2c160664d254dee8805a2aff6283072",
-    "rules_rich_json_sha256": "b458d4e59b639a86ac709735cb1a8836206dce49dbd5c240720b5e1eb7711088",
+    "rules_json_sha256": "0a53ee5da2d6ec9876cbee926cb5a451495f8a5dddebce473c19f526710a65d5",
+    "rules_rich_json_sha256": "adb49b70ace9768a16bfee6ff77a4cb6bb936fe8b5bba5c5f6c9a5864e2272fd",
     "rules_sha256": "0a53ee5da2d6ec9876cbee926cb5a451495f8a5dddebce473c19f526710a65d5",
     "sections_json_sha256": "852125cacbe9d09f0560886fb27621548939033a382d2b1718f50b7694f41201",
     "sections_rich_json_sha256": "4506bb488417a940fc4e84228bff7abcc7e7921fcb9a824fa140bf6e2687b5e3",
