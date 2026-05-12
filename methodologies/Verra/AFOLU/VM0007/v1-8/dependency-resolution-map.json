@@ -20,8 +20,7 @@
         "R-3-0001",
         "R-3-0002",
         "R-3-0003",
-        "R-3-0004",
-        "R-4-0001"
+        "R-3-0004"
       ],
       "classification": "active_required",
       "evidence_note": "Cross-cutting additionality tool used by multiple VCS methodologies. Not VM0007-specific.",
@@ -77,16 +76,15 @@
       "next_action": "encode_as_local_artifact"
     },
     {
-      "blocked_rule_count": 3,
+      "blocked_rule_count": 2,
       "blocked_rule_ids": [
-        "R-1-0008",
         "R-2-0007",
         "R-2-0010"
       ],
       "classification": "candidate_self_contained",
-      "evidence_note": "VM0007 Appendix 1 (p51-52) provides alternative stepwise significance test. Same pattern as VM0047 R-5-0002 via Appendix 2.",
+      "evidence_note": "Appendix 1 provides self-contained significance test. R-1-0008 promoted to source_audited (Appendix 1 replaces T-SIG). R-2-0007 and R-2-0010 remain draft_unverified pending source span and page range definition.",
       "id": "Verra/T-SIG@v1-8",
-      "next_action": "resolve_via_appendix"
+      "next_action": "partially_completed"
     },
     {
       "blocked_rule_count": 2,
@@ -193,9 +191,9 @@
         "R-1-0014"
       ],
       "classification": "repo_resolved",
-      "evidence_note": "VM0047 is already encoded at methodologies/Verra/AFOLU/VM0047/v1-0 (Grade A). Only META dependency status needs update from external_unencoded to historical_non_blocking.",
+      "evidence_note": "VM0047 is already encoded at methodologies/Verra/AFOLU/VM0047/v1-0 (Grade A). R-1-0014 promoted to source_audited. META dependency status updated to historical_non_blocking.",
       "id": "Verra/VM0047@v1-8",
-      "next_action": "update_meta_status"
+      "next_action": "completed"
     },
     {
       "blocked_rule_count": 1,
@@ -238,18 +236,18 @@
       "next_action": "encode_as_local_artifact"
     }
   ],
-  "draft_unverified_rule_count": 33,
+  "draft_unverified_rule_count": 31,
   "methodology": "Verra/VM0007@v1-8",
   "recommended_encoding_order": [
-    "1. Mark VM0047 as repo_resolved (META edit only, 1 rule unblocked)",
-    "2. Resolve T-SIG via Appendix 1 (rich edit, 3 rules unblocked)",
+    "1. VM0047 dep resolved (META edit, R-1-0014 promoted) — DONE",
+    "2. T-SIG Appendix 1 resolved for R-1-0008 — DONE (R-2-0007, R-2-0010 still pending)",
     "3. Encode VMD0007 (5 rules)",
     "4. Encode VMD0006 (3 rules)",
     "5. Encode VMD0050 + VMD0051 (tidal wetland pair)",
     "6. Encode VMD0042 (peatland baseline)",
     "7. Remainder in dependency-order"
   ],
-  "source_audited_rule_count": 25,
+  "source_audited_rule_count": 27,
   "status": "has_active_blockers",
   "total_dependencies": 21
 }

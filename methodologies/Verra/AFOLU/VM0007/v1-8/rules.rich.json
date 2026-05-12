@@ -514,7 +514,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0008",
     "logic": "Spillover emissions from hydrological changes must be assessed and not be significant.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-1",
@@ -525,8 +525,7 @@
         "S-1"
       ],
       "tools": [
-        "Verra/VM0007@v1-8",
-        "Verra/T-SIG@v1-8"
+        "Verra/VM0007@v1-8"
       ]
     },
     "requirement_coverage": {
@@ -546,14 +545,14 @@
           "required": true
         }
       ],
-      "expected_evidence_status": "seed_unverified",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-1"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
       "conditions": [
@@ -562,7 +561,7 @@
       "exceptions": [
         "Significant GHG emissions increase outside project area due to hydrological changes"
       ],
-      "status": "seed_unverified",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -570,15 +569,15 @@
       "lineage": [
         "applicability-conditions"
       ],
-      "locator_status": "draft_derived_rule_context_pending_source_audit",
-      "page_end": 15,
+      "locator_status": "source_audited",
+      "page_end": 17,
       "page_start": 15,
       "section_id": "S-1",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-1",
       "section_title": "Applicability Conditions"
     },
-    "source_span_status": "seed_extracted_pending_source_audit",
-    "source_span_text": "Hydrological connectivity of the project area with adjacent areas leads to a significant increase in GHG emissions outside the project area.",
+    "source_span_status": "source_audited",
+    "source_span_text": "When a project does not meet the applicability conditions of T-SIG, the stepwise procedure in Appendix 1 must be used to test the significance of GHG emissions. It is an adaptation of the CDM Tool for testing the significance of GHG emissions in A/R CDM project activities. The procedure may be used to justify the omission of pools and GHG sources within the project boundaries.",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0008",
     "summary": "WRC hydrological connectivity check",
     "type": "eligibility",
@@ -957,7 +956,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0014",
     "logic": "IFM and ARR explicitly excluded. ARR in wetlands requires VM0047 + WRC modules.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-1",
@@ -968,8 +967,7 @@
         "S-1"
       ],
       "tools": [
-        "Verra/VM0007@v1-8",
-        "Verra/VM0047@v1-8"
+        "Verra/VM0007@v1-8"
       ]
     },
     "requirement_coverage": {
@@ -989,14 +987,14 @@
           "required": true
         }
       ],
-      "expected_evidence_status": "seed_unverified",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-1"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
       "conditions": [
@@ -1005,7 +1003,7 @@
       "exceptions": [
         "IFM or ARR activities claimed under VM0007"
       ],
-      "status": "seed_unverified",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -1013,15 +1011,15 @@
       "lineage": [
         "applicability-conditions"
       ],
-      "locator_status": "draft_derived_rule_context_pending_source_audit",
+      "locator_status": "source_audited",
       "page_end": 18,
       "page_start": 18,
       "section_id": "S-1",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-1",
       "section_title": "Applicability Conditions"
     },
-    "source_span_status": "seed_extracted_pending_source_audit",
-    "source_span_text": "This methodology does not apply to ARR project activities. Where WRC projects using this methodology also implement ARR activities, projects must use an appropriate ARR methodology (e.g., VM0047).",
+    "source_span_status": "source_audited",
+    "source_span_text": "This methodology does not apply to ARR project activities. Where WRC projects using this methodology also implement ARR activities, projects must use an appropriate ARR methodology (e.g., VM0047) to account for aboveground biomass. VM0047 is encoded in this repo at Grade A.",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0014",
     "summary": "IFM and ARR exclusion",
     "type": "eligibility",
