@@ -1,0 +1,255 @@
+{
+  "dependencies": [
+    {
+      "blocked_rule_count": 5,
+      "blocked_rule_ids": [
+        "R-1-0003",
+        "R-1-0013",
+        "R-2-0004",
+        "R-3-0005",
+        "R-6-0005"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Unplanned deforestation baseline module. VM0007 Section 5.1.2 and Section 6 call VMD0007 equations.",
+      "id": "Verra/VMD0007@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 5,
+      "blocked_rule_ids": [
+        "R-3-0001",
+        "R-3-0002",
+        "R-3-0003",
+        "R-3-0004",
+        "R-4-0001"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Cross-cutting additionality tool used by multiple VCS methodologies. Not VM0007-specific.",
+      "id": "Verra/VT0001@v1-8",
+      "next_action": "defer_to_repo_wide_encoding"
+    },
+    {
+      "blocked_rule_count": 3,
+      "blocked_rule_ids": [
+        "R-1-0004",
+        "R-2-0005",
+        "R-3-0005"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Planned deforestation baseline module. VM0007 Section 6.1 references BL-PL.",
+      "id": "Verra/VMD0006@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 3,
+      "blocked_rule_ids": [
+        "R-2-0006",
+        "R-2-0015",
+        "R-2-0016"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Stratification of project area module. VM0007 Section 5.3 calls X-STR.",
+      "id": "Verra/VMD0016@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 3,
+      "blocked_rule_ids": [
+        "R-1-0010",
+        "R-2-0009",
+        "R-3-0006"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Peatland baseline module. VM0007 Section 6 calls BL-PEAT for wetland activities.",
+      "id": "Verra/VMD0042@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 3,
+      "blocked_rule_ids": [
+        "R-1-0011",
+        "R-2-0009",
+        "R-3-0006"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Tidal wetland baseline module. VM0007 Section 6 calls BL-TW.",
+      "id": "Verra/VMD0050@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 3,
+      "blocked_rule_ids": [
+        "R-1-0008",
+        "R-2-0007",
+        "R-2-0010"
+      ],
+      "classification": "candidate_self_contained",
+      "evidence_note": "VM0007 Appendix 1 (p51-52) provides alternative stepwise significance test. Same pattern as VM0047 R-5-0002 via Appendix 2.",
+      "id": "Verra/T-SIG@v1-8",
+      "next_action": "resolve_via_appendix"
+    },
+    {
+      "blocked_rule_count": 2,
+      "blocked_rule_ids": [
+        "R-2-0008",
+        "R-5-0008"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Above/belowground biomass module. VM0007 Section 5.3 references CP-AB.",
+      "id": "Verra/VMD0001@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 2,
+      "blocked_rule_ids": [
+        "R-2-0008",
+        "R-5-0008"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Dead-wood pool module. VM0007 Section 5.3 references CP-D.",
+      "id": "Verra/VMD0002@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 2,
+      "blocked_rule_ids": [
+        "R-2-0008",
+        "R-5-0008"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Wood products pool module. VM0007 Section 5.3 references CP-W.",
+      "id": "Verra/VMD0005@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 2,
+      "blocked_rule_ids": [
+        "R-5-0003",
+        "R-5-0004"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Activity shifting leakage (planned) module. VM0007 Section 8.3 references LK-ASP.",
+      "id": "Verra/VMD0009@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 2,
+      "blocked_rule_ids": [
+        "R-5-0003",
+        "R-5-0004"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Activity shifting leakage (unplanned) module. VM0007 Section 8.3 references LK-ASU.",
+      "id": "Verra/VMD0010@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 2,
+      "blocked_rule_ids": [
+        "R-5-0009",
+        "R-6-0005"
+      ],
+      "classification": "active_required",
+      "evidence_note": "REDD monitoring methods module. VM0007 Section 9 references M-REDD.",
+      "id": "Verra/VMD0015@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 2,
+      "blocked_rule_ids": [
+        "R-5-0009",
+        "R-6-0006"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Peatland monitoring module. VM0007 Section 9 references M-PEAT.",
+      "id": "Verra/VMD0046@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 2,
+      "blocked_rule_ids": [
+        "R-5-0009",
+        "R-6-0006"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Tidal wetland monitoring module. VM0007 Section 9 references M-TW.",
+      "id": "Verra/VMD0051@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 2,
+      "blocked_rule_ids": [
+        "R-1-0009",
+        "R-4-0002"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Tidal wetland additionality module. VM0007 Section 7 references ADD-AM.",
+      "id": "Verra/VMD0052@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 1,
+      "blocked_rule_ids": [
+        "R-1-0014"
+      ],
+      "classification": "repo_resolved",
+      "evidence_note": "VM0047 is already encoded at methodologies/Verra/AFOLU/VM0047/v1-0 (Grade A). Only META dependency status needs update from external_unencoded to historical_non_blocking.",
+      "id": "Verra/VM0047@v1-8",
+      "next_action": "update_meta_status"
+    },
+    {
+      "blocked_rule_count": 1,
+      "blocked_rule_ids": [
+        "R-5-0008"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Litter pool module. VM0007 Section 5.3 references CP-L.",
+      "id": "Verra/VMD0003@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 1,
+      "blocked_rule_ids": [
+        "R-5-0008"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Soil organic carbon module. VM0007 Section 5.3 references CP-S.",
+      "id": "Verra/VMD0004@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 1,
+      "blocked_rule_ids": [
+        "R-5-0006"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Uncertainty estimation module. VM0007 Section 8.4.5 references X-UNC.",
+      "id": "Verra/VMD0017@v1-8",
+      "next_action": "encode_as_local_artifact"
+    },
+    {
+      "blocked_rule_count": 1,
+      "blocked_rule_ids": [
+        "R-5-0005"
+      ],
+      "classification": "active_required",
+      "evidence_note": "Non-permanence risk tool. VM0007 Section 8.4.4 uses T-BAR for buffer%.",
+      "id": "Verra/T-BAR@v1-8",
+      "next_action": "encode_as_local_artifact"
+    }
+  ],
+  "draft_unverified_rule_count": 33,
+  "methodology": "Verra/VM0007@v1-8",
+  "recommended_encoding_order": [
+    "1. Mark VM0047 as repo_resolved (META edit only, 1 rule unblocked)",
+    "2. Resolve T-SIG via Appendix 1 (rich edit, 3 rules unblocked)",
+    "3. Encode VMD0007 (5 rules)",
+    "4. Encode VMD0006 (3 rules)",
+    "5. Encode VMD0050 + VMD0051 (tidal wetland pair)",
+    "6. Encode VMD0042 (peatland baseline)",
+    "7. Remainder in dependency-order"
+  ],
+  "source_audited_rule_count": 25,
+  "status": "has_active_blockers",
+  "total_dependencies": 21
+}
