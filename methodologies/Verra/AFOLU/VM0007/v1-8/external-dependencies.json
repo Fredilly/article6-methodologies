@@ -1,0 +1,353 @@
+{
+  "blocked_rule_count": 33,
+  "blocked_rules": [
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0007@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-1-0003",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0003",
+      "title": "AUDef agent criteria"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0006@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-1-0004",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0004",
+      "title": "APDef legal authorization"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/T-SIG@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-1-0008",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0008",
+      "title": "WRC hydrological connectivity check"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0052@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-1-0009",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0009",
+      "title": "RWE prior land use requirement"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0042@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-1-0010",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0010",
+      "title": "Peatland VCS definition"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0050@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-1-0011",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0011",
+      "title": "Tidal wetland restoration activities"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0007@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-1-0013",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0013",
+      "title": "AUWD agent criteria"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VM0047@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-1-0014",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0014",
+      "title": "IFM and ARR exclusion"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0007@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-2-0004",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0004",
+      "title": "REDD reference region definition"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0006@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-2-0005",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0005",
+      "title": "REDD proxy area definition"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0016@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-2-0006",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0006",
+      "title": "Stratification requirement"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/T-SIG@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-2-0007",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0007",
+      "title": "Carbon pool selection per activity type"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0001@v1-8",
+        "Verra/VMD0002@v1-8",
+        "Verra/VMD0005@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-2-0008",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0008",
+      "title": "REDD mandatory carbon pools"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0042@v1-8",
+        "Verra/VMD0050@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-2-0009",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0009",
+      "title": "WRC carbon pools"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/T-SIG@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-2-0010",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0010",
+      "title": "REDD GHG source identification"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0016@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-2-0015",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0015",
+      "title": "WRC 100-year SOC difference requirement"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0016@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-2-0016",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0016",
+      "title": "Tidal wetland sea-level rise boundary"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VT0001@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-3-0001",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0001",
+      "title": "Baseline scenario determination via VT0001"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VT0001@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-3-0002",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0002",
+      "title": "Minimum alternative scenario list"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VT0001@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-3-0003",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0003",
+      "title": "Barrier analysis baseline selection"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VT0001@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-3-0004",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0004",
+      "title": "Investment analysis baseline selection"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0006@v1-8",
+        "Verra/VMD0007@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-3-0005",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0005",
+      "title": "REDD baseline modules"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0042@v1-8",
+        "Verra/VMD0050@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-3-0006",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0006",
+      "title": "WRC baseline modules"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VT0001@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-4-0001",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-4-0001",
+      "title": "VT0001 additionality requirement"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0052@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-4-0002",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-4-0002",
+      "title": "Tidal wetland additionality method"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0009@v1-8",
+        "Verra/VMD0010@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-5-0003",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0003",
+      "title": "REDD leakage components"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0009@v1-8",
+        "Verra/VMD0010@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-5-0004",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0004",
+      "title": "WRC leakage components"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/T-BAR@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-5-0005",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0005",
+      "title": "Buffer pool contribution calculation"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0017@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-5-0006",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0006",
+      "title": "Uncertainty adjustment"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0001@v1-8",
+        "Verra/VMD0002@v1-8",
+        "Verra/VMD0003@v1-8",
+        "Verra/VMD0004@v1-8",
+        "Verra/VMD0005@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-5-0008",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0008",
+      "title": "Carbon pool modules for REDD"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0015@v1-8",
+        "Verra/VMD0046@v1-8",
+        "Verra/VMD0051@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-5-0009",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0009",
+      "title": "Project emissions modules"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0007@v1-8",
+        "Verra/VMD0015@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-6-0005",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-6-0005",
+      "title": "REDD forest cover monitoring"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0046@v1-8",
+        "Verra/VMD0051@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-6-0006",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-6-0006",
+      "title": "WRC compliance monitoring"
+    }
+  ],
+  "methodology": "Verra/VM0007@v1-8",
+  "note": "Rules listed here remain draft_unverified because they depend on external Verra modules/tools that are not encoded as local artifacts.",
+  "status": "external_unencoded"
+}
