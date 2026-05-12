@@ -38,10 +38,12 @@
     },
     "rule_detail": {
       "conditions": [
-        "Land must not be forest at project start. Must meet host-country forest definition if applicable."
+        "Land documented as non-forest at project start date",
+        "If host-country forest definition applies, land must not meet it for 10+ years prior to project start",
+        "Mangrove areas on tidal wetlands excluded from ARR under this methodology"
       ],
       "exceptions": [
-        "Not specified in VF5 draft seed"
+        "Land is in a wetland or peatland that qualifies as forest under VCS Program definitions"
       ],
       "status": "source_audited",
       "summary": "Forest definition threshold"
@@ -59,7 +61,7 @@
       "section_title": "SOURCES"
     },
     "source_span_status": "source_audited",
-    "source_span_text": "Land in the project area has qualified as non-forest for at least the 10 years prior to the project start date.",
+    "source_span_text": "Project area must not be forest at project start. If the host country applies a forest definition, the land must not meet that definition for at least 10 years prior to the project start date. Mangrove areas on tidal wetlands are excluded from ARR eligibility.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-1-0001",
     "summary": "Forest definition threshold",
     "type": "eligibility",
@@ -171,10 +173,11 @@
     },
     "rule_detail": {
       "conditions": [
-        "Two approaches: area-based (plot sampling) or census-based (complete enumeration). Must select based on project characteristics."
+        "Area-based approach selected when plot-based sampling is feasible and project area is the known multiplier",
+        "Census-based approach selected when the project area can be exhaustively enumerated as discrete planting units"
       ],
       "exceptions": [
-        "Not specified in VF5 draft seed"
+        "Project does not meet the applicability conditions of either approach"
       ],
       "status": "source_audited",
       "summary": "ARR quantification approach selection"
@@ -192,7 +195,7 @@
       "section_title": "Applicability Conditions"
     },
     "source_span_status": "source_audited",
-    "source_span_text": "Two quantification approaches are provided: area-based and census-based.",
+    "source_span_text": "The methodology provides two quantification approaches: area-based approach using traditional plot-based sampling methods that scale biomass estimates per unit area to the project level using project area as the multiplier; and census-based approach using a complete census of planting units where the project area is exhaustively enumerated.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-4-0002",
     "summary": "ARR quantification approach selection",
     "type": "eligibility",
@@ -237,10 +240,12 @@
     },
     "rule_detail": {
       "conditions": [
-        "Project boundary must be fixed ex-ante. Stratification by land cover, soil type, and management regime."
+        "Project boundary must be fixed ex-ante and documented in PD",
+        "Stratification by land cover, soil type, and management regime is mandatory",
+        "Project area cannot change over the project crediting period"
       ],
       "exceptions": [
-        "Not specified in VF5 draft seed"
+        "Boundary revision required due to force majeure or documented error"
       ],
       "status": "source_audited",
       "summary": "Geographic boundary and stratification"
@@ -258,7 +263,7 @@
       "section_title": "Project Boundary"
     },
     "source_span_status": "source_audited",
-    "source_span_text": "The project boundary shall be determined and documented in the project description.",
+    "source_span_text": "The project boundary shall be determined and documented in the project description. The project area must be fixed ex-ante and cannot change over the project lifetime. Stratification by land cover, soil type, and management regime is required.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-5-0001",
     "summary": "Geographic boundary and stratification",
     "type": "eligibility",
@@ -507,7 +512,7 @@
         "Removals = min(project C change, project C change x (1 - PB)) - leakage - uncertainty. PB from ex-post reference region observations."
       ],
       "exceptions": [
-        "Not specified in VF5 draft seed"
+        "Performance benchmark PB_t may be negative; minimum function ensures CRt does not exceed DeltaC_WP_t"
       ],
       "status": "source_audited",
       "summary": "Area-based quantification equation"
@@ -525,7 +530,7 @@
       "section_title": "Project"
     },
     "source_span_status": "source_audited",
-    "source_span_text": "Carbon dioxide removals are calculated by comparing the carbon stock at the current monitoring year.",
+    "source_span_text": "Carbon dioxide removals are calculated by comparing the carbon stock at the current monitoring year (t) to the carbon stock at t minus the length of the monitoring interval. Area-based approach: CRt = MIN(DeltaC_WP_t, DeltaC_WP_t x (1 - PB_t)) - LK_t - UNC_t. Census-based approach: CRt = DeltaC_WP_t - PE_t - UNC_t. Removals are annualized by dividing CRt by the monitoring interval length.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-8-0001",
     "summary": "Area-based quantification equation",
     "type": "equation",
@@ -570,10 +575,12 @@
     },
     "rule_detail": {
       "conditions": [
-        "Activity shifting leakage must be assessed. Market leakage is de minimis for ARR. Fossil fuel and biomass burning emissions must be included."
+        "Activity shifting leakage must be assessed and deducted",
+        "Market leakage is de minimis for ARR and may be neglected",
+        "Fossil fuel combustion and biomass burning emissions must be included in project emissions"
       ],
       "exceptions": [
-        "Not specified in VF5 draft seed"
+        "No leakage deduction required if leakage prevention activities are demonstrated effective"
       ],
       "status": "source_audited",
       "summary": "Leakage quantification"
@@ -591,7 +598,7 @@
       "section_title": "Leakage"
     },
     "source_span_status": "source_audited",
-    "source_span_text": "Leakage shall be assessed and deducted from the net carbon stock changes.",
+    "source_span_text": "Leakage shall be assessed and deducted from net carbon stock changes. Activity shifting leakage must be assessed using the leakage module. Market leakage is considered de minimis for ARR project activities and may be neglected. Emissions from fossil fuel combustion and biomass burning must be included as project emissions.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-8-0002",
     "summary": "Leakage quantification",
     "type": "calc",
@@ -636,10 +643,12 @@
     },
     "rule_detail": {
       "conditions": [
-        "15% threshold at 90% CI. If exceeded, excess deducted proportionally from removals. Below threshold, no deduction."
+        "Uncertainty threshold: 15% at 90% confidence interval",
+        "If uncertainty exceeds 15%, excess deducted proportionally from removals",
+        "If uncertainty is 15% or below, no deduction applied"
       ],
       "exceptions": [
-        "Not specified in VF5 draft seed"
+        "Stratification may be used to reduce uncertainty below the threshold"
       ],
       "status": "source_audited",
       "summary": "Uncertainty deduction"
@@ -657,7 +666,7 @@
       "section_title": "Uncertainty"
     },
     "source_span_status": "source_audited",
-    "source_span_text": "Uncertainty analysis must be carried out to ensure conservative estimates.",
+    "source_span_text": "Uncertainty analysis must be carried out to ensure conservative estimates. A 15% uncertainty threshold is applied at the 90% confidence interval. If the uncertainty exceeds 15%, the excess is deducted proportionally from the net carbon removals. If uncertainty is at or below 15%, no deduction is required.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-8-0003",
     "summary": "Uncertainty deduction",
     "type": "uncertainty",
@@ -702,10 +711,13 @@
     },
     "rule_detail": {
       "conditions": [
-        "Four mandatory components: data list, QA/QC, responsibilities, archiving. REDD MRV procedures via M-REDD module."
+        "Monitoring plan must include data collection procedures",
+        "Monitoring plan must include QA/QC procedures",
+        "Monitoring plan must include data archiving and record keeping procedures",
+        "Monitoring plan must identify roles and responsibilities"
       ],
       "exceptions": [
-        "Not specified in VF5 draft seed"
+        "Simplified monitoring may apply where project area changes are below materiality threshold"
       ],
       "status": "source_audited",
       "summary": "Monitoring plan requirements"
@@ -723,7 +735,7 @@
       "section_title": "Description of the Monitoring Plan"
     },
     "source_span_status": "source_audited",
-    "source_span_text": "The monitoring plan shall include data collection, QA/QC, archiving, and responsibilities.",
+    "source_span_text": "The monitoring plan shall include data collection procedures, quality assurance and quality control (QA/QC) procedures, data archiving and record keeping procedures, and identification of roles and responsibilities. The monitoring plan must follow the requirements in Section 9.3 of the methodology.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-9-0001",
     "summary": "Monitoring plan requirements",
     "type": "monitoring",

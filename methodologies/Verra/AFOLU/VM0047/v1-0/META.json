@@ -2,7 +2,7 @@
   "active_date": "2023-09-28",
   "artifact_quality_standard": {
     "adoption_status": "draft_seed_normalized",
-    "note": "VF5 draft seed for VM0047 v1.0. Sections source-audited from TOC. Rules are draft_seed pending full source audit. Methodology depends on external Verra tools (VT0001, T-SIG) and CDM methodology AR-ACM0003.",
+    "note": "VF5 draft seed for VM0047 v1.0. VF5.1 hardened source spans for the 7 source-audited rules. Sections source-audited from TOC. Rules: 7 source-backed with verified source spans, 4 blocked by external deps (VT0001, T-SIG, AR-ACM0003).",
     "version": "review_contract_v1"
   },
   "artifact_status": {
@@ -12,9 +12,9 @@
   },
   "audit_hashes": {
     "blocked_external_dependencies_sha256": "f7b40deddd80326bf975187df490e8e7136d732dcc11d87b58d39f1995cbba72",
-    "rules.rich_sha256": "9741ad5110313d2fff6fc7e127bd7826187306b8858ec90c8ae1e996428ebcf5",
-    "rules_json_sha256": "29a210e7b68737cbb891cee64b8dfb0a1c77122630ca0790e9a808fdd6d174a7",
-    "rules_rich_json_sha256": "d1189c5dbfa905528d48da8f7fdf0d203a3d331df7cfc7b46e84415bdfae1b16",
+    "rules.rich_sha256": "5036f31d2aba653e2d2a71fa7414c103cedfd920ff16902c07d46fec550a296f",
+    "rules_json_sha256": "d2415a103695a8403bf021a0ab77cdccec76eaa0893d4b6cbde83ed5f932e6a2",
+    "rules_rich_json_sha256": "5036f31d2aba653e2d2a71fa7414c103cedfd920ff16902c07d46fec550a296f",
     "rules_sha256": "d2415a103695a8403bf021a0ab77cdccec76eaa0893d4b6cbde83ed5f932e6a2",
     "sections.rich_sha256": "4d98351663ec55a7ea8705f36160910e5349b1c0987f0a6e6ab01f1b4218a5aa",
     "sections_json_sha256": "8c07f0a3ce505eba9b3a46bb5fb48e028046e95d0514c3e6fcae6e6a701d22a1",
@@ -63,7 +63,7 @@
     },
     {
       "path": "rules.rich.json",
-      "sha256": "9741ad5110313d2fff6fc7e127bd7826187306b8858ec90c8ae1e996428ebcf5"
+      "sha256": "5036f31d2aba653e2d2a71fa7414c103cedfd920ff16902c07d46fec550a296f"
     }
   ],
   "method": "ARR Methodology Framework",
