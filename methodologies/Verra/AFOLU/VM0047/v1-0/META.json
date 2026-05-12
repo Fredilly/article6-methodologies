@@ -2,7 +2,7 @@
   "active_date": "2023-09-28",
   "artifact_quality_standard": {
     "adoption_status": "draft_seed_normalized",
-    "note": "VF5 draft seed for VM0047 v1.0. VF5.1 hardened source spans for the 7 source-audited rules. Sections source-audited from TOC. Rules: 7 source-backed with verified source spans, 4 blocked by external deps (VT0001, T-SIG, AR-ACM0003).",
+    "note": "VF5 draft seed for VM0047 v1.0. VF5.1 + VF5.2 completed. 8 source-backed rules (R-5-0002 promoted via Appendix 2 built-in significance test, replacing external CDM/T-SIG@v1). 3 rules remain blocked by unencoded external deps (VT0001, AR-ACM0003). CDM/T-SIG@v1 retained in external_dependencies for historical reference but no longer an active blocker for any rule.",
     "version": "review_contract_v1"
   },
   "artifact_status": {
@@ -13,8 +13,8 @@
   "audit_hashes": {
     "blocked_external_dependencies_sha256": "4e980b58a383b2e96b6f0ea92748e46ef767b7295ac4721697b17120cd4543ed",
     "rules.rich_sha256": "f1ac9f2f7bbb2a60a3e094856b0c642bfbca402dc2749e11f1f0af3e2a4f2269",
-    "rules_json_sha256": "d2415a103695a8403bf021a0ab77cdccec76eaa0893d4b6cbde83ed5f932e6a2",
-    "rules_rich_json_sha256": "5036f31d2aba653e2d2a71fa7414c103cedfd920ff16902c07d46fec550a296f",
+    "rules_json_sha256": "ede2b6b9cbc8fc02609dc8557578f5d5ee4afd09fe3bb20c7f3d94e3cd41f159",
+    "rules_rich_json_sha256": "f1ac9f2f7bbb2a60a3e094856b0c642bfbca402dc2749e11f1f0af3e2a4f2269",
     "rules_sha256": "ede2b6b9cbc8fc02609dc8557578f5d5ee4afd09fe3bb20c7f3d94e3cd41f159",
     "sections.rich_sha256": "4d98351663ec55a7ea8705f36160910e5349b1c0987f0a6e6ab01f1b4218a5aa",
     "sections_json_sha256": "8c07f0a3ce505eba9b3a46bb5fb48e028046e95d0514c3e6fcae6e6a701d22a1",
@@ -45,7 +45,7 @@
         "status": "external_unencoded"
       }
     ],
-    "note": "VM0047 references VT0001, CDM T-SIG, and is based on AR-ACM0003. None are encoded as local artifacts.",
+    "note": "VM0047 references VT0001 and is based on AR-ACM0003. CDM T-SIG retained for historical reference but no longer an active blocker (R-5-0002 uses Appendix 2 built-in significance test). None are encoded as local artifacts.",
     "status": "external_unencoded"
   },
   "files": [
