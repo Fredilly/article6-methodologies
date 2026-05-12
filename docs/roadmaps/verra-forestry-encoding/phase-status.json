@@ -1,11 +1,15 @@
 {
   "goal": "Encode Verra forestry methodology support so methodology-linked reviews can be consumed by app.article6 after encoding, starting with VM0007 and leaving room for later Verra forestry methods.",
-  "last_updated_at": "2026-05-12T20:00:00Z",
+  "last_updated_at": "2026-05-12T22:00:00Z",
   "notes": [
     "VF1-VF4: VM0007 complete through section audit, rule audit, and dependency inventory.",
-    "VF5 added VM0047 v1.0 (ARR): 27 sections source-audited from TOC, 11 rules (7 source-backed, 4 blocked by external deps VT0001/T-SIG/AR-ACM0003).",
-    "VM0007 remains not ready for methodology-linked review while 33 rules stay draft_unverified and external Verra dependencies remain unencoded.",
-    "VM0047 is a VF5 draft seed; not review-ready."
+    "VF5 added VM0047 v1.0 (ARR): 27 sections, 8 source-backed rules, 3 blocked.",
+    "VF5.1: hardened source spans for VM0047 source-audited rules.",
+    "VF5.2: promoted R-5-0002 via Appendix 2; VM0047 blockers reduced to 3.",
+    "VF6: Method Grade A standard defined. Only Grade A methods are first-class app-ready.",
+    "VM0007 (25/58 rules source_audited, 33 blocked): not Grade A.",
+    "VM0047 (8/11 rules source_audited, 3 blocked): not Grade A.",
+    "Both must reach Grade A before methodology-linked review is enabled."
   ],
   "phases": [
     {
@@ -34,8 +38,18 @@
       "status": "completed"
     },
     {
-      "id": "vf6-app-downstream-consumption",
-      "name": "Downstream app.article6 consumption",
+      "id": "vf6-method-grade-standard",
+      "name": "Method Grade A standard and reports",
+      "status": "completed"
+    },
+    {
+      "id": "vf7-grade-a-upgrade",
+      "name": "Upgrade VM0047 and VM0007 to Grade A",
+      "status": "next"
+    },
+    {
+      "id": "vf8-app-downstream-consumption",
+      "name": "Downstream app.article6 consumption (Grade A methods only)",
       "status": "not_started"
     }
   ]
