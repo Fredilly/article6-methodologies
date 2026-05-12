@@ -13,8 +13,8 @@
   "audit_hashes": {
     "blocked_external_dependencies_sha256": "f7b40deddd80326bf975187df490e8e7136d732dcc11d87b58d39f1995cbba72",
     "rules.rich_sha256": "b6f17363150700d28a162ac2a8b416b4feb736a370cfac86fbc9aceb5a11eb69",
-    "rules_json_sha256": "29a210e7b68737cbb891cee64b8dfb0a1c77122630ca0790e9a808fdd6d174a7",
-    "rules_rich_json_sha256": "b6f17363150700d28a162ac2a8b416b4feb736a370cfac86fbc9aceb5a11eb69",
+    "rules_json_sha256": "d2415a103695a8403bf021a0ab77cdccec76eaa0893d4b6cbde83ed5f932e6a2",
+    "rules_rich_json_sha256": "5036f31d2aba653e2d2a71fa7414c103cedfd920ff16902c07d46fec550a296f",
     "rules_sha256": "d2415a103695a8403bf021a0ab77cdccec76eaa0893d4b6cbde83ed5f932e6a2",
     "sections.rich_sha256": "4d98351663ec55a7ea8705f36160910e5349b1c0987f0a6e6ab01f1b4218a5aa",
     "sections_json_sha256": "8c07f0a3ce505eba9b3a46bb5fb48e028046e95d0514c3e6fcae6e6a701d22a1",
@@ -63,7 +63,7 @@
     },
     {
       "path": "rules.rich.json",
-      "sha256": "b6f17363150700d28a162ac2a8b416b4feb736a370cfac86fbc9aceb5a11eb69"
+      "sha256": "5036f31d2aba653e2d2a71fa7414c103cedfd920ff16902c07d46fec550a296f"
     }
   ],
   "method": "ARR Methodology Framework",

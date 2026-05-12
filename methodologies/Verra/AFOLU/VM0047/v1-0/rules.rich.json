@@ -530,7 +530,7 @@
       "section_title": "Project"
     },
     "source_span_status": "source_audited",
-    "source_span_text": "Carbon dioxide removals are calculated by comparing the carbon stock at the current monitoring year.",
+    "source_span_text": "Carbon dioxide removals are calculated by comparing the carbon stock at the current monitoring year (t) to the carbon stock at t minus the length of the monitoring interval. Area-based approach: CRt = MIN(DeltaC_WP_t, DeltaC_WP_t x (1 - PB_t)) - LK_t - UNC_t. Census-based approach: CRt = DeltaC_WP_t - PE_t - UNC_t. Removals are annualized by dividing CRt by the monitoring interval length.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-8-0001",
     "summary": "Area-based quantification equation",
     "type": "equation",
