@@ -12,7 +12,7 @@
   },
   "audit_hashes": {
     "blocked_external_dependencies_sha256": "4e980b58a383b2e96b6f0ea92748e46ef767b7295ac4721697b17120cd4543ed",
-    "rules.rich_sha256": "5073b78f673d98cd776ab3530a0eb904a9b93be1fa2b001337ee34531d0a2107",
+    "rules.rich_sha256": "f1ac9f2f7bbb2a60a3e094856b0c642bfbca402dc2749e11f1f0af3e2a4f2269",
     "rules_json_sha256": "d2415a103695a8403bf021a0ab77cdccec76eaa0893d4b6cbde83ed5f932e6a2",
     "rules_rich_json_sha256": "5036f31d2aba653e2d2a71fa7414c103cedfd920ff16902c07d46fec550a296f",
     "rules_sha256": "ede2b6b9cbc8fc02609dc8557578f5d5ee4afd09fe3bb20c7f3d94e3cd41f159",
@@ -63,7 +63,7 @@
     },
     {
       "path": "rules.rich.json",
-      "sha256": "5073b78f673d98cd776ab3530a0eb904a9b93be1fa2b001337ee34531d0a2107"
+      "sha256": "f1ac9f2f7bbb2a60a3e094856b0c642bfbca402dc2749e11f1f0af3e2a4f2269"
     }
   ],
   "method": "ARR Methodology Framework",

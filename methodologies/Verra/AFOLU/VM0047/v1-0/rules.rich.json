@@ -271,7 +271,7 @@
   },
   {
     "id": "Verra.AFOLU.VM0047.v1-0.R-5-0002",
-    "logic": "AGB and BGB mandatory. Litter, dead wood, SOC optional per significance test. If included in baseline must also be in project scenario.",
+    "logic": "AGB and BGB mandatory. Litter, dead wood, SOC optional per Appendix 2 significance test (built-in, replaces external T-SIG). If included in baseline must also be in project scenario.",
     "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0047@v1-0",
@@ -334,8 +334,11 @@
     "source_span_text": "Individual carbon pools and emissions sources may be neglected if the relative contribution of decreases in a carbon pool or increases in an emissions source is less than 5 percent of the sum total of all decreases in carbon pools and increases in emissions, or less than 5 percent of carbon dioxide removals, whichever is smaller. The procedure in Appendix 2 (Equation A7) provides the stepwise significance test replacing the external T-SIG tool.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-5-0002",
     "summary": "Carbon pool selection",
-    "type": "eligibility",
-    "when": []
+    "type": "calc",
+    "when": [],
+    "tags": [
+      "calc"
+    ]
   },
   {
     "id": "Verra.AFOLU.VM0047.v1-0.R-6-0001",
