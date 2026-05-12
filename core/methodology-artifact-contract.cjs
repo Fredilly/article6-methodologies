@@ -152,7 +152,7 @@ function canonicalizeLeanRuleFromLegacyRich(rule, sectionLookup, info) {
     section_anchor: rule.refs?.section_anchor ?? section.anchor,
     tools,
     tags,
-    quality_status: useQualityStandard ? 'draft_unverified' : undefined,
+    quality_status: useQualityStandard ? (rule.quality_status || 'draft_unverified') : undefined,
     when: normalizedWhen
   };
   return orderKeys(canonical, useQualityStandard ? QUALITY_LEAN_RULE_KEY_ORDER : RULE_KEY_ORDER);

@@ -24,6 +24,9 @@ function main() {
   assert.ok(Array.isArray(meta.methodology_linked_review_blockers) && meta.methodology_linked_review_blockers.length >= 2, 'VM0007 must explain why review readiness is blocked');
   assert.equal(meta.draft_seed_artifacts?.retained, true, 'VM0007 draft seed artifacts must be explicitly retained');
 
+  const richRules = readJSON(path.join(METHOD_DIR, 'rules.rich.json'));
+  const richByStableId = new Map(richRules.map((rule) => [rule.stable_id, rule]));
+
   const ruleTools = new Set();
   for (const rule of rules) {
     for (const tool of Array.isArray(rule.tools) ? rule.tools : []) {
@@ -40,6 +43,43 @@ function main() {
     assert.ok(entry, `VM0007 external dependency ${toolId} must be declared in META.json`);
     assert.equal(entry.status, 'external_unencoded', `VM0007 external dependency ${toolId} must stay external_unencoded`);
     assert.equal(entry.local_artifact_present, false, `VM0007 external dependency ${toolId} must not claim a local artifact`);
+  }
+
+  const sourceAuditedRules = rules.filter((rule) => rule.quality_status === 'source_audited');
+  const draftRules = rules.filter((rule) => rule.quality_status === 'draft_unverified');
+
+  assert.equal(sourceAuditedRules.length, 25, 'VM0007 must expose exactly 25 source-audited rules after VF3');
+  assert.equal(draftRules.length, 33, 'VM0007 must keep exactly 33 external-dependent rules draft_unverified after VF3');
+
+  for (const leanRule of sourceAuditedRules) {
+    const richRule = richByStableId.get(leanRule.stable_id);
+
+    assert.ok(richRule, `${leanRule.stable_id} must exist in rules.rich.json`);
+    assert.equal(richRule.quality_status, 'source_audited', `${leanRule.stable_id} rich rule must be source_audited`);
+    assert.equal(richRule.source_span_status, 'source_audited', `${leanRule.stable_id} must have audited source span status`);
+    assert.equal(
+      richRule.section_context?.locator_status,
+      'source_audited',
+      `${leanRule.stable_id} must have audited locator status`
+    );
+    assert.equal(typeof richRule.section_context?.page_start, 'number', `${leanRule.stable_id} must have page_start`);
+    assert.equal(typeof richRule.section_context?.page_end, 'number', `${leanRule.stable_id} must have page_end`);
+  }
+
+  for (const leanRule of draftRules) {
+    const externalTools = (leanRule.tools || []).filter((tool) => tool !== 'Verra/VM0007@v1-8');
+
+    assert.ok(
+      externalTools.length > 0,
+      `${leanRule.stable_id} is draft_unverified and should be blocked by at least one external dependency`
+    );
+
+    for (const tool of externalTools) {
+      const entry = externalRefs.get(tool);
+      assert.ok(entry, `${leanRule.stable_id} external dependency ${tool} must be declared in META.json`);
+      assert.equal(entry.status, 'external_unencoded', `${tool} must remain external_unencoded`);
+      assert.equal(entry.local_artifact_present, false, `${tool} must not claim local artifact presence`);
+    }
   }
 
   console.log('ok verra vm0007 draft truthfulness');
