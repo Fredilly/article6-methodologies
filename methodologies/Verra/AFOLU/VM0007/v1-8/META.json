@@ -16,8 +16,8 @@
     "sections_json_sha256": "852125cacbe9d09f0560886fb27621548939033a382d2b1718f50b7694f41201",
     "sections_rich_json_sha256": "4506bb488417a940fc4e84228bff7abcc7e7921fcb9a824fa140bf6e2687b5e3",
     "source_pdf_sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
-    "rules_sha256": "f42784248aad8e9a422b8eb616a1a54e3bd63f51cf4b778be0ee85dae6f65202",
-    "rules.rich_sha256": "abc22f2401a71d738041b31f6a09d356c7019b871c63049781a36151ffeb651a",
+    "rules_sha256": "cb5518fb31bd7b1d4c772e06b84fa23cc2c160664d254dee8805a2aff6283072",
+    "rules.rich_sha256": "0b0c887e6968a7ab53128958f6872256768eecf9bd51c88ae109d7847b8fa33c",
     "blocked_external_dependencies_sha256": "f895887a1eccd6579ca57b285a8e3ecf33ebfec7403c070206df16c38b64dd4d"
   },
   "automation": {
@@ -154,11 +154,11 @@
     },
     {
       "path": "rules.json",
-      "sha256": "f42784248aad8e9a422b8eb616a1a54e3bd63f51cf4b778be0ee85dae6f65202"
+      "sha256": "cb5518fb31bd7b1d4c772e06b84fa23cc2c160664d254dee8805a2aff6283072"
     },
     {
       "path": "rules.rich.json",
-      "sha256": "abc22f2401a71d738041b31f6a09d356c7019b871c63049781a36151ffeb651a"
+      "sha256": "0b0c887e6968a7ab53128958f6872256768eecf9bd51c88ae109d7847b8fa33c"
     }
   ],
   "method": "REDD+ Methodology Framework",
