@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "properties": {
+    "app_ready": {
+      "type": "boolean"
+    },
+    "blocked_rule_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "draft_unverified_rule_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "grade": {
+      "enum": [
+        "grade_a",
+        "not_grade_a"
+      ],
+      "type": "string"
+    },
+    "methodology": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "methodology_linked_review_ready": {
+      "type": "boolean"
+    },
+    "next_upgrade_target": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "rule_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "section_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "source_audited_rule_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "unresolved_external_dependencies": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "methodology",
+    "grade",
+    "app_ready",
+    "methodology_linked_review_ready",
+    "section_count",
+    "rule_count",
+    "source_audited_rule_count",
+    "draft_unverified_rule_count",
+    "blocked_rule_count",
+    "unresolved_external_dependencies",
+    "next_upgrade_target"
+  ],
+  "title": "Method Grade Report",
+  "type": "object"
+}
