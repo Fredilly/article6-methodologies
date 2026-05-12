@@ -47,6 +47,7 @@ function main() {
   }
 
   // --- Source-audited rule discipline ---
+  const PLACEHOLDER_PATTERNS = [/Not specified in VF5 draft seed/i, /TBD/i, /pending/i, /unknown/i];
   for (const leanRule of sourceAuditedRules) {
     const richRule = richByStableId.get(leanRule.stable_id);
 
@@ -56,6 +57,18 @@ function main() {
     assert.equal(externalTools.length, 0, `${leanRule.stable_id} is source_audited and must not have blocked external deps`);
 
     assert.ok(richRule.source_span_text && richRule.source_span_text.length > 0, `${leanRule.stable_id} must have non-empty source_span_text`);
+    assert.equal(richRule.source_span_status, 'source_audited', `${leanRule.stable_id} must have source_span_status: source_audited`);
+    assert.equal(richRule.rule_detail?.status, 'source_audited', `${leanRule.stable_id} must have rule_detail.status: source_audited`);
+
+    assert.ok(Array.isArray(richRule.rule_detail?.conditions) && richRule.rule_detail.conditions.length >= 1,
+      `${leanRule.stable_id} must have at least one condition`);
+
+    if (Array.isArray(richRule.rule_detail?.exceptions)) {
+      for (const exc of richRule.rule_detail.exceptions) {
+        const isPlaceholder = PLACEHOLDER_PATTERNS.some((p) => p.test(exc));
+        assert.ok(!isPlaceholder, `${leanRule.stable_id} exceptions must not contain placeholder text: "${exc}"`);
+      }
+    }
   }
 
   // --- External dependency declarations ---
