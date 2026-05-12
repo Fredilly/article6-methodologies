@@ -1,0 +1,532 @@
+[
+  {
+    "anchor": "sources",
+    "children": [],
+    "heading_text": "SOURCES",
+    "id": "S-1",
+    "locator_status": "source_audited",
+    "page_end": 5,
+    "page_start": 5,
+    "parent_id": null,
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 1,
+    "section_number": "1",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-1",
+    "title": "SOURCES"
+  },
+  {
+    "anchor": "summary-description-of-the-methodology",
+    "children": [],
+    "heading_text": "Summary Description of the Methodology",
+    "id": "S-2",
+    "locator_status": "source_audited",
+    "page_end": 5,
+    "page_start": 5,
+    "parent_id": null,
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 1,
+    "section_number": "2",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-2",
+    "title": "Summary Description of the Methodology"
+  },
+  {
+    "anchor": "definitions",
+    "children": [],
+    "heading_text": "Definitions",
+    "id": "S-3",
+    "locator_status": "source_audited",
+    "page_end": 6,
+    "page_start": 6,
+    "parent_id": null,
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 1,
+    "section_number": "3",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-3",
+    "title": "Definitions"
+  },
+  {
+    "anchor": "applicability-conditions",
+    "children": [],
+    "heading_text": "Applicability Conditions",
+    "id": "S-4",
+    "locator_status": "source_audited",
+    "page_end": 8,
+    "page_start": 7,
+    "parent_id": null,
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 1,
+    "section_number": "4",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-4",
+    "title": "Applicability Conditions"
+  },
+  {
+    "anchor": "project-boundary",
+    "children": [],
+    "heading_text": "Project Boundary",
+    "id": "S-5",
+    "locator_status": "source_audited",
+    "page_end": 11,
+    "page_start": 9,
+    "parent_id": null,
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 1,
+    "section_number": "5",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-5",
+    "title": "Project Boundary"
+  },
+  {
+    "anchor": "baseline-scenario",
+    "children": [],
+    "heading_text": "Baseline Scenario",
+    "id": "S-6",
+    "locator_status": "source_audited",
+    "page_end": 12,
+    "page_start": 12,
+    "parent_id": null,
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 1,
+    "section_number": "6",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-6",
+    "title": "Baseline Scenario"
+  },
+  {
+    "anchor": "additionality",
+    "children": [],
+    "heading_text": "Additionality",
+    "id": "S-7",
+    "locator_status": "source_audited",
+    "page_end": 14,
+    "page_start": 13,
+    "parent_id": null,
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 1,
+    "section_number": "7",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-7",
+    "title": "Additionality"
+  },
+  {
+    "anchor": "quantification-of-estimated-removals",
+    "children": [
+      "S-8-1",
+      "S-8-2",
+      "S-8-3",
+      "S-8-4",
+      "S-8-5",
+      "S-8-6"
+    ],
+    "heading_text": "Quantification of Estimated Removals",
+    "id": "S-8",
+    "locator_status": "source_audited",
+    "page_end": 30,
+    "page_start": 15,
+    "parent_id": null,
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 1,
+    "section_number": "8",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-8",
+    "title": "Quantification of Estimated Removals"
+  },
+  {
+    "anchor": "baseline",
+    "children": [],
+    "heading_text": "Baseline",
+    "id": "S-8-1",
+    "locator_status": "source_audited",
+    "page_end": 15,
+    "page_start": 15,
+    "parent_id": "S-8",
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 2,
+    "section_number": "8.1",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-8-1",
+    "title": "Baseline"
+  },
+  {
+    "anchor": "project",
+    "children": [],
+    "heading_text": "Project",
+    "id": "S-8-2",
+    "locator_status": "source_audited",
+    "page_end": 26,
+    "page_start": 15,
+    "parent_id": "S-8",
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 2,
+    "section_number": "8.2",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-8-2",
+    "title": "Project"
+  },
+  {
+    "anchor": "leakage",
+    "children": [],
+    "heading_text": "Leakage",
+    "id": "S-8-3",
+    "locator_status": "source_audited",
+    "page_end": 27,
+    "page_start": 27,
+    "parent_id": "S-8",
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 2,
+    "section_number": "8.3",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-8-3",
+    "title": "Leakage"
+  },
+  {
+    "anchor": "uncertainty",
+    "children": [],
+    "heading_text": "Uncertainty",
+    "id": "S-8-4",
+    "locator_status": "source_audited",
+    "page_end": 28,
+    "page_start": 27,
+    "parent_id": "S-8",
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 2,
+    "section_number": "8.4",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-8-4",
+    "title": "Uncertainty"
+  },
+  {
+    "anchor": "estimated-carbon-dioxide-removals",
+    "children": [],
+    "heading_text": "Estimated Carbon Dioxide Removals",
+    "id": "S-8-5",
+    "locator_status": "source_audited",
+    "page_end": 29,
+    "page_start": 29,
+    "parent_id": "S-8",
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 2,
+    "section_number": "8.5",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-8-5",
+    "title": "Estimated Carbon Dioxide Removals"
+  },
+  {
+    "anchor": "ex-ante-estimation",
+    "children": [],
+    "heading_text": "Ex-Ante Estimation",
+    "id": "S-8-6",
+    "locator_status": "source_audited",
+    "page_end": 30,
+    "page_start": 30,
+    "parent_id": "S-8",
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 2,
+    "section_number": "8.6",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-8-6",
+    "title": "Ex-Ante Estimation"
+  },
+  {
+    "anchor": "monitoring",
+    "children": [
+      "S-9-1",
+      "S-9-2",
+      "S-9-3"
+    ],
+    "heading_text": "Monitoring",
+    "id": "S-9",
+    "locator_status": "source_audited",
+    "page_end": 50,
+    "page_start": 31,
+    "parent_id": null,
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 1,
+    "section_number": "9",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-9",
+    "title": "Monitoring"
+  },
+  {
+    "anchor": "data-and-parameters-available-at-validation",
+    "children": [],
+    "heading_text": "Data and Parameters Available at Validation",
+    "id": "S-9-1",
+    "locator_status": "source_audited",
+    "page_end": 36,
+    "page_start": 31,
+    "parent_id": "S-9",
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 2,
+    "section_number": "9.1",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-9-1",
+    "title": "Data and Parameters Available at Validation"
+  },
+  {
+    "anchor": "data-and-parameters-monitored",
+    "children": [],
+    "heading_text": "Data and Parameters Monitored",
+    "id": "S-9-2",
+    "locator_status": "source_audited",
+    "page_end": 49,
+    "page_start": 37,
+    "parent_id": "S-9",
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 2,
+    "section_number": "9.2",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-9-2",
+    "title": "Data and Parameters Monitored"
+  },
+  {
+    "anchor": "description-of-the-monitoring-plan",
+    "children": [],
+    "heading_text": "Description of the Monitoring Plan",
+    "id": "S-9-3",
+    "locator_status": "source_audited",
+    "page_end": 50,
+    "page_start": 50,
+    "parent_id": "S-9",
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 2,
+    "section_number": "9.3",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-9-3",
+    "title": "Description of the Monitoring Plan"
+  },
+  {
+    "anchor": "references",
+    "children": [],
+    "heading_text": "References",
+    "id": "S-10",
+    "locator_status": "source_audited",
+    "page_end": 53,
+    "page_start": 51,
+    "parent_id": null,
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 1,
+    "section_number": "10",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-10",
+    "title": "References"
+  },
+  {
+    "anchor": "appendix-1-performance-method",
+    "children": [
+      "S-11-1",
+      "S-11-2",
+      "S-11-3",
+      "S-11-4",
+      "S-11-5"
+    ],
+    "heading_text": "Appendix 1: Performance Method",
+    "id": "S-11",
+    "locator_status": "source_audited",
+    "page_end": 66,
+    "page_start": 54,
+    "parent_id": null,
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 1,
+    "section_number": "A-1",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-11",
+    "title": "Appendix 1: Performance Method"
+  },
+  {
+    "anchor": "applicability-conditions",
+    "children": [],
+    "heading_text": "Applicability Conditions",
+    "id": "S-11-1",
+    "locator_status": "source_audited",
+    "page_end": 54,
+    "page_start": 54,
+    "parent_id": "S-11",
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 2,
+    "section_number": "10.1",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-11-1",
+    "title": "Applicability Conditions"
+  },
+  {
+    "anchor": "baseline-scenario",
+    "children": [],
+    "heading_text": "Baseline Scenario",
+    "id": "S-11-2",
+    "locator_status": "source_audited",
+    "page_end": 54,
+    "page_start": 54,
+    "parent_id": "S-11",
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 2,
+    "section_number": "10.2",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-11-2",
+    "title": "Baseline Scenario"
+  },
+  {
+    "anchor": "performance-benchmark",
+    "children": [],
+    "heading_text": "Performance Benchmark",
+    "id": "S-11-3",
+    "locator_status": "source_audited",
+    "page_end": 54,
+    "page_start": 54,
+    "parent_id": "S-11",
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 2,
+    "section_number": "10.3",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-11-3",
+    "title": "Performance Benchmark"
+  },
+  {
+    "anchor": "procedure-to-define-the-performance-benchmark",
+    "children": [],
+    "heading_text": "Procedure to Define the Performance Benchmark",
+    "id": "S-11-4",
+    "locator_status": "source_audited",
+    "page_end": 63,
+    "page_start": 55,
+    "parent_id": "S-11",
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 2,
+    "section_number": "10.4",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-11-4",
+    "title": "Procedure to Define the Performance Benchmark"
+  },
+  {
+    "anchor": "data-and-parameters-monitored",
+    "children": [],
+    "heading_text": "Data and Parameters Monitored",
+    "id": "S-11-5",
+    "locator_status": "source_audited",
+    "page_end": 66,
+    "page_start": 64,
+    "parent_id": "S-11",
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 2,
+    "section_number": "10.5",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-11-5",
+    "title": "Data and Parameters Monitored"
+  },
+  {
+    "anchor": "appendix-2-testing-the-significance-of-carbon-pools-and-ghg-emissions",
+    "children": [],
+    "heading_text": "Appendix 2: Testing the Significance of Carbon Pools and GHG Emissions",
+    "id": "S-12",
+    "locator_status": "source_audited",
+    "page_end": 67,
+    "page_start": 67,
+    "parent_id": null,
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 1,
+    "section_number": "A-2",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-12",
+    "title": "Appendix 2: Testing the Significance of Carbon Pools and GHG Emissions"
+  },
+  {
+    "anchor": "document-history",
+    "children": [],
+    "heading_text": "Document History",
+    "id": "S-13",
+    "locator_status": "source_audited",
+    "page_end": 68,
+    "page_start": 68,
+    "parent_id": null,
+    "provenance": {
+      "source_hash": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "source_ref": "Verra/VM0047@v1-0"
+    },
+    "section_level": 1,
+    "section_number": "DH",
+    "source_span_status": "source_audited",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.S-13",
+    "title": "Document History"
+  }
+]

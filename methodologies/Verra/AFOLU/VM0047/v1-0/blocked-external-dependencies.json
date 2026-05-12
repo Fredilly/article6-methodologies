@@ -1,0 +1,48 @@
+{
+  "blocked_rule_count": 4,
+  "blocked_rules": [
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "CDM/AR-ACM0003@v02-0"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-4-0001",
+      "stable_id": "Verra.AFOLU.VM0047.v1-0.R-4-0001",
+      "title": "ARR applicability land eligibility"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "CDM/T-SIG@v1"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-5-0002",
+      "stable_id": "Verra.AFOLU.VM0047.v1-0.R-5-0002",
+      "title": "Carbon pool selection"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VT0001@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-6-0001",
+      "stable_id": "Verra.AFOLU.VM0047.v1-0.R-6-0001",
+      "title": "Baseline scenario determination"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VT0001@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-7-0001",
+      "stable_id": "Verra.AFOLU.VM0047.v1-0.R-7-0001",
+      "title": "VT0001 additionality requirement"
+    }
+  ],
+  "methodology": "Verra/VM0047@v1-0",
+  "note": "Rules listed here remain draft_unverified because they depend on external Verra/CDM modules/tools that are not encoded as local artifacts.",
+  "status": "external_unencoded"
+}
