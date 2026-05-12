@@ -77,19 +77,18 @@
       "id": "R-5-0002",
       "stable_id": "Verra.AFOLU.VM0047.v1-0.R-5-0002",
       "title": "Carbon pool selection",
-      "logic": "AGB and BGB mandatory. Litter, dead wood, SOC optional per significance test. If included in baseline must also be in project scenario.",
+      "logic": "AGB and BGB mandatory. Litter, dead wood, SOC optional per Appendix 2 significance test (built-in, replaces external T-SIG). If included in baseline must also be in project scenario.",
       "section_id": "S-5",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-0.S-5",
       "section_number": "5",
       "section_anchor": "project-boundary",
       "tools": [
-        "CDM/T-SIG@v1",
         "Verra/VM0047@v1-0"
       ],
       "tags": [
-        "eligibility"
+        "calc"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
