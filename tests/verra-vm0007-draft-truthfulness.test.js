@@ -82,7 +82,7 @@ function main() {
     }
   }
 
-  const inventory = readJSON(path.join(METHOD_DIR, 'external-dependencies.json'));
+  const inventory = readJSON(path.join(METHOD_DIR, 'blocked-external-dependencies.json'));
   assert.equal(inventory.methodology, 'Verra/VM0007@v1-8', 'inventory methodology must match');
   assert.equal(inventory.status, 'external_unencoded', 'inventory status must be external_unencoded');
   assert.equal(inventory.blocked_rule_count, 33, 'inventory must report 33 blocked rules');
@@ -93,7 +93,7 @@ function main() {
 
   for (const leanRule of draftRules) {
     const invEntry = invByStableId.get(leanRule.stable_id);
-    assert.ok(invEntry, `${leanRule.stable_id} must be listed in external-dependencies.json`);
+    assert.ok(invEntry, `${leanRule.stable_id} must be listed in blocked-external-dependencies.json`);
     assert.equal(invEntry.rule_id, leanRule.id, `${leanRule.stable_id} inventory rule_id mismatch`);
     assert.equal(invEntry.quality_status, 'draft_unverified', `${leanRule.stable_id} inventory quality_status must be draft_unverified`);
     assert.equal(invEntry.blocking_reason, 'external_dependency_unencoded', `${leanRule.stable_id} blocking_reason must be external_dependency_unencoded`);
@@ -114,7 +114,7 @@ function main() {
   }
 
   for (const leanRule of sourceAuditedRules) {
-    assert.ok(!invByStableId.has(leanRule.stable_id), `${leanRule.stable_id} is source_audited and must not appear in external-dependencies.json`);
+    assert.ok(!invByStableId.has(leanRule.stable_id), `${leanRule.stable_id} is source_audited and must not appear in blocked-external-dependencies.json`);
   }
 
   console.log('ok verra vm0007 draft truthfulness');
