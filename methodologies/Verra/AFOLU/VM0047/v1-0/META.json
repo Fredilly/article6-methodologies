@@ -68,9 +68,9 @@
   ],
   "method": "ARR Methodology Framework",
   "methodology_linked_review_blockers": [
-    "Rules remain draft_unverified pending full source audit against VM0047 v1.0 PDF.",
+    "3 rules remain draft_unverified pending external dependency encoding and source audit closure.",
     "Methodology remains blocked by unencoded VT0001 and AR-ACM0003 dependencies; CDM/T-SIG is retained only as a historical external reference because R-5-0002 is now source-audited via VM0047 Appendix 2.",
-    "VM0047 is a VF5 draft seed; rules encoding and section hierarchy refinement are pending."
+    "methodology_linked_review_ready remains false until R-4-0001, R-6-0001, and R-7-0001 are resolved."
   ],
   "methodology_linked_review_ready": false,
   "provenance": {
