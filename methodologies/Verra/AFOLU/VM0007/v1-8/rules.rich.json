@@ -146,7 +146,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0003",
     "logic": "Three criteria must ALL be met. Excludes large-scale industrial agriculture/aquaculture.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-1",
@@ -157,8 +157,7 @@
         "S-1"
       ],
       "tools": [
-        "Verra/VM0007@v1-8",
-        "Verra/VMD0007@v1-8"
+        "Verra/VM0007@v1-8"
       ]
     },
     "requirement_coverage": {
@@ -184,14 +183,14 @@
           "required": true
         }
       ],
-      "expected_evidence_status": "seed_unverified",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-1"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
       "conditions": [
@@ -200,7 +199,7 @@
       "exceptions": [
         "Any of the three criteria not met or insufficient evidence"
       ],
-      "status": "seed_unverified",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -208,14 +207,14 @@
       "lineage": [
         "applicability-conditions"
       ],
-      "locator_status": "draft_derived_rule_context_pending_source_audit",
+      "locator_status": "source_audited",
       "page_end": 14,
       "page_start": 14,
       "section_id": "S-1",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-1",
       "section_title": "Applicability Conditions"
     },
-    "source_span_status": "seed_extracted_pending_source_audit",
+    "source_span_status": "source_audited",
     "source_span_text": "Baseline agents of deforestation meet all of the following criteria: a) Clear the land for tree harvesting, settlements, crop production, ranching or aquaculture; b) Have no documented and uncontested legal right to deforest; c) Have caused deforestation in the historical reference period.",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0003",
     "summary": "AUDef agent criteria",
@@ -877,7 +876,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0013",
     "logic": "Parallel to AUDef criteria but for wetland degradation.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-1",
@@ -888,8 +887,7 @@
         "S-1"
       ],
       "tools": [
-        "Verra/VM0007@v1-8",
-        "Verra/VMD0007@v1-8"
+        "Verra/VM0007@v1-8"
       ]
     },
     "requirement_coverage": {
@@ -915,14 +913,14 @@
           "required": true
         }
       ],
-      "expected_evidence_status": "seed_unverified",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-1"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
       "conditions": [
@@ -931,7 +929,7 @@
       "exceptions": [
         "Any criteria not met or insufficient evidence"
       ],
-      "status": "seed_unverified",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -939,14 +937,14 @@
       "lineage": [
         "applicability-conditions"
       ],
-      "locator_status": "draft_derived_rule_context_pending_source_audit",
+      "locator_status": "source_audited",
       "page_end": 17,
       "page_start": 17,
       "section_id": "S-1",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-1",
       "section_title": "Applicability Conditions"
     },
-    "source_span_status": "seed_extracted_pending_source_audit",
+    "source_span_status": "source_audited",
     "source_span_text": "Baseline agents of wetland degradation meet all of: (a) cause alteration in hydrology or loss of SOC; (b) have no documented legal right; (c) have degraded wetlands in historical reference period.",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0013",
     "summary": "AUWD agent criteria",
@@ -1253,7 +1251,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0004",
     "logic": "RRD required for baseline modeling. Must be in same jurisdiction with similar characteristics.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-2",
@@ -1264,24 +1262,23 @@
         "S-2"
       ],
       "tools": [
-        "Verra/VM0007@v1-8",
-        "Verra/VMD0007@v1-8"
+        "Verra/VM0007@v1-8"
       ]
     },
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0004",
       "coverage_scope": "rule",
-      "expected_evidence_status": "pending_source_audit",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-2"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
-      "status": "pending_source_audit",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -1289,14 +1286,14 @@
       "lineage": [
         "project-boundary"
       ],
-      "locator_status": "pending_source_audit",
-      "page_end": null,
-      "page_start": null,
+      "locator_status": "source_audited",
+      "page_end": 19,
+      "page_start": 18,
       "section_id": "S-2",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2",
       "section_title": "Project Boundary"
     },
-    "source_span_status": "pending_source_audit",
+    "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0004",
     "summary": "REDD reference region definition",
     "type": "eligibility",
@@ -2136,7 +2133,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-3-0005",
     "logic": "Module selection based on deforestation category.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-3",
@@ -2148,24 +2145,23 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VMD0006@v1-8",
-        "Verra/VMD0007@v1-8"
+        "Verra/VMD0006@v1-8"
       ]
     },
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-3-0005",
       "coverage_scope": "rule",
-      "expected_evidence_status": "pending_source_audit",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-3"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
-      "status": "pending_source_audit",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -2173,14 +2169,14 @@
       "lineage": [
         "baseline-scenario"
       ],
-      "locator_status": "pending_source_audit",
-      "page_end": null,
-      "page_start": null,
+      "locator_status": "source_audited",
+      "page_end": 27,
+      "page_start": 25,
       "section_id": "S-3",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3",
       "section_title": "Baseline Scenario"
     },
-    "source_span_status": "pending_source_audit",
+    "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0005",
     "summary": "REDD baseline modules",
     "type": "calc",
@@ -3123,7 +3119,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-6-0005",
     "logic": "10-year minimum frequency. Spatial variables must be refreshed.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-6",
@@ -3135,24 +3131,23 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VMD0015@v1-8",
-        "Verra/VMD0007@v1-8"
+        "Verra/VMD0015@v1-8"
       ]
     },
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-6-0005",
       "coverage_scope": "rule",
-      "expected_evidence_status": "pending_source_audit",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-6"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
-      "status": "pending_source_audit",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -3160,14 +3155,14 @@
       "lineage": [
         "monitoring"
       ],
-      "locator_status": "pending_source_audit",
-      "page_end": null,
-      "page_start": null,
+      "locator_status": "source_audited",
+      "page_end": 49,
+      "page_start": 39,
       "section_id": "S-6",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-6",
       "section_title": "Monitoring"
     },
-    "source_span_status": "pending_source_audit",
+    "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-6-0005",
     "summary": "REDD forest cover monitoring",
     "type": "monitoring",

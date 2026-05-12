@@ -1,0 +1,263 @@
+[
+  {
+    "id": "Verra.VMD0007.v3-3.R-1-0001",
+    "stable_id": "Verra.VMD0007.v3-3.R-1-0001",
+    "summary": "Boundary definition for unplanned deforestation",
+    "logic": "Project area, reference region, and leakage belt boundaries must be defined per Part 1 procedures.",
+    "type": "eligibility",
+    "refs": {
+      "methodology": "Verra/VMD0007@v3-3",
+      "primary_section": "S-5-1",
+      "section_anchor": "part-1-definition-of-boundaries",
+      "section_number": "5.1",
+      "section_stable_id": "Verra.VMD0007.v3-3.S-5-1",
+      "sections": [
+        "S-5-1"
+      ],
+      "tools": [
+        "Verra/VMD0007@v3-3"
+      ]
+    },
+    "section_context": {
+      "section_id": "S-5-1",
+      "section_ref": "Verra.VMD0007.v3-3.S-5-1",
+      "section_title": "Part 1: Definition of Boundaries",
+      "anchor": "part-1-definition-of-boundaries",
+      "lineage": [
+        "part-1-definition-of-boundaries"
+      ],
+      "locator_status": "source_audited",
+      "page_start": 8,
+      "page_end": 14
+    },
+    "rule_detail": {
+      "summary": "Boundary definition for unplanned deforestation",
+      "conditions": [
+        "Project area, reference region, and leakage belt boundaries must be defined per Part 1 procedures."
+      ],
+      "exceptions": [],
+      "status": "source_audited"
+    },
+    "requirement_coverage": {
+      "coverage_key": "Verra.VMD0007.v3-3.R-1-0001",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "boundary-definition-for-unplanned-deforestation",
+          "label": "Boundary definition for unplanned deforestation",
+          "description": "Required: Boundary definition for unplanned deforestation",
+          "required": true
+        }
+      ],
+      "expected_evidence_status": "seed_unverified",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-5-1"
+        }
+      ],
+      "section_refs_status": "source_audited"
+    },
+    "source_span_status": "source_audited",
+    "source_span_text": "",
+    "quality_status": "source_audited",
+    "when": []
+  },
+  {
+    "id": "Verra.VMD0007.v3-3.R-1-0002",
+    "stable_id": "Verra.VMD0007.v3-3.R-1-0002",
+    "summary": "Baseline deforestation rate estimation",
+    "logic": "Annual deforestation area estimated using historical reference period data per Part 2.",
+    "type": "calc",
+    "refs": {
+      "methodology": "Verra/VMD0007@v3-3",
+      "primary_section": "S-5-2",
+      "section_anchor": "part-2-estimation-of-annual-areas-of-unplanned-deforestation",
+      "section_number": "5.2",
+      "section_stable_id": "Verra.VMD0007.v3-3.S-5-2",
+      "sections": [
+        "S-5-2"
+      ],
+      "tools": [
+        "Verra/VMD0007@v3-3"
+      ]
+    },
+    "section_context": {
+      "section_id": "S-5-2",
+      "section_ref": "Verra.VMD0007.v3-3.S-5-2",
+      "section_title": "Part 2: Estimation of Annual Areas of Unplanned Deforestation",
+      "anchor": "part-2-estimation-of-annual-areas-of-unplanned-deforestation",
+      "lineage": [
+        "part-2-estimation-of-annual-areas-of-unplanned-deforestation"
+      ],
+      "locator_status": "source_audited",
+      "page_start": 15,
+      "page_end": 24
+    },
+    "rule_detail": {
+      "summary": "Baseline deforestation rate estimation",
+      "conditions": [
+        "Annual deforestation area estimated using historical reference period data per Part 2."
+      ],
+      "exceptions": [],
+      "status": "source_audited"
+    },
+    "requirement_coverage": {
+      "coverage_key": "Verra.VMD0007.v3-3.R-1-0002",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "baseline-deforestation-rate-estimation",
+          "label": "Baseline deforestation rate estimation",
+          "description": "Required: Baseline deforestation rate estimation",
+          "required": true
+        }
+      ],
+      "expected_evidence_status": "seed_unverified",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-5-2"
+        }
+      ],
+      "section_refs_status": "source_audited"
+    },
+    "source_span_status": "source_audited",
+    "source_span_text": "",
+    "quality_status": "source_audited",
+    "when": []
+  },
+  {
+    "id": "Verra.VMD0007.v3-3.R-1-0003",
+    "stable_id": "Verra.VMD0007.v3-3.R-1-0003",
+    "summary": "Deforestation threat location and quantification",
+    "logic": "Location and quantification of deforestation threat determined per Part 3.",
+    "type": "calc",
+    "refs": {
+      "methodology": "Verra/VMD0007@v3-3",
+      "primary_section": "S-5-3",
+      "section_anchor": "part-3-location-and-quantification-of-threat",
+      "section_number": "5.3",
+      "section_stable_id": "Verra.VMD0007.v3-3.S-5-3",
+      "sections": [
+        "S-5-3"
+      ],
+      "tools": [
+        "Verra/VMD0007@v3-3"
+      ]
+    },
+    "section_context": {
+      "section_id": "S-5-3",
+      "section_ref": "Verra.VMD0007.v3-3.S-5-3",
+      "section_title": "Part 3: Location and Quantification of Threat",
+      "anchor": "part-3-location-and-quantification-of-threat",
+      "lineage": [
+        "part-3-location-and-quantification-of-threat"
+      ],
+      "locator_status": "source_audited",
+      "page_start": 25,
+      "page_end": 29
+    },
+    "rule_detail": {
+      "summary": "Deforestation threat location and quantification",
+      "conditions": [
+        "Location and quantification of deforestation threat determined per Part 3."
+      ],
+      "exceptions": [],
+      "status": "source_audited"
+    },
+    "requirement_coverage": {
+      "coverage_key": "Verra.VMD0007.v3-3.R-1-0003",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "deforestation-threat-location-and-quantification",
+          "label": "Deforestation threat location and quantification",
+          "description": "Required: Deforestation threat location and quantification",
+          "required": true
+        }
+      ],
+      "expected_evidence_status": "seed_unverified",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-5-3"
+        }
+      ],
+      "section_refs_status": "source_audited"
+    },
+    "source_span_status": "source_audited",
+    "source_span_text": "",
+    "quality_status": "source_audited",
+    "when": []
+  },
+  {
+    "id": "Verra.VMD0007.v3-3.R-1-0004",
+    "stable_id": "Verra.VMD0007.v3-3.R-1-0004",
+    "summary": "Carbon stock change estimation",
+    "logic": "Carbon stock changes and GHG emissions estimated per Part 4 using carbon pool modules.",
+    "type": "calc",
+    "refs": {
+      "methodology": "Verra/VMD0007@v3-3",
+      "primary_section": "S-5-4",
+      "section_anchor": "part-4-estimation-of-carbon-stock-changes-and-ghg-emissions",
+      "section_number": "5.4",
+      "section_stable_id": "Verra.VMD0007.v3-3.S-5-4",
+      "sections": [
+        "S-5-4"
+      ],
+      "tools": [
+        "Verra/VMD0007@v3-3",
+        "Verra/VMD0001@v1-8",
+        "Verra/VMD0002@v1-8",
+        "Verra/VMD0003@v1-8",
+        "Verra/VMD0004@v1-8",
+        "Verra/VMD0005@v1-8"
+      ]
+    },
+    "section_context": {
+      "section_id": "S-5-4",
+      "section_ref": "Verra.VMD0007.v3-3.S-5-4",
+      "section_title": "Part 4: Estimation of Carbon Stock Changes and GHG Emissions",
+      "anchor": "part-4-estimation-of-carbon-stock-changes-and-ghg-emissions",
+      "lineage": [
+        "part-4-estimation-of-carbon-stock-changes-and-ghg-emissions"
+      ],
+      "locator_status": "pending_source_audit",
+      "page_start": 30,
+      "page_end": 35
+    },
+    "rule_detail": {
+      "summary": "Carbon stock change estimation",
+      "conditions": [
+        "Carbon stock changes and GHG emissions estimated per Part 4 using carbon pool modules."
+      ],
+      "exceptions": [],
+      "status": "seed_unverified"
+    },
+    "requirement_coverage": {
+      "coverage_key": "Verra.VMD0007.v3-3.R-1-0004",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "carbon-stock-change-estimation",
+          "label": "Carbon stock change estimation",
+          "description": "Required: Carbon stock change estimation",
+          "required": true
+        }
+      ],
+      "expected_evidence_status": "seed_unverified",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-5-4"
+        }
+      ],
+      "section_refs_status": "pending_source_audit"
+    },
+    "source_span_status": "seed_extracted_pending_source_audit",
+    "source_span_text": "",
+    "quality_status": "draft_unverified",
+    "when": []
+  }
+]

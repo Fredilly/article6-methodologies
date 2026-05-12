@@ -1,12 +1,12 @@
 {
   "goal": "Upgrade Verra forestry methods to S-grade (Grade A) for methodology-linked review readiness. S-grade = all sections and rules source-audited, no active blocked external dependencies, methodology_linked_review_ready: true.",
-  "last_updated_at": "2026-05-12T23:30:00Z",
+  "last_updated_at": "2026-05-12T23:45:00Z",
   "notes": [
-    "VM0047 v1.0 reached S-grade: 27 sections, 11 rules, 0 blockers. Reference pattern for all Verra forestry methods.",
-    "VM0007 dependency resolution map completed: 21 external deps categorized.",
-    "VF S3 quick wins completed: R-1-0008 (T-SIG via Appendix 1) and R-1-0014 (VM0047 repo_resolved) promoted to source_audited.",
-    "VM0007 now: 27/58 rules source_audited, 31 blocked by 19 active external module/tool dependencies.",
-    "Next: encode VMD0007 (5 blocked rules, highest-impact module)."
+    "VM0047 v1.0 reached S-grade: 27 sections, 11 rules, 0 blockers.",
+    "VF S3 quick wins completed: R-1-0008 (T-SIG) and R-1-0014 (VM0047) promoted.",
+    "VF S4 VMD0007 encoding completed: VMD0007 v3.3 at tools/Verra/VMD0007/v3-3. 5 VM0007 rules promoted.",
+    "VM0007 now: 32/58 rules source_audited, 26 blocked by 18 active external module/tool dependencies.",
+    "Next: encode VMD0006 (3 blocked rules)."
   ],
   "phases": [
     {
@@ -21,21 +21,26 @@
     },
     {
       "id": "vf_s3_vm0007_quick_wins",
-      "name": "VM0007 quick wins: VM0047 dep status + T-SIG via Appendix 1",
+      "name": "VM0007 quick wins",
       "status": "completed"
     },
     {
       "id": "vf_s4_vm0007_vmd0007_encoding",
-      "name": "Encode VMD0007 (5 blocked rules)",
+      "name": "Encode VMD0007",
+      "status": "completed"
+    },
+    {
+      "id": "vf_s5_vm0007_vmd0006_encoding",
+      "name": "Encode VMD0006 (3 blocked rules)",
       "status": "next"
     },
     {
-      "id": "vf_s5_vm0007_remaining_modules",
-      "name": "Encode remaining VM0007 modules/tools (VMD0006, VMD0050, VMD0051, VMD0042, etc.)",
+      "id": "vf_s6_vm0007_remaining_modules",
+      "name": "Encode remaining VM0007 modules/tools",
       "status": "not_started"
     },
     {
-      "id": "vf_s6_vm0007_grade_a",
+      "id": "vf_s7_vm0007_grade_a",
       "name": "VM0007 S-grade promotion",
       "status": "not_started"
     }
