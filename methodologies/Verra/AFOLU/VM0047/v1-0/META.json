@@ -1,0 +1,114 @@
+{
+  "active_date": "2023-09-28",
+  "artifact_quality_standard": {
+    "adoption_status": "draft_seed_normalized",
+    "note": "VF5 draft seed for VM0047 v1.0. Sections source-audited from TOC. Rules are draft_seed pending full source audit. Methodology depends on external Verra tools (VT0001, T-SIG) and CDM methodology AR-ACM0003.",
+    "version": "review_contract_v1"
+  },
+  "artifact_status": {
+    "rules": "draft_unverified",
+    "sections": "source_audited",
+    "source_pdf": "verified"
+  },
+  "audit_hashes": {
+    "rules_json_sha256": "29a210e7b68737cbb891cee64b8dfb0a1c77122630ca0790e9a808fdd6d174a7",
+    "rules_rich_json_sha256": "fd766d83450e331660216b91c5380cb54d8221ce941ab3e7779a0d5017a63849",
+    "sections_json_sha256": "8c07f0a3ce505eba9b3a46bb5fb48e028046e95d0514c3e6fcae6e6a701d22a1",
+    "sections_rich_json_sha256": "843df04ec746b0d505dd6e1b16fea0fcc9951dd7727c9443d7d542ab40d647a3",
+    "source_pdf_sha256": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+    "sections_sha256": "8c07f0a3ce505eba9b3a46bb5fb48e028046e95d0514c3e6fcae6e6a701d22a1",
+    "sections.rich_sha256": "4d98351663ec55a7ea8705f36160910e5349b1c0987f0a6e6ab01f1b4218a5aa",
+    "rules_sha256": "86c1f651c6c82683cc431ba0461328547d58fe1e5e37a544eda93cb25882cdf1",
+    "rules.rich_sha256": "a5fc45e4f83957c879c77eb277c6e0587dfd6eed53a79e81e219ca75085192aa"
+  },
+  "automation": {
+    "repo_commit": "",
+    "scripts_manifest_sha256": ""
+  },
+  "domain": "AFOLU",
+  "external_dependencies": {
+    "methodology_and_tool_refs": [
+      {
+        "id": "Verra/VT0001@v1-8",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "CDM/T-SIG@v1",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      },
+      {
+        "id": "CDM/AR-ACM0003@v02-0",
+        "local_artifact_present": false,
+        "status": "external_unencoded"
+      }
+    ],
+    "note": "VM0047 references VT0001, CDM T-SIG, and is based on AR-ACM0003. None are encoded as local artifacts.",
+    "status": "external_unencoded"
+  },
+  "files": [
+    {
+      "path": "sections.json",
+      "sha256": "8c07f0a3ce505eba9b3a46bb5fb48e028046e95d0514c3e6fcae6e6a701d22a1"
+    },
+    {
+      "path": "sections.rich.json",
+      "sha256": "4d98351663ec55a7ea8705f36160910e5349b1c0987f0a6e6ab01f1b4218a5aa"
+    },
+    {
+      "path": "rules.json",
+      "sha256": "86c1f651c6c82683cc431ba0461328547d58fe1e5e37a544eda93cb25882cdf1"
+    },
+    {
+      "path": "rules.rich.json",
+      "sha256": "a5fc45e4f83957c879c77eb277c6e0587dfd6eed53a79e81e219ca75085192aa"
+    }
+  ],
+  "method": "ARR Methodology Framework",
+  "methodology_linked_review_blockers": [
+    "Rules remain draft_unverified pending full source audit against VM0047 v1.0 PDF.",
+    "Methodology depends on external Verra tools (VT0001, T-SIG) and CDM methodology AR-ACM0003 not encoded in this repo.",
+    "VM0047 is a VF5 draft seed; rules encoding and section hierarchy refinement are pending."
+  ],
+  "methodology_linked_review_ready": false,
+  "provenance": {
+    "author": "Fred Egbuedike",
+    "date": "2026-05-12T16:00:00Z",
+    "source_pdfs": [
+      {
+        "doc": "Verra/VM0047@v1-0",
+        "kind": "pdf",
+        "path": "tools/Verra/VM0047/v1-0/source.pdf",
+        "sha256": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+        "size": 1100403
+      }
+    ]
+  },
+  "references": {
+    "tools": [
+      {
+        "doc": "Verra/VM0047@v1-0",
+        "kind": "pdf",
+        "path": "source-assets/Verra/AFOLU/VM0047/v1-0/source.pdf",
+        "sha256": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+        "size": 1100403,
+        "url": "https://verra.org/wp-content/uploads/2023/09/VM0047_ARR_v1.0-1.pdf"
+      }
+    ]
+  },
+  "relationships": {
+    "version": {
+      "family": "Verra.AFOLU.VM0047",
+      "lineage": [
+        "v1-0"
+      ],
+      "next_version": null,
+      "previous_version": null
+    }
+  },
+  "stage": "Active",
+  "standard": "VCS",
+  "title": "VM0047 Afforestation, Reforestation and Revegetation, v1.0",
+  "version": "v1-0"
+}

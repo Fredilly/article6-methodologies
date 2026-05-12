@@ -1,0 +1,710 @@
+[
+  {
+    "id": "Verra.AFOLU.VM0047.v1-0.R-1-0001",
+    "logic": "Land must not be forest at project start. Must meet host-country forest definition if applicable.",
+    "quality_status": "source_audited",
+    "refs": {
+      "methodology": "Verra/VM0047@v1-0",
+      "primary_section": "S-1",
+      "section_anchor": "sources",
+      "section_number": "1",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-0.S-1",
+      "sections": [
+        "S-1"
+      ],
+      "tools": [
+        "Verra/VM0047@v1-0"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "Verra.AFOLU.VM0047.v1-0.R-1-0001",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Required: Forest definition threshold",
+          "id": "forest-definition-threshold",
+          "label": "Forest definition threshold",
+          "required": true
+        }
+      ],
+      "expected_evidence_status": "seed_unverified",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-1"
+        }
+      ],
+      "section_refs_status": "source_audited"
+    },
+    "rule_detail": {
+      "conditions": [
+        "Land must not be forest at project start. Must meet host-country forest definition if applicable."
+      ],
+      "exceptions": [],
+      "status": "source_audited",
+      "summary": "Forest definition threshold"
+    },
+    "section_context": {
+      "anchor": "sources",
+      "lineage": [
+        "sources"
+      ],
+      "locator_status": "source_audited",
+      "page_end": 5,
+      "page_start": 5,
+      "section_id": "S-1",
+      "section_ref": "Verra.AFOLU.VM0047.v1-0.S-1",
+      "section_title": "SOURCES"
+    },
+    "source_span_status": "source_audited",
+    "source_span_text": "",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.R-1-0001",
+    "summary": "Forest definition threshold",
+    "type": "eligibility",
+    "when": []
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-0.R-4-0001",
+    "logic": "Land must be non-forest or managed non-forest for 10+ years. Excludes wetlands, peatlands, and certain AR-ACM0003 exclusion categories.",
+    "quality_status": "draft_unverified",
+    "refs": {
+      "methodology": "Verra/VM0047@v1-0",
+      "primary_section": "S-4",
+      "section_anchor": "applicability-conditions",
+      "section_number": "4",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-0.S-4",
+      "sections": [
+        "S-4"
+      ],
+      "tools": [
+        "Verra/VM0047@v1-0",
+        "CDM/AR-ACM0003@v02-0"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "Verra.AFOLU.VM0047.v1-0.R-4-0001",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Required: ARR applicability land eligibility",
+          "id": "arr-applicability-land-eligibility",
+          "label": "ARR applicability land eligibility",
+          "required": true
+        }
+      ],
+      "expected_evidence_status": "seed_unverified",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-4"
+        }
+      ],
+      "section_refs_status": "derived_from_section_context_pending_source_audit"
+    },
+    "rule_detail": {
+      "conditions": [
+        "Land must be non-forest or managed non-forest for 10+ years. Excludes wetlands, peatlands, and certain AR-ACM0003 exclusion categories."
+      ],
+      "exceptions": [],
+      "status": "seed_unverified",
+      "summary": "ARR applicability land eligibility"
+    },
+    "section_context": {
+      "anchor": "applicability-conditions",
+      "lineage": [
+        "applicability-conditions"
+      ],
+      "locator_status": "draft_derived_rule_context_pending_source_audit",
+      "page_end": 8,
+      "page_start": 7,
+      "section_id": "S-4",
+      "section_ref": "Verra.AFOLU.VM0047.v1-0.S-4",
+      "section_title": "Applicability Conditions"
+    },
+    "source_span_status": "seed_extracted_pending_source_audit",
+    "source_span_text": "",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.R-4-0001",
+    "summary": "ARR applicability land eligibility",
+    "type": "eligibility",
+    "when": []
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-0.R-4-0002",
+    "logic": "Two approaches: area-based (plot sampling) or census-based (complete enumeration). Must select based on project characteristics.",
+    "quality_status": "source_audited",
+    "refs": {
+      "methodology": "Verra/VM0047@v1-0",
+      "primary_section": "S-4",
+      "section_anchor": "applicability-conditions",
+      "section_number": "4",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-0.S-4",
+      "sections": [
+        "S-4"
+      ],
+      "tools": [
+        "Verra/VM0047@v1-0"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "Verra.AFOLU.VM0047.v1-0.R-4-0002",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Required: ARR quantification approach selection",
+          "id": "arr-quantification-approach-selection",
+          "label": "ARR quantification approach selection",
+          "required": true
+        }
+      ],
+      "expected_evidence_status": "seed_unverified",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-4"
+        }
+      ],
+      "section_refs_status": "source_audited"
+    },
+    "rule_detail": {
+      "conditions": [
+        "Two approaches: area-based (plot sampling) or census-based (complete enumeration). Must select based on project characteristics."
+      ],
+      "exceptions": [],
+      "status": "source_audited",
+      "summary": "ARR quantification approach selection"
+    },
+    "section_context": {
+      "anchor": "applicability-conditions",
+      "lineage": [
+        "applicability-conditions"
+      ],
+      "locator_status": "source_audited",
+      "page_end": 8,
+      "page_start": 7,
+      "section_id": "S-4",
+      "section_ref": "Verra.AFOLU.VM0047.v1-0.S-4",
+      "section_title": "Applicability Conditions"
+    },
+    "source_span_status": "source_audited",
+    "source_span_text": "",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.R-4-0002",
+    "summary": "ARR quantification approach selection",
+    "type": "eligibility",
+    "when": []
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-0.R-5-0001",
+    "logic": "Project boundary must be fixed ex-ante. Stratification by land cover, soil type, and management regime.",
+    "quality_status": "draft_unverified",
+    "refs": {
+      "methodology": "Verra/VM0047@v1-0",
+      "primary_section": "S-5",
+      "section_anchor": "project-boundary",
+      "section_number": "5",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-0.S-5",
+      "sections": [
+        "S-5"
+      ],
+      "tools": [
+        "Verra/VM0047@v1-0"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "Verra.AFOLU.VM0047.v1-0.R-5-0001",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Required: Geographic boundary and stratification",
+          "id": "geographic-boundary-and-stratification",
+          "label": "Geographic boundary and stratification",
+          "required": true
+        }
+      ],
+      "expected_evidence_status": "seed_unverified",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-5"
+        }
+      ],
+      "section_refs_status": "derived_from_section_context_pending_source_audit"
+    },
+    "rule_detail": {
+      "conditions": [
+        "Project boundary must be fixed ex-ante. Stratification by land cover, soil type, and management regime."
+      ],
+      "exceptions": [],
+      "status": "seed_unverified",
+      "summary": "Geographic boundary and stratification"
+    },
+    "section_context": {
+      "anchor": "project-boundary",
+      "lineage": [
+        "project-boundary"
+      ],
+      "locator_status": "draft_derived_rule_context_pending_source_audit",
+      "page_end": 11,
+      "page_start": 9,
+      "section_id": "S-5",
+      "section_ref": "Verra.AFOLU.VM0047.v1-0.S-5",
+      "section_title": "Project Boundary"
+    },
+    "source_span_status": "seed_extracted_pending_source_audit",
+    "source_span_text": "",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.R-5-0001",
+    "summary": "Geographic boundary and stratification",
+    "type": "eligibility",
+    "when": []
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-0.R-5-0002",
+    "logic": "AGB and BGB mandatory. Litter, dead wood, SOC optional per significance test. If included in baseline must also be in project scenario.",
+    "quality_status": "draft_unverified",
+    "refs": {
+      "methodology": "Verra/VM0047@v1-0",
+      "primary_section": "S-5",
+      "section_anchor": "project-boundary",
+      "section_number": "5",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-0.S-5",
+      "sections": [
+        "S-5"
+      ],
+      "tools": [
+        "Verra/VM0047@v1-0",
+        "CDM/T-SIG@v1"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "Verra.AFOLU.VM0047.v1-0.R-5-0002",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Required: Carbon pool selection",
+          "id": "carbon-pool-selection",
+          "label": "Carbon pool selection",
+          "required": true
+        }
+      ],
+      "expected_evidence_status": "seed_unverified",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-5"
+        }
+      ],
+      "section_refs_status": "derived_from_section_context_pending_source_audit"
+    },
+    "rule_detail": {
+      "conditions": [
+        "AGB and BGB mandatory. Litter, dead wood, SOC optional per significance test. If included in baseline must also be in project scenario."
+      ],
+      "exceptions": [],
+      "status": "seed_unverified",
+      "summary": "Carbon pool selection"
+    },
+    "section_context": {
+      "anchor": "project-boundary",
+      "lineage": [
+        "project-boundary"
+      ],
+      "locator_status": "draft_derived_rule_context_pending_source_audit",
+      "page_end": 11,
+      "page_start": 9,
+      "section_id": "S-5",
+      "section_ref": "Verra.AFOLU.VM0047.v1-0.S-5",
+      "section_title": "Project Boundary"
+    },
+    "source_span_status": "seed_extracted_pending_source_audit",
+    "source_span_text": "",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.R-5-0002",
+    "summary": "Carbon pool selection",
+    "type": "eligibility",
+    "when": []
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-0.R-6-0001",
+    "logic": "Two methods: 1) Performance Method via dynamic benchmark, 2) Project Method via VT0001 additionality + baseline scenario analysis.",
+    "quality_status": "draft_unverified",
+    "refs": {
+      "methodology": "Verra/VM0047@v1-0",
+      "primary_section": "S-6",
+      "section_anchor": "baseline-scenario",
+      "section_number": "6",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-0.S-6",
+      "sections": [
+        "S-6"
+      ],
+      "tools": [
+        "Verra/VM0047@v1-0",
+        "Verra/VT0001@v1-8"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "Verra.AFOLU.VM0047.v1-0.R-6-0001",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Required: Baseline scenario determination",
+          "id": "baseline-scenario-determination",
+          "label": "Baseline scenario determination",
+          "required": true
+        }
+      ],
+      "expected_evidence_status": "seed_unverified",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-6"
+        }
+      ],
+      "section_refs_status": "derived_from_section_context_pending_source_audit"
+    },
+    "rule_detail": {
+      "conditions": [
+        "Two methods: 1) Performance Method via dynamic benchmark, 2) Project Method via VT0001 additionality + baseline scenario analysis."
+      ],
+      "exceptions": [],
+      "status": "seed_unverified",
+      "summary": "Baseline scenario determination"
+    },
+    "section_context": {
+      "anchor": "baseline-scenario",
+      "lineage": [
+        "baseline-scenario"
+      ],
+      "locator_status": "draft_derived_rule_context_pending_source_audit",
+      "page_end": 12,
+      "page_start": 12,
+      "section_id": "S-6",
+      "section_ref": "Verra.AFOLU.VM0047.v1-0.S-6",
+      "section_title": "Baseline Scenario"
+    },
+    "source_span_status": "seed_extracted_pending_source_audit",
+    "source_span_text": "",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.R-6-0001",
+    "summary": "Baseline scenario determination",
+    "type": "calc",
+    "when": []
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-0.R-7-0001",
+    "logic": "Project Method requires VT0001 demonstration. Performance Method uses automatic additionality via benchmark exceedance.",
+    "quality_status": "draft_unverified",
+    "refs": {
+      "methodology": "Verra/VM0047@v1-0",
+      "primary_section": "S-7",
+      "section_anchor": "additionality",
+      "section_number": "7",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-0.S-7",
+      "sections": [
+        "S-7"
+      ],
+      "tools": [
+        "Verra/VM0047@v1-0",
+        "Verra/VT0001@v1-8"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "Verra.AFOLU.VM0047.v1-0.R-7-0001",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Required: VT0001 additionality requirement",
+          "id": "vt0001-additionality-requirement",
+          "label": "VT0001 additionality requirement",
+          "required": true
+        }
+      ],
+      "expected_evidence_status": "seed_unverified",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-7"
+        }
+      ],
+      "section_refs_status": "derived_from_section_context_pending_source_audit"
+    },
+    "rule_detail": {
+      "conditions": [
+        "Project Method requires VT0001 demonstration. Performance Method uses automatic additionality via benchmark exceedance."
+      ],
+      "exceptions": [],
+      "status": "seed_unverified",
+      "summary": "VT0001 additionality requirement"
+    },
+    "section_context": {
+      "anchor": "additionality",
+      "lineage": [
+        "additionality"
+      ],
+      "locator_status": "draft_derived_rule_context_pending_source_audit",
+      "page_end": 14,
+      "page_start": 13,
+      "section_id": "S-7",
+      "section_ref": "Verra.AFOLU.VM0047.v1-0.S-7",
+      "section_title": "Additionality"
+    },
+    "source_span_status": "seed_extracted_pending_source_audit",
+    "source_span_text": "",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.R-7-0001",
+    "summary": "VT0001 additionality requirement",
+    "type": "eligibility",
+    "when": []
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-0.R-8-0001",
+    "logic": "Removals = min(project C change, project C change x (1 - PB)) - leakage - uncertainty. PB from ex-post reference region observations.",
+    "quality_status": "source_audited",
+    "refs": {
+      "methodology": "Verra/VM0047@v1-0",
+      "primary_section": "S-8-2",
+      "section_anchor": "project",
+      "section_number": "8.2",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-0.S-8-2",
+      "sections": [
+        "S-8-2"
+      ],
+      "tools": [
+        "Verra/VM0047@v1-0"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "Verra.AFOLU.VM0047.v1-0.R-8-0001",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Required: Area-based quantification equation",
+          "id": "area-based-quantification-equation",
+          "label": "Area-based quantification equation",
+          "required": true
+        }
+      ],
+      "expected_evidence_status": "seed_unverified",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-8-2"
+        }
+      ],
+      "section_refs_status": "source_audited"
+    },
+    "rule_detail": {
+      "conditions": [
+        "Removals = min(project C change, project C change x (1 - PB)) - leakage - uncertainty. PB from ex-post reference region observations."
+      ],
+      "exceptions": [],
+      "status": "source_audited",
+      "summary": "Area-based quantification equation"
+    },
+    "section_context": {
+      "anchor": "project",
+      "lineage": [
+        "project"
+      ],
+      "locator_status": "source_audited",
+      "page_end": 26,
+      "page_start": 15,
+      "section_id": "S-8-2",
+      "section_ref": "Verra.AFOLU.VM0047.v1-0.S-8-2",
+      "section_title": "Project"
+    },
+    "source_span_status": "source_audited",
+    "source_span_text": "",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.R-8-0001",
+    "summary": "Area-based quantification equation",
+    "type": "equation",
+    "when": []
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-0.R-8-0002",
+    "logic": "Activity shifting leakage must be assessed. Market leakage is de minimis for ARR. Fossil fuel and biomass burning emissions must be included.",
+    "quality_status": "source_audited",
+    "refs": {
+      "methodology": "Verra/VM0047@v1-0",
+      "primary_section": "S-8-3",
+      "section_anchor": "leakage",
+      "section_number": "8.3",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-0.S-8-3",
+      "sections": [
+        "S-8-3"
+      ],
+      "tools": [
+        "Verra/VM0047@v1-0"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "Verra.AFOLU.VM0047.v1-0.R-8-0002",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Required: Leakage quantification",
+          "id": "leakage-quantification",
+          "label": "Leakage quantification",
+          "required": true
+        }
+      ],
+      "expected_evidence_status": "seed_unverified",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-8-3"
+        }
+      ],
+      "section_refs_status": "source_audited"
+    },
+    "rule_detail": {
+      "conditions": [
+        "Activity shifting leakage must be assessed. Market leakage is de minimis for ARR. Fossil fuel and biomass burning emissions must be included."
+      ],
+      "exceptions": [],
+      "status": "source_audited",
+      "summary": "Leakage quantification"
+    },
+    "section_context": {
+      "anchor": "leakage",
+      "lineage": [
+        "leakage"
+      ],
+      "locator_status": "source_audited",
+      "page_end": 27,
+      "page_start": 27,
+      "section_id": "S-8-3",
+      "section_ref": "Verra.AFOLU.VM0047.v1-0.S-8-3",
+      "section_title": "Leakage"
+    },
+    "source_span_status": "source_audited",
+    "source_span_text": "",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.R-8-0002",
+    "summary": "Leakage quantification",
+    "type": "calc",
+    "when": []
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-0.R-8-0003",
+    "logic": "15% threshold at 90% CI. If exceeded, excess deducted proportionally from removals. Below threshold, no deduction.",
+    "quality_status": "source_audited",
+    "refs": {
+      "methodology": "Verra/VM0047@v1-0",
+      "primary_section": "S-8-4",
+      "section_anchor": "uncertainty",
+      "section_number": "8.4",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-0.S-8-4",
+      "sections": [
+        "S-8-4"
+      ],
+      "tools": [
+        "Verra/VM0047@v1-0"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "Verra.AFOLU.VM0047.v1-0.R-8-0003",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Required: Uncertainty deduction",
+          "id": "uncertainty-deduction",
+          "label": "Uncertainty deduction",
+          "required": true
+        }
+      ],
+      "expected_evidence_status": "seed_unverified",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-8-4"
+        }
+      ],
+      "section_refs_status": "source_audited"
+    },
+    "rule_detail": {
+      "conditions": [
+        "15% threshold at 90% CI. If exceeded, excess deducted proportionally from removals. Below threshold, no deduction."
+      ],
+      "exceptions": [],
+      "status": "source_audited",
+      "summary": "Uncertainty deduction"
+    },
+    "section_context": {
+      "anchor": "uncertainty",
+      "lineage": [
+        "uncertainty"
+      ],
+      "locator_status": "source_audited",
+      "page_end": 28,
+      "page_start": 27,
+      "section_id": "S-8-4",
+      "section_ref": "Verra.AFOLU.VM0047.v1-0.S-8-4",
+      "section_title": "Uncertainty"
+    },
+    "source_span_status": "source_audited",
+    "source_span_text": "",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.R-8-0003",
+    "summary": "Uncertainty deduction",
+    "type": "uncertainty",
+    "when": []
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-0.R-9-0001",
+    "logic": "Four mandatory components: data list, QA/QC, responsibilities, archiving. REDD MRV procedures via M-REDD module.",
+    "quality_status": "source_audited",
+    "refs": {
+      "methodology": "Verra/VM0047@v1-0",
+      "primary_section": "S-9-3",
+      "section_anchor": "description-of-the-monitoring-plan",
+      "section_number": "9.3",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-0.S-9-3",
+      "sections": [
+        "S-9-3"
+      ],
+      "tools": [
+        "Verra/VM0047@v1-0"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "Verra.AFOLU.VM0047.v1-0.R-9-0001",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "description": "Required: Monitoring plan requirements",
+          "id": "monitoring-plan-requirements",
+          "label": "Monitoring plan requirements",
+          "required": true
+        }
+      ],
+      "expected_evidence_status": "seed_unverified",
+      "section_refs": [
+        {
+          "relationship": "source_section",
+          "section_id": "S-9-3"
+        }
+      ],
+      "section_refs_status": "source_audited"
+    },
+    "rule_detail": {
+      "conditions": [
+        "Four mandatory components: data list, QA/QC, responsibilities, archiving. REDD MRV procedures via M-REDD module."
+      ],
+      "exceptions": [],
+      "status": "source_audited",
+      "summary": "Monitoring plan requirements"
+    },
+    "section_context": {
+      "anchor": "description-of-the-monitoring-plan",
+      "lineage": [
+        "description-of-the-monitoring-plan"
+      ],
+      "locator_status": "source_audited",
+      "page_end": 50,
+      "page_start": 50,
+      "section_id": "S-9-3",
+      "section_ref": "Verra.AFOLU.VM0047.v1-0.S-9-3",
+      "section_title": "Description of the Monitoring Plan"
+    },
+    "source_span_status": "source_audited",
+    "source_span_text": "",
+    "stable_id": "Verra.AFOLU.VM0047.v1-0.R-9-0001",
+    "summary": "Monitoring plan requirements",
+    "type": "monitoring",
+    "when": []
+  }
+]
