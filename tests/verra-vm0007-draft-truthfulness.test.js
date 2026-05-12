@@ -82,6 +82,41 @@ function main() {
     }
   }
 
+  const inventory = readJSON(path.join(METHOD_DIR, 'blocked-external-dependencies.json'));
+  assert.equal(inventory.methodology, 'Verra/VM0007@v1-8', 'inventory methodology must match');
+  assert.equal(inventory.status, 'external_unencoded', 'inventory status must be external_unencoded');
+  assert.equal(inventory.blocked_rule_count, 33, 'inventory must report 33 blocked rules');
+  assert.equal(inventory.blocked_rules.length, 33, 'inventory must contain 33 blocked rule entries');
+  assert.equal(inventory.blocked_rules.length, draftRules.length, 'inventory must cover every draft_unverified rule');
+
+  const invByStableId = new Map(inventory.blocked_rules.map((entry) => [entry.stable_id, entry]));
+
+  for (const leanRule of draftRules) {
+    const invEntry = invByStableId.get(leanRule.stable_id);
+    assert.ok(invEntry, `${leanRule.stable_id} must be listed in blocked-external-dependencies.json`);
+    assert.equal(invEntry.rule_id, leanRule.id, `${leanRule.stable_id} inventory rule_id mismatch`);
+    assert.equal(invEntry.quality_status, 'draft_unverified', `${leanRule.stable_id} inventory quality_status must be draft_unverified`);
+    assert.equal(invEntry.blocking_reason, 'external_dependency_unencoded', `${leanRule.stable_id} blocking_reason must be external_dependency_unencoded`);
+
+    const extTools = (leanRule.tools || []).filter((tool) => tool !== 'Verra/VM0007@v1-8');
+    assert.deepEqual(
+      [...invEntry.external_dependencies].sort(),
+      [...extTools].sort(),
+      `${leanRule.stable_id} inventory external_dependencies must match lean rule tools`
+    );
+
+    for (const dep of invEntry.external_dependencies) {
+      const entry = externalRefs.get(dep);
+      assert.ok(entry, `${leanRule.stable_id} inventory dep ${dep} must be declared in META.json`);
+      assert.equal(entry.status, 'external_unencoded', `${dep} must remain external_unencoded`);
+      assert.equal(entry.local_artifact_present, false, `${dep} must not claim local artifact presence`);
+    }
+  }
+
+  for (const leanRule of sourceAuditedRules) {
+    assert.ok(!invByStableId.has(leanRule.stable_id), `${leanRule.stable_id} is source_audited and must not appear in blocked-external-dependencies.json`);
+  }
+
   console.log('ok verra vm0007 draft truthfulness');
 }
 
