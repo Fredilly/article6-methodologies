@@ -56,6 +56,15 @@ function isGradeA(methodDir, { allowMissingGradeFile = false } = {}) {
     errors.push(`${draftRules.length} draft_unverified rules exist (require 0 for Grade A)`);
   }
 
+  // 2a. Reject Grade A if active external_unencoded deps exist
+  if (meta.external_dependencies?.methodology_and_tool_refs) {
+    const activeDeps = meta.external_dependencies.methodology_and_tool_refs
+      .filter((d) => d.status === 'external_unencoded');
+    if (activeDeps.length > 0) {
+      errors.push(`${activeDeps.length} active external_unencoded dependencies exist: ${activeDeps.map((d) => d.id).join(', ')}`);
+    }
+  }
+
   // 3. Every rich rule must have source_span_status: source_audited
   // 4. Every rich rule must have rule_detail.status: source_audited
   // 5. Every rich rule must have at least one non-placeholder condition

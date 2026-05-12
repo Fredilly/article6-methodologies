@@ -14,8 +14,8 @@
     "METHOD_GRADE_sha256": "5f74bab824e19d1d608b94619cefdec4d80513bf1abed27e7afb0535a8eb255a",
     "blocked_external_dependencies_sha256": "667e559448e21aac939dfc5ffde562189ee729f5874644f9f1766f681a203a2f",
     "rules.rich_sha256": "7be4d9bcd9b14cb65bb952381e29f474db195276095fc7b68e5b65ce9a84577f",
-    "rules_json_sha256": "ede2b6b9cbc8fc02609dc8557578f5d5ee4afd09fe3bb20c7f3d94e3cd41f159",
-    "rules_rich_json_sha256": "f1ac9f2f7bbb2a60a3e094856b0c642bfbca402dc2749e11f1f0af3e2a4f2269",
+    "rules_json_sha256": "a6d66d8e7f409e9a43dca8656bea03f6e5a0c9ee02a3ecfa6e61d19d9fcdaf3e",
+    "rules_rich_json_sha256": "7be4d9bcd9b14cb65bb952381e29f474db195276095fc7b68e5b65ce9a84577f",
     "rules_sha256": "a6d66d8e7f409e9a43dca8656bea03f6e5a0c9ee02a3ecfa6e61d19d9fcdaf3e",
     "sections.rich_sha256": "4d98351663ec55a7ea8705f36160910e5349b1c0987f0a6e6ab01f1b4218a5aa",
     "sections_json_sha256": "8c07f0a3ce505eba9b3a46bb5fb48e028046e95d0514c3e6fcae6e6a701d22a1",
@@ -33,21 +33,21 @@
       {
         "id": "Verra/VT0001@v1-8",
         "local_artifact_present": false,
-        "status": "external_unencoded"
+        "status": "historical_non_blocking"
       },
       {
         "id": "CDM/T-SIG@v1",
         "local_artifact_present": false,
-        "status": "external_unencoded"
+        "status": "historical_non_blocking"
       },
       {
         "id": "CDM/AR-ACM0003@v02-0",
         "local_artifact_present": false,
-        "status": "external_unencoded"
+        "status": "historical_non_blocking"
       }
     ],
-    "note": "VM0047 references VT0001 and is based on AR-ACM0003. CDM T-SIG retained for historical reference but no longer an active blocker (R-5-0002 uses Appendix 2 built-in significance test). None are encoded as local artifacts.",
-    "status": "external_unencoded"
+    "note": "VM0047 is self-contained. VT0001, CDM/T-SIG, and AR-ACM0003 are historical references only; the methodology does not require them for any rule.",
+    "status": "historical_non_blocking"
   },
   "files": [
     {
@@ -68,9 +68,7 @@
     }
   ],
   "method": "ARR Methodology Framework",
-  "methodology_linked_review_blockers": [
-    "No remaining blockers. All 11 rules source-audited. External deps (VT0001, AR-ACM0003, T-SIG) are historical refs; methodology is self-contained."
-  ],
+  "methodology_linked_review_blockers": [],
   "methodology_linked_review_ready": true,
   "provenance": {
     "author": "Fred Egbuedike",

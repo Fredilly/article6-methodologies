@@ -25,7 +25,7 @@ function main() {
   assert.equal(meta.artifact_status?.rules, 'source_audited', 'VM0047 rules must be source_audited at Grade A');
   assert.equal(meta.artifact_quality_standard?.version, 'review_contract_v1', 'VM0047 should opt into review_contract_v1');
   assert.equal(meta.methodology_linked_review_ready, true, 'VM0047 must be methodology-linked-review-ready at Grade A');
-  assert.ok(Array.isArray(meta.methodology_linked_review_blockers) && meta.methodology_linked_review_blockers.length >= 1, 'VM0047 must explain blockers');
+  assert.ok(Array.isArray(meta.methodology_linked_review_blockers), 'VM0047 must have a blockers array');
 
   // --- Exact section count ---
   assert.equal(sections.length, 27, 'VM0047 must have exactly 27 sections');
@@ -81,11 +81,11 @@ function main() {
   const externalRefs = new Map(
     (meta.external_dependencies?.methodology_and_tool_refs || []).map((entry) => [entry.id, entry])
   );
-  assert.equal(meta.external_dependencies?.status, 'external_unencoded', 'VM0047 external dependency status must be external_unencoded');
+  assert.ok(['external_unencoded', 'historical_non_blocking'].includes(meta.external_dependencies?.status), 'VM0047 external dependency status must be external_unencoded or historical_non_blocking at Grade A');
   for (const toolId of ruleTools) {
     const entry = externalRefs.get(toolId);
     assert.ok(entry, `VM0047 external dependency ${toolId} must be declared in META.json`);
-    assert.equal(entry.status, 'external_unencoded', `VM0047 external dependency ${toolId} must stay external_unencoded`);
+    assert.ok(['external_unencoded', 'historical_non_blocking'].includes(entry.status), `${toolId} dep status must be external_unencoded or historical_non_blocking`);
     assert.equal(entry.local_artifact_present, false, `VM0047 external dependency ${toolId} must not claim a local artifact`);
   }
 

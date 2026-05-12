@@ -2,6 +2,6 @@
   "blocked_rule_count": 0,
   "blocked_rules": [],
   "methodology": "Verra/VM0047@v1-0",
-  "note": "All VM0047 rules are now source-audited. No active blocked external dependencies. CDM/T-SIG@v1 was never an active blocker (Appendix 2). CDM/AR-ACM0003@v02-0 exclusion criteria are self-contained in VM0047 Section 4. Verra/VT0001@v1-8 additionality steps are self-contained in VM0047 Section 7 and Appendix 1.",
-  "status": "external_unencoded"
+  "note": "All VM0047 rules source-audited. No active blocked external dependencies. External refs (VT0001, AR-ACM0003, T-SIG) are historical references only.",
+  "status": "no_active_blockers"
 }
