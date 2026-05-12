@@ -11,7 +11,6 @@
     "source_pdf": "verified"
   },
   "audit_hashes": {
-    "METHOD_GRADE_sha256": "5f74bab824e19d1d608b94619cefdec4d80513bf1abed27e7afb0535a8eb255a",
     "blocked_external_dependencies_sha256": "667e559448e21aac939dfc5ffde562189ee729f5874644f9f1766f681a203a2f",
     "rules.rich_sha256": "7be4d9bcd9b14cb65bb952381e29f474db195276095fc7b68e5b65ce9a84577f",
     "rules_json_sha256": "a6d66d8e7f409e9a43dca8656bea03f6e5a0c9ee02a3ecfa6e61d19d9fcdaf3e",
