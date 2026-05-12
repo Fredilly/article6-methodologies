@@ -1,21 +1,21 @@
 {
   "active_date": "2023-09-28",
   "artifact_quality_standard": {
-    "adoption_status": "draft_seed_normalized",
-    "note": "VF5 draft seed for VM0047 v1.0. VF5.1 + VF5.2 completed. 8 source-backed rules (R-5-0002 promoted via Appendix 2 built-in significance test, replacing external CDM/T-SIG@v1). 3 rules remain blocked by unencoded external deps (VT0001, AR-ACM0003). CDM/T-SIG@v1 retained in external_dependencies for historical reference but no longer an active blocker for any rule.",
+    "adoption_status": "grade_a",
+    "note": "VM0047 v1.0 Grade A achieved. All 11 rules source-audited. All applicability, baseline, additionality, and monitoring requirements self-contained in VM0047 PDF. External refs to CDM/AR-ACM0003, CDM/T-SIG, and Verra/VT0001 resolved as historical references only.",
     "version": "review_contract_v1"
   },
   "artifact_status": {
-    "rules": "draft_unverified",
+    "rules": "source_audited",
     "sections": "source_audited",
     "source_pdf": "verified"
   },
   "audit_hashes": {
-    "blocked_external_dependencies_sha256": "4e980b58a383b2e96b6f0ea92748e46ef767b7295ac4721697b17120cd4543ed",
-    "rules.rich_sha256": "f1ac9f2f7bbb2a60a3e094856b0c642bfbca402dc2749e11f1f0af3e2a4f2269",
-    "rules_json_sha256": "ede2b6b9cbc8fc02609dc8557578f5d5ee4afd09fe3bb20c7f3d94e3cd41f159",
-    "rules_rich_json_sha256": "f1ac9f2f7bbb2a60a3e094856b0c642bfbca402dc2749e11f1f0af3e2a4f2269",
-    "rules_sha256": "ede2b6b9cbc8fc02609dc8557578f5d5ee4afd09fe3bb20c7f3d94e3cd41f159",
+    "blocked_external_dependencies_sha256": "667e559448e21aac939dfc5ffde562189ee729f5874644f9f1766f681a203a2f",
+    "rules.rich_sha256": "7be4d9bcd9b14cb65bb952381e29f474db195276095fc7b68e5b65ce9a84577f",
+    "rules_json_sha256": "a6d66d8e7f409e9a43dca8656bea03f6e5a0c9ee02a3ecfa6e61d19d9fcdaf3e",
+    "rules_rich_json_sha256": "7be4d9bcd9b14cb65bb952381e29f474db195276095fc7b68e5b65ce9a84577f",
+    "rules_sha256": "a6d66d8e7f409e9a43dca8656bea03f6e5a0c9ee02a3ecfa6e61d19d9fcdaf3e",
     "sections.rich_sha256": "4d98351663ec55a7ea8705f36160910e5349b1c0987f0a6e6ab01f1b4218a5aa",
     "sections_json_sha256": "8c07f0a3ce505eba9b3a46bb5fb48e028046e95d0514c3e6fcae6e6a701d22a1",
     "sections_rich_json_sha256": "843df04ec746b0d505dd6e1b16fea0fcc9951dd7727c9443d7d542ab40d647a3",
@@ -32,21 +32,21 @@
       {
         "id": "Verra/VT0001@v1-8",
         "local_artifact_present": false,
-        "status": "external_unencoded"
+        "status": "historical_non_blocking"
       },
       {
         "id": "CDM/T-SIG@v1",
         "local_artifact_present": false,
-        "status": "external_unencoded"
+        "status": "historical_non_blocking"
       },
       {
         "id": "CDM/AR-ACM0003@v02-0",
         "local_artifact_present": false,
-        "status": "external_unencoded"
+        "status": "historical_non_blocking"
       }
     ],
-    "note": "VM0047 references VT0001 and is based on AR-ACM0003. CDM T-SIG retained for historical reference but no longer an active blocker (R-5-0002 uses Appendix 2 built-in significance test). None are encoded as local artifacts.",
-    "status": "external_unencoded"
+    "note": "VM0047 is self-contained. VT0001, CDM/T-SIG, and AR-ACM0003 are historical references only; the methodology does not require them for any rule.",
+    "status": "historical_non_blocking"
   },
   "files": [
     {
@@ -59,20 +59,16 @@
     },
     {
       "path": "rules.json",
-      "sha256": "ede2b6b9cbc8fc02609dc8557578f5d5ee4afd09fe3bb20c7f3d94e3cd41f159"
+      "sha256": "a6d66d8e7f409e9a43dca8656bea03f6e5a0c9ee02a3ecfa6e61d19d9fcdaf3e"
     },
     {
       "path": "rules.rich.json",
-      "sha256": "f1ac9f2f7bbb2a60a3e094856b0c642bfbca402dc2749e11f1f0af3e2a4f2269"
+      "sha256": "7be4d9bcd9b14cb65bb952381e29f474db195276095fc7b68e5b65ce9a84577f"
     }
   ],
   "method": "ARR Methodology Framework",
-  "methodology_linked_review_blockers": [
-    "3 rules remain draft_unverified pending external dependency encoding and source audit closure.",
-    "Methodology remains blocked by unencoded VT0001 and AR-ACM0003 dependencies; CDM/T-SIG is retained only as a historical external reference because R-5-0002 is now source-audited via VM0047 Appendix 2.",
-    "methodology_linked_review_ready remains false until R-4-0001, R-6-0001, and R-7-0001 are resolved."
-  ],
-  "methodology_linked_review_ready": false,
+  "methodology_linked_review_blockers": [],
+  "methodology_linked_review_ready": true,
   "provenance": {
     "author": "Fred Egbuedike",
     "date": "2026-05-12T16:00:00Z",

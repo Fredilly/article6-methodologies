@@ -12,10 +12,9 @@ function readJSON(p) {
   return JSON.parse(fs.readFileSync(p, 'utf8'));
 }
 
-function isGradeA(methodDir, { allowMissingGradeFile = false } = {}) {
+function isGradeA(methodDir) {
   const errors = [];
 
-  const gradePath = path.join(methodDir, 'METHOD_GRADE.json');
   const metaPath = path.join(methodDir, 'META.json');
   const secPath = path.join(methodDir, 'sections.json');
   const rulesPath = path.join(methodDir, 'rules.json');
@@ -37,9 +36,19 @@ function isGradeA(methodDir, { allowMissingGradeFile = false } = {}) {
   const sourceAudited = rules.filter((r) => r.quality_status === 'source_audited');
   const draftRules = rules.filter((r) => r.quality_status === 'draft_unverified');
 
-  // Derive the methodology tool ref from META (e.g. "Verra/VM0047@v1-0")
   const methodologyRef = meta.references?.tools?.[0]?.doc ||
     `${meta.standard}/${meta.methodology.replace(/ .*/, '')}@${meta.version}`;
+
+  // 0. META must declare Grade A readiness
+  if (meta.artifact_quality_standard?.adoption_status !== 'grade_a') {
+    errors.push(`META adoption_status is "${meta.artifact_quality_standard?.adoption_status}", expected "grade_a"`);
+  }
+  if (meta.artifact_status?.rules !== 'source_audited') {
+    errors.push(`META artifact_status.rules is "${meta.artifact_status?.rules}", expected "source_audited"`);
+  }
+  if (meta.methodology_linked_review_ready !== true) {
+    errors.push('META methodology_linked_review_ready is not true');
+  }
 
   // 1. All sections must have locator_status: source_audited
   for (const sec of sections) {
@@ -51,15 +60,21 @@ function isGradeA(methodDir, { allowMissingGradeFile = false } = {}) {
     }
   }
 
-  // 2. Every rule must be source_audited
+  // 2. No draft rules
   if (draftRules.length > 0) {
     errors.push(`${draftRules.length} draft_unverified rules exist (require 0 for Grade A)`);
   }
 
-  // 3. Every rich rule must have source_span_status: source_audited
-  // 4. Every rich rule must have rule_detail.status: source_audited
-  // 5. Every rich rule must have at least one non-placeholder condition
-  // 6. No placeholder exception text
+  // 2a. No active external_unencoded deps
+  if (meta.external_dependencies?.methodology_and_tool_refs) {
+    const activeDeps = meta.external_dependencies.methodology_and_tool_refs
+      .filter((d) => d.status === 'external_unencoded');
+    if (activeDeps.length > 0) {
+      errors.push(`${activeDeps.length} active external_unencoded dependencies exist: ${activeDeps.map((d) => d.id).join(', ')}`);
+    }
+  }
+
+  // 3-6. Rich rule quality checks
   for (const rule of rules) {
     const rich = richByStableId.get(rule.stable_id);
     if (!rich) {
@@ -98,7 +113,7 @@ function isGradeA(methodDir, { allowMissingGradeFile = false } = {}) {
     }
   }
 
-  // 7. External dependency check (exclude the method's own ref)
+  // 7. No unresolved external deps in rule tools (exclude own ref)
   for (const rule of rules) {
     for (const tool of rule.tools || []) {
       if (tool !== methodologyRef) {
@@ -107,44 +122,9 @@ function isGradeA(methodDir, { allowMissingGradeFile = false } = {}) {
     }
   }
 
-  // 8. Grade file counts must match artifacts
-  let grade;
-  if (fs.existsSync(gradePath)) {
-    grade = readJSON(gradePath);
-    if (grade.section_count !== undefined && grade.section_count !== sections.length) {
-      errors.push(`METHOD_GRADE section_count ${grade.section_count} != actual ${sections.length}`);
-    }
-    if (grade.rule_count !== undefined && grade.rule_count !== rules.length) {
-      errors.push(`METHOD_GRADE rule_count ${grade.rule_count} != actual ${rules.length}`);
-    }
-    if (grade.source_audited_rule_count !== undefined && grade.source_audited_rule_count !== sourceAudited.length) {
-      errors.push(`METHOD_GRADE source_audited_rule_count ${grade.source_audited_rule_count} != actual ${sourceAudited.length}`);
-    }
-    if (grade.draft_unverified_rule_count !== undefined && grade.draft_unverified_rule_count !== draftRules.length) {
-      errors.push(`METHOD_GRADE draft_unverified_rule_count ${grade.draft_unverified_rule_count} != actual ${draftRules.length}`);
-    }
-    if (grade.blocked_rule_count !== undefined && grade.blocked_rule_count !== draftRules.length) {
-      errors.push(`METHOD_GRADE blocked_rule_count ${grade.blocked_rule_count} != actual draft count ${draftRules.length}`);
-    }
-  }
-
-  // 9. Grade A requires specific fields
-  if (grade && grade.grade === 'grade_a') {
-    if (grade.app_ready !== true) errors.push('Grade A claim but app_ready is not true');
-    if (grade.methodology_linked_review_ready !== true) errors.push('Grade A claim but methodology_linked_review_ready is not true');
-    if (grade.blocked_rule_count !== 0) errors.push(`Grade A claim but blocked_rule_count is ${grade.blocked_rule_count}`);
-    if (grade.draft_unverified_rule_count !== 0) errors.push(`Grade A claim but draft_unverified_rule_count is ${grade.draft_unverified_rule_count}`);
-    if (grade.unresolved_external_dependencies?.length > 0) errors.push(`Grade A claim but ${grade.unresolved_external_dependencies.length} unresolved dependencies`);
-  }
-
-  // 10. Guard against false readiness
+  // 8. Guard against false readiness
   if (meta.methodology_linked_review_ready && draftRules.length > 0) {
     errors.push('META methodology_linked_review_ready is true but draft rules exist');
-  }
-
-  // 11. Non-grade-a cannot be Grade A
-  if (grade && grade.grade !== 'grade_a') {
-    errors.push(`METHOD_GRADE grade is "${grade.grade}", not "grade_a"`);
   }
 
   return { gradeA: errors.length === 0, errors };

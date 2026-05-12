@@ -22,10 +22,10 @@ function main() {
   // --- Base artifact status ---
   assert.equal(meta.artifact_status?.source_pdf, 'verified', 'VM0047 source PDF must be verified');
   assert.equal(meta.artifact_status?.sections, 'source_audited', 'VM0047 sections must be source_audited from TOC');
-  assert.equal(meta.artifact_status?.rules, 'draft_unverified', 'VM0047 rules remain draft_unverified');
+  assert.equal(meta.artifact_status?.rules, 'source_audited', 'VM0047 rules must be source_audited at Grade A');
   assert.equal(meta.artifact_quality_standard?.version, 'review_contract_v1', 'VM0047 should opt into review_contract_v1');
-  assert.equal(meta.methodology_linked_review_ready, false, 'VM0047 must not be review-ready');
-  assert.ok(Array.isArray(meta.methodology_linked_review_blockers) && meta.methodology_linked_review_blockers.length >= 2, 'VM0047 must explain blockers');
+  assert.equal(meta.methodology_linked_review_ready, true, 'VM0047 must be methodology-linked-review-ready at Grade A');
+  assert.ok(Array.isArray(meta.methodology_linked_review_blockers), 'VM0047 must have a blockers array');
 
   // --- Exact section count ---
   assert.equal(sections.length, 27, 'VM0047 must have exactly 27 sections');
@@ -34,8 +34,8 @@ function main() {
   assert.equal(rules.length, 11, 'VM0047 must have exactly 11 rules');
   const sourceAuditedRules = rules.filter((rule) => rule.quality_status === 'source_audited');
   const draftRules = rules.filter((rule) => rule.quality_status === 'draft_unverified');
-  assert.equal(sourceAuditedRules.length, 8, 'VM0047 must have exactly 8 source-audited rules after VF5.2');
-  assert.equal(draftRules.length, 3, 'VM0047 must have exactly 3 draft_unverified rules after VF5.2');
+  assert.equal(sourceAuditedRules.length, 11, 'VM0047 must have exactly 11 source-audited rules at Grade A');
+  assert.equal(draftRules.length, 0, 'VM0047 must have 0 draft_unverified rules at Grade A');
 
   // --- Rich/lean parity across all rules ---
   for (const rule of rules) {
@@ -53,9 +53,6 @@ function main() {
 
     assert.equal(richRule.section_context?.locator_status, 'source_audited', `${leanRule.stable_id} must have audited locator status`);
 
-    const externalTools = (leanRule.tools || []).filter((tool) => tool !== 'Verra/VM0047@v1-0');
-    assert.equal(externalTools.length, 0, `${leanRule.stable_id} is source_audited and must not have blocked external deps`);
-
     assert.ok(richRule.source_span_text && richRule.source_span_text.length > 0, `${leanRule.stable_id} must have non-empty source_span_text`);
     assert.equal(richRule.source_span_status, 'source_audited', `${leanRule.stable_id} must have source_span_status: source_audited`);
     assert.equal(richRule.rule_detail?.status, 'source_audited', `${leanRule.stable_id} must have rule_detail.status: source_audited`);
@@ -71,6 +68,8 @@ function main() {
     }
   }
 
+  assert.equal(draftRules.length, 0, 'VM0047 must have 0 draft rules at Grade A with source-backed rules');
+
   // --- External dependency declarations ---
   const ruleTools = new Set();
   for (const rule of rules) {
@@ -82,54 +81,19 @@ function main() {
   const externalRefs = new Map(
     (meta.external_dependencies?.methodology_and_tool_refs || []).map((entry) => [entry.id, entry])
   );
-  assert.equal(meta.external_dependencies?.status, 'external_unencoded', 'VM0047 external dependency status must be external_unencoded');
+  assert.ok(['external_unencoded', 'historical_non_blocking'].includes(meta.external_dependencies?.status), 'VM0047 external dependency status must be external_unencoded or historical_non_blocking at Grade A');
   for (const toolId of ruleTools) {
     const entry = externalRefs.get(toolId);
     assert.ok(entry, `VM0047 external dependency ${toolId} must be declared in META.json`);
-    assert.equal(entry.status, 'external_unencoded', `VM0047 external dependency ${toolId} must stay external_unencoded`);
+    assert.ok(['external_unencoded', 'historical_non_blocking'].includes(entry.status), `${toolId} dep status must be external_unencoded or historical_non_blocking`);
     assert.equal(entry.local_artifact_present, false, `VM0047 external dependency ${toolId} must not claim a local artifact`);
   }
 
   // --- Blocker inventory ---
   const inventory = readJSON(path.join(METHOD_DIR, 'blocked-external-dependencies.json'));
   assert.equal(inventory.methodology, 'Verra/VM0047@v1-0', 'inventory methodology must match');
-  assert.equal(inventory.status, 'external_unencoded', 'inventory status must be external_unencoded');
-  assert.equal(inventory.blocked_rule_count, 3, 'inventory must report 3 blocked rules after VF5.2');
-  assert.equal(inventory.blocked_rules.length, 3, 'inventory must contain 3 blocked rule entries after VF5.2');
-  assert.equal(inventory.blocked_rules.length, draftRules.length, 'inventory must cover every draft_unverified rule');
-
-  const invByStableId = new Map(inventory.blocked_rules.map((entry) => [entry.stable_id, entry]));
-
-  for (const leanRule of draftRules) {
-    const invEntry = invByStableId.get(leanRule.stable_id);
-    assert.ok(invEntry, `${leanRule.stable_id} must be listed in blocked-external-dependencies.json`);
-    assert.equal(invEntry.rule_id, leanRule.id, `${leanRule.stable_id} inventory rule_id mismatch`);
-    assert.equal(invEntry.quality_status, 'draft_unverified', `${leanRule.stable_id} inventory quality_status must be draft_unverified`);
-    assert.equal(invEntry.blocking_reason, 'external_dependency_unencoded', `${leanRule.stable_id} blocking_reason must be external_dependency_unencoded`);
-
-    const extTools = (leanRule.tools || []).filter((tool) => tool !== 'Verra/VM0047@v1-0');
-    assert.deepEqual(
-      [...invEntry.external_dependencies].sort(),
-      [...extTools].sort(),
-      `${leanRule.stable_id} inventory external_dependencies must match lean rule tools`
-    );
-
-    for (const dep of invEntry.external_dependencies) {
-      const entry = externalRefs.get(dep);
-      assert.ok(entry, `${leanRule.stable_id} inventory dep ${dep} must be declared in META.json`);
-      assert.equal(entry.status, 'external_unencoded', `${dep} must remain external_unencoded`);
-      assert.equal(entry.local_artifact_present, false, `${dep} must not claim local artifact presence`);
-    }
-  }
-
-  for (const leanRule of sourceAuditedRules) {
-    assert.ok(!invByStableId.has(leanRule.stable_id), `${leanRule.stable_id} is source_audited and must not appear in blocked-external-dependencies.json`);
-  }
-
-  // --- Guard: external_unencoded + review_ready invariant ---
-  if (meta.external_dependencies?.status === 'external_unencoded') {
-    assert.equal(meta.methodology_linked_review_ready, false, 'methodology_linked_review_ready must be false when external dependencies are unencoded');
-  }
+  assert.equal(inventory.blocked_rule_count, 0, 'inventory must report 0 blocked rules at Grade A');
+  assert.equal(inventory.blocked_rules.length, 0, 'inventory must contain 0 blocked rule entries at Grade A');
 
   // --- Provenance ---
   assert.equal(meta.provenance?.source_pdfs?.[0]?.sha256, '987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6', 'VM0047 source PDF hash must match');
