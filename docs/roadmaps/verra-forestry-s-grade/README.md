@@ -11,7 +11,7 @@ blocked external dependencies, `methodology_linked_review_ready: true`.
 | File | Purpose |
 |------|---------|
 | `phase-status.json` | **Single source of truth** for what is done, what is next. Every PR must update this. |
-| Dependency maps (`methodologies/Verra/AFOLU/*/v*/dependency-resolution-map.json`) | Technical input — classifies each external ref. |
+| Dependency maps (`dependency-resolution-maps/*.json`) | Technical input — classifies each external ref for a given method. |
 
 ## Workflow
 
@@ -29,5 +29,5 @@ blocked external dependencies, `methodology_linked_review_ready: true`.
 ## Current state
 
 - VM0047: S-grade.
-- VM0007: Not S-grade. 33 blocked rules, 19 active deps. See
-  `dependency-resolution-map.json` for details.
+- VM0007: Not S-grade. 31 blocked rules, 19 active deps. See
+  `dependency-resolution-maps/VM0007-v1-8.json` for details.

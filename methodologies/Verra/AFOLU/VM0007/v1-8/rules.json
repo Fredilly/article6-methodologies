@@ -132,19 +132,18 @@
       "id": "R-1-0008",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0008",
       "title": "WRC hydrological connectivity check",
-      "logic": "Spillover emissions from hydrological changes must be assessed and not be significant.",
+      "logic": "Spillover emissions from hydrological changes must be assessed using the stepwise significance procedure in Appendix 1 (alternative to T-SIG). Procedure covers GHG emissions by source, carbon stock changes by pool, and leakage GHG emissions.",
       "section_id": "S-1",
       "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-1",
       "section_number": "4",
       "section_anchor": "applicability-conditions",
       "tools": [
-        "Verra/T-SIG@v1-8",
         "Verra/VM0007@v1-8"
       ],
       "tags": [
         "eligibility"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -245,19 +244,18 @@
       "id": "R-1-0014",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0014",
       "title": "IFM and ARR exclusion",
-      "logic": "IFM and ARR explicitly excluded. ARR in wetlands requires VM0047 + WRC modules.",
+      "logic": "IFM and ARR activities are excluded from VM0007. WRC projects that also implement ARR activities must use an appropriate ARR methodology, e.g. VM0047, for aboveground biomass accounting.",
       "section_id": "S-1",
       "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-1",
       "section_number": "4",
       "section_anchor": "applicability-conditions",
       "tools": [
-        "Verra/VM0007@v1-8",
-        "Verra/VM0047@v1-8"
+        "Verra/VM0007@v1-8"
       ],
       "tags": [
         "eligibility"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {

@@ -1,5 +1,5 @@
 {
-  "blocked_rule_count": 33,
+  "blocked_rule_count": 31,
   "blocked_rules": [
     {
       "blocking_reason": "external_dependency_unencoded",
@@ -20,16 +20,6 @@
       "rule_id": "R-1-0004",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0004",
       "title": "APDef legal authorization"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/T-SIG@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-1-0008",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0008",
-      "title": "WRC hydrological connectivity check"
     },
     {
       "blocking_reason": "external_dependency_unencoded",
@@ -70,16 +60,6 @@
       "rule_id": "R-1-0013",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0013",
       "title": "AUWD agent criteria"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VM0047@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-1-0014",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0014",
-      "title": "IFM and ARR exclusion"
     },
     {
       "blocking_reason": "external_dependency_unencoded",
