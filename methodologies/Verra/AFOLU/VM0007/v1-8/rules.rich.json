@@ -955,7 +955,7 @@
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0014",
-    "logic": "IFM and ARR activities are excluded from VM0007. ARR in wetlands requires a separate WRC/ARR methodology. VM0047 is encoded in this repo as the companion ARR methodology.",
+    "logic": "IFM and ARR activities are excluded from VM0007. WRC projects that also implement ARR activities must use an appropriate ARR methodology, e.g. VM0047, for aboveground biomass accounting.",
     "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
