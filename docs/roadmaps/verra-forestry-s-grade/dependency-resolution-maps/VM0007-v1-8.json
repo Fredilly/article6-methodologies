@@ -24,10 +24,10 @@
     {
       "blocked_rule_count": 0,
       "blocked_rule_ids": [],
-      "classification": "repo_resolved",
-      "evidence_note": "VMD0006 dependency resolved. 3 rules promoted (R-1-0004, R-2-0005, R-3-0005). Source PDF referenced via Verra page (not locally cached).",
+      "classification": "externally_referenced",
+      "evidence_note": "VMD0006 source locator recorded (Verra page). PDF not locally cached/hash-verified. 3 rules promoted based on VM0007 source spans alone.",
       "id": "Verra/VMD0006@v1-8",
-      "next_action": "completed"
+      "next_action": "cache_or_hash_source_pdf_when_available"
     },
     {
       "blocked_rule_count": 3,

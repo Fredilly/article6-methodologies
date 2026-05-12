@@ -2,7 +2,7 @@
   "active_date": "2024-06-04",
   "artifact_quality_standard": {
     "adoption_status": "source_audited",
-    "note": "VF S5 VMD0006 dependency resolved. 33 source_audited rules (30 + 3 VMD0006-backed). 25 remain draft_unverified.",
+    "note": "VF S5 advanced 3 VMD0006-backed VM0007 rules using VM0007 source spans; VMD0006 source PDF remains externally referenced and not locally cached/hash-verified.",
     "version": "review_contract_v1"
   },
   "artifact_status": {
@@ -13,8 +13,8 @@
   "audit_hashes": {
     "blocked_external_dependencies_sha256": "a0fd875214d40b2c3391c46ba8a662a6d8b0d3e6f87cc968a3d1c389e02ad29d",
     "rules.rich_sha256": "94ee570e8a7d062087c3886c90732ffb82c5cbcd184f1e3fe9749bb9fb6307ed",
-    "rules_json_sha256": "0a53ee5da2d6ec9876cbee926cb5a451495f8a5dddebce473c19f526710a65d5",
-    "rules_rich_json_sha256": "adb49b70ace9768a16bfee6ff77a4cb6bb936fe8b5bba5c5f6c9a5864e2272fd",
+    "rules_json_sha256": "46208531206aebf77fb8ffd9bb0025d12ca3be8c4ca53f516b66931816cf7139",
+    "rules_rich_json_sha256": "94ee570e8a7d062087c3886c90732ffb82c5cbcd184f1e3fe9749bb9fb6307ed",
     "rules_sha256": "46208531206aebf77fb8ffd9bb0025d12ca3be8c4ca53f516b66931816cf7139",
     "sections_json_sha256": "852125cacbe9d09f0560886fb27621548939033a382d2b1718f50b7694f41201",
     "sections_rich_json_sha256": "4506bb488417a940fc4e84228bff7abcc7e7921fcb9a824fa140bf6e2687b5e3",
@@ -77,7 +77,7 @@
       {
         "id": "Verra/VMD0006@v1-8",
         "local_artifact_present": false,
-        "status": "historical_non_blocking"
+        "status": "externally_referenced"
       },
       {
         "id": "Verra/VMD0007@v1-8",
@@ -163,7 +163,7 @@
   ],
   "method": "REDD+ Methodology Framework",
   "methodology_linked_review_blockers": [
-    "25 rules remain draft_unverified. VMD0006 resolved (3 rules promoted).",
+    "25 rules remain draft_unverified. VMD0006 externally referenced (not locally cached).",
     "Remaining external Verra modules and tools not encoded.",
     "Deeper subsection hierarchy not fully mapped."
   ],
