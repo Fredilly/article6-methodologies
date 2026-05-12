@@ -1,11 +1,12 @@
 {
   "goal": "Upgrade Verra forestry methods to S-grade (Grade A) for methodology-linked review readiness. S-grade = all sections and rules source-audited, no active blocked external dependencies, methodology_linked_review_ready: true.",
-  "last_updated_at": "2026-05-12T23:00:00Z",
+  "last_updated_at": "2026-05-12T23:30:00Z",
   "notes": [
     "VM0047 v1.0 reached S-grade: 27 sections, 11 rules, 0 blockers. Reference pattern for all Verra forestry methods.",
-    "VM0007 dependency resolution map completed: 21 external deps categorized (19 active_required, 1 candidate_self_contained, 1 repo_resolved).",
-    "VM0007 is not S-grade: 25/58 rules source_audited, 33 blocked by 19 active external module/tool dependencies.",
-    "Quick wins before encoding: resolve VM0047 (repo_resolved, META edit) and T-SIG (Appendix 1, rich edit)."
+    "VM0007 dependency resolution map completed: 21 external deps categorized.",
+    "VF S3 quick wins completed: R-1-0008 (T-SIG via Appendix 1) and R-1-0014 (VM0047 repo_resolved) promoted to source_audited.",
+    "VM0007 now: 27/58 rules source_audited, 31 blocked by 19 active external module/tool dependencies.",
+    "Next: encode VMD0007 (5 blocked rules, highest-impact module)."
   ],
   "phases": [
     {
@@ -21,12 +22,12 @@
     {
       "id": "vf_s3_vm0007_quick_wins",
       "name": "VM0007 quick wins: VM0047 dep status + T-SIG via Appendix 1",
-      "status": "next"
+      "status": "completed"
     },
     {
       "id": "vf_s4_vm0007_vmd0007_encoding",
       "name": "Encode VMD0007 (5 blocked rules)",
-      "status": "not_started"
+      "status": "next"
     },
     {
       "id": "vf_s5_vm0007_remaining_modules",
