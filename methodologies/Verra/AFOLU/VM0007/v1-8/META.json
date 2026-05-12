@@ -2,7 +2,7 @@
   "active_date": "2024-06-04",
   "artifact_quality_standard": {
     "adoption_status": "source_audited",
-    "note": "VF S3 quick wins + VF S4 VMD0007 encoding. 32 source_audited rules (27 + 5 VMD0007-backed). 26 remain draft_unverified. VMD0007 encoded at tools/Verra/VMD0007/v3-3.",
+    "note": "VF S3 + S4: 30 VM0007-backed rules source_audited, 28 remain draft_unverified. VMD0007 encoded (3 rules promoted: R-1-0003, R-1-0013, R-2-0004). R-3-0005 and R-6-0005 kept draft_unverified due to remaining VMD0006/VMD0015 deps.",
     "version": "review_contract_v1"
   },
   "artifact_status": {
@@ -11,11 +11,11 @@
     "source_pdf": "verified"
   },
   "audit_hashes": {
-    "blocked_external_dependencies_sha256": "cb930dae35d9a0af2e4cbd6b1b3c46e5ede996191237d96dd59740f9f0e77c9a",
-    "rules.rich_sha256": "4e962aba8701c84b3d6b623bc407c31548b8a9eb2016360eb80b0ffe4b353e81",
+    "blocked_external_dependencies_sha256": "8a7b0c18141d9e6c01972b0eb793e1e699d7b33db386c60a7f4341b2fe7c8706",
+    "rules.rich_sha256": "adb49b70ace9768a16bfee6ff77a4cb6bb936fe8b5bba5c5f6c9a5864e2272fd",
     "rules_json_sha256": "cb5518fb31bd7b1d4c772e06b84fa23cc2c160664d254dee8805a2aff6283072",
     "rules_rich_json_sha256": "b458d4e59b639a86ac709735cb1a8836206dce49dbd5c240720b5e1eb7711088",
-    "rules_sha256": "10e86f00ae29004d1173ebafb42f098c8263f3d6b39092e8c89ffa6f9aef0689",
+    "rules_sha256": "0a53ee5da2d6ec9876cbee926cb5a451495f8a5dddebce473c19f526710a65d5",
     "sections_json_sha256": "852125cacbe9d09f0560886fb27621548939033a382d2b1718f50b7694f41201",
     "sections_rich_json_sha256": "4506bb488417a940fc4e84228bff7abcc7e7921fcb9a824fa140bf6e2687b5e3",
     "source_pdf_sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
@@ -154,16 +154,17 @@
     },
     {
       "path": "rules.json",
-      "sha256": "10e86f00ae29004d1173ebafb42f098c8263f3d6b39092e8c89ffa6f9aef0689"
+      "sha256": "0a53ee5da2d6ec9876cbee926cb5a451495f8a5dddebce473c19f526710a65d5"
     },
     {
       "path": "rules.rich.json",
-      "sha256": "4e962aba8701c84b3d6b623bc407c31548b8a9eb2016360eb80b0ffe4b353e81"
+      "sha256": "adb49b70ace9768a16bfee6ff77a4cb6bb936fe8b5bba5c5f6c9a5864e2272fd"
     }
   ],
   "method": "REDD+ Methodology Framework",
   "methodology_linked_review_blockers": [
-    "26 rules remain draft_unverified. VMD0007 encoded (5 rules promoted).",
+    "28 rules remain draft_unverified. VMD0007 encoded (3 rules promoted).",
+    "R-3-0005 still blocked by VMD0006; R-6-0005 still blocked by VMD0015.",
     "External Verra modules and tools referenced by the retained draft rules are not encoded.",
     "Deeper subsection hierarchy not fully mapped."
   ],
@@ -190,6 +191,14 @@
         "sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
         "size": 963486,
         "url": "https://verra.org/documents/vm0007-redd-methodology-framework-v1-8-clean/"
+      },
+      {
+        "doc": "Verra/VMD0007@v3-3",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0007/v3-3/source.pdf",
+        "sha256": "c5f81df7bd65affae8686a40e27f1cfa0c90ca88b3c1fbf6a9ad5ee30398d499",
+        "size": 800330,
+        "url": null
       }
     ]
   },

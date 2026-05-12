@@ -2133,7 +2133,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-3-0005",
     "logic": "Module selection based on deforestation category.",
-    "quality_status": "source_audited",
+    "quality_status": "draft_unverified",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-3",
@@ -2151,17 +2151,17 @@
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-3-0005",
       "coverage_scope": "rule",
-      "expected_evidence_status": "seed_derived_pending_review",
+      "expected_evidence_status": "seed_unverified",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-3"
         }
       ],
-      "section_refs_status": "source_audited"
+      "section_refs_status": "derived_from_section_context_pending_source_audit"
     },
     "rule_detail": {
-      "status": "source_audited",
+      "status": "seed_unverified",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -2169,14 +2169,14 @@
       "lineage": [
         "baseline-scenario"
       ],
-      "locator_status": "source_audited",
+      "locator_status": "pending_source_audit",
       "page_end": 27,
       "page_start": 25,
       "section_id": "S-3",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3",
       "section_title": "Baseline Scenario"
     },
-    "source_span_status": "source_audited",
+    "source_span_status": "seed_extracted_pending_source_audit",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0005",
     "summary": "REDD baseline modules",
     "type": "calc",
@@ -3119,7 +3119,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-6-0005",
     "logic": "10-year minimum frequency. Spatial variables must be refreshed.",
-    "quality_status": "source_audited",
+    "quality_status": "draft_unverified",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-6",
@@ -3137,17 +3137,17 @@
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-6-0005",
       "coverage_scope": "rule",
-      "expected_evidence_status": "seed_derived_pending_review",
+      "expected_evidence_status": "seed_unverified",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-6"
         }
       ],
-      "section_refs_status": "source_audited"
+      "section_refs_status": "derived_from_section_context_pending_source_audit"
     },
     "rule_detail": {
-      "status": "source_audited",
+      "status": "seed_unverified",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -3155,14 +3155,14 @@
       "lineage": [
         "monitoring"
       ],
-      "locator_status": "source_audited",
+      "locator_status": "pending_source_audit",
       "page_end": 49,
       "page_start": 39,
       "section_id": "S-6",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-6",
       "section_title": "Monitoring"
     },
-    "source_span_status": "source_audited",
+    "source_span_status": "seed_extracted_pending_source_audit",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-6-0005",
     "summary": "REDD forest cover monitoring",
     "type": "monitoring",

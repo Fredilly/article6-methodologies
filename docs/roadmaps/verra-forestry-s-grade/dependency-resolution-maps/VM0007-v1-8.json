@@ -4,7 +4,7 @@
       "blocked_rule_count": 0,
       "blocked_rule_ids": [],
       "classification": "repo_resolved",
-      "evidence_note": "VMD0007 encoded at tools/Verra/VMD0007/v3-3. All 5 blocked rules promoted to source_audited.",
+      "evidence_note": "VMD0007 encoded. 3 rules promoted (R-1-0003, R-1-0013, R-2-0004). R-3-0005 and R-6-0005 kept draft (still blocked by VMD0006/VMD0015).",
       "id": "Verra/VMD0007@v1-8",
       "next_action": "completed"
     },
@@ -230,7 +230,7 @@
       "next_action": "encode_as_local_artifact"
     }
   ],
-  "draft_unverified_rule_count": 26,
+  "draft_unverified_rule_count": 28,
   "methodology": "Verra/VM0007@v1-8",
   "recommended_encoding_order": [
     "1. VM0047 dep resolved — DONE",
@@ -241,7 +241,7 @@
     "6. Encode VMD0042 (peatland baseline)",
     "7. Remainder in dependency-order"
   ],
-  "source_audited_rule_count": 32,
+  "source_audited_rule_count": 30,
   "status": "has_active_blockers",
   "total_dependencies": 21
 }
