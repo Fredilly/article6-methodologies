@@ -201,7 +201,7 @@
   {
     "id": "Verra.AFOLU.VM0047.v1-0.R-5-0001",
     "logic": "Project boundary must be fixed ex-ante. Stratification by land cover, soil type, and management regime.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0047@v1-0",
       "primary_section": "S-5",
@@ -233,7 +233,7 @@
           "section_id": "S-5"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
       "conditions": [
@@ -242,7 +242,7 @@
       "exceptions": [
         "Not specified in VF5 draft seed"
       ],
-      "status": "seed_unverified",
+      "status": "source_audited",
       "summary": "Geographic boundary and stratification"
     },
     "section_context": {
@@ -250,14 +250,14 @@
       "lineage": [
         "project-boundary"
       ],
-      "locator_status": "draft_derived_rule_context_pending_source_audit",
+      "locator_status": "source_audited",
       "page_end": 11,
       "page_start": 9,
       "section_id": "S-5",
       "section_ref": "Verra.AFOLU.VM0047.v1-0.S-5",
       "section_title": "Project Boundary"
     },
-    "source_span_status": "seed_extracted_pending_source_audit",
+    "source_span_status": "source_audited",
     "source_span_text": "The project boundary shall be determined and documented in the project description.",
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-5-0001",
     "summary": "Geographic boundary and stratification",

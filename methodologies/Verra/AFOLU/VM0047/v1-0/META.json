@@ -11,10 +11,11 @@
     "source_pdf": "verified"
   },
   "audit_hashes": {
-    "rules.rich_sha256": "6b2aad8177be3e050dce6cb08b2a64248725217732483d1ac93a1bc969081de7",
+    "blocked_external_dependencies_sha256": "f7b40deddd80326bf975187df490e8e7136d732dcc11d87b58d39f1995cbba72",
+    "rules.rich_sha256": "9741ad5110313d2fff6fc7e127bd7826187306b8858ec90c8ae1e996428ebcf5",
     "rules_json_sha256": "29a210e7b68737cbb891cee64b8dfb0a1c77122630ca0790e9a808fdd6d174a7",
     "rules_rich_json_sha256": "d1189c5dbfa905528d48da8f7fdf0d203a3d331df7cfc7b46e84415bdfae1b16",
-    "rules_sha256": "86c1f651c6c82683cc431ba0461328547d58fe1e5e37a544eda93cb25882cdf1",
+    "rules_sha256": "d2415a103695a8403bf021a0ab77cdccec76eaa0893d4b6cbde83ed5f932e6a2",
     "sections.rich_sha256": "4d98351663ec55a7ea8705f36160910e5349b1c0987f0a6e6ab01f1b4218a5aa",
     "sections_json_sha256": "8c07f0a3ce505eba9b3a46bb5fb48e028046e95d0514c3e6fcae6e6a701d22a1",
     "sections_rich_json_sha256": "843df04ec746b0d505dd6e1b16fea0fcc9951dd7727c9443d7d542ab40d647a3",
@@ -58,11 +59,11 @@
     },
     {
       "path": "rules.json",
-      "sha256": "86c1f651c6c82683cc431ba0461328547d58fe1e5e37a544eda93cb25882cdf1"
+      "sha256": "d2415a103695a8403bf021a0ab77cdccec76eaa0893d4b6cbde83ed5f932e6a2"
     },
     {
       "path": "rules.rich.json",
-      "sha256": "6b2aad8177be3e050dce6cb08b2a64248725217732483d1ac93a1bc969081de7"
+      "sha256": "9741ad5110313d2fff6fc7e127bd7826187306b8858ec90c8ae1e996428ebcf5"
     }
   ],
   "method": "ARR Methodology Framework",

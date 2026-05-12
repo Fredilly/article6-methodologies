@@ -1,9 +1,9 @@
 {
   "goal": "Encode Verra forestry methodology support so methodology-linked reviews can be consumed by app.article6 after encoding, starting with VM0007 and leaving room for later Verra forestry methods.",
-  "last_updated_at": "2026-05-12T18:00:00Z",
+  "last_updated_at": "2026-05-12T20:00:00Z",
   "notes": [
     "VF1-VF4: VM0007 complete through section audit, rule audit, and dependency inventory.",
-    "VF5 added VM0047 v1.0 (ARR) as modern Verra forestry method: 27 sections source-audited from TOC, 11 rules (5 source-backed, 6 blocked by external deps VT0001/T-SIG/AR-ACM0003).",
+    "VF5 added VM0047 v1.0 (ARR): 27 sections source-audited from TOC, 11 rules (7 source-backed, 4 blocked by external deps VT0001/T-SIG/AR-ACM0003).",
     "VM0007 remains not ready for methodology-linked review while 33 rules stay draft_unverified and external Verra dependencies remain unencoded.",
     "VM0047 is a VF5 draft seed; not review-ready."
   ],
