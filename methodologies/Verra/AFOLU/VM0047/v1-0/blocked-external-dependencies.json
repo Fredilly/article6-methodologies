@@ -1,5 +1,5 @@
 {
-  "blocked_rule_count": 4,
+  "blocked_rule_count": 3,
   "blocked_rules": [
     {
       "blocking_reason": "external_dependency_unencoded",
@@ -10,16 +10,6 @@
       "rule_id": "R-4-0001",
       "stable_id": "Verra.AFOLU.VM0047.v1-0.R-4-0001",
       "title": "ARR applicability land eligibility"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "CDM/T-SIG@v1"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-5-0002",
-      "stable_id": "Verra.AFOLU.VM0047.v1-0.R-5-0002",
-      "title": "Carbon pool selection"
     },
     {
       "blocking_reason": "external_dependency_unencoded",

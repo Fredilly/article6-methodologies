@@ -34,8 +34,8 @@ function main() {
   assert.equal(rules.length, 11, 'VM0047 must have exactly 11 rules');
   const sourceAuditedRules = rules.filter((rule) => rule.quality_status === 'source_audited');
   const draftRules = rules.filter((rule) => rule.quality_status === 'draft_unverified');
-  assert.equal(sourceAuditedRules.length, 7, 'VM0047 must have exactly 7 source-audited rules');
-  assert.equal(draftRules.length, 4, 'VM0047 must have exactly 4 draft_unverified rules');
+  assert.equal(sourceAuditedRules.length, 8, 'VM0047 must have exactly 8 source-audited rules after VF5.2');
+  assert.equal(draftRules.length, 3, 'VM0047 must have exactly 3 draft_unverified rules after VF5.2');
 
   // --- Rich/lean parity across all rules ---
   for (const rule of rules) {
@@ -94,8 +94,8 @@ function main() {
   const inventory = readJSON(path.join(METHOD_DIR, 'blocked-external-dependencies.json'));
   assert.equal(inventory.methodology, 'Verra/VM0047@v1-0', 'inventory methodology must match');
   assert.equal(inventory.status, 'external_unencoded', 'inventory status must be external_unencoded');
-  assert.equal(inventory.blocked_rule_count, 4, 'inventory must report 4 blocked rules');
-  assert.equal(inventory.blocked_rules.length, 4, 'inventory must contain 4 blocked rule entries');
+  assert.equal(inventory.blocked_rule_count, 3, 'inventory must report 3 blocked rules after VF5.2');
+  assert.equal(inventory.blocked_rules.length, 3, 'inventory must contain 3 blocked rule entries after VF5.2');
   assert.equal(inventory.blocked_rules.length, draftRules.length, 'inventory must cover every draft_unverified rule');
 
   const invByStableId = new Map(inventory.blocked_rules.map((entry) => [entry.stable_id, entry]));

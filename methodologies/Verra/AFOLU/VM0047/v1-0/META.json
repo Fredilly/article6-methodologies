@@ -11,11 +11,11 @@
     "source_pdf": "verified"
   },
   "audit_hashes": {
-    "blocked_external_dependencies_sha256": "f7b40deddd80326bf975187df490e8e7136d732dcc11d87b58d39f1995cbba72",
-    "rules.rich_sha256": "5036f31d2aba653e2d2a71fa7414c103cedfd920ff16902c07d46fec550a296f",
+    "blocked_external_dependencies_sha256": "4e980b58a383b2e96b6f0ea92748e46ef767b7295ac4721697b17120cd4543ed",
+    "rules.rich_sha256": "5073b78f673d98cd776ab3530a0eb904a9b93be1fa2b001337ee34531d0a2107",
     "rules_json_sha256": "d2415a103695a8403bf021a0ab77cdccec76eaa0893d4b6cbde83ed5f932e6a2",
     "rules_rich_json_sha256": "5036f31d2aba653e2d2a71fa7414c103cedfd920ff16902c07d46fec550a296f",
-    "rules_sha256": "d2415a103695a8403bf021a0ab77cdccec76eaa0893d4b6cbde83ed5f932e6a2",
+    "rules_sha256": "ede2b6b9cbc8fc02609dc8557578f5d5ee4afd09fe3bb20c7f3d94e3cd41f159",
     "sections.rich_sha256": "4d98351663ec55a7ea8705f36160910e5349b1c0987f0a6e6ab01f1b4218a5aa",
     "sections_json_sha256": "8c07f0a3ce505eba9b3a46bb5fb48e028046e95d0514c3e6fcae6e6a701d22a1",
     "sections_rich_json_sha256": "843df04ec746b0d505dd6e1b16fea0fcc9951dd7727c9443d7d542ab40d647a3",
@@ -59,11 +59,11 @@
     },
     {
       "path": "rules.json",
-      "sha256": "d2415a103695a8403bf021a0ab77cdccec76eaa0893d4b6cbde83ed5f932e6a2"
+      "sha256": "ede2b6b9cbc8fc02609dc8557578f5d5ee4afd09fe3bb20c7f3d94e3cd41f159"
     },
     {
       "path": "rules.rich.json",
-      "sha256": "5036f31d2aba653e2d2a71fa7414c103cedfd920ff16902c07d46fec550a296f"
+      "sha256": "5073b78f673d98cd776ab3530a0eb904a9b93be1fa2b001337ee34531d0a2107"
     }
   ],
   "method": "ARR Methodology Framework",
