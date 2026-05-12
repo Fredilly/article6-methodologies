@@ -17,7 +17,7 @@
     "sections_rich_json_sha256": "4506bb488417a940fc4e84228bff7abcc7e7921fcb9a824fa140bf6e2687b5e3",
     "source_pdf_sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
     "rules_sha256": "f42784248aad8e9a422b8eb616a1a54e3bd63f51cf4b778be0ee85dae6f65202",
-    "rules.rich_sha256": "e695aa0cddce1d62784893b6eefe25c10c45bd815e02bbc3c47740426ebdfb1b",
+    "rules.rich_sha256": "abc22f2401a71d738041b31f6a09d356c7019b871c63049781a36151ffeb651a",
     "blocked_external_dependencies_sha256": "f895887a1eccd6579ca57b285a8e3ecf33ebfec7403c070206df16c38b64dd4d"
   },
   "automation": {
@@ -158,7 +158,7 @@
     },
     {
       "path": "rules.rich.json",
-      "sha256": "e695aa0cddce1d62784893b6eefe25c10c45bd815e02bbc3c47740426ebdfb1b"
+      "sha256": "abc22f2401a71d738041b31f6a09d356c7019b871c63049781a36151ffeb651a"
     }
   ],
   "method": "REDD+ Methodology Framework",
