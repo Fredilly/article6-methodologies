@@ -235,7 +235,8 @@
         "S-1"
       ],
       "tools": [
-        "Verra/VM0007@v1-8"
+        "Verra/VM0007@v1-8",
+        "Verra/VMD0006@v1-8"
       ]
     },
     "requirement_coverage": {
@@ -1312,7 +1313,8 @@
         "S-2"
       ],
       "tools": [
-        "Verra/VM0007@v1-8"
+        "Verra/VM0007@v1-8",
+        "Verra/VMD0006@v1-8"
       ]
     },
     "requirement_coverage": {
@@ -2142,7 +2144,8 @@
         "S-3"
       ],
       "tools": [
-        "Verra/VM0007@v1-8"
+        "Verra/VM0007@v1-8",
+        "Verra/VMD0006@v1-8"
       ]
     },
     "requirement_coverage": {

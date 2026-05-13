@@ -37,11 +37,21 @@ function main() {
   const externalRefs = new Map(
     (meta.external_dependencies?.methodology_and_tool_refs || []).map((entry) => [entry.id, entry])
   );
-  assert.equal(meta.external_dependencies?.status, 'external_unencoded', 'VM0007 external dependency status must remain external_unencoded');
+  assert.equal(meta.external_dependencies?.status, 'external_unencoded', 'VM0007 overall external dependency status must remain external_unencoded');
+
+  const vmd0006Entry = externalRefs.get('Verra/VMD0006@v1-8');
+  assert.ok(vmd0006Entry, 'VMD0006 must be declared in META.json external_dependencies');
+  assert.equal(vmd0006Entry.status, 'externally_referenced', 'VMD0006 must be externally_referenced (locator recorded, not locally cached)');
+  assert.equal(vmd0006Entry.local_artifact_present, false, 'VMD0006 must not claim a local artifact');
+
   for (const toolId of ruleTools) {
     const entry = externalRefs.get(toolId);
     assert.ok(entry, `VM0007 external dependency ${toolId} must be declared in META.json`);
-    assert.equal(entry.status, 'external_unencoded', `VM0007 external dependency ${toolId} must stay external_unencoded`);
+    if (toolId === 'Verra/VMD0006@v1-8') {
+      assert.equal(entry.status, 'externally_referenced', `${toolId} must be externally_referenced`);
+    } else {
+      assert.equal(entry.status, 'external_unencoded', `VM0007 external dependency ${toolId} must stay external_unencoded`);
+    }
     assert.equal(entry.local_artifact_present, false, `VM0007 external dependency ${toolId} must not claim a local artifact`);
   }
 
@@ -64,6 +74,18 @@ function main() {
     );
     assert.equal(typeof richRule.section_context?.page_start, 'number', `${leanRule.stable_id} must have page_start`);
     assert.equal(typeof richRule.section_context?.page_end, 'number', `${leanRule.stable_id} must have page_end`);
+  }
+
+  const promotedIds = ['Verra.AFOLU.VM0007.v1-8.R-1-0004', 'Verra.AFOLU.VM0007.v1-8.R-2-0005', 'Verra.AFOLU.VM0007.v1-8.R-3-0005'];
+  for (const stableId of promotedIds) {
+    const leanRule = rules.find((r) => r.stable_id === stableId);
+    assert.ok(leanRule, `${stableId} must exist in rules`);
+    const extTools = (leanRule.tools || []).filter((t) => t !== 'Verra/VM0007@v1-8');
+    assert.ok(extTools.includes('Verra/VMD0006@v1-8'), `${stableId} must retain VMD0006 in tools for dependency visibility`);
+    const richRule = richByStableId.get(stableId);
+    assert.ok(richRule, `${stableId} must exist in rules.rich.json`);
+    const refTools = richRule.refs?.tools || [];
+    assert.ok(refTools.includes('Verra/VMD0006@v1-8'), `${stableId} must retain VMD0006 in rich refs.tools for dependency visibility`);
   }
 
   for (const leanRule of draftRules) {

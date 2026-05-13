@@ -12,10 +12,10 @@
   },
   "audit_hashes": {
     "blocked_external_dependencies_sha256": "a0fd875214d40b2c3391c46ba8a662a6d8b0d3e6f87cc968a3d1c389e02ad29d",
-    "rules.rich_sha256": "94ee570e8a7d062087c3886c90732ffb82c5cbcd184f1e3fe9749bb9fb6307ed",
-    "rules_json_sha256": "46208531206aebf77fb8ffd9bb0025d12ca3be8c4ca53f516b66931816cf7139",
-    "rules_rich_json_sha256": "94ee570e8a7d062087c3886c90732ffb82c5cbcd184f1e3fe9749bb9fb6307ed",
-    "rules_sha256": "46208531206aebf77fb8ffd9bb0025d12ca3be8c4ca53f516b66931816cf7139",
+    "rules.rich_sha256": "51d24ac1ab953600b989e18e8e84a0d8816b7e938d62a7b6c8326af09e72073b",
+    "rules_json_sha256": "990959bef0072022692c66ce6de2af9c2f3ab5f9a70b0b6ee95553c055d77aef",
+    "rules_rich_json_sha256": "51d24ac1ab953600b989e18e8e84a0d8816b7e938d62a7b6c8326af09e72073b",
+    "rules_sha256": "990959bef0072022692c66ce6de2af9c2f3ab5f9a70b0b6ee95553c055d77aef",
     "sections_json_sha256": "852125cacbe9d09f0560886fb27621548939033a382d2b1718f50b7694f41201",
     "sections_rich_json_sha256": "4506bb488417a940fc4e84228bff7abcc7e7921fcb9a824fa140bf6e2687b5e3",
     "source_pdf_sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
@@ -154,11 +154,11 @@
     },
     {
       "path": "rules.json",
-      "sha256": "46208531206aebf77fb8ffd9bb0025d12ca3be8c4ca53f516b66931816cf7139"
+      "sha256": "990959bef0072022692c66ce6de2af9c2f3ab5f9a70b0b6ee95553c055d77aef"
     },
     {
       "path": "rules.rich.json",
-      "sha256": "94ee570e8a7d062087c3886c90732ffb82c5cbcd184f1e3fe9749bb9fb6307ed"
+      "sha256": "51d24ac1ab953600b989e18e8e84a0d8816b7e938d62a7b6c8326af09e72073b"
     }
   ],
   "method": "REDD+ Methodology Framework",

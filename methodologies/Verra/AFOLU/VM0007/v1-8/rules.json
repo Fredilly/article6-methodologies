@@ -64,7 +64,8 @@
       "section_number": "4",
       "section_anchor": "applicability-conditions",
       "tools": [
-        "Verra/VM0007@v1-8"
+        "Verra/VM0007@v1-8",
+        "Verra/VMD0006@v1-8"
       ],
       "tags": [
         "eligibility"
@@ -355,7 +356,8 @@
       "section_number": "5",
       "section_anchor": "project-boundary",
       "tools": [
-        "Verra/VM0007@v1-8"
+        "Verra/VM0007@v1-8",
+        "Verra/VMD0006@v1-8"
       ],
       "tags": [
         "eligibility"
@@ -657,7 +659,8 @@
       "section_number": "6",
       "section_anchor": "baseline-scenario",
       "tools": [
-        "Verra/VM0007@v1-8"
+        "Verra/VM0007@v1-8",
+        "Verra/VMD0006@v1-8"
       ],
       "tags": [
         "calc"
