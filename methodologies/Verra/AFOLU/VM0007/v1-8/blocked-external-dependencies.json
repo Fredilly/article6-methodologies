@@ -1,31 +1,6 @@
 {
-  "blocked_rule_count": 2,
-  "blocked_rules": [
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VMD0001@v1-8",
-        "Verra/VMD0002@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-2-0008",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0008",
-      "title": "REDD mandatory carbon pools"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VMD0001@v1-8",
-        "Verra/VMD0002@v1-8",
-        "Verra/VMD0003@v1-8",
-        "Verra/VMD0004@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-5-0008",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0008",
-      "title": "Carbon pool modules for REDD"
-    }
-  ],
+  "blocked_rule_count": 0,
+  "blocked_rules": [],
   "methodology": "Verra/VM0007@v1-8",
   "note": "Rules listed here remain draft_unverified because they depend on external Verra modules/tools that are not encoded as local artifacts.",
   "status": "external_unencoded"

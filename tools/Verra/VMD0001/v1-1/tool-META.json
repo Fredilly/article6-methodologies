@@ -1,0 +1,24 @@
+{
+  "doc": "Verra/VMD0001@v1-1",
+  "kind": "pdf",
+  "path": "tools/Verra/VMD0001/v1-1/source.pdf",
+  "sha256": "15c684652255751b6ffe8cdbdb0db01ca77aaa61e69d0b18074665a9a9f49cba",
+  "size": 439332,
+  "title": "VMD0001 Estimation of carbon stocks in above- and belowground biomass in live tree and non-tree pools (CP-AB), v1.1",
+  "version": "v1-1",
+  "standard": "Verra",
+  "type": "module",
+  "active_date": "2013-05-03",
+  "url": "https://verra.org/wp-content/uploads/2023/11/VMD0001v1.1.pdf",
+  "provenance": {
+    "source_pdfs": [
+      {
+        "doc": "Verra/VMD0001@v1-1",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0001/v1-1/source.pdf",
+        "sha256": "15c684652255751b6ffe8cdbdb0db01ca77aaa61e69d0b18074665a9a9f49cba",
+        "size": 439332
+      }
+    ]
+  }
+}
