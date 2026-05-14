@@ -1,0 +1,24 @@
+{
+  "doc": "Verra/VMD0005@v1-1",
+  "kind": "pdf",
+  "path": "tools/Verra/VMD0005/v1-1/source.pdf",
+  "sha256": "2832053dc7383edb06f72e7db89bc7d12cffd61782d2d5932ea7b14dcc107066",
+  "size": 234688,
+  "title": "VMD0005 Estimation of carbon stocks in the long-term wood products pool (CP-W), v1.1",
+  "version": "v1-1",
+  "standard": "Verra",
+  "type": "module",
+  "active_date": "2013-05-03",
+  "url": "https://verra.org/wp-content/uploads/imported/methodologies/VMD0005-CP-W-v1.1.pdf",
+  "provenance": {
+    "source_pdfs": [
+      {
+        "doc": "Verra/VMD0005@v1-1",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0005/v1-1/source.pdf",
+        "sha256": "2832053dc7383edb06f72e7db89bc7d12cffd61782d2d5932ea7b14dcc107066",
+        "size": 234688
+      }
+    ]
+  }
+}

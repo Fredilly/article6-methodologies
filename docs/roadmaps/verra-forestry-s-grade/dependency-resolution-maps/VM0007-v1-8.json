@@ -30,16 +30,12 @@
       "next_action": "completed"
     },
     {
-      "blocked_rule_count": 3,
-      "blocked_rule_ids": [
-        "R-2-0006",
-        "R-2-0015",
-        "R-2-0016"
-      ],
-      "classification": "active_required",
-      "evidence_note": "Stratification of project area module. VM0007 Section 5.3 calls X-STR.",
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "VMD0016 v1.2 source-locked and encoded. 3 rules promoted.",
       "id": "Verra/VMD0016@v1-8",
-      "next_action": "encode_as_local_artifact"
+      "next_action": "completed"
     },
     {
       "blocked_rule_count": 3,
@@ -95,81 +91,60 @@
       "next_action": "encode_as_local_artifact"
     },
     {
-      "blocked_rule_count": 2,
-      "blocked_rule_ids": [
-        "R-2-0008",
-        "R-5-0008"
-      ],
-      "classification": "active_required",
-      "evidence_note": "Wood products pool module. VM0007 Section 5.3 references CP-W.",
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "VMD0005 v1.1 source-locked and encoded. Partially resolves R-2-0008/R-5-0008 (also need VMD0001-0004).",
       "id": "Verra/VMD0005@v1-8",
-      "next_action": "encode_as_local_artifact"
-    },
-    {
-      "blocked_rule_count": 2,
-      "blocked_rule_ids": [
-        "R-5-0003",
-        "R-5-0004"
-      ],
-      "classification": "active_required",
-      "evidence_note": "Activity shifting leakage (planned) module. VM0007 Section 8.3 references LK-ASP.",
-      "id": "Verra/VMD0009@v1-8",
-      "next_action": "encode_as_local_artifact"
-    },
-    {
-      "blocked_rule_count": 2,
-      "blocked_rule_ids": [
-        "R-5-0003",
-        "R-5-0004"
-      ],
-      "classification": "active_required",
-      "evidence_note": "Activity shifting leakage (unplanned) module. VM0007 Section 8.3 references LK-ASU.",
-      "id": "Verra/VMD0010@v1-8",
-      "next_action": "encode_as_local_artifact"
-    },
-    {
-      "blocked_rule_count": 2,
-      "blocked_rule_ids": [
-        "R-5-0009",
-        "R-6-0005"
-      ],
-      "classification": "active_required",
-      "evidence_note": "REDD monitoring methods module. VM0007 Section 9 references M-REDD.",
-      "id": "Verra/VMD0015@v1-8",
-      "next_action": "encode_as_local_artifact"
-    },
-    {
-      "blocked_rule_count": 2,
-      "blocked_rule_ids": [
-        "R-5-0009",
-        "R-6-0006"
-      ],
-      "classification": "active_required",
-      "evidence_note": "Peatland monitoring module. VM0007 Section 9 references M-PEAT.",
-      "id": "Verra/VMD0046@v1-8",
-      "next_action": "encode_as_local_artifact"
-    },
-    {
-      "blocked_rule_count": 2,
-      "blocked_rule_ids": [
-        "R-5-0009",
-        "R-6-0006"
-      ],
-      "classification": "partially_resolved",
-      "evidence_note": "VMD0051 v1.0 source-locked. No rules fully unblocked yet (all also blocked by VMD0015/VMD0046).",
-      "id": "Verra/VMD0051@v1-8",
       "next_action": "await_other_deps"
     },
     {
-      "blocked_rule_count": 2,
-      "blocked_rule_ids": [
-        "R-1-0009",
-        "R-4-0002"
-      ],
-      "classification": "active_required",
-      "evidence_note": "Tidal wetland additionality module. VM0007 Section 7 references ADD-AM.",
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "VMD0009 v1.3 source-locked and encoded. 2 rules promoted (with VMD0010).",
+      "id": "Verra/VMD0009@v1-8",
+      "next_action": "completed"
+    },
+    {
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "VMD0010 v1.2 source-locked and encoded. 2 rules promoted (with VMD0009).",
+      "id": "Verra/VMD0010@v1-8",
+      "next_action": "completed"
+    },
+    {
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "VMD0015 v2.2 source-locked and encoded. 2 rules promoted.",
+      "id": "Verra/VMD0015@v1-8",
+      "next_action": "completed"
+    },
+    {
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "VMD0046 v1.1 source-locked and encoded. 2 rules promoted (with VMD0051).",
+      "id": "Verra/VMD0046@v1-8",
+      "next_action": "completed"
+    },
+    {
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "VMD0051 v1.0 source-locked and encoded. 2 rules promoted (with VMD0046).",
+      "id": "Verra/VMD0051@v1-8",
+      "next_action": "completed"
+    },
+    {
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "VMD0052 v1.0 source-locked and encoded. 2 rules promoted.",
       "id": "Verra/VMD0052@v1-8",
-      "next_action": "encode_as_local_artifact"
+      "next_action": "completed"
     },
     {
       "blocked_rule_count": 1,
@@ -202,14 +177,12 @@
       "next_action": "encode_as_local_artifact"
     },
     {
-      "blocked_rule_count": 1,
-      "blocked_rule_ids": [
-        "R-5-0006"
-      ],
-      "classification": "active_required",
-      "evidence_note": "Uncertainty estimation module. VM0007 Section 8.4.5 references X-UNC.",
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "VMD0017 v2.2 source-locked and encoded. 1 rule promoted.",
       "id": "Verra/VMD0017@v1-8",
-      "next_action": "encode_as_local_artifact"
+      "next_action": "completed"
     },
     {
       "blocked_rule_count": 1,
@@ -222,7 +195,7 @@
       "next_action": "encode_as_local_artifact"
     }
   ],
-  "draft_unverified_rule_count": 21,
+  "draft_unverified_rule_count": 10,
   "methodology": "Verra/VM0007@v1-8",
   "recommended_encoding_order": [
     "1. VM0047 dep resolved \u2014 DONE",
@@ -233,7 +206,7 @@
     "6. VMD0042 encoded (source-locked) \u2014 DONE (3 rules promoted)",
     "7. Remainder in dependency-order"
   ],
-  "source_audited_rule_count": 37,
+  "source_audited_rule_count": 48,
   "status": "has_active_blockers",
   "total_dependencies": 21
 }

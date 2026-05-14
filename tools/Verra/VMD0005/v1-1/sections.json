@@ -1,0 +1,64 @@
+{
+  "sections": [
+    {
+      "id": "S-1",
+      "stable_id": "Verra.VMD0005@v1-1.S-1",
+      "title": "Sources",
+      "anchor": "sources",
+      "section_number": "1",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 2,
+      "page_end": 2,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-2",
+      "stable_id": "Verra.VMD0005@v1-1.S-2",
+      "title": "Summary Description",
+      "anchor": "summary-description",
+      "section_number": "2",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 3,
+      "page_end": 3,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-3",
+      "stable_id": "Verra.VMD0005@v1-1.S-3",
+      "title": "Definitions",
+      "anchor": "definitions",
+      "section_number": "3",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 4,
+      "page_end": 4,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-4",
+      "stable_id": "Verra.VMD0005@v1-1.S-4",
+      "title": "Procedures",
+      "anchor": "procedures",
+      "section_number": "4",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 5,
+      "page_end": 12,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-5",
+      "stable_id": "Verra.VMD0005@v1-1.S-5",
+      "title": "Data and Parameters",
+      "anchor": "data-and-parameters",
+      "section_number": "5",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 13,
+      "page_end": 20,
+      "locator_status": "source_audited"
+    }
+  ]
+}

@@ -2,13 +2,15 @@
   "goal": "Upgrade Verra forestry methods to S-grade (Grade A) for methodology-linked review readiness. S-grade = all sections and rules source-audited, no active blocked external dependencies, methodology_linked_review_ready: true.",
   "last_updated_at": "2026-05-12T23:55:00Z",
   "notes": [
-    "VM0047 v1.0 reached S-grade: 27 sections, 11 rules, 0 blockers.",
-    "VF S3 quick wins completed: R-1-0008 (T-SIG) and R-1-0014 (VM0047) promoted.",
-    "VF S4 VMD0007 encoding completed: 3 rules promoted.",
+    "VM0047 v1.0 reached S-grade.",
+    "VF S3: R-1-0008 (T-SIG) and R-1-0014 (VM0047) promoted.",
+    "VF S4: VMD0007 encoded. 3 rules promoted.",
     "VF S5: VMD0006 v1.4 source-locked. 3 rules promoted.",
-    "VF S6: VMD0050 (BL-TW) + VMD0051 (M-TW) source-locked. R-1-0011 promoted. 2 VMD0050 rules stay blocked by VMD0042; 2 VMD0051 rules stay blocked by VMD0015/VMD0046.",
-    "VM0007 now: 34/58 rules source_audited, 24 blocked by 15 active external module/tool dependencies.",
-    "Next: encode remaining VM0007 modules/tools."
+    "VF S6: VMD0050+VMD0051 source-locked. R-1-0011 promoted.",
+    "VF S7: VMD0042 source-locked. R-1-0010, R-2-0009, R-3-0006 promoted.",
+    "VF S8 in progress: 11 modules source-locked. 11 rules promoted. VM0007 now: 48/58 rules source_audited, 10 blocked by 10 unresolved deps.",
+    "Remaining blockers: VMD0001, VMD0002, VMD0003, VMD0004 (carbon pools, PDFs unavailable), VT0001 (cross-cutting tool), T-BAR (non-permanence risk), T-SIG (partially completed).",
+    "S-grade not yet reached \u2014 remaining deps must be encoded or formally deferrable."
   ],
   "phases": [
     {
@@ -49,7 +51,7 @@
     {
       "id": "vf_s8_vm0007_grade_a",
       "name": "VM0007 S-grade promotion",
-      "status": "next"
+      "status": "in_progress"
     }
   ]
 }
