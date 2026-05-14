@@ -44,13 +44,21 @@ function main() {
   assert.equal(vmd0006Entry.status, 'historical_non_blocking', 'VMD0006 must be historical_non_blocking after source-lock');
   assert.equal(vmd0006Entry.local_artifact_present, true, 'VMD0006 must claim local artifact after source-lock');
 
+  const vmd0050Entry = externalRefs.get('Verra/VMD0050@v1-0');
+  assert.ok(vmd0050Entry, 'VMD0050 must be declared in META.json');
+  assert.equal(vmd0050Entry.status, 'historical_non_blocking', 'VMD0050 must be historical_non_blocking after source-lock');
+
+  const vmd0051Entry = externalRefs.get('Verra/VMD0051@v1-0');
+  assert.ok(vmd0051Entry, 'VMD0051 must be declared in META.json');
+  assert.equal(vmd0051Entry.status, 'historical_non_blocking', 'VMD0051 must be historical_non_blocking after source-lock');
+
   for (const toolId of ruleTools) {
     const entry = externalRefs.get(toolId);
     assert.ok(entry, `VM0007 external dependency ${toolId} must be declared in META.json`);
     if (toolId === 'Verra/VMD0006@v1-8') {
       assert.equal(entry.status, 'historical_non_blocking', `${toolId} must be historical_non_blocking`);
       assert.equal(entry.local_artifact_present, true, `${toolId} must be locally present`);
-    } else if (entry.status === 'historical_non_blocking') {
+    } else if (['historical_non_blocking', 'partially_resolved'].includes(entry.status)) {
       assert.equal(entry.local_artifact_present, true, `${toolId} must be locally present`);
     } else {
       assert.equal(entry.status, 'external_unencoded', `VM0007 external dependency ${toolId} must stay external_unencoded`);
@@ -61,8 +69,8 @@ function main() {
   const sourceAuditedRules = rules.filter((rule) => rule.quality_status === 'source_audited');
   const draftRules = rules.filter((rule) => rule.quality_status === 'draft_unverified');
 
-  assert.equal(sourceAuditedRules.length, 33, 'VM0007 must expose exactly 33 source-audited rules after VF S5');
-  assert.equal(draftRules.length, 25, 'VM0007 must keep exactly 25 external-dependent rules draft_unverified after VF S5');
+  assert.equal(sourceAuditedRules.length, 34, 'VM0007 must expose exactly 34 source-audited rules after VF S6');
+  assert.equal(draftRules.length, 24, 'VM0007 must keep exactly 24 external-dependent rules draft_unverified after VF S6');
 
   for (const leanRule of sourceAuditedRules) {
     const richRule = richByStableId.get(leanRule.stable_id);
@@ -80,6 +88,7 @@ function main() {
   }
 
   const promotedVmd6Ids = ['Verra.AFOLU.VM0007.v1-8.R-1-0004', 'Verra.AFOLU.VM0007.v1-8.R-2-0005', 'Verra.AFOLU.VM0007.v1-8.R-3-0005'];
+  const promotedVmd50Id = 'Verra.AFOLU.VM0007.v1-8.R-1-0011';
   assert.equal(vmd0006Entry.status, 'historical_non_blocking', 'VMD0006 is source-locked and non-blocking');
   assert.equal(vmd0006Entry.local_artifact_present, true, 'VMD0006 has local artifact after source-lock');
   for (const stableId of promotedVmd6Ids) {
@@ -93,6 +102,14 @@ function main() {
     assert.equal(richRule.source_span_status, 'source_audited', `${stableId} must have audited source span`);
     assert.ok(richRule.refs?.tools?.includes('Verra/VMD0006@v1-8'), `${stableId} must retain VMD0006 in rich refs.tools`);
   }
+
+  const r1_11 = rules.find((r) => r.stable_id === promotedVmd50Id);
+  assert.ok(r1_11, 'R-1-0011 must exist in rules');
+  assert.equal(r1_11.quality_status, 'source_audited', 'R-1-0011 must be source_audited after VMD0050 source-lock');
+  assert.ok(r1_11.tools.includes('Verra/VMD0050@v1-0'), 'R-1-0011 must retain VMD0050 in tools');
+  const rich_r1_11 = richByStableId.get(promotedVmd50Id);
+  assert.ok(rich_r1_11, 'R-1-0011 must exist in rules.rich.json');
+  assert.equal(rich_r1_11.quality_status, 'source_audited', 'R-1-0011 rich rule must be source_audited');
 
   for (const leanRule of draftRules) {
     const externalTools = (leanRule.tools || []).filter((tool) => tool !== 'Verra/VM0007@v1-8');
@@ -118,8 +135,8 @@ function main() {
   const inventory = readJSON(path.join(METHOD_DIR, 'blocked-external-dependencies.json'));
   assert.equal(inventory.methodology, 'Verra/VM0007@v1-8', 'inventory methodology must match');
   assert.equal(inventory.status, 'external_unencoded', 'inventory status must be external_unencoded');
-  assert.equal(inventory.blocked_rule_count, 25, 'inventory must report 25 blocked rules after VF S5');
-  assert.equal(inventory.blocked_rules.length, 25, 'inventory must contain 25 blocked rule entries after VF S5');
+  assert.equal(inventory.blocked_rule_count, 24, 'inventory must report 24 blocked rules after VF S6');
+  assert.equal(inventory.blocked_rules.length, 24, 'inventory must contain 24 blocked rule entries after VF S6');
   assert.equal(inventory.blocked_rules.length, draftRules.length, 'inventory must cover every draft_unverified rule');
 
   const invByStableId = new Map(inventory.blocked_rules.map((entry) => [entry.stable_id, entry]));

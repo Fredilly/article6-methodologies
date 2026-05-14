@@ -194,12 +194,13 @@
       "section_anchor": "applicability-conditions",
       "tools": [
         "Verra/VM0007@v1-8",
+        "Verra/VMD0050@v1-0",
         "Verra/VMD0050@v1-8"
       ],
       "tags": [
         "eligibility"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {

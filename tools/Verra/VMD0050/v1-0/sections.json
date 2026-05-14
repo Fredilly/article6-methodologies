@@ -1,0 +1,125 @@
+{
+  "sections": [
+    {
+      "id": "S-1",
+      "title": "Sources",
+      "anchor": "sources",
+      "section_number": "1",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 2,
+      "page_end": 2,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-2",
+      "title": "Summary Description of the Module",
+      "anchor": "summary-description-of-the-module",
+      "section_number": "2",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 3,
+      "page_end": 3,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-3",
+      "title": "Definitions",
+      "anchor": "definitions",
+      "section_number": "3",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 4,
+      "page_end": 4,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-4",
+      "title": "Applicability Conditions",
+      "anchor": "applicability-conditions",
+      "section_number": "4",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 5,
+      "page_end": 6,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-5",
+      "title": "Procedures for Estimating Baseline Emissions",
+      "anchor": "procedures-for-estimating-baseline-emissions",
+      "section_number": "5",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 7,
+      "page_end": 26,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-5-1",
+      "title": "Project Boundary and Stratification",
+      "anchor": "project-boundary-and-stratification",
+      "section_number": "5.1",
+      "section_level": 2,
+      "parent_id": "S-5",
+      "page_start": 7,
+      "page_end": 9,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-5-2",
+      "title": "Baseline Carbon Stocks",
+      "anchor": "baseline-carbon-stocks",
+      "section_number": "5.2",
+      "section_level": 2,
+      "parent_id": "S-5",
+      "page_start": 10,
+      "page_end": 18,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-5-3",
+      "title": "Baseline Emissions from Biomass Burning",
+      "anchor": "baseline-emissions-from-biomass-burning",
+      "section_number": "5.3",
+      "section_level": 2,
+      "parent_id": "S-5",
+      "page_start": 19,
+      "page_end": 21,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-5-4",
+      "title": "Baseline Emissions from Soil Carbon",
+      "anchor": "baseline-emissions-from-soil-carbon",
+      "section_number": "5.4",
+      "section_level": 2,
+      "parent_id": "S-5",
+      "page_start": 22,
+      "page_end": 24,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-5-5",
+      "title": "Baseline Methane and Nitrous Oxide Emissions",
+      "anchor": "baseline-methane-and-nitrous-oxide-emissions",
+      "section_number": "5.5",
+      "section_level": 2,
+      "parent_id": "S-5",
+      "page_start": 25,
+      "page_end": 26,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-6",
+      "title": "Data and Parameters",
+      "anchor": "data-and-parameters",
+      "section_number": "6",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 27,
+      "page_end": 41,
+      "locator_status": "source_audited"
+    }
+  ]
+}

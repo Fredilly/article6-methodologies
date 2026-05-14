@@ -731,7 +731,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0011",
     "logic": "Must include at least one defined restoration activity type.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-1",
@@ -743,7 +743,8 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VMD0050@v1-8"
+        "Verra/VMD0050@v1-8",
+        "Verra/VMD0050@v1-0"
       ]
     },
     "requirement_coverage": {
@@ -763,14 +764,14 @@
           "required": true
         }
       ],
-      "expected_evidence_status": "seed_unverified",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-1"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
       "conditions": [
@@ -779,7 +780,7 @@
       "exceptions": [
         "No qualifying restoration activity documented"
       ],
-      "status": "seed_unverified",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -787,14 +788,14 @@
       "lineage": [
         "applicability-conditions"
       ],
-      "locator_status": "draft_derived_rule_context_pending_source_audit",
+      "locator_status": "source_audited",
       "page_end": 16,
       "page_start": 16,
       "section_id": "S-1",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-1",
       "section_title": "Applicability Conditions"
     },
-    "source_span_status": "seed_extracted_pending_source_audit",
+    "source_span_status": "source_audited",
     "source_span_text": "Project activities restoring tidal wetlands include any of: creating/restoring hydrology, altering sediment supply, changing salinity, managing vegetation, prescribed burning.",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0011",
     "summary": "Tidal wetland restoration activities",

@@ -1,5 +1,5 @@
 {
-  "blocked_rule_count": 25,
+  "blocked_rule_count": 24,
   "blocked_rules": [
     {
       "blocking_reason": "external_dependency_unencoded",
@@ -20,16 +20,6 @@
       "rule_id": "R-1-0010",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0010",
       "title": "Peatland VCS definition"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VMD0050@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-1-0011",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0011",
-      "title": "Tidal wetland restoration activities"
     },
     {
       "blocking_reason": "external_dependency_unencoded",

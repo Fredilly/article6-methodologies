@@ -5,9 +5,10 @@
     "VM0047 v1.0 reached S-grade: 27 sections, 11 rules, 0 blockers.",
     "VF S3 quick wins completed: R-1-0008 (T-SIG) and R-1-0014 (VM0047) promoted.",
     "VF S4 VMD0007 encoding completed: 3 rules promoted.",
-    "VF S5: VMD0006 v1.4 source-locked and encoded. 3 VM0007 rules promoted (R-1-0004, R-2-0005, R-3-0005).",
-    "VM0007 now: 33/58 rules source_audited, 25 blocked by 17 active external module/tool dependencies.",
-    "Next: encode VMD0050 + VMD0051 (tidal wetland pair)."
+    "VF S5: VMD0006 v1.4 source-locked. 3 rules promoted.",
+    "VF S6: VMD0050 (BL-TW) + VMD0051 (M-TW) source-locked. R-1-0011 promoted. 2 VMD0050 rules stay blocked by VMD0042; 2 VMD0051 rules stay blocked by VMD0015/VMD0046.",
+    "VM0007 now: 34/58 rules source_audited, 24 blocked by 15 active external module/tool dependencies.",
+    "Next: encode remaining VM0007 modules/tools."
   ],
   "phases": [
     {
@@ -38,12 +39,12 @@
     {
       "id": "vf_s6_vm0007_tidal_wetland_modules",
       "name": "Encode VMD0050 + VMD0051 (tidal wetland pair)",
-      "status": "next"
+      "status": "completed"
     },
     {
       "id": "vf_s7_vm0007_remaining_modules",
       "name": "Encode remaining VM0007 modules/tools",
-      "status": "not_started"
+      "status": "next"
     },
     {
       "id": "vf_s8_vm0007_grade_a",
