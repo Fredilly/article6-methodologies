@@ -1,0 +1,24 @@
+{
+  "doc": "Verra/T-BAR@v4-2",
+  "kind": "pdf",
+  "path": "tools/Verra/T-BAR/v4-2/source.pdf",
+  "sha256": "12f1b8297ed5ed19045442cd92b7cd5de3c38b969c5a8ff96558d25c1c18aba9",
+  "size": 553345,
+  "title": "AFOLU Non-Permanence Risk Tool (T-BAR), v4.2",
+  "version": "v4-2",
+  "standard": "Verra",
+  "type": "tool",
+  "active_date": "2023-10-12",
+  "url": "https://verra.org/wp-content/uploads/2023/10/AFOLU-Non-Permanence-Risk-Tool-v4.2-last-updated-May-3-2024.pdf",
+  "provenance": {
+    "source_pdfs": [
+      {
+        "doc": "Verra/T-BAR@v4-2",
+        "kind": "pdf",
+        "path": "tools/Verra/T-BAR/v4-2/source.pdf",
+        "sha256": "12f1b8297ed5ed19045442cd92b7cd5de3c38b969c5a8ff96558d25c1c18aba9",
+        "size": 553345
+      }
+    ]
+  }
+}

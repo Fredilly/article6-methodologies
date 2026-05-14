@@ -1410,7 +1410,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0007",
     "logic": "Pool inclusion/exclusion must be justified. If included in baseline, must also be in project and leakage.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-2",
@@ -1428,17 +1428,17 @@
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0007",
       "coverage_scope": "rule",
-      "expected_evidence_status": "pending_source_audit",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-2"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
-      "status": "pending_source_audit",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -1446,14 +1446,14 @@
       "lineage": [
         "project-boundary"
       ],
-      "locator_status": "pending_source_audit",
-      "page_end": null,
-      "page_start": null,
+      "locator_status": "source_audited",
+      "page_end": 50,
+      "page_start": 49,
       "section_id": "S-2",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2",
       "section_title": "Project Boundary"
     },
-    "source_span_status": "pending_source_audit",
+    "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0007",
     "summary": "Carbon pool selection per activity type",
     "type": "eligibility",
@@ -1570,7 +1570,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0010",
     "logic": "GHG sources must be identified per Table 7 with inclusion/exclusion justification.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-2",
@@ -1588,17 +1588,17 @@
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0010",
       "coverage_scope": "rule",
-      "expected_evidence_status": "pending_source_audit",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-2"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
-      "status": "pending_source_audit",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -1606,14 +1606,14 @@
       "lineage": [
         "project-boundary"
       ],
-      "locator_status": "pending_source_audit",
-      "page_end": null,
-      "page_start": null,
+      "locator_status": "source_audited",
+      "page_end": 52,
+      "page_start": 50,
       "section_id": "S-2",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2",
       "section_title": "Project Boundary"
     },
-    "source_span_status": "pending_source_audit",
+    "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0010",
     "summary": "REDD GHG source identification",
     "type": "eligibility",
@@ -1932,7 +1932,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-3-0001",
     "logic": "VT0001 mandatory. Stepwise approach: list alternatives, barrier/investment analysis, select most plausible.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-3",
@@ -1944,23 +1944,24 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VT0001@v1-8"
+        "Verra/VT0001@v1-8",
+        "Verra/VT0001@v3-0"
       ]
     },
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-3-0001",
       "coverage_scope": "rule",
-      "expected_evidence_status": "pending_source_audit",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-3"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
-      "status": "pending_source_audit",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -1968,14 +1969,14 @@
       "lineage": [
         "baseline-scenario"
       ],
-      "locator_status": "pending_source_audit",
-      "page_end": null,
-      "page_start": null,
+      "locator_status": "source_audited",
+      "page_end": 17,
+      "page_start": 15,
       "section_id": "S-3",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3",
       "section_title": "Baseline Scenario"
     },
-    "source_span_status": "pending_source_audit",
+    "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0001",
     "summary": "Baseline scenario determination via VT0001",
     "type": "calc",
@@ -1984,7 +1985,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-3-0002",
     "logic": "Three mandatory alternatives unless demonstrated not credible or non-compliant.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-3",
@@ -1996,23 +1997,24 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VT0001@v1-8"
+        "Verra/VT0001@v1-8",
+        "Verra/VT0001@v3-0"
       ]
     },
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-3-0002",
       "coverage_scope": "rule",
-      "expected_evidence_status": "pending_source_audit",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-3"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
-      "status": "pending_source_audit",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -2020,14 +2022,14 @@
       "lineage": [
         "baseline-scenario"
       ],
-      "locator_status": "pending_source_audit",
-      "page_end": null,
-      "page_start": null,
+      "locator_status": "source_audited",
+      "page_end": 19,
+      "page_start": 17,
       "section_id": "S-3",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3",
       "section_title": "Baseline Scenario"
     },
-    "source_span_status": "pending_source_audit",
+    "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0002",
     "summary": "Minimum alternative scenario list",
     "type": "eligibility",
@@ -2036,7 +2038,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-3-0003",
     "logic": "Two-step: barrier analysis first, then investment analysis or qualitative GHG estimation as fallback.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-3",
@@ -2048,23 +2050,24 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VT0001@v1-8"
+        "Verra/VT0001@v1-8",
+        "Verra/VT0001@v3-0"
       ]
     },
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-3-0003",
       "coverage_scope": "rule",
-      "expected_evidence_status": "pending_source_audit",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-3"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
-      "status": "pending_source_audit",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -2072,14 +2075,14 @@
       "lineage": [
         "baseline-scenario"
       ],
-      "locator_status": "pending_source_audit",
-      "page_end": null,
-      "page_start": null,
+      "locator_status": "source_audited",
+      "page_end": 21,
+      "page_start": 19,
       "section_id": "S-3",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3",
       "section_title": "Baseline Scenario"
     },
-    "source_span_status": "pending_source_audit",
+    "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0003",
     "summary": "Barrier analysis baseline selection",
     "type": "calc",
@@ -2088,7 +2091,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-3-0004",
     "logic": "Three options with different selection criteria. Option I is cost-only, Option II is IRR/NPV, Option III is benchmark-based.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-3",
@@ -2100,23 +2103,24 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VT0001@v1-8"
+        "Verra/VT0001@v1-8",
+        "Verra/VT0001@v3-0"
       ]
     },
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-3-0004",
       "coverage_scope": "rule",
-      "expected_evidence_status": "pending_source_audit",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-3"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
-      "status": "pending_source_audit",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -2124,14 +2128,14 @@
       "lineage": [
         "baseline-scenario"
       ],
-      "locator_status": "pending_source_audit",
-      "page_end": null,
-      "page_start": null,
+      "locator_status": "source_audited",
+      "page_end": 23,
+      "page_start": 21,
       "section_id": "S-3",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3",
       "section_title": "Baseline Scenario"
     },
-    "source_span_status": "pending_source_audit",
+    "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0004",
     "summary": "Investment analysis baseline selection",
     "type": "calc",
@@ -2348,7 +2352,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-4-0001",
     "logic": "VT0001 mandatory for all non-tidal-wetland activities.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-4",
@@ -2360,23 +2364,24 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VT0001@v1-8"
+        "Verra/VT0001@v1-8",
+        "Verra/VT0001@v3-0"
       ]
     },
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-4-0001",
       "coverage_scope": "rule",
-      "expected_evidence_status": "pending_source_audit",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-4"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
-      "status": "pending_source_audit",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -2384,14 +2389,14 @@
       "lineage": [
         "additionality"
       ],
-      "locator_status": "pending_source_audit",
-      "page_end": null,
-      "page_start": null,
+      "locator_status": "source_audited",
+      "page_end": 25,
+      "page_start": 23,
       "section_id": "S-4",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-4",
       "section_title": "Additionality"
     },
-    "source_span_status": "pending_source_audit",
+    "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-4-0001",
     "summary": "VT0001 additionality requirement",
     "type": "eligibility",
@@ -2665,7 +2670,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-5-0005",
     "logic": "Three buffer components. Each = (baseline - project) \u00d7 Buffer%. Buffer% from T-BAR.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-5",
@@ -2677,23 +2682,24 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/T-BAR@v1-8"
+        "Verra/T-BAR@v1-8",
+        "Verra/T-BAR@v4-2"
       ]
     },
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-5-0005",
       "coverage_scope": "rule",
-      "expected_evidence_status": "pending_source_audit",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-5"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
-      "status": "pending_source_audit",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -2701,14 +2707,14 @@
       "lineage": [
         "quantification"
       ],
-      "locator_status": "pending_source_audit",
-      "page_end": null,
-      "page_start": null,
+      "locator_status": "source_audited",
+      "page_end": 40,
+      "page_start": 38,
       "section_id": "S-5",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-5",
       "section_title": "Quantification"
     },
-    "source_span_status": "pending_source_audit",
+    "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0005",
     "summary": "Buffer pool contribution calculation",
     "type": "calc",
