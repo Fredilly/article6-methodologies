@@ -36,8 +36,8 @@
     "methodology_and_tool_refs": [
       {
         "id": "Verra/T-BAR@v1-8",
-        "local_artifact_present": false,
-        "status": "external_unencoded"
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
       },
       {
         "id": "Verra/T-SIG@v1-8",
@@ -136,8 +136,8 @@
       },
       {
         "id": "Verra/VT0001@v1-8",
-        "local_artifact_present": false,
-        "status": "external_unencoded"
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
       },
       {
         "id": "Verra/VMD0050@v1-0",
