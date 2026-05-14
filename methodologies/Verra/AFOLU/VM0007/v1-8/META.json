@@ -13,9 +13,9 @@
   "audit_hashes": {
     "blocked_external_dependencies_sha256": "cee196c54ba6ec2167f57544644527e71263b17180629dc35e7668918051bacc",
     "rules.rich_sha256": "e0067f842670a8b90f13479566b531270be239e31b577ab0700de0ff2617f9e7",
-    "rules_json_sha256": "12be2a4167b5a0daa2b8f83aeb3a65a86803ff6e5264ad7264cb4360673a4b37",
+    "rules_json_sha256": "990959bef0072022692c66ce6de2af9c2f3ab5f9a70b0b6ee95553c055d77aef",
     "rules_rich_json_sha256": "e0067f842670a8b90f13479566b531270be239e31b577ab0700de0ff2617f9e7",
-    "rules_sha256": "12be2a4167b5a0daa2b8f83aeb3a65a86803ff6e5264ad7264cb4360673a4b37",
+    "rules_sha256": "990959bef0072022692c66ce6de2af9c2f3ab5f9a70b0b6ee95553c055d77aef",
     "sections_json_sha256": "852125cacbe9d09f0560886fb27621548939033a382d2b1718f50b7694f41201",
     "sections_rich_json_sha256": "4506bb488417a940fc4e84228bff7abcc7e7921fcb9a824fa140bf6e2687b5e3",
     "source_pdf_sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
@@ -154,7 +154,7 @@
     },
     {
       "path": "rules.json",
-      "sha256": "12be2a4167b5a0daa2b8f83aeb3a65a86803ff6e5264ad7264cb4360673a4b37"
+      "sha256": "990959bef0072022692c66ce6de2af9c2f3ab5f9a70b0b6ee95553c055d77aef"
     },
     {
       "path": "rules.rich.json",
