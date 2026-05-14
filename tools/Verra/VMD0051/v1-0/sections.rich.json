@@ -1,0 +1,187 @@
+[
+  {
+    "id": "S-1",
+    "title": "Sources",
+    "anchor": "sources",
+    "section_number": "1",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 2,
+    "page_end": 2,
+    "locator_status": "source_audited",
+    "heading_text": "Sources",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "988cf05105163127802b2ea61a8588bd772e8986dac37f77d5a758b2ec1d987e",
+      "source_ref": "Verra/VMD0051@v1-0"
+    }
+  },
+  {
+    "id": "S-2",
+    "title": "Summary Description of the Module",
+    "anchor": "summary-description-of-the-module",
+    "section_number": "2",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 3,
+    "page_end": 3,
+    "locator_status": "source_audited",
+    "heading_text": "Summary Description of the Module",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "988cf05105163127802b2ea61a8588bd772e8986dac37f77d5a758b2ec1d987e",
+      "source_ref": "Verra/VMD0051@v1-0"
+    }
+  },
+  {
+    "id": "S-3",
+    "title": "Definitions",
+    "anchor": "definitions",
+    "section_number": "3",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 4,
+    "page_end": 4,
+    "locator_status": "source_audited",
+    "heading_text": "Definitions",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "988cf05105163127802b2ea61a8588bd772e8986dac37f77d5a758b2ec1d987e",
+      "source_ref": "Verra/VMD0051@v1-0"
+    }
+  },
+  {
+    "id": "S-4",
+    "title": "Applicability Conditions",
+    "anchor": "applicability-conditions",
+    "section_number": "4",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 5,
+    "page_end": 5,
+    "locator_status": "source_audited",
+    "heading_text": "Applicability Conditions",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "988cf05105163127802b2ea61a8588bd772e8986dac37f77d5a758b2ec1d987e",
+      "source_ref": "Verra/VMD0051@v1-0"
+    }
+  },
+  {
+    "id": "S-5",
+    "title": "Monitoring Procedures",
+    "anchor": "monitoring-procedures",
+    "section_number": "5",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 6,
+    "page_end": 18,
+    "locator_status": "source_audited",
+    "heading_text": "Monitoring Procedures",
+    "source_span_status": "source_audited",
+    "children": [
+      "S-5-1",
+      "S-5-2",
+      "S-5-3",
+      "S-5-4"
+    ],
+    "provenance": {
+      "source_hash": "988cf05105163127802b2ea61a8588bd772e8986dac37f77d5a758b2ec1d987e",
+      "source_ref": "Verra/VMD0051@v1-0"
+    }
+  },
+  {
+    "id": "S-5-1",
+    "title": "Stratification for Monitoring",
+    "anchor": "stratification-for-monitoring",
+    "section_number": "5.1",
+    "section_level": 2,
+    "parent_id": "S-5",
+    "page_start": 6,
+    "page_end": 7,
+    "locator_status": "source_audited",
+    "heading_text": "Stratification for Monitoring",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "988cf05105163127802b2ea61a8588bd772e8986dac37f77d5a758b2ec1d987e",
+      "source_ref": "Verra/VMD0051@v1-0"
+    }
+  },
+  {
+    "id": "S-5-2",
+    "title": "Monitoring of Carbon Pools",
+    "anchor": "monitoring-of-carbon-pools",
+    "section_number": "5.2",
+    "section_level": 2,
+    "parent_id": "S-5",
+    "page_start": 8,
+    "page_end": 12,
+    "locator_status": "source_audited",
+    "heading_text": "Monitoring of Carbon Pools",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "988cf05105163127802b2ea61a8588bd772e8986dac37f77d5a758b2ec1d987e",
+      "source_ref": "Verra/VMD0051@v1-0"
+    }
+  },
+  {
+    "id": "S-5-3",
+    "title": "Monitoring of Non-CO2 GHG Emissions",
+    "anchor": "monitoring-of-non-co2-ghg-emissions",
+    "section_number": "5.3",
+    "section_level": 2,
+    "parent_id": "S-5",
+    "page_start": 13,
+    "page_end": 15,
+    "locator_status": "source_audited",
+    "heading_text": "Monitoring of Non-CO2 GHG Emissions",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "988cf05105163127802b2ea61a8588bd772e8986dac37f77d5a758b2ec1d987e",
+      "source_ref": "Verra/VMD0051@v1-0"
+    }
+  },
+  {
+    "id": "S-5-4",
+    "title": "Monitoring of Project Emissions",
+    "anchor": "monitoring-of-project-emissions",
+    "section_number": "5.4",
+    "section_level": 2,
+    "parent_id": "S-5",
+    "page_start": 16,
+    "page_end": 18,
+    "locator_status": "source_audited",
+    "heading_text": "Monitoring of Project Emissions",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "988cf05105163127802b2ea61a8588bd772e8986dac37f77d5a758b2ec1d987e",
+      "source_ref": "Verra/VMD0051@v1-0"
+    }
+  },
+  {
+    "id": "S-6",
+    "title": "Data and Parameters",
+    "anchor": "data-and-parameters",
+    "section_number": "6",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 19,
+    "page_end": 22,
+    "locator_status": "source_audited",
+    "heading_text": "Data and Parameters",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "988cf05105163127802b2ea61a8588bd772e8986dac37f77d5a758b2ec1d987e",
+      "source_ref": "Verra/VMD0051@v1-0"
+    }
+  }
+]

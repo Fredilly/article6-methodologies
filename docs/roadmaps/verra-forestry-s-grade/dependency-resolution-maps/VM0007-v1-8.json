@@ -54,16 +54,15 @@
       "next_action": "encode_as_local_artifact"
     },
     {
-      "blocked_rule_count": 3,
+      "blocked_rule_count": 2,
       "blocked_rule_ids": [
-        "R-1-0011",
         "R-2-0009",
         "R-3-0006"
       ],
-      "classification": "active_required",
-      "evidence_note": "Tidal wetland baseline module. VM0007 Section 6 calls BL-TW.",
+      "classification": "partially_resolved",
+      "evidence_note": "VMD0050 v1.0 source-locked. R-1-0011 promoted. R-2-0009 and R-3-0006 remain blocked by VMD0042.",
       "id": "Verra/VMD0050@v1-8",
-      "next_action": "encode_as_local_artifact"
+      "next_action": "await_other_deps"
     },
     {
       "blocked_rule_count": 2,
@@ -159,10 +158,10 @@
         "R-5-0009",
         "R-6-0006"
       ],
-      "classification": "active_required",
-      "evidence_note": "Tidal wetland monitoring module. VM0007 Section 9 references M-TW.",
+      "classification": "partially_resolved",
+      "evidence_note": "VMD0051 v1.0 source-locked. No rules fully unblocked yet (all also blocked by VMD0015/VMD0046).",
       "id": "Verra/VMD0051@v1-8",
-      "next_action": "encode_as_local_artifact"
+      "next_action": "await_other_deps"
     },
     {
       "blocked_rule_count": 2,
@@ -226,18 +225,18 @@
       "next_action": "encode_as_local_artifact"
     }
   ],
-  "draft_unverified_rule_count": 25,
+  "draft_unverified_rule_count": 24,
   "methodology": "Verra/VM0007@v1-8",
   "recommended_encoding_order": [
     "1. VM0047 dep resolved \u2014 DONE",
     "2. T-SIG via Appendix 1 for R-1-0008 \u2014 DONE",
     "3. VMD0007 encoded \u2014 DONE (3 rules promoted)",
     "4. VMD0006 encoded (source-locked) \u2014 DONE (3 rules promoted)",
-    "5. Encode VMD0050 + VMD0051 (tidal wetland pair)",
+    "5. VMD0050+VMD0051 encoded (source-locked) \u2014 partially resolved (1 rule promoted)",
     "6. Encode VMD0042 (peatland baseline)",
     "7. Remainder in dependency-order"
   ],
-  "source_audited_rule_count": 33,
+  "source_audited_rule_count": 34,
   "status": "has_active_blockers",
   "total_dependencies": 21
 }
