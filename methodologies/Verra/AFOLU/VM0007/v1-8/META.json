@@ -1,7 +1,7 @@
 {
   "active_date": "2024-06-04",
   "artifact_quality_standard": {
-    "adoption_status": "source_audited",
+    "adoption_status": "grade_a",
     "note": "VM0007 reached S-grade. All 58 rules source_audited. All external dependencies resolved or source-locked.",
     "version": "review_contract_v1"
   },
@@ -86,43 +86,43 @@
       },
       {
         "id": "Verra/VMD0009@v1-8",
-        "local_artifact_present": false,
-        "status": "external_unencoded"
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
       },
       {
         "id": "Verra/VMD0010@v1-8",
-        "local_artifact_present": false,
-        "status": "external_unencoded"
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
       },
       {
         "id": "Verra/VMD0015@v1-8",
-        "local_artifact_present": false,
-        "status": "external_unencoded"
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
       },
       {
         "id": "Verra/VMD0016@v1-8",
-        "local_artifact_present": false,
-        "status": "external_unencoded"
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
       },
       {
         "id": "Verra/VMD0017@v1-8",
-        "local_artifact_present": false,
-        "status": "external_unencoded"
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
       },
       {
         "id": "Verra/VMD0042@v1-8",
-        "local_artifact_present": false,
-        "status": "external_unencoded"
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
       },
       {
         "id": "Verra/VMD0046@v1-8",
-        "local_artifact_present": false,
-        "status": "external_unencoded"
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
       },
       {
         "id": "Verra/VMD0050@v1-8",
-        "local_artifact_present": false,
-        "status": "external_unencoded"
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
       },
       {
         "id": "Verra/VMD0051@v1-8",
@@ -131,8 +131,8 @@
       },
       {
         "id": "Verra/VMD0052@v1-8",
-        "local_artifact_present": false,
-        "status": "external_unencoded"
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
       },
       {
         "id": "Verra/VT0001@v1-8",
