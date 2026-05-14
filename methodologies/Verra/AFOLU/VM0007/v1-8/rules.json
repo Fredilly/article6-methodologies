@@ -842,7 +842,7 @@
       "id": "R-5-0005",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0005",
       "title": "Buffer pool contribution calculation",
-      "logic": "Three buffer components. Each = (baseline - project) \u00d7 Buffer%. Buffer% from T-BAR.",
+      "logic": "Three buffer components. Each = (baseline - project) × Buffer%. Buffer% from T-BAR.",
       "section_id": "S-5",
       "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-5",
       "section_number": "8",
