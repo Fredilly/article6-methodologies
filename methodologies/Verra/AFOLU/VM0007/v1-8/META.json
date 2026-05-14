@@ -2,7 +2,7 @@
   "active_date": "2024-06-04",
   "artifact_quality_standard": {
     "adoption_status": "grade_a",
-    "note": "VM0007 reached S-grade. All 58 rules source_audited. All external dependencies resolved or source-locked.",
+    "note": "VM0007 reached the Source-Audited Methodology Standard (grade_a legacy alias). All 58 rules source_audited. All external dependencies resolved or source-locked.",
     "version": "review_contract_v1"
   },
   "artifact_status": {

@@ -138,7 +138,7 @@
         "R-1-0014"
       ],
       "classification": "repo_resolved",
-      "evidence_note": "VM0047 is already encoded at methodologies/Verra/AFOLU/VM0047/v1-0 (Grade A). R-1-0014 promoted to source_audited. META dependency status updated to historical_non_blocking.",
+      "evidence_note": "VM0047 is already encoded at methodologies/Verra/AFOLU/VM0047/v1-0 (Source-Audited, grade_a legacy alias). R-1-0014 promoted to source_audited. META dependency status updated to historical_non_blocking.",
       "id": "Verra/VM0047@v1-8",
       "next_action": "completed"
     },
