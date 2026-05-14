@@ -175,12 +175,13 @@
       "section_anchor": "applicability-conditions",
       "tools": [
         "Verra/VM0007@v1-8",
+        "Verra/VMD0042@v1-1",
         "Verra/VMD0042@v1-8"
       ],
       "tags": [
         "eligibility"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -436,13 +437,14 @@
       "section_anchor": "project-boundary",
       "tools": [
         "Verra/VM0007@v1-8",
+        "Verra/VMD0042@v1-1",
         "Verra/VMD0042@v1-8",
         "Verra/VMD0050@v1-8"
       ],
       "tags": [
         "calc"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -680,13 +682,14 @@
       "section_anchor": "baseline-scenario",
       "tools": [
         "Verra/VM0007@v1-8",
+        "Verra/VMD0042@v1-1",
         "Verra/VMD0042@v1-8",
         "Verra/VMD0050@v1-8"
       ],
       "tags": [
         "calc"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
