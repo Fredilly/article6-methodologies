@@ -3,14 +3,10 @@
   "last_updated_at": "2026-05-12T23:55:00Z",
   "notes": [
     "VM0047 v1.0 reached S-grade.",
-    "VF S3: R-1-0008 (T-SIG) and R-1-0014 (VM0047) promoted.",
-    "VF S4: VMD0007 encoded. 3 rules promoted.",
-    "VF S5: VMD0006 v1.4 source-locked. 3 rules promoted.",
-    "VF S6: VMD0050+VMD0051 source-locked. R-1-0011 promoted.",
-    "VF S7: VMD0042 source-locked. R-1-0010, R-2-0009, R-3-0006 promoted.",
-    "VF S8 in progress: 11 modules source-locked. 11 rules promoted. VM0007 now: 48/58 rules source_audited, 10 blocked by 10 unresolved deps.",
-    "Remaining blockers: VMD0001, VMD0002, VMD0003, VMD0004 (carbon pools, PDFs unavailable), VT0001 (cross-cutting tool), T-BAR (non-permanence risk), T-SIG (partially completed).",
-    "S-grade not yet reached \u2014 remaining deps must be encoded or formally deferrable."
+    "VF S3-S7: progressive source-locking of VM0007 dependency modules.",
+    "VF S8b: VT0001, T-BAR source-locked; T-SIG, VMD0005 resolved. VM0007: 56/58 source_audited.",
+    "2 rules remain blocked by VMD0001-0004 (carbon pool modules \u2014 PDFs unavailable from Verra).",
+    "S-grade not yet reached."
   ],
   "phases": [
     {

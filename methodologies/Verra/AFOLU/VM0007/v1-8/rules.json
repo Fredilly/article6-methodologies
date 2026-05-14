@@ -404,7 +404,7 @@
       "tags": [
         "eligibility"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -420,7 +420,7 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0001@v1-8",
         "Verra/VMD0002@v1-8",
-        "Verra/VMD0005@v1-8"
+        "Verra/VMD0005@v1-1"
       ],
       "tags": [
         "calc"
@@ -465,7 +465,7 @@
       "tags": [
         "eligibility"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -591,12 +591,12 @@
       "section_anchor": "baseline-scenario",
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VT0001@v1-8"
+        "Verra/VT0001@v3-0"
       ],
       "tags": [
         "calc"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -610,12 +610,12 @@
       "section_anchor": "baseline-scenario",
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VT0001@v1-8"
+        "Verra/VT0001@v3-0"
       ],
       "tags": [
         "eligibility"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -629,12 +629,12 @@
       "section_anchor": "baseline-scenario",
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VT0001@v1-8"
+        "Verra/VT0001@v3-0"
       ],
       "tags": [
         "calc"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -648,12 +648,12 @@
       "section_anchor": "baseline-scenario",
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VT0001@v1-8"
+        "Verra/VT0001@v3-0"
       ],
       "tags": [
         "calc"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -743,12 +743,12 @@
       "section_anchor": "additionality",
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VT0001@v1-8"
+        "Verra/VT0001@v3-0"
       ],
       "tags": [
         "eligibility"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -861,13 +861,13 @@
       "section_number": "8",
       "section_anchor": "quantification",
       "tools": [
-        "Verra/T-BAR@v1-8",
+        "Verra/T-BAR@v4-2",
         "Verra/VM0007@v1-8"
       ],
       "tags": [
         "calc"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -922,7 +922,7 @@
         "Verra/VMD0002@v1-8",
         "Verra/VMD0003@v1-8",
         "Verra/VMD0004@v1-8",
-        "Verra/VMD0005@v1-8"
+        "Verra/VMD0005@v1-1"
       ],
       "tags": [
         "calc"

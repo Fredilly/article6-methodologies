@@ -1,22 +1,11 @@
 {
-  "blocked_rule_count": 10,
+  "blocked_rule_count": 2,
   "blocked_rules": [
     {
       "blocking_reason": "external_dependency_unencoded",
       "external_dependencies": [
-        "Verra/T-SIG@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-2-0007",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0007",
-      "title": "Carbon pool selection per activity type"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
         "Verra/VMD0001@v1-8",
-        "Verra/VMD0002@v1-8",
-        "Verra/VMD0005@v1-8"
+        "Verra/VMD0002@v1-8"
       ],
       "quality_status": "draft_unverified",
       "rule_id": "R-2-0008",
@@ -26,81 +15,10 @@
     {
       "blocking_reason": "external_dependency_unencoded",
       "external_dependencies": [
-        "Verra/T-SIG@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-2-0010",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0010",
-      "title": "REDD GHG source identification"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VT0001@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-3-0001",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0001",
-      "title": "Baseline scenario determination via VT0001"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VT0001@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-3-0002",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0002",
-      "title": "Minimum alternative scenario list"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VT0001@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-3-0003",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0003",
-      "title": "Barrier analysis baseline selection"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VT0001@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-3-0004",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0004",
-      "title": "Investment analysis baseline selection"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VT0001@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-4-0001",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-4-0001",
-      "title": "VT0001 additionality requirement"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/T-BAR@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-5-0005",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0005",
-      "title": "Buffer pool contribution calculation"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
         "Verra/VMD0001@v1-8",
         "Verra/VMD0002@v1-8",
         "Verra/VMD0003@v1-8",
-        "Verra/VMD0004@v1-8",
-        "Verra/VMD0005@v1-8"
+        "Verra/VMD0004@v1-8"
       ],
       "quality_status": "draft_unverified",
       "rule_id": "R-5-0008",

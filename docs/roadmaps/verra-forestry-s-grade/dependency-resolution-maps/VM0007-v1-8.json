@@ -9,17 +9,12 @@
       "next_action": "completed"
     },
     {
-      "blocked_rule_count": 5,
-      "blocked_rule_ids": [
-        "R-3-0001",
-        "R-3-0002",
-        "R-3-0003",
-        "R-3-0004"
-      ],
-      "classification": "active_required",
-      "evidence_note": "Cross-cutting additionality tool used by multiple VCS methodologies. Not VM0007-specific.",
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "VT0001 v3.0 source-locked. 5 rules promoted.",
       "id": "Verra/VT0001@v1-8",
-      "next_action": "defer_to_repo_wide_encoding"
+      "next_action": "completed"
     },
     {
       "blocked_rule_count": 0,
@@ -58,15 +53,12 @@
       "next_action": "completed"
     },
     {
-      "blocked_rule_count": 2,
-      "blocked_rule_ids": [
-        "R-2-0007",
-        "R-2-0010"
-      ],
-      "classification": "candidate_self_contained",
-      "evidence_note": "Appendix 1 provides self-contained significance test. R-1-0008 promoted to source_audited (Appendix 1 replaces T-SIG). R-2-0007 and R-2-0010 remain draft_unverified pending source span and page range definition.",
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "T-SIG resolved via Appendix 1 of VM0007. 2 rules promoted.",
       "id": "Verra/T-SIG@v1-8",
-      "next_action": "partially_completed"
+      "next_action": "completed"
     },
     {
       "blocked_rule_count": 2,
@@ -94,9 +86,9 @@
       "blocked_rule_count": 0,
       "blocked_rule_ids": [],
       "classification": "repo_resolved",
-      "evidence_note": "VMD0005 v1.1 source-locked and encoded. Partially resolves R-2-0008/R-5-0008 (also need VMD0001-0004).",
+      "evidence_note": "VMD0005 v1.1 source-locked (CP-W). Old @v1-8 alias resolved.",
       "id": "Verra/VMD0005@v1-8",
-      "next_action": "await_other_deps"
+      "next_action": "completed"
     },
     {
       "blocked_rule_count": 0,
@@ -185,17 +177,15 @@
       "next_action": "completed"
     },
     {
-      "blocked_rule_count": 1,
-      "blocked_rule_ids": [
-        "R-5-0005"
-      ],
-      "classification": "active_required",
-      "evidence_note": "Non-permanence risk tool. VM0007 Section 8.4.4 uses T-BAR for buffer%.",
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "T-BAR v4.2 source-locked. 1 rule promoted.",
       "id": "Verra/T-BAR@v1-8",
-      "next_action": "encode_as_local_artifact"
+      "next_action": "completed"
     }
   ],
-  "draft_unverified_rule_count": 10,
+  "draft_unverified_rule_count": 2,
   "methodology": "Verra/VM0007@v1-8",
   "recommended_encoding_order": [
     "1. VM0047 dep resolved \u2014 DONE",
@@ -206,7 +196,7 @@
     "6. VMD0042 encoded (source-locked) \u2014 DONE (3 rules promoted)",
     "7. Remainder in dependency-order"
   ],
-  "source_audited_rule_count": 48,
+  "source_audited_rule_count": 56,
   "status": "has_active_blockers",
   "total_dependencies": 21
 }

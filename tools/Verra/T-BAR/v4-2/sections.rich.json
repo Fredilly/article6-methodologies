@@ -1,0 +1,78 @@
+[
+  {
+    "id": "S-1",
+    "stable_id": "Verra.T-BAR.v4-2.S-1",
+    "title": "Introduction and Scope",
+    "anchor": "introduction-and-scope",
+    "section_number": "1",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 1,
+    "page_end": 3,
+    "locator_status": "source_audited",
+    "heading_text": "Introduction and Scope",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "12f1b8297ed5ed19045442cd92b7cd5de3c38b969c5a8ff96558d25c1c18aba9",
+      "source_ref": "Verra/T-BAR@v4-2"
+    }
+  },
+  {
+    "id": "S-2",
+    "stable_id": "Verra.T-BAR.v4-2.S-2",
+    "title": "Risk Categories",
+    "anchor": "risk-categories",
+    "section_number": "2",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 4,
+    "page_end": 12,
+    "locator_status": "source_audited",
+    "heading_text": "Risk Categories",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "12f1b8297ed5ed19045442cd92b7cd5de3c38b969c5a8ff96558d25c1c18aba9",
+      "source_ref": "Verra/T-BAR@v4-2"
+    }
+  },
+  {
+    "id": "S-3",
+    "stable_id": "Verra.T-BAR.v4-2.S-3",
+    "title": "Risk Mitigation",
+    "anchor": "risk-mitigation",
+    "section_number": "3",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 13,
+    "page_end": 18,
+    "locator_status": "source_audited",
+    "heading_text": "Risk Mitigation",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "12f1b8297ed5ed19045442cd92b7cd5de3c38b969c5a8ff96558d25c1c18aba9",
+      "source_ref": "Verra/T-BAR@v4-2"
+    }
+  },
+  {
+    "id": "S-4",
+    "stable_id": "Verra.T-BAR.v4-2.S-4",
+    "title": "Buffer Determination",
+    "anchor": "buffer-determination",
+    "section_number": "4",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 19,
+    "page_end": 24,
+    "locator_status": "source_audited",
+    "heading_text": "Buffer Determination",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "12f1b8297ed5ed19045442cd92b7cd5de3c38b969c5a8ff96558d25c1c18aba9",
+      "source_ref": "Verra/T-BAR@v4-2"
+    }
+  }
+]

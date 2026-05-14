@@ -1,0 +1,76 @@
+{
+  "sections": [
+    {
+      "id": "S-1",
+      "stable_id": "Verra.VT0001.v3-0.S-1",
+      "title": "Sources",
+      "anchor": "sources",
+      "section_number": "1",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 2,
+      "page_end": 2,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-2",
+      "stable_id": "Verra.VT0001.v3-0.S-2",
+      "title": "Summary Description",
+      "anchor": "summary-description",
+      "section_number": "2",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 3,
+      "page_end": 3,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-3",
+      "stable_id": "Verra.VT0001.v3-0.S-3",
+      "title": "Definitions",
+      "anchor": "definitions",
+      "section_number": "3",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 4,
+      "page_end": 4,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-4",
+      "stable_id": "Verra.VT0001.v3-0.S-4",
+      "title": "Applicability Conditions",
+      "anchor": "applicability-conditions",
+      "section_number": "4",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 5,
+      "page_end": 6,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-5",
+      "stable_id": "Verra.VT0001.v3-0.S-5",
+      "title": "Additionality Assessment Steps",
+      "anchor": "additionality-assessment-steps",
+      "section_number": "5",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 7,
+      "page_end": 18,
+      "locator_status": "source_audited"
+    },
+    {
+      "id": "S-6",
+      "stable_id": "Verra.VT0001.v3-0.S-6",
+      "title": "Data and Parameters",
+      "anchor": "data-and-parameters",
+      "section_number": "6",
+      "section_level": 1,
+      "parent_id": null,
+      "page_start": 19,
+      "page_end": 24,
+      "locator_status": "source_audited"
+    }
+  ]
+}
