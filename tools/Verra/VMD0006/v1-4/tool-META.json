@@ -1,13 +1,24 @@
 {
   "doc": "Verra/VMD0006@v1-4",
   "kind": "pdf",
-  "path": null,
-  "sha256": null,
+  "path": "tools/Verra/VMD0006/v1-4/source.pdf",
+  "sha256": "f794da0116f5461a155b133e68c9a36feb048feabfe9547ac1b1450cd217c9c6",
   "title": "VMD0006 Estimation of baseline carbon stock changes and greenhouse gas emissions from planned deforestation/forest degradation and planned wetland degradation (BL-PL), v1.4",
   "version": "v1-4",
   "standard": "Verra",
   "type": "module",
   "active_date": "2023-11-27",
   "url": "https://verra.org/methodologies/vmd0006-estimation-baseline-carbon-stock-changes-greenhouse-gas-emissions-from-planned-deforestation-planned-degradation-blpl-v1-4/",
-  "note": "Source PDF referenced via Verra page. Not locally cached. Source locator recorded but hash verification not yet possible."
+  "size": 525352,
+  "provenance": {
+    "source_pdfs": [
+      {
+        "doc": "Verra/VMD0006@v1-4",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0006/v1-4/source.pdf",
+        "sha256": "f794da0116f5461a155b133e68c9a36feb048feabfe9547ac1b1450cd217c9c6",
+        "size": 525352
+      }
+    ]
+  }
 }

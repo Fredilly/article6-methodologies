@@ -1,0 +1,177 @@
+[
+  {
+    "id": "S-1",
+    "stable_id": "Verra.VMD0006.v1-4.S-1",
+    "title": "Sources",
+    "anchor": "sources",
+    "section_number": "1",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 4,
+    "page_end": 4,
+    "locator_status": "source_audited",
+    "heading_text": "Sources",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "f794da0116f5461a155b133e68c9a36feb048feabfe9547ac1b1450cd217c9c6",
+      "source_ref": "Verra/VMD0006@v1-4"
+    }
+  },
+  {
+    "id": "S-2",
+    "stable_id": "Verra.VMD0006.v1-4.S-2",
+    "title": "Summary Description of the Module",
+    "anchor": "summary-description-of-the-module",
+    "section_number": "2",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 5,
+    "page_end": 5,
+    "locator_status": "source_audited",
+    "heading_text": "Summary Description of the Module",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "f794da0116f5461a155b133e68c9a36feb048feabfe9547ac1b1450cd217c9c6",
+      "source_ref": "Verra/VMD0006@v1-4"
+    }
+  },
+  {
+    "id": "S-3",
+    "stable_id": "Verra.VMD0006.v1-4.S-3",
+    "title": "Definitions and Acronyms",
+    "anchor": "definitions-and-acronyms",
+    "section_number": "3",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 6,
+    "page_end": 6,
+    "locator_status": "source_audited",
+    "heading_text": "Definitions and Acronyms",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "f794da0116f5461a155b133e68c9a36feb048feabfe9547ac1b1450cd217c9c6",
+      "source_ref": "Verra/VMD0006@v1-4"
+    }
+  },
+  {
+    "id": "S-4",
+    "stable_id": "Verra.VMD0006.v1-4.S-4",
+    "title": "Applicability Conditions",
+    "anchor": "applicability-conditions",
+    "section_number": "4",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 6,
+    "page_end": 8,
+    "locator_status": "source_audited",
+    "heading_text": "Applicability Conditions",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "f794da0116f5461a155b133e68c9a36feb048feabfe9547ac1b1450cd217c9c6",
+      "source_ref": "Verra/VMD0006@v1-4"
+    }
+  },
+  {
+    "id": "S-5",
+    "stable_id": "Verra.VMD0006.v1-4.S-5",
+    "title": "Procedures for Estimating Baseline Emissions",
+    "anchor": "procedures-for-estimating-baseline-emissions",
+    "section_number": "5",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 8,
+    "page_end": 16,
+    "locator_status": "source_audited",
+    "heading_text": "Procedures for Estimating Baseline Emissions",
+    "source_span_status": "source_audited",
+    "children": [
+      "S-5-1",
+      "S-5-2",
+      "S-5-3"
+    ],
+    "provenance": {
+      "source_hash": "f794da0116f5461a155b133e68c9a36feb048feabfe9547ac1b1450cd217c9c6",
+      "source_ref": "Verra/VMD0006@v1-4"
+    }
+  },
+  {
+    "id": "S-5-1",
+    "stable_id": "Verra.VMD0006.v1-4.S-5-1",
+    "title": "Baseline Agent of Deforestation",
+    "anchor": "baseline-agent-of-deforestation",
+    "section_number": "5.1.1",
+    "section_level": 2,
+    "parent_id": "S-5",
+    "page_start": 8,
+    "page_end": 9,
+    "locator_status": "source_audited",
+    "heading_text": "Baseline Agent of Deforestation",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "f794da0116f5461a155b133e68c9a36feb048feabfe9547ac1b1450cd217c9c6",
+      "source_ref": "Verra/VMD0006@v1-4"
+    }
+  },
+  {
+    "id": "S-5-2",
+    "stable_id": "Verra.VMD0006.v1-4.S-5-2",
+    "title": "Area of Deforestation and Proxy Area Definition",
+    "anchor": "area-of-deforestation-and-proxy-area-definition",
+    "section_number": "5.1.2",
+    "section_level": 2,
+    "parent_id": "S-5",
+    "page_start": 9,
+    "page_end": 12,
+    "locator_status": "source_audited",
+    "heading_text": "Area of Deforestation and Proxy Area Definition",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "f794da0116f5461a155b133e68c9a36feb048feabfe9547ac1b1450cd217c9c6",
+      "source_ref": "Verra/VMD0006@v1-4"
+    }
+  },
+  {
+    "id": "S-5-3",
+    "stable_id": "Verra.VMD0006.v1-4.S-5-3",
+    "title": "Baseline Carbon Stocks and GHG Emissions",
+    "anchor": "baseline-carbon-stocks-and-ghg-emissions",
+    "section_number": "5.2",
+    "section_level": 2,
+    "parent_id": "S-5",
+    "page_start": 13,
+    "page_end": 16,
+    "locator_status": "source_audited",
+    "heading_text": "Baseline Carbon Stocks and GHG Emissions",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "f794da0116f5461a155b133e68c9a36feb048feabfe9547ac1b1450cd217c9c6",
+      "source_ref": "Verra/VMD0006@v1-4"
+    }
+  },
+  {
+    "id": "S-6",
+    "stable_id": "Verra.VMD0006.v1-4.S-6",
+    "title": "Data and Parameters",
+    "anchor": "data-and-parameters",
+    "section_number": "6",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 17,
+    "page_end": 24,
+    "locator_status": "source_audited",
+    "heading_text": "Data and Parameters",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "f794da0116f5461a155b133e68c9a36feb048feabfe9547ac1b1450cd217c9c6",
+      "source_ref": "Verra/VMD0006@v1-4"
+    }
+  }
+]
