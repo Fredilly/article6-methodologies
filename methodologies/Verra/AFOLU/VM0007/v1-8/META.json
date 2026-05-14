@@ -2,7 +2,7 @@
   "active_date": "2024-06-04",
   "artifact_quality_standard": {
     "adoption_status": "source_audited",
-    "note": "VF S3 + S4: 30 VM0007-backed rules source_audited, 28 remain draft_unverified. VMD0007 encoded (3 rules promoted: R-1-0003, R-1-0013, R-2-0004). R-3-0005 and R-6-0005 kept draft_unverified due to remaining VMD0006/VMD0015 deps.",
+    "note": "VF S3 + S4: 30 VM0007-backed rules source_audited, 28 remain draft_unverified. VMD0007 encoded (3 rules promoted). VMD0006 locator-recorded but not source-locked; its 3 dependent rules remain draft_unverified.",
     "version": "review_contract_v1"
   },
   "artifact_status": {
@@ -11,7 +11,7 @@
     "source_pdf": "verified"
   },
   "audit_hashes": {
-    "blocked_external_dependencies_sha256": "8a7b0c18141d9e6c01972b0eb793e1e699d7b33db386c60a7f4341b2fe7c8706",
+    "blocked_external_dependencies_sha256": "caa5949b050bd11894caa5fcadae25f0afb67a299a99b8acc7b601075c6a3c89",
     "rules.rich_sha256": "adb49b70ace9768a16bfee6ff77a4cb6bb936fe8b5bba5c5f6c9a5864e2272fd",
     "rules_json_sha256": "0a53ee5da2d6ec9876cbee926cb5a451495f8a5dddebce473c19f526710a65d5",
     "rules_rich_json_sha256": "adb49b70ace9768a16bfee6ff77a4cb6bb936fe8b5bba5c5f6c9a5864e2272fd",
@@ -26,7 +26,7 @@
   },
   "domain": "AFOLU",
   "draft_seed_artifacts": {
-    "note": "VF3 partial: 25 VM0007-backed rules source_audited. 33 rules with external dependencies remain draft_unverified.",
+    "note": "VF3 partial: 30 VM0007-backed rules source_audited. 28 rules with external dependencies remain draft_unverified.",
     "retained": true,
     "source_audit_pending": [
       "rules_blocked_by_external_deps"
@@ -77,7 +77,7 @@
       {
         "id": "Verra/VMD0006@v1-8",
         "local_artifact_present": false,
-        "status": "external_unencoded"
+        "status": "externally_referenced"
       },
       {
         "id": "Verra/VMD0007@v1-8",
@@ -163,9 +163,8 @@
   ],
   "method": "REDD+ Methodology Framework",
   "methodology_linked_review_blockers": [
-    "28 rules remain draft_unverified. VMD0007 encoded (3 rules promoted).",
-    "R-3-0005 still blocked by VMD0006; R-6-0005 still blocked by VMD0015.",
-    "External Verra modules and tools referenced by the retained draft rules are not encoded.",
+    "28 rules remain draft_unverified. VMD0006 locator-recorded but not source-locked (3 rules still blocked).",
+    "Remaining external Verra modules and tools not encoded.",
     "Deeper subsection hierarchy not fully mapped."
   ],
   "methodology_linked_review_ready": false,

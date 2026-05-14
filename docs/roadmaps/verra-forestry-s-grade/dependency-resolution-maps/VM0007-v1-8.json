@@ -29,7 +29,7 @@
         "R-3-0005"
       ],
       "classification": "active_required",
-      "evidence_note": "Planned deforestation baseline module. VM0007 Section 6.1 references BL-PL.",
+      "evidence_note": "Planned deforestation baseline module (BL-PL). VM0007 Section 6.1 references. Locator-recorded but PDF not locally source-locked or hash-verified.",
       "id": "Verra/VMD0006@v1-8",
       "next_action": "encode_as_local_artifact"
     },

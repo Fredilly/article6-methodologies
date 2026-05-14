@@ -1,12 +1,13 @@
 {
   "goal": "Upgrade Verra forestry methods to S-grade (Grade A) for methodology-linked review readiness. S-grade = all sections and rules source-audited, no active blocked external dependencies, methodology_linked_review_ready: true.",
-  "last_updated_at": "2026-05-12T23:45:00Z",
+  "last_updated_at": "2026-05-12T23:55:00Z",
   "notes": [
     "VM0047 v1.0 reached S-grade: 27 sections, 11 rules, 0 blockers.",
     "VF S3 quick wins completed: R-1-0008 (T-SIG) and R-1-0014 (VM0047) promoted.",
-    "VF S4 VMD0007 encoding completed: VMD0007 v3.3 at tools/Verra/VMD0007/v3-3. 3 VM0007 rules promoted (R-1-0003, R-1-0013, R-2-0004). R-3-0005 and R-6-0005 kept draft (still blocked by VMD0006/VMD0015).",
+    "VF S4 VMD0007 encoding completed: 3 rules promoted.",
+    "VF S5: VMD0006 locator-recorded but not source-locked. 3 dependent rules remain draft_unverified per S-grade discipline.",
     "VM0007 now: 30/58 rules source_audited, 28 blocked by 18 active external module/tool dependencies.",
-    "Next: encode VMD0006 (3 blocked rules)."
+    "Next: encode VMD0006 (source-lock PDF and promote 3 rules)."
   ],
   "phases": [
     {
@@ -31,16 +32,21 @@
     },
     {
       "id": "vf_s5_vm0007_vmd0006_encoding",
-      "name": "Encode VMD0006 (3 blocked rules)",
+      "name": "Encode VMD0006 (source-lock)",
       "status": "next"
     },
     {
-      "id": "vf_s6_vm0007_remaining_modules",
+      "id": "vf_s6_vm0007_tidal_wetland_modules",
+      "name": "Encode VMD0050 + VMD0051 (tidal wetland pair)",
+      "status": "not_started"
+    },
+    {
+      "id": "vf_s7_vm0007_remaining_modules",
       "name": "Encode remaining VM0007 modules/tools",
       "status": "not_started"
     },
     {
-      "id": "vf_s7_vm0007_grade_a",
+      "id": "vf_s8_vm0007_grade_a",
       "name": "VM0007 S-grade promotion",
       "status": "not_started"
     }

@@ -14,6 +14,26 @@
     {
       "blocking_reason": "external_dependency_unencoded",
       "external_dependencies": [
+        "Verra/VMD0006@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-2-0005",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0005",
+      "title": "REDD proxy area definition"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
+        "Verra/VMD0006@v1-8"
+      ],
+      "quality_status": "draft_unverified",
+      "rule_id": "R-3-0005",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0005",
+      "title": "REDD baseline modules"
+    },
+    {
+      "blocking_reason": "external_dependency_unencoded",
+      "external_dependencies": [
         "Verra/VMD0052@v1-8"
       ],
       "quality_status": "draft_unverified",
@@ -40,16 +60,6 @@
       "rule_id": "R-1-0011",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0011",
       "title": "Tidal wetland restoration activities"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VMD0006@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-2-0005",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0005",
-      "title": "REDD proxy area definition"
     },
     {
       "blocking_reason": "external_dependency_unencoded",
@@ -273,16 +283,6 @@
       "rule_id": "R-6-0006",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.R-6-0006",
       "title": "WRC compliance monitoring"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VMD0006@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-3-0005",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0005",
-      "title": "REDD baseline modules"
     },
     {
       "blocking_reason": "external_dependency_unencoded",
