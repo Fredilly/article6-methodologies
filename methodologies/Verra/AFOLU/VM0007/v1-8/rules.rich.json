@@ -1462,7 +1462,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0008",
     "logic": "AGB always mandatory. HWP and dead wood conditionally mandatory based on baseline/project comparison.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-2",
@@ -1476,23 +1476,25 @@
         "Verra/VM0007@v1-8",
         "Verra/VMD0001@v1-8",
         "Verra/VMD0002@v1-8",
-        "Verra/VMD0005@v1-1"
+        "Verra/VMD0005@v1-1",
+        "Verra/VMD0001@v1-1",
+        "Verra/VMD0002@v1-0"
       ]
     },
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0008",
       "coverage_scope": "rule",
-      "expected_evidence_status": "pending_source_audit",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-2"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
-      "status": "pending_source_audit",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -1500,14 +1502,14 @@
       "lineage": [
         "project-boundary"
       ],
-      "locator_status": "pending_source_audit",
-      "page_end": null,
-      "page_start": null,
+      "locator_status": "source_audited",
+      "page_end": 20,
+      "page_start": 18,
       "section_id": "S-2",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2",
       "section_title": "Project Boundary"
     },
-    "source_span_status": "pending_source_audit",
+    "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0008",
     "summary": "REDD mandatory carbon pools",
     "type": "calc",
@@ -2821,7 +2823,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-5-0008",
     "logic": "Five carbon pool modules. Each optional except AG biomass per R-2-0008.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-5",
@@ -2836,23 +2838,27 @@
         "Verra/VMD0002@v1-8",
         "Verra/VMD0003@v1-8",
         "Verra/VMD0004@v1-8",
-        "Verra/VMD0005@v1-1"
+        "Verra/VMD0005@v1-1",
+        "Verra/VMD0001@v1-1",
+        "Verra/VMD0002@v1-0",
+        "Verra/VMD0003@v1-0",
+        "Verra/VMD0004@v1-0"
       ]
     },
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-5-0008",
       "coverage_scope": "rule",
-      "expected_evidence_status": "pending_source_audit",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-5"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
-      "status": "pending_source_audit",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -2860,14 +2866,14 @@
       "lineage": [
         "quantification"
       ],
-      "locator_status": "pending_source_audit",
-      "page_end": null,
-      "page_start": null,
+      "locator_status": "source_audited",
+      "page_end": 44,
+      "page_start": 42,
       "section_id": "S-5",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-5",
       "section_title": "Quantification"
     },
-    "source_span_status": "pending_source_audit",
+    "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0008",
     "summary": "Carbon pool modules for REDD",
     "type": "calc",

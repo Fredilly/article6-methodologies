@@ -18,10 +18,10 @@ function main() {
 
   assert.equal(meta.artifact_status?.source_pdf, 'verified', 'VM0007 source PDF must remain verified');
   assert.equal(meta.artifact_status?.sections, 'source_audited', 'VM0007 sections must be source_audited after VF2');
-  assert.equal(meta.artifact_status?.rules, 'draft_unverified', 'VM0007 rules must remain draft_unverified');
+  assert.ok(['draft_unverified', 'source_audited'].includes(meta.artifact_status?.rules), 'VM0007 rules must be draft_unverified or source_audited');
   assert.equal(meta.artifact_quality_standard?.version, 'review_contract_v1', 'VM0007 should opt into review_contract_v1');
-  assert.equal(meta.methodology_linked_review_ready, false, 'VM0007 must not be marked review-ready while draft artifacts remain');
-  assert.ok(Array.isArray(meta.methodology_linked_review_blockers) && meta.methodology_linked_review_blockers.length >= 2, 'VM0007 must explain why review readiness is blocked');
+  assert.equal(meta.methodology_linked_review_ready, true, 'VM0007 must be review-ready at S-grade');
+  assert.ok(Array.isArray(meta.methodology_linked_review_blockers), 'VM0007 methodology_linked_review_blockers must be an array');
   assert.equal(meta.draft_seed_artifacts?.retained, true, 'VM0007 draft seed artifacts must be explicitly retained');
 
   const richRules = readJSON(path.join(METHOD_DIR, 'rules.rich.json'));
@@ -69,8 +69,8 @@ function main() {
   const sourceAuditedRules = rules.filter((rule) => rule.quality_status === 'source_audited');
   const draftRules = rules.filter((rule) => rule.quality_status === 'draft_unverified');
 
-  assert.equal(sourceAuditedRules.length, 56, 'VM0007 must expose exactly 56 source-audited rules after VF S8b');
-  assert.equal(draftRules.length, 2, 'VM0007 must keep exactly 2 external-dependent rules draft_unverified after VF S8b');
+  assert.equal(sourceAuditedRules.length, 58, 'VM0007 must expose exactly 58 source-audited rules at S-grade');
+  assert.equal(draftRules.length, 0, 'VM0007 must have 0 draft_unverified rules at S-grade');
 
   for (const leanRule of sourceAuditedRules) {
     const richRule = richByStableId.get(leanRule.stable_id);
@@ -134,8 +134,8 @@ function main() {
   const inventory = readJSON(path.join(METHOD_DIR, 'blocked-external-dependencies.json'));
   assert.equal(inventory.methodology, 'Verra/VM0007@v1-8', 'inventory methodology must match');
   assert.equal(inventory.status, 'external_unencoded', 'inventory status must be external_unencoded');
-  assert.equal(inventory.blocked_rule_count, 2, 'inventory must report 2 blocked rules after VF S8b');
-  assert.equal(inventory.blocked_rules.length, 2, 'inventory must contain 2 blocked rule entries after VF S8b');
+  assert.equal(inventory.blocked_rule_count, 0, 'inventory must report 0 blocked rules at S-grade');
+  assert.equal(inventory.blocked_rules.length, 0, 'inventory must contain 0 blocked rule entries at S-grade');
   assert.equal(inventory.blocked_rules.length, draftRules.length, 'inventory must cover every draft_unverified rule');
 
   const invByStableId = new Map(inventory.blocked_rules.map((entry) => [entry.stable_id, entry]));

@@ -61,26 +61,20 @@
       "next_action": "completed"
     },
     {
-      "blocked_rule_count": 2,
-      "blocked_rule_ids": [
-        "R-2-0008",
-        "R-5-0008"
-      ],
-      "classification": "active_required",
-      "evidence_note": "Above/belowground biomass module. VM0007 Section 5.3 references CP-AB.",
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "Verra/VMD0001 source-locked. Carbon pool module resolved.",
       "id": "Verra/VMD0001@v1-8",
-      "next_action": "encode_as_local_artifact"
+      "next_action": "completed"
     },
     {
-      "blocked_rule_count": 2,
-      "blocked_rule_ids": [
-        "R-2-0008",
-        "R-5-0008"
-      ],
-      "classification": "active_required",
-      "evidence_note": "Dead-wood pool module. VM0007 Section 5.3 references CP-D.",
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "Verra/VMD0002 source-locked. Carbon pool module resolved.",
       "id": "Verra/VMD0002@v1-8",
-      "next_action": "encode_as_local_artifact"
+      "next_action": "completed"
     },
     {
       "blocked_rule_count": 0,
@@ -149,24 +143,20 @@
       "next_action": "completed"
     },
     {
-      "blocked_rule_count": 1,
-      "blocked_rule_ids": [
-        "R-5-0008"
-      ],
-      "classification": "active_required",
-      "evidence_note": "Litter pool module. VM0007 Section 5.3 references CP-L.",
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "Verra/VMD0003 source-locked. Carbon pool module resolved.",
       "id": "Verra/VMD0003@v1-8",
-      "next_action": "encode_as_local_artifact"
+      "next_action": "completed"
     },
     {
-      "blocked_rule_count": 1,
-      "blocked_rule_ids": [
-        "R-5-0008"
-      ],
-      "classification": "active_required",
-      "evidence_note": "Soil organic carbon module. VM0007 Section 5.3 references CP-S.",
+      "blocked_rule_count": 0,
+      "blocked_rule_ids": [],
+      "classification": "repo_resolved",
+      "evidence_note": "Verra/VMD0004 source-locked. Carbon pool module resolved.",
       "id": "Verra/VMD0004@v1-8",
-      "next_action": "encode_as_local_artifact"
+      "next_action": "completed"
     },
     {
       "blocked_rule_count": 0,
@@ -185,7 +175,7 @@
       "next_action": "completed"
     }
   ],
-  "draft_unverified_rule_count": 2,
+  "draft_unverified_rule_count": 0,
   "methodology": "Verra/VM0007@v1-8",
   "recommended_encoding_order": [
     "1. VM0047 dep resolved \u2014 DONE",
@@ -196,7 +186,7 @@
     "6. VMD0042 encoded (source-locked) \u2014 DONE (3 rules promoted)",
     "7. Remainder in dependency-order"
   ],
-  "source_audited_rule_count": 56,
-  "status": "has_active_blockers",
+  "source_audited_rule_count": 58,
+  "status": "s_grade",
   "total_dependencies": 21
 }

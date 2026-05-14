@@ -1,0 +1,24 @@
+{
+  "doc": "Verra/VMD0004@v1-0",
+  "kind": "pdf",
+  "path": "tools/Verra/VMD0004/v1-0/source.pdf",
+  "sha256": "11998cf83e1b35b2ed03dd9741a58b2234e697dc1bcb93ecd96ea7585d567229",
+  "size": 266164,
+  "title": "VMD0004 Estimation of stocks in the soil organic carbon pool (CP-S), v1.0",
+  "version": "v1-0",
+  "standard": "Verra",
+  "type": "module",
+  "active_date": "2013-05-03",
+  "url": "https://verra.org/wp-content/uploads/2023/11/VMD0004v1.0.pdf",
+  "provenance": {
+    "source_pdfs": [
+      {
+        "doc": "Verra/VMD0004@v1-0",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0004/v1-0/source.pdf",
+        "sha256": "11998cf83e1b35b2ed03dd9741a58b2234e697dc1bcb93ecd96ea7585d567229",
+        "size": 266164
+      }
+    ]
+  }
+}

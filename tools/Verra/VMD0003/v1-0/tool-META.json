@@ -1,0 +1,24 @@
+{
+  "doc": "Verra/VMD0003@v1-0",
+  "kind": "pdf",
+  "path": "tools/Verra/VMD0003/v1-0/source.pdf",
+  "sha256": "5a34f0a6e4c3065d89cf31c8b5451a3a0c06403afd871247554db72d6061f13c",
+  "size": 211501,
+  "title": "VMD0003 Estimation of carbon stocks in the litter pool (CP-L), v1.0",
+  "version": "v1-0",
+  "standard": "Verra",
+  "type": "module",
+  "active_date": "2013-05-03",
+  "url": "https://verra.org/wp-content/uploads/2023/11/VMD0003v1.0.pdf",
+  "provenance": {
+    "source_pdfs": [
+      {
+        "doc": "Verra/VMD0003@v1-0",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0003/v1-0/source.pdf",
+        "sha256": "5a34f0a6e4c3065d89cf31c8b5451a3a0c06403afd871247554db72d6061f13c",
+        "size": 211501
+      }
+    ]
+  }
+}

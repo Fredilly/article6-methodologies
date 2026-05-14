@@ -1,0 +1,24 @@
+{
+  "doc": "Verra/VMD0002@v1-0",
+  "kind": "pdf",
+  "path": "tools/Verra/VMD0002/v1-0/source.pdf",
+  "sha256": "94145386268c22903467adc9a281e7e438173498fa5c71f15ede4ef5ffacc094",
+  "size": 115675,
+  "title": "VMD0002 Estimation of carbon stocks in the dead-wood pool (CP-D), v1.0",
+  "version": "v1-0",
+  "standard": "Verra",
+  "type": "module",
+  "active_date": "2013-05-03",
+  "url": "https://verra.org/wp-content/uploads/2023/11/VMD0002v1.0ErrataClarification.pdf",
+  "provenance": {
+    "source_pdfs": [
+      {
+        "doc": "Verra/VMD0002@v1-0",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0002/v1-0/source.pdf",
+        "sha256": "94145386268c22903467adc9a281e7e438173498fa5c71f15ede4ef5ffacc094",
+        "size": 115675
+      }
+    ]
+  }
+}

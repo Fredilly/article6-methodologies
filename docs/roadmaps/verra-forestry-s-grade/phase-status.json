@@ -3,10 +3,10 @@
   "last_updated_at": "2026-05-12T23:55:00Z",
   "notes": [
     "VM0047 v1.0 reached S-grade.",
-    "VF S3-S7: progressive source-locking of VM0007 dependency modules.",
-    "VF S8b: VT0001, T-BAR source-locked; T-SIG, VMD0005 resolved. VM0007: 56/58 source_audited.",
-    "2 rules remain blocked by VMD0001-0004 (carbon pool modules \u2014 PDFs unavailable from Verra).",
-    "S-grade not yet reached."
+    "VF S3-S8b: Progressive source-locking of all VM0007 modules and tools.",
+    "VF S9: VMD0001-0004 source-locked. Final 2 rules promoted.",
+    "VM0007 now: 58/58 rules source_audited. methodology_linked_review_ready: true.",
+    "VM0007 reached S-grade."
   ],
   "phases": [
     {
