@@ -1,0 +1,197 @@
+[
+  {
+    "id": "S-1",
+    "stable_id": "Verra.VMD0046@v1-1.S-1",
+    "title": "Sources",
+    "anchor": "sources",
+    "section_number": "1",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 2,
+    "page_end": 2,
+    "locator_status": "source_audited",
+    "heading_text": "Sources",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "87c847a4d0e511ff677c0f9bb32ba38635bf76fb6db64be61f204ef2ec4b0e15",
+      "source_ref": "Verra/VMD0046@v1-1"
+    }
+  },
+  {
+    "id": "S-2",
+    "stable_id": "Verra.VMD0046@v1-1.S-2",
+    "title": "Summary Description",
+    "anchor": "summary-description",
+    "section_number": "2",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 3,
+    "page_end": 3,
+    "locator_status": "source_audited",
+    "heading_text": "Summary Description",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "87c847a4d0e511ff677c0f9bb32ba38635bf76fb6db64be61f204ef2ec4b0e15",
+      "source_ref": "Verra/VMD0046@v1-1"
+    }
+  },
+  {
+    "id": "S-3",
+    "stable_id": "Verra.VMD0046@v1-1.S-3",
+    "title": "Definitions",
+    "anchor": "definitions",
+    "section_number": "3",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 3,
+    "page_end": 3,
+    "locator_status": "source_audited",
+    "heading_text": "Definitions",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "87c847a4d0e511ff677c0f9bb32ba38635bf76fb6db64be61f204ef2ec4b0e15",
+      "source_ref": "Verra/VMD0046@v1-1"
+    }
+  },
+  {
+    "id": "S-4",
+    "stable_id": "Verra.VMD0046@v1-1.S-4",
+    "title": "Applicability Conditions",
+    "anchor": "applicability-conditions",
+    "section_number": "4",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 4,
+    "page_end": 5,
+    "locator_status": "source_audited",
+    "heading_text": "Applicability Conditions",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "87c847a4d0e511ff677c0f9bb32ba38635bf76fb6db64be61f204ef2ec4b0e15",
+      "source_ref": "Verra/VMD0046@v1-1"
+    }
+  },
+  {
+    "id": "S-5",
+    "stable_id": "Verra.VMD0046@v1-1.S-5",
+    "title": "Monitoring Procedures",
+    "anchor": "monitoring-procedures",
+    "section_number": "5",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 6,
+    "page_end": 16,
+    "locator_status": "source_audited",
+    "heading_text": "Monitoring Procedures",
+    "source_span_status": "source_audited",
+    "children": [
+      "S-5-1",
+      "S-5-2",
+      "S-5-3",
+      "S-5-4"
+    ],
+    "provenance": {
+      "source_hash": "87c847a4d0e511ff677c0f9bb32ba38635bf76fb6db64be61f204ef2ec4b0e15",
+      "source_ref": "Verra/VMD0046@v1-1"
+    }
+  },
+  {
+    "id": "S-5-1",
+    "stable_id": "Verra.VMD0046@v1-1.S-5-1",
+    "title": "Soil Carbon Monitoring",
+    "anchor": "soil-carbon-monitoring",
+    "section_number": "5.1",
+    "section_level": 2,
+    "parent_id": "S-5",
+    "page_start": 6,
+    "page_end": 9,
+    "locator_status": "source_audited",
+    "heading_text": "Soil Carbon Monitoring",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "87c847a4d0e511ff677c0f9bb32ba38635bf76fb6db64be61f204ef2ec4b0e15",
+      "source_ref": "Verra/VMD0046@v1-1"
+    }
+  },
+  {
+    "id": "S-5-2",
+    "stable_id": "Verra.VMD0046@v1-1.S-5-2",
+    "title": "Ditch Emissions",
+    "anchor": "ditch-emissions",
+    "section_number": "5.2",
+    "section_level": 2,
+    "parent_id": "S-5",
+    "page_start": 10,
+    "page_end": 12,
+    "locator_status": "source_audited",
+    "heading_text": "Ditch Emissions",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "87c847a4d0e511ff677c0f9bb32ba38635bf76fb6db64be61f204ef2ec4b0e15",
+      "source_ref": "Verra/VMD0046@v1-1"
+    }
+  },
+  {
+    "id": "S-5-3",
+    "stable_id": "Verra.VMD0046@v1-1.S-5-3",
+    "title": "Fire Emissions",
+    "anchor": "fire-emissions",
+    "section_number": "5.3",
+    "section_level": 2,
+    "parent_id": "S-5",
+    "page_start": 13,
+    "page_end": 14,
+    "locator_status": "source_audited",
+    "heading_text": "Fire Emissions",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "87c847a4d0e511ff677c0f9bb32ba38635bf76fb6db64be61f204ef2ec4b0e15",
+      "source_ref": "Verra/VMD0046@v1-1"
+    }
+  },
+  {
+    "id": "S-5-4",
+    "stable_id": "Verra.VMD0046@v1-1.S-5-4",
+    "title": "Vegetation Monitoring",
+    "anchor": "vegetation-monitoring",
+    "section_number": "5.4",
+    "section_level": 2,
+    "parent_id": "S-5",
+    "page_start": 15,
+    "page_end": 16,
+    "locator_status": "source_audited",
+    "heading_text": "Vegetation Monitoring",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "87c847a4d0e511ff677c0f9bb32ba38635bf76fb6db64be61f204ef2ec4b0e15",
+      "source_ref": "Verra/VMD0046@v1-1"
+    }
+  },
+  {
+    "id": "S-6",
+    "stable_id": "Verra.VMD0046@v1-1.S-6",
+    "title": "Data and Parameters",
+    "anchor": "data-and-parameters",
+    "section_number": "6",
+    "section_level": 1,
+    "parent_id": null,
+    "page_start": 17,
+    "page_end": 26,
+    "locator_status": "source_audited",
+    "heading_text": "Data and Parameters",
+    "source_span_status": "source_audited",
+    "children": [],
+    "provenance": {
+      "source_hash": "87c847a4d0e511ff677c0f9bb32ba38635bf76fb6db64be61f204ef2ec4b0e15",
+      "source_ref": "Verra/VMD0046@v1-1"
+    }
+  }
+]

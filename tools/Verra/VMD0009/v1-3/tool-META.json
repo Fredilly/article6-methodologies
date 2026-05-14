@@ -1,0 +1,24 @@
+{
+  "doc": "Verra/VMD0009@v1-3",
+  "kind": "pdf",
+  "path": "tools/Verra/VMD0009/v1-3/source.pdf",
+  "sha256": "89af8290bd820c8665246edb12702b772d715927434ca250f0839fb073696027",
+  "size": 264649,
+  "title": "VMD0009 Estimation of emissions from activity shifting for avoided planned deforestation (LK-ASP), v1.3",
+  "version": "v1-3",
+  "standard": "Verra",
+  "type": "module",
+  "active_date": "2020-09-08",
+  "url": "https://verra.org/wp-content/uploads/imported/methodologies/VMD0009-LK-ASP-v1.3.pdf",
+  "provenance": {
+    "source_pdfs": [
+      {
+        "doc": "Verra/VMD0009@v1-3",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0009/v1-3/source.pdf",
+        "sha256": "89af8290bd820c8665246edb12702b772d715927434ca250f0839fb073696027",
+        "size": 264649
+      }
+    ]
+  }
+}

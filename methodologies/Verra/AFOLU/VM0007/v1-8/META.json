@@ -2,7 +2,7 @@
   "active_date": "2024-06-04",
   "artifact_quality_standard": {
     "adoption_status": "source_audited",
-    "note": "VF S7: VMD0042 (BL-PEAT) source-locked. R-1-0010, R-2-0009, R-3-0006 promoted. 37 source_audited, 21 draft_unverified.",
+    "note": "VF S8: 11 remaining deps source-locked. 48 rules promoted. VM0007 not yet S-grade (10 deps remain unencoded).",
     "version": "review_contract_v1"
   },
   "artifact_status": {
@@ -11,11 +11,11 @@
     "source_pdf": "verified"
   },
   "audit_hashes": {
-    "blocked_external_dependencies_sha256": "31875612f003893f2c727cbdffedfae433f0f55c13d1e10a9f624ec5c47c7f45",
-    "rules.rich_sha256": "b7a702dc29f8c34dff41f1204cc69d29082978fd32dd9f2cad5040070c5a2e2e",
-    "rules_json_sha256": "7e61f393a937d5f0baea0cdab6b84282abfff893587aa633bc34a97772388734",
-    "rules_rich_json_sha256": "b7a702dc29f8c34dff41f1204cc69d29082978fd32dd9f2cad5040070c5a2e2e",
-    "rules_sha256": "7e61f393a937d5f0baea0cdab6b84282abfff893587aa633bc34a97772388734",
+    "blocked_external_dependencies_sha256": "218d4ee014bbc623cb8f711bb6dc0c87005314127ec59b8c5f36faf13397f0b3",
+    "rules.rich_sha256": "f5f2c2145266641403caa30fec31349324c76f411d6acdf5c5140d46d8f55bd0",
+    "rules_json_sha256": "8c5805087c9942e878003536d09ae4080bce610c674551b0bce1dd769db77311",
+    "rules_rich_json_sha256": "f5f2c2145266641403caa30fec31349324c76f411d6acdf5c5140d46d8f55bd0",
+    "rules_sha256": "8c5805087c9942e878003536d09ae4080bce610c674551b0bce1dd769db77311",
     "sections_json_sha256": "852125cacbe9d09f0560886fb27621548939033a382d2b1718f50b7694f41201",
     "sections_rich_json_sha256": "4506bb488417a940fc4e84228bff7abcc7e7921fcb9a824fa140bf6e2687b5e3",
     "source_pdf_sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
@@ -26,7 +26,7 @@
   },
   "domain": "AFOLU",
   "draft_seed_artifacts": {
-    "note": "VF7 partial: 37 VM0007-backed rules source_audited. 21 rules with external dependencies remain draft_unverified.",
+    "note": "VF8 partial: 48 VM0007-backed rules source_audited. 10 rules remain draft_unverified.",
     "retained": true,
     "source_audit_pending": [
       "rules_blocked_by_external_deps"
@@ -126,8 +126,8 @@
       },
       {
         "id": "Verra/VMD0051@v1-8",
-        "local_artifact_present": false,
-        "status": "external_unencoded"
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
       },
       {
         "id": "Verra/VMD0052@v1-8",
@@ -153,6 +153,46 @@
         "id": "Verra/VMD0042@v1-1",
         "local_artifact_present": true,
         "status": "historical_non_blocking"
+      },
+      {
+        "id": "Verra/VMD0015@v2-2",
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
+      },
+      {
+        "id": "Verra/VMD0016@v1-2",
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
+      },
+      {
+        "id": "Verra/VMD0017@v2-2",
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
+      },
+      {
+        "id": "Verra/VMD0046@v1-1",
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
+      },
+      {
+        "id": "Verra/VMD0052@v1-0",
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
+      },
+      {
+        "id": "Verra/VMD0005@v1-1",
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
+      },
+      {
+        "id": "Verra/VMD0009@v1-3",
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
+      },
+      {
+        "id": "Verra/VMD0010@v1-2",
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
       }
     ],
     "note": "These external Verra dependencies are referenced by retained draft rules but are not encoded as local methodology/tool artifacts in this repo.",
@@ -169,17 +209,17 @@
     },
     {
       "path": "rules.json",
-      "sha256": "7e61f393a937d5f0baea0cdab6b84282abfff893587aa633bc34a97772388734"
+      "sha256": "8c5805087c9942e878003536d09ae4080bce610c674551b0bce1dd769db77311"
     },
     {
       "path": "rules.rich.json",
-      "sha256": "b7a702dc29f8c34dff41f1204cc69d29082978fd32dd9f2cad5040070c5a2e2e"
+      "sha256": "f5f2c2145266641403caa30fec31349324c76f411d6acdf5c5140d46d8f55bd0"
     }
   ],
   "method": "REDD+ Methodology Framework",
   "methodology_linked_review_blockers": [
-    "21 rules remain draft_unverified. VMD0042 source-locked (R-1-0010, R-2-0009, R-3-0006 promoted).",
-    "Remaining external Verra modules and tools not encoded.",
+    "10 rules remain draft_unverified. VMD0015, VMD0016, VMD0017, VMD0046, VMD0052, VMD0005, VMD0009, VMD0010, VMD0051 source-locked (11 rules promoted).",
+    "Remaining unresolved: VMD0001, VMD0002, VMD0003, VMD0004 (carbon pool modules), VT0001 (cross-cutting tool), T-BAR, T-SIG (partially completed).",
     "Deeper subsection hierarchy not fully mapped."
   ],
   "methodology_linked_review_ready": false,
@@ -245,6 +285,70 @@
         "sha256": "8f9e635af1452ade858392b796e84069f72dedf7d1111afbbe9893a55fb4196e",
         "size": 503854,
         "url": "https://verra.org/wp-content/uploads/imported/methodologies/VMD0042-BL-PEAT-v1.1.pdf"
+      },
+      {
+        "doc": "Verra/VMD0015@v2-2",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0015/v2-2/source.pdf",
+        "sha256": "7b3814cc937e3ff6c88b02661d52342b0a44bcc8ef800f8825b6181a150cb0d9",
+        "size": 961267,
+        "url": "https://verra.org/wp-content/uploads/imported/methodologies/VMD0015-M-REDD-v2.2.pdf"
+      },
+      {
+        "doc": "Verra/VMD0016@v1-2",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0016/v1-2/source.pdf",
+        "sha256": "89c9b3fc42ffb0f545a364bb6f75a1ac28b6f6aab0061233173eee4978c96f6e",
+        "size": 424463,
+        "url": "https://verra.org/wp-content/uploads/2024/08/VMD0016-X-STR_v1.2_ESI-RD2_27SEP2017.pdf"
+      },
+      {
+        "doc": "Verra/VMD0017@v2-2",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0017/v2-2/source.pdf",
+        "sha256": "7d7c9399a5352e57963194a0fa1bf22c8d674b8d7da3637ad7d54dcf2168bd36",
+        "size": 596796,
+        "url": "https://verra.org/wp-content/uploads/2018/03/VMD0017-X-UNC_v2.2_ESI-RD2_27SEP2017.pdf"
+      },
+      {
+        "doc": "Verra/VMD0046@v1-1",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0046/v1-1/source.pdf",
+        "sha256": "87c847a4d0e511ff677c0f9bb32ba38635bf76fb6db64be61f204ef2ec4b0e15",
+        "size": 514493,
+        "url": "https://verra.org/wp-content/uploads/imported/methodologies/VMD0046-M-PEAT-v1.1.pdf"
+      },
+      {
+        "doc": "Verra/VMD0052@v1-0",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0052/v1-0/source.pdf",
+        "sha256": "cf22fea76d6085dddf8468cd21965837357839b27479fbab56eceeac8f8c7cbb",
+        "size": 524217,
+        "url": "https://verra.org/wp-content/uploads/2018/03/ADD-AM_v1.0_ESI-RD1_27SEP2017.pdf"
+      },
+      {
+        "doc": "Verra/VMD0005@v1-1",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0005/v1-1/source.pdf",
+        "sha256": "2832053dc7383edb06f72e7db89bc7d12cffd61782d2d5932ea7b14dcc107066",
+        "size": 234688,
+        "url": "https://verra.org/wp-content/uploads/imported/methodologies/VMD0005-CP-W-v1.1.pdf"
+      },
+      {
+        "doc": "Verra/VMD0009@v1-3",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0009/v1-3/source.pdf",
+        "sha256": "89af8290bd820c8665246edb12702b772d715927434ca250f0839fb073696027",
+        "size": 264649,
+        "url": "https://verra.org/wp-content/uploads/imported/methodologies/VMD0009-LK-ASP-v1.3.pdf"
+      },
+      {
+        "doc": "Verra/VMD0010@v1-2",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0010/v1-2/source.pdf",
+        "sha256": "049bc607095792c26c90f56507c351837ae03c7eba3b5244607af4897c5fbc8b",
+        "size": 274011,
+        "url": "https://verra.org/wp-content/uploads/imported/methodologies/VMD0010-LK-ASU-v1.2.pdf"
       }
     ]
   },

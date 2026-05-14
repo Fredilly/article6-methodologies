@@ -156,12 +156,13 @@
       "section_anchor": "applicability-conditions",
       "tools": [
         "Verra/VM0007@v1-8",
+        "Verra/VMD0052@v1-0",
         "Verra/VMD0052@v1-8"
       ],
       "tags": [
         "eligibility"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -378,12 +379,13 @@
       "section_anchor": "project-boundary",
       "tools": [
         "Verra/VM0007@v1-8",
+        "Verra/VMD0016@v1-2",
         "Verra/VMD0016@v1-8"
       ],
       "tags": [
         "eligibility"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -549,12 +551,13 @@
       "section_anchor": "project-boundary",
       "tools": [
         "Verra/VM0007@v1-8",
+        "Verra/VMD0016@v1-2",
         "Verra/VMD0016@v1-8"
       ],
       "tags": [
         "calc"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -568,12 +571,13 @@
       "section_anchor": "project-boundary",
       "tools": [
         "Verra/VM0007@v1-8",
+        "Verra/VMD0016@v1-2",
         "Verra/VMD0016@v1-8"
       ],
       "tags": [
         "eligibility"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -758,12 +762,13 @@
       "section_anchor": "additionality",
       "tools": [
         "Verra/VM0007@v1-8",
+        "Verra/VMD0052@v1-0",
         "Verra/VMD0052@v1-8"
       ],
       "tags": [
         "eligibility"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -813,13 +818,15 @@
       "section_anchor": "quantification",
       "tools": [
         "Verra/VM0007@v1-8",
+        "Verra/VMD0009@v1-3",
         "Verra/VMD0009@v1-8",
+        "Verra/VMD0010@v1-2",
         "Verra/VMD0010@v1-8"
       ],
       "tags": [
         "calc"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -833,13 +840,15 @@
       "section_anchor": "quantification",
       "tools": [
         "Verra/VM0007@v1-8",
+        "Verra/VMD0009@v1-3",
         "Verra/VMD0009@v1-8",
+        "Verra/VMD0010@v1-2",
         "Verra/VMD0010@v1-8"
       ],
       "tags": [
         "calc"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -872,12 +881,13 @@
       "section_anchor": "quantification",
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VMD0017@v1-8"
+        "Verra/VMD0017@v1-8",
+        "Verra/VMD0017@v2-2"
       ],
       "tags": [
         "uncertainty"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -931,13 +941,16 @@
       "section_anchor": "quantification",
       "tools": [
         "Verra/VMD0015@v1-8",
+        "Verra/VMD0015@v2-2",
+        "Verra/VMD0046@v1-1",
         "Verra/VMD0046@v1-8",
+        "Verra/VMD0051@v1-0",
         "Verra/VMD0051@v1-8"
       ],
       "tags": [
         "calc"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -1023,12 +1036,13 @@
       "section_anchor": "monitoring",
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VMD0015@v1-8"
+        "Verra/VMD0015@v1-8",
+        "Verra/VMD0015@v2-2"
       ],
       "tags": [
         "monitoring"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
@@ -1042,13 +1056,15 @@
       "section_anchor": "monitoring",
       "tools": [
         "Verra/VM0007@v1-8",
+        "Verra/VMD0046@v1-1",
         "Verra/VMD0046@v1-8",
+        "Verra/VMD0051@v1-0",
         "Verra/VMD0051@v1-8"
       ],
       "tags": [
         "monitoring"
       ],
-      "quality_status": "draft_unverified",
+      "quality_status": "source_audited",
       "when": []
     },
     {
