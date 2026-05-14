@@ -2,9 +2,11 @@
 
 ## Purpose
 
-This directory tracks the Verra forestry method S-grade (Grade A) upgrade
-path. S-grade means: all sections and rules source-audited, no active
-blocked external dependencies, `methodology_linked_review_ready: true`.
+This directory tracks the Verra forestry method S-grade (Source-Audited)
+upgrade path. S-grade means: all sections and rules source-audited, no
+active blocked external dependencies, `methodology_linked_review_ready: true`.
+The public standard name is `Source-Audited Methodology Standard`
+(`grade_a` is a legacy/internal machine alias).
 
 ## Files
 
@@ -28,6 +30,6 @@ blocked external dependencies, `methodology_linked_review_ready: true`.
 
 ## Current state
 
-- VM0047: S-grade.
-- VM0007: Not S-grade. 31 blocked rules, 19 active deps. See
+- VM0047: Source-Audited.
+- VM0007: Not Source-Audited. 31 blocked rules, 19 active deps. See
   `dependency-resolution-maps/VM0007-v1-8.json` for details.

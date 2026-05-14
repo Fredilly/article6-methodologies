@@ -22,9 +22,9 @@ function main() {
   // --- Base artifact status ---
   assert.equal(meta.artifact_status?.source_pdf, 'verified', 'VM0047 source PDF must be verified');
   assert.equal(meta.artifact_status?.sections, 'source_audited', 'VM0047 sections must be source_audited from TOC');
-  assert.equal(meta.artifact_status?.rules, 'source_audited', 'VM0047 rules must be source_audited at Grade A');
+  assert.equal(meta.artifact_status?.rules, 'source_audited', 'VM0047 rules must be source_audited at Source-Audited');
   assert.equal(meta.artifact_quality_standard?.version, 'review_contract_v1', 'VM0047 should opt into review_contract_v1');
-  assert.equal(meta.methodology_linked_review_ready, true, 'VM0047 must be methodology-linked-review-ready at Grade A');
+  assert.equal(meta.methodology_linked_review_ready, true, 'VM0047 must be methodology-linked-review-ready at Source-Audited');
   assert.ok(Array.isArray(meta.methodology_linked_review_blockers), 'VM0047 must have a blockers array');
 
   // --- Exact section count ---
@@ -34,8 +34,8 @@ function main() {
   assert.equal(rules.length, 11, 'VM0047 must have exactly 11 rules');
   const sourceAuditedRules = rules.filter((rule) => rule.quality_status === 'source_audited');
   const draftRules = rules.filter((rule) => rule.quality_status === 'draft_unverified');
-  assert.equal(sourceAuditedRules.length, 11, 'VM0047 must have exactly 11 source-audited rules at Grade A');
-  assert.equal(draftRules.length, 0, 'VM0047 must have 0 draft_unverified rules at Grade A');
+  assert.equal(sourceAuditedRules.length, 11, 'VM0047 must have exactly 11 source-audited rules at Source-Audited');
+  assert.equal(draftRules.length, 0, 'VM0047 must have 0 draft_unverified rules at Source-Audited');
 
   // --- Rich/lean parity across all rules ---
   for (const rule of rules) {
@@ -68,7 +68,7 @@ function main() {
     }
   }
 
-  assert.equal(draftRules.length, 0, 'VM0047 must have 0 draft rules at Grade A with source-backed rules');
+  assert.equal(draftRules.length, 0, 'VM0047 must have 0 draft rules at Source-Audited with source-backed rules');
 
   // --- External dependency declarations ---
   const ruleTools = new Set();
@@ -81,7 +81,7 @@ function main() {
   const externalRefs = new Map(
     (meta.external_dependencies?.methodology_and_tool_refs || []).map((entry) => [entry.id, entry])
   );
-  assert.ok(['external_unencoded', 'historical_non_blocking'].includes(meta.external_dependencies?.status), 'VM0047 external dependency status must be external_unencoded or historical_non_blocking at Grade A');
+  assert.ok(['external_unencoded', 'historical_non_blocking'].includes(meta.external_dependencies?.status), 'VM0047 external dependency status must be external_unencoded or historical_non_blocking at Source-Audited');
   for (const toolId of ruleTools) {
     const entry = externalRefs.get(toolId);
     assert.ok(entry, `VM0047 external dependency ${toolId} must be declared in META.json`);
@@ -92,8 +92,8 @@ function main() {
   // --- Blocker inventory ---
   const inventory = readJSON(path.join(METHOD_DIR, 'blocked-external-dependencies.json'));
   assert.equal(inventory.methodology, 'Verra/VM0047@v1-0', 'inventory methodology must match');
-  assert.equal(inventory.blocked_rule_count, 0, 'inventory must report 0 blocked rules at Grade A');
-  assert.equal(inventory.blocked_rules.length, 0, 'inventory must contain 0 blocked rule entries at Grade A');
+  assert.equal(inventory.blocked_rule_count, 0, 'inventory must report 0 blocked rules at Source-Audited');
+  assert.equal(inventory.blocked_rules.length, 0, 'inventory must contain 0 blocked rule entries at Source-Audited');
 
   // --- Provenance ---
   assert.equal(meta.provenance?.source_pdfs?.[0]?.sha256, '987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6', 'VM0047 source PDF hash must match');
