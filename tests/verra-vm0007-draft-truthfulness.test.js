@@ -69,8 +69,8 @@ function main() {
   const sourceAuditedRules = rules.filter((rule) => rule.quality_status === 'source_audited');
   const draftRules = rules.filter((rule) => rule.quality_status === 'draft_unverified');
 
-  assert.equal(sourceAuditedRules.length, 34, 'VM0007 must expose exactly 34 source-audited rules after VF S6');
-  assert.equal(draftRules.length, 24, 'VM0007 must keep exactly 24 external-dependent rules draft_unverified after VF S6');
+  assert.equal(sourceAuditedRules.length, 37, 'VM0007 must expose exactly 37 source-audited rules after VF S7');
+  assert.equal(draftRules.length, 21, 'VM0007 must keep exactly 21 external-dependent rules draft_unverified after VF S7');
 
   for (const leanRule of sourceAuditedRules) {
     const richRule = richByStableId.get(leanRule.stable_id);
@@ -135,8 +135,8 @@ function main() {
   const inventory = readJSON(path.join(METHOD_DIR, 'blocked-external-dependencies.json'));
   assert.equal(inventory.methodology, 'Verra/VM0007@v1-8', 'inventory methodology must match');
   assert.equal(inventory.status, 'external_unencoded', 'inventory status must be external_unencoded');
-  assert.equal(inventory.blocked_rule_count, 24, 'inventory must report 24 blocked rules after VF S6');
-  assert.equal(inventory.blocked_rules.length, 24, 'inventory must contain 24 blocked rule entries after VF S6');
+  assert.equal(inventory.blocked_rule_count, 21, 'inventory must report 21 blocked rules after VF S7');
+  assert.equal(inventory.blocked_rules.length, 21, 'inventory must contain 21 blocked rule entries after VF S7');
   assert.equal(inventory.blocked_rules.length, draftRules.length, 'inventory must cover every draft_unverified rule');
 
   const invByStableId = new Map(inventory.blocked_rules.map((entry) => [entry.stable_id, entry]));

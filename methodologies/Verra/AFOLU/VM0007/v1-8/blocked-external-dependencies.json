@@ -1,5 +1,5 @@
 {
-  "blocked_rule_count": 24,
+  "blocked_rule_count": 21,
   "blocked_rules": [
     {
       "blocking_reason": "external_dependency_unencoded",
@@ -10,16 +10,6 @@
       "rule_id": "R-1-0009",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0009",
       "title": "RWE prior land use requirement"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VMD0042@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-1-0010",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0010",
-      "title": "Peatland VCS definition"
     },
     {
       "blocking_reason": "external_dependency_unencoded",
@@ -52,17 +42,6 @@
       "rule_id": "R-2-0008",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0008",
       "title": "REDD mandatory carbon pools"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VMD0042@v1-8",
-        "Verra/VMD0050@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-2-0009",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0009",
-      "title": "WRC carbon pools"
     },
     {
       "blocking_reason": "external_dependency_unencoded",
@@ -133,17 +112,6 @@
       "rule_id": "R-3-0004",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0004",
       "title": "Investment analysis baseline selection"
-    },
-    {
-      "blocking_reason": "external_dependency_unencoded",
-      "external_dependencies": [
-        "Verra/VMD0042@v1-8",
-        "Verra/VMD0050@v1-8"
-      ],
-      "quality_status": "draft_unverified",
-      "rule_id": "R-3-0006",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0006",
-      "title": "WRC baseline modules"
     },
     {
       "blocking_reason": "external_dependency_unencoded",

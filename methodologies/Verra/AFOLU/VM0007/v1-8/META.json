@@ -2,7 +2,7 @@
   "active_date": "2024-06-04",
   "artifact_quality_standard": {
     "adoption_status": "source_audited",
-    "note": "VF S6: VMD0050 (BL-TW) + VMD0051 (M-TW) source-locked. R-1-0011 promoted. 34 source_audited, 24 draft_unverified.",
+    "note": "VF S7: VMD0042 (BL-PEAT) source-locked. R-1-0010, R-2-0009, R-3-0006 promoted. 37 source_audited, 21 draft_unverified.",
     "version": "review_contract_v1"
   },
   "artifact_status": {
@@ -11,11 +11,11 @@
     "source_pdf": "verified"
   },
   "audit_hashes": {
-    "blocked_external_dependencies_sha256": "cee196c54ba6ec2167f57544644527e71263b17180629dc35e7668918051bacc",
-    "rules.rich_sha256": "f297c432b2a4b2ec32757e15e22baf182e8c24eae11fc3d1c77afe5ac62bba16",
-    "rules_json_sha256": "808340992672dfcc6185031d7bbc81615b531129694f53fb2178a5c76345ed7a",
-    "rules_rich_json_sha256": "f297c432b2a4b2ec32757e15e22baf182e8c24eae11fc3d1c77afe5ac62bba16",
-    "rules_sha256": "808340992672dfcc6185031d7bbc81615b531129694f53fb2178a5c76345ed7a",
+    "blocked_external_dependencies_sha256": "31875612f003893f2c727cbdffedfae433f0f55c13d1e10a9f624ec5c47c7f45",
+    "rules.rich_sha256": "b7a702dc29f8c34dff41f1204cc69d29082978fd32dd9f2cad5040070c5a2e2e",
+    "rules_json_sha256": "7e61f393a937d5f0baea0cdab6b84282abfff893587aa633bc34a97772388734",
+    "rules_rich_json_sha256": "b7a702dc29f8c34dff41f1204cc69d29082978fd32dd9f2cad5040070c5a2e2e",
+    "rules_sha256": "7e61f393a937d5f0baea0cdab6b84282abfff893587aa633bc34a97772388734",
     "sections_json_sha256": "852125cacbe9d09f0560886fb27621548939033a382d2b1718f50b7694f41201",
     "sections_rich_json_sha256": "4506bb488417a940fc4e84228bff7abcc7e7921fcb9a824fa140bf6e2687b5e3",
     "source_pdf_sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
@@ -26,7 +26,7 @@
   },
   "domain": "AFOLU",
   "draft_seed_artifacts": {
-    "note": "VF6 partial: 34 VM0007-backed rules source_audited. 24 rules with external dependencies remain draft_unverified.",
+    "note": "VF7 partial: 37 VM0007-backed rules source_audited. 21 rules with external dependencies remain draft_unverified.",
     "retained": true,
     "source_audit_pending": [
       "rules_blocked_by_external_deps"
@@ -148,6 +148,11 @@
         "id": "Verra/VMD0051@v1-0",
         "local_artifact_present": true,
         "status": "historical_non_blocking"
+      },
+      {
+        "id": "Verra/VMD0042@v1-1",
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
       }
     ],
     "note": "These external Verra dependencies are referenced by retained draft rules but are not encoded as local methodology/tool artifacts in this repo.",
@@ -164,16 +169,16 @@
     },
     {
       "path": "rules.json",
-      "sha256": "808340992672dfcc6185031d7bbc81615b531129694f53fb2178a5c76345ed7a"
+      "sha256": "7e61f393a937d5f0baea0cdab6b84282abfff893587aa633bc34a97772388734"
     },
     {
       "path": "rules.rich.json",
-      "sha256": "f297c432b2a4b2ec32757e15e22baf182e8c24eae11fc3d1c77afe5ac62bba16"
+      "sha256": "b7a702dc29f8c34dff41f1204cc69d29082978fd32dd9f2cad5040070c5a2e2e"
     }
   ],
   "method": "REDD+ Methodology Framework",
   "methodology_linked_review_blockers": [
-    "24 rules remain draft_unverified. VMD0050+VMD0051 source-locked (R-1-0011 promoted).",
+    "21 rules remain draft_unverified. VMD0042 source-locked (R-1-0010, R-2-0009, R-3-0006 promoted).",
     "Remaining external Verra modules and tools not encoded.",
     "Deeper subsection hierarchy not fully mapped."
   ],
@@ -232,6 +237,14 @@
         "sha256": "988cf05105163127802b2ea61a8588bd772e8986dac37f77d5a758b2ec1d987e",
         "size": 910549,
         "url": "https://verra.org/wp-content/uploads/2018/03/M-TW_v1.0_ESI-RD1_27SEP2017.pdf"
+      },
+      {
+        "doc": "Verra/VMD0042@v1-1",
+        "kind": "pdf",
+        "path": "tools/Verra/VMD0042/v1-1/source.pdf",
+        "sha256": "8f9e635af1452ade858392b796e84069f72dedf7d1111afbbe9893a55fb4196e",
+        "size": 503854,
+        "url": "https://verra.org/wp-content/uploads/imported/methodologies/VMD0042-BL-PEAT-v1.1.pdf"
       }
     ]
   },

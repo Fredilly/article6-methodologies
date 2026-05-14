@@ -658,7 +658,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-1-0010",
     "logic": "Must meet VCS peatland definition based on IPCC organic soil thresholds.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-1",
@@ -670,7 +670,8 @@
       ],
       "tools": [
         "Verra/VM0007@v1-8",
-        "Verra/VMD0042@v1-8"
+        "Verra/VMD0042@v1-8",
+        "Verra/VMD0042@v1-1"
       ]
     },
     "requirement_coverage": {
@@ -690,14 +691,14 @@
           "required": true
         }
       ],
-      "expected_evidence_status": "seed_unverified",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-1"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
       "conditions": [
@@ -706,7 +707,7 @@
       "exceptions": [
         "Soil does not meet organic soil thresholds"
       ],
-      "status": "seed_unverified",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -714,14 +715,14 @@
       "lineage": [
         "applicability-conditions"
       ],
-      "locator_status": "draft_derived_rule_context_pending_source_audit",
-      "page_end": 16,
-      "page_start": 16,
+      "locator_status": "source_audited",
+      "page_end": 18,
+      "page_start": 17,
       "section_id": "S-1",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-1",
       "section_title": "Applicability Conditions"
     },
-    "source_span_status": "seed_extracted_pending_source_audit",
+    "source_span_status": "source_audited",
     "source_span_text": "Rewetting drained peatland (RDP) activities occur on project areas that meet the VCS definition for peatland.",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-1-0010",
     "summary": "Peatland VCS definition",
@@ -1513,7 +1514,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0009",
     "logic": "WRC focuses on SOC pool. Biomass pools excluded unless ARR applies.",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-2",
@@ -1526,23 +1527,24 @@
       "tools": [
         "Verra/VM0007@v1-8",
         "Verra/VMD0042@v1-8",
-        "Verra/VMD0050@v1-8"
+        "Verra/VMD0050@v1-8",
+        "Verra/VMD0042@v1-1"
       ]
     },
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-2-0009",
       "coverage_scope": "rule",
-      "expected_evidence_status": "pending_source_audit",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-2"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
-      "status": "pending_source_audit",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -1550,14 +1552,14 @@
       "lineage": [
         "project-boundary"
       ],
-      "locator_status": "pending_source_audit",
-      "page_end": null,
-      "page_start": null,
+      "locator_status": "source_audited",
+      "page_end": 28,
+      "page_start": 27,
       "section_id": "S-2",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-2",
       "section_title": "Project Boundary"
     },
-    "source_span_status": "pending_source_audit",
+    "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-2-0009",
     "summary": "WRC carbon pools",
     "type": "calc",
@@ -2186,7 +2188,7 @@
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-3-0006",
     "logic": "Module selection depends on substrate (peat vs tidal) and activity type (CIW vs RWE vs combined).",
-    "quality_status": "draft_unverified",
+    "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
       "primary_section": "S-3",
@@ -2199,23 +2201,24 @@
       "tools": [
         "Verra/VM0007@v1-8",
         "Verra/VMD0042@v1-8",
-        "Verra/VMD0050@v1-8"
+        "Verra/VMD0050@v1-8",
+        "Verra/VMD0042@v1-1"
       ]
     },
     "requirement_coverage": {
       "coverage_key": "Verra.AFOLU.VM0007.v1-8.R-3-0006",
       "coverage_scope": "rule",
-      "expected_evidence_status": "pending_source_audit",
+      "expected_evidence_status": "seed_derived_pending_review",
       "section_refs": [
         {
           "relationship": "source_section",
           "section_id": "S-3"
         }
       ],
-      "section_refs_status": "derived_from_section_context_pending_source_audit"
+      "section_refs_status": "source_audited"
     },
     "rule_detail": {
-      "status": "pending_source_audit",
+      "status": "source_audited",
       "summary": "pending_source_audit"
     },
     "section_context": {
@@ -2223,14 +2226,14 @@
       "lineage": [
         "baseline-scenario"
       ],
-      "locator_status": "pending_source_audit",
-      "page_end": null,
-      "page_start": null,
+      "locator_status": "source_audited",
+      "page_end": 30,
+      "page_start": 28,
       "section_id": "S-3",
       "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3",
       "section_title": "Baseline Scenario"
     },
-    "source_span_status": "pending_source_audit",
+    "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0006",
     "summary": "WRC baseline modules",
     "type": "calc",
