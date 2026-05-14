@@ -2,7 +2,7 @@
   "active_date": "2024-06-04",
   "artifact_quality_standard": {
     "adoption_status": "source_audited",
-    "note": "VF S6: VMD0050 (BL-TW) + VMD0051 (M-TW) source-locked. R-1-0011 promoted. 34 source_audited, 24 draft_unverified.",
+    "note": "VF S7: VMD0042 (BL-PEAT) source-locked. R-1-0010, R-2-0009, R-3-0006 promoted. 37 source_audited, 21 draft_unverified.",
     "version": "review_contract_v1"
   },
   "artifact_status": {
@@ -26,7 +26,7 @@
   },
   "domain": "AFOLU",
   "draft_seed_artifacts": {
-    "note": "VF6 partial: 34 VM0007-backed rules source_audited. 24 rules with external dependencies remain draft_unverified.",
+    "note": "VF7 partial: 37 VM0007-backed rules source_audited. 21 rules with external dependencies remain draft_unverified.",
     "retained": true,
     "source_audit_pending": [
       "rules_blocked_by_external_deps"
@@ -178,7 +178,7 @@
   ],
   "method": "REDD+ Methodology Framework",
   "methodology_linked_review_blockers": [
-    "24 rules remain draft_unverified. VMD0050+VMD0051 source-locked (R-1-0011 promoted).",
+    "21 rules remain draft_unverified. VMD0042 source-locked (R-1-0010, R-2-0009, R-3-0006 promoted).",
     "Remaining external Verra modules and tools not encoded.",
     "Deeper subsection hierarchy not fully mapped."
   ],
