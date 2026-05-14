@@ -4,9 +4,9 @@
   "notes": [
     "VM0047 v1.0 reached S-grade.",
     "VF S3-S7: progressive source-locking of VM0007 dependency modules.",
-    "VF S8b: VT0001, T-BAR source-locked; T-SIG resolved via Appendix 1. VM0007 now: 56/58 rules source_audited.",
+    "VF S8b: VT0001, T-BAR source-locked; T-SIG, VMD0005 resolved. VM0007: 56/58 source_audited.",
     "2 rules remain blocked by VMD0001-0004 (carbon pool modules \u2014 PDFs unavailable from Verra).",
-    "S-grade not yet reached \u2014 remaining carbon pool module PDFs must be obtained from Verra or formally locator-recorded."
+    "S-grade not yet reached."
   ],
   "phases": [
     {

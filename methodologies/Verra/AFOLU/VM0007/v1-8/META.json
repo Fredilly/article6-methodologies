@@ -2,7 +2,7 @@
   "active_date": "2024-06-04",
   "artifact_quality_standard": {
     "adoption_status": "source_audited",
-    "note": "VF S8b: VT0001, T-BAR source-locked; T-SIG resolved via Appendix 1. 8 more rules promoted. 56 source_audited, 2 draft_unverified.",
+    "note": "VF S8b: VT0001, T-BAR source-locked; T-SIG, VMD0005 resolved. 56 source_audited, 2 draft_unverified (blocked by VMD0001-0004).",
     "version": "review_contract_v1"
   },
   "artifact_status": {
@@ -11,7 +11,7 @@
     "source_pdf": "verified"
   },
   "audit_hashes": {
-    "blocked_external_dependencies_sha256": "3941e3ad75eb5eb45974468976051ccdb97b5f588a517b42a7c282e86558338c",
+    "blocked_external_dependencies_sha256": "e368eb17fcc895367e0d0b42416ae39af02c0df838abb3b7b89c2fe08518c298",
     "rules.rich_sha256": "91b9cd242bc596adbf4f4b766b0a11a014604dffd2884aecd1d8e0327950aba4",
     "rules_json_sha256": "1420c732da20d256ee6d46d9e82687f3e7ac45216a00f9aea0ad69db5b3d4d3d",
     "rules_rich_json_sha256": "91b9cd242bc596adbf4f4b766b0a11a014604dffd2884aecd1d8e0327950aba4",
@@ -71,8 +71,8 @@
       },
       {
         "id": "Verra/VMD0005@v1-8",
-        "local_artifact_present": false,
-        "status": "external_unencoded"
+        "local_artifact_present": true,
+        "status": "historical_non_blocking"
       },
       {
         "id": "Verra/VMD0006@v1-8",
@@ -228,8 +228,8 @@
   ],
   "method": "REDD+ Methodology Framework",
   "methodology_linked_review_blockers": [
-    "2 rules remain draft_unverified (R-2-0008, R-5-0008 \u2014 VMD0001-0004 PDFs unavailable from Verra).",
-    "VT0001, T-SIG, T-BAR resolved. VMD0001-0004 (carbon pool modules) remain unavailable.",
+    "2 rules remain draft_unverified (R-2-0008, R-5-0008 \u2014 VMD0001-0004 carbon pool modules PDFs unavailable from Verra).",
+    "VT0001, T-SIG, T-BAR, VMD0005 resolved. VMD0001-0004 remain unavailable.",
     "Deeper subsection hierarchy not fully mapped."
   ],
   "methodology_linked_review_ready": false,

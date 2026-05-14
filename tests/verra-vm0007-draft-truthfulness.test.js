@@ -122,8 +122,7 @@ function main() {
     for (const tool of externalTools) {
       const entry = externalRefs.get(tool);
       assert.ok(entry, `${leanRule.stable_id} external dependency ${tool} must be declared in META.json`);
-      if (tool === 'Verra/VMD0006@v1-8') {
-        assert.equal(entry.status, 'historical_non_blocking', `${tool} must be historical_non_blocking`);
+      if (entry.status === 'historical_non_blocking') {
         assert.equal(entry.local_artifact_present, true, `${tool} must be locally present`);
       } else {
         assert.equal(entry.status, 'external_unencoded', `${tool} must remain external_unencoded`);
@@ -149,20 +148,24 @@ function main() {
     assert.equal(invEntry.blocking_reason, 'external_dependency_unencoded', `${leanRule.stable_id} blocking_reason must be external_dependency_unencoded`);
 
     const extTools = (leanRule.tools || []).filter((tool) => tool !== 'Verra/VM0007@v1-8');
+    const blockingTools = extTools.filter((t) => {
+      const entry = externalRefs.get(t);
+      return !entry || entry.status !== 'historical_non_blocking';
+    });
     assert.deepEqual(
       [...invEntry.external_dependencies].sort(),
-      [...extTools].sort(),
-      `${leanRule.stable_id} inventory external_dependencies must match lean rule tools`
+      [...blockingTools].sort(),
+      `${leanRule.stable_id} inventory external_dependencies must match blocking lean rule tools`
     );
 
     for (const dep of invEntry.external_dependencies) {
       const entry = externalRefs.get(dep);
       assert.ok(entry, `${leanRule.stable_id} inventory dep ${dep} must be declared in META.json`);
-      if (dep === 'Verra/VMD0006@v1-8') {
-        assert.equal(entry.status, 'historical_non_blocking', `${dep} must be historical_non_blocking`);
+      if (entry.status === 'historical_non_blocking') {
         assert.equal(entry.local_artifact_present, true, `${dep} must be locally present`);
       } else {
         assert.equal(entry.status, 'external_unencoded', `${dep} must remain external_unencoded`);
+        assert.equal(entry.local_artifact_present, false, `${dep} must not claim local artifact presence`);
       }
     }
   }

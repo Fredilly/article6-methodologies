@@ -5,8 +5,7 @@
       "blocking_reason": "external_dependency_unencoded",
       "external_dependencies": [
         "Verra/VMD0001@v1-8",
-        "Verra/VMD0002@v1-8",
-        "Verra/VMD0005@v1-8"
+        "Verra/VMD0002@v1-8"
       ],
       "quality_status": "draft_unverified",
       "rule_id": "R-2-0008",
@@ -19,8 +18,7 @@
         "Verra/VMD0001@v1-8",
         "Verra/VMD0002@v1-8",
         "Verra/VMD0003@v1-8",
-        "Verra/VMD0004@v1-8",
-        "Verra/VMD0005@v1-8"
+        "Verra/VMD0004@v1-8"
       ],
       "quality_status": "draft_unverified",
       "rule_id": "R-5-0008",

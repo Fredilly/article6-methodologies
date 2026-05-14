@@ -86,9 +86,9 @@
       "blocked_rule_count": 0,
       "blocked_rule_ids": [],
       "classification": "repo_resolved",
-      "evidence_note": "VMD0005 v1.1 source-locked and encoded. Partially resolves R-2-0008/R-5-0008 (also need VMD0001-0004).",
+      "evidence_note": "VMD0005 v1.1 source-locked (CP-W). Old @v1-8 alias resolved.",
       "id": "Verra/VMD0005@v1-8",
-      "next_action": "await_other_deps"
+      "next_action": "completed"
     },
     {
       "blocked_rule_count": 0,
