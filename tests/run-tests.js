@@ -26,6 +26,7 @@ const tests = [
   'tests/verra-vm0007-draft-truthfulness.test.js',
   'tests/pr-accept-harness.test.js',
   'tests/rc-s7-ingestion-hardening-proof.test.js',
+  'tests/export-metadata.test.js',
 ];
 
 function main() {

@@ -1,4 +1,8 @@
 {
+  "export": {
+    "metadata_version": "1.0.0",
+    "path": "methodologies/GoldStandard/_export/export-metadata.json"
+  },
   "audit_hashes": {
     "rules_json_sha256": "c39dee3b1680ac3082504fe62ba40e3347fc6c40d6858e922310122f371621fd",
     "sections_json_sha256": "1490c5d8bf359d19305aa5ff647b6ee221399d46214505c7dc6ce83898aa0f1d",
