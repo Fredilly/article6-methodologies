@@ -1,0 +1,602 @@
+[
+  {
+    "anchor": "unfccc-ccnucc",
+    "id": "S-0001",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-56",
+    "id": "S-0002",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "EB 56"
+  },
+  {
+    "anchor": "i-definitions-and-applicability",
+    "id": "S-0003",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "I. DEFINITIONS AND APPLICABILITY"
+  },
+  {
+    "anchor": "for-the-purpose-of-this-methodology-the-following-definitions-apply",
+    "id": "S-0004",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "For the purpose of this methodology, the following definitions apply:"
+  },
+  {
+    "anchor": "this-methodology-may-be-applied-if-all-of-the-following-applicability-conditions-are-met",
+    "id": "S-0005",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "This methodology may be applied if all of the following applicability conditions are met:"
+  },
+  {
+    "anchor": "this-methodology-refers-to-the-latest-approved-versions-of-the-following-procedures-tools",
+    "id": "S-0006",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "This methodology refers to the latest approved versions of the following procedures, tools,"
+  },
+  {
+    "anchor": "unfccc-ccnucc-2",
+    "id": "S-0007",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-56-2",
+    "id": "S-0008",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "EB 56"
+  },
+  {
+    "anchor": "ii-baseline-methodology-procedure",
+    "id": "S-0009",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "II. BASELINE METHODOLOGY PROCEDURE"
+  },
+  {
+    "anchor": "the-project-boundary-geographically-delineates-the-afforestation-or-reforestation-project",
+    "id": "S-0010",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "The project boundary geographically delineates the afforestation or reforestation project"
+  },
+  {
+    "anchor": "pps-shall-demonstrate-that-each-discrete-area-of-land-to-be-included-within-the-project",
+    "id": "S-0011",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "PPs shall demonstrate that each discrete area of land to be included within the project"
+  },
+  {
+    "anchor": "the-carbon-pools-accounted-for-in-the-project-boundary-are-shown-in-table-1",
+    "id": "S-0012",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "The carbon pools accounted for in the project boundary are shown in Table 1."
+  },
+  {
+    "anchor": "unfccc-ccnucc-3",
+    "id": "S-0013",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-56-3",
+    "id": "S-0014",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "EB 56"
+  },
+  {
+    "anchor": "the-most-plausible-baseline-scenario-of-a-small-scale-a-r-cdm-project-activity",
+    "id": "S-0015",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "The most plausible baseline scenario of a small-scale A/R CDM project activity"
+  },
+  {
+    "anchor": "pps-shall-demonstrate-that-the-project-activity-is-additional-using-the-barrier-analysis",
+    "id": "S-0016",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "PPs shall demonstrate that the project activity is additional using the barrier analysis"
+  },
+  {
+    "anchor": "stratification-of-the-planned-project-area-for-baseline-estimation-is-not-required-but-may-be",
+    "id": "S-0017",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "Stratification of the planned project area for baseline estimation is not required but may be"
+  },
+  {
+    "anchor": "strata-for-biomass-estimation-may-be-defined-on-the-basis-of-parameters-that-are-key-entry",
+    "id": "S-0018",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "Strata for biomass estimation may be defined on the basis of parameters that are key entry"
+  },
+  {
+    "anchor": "unfccc-ccnucc-4",
+    "id": "S-0019",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "pps-may-use-remotely-sensed-data-acquired-close-to-the-time-of-project-commencement",
+    "id": "S-0020",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "PPs may use remotely sensed data acquired close to the time of project commencement"
+  },
+  {
+    "anchor": "baseline-net-ghg-removals-by-sinks-is-the-sum-of-changes-in-carbon-stocks-in-the-selected",
+    "id": "S-0021",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "Baseline net GHG removals by sinks is the sum of changes in carbon stocks in the selected"
+  },
+  {
+    "anchor": "since-carbon-stock-in-soil-organic-carbon-soc-is-unlikely-to-increase-in-the-baseline-the",
+    "id": "S-0022",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "Since carbon stock in soil organic carbon (SOC) is unlikely to increase in the baseline, the"
+  },
+  {
+    "anchor": "if-application-of-the-guidance-on-conditions-under-which-the-change-in-carbon-stocks-in",
+    "id": "S-0023",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "If application of the “Guidance on conditions under which the change in carbon stocks in"
+  },
+  {
+    "anchor": "the-baseline-net-ghg-removals-by-sinks-shall-be-estimated-until-steady-state-is-reached",
+    "id": "S-0024",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "The baseline net GHG removals by sinks shall be estimated until steady state is reached"
+  },
+  {
+    "anchor": "for-ex-ante-calculation-of-actual-net-ghg-removals-by-sinks-and-net-anthropogenic-ghg",
+    "id": "S-0025",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "For ex ante calculation of actual net GHG removals by sinks and net anthropogenic GHG"
+  },
+  {
+    "anchor": "c-actual-cp-ghge-2",
+    "id": "S-0026",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "ΔC ACTUAL = ΔCP − GHGE (2)"
+  },
+  {
+    "anchor": "unfccc-ccnucc-5",
+    "id": "S-0027",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-56-4",
+    "id": "S-0028",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "EB 56"
+  },
+  {
+    "anchor": "the-change-in-carbon-stocks-in-selected-carbon-pools-in-each-stratum-within-the-project",
+    "id": "S-0029",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "The change in carbon stocks in selected carbon pools in each stratum within the project"
+  },
+  {
+    "anchor": "the-only-increase-in-ghg-emissions-within-the-project-boundary-which-results-from-the",
+    "id": "S-0030",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "The only increase in GHG emissions within the project boundary which results from the"
+  },
+  {
+    "anchor": "the-monitoring-of-emissions-by-sources-is-only-required-if-significant-if-insignificant",
+    "id": "S-0031",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "The monitoring of emissions by sources is only required if significant; if insignificant,"
+  },
+  {
+    "anchor": "unfccc-ccnucc-6",
+    "id": "S-0032",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-56-5",
+    "id": "S-0033",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "EB 56"
+  },
+  {
+    "anchor": "leakage-due-to-displacement-of-pre-project-activity-from-the-project-area-to-an-area-outside",
+    "id": "S-0034",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "Leakage due to displacement of pre-project activity from the project area to an area outside"
+  },
+  {
+    "anchor": "if-the-application-of-the-guidelines-on-conditions-under-which-increase-in-ghg-emissions",
+    "id": "S-0035",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "If the application of the “Guidelines on conditions under which increase in GHG emissions"
+  },
+  {
+    "anchor": "the-net-anthropogenic-ghg-removals-by-sinks-is-the-actual-net-ghg-removals-by-sinks",
+    "id": "S-0036",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "The net anthropogenic GHG removals by sinks is the actual net GHG removals by sinks"
+  },
+  {
+    "anchor": "c-ar-cdm-c-actual-cbsl-lk-6",
+    "id": "S-0037",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "C AR − CDM = ΔC ACTUAL − ΔCBSL − LK (6)"
+  },
+  {
+    "anchor": "to-estimate-the-cers-at-time-t-t2-the-date-of-verification-for-the-verification-period",
+    "id": "S-0038",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "To estimate the CERs at time t* = t2 (the date of verification) for the verification period"
+  },
+  {
+    "anchor": "unfccc-ccnucc-7",
+    "id": "S-0039",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-56-6",
+    "id": "S-0040",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "EB 56"
+  },
+  {
+    "anchor": "all-data-collected-as-part-of-monitoring-should-be-archived-electronically-and-be-kept-for-at",
+    "id": "S-0041",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "All data collected as part of monitoring should be archived electronically and be kept for at"
+  },
+  {
+    "anchor": "information-shall-be-provided-and-recorded-in-the-project-design-document-pdd-to",
+    "id": "S-0042",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "Information shall be provided, and recorded in the project design document (PDD), to"
+  },
+  {
+    "anchor": "stratification-of-the-project-area-into-relatively-homogeneous-units-can-either-increase-the",
+    "id": "S-0043",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "Stratification of the project area into relatively homogeneous units can either increase the"
+  },
+  {
+    "anchor": "unfccc-ccnucc-8",
+    "id": "S-0044",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-56-7",
+    "id": "S-0045",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "EB 56"
+  },
+  {
+    "anchor": "the-ex-post-stratification-shall-be-updated-for-the-following-reasons",
+    "id": "S-0046",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "The ex post stratification shall be updated for the following reasons:"
+  },
+  {
+    "anchor": "established-strata-may-be-merged-if-reasons-for-their-establishing-have-disappeared",
+    "id": "S-0047",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "Established strata may be merged if reasons for their establishing have disappeared."
+  },
+  {
+    "anchor": "the-targeted-precision-level-for-biomass-estimation-shall-be-10-of-the-mean-at-a-90",
+    "id": "S-0048",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "The targeted precision level for biomass estimation shall be ± 10% of the mean at a 90%"
+  },
+  {
+    "anchor": "while-applying-this-methodology-the-pps-shall-ensure-that-the-guidelines-on-conservative",
+    "id": "S-0049",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "While applying this methodology the PPs shall ensure that the “Guidelines on conservative"
+  },
+  {
+    "anchor": "table-2-provides-a-list-of-the-data-and-parameters-that-are-required-in-order-to-apply-this",
+    "id": "S-0050",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "Table 2 provides a list of the data and parameters that are required in order to apply this"
+  },
+  {
+    "anchor": "unfccc-ccnucc-9",
+    "id": "S-0051",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-56-8",
+    "id": "S-0052",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "EB 56"
+  },
+  {
+    "anchor": "all-references-are-quoted-in-footnotes",
+    "id": "S-0053",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "All references are quoted in footnotes."
+  },
+  {
+    "anchor": "unfccc-ccnucc-10",
+    "id": "S-0054",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-56-9",
+    "id": "S-0055",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "EB 56"
+  },
+  {
+    "anchor": "project-participants-shall-demonstrate-that-the-project-activity-would-not-have-occurred",
+    "id": "S-0056",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "Project participants shall demonstrate that the project activity would not have occurred"
+  },
+  {
+    "anchor": "unfccc-ccnucc-11",
+    "id": "S-0057",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "UNFCCC/CCNUCC"
+  },
+  {
+    "anchor": "eb-56-10",
+    "id": "S-0058",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "EB 56"
+  },
+  {
+    "anchor": "17-june-2011-the-editorial-revision-was-done-to-reflect-the-renaming-of-the-tool",
+    "id": "S-0059",
+    "level": 3,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "17 June 2011 The editorial revision was done to reflect the renaming of the tool"
+  },
+  {
+    "anchor": "september-2010",
+    "id": "S-0060",
+    "level": 1,
+    "provenance": {
+      "source_hash": "97a9d8574edff40fc3923a8e44c27c6b08e0e435a1aa02e5ebe743d1c076c808",
+      "source_ref": "UNFCCC/AR-AMS0007@v03-1"
+    },
+    "title": "September 2010"
+  }
+]
