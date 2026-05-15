@@ -1,0 +1,194 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "definitions": {
+    "sectionTaxonomyItem": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "title": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "description": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "export_order": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "parent_id": {
+          "default": null,
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence_categories": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "description",
+        "required",
+        "export_order",
+        "evidence_categories"
+      ],
+      "type": "object"
+    },
+    "sectionMapping": {
+      "additionalProperties": false,
+      "properties": {
+        "methodology_section_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "export_section_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "methodology_section_id",
+        "export_section_id"
+      ],
+      "type": "object"
+    },
+    "methodologyMapping": {
+      "additionalProperties": false,
+      "properties": {
+        "methodology": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "mappings": {
+          "items": {
+            "$ref": "#/definitions/sectionMapping"
+          },
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "methodology",
+        "version",
+        "mappings"
+      ],
+      "type": "object"
+    },
+    "evidenceCategory": {
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "description": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "section_ids": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "title",
+        "description"
+      ],
+      "type": "object"
+    }
+  },
+  "properties": {
+    "standard": {
+      "type": "string",
+      "enum": [
+        "Verra",
+        "Gold Standard"
+      ]
+    },
+    "metadata_version": {
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "type": "string"
+    },
+    "last_updated": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "section_taxonomy": {
+      "items": {
+        "$ref": "#/definitions/sectionTaxonomyItem"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "required_export_sections": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "evidence_categories": {
+      "additionalProperties": {
+        "$ref": "#/definitions/evidenceCategory"
+      },
+      "minProperties": 1,
+      "type": "object"
+    },
+    "section_mappings": {
+      "items": {
+        "$ref": "#/definitions/methodologyMapping"
+      },
+      "type": "array"
+    },
+    "disclaimers": {
+      "additionalProperties": false,
+      "properties": {
+        "readiness": {
+          "type": "string"
+        },
+        "validation": {
+          "type": "string"
+        },
+        "verification": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "readiness"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "standard",
+    "metadata_version",
+    "last_updated",
+    "section_taxonomy",
+    "required_export_sections",
+    "evidence_categories",
+    "disclaimers"
+  ],
+  "type": "object"
+}

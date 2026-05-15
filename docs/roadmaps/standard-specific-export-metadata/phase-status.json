@@ -1,0 +1,41 @@
+{
+  "goal": "Define canonical standard-specific export metadata so app.article6 can render Verra and Gold Standard composers without inventing report structures, evidence categories, or disclaimer language. article6-methodologies owns semantics; app.article6 only consumes.",
+  "last_updated_at": "2026-05-15T12:00:00Z",
+  "notes": [
+    "SEM-S1 through SEM-S5 delivered in Phase 7 metadata encoding PR.",
+    "Verra VCS and Gold Standard export metadata contracts published.",
+    "Existing methodology artifacts (sections.json, rules.json, etc.) are not modified without review."
+  ],
+  "phases": [
+    {
+      "id": "sem-s1-verra-export-metadata",
+      "name": "Verra export metadata contract",
+      "status": "completed",
+      "completed_at": "2026-05-15T12:00:00Z"
+    },
+    {
+      "id": "sem-s2-gold-standard-export-metadata",
+      "name": "Gold Standard export metadata contract",
+      "status": "completed",
+      "completed_at": "2026-05-15T12:00:00Z"
+    },
+    {
+      "id": "sem-s3-shared-export-schema",
+      "name": "Shared export metadata schema",
+      "status": "completed",
+      "completed_at": "2026-05-15T12:00:00Z"
+    },
+    {
+      "id": "sem-s4-app-consumption-contract",
+      "name": "Machine-readable app consumption contract",
+      "status": "completed",
+      "completed_at": "2026-05-15T12:00:00Z"
+    },
+    {
+      "id": "sem-s5-pack-integration",
+      "name": "Integrate with methodology pack",
+      "status": "completed",
+      "completed_at": "2026-05-15T12:00:00Z"
+    }
+  ]
+}

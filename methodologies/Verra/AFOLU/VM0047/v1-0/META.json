@@ -1,5 +1,9 @@
 {
   "active_date": "2023-09-28",
+  "export": {
+    "metadata_version": "1.0.0",
+    "path": "methodologies/Verra/_export/export-metadata.json"
+  },
   "artifact_quality_standard": {
     "adoption_status": "grade_a",
     "note": "VM0047 v1.0 Source-Audited (grade_a legacy alias). All 11 rules source-audited. All applicability, baseline, additionality, and monitoring requirements self-contained in VM0047 PDF. External refs to CDM/AR-ACM0003, CDM/T-SIG, and Verra/VT0001 resolved as historical references only.",

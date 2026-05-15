@@ -1,0 +1,231 @@
+{
+  "standard": "Gold Standard",
+  "metadata_version": "1.0.0",
+  "last_updated": "2026-05-15T00:00:00Z",
+  "section_taxonomy": [
+    {
+      "id": "project-design",
+      "title": "Project Design",
+      "description": "Overview of the project design including project title, location, technology description, and crediting period. Establishes the project's conformity with Gold Standard principles.",
+      "required": true,
+      "export_order": 1,
+      "parent_id": null,
+      "evidence_categories": [
+        "project_design_documentation"
+      ]
+    },
+    {
+      "id": "scope-applicability",
+      "title": "Scope and Applicability",
+      "description": "Definition of the methodology's scope and applicability conditions, including activity types covered and eligibility criteria.",
+      "required": true,
+      "export_order": 2,
+      "parent_id": null,
+      "evidence_categories": [
+        "applicability_evidence"
+      ]
+    },
+    {
+      "id": "eligibility",
+      "title": "Eligibility and Additionality",
+      "description": "Demonstration of project eligibility, including activity type justification, land title verification, double counting prevention, and additionality demonstration.",
+      "required": true,
+      "export_order": 3,
+      "parent_id": null,
+      "evidence_categories": [
+        "additionality_evidence",
+        "eligibility_evidence"
+      ]
+    },
+    {
+      "id": "baseline",
+      "title": "Baseline Determination",
+      "description": "Determination of the baseline scenario against which GHG emission reductions or removals are quantified. Includes baseline identification and re-assessment procedures.",
+      "required": true,
+      "export_order": 4,
+      "parent_id": null,
+      "evidence_categories": [
+        "baseline_evidence"
+      ]
+    },
+    {
+      "id": "monitoring",
+      "title": "Monitoring Plan and Quantification",
+      "description": "Detailed monitoring plan including data and parameters, monitoring frequency, quantification methodology, and QA/QC procedures.",
+      "required": true,
+      "export_order": 5,
+      "parent_id": null,
+      "evidence_categories": [
+        "monitoring_evidence",
+        "quantification_evidence"
+      ]
+    },
+    {
+      "id": "safeguards",
+      "title": "Safeguards Assessment",
+      "description": "Assessment of environmental and social safeguards including biodiversity protection (minimum 10% set-aside), water body buffer zones, and climate resilience measures.",
+      "required": true,
+      "export_order": 6,
+      "parent_id": null,
+      "evidence_categories": [
+        "safeguards_evidence"
+      ]
+    },
+    {
+      "id": "stakeholder-consultation",
+      "title": "Stakeholder Consultation",
+      "description": "Records of stakeholder consultation conducted before the project start date, including consultation methods, outcomes, and ongoing engagement plan.",
+      "required": true,
+      "export_order": 7,
+      "parent_id": null,
+      "evidence_categories": [
+        "stakeholder_evidence"
+      ]
+    },
+    {
+      "id": "sdg-impact",
+      "title": "SDG Impact Assessment",
+      "description": "Quantification and reporting of the project's contribution to the Sustainable Development Goals (SDGs), following Gold Standard SDG impact quantification methodologies.",
+      "required": true,
+      "export_order": 8,
+      "parent_id": null,
+      "evidence_categories": [
+        "sdg_evidence"
+      ]
+    },
+    {
+      "id": "uncertainty",
+      "title": "Uncertainty Assessment",
+      "description": "Assessment of uncertainty in GHG estimates, including precision targets, uncertainty quantification approaches, and deduction application where thresholds are not met.",
+      "required": true,
+      "export_order": 9,
+      "parent_id": null,
+      "evidence_categories": [
+        "uncertainty_evidence"
+      ]
+    }
+  ],
+  "required_export_sections": [
+    "project-design",
+    "scope-applicability",
+    "eligibility",
+    "baseline",
+    "monitoring",
+    "safeguards",
+    "stakeholder-consultation",
+    "sdg-impact",
+    "uncertainty"
+  ],
+  "evidence_categories": {
+    "project_design_documentation": {
+      "title": "Project Design Documentation",
+      "description": "Project design documents covering project location, technology, crediting period, and conformity with Gold Standard for the Global Goals (GS4GG) principles.",
+      "section_ids": [
+        "project-design"
+      ]
+    },
+    "applicability_evidence": {
+      "title": "Applicability Evidence",
+      "description": "Evidence that the project activity type is covered by the methodology's scope and that all applicability conditions are satisfied.",
+      "section_ids": [
+        "scope-applicability"
+      ]
+    },
+    "additionality_evidence": {
+      "title": "Additionality Evidence",
+      "description": "Additionality demonstration using CDM tools or positive list criteria, including barrier analysis, investment analysis, and positive list qualification.",
+      "section_ids": [
+        "eligibility"
+      ]
+    },
+    "eligibility_evidence": {
+      "title": "Eligibility Evidence",
+      "description": "Land title documentation, FSC certification (for AGR), double counting prevention measures, and activity type justification.",
+      "section_ids": [
+        "eligibility"
+      ]
+    },
+    "baseline_evidence": {
+      "title": "Baseline Evidence",
+      "description": "Baseline scenario identification, historical land-use data, and re-assessment procedures.",
+      "section_ids": [
+        "baseline"
+      ]
+    },
+    "monitoring_evidence": {
+      "title": "Monitoring Evidence",
+      "description": "Monitoring plan, parameter tables, GIS vector layers, GPS mapping data, calibration records, and QA/QC procedures.",
+      "section_ids": [
+        "monitoring"
+      ]
+    },
+    "quantification_evidence": {
+      "title": "Quantification Evidence",
+      "description": "GHG emission reduction and removal calculations, including baseline emissions, project emissions, and net anthropogenic removals.",
+      "section_ids": [
+        "monitoring"
+      ]
+    },
+    "safeguards_evidence": {
+      "title": "Safeguards Evidence",
+      "description": "Safeguarding principles assessment per Risks & Capacities Guideline, biodiversity set-aside documentation (minimum 10%), water body buffer zone management, and climate resilience measures.",
+      "section_ids": [
+        "safeguards"
+      ]
+    },
+    "stakeholder_evidence": {
+      "title": "Stakeholder Consultation Evidence",
+      "description": "Stakeholder consultation records including consultation timing, methods, participant lists, outcomes, and ongoing engagement plans.",
+      "section_ids": [
+        "stakeholder-consultation"
+      ]
+    },
+    "sdg_evidence": {
+      "title": "SDG Impact Evidence",
+      "description": "SDG contribution quantification, mapping to specific SDG targets, and host country alignment documentation per Gold Standard SDG impact requirements.",
+      "section_ids": [
+        "sdg-impact"
+      ]
+    },
+    "uncertainty_evidence": {
+      "title": "Uncertainty Evidence",
+      "description": "Uncertainty quantification using on-site measurements, peer-reviewed literature, or default factors; precision target demonstration (20% at 90% confidence); deduction calculations.",
+      "section_ids": [
+        "uncertainty"
+      ]
+    }
+  },
+  "section_mappings": [
+    {
+      "methodology": "GS-00XX",
+      "version": "v1-0",
+      "mappings": [
+        {
+          "methodology_section_id": "S-1",
+          "export_section_id": "scope-applicability"
+        },
+        {
+          "methodology_section_id": "S-2",
+          "export_section_id": "eligibility"
+        },
+        {
+          "methodology_section_id": "S-3",
+          "export_section_id": "safeguards"
+        },
+        {
+          "methodology_section_id": "S-4",
+          "export_section_id": "monitoring"
+        },
+        {
+          "methodology_section_id": "S-5",
+          "export_section_id": "uncertainty"
+        }
+      ]
+    }
+  ],
+  "disclaimers": {
+    "readiness": "This report is a readiness assessment prepared for informational purposes only. It does not constitute a validation opinion, verification opinion, or certification under Gold Standard for the Global Goals (GS4GG). No claim of conformance with Gold Standard requirements shall be made until a Gold Standard-approved validation or verification body (VVB) has issued a positive opinion following a full audit.",
+    "validation": "This draft has been prepared to support the validation process under Gold Standard for the Global Goals (GS4GG). It has not been independently verified by a Gold Standard-approved VVB and does not represent a validation opinion. Final validation shall be confirmed by a VVB in accordance with the Gold Standard Principles & Requirements.",
+    "verification": "This report has been prepared in connection with verification under Gold Standard for the Global Goals (GS4GG). Verification is subject to completion of a full audit by a Gold Standard-approved VVB. No Gold Standard Verified Emission Reductions (GS VERs) may be issued until a positive verification opinion has been issued."
+  }
+}

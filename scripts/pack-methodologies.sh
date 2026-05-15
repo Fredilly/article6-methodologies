@@ -36,6 +36,8 @@ rsync -a --prune-empty-dirs \
   --include='sections.json' \
   --include='rich.json' \
   --include='*.rich.json' \
+  --include='_export/' \
+  --include='_export/export-metadata.json' \
   --exclude='*' \
   methodologies/ "$TMP/methodologies-pack/methodologies/"
 
