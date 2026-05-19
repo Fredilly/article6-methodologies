@@ -29,7 +29,7 @@
   },
   "automation": {
     "repo_commit": "",
-    "scripts_manifest_sha256": ""
+    "scripts_manifest_sha256": "bd8eb6d0695f41df11185d935f73c69f71ea0deadf535c3f9ca95cdd453b845b"
   },
   "domain": "AFOLU",
   "external_dependencies": {
@@ -68,7 +68,7 @@
     },
     {
       "path": "rules.rich.json",
-      "sha256": "7be4d9bcd9b14cb65bb952381e29f474db195276095fc7b68e5b65ce9a84577f"
+      "sha256": "8301281be475c3cd323d4b31e1806eca806127dabc8b0810ef5b4fa4d955ab4d"
     }
   ],
   "method": "ARR Methodology Framework",
