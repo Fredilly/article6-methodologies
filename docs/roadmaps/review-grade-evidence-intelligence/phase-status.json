@@ -1,9 +1,11 @@
 {
   "goal": "Formalize the Review-Grade method pack standard, expected evidence taxonomy, and rule-to-evidence mapping schema so app.article6 can drive deterministic evidence linking without hardcoded heuristics.",
-  "last_updated_at": "2026-05-19T00:00:00Z",
+  "last_updated_at": "2026-05-19T12:00:00Z",
   "notes": [
-    "RGEI-S1 through RGEI-S6 defined but not yet started.",
-    "Builds on RC-S6 (optional expected_evidence) and traceable-rule-review-mvp Phase 2 (evidence contract seeding).",
+    "RGEI-S1: standard document published as docs/standards/review-grade-method-pack-standard.md.",
+    "RGEI-S2: schema and fixture delivered. Taxonomy published as docs/standards/expected-evidence-taxonomy.md. Schema in schemas/evidence-taxonomy.schema.json.",
+    "RGEI-S3: rule-to-evidence mapping schema delivered as schemas/rule-evidence-mapping.schema.json with validation for evidence_type_id, evidence_kind, evidence_condition, description, accepted_sources, and requirement_kind. Example at docs/roadmaps/review-grade-evidence-intelligence/example-evidence-mappings.json.",
+    "RGEI-S4 through RGEI-S6 not yet started.",
     "Review-Grade is a formal superset of Source-Audited: all Source-Audited requirements plus complete expected evidence metadata.",
     "No methodology packs are at Review-Grade until RGEI-S6 is delivered."
   ],
@@ -11,17 +13,17 @@
     {
       "id": "rgei-s1-review-grade-standard",
       "name": "Review-Grade Method Pack Standard",
-      "status": "not_started"
+      "status": "completed"
     },
     {
       "id": "rgei-s2-evidence-taxonomy",
       "name": "Expected Evidence Taxonomy",
-      "status": "not_started"
+      "status": "completed"
     },
     {
       "id": "rgei-s3-rule-evidence-mapping-schema",
       "name": "Rule-to-Evidence Mapping Schema",
-      "status": "not_started"
+      "status": "completed"
     },
     {
       "id": "rgei-s4-pack-integration",
