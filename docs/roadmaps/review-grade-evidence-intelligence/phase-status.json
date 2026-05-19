@@ -1,0 +1,42 @@
+{
+  "goal": "Formalize the Review-Grade method pack standard, expected evidence taxonomy, and rule-to-evidence mapping schema so app.article6 can drive deterministic evidence linking without hardcoded heuristics.",
+  "last_updated_at": "2026-05-19T00:00:00Z",
+  "notes": [
+    "RGEI-S1 through RGEI-S6 defined but not yet started.",
+    "Builds on RC-S6 (optional expected_evidence) and traceable-rule-review-mvp Phase 2 (evidence contract seeding).",
+    "Review-Grade is a formal superset of Source-Audited: all Source-Audited requirements plus complete expected evidence metadata.",
+    "No methodology packs are at Review-Grade until RGEI-S6 is delivered."
+  ],
+  "phases": [
+    {
+      "id": "rgei-s1-review-grade-standard",
+      "name": "Review-Grade Method Pack Standard",
+      "status": "not_started"
+    },
+    {
+      "id": "rgei-s2-evidence-taxonomy",
+      "name": "Expected Evidence Taxonomy",
+      "status": "not_started"
+    },
+    {
+      "id": "rgei-s3-rule-evidence-mapping-schema",
+      "name": "Rule-to-Evidence Mapping Schema",
+      "status": "not_started"
+    },
+    {
+      "id": "rgei-s4-pack-integration",
+      "name": "Methodology Pack Integration",
+      "status": "not_started"
+    },
+    {
+      "id": "rgei-s5-app-consumption-contract",
+      "name": "App Consumption Contract",
+      "status": "not_started"
+    },
+    {
+      "id": "rgei-s6-pilot-method-packs",
+      "name": "Pilot Method Packs at Review-Grade",
+      "status": "not_started"
+    }
+  ]
+}
