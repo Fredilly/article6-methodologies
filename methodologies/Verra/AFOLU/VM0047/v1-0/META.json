@@ -1,9 +1,12 @@
 {
   "active_date": "2023-09-28",
+  "export": {
+    "evidence_intelligence_version": "1.0.0"
+  },
   "artifact_quality_standard": {
-    "adoption_status": "grade_a",
-    "note": "VM0047 v1.0 Grade A achieved. All 11 rules source-audited. All applicability, baseline, additionality, and monitoring requirements self-contained in VM0047 PDF. External refs to CDM/AR-ACM0003, CDM/T-SIG, and Verra/VT0001 resolved as historical references only.",
-    "version": "review_contract_v1"
+    "adoption_status": "review_grade",
+    "note": "VM0047 v1.0 Review-Grade achieved. All 11 rules source-audited with complete expected evidence metadata. taxonomy-ref: config/evidence-taxonomy.json. App consumption contract version pinned below.",
+    "version": "review_contract_v2"
   },
   "artifact_status": {
     "rules": "source_audited",
@@ -12,9 +15,9 @@
   },
   "audit_hashes": {
     "blocked_external_dependencies_sha256": "667e559448e21aac939dfc5ffde562189ee729f5874644f9f1766f681a203a2f",
-    "rules.rich_sha256": "7be4d9bcd9b14cb65bb952381e29f474db195276095fc7b68e5b65ce9a84577f",
+    "rules.rich_sha256": "8301281be475c3cd323d4b31e1806eca806127dabc8b0810ef5b4fa4d955ab4d",
     "rules_json_sha256": "a6d66d8e7f409e9a43dca8656bea03f6e5a0c9ee02a3ecfa6e61d19d9fcdaf3e",
-    "rules_rich_json_sha256": "7be4d9bcd9b14cb65bb952381e29f474db195276095fc7b68e5b65ce9a84577f",
+    "rules_rich_json_sha256": "8301281be475c3cd323d4b31e1806eca806127dabc8b0810ef5b4fa4d955ab4d",
     "rules_sha256": "a6d66d8e7f409e9a43dca8656bea03f6e5a0c9ee02a3ecfa6e61d19d9fcdaf3e",
     "sections.rich_sha256": "4d98351663ec55a7ea8705f36160910e5349b1c0987f0a6e6ab01f1b4218a5aa",
     "sections_json_sha256": "8c07f0a3ce505eba9b3a46bb5fb48e028046e95d0514c3e6fcae6e6a701d22a1",

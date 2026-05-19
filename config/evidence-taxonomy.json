@@ -1,0 +1,282 @@
+{
+  "taxonomy_meta": {
+    "title": "Expected Evidence Taxonomy",
+    "description": "Canonical evidence types for Review-Grade methodology packs",
+    "version": "1.0.0",
+    "last_updated": "2026-05-19T00:00:00Z"
+  },
+  "evidence_types": [
+    {
+      "id": "monitoring_report",
+      "display_name": "Monitoring Report",
+      "category": "document",
+      "description": "Periodic report describing project implementation, monitoring activities, and results against the monitoring plan",
+      "formats": [
+        "pdf",
+        "docx"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "monitoring_plan",
+      "display_name": "Monitoring Plan",
+      "category": "document",
+      "description": "The approved plan describing monitoring frequency, parameters, and methods",
+      "formats": [
+        "pdf",
+        "docx"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "pdd",
+      "display_name": "Project Design Document (PDD)",
+      "category": "document",
+      "description": "The project design document describing project activities, baseline, additionality, and monitoring approach",
+      "formats": [
+        "pdf",
+        "docx"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "project_description",
+      "display_name": "Project Description",
+      "category": "document",
+      "description": "Narrative description of the project, its location, technology, and activities",
+      "formats": [
+        "pdf",
+        "docx"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "baseline_report",
+      "display_name": "Baseline Report",
+      "category": "document",
+      "description": "Report documenting baseline emissions, baseline scenario, and baseline determination methodology",
+      "formats": [
+        "pdf",
+        "xlsx",
+        "docx"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "additionality_assessment",
+      "display_name": "Additionality Assessment",
+      "category": "document",
+      "description": "Evidence demonstrating the project is additional (investment analysis, barrier analysis, common practice analysis)",
+      "formats": [
+        "pdf",
+        "xlsx",
+        "docx"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "leakage_assessment",
+      "display_name": "Leakage Assessment",
+      "category": "document",
+      "description": "Analysis of potential leakage emissions outside the project boundary",
+      "formats": [
+        "pdf",
+        "xlsx"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "emissions_reductions_calculation",
+      "display_name": "Emissions Reductions Calculation",
+      "category": "document",
+      "description": "Workbook or report showing ex-post emissions reductions or net GHG removals",
+      "formats": [
+        "xlsx",
+        "pdf",
+        "csv"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "calculation_workbook",
+      "display_name": "Calculation Workbook",
+      "category": "document",
+      "description": "Spreadsheet containing formulas, input parameters, and intermediate calculations for GHG estimation",
+      "formats": [
+        "xlsx",
+        "csv",
+        "numbers"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "validation_report",
+      "display_name": "Validation Report",
+      "category": "document",
+      "description": "Third-party validation report confirming the project design meets applicable standards",
+      "formats": [
+        "pdf"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "verification_report",
+      "display_name": "Verification Report",
+      "category": "document",
+      "description": "Third-party verification report confirming emissions reductions or removals for a reporting period",
+      "formats": [
+        "pdf"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "safeguards_report",
+      "display_name": "Safeguards Report",
+      "category": "document",
+      "description": "Report documenting environmental and social safeguards, including stakeholder consultation and grievance mechanisms",
+      "formats": [
+        "pdf",
+        "docx"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "stakeholder_consultation",
+      "display_name": "Stakeholder Consultation Records",
+      "category": "document",
+      "description": "Records of stakeholder consultations, meetings, feedback, and responses",
+      "formats": [
+        "pdf",
+        "docx"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "project_boundary",
+      "display_name": "Project Boundary (GIS)",
+      "category": "geospatial",
+      "description": "Geospatial file defining the project boundary or area polygons",
+      "formats": [
+        "geojson",
+        "shapefile",
+        "kml",
+        "gpkg"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "satellite_imagery",
+      "display_name": "Satellite Imagery",
+      "category": "geospatial",
+      "description": "Satellite or aerial imagery of the project area for land cover, biomass, or activity data estimation",
+      "formats": [
+        "geotiff",
+        "jp2",
+        "cloud-optimized-geotiff"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "land_cover_map",
+      "display_name": "Land Cover / Land Use Map",
+      "category": "geospatial",
+      "description": "Classified land cover map derived from imagery or field surveys",
+      "formats": [
+        "geotiff",
+        "geojson"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "sampling_plot_locations",
+      "display_name": "Sampling Plot Locations",
+      "category": "geospatial",
+      "description": "Geospatial file defining field sampling plot locations",
+      "formats": [
+        "geojson",
+        "shapefile",
+        "csv"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "parameter_sheet",
+      "display_name": "Parameter Sheet",
+      "category": "calculation",
+      "description": "Structured listing of all parameters, defaults, sources, and values used in quantification",
+      "formats": [
+        "xlsx",
+        "csv",
+        "json"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "emissions_factor",
+      "display_name": "Emissions Factor",
+      "category": "calculation",
+      "description": "Published or derived emissions factor with source reference and uncertainty",
+      "formats": [
+        "xlsx",
+        "csv",
+        "json"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "field_data",
+      "display_name": "Field Measurement Data",
+      "category": "measurement",
+      "description": "Raw or processed field measurements including tree measurements, soil samples, biomass data",
+      "formats": [
+        "xlsx",
+        "csv",
+        "json"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "forest_inventory",
+      "display_name": "Forest Inventory Data",
+      "category": "measurement",
+      "description": "Forest inventory data including species, diameter, height, and calculated biomass",
+      "formats": [
+        "xlsx",
+        "csv",
+        "json"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "legal_title",
+      "display_name": "Legal Title / Land Tenure",
+      "category": "attestation",
+      "description": "Evidence of legal right to implement the project on the land area",
+      "formats": [
+        "pdf",
+        "image"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "authority_approval",
+      "display_name": "Authority Approval / Permit",
+      "category": "attestation",
+      "description": "Regulatory or government approval, permit, or letter of authorization",
+      "formats": [
+        "pdf"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    },
+    {
+      "id": "certification",
+      "display_name": "Certification Statement",
+      "category": "attestation",
+      "description": "Third-party certification, audit statement, or signed declaration",
+      "formats": [
+        "pdf"
+      ],
+      "usage_notes": "Refer to docs/standards/expected-evidence-taxonomy.md for full description."
+    }
+  ]
+}
