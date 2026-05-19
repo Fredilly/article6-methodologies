@@ -1,0 +1,179 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "definitions": {
+    "evidenceType": {
+      "additionalProperties": false,
+      "description": "A single evidence type entry in the expected evidence taxonomy.",
+      "properties": {
+        "id": {
+          "description": "Machine-readable evidence type identifier. Referenced by rule-level evidence_type_id.",
+          "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$",
+          "type": "string"
+        },
+        "display_name": {
+          "description": "Human-readable label for this evidence type.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "category": {
+          "description": "Top-level grouping category for this evidence type.",
+          "enum": [
+            "document",
+            "geospatial",
+            "calculation",
+            "measurement",
+            "attestation"
+          ],
+          "type": "string"
+        },
+        "description": {
+          "description": "Explanation of what this evidence type covers and when it applies.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "formats": {
+          "description": "Acceptable file formats for this evidence type.",
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "usage_notes": {
+          "description": "Guidance on when to use this type vs. related types.",
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "display_name",
+        "category",
+        "description",
+        "formats",
+        "usage_notes"
+      ],
+      "type": "object"
+    }
+  },
+  "description": "Validates the expected evidence taxonomy document — a catalog of evidence type definitions that methodology rules can reference via evidence_type_id.",
+  "properties": {
+    "taxonomy_meta": {
+      "additionalProperties": false,
+      "description": "Metadata about the taxonomy document itself.",
+      "properties": {
+        "title": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "description": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "version": {
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "type": "string"
+        },
+        "last_updated": {
+          "format": "date-time",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "version",
+        "last_updated"
+      ],
+      "type": "object"
+    },
+    "evidence_types": {
+      "description": "Array of all evidence type definitions in the taxonomy.",
+      "items": {
+        "$ref": "#/definitions/evidenceType"
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "rule_type_mappings": {
+      "additionalProperties": false,
+      "description": "Default mapping from rule types to recommended evidence type IDs.",
+      "properties": {
+        "eligibility": {
+          "items": {
+            "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$",
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "parameter": {
+          "items": {
+            "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$",
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "equation": {
+          "items": {
+            "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$",
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "calc": {
+          "items": {
+            "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$",
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "monitoring": {
+          "items": {
+            "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$",
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "leakage": {
+          "items": {
+            "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$",
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "uncertainty": {
+          "items": {
+            "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$",
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "reporting": {
+          "items": {
+            "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$",
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "type": "object"
+    }
+  },
+  "required": [
+    "taxonomy_meta",
+    "evidence_types"
+  ],
+  "title": "Expected Evidence Taxonomy",
+  "type": "object"
+}

@@ -1,0 +1,258 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "evidenceTypeRef": {
+      "description": "Reference to an evidence type in the taxonomy. Must resolve to an entry in evidence-taxonomy.schema.json.",
+      "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$",
+      "type": "string"
+    },
+    "evidenceKind": {
+      "description": "Whether the evidence is mandatory, optional, or conditional on a rule-specific condition.",
+      "enum": [
+        "mandatory",
+        "optional",
+        "conditional"
+      ],
+      "type": "string"
+    },
+    "acceptedSource": {
+      "description": "A type of source document acceptable as evidence for this entry.",
+      "enum": [
+        "project_design_document",
+        "monitoring_report",
+        "validation_report",
+        "verification_report",
+        "calculation_workbook",
+        "field_data",
+        "satellite_imagery",
+        "gis_data",
+        "legal_documentation",
+        "stakeholder_consultation",
+        "safeguards_report",
+        "authority_approval",
+        "certification_statement"
+      ],
+      "type": "string"
+    },
+    "expectedEvidenceItem": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "description": "If evidence_kind is 'conditional', evidence_condition is required. If non-conditional, evidence_condition must be absent.",
+          "if": {
+            "properties": {
+              "evidence_kind": {
+                "const": "conditional"
+              }
+            },
+            "required": [
+              "evidence_kind"
+            ],
+            "type": "object"
+          },
+          "then": {
+            "required": [
+              "evidence_condition"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "evidence_condition"
+              ]
+            }
+          }
+        }
+      ],
+      "description": "A single expected evidence entry describing what evidence a reviewer should examine for a rule.",
+      "properties": {
+        "evidence_type_id": {
+          "$ref": "#/definitions/evidenceTypeRef",
+          "description": "Maps to an evidence type in the expected evidence taxonomy. Must match a taxonomy entry id."
+        },
+        "evidence_kind": {
+          "$ref": "#/definitions/evidenceKind"
+        },
+        "evidence_condition": {
+          "description": "Machine-readable expression describing when conditional evidence is required. Required when evidence_kind is 'conditional'; must be absent otherwise.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "label": {
+          "description": "Human-readable label for this evidence entry.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "description": {
+          "description": "Guidance text describing what specific evidence is expected. Must not contain placeholder values.",
+          "minLength": 1,
+          "not": {
+            "pattern": "^(Not specified|TBD|pending|unknown|TODO)([. ]*)$"
+          },
+          "type": "string"
+        },
+        "required": {
+          "description": "Whether this evidence is required for the rule to be satisfied.",
+          "type": "boolean"
+        },
+        "accepted_sources": {
+          "description": "Document types acceptable as source evidence. If absent, any source type is acceptable.",
+          "items": {
+            "$ref": "#/definitions/acceptedSource"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "monitoring_report": {
+          "additionalProperties": false,
+          "description": "Specific monitoring report expectations when the evidence type is a monitoring report.",
+          "properties": {
+            "frequency": {
+              "description": "Expected reporting frequency.",
+              "enum": [
+                "monthly",
+                "annual"
+              ],
+              "type": "string"
+            },
+            "expectation": {
+              "description": "What the monitoring report must contain.",
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "frequency",
+            "expectation"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "evidence_type_id",
+        "evidence_kind",
+        "label",
+        "description",
+        "required"
+      ],
+      "type": "object"
+    },
+    "expectedEvidenceArray": {
+      "description": "Array of expected evidence entries for a single rule or coverage entry.",
+      "items": {
+        "$ref": "#/definitions/expectedEvidenceItem"
+      },
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "description": "Validates the structure of expected evidence metadata in rules.rich.json. This schema defines the enriched evidence mapping contract for Review-Grade method packs.",
+  "properties": {
+    "rules": {
+      "description": "Array of rules with expected evidence mappings. Aligns with rules.rich.json structure.",
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "description": "Rule identifier.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": {
+            "description": "Rule type classification.",
+            "enum": [
+              "eligibility",
+              "parameter",
+              "equation",
+              "calc",
+              "monitoring",
+              "leakage",
+              "uncertainty",
+              "reporting"
+            ],
+            "type": "string"
+          },
+          "requirement_kind": {
+            "description": "The kind of judgment or computation this rule requires from a reviewer.",
+            "enum": [
+              "human-judgment-required",
+              "calculable",
+              "document-check"
+            ],
+            "type": "string"
+          },
+          "requirement_coverage": {
+            "additionalProperties": false,
+            "description": "Coverage metadata linking this rule to sources and expected evidence.",
+            "properties": {
+              "coverage_key": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "coverage_scope": {
+                "enum": [
+                  "rule"
+                ],
+                "type": "string"
+              },
+              "expected_evidence": {
+                "$ref": "#/definitions/expectedEvidenceArray"
+              },
+              "expected_evidence_status": {
+                "description": "Status of the expected evidence population (e.g., seed_unverified, source_audited).",
+                "minLength": 1,
+                "type": "string"
+              },
+              "section_refs": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "relationship": {
+                      "enum": [
+                        "source_section"
+                      ],
+                      "type": "string"
+                    },
+                    "section_id": {
+                      "pattern": "^S-\\d+(?:-\\d+)*$",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "section_id",
+                    "relationship"
+                  ],
+                  "type": "object"
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "section_refs_status": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "coverage_key",
+              "coverage_scope"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "id",
+          "type"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "rules"
+  ],
+  "title": "Rule-to-Evidence Mapping v1",
+  "type": "object"
+}

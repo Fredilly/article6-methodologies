@@ -1,0 +1,181 @@
+{
+  "description": "Example showing how requirement_coverage.expected_evidence[] and requirement_kind should appear in a Review-Grade rules.rich.json. This is not a real methodology artifact — it demonstrates the target shape for schema validation.",
+  "schema_refs": [
+    "schemas/rule-evidence-mapping.schema.json",
+    "schemas/evidence-taxonomy.schema.json"
+  ],
+  "rules": [
+    {
+      "id": "METHOD.AFOLU.XX9999.v1-0.R-0001",
+      "type": "eligibility",
+      "requirement_kind": "document-check",
+      "requirement_coverage": {
+        "coverage_key": "XX9999-R-0001",
+        "coverage_scope": "rule",
+        "expected_evidence_status": "source_audited",
+        "expected_evidence": [
+          {
+            "evidence_type_id": "project_boundary",
+            "evidence_kind": "mandatory",
+            "label": "Project Boundary GIS File",
+            "description": "GeoJSON or shapefile defining the project area boundary with verified coordinates.",
+            "required": true,
+            "accepted_sources": [
+              "gis_data",
+              "project_design_document"
+            ]
+          },
+          {
+            "evidence_type_id": "legal_title",
+            "evidence_kind": "mandatory",
+            "label": "Land Tenure Documentation",
+            "description": "Legal title, deed, lease, or government concession evidencing right to implement the project on the land area.",
+            "required": true,
+            "accepted_sources": [
+              "legal_documentation",
+              "authority_approval"
+            ]
+          },
+          {
+            "evidence_type_id": "land_cover_map",
+            "evidence_kind": "conditional",
+            "evidence_condition": "IF project_area_has_forest_cover == true",
+            "label": "Land Cover Classification Map",
+            "description": "Classified land cover map showing forest/non-forest strata within the project boundary.",
+            "required": false,
+            "accepted_sources": [
+              "satellite_imagery",
+              "field_data"
+            ]
+          }
+        ],
+        "section_refs": [
+          {
+            "section_id": "S-1",
+            "relationship": "source_section"
+          },
+          {
+            "section_id": "S-2",
+            "relationship": "source_section"
+          }
+        ]
+      }
+    },
+    {
+      "id": "METHOD.AFOLU.XX9999.v1-0.R-0002",
+      "type": "parameter",
+      "requirement_kind": "calculable",
+      "requirement_coverage": {
+        "coverage_key": "XX9999-R-0002",
+        "coverage_scope": "rule",
+        "expected_evidence_status": "source_audited",
+        "expected_evidence": [
+          {
+            "evidence_type_id": "parameter_sheet",
+            "evidence_kind": "mandatory",
+            "label": "Carbon Fraction Parameter Sheet",
+            "description": "Parameter sheet documenting the carbon fraction value (CF), source reference, and uncertainty bounds.",
+            "required": true,
+            "accepted_sources": [
+              "calculation_workbook",
+              "project_design_document"
+            ]
+          },
+          {
+            "evidence_type_id": "emissions_factor",
+            "evidence_kind": "optional",
+            "label": "Default Emissions Factor Reference",
+            "description": "Published default emissions factor with IPCC or national source citation if overriding methodology defaults.",
+            "required": false
+          }
+        ],
+        "section_refs": [
+          {
+            "section_id": "S-3",
+            "relationship": "source_section"
+          }
+        ]
+      }
+    },
+    {
+      "id": "METHOD.AFOLU.XX9999.v1-0.R-0003",
+      "type": "monitoring",
+      "requirement_kind": "human-judgment-required",
+      "requirement_coverage": {
+        "coverage_key": "XX9999-R-0003",
+        "coverage_scope": "rule",
+        "expected_evidence_status": "source_audited",
+        "expected_evidence": [
+          {
+            "evidence_type_id": "monitoring_report",
+            "evidence_kind": "mandatory",
+            "label": "Annual Monitoring Report",
+            "description": "Annual monitoring report documenting forest carbon stock changes, disturbance events, and QA/QC results.",
+            "required": true,
+            "accepted_sources": [
+              "monitoring_report"
+            ],
+            "monitoring_report": {
+              "frequency": "annual",
+              "expectation": "Report must include: plot-by-plot carbon stock estimates, disturbance tracking, and QA/QC results."
+            }
+          },
+          {
+            "evidence_type_id": "satellite_imagery",
+            "evidence_kind": "mandatory",
+            "label": "Monitoring Period Satellite Imagery",
+            "description": "Satellite imagery covering the monitoring period for change detection within the project boundary.",
+            "required": true,
+            "accepted_sources": [
+              "satellite_imagery"
+            ]
+          }
+        ],
+        "section_refs": [
+          {
+            "section_id": "S-10",
+            "relationship": "source_section"
+          }
+        ]
+      }
+    },
+    {
+      "id": "METHOD.AFOLU.XX9999.v1-0.R-0004",
+      "type": "calc",
+      "requirement_kind": "calculable",
+      "requirement_coverage": {
+        "coverage_key": "XX9999-R-0004",
+        "coverage_scope": "rule",
+        "expected_evidence_status": "source_audited",
+        "expected_evidence": [
+          {
+            "evidence_type_id": "calculation_workbook",
+            "evidence_kind": "mandatory",
+            "label": "Net GHG Removals Calculation Workbook",
+            "description": "Workbook calculating net GHG removals per the methodology equations, with all input parameters and intermediate values traceable to source sections.",
+            "required": true,
+            "accepted_sources": [
+              "calculation_workbook"
+            ]
+          },
+          {
+            "evidence_type_id": "emissions_reductions_calculation",
+            "evidence_kind": "mandatory",
+            "label": "Emissions Reductions Summary",
+            "description": "Summary table of ex-post emissions reductions by year, stratified by carbon pool and leakage category.",
+            "required": true,
+            "accepted_sources": [
+              "calculation_workbook"
+            ]
+          }
+        ],
+        "section_refs": [
+          {
+            "section_id": "S-5",
+            "relationship": "source_section"
+          }
+        ]
+      }
+    }
+  ]
+}
