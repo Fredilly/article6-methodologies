@@ -1,8 +1,24 @@
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
-import glob from "glob";
+import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from "node:fs";
 import crypto from "node:crypto";
 
-const files = glob.sync("methodologies/**/*/rules.json", { nodir: true });
+function collectRuleFiles(dir) {
+  const files = [];
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const entryPath = `${dir}/${entry.name}`;
+    if (entry.isDirectory()) {
+      files.push(...collectRuleFiles(entryPath));
+      continue;
+    }
+
+    if (entry.isFile() && entry.name === "rules.json") {
+      files.push(entryPath);
+    }
+  }
+
+  return files;
+}
+
+const files = collectRuleFiles("methodologies");
 const entries = [];
 for (const file of files) {
   const text = readFileSync(file, "utf8");
