@@ -1,12 +1,13 @@
 {
   "goal": "Formalize the Review-Grade method pack standard, expected evidence taxonomy, and rule-to-evidence mapping schema so app.article6 can drive deterministic evidence linking without hardcoded heuristics.",
-  "last_updated_at": "2026-05-19T22:00:00Z",
+  "last_updated_at": "2026-05-20T10:00:00Z",
   "notes": [
     "RGEI-S1: standard document published as docs/standards/review-grade-method-pack-standard.md.",
     "RGEI-S2: taxonomy published as docs/standards/expected-evidence-taxonomy.md and config/evidence-taxonomy.json (machine-readable, 24 evidence types).",
     "RGEI-S3: rule-evidence-mapping.schema.json with conditional enforcement. evidence-taxonomy.schema.json validates taxonomy instance. rules.rich.schema.json updated to accept new fields.",
     "RGEI-S4: VM0047 v1.0 promoted to review_grade. All 11 rules populated with expected_evidence (28 entries total). Validation script at scripts/check-review-grade-evidence.js verifies: schema compliance, taxonomy resolution, no placeholders, requirement_kind completeness. Machine-readable taxonomy at config/evidence-taxonomy.json. CI-gated: check-review-grade-evidence.js is wired into validate:all, and pack-review-grade.test.js verifies all Review-Grade files (META.json, rules.json, rules.rich.json, sections.json, sections.rich.json, config/evidence-taxonomy.json, _export/export-metadata.json) survive inside the methodology pack tarball.",
-    "RGEI-S5/RGEI-S6 not yet started.",
+    "RGEI-S5: app.article6 consumes VM0047 v1.0 Review-Grade method pack — expected evidence metadata, taxonomy resolution, and rule-to-evidence mapping are driven by packed config/evidence-taxonomy.json and rules.rich.json instead of hardcoded heuristics. CI-gated by pack-review-grade.test.js.",
+    "RGEI-S6 not yet started.",
     "Review-Grade is a formal superset of Source-Audited: all Source-Audited requirements plus complete expected evidence metadata.",
     "VM0047 v1.0 is the first Review-Grade pilot method pack."
   ],
@@ -34,7 +35,7 @@
     {
       "id": "rgei-s5-app-consumption-contract",
       "name": "App Consumption Contract",
-      "status": "not_started"
+      "status": "completed"
     },
     {
       "id": "rgei-s6-pilot-method-packs",
