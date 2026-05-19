@@ -36,6 +36,34 @@
     },
     "expectedEvidenceItem": {
       "additionalProperties": false,
+      "allOf": [
+        {
+          "description": "If evidence_kind is 'conditional', evidence_condition is required. If non-conditional, evidence_condition must be absent.",
+          "if": {
+            "properties": {
+              "evidence_kind": {
+                "const": "conditional"
+              }
+            },
+            "required": [
+              "evidence_kind"
+            ],
+            "type": "object"
+          },
+          "then": {
+            "required": [
+              "evidence_condition"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "evidence_condition"
+              ]
+            }
+          }
+        }
+      ],
       "description": "A single expected evidence entry describing what evidence a reviewer should examine for a rule.",
       "properties": {
         "evidence_type_id": {
@@ -46,7 +74,7 @@
           "$ref": "#/definitions/evidenceKind"
         },
         "evidence_condition": {
-          "description": "Machine-readable expression describing when conditional evidence is required. Required when evidence_kind is 'conditional'.",
+          "description": "Machine-readable expression describing when conditional evidence is required. Required when evidence_kind is 'conditional'; must be absent otherwise.",
           "minLength": 1,
           "type": "string"
         },

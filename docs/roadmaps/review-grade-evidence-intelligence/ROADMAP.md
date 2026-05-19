@@ -70,12 +70,12 @@ Acceptance:
 Objective: Create the JSON Schema for expected evidence metadata in `rules.rich.json`.
 
 - Define `requirement_coverage.expected_evidence[]` schema
-  - `evidence_type_id`: references the taxonomy
+  - `evidence_type_id`: references the taxonomy (formats defined in taxonomy entry)
   - `evidence_kind`: mandatory, optional, conditional
-  - `evidence_condition`: expression when `evidence_kind` is conditional
-  - `description`: human-readable guidance
-  - `format`: pdf, xlsx, geotiff, csv, etc.
-- Define `requirement_coverage.requirement_kind` schema
+  - `evidence_condition`: required when `evidence_kind` is conditional; must be absent otherwise
+  - `description`: human-readable guidance (no placeholder text)
+  - `accepted_sources`: document types acceptable as source evidence
+- Define `requirement_kind` at the rule level (classifies the rule itself, not the coverage entry)
   - `human-judgment-required`, `calculable`, `document-check`
 - Publish schema in `schemas/rule-evidence-mapping.schema.json`
 - Update existing `schemas/rules.rich.schema.json` if reviewed
