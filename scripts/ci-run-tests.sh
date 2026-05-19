@@ -25,4 +25,16 @@ else
   echo "-- validators missing: skipping schema validation (no npm fetches)"
 fi
 
+# Manifest freshness check: rebuild and confirm no dirty diff
+echo "-- checking manifest freshness"
+node scripts/build-manifest.mjs
+if ! git diff --exit-code manifest/index.json; then
+  echo "FAIL: manifest/index.json is stale — rebuild with 'node scripts/build-manifest.mjs' and commit"
+  exit 1
+fi
+echo "ok manifest is fresh"
+
+# GoldStandard manifest entries + pack archive integrity
+node tests/manifest-pack-gs.test.js
+
 echo "== CI: DONE (offline) =="
