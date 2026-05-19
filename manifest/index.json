@@ -21,9 +21,9 @@
     "version": "v03-0",
     "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
     "tags": [
-      "calc",
+      "additionality",
       "baseline",
-      "additionality"
+      "calc"
     ],
     "sha256": "3420748023f30d04ed1fd562ef7ae3e30f38f9e1a49659763b0d9c4dea8abec9",
     "provider": "UNFCCC",
@@ -69,8 +69,8 @@
     "version": "v03-0",
     "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
     "tags": [
-      "equation",
-      "calc"
+      "calc",
+      "equation"
     ],
     "sha256": "b836353c122af881334f9fbb7713caf9d7377a723e247fc5c8b6af1f018bff85",
     "provider": "UNFCCC",
@@ -145,9 +145,9 @@
     "version": "v01-0",
     "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
     "tags": [
-      "calc",
+      "additionality",
       "baseline",
-      "additionality"
+      "calc"
     ],
     "sha256": "6ea9b9eb161d6857de39724c8e8757a7cf52d8fd04ac4798fb264745a05290f0",
     "provider": "UNFCCC",
@@ -193,8 +193,8 @@
     "version": "v01-0",
     "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
     "tags": [
-      "equation",
-      "calc"
+      "calc",
+      "equation"
     ],
     "sha256": "3b91069bc370b9a965d26d3faee834db1004fcb9659d97084493ff1af9e711a6",
     "provider": "UNFCCC",
@@ -269,9 +269,9 @@
     "version": "v03-0",
     "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
     "tags": [
-      "calc",
+      "additionality",
       "baseline",
-      "additionality"
+      "calc"
     ],
     "sha256": "b8ef92643663b064f3889e9c7d06e104f33901eb5ffae012bc8fc8883ea4421f",
     "provider": "UNFCCC",
@@ -317,8 +317,8 @@
     "version": "v03-0",
     "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
     "tags": [
-      "equation",
-      "calc"
+      "calc",
+      "equation"
     ],
     "sha256": "6ac8f8f06fad17187646a7cf5f4ac56698ba085e3ba63f3acf4ba5ad2017f1ad",
     "provider": "UNFCCC",
@@ -393,9 +393,9 @@
     "version": "v04-0",
     "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
     "tags": [
-      "calc",
+      "additionality",
       "baseline",
-      "additionality"
+      "calc"
     ],
     "sha256": "71868565dcf19698cff692c08cdea382db4431b10a85894c70b82d700fb00e86",
     "provider": "UNFCCC",
@@ -441,8 +441,8 @@
     "version": "v04-0",
     "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
     "tags": [
-      "equation",
-      "calc"
+      "calc",
+      "equation"
     ],
     "sha256": "c088c80c7ae515c740c85f161dab9b24b9cfb32f8844ce259b8fd9d75446b007",
     "provider": "UNFCCC",
@@ -517,9 +517,9 @@
     "version": "v01-0",
     "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
     "tags": [
-      "calc",
+      "additionality",
       "baseline",
-      "additionality"
+      "calc"
     ],
     "sha256": "a0a617f9fe13964c50bd8b5dc58dd304c2bab63b1d74c84800acedef3fe7e05f",
     "provider": "UNFCCC",
@@ -565,8 +565,8 @@
     "version": "v01-0",
     "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
     "tags": [
-      "equation",
-      "calc"
+      "calc",
+      "equation"
     ],
     "sha256": "3a5636c87d19c9a92aae7be62257721649da2131e8e53eb71bd052a89739b93a",
     "provider": "UNFCCC",
@@ -641,9 +641,9 @@
     "version": "v02-0",
     "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
     "tags": [
-      "calc",
+      "additionality",
       "baseline",
-      "additionality"
+      "calc"
     ],
     "sha256": "cc347b243b452c03cc7abf0e0cd1c538669a47620c2b2218103e0518c2251036",
     "provider": "UNFCCC",
@@ -689,8 +689,8 @@
     "version": "v02-0",
     "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
     "tags": [
-      "equation",
-      "calc"
+      "calc",
+      "equation"
     ],
     "sha256": "a1acb32157719ba66d4c1605737385c8f11d1e26561ea94de1acefb0be933ba0",
     "provider": "UNFCCC",
@@ -765,9 +765,9 @@
     "version": "v02-0",
     "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
     "tags": [
-      "calc",
+      "additionality",
       "baseline",
-      "additionality"
+      "calc"
     ],
     "sha256": "cd0e18c0aab13280fb249671afa56b07d92e8f0c65fda1132cb7257d3c3b2c67",
     "provider": "UNFCCC",
@@ -813,8 +813,8 @@
     "version": "v02-0",
     "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
     "tags": [
-      "equation",
-      "calc"
+      "calc",
+      "equation"
     ],
     "sha256": "b64114982889338ac6fc9e1069733f21bc291f0713414f59723a030cd5623f25",
     "provider": "UNFCCC",
@@ -889,9 +889,9 @@
     "version": "v21-0",
     "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
     "tags": [
-      "calc",
+      "additionality",
       "baseline",
-      "additionality"
+      "calc"
     ],
     "sha256": "6b6828ba488fdb33ee8142e8a8a0265201a21d4fd9dadce3c18b8991aba16f7b",
     "provider": "UNFCCC",
@@ -937,8 +937,8 @@
     "version": "v21-0",
     "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
     "tags": [
-      "equation",
-      "calc"
+      "calc",
+      "equation"
     ],
     "sha256": "a33d7a35e4a068d762a10552f8d47f5e58959afa1f6ed617e0ca95d2e0b80fa2",
     "provider": "UNFCCC",
@@ -1013,9 +1013,9 @@
     "version": "v05-0",
     "rule": "Baseline is the highest-IRR alternative without methane recovery determined through the methodology's IRR/NPV screening steps.",
     "tags": [
-      "calc",
+      "additionality",
       "baseline",
-      "additionality"
+      "calc"
     ],
     "sha256": "88eca210295bdb5ea0765918798579d3944f17160e0279eca675971870d811a9",
     "provider": "UNFCCC",
@@ -1061,8 +1061,8 @@
     "version": "v05-0",
     "rule": "Emission reductions equal avoided manure methane minus project emissions following the referenced AM tools.",
     "tags": [
-      "equation",
-      "calc"
+      "calc",
+      "equation"
     ],
     "sha256": "d2d807643dff0e419e6218fd01bbd301cf42b558c70959ac1ce699a875ddd614",
     "provider": "UNFCCC",
@@ -1137,8 +1137,8 @@
     "version": "v02-0",
     "rule": "Baseline net GHG removals derived from historical land-use data per Tool 02 guidance.",
     "tags": [
-      "calc",
-      "baseline"
+      "baseline",
+      "calc"
     ],
     "sha256": "2be96dbebec4ac1c6cc7c2ab5c884e954a9ca97289a0a069ecd82af853796700",
     "provider": "UNFCCC",
@@ -1259,8 +1259,8 @@
     "version": "v01-0-0",
     "rule": "Baseline biomass estimated using IPCC defaults or site-specific sampling following Tool 02.",
     "tags": [
-      "calc",
-      "baseline"
+      "baseline",
+      "calc"
     ],
     "sha256": "ee2d6ee8abf583705c655b42a02d1ad5357eae3ee11e40bce6682ac114275e54",
     "provider": "UNFCCC",
@@ -1380,8 +1380,8 @@
     "version": "v02-0-0",
     "rule": "Baseline biomass estimated using IPCC defaults or site-specific sampling following Tool 02.",
     "tags": [
-      "calc",
-      "baseline"
+      "baseline",
+      "calc"
     ],
     "sha256": "8413316f37eb0d8e148615c73ae4bf34519c0c74a49a7cebf3abdd997652d7a4",
     "provider": "UNFCCC",
@@ -1501,8 +1501,8 @@
     "version": "v03-0",
     "rule": "Baseline biomass estimated using IPCC defaults or site-specific sampling following Tool 02.",
     "tags": [
-      "calc",
-      "baseline"
+      "baseline",
+      "calc"
     ],
     "sha256": "cdaf04f3bed14be94067ef94f2159d3d4f6b71ea0f2d2512282ea61b5d4aefb5",
     "provider": "UNFCCC",
@@ -1622,8 +1622,8 @@
     "version": "v01-0",
     "rule": "Definitions for grouped smallholder projects include participants, monitoring entity, and leakage belt.",
     "tags": [
-      "eligibility",
-      "definition"
+      "definition",
+      "eligibility"
     ],
     "sha256": "5d650f96f8684972c6c2be15a37e424ac380a8c2fdca745db42ebe1643e8cda5",
     "provider": "UNFCCC",
@@ -1638,8 +1638,8 @@
     "version": "v01-0",
     "rule": "Project boundary includes above- and below-ground biomass, dead wood, litter, and soil carbon pools unless excluded with justification.",
     "tags": [
-      "eligibility",
-      "boundary"
+      "boundary",
+      "eligibility"
     ],
     "sha256": "a942e22bc527f9b38347b5ad05c4825591a6bbdec10d6e08303223c35c3846f8",
     "provider": "UNFCCC",
@@ -1654,8 +1654,8 @@
     "version": "v01-0",
     "rule": "Baseline scenario assumes continuation of pre-project land use with carbon stock change set to zero.",
     "tags": [
-      "calc",
-      "baseline"
+      "baseline",
+      "calc"
     ],
     "sha256": "c8336f5f6ee266da4266a731726ccf24820577ca6352d3e5bf5c383e20e2a632",
     "provider": "UNFCCC",
@@ -1716,8 +1716,8 @@
     "version": "v01-0",
     "rule": "Data and parameters table specifies default biomass factors and sampling requirements.",
     "tags": [
-      "parameter",
-      "data"
+      "data",
+      "parameter"
     ],
     "sha256": "3375e21ee36a077c878d10a74e12036c8c7d9fd6c8bcc85d93b5249ff9289353",
     "provider": "UNFCCC",
@@ -1747,8 +1747,8 @@
     "version": "v01-0",
     "rule": "Non-permanence risk buffer determined via Tool 15 and updated when risk profile changes.",
     "tags": [
-      "uncertainty",
-      "permanence"
+      "permanence",
+      "uncertainty"
     ],
     "sha256": "cc28ee2c5b1b7bcdd8dbc8b38955e6eb871cecef3b44368080aec08199606e5b",
     "provider": "UNFCCC",
@@ -1763,8 +1763,8 @@
     "version": "v01-0",
     "rule": "Normative tools and references (Tools 02, 08, 12, 14, 15, 16) must be accessible to grouped project manager.",
     "tags": [
-      "reporting",
-      "reference"
+      "reference",
+      "reporting"
     ],
     "sha256": "8c0e06c585f6ec322150ef8372e5f620392a062ef16c13fc7aff78bb67e496cb",
     "provider": "UNFCCC",
@@ -1824,8 +1824,8 @@
     "version": "v03-1",
     "rule": "Definitions clarify wetland geomorphology, participant aggregation, and leakage belt concepts.",
     "tags": [
-      "eligibility",
-      "definition"
+      "definition",
+      "eligibility"
     ],
     "sha256": "a837df7fd85425e68421e1e3002cf012ff4675c756264336eb58149075a053d2",
     "provider": "UNFCCC",
@@ -1840,8 +1840,8 @@
     "version": "v03-1",
     "rule": "Project boundary includes on-site hydrological interventions and relevant carbon pools except where justified.",
     "tags": [
-      "eligibility",
-      "boundary"
+      "boundary",
+      "eligibility"
     ],
     "sha256": "026d02de41ef06fee779d7c94af25e7d5c1db90c13fad423e158ce666f42c094",
     "provider": "UNFCCC",
@@ -1856,8 +1856,8 @@
     "version": "v03-1",
     "rule": "Baseline assumes continuation of pre-project wetland degradation with zero additional removals.",
     "tags": [
-      "calc",
-      "baseline"
+      "baseline",
+      "calc"
     ],
     "sha256": "eab42f1a05ea732da552ef34fa7fb0cf321a7dcfd72663659b1731481e9dd7ec",
     "provider": "UNFCCC",
@@ -1918,8 +1918,8 @@
     "version": "v03-1",
     "rule": "Data tables specify default biomass factors, hydrological parameters, and monitoring records.",
     "tags": [
-      "parameter",
-      "data"
+      "data",
+      "parameter"
     ],
     "sha256": "54ab0d3d4724f7202cdd7b40349930ea4097d2c7598e8994f6ba8e41f894f8b2",
     "provider": "UNFCCC",
@@ -1949,8 +1949,8 @@
     "version": "v03-1",
     "rule": "Permanence buffer contributions determined via Tool 15 wetland risk factors.",
     "tags": [
-      "uncertainty",
-      "permanence"
+      "permanence",
+      "uncertainty"
     ],
     "sha256": "8adab52d9161d1c71c61d67f99720eb032ed9c87461e04164ebfb08cbece779f",
     "provider": "UNFCCC",
@@ -1965,8 +1965,8 @@
     "version": "v03-1",
     "rule": "Normative tools and references maintained for monitoring and verification teams.",
     "tags": [
-      "reporting",
-      "reference"
+      "reference",
+      "reporting"
     ],
     "sha256": "c57da507c1f47546a76cc6d9d20ecbafc3471ce8d5785300028147461c89935d",
     "provider": "UNFCCC",
@@ -2003,5 +2003,1430 @@
     "category": "Forestry",
     "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
     "sectionId": "S-13"
+  },
+  {
+    "id": "R-1-0001",
+    "rule_id": "R-1-0001",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "LUF pathway to certification",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "e80a7c288dbb405b297738f80938794c853feee3f41a781700baae83a97cdf14",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0002",
+    "rule_id": "R-1-0002",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "Conjunction with P&R and Product Requirements",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "291443b7f3b3502d5711c196853a48e653058136eeb3591d1874d29303051303",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-2-0001",
+    "rule_id": "R-2-0001",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "A/R activity types",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "1e9250cd13cd1d36e2402e4154a911ae6af7bb5860175bf6ca585b64363fdbce",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0002",
+    "rule_id": "R-2-0002",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "AGR activity types",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "0edad647e5283a5384ec607026d7c681d975fa558666a165330ec8262f951c20",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0003",
+    "rule_id": "R-2-0003",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "FSC dual certification",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "4b89eda8d9cdf28276fce9aca6ab809cbc88c9e09a9bba30fe1650e5cef3b6fa",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0004",
+    "rule_id": "R-2-0004",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "A/R secured titles",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "6d95ecbccdd96b350dc0592726b970eeb74cc483d7222694aeaa1152282ea419",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0005",
+    "rule_id": "R-2-0005",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "AGR secured titles - developer on behalf",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "0314c85d65969f7612ed738a3e4972936b92751ffd6baf2c800ae0a1d55155b4",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0006",
+    "rule_id": "R-2-0006",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "AGR secured titles - developer acts alone",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "b4fb7cc10ebacf7cafc98e09dfee6ff66783eeb2f17ebc6470792062f4e32349",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0007",
+    "rule_id": "R-2-0007",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "New area addition",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "379eaa2b334d1bf2c08d0cc9d2b763881fed4299cd2bf450e680d7883b535012",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0008",
+    "rule_id": "R-2-0008",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "Double counting prevention",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "dfdebb8943d82595a4e3345b1e41d44b1db131d5da9d1d5f38f473f36ae40d2f",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-3-0001",
+    "rule_id": "R-3-0001",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "Climate resilience - AGR",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "d230d00341056ed8025850701c70b1d26428285dd1b96cc1eb1eff9d0e52a128",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0002",
+    "rule_id": "R-3-0002",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "Safeguarding assessment",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "634c9ef92f756d11c2b19b9131610728002a28677544618878d186f818f09781",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0003",
+    "rule_id": "R-3-0003",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "10% biodiversity protection",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "cbeab542adf9a8a0a196935f2bb79a64515092a4128cf8308f73f3dd90119798",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0004",
+    "rule_id": "R-3-0004",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "Water body buffer zone",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "4ede43bb91f7aa1b313689d1e98c762c67ef0077225c43fa47ca2330a1da705c",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0005",
+    "rule_id": "R-3-0005",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "Stakeholder consultation timing",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "05fccd2c2cb16c1f63a88b922d8e92b8cac84d39205e9d2f840bc140e81ed8ec",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0006",
+    "rule_id": "R-3-0006",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "Verification frequency",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "252a6f3feb7312a956917109b5dc7bd9d208bc8cfa09955123e873139544b7aa",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0007",
+    "rule_id": "R-3-0007",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "Additionality - CDM tool A/R",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "ae877b508df45dc33a1f1a92546e7c0775008db590684c225aaf2ef17576795e",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0008",
+    "rule_id": "R-3-0008",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "Additionality - CDM tool AGR",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "6191aba6655676a8a09f00291414def3af781626c72eb641b1b0287e507c6a65",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0009",
+    "rule_id": "R-3-0009",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "Additionality - positive list A/R",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "ece28c36899ff7e44bcdeb55f9e2ada22ac6050eb0933af4d69bb8743973dc22",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0010",
+    "rule_id": "R-3-0010",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "Additionality - positive list AGR",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "610f5f9d4ad64308fdfff4a5c437dd7c8cc0e635b341b1ac39c646bd16d70f26",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0011",
+    "rule_id": "R-3-0011",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "Retroactive issuance limit",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "6cce22419122a82f79e463accdc6884348bbfb17f3c92669ce0ade10a7128f4b",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-4-0001",
+    "rule_id": "R-4-0001",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "GIS vector layers",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "b03ee893e290b4e1afe8148764228bd27ff7728063eee92da4095277cc7401e0",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-4-0002",
+    "rule_id": "R-4-0002",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "GPS and mapping",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "0fcef37122a7f1985859a9d4dc1e59319cf800b3f2d7f9aeab27ada7d9a226a0",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-5-0001",
+    "rule_id": "R-5-0001",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "Uncertainty target",
+    "tags": [
+      "uncertainty"
+    ],
+    "sha256": "629c68e069817ff10d3809849007bb85c34ba8020380948ab11c9f7e423f61bb",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-5-0002",
+    "rule_id": "R-5-0002",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "Three uncertainty approaches",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "23fd6d80915862c0d0b9a2a7e7057f526601201268714d25a8c0b123cab8c028",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-5-0003",
+    "rule_id": "R-5-0003",
+    "methodology": "GS-00XX",
+    "version": "v1-0",
+    "rule": "Uncertainty deduction table",
+    "tags": [
+      "uncertainty"
+    ],
+    "sha256": "25c12ac414099d3e268bde005449111b5ebcb02e7ae6a22f0877c60eb6bb98bd",
+    "provider": "GoldStandard",
+    "category": "LUF",
+    "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-1-0001",
+    "rule_id": "R-1-0001",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "REDD forest land definition",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "52141e269d88305ad9b13f870f8ca10f4484c8c22607963cd4cd55a04f2bf649",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0002",
+    "rule_id": "R-1-0002",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "REDD baseline deforestation category",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "bf9811bfea978e7c49764b6dac7e90036758664006b902ac56296eaa42441e64",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0003",
+    "rule_id": "R-1-0003",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "AUDef agent criteria",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "00cbdbe138f6b389c1a880f737a47f072775fead317ed1dec163fd163e5bb570",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0004",
+    "rule_id": "R-1-0004",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "APDef legal authorization",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "678a523405f36e139933146d1ca912e300d2c6178dd9032590c24e98a2a0c023",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0005",
+    "rule_id": "R-1-0005",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "WRC water table prohibition",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "be6bedd75431d247a4a656bf288871c9795ae6c0671041ecfb7222a107aa812e",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0006",
+    "rule_id": "R-1-0006",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "WRC organic soil burning prohibition",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "91a0b5e7967dc0f8d8f44a888475ba0c7adbebee207269e34dd9362464db6bcd",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0007",
+    "rule_id": "R-1-0007",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "WRC nitrogen fertilizer prohibition",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "d2b05ed211088f6d19e2a0988b0a6bfc603f8e50dda64cb88d375f74f09b0c69",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0008",
+    "rule_id": "R-1-0008",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "WRC hydrological connectivity check",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "43fbbe518f2168f0739d90d8da1c5b2aaad9281eab6c1fbd830d22aaaf174369",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0009",
+    "rule_id": "R-1-0009",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "RWE prior land use requirement",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "ab5c45e692407b3a3742c22b56eec0f762d4e2f19d8277c50874fb015d0d12c8",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0010",
+    "rule_id": "R-1-0010",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Peatland VCS definition",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "8d78ca8cd7ea859b860f741b22d54afa8ff84a9a2df7022f7555cb3504efcef8",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0011",
+    "rule_id": "R-1-0011",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Tidal wetland restoration activities",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "19b33f334e497ad08b33ba21ceb35159d14f473e08c6f3a6eb5cba1389ff598e",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0012",
+    "rule_id": "R-1-0012",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "CIW tidal wetland conservation activities",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "521d2f7fee3cb762a46063cc78a38bb15988a42485885bc28b49afa3ae935f9d",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0013",
+    "rule_id": "R-1-0013",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "AUWD agent criteria",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "e807d82c16104d5468b0d457cf93378d577929ea416f044a33d0da46c0273b76",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0014",
+    "rule_id": "R-1-0014",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "IFM and ARR exclusion",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "81f28b1f3edad964dce2a643a22122153fd8fc77dbee46b9ac22f235795e77f4",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-0015",
+    "rule_id": "R-1-0015",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Leakage prevention activity restrictions",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "817e056fc9c2a4ebbea1449cd145afdfa5c5254e7fbe556388a2e68d3a74a59b",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-2-0001",
+    "rule_id": "R-2-0001",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Geographic boundary definition",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "f849cfbbdd7760387ae334156e2542110d4e34c3a0e6374f7b5067217693c9b6",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0002",
+    "rule_id": "R-2-0002",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "No spatial overlap between baselines",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "d8442bbfdbc7a725906ffbd77336676eb16418eb4db3870ca95d51d3b27abbce",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0003",
+    "rule_id": "R-2-0003",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Exclusion of land in other GHG programs",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "db1ee812291d5cc9e89e0f14708c1782f3e72fc80382ccd30ec4636c549242aa",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0004",
+    "rule_id": "R-2-0004",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "REDD reference region definition",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "e7881d7e6dfe2065fdeb062b3f4588197f1c85759d706f73da2641090c983969",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0005",
+    "rule_id": "R-2-0005",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "REDD proxy area definition",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "a0681bb80c2516a181aade1a5aa4597cf0e9ab85633d3cdce3f17ecbc73391aa",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0006",
+    "rule_id": "R-2-0006",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Stratification requirement",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "c7baed21bd60d9cb72868a2af4a770c53c39477afc92b0d7bc5bf50510b5201d",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0007",
+    "rule_id": "R-2-0007",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Carbon pool selection per activity type",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "a0063cb9b0d0e735617146d18e0a76c8482ff03142e14a43f09ef6660cead820",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0008",
+    "rule_id": "R-2-0008",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "REDD mandatory carbon pools",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "786ebde31828b41979e13fd68a9bd333ac6f5b36e3926e8dd96878a9066d32cb",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0009",
+    "rule_id": "R-2-0009",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "WRC carbon pools",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "69e2c6d44e06831b2514ba0a63a84d44936c4d33902e92b47d99d830981851eb",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0010",
+    "rule_id": "R-2-0010",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "REDD GHG source identification",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "a6036cea6bbde6624ae4948ab4d585e3e1819343f6ddfc0ff1d5dee3b09f3eba",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0011",
+    "rule_id": "R-2-0011",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "WRC GHG source identification",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "2306f4c09037a888eb119a6c7e945e48d7b396d7387c6dfc365fa3922850b1c0",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0012",
+    "rule_id": "R-2-0012",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Consistency rule: baseline-project source matching",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "9d06dfe9022c5a5fb9bcddf1fcfa242c619ffa4706d15afc1625a6b13bd7db1f",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0013",
+    "rule_id": "R-2-0013",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Historical reference period",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "89db52e60428cac29022da548a87b4133ace507772943688e38a9f9021a40cc2",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0014",
+    "rule_id": "R-2-0014",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Crediting period duration",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "032643d1972aecf5f5007b86e0726f899de30e6ad8e2277aa7c1018f4d9d6c8f",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0015",
+    "rule_id": "R-2-0015",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "WRC 100-year SOC difference requirement",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "6d2adff24d4e4d7ec52e5e37c0fc4e0dc2d6b676cde1525e7f3972d26ef6e8c8",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-2-0016",
+    "rule_id": "R-2-0016",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Tidal wetland sea-level rise boundary",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "4c7ce0b03dbd8765ba5ba023eba5239cd15a6828e022bda765d5a6aad852a807",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-2"
+  },
+  {
+    "id": "R-3-0001",
+    "rule_id": "R-3-0001",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Baseline scenario determination via VT0001",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "55779878fc03fb27c0e5e739825d64b9acb51030372df7b5fa22e2b0475cc2b5",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0002",
+    "rule_id": "R-3-0002",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Minimum alternative scenario list",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "26ab264a1809c3b2166697d17a8eb65c611e56cde7be0d7e39630939f7b74a45",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0003",
+    "rule_id": "R-3-0003",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Barrier analysis baseline selection",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "70c5e8634904eb82d506e48023957a4b9e16efb597a87c0409ddc8c9ce9512d5",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0004",
+    "rule_id": "R-3-0004",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Investment analysis baseline selection",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "594d4962fb3115da6fda7afdcb6ce82d6a867e10da9ab6164e3a4f3b1f707985",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0005",
+    "rule_id": "R-3-0005",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "REDD baseline modules",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "ba6edadcb45dfcf249dba3b894495958872f83e4e1b18992882e7b3a1456462a",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0006",
+    "rule_id": "R-3-0006",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "WRC baseline modules",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "8a2443c47f506291fd4ed3e4b4629e78238363fd33f0a5cf0d5f3b0c36239669",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0007",
+    "rule_id": "R-3-0007",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Baseline reassessment frequency",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "8cb1e6ab5ad8967e077d66d43352e4070c302dbf92c7d5edf097f94b1b51b885",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-3-0008",
+    "rule_id": "R-3-0008",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "JNR data use",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "819b900b5d098fb6ca8f7645ef75ac56b2c7c08034c6d5c5af99733ef5132187",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-3"
+  },
+  {
+    "id": "R-4-0001",
+    "rule_id": "R-4-0001",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "VT0001 additionality requirement",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "1c0c31d20d85958deb92611987867bc8c171283796ed4205f23e221a89053ef2",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-4-0002",
+    "rule_id": "R-4-0002",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Tidal wetland additionality method",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "2994e9cc4bbadc251d3bf4478abd722786f1ccc17d33974e2e3f52698187405a",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-5-0001",
+    "rule_id": "R-5-0001",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "REDD net emission reduction equation",
+    "tags": [
+      "equation"
+    ],
+    "sha256": "8f46519cd9683999a31285321276bf6bc1893a937b4645d2000ef14fde006d96",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-5-0002",
+    "rule_id": "R-5-0002",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "WRC net emission reduction equation",
+    "tags": [
+      "equation"
+    ],
+    "sha256": "f4f8c62e247955c21ec2f41839119ab2de4125a2e0000f708e1810d6deacec15",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-5-0003",
+    "rule_id": "R-5-0003",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "REDD leakage components",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "5476e5f4625d826b9878819649d4c36fd382797649f153c90faa570631bdb543",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-5-0004",
+    "rule_id": "R-5-0004",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "WRC leakage components",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "efcce4111b5e78a0a993b991c3f4e3b149c88914d47b1fd08e1bd03cc6ac09ec",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-5-0005",
+    "rule_id": "R-5-0005",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Buffer pool contribution calculation",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "4767b8b8d4d6849d25aa6300f45f7a9ebeaac8bf2bcf72be334627fa69a5930b",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-5-0006",
+    "rule_id": "R-5-0006",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Uncertainty adjustment",
+    "tags": [
+      "uncertainty"
+    ],
+    "sha256": "8aff0e4d9d828fba99bdd4b3841a8d9dee043cf7dad1aac2dc049a3cbd9a64c1",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-5-0007",
+    "rule_id": "R-5-0007",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "VCU calculation",
+    "tags": [
+      "equation"
+    ],
+    "sha256": "db534a69e6991bf38f74816491c1eca3b8d662d6723acc6278177df7aeee1857",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-5-0008",
+    "rule_id": "R-5-0008",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Carbon pool modules for REDD",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "2a24aff2d1ce781fb8d13051abee41bf2afb21de1ac19a32ed24fbf909255eda",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-5-0009",
+    "rule_id": "R-5-0009",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Project emissions modules",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "64975790f3f4f8cf470c39bfaeb6d2e7ca66ce4d04d56b64470ac46fe275fd29",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-6-0001",
+    "rule_id": "R-6-0001",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Monitoring plan four tasks",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "f85726d8a3be64ed833437b140ae359d671d2f71bedd7ba074a63a3f164fc74f",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-6"
+  },
+  {
+    "id": "R-6-0002",
+    "rule_id": "R-6-0002",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Monitoring plan content requirements",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "1ad63b3517606b8f35c6d36b7ec3ed3d33ecb688a04155f9184156490c84ef6e",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-6"
+  },
+  {
+    "id": "R-6-0003",
+    "rule_id": "R-6-0003",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Geographic position recording",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "ae491a52276d1f02818f42014c2c83886f60a4b995156f65dc3b9616407d49cc",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-6"
+  },
+  {
+    "id": "R-6-0004",
+    "rule_id": "R-6-0004",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "SOP and QA/QC requirements",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "d8a9eba8dfa58c87abdd19a45cb62f1b732924277e097db8bd9691b0140829f1",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-6"
+  },
+  {
+    "id": "R-6-0005",
+    "rule_id": "R-6-0005",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "REDD forest cover monitoring",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "af090babbb1b09579e4f1a49ea51073d770da3e7407f769dc2bea880108d18a0",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-6"
+  },
+  {
+    "id": "R-6-0006",
+    "rule_id": "R-6-0006",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "WRC compliance monitoring",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "8fcc1d408cbe22ab935e6f5f92018c92acf09d333df9b98e3331ea1e28014c10",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-6"
+  },
+  {
+    "id": "R-6-0007",
+    "rule_id": "R-6-0007",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Expert judgment documentation",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "88a47c78d0a2d89935aa43b9c5581f66a137f9d159581d5be944be8092ff8d0d",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-6"
+  },
+  {
+    "id": "R-6-0008",
+    "rule_id": "R-6-0008",
+    "methodology": "VM0007",
+    "version": "v1-8",
+    "rule": "Uncertainty reduction requirements",
+    "tags": [
+      "uncertainty"
+    ],
+    "sha256": "85ceca8a37ce69cfbee06177af139a23f3bb904685d95a1a1d6a2332811646b0",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+    "sectionId": "S-6"
+  },
+  {
+    "id": "R-1-0001",
+    "rule_id": "R-1-0001",
+    "methodology": "VM0047",
+    "version": "v1-0",
+    "rule": "Forest definition threshold",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "add20937877da759f2ac48798e9322ccd50a8414f6d8bed0c6786bc02d713619",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-0/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-4-0001",
+    "rule_id": "R-4-0001",
+    "methodology": "VM0047",
+    "version": "v1-0",
+    "rule": "ARR applicability land eligibility",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "feec588a8015bcca4344e63a4d7cc1c22572709bd08b0c0c40c5a53630b6e5ad",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-0/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-4-0002",
+    "rule_id": "R-4-0002",
+    "methodology": "VM0047",
+    "version": "v1-0",
+    "rule": "ARR quantification approach selection",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "b102b2d27a1100b635862d33cc7b3042126d800de681ae48d3979d4709cdac8e",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-0/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-5-0001",
+    "rule_id": "R-5-0001",
+    "methodology": "VM0047",
+    "version": "v1-0",
+    "rule": "Geographic boundary and stratification",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "c458b1fecd478161a8545d4c2ed59f60e7eac5fe2dd72f5a89353f58ae914768",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-5-0002",
+    "rule_id": "R-5-0002",
+    "methodology": "VM0047",
+    "version": "v1-0",
+    "rule": "Carbon pool selection",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "19d39df4995880fe8767ec67b252208dfc8c95caaa4af846fa0bd54f91c711f1",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-0/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-6-0001",
+    "rule_id": "R-6-0001",
+    "methodology": "VM0047",
+    "version": "v1-0",
+    "rule": "Baseline scenario determination",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "bdb240c130a5db51874317e616c5b196f3a968e3bba77861eeb159fb1ce87bde",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-0/rules.json",
+    "sectionId": "S-6"
+  },
+  {
+    "id": "R-7-0001",
+    "rule_id": "R-7-0001",
+    "methodology": "VM0047",
+    "version": "v1-0",
+    "rule": "VT0001 additionality requirement",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "30d1a387aab908ce10832c33e4752f15011a240aefe8cb4e3fe168c7a677b7d1",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-0/rules.json",
+    "sectionId": "S-7"
+  },
+  {
+    "id": "R-8-0001",
+    "rule_id": "R-8-0001",
+    "methodology": "VM0047",
+    "version": "v1-0",
+    "rule": "Area-based quantification equation",
+    "tags": [
+      "equation"
+    ],
+    "sha256": "f032ff5f234d16ec183f1122d7fc3721036fc27b65d4bb197494ffc2ba1089b6",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-0/rules.json",
+    "sectionId": "S-8-2"
+  },
+  {
+    "id": "R-8-0002",
+    "rule_id": "R-8-0002",
+    "methodology": "VM0047",
+    "version": "v1-0",
+    "rule": "Leakage quantification",
+    "tags": [
+      "calc"
+    ],
+    "sha256": "3a2d111eb086cb91ec9a705ef95ccae7cb1abab46dedf683479c6e665d1fb0e3",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-0/rules.json",
+    "sectionId": "S-8-3"
+  },
+  {
+    "id": "R-8-0003",
+    "rule_id": "R-8-0003",
+    "methodology": "VM0047",
+    "version": "v1-0",
+    "rule": "Uncertainty deduction",
+    "tags": [
+      "uncertainty"
+    ],
+    "sha256": "f049f4d9f02f83a0233f8de46b1499890286e6cde9467694bd5f72d2d7cb1eb9",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-0/rules.json",
+    "sectionId": "S-8-4"
+  },
+  {
+    "id": "R-9-0001",
+    "rule_id": "R-9-0001",
+    "methodology": "VM0047",
+    "version": "v1-0",
+    "rule": "Monitoring plan requirements",
+    "tags": [
+      "monitoring"
+    ],
+    "sha256": "8f40e10bd6c515f8d905cd11bdbd2aa5217bbb2ddfc7ec0481332ff99b52f594",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-0/rules.json",
+    "sectionId": "S-9-3"
   }
 ]

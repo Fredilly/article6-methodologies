@@ -71,4 +71,12 @@ jobs:
       - run: npm ci || npm i
       - run: npm run validate:rich
       - run: npm run validate:lean
+      - name: Check manifest freshness
+        run: |
+          node scripts/build-manifest.mjs
+          if ! git diff --exit-code manifest/index.json; then
+            echo "FAIL: manifest/index.json is stale — rebuild with 'node scripts/build-manifest.mjs' and commit"
+            exit 1
+          fi
+      - run: node tests/manifest-pack-gs.test.js
       - run: node tests/pack-review-grade.test.js
