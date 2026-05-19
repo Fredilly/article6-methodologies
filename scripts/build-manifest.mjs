@@ -47,7 +47,7 @@ for (const file of files) {
       (typeof r.section_title === "string" && r.section_title) ||
       "";
 
-    const tags = Array.isArray(r.tags) ? r.tags.map(tag => String(tag)) : [];
+    const tags = Array.isArray(r.tags) ? r.tags.map(tag => String(tag)).sort((a, b) => a.localeCompare(b)) : [];
     const pdfId =
       (typeof r.pdfId === "string" && r.pdfId) ||
       (typeof r.pdf_id === "string" && r.pdf_id) ||

@@ -67,6 +67,16 @@ function main() {
     gsEntries.every(entry => typeof entry.rule === 'string' && entry.rule.length > 0),
     'GS manifest entries should include non-empty rule text',
   );
+  assert.ok(
+    gsEntries.every(entry => {
+      if (!Array.isArray(entry.tags) || entry.tags.length === 0) return true;
+      for (let i = 1; i < entry.tags.length; i++) {
+        if (entry.tags[i - 1].localeCompare(entry.tags[i]) > 0) return false;
+      }
+      return true;
+    }),
+    'every manifest entry tags array must be sorted deterministically',
+  );
 
   if (hasGnuTarSupport()) {
     run('bash', ['scripts/pack-methodologies.sh']);
