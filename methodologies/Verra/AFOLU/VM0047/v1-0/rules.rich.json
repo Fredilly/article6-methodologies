@@ -21,13 +21,27 @@
       "coverage_scope": "rule",
       "expected_evidence": [
         {
-          "description": "Required: Forest definition threshold",
-          "id": "forest-definition-threshold",
-          "label": "Forest definition threshold",
-          "required": true
+          "evidence_type_id": "pdd",
+          "evidence_kind": "mandatory",
+          "label": "Forest Definition Application",
+          "description": "PDD documenting the forest definition threshold applied and host-country forest definition if applicable.",
+          "required": true,
+          "accepted_sources": [
+            "project_design_document"
+          ]
+        },
+        {
+          "evidence_type_id": "legal_title",
+          "evidence_kind": "mandatory",
+          "label": "Land Tenure Documentation",
+          "description": "Legal title or land tenure evidence confirming project eligibility under the forest definition.",
+          "required": true,
+          "accepted_sources": [
+            "legal_documentation"
+          ]
         }
       ],
-      "expected_evidence_status": "seed_unverified",
+      "expected_evidence_status": "source_audited",
       "section_refs": [
         {
           "relationship": "source_section",
@@ -65,7 +79,8 @@
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-1-0001",
     "summary": "Forest definition threshold",
     "type": "eligibility",
-    "when": []
+    "when": [],
+    "requirement_kind": "document-check"
   },
   {
     "id": "Verra.AFOLU.VM0047.v1-0.R-4-0001",
@@ -89,13 +104,27 @@
       "coverage_scope": "rule",
       "expected_evidence": [
         {
-          "description": "Required: ARR applicability land eligibility",
-          "id": "arr-applicability-land-eligibility",
-          "label": "ARR applicability land eligibility",
-          "required": true
+          "evidence_type_id": "pdd",
+          "evidence_kind": "mandatory",
+          "label": "Applicability Conditions Documentation",
+          "description": "PDD documenting compliance with VM0047 applicability conditions including non-forest status and exclusion criteria.",
+          "required": true,
+          "accepted_sources": [
+            "project_design_document"
+          ]
+        },
+        {
+          "evidence_type_id": "project_boundary",
+          "evidence_kind": "mandatory",
+          "label": "Project Boundary GIS File",
+          "description": "GIS boundary file confirming no tidal wetland areas within the project boundary.",
+          "required": true,
+          "accepted_sources": [
+            "gis_data"
+          ]
         }
       ],
-      "expected_evidence_status": "seed_derived_pending_review",
+      "expected_evidence_status": "source_audited",
       "section_refs": [
         {
           "relationship": "source_section",
@@ -134,7 +163,8 @@
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-4-0001",
     "summary": "ARR applicability land eligibility",
     "type": "eligibility",
-    "when": []
+    "when": [],
+    "requirement_kind": "document-check"
   },
   {
     "id": "Verra.AFOLU.VM0047.v1-0.R-4-0002",
@@ -158,13 +188,17 @@
       "coverage_scope": "rule",
       "expected_evidence": [
         {
-          "description": "Required: ARR quantification approach selection",
-          "id": "arr-quantification-approach-selection",
-          "label": "ARR quantification approach selection",
-          "required": true
+          "evidence_type_id": "pdd",
+          "evidence_kind": "mandatory",
+          "label": "Quantification Approach Selection",
+          "description": "PDD documenting whether area-based or census-based approach is selected and the rationale.",
+          "required": true,
+          "accepted_sources": [
+            "project_design_document"
+          ]
         }
       ],
-      "expected_evidence_status": "seed_unverified",
+      "expected_evidence_status": "source_audited",
       "section_refs": [
         {
           "relationship": "source_section",
@@ -201,7 +235,8 @@
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-4-0002",
     "summary": "ARR quantification approach selection",
     "type": "eligibility",
-    "when": []
+    "when": [],
+    "requirement_kind": "document-check"
   },
   {
     "id": "Verra.AFOLU.VM0047.v1-0.R-5-0001",
@@ -225,13 +260,28 @@
       "coverage_scope": "rule",
       "expected_evidence": [
         {
-          "description": "Required: Geographic boundary and stratification",
-          "id": "geographic-boundary-and-stratification",
-          "label": "Geographic boundary and stratification",
-          "required": true
+          "evidence_type_id": "project_boundary",
+          "evidence_kind": "mandatory",
+          "label": "Project Boundary GIS with Strata",
+          "description": "GIS file defining the fixed project boundary with stratification layers (land cover, soil type, management regime).",
+          "required": true,
+          "accepted_sources": [
+            "gis_data",
+            "project_design_document"
+          ]
+        },
+        {
+          "evidence_type_id": "pdd",
+          "evidence_kind": "mandatory",
+          "label": "Boundary and Stratification Documentation",
+          "description": "PDD documenting the ex-ante boundary and stratification approach.",
+          "required": true,
+          "accepted_sources": [
+            "project_design_document"
+          ]
         }
       ],
-      "expected_evidence_status": "seed_unverified",
+      "expected_evidence_status": "source_audited",
       "section_refs": [
         {
           "relationship": "source_section",
@@ -269,7 +319,8 @@
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-5-0001",
     "summary": "Geographic boundary and stratification",
     "type": "eligibility",
-    "when": []
+    "when": [],
+    "requirement_kind": "document-check"
   },
   {
     "id": "Verra.AFOLU.VM0047.v1-0.R-5-0002",
@@ -293,13 +344,28 @@
       "coverage_scope": "rule",
       "expected_evidence": [
         {
-          "description": "Required: Carbon pool selection",
-          "id": "carbon-pool-selection",
-          "label": "Carbon pool selection",
-          "required": true
+          "evidence_type_id": "pdd",
+          "evidence_kind": "mandatory",
+          "label": "Carbon Pool Selection Documentation",
+          "description": "PDD documenting which carbon pools are included and the rationale for any exclusions.",
+          "required": true,
+          "accepted_sources": [
+            "project_design_document"
+          ]
+        },
+        {
+          "evidence_type_id": "calculation_workbook",
+          "evidence_kind": "conditional",
+          "label": "Appendix 2 Significance Test",
+          "description": "Calculation workbook showing the Appendix 2 significance test for excluded carbon pools.",
+          "required": false,
+          "evidence_condition": "IF optional pool (litter, dead wood, SOC) is excluded",
+          "accepted_sources": [
+            "calculation_workbook"
+          ]
         }
       ],
-      "expected_evidence_status": "seed_derived_pending_review",
+      "expected_evidence_status": "source_audited",
       "section_refs": [
         {
           "relationship": "source_section",
@@ -340,7 +406,8 @@
     "when": [],
     "tags": [
       "calc"
-    ]
+    ],
+    "requirement_kind": "document-check"
   },
   {
     "id": "Verra.AFOLU.VM0047.v1-0.R-6-0001",
@@ -364,13 +431,27 @@
       "coverage_scope": "rule",
       "expected_evidence": [
         {
-          "description": "Required: Baseline scenario determination",
-          "id": "baseline-scenario-determination",
-          "label": "Baseline scenario determination",
-          "required": true
+          "evidence_type_id": "baseline_report",
+          "evidence_kind": "mandatory",
+          "label": "Baseline Scenario Documentation",
+          "description": "PDD or baseline report documenting the baseline scenario determination and approach selection.",
+          "required": true,
+          "accepted_sources": [
+            "project_design_document"
+          ]
+        },
+        {
+          "evidence_type_id": "pdd",
+          "evidence_kind": "mandatory",
+          "label": "Performance Benchmark Reference",
+          "description": "PDD documenting the performance benchmark (area-based) or zero baseline justification (census-based).",
+          "required": true,
+          "accepted_sources": [
+            "project_design_document"
+          ]
         }
       ],
-      "expected_evidence_status": "seed_derived_pending_review",
+      "expected_evidence_status": "source_audited",
       "section_refs": [
         {
           "relationship": "source_section",
@@ -408,7 +489,8 @@
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-6-0001",
     "summary": "Baseline scenario determination",
     "type": "calc",
-    "when": []
+    "when": [],
+    "requirement_kind": "document-check"
   },
   {
     "id": "Verra.AFOLU.VM0047.v1-0.R-7-0001",
@@ -432,13 +514,27 @@
       "coverage_scope": "rule",
       "expected_evidence": [
         {
-          "description": "Required: VT0001 additionality requirement",
-          "id": "vt0001-additionality-requirement",
-          "label": "VT0001 additionality requirement",
-          "required": true
+          "evidence_type_id": "additionality_assessment",
+          "evidence_kind": "mandatory",
+          "label": "Additionality Assessment",
+          "description": "PDD section documenting regulatory surplus, performance benchmark or investment barrier and common practice analysis.",
+          "required": true,
+          "accepted_sources": [
+            "project_design_document"
+          ]
+        },
+        {
+          "evidence_type_id": "pdd",
+          "evidence_kind": "mandatory",
+          "label": "Additionality Approach Selection",
+          "description": "PDD documenting whether performance method or project method is applied for additionality demonstration.",
+          "required": true,
+          "accepted_sources": [
+            "project_design_document"
+          ]
         }
       ],
-      "expected_evidence_status": "seed_derived_pending_review",
+      "expected_evidence_status": "source_audited",
       "section_refs": [
         {
           "relationship": "source_section",
@@ -477,7 +573,8 @@
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-7-0001",
     "summary": "VT0001 additionality requirement",
     "type": "eligibility",
-    "when": []
+    "when": [],
+    "requirement_kind": "human-judgment-required"
   },
   {
     "id": "Verra.AFOLU.VM0047.v1-0.R-8-0001",
@@ -501,13 +598,37 @@
       "coverage_scope": "rule",
       "expected_evidence": [
         {
-          "description": "Required: Area-based quantification equation",
-          "id": "area-based-quantification-equation",
-          "label": "Area-based quantification equation",
-          "required": true
+          "evidence_type_id": "calculation_workbook",
+          "evidence_kind": "mandatory",
+          "label": "Area-Based Quantification Workbook",
+          "description": "Workbook implementing Equation system (CRt = MIN(DeltaC_WP_t, DeltaC_WP_t x (1 - PB_t)) - LK_t - UNC_t) with all input parameters traceable to sections.",
+          "required": true,
+          "accepted_sources": [
+            "calculation_workbook"
+          ]
+        },
+        {
+          "evidence_type_id": "emissions_reductions_calculation",
+          "evidence_kind": "mandatory",
+          "label": "Emissions Reductions Summary",
+          "description": "Summary table of annualized carbon dioxide removals by monitoring interval.",
+          "required": true,
+          "accepted_sources": [
+            "calculation_workbook"
+          ]
+        },
+        {
+          "evidence_type_id": "parameter_sheet",
+          "evidence_kind": "mandatory",
+          "label": "Quantification Parameter Sheet",
+          "description": "Parameter sheet documenting all inputs to the quantification equations including carbon stock changes, performance benchmark, leakage, and uncertainty.",
+          "required": true,
+          "accepted_sources": [
+            "calculation_workbook"
+          ]
         }
       ],
-      "expected_evidence_status": "seed_unverified",
+      "expected_evidence_status": "source_audited",
       "section_refs": [
         {
           "relationship": "source_section",
@@ -543,7 +664,8 @@
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-8-0001",
     "summary": "Area-based quantification equation",
     "type": "equation",
-    "when": []
+    "when": [],
+    "requirement_kind": "calculable"
   },
   {
     "id": "Verra.AFOLU.VM0047.v1-0.R-8-0002",
@@ -567,13 +689,29 @@
       "coverage_scope": "rule",
       "expected_evidence": [
         {
-          "description": "Required: Leakage quantification",
-          "id": "leakage-quantification",
-          "label": "Leakage quantification",
-          "required": true
+          "evidence_type_id": "leakage_assessment",
+          "evidence_kind": "mandatory",
+          "label": "Leakage Assessment",
+          "description": "Documentation of activity shifting leakage assessment and deduction calculation.",
+          "required": true,
+          "accepted_sources": [
+            "calculation_workbook",
+            "project_design_document"
+          ]
+        },
+        {
+          "evidence_type_id": "calculation_workbook",
+          "evidence_kind": "conditional",
+          "label": "Leakage Calculation",
+          "description": "Workbook section calculating activity shifting leakage and project emissions (fossil fuel combustion, biomass burning).",
+          "required": false,
+          "evidence_condition": "IF leakage deduction is applied",
+          "accepted_sources": [
+            "calculation_workbook"
+          ]
         }
       ],
-      "expected_evidence_status": "seed_unverified",
+      "expected_evidence_status": "source_audited",
       "section_refs": [
         {
           "relationship": "source_section",
@@ -611,7 +749,8 @@
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-8-0002",
     "summary": "Leakage quantification",
     "type": "calc",
-    "when": []
+    "when": [],
+    "requirement_kind": "document-check"
   },
   {
     "id": "Verra.AFOLU.VM0047.v1-0.R-8-0003",
@@ -635,13 +774,27 @@
       "coverage_scope": "rule",
       "expected_evidence": [
         {
-          "description": "Required: Uncertainty deduction",
-          "id": "uncertainty-deduction",
-          "label": "Uncertainty deduction",
-          "required": true
+          "evidence_type_id": "calculation_workbook",
+          "evidence_kind": "mandatory",
+          "label": "Uncertainty Calculation",
+          "description": "Workbook showing uncertainty analysis at 90% confidence interval with 15% threshold determination and proportional deduction if exceeded.",
+          "required": true,
+          "accepted_sources": [
+            "calculation_workbook"
+          ]
+        },
+        {
+          "evidence_type_id": "field_data",
+          "evidence_kind": "mandatory",
+          "label": "Field Measurement Data for Uncertainty",
+          "description": "Field measurement data used as input to the uncertainty analysis, including plot-level biomass estimates.",
+          "required": true,
+          "accepted_sources": [
+            "field_data"
+          ]
         }
       ],
-      "expected_evidence_status": "seed_unverified",
+      "expected_evidence_status": "source_audited",
       "section_refs": [
         {
           "relationship": "source_section",
@@ -679,7 +832,8 @@
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-8-0003",
     "summary": "Uncertainty deduction",
     "type": "uncertainty",
-    "when": []
+    "when": [],
+    "requirement_kind": "calculable"
   },
   {
     "id": "Verra.AFOLU.VM0047.v1-0.R-9-0001",
@@ -703,13 +857,31 @@
       "coverage_scope": "rule",
       "expected_evidence": [
         {
-          "description": "Required: Monitoring plan requirements",
-          "id": "monitoring-plan-requirements",
-          "label": "Monitoring plan requirements",
-          "required": true
+          "evidence_type_id": "monitoring_plan",
+          "evidence_kind": "mandatory",
+          "label": "Monitoring Plan Document",
+          "description": "Monitoring plan documenting data collection procedures, QA/QC procedures, data archiving, and roles and responsibilities.",
+          "required": true,
+          "accepted_sources": [
+            "project_design_document"
+          ]
+        },
+        {
+          "evidence_type_id": "monitoring_report",
+          "evidence_kind": "mandatory",
+          "label": "Monitoring Reports",
+          "description": "Periodic monitoring reports demonstrating implementation of the monitoring plan.",
+          "required": true,
+          "accepted_sources": [
+            "monitoring_report"
+          ],
+          "monitoring_report": {
+            "frequency": "annual",
+            "expectation": "Report must include: plot-level carbon stock estimates, QA/QC results, disturbance tracking, and evidence of monitoring plan adherence."
+          }
         }
       ],
-      "expected_evidence_status": "seed_unverified",
+      "expected_evidence_status": "source_audited",
       "section_refs": [
         {
           "relationship": "source_section",
@@ -748,6 +920,7 @@
     "stable_id": "Verra.AFOLU.VM0047.v1-0.R-9-0001",
     "summary": "Monitoring plan requirements",
     "type": "monitoring",
-    "when": []
+    "when": [],
+    "requirement_kind": "document-check"
   }
 ]

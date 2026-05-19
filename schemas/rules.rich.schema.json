@@ -202,9 +202,45 @@
           "expected_evidence": {
             "items": {
               "additionalProperties": false,
+              "anyOf": [
+                {
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "required": [
+                    "evidence_type_id"
+                  ]
+                }
+              ],
               "properties": {
+                "accepted_sources": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "minItems": 1,
+                  "type": "array",
+                  "uniqueItems": true
+                },
                 "description": {
                   "minLength": 1,
+                  "type": "string"
+                },
+                "evidence_condition": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "evidence_kind": {
+                  "enum": [
+                    "mandatory",
+                    "optional",
+                    "conditional"
+                  ],
+                  "type": "string"
+                },
+                "evidence_type_id": {
+                  "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$",
                   "type": "string"
                 },
                 "id": {
@@ -241,7 +277,6 @@
                 }
               },
               "required": [
-                "id",
                 "label",
                 "description",
                 "required"
