@@ -6,7 +6,7 @@
   "artifact_quality_standard": {
     "adoption_status": "review_grade",
     "note": "VM0047 v1.0 Review-Grade achieved. All 11 rules source-audited with complete expected evidence metadata. taxonomy-ref: config/evidence-taxonomy.json. App consumption contract version pinned below.",
-    "version": "review_contract_v2"
+    "version": "review_contract_v1"
   },
   "artifact_status": {
     "rules": "source_audited",
