@@ -6,9 +6,9 @@
     "VF5 added VM0047 v1.0 (ARR): 27 sections, 8 source-backed rules, 3 blocked.",
     "VF5.1: hardened source spans for VM0047 source-audited rules.",
     "VF5.2: promoted R-5-0002 via Appendix 2; VM0047 blockers reduced to 3.",
-    "Off-roadmap: Method Grade A quality standard, reports, and validator added. Only Grade A methods are first-class app-ready.",
-    "VM0007 (25/58 rules source_audited, 33 blocked): not Grade A.",
-    "VM0047 (8/11 rules source_audited, 3 blocked): not Grade A."
+    "Off-roadmap: Source-Audited Methodology Standard (grade_a legacy alias), reports, and validator added. Only Source-Audited methods are first-class app-ready.",
+    "VM0007 (25/58 rules source_audited, 33 blocked): not Source-Audited.",
+    "VM0047 (8/11 rules source_audited, 3 blocked): not Source-Audited."
   ],
   "phases": [
     {
@@ -38,7 +38,7 @@
     },
     {
       "id": "vf6-app-downstream-consumption",
-      "name": "Downstream app.article6 consumption (Grade A methods only)",
+      "name": "Downstream app.article6 consumption (Source-Audited methods only)",
       "status": "not_started"
     }
   ]

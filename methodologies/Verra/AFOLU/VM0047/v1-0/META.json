@@ -1,7 +1,9 @@
 {
   "active_date": "2023-09-28",
   "export": {
-    "evidence_intelligence_version": "1.0.0"
+    "evidence_intelligence_version": "1.0.0",
+    "metadata_version": "1.0.0",
+    "path": "methodologies/Verra/_export/export-metadata.json"
   },
   "artifact_quality_standard": {
     "adoption_status": "review_grade",

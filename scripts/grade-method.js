@@ -39,7 +39,7 @@ function isGradeA(methodDir) {
   const methodologyRef = meta.references?.tools?.[0]?.doc ||
     `${meta.standard}/${meta.methodology.replace(/ .*/, '')}@${meta.version}`;
 
-  // 0. META must declare Grade A readiness
+  // 0. META must declare Source-Audited readiness
   if (meta.artifact_quality_standard?.adoption_status !== 'grade_a') {
     errors.push(`META adoption_status is "${meta.artifact_quality_standard?.adoption_status}", expected "grade_a"`);
   }
@@ -62,7 +62,7 @@ function isGradeA(methodDir) {
 
   // 2. No draft rules
   if (draftRules.length > 0) {
-    errors.push(`${draftRules.length} draft_unverified rules exist (require 0 for Grade A)`);
+    errors.push(`${draftRules.length} draft_unverified rules exist (require 0 for Source-Audited)`);
   }
 
   // 2a. No active external_unencoded deps
@@ -137,9 +137,9 @@ if (args.length > 0) {
     const dir = path.resolve(ROOT, arg);
     const result = isGradeA(dir);
     if (result.gradeA) {
-      console.log(`${path.relative(ROOT, dir)}: Grade A`);
+      console.log(`${path.relative(ROOT, dir)}: Source-Audited`);
     } else {
-      console.log(`${path.relative(ROOT, dir)}: NOT Grade A`);
+      console.log(`${path.relative(ROOT, dir)}: NOT Source-Audited`);
       for (const err of result.errors) {
         console.error(`  - ${err}`);
       }

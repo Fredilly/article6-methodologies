@@ -1,5 +1,5 @@
 {
-  "goal": "Upgrade Verra forestry methods to S-grade (Grade A) for methodology-linked review readiness. S-grade = all sections and rules source-audited, no active blocked external dependencies, methodology_linked_review_ready: true.",
+  "goal": "Upgrade Verra forestry methods to S-grade (Source-Audited Methodology Standard) for methodology-linked review readiness. S-grade = all sections and rules source-audited, no active blocked external dependencies, methodology_linked_review_ready: true. (grade_a is a legacy/internal alias.)",
   "last_updated_at": "2026-05-12T23:55:00Z",
   "notes": [
     "VM0047 v1.0 reached S-grade.",

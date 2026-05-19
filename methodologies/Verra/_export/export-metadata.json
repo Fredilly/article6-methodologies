@@ -1,0 +1,302 @@
+{
+  "standard": "Verra",
+  "metadata_version": "1.0.0",
+  "last_updated": "2026-05-15T00:00:00Z",
+  "section_taxonomy": [
+    {
+      "id": "project-description",
+      "title": "Project Description",
+      "description": "General project information including project title, location, methodology, crediting period, and project proponent details.",
+      "required": true,
+      "export_order": 1,
+      "parent_id": null,
+      "evidence_categories": [
+        "project_description"
+      ]
+    },
+    {
+      "id": "applicability",
+      "title": "Applicability Conditions",
+      "description": "Conditions under which the methodology is applicable, including geographic, sectoral, and technical scope limitations.",
+      "required": true,
+      "export_order": 2,
+      "parent_id": null,
+      "evidence_categories": [
+        "applicability_evidence"
+      ]
+    },
+    {
+      "id": "project-boundary",
+      "title": "Project Boundary",
+      "description": "Geographic and temporal boundaries of the project, including carbon pools, GHG sources, and spatial delineation.",
+      "required": true,
+      "export_order": 3,
+      "parent_id": null,
+      "evidence_categories": [
+        "boundary_delineation"
+      ]
+    },
+    {
+      "id": "baseline",
+      "title": "Baseline Scenario",
+      "description": "Determination of the most plausible baseline scenario and demonstration that the project scenario differs from the baseline.",
+      "required": true,
+      "export_order": 4,
+      "parent_id": null,
+      "evidence_categories": [
+        "baseline_evidence"
+      ]
+    },
+    {
+      "id": "additionality",
+      "title": "Additionality",
+      "description": "Demonstration that the project activity results in GHG emission reductions or removals that are additional to what would occur in the absence of the project.",
+      "required": true,
+      "export_order": 5,
+      "parent_id": null,
+      "evidence_categories": [
+        "additionality_evidence"
+      ]
+    },
+    {
+      "id": "quantification",
+      "title": "Quantification of GHG Emission Reductions and Removals",
+      "description": "Detailed calculation of baseline emissions, project emissions, leakage, and net anthropogenic GHG emission reductions or removals.",
+      "required": true,
+      "export_order": 6,
+      "parent_id": null,
+      "evidence_categories": [
+        "quantification_evidence"
+      ]
+    },
+    {
+      "id": "monitoring",
+      "title": "Monitoring Plan",
+      "description": "Description of the monitoring plan including data and parameters to be monitored, monitoring frequency, and QA/QC procedures.",
+      "required": true,
+      "export_order": 7,
+      "parent_id": null,
+      "evidence_categories": [
+        "monitoring_evidence"
+      ]
+    },
+    {
+      "id": "leakage",
+      "title": "Leakage",
+      "description": "Assessment of leakage emissions occurring outside the project boundary as a result of the project activity.",
+      "required": true,
+      "export_order": 8,
+      "parent_id": null,
+      "evidence_categories": [
+        "leakage_evidence"
+      ]
+    },
+    {
+      "id": "permanence",
+      "title": "Non-Permanence Risk Assessment",
+      "description": "Risk assessment for reversal of GHG emission reductions or removals, including the use of the Verra Non-Permanence Risk Tool (T-BAR) and buffer pool contribution.",
+      "required": true,
+      "export_order": 9,
+      "parent_id": null,
+      "evidence_categories": [
+        "permanence_evidence"
+      ]
+    },
+    {
+      "id": "ccb",
+      "title": "Climate, Community & Biodiversity (CCB) Safeguards",
+      "description": "Assessment of climate, community, and biodiversity impacts and safeguards. Required for projects seeking dual VCS + CCB certification.",
+      "required": false,
+      "export_order": 10,
+      "parent_id": null,
+      "evidence_categories": [
+        "ccb_evidence"
+      ]
+    },
+    {
+      "id": "sdg-contributions",
+      "title": "SDG Contributions",
+      "description": "Documentation of the project's contribution to the Sustainable Development Goals (SDGs), including alignment with host country priorities.",
+      "required": false,
+      "export_order": 11,
+      "parent_id": null,
+      "evidence_categories": [
+        "sdg_evidence"
+      ]
+    }
+  ],
+  "required_export_sections": [
+    "project-description",
+    "applicability",
+    "project-boundary",
+    "baseline",
+    "additionality",
+    "quantification",
+    "monitoring",
+    "leakage",
+    "permanence"
+  ],
+  "evidence_categories": {
+    "project_description": {
+      "title": "Project Description Evidence",
+      "description": "Project design documents, methodology selection, location maps, and proponent credentials.",
+      "section_ids": [
+        "project-description"
+      ]
+    },
+    "applicability_evidence": {
+      "title": "Applicability Evidence",
+      "description": "Evidence demonstrating that the project meets all applicability conditions of the selected methodology, including geographic, temporal, and technical conditions.",
+      "section_ids": [
+        "applicability"
+      ]
+    },
+    "boundary_delineation": {
+      "title": "Boundary Delineation Evidence",
+      "description": "GIS shapefiles, land tenure documents, carbon pool selection justification, and GHG source identification.",
+      "section_ids": [
+        "project-boundary"
+      ]
+    },
+    "baseline_evidence": {
+      "title": "Baseline Evidence",
+      "description": "Historical land-use data, remote sensing analysis, stratified sampling data, and baseline scenario justification.",
+      "section_ids": [
+        "baseline"
+      ]
+    },
+    "additionality_evidence": {
+      "title": "Additionality Evidence",
+      "description": "Investment analysis, barrier analysis, common practice analysis, and regulatory surplus demonstration.",
+      "section_ids": [
+        "additionality"
+      ]
+    },
+    "quantification_evidence": {
+      "title": "Quantification Evidence",
+      "description": "Baseline emission calculations, project emission calculations, leakage calculations, and ex-ante estimation data.",
+      "section_ids": [
+        "quantification"
+      ]
+    },
+    "monitoring_evidence": {
+      "title": "Monitoring Evidence",
+      "description": "Monitoring plan, parameter tables, QA/QC procedures, calibration records, and monitoring reports.",
+      "section_ids": [
+        "monitoring"
+      ]
+    },
+    "leakage_evidence": {
+      "title": "Leakage Evidence",
+      "description": "Leakage belt analysis, market leakage assessment, activity shifting prevention measures, and leakage emission calculations.",
+      "section_ids": [
+        "leakage",
+        "quantification"
+      ]
+    },
+    "permanence_evidence": {
+      "title": "Permanence Evidence",
+      "description": "Non-permanence risk assessment using T-BAR tool, buffer pool contribution calculation, and risk mitigation measures.",
+      "section_ids": [
+        "permanence"
+      ]
+    },
+    "ccb_evidence": {
+      "title": "CCB Evidence",
+      "description": "Community impact assessment, biodiversity impact assessment, stakeholder consultation records, and benefit-sharing plan (CCB projects only).",
+      "section_ids": [
+        "ccb"
+      ]
+    },
+    "sdg_evidence": {
+      "title": "SDG Evidence",
+      "description": "Mapping of project impacts to specific SDG targets, contribution quantification, and host country alignment documentation.",
+      "section_ids": [
+        "sdg-contributions"
+      ]
+    }
+  },
+  "section_mappings": [
+    {
+      "methodology": "VM0007",
+      "version": "v1-8",
+      "mappings": [
+        {
+          "methodology_section_id": "S-8",
+          "export_section_id": "project-description"
+        },
+        {
+          "methodology_section_id": "S-1",
+          "export_section_id": "applicability"
+        },
+        {
+          "methodology_section_id": "S-2",
+          "export_section_id": "project-boundary"
+        },
+        {
+          "methodology_section_id": "S-3",
+          "export_section_id": "baseline"
+        },
+        {
+          "methodology_section_id": "S-4",
+          "export_section_id": "additionality"
+        },
+        {
+          "methodology_section_id": "S-5",
+          "export_section_id": "quantification"
+        },
+        {
+          "methodology_section_id": "S-6",
+          "export_section_id": "monitoring"
+        },
+        {
+          "methodology_section_id": "S-5-3",
+          "export_section_id": "leakage"
+        }
+      ]
+    },
+    {
+      "methodology": "VM0047",
+      "version": "v1-0",
+      "mappings": [
+        {
+          "methodology_section_id": "S-2",
+          "export_section_id": "project-description"
+        },
+        {
+          "methodology_section_id": "S-4",
+          "export_section_id": "applicability"
+        },
+        {
+          "methodology_section_id": "S-5",
+          "export_section_id": "project-boundary"
+        },
+        {
+          "methodology_section_id": "S-6",
+          "export_section_id": "baseline"
+        },
+        {
+          "methodology_section_id": "S-7",
+          "export_section_id": "additionality"
+        },
+        {
+          "methodology_section_id": "S-8",
+          "export_section_id": "quantification"
+        },
+        {
+          "methodology_section_id": "S-8-3",
+          "export_section_id": "leakage"
+        },
+        {
+          "methodology_section_id": "S-9",
+          "export_section_id": "monitoring"
+        }
+      ]
+    }
+  ],
+  "disclaimers": {
+    "readiness": "This report is a readiness assessment prepared for informational purposes only. It does not constitute a validation opinion, verification opinion, or certification under the Verified Carbon Standard (VCS) or any other Verra program. No claim of conformance with VCS requirements shall be made until a validation or verification body (VVB) has issued a positive opinion following a full audit.",
+    "validation": "This draft has been prepared to support the validation process under the Verified Carbon Standard (VCS). It has not been independently verified by a validation or verification body (VVB) and does not represent a validation opinion. Final validation shall be confirmed by a VVB in accordance with the VCS Standard and relevant program rules.",
+    "verification": "This report has been prepared in connection with verification under the Verified Carbon Standard (VCS). Verification is subject to completion of a full audit by an accredited validation or verification body (VVB). No verified carbon units (VCUs) may be issued until a positive verification opinion has been issued."
+  }
+}
