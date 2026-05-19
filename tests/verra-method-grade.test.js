@@ -29,7 +29,7 @@ function main() {
   const vm0047Meta = readJSON(path.join(VM0047_DIR, 'META.json'));
   assert.equal(vm0047Meta.methodology_linked_review_ready, true, 'VM0047 META methodology_linked_review_ready must be true');
   assert.equal(vm0047Meta.artifact_status?.rules, 'source_audited', 'VM0047 META rules status must be source_audited');
-  assert.equal(vm0047Meta.artifact_quality_standard?.adoption_status, 'grade_a', 'VM0047 META adoption_status must be grade_a (legacy/internal alias for Source-Audited)');
+  assert.equal(vm0047Meta.artifact_quality_standard?.adoption_status, 'review_grade', 'VM0047 META adoption_status must be review_grade after Review-Grade promotion');
 
   // 4. VM0007 has no remaining blocked external dependencies
   const vm0007Blocked = readJSON(path.join(VM0007_DIR, 'blocked-external-dependencies.json'));

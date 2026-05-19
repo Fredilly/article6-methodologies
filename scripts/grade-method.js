@@ -39,9 +39,9 @@ function isGradeA(methodDir) {
   const methodologyRef = meta.references?.tools?.[0]?.doc ||
     `${meta.standard}/${meta.methodology.replace(/ .*/, '')}@${meta.version}`;
 
-  // 0. META must declare Source-Audited readiness
-  if (meta.artifact_quality_standard?.adoption_status !== 'grade_a') {
-    errors.push(`META adoption_status is "${meta.artifact_quality_standard?.adoption_status}", expected "grade_a"`);
+  // 0. META must declare Source-Audited readiness (review_grade is a superset)
+  if (!['grade_a', 'review_grade'].includes(meta.artifact_quality_standard?.adoption_status)) {
+    errors.push(`META adoption_status is "${meta.artifact_quality_standard?.adoption_status}", expected "grade_a" or "review_grade"`);
   }
   if (meta.artifact_status?.rules !== 'source_audited') {
     errors.push(`META artifact_status.rules is "${meta.artifact_status?.rules}", expected "source_audited"`);
