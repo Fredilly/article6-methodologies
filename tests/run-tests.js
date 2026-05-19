@@ -27,6 +27,7 @@ const tests = [
   'tests/pr-accept-harness.test.js',
   'tests/rc-s7-ingestion-hardening-proof.test.js',
   'tests/export-metadata.test.js',
+  'tests/pack-review-grade.test.js',
 ];
 
 function main() {

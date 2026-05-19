@@ -71,3 +71,4 @@ jobs:
       - run: npm ci || npm i
       - run: npm run validate:rich
       - run: npm run validate:lean
+      - run: node tests/pack-review-grade.test.js
