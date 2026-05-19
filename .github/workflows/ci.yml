@@ -79,3 +79,4 @@ jobs:
             exit 1
           fi
       - run: node tests/manifest-pack-gs.test.js
+      - run: node tests/pack-review-grade.test.js

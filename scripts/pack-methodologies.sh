@@ -41,7 +41,13 @@ rsync -a --prune-empty-dirs \
   --exclude='*' \
   methodologies/ "$TMP/methodologies-pack/methodologies/"
 
-# 2) include registry + manifest if they exist (safe no-op)
+# 2) include evidence taxonomy (needed by app.article6 for Review-Grade evidence resolution)
+if [[ -f config/evidence-taxonomy.json ]]; then
+  mkdir -p "$TMP/methodologies-pack/config"
+  cp config/evidence-taxonomy.json "$TMP/methodologies-pack/config/evidence-taxonomy.json"
+fi
+
+# 3) include registry + manifest if they exist (safe no-op)
 if [[ -d registry ]]; then rsync -a registry/ "$TMP/methodologies-pack/registry/"; fi
 if [[ -d manifest ]]; then rsync -a manifest/ "$TMP/methodologies-pack/manifest/"; fi
 
