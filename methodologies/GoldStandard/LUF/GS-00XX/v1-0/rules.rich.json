@@ -1,19 +1,140 @@
 [
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-1-0001",
-    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-1-0001"
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-1-0001",
+    "source_span_text": "This Requirements document, hereafter \"the LUF Requirements\", functions as part of a pathway to certification within Gold Standard for the Global Goals. The Requirements enable eligible forestry and agriculture activities to undergo Design and Performance Certification, including issuance of Certified SDG Impacts.",
+    "section_context": {
+      "section_id": "S-1",
+      "section_title": "Scope and Applicability",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-1",
+      "page_start": 8,
+      "page_end": 8,
+      "lineage": [
+        "1.1.1"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-1-0001",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "luf-pathway-declaration",
+          "label": "LUF Pathway Declaration",
+          "description": "Project Design Document declaring the project follows the LUF pathway to certification.",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "The project is an eligible forestry or agriculture activity.",
+        "The project intends to undergo Design and Performance Certification under Gold Standard for the Global Goals."
+      ]
+    }
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-1-0002",
-    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-1-0002"
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-1-0002",
+    "source_span_text": "A/R and AGR projects shall apply in conjunction with the Principles & Requirements and those referenced or associated. Through conformity to these two documents and relevant Methodologies and Product Requirements such as GHG Emissions Reduction & Sequestration Product Requirements, a Project may be issued with Gold Standard Verified Emissions Reductions (GS VERs) and other products.",
+    "section_context": {
+      "section_id": "S-1",
+      "section_title": "Scope and Applicability",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-1",
+      "page_start": 8,
+      "page_end": 8,
+      "lineage": [
+        "1.1.2"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-1-0002",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "pr-conformance",
+          "label": "Principles & Requirements Conformance",
+          "description": "Evidence that the project conforms to Gold Standard Principles & Requirements.",
+          "required": true
+        },
+        {
+          "id": "ghg-product-requirements",
+          "label": "GHG Product Requirements",
+          "description": "Conformance with GHG Emissions Reduction & Sequestration Product Requirements.",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "The project applies LUF Requirements in conjunction with Principles & Requirements.",
+        "The project conforms to relevant GHG Emissions Reduction & Sequestration Product Requirements."
+      ]
+    }
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0001",
-    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0001"
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0001",
+    "source_span_text": "A/R projects: (a) Can include planting trees (b) Can include single-species plantations (c) Can apply all silvicultural systems. For example: i. Conservation forests (no use of timber) ii. Forests with selective harvesting iii. Rotation forestry (d) All projects can include agriculture (agroforestry) or pasture (silvopasture) activities.",
+    "section_context": {
+      "section_id": "S-2",
+      "section_title": "General Eligibility Criteria",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+      "page_start": 9,
+      "page_end": 9,
+      "lineage": [
+        "2.1.2"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0001",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "ar-activity-description",
+          "label": "A/R Activity Description",
+          "description": "Description of afforestation/reforestation activities including silvicultural system and any agroforestry/silvopasture components.",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "The project includes eligible A/R activities such as planting trees or single-species plantations.",
+        "The project applies a recognized silvicultural system (conservation, selective harvesting, or rotation forestry)."
+      ]
+    }
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0002",
-    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0002"
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0002",
+    "source_span_text": "AGR projects include eligible project activities that are covered by an approved Gold Standard SDG Impact Quantification methodology.",
+    "section_context": {
+      "section_id": "S-2",
+      "section_title": "General Eligibility Criteria",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+      "page_start": 9,
+      "page_end": 9,
+      "lineage": [
+        "2.1.3"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0002",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "approved-methodology",
+          "label": "Approved Methodology Reference",
+          "description": "Reference to the approved Gold Standard SDG Impact Quantification methodology covering the AGR activities.",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "The AGR project activities are covered by an approved Gold Standard SDG Impact Quantification methodology."
+      ]
+    }
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0003",
@@ -206,7 +327,43 @@
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0007",
-    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0007"
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0007",
+    "source_span_text": "New Areas can be added or removed to an existing project area anytime after a project reaches Registered status (after successfully completing Design Certification) by paying the applicable review fee. A site visit and an opinion by a VVB is required to confirm the eligibility of the proposed activities in the new areas.",
+    "section_context": {
+      "section_id": "S-2",
+      "section_title": "General Eligibility Criteria",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-2",
+      "page_start": 10,
+      "page_end": 13,
+      "lineage": [
+        "2.1.15",
+        "2.1.17"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0007",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "new-area-vvb-opinion",
+          "label": "VVB Opinion for New Area",
+          "description": "VVB opinion confirming eligibility of proposed activities in the new areas based on a site visit.",
+          "required": true
+        },
+        {
+          "id": "design-certification-proof",
+          "label": "Design Certification Proof",
+          "description": "Evidence that the project has reached Registered status by successfully completing Design Certification.",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "The project has reached Registered status after successfully completing Design Certification.",
+        "A VVB site visit opinion confirms eligibility of proposed activities in new areas."
+      ]
+    }
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-2-0008",
@@ -249,7 +406,42 @@
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0001",
-    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0001"
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0001",
+    "source_span_text": "The project shall preserve the adaptive capacity integral to every AGR project. The project shall demonstrate how its design and implementation preserves or enhances the adaptive capacity of the project area and the people living within the project area. This can be demonstrated by training, knowledge sharing, livelihood diversification, soil fertility improvement and other methods.",
+    "section_context": {
+      "section_id": "S-3",
+      "section_title": "Eligibility Principles and Requirements",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "page_start": 16,
+      "page_end": 16,
+      "lineage": [
+        "3.1.8"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0001",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "adaptive-capacity-plan",
+          "label": "Adaptive Capacity Plan",
+          "description": "Documentation demonstrating how the project preserves or enhances adaptive capacity of the area and people.",
+          "required": true
+        },
+        {
+          "id": "training-records",
+          "label": "Training and Knowledge Sharing Records",
+          "description": "Records of training, knowledge sharing, or livelihood diversification activities.",
+          "required": false
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "The project preserves or enhances the adaptive capacity of the project area.",
+        "The project demonstrates this through training, knowledge sharing, livelihood diversification, soil fertility improvement, or other methods."
+      ]
+    }
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0002",
@@ -471,23 +663,200 @@
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0007",
-    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0007"
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0007",
+    "source_span_text": "Option 1 - CDM Tools: A/R project: Shall apply the latest version of the A/R CDM Combined tool to identify the baseline scenario and demonstrate additionality in A/R CDM project activities. The CDM specific terms of the A/R CDM additionality tool (tCERs, A/R CDM project, etc.) shall be interpreted in the Gold Standard context.",
+    "section_context": {
+      "section_id": "S-3",
+      "section_title": "Eligibility Principles and Requirements",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "page_start": 17,
+      "page_end": 17,
+      "lineage": [
+        "3.1.16"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0007",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "ar-cdm-combined-tool",
+          "label": "A/R CDM Combined Tool Application",
+          "description": "Application of the latest A/R CDM Combined tool to identify baseline and demonstrate additionality, interpreted in Gold Standard context.",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "The A/R project applies the latest A/R CDM Combined tool.",
+        "CDM-specific terms are interpreted in the Gold Standard context."
+      ]
+    }
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0008",
-    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0008"
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0008",
+    "source_span_text": "AGR project: Shall apply the latest version of CDM Guidelines for the establishment of sector specific standardized baselines, or Combined tool to identify the baseline scenario and demonstrate additionality.",
+    "section_context": {
+      "section_id": "S-3",
+      "section_title": "Eligibility Principles and Requirements",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "page_start": 17,
+      "page_end": 17,
+      "lineage": [
+        "3.1.16"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0008",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "agr-baseline-tool",
+          "label": "AGR Baseline and Additionally Tool",
+          "description": "Application of CDM standardized baselines guidelines or Combined tool for baseline and additionality.",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "The AGR project applies the latest CDM standardized baselines guidelines or Combined tool."
+      ]
+    }
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0009",
-    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0009"
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0009",
+    "source_span_text": "Option 2 – Positive List: A/R Project: Shall meet requirements (a), (b) and (c) in the list below and at least one of the requirements from (d) to (g) to apply option 2. (a) The project is located in a Least Developed Country (LDCs) or in a region with a recent UNDP Human Development Indicator below 0.8. AND (b) The project shall have no intention of creating a forest for the commercial use of the timber or non-timber forest products. AND (c) The eligible area is not mandatory by law, and the project activity is not common practice or legally required.",
+    "section_context": {
+      "section_id": "S-3",
+      "section_title": "Eligibility Principles and Requirements",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "page_start": 17,
+      "page_end": 18,
+      "lineage": [
+        "3.1.16"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0009",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "ldc-hdi-proof",
+          "label": "LDC or HDI Proof",
+          "description": "Evidence that the project is in an LDC or region with HDI below 0.8.",
+          "required": true
+        },
+        {
+          "id": "non-commercial-intent",
+          "label": "Non-Commercial Intent Declaration",
+          "description": "Declaration that the project has no intention of creating a forest for commercial timber or non-timber products.",
+          "required": true
+        },
+        {
+          "id": "positive-list-criteria",
+          "label": "Positive List Criteria Evidence",
+          "description": "Evidence meeting at least one of criteria (d)-(g): native species, community benefit, 5+ species, or HDI<0.5/SIDS.",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "The project is in an LDC or region with HDI below 0.8.",
+        "The project has no commercial intent for timber or non-timber products.",
+        "The activity is not mandatory by law or common practice.",
+        "At least one additional positive-list criterion is met."
+      ]
+    }
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0010",
-    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0010"
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0010",
+    "source_span_text": "AGR Project: Shall meet requirements (a), (b) and (c) in the list below and at least one of the requirements from (d) to (g) to apply option 2. (a) The project area is located in a country or region with HDI<=0.7. AND (b) The project activity is not mandatory / enforced. AND (c) The mean annual precipitation in the project area is less than 600 mm. OR (d) In the project area a minimum of 5 native crop species are being cultivated in a locally adapted agroforestry system. OR (e) The project is a smallholder project and results in Gold Standard VERs of less than 60,000 tCO2eq per annum. OR (f) The project area is located in a country or region with a recognised HDI of less than 0.5 or in a Small Island Developing State (SIDS).",
+    "section_context": {
+      "section_id": "S-3",
+      "section_title": "Eligibility Principles and Requirements",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "page_start": 18,
+      "page_end": 18,
+      "lineage": [
+        "3.1.16"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0010",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "hdi-proof",
+          "label": "HDI <= 0.7 Proof",
+          "description": "Evidence that the project area is in a country or region with HDI <= 0.7.",
+          "required": true
+        },
+        {
+          "id": "non-mandatory-proof",
+          "label": "Non-Mandatory Activity Proof",
+          "description": "Evidence that the project activity is not mandatory or enforced.",
+          "required": true
+        },
+        {
+          "id": "agr-positive-list-criteria",
+          "label": "AGR Positive List Criteria",
+          "description": "Evidence meeting at least one criterion: <600mm rain, 5+ native crop species, smallholder <60ktCO2eq/yr, or HDI<0.5/SIDS.",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "The project area is in a country or region with HDI <= 0.7.",
+        "The project activity is not mandatory or enforced.",
+        "At least one additional AGR positive-list criterion is met."
+      ]
+    }
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0011",
-    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0011"
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0011",
+    "source_span_text": "Retroactive Issuance: Projects can only apply retroactive issuance for a maximum of 3 years. The retroactive start date can be the project start date or 3 years before the date of Design Certification, whichever is the latest.",
+    "section_context": {
+      "section_id": "S-3",
+      "section_title": "Eligibility Principles and Requirements",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-3",
+      "page_start": 19,
+      "page_end": 19,
+      "lineage": [
+        "3.1.17"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-3-0011",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "project-start-date",
+          "label": "Project Start Date Evidence",
+          "description": "Documentation proving the project start date.",
+          "required": true
+        },
+        {
+          "id": "design-certification-date",
+          "label": "Design Certification Date",
+          "description": "Date of Design Certification to calculate the 3-year retroactive window.",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "Retroactive issuance is limited to a maximum of 3 years.",
+        "The retroactive start date is the later of the project start date or 3 years before Design Certification."
+      ]
+    }
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-4-0001",
@@ -531,7 +900,49 @@
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-4-0002",
-    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-4-0002"
+    "stable_id": "GoldStandard.LUF.GS-00XX.v1-0.R-4-0002",
+    "source_span_text": "Project areas: A map with one GPS point per project participant and each project participant shall have a hand-drawn map of its part of the project area. Protected areas: A map with national parks (as by Google Maps) and UNESCO sites.",
+    "section_context": {
+      "section_id": "S-4",
+      "section_title": "Technical Requirements",
+      "section_ref": "GoldStandard.LUF.GS-00XX.v1-0.S-4",
+      "page_start": 21,
+      "page_end": 21,
+      "lineage": [
+        "4.1.2"
+      ]
+    },
+    "requirement_coverage": {
+      "coverage_key": "GoldStandard.LUF.GS-00XX.v1-0.R-4-0002",
+      "coverage_scope": "rule",
+      "expected_evidence": [
+        {
+          "id": "gps-points",
+          "label": "GPS Point Coordinates",
+          "description": "GPS coordinates for each project participant or per 5ha for A/R projects.",
+          "required": true
+        },
+        {
+          "id": "hand-drawn-maps",
+          "label": "Hand-Drawn Area Maps",
+          "description": "Hand-drawn maps showing each participant's part of the project area.",
+          "required": true
+        },
+        {
+          "id": "protected-areas-map",
+          "label": "Protected Areas Map",
+          "description": "Map showing national parks and UNESCO sites in the project region.",
+          "required": true
+        }
+      ]
+    },
+    "rule_detail": {
+      "conditions": [
+        "A map includes one GPS point per project participant (AGR) or per 5ha (A/R).",
+        "Each participant has a hand-drawn map of their project area.",
+        "Protected areas are mapped using national parks and UNESCO site data."
+      ]
+    }
   },
   {
     "id": "GoldStandard.LUF.GS-00XX.v1-0.R-5-0001",
