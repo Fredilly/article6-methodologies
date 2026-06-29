@@ -38,6 +38,7 @@
     "cli:query": "node bin/mrv-cli.js",
     "server:http": "node bin/http-engine-adapter.js",
     "validate:guardrails": "node scripts/check-methodology-guardrails.js",
+    "audit:source-spans": "node scripts/audit-source-spans.js",
     "status:methods": "node scripts/gen-methods-status.mjs",
     "status:sectors": "node scripts/gen-sector-report.mjs",
     "root-cause:index": "node scripts/gen-root-cause-index.mjs",
