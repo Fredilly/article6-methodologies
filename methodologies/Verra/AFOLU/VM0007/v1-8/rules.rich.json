@@ -2165,11 +2165,12 @@
     "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
-      "primary_section": "S-3",
-      "section_anchor": "baseline-scenario",
-      "section_number": "6",
-      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-3",
+      "primary_section": "S-5",
+      "section_anchor": "quantification",
+      "section_number": "8",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-5",
       "sections": [
+        "S-5",
         "S-3"
       ],
       "tools": [
@@ -2184,7 +2185,7 @@
       "section_refs": [
         {
           "relationship": "source_section",
-          "section_id": "S-3"
+          "section_id": "S-5"
         }
       ],
       "section_refs_status": "source_audited"
@@ -2194,16 +2195,16 @@
       "summary": "pending_source_audit"
     },
     "section_context": {
-      "anchor": "baseline-scenario",
+      "anchor": "quantification",
       "lineage": [
-        "baseline-scenario"
+        "quantification"
       ],
       "locator_status": "source_audited",
-      "page_end": 27,
-      "page_start": 25,
-      "section_id": "S-3",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3",
-      "section_title": "Baseline Scenario"
+      "page_end": 29,
+      "page_start": 28,
+      "section_id": "S-5",
+      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-5",
+      "section_title": "Quantification of Estimated GHG Emission Reductions and Removals"
     },
     "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0005",
@@ -2218,11 +2219,12 @@
     "quality_status": "source_audited",
     "refs": {
       "methodology": "Verra/VM0007@v1-8",
-      "primary_section": "S-3",
-      "section_anchor": "baseline-scenario",
-      "section_number": "6",
-      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-3",
+      "primary_section": "S-5",
+      "section_anchor": "quantification",
+      "section_number": "8",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-5",
       "sections": [
+        "S-5",
         "S-3"
       ],
       "tools": [
@@ -2239,7 +2241,7 @@
       "section_refs": [
         {
           "relationship": "source_section",
-          "section_id": "S-3"
+          "section_id": "S-5"
         }
       ],
       "section_refs_status": "source_audited"
@@ -2249,16 +2251,16 @@
       "summary": "pending_source_audit"
     },
     "section_context": {
-      "anchor": "baseline-scenario",
+      "anchor": "quantification",
       "lineage": [
-        "baseline-scenario"
+        "quantification"
       ],
       "locator_status": "source_audited",
       "page_end": 30,
       "page_start": 28,
-      "section_id": "S-3",
-      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-3",
-      "section_title": "Baseline Scenario"
+      "section_id": "S-5",
+      "section_ref": "Verra.AFOLU.VM0007.v1-8.S-5",
+      "section_title": "Quantification of Estimated GHG Emission Reductions and Removals"
     },
     "source_span_status": "source_audited",
     "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0006",
