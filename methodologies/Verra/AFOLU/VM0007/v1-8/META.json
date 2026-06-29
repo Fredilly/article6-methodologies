@@ -1,12 +1,12 @@
 {
-  "active_date": "2024-06-04",
+  "active_date": "2026-06-29",
   "export": {
     "metadata_version": "1.0.0",
     "path": "methodologies/Verra/_export/export-metadata.json"
   },
   "artifact_quality_standard": {
-    "adoption_status": "grade_a",
-    "note": "VM0007 reached the Source-Audited Methodology Standard (grade_a legacy alias). All 58 rules source_audited. All external dependencies resolved or source-locked.",
+    "adoption_status": "grade_a_source_audited",
+    "note": "VM0007 v1.8 frozen at SOURCE-AUDITED. All 58 rules have source_span_text with verbatim PDF text. 58/58 passed audit-source-spans. rich/lean/guardrails validated. Not VVB-grade \u2014 expected_evidence_status contains seed_derived_pending_review / pending_source_audit items that need project-level evidence before VVB grade.",
     "version": "review_contract_v1"
   },
   "artifact_status": {
@@ -17,12 +17,13 @@
   "audit_hashes": {
     "blocked_external_dependencies_sha256": "51a2360a735edcb69623cee27b20cd32b1c6b273c86acf7a13f6aad2a056aa95",
     "rules.rich_sha256": "7e5005043b96adddbfc3519fd68edd5a5eb5c111e9882ab35c22bf5498e59a09",
-    "rules_json_sha256": "481a621ed5c12ab896dee6ed31cc967d99872e709cc9dc6aa4be1cf2f9af1681",
-    "rules_rich_json_sha256": "7e5005043b96adddbfc3519fd68edd5a5eb5c111e9882ab35c22bf5498e59a09",
-    "rules_sha256": "481a621ed5c12ab896dee6ed31cc967d99872e709cc9dc6aa4be1cf2f9af1681",
+    "rules_json_sha256": "bc318d26dd204af31e5bb6b6e7332988579d5bc8d545481df634c766bbf3ed58",
+    "rules_rich_json_sha256": "9fceaa1dc458c847c1236fad73215f56b924ebbec794850b60c0510ace7d0e49",
+    "rules_sha256": "bc318d26dd204af31e5bb6b6e7332988579d5bc8d545481df634c766bbf3ed58",
     "sections_json_sha256": "852125cacbe9d09f0560886fb27621548939033a382d2b1718f50b7694f41201",
     "sections_rich_json_sha256": "4506bb488417a940fc4e84228bff7abcc7e7921fcb9a824fa140bf6e2687b5e3",
-    "source_pdf_sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
+    "source_pdf_sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6",
+    "rules_rich_sha256": "9fceaa1dc458c847c1236fad73215f56b924ebbec794850b60c0510ace7d0e49"
   },
   "automation": {
     "repo_commit": "",
@@ -30,11 +31,9 @@
   },
   "domain": "AFOLU",
   "draft_seed_artifacts": {
-    "note": "All 58 VM0007-backed rules source_audited. S-grade achieved.",
+    "note": "VM0007 v1.8 frozen at SOURCE-AUDITED. Ready for pre-verification readiness reports.",
     "retained": true,
-    "source_audit_pending": [
-      "rules_blocked_by_external_deps"
-    ]
+    "source_audit_pending": []
   },
   "external_dependencies": {
     "methodology_and_tool_refs": [
