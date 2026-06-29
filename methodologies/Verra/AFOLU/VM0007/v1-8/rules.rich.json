@@ -1148,7 +1148,7 @@
     "summary": "Geographic boundary definition",
     "type": "eligibility",
     "when": [],
-    "source_span_text": "5 PROJECT BOUNDARY\n\nThe following categories of boundaries must be defined:\n\n• The geographic boundaries relevant to the project activity;\n\n• The temporal boundaries;\n\n• The carbon pools that the project will consider; and\n\n• The sources and associated types of greenhouse gas emissions that the project will affect.\n\n5.1 Geographical Boundaries\n\n5.1.1 General\n\nThe spatial boundaries of a project must be clearly defined to facilitate accurate measuring, monitoring, accounting, and verification of the project’s emissions reductions and removals. The project activity may contain more than one discrete area of land."
+    "source_span_text": "5.1 Geographical Boundaries\n\n5.1.1 General\nThe spatial boundaries of a project must be clearly defined to facilitate accurate measuring, monitoring, accounting, and verification of the project’s emissions reductions and removals. The project activity may contain more than one discrete area of land. When describing physical project boundaries, the following information must be provided per discrete area:\n\n1) Name of the project area\n2) Unique ID for each discrete parcel of land\n3) Map(s) of the area in the format required by the VCS Standard\n4) Geographic coordinates of each polygon vertex along with the documentation of their accuracy\n5) Total land area\n6) Details of landholder and user rights.\n\nThe geographical boundaries of a project are fixed (ex-ante) and cannot change over the project lifetime (ex post)."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0002",
@@ -1200,7 +1200,7 @@
     "summary": "No spatial overlap between baselines",
     "type": "eligibility",
     "when": [],
-    "source_span_text": "No overlap in boundaries between areas appropriate to each of the baselines. Thus, two project types cannot occur on the same piece of land, other than those including a WRC component (i.e., combined REDD+WRC).\n\nAll land areas registered under any other GHG program must be transparently reported and excluded from the project area."
+    "source_span_text": "Where multiple baselines exist (e.g., planned deforestation, unplanned deforestation, forest degradation, degraded land) there must be no overlap in boundaries between areas appropriate to each of the baselines. Thus, two project types cannot occur on the same piece of land, other than those including a WRC component (i.e., combined REDD+WRC)."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0003",
@@ -1304,7 +1304,7 @@
     "summary": "REDD reference region definition",
     "type": "eligibility",
     "when": [],
-    "source_span_text": "1) Avoiding planned deforestation: project area and proxy area(s). Refer to Module BL-PL for the detailed procedures to define these boundaries.\n\n2) Avoiding unplanned deforestation: project area, reference region, and leakage belt. Refer to Module BL-UP for definitions and the detailed procedures to define these boundaries.\n\nThese procedures also apply to CIW or combined REDD+CIW project activities, see Section 5.1.4."
+    "source_span_text": "In REDD project activities, various kinds of boundaries must be distinguished, depending on the REDD category (planned or unplanned deforestation, forest degradation), i.e., in case of:\n\n1) Avoiding planned deforestation: project area and proxy area(s). Refer to Module BL-PL for the detailed procedures to define these boundaries.\n\n2) Avoiding unplanned deforestation: project area, reference region, and leakage belt. Refer to Module BL-UP for definitions and the detailed procedures to define these boundaries.\n\nThese procedures also apply to CIW or combined REDD+CIW project activities, see Section 5.1.4."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0005",
@@ -1357,7 +1357,7 @@
     "summary": "REDD proxy area definition",
     "type": "eligibility",
     "when": [],
-    "source_span_text": "1) Avoiding planned deforestation: project area and proxy area(s). Refer to Module BL-PL for the detailed procedures to define these boundaries.\n\n2) Avoiding unplanned deforestation: project area, reference region, and leakage belt. Refer to Module BL-UP for definitions and the detailed procedures to define these boundaries.\n\nMethods for establishing the boundaries of areas subject to leakage from activity shifting are provided in the following modules:\n\n• For avoiding planned deforestation: Module LK-ASP\n• For avoiding unplanned deforestation: Module BL-UP"
+    "source_span_text": "Methods for establishing the boundaries of areas subject to leakage from activity shifting are provided in the following modules:\n\n• For avoiding planned deforestation: Module LK-ASP\n• For avoiding unplanned deforestation: Module BL-UP"
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0006",
@@ -1411,7 +1411,7 @@
     "summary": "Stratification requirement",
     "type": "eligibility",
     "when": [],
-    "source_span_text": "A project can include areas subject to different eligible activities (e.g., Area A = avoiding planned deforestation, Area B = avoiding unplanned deforestation, Area C = reforestation, etc.). In such cases the areas that are eligible for different categories must be captured by different strata and clearly delineated (i.e., without spatial overlap), and the procedures outlined below applied to each of them separately. Projects may be stand-alone REDD and/or WRC. Projects may combine WRC with REDD, in a single area.\n\nReference module: VMD0016 Methods for stratification of the project area (X-STR)."
+    "source_span_text": "A project can include areas subject to different eligible activities (e.g., Area A = avoiding planned deforestation, Area B = avoiding unplanned deforestation, Area C = reforestation, etc.). In such cases the areas that are eligible for different categories must be captured by different strata and clearly delineated (i.e., without spatial overlap), and the procedures outlined below applied to each of them separately. Projects may be stand-alone REDD and/or WRC. Projects may combine WRC with REDD, in a single area, in which case they must apply concomitantly the procedures for both categories provided in this methodology, unless, in the case of stand-alone REDD on wetlands, the expected emissions from the soil organic carbon pool or change in the soil organic carbon pool in the project scenario is deemed de minimis, or, in the case of stand-alone RWE with presence of vegetation, the expected emissions from the biomass pool or change in the biomass pool in the project scenario is deemed de minimis. The tool T-SIG or Appendix 1 must be used to justify the omission of carbon pools and emission sources."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0007",
@@ -1464,7 +1464,7 @@
     "summary": "Carbon pool selection per activity type",
     "type": "eligibility",
     "when": [],
-    "source_span_text": "5.3 Carbon Pools\n\n5.3.1 General\n\nAny significant decreases in carbon stock in the project scenario and any significant increases in carbon stock in the baseline scenario must be accounted for. In addition, decreases in the baseline scenario and increases in the project scenario can be accounted for. Where REDD activities take place on wetlands, the project must account for expected emissions from the soil organic carbon pool or change in the soil organic carbon pool in the project scenario, unless they are deemed de minimis. The significance of this pool may be determined by using the tool T-SIG or Appendix 1.\n\nSelection of carbon pools and the appropriate justification must be presented in the PD and in the monitoring report."
+    "source_span_text": "5.3 Carbon Pools\n\n5.3.1 General\nAny significant decreases in carbon stock in the project scenario and any significant increases in carbon stock in the baseline scenario must be accounted for. In addition, decreases in the baseline scenario and increases in the project scenario can be accounted for. Where REDD activities take place on wetlands, the project must account for expected emissions from the soil organic carbon pool or change in the soil organic carbon pool in the project scenario, unless they are deemed de minimis. The significance of this pool may be determined by using the tool T-SIG or Appendix 1. Significance of pools must be determined ex-ante or at baseline reassessment for a specific baseline validity period, as well as at verification for a specific monitoring period.\n\nSelection of carbon pools and the appropriate justification must be presented in PD and in the monitoring report (MR)."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0008",
@@ -1521,7 +1521,7 @@
     "summary": "REDD mandatory carbon pools",
     "type": "calc",
     "when": [],
-    "source_span_text": "5.3.2 REDD\n\nThe following carbon pools must be accounted for in REDD project activities:\n\nAboveground biomass (VMD0001 Estimation of carbon stocks in the above- and belowground biomass in live tree and non-tree pools, CP-AB) – mandatory.\nBelowground biomass – included under CP-AB.\nDead wood (VMD0002 Estimation of carbon stocks in the dead-wood pool, CP-D) – mandatory if dead wood pool is greater in the project scenario.\nLitter (VMD0003 Estimation of carbon stocks in the litter pool, CP-L) – optional.\nSoil organic carbon (VMD0004 Estimation of carbon stocks in the soil organic carbon pool (mineral soils), CP-S) – optional for REDD, mandatory for REDD on wetlands.\nWood products (VMD0005 Estimation of carbon stocks in the long-term wood products pool, CP-W) – mandatory."
+    "source_span_text": "5.3.2 REDD\n\nThe carbon pools (and corresponding methodology modules) included in or excluded from the boundary of REDD project activities are shown in Table 4.\n\nHarvested wood products and dead wood must be included when they increase more or decrease less in the baseline than in the project scenario. In all other cases, only aboveground biomass is mandatory. If a carbon pool is included in the baseline accounting, it must also be included in project scenario and leakage accounting.\n\nWhere the carbon pool in harvested wood products and dead wood increases more or decreases less in the baseline case than in the project case, the tool T-SIG or Appendix 1 must be used to determine whether significant. Insignificant pools can always be ignored."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0009",
@@ -1576,7 +1576,7 @@
     "summary": "WRC carbon pools",
     "type": "calc",
     "when": [],
-    "source_span_text": "5.3.3 WRC\n\nThe carbon pools included in or excluded from the boundary of the WRC component are shown in Table 4 below. The selection of carbon pools and the appropriate justification must be provided in the PD.\n\nFor WRC project activities, the soil organic carbon pool is mandatory. The aboveground biomass pool, dead wood, and wood products may be included or excluded depending on the specific activity type and justification provided."
+    "source_span_text": "5.3.3 WRC\n\nThe carbon pools included in or excluded from the boundary of the WRC component are shown in Table 6 below. The selection of carbon pools and the appropriate justification must be provided in the PD."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0010",
@@ -1629,7 +1629,7 @@
     "summary": "REDD GHG source identification",
     "type": "eligibility",
     "when": [],
-    "source_span_text": "5.4.2 REDD\n\nThe GHG emission sources included in or excluded from the boundary of the REDD project activity are shown in Table 5 below. The selection of sources and the appropriate justification must be provided in the PD.\n\nFor REDD project activities, the following sources are included:\n• CO2 from biomass burning – included\n• CH4 from biomass burning – included\n• N2O from biomass burning – included\n• CO2 from combustion of fossil fuels – conservatively excluded\n• CO2 from oxidation of drained peat – considered under carbon pools\n• CH4 from oxidation of drained peat – required unless de minimis"
+    "source_span_text": "5.4.2 REDD\n\nThe GHG emission sources included in or excluded from the boundary of the REDD project activity are shown in Table 7 below. The selection of sources and the appropriate justification must be provided in the PD."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0011",
@@ -1681,7 +1681,7 @@
     "summary": "WRC GHG source identification",
     "type": "eligibility",
     "when": [],
-    "source_span_text": "5.4.3 WRC\n\nThe GHG emission sources included in or excluded from the boundary of the WRC project activity are shown in Table 6 below. The selection of sources and the appropriate justification must be provided in the PD.\n\nT-SIG or Appendix 1 may be used to determine whether an emissions source is significant."
+    "source_span_text": "5.4.3 WRC\n\nThe GHG emission sources included in or excluded from the boundary of the WRC component are shown in Table 9 below. The selection of sources and the appropriate justification must be provided in the PD."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0012",
@@ -1733,7 +1733,7 @@
     "summary": "Consistency rule: baseline-project source matching",
     "type": "eligibility",
     "when": [],
-    "source_span_text": "5.4.1 General\n\nThe project must account for any significant increases in emissions of carbon dioxide (CO2), methane (CH4), and nitrous oxide (N2O) from the project activity. If a source is included in the estimation of baseline emissions, it must also be included in the calculation of project and leakage emissions. T-SIG or Appendix 1 may be used to determine whether an emissions source is significant."
+    "source_span_text": "5.4.1 General\n\nThe project must account for any significant increases in emissions of carbon dioxide (CO2), nitrous oxide (N2O) and methane (CH4) relative to the baseline that are reasonably attributable to the project activity, with additional guidance provided in Table 6, Table 7, and Table 8.\n\nT-SIG or Appendix 1 may be used to determine whether an emissions source is significant. If a source is included in the estimation of baseline emissions, it must also be included in the calculation of project and leakage emissions."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0013",
@@ -1785,7 +1785,7 @@
     "summary": "Historical reference period",
     "type": "eligibility",
     "when": [],
-    "source_span_text": "5.2.1 Start Date and End Date of the Historical Reference Period\n\nREDD\n\nThe historical reference period is the fixed time period during which historical deforestation and forest degradation is analyzed in the reference region to set the forward-looking baseline, the duration of which is set out in the VCS Methodology Requirements. At validation, the historical reference period ends at the start of the crediting period."
+    "source_span_text": "5.2.1 Start Date and End Date of the Historical Reference Period\n\nREDD\n\nThe historical reference period is the fixed time period during which historical deforestation and forest degradation is analyzed in the reference region to set the forward-looking baseline, the duration of which is set out in the VCS Methodology Requirements. At validation, the historical reference period ends at the start of the crediting period. Once the project has started, and a baseline update is calculated, the historical reference period ends at the time at which the baseline is updated."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0014",
@@ -1837,7 +1837,7 @@
     "summary": "Crediting period duration",
     "type": "eligibility",
     "when": [],
-    "source_span_text": "5.2.2 Start Date and End Date of the Project Crediting Period\n\nGeneral\n\nThe project crediting period is the period of time for which GHG emission reductions or removals generated by the project are eligible for crediting with the VCS Program. The project must have a robust operating plan covering this period. The project crediting period for AFOLU projects must be between 20 and 100 years."
+    "source_span_text": "5.2.2 Start Date and End Date of the Project Crediting Period\n\nGeneral\n\nThe project crediting period is the period of time for which GHG emission reductions or removals generated by the project are eligible for crediting with the VCS Program. The project must have a robust operating plan covering this period.\n\nThe project crediting period for AFOLU projects must be between 20 and 100 years. The duration of the project activity/crediting period must be reported in the PD."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0015",
@@ -2051,7 +2051,7 @@
     "summary": "Minimum alternative scenario list",
     "type": "eligibility",
     "when": [],
-    "source_span_text": "Step 1: Reuse the plausible alternative land use scenarios to the REDD project activity that have been listed as an outcome of Sub-step 1b of the additionality tool VT0001.\n\nUnless it has been demonstrated that any of these land use scenarios are not credible or do not comply with all mandatory applicable legislation and regulations as required by VT0001 Sub-step 1b, the list of plausible alternative land use scenarios must include at least:\n\n1) Continuation of the pre-project land use;\n2) Project activity performed on the land within the project boundary without being registered as a VCS REDD project; and\n3) Activities similar to the proposed project activity on at least part of the land."
+    "source_span_text": "Step 1: Reuse the plausible alternative land use scenarios to the REDD project activity that have been listed as an outcome of Sub-step 1b of the additionality tool VT0001.\n\nUnless it has been demonstrated that any of these land use scenarios are not credible or do not comply with all mandatory applicable legislation and regulations as required by VT0001 Sub-step 1b, the list of plausible alternative land use scenarios must include at least:\n\n1) Continuation of the pre-project land use;\n2) Project activity performed on the land within the project boundary without being registered as a VCS REDD project; and\n3) Activities similar to the proposed project activity on at least part of the land within the project boundary of the proposed REDD project."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-3-0003",
@@ -2157,7 +2157,7 @@
     "summary": "Investment analysis baseline selection",
     "type": "calc",
     "when": [],
-    "source_span_text": "Step 2b: Where the VT0001 investment analysis is used to demonstrate additionality, and if at least one land use scenario generates financial benefits other than carbon revenues, select the baseline scenario as below:\n\n1) Where VT0001 Option I is used, the baseline scenario is the land use scenario with the lowest costs over the crediting period."
+    "source_span_text": "Step 2b: Where the VT0001 investment analysis is used to demonstrate additionality, and if at least one land use scenario generates financial benefits other than carbon revenues, select the baseline scenario as below:\n\n1) Where VT0001 Option I is used, the baseline scenario is the land use scenario with the lowest costs over the crediting period). Option I may only be applied if the alternative scenarios do not include revenues."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-3-0005",
@@ -2210,7 +2210,7 @@
     "summary": "REDD baseline modules",
     "type": "calc",
     "when": [],
-    "source_span_text": "8.1.2 REDD\n\nMethods for estimating net baseline carbon stock changes and greenhouse gas emissions are provided in the following modules:\n\n• For planned deforestation/degradation: Module BL-PL (VMD0006)\n• For unplanned deforestation: Module BL-UP (VMD0007)"
+    "source_span_text": "8.1.2 REDD\n\nMethods for estimating net baseline carbon stock changes and greenhouse gas emissions are provided in the following modules:\n\n• For planned deforestation/degradation: Module BL-PL\n• For unplanned deforestation: Module BL-UP"
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-3-0006",
@@ -2265,7 +2265,7 @@
     "summary": "WRC baseline modules",
     "type": "calc",
     "when": [],
-    "source_span_text": "8.1.3 WRC\n\nBaseline net emissions from the SOC pool must be estimated using Module BL-PEAT or BL-TW, as applicable. Baseline net GHG emissions from the SOC pool are used as a component of the WRC net emission reduction calculation."
+    "source_span_text": "8.1.3 WRC\n\nBaseline net emissions from the SOC pool must be estimated using Module BL-PEAT or BL-TW, whichever is relevant (see Table 3). For peat strata within tidal wetlands, Module BL-PEAT must be used."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-3-0007",
@@ -2317,7 +2317,7 @@
     "summary": "Baseline reassessment frequency",
     "type": "monitoring",
     "when": [],
-    "source_span_text": "6.2 Re-assessing the Baseline Scenario\n\nThe project baseline must be revised at the frequency set out in the latest version of the VCS Standard. The date of the next scheduled revision must be specified. The starting point for the baseline revision of the project will be the forest cover projected to exist at the end of the baseline period."
+    "source_span_text": "6.2 Re-assessing the Baseline Scenario\n\nThe project baseline must be revised at the frequency set out in the latest version of the VCS Standard.\n\nThe date of the next scheduled revision must be specified. The starting point for the baseline revision of the project will be the forest cover projected to exist at the end of the baseline period. Projections for each baseline revision will be subject to independent validation as set out in the latest version of the VCS Standard."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-3-0008",
@@ -2422,7 +2422,7 @@
     "summary": "VT0001 additionality requirement",
     "type": "eligibility",
     "when": [],
-    "source_span_text": "7.1 Project Method – All Project Activities Other Than Tidal Wetland Conservation and Restoration\n\nVT0001 Tool for the Demonstration and Assessment of Additionality in VCS AFOLU Project Activities must be used to demonstrate the additionality of the project."
+    "source_span_text": "7 ADDITIONALITY\n\n7.1 Project Method – All Project Activities Other Than Tidal Wetland Conservation and Restoration\n\nVT0001 Tool for the Demonstration and Assessment of Additionality in VCS AFOLU Project Activities must be used to demonstrate the additionality of the project."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-4-0002",
@@ -2528,7 +2528,7 @@
     "summary": "REDD net emission reduction equation",
     "type": "equation",
     "when": [],
-    "source_span_text": "8.4.2 REDD\n\nThe total net greenhouse gas emissions reductions of the REDD project activity are calculated as follows:\n\nNERREDD = ∆C_BSL-REDD − ∆C_WPS-REDD − ∆C_LK-REDD\n\nWhere:\nNERREDD = Total net GHG emission reductions of the REDD project activity up to year t* (tCO2e)\n∆C_BSL-REDD = Net GHG emissions in the REDD baseline scenario up to year t* (tCO2e)\n∆C_WPS-REDD = Net GHG emissions in the REDD project scenario up to year t* – from Module M-REDD (tCO2e)\n∆C_LK-REDD = Net GHG emissions due to leakage from the REDD project activity up to year t* (tCO2e)"
+    "source_span_text": "8.4.2 REDD\n\nThe total net greenhouse gas emissions reductions of the REDD project activity are calculated as follows:\n\nNERREDD = ∆C_BSL-REDD − ∆C_WPS-REDD − ∆C_LK-REDD\n\nWhere:\nNERREDD+ = Total net GHG emission reductions of the REDD+ project activity up to year t* (tCO2e)\n∆C_BSL-REDD = Net GHG emissions in the REDD baseline scenario up to year t* (tCO2e)\n∆C_WPS-REDD = Net GHG emissions in the REDD project scenario up to year t* – from Module M-REDD (tCO2e)\n∆C_LK-REDD = Net GHG emissions due to leakage from the REDD project activity up to year t* (tCO2e)"
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-5-0002",
@@ -2636,7 +2636,7 @@
     "summary": "REDD leakage components",
     "type": "calc",
     "when": [],
-    "source_span_text": "8.3 Leakage\n\nLeakage must be considered for all activities, using the following leakage modules:\n\n• For planned deforestation/degradation and planned wetland degradation: Module LK-ASP\n• For unplanned deforestation and unplanned wetland degradation: Module LK-ASU\n• For WRC project activities: Module LK-ECO\n\nFor stand-alone CIW project activities, Module LK-ASU, LK-ASP or LK-ME (whichever is relevant) must be used. The significance of leakage must be determined using T-SIG or Appendix 1. Where applicable, leakage due to market effects must be considered using Module LK-ME."
+    "source_span_text": "8.3 Leakage\n\nLeakage must be considered for all activities, using the following leakage modules:\n\n• For planned deforestation/degradation and planned wetland degradation: Module LK-ASP\n• For unplanned deforestation and unplanned wetland degradation: Module LK-ASU\n• For WRC project activities: Module LK-ECO\n\nFor stand-alone CIW project activities, similar methods for leakage determination can be used as for REDD project activities, and Module LK-ASU, LK-ASP or LK-ME (whichever is relevant) must be used.\n\nThe significance of leakage and the significance of carbon pools must be determined using T-SIG or Appendix 1."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-5-0004",
@@ -2799,7 +2799,7 @@
     "summary": "Uncertainty adjustment",
     "type": "uncertainty",
     "when": [],
-    "source_span_text": "8.4.5 Uncertainty Analysis\n\nProject must use Module X-UNC to combine uncertainty information and conservative estimates and produce an overall uncertainty estimate of the total net GHG emission reductions. The estimated cumulative net anthropogenic GHG emission reductions must be adjusted at each point in time to account for uncertainty as indicated in Module X-UNC."
+    "source_span_text": "8.4.5 Uncertainty Analysis\n\nProject must use Module X-UNC to combine uncertainty information and conservative estimates and produce an overall uncertainty estimate of the total net GHG emission reductions. The estimated cumulative net anthropogenic GHG emission reductions must be adjusted at each point in time to account for uncertainty as indicated in Module X-UNC. Module X-UNC calculates an adjusted value for NERREDD+ for any point in time. This Adjusted_NERREDD+ must be the basis of calculations at each point in time in Equation (19)."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-5-0007",
@@ -2851,7 +2851,7 @@
     "summary": "VCU calculation",
     "type": "equation",
     "when": [],
-    "source_span_text": "8.4.6 Calculation of Verified Carbon Units\n\nTo estimate the number of Verified Carbon Units (VCUs) for the monitoring period t = t2 – t1, this methodology uses the following equation:\n\nVCUt = (Adjusted_NERREDD+,t2 − Adjusted_NERREDD+,t1) − BufferTotal\n\nWhere:\nVCUt = Number of Verified Carbon Units for the monitoring period (VCU)\nAdjusted_NERREDD+,t = Total net GHG emission reductions of the REDD+ project activity adjusted to account for uncertainty (tCO2e)\nBufferTotal = Total credits deposited into the AFOLU pooled buffer account (tCO2e)"
+    "source_span_text": "8.4.6 Calculation of Verified Carbon Units\n\nTo estimate the number of Verified Carbon Units (VCUs) for the monitoring period t = t2 – t1, this methodology uses the following equation:\n\nVCUt = (Adjusted_NERREDD+,t2 − Adjusted_NERREDD+,t1) − BufferTotal\n\nWhere:\nVCUt = Number of Verified Carbon Units for the monitoring period (VCU)\nAdjusted_NERREDD+,t2 = Total net GHG emission reductions of the REDD+ project activity up to year t2 and adjusted to account for uncertainty (tCO2e)\nAdjusted_NERREDD+,t1 = Total net GHG emission reductions of the REDD+ project activity up to year t1 and adjusted to account for uncertainty (tCO2e)\nBufferTotal = Total permanence risk buffer withholding (tCO2e)"
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-5-0008",
@@ -2911,7 +2911,7 @@
     "summary": "Carbon pool modules for REDD",
     "type": "calc",
     "when": [],
-    "source_span_text": "Carbon pool modules:\n\n• VMD0001 Estimation of carbon stocks in the above- and belowground biomass in live tree and non-tree pools (CP-AB)\n\n• VMD0002 Estimation of carbon stocks in the dead-wood pool (CP-D)\n\n• VMD0003 Estimation of carbon stocks in the litter pool (CP-L)\n\n• VMD0004 Estimation of carbon stocks in the soil organic carbon pool (mineral soils) (CP-S)\n\n• VMD0005 Estimation of carbon stocks in the long-term wood products pool (CP-W)\n\nThese five modules constitute the carbon pool modules available under VM0007 for REDD project activities. CP-AB is mandatory for REDD; CP-D is mandatory when dead wood pool is greater in the project scenario; CP-L and CP-S are optional; CP-W is mandatory."
+    "source_span_text": "Carbon pool modules:\n\n• VMD0001 Estimation of carbon stocks in the above- and belowground biomass in live tree and non-tree pools (CP-AB)\n\n• VMD0002 Estimation of carbon stocks in the dead-wood pool (CP-D)\n\n• VMD0003 Estimation of carbon stocks in the litter pool (CP-L)\n\n• VMD0004 Estimation of carbon stocks in the soil organic carbon pool (mineral soils) (CP-S)\n\n• VMD0005 Estimation of carbon stocks in the long-term wood products pool (CP-W)"
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-5-0009",
@@ -2968,7 +2968,7 @@
     "summary": "Project emissions modules",
     "type": "calc",
     "when": [],
-    "source_span_text": "8.2 Project Emissions\n\n8.2.1 General\n\nThe same procedure must be followed ex ante and ex post.\n\n8.2.2 REDD\n\nMethods for estimating net carbon stock changes and GHG emissions in the project scenario are provided in Module M-REDD (VMD0015). Emissions from biomass burning must be estimated using Module E-BB (VMD0013). Emissions from fossil fuel combustion must be estimated using Module E-FFC (VMD0014)."
+    "source_span_text": "8.2 Project Emissions\n\n8.2.1 General\n\nThe same procedure must be followed ex ante and ex post.\n\n8.2.2 REDD\n\nMethods for estimating net carbon stock changes and GHG emissions in the project scenario are provided in Module M-REDD."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-6-0001",
@@ -3020,7 +3020,7 @@
     "summary": "Monitoring plan four tasks",
     "type": "monitoring",
     "when": [],
-    "source_span_text": "9.3 Description of the Monitoring Plan\n\n9.3.1 Development of Monitoring Plan\n\nThe monitoring plan must address the following monitoring tasks:\n\n1) Monitoring of project implementation\n2) Monitoring of actual carbon stock changes and greenhouse gas emissions\n3) Monitoring of leakage carbon stock changes and greenhouse gas emissions\n4) Ex post estimation of net carbon stock changes and greenhouse gas emissions\n\nFor each of these tasks, the monitoring plan must include: technical description, data to be collected, overview of data collection procedures, quality control and quality assurance procedure, and data archiving."
+    "source_span_text": "9.3 Description of the Monitoring Plan\n\n9.3.1 Development of Monitoring Plan\n\nGeneral\n\nThe monitoring plan must address the following monitoring tasks, which must be included in the monitoring plan:\n\n1) Monitoring of project implementation\n2) Monitoring of actual carbon stock changes and greenhouse gas emissions\n3) Monitoring of leakage carbon stock changes and greenhouse gas emissions\n4) Ex post estimation of net carbon stock changes and greenhouse gas emissions"
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-6-0002",
@@ -3072,7 +3072,7 @@
     "summary": "Monitoring plan content requirements",
     "type": "monitoring",
     "when": [],
-    "source_span_text": "For each monitoring task, the monitoring plan must include the following information:\n\n1) Technical description of the monitoring task\n2) Data to be collected (the list of data and parameters to be collected must be given in PD)\n3) Overview of data collection procedures\n4) Quality control and quality assurance procedure\n5) Data archiving\n6) Organisation and responsibilities of the parties involved in all of the above"
+    "source_span_text": "For each of these tasks, the monitoring plan must include the following information:\n\n1) Technical description of the monitoring task\n2) Data to be collected (the list of data and parameters to be collected must be given in PD)\n3) Overview of data collection procedures\n4) Quality control and quality assurance procedure\n5) Data archiving\n6) Organisation and responsibilities of the parties involved in all of the above"
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-6-0003",
@@ -3176,7 +3176,7 @@
     "summary": "SOP and QA/QC requirements",
     "type": "monitoring",
     "when": [],
-    "source_span_text": "Standard operating procedures (SOPs) and quality control/quality assurance (QA/QC) procedures for inventories including field data collection and data management must be applied. Use or adaptation of SOPs already applied in national land use monitoring, or available from published handbooks, or from the latest IPCC guidance documents is recommended."
+    "source_span_text": "Standard operating procedures (SOPs) and quality control/quality assurance (QA/QC) procedures for inventories including field data collection and data management must be applied. Use or adaptation of SOPs already applied in national land use monitoring, or available from published handbooks, or from the latest IPCC guidance documents (GPG–LULUCF, Reporting Guidelines, is recommended)."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-6-0005",
@@ -3230,7 +3230,7 @@
     "summary": "REDD forest cover monitoring",
     "type": "monitoring",
     "when": [],
-    "source_span_text": "For monitoring changes in forest cover and carbon stock changes, the monitoring plan must use the methods given in Module M-REDD. All relevant parameters from the modules are to be included in the monitoring plan.\n\nTASK 1: Monitoring of key variables according to the monitoring plan.\nTASK 2: Revising the baseline for future project crediting periods."
+    "source_span_text": "REDD\n\nFor monitoring changes in forest cover and carbon stock changes, the monitoring plan must use the methods given in Module M-REDD. All relevant parameters from the modules are to be included in the monitoring plan."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-6-0006",
@@ -3286,7 +3286,7 @@
     "summary": "WRC compliance monitoring",
     "type": "monitoring",
     "when": [],
-    "source_span_text": "For WRC project activities, continued compliance with the applicability conditions of this methodology must be ensured by monitoring that:\n\n• The water table is not lowered except where the project converts open water to tidal wetlands\n• The burning of organic soil as a project activity does not occur\n• Peatland fires within the project area do not occur in the project scenario\n• Nitrogen fertilizers are not used within the project area in the project scenario"
+    "source_span_text": "For WRC project activities, continued compliance with the applicability conditions of this methodology must be ensured by monitoring that:\n\n• The water table is not lowered except where the project converts open water to tidal wetlands, or improves the hydrological connection to impounded waters\n• The burning of organic soil as a project activity does not occur\n• Peatland fires within the project area do not occur in the project scenario\n• Nitrogen fertilizers are not used within the project area in the project scenario"
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-6-0007",
@@ -3338,7 +3338,7 @@
     "summary": "Expert judgment documentation",
     "type": "monitoring",
     "when": [],
-    "source_span_text": "The use of expert judgment for the selection and interpretation of methods, selection of input data to fill gaps in available data, and selection of data from a range of possible values or uncertainty ranges, are well established in the IPCC guidance. The project proponent must use the guidance provided in Chapter 2 (Approaches to Data Collection), Section 2.2 and Annex 2A.1 of the IPCC 2006 good practice guidance."
+    "source_span_text": "Expert judgement\n\nThe use of expert judgment for the selection and interpretation of methods, selection of input data to fill gaps in available data, and selection of data from a range of possible values or uncertainty ranges, are all well established in the IPCC 2006 good practice guidance. Obtaining well-informed judgments from domain experts regarding best estimates and uncertainties is an important aspect in various procedures throughout this methodology. The project proponent must use the guidance provided in Chapter 2 (Approaches to Data Collection), in particular, Section 2.2 and Annex 2A.1 of the IPCC 2006 good practice guidance."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-6-0008",
@@ -3390,6 +3390,6 @@
     "summary": "Uncertainty reduction requirements",
     "type": "uncertainty",
     "when": [],
-    "source_span_text": "NERREDD+_ERROR = Cumulative uncertainty for the REDD+ (REDD and WRC) project activities up to year t* (percent).\n\nFor details see Module X-UNC.\n\nUncertainties arising from input parameters would result in uncertainties in the estimation of both baseline and project net GHG emissions. The project must identify key parameters and apply uncertainty reduction procedures as specified in Module X-UNC."
+    "source_span_text": "To help reduce uncertainties in the accounting of emissions and removals, this methodology uses, whenever possible, the proven methods from the latest available IPCC guidance documents (GPG-LULUCF and Reporting Guidelines) and peer-reviewed literature. Despite this, potential uncertainties still arise from the choice of parameters to be used. Uncertainties arising from input parameters would result in uncertainties in the estimation of both baseline and project net GHG emissions – especially when global default factors are used. The project must identify key parameters that would significantly influence the accuracy of estimates."
   }
 ]
