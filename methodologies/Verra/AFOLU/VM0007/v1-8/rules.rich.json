@@ -328,7 +328,7 @@
         "Verra/VM0007@v1-8"
       ]
     },
-    "source_span_text": "Project activities include the burning of organic soil.",
+    "source_span_text": "10) Hydrological connectivity of the project area with adjacent areas leads to a significant\n increase in GHG emissions outside the project area.\n\n 11) Project activities include the burning of organic soil.\n\n 12) Nitrogen fertilizer(s), such as chemical fertilizer or manure, are applied in the project\n area during the project crediting period.\n\n4.3.2 RWE Project Activities\n RWE project activities are applicable under the following conditions:",
     "section_context": {
       "anchor": "applicability-conditions",
       "page_start": 15,
@@ -1058,7 +1058,7 @@
         "Verra/VMD0016@v1-8"
       ]
     },
-    "source_span_text": "strata and clearly delineated (i.e., without spatial overlap), and the procedures outlined below\napplied to each of them separately. Projects may be stand-alone REDD and/or WRC. Projects\nmay combine WRC with REDD, in a single area, in which case they must apply concomitantly\nthe procedures for both categories provided in this methodology, unless, in the case of stand-\nalone REDD on wetlands, the expected emissions from the soil organic carbon pool or change\nin the soil organic carbon pool in the project scenario is deemed de minimis, or, in the case of\nstand-alone RWE with presence of vegetation, the expected emissions from the biomass pool or\nchange in the biomass pool in the project scenario is deemed de minimis. The tool T-SIG or\nAppendix 1 must be used to justify the omission of carbon pools and emission sources.\n\nThe demonstration of eligibility must be reported in the PD.\n\nReference module: •   VMD0016 Methods for stratification of the project area (X-STR)"
+    "source_span_text": "A project can include areas subject to different eligible activities (e.g., Area A = avoiding\nplanned deforestation, Area B = avoiding unplanned deforestation, Area C = reforestation, etc.).\nIn such cases the areas that are eligible for different categories must be captured by different\nstrata and clearly delineated (i.e., without spatial overlap), and the procedures outlined below\napplied to each of them separately. Projects may be stand-alone REDD and/or WRC. Projects\nmay combine WRC with REDD, in a single area, in which case they must apply concomitantly\nthe procedures for both categories provided in this methodology, unless, in the case of stand-\nalone REDD on wetlands, the expected emissions from the soil organic carbon pool or change\nin the soil organic carbon pool in the project scenario is deemed de minimis, or, in the case of\nstand-alone RWE with presence of vegetation, the expected emissions from the biomass pool or\nchange in the biomass pool in the project scenario is deemed de minimis. The tool T-SIG or\nAppendix 1 must be used to justify the omission of carbon pools and emission sources.\nThe demonstration of eligibility must be reported in the PD.\n7\nTable 1 below provides a decision tree for identifying the types of REDD project activities\neligible under this methodology."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0007",
@@ -1082,7 +1082,7 @@
         "Verra/T-SIG@v1-8"
       ]
     },
-    "source_span_text": "5.3     Carbon Pools\n\n5.3.1   General\n        Any significant decreases in carbon stock in the project scenario and any significant increases in\n        carbon stock in the baseline scenario must be accounted for. In addition, decreases in the\n\n                                                                                                          21\n\f        baseline scenario and increases in the project scenario can be accounted for. Where REDD\n        activities take place on wetlands, the project must account for expected emissions from the soil\n        organic carbon pool or change in th"
+    "source_span_text": "5.3 Carbon Pools\n5.3.1 General\nAny significant decreases in carbon stock in the project scenario and any significant increases in\ncarbon stock in the baseline scenario must be accounted for. In addition, decreases in the\nbaseline scenario and increases in the project scenario can be accounted for. Where REDD\nactivities take place on wetlands, the project must account for expected emissions from the soil\norganic carbon pool or change in the soil organic carbon pool in the project scenario, unless they\nare deemed de minimis. The significance of this pool mayVM0007,be determined\nv1.8 by using the tool T-SIG\nor Appendix 1. Significance of pools must be determined ex-ante or at baseline reassessment for\na specific baseline validity period, as well as at verification for a specific monitoring period.\nSelection of carbon pools and the appropriate justification must be presented in PD and in the\nmonitoring report (MR).\n5.3.2 REDD\nThe carbon pools (and corresponding methodology modules) included in or excluded from the\nboundary of REDD project activities are shown in Table 4.\nHarvested wood products and dead wood must be included when they increase more or decrease\nless in the baseline than in the project scenario. In all other cases, only aboveground biomass is\nmandatory. If a carbon pool is included in the baseline accounting, it must also be included in\nproject scenario and leakage accounting.\nWhere the carbon pool in harvested wood products and dead wood increases more or decreases\nless in the baseline case than in the project case, the tool T-SIG or Appendix 1 must be used to\ndetermine whether significant. Insignificant pools can always be ignored.\n5.3.3 WRC\nThe carbon pools included in or excluded from the boundary of the WRC component 17 are shown\n17F\nin Table 6 below. The selection of carbon pools and the appropriate justification must be provided\nin the PD.\nTable 4: Carbon Pools in Baseline and Project Scenario of WRC Project Activities\nCarbon pool Included? Justification / Explanation\nAboveground Excluded Covered under REDD. If implementing ARR activities, an\ntree biomass appropriate ARR methodology must be used.\nAboveground Excluded Covered under REDD. If implementing ARR activities, an\nshrub biomass appropriate ARR methodology must be used.\nHerbaceous Excluded If implementing ARR activities, an appropriate ARR methodology\nbiomass must be used.\nBelowground Included This pool is not distinguished from the soil pool in WRC\nbiomass procedures\n17 If combined with REDD, see Table 4 and Table 5 for additional information of pools."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0008",
@@ -1133,7 +1133,7 @@
         "Verra/VMD0050@v1-8"
       ]
     },
-    "source_span_text": "WRC\n\n        While developing WRC baselines, the project must reference a period of at least 10 years in order\n        to model a spatial trend in drainage, and it must take into account long-term (20-year) average\n                                                                  climate variables, for which procedures are provided in Modules BL-PEAT and BL-TW.\n\n5.2.2   Start Date and End Date of the Project Crediting Period\n        General\n\n        The project crediting period is the period of time for which GHG emission reductions or removals\n        generated by the project are eligible for"
+    "source_span_text": "The carbon pools included in or excluded from the boundary of the WRC component 17 are shown\n17F\nin Table 6 below. The selection of carbon pools and the appropriate justification must be provided\nin the PD."
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-2-0010",
@@ -1560,7 +1560,7 @@
         "Verra/VM0007@v1-8"
       ]
     },
-    "source_span_text": "EMISSION REDUCTIONS AND\n  REMOVALS\n8.1     Baseline Emissions\n\n8.1.1   General\n        Each activity type included in the project must estimate an individual baseline following the\n        provisions and specific modules mentioned below. Combined activities (i.e., REDD with a WRC\n        component) must develop a unique baseline considering peat or tidal wetland soils as the SOC\n        pool and incorporating the resulting emission estimates to the calculation of emissions and\n        carbon stock changes of the REDD activities.\n\n                                                                                                          28\n\f        The same procedure must be followed ex ante"
+    "source_span_text": "NERREDD+ = Total net GHG emission reductions of the REDD+ project activity up to year t*\n(tCO2e)\nNERREDD = Total net GHG emission reductions of the REDD project activity up to year t*\n(tCO2e)\nNERWRC = Total net GHG emission reductions of the WRC project activity up to year t*\n(tCO2e)"
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-5-0002",
@@ -1583,7 +1583,7 @@
         "Verra/VM0007@v1-8"
       ]
     },
-    "source_span_text": "For REDD and WRC project activities, ex-ante baseline projections beyond the baseline validity\n                                                                 period are not required. For this assessment, the historic reference period is extended to\n        include the original reference period and all subsequent monitoring periods up to the beginning\n        of the current monitoring period.\n\n7 ADDITIONALITY\n7.1     Project Method – All Project Activities Other Than Tidal Wetland\n        Conservation and Restoration\n        VT0001 Tool for the Demonstration and Assessment of Additionality in VCS AFOLU Project\n        Activities must be used to demonstrate the additionality of the p"
+    "source_span_text": "8.4.3 WRC\nThe total net GHG emission reduction of the WRC project activity is calculated as follows:\nNERWRC = GHGBSL−WRC − GHGWPS−WRC − GHGLK−WRC (5)\nWhere:\nNERWRC = Total net GHG emission reductions in the WRC project up to year t*\n(tCO2e)"
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-5-0003",
@@ -1681,7 +1681,7 @@
         "Verra/VMD0017@v1-8"
       ]
     },
-    "source_span_text": "periodically adjusting the baseline. Ex-ante baseline estimations are therefore used in both the\n        ex-ante and ex-post estimation of net carbon stock changes and greenhouse gas emission\n        reductions.\n\n        Methods for estimating net baseline carbon stock changes and greenhouse gas emissions are\n        provided in the following modules:\n\n            •   For planned deforestation/degradation: Module BL-PL\n            •   For unplanned deforestation: Module BL-UP\n\n8.1.3   WRC\n        Baseline net emissions from the SOC pool must be estimated using Module BL-PEAT or BL-TW,"
+    "source_span_text": "8.4.5 Uncertainty Analysis\nProject must use Module X-UNC to combine uncertainty information and conservative estimates\nand produce an overall uncertainty estimate of the total net GHG emission reductions. The\nestimated cumulative net anthropogenic GHG emission reductions must be adjusted at each\npoint in time to account for uncertainty as indicated in Module X-UNC. Module X-UNC calculates\n19 The project emissions must be divided between the emissions arising from the respective project areas for"
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-5-0007",
@@ -1731,7 +1731,7 @@
         "Verra/VMD0005@v1-8"
       ]
     },
-    "source_span_text": "pool and incorporating the resulting emission estimates to the calculation of emissions and\n        carbon stock changes of the REDD activities.\n\n                                                                                                          28\n\f        The same procedure must be followed ex ante and ex post. For parameters that will be monitored\n        subsequent to project initiation, guidance is given in the parameter tables of the relevant\n        modules for the values that must be used in ex-ante calculations."
+    "source_span_text": "an abbreviated title (e.g., CP-AB). This methodology uses the latest versions of the following\nmethodologies, modules, and tools:\nCarbon pool modules:\n• VMD0001 Estimation of carbon stocks in the above- and belowground biomass in live\ntree and non-tree pools (CP-AB)"
   },
   {
     "id": "Verra.AFOLU.VM0007.v1-8.R-5-0009",
