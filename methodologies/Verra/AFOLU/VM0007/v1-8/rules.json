@@ -659,46 +659,6 @@
       "when": []
     },
     {
-      "id": "R-3-0005",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0005",
-      "title": "REDD baseline modules",
-      "logic": "Module selection based on deforestation category.",
-      "section_id": "S-3",
-      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-3",
-      "section_number": "6",
-      "section_anchor": "baseline-scenario",
-      "tools": [
-        "Verra/VM0007@v1-8",
-        "Verra/VMD0006@v1-8"
-      ],
-      "tags": [
-        "calc"
-      ],
-      "quality_status": "source_audited",
-      "when": []
-    },
-    {
-      "id": "R-3-0006",
-      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0006",
-      "title": "WRC baseline modules",
-      "logic": "Module selection depends on substrate (peat vs tidal) and activity type (CIW vs RWE vs combined).",
-      "section_id": "S-3",
-      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-3",
-      "section_number": "6",
-      "section_anchor": "baseline-scenario",
-      "tools": [
-        "Verra/VM0007@v1-8",
-        "Verra/VMD0042@v1-1",
-        "Verra/VMD0042@v1-8",
-        "Verra/VMD0050@v1-8"
-      ],
-      "tags": [
-        "calc"
-      ],
-      "quality_status": "source_audited",
-      "when": []
-    },
-    {
       "id": "R-3-0007",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0007",
       "title": "Baseline reassessment frequency",
@@ -854,6 +814,25 @@
       "when": []
     },
     {
+      "id": "R-3-0005",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0005",
+      "title": "REDD baseline modules",
+      "logic": "Module selection based on deforestation category.",
+      "section_id": "S-5",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-5",
+      "section_number": "8",
+      "section_anchor": "quantification",
+      "tools": [
+        "Verra/VM0007@v1-8",
+        "Verra/VMD0006@v1-8"
+      ],
+      "tags": [
+        "calc"
+      ],
+      "quality_status": "source_audited",
+      "when": []
+    },
+    {
       "id": "R-5-0005",
       "stable_id": "Verra.AFOLU.VM0007.v1-8.R-5-0005",
       "title": "Buffer pool contribution calculation",
@@ -865,6 +844,27 @@
       "tools": [
         "Verra/T-BAR@v4-2",
         "Verra/VM0007@v1-8"
+      ],
+      "tags": [
+        "calc"
+      ],
+      "quality_status": "source_audited",
+      "when": []
+    },
+    {
+      "id": "R-3-0006",
+      "stable_id": "Verra.AFOLU.VM0007.v1-8.R-3-0006",
+      "title": "WRC baseline modules",
+      "logic": "Module selection depends on substrate (peat vs tidal) and activity type (CIW vs RWE vs combined).",
+      "section_id": "S-5",
+      "section_stable_id": "Verra.AFOLU.VM0007.v1-8.S-5",
+      "section_number": "8",
+      "section_anchor": "quantification",
+      "tools": [
+        "Verra/VM0007@v1-8",
+        "Verra/VMD0042@v1-1",
+        "Verra/VMD0042@v1-8",
+        "Verra/VMD0050@v1-8"
       ],
       "tags": [
         "calc"
