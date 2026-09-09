@@ -1,0 +1,45 @@
+{
+  "methodology": "Verra/VM0007@v1-8",
+  "migration_status": "VERSION_IDENTITIES_NORMALIZED_RELATIONSHIPS_PENDING_SOURCE_REVIEW",
+  "rules": {
+    "do_not_infer_relationship": true,
+    "do_not_substitute_newer_versions": true,
+    "unknown_is_valid": true
+  },
+  "dependencies": [
+    {"component":"Verra/VMD0001","version":"v1-1","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VMD0002","version":"v1-0","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VMD0003","version":"v1-0","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VMD0004","version":"v1-0","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VMD0005","version":"v1-1","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VMD0006","version":"v1-4","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VMD0007","version":"v3-3","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VMD0009","version":"v1-3","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VMD0010","version":"v1-2","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VMD0015","version":"v2-2","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VMD0016","version":"v1-2","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VMD0017","version":"v2-2","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VMD0042","version":"v1-1","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VMD0046","version":"v1-1","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VMD0050","version":"v1-0","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VMD0051","version":"v1-0","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VMD0052","version":"v1-0","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VT0001","version":"v3-0","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/T-BAR","version":"v4-2","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
+    {"component":"Verra/VM0047","version":"v1-0","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"}
+  ],
+  "embedded_references": [
+    {
+      "id":"T-SIG",
+      "resolution":"VM0007 Appendix 1",
+      "component_dependency":false,
+      "note":"Resolved as embedded methodology content in the legacy roadmap; do not invent a standalone component/version unless authoritative evidence establishes one."
+    }
+  ],
+  "next_required_work": [
+    "For each dependency, cite the exact VM0007 source anchor establishing the dependency.",
+    "Classify relationship as MANDATORY, CONDITIONAL, OPTIONAL, INFORMATIVE, or INCORPORATED_BY_REFERENCE only from authoritative source evidence.",
+    "Record applicability and provenance for each edge.",
+    "Promote DEPENDENCY_COMPLETE only after all mandatory and conditional edges are source-reviewed."
+  ]
+}
