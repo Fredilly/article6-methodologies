@@ -1,0 +1,13 @@
+{
+  "source": {
+    "component": "Verra/VM0047@v1-1",
+    "document": "VM0047 Afforestation, Reforestation, and Revegetation, v1.1",
+    "canonical_url": "https://verra.org/documents/vm0047-afforestation-reforestation-and-revegetation-v1-1/",
+    "page_count": 81,
+    "status": "source_mapped_not_source_audited"
+  },
+  "derivation": "This rich map records the source document hierarchy and page locators. It does not assert verbatim section-text capture.",
+  "sections_file": "sections.json",
+  "provenance_status": "SOURCE_REQUIREMENT",
+  "source_audit_complete": false
+}
