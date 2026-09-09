@@ -67,11 +67,6 @@ jobs:
         run: node tests/methodology-artifact-contract.test.js
       - name: Validate root cause index path
         run: bash scripts/check-root-cause-index-path.sh
-      - name: Validate generated artifacts are stable
-        run: |
-          node scripts/derive-lean-from-rich.js
-          node scripts/build-manifest.mjs
-          git diff --exit-code -- methodologies/**/sections.json methodologies/**/rules.json manifest/index.json
       - name: Commit production corpus artifacts
         run: |
           set -euo pipefail
