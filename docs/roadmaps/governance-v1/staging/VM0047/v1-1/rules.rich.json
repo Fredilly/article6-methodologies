@@ -1,0 +1,26 @@
+{
+  "source": {
+    "component": "Verra/VM0047@v1-1",
+    "document": "VM0047 Afforestation, Reforestation, and Revegetation, v1.1",
+    "canonical_url": "https://verra.org/documents/vm0047-afforestation-reforestation-and-revegetation-v1-1/",
+    "status": "source_mapped_not_source_audited"
+  },
+  "rules_file": "rules.json",
+  "interpretation_class": "SOURCE_REQUIREMENT",
+  "rule_provenance": [
+    {"rule_id":"R-1-0001","source_section":"1","pages":[5],"source_span_status":"pending_verbatim_audit"},
+    {"rule_id":"R-1-0002","source_section":"1.1","pages":[5],"source_span_status":"pending_verbatim_audit"},
+    {"rule_id":"R-4-0001","source_section":"4","pages":[8],"source_span_status":"pending_verbatim_audit"},
+    {"rule_id":"R-4-1-0001","source_section":"4.1","pages":[8],"source_span_status":"pending_verbatim_audit"},
+    {"rule_id":"R-4-1-0002","source_section":"4.1","pages":[8],"source_span_status":"pending_verbatim_audit"},
+    {"rule_id":"R-4-2-0001","source_section":"4.2","pages":[9],"source_span_status":"pending_verbatim_audit"},
+    {"rule_id":"R-4-2-0002","source_section":"4.2","pages":[10],"source_span_status":"pending_verbatim_audit"},
+    {"rule_id":"R-4-3-0001","source_section":"4.3","pages":[10],"source_span_status":"pending_verbatim_audit"},
+    {"rule_id":"R-4-3-0002","source_section":"4.3","pages":[10],"source_span_status":"pending_verbatim_audit"},
+    {"rule_id":"R-4-3-0003","source_section":"4.3","pages":[10],"source_span_status":"pending_verbatim_audit"},
+    {"rule_id":"R-4-3-0004","source_section":"4.3","pages":[10,11],"source_span_status":"pending_verbatim_audit"},
+    {"rule_id":"R-4-3-0005","source_section":"4.3","pages":[11],"source_span_status":"pending_verbatim_audit"},
+    {"rule_id":"R-4-3-0006","source_section":"4.3","pages":[11,12],"source_span_status":"pending_verbatim_audit"}
+  ],
+  "source_audit_complete": false
+}

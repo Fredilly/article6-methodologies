@@ -1,0 +1,15 @@
+{
+  "source": {
+    "component": "Verra/VM0047@v1-1",
+    "document": "VM0047 Afforestation, Reforestation, and Revegetation, v1.1",
+    "canonical_url": "https://verra.org/documents/vm0047-afforestation-reforestation-and-revegetation-v1-1/",
+    "page_count": 81,
+    "status": "source_mapped_not_source_audited"
+  },
+  "derivation": "This staging map records the confirmed top-level and second-level section hierarchy plus appendices and their page locators. Deeper numbered subsections (for example 7.3.1, 8.2.1.2 and 9.3.1) remain to be encoded during the full source audit. It does not assert complete hierarchy capture or verbatim section-text capture.",
+  "sections_file": "sections.json",
+  "provenance_status": "SOURCE_REQUIREMENT",
+  "hierarchy_complete": false,
+  "deep_subsections_pending": true,
+  "source_audit_complete": false
+}
