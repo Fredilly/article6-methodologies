@@ -2,96 +2,23 @@
   "component": "Verra/VM0047@v1-1",
   "test_contract_version": "governance-v1",
   "source_pdf_sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
-  "execution_status": "DEFINED_NOT_ENGINE_EXECUTED",
+  "execution_status": "PRODUCTION_CODE_PATH_EXECUTED_NOT_PASSED",
+  "execution_evidence": "retrieval-execution.json",
   "cases": [
-    {
-      "id": "identity",
-      "query": "Return the exact identity and status of Verra VM0047 v1.1",
-      "expected": {"code":"VM0047","version":"v1-1","status":"Active","effective_from":"2025-05-14"},
-      "static_fixture_status": "PASS"
-    },
-    {
-      "id": "version_selection_current",
-      "query": "Which VM0047 version became effective on 14 May 2025?",
-      "expected": {"version":"v1-1"},
-      "static_fixture_status": "PASS"
-    },
-    {
-      "id": "version_selection_historical",
-      "query": "Return VM0047 v1.0 rather than v1.1",
-      "expected": {"version":"v1-0","historical_version_preserved":true},
-      "static_fixture_status": "PASS"
-    },
-    {
-      "id": "section_retrieval",
-      "query": "Return VM0047 v1.1 Section 4.3",
-      "expected": {"section_id":"S-4-3","title":"Census-based Approach Applicability Conditions"},
-      "static_fixture_status": "PASS"
-    },
-    {
-      "id": "deep_section_retrieval",
-      "query": "Return VM0047 v1.1 Section 9.3.1",
-      "expected": {"section_number":"9.3.1","title":"Database Requirements for Project and Control Plots","pages":[62,63]},
-      "static_fixture_status": "PASS"
-    },
-    {
-      "id": "rule_retrieval",
-      "query": "What is the VM0047 v1.1 census-based planting density limit?",
-      "expected": {"rule_id":"R-4-3-0002","threshold":"50 planting units per hectare"},
-      "static_fixture_status": "PASS"
-    },
-    {
-      "id": "dependency_traversal",
-      "query": "Which leakage module is required for the VM0047 v1.1 area-based approach and how is its version selected?",
-      "expected": {"dependency":"Verra/VMD0054","relationship":"MANDATORY","version_policy":"MOST_RECENT_AT_APPLICATION"},
-      "static_fixture_status": "PASS",
-      "note": "Section 8.4 requires the most recent VMD0054. The engine must not convert this dynamic source rule into a permanently pinned version."
-    },
-    {
-      "id": "dynamic_version_no_false_pin",
-      "query": "Is VM0047 v1.1 permanently tied to VMD0054 v1.0 or v1.1?",
-      "expected": {"answer":"no","version_policy":"MOST_RECENT_AT_APPLICATION","fixed_version":null},
-      "static_fixture_status": "PASS"
-    },
-    {
-      "id": "negative_dependency",
-      "query": "Does VT0005 apply to VM0047 v1.1 aboveground biomass measurement?",
-      "expected": {"answer":"no","source_page":47},
-      "static_fixture_status": "PASS",
-      "note": "Section 9.2 explicitly states that VT0005 does not apply."
-    },
-    {
-      "id": "source_hash",
-      "query": "Return the SHA-256 calculated from the authoritative VM0047 v1.1 PDF supplied for governance capture",
-      "expected": {"sha256":"2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d","artifact_filename":"VM0047-v1.1_Final.pdf","page_count":81},
-      "static_fixture_status": "PASS"
-    },
-    {
-      "id": "source_provenance",
-      "query": "Is the governed VM0047 v1.1 PDF binary already committed in the production corpus?",
-      "expected": {"governed_pdf_present":false,"sha256":"2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d","promotion_allowed":false},
-      "static_fixture_status": "PASS",
-      "note": "The supplied authoritative artifact is hashed, but the repository binary is not yet committed; the engine must preserve that distinction."
-    },
-    {
-      "id": "version_diff",
-      "query": "What materially changed from VM0047 v1.0 to v1.1?",
-      "expected": {"diff_file":"version-diff-from-v1-0.json","minimum_change_categories":["MODIFIED","ADDED","TOOL_CHANGED"]},
-      "static_fixture_status": "PASS"
-    },
-    {
-      "id": "negative_no_verified_rules",
-      "query": "Return VERIFIED VM0047 v1.1 production rules now",
-      "expected": {"answer":null,"verification_status":"not_verified","uncertainty":"explicit"},
-      "static_fixture_status": "PASS"
-    },
-    {
-      "id": "ambiguity",
-      "query": "Give me the current VM0047 rules without specifying a version",
-      "expected": {"resolved_version":"v1-1","resolution_basis":"effective current version","version_explicit_in_answer":true,"verification_status":"not_verified","production_rules_returned":false},
-      "static_fixture_status": "DEFINED_NOT_ENGINE_EXECUTED",
-      "note": "The engine may identify v1.1 as current but must not serve the incomplete staging rule set as VERIFIED production rules before promotion."
-    }
+    {"id":"identity","query":"Return the exact identity and status of Verra VM0047 v1.1","expected":{"code":"VM0047","version":"v1-1","status":"Active","effective_from":"2025-05-14"},"static_fixture_status":"PASS","engine_execution_status":"FAIL_UNSUPPORTED_STRUCTURED_CONTRACT"},
+    {"id":"version_selection_current","query":"Which VM0047 version became effective on 14 May 2025?","expected":{"version":"v1-1"},"static_fixture_status":"PASS","engine_execution_status":"FAIL_V1_1_NOT_IN_PRODUCTION_CORPUS"},
+    {"id":"version_selection_historical","query":"Return VM0047 v1.0 rather than v1.1","expected":{"version":"v1-0","historical_version_preserved":true},"static_fixture_status":"PASS","engine_execution_status":"PARTIAL_V1_0_VISIBLE_BUT_INTERFACE_NOT_VERSION_RESOLUTION_API"},
+    {"id":"section_retrieval","query":"Return VM0047 v1.1 Section 4.3","expected":{"section_id":"S-4-3","title":"Census-based Approach Applicability Conditions"},"static_fixture_status":"PASS","engine_execution_status":"FAIL_V1_1_NOT_IN_PRODUCTION_CORPUS"},
+    {"id":"deep_section_retrieval","query":"Return VM0047 v1.1 Section 9.3.1","expected":{"section_number":"9.3.1","title":"Database Requirements for Project and Control Plots","pages":[62,63]},"static_fixture_status":"PASS","engine_execution_status":"FAIL_V1_1_NOT_IN_PRODUCTION_CORPUS"},
+    {"id":"rule_retrieval","query":"What is the VM0047 v1.1 census-based planting density limit?","expected":{"rule_id":"R-4-3-0002","threshold":"50 planting units per hectare"},"static_fixture_status":"PASS","engine_execution_status":"FAIL_RETURNED_VM0047_V1_0_INSTEAD"},
+    {"id":"dependency_traversal","query":"Which leakage module is required for the VM0047 v1.1 area-based approach and how is its version selected?","expected":{"dependency":"Verra/VMD0054","relationship":"MANDATORY","version_policy":"MOST_RECENT_AT_APPLICATION"},"static_fixture_status":"PASS","engine_execution_status":"FAIL_INTERFACE_HAS_NO_DEPENDENCY_TRAVERSAL"},
+    {"id":"dynamic_version_no_false_pin","query":"Is VM0047 v1.1 permanently tied to VMD0054 v1.0 or v1.1?","expected":{"answer":"no","version_policy":"MOST_RECENT_AT_APPLICATION","fixed_version":null},"static_fixture_status":"PASS","engine_execution_status":"FAIL_INTERFACE_HAS_NO_DEPENDENCY_VERSION_POLICY"},
+    {"id":"negative_dependency","query":"Does VT0005 apply to VM0047 v1.1 aboveground biomass measurement?","expected":{"answer":"no","source_page":47},"static_fixture_status":"PASS","engine_execution_status":"FAIL_INTERFACE_HAS_NO_EXPLICIT_NON_DEPENDENCY_RESULT"},
+    {"id":"source_hash","query":"Return the SHA-256 calculated from the authoritative VM0047 v1.1 PDF supplied for governance capture","expected":{"sha256":"2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d","artifact_filename":"VM0047-v1.1_Final.pdf","page_count":81},"static_fixture_status":"PASS","engine_execution_status":"FAIL_INTERFACE_HAS_NO_COMPONENT_SOURCE_LOOKUP"},
+    {"id":"source_provenance","query":"Is the governed VM0047 v1.1 PDF binary committed in the governed repository?","expected":{"governed_pdf_present":true,"governed_path":"tools/Verra/VM0047/v1-1/source.pdf","sha256":"2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d","promotion_allowed":false},"static_fixture_status":"PASS","engine_execution_status":"FAIL_INTERFACE_HAS_NO_COMPONENT_SOURCE_LOOKUP","note":"Updated after governed source capture; source presence is distinct from production rule promotion."},
+    {"id":"version_diff","query":"What materially changed from VM0047 v1.0 to v1.1?","expected":{"diff_file":"version-diff-from-v1-0.json","minimum_change_categories":["MODIFIED","ADDED","TOOL_CHANGED"]},"static_fixture_status":"PASS","engine_execution_status":"FAIL_INTERFACE_HAS_NO_VERSION_DIFF_OPERATION"},
+    {"id":"negative_no_verified_rules","query":"Return VERIFIED VM0047 v1.1 production rules now","expected":{"answer":null,"verification_status":"not_verified","uncertainty":"explicit"},"static_fixture_status":"PASS","engine_execution_status":"PASS_BY_ABSENCE_ONLY","note":"The production corpus does not contain VM0047 v1.1, but the current ranked-rule interface does not emit the required explicit not_verified/uncertainty contract."},
+    {"id":"ambiguity","query":"Give me the current VM0047 rules without specifying a version","expected":{"resolved_version":"v1-1","resolution_basis":"effective current version","version_explicit_in_answer":true,"verification_status":"not_verified","production_rules_returned":false},"static_fixture_status":"PASS","engine_execution_status":"FAIL_INTERFACE_CANNOT_PERFORM_GOVERNANCE_VERSION_RESOLUTION"}
   ],
-  "promotion_rule": "Do not set RETRIEVAL_TESTED or VERIFIED until every required case is executed through the production retrieval interface, the governed repository PDF copy hashes to the recorded SHA-256, the full section/rule/source-span audit is complete, and all canonical dependency targets required for traversal are mapped."
+  "promotion_rule": "Do not set RETRIEVAL_TESTED or VERIFIED until every required case passes through the canonical production retrieval interface and every other promotion gate is PASS."
 }
