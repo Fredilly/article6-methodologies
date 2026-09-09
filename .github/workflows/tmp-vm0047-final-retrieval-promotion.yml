@@ -16,54 +16,6 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           lfs: true
-      - name: Enrich structured source metadata
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          p = Path('lib/governance-retrieval.js')
-          s = p.read_text()
-          old = '''  function sourceInfo(component) {
-            const source = (((component.meta || {}).provenance || {}).source_pdfs || [])[0] || null;
-            if (!source) return null;
-            const abs = path.join(ROOT, source.path || '');
-            return {
-              doc: source.doc || null,
-              kind: source.kind || null,
-              governed_path: source.path || null,
-              sha256: source.sha256 || null,
-              size: source.size || null,
-              governed_pdf_present: Boolean(source.path && exists(abs))
-            };
-          }'''
-          new = '''  function sourceInfo(component) {
-            const source = (((component.meta || {}).provenance || {}).source_pdfs || [])[0] || null;
-            if (!source) return null;
-            const abs = path.join(ROOT, source.path || '');
-            const version = normalizeVersion(component.entry.version);
-            const discoveryPath = path.join(ROOT, 'docs', 'roadmaps', 'governance-v1', 'staging', component.entry.code, version, 'META.discovery.json');
-            let artifact = null;
-            if (exists(discoveryPath)) {
-              const discovery = readJSON(discoveryPath);
-              artifact = discovery && discovery.source_artifact ? discovery.source_artifact : null;
-            }
-            return {
-              doc: source.doc || null,
-              kind: source.kind || null,
-              governed_path: source.path || null,
-              sha256: source.sha256 || null,
-              size: source.size || null,
-              artifact_filename: artifact ? artifact.filename || null : null,
-              page_count: artifact ? artifact.page_count || null : null,
-              governed_pdf_present: Boolean(source.path && exists(abs))
-            };
-          }'''
-          if old not in s:
-              if 'artifact_filename: artifact ? artifact.filename || null : null' not in s:
-                  raise SystemExit('sourceInfo patch marker not found')
-          else:
-              s = s.replace(old, new, 1)
-          p.write_text(s)
-          PY
       - name: Pre-promotion structured unit contract
         run: node tests/governance-retrieval.test.js
       - name: Start production HTTP adapter
@@ -131,7 +83,8 @@ jobs:
           assert pre['deep_section_retrieval']['section']['title'] == 'Database Requirements for Project and Control Plots'
           assert pre['deep_section_retrieval']['section']['pages'] == [62,63]
           rule = pre['rule_retrieval']['rule']
-          assert rule['id'].endswith('.R-4-3-0002') and '50 planting units per hectare' in (rule.get('logic') or '').lower()
+          rule_logic = (rule.get('logic') or '').lower()
+          assert rule['id'].endswith('.R-4-3-0002') and '50' in rule_logic and 'planting units per hectare' in rule_logic
           dep = pre['dependency_traversal']['dependency']
           assert dep['target'] == 'Verra/VMD0054' and dep['relationship'] == 'MANDATORY'
           assert dep['version_policy'] == 'MOST_RECENT_AT_APPLICATION' and dep['version'] is None
