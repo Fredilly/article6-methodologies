@@ -1,5 +1,6 @@
 {
   "active_date": "2023-09-28",
+  "effective_from": "2023-09-28",
   "export": {
     "evidence_intelligence_version": "1.0.0",
     "metadata_version": "1.0.0",
@@ -23,7 +24,6 @@
     "rules_sha256": "a6d66d8e7f409e9a43dca8656bea03f6e5a0c9ee02a3ecfa6e61d19d9fcdaf3e",
     "sections.rich_sha256": "4d98351663ec55a7ea8705f36160910e5349b1c0987f0a6e6ab01f1b4218a5aa",
     "sections_json_sha256": "8c07f0a3ce505eba9b3a46bb5fb48e028046e95d0514c3e6fcae6e6a701d22a1",
-    "sections_rich_json_sha256": "843df04ec746b0d505dd6e1b16fea0fcc9951dd7727c9443d7d542ab40d647a3",
     "sections_sha256": "8c07f0a3ce505eba9b3a46bb5fb48e028046e95d0514c3e6fcae6e6a701d22a1",
     "source_pdf_sha256": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6"
   },
@@ -71,6 +71,14 @@
       "sha256": "8301281be475c3cd323d4b31e1806eca806127dabc8b0810ef5b4fa4d955ab4d"
     }
   ],
+  "governance_v1": {
+    "state": "PROVENANCE_COMPLETE",
+    "verified": false,
+    "blockers": [
+      "required_retrieval_test_families_not_recorded"
+    ],
+    "migration_note": "Source-audited rules and sections are preserved. VM0047 v1.1 is the authoritative successor and is effective from 2025-05-14. VM0047 v1.0 remains usable only under Verra transition conditions."
+  },
   "method": "ARR Methodology Framework",
   "methodology_linked_review_blockers": [],
   "methodology_linked_review_ready": true,
@@ -103,13 +111,16 @@
     "version": {
       "family": "Verra.AFOLU.VM0047",
       "lineage": [
-        "v1-0"
+        "v1-0",
+        "v1-1"
       ],
-      "next_version": null,
-      "previous_version": null
+      "next_version": "v1-1",
+      "previous_version": null,
+      "successor_effective_from": "2025-05-14",
+      "transition_source": "https://verra.org/methodologies/vm0047-afforestation-reforestation-and-revegetation-v1-1/"
     }
   },
-  "stage": "Active",
+  "stage": "Active under transition conditions",
   "standard": "VCS",
   "title": "VM0047 Afforestation, Reforestation and Revegetation, v1.0",
   "version": "v1-0"
