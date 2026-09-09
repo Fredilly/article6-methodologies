@@ -23,6 +23,18 @@
       "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
     }
   ],
+  "governance_v1": {
+    "state": "BLOCKED",
+    "verified": false,
+    "production_coverage": false,
+    "blockers": [
+      "placeholder_component_id",
+      "encoded_version_v1-0_does_not_match_source_title_v1-2-1",
+      "zero_file_hash_placeholders_present",
+      "canonical_gold_standard_native_identity_not_established"
+    ],
+    "migration_note": "Preserve this legacy import and its evidence, but exclude it from production coverage until the authoritative Gold Standard component identity and exact version are established and the corpus is re-governed."
+  },
   "method": "Land Use & Forests Activity Requirements",
   "provenance": {
     "author": "Fred Egbuedike"
@@ -49,7 +61,7 @@
       "previous_version": null
     }
   },
-  "stage": "Active",
+  "stage": "Blocked legacy import",
   "standard": "Gold Standard",
   "title": "GS LUF Activity Requirements v1.2.1",
   "version": "v1-0"
