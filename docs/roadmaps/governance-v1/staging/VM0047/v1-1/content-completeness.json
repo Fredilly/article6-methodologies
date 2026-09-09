@@ -1,0 +1,36 @@
+{
+  "component": "Verra/VM0047@v1-1",
+  "source_pdf_sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+  "status": "CANONICAL_STRUCTURE_COMPLETE_CONTENT_REVIEW_PARTIAL",
+  "dimensions": {
+    "source_text": {
+      "state": "COMPLETE",
+      "evidence": "Deterministic pdftotext -layout extraction from the governed 81-page PDF is preserved at source/source.layout.txt."
+    },
+    "numbered_section_hierarchy": {
+      "state": "COMPLETE",
+      "evidence": "The source-verified deep hierarchy is folded into canonical sections.json; sections.lean.json is derived from it."
+    },
+    "atomic_rules": {
+      "state": "PARTIAL",
+      "evidence": "Initial source-mapped atomic rules exist in rules.json.",
+      "remaining": "Complete semantic decomposition across applicability, project boundary, baseline, additionality, quantification, monitoring, uncertainty, appendices, equations and parameters."
+    },
+    "equations": {
+      "state": "INVENTORIED",
+      "evidence": "content-inventory.json records equation references detected in the governed source text.",
+      "remaining": "Normalize equation operands, units, applicability and outputs through semantic source review."
+    },
+    "parameters": {
+      "state": "INVENTORIED",
+      "evidence": "content-inventory.json records parameter labels detected in the governed source text.",
+      "remaining": "Normalize parameter definitions, units, monitoring frequency, source and applicability through semantic source review."
+    },
+    "verbatim_rule_provenance": {
+      "state": "PARTIAL",
+      "evidence": "Existing rules retain section/page mappings and SOURCE_REQUIREMENT classification scaffolding.",
+      "remaining": "Every material atomic rule must carry an exact source span and governed-source provenance before PROVENANCE_COMPLETE."
+    }
+  },
+  "promotion_note": "Canonical hierarchy completion is not equivalent to RULES_COMPLETE or PROVENANCE_COMPLETE. Unknown or incomplete semantic review remains explicit."
+}
