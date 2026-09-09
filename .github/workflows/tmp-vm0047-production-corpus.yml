@@ -33,8 +33,7 @@ jobs:
           source_size=(repo/source_path).stat().st_size
 
           def slug(s):
-              s=re.sub(r'[^a-z0-9]+','-',s.lower()).strip('-')
-              return s or 'section'
+              return re.sub(r'[^a-z0-9]+','-',s.lower()).strip('-') or 'section'
           def prod_sid(sid):
               if re.fullmatch(r'S-\d+(?:-\d+)*',sid): return sid
               if sid=='S-A1': return 'S-11'
@@ -48,13 +47,8 @@ jobs:
           lean_sections=[]; rich_sections=[]; by_num={}
           for s in src_sections:
               sid=prod_sid(s['id']); parent=prod_sid(s['parent_id']) if s.get('parent_id') else None
-              stable=f"Verra.AFOLU.VM0047.v1-1.{sid}"
-              anchor=slug(s['title'])
-              q={
-                'id':sid,'stable_id':stable,'title':s['title'],'anchor':anchor,
-                'section_number':s['section_number'],'section_level':s['section_level'],'parent_id':parent,
-                'page_start':s.get('page_start'),'page_end':s.get('page_end'),'locator_status':'source_audited'
-              }
+              stable=f"Verra.AFOLU.VM0047.v1-1.{sid}"; anchor=slug(s['title'])
+              q={'id':sid,'title':s['title'],'anchor':anchor,'section_number':s['section_number'],'stable_id':stable}
               lean_sections.append(q); by_num[s['section_number']]=q
               pages=list(range(s['page_start'],s['page_end']+1)) if s.get('page_start') and s.get('page_end') else []
               rich_sections.append({
@@ -64,7 +58,6 @@ jobs:
                 'locator_status':'source_audited','source_span_status':'source_audited',
                 'provenance':{'source_ref':f"VM0047 v1.1 Section {s['section_number']}",'source_hash':source_hash}
               })
-          # children lists make hierarchy explicit in rich source representation
           childmap={x['id']:[] for x in rich_sections}
           for x in rich_sections:
               if x.get('parent_id') in childmap: childmap[x['parent_id']].append(x['id'])
@@ -78,74 +71,55 @@ jobs:
           for fam in index['families']:
               source_rules.extend(json.loads((stage/fam['path']).read_text())['rules'])
           assert len(source_rules)==index['total_atomic_rules']==88
-
           def primary_number(raw):
               raw=raw.strip()
               if raw in by_num: return raw
-              # combined range such as 8.3.1.2-8.3.1.5
               first=raw.split('-')[0].strip()
               if first in by_num: return first
               raise ValueError('unmapped rule section_number '+raw)
-          counters={}; lean_rules=[]; rich_rules=[]
           def rtype(r):
               tags=set(r.get('tags') or [])
-              if 'monitoring' in tags or 'monitoring-plan' in tags or 'database' in tags: return 'monitoring'
+              if tags & {'monitoring','monitoring-plan','database'}: return 'monitoring'
               if 'uncertainty' in tags: return 'uncertainty'
               if 'leakage' in tags: return 'leakage'
               if 'equation' in tags: return 'equation'
               if tags & {'quantification','parameter','biomass','fertilizer','ex-ante','benchmark'}: return 'calc'
               return 'eligibility'
+          counters={}; lean_rules=[]; rich_rules=[]
           for r in source_rules:
               secnum=primary_number(r['section_number']); s=by_num[secnum]; sid=s['id']
               counters[sid]=counters.get(sid,0)+1
-              rid='R-'+sid[2:]+'-'+f"{counters[sid]:04d}"
-              stable=f"Verra.AFOLU.VM0047.v1-1.{rid}"
-              tags=r.get('tags') or ['governance']
+              rid='R-'+sid[2:]+'-'+f"{counters[sid]:04d}"; stable=f"Verra.AFOLU.VM0047.v1-1.{rid}"
+              tags=sorted(set(r.get('tags') or ['governance']))
               lean_rules.append({
                 'id':rid,'stable_id':stable,'title':r['title'],'logic':r['logic'],
-                'section_id':sid,'section_stable_id':s['stable_id'],'section_number':secnum,
-                'section_anchor':s['anchor'],'tools':['Verra/VM0047@v1-1'],'tags':tags,
-                'quality_status':'source_audited','when':r.get('when') or []
+                'section_anchor':s['anchor'],'section_id':sid,'section_number':secnum,
+                'section_stable_id':s['stable_id'],'tools':['Verra/VM0047@v1-1'],'tags':tags,'when':r.get('when') or []
               })
               rich_rules.append({
                 'id':stable,'stable_id':stable,'summary':r['title'],'logic':r['logic'],'type':rtype(r),
-                'quality_status':'source_audited','source_span_status':'source_audited','when':r.get('when') or [],
-                'tags':tags,
-                'refs':{
-                  'methodology':'Verra/VM0047@v1-1','primary_section':sid,'sections':[sid],
-                  'section_number':secnum,'section_anchor':s['anchor'],'section_stable_id':s['stable_id'],
-                  'pages':r['source_pages'],'tools':['Verra/VM0047@v1-1']
-                },
+                'quality_status':'source_audited','source_span_status':'source_audited','when':r.get('when') or [],'tags':tags,
+                'refs':{'methodology':'Verra/VM0047@v1-1','primary_section':sid,'sections':[sid],
+                        'section_number':secnum,'section_anchor':s['anchor'],'section_stable_id':s['stable_id'],
+                        'pages':r['source_pages'],'tools':['Verra/VM0047@v1-1']},
                 'provenance':{'source_ref':r['source_locator'],'source_hash':source_hash}
               })
           (out/'rules.json').write_text(json.dumps({'rules':lean_rules},indent=2)+'\n')
           (out/'rules.rich.json').write_text(json.dumps(rich_rules,indent=2)+'\n')
-          shutil.copyfile(stage/'equations.governance-v1.json',out/'equations.governance-v1.json')
-          shutil.copyfile(stage/'parameters.governance-v1.json',out/'parameters.governance-v1.json')
-          shutil.copyfile(stage/'dependencies.governance-v1.json',out/'dependencies.governance-v1.json')
-          shutil.copyfile(stage/'version-diff-from-v1-0.json',out/'version-diff-from-v1-0.json')
-          shutil.copyfile(stage/'rules.governance-v1.index.json',out/'rules.governance-v1.index.json')
-
+          for f in ['equations.governance-v1.json','parameters.governance-v1.json','dependencies.governance-v1.json','version-diff-from-v1-0.json','rules.governance-v1.index.json']:
+              shutil.copyfile(stage/f,out/f)
           def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
           files=['sections.json','sections.rich.json','rules.json','rules.rich.json','equations.governance-v1.json','parameters.governance-v1.json','dependencies.governance-v1.json','version-diff-from-v1-0.json','rules.governance-v1.index.json']
           meta={
             'active_date':'2025-05-14','effective_from':'2025-05-14','domain':'AFOLU','method':'ARR Methodology Framework',
             'standard':'VCS','stage':'Active','status':'active','title':'VM0047 Afforestation, Reforestation and Revegetation, v1.1','version':'v1-1',
             'artifact_status':{'rules':'source_audited','sections':'source_audited','source_pdf':'verified'},
-            'audit_hashes':{
-              'source_pdf_sha256':source_hash,'sections_json_sha256':sha(out/'sections.json'),
-              'rules_json_sha256':sha(out/'rules.json'),'sections.rich_sha256':sha(out/'sections.rich.json'),
-              'rules.rich_sha256':sha(out/'rules.rich.json')
-            },
+            'audit_hashes':{'source_pdf_sha256':source_hash,'sections_json_sha256':sha(out/'sections.json'),'rules_json_sha256':sha(out/'rules.json'),'sections.rich_sha256':sha(out/'sections.rich.json'),'rules.rich_sha256':sha(out/'rules.rich.json')},
             'files':[{'path':f,'sha256':sha(out/f)} for f in files],
             'provenance':{'author':'Article6 Governance v1','date':'2026-09-09','source_pdfs':[{'doc':'Verra/VM0047@v1-1','kind':'pdf','path':source_path,'sha256':source_hash,'size':source_size}]},
             'references':{'tools':[{'doc':'Verra/VM0047@v1-1','kind':'pdf','path':source_path,'sha256':source_hash,'size':source_size,'url':'https://verra.org/methodologies/vm0047-afforestation-reforestation-and-revegetation-v1-1/'}]},
             'relationships':{'version':{'family':'Verra.AFOLU.VM0047','lineage':['v1-0','v1-1'],'previous_version':'v1-0','next_version':None}},
-            'governance_v1':{
-              'state':'PROVENANCE_COMPLETE','verified':False,'production_corpus':True,
-              'blockers':['production_retrieval_execution_not_passed'],
-              'migration_note':'Canonical v1.1 sections/rules are now present in methodologies/**. Production presence does not imply VERIFIED; retrieval must pass the governance-v1 contract first.'
-            },
+            'governance_v1':{'state':'PROVENANCE_COMPLETE','verified':False,'production_corpus':True,'blockers':['production_retrieval_execution_not_passed'],'migration_note':'Canonical v1.1 sections/rules are now present in methodologies/**. Production presence does not imply VERIFIED; retrieval must pass the governance-v1 contract first.'},
             'external_dependencies':{'status':'governed_dependency_graph','path':'dependencies.governance-v1.json','note':'Dynamic and incorporated dependency semantics are preserved in the governed dependency artifact; no dynamic dependency is silently pinned.'}
           }
           (out/'META.json').write_text(json.dumps(meta,indent=2)+'\n')
