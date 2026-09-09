@@ -1,0 +1,137 @@
+{
+  "component": "Verra/VM0047@v1-1",
+  "source_pdf_sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+  "status": "CANONICAL_DEPENDENCY_IDENTITIES_RESOLVED",
+  "version_semantics": "Preserve fixed, dynamic, example-only, and incorporated-by-reference semantics exactly as supported by the source; do not silently bind dynamic requirements to a currently active version.",
+  "dependencies": [
+    {
+      "target": "Verra/VMD0054",
+      "native_name": "VMD0054 Module for Estimating Leakage from ARR Activities",
+      "relationship": "MANDATORY",
+      "applicability": "area-based approach",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "source_sections": ["1.1", "4.2", "8.4"],
+      "source_pages": [5, 10, 32],
+      "source_semantics": "Section 8.4 explicitly requires the most recent version of VMD0054.",
+      "resolution_status": "RESOLVED_DYNAMIC_VERSION_POLICY"
+    },
+    {
+      "target": "Verra/VT0008",
+      "native_name": "VT0008 Additionality Assessment",
+      "relationship": "CONDITIONAL",
+      "applicability": "investment analysis; always required for census-based projects and required for area-based projects except where the methodology's stated revenue/incentive exception applies",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "source_sections": ["7.1", "7.2", "7.3.3"],
+      "source_pages": [16, 17],
+      "source_semantics": "Section 7.3.3 requires the most recent version of VT0008; the v1.0 footnote is explanatory, not a fixed dependency pin.",
+      "resolution_status": "RESOLVED_DYNAMIC_VERSION_POLICY"
+    },
+    {
+      "target": "Verra/VCS-METHODOLOGY-REQUIREMENTS",
+      "native_name": "VCS Methodology Requirements",
+      "component_type": "REQUIREMENT_SET",
+      "relationship": "MANDATORY",
+      "applicability": "regulatory surplus demonstration",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "source_sections": ["7.3.1"],
+      "source_pages": [17],
+      "source_semantics": "The methodology requires regulatory surplus to be demonstrated in accordance with the most recent VCS Methodology Requirements.",
+      "resolution_status": "CANONICAL_COMPONENT_ID_RESOLVED"
+    },
+    {
+      "target": "Verra/VCS-PROGRAM-DEFINITIONS",
+      "native_name": "VCS Program Definitions",
+      "component_type": "REQUIREMENT_SET",
+      "relationship": "MANDATORY",
+      "applicability": "definitions used by the methodology",
+      "version": null,
+      "version_policy": "PROGRAM_CURRENT_AT_APPLICATION",
+      "source_sections": ["3"],
+      "source_pages": [6],
+      "source_semantics": "Section 3 states that methodology definitions apply in addition to definitions set out in the VCS Program Definitions.",
+      "resolution_status": "CANONICAL_COMPONENT_ID_RESOLVED"
+    },
+    {
+      "target": "Verra/VCS-STANDARD",
+      "native_name": "VCS Standard",
+      "component_type": "REQUIREMENT_SET",
+      "relationship": "CONDITIONAL",
+      "applicability": "harvesting / long-term average requirements and general VCS Program compliance",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "source_sections": ["4.4", "8.6.2", "A1.4 Step 5"],
+      "source_pages": [12, 35, 73],
+      "source_semantics": "The methodology directs projects with harvesting to the most recent VCS Standard for long-term-average requirements; a cited v4.7 context is not treated as a universal static pin.",
+      "resolution_status": "CANONICAL_COMPONENT_ID_RESOLVED"
+    },
+    {
+      "target": null,
+      "native_name": "Wetland Restoration and Conservation methodology",
+      "component_type": "METHODOLOGY",
+      "relationship": "CONDITIONAL",
+      "applicability": "projects on organic soils or wetlands, for carbon pools outside aboveground biomass in a multiple-project-activity design",
+      "version": null,
+      "version_policy": "QUALIFYING_METHOD_AT_APPLICATION",
+      "example_component": "Verra/VM0036",
+      "source_sections": ["4.1"],
+      "source_pages": [8],
+      "source_semantics": "VM0036 is introduced with 'e.g.' and is an example, not the sole required methodology.",
+      "resolution_status": "TARGET_CLASS_RESOLVED_EXACT_COMPONENT_CONDITIONAL"
+    },
+    {
+      "target": "UNFCCC/AR-ACM0003",
+      "native_name": "A/R Large-scale Consolidated Methodology: Afforestation and Reforestation of Lands Except Wetlands",
+      "relationship": "INCORPORATED_BY_REFERENCE",
+      "applicability": "methodology basis",
+      "version": null,
+      "version_policy": "SOURCE_DOES_NOT_PIN_VERSION",
+      "source_sections": ["2"],
+      "source_pages": [6],
+      "source_semantics": "VM0047 states that the methodology is based on AR-ACM0003; it does not direct project proponents to apply a particular version as a runtime dependency.",
+      "resolution_status": "RELATIONSHIP_RESOLVED_VERSION_UNSPECIFIED"
+    },
+    {
+      "target": "UNFCCC/CDM-AR-TOOL-TESTING-SIGNIFICANCE-GHG-EMISSIONS",
+      "native_name": "Tool for testing significance of GHG emissions in A/R CDM project activities",
+      "component_type": "TOOL",
+      "native_type": "A/R Methodological Tool",
+      "relationship": "INCORPORATED_BY_REFERENCE",
+      "applicability": "source basis for portions of methodology; significance procedure is integrated into Appendix 2",
+      "version": null,
+      "version_policy": "SOURCE_DOES_NOT_PIN_VERSION",
+      "source_sections": ["2", "Appendix 2"],
+      "source_pages": [6, 77, 78],
+      "identity_evidence": "UNFCCC CDM Executive Board EB 31 Annex 16 identifies Version 01 of the native-title tool.",
+      "resolution_status": "CANONICAL_COMPONENT_ID_RESOLVED"
+    },
+    {
+      "target": "Verra/VT0001",
+      "native_name": "VT0001 Tool for the Demonstration and Assessment of Additionality in VCS Agriculture, Forestry and Other Land Use (AFOLU) Project Activities",
+      "relationship": "INCORPORATED_BY_REFERENCE",
+      "applicability": "source basis for portions of methodology",
+      "version": null,
+      "version_policy": "SOURCE_DOES_NOT_PIN_VERSION",
+      "source_sections": ["2"],
+      "source_pages": [6],
+      "source_semantics": "Section 2 says portions of VM0047 are based on VT0001; it does not direct project proponents to apply a fixed VT0001 version.",
+      "resolution_status": "RELATIONSHIP_RESOLVED_VERSION_UNSPECIFIED"
+    }
+  ],
+  "explicit_non_dependencies": [
+    {
+      "target": "Verra/VT0005",
+      "source_section": "9.2",
+      "source_page": 47,
+      "reason": "The methodology explicitly states that VT0005 Tool for Measuring Aboveground Live Forest Biomass Using Remote Sensing does not apply."
+    }
+  ],
+  "governance": {
+    "static_exact_version_required_for_vmd0054": false,
+    "reason": "The source itself defines a dynamic most-recent-version policy.",
+    "identity_map": "dependency-identities.json",
+    "remaining_mapping_work": []
+  }
+}

@@ -1530,10 +1530,24 @@
     "version": "1.0",
     "path": "methodologies/Verra/AFOLU/VM0047/v1-0",
     "stage": "active",
-    "latest": true,
+    "latest": false,
     "source_pdf": {
       "path": "source-assets/Verra/AFOLU/VM0047/v1-0/source.pdf",
       "sha256": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6"
+    }
+  },
+  {
+    "kind": "active",
+    "standard": "Verra",
+    "program": "AFOLU",
+    "code": "VM0047",
+    "version": "1.1",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1",
+    "stage": "active",
+    "latest": true,
+    "source_pdf": {
+      "path": "tools/Verra/VM0047/v1-1/source.pdf",
+      "sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   }
 ]

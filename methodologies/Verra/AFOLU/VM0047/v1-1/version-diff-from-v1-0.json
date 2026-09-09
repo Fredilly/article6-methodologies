@@ -1,0 +1,40 @@
+{
+  "component": "Verra/VM0047",
+  "from_version": "v1-0",
+  "to_version": "v1-1",
+  "change_class": "minor_revision",
+  "effective_from": "2025-05-14",
+  "authoritative_summary_source": "VM0047 v1.1 Document History, page 81",
+  "semantic_diff": "semantic-diff.governance-v1.json",
+  "full_text_evidence": "diff-evidence/full-text-comparison.json",
+  "material_change_count": 11,
+  "change_types": ["ADDED","MODIFIED","TOOL_CHANGED","PARAMETER_CHANGED","THRESHOLD_CHANGED"],
+  "changes": [
+    {"id":"D-01","type":"MODIFIED","area":"existing_forest_cover_eligibility","sections":["1","4.2","4.4.1"]},
+    {"id":"D-02","type":"THRESHOLD_CHANGED","area":"census_planting_density_spacing_accounting_identification","sections":["1.2","4.3","5.2","9.1","9.2"]},
+    {"id":"D-03","type":"MODIFIED","area":"definitions","sections":["3"]},
+    {"id":"D-04","type":"MODIFIED","area":"pre_existing_woody_biomass_removal","sections":["4.2","8.2.1.2"]},
+    {"id":"D-05","type":"MODIFIED","area":"soil_disturbance_accounting","sections":["4.3","8.2.1.6","9.2"]},
+    {"id":"D-06","type":"MODIFIED","area":"timber_harvest_and_ecosystem_degradation_exclusions","sections":["4.4.1","8.6.2"]},
+    {"id":"D-07","type":"ADDED","area":"remote_sensing_pre_existing_biomass","sections":["4.2","8.2.1.2"]},
+    {"id":"D-08","type":"PARAMETER_CHANGED","area":"uncertainty_ex_ante_and_carbon_pool_quantification","sections":["8.2","8.5","8.7","9","Appendix 3"]},
+    {"id":"D-09","type":"PARAMETER_CHANGED","area":"performance_benchmark_design_sampling_equations","sections":["7.3.2","Appendix 1"]},
+    {"id":"D-10","type":"TOOL_CHANGED","area":"leakage_dependency","sections":["1.1","4.2","8.4"]},
+    {"id":"D-11","type":"MODIFIED","area":"editorial_clarity_consistency","sections":["multiple"]}
+  ],
+  "transition": {
+    "v1_0_normal_active_period_end": "2025-05-13",
+    "v1_1_effective": "2025-05-14",
+    "v1_0_pipeline_listing_deadline": "2025-12-31",
+    "v1_0_registration_deadline": "2026-12-31",
+    "v1_0_corrections_effective": "2025-05-14"
+  },
+  "governance": {
+    "semantic_diff_status": "COMPLETE",
+    "full_governed_texts_compared": true,
+    "full_text_diff_sha256": "dfe52490748e5251a80eea28a92428bd68e85495b70e0965b5b9704ba1501fd6",
+    "do_not_assume_unchanged_text_is_semantically_identical": true,
+    "historical_retrieval_required": true,
+    "silent_backporting_prohibited": true
+  }
+}

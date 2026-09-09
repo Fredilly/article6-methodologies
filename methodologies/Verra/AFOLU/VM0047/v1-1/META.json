@@ -1,0 +1,111 @@
+{
+  "active_date": "2025-05-14",
+  "effective_from": "2025-05-14",
+  "domain": "AFOLU",
+  "method": "ARR Methodology Framework",
+  "standard": "VCS",
+  "stage": "Active",
+  "status": "active",
+  "title": "VM0047 Afforestation, Reforestation and Revegetation, v1.1",
+  "version": "v1-1",
+  "artifact_status": {
+    "rules": "source_audited",
+    "sections": "source_audited",
+    "source_pdf": "verified"
+  },
+  "audit_hashes": {
+    "source_pdf_sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+    "sections_json_sha256": "778882f2a5da92616817d2b3bb76a38d51abd11087f3fa4556ac1d0921ed24a0",
+    "rules_json_sha256": "bfdbb9f5e282260e2baeaacc82dce3f2bedc494a20f0ab91c11a59356c6d1c32",
+    "sections.rich_sha256": "1243e7393963995e821dda9826d37b71532fffc0d2e07b92cee1b0227e4d81e5",
+    "rules.rich_sha256": "1f559056b587dc35b84e03b20aadcc3d7f21a9695b854cb0a063a2421647629d"
+  },
+  "files": [
+    {
+      "path": "sections.json",
+      "sha256": "778882f2a5da92616817d2b3bb76a38d51abd11087f3fa4556ac1d0921ed24a0"
+    },
+    {
+      "path": "sections.rich.json",
+      "sha256": "1243e7393963995e821dda9826d37b71532fffc0d2e07b92cee1b0227e4d81e5"
+    },
+    {
+      "path": "rules.json",
+      "sha256": "bfdbb9f5e282260e2baeaacc82dce3f2bedc494a20f0ab91c11a59356c6d1c32"
+    },
+    {
+      "path": "rules.rich.json",
+      "sha256": "1f559056b587dc35b84e03b20aadcc3d7f21a9695b854cb0a063a2421647629d"
+    },
+    {
+      "path": "equations.governance-v1.json",
+      "sha256": "8ba634223a168d6e2078a9212a12933fb34485d597cf768d36f1a6d89c0cd249"
+    },
+    {
+      "path": "parameters.governance-v1.json",
+      "sha256": "838297f52292e5645ad5e97f9aa4f72544d1571d43203eff76a95b101df9aad4"
+    },
+    {
+      "path": "dependencies.governance-v1.json",
+      "sha256": "de2fab1678711a78b6a862ee38151dcb37b4f978b069f5b4ca8b041aef4f0311"
+    },
+    {
+      "path": "version-diff-from-v1-0.json",
+      "sha256": "84c97df8ed10aeb771ff876ad30fe971473d609a2c0cf0365ecbd56b26420974"
+    },
+    {
+      "path": "rules.governance-v1.index.json",
+      "sha256": "c1ab44d0128d3a87c74947d344b9acec564abf5bedb8552810f286f0ea75050f"
+    }
+  ],
+  "provenance": {
+    "author": "Article6 Governance v1",
+    "date": "2026-09-09",
+    "source_pdfs": [
+      {
+        "doc": "Verra/VM0047@v1-1",
+        "kind": "pdf",
+        "path": "tools/Verra/VM0047/v1-1/source.pdf",
+        "sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+        "size": 1171574
+      }
+    ]
+  },
+  "references": {
+    "tools": [
+      {
+        "doc": "Verra/VM0047@v1-1",
+        "kind": "pdf",
+        "path": "tools/Verra/VM0047/v1-1/source.pdf",
+        "sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+        "size": 1171574,
+        "url": "https://verra.org/methodologies/vm0047-afforestation-reforestation-and-revegetation-v1-1/"
+      }
+    ]
+  },
+  "relationships": {
+    "version": {
+      "family": "Verra.AFOLU.VM0047",
+      "lineage": [
+        "v1-0",
+        "v1-1"
+      ],
+      "previous_version": "v1-0",
+      "next_version": null
+    }
+  },
+  "governance_v1": {
+    "state": "PROVENANCE_COMPLETE",
+    "verified": false,
+    "production_corpus": true,
+    "blockers": [
+      "production_retrieval_execution_not_passed"
+    ],
+    "migration_note": "Canonical v1.1 sections/rules are now present in methodologies/**. Production presence does not imply VERIFIED; retrieval must pass the governance-v1 contract first."
+  },
+  "external_dependencies": {
+    "status": "governed_dependency_graph",
+    "path": "dependencies.governance-v1.json",
+    "note": "Dynamic and incorporated dependency semantics are preserved in the governed dependency artifact; no dynamic dependency is silently pinned."
+  }
+}

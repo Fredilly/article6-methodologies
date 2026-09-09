@@ -1,0 +1,3225 @@
+[
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-1-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-1-0001",
+    "summary": "ARR activity eligibility",
+    "logic": "Project activities must establish, increase or restore vegetative cover in non-forest areas; area-based activities may enhance stocks in existing forest cover only where the forest has not been managed for wood products in the previous ten years.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Project activities must establish, increase or restore vegetative cover in non-forest areas; area-based activities may enhance stocks in existing forest cover only where the forest has not been managed for wood products in the previous ten years.",
+    "when": [],
+    "tags": [
+      "eligibility"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-1",
+      "sections": [
+        "S-1"
+      ],
+      "section_number": "1",
+      "section_anchor": "summary-description",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-1",
+      "pages": [
+        5
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a71 \u00b62",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-1-1-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-1-1-0001",
+    "summary": "Area-based leakage module",
+    "logic": "Area-based projects apply VMD0054 to quantify leakage.",
+    "type": "leakage",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Area-based projects apply VMD0054 to quantify leakage.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "dependency",
+      "leakage"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-1-1",
+      "sections": [
+        "S-1-1"
+      ],
+      "section_number": "1.1",
+      "section_anchor": "summary-of-the-area-based-approach",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-1-1",
+      "pages": [
+        5
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a71.1 item 4",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-1-2-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-1-2-0001",
+    "summary": "Census approach core conditions",
+    "logic": "Census-based projects use direct planting, max 50 planting units/ha, complete census at t=0, project-method additionality/baseline, and no leakage deduction where land use is maintained.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Census-based projects use direct planting, max 50 planting units/ha, complete census at t=0, project-method additionality/baseline, and no leakage deduction where land use is maintained.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "census",
+      "eligibility"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-1-2",
+      "sections": [
+        "S-1-2"
+      ],
+      "section_number": "1.2",
+      "section_anchor": "summary-of-the-census-based-approach",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-1-2",
+      "pages": [
+        6
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a71.2 items 1-6",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-4-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-4-0001",
+    "summary": "Mutually exclusive approach applicability",
+    "logic": "Each project activity instance must fully meet either area-based or census-based applicability; mixed projects require clearly separated instances with at least a 10 m buffer.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Each project activity instance must fully meet either area-based or census-based applicability; mixed projects require clearly separated instances with at least a 10 m buffer.",
+    "when": [],
+    "tags": [
+      "boundary",
+      "eligibility"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-4",
+      "sections": [
+        "S-4"
+      ],
+      "section_number": "4",
+      "section_anchor": "applicability-conditions",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-4",
+      "pages": [
+        8
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a74 \u00b61",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-4-1-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-4-1-0001",
+    "summary": "General applicability conditions",
+    "logic": "All projects must increase vegetative cover, keep mixed approaches non-overlapping, fix the quantification approach for the crediting period, document the earliest start-date trigger, and use a multiple-project-activity design on organic soils/wetlands.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "All projects must increase vegetative cover, keep mixed approaches non-overlapping, fix the quantification approach for the crediting period, document the earliest start-date trigger, and use a multiple-project-activity design on organic soils/wetlands.",
+    "when": [],
+    "tags": [
+      "eligibility"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-4-1",
+      "sections": [
+        "S-4-1"
+      ],
+      "section_number": "4.1",
+      "section_anchor": "general-applicability-conditions",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-1",
+      "pages": [
+        8
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a74.1 items 1-5",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-4-2-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-4-2-0001",
+    "summary": "Area-based t0 before site preparation",
+    "logic": "Where site preparation triggers the start date, t=0 estimates for all significant pools must be established before preparation and no more than two years before start; remote sensing is limited to pre-existing woody biomass if plots were unavailable.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Where site preparation triggers the start date, t=0 estimates for all significant pools must be established before preparation and no more than two years before start; remote sensing is limited to pre-existing woody biomass if plots were unavailable.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "eligibility",
+      "measurement"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-4-2",
+      "sections": [
+        "S-4-2"
+      ],
+      "section_number": "4.2",
+      "section_anchor": "area-based-approach-applicability-conditions",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-2",
+      "pages": [
+        9
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a74.2 item 2(a)(i)-(iii)",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-4-2-0002",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-4-2-0002",
+    "summary": "Remote sensing t0 limitation",
+    "logic": "Remote sensing may establish t=0 only for pre-existing above- and belowground woody biomass; disturbed significant pools without t=0 measurement make the project ineligible unless conservatively excludable.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Remote sensing may establish t=0 only for pre-existing above- and belowground woody biomass; disturbed significant pools without t=0 measurement make the project ineligible unless conservatively excludable.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "eligibility",
+      "remote-sensing"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-4-2",
+      "sections": [
+        "S-4-2"
+      ],
+      "section_number": "4.2",
+      "section_anchor": "area-based-approach-applicability-conditions",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-2",
+      "pages": [
+        9
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a74.2 Note after item 2(a)",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-4-2-0003",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-4-2-0003",
+    "summary": "Area-based t0 after land-use-change start",
+    "logic": "Where start is a land-use-change date or preparation did not significantly reduce monitored pools, t=0 estimates must be established within two years after start, using plot sampling for all significant pools and evidence that preparation did not significantly reduce them.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Where start is a land-use-change date or preparation did not significantly reduce monitored pools, t=0 estimates must be established within two years after start, using plot sampling for all significant pools and evidence that preparation did not significantly reduce them.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "evidence",
+      "measurement"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-4-2",
+      "sections": [
+        "S-4-2"
+      ],
+      "section_number": "4.2",
+      "section_anchor": "area-based-approach-applicability-conditions",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-2",
+      "pages": [
+        9
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a74.2 item 2(b)(i)-(iii)",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-4-2-0004",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-4-2-0004",
+    "summary": "Leakage not de minimis",
+    "logic": "Area-based leakage must be monitored and quantified using VMD0054 and must not be assumed de minimis.",
+    "type": "leakage",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Area-based leakage must be monitored and quantified using VMD0054 and must not be assumed de minimis.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "dependency",
+      "leakage"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-4-2",
+      "sections": [
+        "S-4-2"
+      ],
+      "section_number": "4.2",
+      "section_anchor": "area-based-approach-applicability-conditions",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-2",
+      "pages": [
+        10
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a74.2 item 3",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-4-3-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-4-3-0001",
+    "summary": "Census planting, land use, density and census",
+    "logic": "Census-based activities must use direct planting, maintain pre-project land use, stay at or below 50 planting units/ha with proportional scaling, and establish N by complete census at t=0.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Census-based activities must use direct planting, maintain pre-project land use, stay at or below 50 planting units/ha with proportional scaling, and establish N by complete census at t=0.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "census",
+      "eligibility",
+      "threshold"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-4-3",
+      "sections": [
+        "S-4-3"
+      ],
+      "section_number": "4.3",
+      "section_anchor": "census-based-approach-applicability-conditions",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-3",
+      "pages": [
+        10
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a74.3 items 1-4",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-4-3-0002",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-4-3-0002",
+    "summary": "Census replanting cap",
+    "logic": "Dead planting units may be replanted provided N does not exceed 50 live project planting units per hectare.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Dead planting units may be replanted provided N does not exceed 50 live project planting units per hectare.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "monitoring",
+      "threshold"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-4-3",
+      "sections": [
+        "S-4-3"
+      ],
+      "section_number": "4.3",
+      "section_anchor": "census-based-approach-applicability-conditions",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-3",
+      "pages": [
+        10
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a74.3 item 5",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-4-3-0003",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-4-3-0003",
+    "summary": "Planting-unit identification",
+    "logic": "Each census planting unit must be identifiable by GPS spacing at least equal to positional accuracy or by a durable unique physical marker.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Each census planting unit must be identifiable by GPS spacing at least equal to positional accuracy or by a durable unique physical marker.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "evidence",
+      "monitoring"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-4-3",
+      "sections": [
+        "S-4-3"
+      ],
+      "section_number": "4.3",
+      "section_anchor": "census-based-approach-applicability-conditions",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-3",
+      "pages": [
+        10
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a74.3 item 6(a)-(b)",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-4-3-0004",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-4-3-0004",
+    "summary": "Missing unit mortality assumption",
+    "logic": "A planting unit that cannot be located at monitoring is conservatively assumed dead.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "A planting unit that cannot be located at monitoring is conservatively assumed dead.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "conservativeness",
+      "monitoring"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-4-3",
+      "sections": [
+        "S-4-3"
+      ],
+      "section_number": "4.3",
+      "section_anchor": "census-based-approach-applicability-conditions",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-3",
+      "pages": [
+        11
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a74.3 item 7",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-4-3-0005",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-4-3-0005",
+    "summary": "Census land eligibility",
+    "logic": "Census activity must occur in areas with less than 10% pre-existing woody cover and/or qualifying continuous cropping, settlements or other lands.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Census activity must occur in areas with less than 10% pre-existing woody cover and/or qualifying continuous cropping, settlements or other lands.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "eligibility",
+      "threshold"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-4-3",
+      "sections": [
+        "S-4-3"
+      ],
+      "section_number": "4.3",
+      "section_anchor": "census-based-approach-applicability-conditions",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-3",
+      "pages": [
+        11
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a74.3 item 8(a)-(b)",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-4-3-0006",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-4-3-0006",
+    "summary": "Project soil-disturbance limits",
+    "logic": "Project-related soil disturbance is permitted at planting; localized planting disturbance may exceed 25 cm, but soil inversion must not exceed 25 cm and may occur only once in the crediting period.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Project-related soil disturbance is permitted at planting; localized planting disturbance may exceed 25 cm, but soil inversion must not exceed 25 cm and may occur only once in the crediting period.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "eligibility",
+      "soil"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-4-3",
+      "sections": [
+        "S-4-3"
+      ],
+      "section_number": "4.3",
+      "section_anchor": "census-based-approach-applicability-conditions",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-3",
+      "pages": [
+        11
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a74.3 item 9(a)-(c)",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-4-4-1-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-4-4-1-0001",
+    "summary": "Area-based exclusions",
+    "logic": "Area-based projects are ineligible on recently managed forest, where clearing involves timber harvest or native-ecosystem degradation, or where planting fewer than 50 units/ha could use census-based approach.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Area-based projects are ineligible on recently managed forest, where clearing involves timber harvest or native-ecosystem degradation, or where planting fewer than 50 units/ha could use census-based approach.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "eligibility",
+      "exclusion"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-4-4-1",
+      "sections": [
+        "S-4-4-1"
+      ],
+      "section_number": "4.4.1",
+      "section_anchor": "area-based-approach-exclusions",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-4-1",
+      "pages": [
+        12
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a74.4.1 items 1-3",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-4-4-2-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-4-4-2-0001",
+    "summary": "Census-based exclusions",
+    "logic": "Census projects are ineligible where similar-purpose woody biomass was removed in the prior 10 years or project soil inversion exceeds 25 cm.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Census projects are ineligible where similar-purpose woody biomass was removed in the prior 10 years or project soil inversion exceeds 25 cm.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "eligibility",
+      "exclusion"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-4-4-2",
+      "sections": [
+        "S-4-4-2"
+      ],
+      "section_number": "4.4.2",
+      "section_anchor": "census-based-approach-exclusions",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-4-2",
+      "pages": [
+        12
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a74.4.2 items 1-2",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-5-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-5-0001",
+    "summary": "Non-overlap and significance test",
+    "logic": "Mixed approaches must have non-overlapping accounting boundaries and Appendix 2 must be applied to test significance of optional pools and GHG sources.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Mixed approaches must have non-overlapping accounting boundaries and Appendix 2 must be applied to test significance of optional pools and GHG sources.",
+    "when": [],
+    "tags": [
+      "boundary",
+      "significance"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-5",
+      "sections": [
+        "S-5"
+      ],
+      "section_number": "5",
+      "section_anchor": "project-boundary",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-5",
+      "pages": [
+        12
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a75 \u00b61-2",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-5-1-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-5-1-0001",
+    "summary": "Area-based carbon-pool inclusion",
+    "logic": "Above- and belowground woody biomass are mandatory; optional pools become mandatory where project activity significantly reduces them or specified disturbance/harvesting conditions apply; harvested wood products are excluded.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Above- and belowground woody biomass are mandatory; optional pools become mandatory where project activity significantly reduces them or specified disturbance/harvesting conditions apply; harvested wood products are excluded.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "boundary",
+      "carbon-pools"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-5-1",
+      "sections": [
+        "S-5-1"
+      ],
+      "section_number": "5.1",
+      "section_anchor": "area-based-approach-carbon-pools",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-5-1",
+      "pages": [
+        13
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a75.1 Table 1",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-5-2-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-5-2-0001",
+    "summary": "Census accounting boundary and pools",
+    "logic": "Each census planting unit has a 10 m radius accounting buffer; buffers may overlap within an instance but not another instance; only above- and belowground woody biomass are included.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Each census planting unit has a 10 m radius accounting buffer; buffers may overlap within an instance but not another instance; only above- and belowground woody biomass are included.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "boundary",
+      "carbon-pools"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-5-2",
+      "sections": [
+        "S-5-2"
+      ],
+      "section_number": "5.2",
+      "section_anchor": "census-based-approach-carbon-pools",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-5-2",
+      "pages": [
+        14
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a75.2 \u00b61 and Table 2",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-5-3-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-5-3-0001",
+    "summary": "GHG-source inclusion",
+    "logic": "Project CH4 and N2O from biomass burning and N2O from nitrogen fertilizer may be significant and are included; baseline sources and fossil-fuel burning are conservatively excluded or de minimis as specified.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Project CH4 and N2O from biomass burning and N2O from nitrogen fertilizer may be significant and are included; baseline sources and fossil-fuel burning are conservatively excluded or de minimis as specified.",
+    "when": [],
+    "tags": [
+      "ghg-sources"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-5-3",
+      "sections": [
+        "S-5-3"
+      ],
+      "section_number": "5.3",
+      "section_anchor": "ghg-sources",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-5-3",
+      "pages": [
+        15
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a75.3 Table 3",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-6-1-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-6-1-0001",
+    "summary": "Area-based baseline",
+    "logic": "Area-based baseline is set using a performance benchmark derived from representative control plots under Appendix 1.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Area-based baseline is set using a performance benchmark derived from representative control plots under Appendix 1.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "baseline"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-6-1",
+      "sections": [
+        "S-6-1"
+      ],
+      "section_number": "6.1",
+      "section_anchor": "area-based-approach",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-6-1",
+      "pages": [
+        15
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a76.1 \u00b61-2",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-6-2-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-6-2-0001",
+    "summary": "Census zero baseline",
+    "logic": "Where census criteria are met, absence of ARR without project intervention may be assumed and the crediting baseline is zero.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Where census criteria are met, absence of ARR without project intervention may be assumed and the crediting baseline is zero.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "baseline"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-6-2",
+      "sections": [
+        "S-6-2"
+      ],
+      "section_number": "6.2",
+      "section_anchor": "census-based-approach",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-6-2",
+      "pages": [
+        16
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a76.2 items 1-2",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-7-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-7-0001",
+    "summary": "Additionality method by approach",
+    "logic": "Area-based projects use a performance method and census-based projects use a project method to demonstrate additionality.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Area-based projects use a performance method and census-based projects use a project method to demonstrate additionality.",
+    "when": [],
+    "tags": [
+      "additionality"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-7",
+      "sections": [
+        "S-7"
+      ],
+      "section_number": "7",
+      "section_anchor": "additionality",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-7",
+      "pages": [
+        16
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a77 \u00b61",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-7-1-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-7-1-0001",
+    "summary": "Area-based additionality demonstrations",
+    "logic": "Area-based projects must demonstrate regulatory surplus, performance benchmark and investment analysis, except the investment-analysis exception where no non-carbon revenue or financial incentive exists.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Area-based projects must demonstrate regulatory surplus, performance benchmark and investment analysis, except the investment-analysis exception where no non-carbon revenue or financial incentive exists.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "additionality"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-7-1",
+      "sections": [
+        "S-7-1"
+      ],
+      "section_number": "7.1",
+      "section_anchor": "area-based-approach",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-1",
+      "pages": [
+        16
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a77.1 bullets and fn.10",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-7-2-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-7-2-0001",
+    "summary": "Census additionality demonstrations",
+    "logic": "Census-based projects must demonstrate regulatory surplus, investment analysis and common practice; investment analysis is always required.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Census-based projects must demonstrate regulatory surplus, investment analysis and common practice; investment analysis is always required.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "additionality"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-7-2",
+      "sections": [
+        "S-7-2"
+      ],
+      "section_number": "7.2",
+      "section_anchor": "census-based-approach",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-2",
+      "pages": [
+        16
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a77.2 bullets and fn.11",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-7-3-1-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-7-3-1-0001",
+    "summary": "Regulatory surplus dependency",
+    "logic": "Regulatory surplus must follow the most recent VCS Methodology Requirements.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Regulatory surplus must follow the most recent VCS Methodology Requirements.",
+    "when": [],
+    "tags": [
+      "additionality",
+      "dependency"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-7-3-1",
+      "sections": [
+        "S-7-3-1"
+      ],
+      "section_number": "7.3.1",
+      "section_anchor": "regulatory-surplus",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3-1",
+      "pages": [
+        17
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a77.3.1 \u00b61",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-7-3-2-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-7-3-2-0001",
+    "summary": "Performance benchmark additionality",
+    "logic": "Area-based projects establish the Appendix 1 benchmark; validation uses an ex-ante expected difference and each verification reassesses additionality using the Appendix 1 Z test.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Area-based projects establish the Appendix 1 benchmark; validation uses an ex-ante expected difference and each verification reassesses additionality using the Appendix 1 Z test.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "additionality",
+      "benchmark"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-7-3-2",
+      "sections": [
+        "S-7-3-2"
+      ],
+      "section_number": "7.3.2",
+      "section_anchor": "performance-benchmark",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3-2",
+      "pages": [
+        17
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a77.3.2 \u00b61-3",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-7-3-3-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-7-3-3-0001",
+    "summary": "Investment analysis dependency",
+    "logic": "Investment analysis must use benchmark or investment-comparison analysis and Step 3 of the most recent VT0008 Additionality Assessment.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Investment analysis must use benchmark or investment-comparison analysis and Step 3 of the most recent VT0008 Additionality Assessment.",
+    "when": [],
+    "tags": [
+      "additionality",
+      "dependency"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-7-3-3",
+      "sections": [
+        "S-7-3-3"
+      ],
+      "section_number": "7.3.3",
+      "section_anchor": "investment-analysis",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3-3",
+      "pages": [
+        17
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a77.3.3 \u00b61",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-7-3-4-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-7-3-4-0001",
+    "summary": "Common-practice procedure",
+    "logic": "Census common-practice analysis must define activity, domain and adopter class, identify essential distinctions, survey representative similar landowners within five years of start, and calculate adoption without carbon finance.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Census common-practice analysis must define activity, domain and adopter class, identify essential distinctions, survey representative similar landowners within five years of start, and calculate adoption without carbon finance.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "additionality",
+      "common-practice"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-7-3-4",
+      "sections": [
+        "S-7-3-4"
+      ],
+      "section_number": "7.3.4",
+      "section_anchor": "common-practice",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3-4",
+      "pages": [
+        17
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a77.3.4 steps 1-6",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-7-3-4-0002",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-7-3-4-0002",
+    "summary": "Common-practice threshold",
+    "logic": "Adoption below 15% is not common practice; adoption equal to or above 15% is common practice and the activity is not additional.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Adoption below 15% is not common practice; adoption equal to or above 15% is common practice and the activity is not additional.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "additionality",
+      "threshold"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-7-3-4",
+      "sections": [
+        "S-7-3-4"
+      ],
+      "section_number": "7.3.4",
+      "section_anchor": "common-practice",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3-4",
+      "pages": [
+        18
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a77.3.4 adoption threshold",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-7-3-4-0003",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-7-3-4-0003",
+    "summary": "Alternative common-practice evidence",
+    "logic": "Public government data, peer-reviewed literature or independent industry research collected within five years of start may substitute for survey evidence when relevant and conservatively non-discriminating regarding carbon finance.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Public government data, peer-reviewed literature or independent industry research collected within five years of start may substitute for survey evidence when relevant and conservatively non-discriminating regarding carbon finance.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "additionality",
+      "evidence"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-7-3-4",
+      "sections": [
+        "S-7-3-4"
+      ],
+      "section_number": "7.3.4",
+      "section_anchor": "common-practice",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3-4",
+      "pages": [
+        18
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a77.3.4 alternative statistics",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-1-1-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-1-1-0001",
+    "summary": "Area baseline quantification",
+    "logic": "Area-based baseline stock changes are accounted by applying the performance benchmark to estimated removals.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Area-based baseline stock changes are accounted by applying the performance benchmark to estimated removals.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "baseline",
+      "quantification"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-1-1",
+      "sections": [
+        "S-8-1-1"
+      ],
+      "section_number": "8.1.1",
+      "section_anchor": "area-based-approach",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-1-1",
+      "pages": [
+        19
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.1.1",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-1-2-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-1-2-0001",
+    "summary": "Census baseline stock change",
+    "logic": "Census baseline stock change is zero because the baseline has no project planting units.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Census baseline stock change is zero because the baseline has no project planting units.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "baseline",
+      "quantification"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-1-2",
+      "sections": [
+        "S-8-1-2"
+      ],
+      "section_number": "8.1.2",
+      "section_anchor": "census-based-approach",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-1-2",
+      "pages": [
+        19
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.1.2",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-2-1-2-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-2-1-2-0001",
+    "summary": "Pre-existing woody biomass t0 methods",
+    "logic": "Area-based pre-existing woody biomass requires t=0 via preferred pre-preparation plots, eligible post-start plots, or a qualifying remote-sensing estimate using specified model, confidence-bound, correlation and spatial-resolution conditions.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Area-based pre-existing woody biomass requires t=0 via preferred pre-preparation plots, eligible post-start plots, or a qualifying remote-sensing estimate using specified model, confidence-bound, correlation and spatial-resolution conditions.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "quantification",
+      "remote-sensing"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-2-1-2",
+      "sections": [
+        "S-8-2-1-2"
+      ],
+      "section_number": "8.2.1.2",
+      "section_anchor": "area-based-quantification-of-pre-existing-woody-biomass",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1-2",
+      "pages": [
+        21
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.2.1.2 items 1-3(a)-(d)",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-2-1-2-0002",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-2-1-2-0002",
+    "summary": "Pre-existing biomass removal conditions",
+    "logic": "Removal during site preparation requires a t=0 estimate, waste/no-commercial-value status, and no clearing or harvesting of natural forest, native tree species or commercially viable timber.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Removal during site preparation requires a t=0 estimate, waste/no-commercial-value status, and no clearing or harvesting of natural forest, native tree species or commercially viable timber.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "eligibility",
+      "quantification"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-2-1-2",
+      "sections": [
+        "S-8-2-1-2"
+      ],
+      "section_number": "8.2.1.2",
+      "section_anchor": "area-based-quantification-of-pre-existing-woody-biomass",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1-2",
+      "pages": [
+        22
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.2.1.2 removal conditions i-iii",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-2-1-4-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-2-1-4-0001",
+    "summary": "Dead-wood t0 and disturbance accounting",
+    "logic": "Dead wood t=0 must be measured by plots before disturbance and no more than two years before start; project disturbance or removal must be quantified by stock difference.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Dead wood t=0 must be measured by plots before disturbance and no more than two years before start; project disturbance or removal must be quantified by stock difference.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "deadwood",
+      "quantification"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-2-1-4",
+      "sections": [
+        "S-8-2-1-4"
+      ],
+      "section_number": "8.2.1.4",
+      "section_anchor": "area-based-quantification-of-dead-wood",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1-4",
+      "pages": [
+        22
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.2.1.4 \u00b61-2",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-3-1-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-3-1-0001",
+    "summary": "Delayed census biomass measurement",
+    "logic": "If first carbon-stock measurement occurs after t=0, that measurement replaces t=0 for stock-change calculations and change before it is zero; project start remains t=0 for other purposes.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "If first carbon-stock measurement occurs after t=0, that measurement replaces t=0 for stock-change calculations and change before it is zero; project start remains t=0 for other purposes.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "conservativeness",
+      "quantification"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-3-1",
+      "sections": [
+        "S-8-3-1"
+      ],
+      "section_number": "8.3.1",
+      "section_anchor": "census-based-project-carbon-stock-changes",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-1",
+      "pages": [
+        29
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.3.1 \u00b62",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-3-1-1-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-3-1-1-0001",
+    "summary": "Complete census monitoring",
+    "logic": "Census woody biomass scales sampled per-unit biomass by N adjusted for mortality; monitoring of the complete census is required.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Census woody biomass scales sampled per-unit biomass by N adjusted for mortality; monitoring of the complete census is required.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "monitoring",
+      "quantification"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-3-1-1",
+      "sections": [
+        "S-8-3-1-1"
+      ],
+      "section_number": "8.3.1.1",
+      "section_anchor": "census-based-quantification-of-woody-biomass",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-1-1",
+      "pages": [
+        30
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.3.1.1 note and Eq.24",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-3-1-2-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-3-1-2-0001",
+    "summary": "Excluded census pools",
+    "logic": "Non-woody biomass, dead wood, litter and SOC are not applicable in census-based project carbon-stock quantification.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Non-woody biomass, dead wood, litter and SOC are not applicable in census-based project carbon-stock quantification.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "carbon-pools"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-3-1-2",
+      "sections": [
+        "S-8-3-1-2"
+      ],
+      "section_number": "8.3.1.2",
+      "section_anchor": "census-based-quantification-of-non-woody-biomass",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-1-2",
+      "pages": [
+        31
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.3.1.2 through \u00a78.3.1.5",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-3-2-2-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-3-2-2-0001",
+    "summary": "Census fertilizer equations",
+    "logic": "Census nitrogen-fertilizer N2O emissions use Equations 15-21 from \u00a78.2.2.2.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Census nitrogen-fertilizer N2O emissions use Equations 15-21 from \u00a78.2.2.2.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "fertilizer",
+      "quantification"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-3-2-2",
+      "sections": [
+        "S-8-3-2-2"
+      ],
+      "section_number": "8.3.2.2",
+      "section_anchor": "census-based-quantification-of-emissions-from-fertilizer-application",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-2-2",
+      "pages": [
+        32
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.3.2.2",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-4-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-4-0001",
+    "summary": "Leakage by approach",
+    "logic": "Area-based leakage uses the most recent VMD0054; census leakage LKt is zero because pre-project production is maintained and density limits avoid displacement.",
+    "type": "leakage",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Area-based leakage uses the most recent VMD0054; census leakage LKt is zero because pre-project production is maintained and density limits avoid displacement.",
+    "when": [],
+    "tags": [
+      "dependency",
+      "leakage"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-4",
+      "sections": [
+        "S-8-4"
+      ],
+      "section_number": "8.4",
+      "section_anchor": "leakage-emissions",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-4",
+      "pages": [
+        32
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.4 \u00b61-2",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-5-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-5-0001",
+    "summary": "Uncertainty scope",
+    "logic": "Sampling uncertainty is quantified and accounted; measurement error is handled via QA/QC; burning and fertilizer parameter uncertainty is set to zero under conservative parameters.",
+    "type": "uncertainty",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Sampling uncertainty is quantified and accounted; measurement error is handled via QA/QC; burning and fertilizer parameter uncertainty is set to zero under conservative parameters.",
+    "when": [],
+    "tags": [
+      "uncertainty"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-5",
+      "sections": [
+        "S-8-5"
+      ],
+      "section_number": "8.5",
+      "section_anchor": "uncertainty",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-5",
+      "pages": [
+        32
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.5 \u00b61 and note",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-5-1-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-5-1-0001",
+    "summary": "Area uncertainty",
+    "logic": "Area-based projects must use measurement-appropriate standard methods for uncertainty for each included pool; Equation 28 applies when inventory method is maintained.",
+    "type": "uncertainty",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Area-based projects must use measurement-appropriate standard methods for uncertainty for each included pool; Equation 28 applies when inventory method is maintained.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "uncertainty"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-5-1",
+      "sections": [
+        "S-8-5-1"
+      ],
+      "section_number": "8.5.1",
+      "section_anchor": "area-based-quantification-of-uncertainty",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-5-1",
+      "pages": [
+        33
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.5.1 \u00b62 and Eq.28",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-5-1-0002",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-5-1-0002",
+    "summary": "Changed sampling uncertainty",
+    "logic": "Where area-based projects switch inventory approaches, combined uncertainty must follow Appendix 3.",
+    "type": "uncertainty",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Where area-based projects switch inventory approaches, combined uncertainty must follow Appendix 3.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "uncertainty"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-5-1",
+      "sections": [
+        "S-8-5-1"
+      ],
+      "section_number": "8.5.1",
+      "section_anchor": "area-based-quantification-of-uncertainty",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-5-1",
+      "pages": [
+        33
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.5.1 Note",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-5-2-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-5-2-0001",
+    "summary": "Census uncertainty",
+    "logic": "Census uncertainty propagates uncertainty in mortality-adjusted population and mean woody biomass using Equations 29-31.",
+    "type": "uncertainty",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Census uncertainty propagates uncertainty in mortality-adjusted population and mean woody biomass using Equations 29-31.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "uncertainty"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-5-2",
+      "sections": [
+        "S-8-5-2"
+      ],
+      "section_number": "8.5.2",
+      "section_anchor": "census-based-quantification-of-uncertainty",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-5-2",
+      "pages": [
+        33
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.5.2 Eqs.29-31",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-5-2-0002",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-5-2-0002",
+    "summary": "100% confidence-width crediting stop",
+    "logic": "For either approach, CRt is zero where the half-width of the two-sided 90% confidence interval exceeds 100% of the removal estimate.",
+    "type": "uncertainty",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "For either approach, CRt is zero where the half-width of the two-sided 90% confidence interval exceeds 100% of the removal estimate.",
+    "when": [],
+    "tags": [
+      "eligibility",
+      "threshold",
+      "uncertainty"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-5-2",
+      "sections": [
+        "S-8-5-2"
+      ],
+      "section_number": "8.5.2",
+      "section_anchor": "census-based-quantification-of-uncertainty",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-5-2",
+      "pages": [
+        34
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.5.2 final \u00b6",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-6-2-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-6-2-0001",
+    "summary": "Mixed-approach removals",
+    "logic": "Mixed-project removals equal the sum of independently calculated area- and census-based removals over non-overlapping areas.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Mixed-project removals equal the sum of independently calculated area- and census-based removals over non-overlapping areas.",
+    "when": [],
+    "tags": [
+      "quantification"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-6-2",
+      "sections": [
+        "S-8-6-2"
+      ],
+      "section_number": "8.6.2",
+      "section_anchor": "census-based-quantification-of-estimated-carbon-dioxide-removals",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-6-2",
+      "pages": [
+        35
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.6.2 \u00b63",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-6-2-0002",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-6-2-0002",
+    "summary": "Harvesting LTA requirement",
+    "logic": "Projects with harvesting must follow the most recent VCS Standard long-term-average requirement as an upper limit on calculated removals.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Projects with harvesting must follow the most recent VCS Standard long-term-average requirement as an upper limit on calculated removals.",
+    "when": [],
+    "tags": [
+      "dependency",
+      "harvesting"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-6-2",
+      "sections": [
+        "S-8-6-2"
+      ],
+      "section_number": "8.6.2",
+      "section_anchor": "census-based-quantification-of-estimated-carbon-dioxide-removals",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-6-2",
+      "pages": [
+        35
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.6.2 \u00b64",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-6-3-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-6-3-0001",
+    "summary": "Annualization",
+    "logic": "Annualized removals equal monitoring-interval removals divided by interval length.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Annualized removals equal monitoring-interval removals divided by interval length.",
+    "when": [],
+    "tags": [
+      "quantification"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-6-3",
+      "sections": [
+        "S-8-6-3"
+      ],
+      "section_number": "8.6.3",
+      "section_anchor": "annualized-carbon-dioxide-removals",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-6-3",
+      "pages": [
+        36
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.6.3 Eq.34",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-8-7-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-7-0001",
+    "summary": "Ex-ante estimation requirements",
+    "logic": "Project description must include ex-ante removals for the crediting period using conservative growth and yield inputs, modeled harvest or management, at least 10% uncertainty deduction, approach-specific equations and baselines, and area-based benchmark forecasting.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Project description must include ex-ante removals for the crediting period using conservative growth and yield inputs, modeled harvest or management, at least 10% uncertainty deduction, approach-specific equations and baselines, and area-based benchmark forecasting.",
+    "when": [],
+    "tags": [
+      "ex-ante",
+      "quantification"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-8-7",
+      "sections": [
+        "S-8-7"
+      ],
+      "section_number": "8.7",
+      "section_anchor": "area-based-and-census-based-ex-ante-estimation",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-7",
+      "pages": [
+        36,
+        37
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a78.7 items 1-7",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-1-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-1-0001",
+    "summary": "Project-area evidence",
+    "logic": "Project area A is calculated from GIS; imagery or GIS must be georegistered and each discrete project area uniquely identified.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Project area A is calculated from GIS; imagery or GIS must be georegistered and each discrete project area uniquely identified.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "gis",
+      "parameter"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-1",
+      "sections": [
+        "S-9-1"
+      ],
+      "section_number": "9.1",
+      "section_anchor": "data-and-parameters-available-at-validation",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-1",
+      "pages": [
+        38
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.1 parameter A",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-1-0002",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-1-0002",
+    "summary": "Root-to-shoot ratio hierarchy",
+    "logic": "R must follow the specified descending hierarchy by forest type/ecoregion or species/genus/family, with global values validated against direct measurements in the same ecoregion or life-zone.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "R must follow the specified descending hierarchy by forest type/ecoregion or species/genus/family, with global values validated against direct measurements in the same ecoregion or life-zone.",
+    "when": [],
+    "tags": [
+      "biomass",
+      "parameter"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-1",
+      "sections": [
+        "S-9-1"
+      ],
+      "section_number": "9.1",
+      "section_anchor": "data-and-parameters-available-at-validation",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-1",
+      "pages": [
+        38,
+        39
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.1 parameter R",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-1-0003",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-1-0003",
+    "summary": "Default emission parameters",
+    "logic": "GWP uses the most recent IPCC assessment; nitrogen emission factors and fractions use the specified IPCC 2019 values.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "GWP uses the most recent IPCC assessment; nitrogen emission factors and fractions use the specified IPCC 2019 values.",
+    "when": [],
+    "tags": [
+      "ipcc",
+      "parameter"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-1",
+      "sections": [
+        "S-9-1"
+      ],
+      "section_number": "9.1",
+      "section_anchor": "data-and-parameters-available-at-validation",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-1",
+      "pages": [
+        41,
+        44
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.1 parameters GWPg, EFNdirect, FracGASF, FracGASM, FracLEACH, EFNleach",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-1-0004",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-1-0004",
+    "summary": "Initial population record",
+    "logic": "N is established by complete census and each planting-unit record must include unique ID, georeferenced location, year planted and species.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "N is established by complete census and each planting-unit record must include unique ID, georeferenced location, year planted and species.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "census",
+      "parameter"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-1",
+      "sections": [
+        "S-9-1"
+      ],
+      "section_number": "9.1",
+      "section_anchor": "data-and-parameters-available-at-validation",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-1",
+      "pages": [
+        45
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.1 parameter N",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0001",
+    "summary": "Area woody-biomass monitoring",
+    "logic": "Aboveground woody biomass must use representative unbiased plot sampling, documented QA/QC, fixed size thresholds and appropriately selected or validated allometry; VT0005 does not apply.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Aboveground woody biomass must use representative unbiased plot sampling, documented QA/QC, fixed size thresholds and appropriately selected or validated allometry; VT0005 does not apply.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "biomass",
+      "monitoring"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-2",
+      "sections": [
+        "S-9-2"
+      ],
+      "section_number": "9.2",
+      "section_anchor": "data-and-parameters-monitored",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
+      "pages": [
+        45,
+        47
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.2 CWP-woody-AB,t",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0002",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0002",
+    "summary": "Non-woody biomass monitoring",
+    "logic": "Non-woody biomass uses representative plot sampling, minimum/maximum seasonal samples or conservative minimum-stock sampling, at least every five years.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Non-woody biomass uses representative plot sampling, minimum/maximum seasonal samples or conservative minimum-stock sampling, at least every five years.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "biomass",
+      "monitoring"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-2",
+      "sections": [
+        "S-9-2"
+      ],
+      "section_number": "9.2",
+      "section_anchor": "data-and-parameters-monitored",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
+      "pages": [
+        47,
+        48
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.2 DMWP-herb,t",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0003",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0003",
+    "summary": "Dead-wood monitoring",
+    "logic": "Standing and lying dead wood require unbiased representative sampling, fixed thresholds, documented protocols, appropriate volume and density methods and monitoring at least every five years.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Standing and lying dead wood require unbiased representative sampling, fixed thresholds, documented protocols, appropriate volume and density methods and monitoring at least every five years.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "deadwood",
+      "monitoring"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-2",
+      "sections": [
+        "S-9-2"
+      ],
+      "section_number": "9.2",
+      "section_anchor": "data-and-parameters-monitored",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
+      "pages": [
+        48,
+        50
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.2 BSDW,t and BLDW,t",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0004",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0004",
+    "summary": "Litter monitoring",
+    "logic": "Litter uses destructive fixed-frame sampling with dry-mass determination; monitoring occurs at t=0 and at least every five years.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Litter uses destructive fixed-frame sampling with dry-mass determination; monitoring occurs at t=0 and at least every five years.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "litter",
+      "monitoring"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-2",
+      "sections": [
+        "S-9-2"
+      ],
+      "section_number": "9.2",
+      "section_anchor": "data-and-parameters-monitored",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
+      "pages": [
+        51,
+        52
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.2 DMWP-LI,t",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0005",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0005",
+    "summary": "SOC monitoring",
+    "logic": "SOC requires representative stratified sampling to at least 30 cm, matched SOC and bulk-density measurement, equivalent-soil-mass remeasurement, documented protocols and required QA/QC; frequency may not be less than 10 years under the stated low-disturbance conditions.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "SOC requires representative stratified sampling to at least 30 cm, matched SOC and bulk-density measurement, equivalent-soil-mass remeasurement, documented protocols and required QA/QC; frequency may not be less than 10 years under the stated low-disturbance conditions.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "monitoring",
+      "soil"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-2",
+      "sections": [
+        "S-9-2"
+      ],
+      "section_number": "9.2",
+      "section_anchor": "data-and-parameters-monitored",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
+      "pages": [
+        52,
+        54
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.2 CWP-SOC,t",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0006",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0006",
+    "summary": "Fertilizer monitoring evidence",
+    "logic": "Fertilizer mass and content must be monitored at least every five years or before a more frequent verification and quantitative management information must be supported by documentary evidence.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Fertilizer mass and content must be monitored at least every five years or before a more frequent verification and quantitative management information must be supported by documentary evidence.",
+    "when": [],
+    "tags": [
+      "fertilizer",
+      "monitoring"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-2",
+      "sections": [
+        "S-9-2"
+      ],
+      "section_number": "9.2",
+      "section_anchor": "data-and-parameters-monitored",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
+      "pages": [
+        54,
+        56
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.2 Mwp,SF,t / Mwp,OF,t / NCwp,SF,t / NCwp,OF,t",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0007",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0007",
+    "summary": "Sampled planting-unit record",
+    "logic": "Randomized sampling from N establishes nt and each sampled-unit record includes unique ID, georeference, year planted and species.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Randomized sampling from N establishes nt and each sampled-unit record includes unique ID, georeference, year planted and species.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "census",
+      "monitoring"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-2",
+      "sections": [
+        "S-9-2"
+      ],
+      "section_number": "9.2",
+      "section_anchor": "data-and-parameters-monitored",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
+      "pages": [
+        57
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.2 nt",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0008",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0008",
+    "summary": "Mortality monitoring",
+    "logic": "Mortality is determined by complete re-enumeration or representative sampling; a unit is dead where green vascular tissue and leaves are absent or the unit cannot be relocated.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Mortality is determined by complete re-enumeration or representative sampling; a unit is dead where green vascular tissue and leaves are absent or the unit cannot be relocated.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "monitoring",
+      "mortality"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-2",
+      "sections": [
+        "S-9-2"
+      ],
+      "section_number": "9.2",
+      "section_anchor": "data-and-parameters-monitored",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
+      "pages": [
+        57,
+        58
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.2 Mt",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0009",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0009",
+    "summary": "Census per-unit biomass monitoring",
+    "logic": "Per-unit biomass requires representative sampling from N, documented QA/QC, fixed thresholds, validated allometry and at least five-year monitoring; live units below the predetermined size threshold receive zero biomass but remain in the sample.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Per-unit biomass requires representative sampling from N, documented QA/QC, fixed thresholds, validated allometry and at least five-year monitoring; live units below the predetermined size threshold receive zero biomass but remain in the sample.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "biomass",
+      "monitoring"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-2",
+      "sections": [
+        "S-9-2"
+      ],
+      "section_number": "9.2",
+      "section_anchor": "data-and-parameters-monitored",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
+      "pages": [
+        58,
+        59
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.2 BWP-woody-AB,pu,t",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0010",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0010",
+    "summary": "Census burned-unit monitoring",
+    "logic": "Visibly burned and killed planting units are tallied by representative sampling with documented protocols at least every five years.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Visibly burned and killed planting units are tallied by representative sampling with documented protocols at least every five years.",
+    "when": [
+      "census-based"
+    ],
+    "tags": [
+      "burning",
+      "monitoring"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-2",
+      "sections": [
+        "S-9-2"
+      ],
+      "section_number": "9.2",
+      "section_anchor": "data-and-parameters-monitored",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
+      "pages": [
+        60
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.2 nburn,t",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0011",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-2-0011",
+    "summary": "Standard-error estimation",
+    "logic": "SEp,t must use representative unbiased estimators appropriate to the sample design with documented error checking and outlier procedures.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "SEp,t must use representative unbiased estimators appropriate to the sample design with documented error checking and outlier procedures.",
+    "when": [],
+    "tags": [
+      "monitoring",
+      "uncertainty"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-2",
+      "sections": [
+        "S-9-2"
+      ],
+      "section_number": "9.2",
+      "section_anchor": "data-and-parameters-monitored",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
+      "pages": [
+        60
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.2 SEp,t",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-3-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-3-0001",
+    "summary": "Monitoring-plan minimum content",
+    "logic": "The monitoring plan must specify approach, tasks, accounting boundaries, measured parameters, collection techniques and sample design, frequencies, QA/QC, electronic archiving, roles, remote-sensing schedule and stocking-index derivation.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "The monitoring plan must specify approach, tasks, accounting boundaries, measured parameters, collection techniques and sample design, frequencies, QA/QC, electronic archiving, roles, remote-sensing schedule and stocking-index derivation.",
+    "when": [],
+    "tags": [
+      "monitoring-plan"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-3",
+      "sections": [
+        "S-9-3"
+      ],
+      "section_number": "9.3",
+      "section_anchor": "description-of-the-monitoring-plan",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-3",
+      "pages": [
+        61,
+        62
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.3 items 1-11",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-3-0002",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-3-0002",
+    "summary": "Monitoring-data retention",
+    "logic": "All monitoring and QA/QC data must be electronically archived for at least two years after the end of the last project crediting period.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "All monitoring and QA/QC data must be electronically archived for at least two years after the end of the last project crediting period.",
+    "when": [],
+    "tags": [
+      "monitoring-plan",
+      "retention"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-3",
+      "sections": [
+        "S-9-3"
+      ],
+      "section_number": "9.3",
+      "section_anchor": "description-of-the-monitoring-plan",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-3",
+      "pages": [
+        62
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.3 item 8",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-9-3-1-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-9-3-1-0001",
+    "summary": "Area plot database",
+    "logic": "Area-based projects must maintain a database with stocking-index derivation, project and control plot IDs, locations, configuration, time series and weights, plus remote-sensing datasets and timestamps.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Area-based projects must maintain a database with stocking-index derivation, project and control plot IDs, locations, configuration, time series and weights, plus remote-sensing datasets and timestamps.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "database",
+      "monitoring"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-9-3-1",
+      "sections": [
+        "S-9-3-1"
+      ],
+      "section_number": "9.3.1",
+      "section_anchor": "database-requirements-for-project-and-control-plots",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-3-1",
+      "pages": [
+        62,
+        63
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "\u00a79.3.1 items 1-4",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0001",
+    "summary": "Match-quality threshold",
+    "logic": "Overall project/control matching is valid only where SDM for every matching covariate is less than or equal to 0.25; otherwise donor-pool radius or k are iteratively adjusted.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Overall project/control matching is valid only where SDM for every matching covariate is less than or equal to 0.25; otherwise donor-pool radius or k are iteratively adjusted.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "benchmark",
+      "threshold"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-4",
+      "sections": [
+        "S-11-4"
+      ],
+      "section_number": "A1.4",
+      "section_anchor": "procedure-to-define-the-performance-benchmark",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
+      "pages": [
+        70
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 Step 3",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0002",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0002",
+    "summary": "Control-plot invalidation and replacement",
+    "logic": "At monitoring, invalid controls are removed, replacements drawn from the donor pool and control weights recalculated to sum to 1.",
+    "type": "monitoring",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "At monitoring, invalid controls are removed, replacements drawn from the donor pool and control weights recalculated to sum to 1.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "benchmark",
+      "monitoring"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-4",
+      "sections": [
+        "S-11-4"
+      ],
+      "section_number": "A1.4",
+      "section_anchor": "procedure-to-define-the-performance-benchmark",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
+      "pages": [
+        70
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 Step 4",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0003",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0003",
+    "summary": "Benchmark time-series minimum sample",
+    "logic": "Benchmark time series must include t=0 and t plus prior verifications; matched sets missing time-t SI are excluded; at least 30 project plots are required.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Benchmark time series must include t=0 and t plus prior verifications; matched sets missing time-t SI are excluded; at least 30 project plots are required.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "benchmark",
+      "sampling"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-4",
+      "sections": [
+        "S-11-4"
+      ],
+      "section_number": "A1.4",
+      "section_anchor": "procedure-to-define-the-performance-benchmark",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
+      "pages": [
+        71
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 Step 5",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0004",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0004",
+    "summary": "Z-test significance threshold",
+    "logic": "Absolute Z equal to or above 1.96 means project and control stocking-index slopes are significantly different.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Absolute Z equal to or above 1.96 means project and control stocking-index slopes are significantly different.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "benchmark",
+      "threshold"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-4",
+      "sections": [
+        "S-11-4"
+      ],
+      "section_number": "A1.4",
+      "section_anchor": "procedure-to-define-the-performance-benchmark",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
+      "pages": [
+        73
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 Eq.A7",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0005",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0005",
+    "summary": "Performance benchmark pathway",
+    "logic": "If absolute Z is below 1.96 PBt is 1; if absolute Z is at least 1.96 PBt is calculated by Equation A8; an insignificant or negative control slope is set to zero.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "If absolute Z is below 1.96 PBt is 1; if absolute Z is at least 1.96 PBt is calculated by Equation A8; an insignificant or negative control slope is set to zero.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "benchmark",
+      "quantification"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-4",
+      "sections": [
+        "S-11-4"
+      ],
+      "section_number": "A1.4",
+      "section_anchor": "procedure-to-define-the-performance-benchmark",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
+      "pages": [
+        73
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 Step 6",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-5-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-5-0001",
+    "summary": "Stocking-index monitoring",
+    "logic": "SI must minimize seasonal variability, be monitored at least annually, use a metric demonstrably correlated with carbon stocks, and use the same ex-post metric for project and control plots unless a qualifying harmonized replacement is adopted.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "SI must minimize seasonal variability, be monitored at least annually, use a metric demonstrably correlated with carbon stocks, and use the same ex-post metric for project and control plots unless a qualifying harmonized replacement is adopted.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "benchmark",
+      "remote-sensing"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-5",
+      "sections": [
+        "S-11-5"
+      ],
+      "section_number": "A1.5",
+      "section_anchor": "data-and-parameters-monitored",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-5",
+      "pages": [
+        74,
+        76
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 SI parameter",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-12-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-12-0001",
+    "summary": "De minimis significance procedure",
+    "logic": "If combined optional-pool and GHG impact is below 5% of expected removals all may be excluded; otherwise include ranked sources through at least 95% and exclude the remainder only if residual combined impact is also below 5% of total removals. Leakage is never part of this de minimis test.",
+    "type": "eligibility",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "If combined optional-pool and GHG impact is below 5% of expected removals all may be excluded; otherwise include ranked sources through at least 95% and exclude the remainder only if residual combined impact is also below 5% of total removals. Leakage is never part of this de minimis test.",
+    "when": [],
+    "tags": [
+      "significance",
+      "threshold"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-12",
+      "sections": [
+        "S-12"
+      ],
+      "section_number": "A2",
+      "section_anchor": "appendix-2-testing-the-significance-of-carbon-pools-and-ghg-sources",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-12",
+      "pages": [
+        77,
+        78
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 2 Steps 1-2",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-13-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-13-0001",
+    "summary": "Changed-sampling uncertainty procedure",
+    "logic": "When an area-based inventory approach changes, uncertainty must be calculated across the independent first interval and correlated second interval using Equations A11-A16.",
+    "type": "uncertainty",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "When an area-based inventory approach changes, uncertainty must be calculated across the independent first interval and correlated second interval using Equations A11-A16.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "uncertainty"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-13",
+      "sections": [
+        "S-13"
+      ],
+      "section_number": "A3",
+      "section_anchor": "appendix-3-uncertainty-equations-for-changing-sampling-approaches",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-13",
+      "pages": [
+        79,
+        80
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 3 Steps 1-5",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-1-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-1-0001",
+    "summary": "Performance-method applicability",
+    "logic": "Appendix 1 applies only where Section 4 applicability is met, project activities produce spatially delineable vegetative cover, and the performance benchmark is updated at each verification or every five years, whichever occurs first.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Appendix 1 applies only where Section 4 applicability is met, project activities produce spatially delineable vegetative cover, and the performance benchmark is updated at each verification or every five years, whichever occurs first.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "applicability",
+      "benchmark",
+      "temporal_requirement"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-1",
+      "sections": [
+        "S-11-1"
+      ],
+      "section_number": "A1.1",
+      "section_anchor": "applicability-conditions",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-1",
+      "pages": [
+        66
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 \u00a7A1.1 items 1-3",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-2-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-2-0001",
+    "summary": "Dynamic control-plot baseline",
+    "logic": "The performance-method baseline is business-as-usual aboveground biomass growth observed on representative remotely sensed control plots outside registered AFOLU project areas and is re-established at each verification using the updated performance benchmark.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "The performance-method baseline is business-as-usual aboveground biomass growth observed on representative remotely sensed control plots outside registered AFOLU project areas and is re-established at each verification using the updated performance benchmark.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "baseline",
+      "benchmark"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-2",
+      "sections": [
+        "S-11-2"
+      ],
+      "section_number": "A1.2",
+      "section_anchor": "baseline-scenario",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-2",
+      "pages": [
+        66
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 \u00a7A1.2 \u00b61-2",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-3-0001",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-3-0001",
+    "summary": "Benchmark granularity and ex-ante estimate",
+    "logic": "A performance benchmark is developed per project area, or per annual cohort for grouped projects; an ex-ante estimate must use control-plot stocking indices from historic t=-10 to t=0 and project slope from the Section 8.7 growth-and-yield procedure.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "A performance benchmark is developed per project area, or per annual cohort for grouped projects; an ex-ante estimate must use control-plot stocking indices from historic t=-10 to t=0 and project slope from the Section 8.7 growth-and-yield procedure.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "benchmark",
+      "ex-ante"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-3",
+      "sections": [
+        "S-11-3"
+      ],
+      "section_number": "A1.3",
+      "section_anchor": "performance-benchmark",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-3",
+      "pages": [
+        66,
+        67
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 \u00a7A1.3 \u00b61-2",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0006",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0006",
+    "summary": "Benchmark procedure documentation",
+    "logic": "All benchmark-establishment steps and all project/control plot locations must be documented in the project description and monitoring plan sufficiently to be repeated and validated.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "All benchmark-establishment steps and all project/control plot locations must be documented in the project description and monitoring plan sufficiently to be repeated and validated.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "benchmark",
+      "evidence_requirement"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-4",
+      "sections": [
+        "S-11-4"
+      ],
+      "section_number": "A1.4",
+      "section_anchor": "procedure-to-define-the-performance-benchmark",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
+      "pages": [
+        67
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 \u00a7A1.4 opening \u00b6",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0007",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0007",
+    "summary": "Project-plot construction and sampling",
+    "logic": "For each annual cohort, project plots must be equal-sized contiguous non-overlapping units of 0.01-10 ha with at least 75% inside the project boundary, and at least 30 representative project plots must be randomly sampled overall.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "For each annual cohort, project plots must be equal-sized contiguous non-overlapping units of 0.01-10 ha with at least 75% inside the project boundary, and at least 30 representative project plots must be randomly sampled overall.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "benchmark",
+      "sampling",
+      "threshold"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-4",
+      "sections": [
+        "S-11-4"
+      ],
+      "section_number": "A1.4",
+      "section_anchor": "procedure-to-define-the-performance-benchmark",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
+      "pages": [
+        67
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 Step 1 items 1-2 and note",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0008",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0008",
+    "summary": "Donor-pool eligibility criteria",
+    "logic": "Control donor pools must apply the Table A1 jurisdiction, ecoregion, policy-environment, land-tenure and distance criteria, with optional registered-AFOLU-project exclusion; included geospatial datasets must be no coarser than 30 x 30 m and at least as fine as project plots.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Control donor pools must apply the Table A1 jurisdiction, ecoregion, policy-environment, land-tenure and distance criteria, with optional registered-AFOLU-project exclusion; included geospatial datasets must be no coarser than 30 x 30 m and at least as fine as project plots.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "benchmark",
+      "control-plots",
+      "geographic_requirement"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-4",
+      "sections": [
+        "S-11-4"
+      ],
+      "section_number": "A1.4",
+      "section_anchor": "procedure-to-define-the-performance-benchmark",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
+      "pages": [
+        67,
+        68
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 Step 2 item 1 and Table A1",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0009",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0009",
+    "summary": "Control-unit size constraint",
+    "logic": "After donor-pool delineation, control units must be non-overlapping, equal-sized, and within plus or minus 20% of the mean project-plot size.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "After donor-pool delineation, control units must be non-overlapping, equal-sized, and within plus or minus 20% of the mean project-plot size.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "benchmark",
+      "sampling",
+      "threshold"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-4",
+      "sections": [
+        "S-11-4"
+      ],
+      "section_number": "A1.4",
+      "section_anchor": "procedure-to-define-the-performance-benchmark",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
+      "pages": [
+        68
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 Step 2 item 2 \u00b61",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0010",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0010",
+    "summary": "Historic matching covariates",
+    "logic": "Control/project matching must include stocking-index covariates from at least three historic time points, including one between t=-10 and -8, one between t=-8 and -1, and t=0.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Control/project matching must include stocking-index covariates from at least three historic time points, including one between t=-10 and -8, one between t=-8 and -1, and t=0.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "benchmark",
+      "matching",
+      "temporal_requirement"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-4",
+      "sections": [
+        "S-11-4"
+      ],
+      "section_number": "A1.4",
+      "section_anchor": "procedure-to-define-the-performance-benchmark",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
+      "pages": [
+        68,
+        69
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 Step 2 item 2 and Table A2",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0011",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0011",
+    "summary": "k-nearest-neighbor matching",
+    "logic": "Control plots must be matched using k-nearest-neighbor optimal matching without replacement; k is selected by the proponent and remains constant for each project-plot match for the project lifetime.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "Control plots must be matched using k-nearest-neighbor optimal matching without replacement; k is selected by the proponent and remains constant for each project-plot match for the project lifetime.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "benchmark",
+      "matching"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-4",
+      "sections": [
+        "S-11-4"
+      ],
+      "section_number": "A1.4",
+      "section_anchor": "procedure-to-define-the-performance-benchmark",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
+      "pages": [
+        69
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 Step 2 item 3 \u00b61",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0012",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0012",
+    "summary": "Control matching weights",
+    "logic": "The k controls with lowest multivariate distance are selected and assigned inverse-distance relative weights that sum to 1 under Equation A1.",
+    "type": "equation",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "The k controls with lowest multivariate distance are selected and assigned inverse-distance relative weights that sum to 1 under Equation A1.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "benchmark",
+      "equation",
+      "matching"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-4",
+      "sections": [
+        "S-11-4"
+      ],
+      "section_number": "A1.4",
+      "section_anchor": "procedure-to-define-the-performance-benchmark",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
+      "pages": [
+        69
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 Step 2 item 3 \u00b62 and Eq.A1",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  },
+  {
+    "id": "Verra.AFOLU.VM0047.v1-1.R-11-3-0002",
+    "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-3-0002",
+    "summary": "Remote sensing is relative-stock evidence",
+    "logic": "For the performance benchmark, remote sensing is used to estimate relative stock change between project and control plots rather than to directly estimate reportable carbon stocks; removal accounting remains dependent on direct field measurement under Section 8.",
+    "type": "calc",
+    "quality_status": "source_audited",
+    "source_span_status": "source_audited",
+    "source_span_text": "For the performance benchmark, remote sensing is used to estimate relative stock change between project and control plots rather than to directly estimate reportable carbon stocks; removal accounting remains dependent on direct field measurement under Section 8.",
+    "when": [
+      "area-based"
+    ],
+    "tags": [
+      "benchmark",
+      "measurement",
+      "remote-sensing"
+    ],
+    "refs": {
+      "methodology": "Verra/VM0047@v1-1",
+      "primary_section": "S-11-3",
+      "sections": [
+        "S-11-3"
+      ],
+      "section_number": "A1.3",
+      "section_anchor": "performance-benchmark",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-3",
+      "pages": [
+        67
+      ],
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ]
+    },
+    "provenance": {
+      "source_ref": "Appendix 1 \u00a7A1.3 final \u00b6",
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
+    }
+  }
+]
