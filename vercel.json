@@ -1,5 +1,12 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
+  "git": {
+    "deploymentEnabled": {
+      "main": true,
+      "*": false
+    }
+  },
   "routes": [
     { "src": "/healthz", "dest": "api/healthz.js" },
     { "src": "/query", "dest": "api/query.js" },
