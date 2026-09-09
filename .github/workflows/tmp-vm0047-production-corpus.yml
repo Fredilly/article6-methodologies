@@ -23,8 +23,16 @@ jobs:
         run: python scripts/tmp-vm0047-production-corpus.py
       - name: Validate rich artifacts
         run: npm run validate:rich
-      - name: Validate lean artifacts
-        run: npm run validate:lean
+      - name: Validate META
+        run: ./scripts/validate-meta.sh
+      - name: Validate lean sections
+        run: ./scripts/run-ajv.sh validate -s schemas/sections.schema.json -d 'methodologies/**/sections.json'
+      - name: Validate lean rules
+        run: ./scripts/run-ajv.sh validate -s schemas/rules.schema.json -d 'methodologies/**/rules.json'
+      - name: Validate methodology artifact contract
+        run: node tests/methodology-artifact-contract.test.js
+      - name: Validate root cause index path
+        run: bash scripts/check-root-cause-index-path.sh
       - name: Commit production corpus artifacts
         run: |
           set -euo pipefail
