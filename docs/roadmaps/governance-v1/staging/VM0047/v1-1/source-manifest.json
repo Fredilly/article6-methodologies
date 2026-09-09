@@ -21,9 +21,14 @@
   },
   "capture": {
     "captured_at": "2026-09-09",
-    "capture_status": "authoritative_identity_captured",
+    "capture_status": "authoritative_pdf_received_and_hashed",
+    "artifact_filename": "VM0047-v1.1_Final.pdf",
+    "artifact_size_bytes": 1171574,
+    "hash_algorithm": "SHA-256",
+    "sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+    "page_count_verified": 81,
+    "identity_verified_against_document_cover": true,
     "governed_pdf_present": false,
-    "sha256": null,
-    "blocker": "authoritative PDF bytes must be committed and hashed before SOURCES_CAPTURED can be asserted"
+    "blocker": "The authoritative PDF supplied for this audit has been identity-checked and hashed, but the binary artifact is not yet committed into the governed repository corpus. SOURCES_CAPTURED must not be asserted until the bytes are committed and the repository copy hashes to this value."
   }
 }
