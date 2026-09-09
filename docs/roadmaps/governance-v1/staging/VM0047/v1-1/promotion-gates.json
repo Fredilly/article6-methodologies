@@ -1,20 +1,20 @@
 {
   "component": "Verra/VM0047@v1-1",
   "target_state": "VERIFIED",
-  "current_state": "SOURCES_CAPTURED",
+  "current_state": "PROVENANCE_COMPLETE",
   "verified": false,
   "gates": [
     {"gate":"authoritative_identity","required_state":"PASS","current_state":"PASS","evidence":"VM0047 v1.1, dated 14 May 2025, 81 pages"},
     {"gate":"source_hash","required_state":"PASS","current_state":"PASS","evidence":"SHA-256 2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"},
     {"gate":"governed_repository_pdf","required_state":"PASS","current_state":"PASS","evidence":"tools/Verra/VM0047/v1-1/source.pdf committed and re-hashed to the captured SHA-256"},
     {"gate":"numbered_section_hierarchy","required_state":"PASS","current_state":"PASS","evidence":"Source-verified deep hierarchy is folded into canonical sections.json with derived lean sections and deterministic source text."},
-    {"gate":"full_atomic_rules","required_state":"PASS","current_state":"PARTIAL","evidence":"Initial source-mapped rules exist and equations/parameters have a deterministic structural inventory.","blocker":"Full semantic decomposition across boundary, baseline, additionality, equations, parameters, monitoring, uncertainty and appendices is not complete."},
-    {"gate":"rule_provenance","required_state":"PASS","current_state":"PARTIAL","evidence":"Existing rules retain section/page mappings and SOURCE_REQUIREMENT provenance scaffolding.","blocker":"Every material atomic rule still needs an exact source span and governed-source provenance."},
+    {"gate":"full_atomic_rules","required_state":"PASS","current_state":"PASS","evidence":"77 material SOURCE_REQUIREMENT rules cover eligibility, project boundary, baseline, additionality, quantification, uncertainty, monitoring and appendices; 50 numbered equations are source-mapped and 31 material parameters are normalized. See rules.governance-v1.index.json."},
+    {"gate":"rule_provenance","required_state":"PASS","current_state":"PASS","evidence":"Every canonical atomic rule records exact section/clause anchor, page(s), governed source path, SOURCE_REQUIREMENT classification and governed PDF SHA-256."},
     {"gate":"dependency_semantics","required_state":"PASS","current_state":"PASS","evidence":"Dynamic VMD0054/VT0008 semantics, VCS requirement-set identities, UNFCCC significance-tool identity, incorporated-by-reference relationships, explicit non-dependencies and reverse edges are resolved."},
     {"gate":"version_diff","required_state":"PASS","current_state":"PARTIAL","evidence":"Authoritative v1.0 -> v1.1 summary diff is present.","blocker":"Full-text semantic diff remains incomplete."},
     {"gate":"retrieval_contract","required_state":"PASS","current_state":"PASS","evidence":"Governance-v1 required retrieval families are defined and reconciled with the current source-capture state."},
     {"gate":"production_retrieval_execution","required_state":"PASS","current_state":"FAIL","evidence":"Actual CLI and HTTP production code paths were executed; /healthz passed with 225 indexed documents.","blocker":"VM0047 v1.1 is absent from the production methodologies corpus and the current BM25 retrieval interface does not expose the structured identity/version/dependency/provenance contract. See retrieval-execution.json."}
   ],
   "promotion_allowed": false,
-  "promotion_rule": "VERIFIED is allowed only when every gate is PASS. A real retrieval execution failure must remain visible and must not be coerced to PASS."
+  "promotion_rule": "VERIFIED is allowed only when every gate is PASS. Rule/provenance closure does not override the remaining version-diff or production-retrieval failures."
 }
