@@ -1,0 +1,32 @@
+{
+  "component": "Verra/VM0047",
+  "from_version": "v1-0",
+  "to_version": "v1-1",
+  "comparison_method": "pdftotext -layout + diff -u on governed repository PDFs",
+  "source_artifacts": {
+    "v1-0": {
+      "path": "tools/Verra/VM0047/v1-0/source.pdf",
+      "sha256": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+      "text_stats": {
+        "chars": 178142,
+        "lines": 3539,
+        "words": 18358
+      }
+    },
+    "v1-1": {
+      "path": "tools/Verra/VM0047/v1-1/source.pdf",
+      "sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "text_stats": {
+        "chars": 205051,
+        "lines": 4165,
+        "words": 21356
+      }
+    }
+  },
+  "full_text_diff": {
+    "path": "diff-evidence/v1-0_to_v1-1.full-text.diff",
+    "sha256": "dfe52490748e5251a80eea28a92428bd68e85495b70e0965b5b9704ba1501fd6",
+    "bytes": 386336
+  },
+  "semantic_review_status": "FULL_TEXT_EVIDENCE_GENERATED_SEMANTIC_CLASSIFICATION_SEPARATE"
+}
