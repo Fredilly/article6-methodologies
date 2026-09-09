@@ -1,0 +1,1694 @@
+{
+  "component": "Verra/VM0047@v1-1",
+  "execution_interface": [
+    "bin/mrv-cli.js",
+    "bin/http-engine-adapter.js /healthz",
+    "bin/http-engine-adapter.js /query"
+  ],
+  "execution_mode": "ACTUAL_PRODUCTION_CODE_PATH_ON_PR_CORPUS",
+  "healthz": {
+    "status": "ok",
+    "documents": 225
+  },
+  "cases": [
+    {
+      "id": "engine_health",
+      "state": "PASS",
+      "observed": {
+        "status": "ok",
+        "documents": 225
+      }
+    },
+    {
+      "id": "vm0047_v1_1_rule_retrieval",
+      "state": "FAIL",
+      "expected": "VM0047 v1.1 returned from canonical production corpus",
+      "observed": "VM0047 v1.1 not visible in production retrieval results"
+    },
+    {
+      "id": "structured_identity_version_dependency_contract",
+      "state": "FAIL",
+      "expected": "production interface returns exact component/version/dependency/provenance contract",
+      "observed": "current BM25 production interface ranks rule text and does not expose the governance-v1 structured identity/version/dependency contract"
+    }
+  ],
+  "all_required_cases_pass": false,
+  "promotion_allowed": false,
+  "blocking_reason": "VM0047 v1.1 is not yet in the production methodologies corpus and the current retrieval interface cannot satisfy the full governance-v1 structured answer contract.",
+  "raw_evidence": {
+    "cli_density": "\u2014\nid: Verra.AFOLU.VM0047.v1-0.R-8-0001\nsections: S-8-2\nscore: 6.221342\nsummary: Area-based quantification equation\nrefs:\n  - Verra/VM0047@v1-0  [pdf] tools/Verra/VM0047/v1-0/source.pdf  sha256=987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6\n\u2014\nid: UNFCCC.Agriculture.AMS-III-R.v02-0.R-0001-0020\nsections: S-0020\nscore: 5.773580\nsummary: ERy =BE y \u2212 PE y \u2212 Leakage (1)\n\u2014\nid: UNFCCC.Agriculture.AMS-III-R.v03-0.R-0001-0020\nsections: S-0020\nscore: 5.773580\nsummary: ERy \uf03dBE y \uf02d PE y \uf02d Leakage (1)\n\u2014\nid: UNFCCC.Agriculture.AMS-III-R.v03-0.R-0001-0024\nsections: S-0024\nscore: 4.530735\nsummary: \uf0b7 To introduce the IPCC Tier 1 approach as an alternative method for calculation of baseline emissions.\n\u2014\nid: UNFCCC.Agriculture.AMS-III-R.v04-0.R-0001-0042\nsections: S-0042\nscore: 4.530735\nsummary: To introduce the IPCC Tier 1 approach as an alternative method for calculation of baseline emissions.\n",
+    "cli_dependency": "\u2014\nid: UNFCCC.Agriculture.AMS-III-D.v15-0.R-0001-0014\nsections: S-0014\nscore: 6.405697\nsummary: Baseline emissions (BEy) are calculated using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC tier\n\u2014\nid: UNFCCC.Agriculture.AMS-III-D.v16-0.R-0001-0014\nsections: S-0014\nscore: 6.405697\nsummary: Baseline emissions (BEy) are calculated using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC tier\n\u2014\nid: UNFCCC.Agriculture.AMS-III-R.v03-0.R-0001-0014\nsections: S-0014\nscore: 5.702977\nsummary: Baseline emissions (BEy) are calculated ex ante, using one of the following methods: (a) A simplified method with the most recent IPCC Tier 1 approach (please refer to the chapter \u2018Emissions from Livestock and Manure Management\u2019 under th...\n\u2014\nid: UNFCCC.Agriculture.AMS-III-D.v14-0.R-0001-0014\nsections: S-0014\nscore: 5.614981\nsummary: Baseline emissions (BEy) are calculated using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC tier 2 approach (please refer to the chapter \u2018Emission...\n\u2014\nid: UNFCCC.Agriculture.AMS-III-R.v01-0.R-0001-0012\nsections: S-0012\nscore: 5.529659\nsummary: Baseline emissions (BEy) are calculated ex ante using the amount of the waste or raw material that would decay anaerobically in the absence of the project activity, with the most recent IPCC tier 2 approach (please refer to the chapter \u2018...\n",
+    "cli_negative_dependency": "\u2014\nid: UNFCCC.Agriculture.AMS-III-D.v01-0.R-0001-0091\nsections: S-0091\nscore: 6.388888\nsummary: If a proposed small-scale CDM project activity does not fall into any of the categories in appendix B, the project participants may submit a request to the Executive Board for approval of a simplified baseline and/or monitoring plan deve...\n\u2014\nid: UNFCCC.Forestry.AR-AMS0003.v01-0.R-1-0009\nsections: S-9\nscore: 5.396907\nsummary: Uncertainty calculated per Tool 12; apply deductions when precision exceeds 10%.\nrefs:\n  - UNFCCC/AR-AMS0003@v01-0  [pdf] tools/UNFCCC/Forestry/AR-AMS0003/v01-0/source.pdf  sha256=ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b\n  - UNFCCC/AR-TOOL12@v03.1  [pdf] tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-12-v03.1.pdf  sha256=b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4\n\u2014\nid: UNFCCC.Forestry.AR-AM0014.v01-0.R-0002-0030\nsections: S-0030\nscore: 4.990198\nsummary: In addition, the monitoring provisions contained in the tools used in this methodology apply.\n\u2014\nid: UNFCCC.Agriculture.AMS-III-D.v16-0.R-0004-0049\nsections: S-0049\nscore: 4.256421\nsummary: In that case, recovered biogas need not be monitored separately.\n\u2014\nid: UNFCCC.Agriculture.AMS-III-D.v17-0.R-0002-0046\nsections: S-0046\nscore: 4.256421\nsummary: In that case, recovered biogas need not be monitored separately.\n",
+    "http_density": {
+      "query": "VM0047 v1.1 census-based planting density limit",
+      "top_k": 5,
+      "results": [
+        {
+          "doc_id": "VM0047@v1-0:R-8-0001",
+          "methodology_id": "VM0047",
+          "version": "v1-0",
+          "rule_id": "R-8-0001",
+          "section_id": "S-8-2",
+          "section_title": "Project",
+          "score": 6.777612,
+          "text": "Area-based quantification equation",
+          "tags": [
+            "equation"
+          ]
+        },
+        {
+          "doc_id": "GS-00XX@v1-0:R-3-0011",
+          "methodology_id": "GS-00XX",
+          "version": "v1-0",
+          "rule_id": "R-3-0011",
+          "section_id": "S-3",
+          "section_title": "Eligibility Principles and Requirements",
+          "score": 6.272277,
+          "text": "Retroactive issuance limit",
+          "tags": [
+            "eligibility"
+          ]
+        }
+      ],
+      "audit": {
+        "bm25": {
+          "tokenizer": "lowercase-ascii-nonalnum-split",
+          "params": {
+            "k1": 1.2,
+            "b": 0.75
+          },
+          "documents": 225
+        },
+        "inputs": [
+          {
+            "methodology_id": "GS-00XX",
+            "version": "v1-0",
+            "rules": {
+              "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+              "sha256": "c39dee3b1680ac3082504fe62ba40e3347fc6c40d6858e922310122f371621fd"
+            },
+            "sections": {
+              "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/sections.json",
+              "sha256": "1490c5d8bf359d19305aa5ff647b6ee221399d46214505c7dc6ce83898aa0f1d"
+            },
+            "tool_references": [
+              {
+                "doc": "GoldStandard/GS-00XX@v1-0",
+                "kind": "pdf",
+                "path": "tools/GoldStandard/GS-00XX/v1-0/source.pdf",
+                "sha256": "d776d0979de7e14f1a038e9e54f023d12daafce464849286281fe2539309703a"
+              }
+            ]
+          },
+          {
+            "methodology_id": "ACM0010",
+            "version": "v03-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+              "sha256": "7c76760818445e82d1c8202faba178d1df4bcbebeb76e5e896b3481ae8b88776"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/sections.json",
+              "sha256": "0d0e71be0142e1b519534ae1c6d23e4fea073a2f6abfa692160219c4a8a7c869"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AM-TOOL03@v01",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-03-v1.pdf",
+                "sha256": "57868a381913568599c98d331b9ff339115c38cc1070aeec43eca0d11823185a"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL05@v01",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-05-v1.pdf",
+                "sha256": "e3f3238248e0d68d7da0a98eca93e411b3b44f7e5c44be9cbd8b62693b8b7107"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL06@v01",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-06-v1.pdf",
+                "sha256": "6888d77e76c6b39e5de3097cc0cc2d493d6b1bd13814c985f45c20000283413d"
+              },
+              {
+                "doc": "UNFCCC/ACM0010@v03-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/source.pdf",
+                "sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AM0073",
+            "version": "v01-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+              "sha256": "eb3344c371b2438bd30f0181eac3903a17df80407efcedbe8c261ec79c77d2b7"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/sections.json",
+              "sha256": "901f945c2596651b334580ef5b1cafa5e51fe17ac9729227733e910770b8d49b"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AM-TOOL01@v07.0.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/am-tool-01-v7.0.0.pdf",
+                "sha256": "b516fd941c5d13671cb88ff7b6511cda3390f8290e3a509a1b5d22e9ad1b35bd"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL03@v03",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/am-tool-03-v3.pdf",
+                "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL05@v03.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/am-tool-05-v3.0.pdf",
+                "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL06@v04.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/am-tool-06-v4.0.pdf",
+                "sha256": "0a806611660fab64122335bd85c8c20974c8932b3e063592692b7d2230162907"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL07@v07.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/am-tool-07-v7.0.pdf",
+                "sha256": "7f3864427916369b25b960ace50b5eed74b57530a14e421dc70ce35bae83bf5b"
+              },
+              {
+                "doc": "UNFCCC/AM0073@v01-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/source.pdf",
+                "sha256": "dc6e5a0e5942fa22e7275c1a639b8f47b85384aa7845c446fa600697646c744a"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AMS-III.A",
+            "version": "v03-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.A/v03-0/rules.json",
+              "sha256": "32d815a426a674d21a7524a47e678f691e3604729bbdebc8f738b586046fb1bd"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.A/v03-0/sections.json",
+              "sha256": "8484b0bc19b539fb9c01ffe052245ba007976a59f1df9e0db61ff3382d9e4820"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AMS-III.A@v03.0#glos-CDM",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.A/v03-0/glos_CDM.pdf",
+                "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.A@v03-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.A/v03-0/source.pdf",
+                "sha256": "2f54401790b35a616ddac72452cd81f250fa2070d72514b4490429598bc11c15"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AMS-III.AU",
+            "version": "v04-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.AU/v04-0/rules.json",
+              "sha256": "940dbfc6e75edf0e5085a2931160f85147bb60442cab1f1655da3147cf6c13e9"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.AU/v04-0/sections.json",
+              "sha256": "55cce82954147046fc0fd751adf98b071dd8a419285d4328813affd21fdf6533"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AMS-III.AU@v04.0#glos-CDM",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.AU/v04-0/glos_CDM.pdf",
+                "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.AU@v04-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.AU/v04-0/source.pdf",
+                "sha256": "7b6e3669218211f95faf34dd85a1de9bbc5bf356b60e124da596405beed0a160"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AMS-III.BE",
+            "version": "v01-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.BE/v01-0/rules.json",
+              "sha256": "14c85415738a68edfd09b522261aa82ea9453d430235762ff65a2c963877a54a"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.BE/v01-0/sections.json",
+              "sha256": "f4adb69d6e1b8ce70dc386463854e72eef80d4f27790edb689b88aead65ea4a5"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AM-TOOL03@v03",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BE/v01-0/am-tool-03-v3.pdf",
+                "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL05@v03.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BE/v01-0/am-tool-05-v3.0.pdf",
+                "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.BE@v01.0#glos-CDM",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BE/v01-0/glos_CDM.pdf",
+                "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.BE@v01-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BE/v01-0/source.pdf",
+                "sha256": "9aefd048a7d6380f2ddb1aa646fd4cef6303ea9d79abdb16cb35612687deb1ed"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AMS-III.BF",
+            "version": "v02-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.BF/v02-0/rules.json",
+              "sha256": "59a588e7ade873e4a3231cb677bdedb6e43d179da7be9eddfb5986c22c2fad04"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.BF/v02-0/sections.json",
+              "sha256": "115e0e99e2d45e3017d7e4464e4c9a8a7d10a0e7831cf6b0cfdcce20e87a5275"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AMS-III.BF@v02.0#glos-CDM",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BF/v02-0/glos_CDM.pdf",
+                "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.BF@v02-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BF/v02-0/source.pdf",
+                "sha256": "69d15565628ffd0d9084548f6b797ba65a0a743c0de70bcb8f940a682d681005"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AMS-III.BK",
+            "version": "v02-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.BK/v02-0/rules.json",
+              "sha256": "0aaac7bf421e7aa4f1f99bccef4a9087961814380c1fcd825df4100191719387"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.BK/v02-0/sections.json",
+              "sha256": "9db441ea18069d5cb20ac4131103c2de922a4d7c8d2cc4149947207f76cfa131"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AM-TOOL03@v03",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BK/v02-0/am-tool-03-v3.pdf",
+                "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL05@v03.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BK/v02-0/am-tool-05-v3.0.pdf",
+                "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL12@v01.1.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BK/v02-0/am-tool-12-v1.1.0.pdf",
+                "sha256": "0d6644f44a010514b513f2314d84927f479cb81a774add0cb34e9fe0da75560e"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL21@v13.1",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BK/v02-0/am-tool-21-v13.1.pdf",
+                "sha256": "c3a9fbb19b500f6ab70dfd29c3765921bb348251c8c7387e20ed50f96b29993d"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.BK@v02.0#glos-CDM",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BK/v02-0/glos_CDM.pdf",
+                "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.BK@v02-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BK/v02-0/source.pdf",
+                "sha256": "bdcb4309350656fbc307453144fd111f4ab3bf8edf09d1a7860e7b8906118673"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AMS-III.D",
+            "version": "v21-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0/rules.json",
+              "sha256": "41196c71739dd78f862547b6bdbf7e06e3a6d160e1e8bde372e91eb1ff54bc39"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0/sections.json",
+              "sha256": "58b30150ab4fdde06df5aee9574ba23d4e538d15a1860d729a9a90bee1edd949"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AM-TOOL03@v03",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/am-tool-03-v3.pdf",
+                "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL05@v03.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/am-tool-05-v3.0.pdf",
+                "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL06@v04.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/am-tool-06-v4.0.pdf",
+                "sha256": "0a806611660fab64122335bd85c8c20974c8932b3e063592692b7d2230162907"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL14@v03",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/am-tool-14-v3.pdf",
+                "sha256": "0788effccd28e867dfee522e5c413ca4d47240c75acce3a05d6d0cf759a3d1d0"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.D@v21-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/source.pdf",
+                "sha256": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AMS-III.R",
+            "version": "v05-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0/rules.json",
+              "sha256": "e11dff50e5c7d956510ddca1079e4ca6df74dec9583945be9868ad971165cb09"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0/sections.json",
+              "sha256": "1c737a71e3a3c2b9854a577b357d5cf68a0816fd600125f3da03047fed77351f"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AM-TOOL03@v03",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.R/v05-0/am-tool-03-v3.pdf",
+                "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL05@v03.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.R/v05-0/am-tool-05-v3.0.pdf",
+                "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL14@v03",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.R/v05-0/am-tool-14-v3.pdf",
+                "sha256": "0788effccd28e867dfee522e5c413ca4d47240c75acce3a05d6d0cf759a3d1d0"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL21@v13.1",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.R/v05-0/am-tool-21-v13.1.pdf",
+                "sha256": "c3a9fbb19b500f6ab70dfd29c3765921bb348251c8c7387e20ed50f96b29993d"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL22@v01",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.R/v05-0/am-tool-22-v1.pdf",
+                "sha256": "13a14ce8ae638e0b2ae87873c854d60e8b129934611a4d41f2ac6d10caae03df"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.R@v05-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.R/v05-0/source.pdf",
+                "sha256": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AR-ACM0003",
+            "version": "v02-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
+              "sha256": "c75aab13b382c1071f2c1bfaa0747c329e1d3df6e4e1d806b8a7a8b057178969"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/sections.json",
+              "sha256": "b4069043d662fd634f7163e5bc2edf2a8590c9f230ca26d9938a11381999fdf3"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AR-ACM0003@v02-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/EB75_repan30_AR-ACM0003_ver02.0.pdf",
+                "sha256": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL02@v01",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-02-v01.pdf",
+                "sha256": "37324fd7d9e727d006bd7e46b5410acff24acbe2195a65229a70a27041bbe4b4"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL08@v04.0.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-08-v04.0.0.pdf",
+                "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL12@v03.1",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-12-v03.1.pdf",
+                "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL14@v04.2",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-14-v04.2.pdf",
+                "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL15@v02.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-15-v02.0.pdf",
+                "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL16@v01.1.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-16-v01.1.0.pdf",
+                "sha256": "edc718dba7eb097092907553f849c10a36e91a3b4199677ccf4a78748a92f8de"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AR-AM0014",
+            "version": "v01-0-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
+              "sha256": "f55c20c14816991a847df34eaccd2ba39df566e893a3c62dcec3b105052e87c8"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/sections.json",
+              "sha256": "23c383086a5fbe785b8b13060b62a61210ce42a1cc6191bd18397de8a072c873"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AR-AM0014@v01-0-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/AR-AM0014/v01-0-0/AR-AM0014_ver01.0.0.pdf",
+                "sha256": "8505376f7987ae68159db4c570a3daab136432a05112e406c46aa83653d7040a"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AR-AM0014",
+            "version": "v02-0-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
+              "sha256": "60c4a9e8d0098c3c9c6665a1952f695ed9dfdb8336601ff92b24d68546a9a517"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/sections.json",
+              "sha256": "1f0cd8685a8d859a4b0a804490302d7ade4ccb9d8f9b3680617cd4e8a3100c04"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AR-AM0014@v02-0-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/AR-AM0014/v02-0-0/EB70_repan34_AM0014_ver02.0.0.pdf",
+                "sha256": "d4656f9d29fe9afbe35e2fda7dfadf0e5b80220b56319980c18147c8b8dcb955"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AR-AM0014",
+            "version": "v03-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
+              "sha256": "e4ce2b830ef193f6b384b52a1b7c742c70ac05a2e1f8dfa5118cb7ef923c0d1b"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/sections.json",
+              "sha256": "5d91798c0c8b3f70d28746597c5595692a15e1c7e160c7c506061e857320961b"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AR-TOOL02@v01-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-02-v01-0.pdf",
+                "sha256": "37324fd7d9e727d006bd7e46b5410acff24acbe2195a65229a70a27041bbe4b4"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL08@v04-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-08-v04-0.pdf",
+                "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL12@v03-1",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-12-v03-1.pdf",
+                "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL14@v04-2",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-14-v04-2.pdf",
+                "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL15@v02-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-15-v02-0.pdf",
+                "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29"
+              },
+              {
+                "doc": "UNFCCC/AR-AM0014@v03-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/source.pdf",
+                "sha256": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AR-AMS0003",
+            "version": "v01-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+              "sha256": "08e4a1559024ac6a829a714bf15cebe39b4519ac807d66cb5d0e19598363fb54"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/sections.json",
+              "sha256": "91cf97dff12ae97830497ddecacddf0a296483a7f438d2f04de7798eeb77230a"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AR-TOOL08@v04.0.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-08-v04.0.0.pdf",
+                "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL12@v03.1",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-12-v03.1.pdf",
+                "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL14@v04.2",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-14-v04.2.pdf",
+                "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL15@v02.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-15-v02.0.pdf",
+                "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29"
+              },
+              {
+                "doc": "UNFCCC/AR-AMS0003@v01-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/source.pdf",
+                "sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AR-AMS0007",
+            "version": "v03-1",
+            "rules": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+              "sha256": "2a0995807232d1463fd9b9945b8b3b6a1c4c0d1bd2896dc49cc6050c4a6b8dcc"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/sections.json",
+              "sha256": "dd269f05a56cf811dcde74fbb6f41607d121c0a2744cc00010ef631b00e4959b"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AR-TOOL08@v04.0.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-08-v04.0.0.pdf",
+                "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL12@v03.1",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-12-v03.1.pdf",
+                "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL14@v04.2",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-14-v04.2.pdf",
+                "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL15@v02.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-15-v02.0.pdf",
+                "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL16@v01.1.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-16-v01.1.0.pdf",
+                "sha256": "edc718dba7eb097092907553f849c10a36e91a3b4199677ccf4a78748a92f8de"
+              },
+              {
+                "doc": "UNFCCC/AR-AMS0007@v03-1",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/source.pdf",
+                "sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9"
+              }
+            ]
+          },
+          {
+            "methodology_id": "VM0007",
+            "version": "v1-8",
+            "rules": {
+              "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+              "sha256": "bc318d26dd204af31e5bb6b6e7332988579d5bc8d545481df634c766bbf3ed58"
+            },
+            "sections": {
+              "path": "methodologies/Verra/AFOLU/VM0007/v1-8/sections.json",
+              "sha256": "852125cacbe9d09f0560886fb27621548939033a382d2b1718f50b7694f41201"
+            },
+            "tool_references": [
+              {
+                "doc": "Verra/VM0007@v1-8",
+                "kind": "pdf",
+                "path": "tools/Verra/VM0007/v1-8/source.pdf",
+                "sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
+              },
+              {
+                "doc": "Verra/VMD0007@v3-3",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0007/v3-3/source.pdf",
+                "sha256": "c5f81df7bd65affae8686a40e27f1cfa0c90ca88b3c1fbf6a9ad5ee30398d499"
+              },
+              {
+                "doc": "Verra/VMD0006@v1-4",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0006/v1-4/source.pdf",
+                "sha256": "f794da0116f5461a155b133e68c9a36feb048feabfe9547ac1b1450cd217c9c6"
+              },
+              {
+                "doc": "Verra/VMD0050@v1-0",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0050/v1-0/source.pdf",
+                "sha256": "018fffdafbbfd172b05b5e59c96ac8a871f8e5340358163f3af8b2928dd77700"
+              },
+              {
+                "doc": "Verra/VMD0051@v1-0",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0051/v1-0/source.pdf",
+                "sha256": "988cf05105163127802b2ea61a8588bd772e8986dac37f77d5a758b2ec1d987e"
+              },
+              {
+                "doc": "Verra/VMD0042@v1-1",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0042/v1-1/source.pdf",
+                "sha256": "8f9e635af1452ade858392b796e84069f72dedf7d1111afbbe9893a55fb4196e"
+              },
+              {
+                "doc": "Verra/VMD0015@v2-2",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0015/v2-2/source.pdf",
+                "sha256": "7b3814cc937e3ff6c88b02661d52342b0a44bcc8ef800f8825b6181a150cb0d9"
+              },
+              {
+                "doc": "Verra/VMD0016@v1-2",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0016/v1-2/source.pdf",
+                "sha256": "89c9b3fc42ffb0f545a364bb6f75a1ac28b6f6aab0061233173eee4978c96f6e"
+              },
+              {
+                "doc": "Verra/VMD0017@v2-2",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0017/v2-2/source.pdf",
+                "sha256": "7d7c9399a5352e57963194a0fa1bf22c8d674b8d7da3637ad7d54dcf2168bd36"
+              },
+              {
+                "doc": "Verra/VMD0046@v1-1",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0046/v1-1/source.pdf",
+                "sha256": "87c847a4d0e511ff677c0f9bb32ba38635bf76fb6db64be61f204ef2ec4b0e15"
+              },
+              {
+                "doc": "Verra/VMD0052@v1-0",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0052/v1-0/source.pdf",
+                "sha256": "cf22fea76d6085dddf8468cd21965837357839b27479fbab56eceeac8f8c7cbb"
+              },
+              {
+                "doc": "Verra/VMD0005@v1-1",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0005/v1-1/source.pdf",
+                "sha256": "2832053dc7383edb06f72e7db89bc7d12cffd61782d2d5932ea7b14dcc107066"
+              },
+              {
+                "doc": "Verra/VMD0009@v1-3",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0009/v1-3/source.pdf",
+                "sha256": "89af8290bd820c8665246edb12702b772d715927434ca250f0839fb073696027"
+              },
+              {
+                "doc": "Verra/VMD0010@v1-2",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0010/v1-2/source.pdf",
+                "sha256": "049bc607095792c26c90f56507c351837ae03c7eba3b5244607af4897c5fbc8b"
+              },
+              {
+                "doc": "Verra/VT0001@v3-0",
+                "kind": "pdf",
+                "path": "tools/Verra/VT0001/v3-0/source.pdf",
+                "sha256": "ee0d8b00b772208b112d4b20b43613a80b8d10404813c3273086d90b3963ddc8"
+              },
+              {
+                "doc": "Verra/T-BAR@v4-2",
+                "kind": "pdf",
+                "path": "tools/Verra/T-BAR/v4-2/source.pdf",
+                "sha256": "12f1b8297ed5ed19045442cd92b7cd5de3c38b969c5a8ff96558d25c1c18aba9"
+              },
+              {
+                "doc": "Verra/VMD0001@v1-1",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0001/v1-1/source.pdf",
+                "sha256": "15c684652255751b6ffe8cdbdb0db01ca77aaa61e69d0b18074665a9a9f49cba"
+              },
+              {
+                "doc": "Verra/VMD0002@v1-0",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0002/v1-0/source.pdf",
+                "sha256": "94145386268c22903467adc9a281e7e438173498fa5c71f15ede4ef5ffacc094"
+              },
+              {
+                "doc": "Verra/VMD0003@v1-0",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0003/v1-0/source.pdf",
+                "sha256": "5a34f0a6e4c3065d89cf31c8b5451a3a0c06403afd871247554db72d6061f13c"
+              },
+              {
+                "doc": "Verra/VMD0004@v1-0",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0004/v1-0/source.pdf",
+                "sha256": "11998cf83e1b35b2ed03dd9741a58b2234e697dc1bcb93ecd96ea7585d567229"
+              }
+            ]
+          },
+          {
+            "methodology_id": "VM0047",
+            "version": "v1-0",
+            "rules": {
+              "path": "methodologies/Verra/AFOLU/VM0047/v1-0/rules.json",
+              "sha256": "a6d66d8e7f409e9a43dca8656bea03f6e5a0c9ee02a3ecfa6e61d19d9fcdaf3e"
+            },
+            "sections": {
+              "path": "methodologies/Verra/AFOLU/VM0047/v1-0/sections.json",
+              "sha256": "8c07f0a3ce505eba9b3a46bb5fb48e028046e95d0514c3e6fcae6e6a701d22a1"
+            },
+            "tool_references": [
+              {
+                "doc": "Verra/VM0047@v1-0",
+                "kind": "pdf",
+                "path": "tools/Verra/VM0047/v1-0/source.pdf",
+                "sha256": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "http_dependency": {
+      "query": "VM0047 VMD0054 leakage most recent version",
+      "top_k": 5,
+      "results": [
+        {
+          "doc_id": "VM0047@v1-0:R-8-0002",
+          "methodology_id": "VM0047",
+          "version": "v1-0",
+          "rule_id": "R-8-0002",
+          "section_id": "S-8-3",
+          "section_title": "Leakage",
+          "score": 3.472707,
+          "text": "Leakage quantification",
+          "tags": [
+            "calc"
+          ]
+        },
+        {
+          "doc_id": "AR-AMS0007@v03-1:R-1-0006",
+          "methodology_id": "AR-AMS0007",
+          "version": "v03-1",
+          "rule_id": "R-1-0006",
+          "section_id": "S-6",
+          "section_title": "Leakage",
+          "score": 2.750334,
+          "text": "Leakage from displaced wetland uses monitored and deducted using Tool 14 defaults.",
+          "tags": [
+            "leakage"
+          ]
+        },
+        {
+          "doc_id": "AR-AMS0003@v01-0:R-1-0006",
+          "methodology_id": "AR-AMS0003",
+          "version": "v01-0",
+          "rule_id": "R-1-0006",
+          "section_id": "S-6",
+          "section_title": "Leakage",
+          "score": 2.588782,
+          "text": "Leakage from activity shifting or market effects monitored and deducted using Tool 14 default factors.",
+          "tags": [
+            "leakage"
+          ]
+        },
+        {
+          "doc_id": "VM0007@v1-8:R-1-0015",
+          "methodology_id": "VM0007",
+          "version": "v1-8",
+          "rule_id": "R-1-0015",
+          "section_id": "S-1",
+          "section_title": "Applicability Conditions",
+          "score": 2.559971,
+          "text": "Leakage prevention activity restrictions",
+          "tags": [
+            "eligibility"
+          ]
+        },
+        {
+          "doc_id": "AR-ACM0003@v02-0:R-1-0004",
+          "methodology_id": "AR-ACM0003",
+          "version": "v02-0",
+          "rule_id": "R-1-0004",
+          "section_id": "S-4",
+          "section_title": "Leakage and displacement risks",
+          "score": 2.539068,
+          "text": "Leakage from activity shifting and market effects addressed using Tool 14 default factors.",
+          "tags": [
+            "leakage"
+          ]
+        }
+      ],
+      "audit": {
+        "bm25": {
+          "tokenizer": "lowercase-ascii-nonalnum-split",
+          "params": {
+            "k1": 1.2,
+            "b": 0.75
+          },
+          "documents": 225
+        },
+        "inputs": [
+          {
+            "methodology_id": "GS-00XX",
+            "version": "v1-0",
+            "rules": {
+              "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/rules.json",
+              "sha256": "c39dee3b1680ac3082504fe62ba40e3347fc6c40d6858e922310122f371621fd"
+            },
+            "sections": {
+              "path": "methodologies/GoldStandard/LUF/GS-00XX/v1-0/sections.json",
+              "sha256": "1490c5d8bf359d19305aa5ff647b6ee221399d46214505c7dc6ce83898aa0f1d"
+            },
+            "tool_references": [
+              {
+                "doc": "GoldStandard/GS-00XX@v1-0",
+                "kind": "pdf",
+                "path": "tools/GoldStandard/GS-00XX/v1-0/source.pdf",
+                "sha256": "d776d0979de7e14f1a038e9e54f023d12daafce464849286281fe2539309703a"
+              }
+            ]
+          },
+          {
+            "methodology_id": "ACM0010",
+            "version": "v03-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/rules.json",
+              "sha256": "7c76760818445e82d1c8202faba178d1df4bcbebeb76e5e896b3481ae8b88776"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/ACM0010/v03-0/sections.json",
+              "sha256": "0d0e71be0142e1b519534ae1c6d23e4fea073a2f6abfa692160219c4a8a7c869"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AM-TOOL03@v01",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-03-v1.pdf",
+                "sha256": "57868a381913568599c98d331b9ff339115c38cc1070aeec43eca0d11823185a"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL05@v01",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-05-v1.pdf",
+                "sha256": "e3f3238248e0d68d7da0a98eca93e411b3b44f7e5c44be9cbd8b62693b8b7107"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL06@v01",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/am-tool-06-v1.pdf",
+                "sha256": "6888d77e76c6b39e5de3097cc0cc2d493d6b1bd13814c985f45c20000283413d"
+              },
+              {
+                "doc": "UNFCCC/ACM0010@v03-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/ACM0010/v03-0/source.pdf",
+                "sha256": "7c2e6a6d1a4942a259fee7c8f5d769c1630de3a7c6faa80e7ce4294937abb1a9"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AM0073",
+            "version": "v01-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/rules.json",
+              "sha256": "eb3344c371b2438bd30f0181eac3903a17df80407efcedbe8c261ec79c77d2b7"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/AM0073/v01-0/sections.json",
+              "sha256": "901f945c2596651b334580ef5b1cafa5e51fe17ac9729227733e910770b8d49b"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AM-TOOL01@v07.0.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/am-tool-01-v7.0.0.pdf",
+                "sha256": "b516fd941c5d13671cb88ff7b6511cda3390f8290e3a509a1b5d22e9ad1b35bd"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL03@v03",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/am-tool-03-v3.pdf",
+                "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL05@v03.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/am-tool-05-v3.0.pdf",
+                "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL06@v04.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/am-tool-06-v4.0.pdf",
+                "sha256": "0a806611660fab64122335bd85c8c20974c8932b3e063592692b7d2230162907"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL07@v07.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/am-tool-07-v7.0.pdf",
+                "sha256": "7f3864427916369b25b960ace50b5eed74b57530a14e421dc70ce35bae83bf5b"
+              },
+              {
+                "doc": "UNFCCC/AM0073@v01-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AM0073/v01-0/source.pdf",
+                "sha256": "dc6e5a0e5942fa22e7275c1a639b8f47b85384aa7845c446fa600697646c744a"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AMS-III.A",
+            "version": "v03-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.A/v03-0/rules.json",
+              "sha256": "32d815a426a674d21a7524a47e678f691e3604729bbdebc8f738b586046fb1bd"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.A/v03-0/sections.json",
+              "sha256": "8484b0bc19b539fb9c01ffe052245ba007976a59f1df9e0db61ff3382d9e4820"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AMS-III.A@v03.0#glos-CDM",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.A/v03-0/glos_CDM.pdf",
+                "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.A@v03-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.A/v03-0/source.pdf",
+                "sha256": "2f54401790b35a616ddac72452cd81f250fa2070d72514b4490429598bc11c15"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AMS-III.AU",
+            "version": "v04-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.AU/v04-0/rules.json",
+              "sha256": "940dbfc6e75edf0e5085a2931160f85147bb60442cab1f1655da3147cf6c13e9"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.AU/v04-0/sections.json",
+              "sha256": "55cce82954147046fc0fd751adf98b071dd8a419285d4328813affd21fdf6533"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AMS-III.AU@v04.0#glos-CDM",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.AU/v04-0/glos_CDM.pdf",
+                "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.AU@v04-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.AU/v04-0/source.pdf",
+                "sha256": "7b6e3669218211f95faf34dd85a1de9bbc5bf356b60e124da596405beed0a160"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AMS-III.BE",
+            "version": "v01-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.BE/v01-0/rules.json",
+              "sha256": "14c85415738a68edfd09b522261aa82ea9453d430235762ff65a2c963877a54a"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.BE/v01-0/sections.json",
+              "sha256": "f4adb69d6e1b8ce70dc386463854e72eef80d4f27790edb689b88aead65ea4a5"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AM-TOOL03@v03",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BE/v01-0/am-tool-03-v3.pdf",
+                "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL05@v03.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BE/v01-0/am-tool-05-v3.0.pdf",
+                "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.BE@v01.0#glos-CDM",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BE/v01-0/glos_CDM.pdf",
+                "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.BE@v01-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BE/v01-0/source.pdf",
+                "sha256": "9aefd048a7d6380f2ddb1aa646fd4cef6303ea9d79abdb16cb35612687deb1ed"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AMS-III.BF",
+            "version": "v02-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.BF/v02-0/rules.json",
+              "sha256": "59a588e7ade873e4a3231cb677bdedb6e43d179da7be9eddfb5986c22c2fad04"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.BF/v02-0/sections.json",
+              "sha256": "115e0e99e2d45e3017d7e4464e4c9a8a7d10a0e7831cf6b0cfdcce20e87a5275"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AMS-III.BF@v02.0#glos-CDM",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BF/v02-0/glos_CDM.pdf",
+                "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.BF@v02-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BF/v02-0/source.pdf",
+                "sha256": "69d15565628ffd0d9084548f6b797ba65a0a743c0de70bcb8f940a682d681005"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AMS-III.BK",
+            "version": "v02-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.BK/v02-0/rules.json",
+              "sha256": "0aaac7bf421e7aa4f1f99bccef4a9087961814380c1fcd825df4100191719387"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.BK/v02-0/sections.json",
+              "sha256": "9db441ea18069d5cb20ac4131103c2de922a4d7c8d2cc4149947207f76cfa131"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AM-TOOL03@v03",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BK/v02-0/am-tool-03-v3.pdf",
+                "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL05@v03.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BK/v02-0/am-tool-05-v3.0.pdf",
+                "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL12@v01.1.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BK/v02-0/am-tool-12-v1.1.0.pdf",
+                "sha256": "0d6644f44a010514b513f2314d84927f479cb81a774add0cb34e9fe0da75560e"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL21@v13.1",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BK/v02-0/am-tool-21-v13.1.pdf",
+                "sha256": "c3a9fbb19b500f6ab70dfd29c3765921bb348251c8c7387e20ed50f96b29993d"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.BK@v02.0#glos-CDM",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BK/v02-0/glos_CDM.pdf",
+                "sha256": "62cbedc1d4fb3e66b9b37eb6ad2225eb998fad36aecdd20444095d7d46687e5c"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.BK@v02-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.BK/v02-0/source.pdf",
+                "sha256": "bdcb4309350656fbc307453144fd111f4ab3bf8edf09d1a7860e7b8906118673"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AMS-III.D",
+            "version": "v21-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0/rules.json",
+              "sha256": "41196c71739dd78f862547b6bdbf7e06e3a6d160e1e8bde372e91eb1ff54bc39"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.D/v21-0/sections.json",
+              "sha256": "58b30150ab4fdde06df5aee9574ba23d4e538d15a1860d729a9a90bee1edd949"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AM-TOOL03@v03",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/am-tool-03-v3.pdf",
+                "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL05@v03.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/am-tool-05-v3.0.pdf",
+                "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL06@v04.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/am-tool-06-v4.0.pdf",
+                "sha256": "0a806611660fab64122335bd85c8c20974c8932b3e063592692b7d2230162907"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL14@v03",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/am-tool-14-v3.pdf",
+                "sha256": "0788effccd28e867dfee522e5c413ca4d47240c75acce3a05d6d0cf759a3d1d0"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.D@v21-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.D/v21-0/source.pdf",
+                "sha256": "a9c6c73c84f2bc3bbde7ccdac996accadec15f33cb2da10cd95227ac8373a4c4"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AMS-III.R",
+            "version": "v05-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0/rules.json",
+              "sha256": "e11dff50e5c7d956510ddca1079e4ca6df74dec9583945be9868ad971165cb09"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Agriculture/AMS-III.R/v05-0/sections.json",
+              "sha256": "1c737a71e3a3c2b9854a577b357d5cf68a0816fd600125f3da03047fed77351f"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AM-TOOL03@v03",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.R/v05-0/am-tool-03-v3.pdf",
+                "sha256": "64bb83daec11116f8eaab00ca0d03ecdcb41be64076976b972d774b267ca6e02"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL05@v03.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.R/v05-0/am-tool-05-v3.0.pdf",
+                "sha256": "b292e66001d2e854af3176e4f922ce922cb6faa426d88f6071a2f1a64f353c51"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL14@v03",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.R/v05-0/am-tool-14-v3.pdf",
+                "sha256": "0788effccd28e867dfee522e5c413ca4d47240c75acce3a05d6d0cf759a3d1d0"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL21@v13.1",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.R/v05-0/am-tool-21-v13.1.pdf",
+                "sha256": "c3a9fbb19b500f6ab70dfd29c3765921bb348251c8c7387e20ed50f96b29993d"
+              },
+              {
+                "doc": "UNFCCC/AM-TOOL22@v01",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.R/v05-0/am-tool-22-v1.pdf",
+                "sha256": "13a14ce8ae638e0b2ae87873c854d60e8b129934611a4d41f2ac6d10caae03df"
+              },
+              {
+                "doc": "UNFCCC/AMS-III.R@v05-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Agriculture/AMS-III.R/v05-0/source.pdf",
+                "sha256": "30981a72628c9317aeeb1a33aa61651825b02c9bcccae3d9b0d15bf071a762bb"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AR-ACM0003",
+            "version": "v02-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/rules.json",
+              "sha256": "c75aab13b382c1071f2c1bfaa0747c329e1d3df6e4e1d806b8a7a8b057178969"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Forestry/AR-ACM0003/v02-0/sections.json",
+              "sha256": "b4069043d662fd634f7163e5bc2edf2a8590c9f230ca26d9938a11381999fdf3"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AR-ACM0003@v02-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/EB75_repan30_AR-ACM0003_ver02.0.pdf",
+                "sha256": "fd7055a353565cb3f510758bf56147923268d6805571dbdf3884e1952c1bf75e"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL02@v01",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-02-v01.pdf",
+                "sha256": "37324fd7d9e727d006bd7e46b5410acff24acbe2195a65229a70a27041bbe4b4"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL08@v04.0.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-08-v04.0.0.pdf",
+                "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL12@v03.1",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-12-v03.1.pdf",
+                "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL14@v04.2",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-14-v04.2.pdf",
+                "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL15@v02.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-15-v02.0.pdf",
+                "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL16@v01.1.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-ACM0003/v02-0/ar-am-tool-16-v01.1.0.pdf",
+                "sha256": "edc718dba7eb097092907553f849c10a36e91a3b4199677ccf4a78748a92f8de"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AR-AM0014",
+            "version": "v01-0-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/rules.json",
+              "sha256": "f55c20c14816991a847df34eaccd2ba39df566e893a3c62dcec3b105052e87c8"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0/sections.json",
+              "sha256": "23c383086a5fbe785b8b13060b62a61210ce42a1cc6191bd18397de8a072c873"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AR-AM0014@v01-0-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/AR-AM0014/v01-0-0/AR-AM0014_ver01.0.0.pdf",
+                "sha256": "8505376f7987ae68159db4c570a3daab136432a05112e406c46aa83653d7040a"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AR-AM0014",
+            "version": "v02-0-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/rules.json",
+              "sha256": "60c4a9e8d0098c3c9c6665a1952f695ed9dfdb8336601ff92b24d68546a9a517"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0/sections.json",
+              "sha256": "1f0cd8685a8d859a4b0a804490302d7ade4ccb9d8f9b3680617cd4e8a3100c04"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AR-AM0014@v02-0-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/AR-AM0014/v02-0-0/EB70_repan34_AM0014_ver02.0.0.pdf",
+                "sha256": "d4656f9d29fe9afbe35e2fda7dfadf0e5b80220b56319980c18147c8b8dcb955"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AR-AM0014",
+            "version": "v03-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/rules.json",
+              "sha256": "e4ce2b830ef193f6b384b52a1b7c742c70ac05a2e1f8dfa5118cb7ef923c0d1b"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v03-0/sections.json",
+              "sha256": "5d91798c0c8b3f70d28746597c5595692a15e1c7e160c7c506061e857320961b"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AR-TOOL02@v01-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-02-v01-0.pdf",
+                "sha256": "37324fd7d9e727d006bd7e46b5410acff24acbe2195a65229a70a27041bbe4b4"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL08@v04-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-08-v04-0.pdf",
+                "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL12@v03-1",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-12-v03-1.pdf",
+                "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL14@v04-2",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-14-v04-2.pdf",
+                "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL15@v02-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/ar-am-tool-15-v02-0.pdf",
+                "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29"
+              },
+              {
+                "doc": "UNFCCC/AR-AM0014@v03-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AM0014/v03-0/source.pdf",
+                "sha256": "5484c0392761c9d7b4cca9e3f66e8e72d353fff371da45cb0ba2a3d254b8eb1a"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AR-AMS0003",
+            "version": "v01-0",
+            "rules": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/rules.json",
+              "sha256": "08e4a1559024ac6a829a714bf15cebe39b4519ac807d66cb5d0e19598363fb54"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AMS0003/v01-0/sections.json",
+              "sha256": "91cf97dff12ae97830497ddecacddf0a296483a7f438d2f04de7798eeb77230a"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AR-TOOL08@v04.0.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-08-v04.0.0.pdf",
+                "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL12@v03.1",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-12-v03.1.pdf",
+                "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL14@v04.2",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-14-v04.2.pdf",
+                "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL15@v02.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/ar-am-tool-15-v02.0.pdf",
+                "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29"
+              },
+              {
+                "doc": "UNFCCC/AR-AMS0003@v01-0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0003/v01-0/source.pdf",
+                "sha256": "ecf4981944251fe71e8d42a159021e97d83f6ffec81c2cdc8ab1ad2d858e1e6b"
+              }
+            ]
+          },
+          {
+            "methodology_id": "AR-AMS0007",
+            "version": "v03-1",
+            "rules": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/rules.json",
+              "sha256": "2a0995807232d1463fd9b9945b8b3b6a1c4c0d1bd2896dc49cc6050c4a6b8dcc"
+            },
+            "sections": {
+              "path": "methodologies/UNFCCC/Forestry/AR-AMS0007/v03-1/sections.json",
+              "sha256": "dd269f05a56cf811dcde74fbb6f41607d121c0a2744cc00010ef631b00e4959b"
+            },
+            "tool_references": [
+              {
+                "doc": "UNFCCC/AR-TOOL08@v04.0.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-08-v04.0.0.pdf",
+                "sha256": "c54deaf3cbe89fa8765ec34af186400e74c08545de646d41af7a93a50565e397"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL12@v03.1",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-12-v03.1.pdf",
+                "sha256": "b921a0a3b5c1e2e8791526b0ca0e183ca81dd35db59e515bb89771af692863f4"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL14@v04.2",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-14-v04.2.pdf",
+                "sha256": "b63fccecaf7730e9f1d461ef51cefea2252e89dbb5a630869c9e265b23577331"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL15@v02.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-15-v02.0.pdf",
+                "sha256": "b8e0252fc7bcfadc184dbb2dab12205c85d6d4af5a291b39128bd861ab878e29"
+              },
+              {
+                "doc": "UNFCCC/AR-TOOL16@v01.1.0",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/ar-am-tool-16-v01.1.0.pdf",
+                "sha256": "edc718dba7eb097092907553f849c10a36e91a3b4199677ccf4a78748a92f8de"
+              },
+              {
+                "doc": "UNFCCC/AR-AMS0007@v03-1",
+                "kind": "pdf",
+                "path": "tools/UNFCCC/Forestry/AR-AMS0007/v03-1/source.pdf",
+                "sha256": "2facdc8509c8dd2c7da4ca884cec431ab9d7ceb6ec628decc330e550cbcf2bc9"
+              }
+            ]
+          },
+          {
+            "methodology_id": "VM0007",
+            "version": "v1-8",
+            "rules": {
+              "path": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.json",
+              "sha256": "bc318d26dd204af31e5bb6b6e7332988579d5bc8d545481df634c766bbf3ed58"
+            },
+            "sections": {
+              "path": "methodologies/Verra/AFOLU/VM0007/v1-8/sections.json",
+              "sha256": "852125cacbe9d09f0560886fb27621548939033a382d2b1718f50b7694f41201"
+            },
+            "tool_references": [
+              {
+                "doc": "Verra/VM0007@v1-8",
+                "kind": "pdf",
+                "path": "tools/Verra/VM0007/v1-8/source.pdf",
+                "sha256": "68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"
+              },
+              {
+                "doc": "Verra/VMD0007@v3-3",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0007/v3-3/source.pdf",
+                "sha256": "c5f81df7bd65affae8686a40e27f1cfa0c90ca88b3c1fbf6a9ad5ee30398d499"
+              },
+              {
+                "doc": "Verra/VMD0006@v1-4",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0006/v1-4/source.pdf",
+                "sha256": "f794da0116f5461a155b133e68c9a36feb048feabfe9547ac1b1450cd217c9c6"
+              },
+              {
+                "doc": "Verra/VMD0050@v1-0",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0050/v1-0/source.pdf",
+                "sha256": "018fffdafbbfd172b05b5e59c96ac8a871f8e5340358163f3af8b2928dd77700"
+              },
+              {
+                "doc": "Verra/VMD0051@v1-0",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0051/v1-0/source.pdf",
+                "sha256": "988cf05105163127802b2ea61a8588bd772e8986dac37f77d5a758b2ec1d987e"
+              },
+              {
+                "doc": "Verra/VMD0042@v1-1",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0042/v1-1/source.pdf",
+                "sha256": "8f9e635af1452ade858392b796e84069f72dedf7d1111afbbe9893a55fb4196e"
+              },
+              {
+                "doc": "Verra/VMD0015@v2-2",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0015/v2-2/source.pdf",
+                "sha256": "7b3814cc937e3ff6c88b02661d52342b0a44bcc8ef800f8825b6181a150cb0d9"
+              },
+              {
+                "doc": "Verra/VMD0016@v1-2",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0016/v1-2/source.pdf",
+                "sha256": "89c9b3fc42ffb0f545a364bb6f75a1ac28b6f6aab0061233173eee4978c96f6e"
+              },
+              {
+                "doc": "Verra/VMD0017@v2-2",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0017/v2-2/source.pdf",
+                "sha256": "7d7c9399a5352e57963194a0fa1bf22c8d674b8d7da3637ad7d54dcf2168bd36"
+              },
+              {
+                "doc": "Verra/VMD0046@v1-1",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0046/v1-1/source.pdf",
+                "sha256": "87c847a4d0e511ff677c0f9bb32ba38635bf76fb6db64be61f204ef2ec4b0e15"
+              },
+              {
+                "doc": "Verra/VMD0052@v1-0",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0052/v1-0/source.pdf",
+                "sha256": "cf22fea76d6085dddf8468cd21965837357839b27479fbab56eceeac8f8c7cbb"
+              },
+              {
+                "doc": "Verra/VMD0005@v1-1",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0005/v1-1/source.pdf",
+                "sha256": "2832053dc7383edb06f72e7db89bc7d12cffd61782d2d5932ea7b14dcc107066"
+              },
+              {
+                "doc": "Verra/VMD0009@v1-3",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0009/v1-3/source.pdf",
+                "sha256": "89af8290bd820c8665246edb12702b772d715927434ca250f0839fb073696027"
+              },
+              {
+                "doc": "Verra/VMD0010@v1-2",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0010/v1-2/source.pdf",
+                "sha256": "049bc607095792c26c90f56507c351837ae03c7eba3b5244607af4897c5fbc8b"
+              },
+              {
+                "doc": "Verra/VT0001@v3-0",
+                "kind": "pdf",
+                "path": "tools/Verra/VT0001/v3-0/source.pdf",
+                "sha256": "ee0d8b00b772208b112d4b20b43613a80b8d10404813c3273086d90b3963ddc8"
+              },
+              {
+                "doc": "Verra/T-BAR@v4-2",
+                "kind": "pdf",
+                "path": "tools/Verra/T-BAR/v4-2/source.pdf",
+                "sha256": "12f1b8297ed5ed19045442cd92b7cd5de3c38b969c5a8ff96558d25c1c18aba9"
+              },
+              {
+                "doc": "Verra/VMD0001@v1-1",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0001/v1-1/source.pdf",
+                "sha256": "15c684652255751b6ffe8cdbdb0db01ca77aaa61e69d0b18074665a9a9f49cba"
+              },
+              {
+                "doc": "Verra/VMD0002@v1-0",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0002/v1-0/source.pdf",
+                "sha256": "94145386268c22903467adc9a281e7e438173498fa5c71f15ede4ef5ffacc094"
+              },
+              {
+                "doc": "Verra/VMD0003@v1-0",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0003/v1-0/source.pdf",
+                "sha256": "5a34f0a6e4c3065d89cf31c8b5451a3a0c06403afd871247554db72d6061f13c"
+              },
+              {
+                "doc": "Verra/VMD0004@v1-0",
+                "kind": "pdf",
+                "path": "tools/Verra/VMD0004/v1-0/source.pdf",
+                "sha256": "11998cf83e1b35b2ed03dd9741a58b2234e697dc1bcb93ecd96ea7585d567229"
+              }
+            ]
+          },
+          {
+            "methodology_id": "VM0047",
+            "version": "v1-0",
+            "rules": {
+              "path": "methodologies/Verra/AFOLU/VM0047/v1-0/rules.json",
+              "sha256": "a6d66d8e7f409e9a43dca8656bea03f6e5a0c9ee02a3ecfa6e61d19d9fcdaf3e"
+            },
+            "sections": {
+              "path": "methodologies/Verra/AFOLU/VM0047/v1-0/sections.json",
+              "sha256": "8c07f0a3ce505eba9b3a46bb5fb48e028046e95d0514c3e6fcae6e6a701d22a1"
+            },
+            "tool_references": [
+              {
+                "doc": "Verra/VM0047@v1-0",
+                "kind": "pdf",
+                "path": "tools/Verra/VM0047/v1-0/source.pdf",
+                "sha256": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
