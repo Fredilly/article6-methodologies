@@ -29,7 +29,8 @@ assert.deepStrictEqual(section.section.pages, [62, 63]);
 
 const rule = retriever.query({ operation: 'rule', standard: 'Verra', program: 'AFOLU', code: 'VM0047', version: 'v1-1', rule_id: 'R-4-3-0002' });
 assert.strictEqual(rule.found, true);
-assert.strictEqual(rule.rule.id, 'R-4-3-0002');
+assert.strictEqual(rule.requested_rule_id, 'R-4-3-0002');
+assert.strictEqual(rule.rule.id, 'Verra.AFOLU.VM0047.v1-1.R-4-3-0002');
 assert.strictEqual(rule.source.sha256, identity.source.sha256);
 
 const leakage = retriever.query({ operation: 'dependency', standard: 'Verra', program: 'AFOLU', code: 'VM0047', version: 'v1-1', target: 'Verra/VMD0054' });
