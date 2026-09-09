@@ -1,0 +1,73 @@
+{
+  "component": "Verra/VM0047@v1-1",
+  "target_state": "VERIFIED",
+  "current_state": "DISCOVERED",
+  "verified": false,
+  "gates": [
+    {
+      "gate": "authoritative_identity",
+      "required_state": "PASS",
+      "current_state": "PASS",
+      "evidence": "VM0047 v1.1, dated 14 May 2025, 81 pages"
+    },
+    {
+      "gate": "source_hash",
+      "required_state": "PASS",
+      "current_state": "PASS",
+      "evidence": "SHA-256 2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d calculated from supplied authoritative PDF"
+    },
+    {
+      "gate": "governed_repository_pdf",
+      "required_state": "PASS",
+      "current_state": "BLOCKED",
+      "blocker": "Repository binary copy is not yet committed and re-hashed against the captured source hash"
+    },
+    {
+      "gate": "numbered_section_hierarchy",
+      "required_state": "PASS",
+      "current_state": "PARTIAL",
+      "evidence": "Deep numbered subsection overlay completed",
+      "blocker": "Overlay still needs folding into the canonical rich/lean section representation with source text"
+    },
+    {
+      "gate": "full_atomic_rules",
+      "required_state": "PASS",
+      "current_state": "BLOCKED",
+      "blocker": "Full atomic extraction across boundary, baseline, additionality, equations, parameters, monitoring, uncertainty and appendices is not complete"
+    },
+    {
+      "gate": "rule_provenance",
+      "required_state": "PASS",
+      "current_state": "BLOCKED",
+      "blocker": "Every atomic rule must carry exact source page/section span and SOURCE_REQUIREMENT classification"
+    },
+    {
+      "gate": "dependency_semantics",
+      "required_state": "PASS",
+      "current_state": "PARTIAL",
+      "evidence": "VMD0054 and VT0008 dynamic most-recent-version semantics resolved; incorporated-by-reference and explicit non-dependency behavior captured",
+      "blocker": "Canonical component IDs for VCS requirement sets and the UNFCCC significance tool remain to be mapped"
+    },
+    {
+      "gate": "version_diff",
+      "required_state": "PASS",
+      "current_state": "PARTIAL",
+      "evidence": "Authoritative v1.0 -> v1.1 summary diff is present",
+      "blocker": "Full-text semantic diff remains incomplete"
+    },
+    {
+      "gate": "retrieval_contract",
+      "required_state": "PASS",
+      "current_state": "PASS",
+      "evidence": "Identity, historical/current version, section, rule, dynamic dependency, negative dependency, provenance, ambiguity and no-answer cases are defined"
+    },
+    {
+      "gate": "production_retrieval_execution",
+      "required_state": "PASS",
+      "current_state": "BLOCKED",
+      "blocker": "Required retrieval cases have not yet been executed through the production retrieval interface"
+    }
+  ],
+  "promotion_allowed": false,
+  "promotion_rule": "VERIFIED is allowed only when every gate is PASS. Unknown, partial and blocked states must remain explicit and must not be coerced to PASS."
+}
