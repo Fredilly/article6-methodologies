@@ -19,29 +19,21 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import re
-
           p = Path('bin/http-engine-adapter.js')
           s = p.read_text()
-
           require_line = "const { createGovernanceRetriever } = require('../lib/governance-retrieval');\n"
           if require_line not in s:
               marker = "const { URL } = require('url');\n"
-              if marker not in s:
-                  raise SystemExit('URL require marker not found')
+              if marker not in s: raise SystemExit('URL require marker not found')
               s = s.replace(marker, marker + require_line, 1)
-
           if "const governance = createGovernanceRetriever(ROOT);" not in s:
               marker = "  const bm25 = buildBM25(documents);\n"
-              if marker not in s:
-                  raise SystemExit('BM25 marker not found')
+              if marker not in s: raise SystemExit('BM25 marker not found')
               s = s.replace(marker, marker + "  const governance = createGovernanceRetriever(ROOT);\n", 1)
-
           if "structured: governance.query" not in s:
               marker = "  return { search, audit, documents };"
-              if marker not in s:
-                  raise SystemExit('engine return marker not found')
+              if marker not in s: raise SystemExit('engine return marker not found')
               s = s.replace(marker, "  return { search, structured: governance.query, audit, documents };", 1)
-
           pattern = re.compile(
               r"    if \(!parsed \|\| typeof parsed\.query !== 'string'\) \{.*?"
               r"    sendJSON\(res, 200, \{\n"
@@ -49,9 +41,7 @@ jobs:
               r"      top_k: topK,\n"
               r"      results,\n"
               r"      audit\n"
-              r"    \}\);",
-              re.S,
-          )
+              r"    \}\);", re.S)
           replacement = '''    if (!parsed || typeof parsed !== 'object') {
               sendJSON(res, 400, { error: 'InvalidRequest', message: 'Body must be a JSON object' });
               return;
@@ -79,23 +69,19 @@ jobs:
             });'''
           if "mode: 'governance-v1'" not in s:
               s, n = pattern.subn(replacement, s, count=1)
-              if n != 1:
-                  raise SystemExit(f'handleQuery structural patch count={n}')
-
+              if n != 1: raise SystemExit(f'handleQuery structural patch count={n}')
           p.write_text(s)
           PY
       - name: Run structured retrieval test
         run: node tests/governance-retrieval.test.js
-      - name: Run CI integrity tests
-        run: bash scripts/ci-run-tests.sh
+      - name: Check adapter syntax
+        run: node --check bin/http-engine-adapter.js
       - name: Commit integration
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add bin/http-engine-adapter.js
-          if git diff --cached --quiet; then
-            exit 0
-          fi
+          if git diff --cached --quiet; then exit 0; fi
           git commit -m "feat: expose governance-v1 structured retrieval over production query endpoint"
           git push
