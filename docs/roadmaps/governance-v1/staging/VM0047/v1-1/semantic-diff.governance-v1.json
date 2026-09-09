@@ -1,0 +1,35 @@
+{
+  "component": "Verra/VM0047",
+  "from_version": "v1-0",
+  "to_version": "v1-1",
+  "classification": "ARTICLE6_NORMALIZATION",
+  "status": "COMPLETE",
+  "review_basis": {
+    "v1_0_governed_pdf_sha256": "987f86d4e7f8aa939875dbf6a1376287444531954f7573b3b46fe0e07919ded6",
+    "v1_1_governed_pdf_sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+    "deterministic_full_text_diff_sha256": "dfe52490748e5251a80eea28a92428bd68e85495b70e0965b5b9704ba1501fd6",
+    "deterministic_full_text_diff": "diff-evidence/v1-0_to_v1-1.full-text.diff",
+    "authoritative_change_summary": "VM0047 v1.1 Document History, page 81",
+    "review_scope": ["1","2","3","4","5","6","7","8","9","10","Appendix 1","Appendix 2","Appendix 3","Document History"]
+  },
+  "material_changes": [
+    {"id":"D-01","types":["MODIFIED"],"area":"existing_forest_cover_eligibility","affected_sections":["1","4.2","4.4.1"],"summary":"Eligibility for area-based projects with existing forest cover was clarified: qualifying existing forest cover must not have been managed for wood products in the previous ten years.","authoritative_history":"Clarification of eligibility for area-based projects with existing forest cover"},
+    {"id":"D-02","types":["MODIFIED","THRESHOLD_CHANGED"],"area":"census_planting_density_spacing_accounting_identification","affected_sections":["1.2","4.3","5.2","9.1","9.2"],"summary":"Census-based planting density, spacing, accounting boundaries and planting-unit identification requirements were revised, including the 50 planting-units-per-hectare ceiling and explicit unit identification/record requirements.","authoritative_history":"Updated requirements for planting density, spacing, accounting and ID for census-based projects"},
+    {"id":"D-03","types":["MODIFIED"],"area":"definitions","affected_sections":["3"],"summary":"Methodology definitions were updated; v1.1 definitions must be used for v1.1 interpretation and must not be silently backported to v1.0.","authoritative_history":"Updated methodology definitions"},
+    {"id":"D-04","types":["MODIFIED"],"area":"pre_existing_woody_biomass_removal","affected_sections":["4.2","8.2.1.2"],"summary":"Requirements governing removal and accounting of pre-existing woody biomass were revised, including start-date measurement/accounting conditions and restrictions on qualifying removals.","authoritative_history":"Revised requirements for pre-existing woody biomass removal"},
+    {"id":"D-05","types":["MODIFIED"],"area":"soil_disturbance_accounting","affected_sections":["4.3","8.2.1.6","9.2"],"summary":"Soil-disturbance accounting requirements were clarified, including depth/inversion constraints and monitoring/accounting consequences for soil organic carbon.","authoritative_history":"Clarified for soil disturbance accounting requirements"},
+    {"id":"D-06","types":["MODIFIED"],"area":"timber_harvest_and_ecosystem_degradation_exclusions","affected_sections":["4.4.1","8.6.2"],"summary":"Exclusions involving timber harvest and native-ecosystem degradation were clarified; harvesting that remains permissible is still subject to the applicable VCS long-term-average requirement.","authoritative_history":"Clarified exclusions of projects involving timber harvest or ecosystem degradation"},
+    {"id":"D-07","types":["ADDED"],"area":"remote_sensing_pre_existing_biomass","affected_sections":["4.2","8.2.1.2"],"summary":"v1.1 adds a bounded remote-sensing pathway for establishing qualifying pre-existing woody biomass estimates where direct t=0 plot measurement was unavailable, subject to specified model, confidence-bound, correlation and spatial-resolution conditions.","authoritative_history":"Inclusion of use of remote sensing for establishing pre-existing biomass estimates"},
+    {"id":"D-08","types":["MODIFIED","PARAMETER_CHANGED"],"area":"uncertainty_ex_ante_and_carbon_pool_quantification","affected_sections":["8.2","8.5","8.7","9","Appendix 3"],"summary":"Uncertainty, ex-ante estimation and carbon-pool quantification procedures were updated, including explicit changed-sampling uncertainty treatment and revised monitoring/parameter requirements.","authoritative_history":"Updates to uncertainty, ex-ante, and carbon pool quantification procedures"},
+    {"id":"D-09","types":["MODIFIED","PARAMETER_CHANGED"],"area":"performance_benchmark_design_sampling_equations","affected_sections":["7.3.2","Appendix 1"],"summary":"Performance-benchmark design, matching, sampling, monitoring and equation procedures were clarified/corrected, including project/control plot construction, donor-pool matching, SDM threshold, time-series requirements, Z-test and performance-benchmark derivation.","authoritative_history":"Clarifications and corrections to performance benchmark design, sampling, and equation"},
+    {"id":"D-10","types":["TOOL_CHANGED"],"area":"leakage_dependency","affected_sections":["1.1","4.2","8.4"],"summary":"The area-based leakage requirement explicitly resolves to VMD0054 using the source-defined most-recent-at-application version policy; the dependency must not be permanently pinned to a single VMD0054 version.","source_basis":"v1.1 Sections 1.1, 4.2 and 8.4 plus governed dependency review"},
+    {"id":"D-11","types":["MODIFIED"],"area":"editorial_clarity_consistency","affected_sections":["multiple"],"summary":"General wording was edited for clarity, consistency and readability. These editorial changes are retained in the full-text diff; they are not used to infer cross-version semantic equivalence or additional requirements beyond source-supported material changes.","authoritative_history":"General edits for clarity, consistency, and improved readability"}
+  ],
+  "semantic_boundary": {
+    "historical_version_isolation": true,
+    "silent_rule_backporting_prohibited": true,
+    "unchanged_text_semantic_equivalence_inferred": false,
+    "editorial_differences_retained_in_full_text_evidence": true
+  },
+  "completion_rule": "The complete governed source texts were deterministically compared and every material change family identified by the v1.1 authoritative document history and dependency review is mapped to affected source sections and governance change types. The raw full-text diff is retained so future review can reproduce or refine the classification without rewriting historical evidence."
+}
