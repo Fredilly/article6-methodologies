@@ -18,25 +18,70 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
+
           p = Path('bin/http-engine-adapter.js')
           s = p.read_text()
+
           require_line = "const { createGovernanceRetriever } = require('../lib/governance-retrieval');\n"
           if require_line not in s:
               marker = "const { URL } = require('url');\n"
-              s = s.replace(marker, marker + require_line)
-          old = "  const bm25 = buildBM25(documents);\n\n  function search(query, opts = {}) {"
-          new = "  const bm25 = buildBM25(documents);\n  const governance = createGovernanceRetriever(ROOT);\n\n  function search(query, opts = {}) {"
-          if old in s:
-              s = s.replace(old, new)
-          old_return = "  return { search, audit, documents };\n}"
-          new_return = "  return { search, structured: governance.query, audit, documents };\n}"
-          if old_return in s:
-              s = s.replace(old_return, new_return)
-          old_query = "    if (!parsed || typeof parsed.query !== 'string') {\n      sendJSON(res, 400, { error: 'InvalidRequest', message: 'Body must include string field \\\"query\\\"' });\n      return;\n    }\n    const requestedTopK = parsed.top_k;\n    const { results, audit, topK } = engine.search(parsed.query, { topK: requestedTopK });\n    sendJSON(res, 200, {\n      query: parsed.query,\n      top_k: topK,\n      results,\n      audit\n    });"
-          new_query = "    if (!parsed || typeof parsed !== 'object') {\n      sendJSON(res, 400, { error: 'InvalidRequest', message: 'Body must be a JSON object' });\n      return;\n    }\n    if (typeof parsed.operation === 'string' && parsed.operation.trim()) {\n      try {\n        const result = engine.structured(parsed);\n        sendJSON(res, 200, { mode: 'governance-v1', request: parsed, result });\n      } catch (structuredErr) {\n        sendJSON(res, 400, { error: 'InvalidStructuredRequest', message: structuredErr.message || 'Invalid structured request' });\n      }\n      return;\n    }\n    if (typeof parsed.query !== 'string') {\n      sendJSON(res, 400, { error: 'InvalidRequest', message: 'Body must include string field \\\"query\\\" or structured field \\\"operation\\\"' });\n      return;\n    }\n    const requestedTopK = parsed.top_k;\n    const { results, audit, topK } = engine.search(parsed.query, { topK: requestedTopK });\n    sendJSON(res, 200, {\n      query: parsed.query,\n      top_k: topK,\n      results,\n      audit\n    });"
-          if old_query not in s:
-              raise SystemExit('handleQuery patch marker not found')
-          s = s.replace(old_query, new_query)
+              if marker not in s:
+                  raise SystemExit('URL require marker not found')
+              s = s.replace(marker, marker + require_line, 1)
+
+          if "const governance = createGovernanceRetriever(ROOT);" not in s:
+              marker = "  const bm25 = buildBM25(documents);\n"
+              if marker not in s:
+                  raise SystemExit('BM25 marker not found')
+              s = s.replace(marker, marker + "  const governance = createGovernanceRetriever(ROOT);\n", 1)
+
+          if "structured: governance.query" not in s:
+              marker = "  return { search, audit, documents };"
+              if marker not in s:
+                  raise SystemExit('engine return marker not found')
+              s = s.replace(marker, "  return { search, structured: governance.query, audit, documents };", 1)
+
+          pattern = re.compile(
+              r"    if \(!parsed \|\| typeof parsed\.query !== 'string'\) \{.*?"
+              r"    sendJSON\(res, 200, \{\n"
+              r"      query: parsed\.query,\n"
+              r"      top_k: topK,\n"
+              r"      results,\n"
+              r"      audit\n"
+              r"    \}\);",
+              re.S,
+          )
+          replacement = '''    if (!parsed || typeof parsed !== 'object') {
+              sendJSON(res, 400, { error: 'InvalidRequest', message: 'Body must be a JSON object' });
+              return;
+            }
+            if (typeof parsed.operation === 'string' && parsed.operation.trim()) {
+              try {
+                const result = engine.structured(parsed);
+                sendJSON(res, 200, { mode: 'governance-v1', request: parsed, result });
+              } catch (structuredErr) {
+                sendJSON(res, 400, { error: 'InvalidStructuredRequest', message: structuredErr.message || 'Invalid structured request' });
+              }
+              return;
+            }
+            if (typeof parsed.query !== 'string') {
+              sendJSON(res, 400, { error: 'InvalidRequest', message: 'Body must include string field "query" or structured field "operation"' });
+              return;
+            }
+            const requestedTopK = parsed.top_k;
+            const { results, audit, topK } = engine.search(parsed.query, { topK: requestedTopK });
+            sendJSON(res, 200, {
+              query: parsed.query,
+              top_k: topK,
+              results,
+              audit
+            });'''
+          if "mode: 'governance-v1'" not in s:
+              s, n = pattern.subn(replacement, s, count=1)
+              if n != 1:
+                  raise SystemExit(f'handleQuery structural patch count={n}')
+
           p.write_text(s)
           PY
       - name: Run structured retrieval test
