@@ -29,7 +29,7 @@ lean_sections=[]; rich_sections=[]; by_num={}
 for s in src_sections:
     sid=prod_sid(s['id']); parent=prod_sid(s['parent_id']) if s.get('parent_id') else None
     stable=f"Verra.AFOLU.VM0047.v1-1.{sid}"; anchor=slug(s['title'])
-    q={'id':sid,'title':s['title'],'anchor':anchor,'section_number':s['section_number'],'stable_id':stable}
+    q={'id':sid,'stable_id':stable,'title':s['title'],'anchor':anchor,'section_number':s['section_number']}
     lean_sections.append(q); by_num[s['section_number']]=q
     pages=list(range(s['page_start'],s['page_end']+1)) if s.get('page_start') and s.get('page_end') else []
     rich_sections.append({
