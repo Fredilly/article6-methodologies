@@ -1,0 +1,29 @@
+{
+  "source_id": "Verra/VM0047@v1-1/source",
+  "authority": "Verra",
+  "document_title": "VM0047 Afforestation, Reforestation, and Revegetation",
+  "document_type": "methodology_pdf",
+  "published_version": "v1.1",
+  "publication_date": "2025-05-14",
+  "effective_from": "2025-05-14",
+  "canonical_url": "https://verra.org/documents/vm0047-afforestation-reforestation-and-revegetation-v1-1/",
+  "direct_pdf_url": "https://verra.org/wp-content/uploads/2025/05/VM0047-v1.1_Final.pdf",
+  "methodology_page": "https://verra.org/methodologies/vm0047-afforestation-reforestation-and-revegetation-v1-1/",
+  "page_count": 81,
+  "sectoral_scope": "14. Agriculture, forestry, and other land use (AFOLU)",
+  "status": "active",
+  "developer": "Verra",
+  "transition": {
+    "supersedes": "Verra/VM0047@v1-0",
+    "v1_0_pipeline_listing_deadline": "2025-12-31",
+    "v1_0_registration_deadline": "2026-12-31",
+    "v1_0_corrections_effective_from": "2025-05-14"
+  },
+  "capture": {
+    "captured_at": "2026-09-09",
+    "capture_status": "authoritative_identity_captured",
+    "governed_pdf_present": false,
+    "sha256": null,
+    "blocker": "authoritative PDF bytes must be committed and hashed before SOURCES_CAPTURED can be asserted"
+  }
+}
