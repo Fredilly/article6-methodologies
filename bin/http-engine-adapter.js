@@ -6,6 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const { URL } = require('url');
+const { createGovernanceRetriever } = require('../lib/governance-retrieval');
 
 const ROOT = path.resolve(__dirname, '..');
 const DEFAULT_PORT = 3030;
@@ -234,6 +235,7 @@ function buildBM25(documents) {
 function createEngine() {
   const { documents, audit } = buildCorpus();
   const bm25 = buildBM25(documents);
+  const governance = createGovernanceRetriever(ROOT);
 
   function search(query, opts = {}) {
     const limit = Number.isInteger(opts.topK) && opts.topK > 0 ? Math.min(opts.topK, 50) : 5;
@@ -255,7 +257,7 @@ function createEngine() {
     return { results, audit, topK: limit };
   }
 
-  return { search, audit, documents };
+  return { search, structured: governance.query, audit, documents };
 }
 
 async function readRequestBody(req) {
@@ -406,18 +408,31 @@ async function handleQuery(engine, req, res) {
       sendJSON(res, 400, { error: 'InvalidJSON', message: 'Body must be valid JSON' });
       return;
     }
-    if (!parsed || typeof parsed.query !== 'string') {
-      sendJSON(res, 400, { error: 'InvalidRequest', message: 'Body must include string field "query"' });
-      return;
+    if (!parsed || typeof parsed !== 'object') {
+    sendJSON(res, 400, { error: 'InvalidRequest', message: 'Body must be a JSON object' });
+    return;
+  }
+  if (typeof parsed.operation === 'string' && parsed.operation.trim()) {
+    try {
+      const result = engine.structured(parsed);
+      sendJSON(res, 200, { mode: 'governance-v1', request: parsed, result });
+    } catch (structuredErr) {
+      sendJSON(res, 400, { error: 'InvalidStructuredRequest', message: structuredErr.message || 'Invalid structured request' });
     }
-    const requestedTopK = parsed.top_k;
-    const { results, audit, topK } = engine.search(parsed.query, { topK: requestedTopK });
-    sendJSON(res, 200, {
-      query: parsed.query,
-      top_k: topK,
-      results,
-      audit
-    });
+    return;
+  }
+  if (typeof parsed.query !== 'string') {
+    sendJSON(res, 400, { error: 'InvalidRequest', message: 'Body must include string field "query" or structured field "operation"' });
+    return;
+  }
+  const requestedTopK = parsed.top_k;
+  const { results, audit, topK } = engine.search(parsed.query, { topK: requestedTopK });
+  sendJSON(res, 200, {
+    query: parsed.query,
+    top_k: topK,
+    results,
+    audit
+  });
   } catch (err) {
     if (err && err.message === 'PayloadTooLarge') {
       sendJSON(res, 413, { error: 'PayloadTooLarge', message: 'Request body exceeds limit' });
