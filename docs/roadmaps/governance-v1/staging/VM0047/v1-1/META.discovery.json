@@ -1,0 +1,50 @@
+{
+  "standard": "VCS",
+  "component_type": "METHODOLOGY",
+  "native_type": "Methodology",
+  "domain": "AFOLU",
+  "code": "VM0047",
+  "title": "VM0047 Afforestation, Reforestation, and Revegetation, v1.1",
+  "version": "v1-1",
+  "status": "Active",
+  "publication_date": "2025-05-14",
+  "effective_from": "2025-05-14",
+  "source_authority": "Verra",
+  "methodology_page": "https://verra.org/methodologies/vm0047-afforestation-reforestation-and-revegetation-v1-1/",
+  "source_url": "https://verra.org/documents/vm0047-afforestation-reforestation-and-revegetation-v1-1/",
+  "direct_pdf_url": "https://verra.org/wp-content/uploads/2025/05/VM0047-v1.1_Final.pdf",
+  "relationships": {
+    "version": {
+      "family": "Verra.AFOLU.VM0047",
+      "lineage": [
+        "v1-0",
+        "v1-1"
+      ],
+      "previous_version": "v1-0",
+      "next_version": null
+    }
+  },
+  "dependencies": [
+    {
+      "component": "Verra/VMD0054",
+      "version": "UNKNOWN",
+      "relationship": "MANDATORY",
+      "applicability": "area-based approach for leakage from displacement of pre-project agricultural activities",
+      "resolution_status": "VERSION_BINDING_PENDING_SOURCE_REVIEW",
+      "source_ref": "VM0047 v1.1 Section 1.1 and current Verra methodology page require VMD0054; the methodology page currently lists VMD0054 v1.0 while VMD0054 v1.1 became active later, so exact time-dependent version binding must not be inferred."
+    }
+  ],
+  "governance_v1": {
+    "state": "DISCOVERED",
+    "verified": false,
+    "production_corpus": false,
+    "blockers": [
+      "authoritative_pdf_not_yet_committed_and_hashed",
+      "exact_vmd0054_version_binding_not_yet_source_resolved",
+      "sections_not_yet_source_audited",
+      "rules_not_yet_source_audited",
+      "retrieval_tests_not_yet_executed"
+    ],
+    "migration_note": "Discovery metadata is staged outside methodologies/** until the governed source artifact and required audit gates are complete."
+  }
+}
