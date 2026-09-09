@@ -19,15 +19,14 @@
     "sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
     "page_count": 81,
     "identity_verified": true,
-    "repository_binary_committed": false
+    "repository_binary_committed": true,
+    "governed_path": "tools/Verra/VM0047/v1-1/source.pdf",
+    "repository_rehash_sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
   },
   "relationships": {
     "version": {
       "family": "Verra.AFOLU.VM0047",
-      "lineage": [
-        "v1-0",
-        "v1-1"
-      ],
+      "lineage": ["v1-0", "v1-1"],
       "previous_version": "v1-0",
       "next_version": null
     }
@@ -40,20 +39,19 @@
       "relationship": "MANDATORY",
       "applicability": "area-based approach for leakage from displacement of pre-project agricultural activities",
       "resolution_status": "RESOLVED_DYNAMIC_VERSION_POLICY",
-      "source_ref": "VM0047 v1.1 Sections 1.1, 4.2 and 8.4 require VMD0054; Section 8.4 explicitly requires the most recent version. A permanently pinned VMD0054 version would therefore misrepresent the source."
+      "source_ref": "VM0047 v1.1 Sections 1.1, 4.2 and 8.4 require VMD0054; Section 8.4 explicitly requires the most recent version."
     }
   ],
   "governance_v1": {
-    "state": "DISCOVERED",
+    "state": "SOURCES_CAPTURED",
     "verified": false,
     "production_corpus": false,
     "blockers": [
-      "authoritative_pdf_hashed_but_repository_binary_not_yet_committed",
       "canonical_component_mapping_for_program_requirement_sets_pending",
       "sections_not_yet_source_audited",
       "rules_not_yet_source_audited",
       "retrieval_tests_not_yet_executed"
     ],
-    "migration_note": "The authoritative v1.1 PDF has been received, identity-checked, and SHA-256 hashed. VMD0054 dependency semantics are source-resolved as a dynamic most-recent-version requirement. Discovery remains staged outside methodologies/** until the repository copy of the governed source artifact and required audit gates are complete."
+    "migration_note": "The authoritative v1.1 PDF is committed at the governed path and re-hashed to the captured SHA-256. Source capture is complete. Later governance gates remain explicit blockers; no VERIFIED status is claimed."
   }
 }
