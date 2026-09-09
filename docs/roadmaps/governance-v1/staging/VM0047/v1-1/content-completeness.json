@@ -1,7 +1,7 @@
 {
   "component": "Verra/VM0047@v1-1",
   "source_pdf_sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
-  "status": "CANONICAL_STRUCTURE_COMPLETE_CONTENT_REVIEW_PARTIAL",
+  "status": "RULES_AND_PROVENANCE_COMPLETE",
   "dimensions": {
     "source_text": {
       "state": "COMPLETE",
@@ -12,25 +12,23 @@
       "evidence": "The source-verified deep hierarchy is folded into canonical sections.json; sections.lean.json is derived from it."
     },
     "atomic_rules": {
-      "state": "PARTIAL",
-      "evidence": "Initial source-mapped atomic rules exist in rules.json.",
-      "remaining": "Complete semantic decomposition across applicability, project boundary, baseline, additionality, quantification, monitoring, uncertainty, appendices, equations and parameters."
+      "state": "COMPLETE",
+      "evidence": "88 material SOURCE_REQUIREMENT rules are decomposed in the canonical governance-v1 rule families listed in rules.governance-v1.index.json, covering eligibility, project boundary, baseline, additionality, quantification, uncertainty, monitoring and the complete performance-method appendices."
     },
     "equations": {
-      "state": "INVENTORIED",
-      "evidence": "content-inventory.json records equation references detected in the governed source text.",
-      "remaining": "Normalize equation operands, units, applicability and outputs through semantic source review."
+      "state": "SOURCE_MAPPED_COMPLETE",
+      "evidence": "equations.governance-v1.json maps all 50 numbered methodology equations (1-34 and A1-A16) to purpose, section, page, governed source path and source hash.",
+      "boundary": "Executable formula AST/symbolic encoding is not asserted by this rule/provenance closure and remains an interface-level enhancement if required by later retrieval work."
     },
     "parameters": {
-      "state": "INVENTORIED",
-      "evidence": "content-inventory.json records parameter labels detected in the governed source text.",
-      "remaining": "Normalize parameter definitions, units, monitoring frequency, source and applicability through semantic source review."
+      "state": "COMPLETE",
+      "evidence": "parameters.governance-v1.json normalizes 31 material validation, monitoring and stocking-index parameters with units, roles, monitoring frequency and exact source provenance."
     },
     "verbatim_rule_provenance": {
-      "state": "PARTIAL",
-      "evidence": "Existing rules retain section/page mappings and SOURCE_REQUIREMENT classification scaffolding.",
-      "remaining": "Every material atomic rule must carry an exact source span and governed-source provenance before PROVENANCE_COMPLETE."
+      "state": "COMPLETE",
+      "evidence": "Every canonical material rule records SOURCE_REQUIREMENT classification plus exact section/clause anchor, page(s), governed source path and VM0047 v1.1 PDF SHA-256."
     }
   },
-  "promotion_note": "Canonical hierarchy completion is not equivalent to RULES_COMPLETE or PROVENANCE_COMPLETE. Unknown or incomplete semantic review remains explicit."
+  "canonical_rule_index": "rules.governance-v1.index.json",
+  "promotion_note": "RULES_COMPLETE and PROVENANCE_COMPLETE are satisfied for the governed VM0047 v1.1 source. VERIFIED remains prohibited until the semantic version-diff and production retrieval gates are also PASS."
 }
