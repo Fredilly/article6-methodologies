@@ -1,7 +1,7 @@
 {
   "component": "Verra/VM0047@v1-1",
   "target_state": "VERIFIED",
-  "current_state": "DISCOVERED",
+  "current_state": "SOURCES_CAPTURED",
   "verified": false,
   "gates": [
     {
@@ -14,13 +14,13 @@
       "gate": "source_hash",
       "required_state": "PASS",
       "current_state": "PASS",
-      "evidence": "SHA-256 2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d calculated from supplied authoritative PDF"
+      "evidence": "SHA-256 2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     },
     {
       "gate": "governed_repository_pdf",
       "required_state": "PASS",
-      "current_state": "BLOCKED",
-      "blocker": "Repository binary copy is not yet committed and re-hashed against the captured source hash"
+      "current_state": "PASS",
+      "evidence": "tools/Verra/VM0047/v1-1/source.pdf committed and re-hashed to 2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d; size 1171574 bytes"
     },
     {
       "gate": "numbered_section_hierarchy",
