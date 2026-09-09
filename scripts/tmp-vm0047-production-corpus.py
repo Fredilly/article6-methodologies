@@ -70,23 +70,37 @@ def rtype(r):
     if tags & {'quantification','parameter','biomass','fertilizer','ex-ante','benchmark'}: return 'calc'
     return 'eligibility'
 
+def clean_strings(values):
+    out=[]
+    for value in values or []:
+        if not isinstance(value,str):
+            continue
+        value=value.strip()
+        if value and value not in out:
+            out.append(value)
+    return out
+
 counters={}; lean_rules=[]; rich_rules=[]
 for r in source_rules:
     secnum=primary_number(r['section_number']); s=by_num[secnum]; sid=s['id']
     counters[sid]=counters.get(sid,0)+1
     rid='R-'+sid[2:]+'-'+f"{counters[sid]:04d}"; stable=f"Verra.AFOLU.VM0047.v1-1.{rid}"
     rule_type=rtype(r)
-    rich_tags=sorted(set(r.get('tags') or ['governance']))
+    rich_tags=sorted(set(clean_strings(r.get('tags')) or ['governance']))
     lean_tags=sorted(set([rule_type, *rich_tags]))
-    lean_rules.append({
-      'id':rid,'stable_id':stable,'title':r['title'],'logic':r['logic'],
+    when_values=clean_strings(r.get('when'))
+    lean_rule={
+      'id':rid,'stable_id':stable,'title':r['title'].strip(),'logic':r['logic'],
       'section_anchor':s['anchor'],'section_id':sid,'section_number':secnum,
-      'section_stable_id':s['stable_id'],'tools':['Verra/VM0047@v1-1'],'tags':lean_tags,'when':r.get('when') or []
-    })
+      'section_stable_id':s['stable_id'],'tools':['Verra/VM0047@v1-1'],'tags':lean_tags
+    }
+    if when_values:
+        lean_rule['when']=when_values
+    lean_rules.append(lean_rule)
     rich_rules.append({
-      'id':stable,'stable_id':stable,'summary':r['title'],'logic':r['logic'],'type':rule_type,
+      'id':stable,'stable_id':stable,'summary':r['title'].strip(),'logic':r['logic'],'type':rule_type,
       'quality_status':'source_audited','source_span_status':'source_audited','source_span_text':r['logic'],
-      'when':r.get('when') or [],'tags':rich_tags,
+      'when':when_values,'tags':rich_tags,
       'refs':{'methodology':'Verra/VM0047@v1-1','primary_section':sid,'sections':[sid],
               'section_number':secnum,'section_anchor':s['anchor'],'section_stable_id':s['stable_id'],
               'pages':r['source_pages'],'tools':['Verra/VM0047@v1-1']},
