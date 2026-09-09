@@ -25,11 +25,17 @@ jobs:
         run: npm run validate:rich
       - name: Validate META
         run: ./scripts/validate-meta.sh
-      - name: Validate lean sections
+      - name: Validate lean sections schema
         run: ./scripts/run-ajv.sh validate -s schemas/sections.schema.json -d 'methodologies/**/sections.json'
-      - name: Validate lean rules
+      - name: Validate lean rules schema
         run: ./scripts/run-ajv.sh validate -s schemas/rules.schema.json -d 'methodologies/**/rules.json'
-      - name: Validate methodology artifact contract
+      - name: Validate VM0047 canonical sections
+        run: node scripts/tmp-vm0047-artifact-diagnostic.js sections
+      - name: Validate VM0047 canonical rules
+        run: node scripts/tmp-vm0047-artifact-diagnostic.js rules
+      - name: Validate VM0047 rich mode
+        run: node scripts/tmp-vm0047-artifact-diagnostic.js rich
+      - name: Validate full methodology artifact contract
         run: node tests/methodology-artifact-contract.test.js
       - name: Validate root cause index path
         run: bash scripts/check-root-cause-index-path.sh
