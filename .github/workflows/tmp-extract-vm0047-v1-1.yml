@@ -1,0 +1,35 @@
+name: Temporary VM0047 v1.1 extraction
+
+on:
+  push:
+    branches:
+      - gov-v1-vm0047-v1-1-10-canonical-content
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - name: Extract deterministic source text
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y poppler-utils
+          git lfs pull
+          mkdir -p docs/roadmaps/governance-v1/staging/VM0047/v1-1/source
+          pdftotext -layout tools/Verra/VM0047/v1-1/source.pdf docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt
+          test -s docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt
+      - name: Commit deterministic parse artifact
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt
+          git commit -m "chore: add deterministic VM0047 v1.1 source text"
+          git push
