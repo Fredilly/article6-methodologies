@@ -15,15 +15,15 @@
   },
   "audit_hashes": {
     "source_pdf_sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
-    "sections_json_sha256": "0de419e629d650e80ed2a250ec4b1888d0098d2b58d5536a9ecfd6f9c649ffd4",
-    "rules_json_sha256": "152b74c4c80e94c12b929ddc9c6bf8cb81c4dda6e7a7f724ef33385e8349f01c",
+    "sections_json_sha256": "778882f2a5da92616817d2b3bb76a38d51abd11087f3fa4556ac1d0921ed24a0",
+    "rules_json_sha256": "bfdbb9f5e282260e2baeaacc82dce3f2bedc494a20f0ab91c11a59356c6d1c32",
     "sections.rich_sha256": "1243e7393963995e821dda9826d37b71532fffc0d2e07b92cee1b0227e4d81e5",
     "rules.rich_sha256": "1f559056b587dc35b84e03b20aadcc3d7f21a9695b854cb0a063a2421647629d"
   },
   "files": [
     {
       "path": "sections.json",
-      "sha256": "0de419e629d650e80ed2a250ec4b1888d0098d2b58d5536a9ecfd6f9c649ffd4"
+      "sha256": "778882f2a5da92616817d2b3bb76a38d51abd11087f3fa4556ac1d0921ed24a0"
     },
     {
       "path": "sections.rich.json",
@@ -31,7 +31,7 @@
     },
     {
       "path": "rules.json",
-      "sha256": "152b74c4c80e94c12b929ddc9c6bf8cb81c4dda6e7a7f724ef33385e8349f01c"
+      "sha256": "bfdbb9f5e282260e2baeaacc82dce3f2bedc494a20f0ab91c11a59356c6d1c32"
     },
     {
       "path": "rules.rich.json",

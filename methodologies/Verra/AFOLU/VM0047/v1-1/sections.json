@@ -5,532 +5,926 @@
       "title": "Summary Description",
       "anchor": "summary-description",
       "section_number": "1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-1",
+      "pages": [
+        5,
+        6
+      ]
     },
     {
       "id": "S-1-1",
       "title": "Summary of the Area-based Approach",
       "anchor": "summary-of-the-area-based-approach",
       "section_number": "1.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-1-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-1-1",
+      "pages": [
+        5
+      ]
     },
     {
       "id": "S-1-2",
       "title": "Summary of the Census-based Approach",
       "anchor": "summary-of-the-census-based-approach",
       "section_number": "1.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-1-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-1-2",
+      "pages": [
+        6
+      ]
     },
     {
       "id": "S-2",
       "title": "Sources",
       "anchor": "sources",
       "section_number": "2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-2",
+      "pages": [
+        6
+      ]
     },
     {
       "id": "S-3",
       "title": "Definitions",
       "anchor": "definitions",
       "section_number": "3",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-3"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-3",
+      "pages": [
+        6,
+        7,
+        8
+      ]
     },
     {
       "id": "S-4",
       "title": "Applicability Conditions",
       "anchor": "applicability-conditions",
       "section_number": "4",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-4"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-4",
+      "pages": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
     },
     {
       "id": "S-4-1",
       "title": "General Applicability Conditions",
       "anchor": "general-applicability-conditions",
       "section_number": "4.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-1",
+      "pages": [
+        8,
+        9
+      ]
     },
     {
       "id": "S-4-2",
       "title": "Area-based Approach Applicability Conditions",
       "anchor": "area-based-approach-applicability-conditions",
       "section_number": "4.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-2",
+      "pages": [
+        9,
+        10
+      ]
     },
     {
       "id": "S-4-3",
       "title": "Census-based Approach Applicability Conditions",
       "anchor": "census-based-approach-applicability-conditions",
       "section_number": "4.3",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-3"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-3",
+      "pages": [
+        10,
+        11,
+        12
+      ]
     },
     {
       "id": "S-4-4",
       "title": "Exclusion Conditions",
       "anchor": "exclusion-conditions",
       "section_number": "4.4",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-4"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-4",
+      "pages": [
+        12
+      ]
     },
     {
       "id": "S-4-4-1",
       "title": "Area-based Approach Exclusions",
       "anchor": "area-based-approach-exclusions",
       "section_number": "4.4.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-4-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-4-1",
+      "pages": [
+        12
+      ]
     },
     {
       "id": "S-4-4-2",
       "title": "Census-based Approach Exclusions",
       "anchor": "census-based-approach-exclusions",
       "section_number": "4.4.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-4-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-4-2",
+      "pages": [
+        12
+      ]
     },
     {
       "id": "S-5",
       "title": "Project Boundary",
       "anchor": "project-boundary",
       "section_number": "5",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-5"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-5",
+      "pages": [
+        12,
+        13,
+        14,
+        15
+      ]
     },
     {
       "id": "S-5-1",
       "title": "Area-based Approach Carbon Pools",
       "anchor": "area-based-approach-carbon-pools",
       "section_number": "5.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-5-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-5-1",
+      "pages": [
+        13,
+        14
+      ]
     },
     {
       "id": "S-5-2",
       "title": "Census-based Approach Carbon Pools",
       "anchor": "census-based-approach-carbon-pools",
       "section_number": "5.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-5-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-5-2",
+      "pages": [
+        14,
+        15
+      ]
     },
     {
       "id": "S-5-3",
       "title": "GHG Sources",
       "anchor": "ghg-sources",
       "section_number": "5.3",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-5-3"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-5-3",
+      "pages": [
+        15
+      ]
     },
     {
       "id": "S-6",
       "title": "Baseline Scenario",
       "anchor": "baseline-scenario",
       "section_number": "6",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-6"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-6",
+      "pages": [
+        15,
+        16
+      ]
     },
     {
       "id": "S-6-1",
       "title": "Area-based Approach",
       "anchor": "area-based-approach",
       "section_number": "6.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-6-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-6-1",
+      "pages": [
+        15,
+        16
+      ]
     },
     {
       "id": "S-6-2",
       "title": "Census-based Approach",
       "anchor": "census-based-approach",
       "section_number": "6.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-6-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-6-2",
+      "pages": [
+        16
+      ]
     },
     {
       "id": "S-7",
       "title": "Additionality",
       "anchor": "additionality",
       "section_number": "7",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-7"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-7",
+      "pages": [
+        16,
+        17,
+        18
+      ]
     },
     {
       "id": "S-7-1",
       "title": "Area-based Approach",
       "anchor": "area-based-approach",
       "section_number": "7.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-1",
+      "pages": [
+        16
+      ]
     },
     {
       "id": "S-7-2",
       "title": "Census-based Approach",
       "anchor": "census-based-approach",
       "section_number": "7.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-2",
+      "pages": [
+        16,
+        17
+      ]
     },
     {
       "id": "S-7-3",
       "title": "Additionality Demonstrations",
       "anchor": "additionality-demonstrations",
       "section_number": "7.3",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3",
+      "pages": [
+        17,
+        18
+      ]
     },
     {
       "id": "S-7-3-1",
       "title": "Regulatory Surplus",
       "anchor": "regulatory-surplus",
       "section_number": "7.3.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3-1",
+      "pages": [
+        17
+      ]
     },
     {
       "id": "S-7-3-2",
       "title": "Performance Benchmark",
       "anchor": "performance-benchmark",
       "section_number": "7.3.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3-2",
+      "pages": [
+        17
+      ]
     },
     {
       "id": "S-7-3-3",
       "title": "Investment Analysis",
       "anchor": "investment-analysis",
       "section_number": "7.3.3",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3-3"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3-3",
+      "pages": [
+        17
+      ]
     },
     {
       "id": "S-7-3-4",
       "title": "Common Practice",
       "anchor": "common-practice",
       "section_number": "7.3.4",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3-4"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3-4",
+      "pages": [
+        17,
+        18
+      ]
     },
     {
       "id": "S-8",
       "title": "Quantification of Reductions and Removals",
       "anchor": "quantification-of-reductions-and-removals",
       "section_number": "8",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8",
+      "pages": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
     },
     {
       "id": "S-8-1",
       "title": "Baseline Emissions",
       "anchor": "baseline-emissions",
       "section_number": "8.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-1",
+      "pages": [
+        18,
+        19
+      ]
     },
     {
       "id": "S-8-1-1",
       "title": "Area-based Approach",
       "anchor": "area-based-approach",
       "section_number": "8.1.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-1-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-1-1",
+      "pages": [
+        19
+      ]
     },
     {
       "id": "S-8-1-2",
       "title": "Census-based Approach",
       "anchor": "census-based-approach",
       "section_number": "8.1.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-1-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-1-2",
+      "pages": [
+        19
+      ]
     },
     {
       "id": "S-8-2",
       "title": "Area-based Project Emissions",
       "anchor": "area-based-project-emissions",
       "section_number": "8.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2",
+      "pages": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
     },
     {
       "id": "S-8-2-1",
       "title": "Area-based Project Carbon Stock Changes",
       "anchor": "area-based-project-carbon-stock-changes",
       "section_number": "8.2.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1",
+      "pages": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
     },
     {
       "id": "S-8-2-1-1",
       "title": "Area-based Quantification of Woody Biomass",
       "anchor": "area-based-quantification-of-woody-biomass",
       "section_number": "8.2.1.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1-1",
+      "pages": [
+        20,
+        21
+      ]
     },
     {
       "id": "S-8-2-1-2",
       "title": "Area-based Quantification of Pre-existing Woody Biomass",
       "anchor": "area-based-quantification-of-pre-existing-woody-biomass",
       "section_number": "8.2.1.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1-2",
+      "pages": [
+        21,
+        22
+      ]
     },
     {
       "id": "S-8-2-1-3",
       "title": "Area-based Quantification of Non-Woody Biomass",
       "anchor": "area-based-quantification-of-non-woody-biomass",
       "section_number": "8.2.1.3",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1-3"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1-3",
+      "pages": [
+        22
+      ]
     },
     {
       "id": "S-8-2-1-4",
       "title": "Area-based Quantification of Dead Wood",
       "anchor": "area-based-quantification-of-dead-wood",
       "section_number": "8.2.1.4",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1-4"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1-4",
+      "pages": [
+        22,
+        23
+      ]
     },
     {
       "id": "S-8-2-1-5",
       "title": "Area-based Quantification of Litter",
       "anchor": "area-based-quantification-of-litter",
       "section_number": "8.2.1.5",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1-5"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1-5",
+      "pages": [
+        23,
+        24
+      ]
     },
     {
       "id": "S-8-2-1-6",
       "title": "Area-based Quantification of Soil Organic Carbon",
       "anchor": "area-based-quantification-of-soil-organic-carbon",
       "section_number": "8.2.1.6",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1-6"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-1-6",
+      "pages": [
+        24
+      ]
     },
     {
       "id": "S-8-2-2",
       "title": "Area-based Quantification of Emissions from Biomass Burning and Fertilizer Use",
       "anchor": "area-based-quantification-of-emissions-from-biomass-burning-and-fertilizer-use",
       "section_number": "8.2.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-2",
+      "pages": [
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
     },
     {
       "id": "S-8-2-2-1",
       "title": "Area-based Quantification of Emissions from Biomass Burning",
       "anchor": "area-based-quantification-of-emissions-from-biomass-burning",
       "section_number": "8.2.2.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-2-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-2-1",
+      "pages": [
+        25
+      ]
     },
     {
       "id": "S-8-2-2-2",
       "title": "Area-based Quantification of Emissions from Fertilizer Application",
       "anchor": "area-based-quantification-of-emissions-from-fertilizer-application",
       "section_number": "8.2.2.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-2-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-2-2-2",
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
     },
     {
       "id": "S-8-3",
       "title": "Census-based Project Emissions",
       "anchor": "census-based-project-emissions",
       "section_number": "8.3",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3",
+      "pages": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
     },
     {
       "id": "S-8-3-1",
       "title": "Census-based Project Carbon Stock Changes",
       "anchor": "census-based-project-carbon-stock-changes",
       "section_number": "8.3.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-1",
+      "pages": [
+        29,
+        30,
+        31
+      ]
     },
     {
       "id": "S-8-3-1-1",
       "title": "Census-based Quantification of Woody Biomass",
       "anchor": "census-based-quantification-of-woody-biomass",
       "section_number": "8.3.1.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-1-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-1-1",
+      "pages": [
+        30,
+        31
+      ]
     },
     {
       "id": "S-8-3-1-2",
       "title": "Census-based Quantification of Non-Woody Biomass",
       "anchor": "census-based-quantification-of-non-woody-biomass",
       "section_number": "8.3.1.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-1-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-1-2",
+      "pages": [
+        31
+      ]
     },
     {
       "id": "S-8-3-1-3",
       "title": "Census-based Quantification of Dead Wood",
       "anchor": "census-based-quantification-of-dead-wood",
       "section_number": "8.3.1.3",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-1-3"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-1-3",
+      "pages": [
+        31
+      ]
     },
     {
       "id": "S-8-3-1-4",
       "title": "Census-based Quantification of Litter",
       "anchor": "census-based-quantification-of-litter",
       "section_number": "8.3.1.4",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-1-4"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-1-4",
+      "pages": [
+        31
+      ]
     },
     {
       "id": "S-8-3-1-5",
       "title": "Census-based Quantification of Soil Organic Carbon",
       "anchor": "census-based-quantification-of-soil-organic-carbon",
       "section_number": "8.3.1.5",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-1-5"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-1-5",
+      "pages": [
+        31
+      ]
     },
     {
       "id": "S-8-3-2",
       "title": "Census-based Quantification of Emissions from Biomass Burning and Fertilizer Use",
       "anchor": "census-based-quantification-of-emissions-from-biomass-burning-and-fertilizer-use",
       "section_number": "8.3.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-2",
+      "pages": [
+        31,
+        32
+      ]
     },
     {
       "id": "S-8-3-2-1",
       "title": "Census-based Quantification of Emissions from Biomass Burning",
       "anchor": "census-based-quantification-of-emissions-from-biomass-burning",
       "section_number": "8.3.2.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-2-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-2-1",
+      "pages": [
+        31,
+        32
+      ]
     },
     {
       "id": "S-8-3-2-2",
       "title": "Census-based Quantification of Emissions from Fertilizer Application",
       "anchor": "census-based-quantification-of-emissions-from-fertilizer-application",
       "section_number": "8.3.2.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-2-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-3-2-2",
+      "pages": [
+        32
+      ]
     },
     {
       "id": "S-8-4",
       "title": "Leakage Emissions",
       "anchor": "leakage-emissions",
       "section_number": "8.4",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-4"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-4",
+      "pages": [
+        32
+      ]
     },
     {
       "id": "S-8-5",
       "title": "Uncertainty",
       "anchor": "uncertainty",
       "section_number": "8.5",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-5"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-5",
+      "pages": [
+        32,
+        33,
+        34
+      ]
     },
     {
       "id": "S-8-5-1",
       "title": "Area-based Quantification of Uncertainty",
       "anchor": "area-based-quantification-of-uncertainty",
       "section_number": "8.5.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-5-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-5-1",
+      "pages": [
+        33
+      ]
     },
     {
       "id": "S-8-5-2",
       "title": "Census-based Quantification of Uncertainty",
       "anchor": "census-based-quantification-of-uncertainty",
       "section_number": "8.5.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-5-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-5-2",
+      "pages": [
+        33,
+        34
+      ]
     },
     {
       "id": "S-8-6",
       "title": "Estimated Carbon Dioxide Removals",
       "anchor": "estimated-carbon-dioxide-removals",
       "section_number": "8.6",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-6"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-6",
+      "pages": [
+        34,
+        35,
+        36
+      ]
     },
     {
       "id": "S-8-6-1",
       "title": "Area-based Quantification of Estimated Carbon Dioxide Removals",
       "anchor": "area-based-quantification-of-estimated-carbon-dioxide-removals",
       "section_number": "8.6.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-6-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-6-1",
+      "pages": [
+        35
+      ]
     },
     {
       "id": "S-8-6-2",
       "title": "Census-based Quantification of Estimated Carbon Dioxide Removals",
       "anchor": "census-based-quantification-of-estimated-carbon-dioxide-removals",
       "section_number": "8.6.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-6-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-6-2",
+      "pages": [
+        35
+      ]
     },
     {
       "id": "S-8-6-3",
       "title": "Annualized Carbon Dioxide Removals",
       "anchor": "annualized-carbon-dioxide-removals",
       "section_number": "8.6.3",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-6-3"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-6-3",
+      "pages": [
+        36
+      ]
     },
     {
       "id": "S-8-7",
       "title": "Area-based and Census-based Ex-Ante Estimation",
       "anchor": "area-based-and-census-based-ex-ante-estimation",
       "section_number": "8.7",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-7"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-7",
+      "pages": [
+        36,
+        37,
+        38
+      ]
     },
     {
       "id": "S-9",
       "title": "Monitoring",
       "anchor": "monitoring",
       "section_number": "9",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-9"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-9",
+      "pages": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ]
     },
     {
       "id": "S-9-1",
       "title": "Data and Parameters Available at Validation",
       "anchor": "data-and-parameters-available-at-validation",
       "section_number": "9.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-1",
+      "pages": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ]
     },
     {
       "id": "S-9-2",
       "title": "Data and Parameters Monitored",
       "anchor": "data-and-parameters-monitored",
       "section_number": "9.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
+      "pages": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ]
     },
     {
       "id": "S-9-3",
       "title": "Description of the Monitoring Plan",
       "anchor": "description-of-the-monitoring-plan",
       "section_number": "9.3",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-3"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-3",
+      "pages": [
+        61,
+        62,
+        63,
+        64
+      ]
     },
     {
       "id": "S-9-3-1",
       "title": "Database Requirements for Project and Control Plots",
       "anchor": "database-requirements-for-project-and-control-plots",
       "section_number": "9.3.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-3-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-3-1",
+      "pages": [
+        62,
+        63
+      ]
     },
     {
       "id": "S-10",
       "title": "References",
       "anchor": "references",
       "section_number": "10",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-10"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-10",
+      "pages": [
+        64,
+        65,
+        66
+      ]
     },
     {
       "id": "S-11",
       "title": "Appendix 1: Performance Method",
       "anchor": "appendix-1-performance-method",
       "section_number": "A1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-11"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-11",
+      "pages": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77
+      ]
     },
     {
       "id": "S-11-1",
       "title": "Applicability Conditions",
       "anchor": "applicability-conditions",
       "section_number": "A1.1",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-1"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-1",
+      "pages": [
+        66
+      ]
     },
     {
       "id": "S-11-2",
       "title": "Baseline Scenario",
       "anchor": "baseline-scenario",
       "section_number": "A1.2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-2"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-2",
+      "pages": [
+        66
+      ]
     },
     {
       "id": "S-11-3",
       "title": "Performance Benchmark",
       "anchor": "performance-benchmark",
       "section_number": "A1.3",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-3"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-3",
+      "pages": [
+        66,
+        67
+      ]
     },
     {
       "id": "S-11-4",
       "title": "Procedure to Define the Performance Benchmark",
       "anchor": "procedure-to-define-the-performance-benchmark",
       "section_number": "A1.4",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
+      "pages": [
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74
+      ]
     },
     {
       "id": "S-11-5",
       "title": "Data and Parameters Monitored",
       "anchor": "data-and-parameters-monitored",
       "section_number": "A1.5",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-5"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-5",
+      "pages": [
+        74,
+        75,
+        76,
+        77
+      ]
     },
     {
       "id": "S-12",
       "title": "Appendix 2: Testing the Significance of Carbon Pools and GHG Sources",
       "anchor": "appendix-2-testing-the-significance-of-carbon-pools-and-ghg-sources",
       "section_number": "A2",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-12"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-12",
+      "pages": [
+        77,
+        78,
+        79
+      ]
     },
     {
       "id": "S-13",
       "title": "Appendix 3: Uncertainty Equations for Changing Sampling Approaches",
       "anchor": "appendix-3-uncertainty-equations-for-changing-sampling-approaches",
       "section_number": "A3",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-13"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-13",
+      "pages": [
+        79,
+        80,
+        81
+      ]
     },
     {
       "id": "S-14",
       "title": "Document History",
       "anchor": "document-history",
       "section_number": "DH",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-14"
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.S-14",
+      "pages": [
+        81
+      ]
     }
   ]
 }

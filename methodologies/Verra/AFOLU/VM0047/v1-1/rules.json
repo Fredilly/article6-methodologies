@@ -795,7 +795,7 @@
       "id": "R-8-3-2-2-0001",
       "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-3-2-2-0001",
       "title": "Census fertilizer equations",
-      "logic": "Census nitrogen-fertilizer N2O emissions use Equations 15-21 from \u00a78.2.2.2.",
+      "logic": "Census nitrogen-fertilizer N2O emissions use Equations 15-21 from §8.2.2.2.",
       "section_anchor": "census-based-quantification-of-emissions-from-fertilizer-application",
       "section_id": "S-8-3-2-2",
       "section_number": "8.3.2.2",
@@ -1338,6 +1338,92 @@
       ]
     },
     {
+      "id": "R-11-1-0001",
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-1-0001",
+      "title": "Performance-method applicability",
+      "logic": "Appendix 1 applies only where Section 4 applicability is met, project activities produce spatially delineable vegetative cover, and the performance benchmark is updated at each verification or every five years, whichever occurs first.",
+      "section_anchor": "applicability-conditions",
+      "section_id": "S-11-1",
+      "section_number": "A1.1",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-1",
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ],
+      "tags": [
+        "applicability",
+        "benchmark",
+        "calc",
+        "temporal_requirement"
+      ],
+      "when": [
+        "area-based"
+      ]
+    },
+    {
+      "id": "R-11-2-0001",
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-2-0001",
+      "title": "Dynamic control-plot baseline",
+      "logic": "The performance-method baseline is business-as-usual aboveground biomass growth observed on representative remotely sensed control plots outside registered AFOLU project areas and is re-established at each verification using the updated performance benchmark.",
+      "section_anchor": "baseline-scenario",
+      "section_id": "S-11-2",
+      "section_number": "A1.2",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-2",
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ],
+      "tags": [
+        "baseline",
+        "benchmark",
+        "calc"
+      ],
+      "when": [
+        "area-based"
+      ]
+    },
+    {
+      "id": "R-11-3-0001",
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-3-0001",
+      "title": "Benchmark granularity and ex-ante estimate",
+      "logic": "A performance benchmark is developed per project area, or per annual cohort for grouped projects; an ex-ante estimate must use control-plot stocking indices from historic t=-10 to t=0 and project slope from the Section 8.7 growth-and-yield procedure.",
+      "section_anchor": "performance-benchmark",
+      "section_id": "S-11-3",
+      "section_number": "A1.3",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-3",
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ],
+      "tags": [
+        "benchmark",
+        "calc",
+        "ex-ante"
+      ],
+      "when": [
+        "area-based"
+      ]
+    },
+    {
+      "id": "R-11-3-0002",
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-3-0002",
+      "title": "Remote sensing is relative-stock evidence",
+      "logic": "For the performance benchmark, remote sensing is used to estimate relative stock change between project and control plots rather than to directly estimate reportable carbon stocks; removal accounting remains dependent on direct field measurement under Section 8.",
+      "section_anchor": "performance-benchmark",
+      "section_id": "S-11-3",
+      "section_number": "A1.3",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-3",
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ],
+      "tags": [
+        "benchmark",
+        "calc",
+        "measurement",
+        "remote-sensing"
+      ],
+      "when": [
+        "area-based"
+      ]
+    },
+    {
       "id": "R-11-4-0001",
       "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-4-0001",
       "title": "Match-quality threshold",
@@ -1436,128 +1522,6 @@
         "benchmark",
         "calc",
         "quantification"
-      ],
-      "when": [
-        "area-based"
-      ]
-    },
-    {
-      "id": "R-11-5-0001",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-5-0001",
-      "title": "Stocking-index monitoring",
-      "logic": "SI must minimize seasonal variability, be monitored at least annually, use a metric demonstrably correlated with carbon stocks, and use the same ex-post metric for project and control plots unless a qualifying harmonized replacement is adopted.",
-      "section_anchor": "data-and-parameters-monitored",
-      "section_id": "S-11-5",
-      "section_number": "A1.5",
-      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-5",
-      "tools": [
-        "Verra/VM0047@v1-1"
-      ],
-      "tags": [
-        "benchmark",
-        "calc",
-        "remote-sensing"
-      ],
-      "when": [
-        "area-based"
-      ]
-    },
-    {
-      "id": "R-12-0001",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.R-12-0001",
-      "title": "De minimis significance procedure",
-      "logic": "If combined optional-pool and GHG impact is below 5% of expected removals all may be excluded; otherwise include ranked sources through at least 95% and exclude the remainder only if residual combined impact is also below 5% of total removals. Leakage is never part of this de minimis test.",
-      "section_anchor": "appendix-2-testing-the-significance-of-carbon-pools-and-ghg-sources",
-      "section_id": "S-12",
-      "section_number": "A2",
-      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-12",
-      "tools": [
-        "Verra/VM0047@v1-1"
-      ],
-      "tags": [
-        "eligibility",
-        "significance",
-        "threshold"
-      ]
-    },
-    {
-      "id": "R-13-0001",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.R-13-0001",
-      "title": "Changed-sampling uncertainty procedure",
-      "logic": "When an area-based inventory approach changes, uncertainty must be calculated across the independent first interval and correlated second interval using Equations A11-A16.",
-      "section_anchor": "appendix-3-uncertainty-equations-for-changing-sampling-approaches",
-      "section_id": "S-13",
-      "section_number": "A3",
-      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-13",
-      "tools": [
-        "Verra/VM0047@v1-1"
-      ],
-      "tags": [
-        "uncertainty"
-      ],
-      "when": [
-        "area-based"
-      ]
-    },
-    {
-      "id": "R-11-1-0001",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-1-0001",
-      "title": "Performance-method applicability",
-      "logic": "Appendix 1 applies only where Section 4 applicability is met, project activities produce spatially delineable vegetative cover, and the performance benchmark is updated at each verification or every five years, whichever occurs first.",
-      "section_anchor": "applicability-conditions",
-      "section_id": "S-11-1",
-      "section_number": "A1.1",
-      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-1",
-      "tools": [
-        "Verra/VM0047@v1-1"
-      ],
-      "tags": [
-        "applicability",
-        "benchmark",
-        "calc",
-        "temporal_requirement"
-      ],
-      "when": [
-        "area-based"
-      ]
-    },
-    {
-      "id": "R-11-2-0001",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-2-0001",
-      "title": "Dynamic control-plot baseline",
-      "logic": "The performance-method baseline is business-as-usual aboveground biomass growth observed on representative remotely sensed control plots outside registered AFOLU project areas and is re-established at each verification using the updated performance benchmark.",
-      "section_anchor": "baseline-scenario",
-      "section_id": "S-11-2",
-      "section_number": "A1.2",
-      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-2",
-      "tools": [
-        "Verra/VM0047@v1-1"
-      ],
-      "tags": [
-        "baseline",
-        "benchmark",
-        "calc"
-      ],
-      "when": [
-        "area-based"
-      ]
-    },
-    {
-      "id": "R-11-3-0001",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-3-0001",
-      "title": "Benchmark granularity and ex-ante estimate",
-      "logic": "A performance benchmark is developed per project area, or per annual cohort for grouped projects; an ex-ante estimate must use control-plot stocking indices from historic t=-10 to t=0 and project slope from the Section 8.7 growth-and-yield procedure.",
-      "section_anchor": "performance-benchmark",
-      "section_id": "S-11-3",
-      "section_number": "A1.3",
-      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-3",
-      "tools": [
-        "Verra/VM0047@v1-1"
-      ],
-      "tags": [
-        "benchmark",
-        "calc",
-        "ex-ante"
       ],
       "when": [
         "area-based"
@@ -1715,22 +1679,58 @@
       ]
     },
     {
-      "id": "R-11-3-0002",
-      "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-3-0002",
-      "title": "Remote sensing is relative-stock evidence",
-      "logic": "For the performance benchmark, remote sensing is used to estimate relative stock change between project and control plots rather than to directly estimate reportable carbon stocks; removal accounting remains dependent on direct field measurement under Section 8.",
-      "section_anchor": "performance-benchmark",
-      "section_id": "S-11-3",
-      "section_number": "A1.3",
-      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-3",
+      "id": "R-11-5-0001",
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.R-11-5-0001",
+      "title": "Stocking-index monitoring",
+      "logic": "SI must minimize seasonal variability, be monitored at least annually, use a metric demonstrably correlated with carbon stocks, and use the same ex-post metric for project and control plots unless a qualifying harmonized replacement is adopted.",
+      "section_anchor": "data-and-parameters-monitored",
+      "section_id": "S-11-5",
+      "section_number": "A1.5",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-5",
       "tools": [
         "Verra/VM0047@v1-1"
       ],
       "tags": [
         "benchmark",
         "calc",
-        "measurement",
         "remote-sensing"
+      ],
+      "when": [
+        "area-based"
+      ]
+    },
+    {
+      "id": "R-12-0001",
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.R-12-0001",
+      "title": "De minimis significance procedure",
+      "logic": "If combined optional-pool and GHG impact is below 5% of expected removals all may be excluded; otherwise include ranked sources through at least 95% and exclude the remainder only if residual combined impact is also below 5% of total removals. Leakage is never part of this de minimis test.",
+      "section_anchor": "appendix-2-testing-the-significance-of-carbon-pools-and-ghg-sources",
+      "section_id": "S-12",
+      "section_number": "A2",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-12",
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ],
+      "tags": [
+        "eligibility",
+        "significance",
+        "threshold"
+      ]
+    },
+    {
+      "id": "R-13-0001",
+      "stable_id": "Verra.AFOLU.VM0047.v1-1.R-13-0001",
+      "title": "Changed-sampling uncertainty procedure",
+      "logic": "When an area-based inventory approach changes, uncertainty must be calculated across the independent first interval and correlated second interval using Equations A11-A16.",
+      "section_anchor": "appendix-3-uncertainty-equations-for-changing-sampling-approaches",
+      "section_id": "S-13",
+      "section_number": "A3",
+      "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-13",
+      "tools": [
+        "Verra/VM0047@v1-1"
+      ],
+      "tags": [
+        "uncertainty"
       ],
       "when": [
         "area-based"

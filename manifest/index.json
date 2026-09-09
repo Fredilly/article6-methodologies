@@ -3428,5 +3428,1455 @@
     "category": "AFOLU",
     "path": "methodologies/Verra/AFOLU/VM0047/v1-0/rules.json",
     "sectionId": "S-9-3"
+  },
+  {
+    "id": "R-1-0001",
+    "rule_id": "R-1-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "ARR activity eligibility",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "503d773134f776674a328f7e7f33fdd04255bde10720ab1d6457c1819a445910",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-1"
+  },
+  {
+    "id": "R-1-1-0001",
+    "rule_id": "R-1-1-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Area-based leakage module",
+    "tags": [
+      "dependency",
+      "leakage"
+    ],
+    "sha256": "9f56165ab88323a510513859bd20b1bbdd8bbcaf353c656538db3b2b5c974479",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-1-1"
+  },
+  {
+    "id": "R-1-2-0001",
+    "rule_id": "R-1-2-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Census approach core conditions",
+    "tags": [
+      "census",
+      "eligibility"
+    ],
+    "sha256": "8127e001370713010d1a58d771a5481d4131750731378d7db3c12c06b999ba70",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-1-2"
+  },
+  {
+    "id": "R-11-1-0001",
+    "rule_id": "R-11-1-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Performance-method applicability",
+    "tags": [
+      "applicability",
+      "benchmark",
+      "calc",
+      "temporal_requirement"
+    ],
+    "sha256": "4b814a065fac61a9ea4a3b9e6d5662b4bb93066369fdd59e3eebbf4fa5b972cd",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-1"
+  },
+  {
+    "id": "R-11-2-0001",
+    "rule_id": "R-11-2-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Dynamic control-plot baseline",
+    "tags": [
+      "baseline",
+      "benchmark",
+      "calc"
+    ],
+    "sha256": "1a5065a914233f9e1bb6909f0442a963e851fa228a8dc4b1c5879d408779d7f8",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-2"
+  },
+  {
+    "id": "R-11-3-0001",
+    "rule_id": "R-11-3-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Benchmark granularity and ex-ante estimate",
+    "tags": [
+      "benchmark",
+      "calc",
+      "ex-ante"
+    ],
+    "sha256": "5270b7e4b83db9c42996610767477f2e31e63c2ce59a6127b3e3775d6a871630",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-3"
+  },
+  {
+    "id": "R-11-3-0002",
+    "rule_id": "R-11-3-0002",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Remote sensing is relative-stock evidence",
+    "tags": [
+      "benchmark",
+      "calc",
+      "measurement",
+      "remote-sensing"
+    ],
+    "sha256": "a739169e55724a1629f23c32643fdf96f3a96f7d7d316a6fdc8036d5340e4cea",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-3"
+  },
+  {
+    "id": "R-11-4-0001",
+    "rule_id": "R-11-4-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Match-quality threshold",
+    "tags": [
+      "benchmark",
+      "calc",
+      "threshold"
+    ],
+    "sha256": "b22125022989f1ca7c52bb5819748685f1c0d7c54a6f22f0a0d1782779169663",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-4"
+  },
+  {
+    "id": "R-11-4-0002",
+    "rule_id": "R-11-4-0002",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Control-plot invalidation and replacement",
+    "tags": [
+      "benchmark",
+      "monitoring"
+    ],
+    "sha256": "a6b9ddbae31a1f32b1c16477126d6c6f30799a56cab68db7721331034145a705",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-4"
+  },
+  {
+    "id": "R-11-4-0003",
+    "rule_id": "R-11-4-0003",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Benchmark time-series minimum sample",
+    "tags": [
+      "benchmark",
+      "calc",
+      "sampling"
+    ],
+    "sha256": "a458abb4271d1e627a3864894c0b8b555828c6d4cf4afc3792aac0fa78a902ce",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-4"
+  },
+  {
+    "id": "R-11-4-0004",
+    "rule_id": "R-11-4-0004",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Z-test significance threshold",
+    "tags": [
+      "benchmark",
+      "calc",
+      "threshold"
+    ],
+    "sha256": "8de09a23be5f26a44273325032af8cd179cac23a062127aa147035c0cdcb6314",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-4"
+  },
+  {
+    "id": "R-11-4-0005",
+    "rule_id": "R-11-4-0005",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Performance benchmark pathway",
+    "tags": [
+      "benchmark",
+      "calc",
+      "quantification"
+    ],
+    "sha256": "0861f5007b2c746ece361bec2c63e04a261f19e2d91838b6777a5c8c181d2656",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-4"
+  },
+  {
+    "id": "R-11-4-0006",
+    "rule_id": "R-11-4-0006",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Benchmark procedure documentation",
+    "tags": [
+      "benchmark",
+      "calc",
+      "evidence_requirement"
+    ],
+    "sha256": "450324730ed6433fe516272fe2eef0f684784852ac557781482deb11c86873a1",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-4"
+  },
+  {
+    "id": "R-11-4-0007",
+    "rule_id": "R-11-4-0007",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Project-plot construction and sampling",
+    "tags": [
+      "benchmark",
+      "calc",
+      "sampling",
+      "threshold"
+    ],
+    "sha256": "9ff9ab82e91f1ff8d850f8894c203d245b0a6b3f8aaa7079ca578f62ba4fa457",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-4"
+  },
+  {
+    "id": "R-11-4-0008",
+    "rule_id": "R-11-4-0008",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Donor-pool eligibility criteria",
+    "tags": [
+      "benchmark",
+      "calc",
+      "control-plots",
+      "geographic_requirement"
+    ],
+    "sha256": "073fbff9c783c5114e302321d685a0728f3e72c6f19316c8bab1bbef597335f1",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-4"
+  },
+  {
+    "id": "R-11-4-0009",
+    "rule_id": "R-11-4-0009",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Control-unit size constraint",
+    "tags": [
+      "benchmark",
+      "calc",
+      "sampling",
+      "threshold"
+    ],
+    "sha256": "6b85b8ba012f57cd9112838f43d36f08eabb9fc7d0cd898a27d2e68164a5db32",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-4"
+  },
+  {
+    "id": "R-11-4-0010",
+    "rule_id": "R-11-4-0010",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Historic matching covariates",
+    "tags": [
+      "benchmark",
+      "calc",
+      "matching",
+      "temporal_requirement"
+    ],
+    "sha256": "f87330fd923e1e3576da5f130927f14615f2b8ef48a71965fc070f18fa0088ba",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-4"
+  },
+  {
+    "id": "R-11-4-0011",
+    "rule_id": "R-11-4-0011",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "k-nearest-neighbor matching",
+    "tags": [
+      "benchmark",
+      "calc",
+      "matching"
+    ],
+    "sha256": "dbae9f73f95329db6a150d37c0178ee5ddd43e94b4f05990491ea8a027369e6c",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-4"
+  },
+  {
+    "id": "R-11-4-0012",
+    "rule_id": "R-11-4-0012",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Control matching weights",
+    "tags": [
+      "benchmark",
+      "equation",
+      "matching"
+    ],
+    "sha256": "4fa9d6ecb6d793ef935eeda68947c124afb22ef47e746c2dc14bde0e76817183",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-4"
+  },
+  {
+    "id": "R-11-5-0001",
+    "rule_id": "R-11-5-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Stocking-index monitoring",
+    "tags": [
+      "benchmark",
+      "calc",
+      "remote-sensing"
+    ],
+    "sha256": "8211101fce4bbc2b7a612a7addff23959e9e662f35966c80b0266991759e4712",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-11-5"
+  },
+  {
+    "id": "R-12-0001",
+    "rule_id": "R-12-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "De minimis significance procedure",
+    "tags": [
+      "eligibility",
+      "significance",
+      "threshold"
+    ],
+    "sha256": "974cfa3e8c9b753a6ee0cccc901de06cab23079dedb1ca3350558d42147c5665",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-12"
+  },
+  {
+    "id": "R-13-0001",
+    "rule_id": "R-13-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Changed-sampling uncertainty procedure",
+    "tags": [
+      "uncertainty"
+    ],
+    "sha256": "c683c7cb51d73558e17dfb630f4a9cea6b3710bd60a361bd8b341e3df298f11a",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-13"
+  },
+  {
+    "id": "R-4-0001",
+    "rule_id": "R-4-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Mutually exclusive approach applicability",
+    "tags": [
+      "boundary",
+      "eligibility"
+    ],
+    "sha256": "403fc356f7c42f8329c829d5be622061d7077fb8bc7aaad8dc04b7417851bd0e",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-4"
+  },
+  {
+    "id": "R-4-1-0001",
+    "rule_id": "R-4-1-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "General applicability conditions",
+    "tags": [
+      "eligibility"
+    ],
+    "sha256": "1413e81b410be2415f20be11b6853563d6405f66aacfa302553aa92cc3635d62",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-4-1"
+  },
+  {
+    "id": "R-4-2-0001",
+    "rule_id": "R-4-2-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Area-based t0 before site preparation",
+    "tags": [
+      "eligibility",
+      "measurement"
+    ],
+    "sha256": "0d775195107173878f65be63b5953623fd6de871c814863626296ef656c62acb",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-4-2"
+  },
+  {
+    "id": "R-4-2-0002",
+    "rule_id": "R-4-2-0002",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Remote sensing t0 limitation",
+    "tags": [
+      "eligibility",
+      "remote-sensing"
+    ],
+    "sha256": "c8393a4dc70afcaef0dd425f4b9d7109578faf054220271056680715b9b15b5a",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-4-2"
+  },
+  {
+    "id": "R-4-2-0003",
+    "rule_id": "R-4-2-0003",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Area-based t0 after land-use-change start",
+    "tags": [
+      "eligibility",
+      "evidence",
+      "measurement"
+    ],
+    "sha256": "267725dac2cb67ae6b3531d3302e3cc52a1bcd9881feece890176a0b786b6573",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-4-2"
+  },
+  {
+    "id": "R-4-2-0004",
+    "rule_id": "R-4-2-0004",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Leakage not de minimis",
+    "tags": [
+      "dependency",
+      "leakage"
+    ],
+    "sha256": "38a00fba9b1d64829427add93e5956c6e1ae5b4eb032bfff5faa3a883c1459e1",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-4-2"
+  },
+  {
+    "id": "R-4-3-0001",
+    "rule_id": "R-4-3-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Census planting, land use, density and census",
+    "tags": [
+      "census",
+      "eligibility",
+      "threshold"
+    ],
+    "sha256": "7b8e81fae7a8b9d862630740d8970463aacd860fde1f435dd9d9ccf3695a9400",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-4-3"
+  },
+  {
+    "id": "R-4-3-0002",
+    "rule_id": "R-4-3-0002",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Census replanting cap",
+    "tags": [
+      "monitoring",
+      "threshold"
+    ],
+    "sha256": "56ac8cdcc50f1daf9e01879cd19f1b5a1bb048cc12159a7d098a2217c7bc73c6",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-4-3"
+  },
+  {
+    "id": "R-4-3-0003",
+    "rule_id": "R-4-3-0003",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Planting-unit identification",
+    "tags": [
+      "evidence",
+      "monitoring"
+    ],
+    "sha256": "4f6b1fd7dd3d85fd2e12cf67a76089917f3741946cd4f4d462fff415d1888497",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-4-3"
+  },
+  {
+    "id": "R-4-3-0004",
+    "rule_id": "R-4-3-0004",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Missing unit mortality assumption",
+    "tags": [
+      "conservativeness",
+      "monitoring"
+    ],
+    "sha256": "a852781f47062ca506b15fe7513a14131569ef2a1e578225ae286e01e886c695",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-4-3"
+  },
+  {
+    "id": "R-4-3-0005",
+    "rule_id": "R-4-3-0005",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Census land eligibility",
+    "tags": [
+      "eligibility",
+      "threshold"
+    ],
+    "sha256": "d9c4abd096863033d9356e6fa13bc87db0cf2614b82509bd12908a40012fb1fe",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-4-3"
+  },
+  {
+    "id": "R-4-3-0006",
+    "rule_id": "R-4-3-0006",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Project soil-disturbance limits",
+    "tags": [
+      "eligibility",
+      "soil"
+    ],
+    "sha256": "60623a3bac944531a58958ef220bc32ed321968819523f76381b1b08d2329817",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-4-3"
+  },
+  {
+    "id": "R-4-4-1-0001",
+    "rule_id": "R-4-4-1-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Area-based exclusions",
+    "tags": [
+      "eligibility",
+      "exclusion"
+    ],
+    "sha256": "d6ef171f211cad46ccaa1517f9ac91f8aa18499d85bb61c32931025cde35b581",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-4-4-1"
+  },
+  {
+    "id": "R-4-4-2-0001",
+    "rule_id": "R-4-4-2-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Census-based exclusions",
+    "tags": [
+      "eligibility",
+      "exclusion"
+    ],
+    "sha256": "e19b4bc8efbd93f48a69c3d6f58430fae81bf8aa6068bc236d05ce3ad80e7e76",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-4-4-2"
+  },
+  {
+    "id": "R-5-0001",
+    "rule_id": "R-5-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Non-overlap and significance test",
+    "tags": [
+      "boundary",
+      "eligibility",
+      "significance"
+    ],
+    "sha256": "78dddb4724e42d9bb90816d47f7beef3d0d22c3d2216247a1f4cc1195039d5b2",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-5"
+  },
+  {
+    "id": "R-5-1-0001",
+    "rule_id": "R-5-1-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Area-based carbon-pool inclusion",
+    "tags": [
+      "boundary",
+      "carbon-pools",
+      "eligibility"
+    ],
+    "sha256": "48ecf1d8e3c4fad1d0898c31867a261abfc3fddb6de48c0893ad77e60a1615b9",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-5-1"
+  },
+  {
+    "id": "R-5-2-0001",
+    "rule_id": "R-5-2-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Census accounting boundary and pools",
+    "tags": [
+      "boundary",
+      "carbon-pools",
+      "eligibility"
+    ],
+    "sha256": "94732cbbac14b5c509e1b520a9dee4322a59c70f3269247dc5e03fa707232f42",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-5-2"
+  },
+  {
+    "id": "R-5-3-0001",
+    "rule_id": "R-5-3-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "GHG-source inclusion",
+    "tags": [
+      "eligibility",
+      "ghg-sources"
+    ],
+    "sha256": "362ab033cd236b58b6a8bad3348823d222621b290f96d43a108f767c11e38af6",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-5-3"
+  },
+  {
+    "id": "R-6-1-0001",
+    "rule_id": "R-6-1-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Area-based baseline",
+    "tags": [
+      "baseline",
+      "eligibility"
+    ],
+    "sha256": "6666757fc25dc67caa8e96130e541e21ad7329aca76bec66e95ed3e84a305d58",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-6-1"
+  },
+  {
+    "id": "R-6-2-0001",
+    "rule_id": "R-6-2-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Census zero baseline",
+    "tags": [
+      "baseline",
+      "eligibility"
+    ],
+    "sha256": "102983228c7672b0efac5428f6beeec855559ee36c31b5abd824d2d9c79b0fef",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-6-2"
+  },
+  {
+    "id": "R-7-0001",
+    "rule_id": "R-7-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Additionality method by approach",
+    "tags": [
+      "additionality",
+      "eligibility"
+    ],
+    "sha256": "8801ad1357e58cb2080c3dba6436c49f22593c2a04f64216047d7e49ebeb76ab",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-7"
+  },
+  {
+    "id": "R-7-1-0001",
+    "rule_id": "R-7-1-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Area-based additionality demonstrations",
+    "tags": [
+      "additionality",
+      "eligibility"
+    ],
+    "sha256": "491d503b83b5af5fc21b9ff9b1f56ede87a3243981552830b3205b64dcb32fb8",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-7-1"
+  },
+  {
+    "id": "R-7-2-0001",
+    "rule_id": "R-7-2-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Census additionality demonstrations",
+    "tags": [
+      "additionality",
+      "eligibility"
+    ],
+    "sha256": "977dacb796f78b1663fc093c06511f4b89de71afd28ccaaf89b3085bc924eaf8",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-7-2"
+  },
+  {
+    "id": "R-7-3-1-0001",
+    "rule_id": "R-7-3-1-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Regulatory surplus dependency",
+    "tags": [
+      "additionality",
+      "dependency",
+      "eligibility"
+    ],
+    "sha256": "267071362a45e6bbc3026a8eeb78809de97faaaa06adb280d9d89b0fbd2a6bf7",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-7-3-1"
+  },
+  {
+    "id": "R-7-3-2-0001",
+    "rule_id": "R-7-3-2-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Performance benchmark additionality",
+    "tags": [
+      "additionality",
+      "benchmark",
+      "calc"
+    ],
+    "sha256": "5cf6bcfd15c0768fa499f1b75338aab6540b2e26beba8fd12c7788fac2806da3",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-7-3-2"
+  },
+  {
+    "id": "R-7-3-3-0001",
+    "rule_id": "R-7-3-3-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Investment analysis dependency",
+    "tags": [
+      "additionality",
+      "dependency",
+      "eligibility"
+    ],
+    "sha256": "0c447ef528799b2afa60d3c1589fe1974ea1aa5418211118f45db4ccd14396a7",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-7-3-3"
+  },
+  {
+    "id": "R-7-3-4-0001",
+    "rule_id": "R-7-3-4-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Common-practice procedure",
+    "tags": [
+      "additionality",
+      "common-practice",
+      "eligibility"
+    ],
+    "sha256": "536aa30ef349b8f0537632969ce0d1feea177754a5aeb9259b2ff2a6822051a9",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-7-3-4"
+  },
+  {
+    "id": "R-7-3-4-0002",
+    "rule_id": "R-7-3-4-0002",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Common-practice threshold",
+    "tags": [
+      "additionality",
+      "eligibility",
+      "threshold"
+    ],
+    "sha256": "23ba7111b0bd6ff3fb4545a89cdb10e4f92ac2952656ba8546484416cc8bbfb9",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-7-3-4"
+  },
+  {
+    "id": "R-7-3-4-0003",
+    "rule_id": "R-7-3-4-0003",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Alternative common-practice evidence",
+    "tags": [
+      "additionality",
+      "eligibility",
+      "evidence"
+    ],
+    "sha256": "3cf09dc358a137ee897a66f350bf16b7d6a8b3bf0f3c6c6378fd9fcde8cbd09d",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-7-3-4"
+  },
+  {
+    "id": "R-8-1-1-0001",
+    "rule_id": "R-8-1-1-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Area baseline quantification",
+    "tags": [
+      "baseline",
+      "calc",
+      "quantification"
+    ],
+    "sha256": "6801e7c3d1803e8e978e667e011b4f4fe4e634c83c508f690f34a3104203feb5",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-1-1"
+  },
+  {
+    "id": "R-8-1-2-0001",
+    "rule_id": "R-8-1-2-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Census baseline stock change",
+    "tags": [
+      "baseline",
+      "calc",
+      "quantification"
+    ],
+    "sha256": "195f2963ee59a7d94b08d337e7000aa711c889789a0465b7f7464f5e94a66c96",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-1-2"
+  },
+  {
+    "id": "R-8-2-1-2-0001",
+    "rule_id": "R-8-2-1-2-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Pre-existing woody biomass t0 methods",
+    "tags": [
+      "calc",
+      "quantification",
+      "remote-sensing"
+    ],
+    "sha256": "3961c304dca1652faa1db1eef7429d00e1aea6640d1c236ae09021f43946e298",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-2-1-2"
+  },
+  {
+    "id": "R-8-2-1-2-0002",
+    "rule_id": "R-8-2-1-2-0002",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Pre-existing biomass removal conditions",
+    "tags": [
+      "calc",
+      "eligibility",
+      "quantification"
+    ],
+    "sha256": "e178bd67fc3bbd65d20773a26fa1c46e40b51e3d26bbcf1b47d2686a98546c92",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-2-1-2"
+  },
+  {
+    "id": "R-8-2-1-4-0001",
+    "rule_id": "R-8-2-1-4-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Dead-wood t0 and disturbance accounting",
+    "tags": [
+      "calc",
+      "deadwood",
+      "quantification"
+    ],
+    "sha256": "8341f5c799cb2c3ac0e848887463b0e9d68496ec5500289fcef1ba5845621c77",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-2-1-4"
+  },
+  {
+    "id": "R-8-3-1-0001",
+    "rule_id": "R-8-3-1-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Delayed census biomass measurement",
+    "tags": [
+      "calc",
+      "conservativeness",
+      "quantification"
+    ],
+    "sha256": "0243a88ef17a5ba3d4cd3136c7fba9d3700bf36ed341337a52e3dc2d4057d2ff",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-3-1"
+  },
+  {
+    "id": "R-8-3-1-1-0001",
+    "rule_id": "R-8-3-1-1-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Complete census monitoring",
+    "tags": [
+      "monitoring",
+      "quantification"
+    ],
+    "sha256": "4cdfb26c5c099b15f47af445cb1f1c825c9397ba4eb8820076b400af83b23bb3",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-3-1-1"
+  },
+  {
+    "id": "R-8-3-1-2-0001",
+    "rule_id": "R-8-3-1-2-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Excluded census pools",
+    "tags": [
+      "carbon-pools",
+      "eligibility"
+    ],
+    "sha256": "207f687dbaad3e932e978209b858c9b6336bc3c0538d633bd52b0957b584cb0a",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-3-1-2"
+  },
+  {
+    "id": "R-8-3-2-2-0001",
+    "rule_id": "R-8-3-2-2-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Census fertilizer equations",
+    "tags": [
+      "calc",
+      "fertilizer",
+      "quantification"
+    ],
+    "sha256": "3d2ceff7dc9c7840c2f89a4cf6e393a26424d377a1daed45b230c64cd6198ce4",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-3-2-2"
+  },
+  {
+    "id": "R-8-4-0001",
+    "rule_id": "R-8-4-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Leakage by approach",
+    "tags": [
+      "dependency",
+      "leakage"
+    ],
+    "sha256": "27966d4fdabdc98795afd66c3728f259a2488641f3ba4c94d69911610e84c5dc",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-4"
+  },
+  {
+    "id": "R-8-5-0001",
+    "rule_id": "R-8-5-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Uncertainty scope",
+    "tags": [
+      "uncertainty"
+    ],
+    "sha256": "f1e5498bb39110ab9022383cbef9ed022a0f1af664a9bb72a523efd9a536f1a7",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-5"
+  },
+  {
+    "id": "R-8-5-1-0001",
+    "rule_id": "R-8-5-1-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Area uncertainty",
+    "tags": [
+      "uncertainty"
+    ],
+    "sha256": "dbde37bf1d5dbed0f9358cda500366ca5b2a049d3b600cbdf92b605a69004852",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-5-1"
+  },
+  {
+    "id": "R-8-5-1-0002",
+    "rule_id": "R-8-5-1-0002",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Changed sampling uncertainty",
+    "tags": [
+      "uncertainty"
+    ],
+    "sha256": "49f767904ceea7a260c1ffeb0067401c72d1d0237d679234e6680691918f987e",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-5-1"
+  },
+  {
+    "id": "R-8-5-2-0001",
+    "rule_id": "R-8-5-2-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Census uncertainty",
+    "tags": [
+      "uncertainty"
+    ],
+    "sha256": "90c1ed428cd0d019617b7ff39a0098b77aa7bdbfe2d17f33ecf44648ef4466ce",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-5-2"
+  },
+  {
+    "id": "R-8-5-2-0002",
+    "rule_id": "R-8-5-2-0002",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "100% confidence-width crediting stop",
+    "tags": [
+      "eligibility",
+      "threshold",
+      "uncertainty"
+    ],
+    "sha256": "3dd324b5fb42f5ae6a717d1b4bcaee99d18f9d1c1f81172b9c3bce71e3247271",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-5-2"
+  },
+  {
+    "id": "R-8-6-2-0001",
+    "rule_id": "R-8-6-2-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Mixed-approach removals",
+    "tags": [
+      "calc",
+      "quantification"
+    ],
+    "sha256": "f601a666e7aeb44eb6e8824fcb979d6736a9080e4cd7f909141f4c155e375b16",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-6-2"
+  },
+  {
+    "id": "R-8-6-2-0002",
+    "rule_id": "R-8-6-2-0002",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Harvesting LTA requirement",
+    "tags": [
+      "dependency",
+      "eligibility",
+      "harvesting"
+    ],
+    "sha256": "b5e81089937f521da1305b7d8f5d53a18dab98e40ac2f76880cd32a16168f103",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-6-2"
+  },
+  {
+    "id": "R-8-6-3-0001",
+    "rule_id": "R-8-6-3-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Annualization",
+    "tags": [
+      "calc",
+      "quantification"
+    ],
+    "sha256": "08170aa187221739677f0f5e999b52eed0e0910346ca92836a09616e29874371",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-6-3"
+  },
+  {
+    "id": "R-8-7-0001",
+    "rule_id": "R-8-7-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Ex-ante estimation requirements",
+    "tags": [
+      "calc",
+      "ex-ante",
+      "quantification"
+    ],
+    "sha256": "0a2cfd4b2dc71b3e6fec6122f55e84bcedb0594900f9c18656cf822bc87e9043",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-8-7"
+  },
+  {
+    "id": "R-9-1-0001",
+    "rule_id": "R-9-1-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Project-area evidence",
+    "tags": [
+      "calc",
+      "gis",
+      "parameter"
+    ],
+    "sha256": "76ef6783f358cc1fc1778be0eb1ca0de15802a0dc1b4e1500f108bee55a24e17",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-1"
+  },
+  {
+    "id": "R-9-1-0002",
+    "rule_id": "R-9-1-0002",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Root-to-shoot ratio hierarchy",
+    "tags": [
+      "biomass",
+      "calc",
+      "parameter"
+    ],
+    "sha256": "60a04895e4204984e17a32968a6a48fbb1b6a337761ab824399551405945ffcc",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-1"
+  },
+  {
+    "id": "R-9-1-0003",
+    "rule_id": "R-9-1-0003",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Default emission parameters",
+    "tags": [
+      "calc",
+      "ipcc",
+      "parameter"
+    ],
+    "sha256": "726b903241c79cc5677b14e987c654e837d8b8b55b40194a82d808fd98287fc0",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-1"
+  },
+  {
+    "id": "R-9-1-0004",
+    "rule_id": "R-9-1-0004",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Initial population record",
+    "tags": [
+      "calc",
+      "census",
+      "parameter"
+    ],
+    "sha256": "b83b95ee1099188ab2cb5bc705cc0298ac75d3c746eb6bbdac8e3064cf955cc3",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-1"
+  },
+  {
+    "id": "R-9-2-0001",
+    "rule_id": "R-9-2-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Area woody-biomass monitoring",
+    "tags": [
+      "biomass",
+      "monitoring"
+    ],
+    "sha256": "97637844df6ce5cd21e8d269902bbdb3d562034ce2036d31867b0c9a039bbe56",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-2"
+  },
+  {
+    "id": "R-9-2-0002",
+    "rule_id": "R-9-2-0002",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Non-woody biomass monitoring",
+    "tags": [
+      "biomass",
+      "monitoring"
+    ],
+    "sha256": "ff610c5dd7f7d6282d2b8ec75f91d78b46c354d1e70d95facd8b8d0ddca29758",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-2"
+  },
+  {
+    "id": "R-9-2-0003",
+    "rule_id": "R-9-2-0003",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Dead-wood monitoring",
+    "tags": [
+      "deadwood",
+      "monitoring"
+    ],
+    "sha256": "318fcf50e33355ef7248873ff7148720f3e433119fbd9dc9a9e61efe3059014d",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-2"
+  },
+  {
+    "id": "R-9-2-0004",
+    "rule_id": "R-9-2-0004",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Litter monitoring",
+    "tags": [
+      "litter",
+      "monitoring"
+    ],
+    "sha256": "bcad4e2406ac5dea5d7981447e225bd850a80f3f296d9bbbf0b6f84ababbf7cd",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-2"
+  },
+  {
+    "id": "R-9-2-0005",
+    "rule_id": "R-9-2-0005",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "SOC monitoring",
+    "tags": [
+      "monitoring",
+      "soil"
+    ],
+    "sha256": "7ddf9b9e637b505c478f80bbb4db1ec2a86b90b4eb6dc6d94622f41fa25bd731",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-2"
+  },
+  {
+    "id": "R-9-2-0006",
+    "rule_id": "R-9-2-0006",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Fertilizer monitoring evidence",
+    "tags": [
+      "fertilizer",
+      "monitoring"
+    ],
+    "sha256": "38d1d0ed9cb9f44bf562e62575582648f5f8f0b4171ecd654673884816785471",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-2"
+  },
+  {
+    "id": "R-9-2-0007",
+    "rule_id": "R-9-2-0007",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Sampled planting-unit record",
+    "tags": [
+      "census",
+      "monitoring"
+    ],
+    "sha256": "be8b584a4f2b620c417f7c09f19358a00528aeea31c55bf7d231d9f4c1793527",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-2"
+  },
+  {
+    "id": "R-9-2-0008",
+    "rule_id": "R-9-2-0008",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Mortality monitoring",
+    "tags": [
+      "monitoring",
+      "mortality"
+    ],
+    "sha256": "7ece69b8758b323332488e4e39dda5fd5c75833e3c32f9ee6463040bcfc3a646",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-2"
+  },
+  {
+    "id": "R-9-2-0009",
+    "rule_id": "R-9-2-0009",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Census per-unit biomass monitoring",
+    "tags": [
+      "biomass",
+      "monitoring"
+    ],
+    "sha256": "6cc881daff95809514cd52993fb1f9975863f70bffe4986ed9d989ac2bee1143",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-2"
+  },
+  {
+    "id": "R-9-2-0010",
+    "rule_id": "R-9-2-0010",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Census burned-unit monitoring",
+    "tags": [
+      "burning",
+      "monitoring"
+    ],
+    "sha256": "895fa47c0fdd070adff61bbaa4906cb2dd12e937626d797b4a27ffd9315f7223",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-2"
+  },
+  {
+    "id": "R-9-2-0011",
+    "rule_id": "R-9-2-0011",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Standard-error estimation",
+    "tags": [
+      "monitoring",
+      "uncertainty"
+    ],
+    "sha256": "c4296f49c158ce6d012443423bda37e19a0ce6200d88d39bff24df33d6fb0077",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-2"
+  },
+  {
+    "id": "R-9-3-0001",
+    "rule_id": "R-9-3-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Monitoring-plan minimum content",
+    "tags": [
+      "monitoring",
+      "monitoring-plan"
+    ],
+    "sha256": "25b75c5a1960ef8c253c5ef35787e09a4a62b551956e49906c887f360518696e",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-3"
+  },
+  {
+    "id": "R-9-3-0002",
+    "rule_id": "R-9-3-0002",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Monitoring-data retention",
+    "tags": [
+      "monitoring",
+      "monitoring-plan",
+      "retention"
+    ],
+    "sha256": "e38d80ff9e90f5cec423fca878977df4a7b2f01036c8584176726b298a713007",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-3"
+  },
+  {
+    "id": "R-9-3-1-0001",
+    "rule_id": "R-9-3-1-0001",
+    "methodology": "VM0047",
+    "version": "v1-1",
+    "rule": "Area plot database",
+    "tags": [
+      "database",
+      "monitoring"
+    ],
+    "sha256": "eb4d7a7a80d54d3e4ec8863cd2dded6e70dbce86c910e9a297b0204671041f3f",
+    "provider": "Verra",
+    "category": "AFOLU",
+    "path": "methodologies/Verra/AFOLU/VM0047/v1-1/rules.json",
+    "sectionId": "S-9-3-1"
   }
 ]
