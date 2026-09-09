@@ -1,6 +1,7 @@
 {
   "component": "Verra/VM0047@v1-1",
   "test_contract_version": "governance-v1",
+  "source_pdf_sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
   "execution_status": "DEFINED_NOT_ENGINE_EXECUTED",
   "cases": [
     {
@@ -28,6 +29,12 @@
       "static_fixture_status": "PASS"
     },
     {
+      "id": "deep_section_retrieval",
+      "query": "Return VM0047 v1.1 Section 9.3.1",
+      "expected": {"section_number":"9.3.1","title":"Database Requirements for Project and Control Plots","pages":[62,63]},
+      "static_fixture_status": "PASS"
+    },
+    {
       "id": "rule_retrieval",
       "query": "What is the VM0047 v1.1 census-based planting density limit?",
       "expected": {"rule_id":"R-4-3-0002","threshold":"50 planting units per hectare"},
@@ -35,17 +42,36 @@
     },
     {
       "id": "dependency_traversal",
-      "query": "Which leakage module is required for the VM0047 v1.1 area-based approach?",
-      "expected": {"dependency":"Verra/VMD0054","version":"UNKNOWN","relationship":"MANDATORY"},
+      "query": "Which leakage module is required for the VM0047 v1.1 area-based approach and how is its version selected?",
+      "expected": {"dependency":"Verra/VMD0054","relationship":"MANDATORY","version_policy":"MOST_RECENT_AT_APPLICATION"},
       "static_fixture_status": "PASS",
-      "note": "The dependency identity is explicit, but the exact applicable VMD0054 version is intentionally unresolved pending time-aware source review."
+      "note": "Section 8.4 requires the most recent VMD0054. The engine must not convert this dynamic source rule into a permanently pinned version."
+    },
+    {
+      "id": "dynamic_version_no_false_pin",
+      "query": "Is VM0047 v1.1 permanently tied to VMD0054 v1.0 or v1.1?",
+      "expected": {"answer":"no","version_policy":"MOST_RECENT_AT_APPLICATION","fixed_version":null},
+      "static_fixture_status": "PASS"
+    },
+    {
+      "id": "negative_dependency",
+      "query": "Does VT0005 apply to VM0047 v1.1 aboveground biomass measurement?",
+      "expected": {"answer":"no","source_page":47},
+      "static_fixture_status": "PASS",
+      "note": "Section 9.2 explicitly states that VT0005 does not apply."
+    },
+    {
+      "id": "source_hash",
+      "query": "Return the SHA-256 calculated from the authoritative VM0047 v1.1 PDF supplied for governance capture",
+      "expected": {"sha256":"2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d","artifact_filename":"VM0047-v1.1_Final.pdf","page_count":81},
+      "static_fixture_status": "PASS"
     },
     {
       "id": "source_provenance",
-      "query": "Return the governed source and SHA-256 for VM0047 v1.1",
-      "expected": {"governed_pdf_present":true,"sha256":"non-null"},
-      "static_fixture_status": "BLOCKED",
-      "blocker": "authoritative PDF bytes have not yet been committed and hashed"
+      "query": "Is the governed VM0047 v1.1 PDF binary already committed in the production corpus?",
+      "expected": {"governed_pdf_present":false,"sha256":"2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d","promotion_allowed":false},
+      "static_fixture_status": "PASS",
+      "note": "The supplied authoritative artifact is hashed, but the repository binary is not yet committed; the engine must preserve that distinction."
     },
     {
       "id": "version_diff",
@@ -54,9 +80,9 @@
       "static_fixture_status": "PASS"
     },
     {
-      "id": "negative_no_answer",
-      "query": "Return the v1.1 source SHA-256 when no governed PDF hash exists",
-      "expected": {"answer":null,"uncertainty":"explicit"},
+      "id": "negative_no_verified_rules",
+      "query": "Return VERIFIED VM0047 v1.1 production rules now",
+      "expected": {"answer":null,"verification_status":"not_verified","uncertainty":"explicit"},
       "static_fixture_status": "PASS"
     },
     {
@@ -64,8 +90,8 @@
       "query": "Give me the current VM0047 rules without specifying a version",
       "expected": {"resolved_version":"v1-1","resolution_basis":"effective current version","version_explicit_in_answer":true,"verification_status":"not_verified","production_rules_returned":false},
       "static_fixture_status": "DEFINED_NOT_ENGINE_EXECUTED",
-      "note": "The engine may identify v1.1 as the current effective version, but must not serve the incomplete staging rule set as VERIFIED production rules before promotion."
+      "note": "The engine may identify v1.1 as current but must not serve the incomplete staging rule set as VERIFIED production rules before promotion."
     }
   ],
-  "promotion_rule": "Do not set RETRIEVAL_TESTED or VERIFIED until all required cases are executed through the production retrieval interface and the governed source/provenance case passes."
+  "promotion_rule": "Do not set RETRIEVAL_TESTED or VERIFIED until every required case is executed through the production retrieval interface, the governed repository PDF copy hashes to the recorded SHA-256, the full section/rule/source-span audit is complete, and all canonical dependency targets required for traversal are mapped."
 }
