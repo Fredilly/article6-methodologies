@@ -4,57 +4,23 @@
   "to_version": "v1-1",
   "change_class": "minor_revision",
   "effective_from": "2025-05-14",
-  "authoritative_summary_source": "https://verra.org/methodologies/vm0047-afforestation-reforestation-and-revegetation-v1-1/",
+  "authoritative_summary_source": "VM0047 v1.1 Document History, page 81",
+  "semantic_diff": "semantic-diff.governance-v1.json",
+  "full_text_evidence": "diff-evidence/full-text-comparison.json",
+  "material_change_count": 11,
+  "change_types": ["ADDED","MODIFIED","TOOL_CHANGED","PARAMETER_CHANGED","THRESHOLD_CHANGED"],
   "changes": [
-    {
-      "type": "MODIFIED",
-      "area": "applicability",
-      "section": "1 / 4.2",
-      "summary": "Area-based project activities may occur on existing forest cover where the area has not been managed for wood products in the previous ten years.",
-      "impact": "eligibility_expanded"
-    },
-    {
-      "type": "MODIFIED",
-      "area": "census_based_applicability",
-      "section": "4.3",
-      "summary": "The census-based approach is clarified for projects that do not cause land-use change, with a maximum density of 50 planting units per hectare and proportional treatment of project instances.",
-      "impact": "threshold_and_applicability_clarified"
-    },
-    {
-      "type": "ADDED",
-      "area": "pre_existing_woody_biomass",
-      "section": "4.2 / 8.2.1.2",
-      "summary": "Remote sensing may be used to estimate qualifying pre-existing woody biomass at the project start date under specified conditions.",
-      "impact": "measurement_option_added"
-    },
-    {
-      "type": "ADDED",
-      "area": "planting_unit_identification",
-      "section": "4.3",
-      "summary": "Census-based projects may identify planting units using qualifying GPS coordinates or durable physical markers with unique identifiers.",
-      "impact": "monitoring_option_added"
-    },
-    {
-      "type": "MODIFIED",
-      "area": "pre_existing_woody_biomass_removal",
-      "section": "4.2 / 8.2",
-      "summary": "Area-based projects may remove pre-existing woody biomass offsite where it is measured and fully accounted for as project emissions.",
-      "impact": "project_emissions_accounting_changed"
-    },
-    {
-      "type": "MODIFIED",
-      "area": "clarity_consistency",
-      "section": "multiple",
-      "summary": "Verra revised wording throughout the methodology for clarity, consistency, and ease of interpretation.",
-      "impact": "requires_full_text_source_audit_before_semantic_equivalence_can_be_assumed"
-    },
-    {
-      "type": "TOOL_CHANGED",
-      "area": "leakage",
-      "section": "1.1 / 4.2 / 8.4",
-      "summary": "The area-based approach explicitly requires VMD0054 for leakage quantification.",
-      "impact": "dependency_edge_must_be_versioned_and_provenanced"
-    }
+    {"id":"D-01","type":"MODIFIED","area":"existing_forest_cover_eligibility","sections":["1","4.2","4.4.1"]},
+    {"id":"D-02","type":"THRESHOLD_CHANGED","area":"census_planting_density_spacing_accounting_identification","sections":["1.2","4.3","5.2","9.1","9.2"]},
+    {"id":"D-03","type":"MODIFIED","area":"definitions","sections":["3"]},
+    {"id":"D-04","type":"MODIFIED","area":"pre_existing_woody_biomass_removal","sections":["4.2","8.2.1.2"]},
+    {"id":"D-05","type":"MODIFIED","area":"soil_disturbance_accounting","sections":["4.3","8.2.1.6","9.2"]},
+    {"id":"D-06","type":"MODIFIED","area":"timber_harvest_and_ecosystem_degradation_exclusions","sections":["4.4.1","8.6.2"]},
+    {"id":"D-07","type":"ADDED","area":"remote_sensing_pre_existing_biomass","sections":["4.2","8.2.1.2"]},
+    {"id":"D-08","type":"PARAMETER_CHANGED","area":"uncertainty_ex_ante_and_carbon_pool_quantification","sections":["8.2","8.5","8.7","9","Appendix 3"]},
+    {"id":"D-09","type":"PARAMETER_CHANGED","area":"performance_benchmark_design_sampling_equations","sections":["7.3.2","Appendix 1"]},
+    {"id":"D-10","type":"TOOL_CHANGED","area":"leakage_dependency","sections":["1.1","4.2","8.4"]},
+    {"id":"D-11","type":"MODIFIED","area":"editorial_clarity_consistency","sections":["multiple"]}
   ],
   "transition": {
     "v1_0_normal_active_period_end": "2025-05-13",
@@ -64,8 +30,11 @@
     "v1_0_corrections_effective": "2025-05-14"
   },
   "governance": {
-    "semantic_diff_status": "authoritative_summary_complete_full_text_diff_pending",
+    "semantic_diff_status": "COMPLETE",
+    "full_governed_texts_compared": true,
+    "full_text_diff_sha256": "dfe52490748e5251a80eea28a92428bd68e85495b70e0965b5b9704ba1501fd6",
     "do_not_assume_unchanged_text_is_semantically_identical": true,
-    "historical_retrieval_required": true
+    "historical_retrieval_required": true,
+    "silent_backporting_prohibited": true
   }
 }
