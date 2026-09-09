@@ -1,0 +1,21 @@
+{
+  "component": "Verra/VM0047@v1-1",
+  "classification": "ARTICLE6_NORMALIZATION",
+  "canonical": true,
+  "source_pdf_sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+  "source_path": "source/source.layout.txt",
+  "total_atomic_rules": 88,
+  "families": [
+    {"path":"rules/eligibility-boundary.json","rule_count":21,"source_range":"Sections 1, 4, 5"},
+    {"path":"rules/baseline-additionality.json","rule_count":11,"source_range":"Sections 6-7"},
+    {"path":"rules/quantification-uncertainty.json","rule_count":19,"source_range":"Section 8"},
+    {"path":"rules/monitoring-appendices.json","rule_count":26,"source_range":"Section 9 and Appendices 1-3"},
+    {"path":"rules/performance-benchmark.json","rule_count":11,"source_range":"Appendix 1 performance method and benchmark design"}
+  ],
+  "equations": {"path":"equations.governance-v1.json","count":50,"coverage":"Equations 1-34 and A1-A16"},
+  "parameters": {"path":"parameters.governance-v1.json","count":31,"coverage":"Validation, monitored and Appendix 1 stocking-index parameters"},
+  "legacy_staging_note": "The pre-existing rules.json is retained as historical staging evidence from the initial source review. It is not the canonical governance-v1 atomic rule set after this closure. Canonical rules are the five family files listed above.",
+  "provenance_contract": "Every canonical atomic rule records SOURCE_REQUIREMENT classification, exact component version, section/clause anchor, source page(s), governed source path and governed PDF SHA-256.",
+  "equation_scope_note": "Equation identity, purpose and exact source provenance are complete. Formula AST or executable symbolic encoding is intentionally not asserted by this PR and is not required to close the source-rule/provenance gate.",
+  "promotion_note": "This index closes rule and provenance representation only. It does not close the semantic version-diff or production-retrieval gates and does not promote VM0047 v1.1 to VERIFIED."
+}
