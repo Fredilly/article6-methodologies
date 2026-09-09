@@ -1,0 +1,16 @@
+{
+  "component": "Verra/VM0047@v1-1",
+  "source": "source/source.layout.txt",
+  "classification": "ARTICLE6_NORMALIZATION",
+  "purpose": "Deterministic structural inventory only; not a substitute for semantic rule review.",
+  "equation_references_detected": [
+    1,
+    22,
+    28,
+    29,
+    34
+  ],
+  "parameter_labels_detected": [],
+  "numbered_section_count": 76,
+  "semantic_rule_review_complete": false
+}

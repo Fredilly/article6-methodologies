@@ -1,4 +1,6 @@
 {
+  "component": "Verra/VM0047@v1-1",
+  "derived_from": "sections.json",
   "sections": [
     {
       "id": "S-1",
@@ -8,8 +10,7 @@
       "section_level": 1,
       "parent_id": null,
       "page_start": 5,
-      "page_end": 6,
-      "locator_status": "source_mapped"
+      "page_end": 6
     },
     {
       "id": "S-1-1",
@@ -19,8 +20,7 @@
       "section_level": 2,
       "parent_id": "S-1",
       "page_start": 5,
-      "page_end": 5,
-      "locator_status": "source_mapped"
+      "page_end": 5
     },
     {
       "id": "S-1-2",
@@ -30,8 +30,7 @@
       "section_level": 2,
       "parent_id": "S-1",
       "page_start": 6,
-      "page_end": 6,
-      "locator_status": "source_mapped"
+      "page_end": 6
     },
     {
       "id": "S-2",
@@ -41,8 +40,7 @@
       "section_level": 1,
       "parent_id": null,
       "page_start": 6,
-      "page_end": 6,
-      "locator_status": "source_mapped"
+      "page_end": 6
     },
     {
       "id": "S-3",
@@ -52,8 +50,7 @@
       "section_level": 1,
       "parent_id": null,
       "page_start": 6,
-      "page_end": 8,
-      "locator_status": "source_mapped"
+      "page_end": 8
     },
     {
       "id": "S-4",
@@ -63,8 +60,7 @@
       "section_level": 1,
       "parent_id": null,
       "page_start": 8,
-      "page_end": 12,
-      "locator_status": "source_mapped"
+      "page_end": 12
     },
     {
       "id": "S-4-1",
@@ -74,8 +70,7 @@
       "section_level": 2,
       "parent_id": "S-4",
       "page_start": 8,
-      "page_end": 9,
-      "locator_status": "source_mapped"
+      "page_end": 9
     },
     {
       "id": "S-4-2",
@@ -85,8 +80,7 @@
       "section_level": 2,
       "parent_id": "S-4",
       "page_start": 9,
-      "page_end": 10,
-      "locator_status": "source_mapped"
+      "page_end": 10
     },
     {
       "id": "S-4-3",
@@ -96,8 +90,7 @@
       "section_level": 2,
       "parent_id": "S-4",
       "page_start": 10,
-      "page_end": 12,
-      "locator_status": "source_mapped"
+      "page_end": 12
     },
     {
       "id": "S-4-4",
@@ -107,8 +100,7 @@
       "section_level": 2,
       "parent_id": "S-4",
       "page_start": 12,
-      "page_end": 12,
-      "locator_status": "source_mapped"
+      "page_end": 12
     },
     {
       "id": "S-4-4-1",
@@ -118,8 +110,7 @@
       "section_level": 3,
       "parent_id": "S-4-4",
       "page_start": 12,
-      "page_end": 12,
-      "locator_status": "source_verified"
+      "page_end": 12
     },
     {
       "id": "S-4-4-2",
@@ -129,8 +120,7 @@
       "section_level": 3,
       "parent_id": "S-4-4",
       "page_start": 12,
-      "page_end": 12,
-      "locator_status": "source_verified"
+      "page_end": 12
     },
     {
       "id": "S-5",
@@ -140,8 +130,7 @@
       "section_level": 1,
       "parent_id": null,
       "page_start": 12,
-      "page_end": 15,
-      "locator_status": "source_mapped"
+      "page_end": 15
     },
     {
       "id": "S-5-1",
@@ -151,8 +140,7 @@
       "section_level": 2,
       "parent_id": "S-5",
       "page_start": 13,
-      "page_end": 14,
-      "locator_status": "source_mapped"
+      "page_end": 14
     },
     {
       "id": "S-5-2",
@@ -162,8 +150,7 @@
       "section_level": 2,
       "parent_id": "S-5",
       "page_start": 14,
-      "page_end": 15,
-      "locator_status": "source_mapped"
+      "page_end": 15
     },
     {
       "id": "S-5-3",
@@ -173,8 +160,7 @@
       "section_level": 2,
       "parent_id": "S-5",
       "page_start": 15,
-      "page_end": 15,
-      "locator_status": "source_mapped"
+      "page_end": 15
     },
     {
       "id": "S-6",
@@ -184,8 +170,7 @@
       "section_level": 1,
       "parent_id": null,
       "page_start": 15,
-      "page_end": 16,
-      "locator_status": "source_mapped"
+      "page_end": 16
     },
     {
       "id": "S-6-1",
@@ -195,8 +180,7 @@
       "section_level": 2,
       "parent_id": "S-6",
       "page_start": 15,
-      "page_end": 16,
-      "locator_status": "source_mapped"
+      "page_end": 16
     },
     {
       "id": "S-6-2",
@@ -206,8 +190,7 @@
       "section_level": 2,
       "parent_id": "S-6",
       "page_start": 16,
-      "page_end": 16,
-      "locator_status": "source_mapped"
+      "page_end": 16
     },
     {
       "id": "S-7",
@@ -217,8 +200,7 @@
       "section_level": 1,
       "parent_id": null,
       "page_start": 16,
-      "page_end": 18,
-      "locator_status": "source_mapped"
+      "page_end": 18
     },
     {
       "id": "S-7-1",
@@ -228,8 +210,7 @@
       "section_level": 2,
       "parent_id": "S-7",
       "page_start": 16,
-      "page_end": 16,
-      "locator_status": "source_mapped"
+      "page_end": 16
     },
     {
       "id": "S-7-2",
@@ -239,8 +220,7 @@
       "section_level": 2,
       "parent_id": "S-7",
       "page_start": 16,
-      "page_end": 17,
-      "locator_status": "source_mapped"
+      "page_end": 17
     },
     {
       "id": "S-7-3",
@@ -250,8 +230,7 @@
       "section_level": 2,
       "parent_id": "S-7",
       "page_start": 17,
-      "page_end": 18,
-      "locator_status": "source_mapped"
+      "page_end": 18
     },
     {
       "id": "S-7-3-1",
@@ -261,8 +240,7 @@
       "section_level": 3,
       "parent_id": "S-7-3",
       "page_start": 17,
-      "page_end": 17,
-      "locator_status": "source_verified"
+      "page_end": 17
     },
     {
       "id": "S-7-3-2",
@@ -272,8 +250,7 @@
       "section_level": 3,
       "parent_id": "S-7-3",
       "page_start": 17,
-      "page_end": 17,
-      "locator_status": "source_verified"
+      "page_end": 17
     },
     {
       "id": "S-7-3-3",
@@ -283,8 +260,7 @@
       "section_level": 3,
       "parent_id": "S-7-3",
       "page_start": 17,
-      "page_end": 17,
-      "locator_status": "source_verified"
+      "page_end": 17
     },
     {
       "id": "S-7-3-4",
@@ -294,8 +270,7 @@
       "section_level": 3,
       "parent_id": "S-7-3",
       "page_start": 17,
-      "page_end": 18,
-      "locator_status": "source_verified"
+      "page_end": 18
     },
     {
       "id": "S-8",
@@ -305,8 +280,7 @@
       "section_level": 1,
       "parent_id": null,
       "page_start": 18,
-      "page_end": 38,
-      "locator_status": "source_mapped"
+      "page_end": 38
     },
     {
       "id": "S-8-1",
@@ -316,8 +290,7 @@
       "section_level": 2,
       "parent_id": "S-8",
       "page_start": 18,
-      "page_end": 19,
-      "locator_status": "source_mapped"
+      "page_end": 19
     },
     {
       "id": "S-8-1-1",
@@ -327,8 +300,7 @@
       "section_level": 3,
       "parent_id": "S-8-1",
       "page_start": 19,
-      "page_end": 19,
-      "locator_status": "source_verified"
+      "page_end": 19
     },
     {
       "id": "S-8-1-2",
@@ -338,8 +310,7 @@
       "section_level": 3,
       "parent_id": "S-8-1",
       "page_start": 19,
-      "page_end": 19,
-      "locator_status": "source_verified"
+      "page_end": 19
     },
     {
       "id": "S-8-2",
@@ -349,8 +320,7 @@
       "section_level": 2,
       "parent_id": "S-8",
       "page_start": 19,
-      "page_end": 28,
-      "locator_status": "source_mapped"
+      "page_end": 28
     },
     {
       "id": "S-8-2-1",
@@ -360,8 +330,7 @@
       "section_level": 3,
       "parent_id": "S-8-2",
       "page_start": 19,
-      "page_end": 24,
-      "locator_status": "source_verified"
+      "page_end": 24
     },
     {
       "id": "S-8-2-1-1",
@@ -371,8 +340,7 @@
       "section_level": 4,
       "parent_id": "S-8-2-1",
       "page_start": 20,
-      "page_end": 21,
-      "locator_status": "source_verified"
+      "page_end": 21
     },
     {
       "id": "S-8-2-1-2",
@@ -382,8 +350,7 @@
       "section_level": 4,
       "parent_id": "S-8-2-1",
       "page_start": 21,
-      "page_end": 22,
-      "locator_status": "source_verified"
+      "page_end": 22
     },
     {
       "id": "S-8-2-1-3",
@@ -393,8 +360,7 @@
       "section_level": 4,
       "parent_id": "S-8-2-1",
       "page_start": 22,
-      "page_end": 22,
-      "locator_status": "source_verified"
+      "page_end": 22
     },
     {
       "id": "S-8-2-1-4",
@@ -404,8 +370,7 @@
       "section_level": 4,
       "parent_id": "S-8-2-1",
       "page_start": 22,
-      "page_end": 23,
-      "locator_status": "source_verified"
+      "page_end": 23
     },
     {
       "id": "S-8-2-1-5",
@@ -415,8 +380,7 @@
       "section_level": 4,
       "parent_id": "S-8-2-1",
       "page_start": 23,
-      "page_end": 24,
-      "locator_status": "source_verified"
+      "page_end": 24
     },
     {
       "id": "S-8-2-1-6",
@@ -426,8 +390,7 @@
       "section_level": 4,
       "parent_id": "S-8-2-1",
       "page_start": 24,
-      "page_end": 24,
-      "locator_status": "source_verified"
+      "page_end": 24
     },
     {
       "id": "S-8-2-2",
@@ -437,8 +400,7 @@
       "section_level": 3,
       "parent_id": "S-8-2",
       "page_start": 24,
-      "page_end": 28,
-      "locator_status": "source_verified"
+      "page_end": 28
     },
     {
       "id": "S-8-2-2-1",
@@ -448,8 +410,7 @@
       "section_level": 4,
       "parent_id": "S-8-2-2",
       "page_start": 25,
-      "page_end": 25,
-      "locator_status": "source_verified"
+      "page_end": 25
     },
     {
       "id": "S-8-2-2-2",
@@ -459,8 +420,7 @@
       "section_level": 4,
       "parent_id": "S-8-2-2",
       "page_start": 25,
-      "page_end": 28,
-      "locator_status": "source_verified"
+      "page_end": 28
     },
     {
       "id": "S-8-3",
@@ -470,8 +430,7 @@
       "section_level": 2,
       "parent_id": "S-8",
       "page_start": 28,
-      "page_end": 32,
-      "locator_status": "source_mapped"
+      "page_end": 32
     },
     {
       "id": "S-8-3-1",
@@ -481,8 +440,7 @@
       "section_level": 3,
       "parent_id": "S-8-3",
       "page_start": 29,
-      "page_end": 31,
-      "locator_status": "source_verified"
+      "page_end": 31
     },
     {
       "id": "S-8-3-1-1",
@@ -492,8 +450,7 @@
       "section_level": 4,
       "parent_id": "S-8-3-1",
       "page_start": 30,
-      "page_end": 31,
-      "locator_status": "source_verified"
+      "page_end": 31
     },
     {
       "id": "S-8-3-1-2",
@@ -503,8 +460,7 @@
       "section_level": 4,
       "parent_id": "S-8-3-1",
       "page_start": 31,
-      "page_end": 31,
-      "locator_status": "source_verified"
+      "page_end": 31
     },
     {
       "id": "S-8-3-1-3",
@@ -514,8 +470,7 @@
       "section_level": 4,
       "parent_id": "S-8-3-1",
       "page_start": 31,
-      "page_end": 31,
-      "locator_status": "source_verified"
+      "page_end": 31
     },
     {
       "id": "S-8-3-1-4",
@@ -525,8 +480,7 @@
       "section_level": 4,
       "parent_id": "S-8-3-1",
       "page_start": 31,
-      "page_end": 31,
-      "locator_status": "source_verified"
+      "page_end": 31
     },
     {
       "id": "S-8-3-1-5",
@@ -536,8 +490,7 @@
       "section_level": 4,
       "parent_id": "S-8-3-1",
       "page_start": 31,
-      "page_end": 31,
-      "locator_status": "source_verified"
+      "page_end": 31
     },
     {
       "id": "S-8-3-2",
@@ -547,8 +500,7 @@
       "section_level": 3,
       "parent_id": "S-8-3",
       "page_start": 31,
-      "page_end": 32,
-      "locator_status": "source_verified"
+      "page_end": 32
     },
     {
       "id": "S-8-3-2-1",
@@ -558,8 +510,7 @@
       "section_level": 4,
       "parent_id": "S-8-3-2",
       "page_start": 31,
-      "page_end": 32,
-      "locator_status": "source_verified"
+      "page_end": 32
     },
     {
       "id": "S-8-3-2-2",
@@ -569,8 +520,7 @@
       "section_level": 4,
       "parent_id": "S-8-3-2",
       "page_start": 32,
-      "page_end": 32,
-      "locator_status": "source_verified"
+      "page_end": 32
     },
     {
       "id": "S-8-4",
@@ -580,8 +530,7 @@
       "section_level": 2,
       "parent_id": "S-8",
       "page_start": 32,
-      "page_end": 32,
-      "locator_status": "source_mapped"
+      "page_end": 32
     },
     {
       "id": "S-8-5",
@@ -591,8 +540,7 @@
       "section_level": 2,
       "parent_id": "S-8",
       "page_start": 32,
-      "page_end": 34,
-      "locator_status": "source_mapped"
+      "page_end": 34
     },
     {
       "id": "S-8-5-1",
@@ -602,8 +550,7 @@
       "section_level": 3,
       "parent_id": "S-8-5",
       "page_start": 33,
-      "page_end": 33,
-      "locator_status": "source_verified"
+      "page_end": 33
     },
     {
       "id": "S-8-5-2",
@@ -613,8 +560,7 @@
       "section_level": 3,
       "parent_id": "S-8-5",
       "page_start": 33,
-      "page_end": 34,
-      "locator_status": "source_verified"
+      "page_end": 34
     },
     {
       "id": "S-8-6",
@@ -624,8 +570,7 @@
       "section_level": 2,
       "parent_id": "S-8",
       "page_start": 34,
-      "page_end": 36,
-      "locator_status": "source_mapped"
+      "page_end": 36
     },
     {
       "id": "S-8-6-1",
@@ -635,8 +580,7 @@
       "section_level": 3,
       "parent_id": "S-8-6",
       "page_start": 35,
-      "page_end": 35,
-      "locator_status": "source_verified"
+      "page_end": 35
     },
     {
       "id": "S-8-6-2",
@@ -646,8 +590,7 @@
       "section_level": 3,
       "parent_id": "S-8-6",
       "page_start": 35,
-      "page_end": 35,
-      "locator_status": "source_verified"
+      "page_end": 35
     },
     {
       "id": "S-8-6-3",
@@ -657,8 +600,7 @@
       "section_level": 3,
       "parent_id": "S-8-6",
       "page_start": 36,
-      "page_end": 36,
-      "locator_status": "source_verified"
+      "page_end": 36
     },
     {
       "id": "S-8-7",
@@ -668,8 +610,7 @@
       "section_level": 2,
       "parent_id": "S-8",
       "page_start": 36,
-      "page_end": 38,
-      "locator_status": "source_mapped"
+      "page_end": 38
     },
     {
       "id": "S-9",
@@ -679,8 +620,7 @@
       "section_level": 1,
       "parent_id": null,
       "page_start": 38,
-      "page_end": 64,
-      "locator_status": "source_mapped"
+      "page_end": 64
     },
     {
       "id": "S-9-1",
@@ -690,8 +630,7 @@
       "section_level": 2,
       "parent_id": "S-9",
       "page_start": 38,
-      "page_end": 45,
-      "locator_status": "source_mapped"
+      "page_end": 45
     },
     {
       "id": "S-9-2",
@@ -701,8 +640,7 @@
       "section_level": 2,
       "parent_id": "S-9",
       "page_start": 45,
-      "page_end": 61,
-      "locator_status": "source_mapped"
+      "page_end": 61
     },
     {
       "id": "S-9-3",
@@ -712,8 +650,7 @@
       "section_level": 2,
       "parent_id": "S-9",
       "page_start": 61,
-      "page_end": 64,
-      "locator_status": "source_mapped"
+      "page_end": 64
     },
     {
       "id": "S-9-3-1",
@@ -723,8 +660,7 @@
       "section_level": 3,
       "parent_id": "S-9-3",
       "page_start": 62,
-      "page_end": 63,
-      "locator_status": "source_verified"
+      "page_end": 63
     },
     {
       "id": "S-10",
@@ -734,8 +670,7 @@
       "section_level": 1,
       "parent_id": null,
       "page_start": 64,
-      "page_end": 66,
-      "locator_status": "source_mapped"
+      "page_end": 66
     },
     {
       "id": "S-A1",
@@ -745,8 +680,7 @@
       "section_level": 1,
       "parent_id": null,
       "page_start": 66,
-      "page_end": 77,
-      "locator_status": "source_mapped"
+      "page_end": 77
     },
     {
       "id": "S-A1-1",
@@ -756,8 +690,7 @@
       "section_level": 2,
       "parent_id": "S-A1",
       "page_start": 66,
-      "page_end": 66,
-      "locator_status": "source_mapped"
+      "page_end": 66
     },
     {
       "id": "S-A1-2",
@@ -767,8 +700,7 @@
       "section_level": 2,
       "parent_id": "S-A1",
       "page_start": 66,
-      "page_end": 66,
-      "locator_status": "source_mapped"
+      "page_end": 66
     },
     {
       "id": "S-A1-3",
@@ -778,8 +710,7 @@
       "section_level": 2,
       "parent_id": "S-A1",
       "page_start": 66,
-      "page_end": 67,
-      "locator_status": "source_mapped"
+      "page_end": 67
     },
     {
       "id": "S-A1-4",
@@ -789,8 +720,7 @@
       "section_level": 2,
       "parent_id": "S-A1",
       "page_start": 67,
-      "page_end": 74,
-      "locator_status": "source_mapped"
+      "page_end": 74
     },
     {
       "id": "S-A1-5",
@@ -800,8 +730,7 @@
       "section_level": 2,
       "parent_id": "S-A1",
       "page_start": 74,
-      "page_end": 77,
-      "locator_status": "source_mapped"
+      "page_end": 77
     },
     {
       "id": "S-A2",
@@ -811,8 +740,7 @@
       "section_level": 1,
       "parent_id": null,
       "page_start": 77,
-      "page_end": 79,
-      "locator_status": "source_mapped"
+      "page_end": 79
     },
     {
       "id": "S-A3",
@@ -822,8 +750,7 @@
       "section_level": 1,
       "parent_id": null,
       "page_start": 79,
-      "page_end": 81,
-      "locator_status": "source_mapped"
+      "page_end": 81
     },
     {
       "id": "S-DH",
@@ -833,8 +760,7 @@
       "section_level": 1,
       "parent_id": null,
       "page_start": 81,
-      "page_end": 81,
-      "locator_status": "source_mapped"
+      "page_end": 81
     }
   ]
 }
