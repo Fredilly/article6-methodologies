@@ -19,8 +19,36 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '20.11.1'
-      - name: Generate canonical production artifacts
+      - name: Generate source-audited production artifacts
         run: python scripts/tmp-vm0047-production-corpus.py
+      - name: Derive canonical lean artifacts
+        run: node scripts/derive-lean-from-rich.js
+      - name: Refresh VM0047 artifact hashes
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          p = Path('methodologies/Verra/AFOLU/VM0047/v1-1')
+          meta_path = p / 'META.json'
+          meta = json.loads(meta_path.read_text())
+          def sha(name):
+              return hashlib.sha256((p / name).read_bytes()).hexdigest()
+          mapping = {
+              'sections.json': 'sections_json_sha256',
+              'rules.json': 'rules_json_sha256',
+              'sections.rich.json': 'sections.rich_sha256',
+              'rules.rich.json': 'rules.rich_sha256',
+          }
+          for name, key in mapping.items():
+              meta['audit_hashes'][key] = sha(name)
+          for entry in meta.get('files', []):
+              target = p / entry['path']
+              if target.exists():
+                  entry['sha256'] = hashlib.sha256(target.read_bytes()).hexdigest()
+          meta_path.write_text(json.dumps(meta, indent=2) + '\n')
+          PY
+      - name: Rebuild manifest
+        run: node scripts/build-manifest.mjs
       - name: Validate rich artifacts
         run: npm run validate:rich
       - name: Validate META
@@ -39,11 +67,20 @@ jobs:
         run: node tests/methodology-artifact-contract.test.js
       - name: Validate root cause index path
         run: bash scripts/check-root-cause-index-path.sh
+      - name: Validate generated artifacts are stable
+        run: |
+          node scripts/derive-lean-from-rich.js
+          node scripts/build-manifest.mjs
+          git diff --exit-code -- methodologies/**/sections.json methodologies/**/rules.json manifest/index.json
       - name: Commit production corpus artifacts
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add methodologies/Verra/AFOLU/VM0047/v1-1
-          git commit -m "feat: integrate VM0047 v1.1 into production corpus"
+          git add methodologies/Verra/AFOLU/VM0047/v1-1 manifest/index.json
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit"
+            exit 0
+          fi
+          git commit -m "feat: finalize VM0047 v1.1 production artifacts"
           git push
