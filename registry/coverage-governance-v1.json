@@ -18,6 +18,20 @@
     },
     {
       "standard": "Verra",
+      "component": "VM0047",
+      "component_type": "METHODOLOGY",
+      "version": "v1-1",
+      "governance_v1_state": "DISCOVERED",
+      "verified": false,
+      "notes": [
+        "Authoritative identity, lifecycle, lineage, a coarse section map, an initial changed-rule set, and version-diff fixtures are captured in the VM0047 v1.1 ingestion stack.",
+        "Deeper numbered subsections remain to be encoded during the full source audit.",
+        "The authoritative PDF bytes still need to be committed and SHA-256 governed.",
+        "Full rule/source-span audit and production retrieval execution remain incomplete."
+      ]
+    },
+    {
+      "standard": "Verra",
       "component": "VM0007",
       "component_type": "FRAMEWORK_METHODOLOGY",
       "version": "v1-8",
@@ -25,7 +39,7 @@
       "verified": false,
       "notes": [
         "58/58 rules are source-audited.",
-        "Dependency version identities are being normalized under governance v1.",
+        "Dependency version identities are normalized under governance v1.",
         "Dependency relationship/applicability provenance and retrieval test families remain incomplete."
       ]
     }
@@ -36,5 +50,5 @@
       "reason": "Placeholder-shaped identifier; not verified production coverage."
     }
   ],
-  "next_ingestion": "Verra/VM0047@v1-1"
+  "next_ingestion": "Complete VM0047 v1.1 source governance, full section/rule audit and retrieval execution, then close VM0007 v1.8 dependencies"
 }
