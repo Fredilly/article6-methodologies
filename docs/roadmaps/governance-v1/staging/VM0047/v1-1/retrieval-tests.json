@@ -1,0 +1,71 @@
+{
+  "component": "Verra/VM0047@v1-1",
+  "test_contract_version": "governance-v1",
+  "execution_status": "DEFINED_NOT_ENGINE_EXECUTED",
+  "cases": [
+    {
+      "id": "identity",
+      "query": "Return the exact identity and status of Verra VM0047 v1.1",
+      "expected": {"code":"VM0047","version":"v1-1","status":"Active","effective_from":"2025-05-14"},
+      "static_fixture_status": "PASS"
+    },
+    {
+      "id": "version_selection_current",
+      "query": "Which VM0047 version became effective on 14 May 2025?",
+      "expected": {"version":"v1-1"},
+      "static_fixture_status": "PASS"
+    },
+    {
+      "id": "version_selection_historical",
+      "query": "Return VM0047 v1.0 rather than v1.1",
+      "expected": {"version":"v1-0","historical_version_preserved":true},
+      "static_fixture_status": "PASS"
+    },
+    {
+      "id": "section_retrieval",
+      "query": "Return VM0047 v1.1 Section 4.3",
+      "expected": {"section_id":"S-4-3","title":"Census-based Approach Applicability Conditions"},
+      "static_fixture_status": "PASS"
+    },
+    {
+      "id": "rule_retrieval",
+      "query": "What is the VM0047 v1.1 census-based planting density limit?",
+      "expected": {"rule_id":"R-4-3-0002","threshold":"50 planting units per hectare"},
+      "static_fixture_status": "PASS"
+    },
+    {
+      "id": "dependency_traversal",
+      "query": "Which leakage module is required for the VM0047 v1.1 area-based approach?",
+      "expected": {"dependency":"Verra/VMD0054","version":"UNKNOWN","relationship":"MANDATORY"},
+      "static_fixture_status": "PASS",
+      "note": "The dependency identity is explicit, but the exact applicable VMD0054 version is intentionally unresolved pending time-aware source review."
+    },
+    {
+      "id": "source_provenance",
+      "query": "Return the governed source and SHA-256 for VM0047 v1.1",
+      "expected": {"governed_pdf_present":true,"sha256":"non-null"},
+      "static_fixture_status": "BLOCKED",
+      "blocker": "authoritative PDF bytes have not yet been committed and hashed"
+    },
+    {
+      "id": "version_diff",
+      "query": "What materially changed from VM0047 v1.0 to v1.1?",
+      "expected": {"diff_file":"version-diff-from-v1-0.json","minimum_change_categories":["MODIFIED","ADDED","TOOL_CHANGED"]},
+      "static_fixture_status": "PASS"
+    },
+    {
+      "id": "negative_no_answer",
+      "query": "Return the v1.1 source SHA-256 when no governed PDF hash exists",
+      "expected": {"answer":null,"uncertainty":"explicit"},
+      "static_fixture_status": "PASS"
+    },
+    {
+      "id": "ambiguity",
+      "query": "Give me the current VM0047 rules without specifying a version",
+      "expected": {"resolved_version":"v1-1","resolution_basis":"effective current version","version_explicit_in_answer":true,"verification_status":"not_verified","production_rules_returned":false},
+      "static_fixture_status": "DEFINED_NOT_ENGINE_EXECUTED",
+      "note": "The engine may identify v1.1 as the current effective version, but must not serve the incomplete staging rule set as VERIFIED production rules before promotion."
+    }
+  ],
+  "promotion_rule": "Do not set RETRIEVAL_TESTED or VERIFIED until all required cases are executed through the production retrieval interface and the governed source/provenance case passes."
+}
