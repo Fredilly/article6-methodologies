@@ -13,6 +13,14 @@
   "methodology_page": "https://verra.org/methodologies/vm0047-afforestation-reforestation-and-revegetation-v1-1/",
   "source_url": "https://verra.org/documents/vm0047-afforestation-reforestation-and-revegetation-v1-1/",
   "direct_pdf_url": "https://verra.org/wp-content/uploads/2025/05/VM0047-v1.1_Final.pdf",
+  "source_artifact": {
+    "filename": "VM0047-v1.1_Final.pdf",
+    "size_bytes": 1171574,
+    "sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+    "page_count": 81,
+    "identity_verified": true,
+    "repository_binary_committed": false
+  },
   "relationships": {
     "version": {
       "family": "Verra.AFOLU.VM0047",
@@ -31,7 +39,7 @@
       "relationship": "MANDATORY",
       "applicability": "area-based approach for leakage from displacement of pre-project agricultural activities",
       "resolution_status": "VERSION_BINDING_PENDING_SOURCE_REVIEW",
-      "source_ref": "VM0047 v1.1 Section 1.1 and current Verra methodology page require VMD0054; the methodology page currently lists VMD0054 v1.0 while VMD0054 v1.1 became active later, so exact time-dependent version binding must not be inferred."
+      "source_ref": "VM0047 v1.1 Section 1.1 and Section 8.4 require VMD0054. Section 8.4 requires the most recent version, so exact applicable module version must be resolved time-aware rather than inferred from methodology publication date alone."
     }
   ],
   "governance_v1": {
@@ -39,12 +47,12 @@
     "verified": false,
     "production_corpus": false,
     "blockers": [
-      "authoritative_pdf_not_yet_committed_and_hashed",
+      "authoritative_pdf_hashed_but_repository_binary_not_yet_committed",
       "exact_vmd0054_version_binding_not_yet_source_resolved",
       "sections_not_yet_source_audited",
       "rules_not_yet_source_audited",
       "retrieval_tests_not_yet_executed"
     ],
-    "migration_note": "Discovery metadata is staged outside methodologies/** until the governed source artifact and required audit gates are complete."
+    "migration_note": "The authoritative v1.1 PDF has been received, identity-checked, and SHA-256 hashed. Discovery remains staged outside methodologies/** until the repository copy of the governed source artifact and required audit gates are complete."
   }
 }
