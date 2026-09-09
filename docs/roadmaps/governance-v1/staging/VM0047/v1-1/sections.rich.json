@@ -2,14 +2,19 @@
   "source": {
     "component": "Verra/VM0047@v1-1",
     "document": "VM0047 Afforestation, Reforestation, and Revegetation, v1.1",
-    "canonical_url": "https://verra.org/documents/vm0047-afforestation-reforestation-and-revegetation-v1-1/",
+    "governed_pdf": "tools/Verra/VM0047/v1-1/source.pdf",
+    "source_text": "source/source.layout.txt",
+    "sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
     "page_count": 81,
-    "status": "source_mapped_not_source_audited"
+    "status": "source_verified_hierarchy"
   },
-  "derivation": "This staging map records the confirmed top-level and second-level section hierarchy plus appendices and their page locators. Deeper numbered subsections (for example 7.3.1, 8.2.1.2 and 9.3.1) remain to be encoded during the full source audit. It does not assert complete hierarchy capture or verbatim section-text capture.",
   "sections_file": "sections.json",
+  "lean_sections_file": "sections.lean.json",
   "provenance_status": "SOURCE_REQUIREMENT",
-  "hierarchy_complete": false,
-  "deep_subsections_pending": true,
-  "source_audit_complete": false
+  "hierarchy_complete": true,
+  "deep_subsections_pending": false,
+  "source_heading_audit_complete": true,
+  "source_text_preserved": true,
+  "section_count": 76,
+  "note": "Rich section identity and hierarchy are canonical in sections.json; lean sections are derived. Full normative rule decomposition is tracked separately."
 }
