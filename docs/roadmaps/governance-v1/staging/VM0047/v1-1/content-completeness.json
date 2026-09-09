@@ -13,7 +13,7 @@
     },
     "atomic_rules": {
       "state": "COMPLETE",
-      "evidence": "77 material SOURCE_REQUIREMENT rules are decomposed in the canonical governance-v1 rule families listed in rules.governance-v1.index.json, covering eligibility, project boundary, baseline, additionality, quantification, uncertainty, monitoring and appendices."
+      "evidence": "88 material SOURCE_REQUIREMENT rules are decomposed in the canonical governance-v1 rule families listed in rules.governance-v1.index.json, covering eligibility, project boundary, baseline, additionality, quantification, uncertainty, monitoring and the complete performance-method appendices."
     },
     "equations": {
       "state": "SOURCE_MAPPED_COMPLETE",
