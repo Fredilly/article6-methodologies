@@ -1,0 +1,40 @@
+{
+  "schema_version": "governance-v1-migration-1",
+  "authoritative_for": "migration_status_only",
+  "legacy_methods_status_authoritative": false,
+  "entries": [
+    {
+      "standard": "Verra",
+      "component": "VM0047",
+      "component_type": "METHODOLOGY",
+      "version": "v1-0",
+      "governance_v1_state": "PROVENANCE_COMPLETE",
+      "verified": false,
+      "notes": [
+        "Source-audited sections and rules are present.",
+        "Governance-v1 retrieval test families are not yet recorded.",
+        "VM0047 v1.1 is the authoritative successor."
+      ]
+    },
+    {
+      "standard": "Verra",
+      "component": "VM0007",
+      "component_type": "FRAMEWORK_METHODOLOGY",
+      "version": "v1-8",
+      "governance_v1_state": "PROVENANCE_COMPLETE",
+      "verified": false,
+      "notes": [
+        "58/58 rules are source-audited.",
+        "Dependency version identities are being normalized under governance v1.",
+        "Dependency relationship/applicability provenance and retrieval test families remain incomplete."
+      ]
+    }
+  ],
+  "excluded_from_verified_coverage": [
+    {
+      "path": "methodologies/GoldStandard/LUF/GS-00XX",
+      "reason": "Placeholder-shaped identifier; not verified production coverage."
+    }
+  ],
+  "next_ingestion": "Verra/VM0047@v1-1"
+}
