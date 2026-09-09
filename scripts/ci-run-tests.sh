@@ -14,7 +14,7 @@ node ./scripts/check-trio-and-registry.js
 # Schemas vs validators consistency
 node ./scripts/check-validators-sync.js
 
-# META.tools hash verification (meta-driven; Node-based, no jq)
+# META.tools hash verification (meta-driven; Node-based)
 node ./scripts/check-source-hash.js
 
 # Optional: pure offline JSON Schema validation (no npm/network)
@@ -36,5 +36,8 @@ echo "ok manifest is fresh"
 
 # GoldStandard manifest entries + pack archive integrity
 node tests/manifest-pack-gs.test.js
+
+# Governance-v1 structured production retrieval contract
+node tests/governance-retrieval.test.js
 
 echo "== CI: DONE (offline) =="

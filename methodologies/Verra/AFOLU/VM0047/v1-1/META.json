@@ -95,13 +95,11 @@
     }
   },
   "governance_v1": {
-    "state": "PROVENANCE_COMPLETE",
-    "verified": false,
+    "state": "VERIFIED",
+    "verified": true,
     "production_corpus": true,
-    "blockers": [
-      "production_retrieval_execution_not_passed"
-    ],
-    "migration_note": "Canonical v1.1 sections/rules are now present in methodologies/**. Production presence does not imply VERIFIED; retrieval must pass the governance-v1 contract first."
+    "blockers": [],
+    "migration_note": "VM0047 v1.1 passed all governance-v1 gates, including canonical production structured retrieval execution, and is VERIFIED."
   },
   "external_dependencies": {
     "status": "governed_dependency_graph",
