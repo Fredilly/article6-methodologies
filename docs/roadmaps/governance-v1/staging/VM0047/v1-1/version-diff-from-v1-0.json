@@ -1,0 +1,71 @@
+{
+  "component": "Verra/VM0047",
+  "from_version": "v1-0",
+  "to_version": "v1-1",
+  "change_class": "minor_revision",
+  "effective_from": "2025-05-14",
+  "authoritative_summary_source": "https://verra.org/methodologies/vm0047-afforestation-reforestation-and-revegetation-v1-1/",
+  "changes": [
+    {
+      "type": "MODIFIED",
+      "area": "applicability",
+      "section": "1 / 4.2",
+      "summary": "Area-based project activities may occur on existing forest cover where the area has not been managed for wood products in the previous ten years.",
+      "impact": "eligibility_expanded"
+    },
+    {
+      "type": "MODIFIED",
+      "area": "census_based_applicability",
+      "section": "4.3",
+      "summary": "The census-based approach is clarified for projects that do not cause land-use change, with a maximum density of 50 planting units per hectare and proportional treatment of project instances.",
+      "impact": "threshold_and_applicability_clarified"
+    },
+    {
+      "type": "ADDED",
+      "area": "pre_existing_woody_biomass",
+      "section": "4.2 / 8.2.1.2",
+      "summary": "Remote sensing may be used to estimate qualifying pre-existing woody biomass at the project start date under specified conditions.",
+      "impact": "measurement_option_added"
+    },
+    {
+      "type": "ADDED",
+      "area": "planting_unit_identification",
+      "section": "4.3",
+      "summary": "Census-based projects may identify planting units using qualifying GPS coordinates or durable physical markers with unique identifiers.",
+      "impact": "monitoring_option_added"
+    },
+    {
+      "type": "MODIFIED",
+      "area": "pre_existing_woody_biomass_removal",
+      "section": "4.2 / 8.2",
+      "summary": "Area-based projects may remove pre-existing woody biomass offsite where it is measured and fully accounted for as project emissions.",
+      "impact": "project_emissions_accounting_changed"
+    },
+    {
+      "type": "MODIFIED",
+      "area": "clarity_consistency",
+      "section": "multiple",
+      "summary": "Verra revised wording throughout the methodology for clarity, consistency, and ease of interpretation.",
+      "impact": "requires_full_text_source_audit_before_semantic_equivalence_can_be_assumed"
+    },
+    {
+      "type": "TOOL_CHANGED",
+      "area": "leakage",
+      "section": "1.1 / 4.2 / 8.4",
+      "summary": "The area-based approach explicitly requires VMD0054 for leakage quantification.",
+      "impact": "dependency_edge_must_be_versioned_and_provenanced"
+    }
+  ],
+  "transition": {
+    "v1_0_normal_active_period_end": "2025-05-13",
+    "v1_1_effective": "2025-05-14",
+    "v1_0_pipeline_listing_deadline": "2025-12-31",
+    "v1_0_registration_deadline": "2026-12-31",
+    "v1_0_corrections_effective": "2025-05-14"
+  },
+  "governance": {
+    "semantic_diff_status": "authoritative_summary_complete_full_text_diff_pending",
+    "do_not_assume_unchanged_text_is_semantically_identical": true,
+    "historical_retrieval_required": true
+  }
+}
