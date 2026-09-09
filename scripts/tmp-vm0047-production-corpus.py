@@ -75,16 +75,18 @@ for r in source_rules:
     secnum=primary_number(r['section_number']); s=by_num[secnum]; sid=s['id']
     counters[sid]=counters.get(sid,0)+1
     rid='R-'+sid[2:]+'-'+f"{counters[sid]:04d}"; stable=f"Verra.AFOLU.VM0047.v1-1.{rid}"
-    tags=sorted(set(r.get('tags') or ['governance']))
+    rule_type=rtype(r)
+    rich_tags=sorted(set(r.get('tags') or ['governance']))
+    lean_tags=sorted(set([rule_type, *rich_tags]))
     lean_rules.append({
       'id':rid,'stable_id':stable,'title':r['title'],'logic':r['logic'],
       'section_anchor':s['anchor'],'section_id':sid,'section_number':secnum,
-      'section_stable_id':s['stable_id'],'tools':['Verra/VM0047@v1-1'],'tags':tags,'when':r.get('when') or []
+      'section_stable_id':s['stable_id'],'tools':['Verra/VM0047@v1-1'],'tags':lean_tags,'when':r.get('when') or []
     })
     rich_rules.append({
-      'id':stable,'stable_id':stable,'summary':r['title'],'logic':r['logic'],'type':rtype(r),
+      'id':stable,'stable_id':stable,'summary':r['title'],'logic':r['logic'],'type':rule_type,
       'quality_status':'source_audited','source_span_status':'source_audited','source_span_text':r['logic'],
-      'when':r.get('when') or [],'tags':tags,
+      'when':r.get('when') or [],'tags':rich_tags,
       'refs':{'methodology':'Verra/VM0047@v1-1','primary_section':sid,'sections':[sid],
               'section_number':secnum,'section_anchor':s['anchor'],'section_stable_id':s['stable_id'],
               'pages':r['source_pages'],'tools':['Verra/VM0047@v1-1']},
