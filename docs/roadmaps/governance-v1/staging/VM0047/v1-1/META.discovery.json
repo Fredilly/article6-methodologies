@@ -26,7 +26,10 @@
   "relationships": {
     "version": {
       "family": "Verra.AFOLU.VM0047",
-      "lineage": ["v1-0", "v1-1"],
+      "lineage": [
+        "v1-0",
+        "v1-1"
+      ],
       "previous_version": "v1-0",
       "next_version": null
     }
@@ -43,15 +46,10 @@
     }
   ],
   "governance_v1": {
-    "state": "SOURCES_CAPTURED",
-    "verified": false,
-    "production_corpus": false,
-    "blockers": [
-      "canonical_component_mapping_for_program_requirement_sets_pending",
-      "sections_not_yet_source_audited",
-      "rules_not_yet_source_audited",
-      "retrieval_tests_not_yet_executed"
-    ],
-    "migration_note": "The authoritative v1.1 PDF is committed at the governed path and re-hashed to the captured SHA-256. Source capture is complete. Later governance gates remain explicit blockers; no VERIFIED status is claimed."
+    "state": "VERIFIED",
+    "verified": true,
+    "production_corpus": true,
+    "blockers": [],
+    "migration_note": "Authoritative source capture, source-audited hierarchy, atomic rules, exact provenance, dependency semantics, semantic version diff and canonical production retrieval execution are complete. VM0047 v1.1 is VERIFIED."
   }
 }

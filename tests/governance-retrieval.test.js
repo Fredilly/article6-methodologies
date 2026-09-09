@@ -52,9 +52,9 @@ assert.ok(diff.diff.change_types.includes('MODIFIED'));
 assert.ok(diff.diff.change_types.includes('TOOL_CHANGED'));
 
 const verifiedOnly = retriever.query({ operation: 'rules', standard: 'Verra', program: 'AFOLU', code: 'VM0047', version: 'v1-1', require_verified: true });
-assert.strictEqual(verifiedOnly.answer, null);
-assert.strictEqual(verifiedOnly.verification_status, 'not_verified');
-assert.strictEqual(verifiedOnly.uncertainty, 'explicit');
-assert.strictEqual(verifiedOnly.production_rules_returned, false);
+assert.strictEqual(verifiedOnly.verification_status, 'verified');
+assert.strictEqual(verifiedOnly.verified, true);
+assert.strictEqual(verifiedOnly.production_rules_returned, true);
+assert.ok(verifiedOnly.rules.length > 0);
 
 console.log('ok governance-v1 structured retrieval');
