@@ -1,0 +1,19 @@
+{
+  "component": "Verra/VM0047@v1-1",
+  "classification": "ARTICLE6_NORMALIZATION",
+  "derived_from": "dependencies.governance-v1.json",
+  "edges": [
+    {"target":"Verra/VMD0054","dependent":"Verra/VM0047@v1-1","relationship":"MANDATORY","version_policy":"MOST_RECENT_AT_APPLICATION"},
+    {"target":"Verra/VT0008","dependent":"Verra/VM0047@v1-1","relationship":"CONDITIONAL","version_policy":"MOST_RECENT_AT_APPLICATION"},
+    {"target":"Verra/VCS-METHODOLOGY-REQUIREMENTS","dependent":"Verra/VM0047@v1-1","relationship":"MANDATORY","version_policy":"MOST_RECENT_AT_APPLICATION"},
+    {"target":"Verra/VCS-PROGRAM-DEFINITIONS","dependent":"Verra/VM0047@v1-1","relationship":"MANDATORY","version_policy":"PROGRAM_CURRENT_AT_APPLICATION"},
+    {"target":"Verra/VCS-STANDARD","dependent":"Verra/VM0047@v1-1","relationship":"CONDITIONAL","version_policy":"MOST_RECENT_AT_APPLICATION"},
+    {"target":"UNFCCC/AR-ACM0003","dependent":"Verra/VM0047@v1-1","relationship":"INCORPORATED_BY_REFERENCE","version_policy":"SOURCE_DOES_NOT_PIN_VERSION"},
+    {"target":"UNFCCC/CDM-AR-TOOL-TESTING-SIGNIFICANCE-GHG-EMISSIONS","dependent":"Verra/VM0047@v1-1","relationship":"INCORPORATED_BY_REFERENCE","version_policy":"SOURCE_DOES_NOT_PIN_VERSION"},
+    {"target":"Verra/VT0001","dependent":"Verra/VM0047@v1-1","relationship":"INCORPORATED_BY_REFERENCE","version_policy":"SOURCE_DOES_NOT_PIN_VERSION"}
+  ],
+  "excluded": [
+    {"target":"Verra/VT0005","reason":"explicit non-dependency"},
+    {"target":"Verra/VM0036","reason":"example-only component, not a fixed dependency edge"}
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "component": "Verra/VM0047@v1-1",
+  "classification": "ARTICLE6_NORMALIZATION",
+  "identity_rule": "Canonical Article6 IDs provide stable cross-registry identity while preserving registry-native titles and version semantics. Canonical IDs do not imply semantic equivalence across registries and do not pin dynamic dependencies to a currently active version.",
+  "identities": [
+    {
+      "component_id": "Verra/VCS-PROGRAM-DEFINITIONS",
+      "component_type": "REQUIREMENT_SET",
+      "native_type": "VCS Program document",
+      "native_title": "VCS Program Definitions",
+      "standard": "VCS",
+      "authority": "Verra",
+      "identity_status": "RESOLVED",
+      "version_resolution": "PROGRAM_CURRENT_AT_APPLICATION",
+      "note": "VM0047 Section 3 incorporates the VCS Program Definitions without a fixed version pin."
+    },
+    {
+      "component_id": "Verra/VCS-METHODOLOGY-REQUIREMENTS",
+      "component_type": "REQUIREMENT_SET",
+      "native_type": "VCS Program document",
+      "native_title": "VCS Methodology Requirements",
+      "standard": "VCS",
+      "authority": "Verra",
+      "identity_status": "RESOLVED",
+      "version_resolution": "MOST_RECENT_AT_APPLICATION",
+      "note": "VM0047 Section 7.3.1 explicitly requires the most recent VCS Methodology Requirements."
+    },
+    {
+      "component_id": "Verra/VCS-STANDARD",
+      "component_type": "REQUIREMENT_SET",
+      "native_type": "VCS Program document",
+      "native_title": "VCS Standard",
+      "standard": "VCS",
+      "authority": "Verra",
+      "identity_status": "RESOLVED",
+      "version_resolution": "MOST_RECENT_AT_APPLICATION",
+      "note": "VM0047 references the VCS Standard in conditional and program-compliance contexts; source wording controls version resolution."
+    },
+    {
+      "component_id": "UNFCCC/CDM-AR-TOOL-TESTING-SIGNIFICANCE-GHG-EMISSIONS",
+      "component_type": "TOOL",
+      "native_type": "A/R Methodological Tool",
+      "native_title": "Tool for testing significance of GHG emissions in A/R CDM project activities",
+      "standard": "CDM",
+      "authority": "UNFCCC CDM Executive Board",
+      "identity_status": "RESOLVED",
+      "published_version_evidence": "Version 01; EB 31 Annex 16",
+      "version_resolution": "SOURCE_DOES_NOT_PIN_VERSION",
+      "aliases": [
+        "CDM Tool for Testing Significance of GHG Emissions in A/R CDM Project Activities"
+      ],
+      "note": "The Article6 ID is title-derived because legacy UNFCCC index labels are not used as the stable Article6 identity. The native title, Version 01 evidence and EB 31 Annex 16 provenance remain preserved. VM0047 cites the tool as source basis and integrates the significance procedure into Appendix 2; it does not create a runtime fixed-version pin."
+    }
+  ],
+  "external_identity_evidence_reviewed": [
+    "Verra VCS Version 4 Rules and Requirements Archive",
+    "UNFCCC CDM A/R methodological tools index",
+    "UNFCCC CDM Executive Board EB 31 Annex 16"
+  ]
+}
