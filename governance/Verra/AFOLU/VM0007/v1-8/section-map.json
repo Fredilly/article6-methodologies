@@ -1,0 +1,20 @@
+{
+  "S-1": { "pdf_sections": ["4"], "title": "Applicability Conditions" },
+  "S-2": { "pdf_sections": ["5"], "title": "Project Boundary" },
+  "S-3": { "pdf_sections": ["6"], "title": "Baseline Scenario" },
+  "S-4": { "pdf_sections": ["7"], "title": "Additionality" },
+  "S-5": { "pdf_sections": ["8"], "title": "Quantification" },
+  "S-6": { "pdf_sections": ["9"], "title": "Monitoring" },
+  "exceptions": [
+    {
+      "rule_id": "R-3-0005",
+      "allowed_pdf_sections": ["8.1.2"],
+      "reason": "Baseline module selection (BL-PL, BL-UP) is encoded under S-3 / Baseline Scenario, but the source text is in Quantification section 8.1.2 (REDD baseline methods)."
+    },
+    {
+      "rule_id": "R-3-0006",
+      "allowed_pdf_sections": ["8.1.3"],
+      "reason": "WRC baseline module selection (BL-PEAT, BL-TW) is encoded under S-3 / Baseline Scenario, but the source text is in Quantification section 8.1.3 (WRC baseline methods)."
+    }
+  ]
+}
