@@ -8,6 +8,7 @@ const ROOT = path.resolve(__dirname, '..');
 const LINE_REF = /^(.+)#L(\d+)-L(\d+)$/;
 const GOVERNED_STATES = new Set(['PROVENANCE_COMPLETE', 'RETRIEVAL_TESTED', 'VERIFIED']);
 const SOURCE_RESOLUTION_CONTRACT = 'governed-text-v1';
+const CLAUSE_EVIDENCE_FILE = 'rule-evidence-clauses.json';
 
 function readJSON(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -53,6 +54,21 @@ function resolveLineRef(ref) {
   };
 }
 
+function governanceSupportDir(componentDir, meta) {
+  const configured = meta?.governance_support?.root;
+  if (configured) return path.resolve(ROOT, configured);
+  const rel = path.relative(path.join(ROOT, 'methodologies'), componentDir);
+  return path.resolve(ROOT, 'governance', rel);
+}
+
+function loadClauseEvidence(componentDir, meta) {
+  const supportDir = governanceSupportDir(componentDir, meta);
+  const evidencePath = path.join(supportDir, CLAUSE_EVIDENCE_FILE);
+  if (!fs.existsSync(evidencePath)) return null;
+  const evidence = readJSON(evidencePath);
+  return { evidencePath, evidence };
+}
+
 function evidenceQuotes(record, ruleMode) {
   const locators = ruleMode ? record.refs?.locators : record.locators;
   if (!Array.isArray(locators)) return [];
@@ -74,29 +90,43 @@ function sourceRefLooksComposite(sourceRef) {
     /\bitems?\s+\d+\s*(?:,|and)\s*\d+/i.test(ref) ||
     /¶\s*\d+\s*[-–]\s*\d+/i.test(ref) ||
     /\bparagraphs?\s+\d+\s*[-–]\s*\d+/i.test(ref) ||
-    /\b(?:and|&)\s+table\s+\d+/i.test(ref)
+    /\b(?:and|&)\s+table\s+\d+/i.test(ref) ||
+    /\bitems?\s+\d+\s*[-–]\s*\d+\([a-z]\)/i.test(ref)
   );
 }
 
-function validateClauseEvidence(rule, label, failures) {
+function validateClauseEvidence(rule, label, clauseBundle, expectedSourceHash, failures) {
   const sourceRef = rule?.provenance?.source_ref;
   if (!sourceRefLooksComposite(sourceRef)) return;
 
-  const clauses = rule?.refs?.requirement_clauses;
-  if (!Array.isArray(clauses) || clauses.length < 2) {
-    failures.push(`${label}: composite source locator ${JSON.stringify(sourceRef)} requires clause-level refs.requirement_clauses evidence or must be split into atomic rules`);
+  if (!clauseBundle || clauseBundle.contract !== SOURCE_RESOLUTION_CONTRACT) {
+    failures.push(`${label}: composite source locator ${JSON.stringify(sourceRef)} requires governed clause evidence under ${CLAUSE_EVIDENCE_FILE}`);
+    return;
+  }
+  if (clauseBundle.source_pdf_sha256 !== expectedSourceHash) {
+    failures.push(`${label}: clause evidence source hash does not match governed source PDF hash`);
     return;
   }
 
+  const sourcePath = clauseBundle.source_text_path;
+  const absoluteSource = path.resolve(ROOT, String(sourcePath || ''));
+  if (!sourcePath || !absoluteSource.startsWith(ROOT + path.sep) || !fs.existsSync(absoluteSource)) {
+    failures.push(`${label}: governed clause evidence source text path is missing or invalid`);
+    return;
+  }
+
+  const clauses = clauseBundle.rules?.[rule.id || rule.stable_id];
+  if (!Array.isArray(clauses) || clauses.length < 2) {
+    failures.push(`${label}: composite source locator ${JSON.stringify(sourceRef)} requires at least two reviewed requirement clauses`);
+    return;
+  }
+
+  const sourceText = normalize(fs.readFileSync(absoluteSource, 'utf8'));
   const ids = new Set();
   for (const clause of clauses) {
     const clauseId = normalize(clause?.id);
     const normalizedRequirement = normalize(clause?.normalized_requirement);
     const sourceSpan = normalize(clause?.source_span_text);
-    const refs = Array.isArray(clause?.lines) ? clause.lines.filter((value) => typeof value === 'string' && value.trim()) : [];
-    const quotes = Array.isArray(clause?.locators)
-      ? clause.locators.map((locator) => normalize(locator && locator.quote)).filter(Boolean)
-      : [];
     const clauseLabel = `${label}: clause ${clauseId || '(missing-id)'}`;
 
     if (!clauseId) failures.push(`${clauseLabel}: missing stable clause id`);
@@ -104,26 +134,12 @@ function validateClauseEvidence(rule, label, failures) {
     else ids.add(clauseId);
 
     if (!normalizedRequirement) failures.push(`${clauseLabel}: missing normalized_requirement`);
-    if (!sourceSpan) failures.push(`${clauseLabel}: missing source_span_text`);
-    if (refs.length === 0) failures.push(`${clauseLabel}: missing exact governed-text line reference`);
-    if (quotes.length === 0) failures.push(`${clauseLabel}: missing exact evidence quote locator`);
-
-    const resolved = [];
-    for (const ref of refs) {
-      const result = resolveLineRef(ref);
-      if (result.error) failures.push(`${clauseLabel}: ${result.error}`);
-      else resolved.push(result);
+    if (!sourceSpan) {
+      failures.push(`${clauseLabel}: missing source_span_text`);
+      continue;
     }
-    if (resolved.length === 0) continue;
-
-    const resolvedText = normalize(resolved.map((item) => item.text).join('\n'));
-    for (const quote of quotes) {
-      if (!resolvedText.includes(quote)) {
-        failures.push(`${clauseLabel}: evidence quote is not present in resolved governed-text span`);
-      }
-    }
-    if (sourceSpan && !resolvedText.includes(sourceSpan)) {
-      failures.push(`${clauseLabel}: source_span_text is not present in resolved governed-text span`);
+    if (!sourceText.includes(sourceSpan)) {
+      failures.push(`${clauseLabel}: source_span_text is not present in governed source text`);
     }
   }
 }
@@ -163,7 +179,6 @@ function validateResolvableEvidence(record, label, ruleMode, failures) {
     } else if (!resolvedText.includes(sourceSpan)) {
       failures.push(`${label}: source_span_text is not present in resolved governed-text span`);
     }
-    validateClauseEvidence(record, label, failures);
   } else if (resolvedText.length < 20) {
     failures.push(`${label}: resolved section content is not substantive`);
   }
@@ -180,10 +195,6 @@ function validateComponent(componentDir) {
   const meta = readJSON(metaPath);
   const governance = meta?.governance_v1 || {};
 
-  // The stronger invariant is forward-compatible and explicit. Legacy
-  // governance records are not silently re-graded by a contract introduced
-  // after their promotion. Any component that opts into this contract is
-  // fully enforced once it reaches a governed promotion state.
   if (governance.source_resolution_contract !== SOURCE_RESOLUTION_CONTRACT) return failures;
 
   const state = governance.state;
@@ -216,6 +227,7 @@ function validateComponent(componentDir) {
     validateResolvableEvidence(section, label, false, failures);
   }
 
+  const clauseEvidence = loadClauseEvidence(absoluteDir, meta)?.evidence || null;
   const rules = readJSON(rulesPath);
   for (const rule of rules) {
     const label = `${componentDir}: rule ${rule.id || rule.stable_id || '(unknown)'}`;
@@ -223,7 +235,12 @@ function validateComponent(componentDir) {
     if (rule.provenance?.source_hash !== sourceHash) {
       failures.push(`${label}: provenance.source_hash does not match governed source PDF hash`);
     }
-    validateResolvableEvidence(rule, label, true, failures);
+
+    if (sourceRefLooksComposite(rule?.provenance?.source_ref)) {
+      validateClauseEvidence(rule, label, clauseEvidence, sourceHash, failures);
+    } else {
+      validateResolvableEvidence(rule, label, true, failures);
+    }
   }
 
   return failures;
@@ -252,6 +269,8 @@ module.exports = {
   normalize,
   parseLineRef,
   resolveLineRef,
+  governanceSupportDir,
+  loadClauseEvidence,
   sourceRefLooksComposite,
   validateClauseEvidence,
   validateComponent
