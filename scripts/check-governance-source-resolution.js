@@ -65,6 +65,68 @@ function lineRefs(record, ruleMode) {
   return Array.isArray(refs) ? refs.filter((value) => typeof value === 'string' && value.trim()) : [];
 }
 
+function sourceRefLooksComposite(sourceRef) {
+  const ref = normalize(sourceRef);
+  if (!ref) return false;
+  return (
+    /\bitems?\s+\d+\s*[-–]\s*\d+/i.test(ref) ||
+    /\bitems?\s+\d+\s*(?:,|and)\s*\d+/i.test(ref) ||
+    /¶\s*\d+\s*[-–]\s*\d+/i.test(ref) ||
+    /\bparagraphs?\s+\d+\s*[-–]\s*\d+/i.test(ref) ||
+    /\b(?:and|&)\s+table\s+\d+/i.test(ref)
+  );
+}
+
+function validateClauseEvidence(rule, label, failures) {
+  const sourceRef = rule?.provenance?.source_ref;
+  if (!sourceRefLooksComposite(sourceRef)) return;
+
+  const clauses = rule?.refs?.requirement_clauses;
+  if (!Array.isArray(clauses) || clauses.length < 2) {
+    failures.push(`${label}: composite source locator ${JSON.stringify(sourceRef)} requires clause-level refs.requirement_clauses evidence or must be split into atomic rules`);
+    return;
+  }
+
+  const ids = new Set();
+  for (const clause of clauses) {
+    const clauseId = normalize(clause?.id);
+    const normalizedRequirement = normalize(clause?.normalized_requirement);
+    const sourceSpan = normalize(clause?.source_span_text);
+    const refs = Array.isArray(clause?.lines) ? clause.lines.filter((value) => typeof value === 'string' && value.trim()) : [];
+    const quotes = Array.isArray(clause?.locators)
+      ? clause.locators.map((locator) => normalize(locator && locator.quote)).filter(Boolean)
+      : [];
+    const clauseLabel = `${label}: clause ${clauseId || '(missing-id)'}`;
+
+    if (!clauseId) failures.push(`${clauseLabel}: missing stable clause id`);
+    else if (ids.has(clauseId)) failures.push(`${clauseLabel}: duplicate clause id`);
+    else ids.add(clauseId);
+
+    if (!normalizedRequirement) failures.push(`${clauseLabel}: missing normalized_requirement`);
+    if (!sourceSpan) failures.push(`${clauseLabel}: missing source_span_text`);
+    if (refs.length === 0) failures.push(`${clauseLabel}: missing exact governed-text line reference`);
+    if (quotes.length === 0) failures.push(`${clauseLabel}: missing exact evidence quote locator`);
+
+    const resolved = [];
+    for (const ref of refs) {
+      const result = resolveLineRef(ref);
+      if (result.error) failures.push(`${clauseLabel}: ${result.error}`);
+      else resolved.push(result);
+    }
+    if (resolved.length === 0) continue;
+
+    const resolvedText = normalize(resolved.map((item) => item.text).join('\n'));
+    for (const quote of quotes) {
+      if (!resolvedText.includes(quote)) {
+        failures.push(`${clauseLabel}: evidence quote is not present in resolved governed-text span`);
+      }
+    }
+    if (sourceSpan && !resolvedText.includes(sourceSpan)) {
+      failures.push(`${clauseLabel}: source_span_text is not present in resolved governed-text span`);
+    }
+  }
+}
+
 function validateResolvableEvidence(record, label, ruleMode, failures) {
   const refs = lineRefs(record, ruleMode);
   const quotes = evidenceQuotes(record, ruleMode);
@@ -100,6 +162,7 @@ function validateResolvableEvidence(record, label, ruleMode, failures) {
     } else if (!resolvedText.includes(sourceSpan)) {
       failures.push(`${label}: source_span_text is not present in resolved governed-text span`);
     }
+    validateClauseEvidence(record, label, failures);
   } else if (resolvedText.length < 20) {
     failures.push(`${label}: resolved section content is not substantive`);
   }
@@ -120,6 +183,13 @@ function validateComponent(componentDir) {
   const meta = readJSON(metaPath);
   const state = meta?.governance_v1?.state;
   if (!GOVERNED_STATES.has(state)) return [];
+
+  if (state === 'VERIFIED' && meta?.governance_v1?.verified !== true) {
+    failures.push(`${componentDir}: VERIFIED state requires governance_v1.verified=true`);
+  }
+  if (state !== 'VERIFIED' && meta?.governance_v1?.verified === true) {
+    failures.push(`${componentDir}: governance_v1.verified=true is invalid outside VERIFIED state`);
+  }
 
   const sourceHash = meta?.audit_hashes?.source_pdf_sha256;
   if (!/^[a-f0-9]{64}$/.test(String(sourceHash || ''))) {
@@ -172,5 +242,7 @@ module.exports = {
   normalize,
   parseLineRef,
   resolveLineRef,
+  sourceRefLooksComposite,
+  validateClauseEvidence,
   validateComponent
 };
