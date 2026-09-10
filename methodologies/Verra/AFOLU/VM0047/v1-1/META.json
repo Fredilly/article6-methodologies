@@ -21,85 +21,38 @@
     "rules.rich_sha256": "97ea35d710723fb4ebf6ec843db83b938fcb775bd4cec0aaf1b2b676f3143c2a"
   },
   "files": [
-    {
-      "path": "sections.json",
-      "sha256": "778882f2a5da92616817d2b3bb76a38d51abd11087f3fa4556ac1d0921ed24a0"
-    },
-    {
-      "path": "sections.rich.json",
-      "sha256": "bc74bca55ef236c8c94955ddcfba81d5ce754b6828617bdc0ed1690a80225ecd"
-    },
-    {
-      "path": "rules.json",
-      "sha256": "bfdbb9f5e282260e2baeaacc82dce3f2bedc494a20f0ab91c11a59356c6d1c32"
-    },
-    {
-      "path": "rules.rich.json",
-      "sha256": "97ea35d710723fb4ebf6ec843db83b938fcb775bd4cec0aaf1b2b676f3143c2a"
-    },
-    {
-      "path": "governance/Verra/AFOLU/VM0047/v1-1/equations.governance-v1.json",
-      "sha256": "8ba634223a168d6e2078a9212a12933fb34485d597cf768d36f1a6d89c0cd249"
-    },
-    {
-      "path": "governance/Verra/AFOLU/VM0047/v1-1/parameters.governance-v1.json",
-      "sha256": "838297f52292e5645ad5e97f9aa4f72544d1571d43203eff76a95b101df9aad4"
-    },
-    {
-      "path": "governance/Verra/AFOLU/VM0047/v1-1/dependencies.governance-v1.json",
-      "sha256": "de2fab1678711a78b6a862ee38151dcb37b4f978b069f5b4ca8b041aef4f0311"
-    },
-    {
-      "path": "governance/Verra/AFOLU/VM0047/v1-1/version-diff-from-v1-0.json",
-      "sha256": "84c97df8ed10aeb771ff876ad30fe971473d609a2c0cf0365ecbd56b26420974"
-    },
-    {
-      "path": "governance/Verra/AFOLU/VM0047/v1-1/rules.governance-v1.index.json",
-      "sha256": "c1ab44d0128d3a87c74947d344b9acec564abf5bedb8552810f286f0ea75050f"
-    }
+    {"path":"sections.json","sha256":"778882f2a5da92616817d2b3bb76a38d51abd11087f3fa4556ac1d0921ed24a0"},
+    {"path":"sections.rich.json","sha256":"bc74bca55ef236c8c94955ddcfba81d5ce754b6828617bdc0ed1690a80225ecd"},
+    {"path":"rules.json","sha256":"bfdbb9f5e282260e2baeaacc82dce3f2bedc494a20f0ab91c11a59356c6d1c32"},
+    {"path":"rules.rich.json","sha256":"97ea35d710723fb4ebf6ec843db83b938fcb775bd4cec0aaf1b2b676f3143c2a"},
+    {"path":"governance/Verra/AFOLU/VM0047/v1-1/equations.governance-v1.json","sha256":"8ba634223a168d6e2078a9212a12933fb34485d597cf768d36f1a6d89c0cd249"},
+    {"path":"governance/Verra/AFOLU/VM0047/v1-1/parameters.governance-v1.json","sha256":"838297f52292e5645ad5e97f9aa4f72544d1571d43203eff76a95b101df9aad4"},
+    {"path":"governance/Verra/AFOLU/VM0047/v1-1/dependencies.governance-v1.json","sha256":"de2fab1678711a78b6a862ee38151dcb37b4f978b069f5b4ca8b041aef4f0311"},
+    {"path":"governance/Verra/AFOLU/VM0047/v1-1/version-diff-from-v1-0.json","sha256":"84c97df8ed10aeb771ff876ad30fe971473d609a2c0cf0365ecbd56b26420974"},
+    {"path":"governance/Verra/AFOLU/VM0047/v1-1/rules.governance-v1.index.json","sha256":"c1ab44d0128d3a87c74947d344b9acec564abf5bedb8552810f286f0ea75050f"}
   ],
   "provenance": {
     "author": "Article6 Governance v1",
     "date": "2026-09-09",
     "source_pdfs": [
-      {
-        "doc": "Verra/VM0047@v1-1",
-        "kind": "pdf",
-        "path": "tools/Verra/VM0047/v1-1/source.pdf",
-        "sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
-        "size": 1171574
-      }
+      {"doc":"Verra/VM0047@v1-1","kind":"pdf","path":"tools/Verra/VM0047/v1-1/source.pdf","sha256":"2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d","size":1171574}
     ]
   },
   "references": {
     "tools": [
-      {
-        "doc": "Verra/VM0047@v1-1",
-        "kind": "pdf",
-        "path": "tools/Verra/VM0047/v1-1/source.pdf",
-        "sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
-        "size": 1171574,
-        "url": "https://verra.org/methodologies/vm0047-afforestation-reforestation-and-revegetation-v1-1/"
-      }
+      {"doc":"Verra/VM0047@v1-1","kind":"pdf","path":"tools/Verra/VM0047/v1-1/source.pdf","sha256":"2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d","size":1171574,"url":"https://verra.org/methodologies/vm0047-afforestation-reforestation-and-revegetation-v1-1/"}
     ]
   },
   "relationships": {
-    "version": {
-      "family": "Verra.AFOLU.VM0047",
-      "lineage": [
-        "v1-0",
-        "v1-1"
-      ],
-      "previous_version": "v1-0",
-      "next_version": null
-    }
+    "version": {"family":"Verra.AFOLU.VM0047","lineage":["v1-0","v1-1"],"previous_version":"v1-0","next_version":null}
   },
   "governance_v1": {
-    "state": "VERIFIED",
-    "verified": true,
-    "production_corpus": true,
-    "blockers": [],
-    "migration_note": "VM0047 v1.1 is VERIFIED with governed-text-resolvable section content and exact rule evidence spans under governance-v1 source-resolution invariants."
+    "state": "PROVENANCE_COMPLETE",
+    "verified": false,
+    "production_corpus": false,
+    "source_resolution_contract": "governed-text-v1",
+    "blockers": ["production_retrieval_retest"],
+    "migration_note": "Composite-rule evidence repair is complete and VM0047 v1.1 is now at PROVENANCE_COMPLETE. Clause-level governed-source evidence for all composite rules must pass the strengthened source-resolution gate, followed by fresh production retrieval execution, before VERIFIED is restored."
   },
   "external_dependencies": {
     "status": "governed_dependency_graph",
@@ -108,6 +61,6 @@
   },
   "governance_support": {
     "root": "governance/Verra/AFOLU/VM0047/v1-1",
-    "purpose": "Non-runtime governance artifacts: dependencies, equations, parameters, indexes, and version comparison evidence."
+    "purpose": "Non-runtime governance artifacts: dependencies, equations, parameters, indexes, version comparison evidence, and clause-level source evidence."
   }
 }

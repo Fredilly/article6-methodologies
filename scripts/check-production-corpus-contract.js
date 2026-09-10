@@ -2,6 +2,8 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
+const { validateComponent } = require('./check-governance-source-resolution');
 
 const CORE = new Set(['META.json','sections.json','sections.rich.json','rules.json','rules.rich.json']);
 const LEGACY_CORE = new Set(['META.json','sections.json','rules.json']);
@@ -59,7 +61,33 @@ for (const dir of walkRuntimeDirs('methodologies')) {
     console.error(`✖ runtime methodology ${normalized} missing required files: ${missing.join(', ')}`);
     failed = true;
   }
+
+  // Promotion safety: every governance-v1 package at a provenance-complete or
+  // stronger state must satisfy exact source-resolution and clause-level
+  // evidence invariants. Lower states remain in the runtime tree but cannot
+  // accidentally inherit VERIFIED semantics.
+  if (usesGovernanceV1) {
+    const provenanceFailures = validateComponent(normalized);
+    if (provenanceFailures.length) {
+      provenanceFailures.forEach((failure) => console.error(`✖ ${failure}`));
+      failed = true;
+    }
+  }
 }
 
 if (failed) process.exit(1);
-console.log('✓ current runtime methodology packages are clean; Governance-v1/rich packages satisfy the five-file contract');
+
+// Exercise the actual production HTTP adapter on every corpus-contract run.
+// The check derives expected VERIFIED behavior from META, so it proves both
+// explicit not-verified behavior during remediation and production retrieval
+// behavior after promotion.
+try {
+  execFileSync(process.execPath, ['scripts/check-production-structured-retrieval.js'], {
+    cwd: process.cwd(),
+    stdio: 'inherit'
+  });
+} catch (err) {
+  process.exit(err && Number.isInteger(err.status) ? err.status : 1);
+}
+
+console.log('✓ current runtime methodology packages are clean; Governance-v1/rich packages satisfy the five-file contract, promotion provenance gate, and production structured retrieval contract');

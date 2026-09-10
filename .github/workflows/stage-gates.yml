@@ -123,6 +123,8 @@ jobs:
         run: node scripts/validate-offline.js
       - name: Production corpus contract
         run: node scripts/check-production-corpus-contract.js
+      - name: VM0047 v1.1 rule evidence atomicity
+        run: node scripts/audit-rule-evidence-atomicity.js methodologies/Verra/AFOLU/VM0047/v1-1
       - name: Previous versions lock drift (Agriculture)
         run: npm run previous:drift:agriculture
       - name: Previous versions lock drift (Forestry)

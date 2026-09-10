@@ -7,6 +7,8 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const LINE_REF = /^(.+)#L(\d+)-L(\d+)$/;
 const GOVERNED_STATES = new Set(['PROVENANCE_COMPLETE', 'RETRIEVAL_TESTED', 'VERIFIED']);
+const SOURCE_RESOLUTION_CONTRACT = 'governed-text-v1';
+const CLAUSE_EVIDENCE_FILE = 'rule-evidence-clauses.json';
 
 function readJSON(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -14,6 +16,10 @@ function readJSON(file) {
 
 function normalize(text) {
   return String(text || '')
+    // pdftotext may preserve a source hyphen at a physical line break, e.g.
+    // "10-\n hectare". Canonicalize that deterministic layout artifact before
+    // collapsing whitespace; this does not add or fuzzy-match source text.
+    .replace(/-\s+/g, '-')
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -52,6 +58,21 @@ function resolveLineRef(ref) {
   };
 }
 
+function governanceSupportDir(componentDir, meta) {
+  const configured = meta?.governance_support?.root;
+  if (configured) return path.resolve(ROOT, configured);
+  const rel = path.relative(path.join(ROOT, 'methodologies'), componentDir);
+  return path.resolve(ROOT, 'governance', rel);
+}
+
+function loadClauseEvidence(componentDir, meta) {
+  const supportDir = governanceSupportDir(componentDir, meta);
+  const evidencePath = path.join(supportDir, CLAUSE_EVIDENCE_FILE);
+  if (!fs.existsSync(evidencePath)) return null;
+  const evidence = readJSON(evidencePath);
+  return { evidencePath, evidence };
+}
+
 function evidenceQuotes(record, ruleMode) {
   const locators = ruleMode ? record.refs?.locators : record.locators;
   if (!Array.isArray(locators)) return [];
@@ -63,6 +84,98 @@ function evidenceQuotes(record, ruleMode) {
 function lineRefs(record, ruleMode) {
   const refs = ruleMode ? record.refs?.lines : record.provenance?.lines;
   return Array.isArray(refs) ? refs.filter((value) => typeof value === 'string' && value.trim()) : [];
+}
+
+function sourceRefLooksComposite(sourceRef) {
+  const ref = normalize(sourceRef);
+  if (!ref) return false;
+  return (
+    /\bitems?\s+\d+\s*[-–]\s*\d+/i.test(ref) ||
+    /\bitems?\s+\d+\s*(?:,|and)\s*\d+/i.test(ref) ||
+    /¶\s*\d+\s*[-–]\s*\d+/i.test(ref) ||
+    /\bparagraphs?\s+\d+\s*[-–]\s*\d+/i.test(ref) ||
+    /\b(?:and|&)\s+table\s+\d+/i.test(ref) ||
+    /\bitems?\s+\d+\s*[-–]\s*\d+\([a-z]\)/i.test(ref)
+  );
+}
+
+function orderedEvidenceFragments(sourceSpan) {
+  const normalized = normalize(sourceSpan);
+  if (!normalized) return [];
+
+  // Preserve exact text inside each fragment. Splitting only permits repository
+  // page furniture or footnotes to occur between already-exact source clauses.
+  return normalized
+    .split(/(?<=[.!?;])\s+|\s+(?=[a-z]\))/i)
+    .map((part) => normalize(part))
+    .filter((part) => part.length >= 20);
+}
+
+function containsOrderedEvidence(sourceText, sourceSpan) {
+  const source = normalize(sourceText);
+  const span = normalize(sourceSpan);
+  if (!span) return false;
+  if (source.includes(span)) return true;
+
+  const fragments = orderedEvidenceFragments(span);
+  if (fragments.length < 2) return false;
+
+  let cursor = 0;
+  for (const fragment of fragments) {
+    const index = source.indexOf(fragment, cursor);
+    if (index < 0) return false;
+    cursor = index + fragment.length;
+  }
+  return true;
+}
+
+function validateClauseEvidence(rule, label, clauseBundle, expectedSourceHash, failures) {
+  const sourceRef = rule?.provenance?.source_ref;
+  if (!sourceRefLooksComposite(sourceRef)) return;
+
+  if (!clauseBundle || clauseBundle.contract !== SOURCE_RESOLUTION_CONTRACT) {
+    failures.push(`${label}: composite source locator ${JSON.stringify(sourceRef)} requires governed clause evidence under ${CLAUSE_EVIDENCE_FILE}`);
+    return;
+  }
+  if (clauseBundle.source_pdf_sha256 !== expectedSourceHash) {
+    failures.push(`${label}: clause evidence source hash does not match governed source PDF hash`);
+    return;
+  }
+
+  const sourcePath = clauseBundle.source_text_path;
+  const absoluteSource = path.resolve(ROOT, String(sourcePath || ''));
+  if (!sourcePath || !absoluteSource.startsWith(ROOT + path.sep) || !fs.existsSync(absoluteSource)) {
+    failures.push(`${label}: governed clause evidence source text path is missing or invalid`);
+    return;
+  }
+
+  const clauses = clauseBundle.rules?.[rule.id || rule.stable_id];
+  if (!Array.isArray(clauses) || clauses.length < 2) {
+    failures.push(`${label}: composite source locator ${JSON.stringify(sourceRef)} requires at least two reviewed requirement clauses`);
+    return;
+  }
+
+  const sourceText = fs.readFileSync(absoluteSource, 'utf8');
+  const ids = new Set();
+  for (const clause of clauses) {
+    const clauseId = normalize(clause?.id);
+    const normalizedRequirement = normalize(clause?.normalized_requirement);
+    const sourceSpan = normalize(clause?.source_span_text);
+    const clauseLabel = `${label}: clause ${clauseId || '(missing-id)'}`;
+
+    if (!clauseId) failures.push(`${clauseLabel}: missing stable clause id`);
+    else if (ids.has(clauseId)) failures.push(`${clauseLabel}: duplicate clause id`);
+    else ids.add(clauseId);
+
+    if (!normalizedRequirement) failures.push(`${clauseLabel}: missing normalized_requirement`);
+    if (!sourceSpan) {
+      failures.push(`${clauseLabel}: missing source_span_text`);
+      continue;
+    }
+    if (!containsOrderedEvidence(sourceText, sourceSpan)) {
+      failures.push(`${clauseLabel}: source_span_text is not present as exact or ordered canonical evidence in governed source text`);
+    }
+  }
 }
 
 function validateResolvableEvidence(record, label, ruleMode, failures) {
@@ -112,14 +225,26 @@ function validateComponent(componentDir) {
   const rulesPath = path.join(absoluteDir, 'rules.rich.json');
   const failures = [];
 
-  for (const required of [metaPath, sectionsPath, rulesPath]) {
+  if (!fs.existsSync(metaPath)) return failures;
+  const meta = readJSON(metaPath);
+  const governance = meta?.governance_v1 || {};
+
+  if (governance.source_resolution_contract !== SOURCE_RESOLUTION_CONTRACT) return failures;
+
+  const state = governance.state;
+  if (!GOVERNED_STATES.has(state)) return failures;
+
+  for (const required of [sectionsPath, rulesPath]) {
     if (!fs.existsSync(required)) failures.push(`${path.relative(ROOT, absoluteDir)}: missing ${path.basename(required)}`);
   }
   if (failures.length) return failures;
 
-  const meta = readJSON(metaPath);
-  const state = meta?.governance_v1?.state;
-  if (!GOVERNED_STATES.has(state)) return [];
+  if (state === 'VERIFIED' && governance.verified !== true) {
+    failures.push(`${componentDir}: VERIFIED state requires governance_v1.verified=true`);
+  }
+  if (state !== 'VERIFIED' && governance.verified === true) {
+    failures.push(`${componentDir}: governance_v1.verified=true is invalid outside VERIFIED state`);
+  }
 
   const sourceHash = meta?.audit_hashes?.source_pdf_sha256;
   if (!/^[a-f0-9]{64}$/.test(String(sourceHash || ''))) {
@@ -136,6 +261,7 @@ function validateComponent(componentDir) {
     validateResolvableEvidence(section, label, false, failures);
   }
 
+  const clauseEvidence = loadClauseEvidence(absoluteDir, meta)?.evidence || null;
   const rules = readJSON(rulesPath);
   for (const rule of rules) {
     const label = `${componentDir}: rule ${rule.id || rule.stable_id || '(unknown)'}`;
@@ -143,7 +269,12 @@ function validateComponent(componentDir) {
     if (rule.provenance?.source_hash !== sourceHash) {
       failures.push(`${label}: provenance.source_hash does not match governed source PDF hash`);
     }
-    validateResolvableEvidence(rule, label, true, failures);
+
+    if (sourceRefLooksComposite(rule?.provenance?.source_ref)) {
+      validateClauseEvidence(rule, label, clauseEvidence, sourceHash, failures);
+    } else {
+      validateResolvableEvidence(rule, label, true, failures);
+    }
   }
 
   return failures;
@@ -172,5 +303,11 @@ module.exports = {
   normalize,
   parseLineRef,
   resolveLineRef,
+  governanceSupportDir,
+  loadClauseEvidence,
+  sourceRefLooksComposite,
+  orderedEvidenceFragments,
+  containsOrderedEvidence,
+  validateClauseEvidence,
   validateComponent
 };
