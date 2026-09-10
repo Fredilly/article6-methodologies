@@ -2,6 +2,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 const { validateComponent } = require('./check-governance-source-resolution');
 
 const CORE = new Set(['META.json','sections.json','sections.rich.json','rules.json','rules.rich.json']);
@@ -75,4 +76,18 @@ for (const dir of walkRuntimeDirs('methodologies')) {
 }
 
 if (failed) process.exit(1);
-console.log('✓ current runtime methodology packages are clean; Governance-v1/rich packages satisfy the five-file contract and promotion provenance gate');
+
+// Exercise the actual production HTTP adapter on every corpus-contract run.
+// The check derives expected VERIFIED behavior from META, so it proves both
+// explicit not-verified behavior during remediation and production retrieval
+// behavior after promotion.
+try {
+  execFileSync(process.execPath, ['scripts/check-production-structured-retrieval.js'], {
+    cwd: process.cwd(),
+    stdio: 'inherit'
+  });
+} catch (err) {
+  process.exit(err && Number.isInteger(err.status) ? err.status : 1);
+}
+
+console.log('✓ current runtime methodology packages are clean; Governance-v1/rich packages satisfy the five-file contract, promotion provenance gate, and production structured retrieval contract');
