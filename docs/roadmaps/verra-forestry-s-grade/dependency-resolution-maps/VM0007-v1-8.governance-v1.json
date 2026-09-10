@@ -1,45 +1,28 @@
 {
   "methodology": "Verra/VM0007@v1-8",
-  "migration_status": "VERSION_IDENTITIES_NORMALIZED_RELATIONSHIPS_PENDING_SOURCE_REVIEW",
+  "migration_status": "DEPENDENCY_EDGE_PROVENANCE_COMPLETE",
+  "authoritative_governance_artifact": "governance/Verra/AFOLU/VM0007/v1-8/dependencies.governance-v1.json",
+  "validator": "scripts/check-vm0007-dependency-provenance.js",
   "rules": {
-    "do_not_infer_relationship": true,
+    "do_not_infer_version_pins": true,
     "do_not_substitute_newer_versions": true,
-    "unknown_is_valid": true
+    "governed_support_version_is_not_source_version_pin": true,
+    "unknown_is_valid_until_source_review": true
   },
-  "dependencies": [
-    {"component":"Verra/VMD0001","version":"v1-1","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VMD0002","version":"v1-0","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VMD0003","version":"v1-0","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VMD0004","version":"v1-0","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VMD0005","version":"v1-1","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VMD0006","version":"v1-4","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VMD0007","version":"v3-3","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VMD0009","version":"v1-3","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VMD0010","version":"v1-2","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VMD0015","version":"v2-2","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VMD0016","version":"v1-2","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VMD0017","version":"v2-2","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VMD0042","version":"v1-1","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VMD0046","version":"v1-1","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VMD0050","version":"v1-0","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VMD0051","version":"v1-0","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VMD0052","version":"v1-0","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VT0001","version":"v3-0","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/T-BAR","version":"v4-2","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"},
-    {"component":"Verra/VM0047","version":"v1-0","resolution_status":"repo_resolved","relationship":"UNKNOWN","applicability":"UNKNOWN"}
+  "closure": {
+    "external_reference_edges": 20,
+    "incorporated_by_reference_edges": 19,
+    "informative_example_edges": 1,
+    "unresolved_relationship_edges": 0,
+    "unresolved_source_version_pins": 0,
+    "embedded_internal_procedures": 1,
+    "embedded_internal_procedure_ids": ["T-SIG"]
+  },
+  "source_review_findings": [
+    "VM0007 dependency references are governed at component identity level unless the methodology source itself pins a version; local exact-version PDFs are support artifacts and are not silently promoted into source version semantics.",
+    "VMD0007/BL-UP is incorporated by reference when the relevant unplanned-deforestation rule applies; the source rule does not establish v3.3 as a VM0007-pinned version.",
+    "VM0047 is an informative example of an appropriate ARR methodology in the source, not a mandatory VM0047 dependency.",
+    "T-SIG resolves to the methodology's internal Appendix 1 significance procedure and is not modeled as a standalone external component dependency."
   ],
-  "embedded_references": [
-    {
-      "id":"T-SIG",
-      "resolution":"VM0007 Appendix 1",
-      "component_dependency":false,
-      "note":"Resolved as embedded methodology content in the legacy roadmap; do not invent a standalone component/version unless authoritative evidence establishes one."
-    }
-  ],
-  "next_required_work": [
-    "For each dependency, cite the exact VM0007 source anchor establishing the dependency.",
-    "Classify relationship as MANDATORY, CONDITIONAL, OPTIONAL, INFORMATIVE, or INCORPORATED_BY_REFERENCE only from authoritative source evidence.",
-    "Record applicability and provenance for each edge.",
-    "Promote DEPENDENCY_COMPLETE only after all mandatory and conditional edges are source-reviewed."
-  ]
+  "merge_gate": "The authoritative governance artifact and its validator must pass the repository stage-gates before this migration is mergeable."
 }
