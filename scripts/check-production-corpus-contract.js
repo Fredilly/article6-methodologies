@@ -2,6 +2,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const { validateComponent } = require('./check-governance-source-resolution');
 
 const CORE = new Set(['META.json','sections.json','sections.rich.json','rules.json','rules.rich.json']);
 const LEGACY_CORE = new Set(['META.json','sections.json','rules.json']);
@@ -59,7 +60,19 @@ for (const dir of walkRuntimeDirs('methodologies')) {
     console.error(`✖ runtime methodology ${normalized} missing required files: ${missing.join(', ')}`);
     failed = true;
   }
+
+  // Promotion safety: every governance-v1 package at a provenance-complete or
+  // stronger state must satisfy exact source-resolution and clause-level
+  // evidence invariants. Lower states remain in the runtime tree but cannot
+  // accidentally inherit VERIFIED semantics.
+  if (usesGovernanceV1) {
+    const provenanceFailures = validateComponent(normalized);
+    if (provenanceFailures.length) {
+      provenanceFailures.forEach((failure) => console.error(`✖ ${failure}`));
+      failed = true;
+    }
+  }
 }
 
 if (failed) process.exit(1);
-console.log('✓ current runtime methodology packages are clean; Governance-v1/rich packages satisfy the five-file contract');
+console.log('✓ current runtime methodology packages are clean; Governance-v1/rich packages satisfy the five-file contract and promotion provenance gate');
