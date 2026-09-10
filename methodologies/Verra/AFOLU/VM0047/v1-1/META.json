@@ -33,7 +33,7 @@
   ],
   "provenance": {
     "author": "Article6 Governance v1",
-    "date": "2026-09-09",
+    "date": "2026-09-10",
     "source_pdfs": [
       {"doc":"Verra/VM0047@v1-1","kind":"pdf","path":"tools/Verra/VM0047/v1-1/source.pdf","sha256":"2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d","size":1171574}
     ]
@@ -47,12 +47,12 @@
     "version": {"family":"Verra.AFOLU.VM0047","lineage":["v1-0","v1-1"],"previous_version":"v1-0","next_version":null}
   },
   "governance_v1": {
-    "state": "PROVENANCE_COMPLETE",
-    "verified": false,
-    "production_corpus": false,
+    "state": "VERIFIED",
+    "verified": true,
+    "production_corpus": true,
     "source_resolution_contract": "governed-text-v1",
-    "blockers": ["production_retrieval_retest"],
-    "migration_note": "Composite-rule evidence repair is complete and VM0047 v1.1 is now at PROVENANCE_COMPLETE. Clause-level governed-source evidence for all composite rules must pass the strengthened source-resolution gate, followed by fresh production retrieval execution, before VERIFIED is restored."
+    "blockers": [],
+    "migration_note": "VM0047 v1.1 is VERIFIED after clause-level evidence repair for all composite rules, strengthened governed-source resolution and atomicity validation, and fresh structured production retrieval execution."
   },
   "external_dependencies": {
     "status": "governed_dependency_graph",
