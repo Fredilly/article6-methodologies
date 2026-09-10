@@ -7,6 +7,7 @@ const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
 const METHOD_DIR = path.join(ROOT, 'methodologies', 'Verra', 'AFOLU', 'VM0007', 'v1-8');
+const GOVERNANCE_DIR = path.join(ROOT, 'governance', 'Verra', 'AFOLU', 'VM0007', 'v1-8');
 
 function readJSON(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -62,7 +63,7 @@ function main() {
       assert.equal(entry.local_artifact_present, true, `${toolId} must be locally present`);
     } else {
       assert.equal(entry.status, 'external_unencoded', `VM0007 external dependency ${toolId} must stay external_unencoded`);
-      assert.equal(entry.local_artifact_present, false, `VM0007 external dependency ${toolId} must not claim a local artifact`);
+      assert.equal(entry.local_artifact_present, false, `VM0007 external dependency ${toolId} must not claim local artifact presence`);
     }
   }
 
@@ -131,9 +132,9 @@ function main() {
     }
   }
 
-  const inventory = readJSON(path.join(METHOD_DIR, 'blocked-external-dependencies.json'));
+  const inventory = readJSON(path.join(GOVERNANCE_DIR, 'blocked-external-dependencies.json'));
   assert.equal(inventory.methodology, 'Verra/VM0007@v1-8', 'inventory methodology must match');
-  assert.equal(inventory.status, 'external_unencoded', 'inventory status must be external_unencoded');
+  assert.equal(inventory.status, 'no_active_blockers', 'inventory status must reflect that no rules remain blocked');
   assert.equal(inventory.blocked_rule_count, 0, 'inventory must report 0 blocked rules at S-grade');
   assert.equal(inventory.blocked_rules.length, 0, 'inventory must contain 0 blocked rule entries at S-grade');
   assert.equal(inventory.blocked_rules.length, draftRules.length, 'inventory must cover every draft_unverified rule');
