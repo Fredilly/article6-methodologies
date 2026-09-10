@@ -45,6 +45,7 @@
   "provenance": {
     "runtime_rule_file": "methodologies/Verra/AFOLU/VM0007/v1-8/rules.rich.json",
     "runtime_section_file": "methodologies/Verra/AFOLU/VM0007/v1-8/sections.rich.json",
+    "migration_roadmap": "docs/roadmaps/verra-forestry-s-grade/dependency-resolution-maps/VM0007-v1-8.governance-v1.json",
     "validator": "scripts/check-vm0007-dependency-provenance.js",
     "version_semantics_note": "Exact governed-support versions document the local evidence artifact used for review. They are not treated as versions pinned by VM0007 unless the VM0007 source itself proves a version pin."
   }
