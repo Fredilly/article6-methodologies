@@ -1,0 +1,1046 @@
+VCS Methodology
+
+
+
+
+VM0048
+
+REDUCING EMISSIONS FROM
+DEFORESTATION AND FOREST
+DEGRADATION
+
+
+
+
+                                 Version 1.0
+
+                           27 November 2023
+
+                           Sectoral Scope 14
+                                                                                           VM0048, v1.0
+
+
+Verra developed version 1.0 of this methodology with support from Tim Pearson (Green Collar), Kevin R.
+Brown (Wildlife Conservation Society), Simon Koenig (Climate Focus), Till Neeff, Sarah M. Walker (Wildlife
+Conservation Society), Lucio Pedroni (Carbon Decisions International). Manuel Estrada made significant
+contributions.
+                                                                                                                                   VM0048, v1.0
+
+
+
+
+CONTENTS
+1          SOURCES ............................................................................................................... 1
+2          SUMMARY DESCRIPTION OF THE METHODOLOGY.................................................... 2
+3          DEFINITIONS .......................................................................................................... 4
+     3.1      Definitions .............................................................................................................................. 4
+     3.2      Acronyms................................................................................................................................ 4
+
+4          APPLICABILITY CONDITIONS ................................................................................... 5
+5          PROJECT BOUNDARY .............................................................................................. 5
+     5.1      Geographic Boundaries .......................................................................................................... 5
+     5.2      Carbon Pools .......................................................................................................................... 5
+     5.3      Sources of GHG Emissions...................................................................................................... 6
+
+6          BASELINE SCENARIO .............................................................................................. 8
+     6.1      Determination of the Most Plausible Baseline Scenario .......................................................... 8
+     6.2      Projects Implemented in Jurisdictional REDD Programs or Where a Government has
+              Established a REDD Baseline................................................................................................ 10
+     6.3      Baseline Validity ................................................................................................................... 10
+
+7          ADDITIONALITY .................................................................................................... 11
+8          QUANTIFICATION OF GHG EMISSION REDUCTIONS................................................. 11
+     8.1      Baseline Emissions............................................................................................................... 11
+     8.2      Project Emissions ................................................................................................................. 12
+     8.3      Leakage ............................................................................................................................... 12
+     8.4      Net GHG Emission Reductions .............................................................................................. 13
+
+9          MONITORING ....................................................................................................... 14
+     9.1      Data and Parameters Available at Validation ......................................................................... 14
+     9.2      Data and Parameters Monitored ........................................................................................... 14
+     9.3      Description of the Monitoring Plan ........................................................................................ 14
+
+10         REFERENCES ....................................................................................................... 18
+APPENDIX 1: TESTING SIGNIFICANCE OF GHG EMISSIONS ................................................ 19
+DOCUMENT HISTORY ...................................................................................................... 21
+                                                                                                 VM0048, v1.0
+
+
+
+
+1 SOURCES
+        This methodology is based on the VCS Jurisdictional and Nested REDD+ (JNR) Framework v4.0
+        and the following methodologies:
+
+        •    VM0006 Methodology for Carbon Accounting for Mosaic and Landscape-scale REDD
+             Projects, v2.2
+
+        •    VM0007 REDD+ Methodology Framework (REDD+ MF), v1.6
+
+        •    VM0009 Methodology for Avoided Ecosystem Conversion, v3.0
+
+        •    VM0015 Methodology for Avoided Unplanned Deforestation, v1.1
+
+        •    VM0037 Methodology for Implementation of REDD+ Activities in Landscapes Affected by
+             Mosaic Deforestation and Degradation, v1.0
+
+        This methodology uses the latest versions of the following modules and tools:
+
+        •    Activity-type accounting modules:
+
+                 o    VMD0055 Estimation of Emissions Reductions from Avoiding Unplanned
+                      Deforestation (AUDef)
+
+                 o    Other activity-type accounting modules covering planned deforestation and
+                      unplanned degradation or other REDD activities not covered in AUDef (e.g., Avoiding
+                      Planned Deforestation, APDef, and Avoiding Unplanned Forest Degradation, AUDeg)
+
+        •    Tools:
+
+                 o    VCS AFOLU Non-Permanence Risk Tool
+
+                 o    VCS VT0001 Tool for the Demonstration and Assessment of Additionality in VCS
+                      AFOLU Project Activities
+
+                 o    CDM Methodological Tool: Estimation of Direct N2O Emission from Nitrogen
+                      Fertilization (E-NA)
+
+        This methodology uses the estimation procedures described in the following modules for
+        estimating carbon stocks in relevant pools, leakage, direct emissions and monitoring: 1
+
+             •   VMD0001 Estimation of Carbon Stocks in Above- and Belowground Biomass in Live Tree
+                 and Non-tree Pools (CP-AB)
+
+
+
+1 Where these modules refer to external documents (e.g., IPCC guidelines) and such documents are updated, the
+
+  most recent version of the document must be used.
+
+                                                                                                                1
+                                                                                     VM0048, v1.0
+
+
+      •    VMD0002 Estimation of Carbon Stocks in the Dead Wood Pool (CP-D)
+
+      •    VMD0003 Estimation of Carbon Stocks in the Litter Pool (CP-L)
+
+      •    VMD0004 Estimation of Carbon Stocks in the Soil Organic Carbon Pool (CP-S)
+
+      •    VMD0005 Estimation of Carbon Stocks in the Long-term Wood Products Pool (CP-W)
+
+      •    VMD0011 Estimation of Emissions from Market-effects (LK-ME)
+
+      •    VMD0013 Estimation of Greenhouse Gas Emissions from Biomass and Peat Burning (E–
+           BPB)
+
+      •    VMD0014 Estimation of Emissions from Fossil Fuel Combustion (E-FFC)
+
+      •    VMD0016 Methods for Stratification of the Project Area (X-STR)
+
+
+
+
+2 SUMMARY DESCRIPTION OF THE
+  METHODOLOGY
+          Additionality and Crediting Method
+
+   Additionality          Project Method
+
+   Crediting Baseline     Project Method
+
+
+
+  The modules and tools referenced in this document apply to project activities that reduce
+  emissions from unplanned deforestation (UDef). In future iterations, additional modules will be
+  added to address activities that reduce emissions from planned deforestation (PDef) and
+  unplanned forest degradation (UDeg). For avoiding planned forest degradation, see the improved
+  forest management category of methodologies.
+
+  Reference to this methodology and the modules used to construct the project-specific
+  methodology must be given in the project description. The project proponent must justify the
+  choice of modules in the project description.
+
+  Table 1 lists the modules and tools, indicating where the use of modules/tools is mandatory,
+  optional or not applicable. Appendix 1 of this methodology must be used to justify the omission of
+  carbon pools and emission sources.
+
+
+
+
+                                                                                                  2
+                                                                                             VM0048, v1.0
+
+
+Table 1: Determination of where module/tool use is mandatory (M), optional (O) or to be
+         determined (TBD) for all project activities covered by this methodology
+
+
+                                     Project Activities
+ Module/Tool
+                              UDef        PDef       UDeg
+
+ AUDef                          M           O             O
+ APDef                           O          M             O
+ AUDeg                           O          O          M
+ AFOLU Non-Permanence
+                                M          TBD        TBD
+ Risk Tool
+ E-NA                          (m)1        TBD        TBD
+ CP-AB                          M          TBD        TBD
+ CP-D                          (m)2        TBD        TBD
+ CP-L                            O         TBD        TBD
+ CP-S                            O         TBD        TBD
+ CP-W                          (m)3        TBD        TBD
+ LK-ME                         (m)3        TBD        TBD
+ E-BPB                          M          TBD        TBD
+ E-FFC                           O         TBD        TBD
+ X-STR                          M          TBD        TBD
+
+
+TABLE NOTES
+ AUDef   VMD0055 Estimation of Emissions from Avoiding Unplanned Deforestation
+ APDef   VMD00XX Estimation of Emissions from Avoiding Planned Deforestation (under development)
+ AUDeg   VMD00XX Estimation of Emissions from Avoiding Unplanned Forest Degradation (under
+         development)
+ M       Fully mandatory for the given project activity (i.e., the indicated modules and tools must be
+         used)
+ O       Fully optional for the given project activity (i.e., the indicated pools and sources may be included
+         or excluded as decided by the project, but where they are included in the baseline, they must
+         also be included in the project scenario)
+ (m)1    Mandatory for the given project activity where leakage prevention activities include increases in
+         the use of fertilizers
+ (m)2    Mandatory for the given project activity where this carbon pool is greater in the baseline (post-
+         deforestation/degradation) than project scenario and significant; otherwise may be
+         conservatively omitted
+ (m)3    Mandatory for the given project activity where the process of deforestation involves timber
+         harvesting, fuel wood collection and/or charcoal production for commercial markets
+
+
+
+
+                                                                                                             3
+                                                                                          VM0048, v1.0
+
+
+
+3 DEFINITIONS
+3.1   Definitions
+      In addition to the definitions set out in the VCS Program document Program Definitions and
+      additional definitions in specific modules, the following definitions apply to this methodology and
+      any of the modules used.
+
+      Activity data (AD)
+      Data on the magnitude of a human activity that results in emissions or removals taking place
+      during a given period of time
+
+      Baseline validity period
+      The period of time for which a baseline is considered valid, as set out in the VCS Standard
+
+      Forest
+      In addition to the definition set out in the VCS Program Definitions and the requirements of the
+      VCS Methodology Requirements, for this methodology, “forest” must include woody vegetation
+      with a canopy cover of between 10 and 30 percent, as used in the relevant country’s
+      international reporting to the UNFCCC, or as otherwise officially elected as an applicable
+      definition for use by climate change mitigation projects and programs. Where a country’s national
+      forest definition excludes specific land use/land management types and/or vegetative classes,
+      stratification should identify these areas to enable future inclusion/exclusion in nested
+      accounting.
+
+      Planned deforestation (PDef)
+      Deforestation on forest lands that are legally authorized and documented for conversion
+
+      Unplanned deforestation (UDef)
+      Deforestation of degraded to mature forests not legally authorized and documented for
+      conversion
+
+      For definitions of VCS AFOLU project categories, refer to the VCS Standard.
+
+
+3.2   Acronyms
+      AD      Activity data
+
+      GHG     Greenhouse gas
+
+      JNR     Jurisdictional and Nested REDD+
+
+      SOP     Standard operating procedure(s)
+
+      UDef    Unplanned deforestation
+
+
+                                                                                                        4
+                                                                                          VM0048, v1.0
+
+
+
+4 APPLICABILITY CONDITIONS
+      This methodology may only be used for eligible REDD projects and activities described in the VCS
+      Methodology Requirements. The applicability conditions for each activity type are listed in AUDef,
+      and will be listed in APDef and AUDeg.
+
+
+
+
+5 PROJECT BOUNDARY
+5.1   Geographic Boundaries
+      The spatial boundaries of the project area must be clearly defined to facilitate accurate
+      measuring, monitoring, accounting and verification of the project’s emissions reductions. The
+      project activity may encompass more than one discrete area of land. When describing physical
+      project boundaries, the following information must be provided for each discrete area:
+
+         1) Name of the project area (e.g., compartment number, allotment number, local name),
+            giving a unique ID for each discrete parcel of land;
+
+         2) Map(s) of the area (in digital format);
+
+         3) Geographic coordinates of each polygon vertex along with documentation of their
+            accuracy (from a geo-referenced digital map – data must be provided in the format
+            specified in the VCS Standard);
+
+         4) Total land area; and
+
+         5) Details of landholder and user rights.
+
+      The forested project area (within each discrete area of project activity) must be continuous
+      without arbitrary exclusions of forests in the same geography (e.g., without excluding forests next
+      to villages around which deforestation is likely to occur).
+
+      The boundary of the REDD activity must be clearly delineated and defined and include only land
+      qualifying as forest for a minimum of 10 years before the project start date.
+
+      Specific boundaries exist for specific activity types with REDD – details and requirements are
+      provided in the appropriate accounting modules (e.g., AUDef).
+
+      For projects where multiple AFOLU project activities are being implemented within the project
+      boundary, the discrete areas where each activity is implemented must be spatially delineated.
+
+
+5.2   Carbon Pools
+      The carbon pools included in or excluded from the boundary of REDD project activities are shown
+      in Table 2.
+
+                                                                                                        5
+                                                                                               VM0048, v1.0
+
+
+      The selection of carbon pools and the appropriate justification must be presented in the project
+      description.
+
+      Where REDD activities take place in wetlands, the project must account for expected emissions
+      from the soil organic carbon pool or changes in the soil organic carbon pool in the project
+      scenario unless deemed de minimis. The significance of pools must be determined by using the
+      procedure outlined in Appendix 1.
+
+      Table 2: Carbon pools included in or excluded from the REDD project boundary
+
+       Pool                     Included?     Justification/Explanation
+
+       Aboveground tree         Included      Major carbon pool that will significantly decrease in
+       biomass                                the baseline scenario in the case of deforestation
+                                              or forest degradation
+
+       Belowground tree         Included      Major carbon pool that will significantly decrease in
+       biomass                                the baseline scenario in the case of deforestation
+                                              or forest degradation
+
+       Aboveground non-tree     Included      Must be included in the baseline (post-
+       biomass                                deforestation carbon stocks) but may be
+                                              conservatively excluded from forest carbon stocks
+
+       Belowground non-tree     Optional      Potential emissions are negligible.
+       biomass
+
+       Dead wood                Optional      Conservative to exclude
+
+       Litter                   Optional      Conservative to exclude
+
+       Soil organic carbon      Optional /    Non-wetland soils: Conservative to exclude
+                                Included
+                                              Wetland soils: Major carbon pool that may
+                                              significantly increase or decrease in both the
+                                              baseline and project scenarios. Appendix 1 of this
+                                              methodology must be used to determine
+                                              significance.
+
+       Harvested wood           Optional      May be excluded where timber harvest is negligible
+       products                               in the baseline case. Appendix 1 of this
+                                              methodology must be used to determine
+                                              significance.
+
+
+
+5.3   Sources of GHG Emissions
+      The project must account for any significant increases in emissions of carbon dioxide (CO2),
+      nitrous oxide (N2O) and methane (CH4), relative to the baseline, that are reasonably attributable
+      to the project activity.
+
+
+                                                                                                          6
+                                                                                                       VM0048, v1.0
+
+
+          The GHG emission sources included in or excluded from the boundary of the REDD project activity
+          are shown in Table 3. The selection of sources and the appropriate justification must be provided
+          in the project description.
+
+          Procedures specified in Appendix 1 of this methodology must be used to determine whether an
+          emissions source is significant. Where a source is included in estimating baseline emissions, 2 it
+          must also be included in calculating project and leakage emissions.
+
+          Table 3: GHG sources included in or excluded from the REDD project boundary
+
+           Source                          Gas   Included?      Justification/Explanation
+
+                         Burning of        CO2   Included       Major emissions source
+                         woody
+                         biomass           CH4   Optional       Non-CO2 gases emitted from woody biomass burning
+                                                                – it is conservative to exclude.
+                                           N2O   Optional
+
+                         Combustion        CO2   Optional       May be excluded where determined negligible
+              Baseline
+
+
+
+
+                         of fossil fuels
+                                           CH4   Excluded       Potential emissions are negligible.
+
+                                           N2O   Excluded       Potential emissions are negligible.
+
+                         Use of            CO2   Excluded       Potential emissions are negligible.
+                         fertilizers
+                                           CH4   Excluded       Potential emissions are negligible.
+
+                                           N2O   Optional       May be excluded where determined negligible
+
+                         Burning of        CO2   Included       Major emissions source
+                         woody
+                         biomass           CH4   Included       Major emissions source
+
+                                           N2O   Included       Major emissions source
+
+                         Combustion        CO2   Optional       Emissions associated with the combustion of fossil
+              Project
+
+
+
+
+                         of fossil fuels                        fuels due to leakage prevention activities are always
+                                                                considered insignificant.
+                                                                Emissions associated with other activities (e.g.,
+                                                                monitoring, patrolling) must be demonstrated as
+                                                                negligible to be omitted.
+
+                                           CH4   Excluded       Potential emissions are negligible.
+
+                                           N2O   Excluded       Potential emissions are negligible.
+
+
+
+2   For example, CH4 or N2O emissions from agriculture resulting from deforestation or fire to clear forest
+
+                                                                                                                        7
+                                                                                            VM0048, v1.0
+
+
+       Source                 Gas      Included?      Justification/Explanation
+
+                Use of        CO2      Excluded       Potential emissions are negligible.
+                fertilizers
+                              CH4      Excluded       Potential emissions are negligible.
+
+                              N2O      Optional       Must be included where fertilizer use increases due
+                                                      to the project (e.g., as a leakage avoidance
+                                                      mechanism). Otherwise, it may be excluded if it is
+                                                      also excluded from the baseline.
+
+
+
+
+6 BASELINE SCENARIO
+6.1   Determination of the Most Plausible Baseline Scenario
+      Determination of the most plausible baseline scenario builds on the outcome of the additionality
+      analysis (Section 7) and must be consistent with the description of the conditions prior to the
+      project start date. VT0001 must be used to assess the project additionality. The stepwise
+      approach below must be followed in addition to VT0001 to determine the most plausible baseline
+      scenario.
+
+      Step 1: Reuse the plausible alternative land use scenarios to the REDD project activity that have
+      been listed as an outcome of Sub-step 1b of the additionality tool VT0001.
+      Unless it has been demonstrated that any of these land use scenarios are not credible or do not
+      comply with all mandatory applicable legislation and regulations as required by VT0001 Sub-step
+      1b, the list of plausible alternative land use scenarios must include at least:
+
+         1) Continuation of the pre-project land use;
+
+         2) Project activity performed on the land within the project boundary without being
+            registered as a VCS REDD project; and
+
+         3) Activities similar to the proposed project activity on at least part of the land within the
+            project boundary of the proposed REDD project.
+
+
+
+
+                                                                                                            8
+                                                                                       VM0048, v1.0
+
+
+Step 2a: Where the VT0001 barrier analysis is used to demonstrate additionality, apply the
+decision tree in Figure 1 to the list of all alternative land use scenarios from Step 1 that are not
+prevented by any barrier.
+
+          Figure 1. Barrier analysis decision tree
+
+
+
+
+Step 2b: Where the VT0001 investment analysis is used to demonstrate additionality, and if at
+least one land use scenario generates financial benefits other than carbon revenues, select the
+baseline scenario as below:
+    4) Where VT0001 Option I is used, the baseline scenario is the land use scenario with the
+       lowest costs over the crediting period). Option I may only be applied if the alternative
+       scenarios do not include revenues.
+
+    5) Where VT0001 Option II is used, the baseline scenario is the most economically or
+       financially attractive land use scenario (i.e., the scenario with the most favorable
+       financial indicator such as internal rate of return).
+
+    6) Where VT0001 Option III is used and none of the alternative land use scenarios have a
+       financial indicator that meets the benchmark, the baseline scenario is the continuation
+       of the pre-project land use. Where Option III is used and at least one of the land use
+       scenarios has a financial indicator that meets the benchmark, the baseline scenario is
+       the scenario that has the most favorable financial indicator (e.g., internal rate of return,
+       net present value or cost-benefit ratio).
+
+
+                                                                                                       9
+                                                                                           VM0048, v1.0
+
+
+      Step 3: Where barrier analysis is used to demonstrate additionality but does not allow
+      determination of the baseline scenario, implement one of the following:
+         1) An investment analysis following VT0001 Option II (regardless of whether it has been
+            used to demonstrate additionality). Select the most plausible baseline as specified in
+            Step 2b above; or
+
+         2) Through qualitative analysis, estimate the baseline GHG emissions for each alternative
+            land use scenario that is not prevented by any barrier. The baseline scenario is the land
+            use scenario that allows for the lowest baseline GHG emissions. Estimates must be
+            based on publicly available default factors and standards, such as the IPCC 2006
+            Guidelines for National GHG Inventories and its 2019 Refinements or the IPCC 2003
+            Good Practice Guidelines for LULUCF. All other data used must be publicly available
+            and must come from recognized, credible sources, such as peer-reviewed literature.
+
+      Quantification of GHG emissions under the selected baseline scenario must follow the applicable
+      and relevant activity-type module(s).
+
+
+6.2   Projects Implemented in Jurisdictional REDD Programs or Where a
+      Government has Established a REDD Baseline
+      Projects that are implemented within a registered JNR program are eligible to use this
+      methodology for activities included under that program. However, projects must be nested
+      according to the requirements set out in the JNR Scenario 1 Requirements or JNR Scenario 2
+      Requirements, as appropriate.
+
+      REDD projects that are implemented within a non-JNR REDD jurisdictional program should also
+      follow the relevant jurisdictional program’s requirements (e.g., with respect to baseline, as set out
+      in AUDef), but they must be registered and monitored under VCS following this methodology.
+      Further clarification is set out in the relevant module(s).
+
+      Where the baseline estimated using the activity data allocated to the project through this
+      methodology is higher than the local government’s baseline, a project proponent may elect to
+      limit the amount of VCUs it issues to the amount that would be issued based on this lower
+      baseline. Where required by local regulations, such limitation is mandatory.
+
+
+6.3   Baseline Validity
+      Baseline projections beyond the baseline validity period are not required for REDD project
+      activities.
+
+      The project baseline must be reassessed per the VCS Standard and the requirement in the
+      relevant module. The date of the next scheduled baseline reassessment must be specified in the
+      project description.
+
+
+
+
+                                                                                                        10
+                                                                                            VM0048, v1.0
+
+
+
+7 ADDITIONALITY
+        Additionality of the project activities must be demonstrated using the most recent version of
+        VT0001 Tool for the Demonstration and Assessment of Additionality in VCS AFOLU Project
+        Activities and by following the additional guidance on investment analysis of the latest version of
+        the VCS Methodology Requirements.
+
+        Project proponents must also demonstrate regulatory surplus in accordance with both the
+        requirements on regulatory surplus set out in the latest version of the VCS Standard and the rules
+        and methods to assess and demonstrate regulatory surplus described in the latest version of the
+        VCS Methodology Requirements.
+
+        In UNFCCC non-Annex I countries, where regulatory surplus is justified by the lack of systematic
+        law enforcement it must be demonstrated that enforcement of the law is out of the control of the
+        project proponent and other entities involved in the project. Such lack of control may be
+        demonstrated by the barriers identified in Step 3 of VT0001.
+
+
+
+
+8 QUANTIFICATION OF GHG EMISSION
+  REDUCTIONS
+8.1     Baseline Emissions
+
+8.1.1   General Procedures
+
+        The same procedure for quantifying emissions and carbon stocks must be followed ex ante and
+        ex post. For parameters monitored after project initiation, guidance is given in the parameter
+        tables of the relevant modules for the values that must be used in ex ante calculations.
+
+        The baseline of the project activity is estimated ex ante. Ex ante baseline estimations are used in
+        the ex ante and ex post estimation of net carbon stock changes and greenhouse gas emission
+        reductions.
+
+        The relevant activity modules (e.g., AUDef) provide methods for estimating net baseline carbon
+        stock changes and greenhouse gas emissions.
+
+8.1.2   Baseline Reassessment and Transition to VM0048
+
+        Where projects have verified using VM0009 prior to their transition to VM0048, project
+        proponents must follow the provisions set out in VM0009 to revise the baseline emissions model
+        (see Section 6.20 of VM0009, v3.0 or equivalent section in the most recent version of the
+        methodology).
+
+
+                                                                                                         11
+                                                                                         VM0048, v1.0
+
+
+      Where, after baseline reevaluation, the revised baseline emissions model predicts fewer GHG
+      emission reductions than VCUs issued under the previous model, the project must compensate
+      for this difference by one of the following methods:
+
+          1) Cancelation of VCUs from the project in the project proponent’s Verra Registry account
+             that have not been used for offsetting purposes (“active VCUs”), or of already issued
+             active VCUs where the project proponent gains the consent of the current owner,
+             and/or
+
+          2) Replacement of the emission reductions through immediate cancelation from
+             subsequent issuances of VCUs to the project. The deduction may be distributed over
+             more than one verification period provided a deduction plan has been submitted to and
+             approved by Verra.
+
+      Projects must describe the applicable calculations as a project description deviation in the first
+      monitoring report submitted after transitioning to VM0048. The validation/verification body must
+      assess the calculations and ensure that a deduction plan, where relevant, has been approved by
+      Verra.
+
+
+8.2   Project Emissions
+      The same procedure for project emissions must be followed ex ante and ex post. For parameters
+      monitored after project initiation, guidance is given in the parameter tables of the relevant
+      modules for ex ante calculations.
+
+      Methods for estimating net carbon stock changes and GHG emissions in the project scenario are
+      provided in the relevant activity modules (e.g., AUDef).
+
+
+8.3   Leakage
+
+      Emissions from different leakage sources must be estimated unless deemed de minimis:
+
+          1) Activity-shifting leakage;
+
+          2) Market-effect leakage; and
+
+          3) Emissions from leakage prevention activities.
+
+      The relevant activity modules specify the leakage sources that must be estimated. The
+      significance of leakage and carbon pools must be determined using Appendix 1 of this
+      methodology.
+
+      The relevant activity modules (e.g., AUDef) provide methods for estimating net carbon stock
+      changes and GHG emissions due to activity-shifting leakage.
+
+      Leakage due to market effects must be considered using LK-ME. Market effects must be
+      considered where the project leads to decreased timber, fuelwood or charcoal production.
+
+                                                                                                      12
+                                                                                                             VM0048, v1.0
+
+
+          Where leakage prevention activities result in significant increases in emissions from carbon stock
+          changes, biomass burning and/or increased fertilizer usage, 3 any increase in GHG emissions
+          associated with these activities must be accounted for following the relevant activity modules
+          (e.g., AUDef), unless deemed de minimis.
+
+          Leakage prevention activities may lead to an increase in the combustion of fossil fuels. However,
+          any increase in emissions because of the increased combustion of fossil fuels is considered de
+          minimis and does not need to be quantified or reported.
+
+          Where leakage prevention leads to a significant increase in fertilizer use, module E-NA must be
+          used.
+
+          Leakage prevention must not include the flooding of agricultural lands (e.g., for new rice paddies)
+          nor the creation of livestock feedlots or manure lagoons. Leakage prevention must not include
+          the drainage of peatland.
+
+          The list of leakage sources with appropriate justification must be presented in the project
+          description.
+
+
+8.4       Net GHG Emission Reductions
+          The project proponent must present conservative ex ante estimations of the project activity's
+          total net GHG emissions reductions.
+
+          Refer to the relevant accounting modules and the parameter tables within these modules for
+          instructions on ex ante estimations of specific parameters.
+
+          The potential number of Verified Carbon Units (VCUs) for the monitoring period t is estimated as
+          follows:
+
+
+            끫뢒끫뢒끫뢒끫룂 = 끫뢒끫뢒끫뢒끫롨끫롨끫롨끫롨끫롨 + 끫뢒끫뢒끫뢒끫롨끫롨끫롨끫롨끫롨 + 끫뢒끫뢒끫뢒끫롨끫롨끫롨끫롨끫롨                                 (1)
+
+
+          Where:
+          VCUt             =     Number of potential Verified Carbon Units at year t = t2 − t1 (VCU)
+
+           VCUAUDef        =     Number of potential Verified Carbon Units from unplanned deforestation at year
+                                 t = t2 − t1 (VCU)
+           VCUAPDef        =     Number of potential Verified Carbon Units from planned deforestation at year
+                                 t = t2 − t1 (VCU)
+
+
+
+3   Potentially as part of tree planting, aquacultural intensification, agricultural intensification, fertilization, fodder
+    production, other measures to enhance cropland and/or grazing land areas, leakage management zones or a
+    combination of these
+
+                                                                                                                              13
+                                                                                                   VM0048, v1.0
+
+
+        VCUAUDeg     =   Number of potential Verified Carbon Units from unplanned forest degradation at
+                         year t = t2 − t1 (VCU)
+
+
+
+
+9 MONITORING
+9.1     Data and Parameters Available at Validation
+        Relevant parameters are detailed within accounting and other source modules.
+
+
+9.2     Data and Parameters Monitored
+        Relevant parameters are detailed within accounting and other source modules.
+
+
+9.3     Description of the Monitoring Plan
+
+9.3.1   Development of Monitoring Plan
+        General
+        The monitoring plan must address the following tasks:
+
+            •     Monitoring of project implementation;
+            •     Monitoring of actual carbon stock changes and greenhouse gas emissions;
+            •     Monitoring of leakage carbon stock changes and greenhouse gas emissions; and
+            •     Estimation of ex post net carbon stock changes and greenhouse gas emissions.
+
+        For each of these tasks, the monitoring plan must include the following information:
+
+            •     Technical description of the monitoring task;
+            •     Data to be collected (data and parameters to be collected must be listed in the project
+                  description);
+            •     Overview of data collection procedures;
+            •     Quality control and quality assurance procedures;
+            •     Data archiving; and
+            •     Organization and responsibilities of the parties involved in all of the above.
+
+        Uncertainty and Quality Management
+
+        As far as is practical, uncertainties related to the quantification of GHG emission reductions
+        should be reduced.
+
+        Uncertainties arising from input parameters would result in uncertainties in estimating baseline
+        and project net GHG emissions – especially where global default factors are used. The project
+                                                                                                            14
+                                                                                                        VM0048, v1.0
+
+
+         must identify critical parameters that would significantly influence the accuracy of estimates.
+         Local values specific to the project circumstances must be obtained for these key parameters
+         where possible. These values should be based on:
+
+              •   Cited data from well-referenced peer-reviewed literature or other well-established
+                  published sources;
+              •   National inventory data or default factors from IPCC literature that have, where possible
+                  and necessary, been checked for consistency against available local data specific to the
+                  project circumstances; or
+              •   Expert opinion, in the absence of the above sources of information. Experts will often
+                  provide a range of data values and a proposed value for the data. The rationale for
+                  selecting a particular data value must be demonstrated.
+         In choosing key parameters or making important assumptions based on information not specific
+         to the project circumstances, such as using default factors, the project proponent must select
+         values that will lead to an accurate estimation of net GHG emission reductions, taking into
+         account uncertainties.
+
+         Where uncertainty is significant, 4 the project proponent must choose data that indisputably tends
+         to under-estimating, rather than over-estimating, net GHG project benefits.
+
+         To ensure that GHG fluxes are estimated in a way that is accurate, verifiable, transparent and
+         consistent across measurement periods, the project proponent must establish and document
+         clear standard operating procedures and procedures for ensuring data quality. At a minimum,
+         these procedures must include:
+
+              •   Comprehensive documentation of all field measurements taken in the project area. This
+                  documentation must be detailed enough to allow replication of sampling in the event of
+                  staff turnover between monitoring periods;
+              •   Training procedures for all people involved in field measurement or data analysis. The
+                  scope and date of all training must be documented;
+              •   A protocol for assessing the accuracy of plot measurements using a check cruise and a
+                  plan for correcting the inventory where errors are discovered;
+              •   Protocols for assessing data for outliers, transcription errors and consistency across
+                  measurement periods; and
+              •   Safe archiving of data sheets for the lifetime of the project. Data stored in electronic
+                  formats must be backed up.
+
+
+
+
+4 In line with the VCS Methodology Requirements, uncertainty is deemed significant where it is expected to exceed 10
+
+  percent of the estimate.
+
+                                                                                                                       15
+                                                                                            VM0048, v1.0
+
+
+        Expert judgment
+
+        The use of expert judgment for selecting and interpreting methods, selecting input data to fill
+        gaps in available data and selecting data from a range of possible values or uncertainty ranges
+        are all well defined in the IPCC 2006 Guidelines for National GHG Inventories and its 2019
+        Refinement. The project proponent must use the guidance provided in Volume 1 Chapter 2
+        Approaches to Data Collection (in particular, Section 2.2 and Annex 2A.1) of the IPCC 2019
+        Refinement to the 2006 IPCC Guidelines for National GHG Inventories.
+
+        Monitoring of Project Implementation
+
+        Information must be provided and recorded to establish the following:
+
+            1) The geographic position of the project boundary is recorded for all areas of land. The
+               geographic coordinates of the project boundary (and any stratification or buffer zones
+               inside the boundary) are established, recorded and archived. This may be achieved by
+               field survey (e.g., GPS) or geo-referenced spatial data (e.g., maps, GIS datasets,
+               orthorectified aerial photography or geo-referenced remote sensing images).
+
+                The above also applies to strata recording, including strata resulting from peatland fires
+                in the project scenario.
+
+            2) Commonly accepted principles of land use inventory and management are implemented.
+
+                Standard operating procedures (SOPs) and quality control/quality assurance procedures
+                for inventories, including field data collection and management, must be applied. Use or
+                adaptation of SOPs already applied in national land use monitoring or available from
+                published handbooks or the latest IPCC guidance documents is recommended.
+
+                The project plan and a record of the plan as implemented during the project must be
+                available for validation or verification, as appropriate.
+
+            3) The monitoring plan must use the methods in the relevant module(s) (i.e., AUDef, APDef,
+               and/or AUDeg) to monitor changes in forest cover and carbon stock changes. All relevant
+               parameters from the modules must be included in the monitoring plan.
+
+9.3.2   Monitoring
+
+        Ex post monitoring must accomplish two key tasks:
+
+            1) Monitoring according to the monitoring plan; and
+
+            2) Revising the baseline for future project crediting periods.
+
+
+
+
+                                                                                                          16
+                                                                                   VM0048, v1.0
+
+
+TASK 1: Monitoring According to the Monitoring Plan
+
+Monitoring of Key Baseline Variables
+
+Information required to periodically reassess the project baseline must be collected during the
+entire project crediting period. Key variables to be measured are:
+
+    •   Changes in forest cover as specified in the relevant accounting modules (e.g., AUDef)
+    •   Spatial variable datasets used in modeling, as specified in relevant accounting modules
+        (e.g., AUDef). As a minimum, the variables used in the first baseline assessment must be
+        monitored during any reassessments.
+    •   Carbon stock data, where required, as specified in the relevant accounting module
+
+Monitoring of Leakage
+
+All significant sources of leakage identified are subject to monitoring following the procedures
+outlined in the monitoring plan. Such procedures must be consistent with the applicable leakage
+modules. The monitoring plan must include all relevant parameters in the leakage modules.
+
+Reporting of Parameters in Each Monitoring Report
+
+The following values must be reported using the unit in parentheses, each with an estimate of
+uncertainty, representing sampling error as a two-sided 90 percent confidence interval:
+
+   1) For projects using AUDef, the allocated annual deforestation area by stratum (hectares
+      for each year of the monitoring period);
+
+   2) Aggregate annual deforestation area for the verification period in the project area
+      (hectares per year);
+
+   3) Aggregate annual deforestation area for the verification period in the leakage belt
+      (hectares per year);
+
+   4) Aggregate annual emissions from deforestation for the verification period and project
+      area (tonnes CO2e per year);
+
+   5) Aggregate annual emissions from deforestation for the verification period and leakage
+      belt (tonnes CO2e per year); and
+
+   6) Average emission factor for deforestation for the verification period and over the project
+      area (tonnes CO2e per hectare).
+
+Additional values may be added as additional modules are added under this VM0048.
+
+TASK 2: Revising the Baseline for Future Project Crediting Periods
+
+The methodological procedure to update the baseline must be the same as in the first baseline
+estimation.
+
+
+
+                                                                                                  17
+                                                                                   VM0048, v1.0
+
+
+
+10 REFERENCES
+  IPCC (2003). Good Practice Guidance for Land Use, Land Use Change and Forestry. Institute for
+  Global Environmental Strategies (IGES).
+
+  IPCC (2006). 2006 IPCC Guidelines for National Greenhouse Gas Inventories. Institute for Global
+  Environmental Strategies (IGES).
+
+  IPCC (2019). 2019 Refinement to the 2006 IPCC Guidelines on National Greenhouse Gas
+  Inventories. Institute for Global Environmental Strategies (IGES).
+
+  Additional references may be found in the modules referenced throughout this methodology.
+
+
+
+
+                                                                                               18
+                                                                                            VM0048, v1.0
+
+
+
+APPENDIX 1: TESTING SIGNIFICANCE OF
+GHG EMISSIONS
+The following stepwise procedure must be used to test the significance of GHG emissions. It is an
+adaptation of the CDM Tool for testing the significance of GHG emissions in A/R CDM project activities,
+v01. The procedure may be used to justify the omission of pools and GHG sources within the project
+boundaries, as well as to justify the omission of GHG emissions resulting from leakage mitigation
+measures.
+
+The significance of GHG emissions by source and carbon stock changes by pool must be at minimum
+tested ex ante to justify the project boundaries and at baseline reassessment. The significance of leakage
+GHG emissions must be tested ex ante for the entire baseline validity period and ex post for a specific
+monitoring period.
+
+        1) Define the period over which the significance will be tested (i.e., either a baseline validity
+           period for ex ante estimates or a specific monitoring period or annually for ex post
+           estimates).
+
+        2) Identify and estimate the following where relevant:
+
+            a) GHG emissions by source (per each source) to be included and tested for the specified
+               period. Estimation must be based on site/project-specific data, scientific peer-reviewed
+               literature and/or the most recent default emission factors provided by IPCC.
+
+            b) GHG emissions attributable to net carbon stock changes by pool (per each pool to be
+               included and tested). The estimation of net carbon stock changes must follow the
+               methodology and be consistent with the baseline scenario and project activities.
+               Estimation must be based on site/project-specific data, scientific peer-reviewed
+               literature and/or the most recent default emission factors provided by IPCC.
+
+            c) Leakage GHG emissions by source attributable to the project leakage mitigation
+               measures (i.e., net carbon stock changes in above- and belowground tree biomass,
+               emissions associated with biomass burning and nitrogen application) that the planned
+               leakage mitigation measures are expected to cause during the fixed baseline period.
+               Estimation must follow sound procedures consistent with calculation approaches in the
+               applicable activity-type module(s). Estimation must be based on site/project-specific
+               data, scientific peer-reviewed literature and/or the most recent default emission
+               factors provided by IPCC.
+
+        3) Where needed, convert the GHG emissions to CO2e using 100-year global warming
+           potential (GWP) values from the latest version of the VCS Standard.
+
+        4) Calculate the relative contributions of the GHG emissions listed in Step 2a–c above
+           according to the following equation:
+
+
+                                                                                                            19
+                                                                                                       VM0048, v1.0
+
+
+
+                             끫롰끫뢬
+            끫뢊 끫롰끫뢬 =                                                                                  (2)
+                        ∑끫롸끫뢬=1 끫롰끫뢬
+
+             Where:
+             끫뢊 끫롰끫뢬            =      Relative contribution of each source i to the sum of project and leakage GHG
+                                       emissions
+             끫롰끫뢬               =      GHG project and leakage emissions for source i as estimated under Step 2a–c
+                                       above
+             i                  =      Index for individual sources of project and leakage GHG emissions due to
+                                       leakage mitigation measures (I = total number of sources considered in Step 1)
+             5) Rank the GHG emissions in descending order of their relative contributions RCEi and order
+                them according to their ranks (i.e., the lowest emission must get the highest rank and must
+                occupy the last position in the ordered sequence of leakage emissions).
+
+             6) Start calculating the cumulative sum of the relative contributions RCEi (ordered according to
+                Step 5), beginning with the lowest rank. Cease the summation when the cumulative sum
+                reaches the lowest value not less than the threshold of 0.95.
+
+     The GHG and project leakage emissions by source excluded from the cumulative sum in Step 6 are
+     considered insignificant where their total is lower than five percent of net anthropogenic GHG ERRs in the
+     project area. Otherwise, the procedure described in Step 6 must be continued beyond the threshold of
+     0.95 until this condition is met. Even where they are insignificant, project proponents may include any
+     qualifying sources and sinks in the project case.
+
+     For the purposes of testing GHG emissions significance, the net GHG ERRs must be calculated before
+     discounting the cumulative GHG emissions resulting from leakage (i.e., before discounting ΔCLK-UDef,t).
+
+     Significance test calculations must be summarized in the project description or monitoring reports and
+     detailed in a calculation spreadsheet to be shared with the validation/verification body and Verra.
+𝑅𝑅
+𝑅𝑅
+                                                                                                                      20
+                                          VM0048, v1.0
+
+
+
+DOCUMENT HISTORY
+Version                 Comment
+
+v1.0      27 Nov 2023   Initial version
+
+
+
+
+                                                   21
+
