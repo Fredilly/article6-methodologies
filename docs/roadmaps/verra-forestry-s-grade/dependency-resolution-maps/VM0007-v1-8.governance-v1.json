@@ -11,6 +11,8 @@
   },
   "closure": {
     "external_reference_edges": 20,
+    "incorporated_by_reference_edges": 19,
+    "informative_example_edges": 1,
     "unresolved_relationship_edges": 0,
     "unresolved_source_version_pins": 0,
     "embedded_internal_procedures": 1,
