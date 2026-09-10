@@ -1,0 +1,176 @@
+#!/usr/bin/env node
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+
+const ROOT = path.resolve(__dirname, '..');
+const LINE_REF = /^(.+)#L(\d+)-L(\d+)$/;
+const GOVERNED_STATES = new Set(['PROVENANCE_COMPLETE', 'RETRIEVAL_TESTED', 'VERIFIED']);
+
+function readJSON(file) {
+  return JSON.parse(fs.readFileSync(file, 'utf8'));
+}
+
+function normalize(text) {
+  return String(text || '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function parseLineRef(ref) {
+  const match = LINE_REF.exec(String(ref || ''));
+  if (!match) return null;
+  const start = Number(match[2]);
+  const end = Number(match[3]);
+  if (!Number.isInteger(start) || !Number.isInteger(end) || start < 1 || end < start) return null;
+  return { repoPath: match[1], start, end };
+}
+
+function resolveLineRef(ref) {
+  const parsed = parseLineRef(ref);
+  if (!parsed) return { error: `invalid line reference ${JSON.stringify(ref)}` };
+
+  const absolute = path.resolve(ROOT, parsed.repoPath);
+  if (!absolute.startsWith(ROOT + path.sep)) {
+    return { error: `line reference escapes repository: ${ref}` };
+  }
+  if (!fs.existsSync(absolute) || !fs.statSync(absolute).isFile()) {
+    return { error: `referenced source text does not exist: ${parsed.repoPath}` };
+  }
+
+  const lines = fs.readFileSync(absolute, 'utf8').split(/\r?\n/);
+  if (parsed.end > lines.length) {
+    return { error: `line reference ${ref} exceeds ${lines.length} lines` };
+  }
+
+  return {
+    repoPath: parsed.repoPath,
+    start: parsed.start,
+    end: parsed.end,
+    text: lines.slice(parsed.start - 1, parsed.end).join('\n')
+  };
+}
+
+function evidenceQuotes(record, ruleMode) {
+  const locators = ruleMode ? record.refs?.locators : record.locators;
+  if (!Array.isArray(locators)) return [];
+  return locators
+    .map((locator) => normalize(locator && locator.quote))
+    .filter(Boolean);
+}
+
+function lineRefs(record, ruleMode) {
+  const refs = ruleMode ? record.refs?.lines : record.provenance?.lines;
+  return Array.isArray(refs) ? refs.filter((value) => typeof value === 'string' && value.trim()) : [];
+}
+
+function validateResolvableEvidence(record, label, ruleMode, failures) {
+  const refs = lineRefs(record, ruleMode);
+  const quotes = evidenceQuotes(record, ruleMode);
+
+  if (refs.length === 0) {
+    failures.push(`${label}: missing exact governed-text line reference`);
+    return;
+  }
+  if (quotes.length === 0) {
+    failures.push(`${label}: missing exact evidence quote locator`);
+    return;
+  }
+
+  const resolved = [];
+  for (const ref of refs) {
+    const result = resolveLineRef(ref);
+    if (result.error) failures.push(`${label}: ${result.error}`);
+    else resolved.push(result);
+  }
+  if (resolved.length === 0) return;
+
+  const resolvedText = normalize(resolved.map((item) => item.text).join('\n'));
+  for (const quote of quotes) {
+    if (!resolvedText.includes(quote)) {
+      failures.push(`${label}: evidence quote is not present in resolved governed-text span`);
+    }
+  }
+
+  if (ruleMode) {
+    const sourceSpan = normalize(record.source_span_text);
+    if (!sourceSpan) {
+      failures.push(`${label}: missing source_span_text`);
+    } else if (!resolvedText.includes(sourceSpan)) {
+      failures.push(`${label}: source_span_text is not present in resolved governed-text span`);
+    }
+  } else if (resolvedText.length < 20) {
+    failures.push(`${label}: resolved section content is not substantive`);
+  }
+}
+
+function validateComponent(componentDir) {
+  const absoluteDir = path.resolve(ROOT, componentDir);
+  const metaPath = path.join(absoluteDir, 'META.json');
+  const sectionsPath = path.join(absoluteDir, 'sections.rich.json');
+  const rulesPath = path.join(absoluteDir, 'rules.rich.json');
+  const failures = [];
+
+  for (const required of [metaPath, sectionsPath, rulesPath]) {
+    if (!fs.existsSync(required)) failures.push(`${path.relative(ROOT, absoluteDir)}: missing ${path.basename(required)}`);
+  }
+  if (failures.length) return failures;
+
+  const meta = readJSON(metaPath);
+  const state = meta?.governance_v1?.state;
+  if (!GOVERNED_STATES.has(state)) return [];
+
+  const sourceHash = meta?.audit_hashes?.source_pdf_sha256;
+  if (!/^[a-f0-9]{64}$/.test(String(sourceHash || ''))) {
+    failures.push(`${componentDir}: governed component is missing audit_hashes.source_pdf_sha256`);
+  }
+
+  const sections = readJSON(sectionsPath);
+  for (const section of sections) {
+    const label = `${componentDir}: section ${section.id || '(unknown)'}`;
+    if (section.source_span_status !== 'source_audited') continue;
+    if (section.provenance?.source_hash !== sourceHash) {
+      failures.push(`${label}: provenance.source_hash does not match governed source PDF hash`);
+    }
+    validateResolvableEvidence(section, label, false, failures);
+  }
+
+  const rules = readJSON(rulesPath);
+  for (const rule of rules) {
+    const label = `${componentDir}: rule ${rule.id || rule.stable_id || '(unknown)'}`;
+    if (rule.source_span_status !== 'source_audited') continue;
+    if (rule.provenance?.source_hash !== sourceHash) {
+      failures.push(`${label}: provenance.source_hash does not match governed source PDF hash`);
+    }
+    validateResolvableEvidence(rule, label, true, failures);
+  }
+
+  return failures;
+}
+
+function main() {
+  const args = process.argv.slice(2);
+  if (args.length === 0) {
+    console.error('Usage: node scripts/check-governance-source-resolution.js <methodology-dir> [methodology-dir ...]');
+    process.exit(2);
+  }
+
+  const failures = args.flatMap(validateComponent);
+  if (failures.length) {
+    console.error('Governance source-resolution invariant failed:');
+    failures.forEach((failure) => console.error(`- ${failure}`));
+    process.exit(1);
+  }
+
+  console.log(`Governance source-resolution invariant passed for ${args.length} component(s).`);
+}
+
+if (require.main === module) main();
+
+module.exports = {
+  normalize,
+  parseLineRef,
+  resolveLineRef,
+  validateComponent
+};
