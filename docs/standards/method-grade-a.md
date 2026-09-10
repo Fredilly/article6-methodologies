@@ -79,8 +79,10 @@ and serves as the reference template for all future Verra forestry methods.
 | `sections.json` | All sections `locator_status: source_audited` with verified page ranges |
 | `rules.json` | All `quality_status: source_audited`, no external deps in `tools` |
 | `rules.rich.json` | Every rule has `source_span_status`, `rule_detail.status: source_audited`, non-empty `source_span_text`, >=1 condition, no placeholder exceptions |
-| `blocked-external-dependencies.json` | `blocked_rule_count: 0`, `status: no_active_blockers` |
+| `governance/.../blocked-external-dependencies.json` | Governance-support inventory; `blocked_rule_count: 0`, `status: no_active_blockers` when clean |
 | `METHOD_GRADE.json` | Not used. Source-Audited is computed from canonical artifacts via `scripts/grade-method.js`. |
+
+Blocker inventories and other governance/audit artifacts belong under the parallel `governance/` tree, not in the methodology runtime directory.
 
 ### External reference classification
 
@@ -103,9 +105,7 @@ A reference is `historical_non_blocking` only when:
 node scripts/grade-method.js methodologies/Verra/AFOLU/VM0047/v1-0
 ```
 
-The validator checks META, sections, rules, rich rules, and blocker
-inventory. It does not require a separate METHOD_GRADE.json. The internal
-check remains `adoption_status === "grade_a"` for machine compatibility.
+The validator checks the core methodology artifacts. Governance-support inventories are checked separately and must stay outside the runtime corpus.
 
 ### Applying to new methods
 
@@ -114,7 +114,8 @@ check remains `adoption_status === "grade_a"` for machine compatibility.
 3. For rules referencing external docs, verify whether the methodology
    is self-contained. If not, keep as `draft_unverified` with
    `external_unencoded` dependency status.
-4. Only mark `methodology_linked_review_ready: true` when every rule
+4. Keep blocker inventories and other governance evidence under `governance/`, never in the runtime methodology directory.
+5. Only mark `methodology_linked_review_ready: true` when every rule
    is source-backed and no `external_unencoded` deps remain.
-5. Do not copy VM0047's self-contained assumptions into methods that
+6. Do not copy VM0047's self-contained assumptions into methods that
    genuinely depend on unencoded modules or tools.
