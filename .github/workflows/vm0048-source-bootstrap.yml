@@ -1,0 +1,43 @@
+name: vm0048-source-bootstrap
+on:
+  push:
+    branches:
+      - governance/vm0048-v1-0-ingestion
+    paths:
+      - '.github/workflows/vm0048-source-bootstrap.yml'
+permissions:
+  contents: write
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: governance/vm0048-v1-0-ingestion
+          lfs: true
+          fetch-depth: 0
+      - name: Capture authoritative VM0048 sources
+        run: |
+          set -euo pipefail
+          sudo apt-get update >/dev/null
+          sudo apt-get install -y poppler-utils >/dev/null
+          mkdir -p tools/Verra/VM0048/v1-0
+          mkdir -p docs/roadmaps/governance-v1/staging/VM0048/v1-0/source
+          curl --fail --location --retry 4 --retry-all-errors \
+            'https://verra.org/wp-content/uploads/2023/11/VM0048-Reducing-Emissions-from-Deforestation-and-Forest-Degradation-v1.0-1-1.pdf' \
+            -o tools/Verra/VM0048/v1-0/source.pdf
+          curl --fail --location --retry 4 --retry-all-errors \
+            'https://verra.org/wp-content/uploads/2024/07/VM0048-v1.0-Clarification-issued-July-31-2024.pdf' \
+            -o tools/Verra/VM0048/v1-0/clarification-2024-07-31.pdf
+          pdftotext -layout tools/Verra/VM0048/v1-0/source.pdf docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt
+          pdftotext -layout tools/Verra/VM0048/v1-0/clarification-2024-07-31.pdf docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/clarification.layout.txt
+          sha256sum tools/Verra/VM0048/v1-0/source.pdf tools/Verra/VM0048/v1-0/clarification-2024-07-31.pdf > docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/SHA256SUMS
+      - name: Commit governed source capture
+        run: |
+          set -euo pipefail
+          git config user.name 'article6-governance-bot'
+          git config user.email 'fredilly@article6.org'
+          git add tools/Verra/VM0048/v1-0 docs/roadmaps/governance-v1/staging/VM0048/v1-0/source
+          git rm .github/workflows/vm0048-source-bootstrap.yml
+          git commit -m 'Governance: capture authoritative VM0048 v1.0 sources'
+          git push origin HEAD:governance/vm0048-v1-0-ingestion
