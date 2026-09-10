@@ -13,6 +13,8 @@ function readJSON(p) {
 function main() {
   const VM0007_DIR = path.join(ROOT, 'methodologies', 'Verra', 'AFOLU', 'VM0007', 'v1-8');
   const VM0047_DIR = path.join(ROOT, 'methodologies', 'Verra', 'AFOLU', 'VM0047', 'v1-0');
+  const VM0007_GOV = path.join(ROOT, 'governance', 'Verra', 'AFOLU', 'VM0007', 'v1-8');
+  const VM0047_GOV = path.join(ROOT, 'governance', 'Verra', 'AFOLU', 'VM0047', 'v1-0');
 
   // 1. VM0047 is Source-Audited (computed from canonical artifacts)
   const vm0047 = require('../scripts/grade-method').isGradeA(VM0047_DIR);
@@ -32,7 +34,7 @@ function main() {
   assert.equal(vm0047Meta.artifact_quality_standard?.adoption_status, 'review_grade', 'VM0047 META adoption_status must be review_grade after Review-Grade promotion');
 
   // 4. VM0007 has no remaining blocked external dependencies
-  const vm0007Blocked = readJSON(path.join(VM0007_DIR, 'blocked-external-dependencies.json'));
+  const vm0007Blocked = readJSON(path.join(VM0007_GOV, 'blocked-external-dependencies.json'));
   assert.equal(vm0007Blocked.blocked_rule_count, 0, 'VM0007 must have 0 blocked rules at Source-Audited');
   assert.equal(vm0007Blocked.blocked_rules.length, 0, 'VM0007 must have 0 blocked rule entries at Source-Audited');
 
@@ -44,7 +46,7 @@ function main() {
   assert.equal(vm0007DraftRules.length, 0, 'VM0007 must have 0 draft_unverified rules at Source-Audited');
 
   // 6. T-SIG is not an active VM0047 blocker
-  const inv = readJSON(path.join(VM0047_DIR, 'blocked-external-dependencies.json'));
+  const inv = readJSON(path.join(VM0047_GOV, 'blocked-external-dependencies.json'));
   const tsigBlocked = inv.blocked_rules.some((r) =>
     r.external_dependencies.some((d) => d.includes('T-SIG')));
   assert.equal(tsigBlocked, false, 'T-SIG must not appear as an active blocker in VM0047 inventory');
