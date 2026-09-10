@@ -7,6 +7,7 @@ const crypto = require('crypto');
 const ROOT = path.resolve(__dirname, '..');
 const METHOD_DIR = path.join(ROOT, 'methodologies/Verra/AFOLU/VM0007/v1-8');
 const GOV_FILE = path.join(ROOT, 'governance/Verra/AFOLU/VM0007/v1-8/dependencies.governance-v1.json');
+const ROADMAP_FILE = path.join(ROOT, 'docs/roadmaps/verra-forestry-s-grade/dependency-resolution-maps/VM0007-v1-8.governance-v1.json');
 const RULES_FILE = path.join(METHOD_DIR, 'rules.rich.json');
 const SECTIONS_FILE = path.join(METHOD_DIR, 'sections.rich.json');
 
@@ -15,6 +16,7 @@ function sha256(file) { return crypto.createHash('sha256').update(fs.readFileSyn
 function fail(msg) { console.error(`✖ ${msg}`); process.exitCode = 1; }
 
 const gov = readJSON(GOV_FILE);
+const roadmap = readJSON(ROADMAP_FILE);
 const rules = readJSON(RULES_FILE);
 const sections = readJSON(SECTIONS_FILE);
 const ruleById = new Map(rules.map(r => [r.id, r]));
@@ -26,6 +28,8 @@ if (!Array.isArray(gov.edges) || gov.edges.length !== 20) fail(`expected 20 exte
 if (gov.unresolved_relationship_edges !== 0) fail('unresolved_relationship_edges must be zero');
 if (gov.unresolved_source_version_pins !== 0) fail('unresolved_source_version_pins must be zero: use explicit unversioned source semantics rather than an invented pin');
 if (Array.isArray(gov.promotion_blockers) && gov.promotion_blockers.length) fail(`promotion blockers remain: ${gov.promotion_blockers.join(', ')}`);
+if (roadmap.migration_status !== 'DEPENDENCY_EDGE_PROVENANCE_COMPLETE') fail('VM0007 governance migration roadmap is not closed');
+if (roadmap.authoritative_governance_artifact !== 'governance/Verra/AFOLU/VM0007/v1-8/dependencies.governance-v1.json') fail('VM0007 roadmap does not point to authoritative governed dependency artifact');
 
 function validateEvidenceRule(edge, rule) {
   const label = edge.source_reference_label;
@@ -99,4 +103,6 @@ for (const rule of tsigRules) {
 }
 
 if (process.exitCode) process.exit(process.exitCode);
-console.log(`✓ VM0007 dependency provenance complete: ${gov.edges.length} external/reference edges + T-SIG internal procedure; source-audited invoking-rule anchors validated; governed support versions kept distinct from VM0007 source version semantics`);
+const incorporated = gov.edges.filter(e => e.relationship === 'INCORPORATED_BY_REFERENCE').length;
+const informative = gov.edges.filter(e => e.relationship === 'INFORMATIVE').length;
+console.log(`✓ VM0007 dependency provenance complete: ${incorporated} incorporated-by-reference edges, ${informative} informative example, T-SIG internal procedure; source-audited anchors and support hashes validated without inventing version pins`);
