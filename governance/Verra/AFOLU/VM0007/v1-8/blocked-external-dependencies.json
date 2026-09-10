@@ -1,0 +1,7 @@
+{
+  "blocked_rule_count": 0,
+  "blocked_rules": [],
+  "methodology": "Verra/VM0007@v1-8",
+  "note": "No active blocked rules remain. External dependency declarations are retained in META.json for dependency visibility and historical traceability.",
+  "status": "no_active_blockers"
+}
