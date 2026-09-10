@@ -95,11 +95,13 @@
     }
   },
   "governance_v1": {
-    "state": "VERIFIED",
-    "verified": true,
-    "production_corpus": true,
-    "blockers": [],
-    "migration_note": "VM0047 v1.1 is VERIFIED with governed-text-resolvable section content and exact rule evidence spans under governance-v1 source-resolution invariants."
+    "state": "RULES_COMPLETE",
+    "verified": false,
+    "production_corpus": false,
+    "blockers": [
+      "rule_evidence_atomicity_repair"
+    ],
+    "migration_note": "VM0047 v1.1 was withdrawn from VERIFIED pending repair of composite normalized rules and clause-level governed-source evidence. VERIFIED may be restored only after the strengthened provenance/atomicity gate and structured production retrieval suite pass."
   },
   "external_dependencies": {
     "status": "governed_dependency_graph",
