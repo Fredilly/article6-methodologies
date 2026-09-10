@@ -14,6 +14,7 @@ const CLARIFICATION_HASH = 'd55fa78dddf7de254135d54e8e3da51f7c73cc73b54b6cabddee
 
 function readJSON(file) { return JSON.parse(fs.readFileSync(file, 'utf8')); }
 function sha256(file) { return crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex'); }
+function splitGovernedLines(text) { return text.split(/\r\n|\n|\r|\f|\v|\x85|\u2028|\u2029/); }
 function fail(message) { console.error(`✖ ${message}`); process.exitCode = 1; }
 function assert(condition, message) { if (!condition) fail(message); }
 
@@ -50,7 +51,7 @@ const allowedSources = new Map([
 const sourceLines = new Map();
 for (const [hash, file] of allowedSources) {
   assert(fs.existsSync(file), `governed text missing for ${hash}`);
-  if (fs.existsSync(file)) sourceLines.set(hash, fs.readFileSync(file, 'utf8').split(/\r?\n/));
+  if (fs.existsSync(file)) sourceLines.set(hash, splitGovernedLines(fs.readFileSync(file, 'utf8')));
 }
 
 const lineRefPattern = /^(docs\/roadmaps\/governance-v1\/staging\/VM0048\/v1-0\/source\/(source|clarification)\.layout\.txt)#L(\d+)-L(\d+)$/;
@@ -116,7 +117,6 @@ for (const activity of ['PDef', 'UDeg']) {
   assert(item && item.status === 'UNDER_DEVELOPMENT_IN_V1_0_SOURCE', `${activity}: under-development source status missing`);
 }
 
-// META must make every retained runtime/governance artifact tamper-evident.
 for (const entry of meta.files || []) {
   const absolute = entry.path.startsWith('governance/') ? path.join(ROOT, entry.path) : path.join(METHOD, entry.path);
   assert(fs.existsSync(absolute), `META files entry missing on disk: ${entry.path}`);
