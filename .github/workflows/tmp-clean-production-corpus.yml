@@ -100,14 +100,13 @@ jobs:
           text = text.replace("const filePath = path.join(component.componentDir, fileName);", "const filePath = path.join(governanceSupportDir(component), fileName);")
           p.write_text(text)
 
-          wf = Path('.github/workflows/stage-gates.yml')
-          text = wf.read_text()
-          text = text.replace("      - 'methodologies/**'\n", "      - 'methodologies/**'\n      - 'governance/**'\n")
-          needle = "      - name: Trio + registry integrity\n        run: node scripts/check-trio-and-registry.js\n"
-          repl = needle + "      - name: Production corpus contract\n        run: node scripts/check-production-corpus-contract.js\n"
-          if 'Production corpus contract' not in text:
-              text = text.replace(needle, repl)
-          wf.write_text(text)
+          trio = Path('scripts/check-trio-and-registry.js')
+          text = trio.read_text()
+          needle = "if (!failed) console.log('✓ All version dirs contain required artifacts');\n"
+          insert = needle + "\n// Governance-v1 production directories have a deliberately small runtime contract.\n// Supporting dependencies/equations/parameters/indexes/diffs live under governance/**.\nrequire('./check-production-corpus-contract.js');\n"
+          if "check-production-corpus-contract.js" not in text:
+              text = text.replace(needle, insert)
+          trio.write_text(text)
           PY
 
       - name: Validate contract and retrieval compatibility
@@ -129,6 +128,6 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add governance methodologies/Verra/AFOLU/VM0047/v1-1/META.json lib/governance-retrieval.js scripts/check-production-corpus-contract.js .github/workflows/stage-gates.yml manifest/index.json
+          git add governance methodologies/Verra/AFOLU/VM0047/v1-1/META.json lib/governance-retrieval.js scripts/check-production-corpus-contract.js scripts/check-trio-and-registry.js manifest/index.json
           git commit -m 'refactor: separate governance support from production corpus'
           git push
