@@ -1,0 +1,52 @@
+name: vm0048-registry-sync
+on:
+  push:
+    branches:
+      - governance/vm0048-v1-0-ingestion
+    paths:
+      - '.github/workflows/vm0048-registry-sync.yml'
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: governance/vm0048-v1-0-ingestion
+          fetch-depth: 0
+      - name: Add canonical VM0048 registry entry
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('registry.json')
+          reg=json.loads(p.read_text())
+          path='methodologies/Verra/AFOLU/VM0048/v1-0'
+          reg=[e for e in reg if e.get('path') != path]
+          reg.append({
+            'kind':'active',
+            'standard':'Verra',
+            'program':'AFOLU',
+            'code':'VM0048',
+            'version':'1.0',
+            'path':path,
+            'stage':'staging',
+            'latest':True,
+            'source_pdf':{
+              'path':'tools/Verra/VM0048/v1-0/source.pdf',
+              'sha256':'d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982'
+            }
+          })
+          # Preserve deterministic grouping/order used by the registry: standard/program/code/version/path.
+          reg.sort(key=lambda e:(str(e.get('standard','')),str(e.get('program','')),str(e.get('code','')),str(e.get('version','')),str(e.get('path',''))))
+          p.write_text(json.dumps(reg,indent=2,ensure_ascii=False)+'\n')
+          PY
+          node scripts/check-trio-and-registry.js
+      - name: Commit registry integration
+        run: |
+          git config user.name 'article6-governance-bot'
+          git config user.email 'fredilly@article6.org'
+          git add registry.json
+          git commit -m 'Governance: register VM0048 v1.0 corpus'
+          git push origin HEAD:governance/vm0048-v1-0-ingestion
