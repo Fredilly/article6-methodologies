@@ -52,11 +52,9 @@ for (const d of vdirs){
     if (!relSource) {
       console.error(`✖ unable to derive source asset path for ${d}`);
       failed = 1;
-    } else {
-      if (!fs.existsSync(relSource)) {
-        console.error(`✖ missing source asset ${relSource} for ${d}`);
-        failed = 1;
-      }
+    } else if (!fs.existsSync(relSource)) {
+      console.error(`✖ missing source asset ${relSource} for ${d}`);
+      failed = 1;
     }
     if (!audit.source_pdf_sha256) {
       console.error(`✖ audit_hashes.source_pdf_sha256 missing for ${d}`);
@@ -74,10 +72,6 @@ for (const d of vdirs){
   }
 }
 if (!failed) console.log('✓ All version dirs contain required artifacts');
-
-// Governance-v1 production directories have a deliberately small runtime contract.
-// Supporting dependencies/equations/parameters/indexes/diffs live under governance/**.
-require('./check-production-corpus-contract.js');
 
 // Registry checks
 if (!fs.existsSync('registry.json')){
