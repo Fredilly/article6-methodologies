@@ -75,6 +75,10 @@ for (const d of vdirs){
 }
 if (!failed) console.log('✓ All version dirs contain required artifacts');
 
+// Governance-v1 production directories have a deliberately small runtime contract.
+// Supporting dependencies/equations/parameters/indexes/diffs live under governance/**.
+require('./check-production-corpus-contract.js');
+
 // Registry checks
 if (!fs.existsSync('registry.json')){
   console.error('✖ registry.json missing');
