@@ -125,6 +125,8 @@ jobs:
         run: node scripts/check-production-corpus-contract.js
       - name: VM0047 v1.1 rule evidence atomicity
         run: node scripts/audit-rule-evidence-atomicity.js methodologies/Verra/AFOLU/VM0047/v1-1
+      - name: VM0007 v1.8 dependency provenance
+        run: node scripts/check-vm0007-dependency-provenance.js
       - name: Previous versions lock drift (Agriculture)
         run: npm run previous:drift:agriculture
       - name: Previous versions lock drift (Forestry)
