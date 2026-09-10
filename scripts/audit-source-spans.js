@@ -6,7 +6,8 @@
  *
  * Validates that every rule in a methodology's rules.rich.json has a
  * source_span_text that maps correctly to the PDF section declared in
- * its primary_section, using section-map.json as the contract.
+ * its primary_section, using the parallel governance section-map.json
+ * as the contract.
  *
  * Usage:
  *   node scripts/audit-source-spans.js <methodology-dir>
@@ -14,9 +15,9 @@
  * Example:
  *   node scripts/audit-source-spans.js methodologies/Verra/AFOLU/VM0007/v1-8/
  *
- * Required files (under methodology-dir):
- *   - rules.rich.json
- *   - section-map.json
+ * Required files:
+ *   - <methodology-dir>/rules.rich.json
+ *   - governance/<same registry/domain/component/version>/section-map.json
  *
  * The section-map.json defines:
  *   {
@@ -32,12 +33,18 @@
 const fs = require('fs');
 const path = require('path');
 
-// ── Config ──────────────────────────────────────────────────────────────────
 const ROOT = path.resolve(__dirname, '..');
 
-// ── Helpers ─────────────────────────────────────────────────────────────────
 function readJSON(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+function governanceSupportDir(methodologyDir) {
+  const rel = path.relative(path.join(ROOT, 'methodologies'), methodologyDir);
+  if (!rel || rel.startsWith('..') || path.isAbsolute(rel)) {
+    throw new Error(`methodology directory must be under ${path.join(ROOT, 'methodologies')}`);
+  }
+  return path.join(ROOT, 'governance', rel);
 }
 
 function isBadString(text) {
@@ -55,12 +62,10 @@ function endsWell(text) {
   const goodEndings = ['.', '!', ':', ';', '"', ')', '}', ']'];
   const lastChar = last[last.length - 1];
   if (goodEndings.includes(lastChar)) return true;
-  // Allow bullet lists and list items ending mid-line
   if (last.match(/^[\s]*[•\-*\d]+[.)]?\s/)) return true;
   return false;
 }
 
-// ── Main ────────────────────────────────────────────────────────────────────
 function main() {
   const args = process.argv.slice(2);
   if (args.length < 1) {
@@ -69,35 +74,28 @@ function main() {
   }
 
   const mDir = path.resolve(ROOT, args[0]);
-
-  // 1. Load required files
   const rulesPath = path.join(mDir, 'rules.rich.json');
-  const mapPath = path.join(mDir, 'section-map.json');
+  const mapPath = path.join(governanceSupportDir(mDir), 'section-map.json');
 
   if (!fs.existsSync(rulesPath)) {
     console.error(`FAIL: rules.rich.json not found at ${rulesPath}`);
     process.exit(1);
   }
   if (!fs.existsSync(mapPath)) {
-    console.error(`FAIL: section-map.json not found at ${mapPath}`);
-    console.error('  Create a section-map.json with the section-to-PDF mapping.');
+    console.error(`FAIL: governance section-map.json not found at ${mapPath}`);
+    console.error('  Create the section map under the parallel governance support directory.');
     process.exit(1);
   }
 
   const rules = readJSON(rulesPath);
   const sectionMap = readJSON(mapPath);
-
-  const methodName = path.basename(path.dirname(rulesPath)) + '/' +
-    path.basename(rulesPath);
   const { exceptions = [] } = sectionMap;
 
-  // Build lookup: rule_id -> allowed_pdf_sections set
   const exceptionLookup = {};
   for (const exc of exceptions) {
     exceptionLookup[exc.rule_id] = new Set(exc.allowed_pdf_sections || []);
   }
 
-  // 2. Audit each rule
   let failures = 0;
   let total = 0;
   const lines = [];
@@ -112,40 +110,30 @@ function main() {
 
     total++;
 
-    // R1: source_span_text must exist
-    if (!span || !span.trim()) {
-      ruleProblems.push('MISSING_SOURCE_SPAN');
-    }
+    if (!span || !span.trim()) ruleProblems.push('MISSING_SOURCE_SPAN');
 
-    // R2: No bad strings
     if (span) {
       const bad = isBadString(span);
       if (bad) ruleProblems.push(`BAD_STRING:${bad}`);
     }
 
-    // R3: No mid-sentence starts
     if (span && span.trim() && span.trim()[0] === span.trim()[0].toLowerCase() &&
         !/[•\-*\d]/.test(span.trim()[0])) {
       ruleProblems.push('MID_SENTENCE_START');
     }
 
-    // R4: Source section must exist in section-map
     if (primarySection && sectionMap[primarySection]) {
-      // R4a: Rule section_number must match one of the mapped PDF sections
       const allowed = sectionMap[primarySection].pdf_sections || [];
       if (allowed.length > 0 && ruleSectionNum) {
         const excAllowed = exceptionLookup[rid];
         const isException = excAllowed && excAllowed.size > 0;
 
-        // Check if rule's section_number is in the map for primarySection
         if (!allowed.includes(ruleSectionNum)) {
           if (!isException) {
             ruleProblems.push(
               `SECTION_MISMATCH: ${primarySection} expects ${allowed.join(',')} but rule has section_number=${ruleSectionNum}`
             );
           } else {
-            // Even with exception, the source_span_text should reference
-            // one of the allowed PDF sub-sections
             const spanStartsWithException = [...excAllowed].some(exc =>
               span && span.trim().startsWith(exc)
             );
@@ -161,11 +149,9 @@ function main() {
       ruleProblems.push(`UNKNOWN_SECTION: ${primarySection} not in section-map`);
     }
 
-    // R5: Check for truncated text
     if (span && !endsWell(span)) {
       const lastLine = span.split('\n').filter(l => l.trim()).pop() || '';
       const trimmed = lastLine.trim();
-      // Allow bullet items and short headings
       if (trimmed.length > 3 && !trimmed.match(/^[\s]*[•\-*\d]+[.)]?\s/)) {
         ruleProblems.push(`POSSIBLE_TRUNCATION: ends with "${trimmed.slice(-40)}"`);
       }
@@ -179,12 +165,9 @@ function main() {
     }
   }
 
-  // 3. Report
   console.log(`\n=== Source-Span Audit (${path.relative(ROOT, mDir)}) ===`);
   console.log(`Total rules: ${total}`);
-  for (const line of lines) {
-    console.log(line);
-  }
+  for (const line of lines) console.log(line);
 
   const pass = total - failures;
   const pct = total > 0 ? (pass / total * 100).toFixed(1) : '0.0';
@@ -193,10 +176,8 @@ function main() {
   if (failures > 0) {
     console.log(`FAILED: ${failures} rule(s) have issues.`);
     process.exit(1);
-  } else {
-    console.log('ALL PASSED.');
-    process.exit(0);
   }
+  console.log('ALL PASSED.');
 }
 
 main();

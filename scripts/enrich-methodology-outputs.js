@@ -6,6 +6,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const METHODOLOGIES_ROOT = path.join(ROOT, 'methodologies');
+const GOVERNANCE_ROOT = path.join(ROOT, 'governance');
 const TOOL_MODULE_RELATIONSHIP_METHODS = new Set([
   'UNFCCC.Forestry.AR-AMS0007.v03-1'
 ]);
@@ -162,8 +163,10 @@ function pageBounds(pages) {
 }
 
 function loadAnchors(methodDir) {
+  const rel = path.relative(METHODOLOGIES_ROOT, methodDir);
+  const governanceDir = path.join(GOVERNANCE_ROOT, rel);
   const candidates = ['anchors.real.json', 'anchors.example.json']
-    .map((name) => path.join(methodDir, name))
+    .map((name) => path.join(governanceDir, name))
     .filter((filePath) => fs.existsSync(filePath))
     .sort();
   if (candidates.length === 0) return { rules: {}, sections: {} };

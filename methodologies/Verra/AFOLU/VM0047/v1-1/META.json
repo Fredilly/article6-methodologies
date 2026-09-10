@@ -38,23 +38,23 @@
       "sha256": "97ea35d710723fb4ebf6ec843db83b938fcb775bd4cec0aaf1b2b676f3143c2a"
     },
     {
-      "path": "equations.governance-v1.json",
+      "path": "governance/Verra/AFOLU/VM0047/v1-1/equations.governance-v1.json",
       "sha256": "8ba634223a168d6e2078a9212a12933fb34485d597cf768d36f1a6d89c0cd249"
     },
     {
-      "path": "parameters.governance-v1.json",
+      "path": "governance/Verra/AFOLU/VM0047/v1-1/parameters.governance-v1.json",
       "sha256": "838297f52292e5645ad5e97f9aa4f72544d1571d43203eff76a95b101df9aad4"
     },
     {
-      "path": "dependencies.governance-v1.json",
+      "path": "governance/Verra/AFOLU/VM0047/v1-1/dependencies.governance-v1.json",
       "sha256": "de2fab1678711a78b6a862ee38151dcb37b4f978b069f5b4ca8b041aef4f0311"
     },
     {
-      "path": "version-diff-from-v1-0.json",
+      "path": "governance/Verra/AFOLU/VM0047/v1-1/version-diff-from-v1-0.json",
       "sha256": "84c97df8ed10aeb771ff876ad30fe971473d609a2c0cf0365ecbd56b26420974"
     },
     {
-      "path": "rules.governance-v1.index.json",
+      "path": "governance/Verra/AFOLU/VM0047/v1-1/rules.governance-v1.index.json",
       "sha256": "c1ab44d0128d3a87c74947d344b9acec564abf5bedb8552810f286f0ea75050f"
     }
   ],
@@ -103,7 +103,11 @@
   },
   "external_dependencies": {
     "status": "governed_dependency_graph",
-    "path": "dependencies.governance-v1.json",
+    "path": "governance/Verra/AFOLU/VM0047/v1-1/dependencies.governance-v1.json",
     "note": "Dynamic and incorporated dependency semantics are preserved in the governed dependency artifact; no dynamic dependency is silently pinned."
+  },
+  "governance_support": {
+    "root": "governance/Verra/AFOLU/VM0047/v1-1",
+    "purpose": "Non-runtime governance artifacts: dependencies, equations, parameters, indexes, and version comparison evidence."
   }
 }
