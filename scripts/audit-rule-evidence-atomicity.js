@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 
+const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 const {
@@ -8,6 +9,10 @@ const {
   sourceRefLooksComposite,
   validateClauseEvidence
 } = require('./check-governance-source-resolution');
+
+function sha256File(file) {
+  return crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+}
 
 function main() {
   const args = process.argv.slice(2);
@@ -21,7 +26,9 @@ function main() {
   const rulesPath = path.join(methodDir, 'rules.rich.json');
   const meta = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
   const rules = JSON.parse(fs.readFileSync(rulesPath, 'utf8'));
-  const clauseEvidence = loadClauseEvidence(methodDir, meta)?.evidence || null;
+  const loadedClauseEvidence = loadClauseEvidence(methodDir, meta);
+  const clauseEvidence = loadedClauseEvidence?.evidence || null;
+  const clauseEvidenceSha256 = loadedClauseEvidence?.evidencePath ? sha256File(loadedClauseEvidence.evidencePath) : null;
   const sourceHash = meta?.audit_hashes?.source_pdf_sha256;
   const failures = [];
   let compositeRuleCount = 0;
@@ -44,6 +51,7 @@ function main() {
     methodology: args[0],
     composite_rule_count: compositeRuleCount,
     governed_clause_rule_count: Object.keys(clauseEvidence?.rules || {}).length,
+    clause_evidence_sha256: clauseEvidenceSha256,
     failure_count: failures.length,
     failures
   }, null, 2));
