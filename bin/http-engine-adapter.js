@@ -11,132 +11,222 @@ const { createGovernanceRetriever } = require('../lib/governance-retrieval');
 const ROOT = path.resolve(__dirname, '..');
 const DEFAULT_PORT = 3030;
 const DEFAULT_HOST = '127.0.0.1';
-const BODY_LIMIT = 1024 * 1024;
+const MAX_BODY_BYTES = 1 * 1024 * 1024; // 1 MiB
+const BM25_PARAMS = { k1: 1.2, b: 0.75 };
+const HEALTH_METRICS_WINDOW = Number(process.env.ENGINE_HEALTH_METRICS_WINDOW || 200) || 200;
+const HEALTH_METRICS_LOG = process.env.ENGINE_METRICS_LOG ? path.resolve(process.env.ENGINE_METRICS_LOG) : null;
+const healthDurations = [];
+let healthRequestCount = 0;
 
-function readJson(file) {
-  try {
-    return JSON.parse(fs.readFileSync(file, 'utf8'));
-  } catch (err) {
-    return null;
+function sha256(buf) {
+  return crypto.createHash('sha256').update(buf).digest('hex');
+}
+
+function readJSON(absPath) {
+  const raw = fs.readFileSync(absPath, 'utf8');
+  return JSON.parse(raw);
+}
+
+function toPosixRelative(absPath) {
+  return path.relative(ROOT, absPath).split(path.sep).join('/');
+}
+
+function tokenize(text) {
+  return String(text).toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+}
+
+function discoverMethodConfigs() {
+  const baseDir = path.join(ROOT, 'methodologies');
+  const configs = [];
+  function walk(currentDir, segments) {
+    let entries;
+    try {
+      entries = fs.readdirSync(currentDir, { withFileTypes: true });
+    } catch (err) {
+      return;
+    }
+    for (const entry of entries) {
+      if (!entry.isDirectory()) continue;
+      const nextDir = path.join(currentDir, entry.name);
+      const nextSegments = segments.concat(entry.name);
+      const metaPath = path.join(nextDir, 'META.json');
+      const sectionsPath = path.join(nextDir, 'sections.json');
+      const rulesPath = path.join(nextDir, 'rules.json');
+      if (fs.existsSync(metaPath) && fs.existsSync(sectionsPath) && fs.existsSync(rulesPath)) {
+        if (nextSegments.length >= 2) {
+          const version = nextSegments[nextSegments.length - 1];
+          const methodologyId = nextSegments[nextSegments.length - 2];
+          configs.push({
+            methodology_id: methodologyId,
+            version,
+            relDir: toPosixRelative(nextDir)
+          });
+        }
+        continue;
+      }
+      walk(nextDir, nextSegments);
+    }
   }
-}
-
-function safeArray(value) {
-  return Array.isArray(value) ? value : [];
-}
-
-function normalizeVersion(value) {
-  if (value == null) return null;
-  return String(value).replace(/_/g, '-');
-}
-
-function hashContent(value) {
-  return crypto.createHash('sha256').update(String(value || ''), 'utf8').digest('hex');
-}
-
-function walk(dir, visitor) {
-  if (!fs.existsSync(dir)) return;
-  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) walk(full, visitor);
-    else visitor(full);
-  }
+  if (fs.existsSync(baseDir)) walk(baseDir, []);
+  configs.sort((a, b) => a.relDir.localeCompare(b.relDir));
+  return configs;
 }
 
 function buildCorpus() {
   const documents = [];
-  const audit = { methodologies: 0, sections: 0, rules: 0, source_hash: null };
-  const root = path.join(ROOT, 'methodologies');
+  const perMethodAudit = [];
+  const methodConfigs = discoverMethodConfigs();
+  for (const cfg of methodConfigs) {
+    const methodRoot = path.join(ROOT, cfg.relDir);
+    const metaPath = path.join(methodRoot, 'META.json');
+    const leanSectionsPath = path.join(methodRoot, 'sections.json');
+    const leanRulesPath = path.join(methodRoot, 'rules.json');
 
-  walk(root, (file) => {
-    if (path.basename(file) !== 'META.json') return;
-    const dir = path.dirname(file);
-    const meta = readJson(file);
-    if (!meta) return;
-    audit.methodologies += 1;
+    const meta = readJSON(metaPath);
+    const sectionsRaw = fs.readFileSync(leanSectionsPath);
+    const rulesRaw = fs.readFileSync(leanRulesPath);
 
-    const rel = path.relative(ROOT, dir).split(path.sep).join('/');
-    const methodologyId = `${meta.standard || ''}/${meta.domain || ''}/${meta.method || meta.title || path.basename(path.dirname(dir))}`;
-    const version = normalizeVersion(meta.version || path.basename(dir));
+    const sectionsHash = sha256(sectionsRaw);
+    const rulesHash = sha256(rulesRaw);
 
-    const sections = readJson(path.join(dir, 'sections.rich.json')) || readJson(path.join(dir, 'sections.json')) || [];
-    safeArray(sections).forEach((section) => {
-      const text = [section.title, section.summary, section.content, section.text, section.source_span_text]
-        .filter(Boolean)
-        .join('\n');
+    const expectedSectionsHash = (((meta || {}).audit_hashes || {}).sections_json_sha256) || null;
+    const expectedRulesHash = (((meta || {}).audit_hashes || {}).rules_json_sha256) || null;
+
+    if (expectedSectionsHash && expectedSectionsHash !== sectionsHash) {
+      throw new Error(`${cfg.methodology_id} sections.json hash mismatch: expected ${expectedSectionsHash}, got ${sectionsHash}`);
+    }
+    if (expectedRulesHash && expectedRulesHash !== rulesHash) {
+      throw new Error(`${cfg.methodology_id} rules.json hash mismatch: expected ${expectedRulesHash}, got ${rulesHash}`);
+    }
+
+    const sectionsLean = readJSON(leanSectionsPath);
+    const rulesLean = readJSON(leanRulesPath);
+
+    const sectionById = new Map();
+    const sectionArr = Array.isArray(sectionsLean.sections) ? sectionsLean.sections : [];
+    for (const section of sectionArr) {
+      if (section && section.id) {
+        sectionById.set(String(section.id), {
+          id: String(section.id),
+          title: section.title ? String(section.title) : ''
+        });
+      }
+    }
+
+    const ruleArr = Array.isArray(rulesLean.rules) ? rulesLean.rules : [];
+    for (const rule of ruleArr) {
+      const ruleId = String(rule.id || '');
+      const sectionId = String(rule.section_id || '');
+      const section = sectionById.get(sectionId) || { id: sectionId, title: '' };
+      const ruleText = String(rule.title || rule.text || '');
+      const compositeText = section.title ? `${section.title} - ${ruleText}` : ruleText;
+      const tokens = tokenize(compositeText);
+      const docKey = `${cfg.methodology_id}@${cfg.version}:${ruleId}`;
       documents.push({
-        kind: 'section',
-        methodology_id: methodologyId,
-        version,
-        section_id: section.id || null,
-        section_title: section.title || null,
-        tags: safeArray(section.tags),
-        text,
-        path: rel,
-        source_hash: meta?.audit_hashes?.source_pdf_sha256 || null
+        key: docKey,
+        methodology_id: cfg.methodology_id,
+        version: cfg.version,
+        rule_id: ruleId,
+        section_id: sectionId,
+        section_title: section.title,
+        text: ruleText,
+        tokens,
+        tags: Array.isArray(rule.tags) ? rule.tags.map(String) : []
       });
-      audit.sections += 1;
+    }
+
+    const references = (((meta || {}).references || {}).tools) || [];
+    const toolRefs = references.map((ref) => ({
+      doc: ref && ref.doc ? String(ref.doc) : null,
+      kind: ref && ref.kind ? String(ref.kind) : null,
+      path: ref && ref.path ? String(ref.path) : null,
+      sha256: ref && ref.sha256 ? String(ref.sha256) : null
+    })).filter((r) => r.doc && r.path && r.sha256);
+
+    perMethodAudit.push({
+      methodology_id: cfg.methodology_id,
+      version: cfg.version,
+      rules: {
+        path: toPosixRelative(leanRulesPath),
+        sha256: rulesHash
+      },
+      sections: {
+        path: toPosixRelative(leanSectionsPath),
+        sha256: sectionsHash
+      },
+      tool_references: toolRefs
     });
+  }
 
-    const rules = readJson(path.join(dir, 'rules.rich.json')) || readJson(path.join(dir, 'rules.json')) || [];
-    safeArray(rules).forEach((rule) => {
-      const text = [rule.summary, rule.logic, rule.source_span_text]
-        .filter(Boolean)
-        .join('\n');
-      documents.push({
-        kind: 'rule',
-        methodology_id: methodologyId,
-        version,
-        rule_id: rule.id || rule.stable_id || null,
-        tags: safeArray(rule.tags),
-        text,
-        path: rel,
-        source_hash: meta?.audit_hashes?.source_pdf_sha256 || null
-      });
-      audit.rules += 1;
-    });
-  });
+  documents.sort((a, b) => a.key.localeCompare(b.key));
 
-  audit.source_hash = hashContent(documents.map((doc) => `${doc.path}|${doc.kind}|${doc.section_id || doc.rule_id || ''}|${doc.text}`).join('\n'));
-  return { documents, audit };
-}
-
-function tokenize(text) {
-  return String(text || '')
-    .toLowerCase()
-    .replace(/[^a-z0-9._-]+/g, ' ')
-    .trim()
-    .split(/\s+/)
-    .filter(Boolean);
+  return {
+    documents,
+    audit: {
+      bm25: {
+        tokenizer: 'lowercase-ascii-nonalnum-split',
+        params: BM25_PARAMS,
+        documents: documents.length
+      },
+      inputs: perMethodAudit
+    }
+  };
 }
 
 function buildBM25(documents) {
-  const tokenized = documents.map((doc) => tokenize(doc.text));
-  const avgdl = tokenized.length ? tokenized.reduce((sum, tokens) => sum + tokens.length, 0) / tokenized.length : 1;
+  const N = documents.length;
   const df = new Map();
-  tokenized.forEach((tokens) => {
-    const seen = new Set(tokens);
-    seen.forEach((token) => df.set(token, (df.get(token) || 0) + 1));
-  });
-  const N = documents.length || 1;
+  const docLen = new Map();
+  const tf = new Map();
+  const postings = new Map();
+  const docIndex = new Map();
+  let totalLen = 0;
 
-  function score(queryTokens, index) {
-    const tokens = tokenized[index];
-    const frequencies = new Map();
-    tokens.forEach((token) => frequencies.set(token, (frequencies.get(token) || 0) + 1));
-    const k1 = 1.2;
-    const b = 0.75;
-    let total = 0;
-    queryTokens.forEach((token) => {
-      const n = df.get(token) || 0;
-      if (!n) return;
+  for (const doc of documents) {
+    docIndex.set(doc.key, doc);
+    const tokens = doc.tokens;
+    const len = tokens.length;
+    docLen.set(doc.key, len);
+    totalLen += len;
+    const termFreq = new Map();
+    for (const t of tokens) {
+      termFreq.set(t, (termFreq.get(t) || 0) + 1);
+    }
+    tf.set(doc.key, termFreq);
+    for (const [term, freq] of termFreq.entries()) {
+      df.set(term, (df.get(term) || 0) + 1);
+      if (!postings.has(term)) postings.set(term, new Map());
+      postings.get(term).set(doc.key, freq);
+    }
+  }
+
+  const avgdl = N ? totalLen / N : 0;
+
+  function score(query) {
+    const queryTokens = Array.from(new Set(tokenize(query)));
+    if (!queryTokens.length || !N) return [];
+    const scores = new Map();
+    for (const term of queryTokens) {
+      const posting = postings.get(term);
+      if (!posting) continue;
+      const n = df.get(term) || 0;
+      if (!n) continue;
       const idf = Math.log(1 + (N - n + 0.5) / (n + 0.5));
-      const tf = frequencies.get(token) || 0;
-      if (!tf) return;
-      const denom = tf + k1 * (1 - b + b * (tokens.length / avgdl));
-      total += idf * ((tf * (k1 + 1)) / denom);
-    });
-    return total;
+      for (const [docKey, freq] of posting.entries()) {
+        const length = docLen.get(docKey) || 0;
+        const denom = freq + BM25_PARAMS.k1 * (1 - BM25_PARAMS.b + BM25_PARAMS.b * (length / (avgdl || 1)));
+        const partial = idf * (freq * (BM25_PARAMS.k1 + 1)) / (denom || 1);
+        scores.set(docKey, (scores.get(docKey) || 0) + partial);
+      }
+    }
+
+    const ranked = Array.from(scores.entries()).map(([docKey, value]) => ({
+      doc: docIndex.get(docKey),
+      score: value
+    }));
+
+    ranked.sort((a, b) => b.score - a.score || a.doc.key.localeCompare(b.doc.key));
+    return ranked;
   }
 
   return { score };
@@ -149,65 +239,144 @@ function createEngine() {
 
   function search(query, opts = {}) {
     const limit = Number.isInteger(opts.topK) && opts.topK > 0 ? Math.min(opts.topK, 50) : 5;
-    const queryTokens = tokenize(query);
-    const scored = documents
-      .map((doc, index) => ({ doc, score: bm25.score(queryTokens, index) }))
-      .filter((item) => item.score > 0)
-      .sort((a, b) => b.score - a.score)
-      .slice(0, limit);
-    const results = scored.map(({ doc, score }) => ({ ...doc, score }));
+    if (typeof query !== 'string' || !query.trim()) {
+      return { results: [], audit, topK: limit };
+    }
+    const ranked = bm25.score(query).slice(0, limit);
+    const results = ranked.map((entry) => ({
+      doc_id: entry.doc.key,
+      methodology_id: entry.doc.methodology_id,
+      version: entry.doc.version,
+      rule_id: entry.doc.rule_id,
+      section_id: entry.doc.section_id,
+      section_title: entry.doc.section_title,
+      score: Number(entry.score.toFixed(6)),
+      text: entry.doc.text,
+      tags: entry.doc.tags
+    }));
     return { results, audit, topK: limit };
   }
 
   return { search, structured: governance.query, audit, documents };
 }
 
-function sendJSON(res, status, payload) {
-  const body = JSON.stringify(payload);
-  res.writeHead(status, {
-    'content-type': 'application/json; charset=utf-8',
-    'content-length': Buffer.byteLength(body)
-  });
-  res.end(body);
-}
-
-function readRequestBody(req) {
+async function readRequestBody(req) {
   return new Promise((resolve, reject) => {
-    const chunks = [];
     let size = 0;
+    const chunks = [];
     req.on('data', (chunk) => {
       size += chunk.length;
-      if (size > BODY_LIMIT) {
+      if (size > MAX_BODY_BYTES) {
         reject(new Error('PayloadTooLarge'));
         req.destroy();
         return;
       }
       chunks.push(chunk);
     });
-    req.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')));
+    req.on('end', () => {
+      resolve(Buffer.concat(chunks).toString('utf8'));
+    });
     req.on('error', reject);
   });
 }
 
+function sendJSON(res, statusCode, payload) {
+  const body = JSON.stringify(payload);
+  res.statusCode = statusCode;
+  res.setHeader('Content-Type', 'application/json; charset=utf-8');
+  res.setHeader('Content-Length', Buffer.byteLength(body));
+  res.end(body);
+}
+
+function percentile(values, p) {
+  if (!values.length) return 0;
+  const sorted = values.slice().sort((a, b) => a - b);
+  const rank = Math.ceil((p / 100) * sorted.length) - 1;
+  const idx = Math.min(sorted.length - 1, Math.max(0, rank));
+  return sorted[idx];
+}
+
+function recordHealthMetrics(durationMs) {
+  healthRequestCount += 1;
+  healthDurations.push(durationMs);
+  if (healthDurations.length > HEALTH_METRICS_WINDOW) healthDurations.shift();
+  const p95 = percentile(healthDurations, 95);
+  const line = `[engine][healthz] requests=${healthRequestCount} p95_ms=${p95.toFixed(2)}`;
+  console.log(line);
+  if (HEALTH_METRICS_LOG) {
+    const entry = `${new Date().toISOString()} ${line}\n`;
+    fs.appendFile(HEALTH_METRICS_LOG, entry, (err) => {
+      if (err) console.warn('[engine] unable to append health metrics log', err.message || err);
+    });
+  }
+}
+
+function renderBadge(documents) {
+  const left = 'engine';
+  const right = `ok • ${documents} docs`;
+  const leftWidth = 6 * left.length + 40;
+  const rightWidth = 6 * right.length + 40;
+  const totalWidth = leftWidth + rightWidth;
+  const height = 28;
+
+  return [
+    '<?xml version="1.0" encoding="UTF-8"?>\n',
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${totalWidth}" height="${height}" role="img" aria-label="engine status">`,
+    '<linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient>',
+    `<mask id="m"><rect width="${totalWidth}" height="${height}" rx="4" ry="4" fill="#fff"/></mask>`,
+    `<g mask="url(#m)">`,
+    `<rect width="${leftWidth}" height="${height}" fill="#555"/>`,
+    `<rect x="${leftWidth}" width="${rightWidth}" height="${height}" fill="#2c974b"/>`,
+    `<rect width="${totalWidth}" height="${height}" fill="url(#s)"/></g>`,
+    `<g fill="#fff" text-anchor="middle" font-family="'DejaVu Sans',Verdana,Geneva,sans-serif" font-size="14">`,
+    `<text x="${leftWidth / 2}" y="20">${left}</text>`,
+    `<text x="${leftWidth + rightWidth / 2}" y="20">${right}</text>`,
+    '</g></svg>'
+  ].join('');
+}
+
 function handleHealth(engine, req, res) {
-  sendJSON(res, 200, { ok: true, documents: engine.documents.length, audit: engine.audit });
+  const started = process.hrtime.bigint();
+  try {
+    const url = new URL(req.url, 'http://localhost');
+    const docCount = engine.audit.bm25.documents;
+    if (url.searchParams.has('badge')) {
+      const svg = renderBadge(docCount);
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8');
+      res.setHeader('Cache-Control', 'no-store');
+      res.end(svg);
+    } else {
+      sendJSON(res, 200, { status: 'ok', documents: docCount });
+    }
+  } catch (err) {
+    console.warn('[engine] failed to handle health request', err && err.message ? err.message : err);
+    sendJSON(res, 500, { error: 'InternalError', message: 'Failed to render health status' });
+  } finally {
+    try {
+      const elapsed = process.hrtime.bigint() - started;
+      recordHealthMetrics(Number(elapsed) / 1e6);
+    } catch (metricsErr) {
+      console.warn('[engine] failed to record health metrics', metricsErr && metricsErr.message ? metricsErr.message : metricsErr);
+    }
+  }
 }
 
 function handleManifest(engine, req, res) {
   try {
     const url = new URL(req.url, 'http://localhost');
-    const query = String(url.searchParams.get('q') || '').trim().toLowerCase();
-    const returnAll = url.searchParams.get('all') === '1' || !query;
-    const docs = engine.documents.map((entry) => ({
-      methodology_id: entry.methodology_id,
-      version: entry.version,
-      kind: entry.kind,
-      section_id: entry.section_id || null,
-      section_title: entry.section_title || null,
-      rule_id: entry.rule_id || null,
-      tags: entry.tags,
-      source_hash: entry.source_hash,
-      text: entry.text
+    const query = (url.searchParams.get('q') || '').trim().toLowerCase();
+    const allParam = (url.searchParams.get('all') || '').trim().toLowerCase();
+    const returnAll = allParam === '1' || allParam === 'true' || allParam === 'yes';
+    const docs = (engine.documents || []).map((doc) => ({
+      doc_id: doc.key,
+      methodology_id: doc.methodology_id,
+      version: doc.version,
+      rule_id: doc.rule_id,
+      section_id: doc.section_id,
+      section_title: doc.section_title,
+      tags: doc.tags,
+      text: doc.text
     }));
     const filtered = query
       ? docs.filter((entry) => {
@@ -240,25 +409,30 @@ async function handleQuery(engine, req, res) {
       return;
     }
     if (!parsed || typeof parsed !== 'object') {
-      sendJSON(res, 400, { error: 'InvalidRequest', message: 'Body must be a JSON object' });
-      return;
+    sendJSON(res, 400, { error: 'InvalidRequest', message: 'Body must be a JSON object' });
+    return;
+  }
+  if (typeof parsed.operation === 'string' && parsed.operation.trim()) {
+    try {
+      const result = engine.structured(parsed);
+      sendJSON(res, 200, { mode: 'governance-v1', request: parsed, result });
+    } catch (structuredErr) {
+      sendJSON(res, 400, { error: 'InvalidStructuredRequest', message: structuredErr.message || 'Invalid structured request' });
     }
-    if (typeof parsed.operation === 'string' && parsed.operation.trim()) {
-      try {
-        const result = engine.structured(parsed);
-        sendJSON(res, 200, { mode: 'governance-v1', request: parsed, result });
-      } catch (structuredErr) {
-        sendJSON(res, 400, { error: 'InvalidStructuredRequest', message: structuredErr.message || 'Invalid structured request' });
-      }
-      return;
-    }
-    if (typeof parsed.query !== 'string') {
-      sendJSON(res, 400, { error: 'InvalidRequest', message: 'Body must include string field "query" or structured field "operation"' });
-      return;
-    }
-    const requestedTopK = parsed.top_k;
-    const { results, audit, topK } = engine.search(parsed.query, { topK: requestedTopK });
-    sendJSON(res, 200, { query: parsed.query, top_k: topK, results, audit });
+    return;
+  }
+  if (typeof parsed.query !== 'string') {
+    sendJSON(res, 400, { error: 'InvalidRequest', message: 'Body must include string field "query" or structured field "operation"' });
+    return;
+  }
+  const requestedTopK = parsed.top_k;
+  const { results, audit, topK } = engine.search(parsed.query, { topK: requestedTopK });
+  sendJSON(res, 200, {
+    query: parsed.query,
+    top_k: topK,
+    results,
+    audit
+  });
   } catch (err) {
     if (err && err.message === 'PayloadTooLarge') {
       sendJSON(res, 413, { error: 'PayloadTooLarge', message: 'Request body exceeds limit' });
@@ -270,10 +444,8 @@ async function handleQuery(engine, req, res) {
 }
 
 function startServer(engine, options = {}) {
-  // Nullish coalescing intentionally permits port 0 for an OS-assigned port in
-  // integration tests while retaining the production default when omitted.
-  const port = options.port ?? DEFAULT_PORT;
-  const host = options.host ?? DEFAULT_HOST;
+  const port = options.port || DEFAULT_PORT;
+  const host = options.host || DEFAULT_HOST;
   const server = http.createServer((req, res) => {
     if (req.method === 'POST' && req.url === '/query') {
       handleQuery(engine, req, res);
@@ -300,9 +472,7 @@ function startServer(engine, options = {}) {
   });
   return new Promise((resolve, reject) => {
     server.listen(port, host, () => {
-      const address = server.address();
-      const boundPort = address && typeof address === 'object' ? address.port : port;
-      console.log(`http-engine-adapter listening on http://${host}:${boundPort}`);
+      console.log(`http-engine-adapter listening on http://${host}:${port}`);
       resolve(server);
     });
     server.on('error', reject);
@@ -324,7 +494,9 @@ function parseArgs(argv) {
     const envPort = parseInt(process.env.PORT, 10);
     if (!Number.isNaN(envPort) && envPort > 0) opts.port = envPort;
   }
-  if (process.env.HOST) opts.host = process.env.HOST;
+  if (process.env.HOST) {
+    opts.host = process.env.HOST;
+  }
   return opts;
 }
 
@@ -341,4 +513,8 @@ if (require.main === module) {
   })();
 }
 
-module.exports = { createEngine, startServer, tokenize };
+module.exports = {
+  createEngine,
+  startServer,
+  tokenize
+};
