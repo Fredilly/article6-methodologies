@@ -1,0 +1,2204 @@
+{
+  "rules": [
+    {
+      "id": "R-2-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-2-0001",
+      "title": "Project description must identify methodology and modules",
+      "logic": "The project description must reference VM0048 and the modules used to construct the project-specific methodology.",
+      "section_anchor": "summary-description-of-the-methodology",
+      "section_id": "S-2",
+      "section_number": "2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "documentation",
+        "reporting"
+      ]
+    },
+    {
+      "id": "R-2-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-2-0002",
+      "title": "Module choices require justification",
+      "logic": "The project proponent must justify the choice of modules in the project description.",
+      "section_anchor": "summary-description-of-the-methodology",
+      "section_id": "S-2",
+      "section_number": "2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "documentation",
+        "reporting"
+      ]
+    },
+    {
+      "id": "R-2-0003",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-2-0003",
+      "title": "Appendix 1 governs omission justification",
+      "logic": "Appendix 1 must be used to justify omission of carbon pools and emission sources.",
+      "section_anchor": "summary-description-of-the-methodology",
+      "section_id": "S-2",
+      "section_number": "2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "applicability",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-3-1-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-3-1-0001",
+      "title": "Clarified minimum forest canopy cover",
+      "logic": "Effective 31 July 2024, forest must include woody vegetation with canopy cover of at least 10 percent as used in the relevant country’s international reporting to the UNFCCC.",
+      "section_anchor": "definitions",
+      "section_id": "S-3-1",
+      "section_number": "3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "clarification",
+        "definition",
+        "parameter"
+      ]
+    },
+    {
+      "id": "R-4-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-4-0001",
+      "title": "Eligible REDD projects only",
+      "logic": "VM0048 may only be used for eligible REDD projects and activities described in the VCS Methodology Requirements.",
+      "section_anchor": "applicability-conditions",
+      "section_id": "S-4",
+      "section_number": "4",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-4",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-4-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-4-0002",
+      "title": "Activity-type applicability comes from accounting modules",
+      "logic": "The applicable activity-type module supplies the activity-specific applicability conditions.",
+      "section_anchor": "applicability-conditions",
+      "section_id": "S-4",
+      "section_number": "4",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-4",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "applicability",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-1-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0001",
+      "title": "Project spatial boundaries must be clearly defined",
+      "logic": "Spatial boundaries must be clearly defined for measuring, monitoring, accounting and verification.",
+      "section_anchor": "geographic-boundaries",
+      "section_id": "S-5-1",
+      "section_number": "5.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "boundary",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-1-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0002",
+      "title": "Discrete parcels require unique identification",
+      "logic": "Each discrete project area must provide its name and a unique ID.",
+      "section_anchor": "geographic-boundaries",
+      "section_id": "S-5-1",
+      "section_number": "5.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "boundary",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-1-0003",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0003",
+      "title": "Digital maps required",
+      "logic": "Each discrete project area must provide map(s) in digital format.",
+      "section_anchor": "geographic-boundaries",
+      "section_id": "S-5-1",
+      "section_number": "5.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "boundary",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-1-0004",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0004",
+      "title": "Polygon coordinates and accuracy documentation required",
+      "logic": "Each discrete project area must provide polygon-vertex coordinates and documentation of their accuracy in the VCS Standard format.",
+      "section_anchor": "geographic-boundaries",
+      "section_id": "S-5-1",
+      "section_number": "5.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "boundary",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-1-0005",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0005",
+      "title": "Total land area required",
+      "logic": "Each discrete project area must provide total land area.",
+      "section_anchor": "geographic-boundaries",
+      "section_id": "S-5-1",
+      "section_number": "5.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "boundary",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-1-0006",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0006",
+      "title": "Landholder and user rights required",
+      "logic": "Each discrete project area must provide details of landholder and user rights.",
+      "section_anchor": "geographic-boundaries",
+      "section_id": "S-5-1",
+      "section_number": "5.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "boundary",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-1-0007",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0007",
+      "title": "Forested project area continuity",
+      "logic": "The forested project area must be continuous without arbitrary exclusion of forests in the same geography.",
+      "section_anchor": "geographic-boundaries",
+      "section_id": "S-5-1",
+      "section_number": "5.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "boundary",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-1-0008",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0008",
+      "title": "Ten-year forest qualification",
+      "logic": "The REDD activity boundary must include only land qualifying as forest for at least ten years before project start.",
+      "section_anchor": "geographic-boundaries",
+      "section_id": "S-5-1",
+      "section_number": "5.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-1-0009",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0009",
+      "title": "Activity-specific boundaries follow accounting modules",
+      "logic": "Specific activity-type boundary requirements are supplied by the appropriate accounting modules.",
+      "section_anchor": "geographic-boundaries",
+      "section_id": "S-5-1",
+      "section_number": "5.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "dependency",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-1-0010",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0010",
+      "title": "Multiple AFOLU activities require spatial delineation",
+      "logic": "Where multiple AFOLU project activities occur within the boundary, the discrete areas for each activity must be spatially delineated.",
+      "section_anchor": "geographic-boundaries",
+      "section_id": "S-5-1",
+      "section_number": "5.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "boundary",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-2-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-2-0001",
+      "title": "Carbon-pool selection and justification required",
+      "logic": "Selection of carbon pools and the justification for that selection must be presented in the project description.",
+      "section_anchor": "carbon-pools",
+      "section_id": "S-5-2",
+      "section_number": "5.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "boundary",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-2-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-2-0002",
+      "title": "Wetland soil organic carbon accounting",
+      "logic": "REDD activities in wetlands must account for expected soil-organic-carbon emissions or stock changes in the project scenario unless de minimis.",
+      "section_anchor": "carbon-pools",
+      "section_id": "S-5-2",
+      "section_number": "5.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "quantification"
+      ]
+    },
+    {
+      "id": "R-5-2-0003",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-2-0003",
+      "title": "Pool significance uses Appendix 1",
+      "logic": "Significance of carbon pools must be determined using Appendix 1.",
+      "section_anchor": "carbon-pools",
+      "section_id": "S-5-2",
+      "section_number": "5.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "applicability",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-2-0004",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-2-0004",
+      "title": "Aboveground tree biomass included",
+      "logic": "Aboveground tree biomass is an included carbon pool.",
+      "section_anchor": "carbon-pools",
+      "section_id": "S-5-2",
+      "section_number": "5.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "boundary",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-2-0005",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-2-0005",
+      "title": "Belowground tree biomass included",
+      "logic": "Belowground tree biomass is an included carbon pool.",
+      "section_anchor": "carbon-pools",
+      "section_id": "S-5-2",
+      "section_number": "5.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "boundary",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-2-0006",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-2-0006",
+      "title": "Aboveground non-tree biomass baseline inclusion",
+      "logic": "Aboveground non-tree biomass must be included in post-deforestation baseline carbon stocks, while forest carbon stocks may conservatively exclude it.",
+      "section_anchor": "carbon-pools",
+      "section_id": "S-5-2",
+      "section_number": "5.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "boundary",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-2-0007",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-2-0007",
+      "title": "Soil organic carbon treatment differs by wetland status",
+      "logic": "Non-wetland soil organic carbon may be conservatively excluded; wetland soil organic carbon requires significance assessment and may be included.",
+      "section_anchor": "carbon-pools",
+      "section_id": "S-5-2",
+      "section_number": "5.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "boundary",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-2-0008",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-2-0008",
+      "title": "Harvested wood products may be omitted only when baseline harvest is negligible",
+      "logic": "Harvested wood products may be excluded where baseline timber harvest is negligible, with significance determined using Appendix 1.",
+      "section_anchor": "carbon-pools",
+      "section_id": "S-5-2",
+      "section_number": "5.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "boundary",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-3-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-3-0001",
+      "title": "Significant attributable GHG increases must be accounted",
+      "logic": "Projects must account for significant increases in CO2, N2O and CH4 relative to baseline that are reasonably attributable to the project activity.",
+      "section_anchor": "sources-of-ghg-emissions",
+      "section_id": "S-5-3",
+      "section_number": "5.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "quantification"
+      ]
+    },
+    {
+      "id": "R-5-3-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-3-0002",
+      "title": "GHG-source selection and justification required",
+      "logic": "Selection of GHG sources and justification must be provided in the project description.",
+      "section_anchor": "sources-of-ghg-emissions",
+      "section_id": "S-5-3",
+      "section_number": "5.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "documentation",
+        "reporting"
+      ]
+    },
+    {
+      "id": "R-5-3-0003",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-3-0003",
+      "title": "GHG-source significance uses Appendix 1",
+      "logic": "Appendix 1 must be used to determine whether a GHG emissions source is significant.",
+      "section_anchor": "sources-of-ghg-emissions",
+      "section_id": "S-5-3",
+      "section_number": "5.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "applicability",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-3-0004",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-3-0004",
+      "title": "Baseline-included source must also be included in project and leakage",
+      "logic": "A source included in baseline emissions must also be included in project and leakage emissions.",
+      "section_anchor": "sources-of-ghg-emissions",
+      "section_id": "S-5-3",
+      "section_number": "5.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "consistency",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-5-3-0005",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-3-0005",
+      "title": "Project biomass-burning CO2 is included",
+      "logic": "CO2 emissions from project-scenario woody biomass burning are included.",
+      "section_anchor": "sources-of-ghg-emissions",
+      "section_id": "S-5-3",
+      "section_number": "5.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "quantification"
+      ],
+      "when": [
+        "project scenario"
+      ]
+    },
+    {
+      "id": "R-5-3-0006",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-3-0006",
+      "title": "Project biomass-burning CH4 and N2O are included",
+      "logic": "CH4 and N2O emissions from project-scenario woody biomass burning are included.",
+      "section_anchor": "sources-of-ghg-emissions",
+      "section_id": "S-5-3",
+      "section_number": "5.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "quantification"
+      ],
+      "when": [
+        "project scenario"
+      ]
+    },
+    {
+      "id": "R-5-3-0007",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-5-3-0007",
+      "title": "Project fertilizer N2O is conditional",
+      "logic": "Project N2O from fertilizers must be included where fertilizer use increases due to the project; otherwise it may be excluded if also excluded from baseline.",
+      "section_anchor": "sources-of-ghg-emissions",
+      "section_id": "S-5-3",
+      "section_number": "5.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "quantification"
+      ]
+    },
+    {
+      "id": "R-6-1-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0001",
+      "title": "Baseline scenario must align with additionality and pre-project conditions",
+      "logic": "The most plausible baseline scenario must build on the additionality analysis and be consistent with conditions before project start.",
+      "section_anchor": "determination-of-the-most-plausible-baseline-scenario",
+      "section_id": "S-6-1",
+      "section_number": "6.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "baseline",
+        "calc"
+      ]
+    },
+    {
+      "id": "R-6-1-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0002",
+      "title": "VT0001 is mandatory for additionality and baseline selection",
+      "logic": "VT0001 must be used to assess additionality and the VM0048 stepwise approach must be followed in addition to VT0001.",
+      "section_anchor": "determination-of-the-most-plausible-baseline-scenario",
+      "section_id": "S-6-1",
+      "section_number": "6.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "dependency",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-6-1-0003",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0003",
+      "title": "Reuse VT0001 plausible alternative scenarios",
+      "logic": "Step 1 must reuse plausible alternative land-use scenarios identified under VT0001 Sub-step 1b.",
+      "section_anchor": "determination-of-the-most-plausible-baseline-scenario",
+      "section_id": "S-6-1",
+      "section_number": "6.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "baseline",
+        "calc"
+      ]
+    },
+    {
+      "id": "R-6-1-0004",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0004",
+      "title": "Continuation of pre-project land use must be considered",
+      "logic": "Unless shown non-credible or non-compliant, continuation of pre-project land use must be in the alternatives list.",
+      "section_anchor": "determination-of-the-most-plausible-baseline-scenario",
+      "section_id": "S-6-1",
+      "section_number": "6.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "baseline",
+        "calc"
+      ]
+    },
+    {
+      "id": "R-6-1-0005",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0005",
+      "title": "Non-VCS implementation must be considered",
+      "logic": "Unless shown non-credible or non-compliant, project activity without VCS REDD registration must be in the alternatives list.",
+      "section_anchor": "determination-of-the-most-plausible-baseline-scenario",
+      "section_id": "S-6-1",
+      "section_number": "6.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "baseline",
+        "calc"
+      ]
+    },
+    {
+      "id": "R-6-1-0006",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0006",
+      "title": "Similar activities must be considered",
+      "logic": "Unless shown non-credible or non-compliant, similar activities on at least part of the proposed project land must be considered.",
+      "section_anchor": "determination-of-the-most-plausible-baseline-scenario",
+      "section_id": "S-6-1",
+      "section_number": "6.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "baseline",
+        "calc"
+      ]
+    },
+    {
+      "id": "R-6-1-0007",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0007",
+      "title": "Barrier-analysis baseline uses decision tree",
+      "logic": "Where VT0001 barrier analysis demonstrates additionality, the Figure 1 decision tree must be applied to alternatives not prevented by barriers.",
+      "section_anchor": "determination-of-the-most-plausible-baseline-scenario",
+      "section_id": "S-6-1",
+      "section_number": "6.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "baseline",
+        "calc"
+      ]
+    },
+    {
+      "id": "R-6-1-0008",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0008",
+      "title": "Investment Option I chooses lowest-cost scenario",
+      "logic": "Under VT0001 Option I, the baseline is the lowest-cost land-use scenario over the crediting period, and Option I is only allowed if alternatives have no revenues.",
+      "section_anchor": "determination-of-the-most-plausible-baseline-scenario",
+      "section_id": "S-6-1",
+      "section_number": "6.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "baseline",
+        "calc"
+      ]
+    },
+    {
+      "id": "R-6-1-0009",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0009",
+      "title": "Investment Option II chooses financially most attractive scenario",
+      "logic": "Under VT0001 Option II, the baseline is the most economically or financially attractive scenario.",
+      "section_anchor": "determination-of-the-most-plausible-baseline-scenario",
+      "section_id": "S-6-1",
+      "section_number": "6.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "baseline",
+        "calc"
+      ]
+    },
+    {
+      "id": "R-6-1-0010",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0010",
+      "title": "Investment Option III applies benchmark logic",
+      "logic": "Under VT0001 Option III, continuation of pre-project land use is baseline if no alternative meets the benchmark; otherwise use the scenario with the most favorable financial indicator.",
+      "section_anchor": "determination-of-the-most-plausible-baseline-scenario",
+      "section_id": "S-6-1",
+      "section_number": "6.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "baseline",
+        "calc"
+      ]
+    },
+    {
+      "id": "R-6-1-0011",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0011",
+      "title": "If barrier analysis cannot determine baseline, additional selection procedure is required",
+      "logic": "Where barrier analysis does not determine the baseline, either VT0001 Option II investment analysis or the specified qualitative lowest-emissions analysis must be used.",
+      "section_anchor": "determination-of-the-most-plausible-baseline-scenario",
+      "section_id": "S-6-1",
+      "section_number": "6.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "baseline",
+        "calc"
+      ]
+    },
+    {
+      "id": "R-6-1-0012",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0012",
+      "title": "Qualitative baseline data must be public and credible",
+      "logic": "Qualitative baseline estimates must use public default factors/standards and other data must be publicly available from recognized credible sources.",
+      "section_anchor": "determination-of-the-most-plausible-baseline-scenario",
+      "section_id": "S-6-1",
+      "section_number": "6.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "baseline",
+        "calc"
+      ]
+    },
+    {
+      "id": "R-6-1-0013",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0013",
+      "title": "Selected baseline quantification follows activity modules",
+      "logic": "GHG emissions under the selected baseline must be quantified under the applicable activity-type module(s).",
+      "section_anchor": "determination-of-the-most-plausible-baseline-scenario",
+      "section_id": "S-6-1",
+      "section_number": "6.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "dependency",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-6-2-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-2-0001",
+      "title": "Registered JNR projects must be nested under applicable JNR scenario requirements",
+      "logic": "Projects in a registered JNR program may use VM0048 for included activities but must be nested under JNR Scenario 1 or Scenario 2 requirements as appropriate.",
+      "section_anchor": "projects-implemented-in-jurisdictional-redd-programs-or-where-a-government-has-established-a-redd-baseline",
+      "section_id": "S-6-2",
+      "section_number": "6.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-6-2-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-2-0002",
+      "title": "Non-JNR jurisdictional projects remain VCS-registered and monitored under VM0048",
+      "logic": "Projects in non-JNR jurisdictional REDD programs should follow relevant jurisdictional requirements but must be registered and monitored under VCS following VM0048.",
+      "section_anchor": "projects-implemented-in-jurisdictional-redd-programs-or-where-a-government-has-established-a-redd-baseline",
+      "section_id": "S-6-2",
+      "section_number": "6.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-6-2-0003",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-2-0003",
+      "title": "Project may cap issuance to lower local-government baseline",
+      "logic": "Where the VM0048 activity-data baseline exceeds the local government baseline, the project proponent may cap issuance to the lower baseline.",
+      "section_anchor": "projects-implemented-in-jurisdictional-redd-programs-or-where-a-government-has-established-a-redd-baseline",
+      "section_id": "S-6-2",
+      "section_number": "6.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "issuance"
+      ]
+    },
+    {
+      "id": "R-6-2-0004",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-2-0004",
+      "title": "Local regulation can make baseline cap mandatory",
+      "logic": "Where local regulations require the lower-baseline issuance limitation, the limitation is mandatory.",
+      "section_anchor": "projects-implemented-in-jurisdictional-redd-programs-or-where-a-government-has-established-a-redd-baseline",
+      "section_id": "S-6-2",
+      "section_number": "6.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "issuance"
+      ]
+    },
+    {
+      "id": "R-6-3-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-3-0001",
+      "title": "No projections beyond baseline validity required",
+      "logic": "Baseline projections beyond the baseline validity period are not required.",
+      "section_anchor": "baseline-validity",
+      "section_id": "S-6-3",
+      "section_number": "6.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "baseline",
+        "calc"
+      ]
+    },
+    {
+      "id": "R-6-3-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-3-0002",
+      "title": "Baseline reassessment follows VCS Standard and relevant module",
+      "logic": "The project baseline must be reassessed per the VCS Standard and the relevant module.",
+      "section_anchor": "baseline-validity",
+      "section_id": "S-6-3",
+      "section_number": "6.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "baseline",
+        "calc"
+      ]
+    },
+    {
+      "id": "R-6-3-0003",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-6-3-0003",
+      "title": "Next reassessment date must be in project description",
+      "logic": "The next scheduled baseline reassessment date must be specified in the project description.",
+      "section_anchor": "baseline-validity",
+      "section_id": "S-6-3",
+      "section_number": "6.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "documentation",
+        "reporting"
+      ]
+    },
+    {
+      "id": "R-7-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-7-0001",
+      "title": "Use most recent VT0001 and Methodology Requirements guidance",
+      "logic": "Additionality must be demonstrated with the most recent VT0001 and latest VCS Methodology Requirements investment-analysis guidance.",
+      "section_anchor": "additionality",
+      "section_id": "S-7",
+      "section_number": "7",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-7",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "additionality",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-7-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-7-0002",
+      "title": "Regulatory surplus must satisfy VCS Standard and Methodology Requirements",
+      "logic": "Project proponents must demonstrate regulatory surplus under the latest VCS Standard and latest VCS Methodology Requirements.",
+      "section_anchor": "additionality",
+      "section_id": "S-7",
+      "section_number": "7",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-7",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "additionality",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-7-0003",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-7-0003",
+      "title": "Non-Annex I enforcement-gap claims require lack of proponent control",
+      "logic": "Where regulatory surplus in a UNFCCC non-Annex I country relies on lack of systematic enforcement, lack of control by the proponent and project entities must be demonstrated.",
+      "section_anchor": "additionality",
+      "section_id": "S-7",
+      "section_number": "7",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-7",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "additionality",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-8-1-1-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-1-1-0001",
+      "title": "Use same quantification procedure ex ante and ex post",
+      "logic": "The same procedure for quantifying emissions and carbon stocks must be used ex ante and ex post.",
+      "section_anchor": "general-procedures",
+      "section_id": "S-8-1-1",
+      "section_number": "8.1.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-1-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "quantification"
+      ]
+    },
+    {
+      "id": "R-8-1-1-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-1-1-0002",
+      "title": "Monitored-parameter ex ante values follow module tables",
+      "logic": "For parameters monitored after project initiation, ex ante values must follow guidance in the relevant module parameter tables.",
+      "section_anchor": "general-procedures",
+      "section_id": "S-8-1-1",
+      "section_number": "8.1.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-1-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "quantification"
+      ]
+    },
+    {
+      "id": "R-8-1-1-0003",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-1-1-0003",
+      "title": "Baseline is estimated ex ante",
+      "logic": "The project-activity baseline is estimated ex ante and used in ex ante and ex post estimation of net stock changes and GHG reductions.",
+      "section_anchor": "general-procedures",
+      "section_id": "S-8-1-1",
+      "section_number": "8.1.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-1-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "baseline",
+        "calc"
+      ]
+    },
+    {
+      "id": "R-8-1-2-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-1-2-0001",
+      "title": "VM0009 transition requires baseline-model revision under VM0009 provisions",
+      "logic": "Projects previously verified under VM0009 must follow VM0009 provisions to revise the baseline emissions model when transitioning to VM0048.",
+      "section_anchor": "baseline-reassessment-and-transition-to-vm0048",
+      "section_id": "S-8-1-2",
+      "section_number": "8.1.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-1-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "eligibility",
+        "transition"
+      ]
+    },
+    {
+      "id": "R-8-1-2-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-1-2-0002",
+      "title": "Over-issued transition difference must be compensated",
+      "logic": "If baseline reevaluation predicts fewer reductions than VCUs issued under the prior model, the project must compensate for the difference.",
+      "section_anchor": "baseline-reassessment-and-transition-to-vm0048",
+      "section_id": "S-8-1-2",
+      "section_number": "8.1.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-1-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "eligibility",
+        "transition"
+      ]
+    },
+    {
+      "id": "R-8-1-2-0003",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-1-2-0003",
+      "title": "Active VCU cancellation is an allowed compensation method",
+      "logic": "Compensation may be made by canceling unused active project VCUs, including consented already-issued active VCUs held by current owners.",
+      "section_anchor": "baseline-reassessment-and-transition-to-vm0048",
+      "section_id": "S-8-1-2",
+      "section_number": "8.1.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-1-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "eligibility",
+        "transition"
+      ]
+    },
+    {
+      "id": "R-8-1-2-0004",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-1-2-0004",
+      "title": "Future issuance cancellation may compensate transition difference",
+      "logic": "Compensation may be made by immediate cancellation from subsequent project VCU issuances; multi-period deductions require an approved plan.",
+      "section_anchor": "baseline-reassessment-and-transition-to-vm0048",
+      "section_id": "S-8-1-2",
+      "section_number": "8.1.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-1-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "eligibility",
+        "transition"
+      ]
+    },
+    {
+      "id": "R-8-1-2-0005",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-1-2-0005",
+      "title": "Transition calculations must be disclosed and assessed",
+      "logic": "Applicable calculations must be described as a project-description deviation in the first monitoring report after transition; the VVB must assess them and confirm relevant deduction-plan approval.",
+      "section_anchor": "baseline-reassessment-and-transition-to-vm0048",
+      "section_id": "S-8-1-2",
+      "section_number": "8.1.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-1-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "eligibility",
+        "transition"
+      ]
+    },
+    {
+      "id": "R-8-2-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-2-0001",
+      "title": "Project-emission procedure must be consistent ex ante and ex post",
+      "logic": "The same project-emissions procedure must be followed ex ante and ex post.",
+      "section_anchor": "project-emissions",
+      "section_id": "S-8-2",
+      "section_number": "8.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "quantification"
+      ]
+    },
+    {
+      "id": "R-8-2-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-2-0002",
+      "title": "Project-scenario estimates follow relevant activity modules",
+      "logic": "Net stock-change and GHG-emission methods for the project scenario come from relevant activity modules.",
+      "section_anchor": "project-emissions",
+      "section_id": "S-8-2",
+      "section_number": "8.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "dependency",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-8-3-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0001",
+      "title": "Activity-shifting leakage must be estimated unless de minimis",
+      "logic": "Activity-shifting leakage emissions must be estimated unless deemed de minimis.",
+      "section_anchor": "leakage",
+      "section_id": "S-8-3",
+      "section_number": "8.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "leakage"
+      ]
+    },
+    {
+      "id": "R-8-3-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0002",
+      "title": "Market-effect leakage must be estimated unless de minimis",
+      "logic": "Market-effect leakage emissions must be estimated unless deemed de minimis.",
+      "section_anchor": "leakage",
+      "section_id": "S-8-3",
+      "section_number": "8.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "leakage"
+      ]
+    },
+    {
+      "id": "R-8-3-0003",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0003",
+      "title": "Leakage-prevention emissions must be estimated unless de minimis",
+      "logic": "Emissions from leakage-prevention activities must be estimated unless deemed de minimis.",
+      "section_anchor": "leakage",
+      "section_id": "S-8-3",
+      "section_number": "8.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "leakage"
+      ]
+    },
+    {
+      "id": "R-8-3-0004",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0004",
+      "title": "Leakage significance uses Appendix 1",
+      "logic": "Significance of leakage and carbon pools must be determined using Appendix 1.",
+      "section_anchor": "leakage",
+      "section_id": "S-8-3",
+      "section_number": "8.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "leakage"
+      ]
+    },
+    {
+      "id": "R-8-3-0005",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0005",
+      "title": "Market effects require LK-ME when production decreases",
+      "logic": "LK-ME must be used where the project decreases timber, fuelwood or charcoal production.",
+      "section_anchor": "leakage",
+      "section_id": "S-8-3",
+      "section_number": "8.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "dependency",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-8-3-0006",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0006",
+      "title": "Significant leakage-prevention increases must be accounted",
+      "logic": "Significant increases from leakage-prevention carbon-stock change, biomass burning or fertilizer use must be accounted under relevant modules unless de minimis.",
+      "section_anchor": "leakage",
+      "section_id": "S-8-3",
+      "section_number": "8.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "leakage"
+      ]
+    },
+    {
+      "id": "R-8-3-0007",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0007",
+      "title": "Leakage-prevention fossil-fuel increases are de minimis",
+      "logic": "Increased fossil-fuel combustion caused by leakage prevention is considered de minimis and need not be quantified or reported.",
+      "section_anchor": "leakage",
+      "section_id": "S-8-3",
+      "section_number": "8.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "leakage"
+      ]
+    },
+    {
+      "id": "R-8-3-0008",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0008",
+      "title": "Significant fertilizer increase requires E-NA",
+      "logic": "Where leakage prevention significantly increases fertilizer use, E-NA must be used.",
+      "section_anchor": "leakage",
+      "section_id": "S-8-3",
+      "section_number": "8.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "dependency",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-8-3-0009",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0009",
+      "title": "Leakage prevention cannot flood agricultural land or create feedlots/manure lagoons",
+      "logic": "Leakage prevention must not include flooding agricultural land or creating livestock feedlots or manure lagoons.",
+      "section_anchor": "leakage",
+      "section_id": "S-8-3",
+      "section_number": "8.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "eligibility",
+        "prohibition"
+      ]
+    },
+    {
+      "id": "R-8-3-0010",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0010",
+      "title": "Leakage prevention cannot drain peatland",
+      "logic": "Leakage prevention must not include peatland drainage.",
+      "section_anchor": "leakage",
+      "section_id": "S-8-3",
+      "section_number": "8.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "eligibility",
+        "prohibition"
+      ]
+    },
+    {
+      "id": "R-8-3-0011",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0011",
+      "title": "Leakage-source list and justification required",
+      "logic": "Leakage sources and appropriate justification must be presented in the project description.",
+      "section_anchor": "leakage",
+      "section_id": "S-8-3",
+      "section_number": "8.3",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-3",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "documentation",
+        "reporting"
+      ]
+    },
+    {
+      "id": "R-8-4-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-4-0001",
+      "title": "Conservative ex ante net-reduction estimate required",
+      "logic": "The project proponent must present conservative ex ante estimates of total net GHG emission reductions.",
+      "section_anchor": "net-ghg-emission-reductions",
+      "section_id": "S-8-4",
+      "section_number": "8.4",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-4",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "quantification"
+      ]
+    },
+    {
+      "id": "R-8-4-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-8-4-0002",
+      "title": "Potential VCUs aggregate applicable activity-type VCUs",
+      "logic": "Potential VCUs for monitoring period t equal the sum of VCU_AUDef, VCU_APDef and VCU_AUDeg.",
+      "section_anchor": "net-ghg-emission-reductions",
+      "section_id": "S-8-4",
+      "section_number": "8.4",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-4",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "equation"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0001",
+      "title": "Monitoring plan must monitor implementation",
+      "logic": "The monitoring plan must address monitoring of project implementation.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0002",
+      "title": "Monitoring plan must monitor actual stock changes and emissions",
+      "logic": "The monitoring plan must address actual carbon-stock changes and GHG emissions.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0003",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0003",
+      "title": "Monitoring plan must monitor leakage",
+      "logic": "The monitoring plan must address leakage carbon-stock changes and GHG emissions.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0004",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0004",
+      "title": "Monitoring plan must estimate ex post net changes",
+      "logic": "The monitoring plan must address estimation of ex post net carbon-stock changes and GHG emissions.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0005",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0005",
+      "title": "Monitoring task technical description required",
+      "logic": "For each monitoring task, the plan must provide a technical description.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0006",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0006",
+      "title": "Monitoring task data specification required",
+      "logic": "For each monitoring task, data to be collected must be specified and listed in the project description.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0007",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0007",
+      "title": "Data-collection procedures required",
+      "logic": "For each monitoring task, the plan must provide an overview of data-collection procedures.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0008",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0008",
+      "title": "QA/QC procedures required",
+      "logic": "For each monitoring task, quality-control and quality-assurance procedures must be provided.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0009",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0009",
+      "title": "Data archiving required",
+      "logic": "For each monitoring task, data-archiving arrangements must be provided.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0010",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0010",
+      "title": "Monitoring organization and responsibilities required",
+      "logic": "For each monitoring task, organization and responsibilities of involved parties must be specified.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0011",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0011",
+      "title": "Critical parameters must be identified",
+      "logic": "The project must identify critical parameters that significantly influence estimate accuracy.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "uncertainty"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0012",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0012",
+      "title": "Local values required where possible",
+      "logic": "Project-specific local values must be obtained for key parameters where possible.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "uncertainty"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0013",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0013",
+      "title": "Expert-value rationale required",
+      "logic": "Where expert opinion supplies a range and proposed value, rationale for selecting the chosen value must be demonstrated.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "uncertainty"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0014",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0014",
+      "title": "Parameter choices must target accurate net-reduction estimates",
+      "logic": "For key parameters or important non-project-specific assumptions, values must be selected to lead to accurate net GHG reduction estimates considering uncertainty.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "uncertainty"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0015",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0015",
+      "title": "Significant uncertainty requires conservative underestimation",
+      "logic": "Where uncertainty is significant, data must indisputably tend to underestimate rather than overestimate net project benefits.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "uncertainty"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0016",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0016",
+      "title": "Documented SOPs and data-quality procedures required",
+      "logic": "The project proponent must establish and document clear SOPs and procedures to ensure data quality.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0017",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0017",
+      "title": "Field measurements must be replicably documented",
+      "logic": "Field measurements must be comprehensively documented so sampling can be replicated after staff turnover.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0018",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0018",
+      "title": "Training must be documented",
+      "logic": "Training procedures are required and the scope and date of all training must be documented.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0019",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0019",
+      "title": "Plot-measurement accuracy protocol required",
+      "logic": "A check-cruise protocol and correction plan are required for plot-measurement accuracy.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0020",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0020",
+      "title": "Data error and consistency protocols required",
+      "logic": "Protocols must assess outliers, transcription errors and consistency across measurement periods.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0021",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0021",
+      "title": "Data must be safely archived for project lifetime",
+      "logic": "Data sheets must be safely archived for the project lifetime and electronic data must be backed up.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0022",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0022",
+      "title": "Expert judgment must follow IPCC guidance",
+      "logic": "Expert judgment must use the specified IPCC 2019 Refinement guidance in Volume 1 Chapter 2.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0023",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0023",
+      "title": "Project boundary coordinates must be established, recorded and archived",
+      "logic": "Geographic coordinates of the project boundary and internal stratification/buffer zones must be established, recorded and archived.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0024",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0024",
+      "title": "Inventory SOPs and QA/QC must be applied",
+      "logic": "Common land-use inventory principles and SOP/QA/QC procedures for inventories, field collection and management must be applied.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0025",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0025",
+      "title": "Project plan and implementation record must be available",
+      "logic": "The project plan and record of implementation must be available for validation or verification.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-1-0026",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0026",
+      "title": "Monitoring plan must use applicable activity modules",
+      "logic": "The monitoring plan must use relevant activity-module methods for forest-cover and carbon-stock changes and include all relevant module parameters.",
+      "section_anchor": "development-of-monitoring-plan",
+      "section_id": "S-9-3-1",
+      "section_number": "9.3.1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "dependency",
+        "eligibility"
+      ]
+    },
+    {
+      "id": "R-9-3-2-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0001",
+      "title": "Ex post monitoring follows monitoring plan",
+      "logic": "Ex post monitoring must include monitoring according to the monitoring plan.",
+      "section_anchor": "monitoring",
+      "section_id": "S-9-3-2",
+      "section_number": "9.3.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-2-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0002",
+      "title": "Ex post monitoring revises future baseline",
+      "logic": "Ex post monitoring must include revising the baseline for future project crediting periods.",
+      "section_anchor": "monitoring",
+      "section_id": "S-9-3-2",
+      "section_number": "9.3.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-2-0003",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0003",
+      "title": "Baseline reassessment information must be collected throughout crediting period",
+      "logic": "Information needed to reassess the baseline must be collected throughout the project crediting period.",
+      "section_anchor": "monitoring",
+      "section_id": "S-9-3-2",
+      "section_number": "9.3.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-2-0004",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0004",
+      "title": "Forest-cover changes must be monitored",
+      "logic": "Changes in forest cover must be monitored as specified by applicable accounting modules.",
+      "section_anchor": "monitoring",
+      "section_id": "S-9-3-2",
+      "section_number": "9.3.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-2-0005",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0005",
+      "title": "Spatial modeling variables must be monitored",
+      "logic": "Spatial variable datasets used in modeling must be monitored as specified by applicable accounting modules, including at minimum first-baseline variables during reassessment.",
+      "section_anchor": "monitoring",
+      "section_id": "S-9-3-2",
+      "section_number": "9.3.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-2-0006",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0006",
+      "title": "Required carbon-stock data must be monitored",
+      "logic": "Carbon-stock data must be monitored where required by the applicable accounting module.",
+      "section_anchor": "monitoring",
+      "section_id": "S-9-3-2",
+      "section_number": "9.3.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-2-0007",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0007",
+      "title": "All significant leakage sources are monitored",
+      "logic": "All significant leakage sources must be monitored consistently with applicable leakage modules, and all relevant leakage-module parameters must be in the monitoring plan.",
+      "section_anchor": "monitoring",
+      "section_id": "S-9-3-2",
+      "section_number": "9.3.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "R-9-3-2-0008",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0008",
+      "title": "Monitoring report values require uncertainty estimates",
+      "logic": "Required monitoring-report values must include uncertainty as a two-sided 90 percent confidence interval.",
+      "section_anchor": "monitoring",
+      "section_id": "S-9-3-2",
+      "section_number": "9.3.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "reporting"
+      ]
+    },
+    {
+      "id": "R-9-3-2-0009",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0009",
+      "title": "AUDef allocated annual deforestation by stratum must be reported",
+      "logic": "For AUDef projects, allocated annual deforestation area by stratum must be reported in hectares for each monitoring year.",
+      "section_anchor": "monitoring",
+      "section_id": "S-9-3-2",
+      "section_number": "9.3.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "reporting"
+      ]
+    },
+    {
+      "id": "R-9-3-2-0010",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0010",
+      "title": "Project-area annual deforestation must be reported",
+      "logic": "Aggregate annual deforestation area for the verification period in the project area must be reported in hectares/year.",
+      "section_anchor": "monitoring",
+      "section_id": "S-9-3-2",
+      "section_number": "9.3.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "reporting"
+      ]
+    },
+    {
+      "id": "R-9-3-2-0011",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0011",
+      "title": "Leakage-belt annual deforestation must be reported",
+      "logic": "Aggregate annual deforestation area for the verification period in the leakage belt must be reported in hectares/year.",
+      "section_anchor": "monitoring",
+      "section_id": "S-9-3-2",
+      "section_number": "9.3.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "reporting"
+      ]
+    },
+    {
+      "id": "R-9-3-2-0012",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0012",
+      "title": "Project-area annual deforestation emissions must be reported",
+      "logic": "Aggregate annual emissions from deforestation for the verification period and project area must be reported in tonnes CO2e/year.",
+      "section_anchor": "monitoring",
+      "section_id": "S-9-3-2",
+      "section_number": "9.3.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "reporting"
+      ]
+    },
+    {
+      "id": "R-9-3-2-0013",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0013",
+      "title": "Leakage-belt annual deforestation emissions must be reported",
+      "logic": "Aggregate annual emissions from deforestation for the verification period and leakage belt must be reported in tonnes CO2e/year.",
+      "section_anchor": "monitoring",
+      "section_id": "S-9-3-2",
+      "section_number": "9.3.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "reporting"
+      ]
+    },
+    {
+      "id": "R-9-3-2-0014",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0014",
+      "title": "Average project-area deforestation emission factor must be reported",
+      "logic": "Average deforestation emission factor over the project area for the verification period must be reported in tonnes CO2e/hectare.",
+      "section_anchor": "monitoring",
+      "section_id": "S-9-3-2",
+      "section_number": "9.3.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "reporting"
+      ]
+    },
+    {
+      "id": "R-9-3-2-0015",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0015",
+      "title": "Baseline update method must remain the same",
+      "logic": "The methodological procedure for updating the baseline must be the same as in the first baseline estimation.",
+      "section_anchor": "monitoring",
+      "section_id": "S-9-3-2",
+      "section_number": "9.3.2",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-2",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "baseline",
+        "calc"
+      ]
+    },
+    {
+      "id": "R-11-0001",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-11-0001",
+      "title": "Appendix 1 stepwise significance test is mandatory",
+      "logic": "The Appendix 1 stepwise procedure must be used to test significance of GHG emissions and may justify omission of pools, sources and leakage-mitigation emissions.",
+      "section_anchor": "testing-significance-of-ghg-emissions",
+      "section_id": "S-11",
+      "section_number": "Appendix 1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-11",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "significance"
+      ]
+    },
+    {
+      "id": "R-11-0002",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-11-0002",
+      "title": "Pool/source significance tested at least ex ante and baseline reassessment",
+      "logic": "GHG-source and carbon-pool significance must be tested at minimum ex ante and at baseline reassessment.",
+      "section_anchor": "testing-significance-of-ghg-emissions",
+      "section_id": "S-11",
+      "section_number": "Appendix 1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-11",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "significance"
+      ]
+    },
+    {
+      "id": "R-11-0003",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-11-0003",
+      "title": "Leakage significance tested ex ante and ex post",
+      "logic": "Leakage GHG-emission significance must be tested ex ante for the baseline validity period and ex post for a monitoring period.",
+      "section_anchor": "testing-significance-of-ghg-emissions",
+      "section_id": "S-11",
+      "section_number": "Appendix 1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-11",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "significance"
+      ]
+    },
+    {
+      "id": "R-11-0004",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-11-0004",
+      "title": "Define significance-test period",
+      "logic": "Step 1 requires defining the period over which significance is tested.",
+      "section_anchor": "testing-significance-of-ghg-emissions",
+      "section_id": "S-11",
+      "section_number": "Appendix 1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-11",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "significance"
+      ]
+    },
+    {
+      "id": "R-11-0005",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-11-0005",
+      "title": "Estimate source emissions using project data, peer-reviewed literature or latest IPCC defaults",
+      "logic": "Step 2a requires source-level GHG estimates based on site/project data, peer-reviewed literature and/or most recent IPCC default emission factors.",
+      "section_anchor": "testing-significance-of-ghg-emissions",
+      "section_id": "S-11",
+      "section_number": "Appendix 1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-11",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "significance"
+      ]
+    },
+    {
+      "id": "R-11-0006",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-11-0006",
+      "title": "Estimate carbon-pool stock-change emissions consistently with methodology",
+      "logic": "Step 2b requires pool-level net-stock-change emissions consistent with the methodology, baseline and project activities using credible source data.",
+      "section_anchor": "testing-significance-of-ghg-emissions",
+      "section_id": "S-11",
+      "section_number": "Appendix 1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-11",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "significance"
+      ]
+    },
+    {
+      "id": "R-11-0007",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-11-0007",
+      "title": "Estimate leakage-mitigation emissions using applicable activity modules",
+      "logic": "Step 2c requires leakage-mitigation emissions estimates using sound procedures consistent with applicable activity modules and credible source data.",
+      "section_anchor": "testing-significance-of-ghg-emissions",
+      "section_id": "S-11",
+      "section_number": "Appendix 1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-11",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "significance"
+      ]
+    },
+    {
+      "id": "R-11-0008",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-11-0008",
+      "title": "Use latest VCS Standard GWP values",
+      "logic": "Where needed, emissions must be converted to CO2e using 100-year GWP values from the latest VCS Standard.",
+      "section_anchor": "testing-significance-of-ghg-emissions",
+      "section_id": "S-11",
+      "section_number": "Appendix 1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-11",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "significance"
+      ]
+    },
+    {
+      "id": "R-11-0009",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-11-0009",
+      "title": "Calculate relative contribution for each source",
+      "logic": "Step 4 requires calculating each source’s relative contribution to total project and leakage GHG emissions.",
+      "section_anchor": "testing-significance-of-ghg-emissions",
+      "section_id": "S-11",
+      "section_number": "Appendix 1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-11",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "equation"
+      ]
+    },
+    {
+      "id": "R-11-0010",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-11-0010",
+      "title": "Rank relative contributions descending",
+      "logic": "Step 5 requires ranking emissions in descending order of relative contribution.",
+      "section_anchor": "testing-significance-of-ghg-emissions",
+      "section_id": "S-11",
+      "section_number": "Appendix 1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-11",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "significance"
+      ]
+    },
+    {
+      "id": "R-11-0011",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-11-0011",
+      "title": "Cumulative relative contribution threshold is 0.95",
+      "logic": "Step 6 requires cumulative summation from lowest rank until reaching the lowest value not less than 0.95.",
+      "section_anchor": "testing-significance-of-ghg-emissions",
+      "section_id": "S-11",
+      "section_number": "Appendix 1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-11",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "significance"
+      ]
+    },
+    {
+      "id": "R-11-0012",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-11-0012",
+      "title": "Excluded emissions insignificant only below five percent of net anthropogenic ERRs",
+      "logic": "Emissions excluded from the cumulative sum are insignificant only if their total is below five percent of net anthropogenic GHG ERRs in the project area; otherwise summation must continue.",
+      "section_anchor": "testing-significance-of-ghg-emissions",
+      "section_id": "S-11",
+      "section_number": "Appendix 1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-11",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "significance"
+      ]
+    },
+    {
+      "id": "R-11-0013",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-11-0013",
+      "title": "Significance ERR calculation precedes leakage discount",
+      "logic": "For significance testing, net GHG ERRs must be calculated before discounting cumulative leakage emissions.",
+      "section_anchor": "testing-significance-of-ghg-emissions",
+      "section_id": "S-11",
+      "section_number": "Appendix 1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-11",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "calc",
+        "significance"
+      ]
+    },
+    {
+      "id": "R-11-0014",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.R-11-0014",
+      "title": "Significance calculations require report summary and shared spreadsheet",
+      "logic": "Significance calculations must be summarized in the project description or monitoring reports and detailed in a spreadsheet shared with the VVB and Verra.",
+      "section_anchor": "testing-significance-of-ghg-emissions",
+      "section_id": "S-11",
+      "section_number": "Appendix 1",
+      "section_stable_id": "Verra.AFOLU.VM0048.v1-0.S-11",
+      "tools": [
+        "Verra/VM0048@v1-0"
+      ],
+      "tags": [
+        "documentation",
+        "reporting"
+      ]
+    }
+  ]
+}

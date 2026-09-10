@@ -1,0 +1,13 @@
+{
+  "component": "Verra/VM0048@v1-0",
+  "classification": "ARTICLE6_NORMALIZATION",
+  "source": "source/source.layout.txt",
+  "section_count": 31,
+  "rule_count": 132,
+  "equation_count": 2,
+  "parameter_count": 10,
+  "governed_sources": 2,
+  "clarification_effective": true,
+  "dependency_runtime_edge_count": 13,
+  "source_requirements_note": "Runtime rules are source-spanned and structurally normalized; final semantic/provenance promotion review remains for the next PR."
+}

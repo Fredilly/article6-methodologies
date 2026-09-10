@@ -1,0 +1,133 @@
+{
+  "active_date": "2023-11-27",
+  "effective_from": "2023-11-27",
+  "domain": "AFOLU",
+  "method": "REDD Methodology Framework",
+  "standard": "VCS",
+  "stage": "Active",
+  "status": "active",
+  "title": "VM0048 Reducing Emissions from Deforestation and Forest Degradation, v1.0",
+  "version": "v1-0",
+  "component_type": "FRAMEWORK_METHODOLOGY",
+  "native_type": "VCS Methodology",
+  "artifact_status": {
+    "rules": "structured_pending_governance_review",
+    "sections": "source_audited",
+    "source_pdf": "verified"
+  },
+  "audit_hashes": {
+    "source_pdf_sha256": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+    "clarification_2024_07_31_sha256": "d55fa78dddf7de254135d54e8e3da51f7c73cc73b54b6cabddee320326d11774",
+    "sections_json_sha256": "a219bea0639bd43b33cc1c538e7b623bb66294e90b70148edc170135413b0e73",
+    "sections.rich_sha256": "78c042dd9576a969dec5f98ca3183e0a038df0f286172482507c520334277a35",
+    "rules_json_sha256": "2daedd8e2d70842015f2296e24747b7d4a42db1170e8cc453605634aeda30a0e",
+    "rules.rich_sha256": "3ceba0f214299ae74b94bf485583880077d569f8d13c8718a2e85a15a31b0d77"
+  },
+  "provenance": {
+    "author": "Article6 Governance v1",
+    "date": "2026-09-11",
+    "source_pdfs": [
+      {
+        "doc": "Verra/VM0048@v1-0",
+        "kind": "pdf",
+        "path": "tools/Verra/VM0048/v1-0/source.pdf",
+        "sha256": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+        "size": 452728
+      },
+      {
+        "doc": "Verra/VM0048@v1-0#clarification-2024-07-31",
+        "kind": "pdf",
+        "path": "tools/Verra/VM0048/v1-0/clarification-2024-07-31.pdf",
+        "sha256": "d55fa78dddf7de254135d54e8e3da51f7c73cc73b54b6cabddee320326d11774",
+        "size": 61187
+      }
+    ]
+  },
+  "references": {
+    "tools": [
+      {
+        "doc": "Verra/VM0048@v1-0",
+        "kind": "pdf",
+        "path": "tools/Verra/VM0048/v1-0/source.pdf",
+        "sha256": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+        "size": 452728,
+        "url": "https://verra.org/methodologies/vm0048-reducing-emissions-from-deforestation-and-forest-degradation-v1-0/"
+      },
+      {
+        "doc": "Verra/VM0048@v1-0#clarification-2024-07-31",
+        "kind": "pdf",
+        "path": "tools/Verra/VM0048/v1-0/clarification-2024-07-31.pdf",
+        "sha256": "d55fa78dddf7de254135d54e8e3da51f7c73cc73b54b6cabddee320326d11774",
+        "size": 61187,
+        "url": "https://verra.org/wp-content/uploads/2024/07/VM0048-v1.0-Clarification-issued-July-31-2024.pdf"
+      }
+    ]
+  },
+  "relationships": {
+    "version": {
+      "family": "Verra.AFOLU.VM0048",
+      "lineage": [
+        "v1-0"
+      ],
+      "previous_version": null,
+      "next_version": null
+    }
+  },
+  "governance_v1": {
+    "state": "RULES_COMPLETE",
+    "verified": false,
+    "production_corpus": false,
+    "blockers": [
+      "final_provenance_audit",
+      "production_retrieval_test"
+    ],
+    "migration_note": "VM0048 v1.0 source capture, full hierarchy, source-spanned runtime rules, dependencies, equations, parameters and effective 31 July 2024 clarification are structured. Final provenance audit and production retrieval/promotion are intentionally deferred to the verification PR."
+  },
+  "external_dependencies": {
+    "status": "governed_dependency_graph",
+    "path": "governance/Verra/AFOLU/VM0048/v1-0/dependencies.governance-v1.json",
+    "note": "Source-stated dynamic latest-version semantics are preserved; local support artifacts never silently create source version pins."
+  },
+  "governance_support": {
+    "root": "governance/Verra/AFOLU/VM0048/v1-0",
+    "purpose": "Non-runtime governance artifacts for dependency semantics, clarification precedence, equations, parameters and rule/source indexing."
+  },
+  "files": [
+    {
+      "path": "sections.json",
+      "sha256": "a219bea0639bd43b33cc1c538e7b623bb66294e90b70148edc170135413b0e73"
+    },
+    {
+      "path": "sections.rich.json",
+      "sha256": "78c042dd9576a969dec5f98ca3183e0a038df0f286172482507c520334277a35"
+    },
+    {
+      "path": "rules.json",
+      "sha256": "2daedd8e2d70842015f2296e24747b7d4a42db1170e8cc453605634aeda30a0e"
+    },
+    {
+      "path": "rules.rich.json",
+      "sha256": "3ceba0f214299ae74b94bf485583880077d569f8d13c8718a2e85a15a31b0d77"
+    },
+    {
+      "path": "governance/Verra/AFOLU/VM0048/v1-0/dependencies.governance-v1.json",
+      "sha256": "51d7ef69fa1c11e699ccdc50f09e4385705f5a3635f58498afe0348504730e5c"
+    },
+    {
+      "path": "governance/Verra/AFOLU/VM0048/v1-0/clarifications.governance-v1.json",
+      "sha256": "5eee3ed1d86e7faea1d0471262c986c62e3ea16c9ab6fe76464d9acd8cfd17e3"
+    },
+    {
+      "path": "governance/Verra/AFOLU/VM0048/v1-0/equations.governance-v1.json",
+      "sha256": "4edc15e4e4a76215afc1f6b3ab5bc0ea0aacf389cc0d70fae9028c084df3c00c"
+    },
+    {
+      "path": "governance/Verra/AFOLU/VM0048/v1-0/parameters.governance-v1.json",
+      "sha256": "24b73ec2e0b145af9aca1c00c910a525bb3f7ad3271a3a795740fe5e9ce2f9f1"
+    },
+    {
+      "path": "governance/Verra/AFOLU/VM0048/v1-0/rules.governance-v1.index.json",
+      "sha256": "4fc3e215459d2e5351f4ed4dfb0da8c85072a470604c9cff79f20cb8e7d8fa11"
+    }
+  ]
+}

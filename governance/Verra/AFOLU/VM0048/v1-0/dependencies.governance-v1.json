@@ -1,0 +1,176 @@
+{
+  "component": "Verra/VM0048@v1-0",
+  "contract": "governance-v1-dependencies",
+  "status": "source_structured_pending_final_provenance_review",
+  "source_pdf_sha256": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+  "policy": {
+    "silent_version_substitution": false,
+    "source_stated_version_policy_is_authoritative": true,
+    "local_artifact_version_does_not_imply_source_pin": true
+  },
+  "source_basis": [
+    {
+      "component": "Verra/JNR",
+      "version": "v4-0",
+      "relationship": "INFORMATIVE",
+      "role": "SOURCE_BASIS",
+      "source_section": "1"
+    },
+    {
+      "component": "Verra/VM0006",
+      "version": "v2-2",
+      "relationship": "INFORMATIVE",
+      "role": "SOURCE_BASIS",
+      "source_section": "1"
+    },
+    {
+      "component": "Verra/VM0007",
+      "version": "v1-6",
+      "relationship": "INFORMATIVE",
+      "role": "SOURCE_BASIS",
+      "source_section": "1"
+    },
+    {
+      "component": "Verra/VM0009",
+      "version": "v3-0",
+      "relationship": "INFORMATIVE",
+      "role": "SOURCE_BASIS",
+      "source_section": "1"
+    },
+    {
+      "component": "Verra/VM0015",
+      "version": "v1-1",
+      "relationship": "INFORMATIVE",
+      "role": "SOURCE_BASIS",
+      "source_section": "1"
+    },
+    {
+      "component": "Verra/VM0037",
+      "version": "v1-0",
+      "relationship": "INFORMATIVE",
+      "role": "SOURCE_BASIS",
+      "source_section": "1"
+    }
+  ],
+  "runtime_edges": [
+    {
+      "component": "Verra/VMD0055",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "relationship": "INCORPORATED_BY_REFERENCE",
+      "applicability": "MANDATORY_UDEF",
+      "source_evidence": "Table 1: AUDef = M for UDef"
+    },
+    {
+      "component": "Verra/AFOLU_NON_PERMANENCE_RISK_TOOL",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "relationship": "INCORPORATED_BY_REFERENCE",
+      "applicability": "MANDATORY_UDEF",
+      "source_evidence": "Table 1: AFOLU Non-Permanence Risk Tool = M for UDef"
+    },
+    {
+      "component": "Verra/VT0001",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "relationship": "INCORPORATED_BY_REFERENCE",
+      "applicability": "MANDATORY",
+      "source_evidence": "Sections 6.1 and 7"
+    },
+    {
+      "component": "UNFCCC/E-NA",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "relationship": "CONDITIONAL",
+      "applicability": "MANDATORY_WHEN_LEAKAGE_PREVENTION_INCREASES_FERTILIZER",
+      "source_evidence": "Table 1 note (m)1 and Section 8.3"
+    },
+    {
+      "component": "Verra/VMD0001",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "relationship": "INCORPORATED_BY_REFERENCE",
+      "applicability": "MANDATORY_UDEF",
+      "source_evidence": "Table 1: CP-AB = M"
+    },
+    {
+      "component": "Verra/VMD0002",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "relationship": "CONDITIONAL",
+      "applicability": "MANDATORY_IF_BASELINE_POOL_GREATER_AND_SIGNIFICANT",
+      "source_evidence": "Table 1 note (m)2"
+    },
+    {
+      "component": "Verra/VMD0003",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "relationship": "OPTIONAL",
+      "applicability": "OPTIONAL_UDEF",
+      "source_evidence": "Table 1: CP-L = O"
+    },
+    {
+      "component": "Verra/VMD0004",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "relationship": "OPTIONAL",
+      "applicability": "OPTIONAL_UDEF_WITH_WETLAND_SOC_REQUIREMENT",
+      "source_evidence": "Table 1: CP-S = O plus Section 5.2 wetlands requirement"
+    },
+    {
+      "component": "Verra/VMD0005",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "relationship": "CONDITIONAL",
+      "applicability": "MANDATORY_WHEN_COMMERCIAL_TIMBER_FUELWOOD_OR_CHARCOAL",
+      "source_evidence": "Table 1 note (m)3"
+    },
+    {
+      "component": "Verra/VMD0011",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "relationship": "CONDITIONAL",
+      "applicability": "MANDATORY_WHEN_PROJECT_DECREASES_TIMBER_FUELWOOD_OR_CHARCOAL_PRODUCTION",
+      "source_evidence": "Table 1 note (m)3 and Section 8.3"
+    },
+    {
+      "component": "Verra/VMD0013",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "relationship": "INCORPORATED_BY_REFERENCE",
+      "applicability": "MANDATORY_UDEF",
+      "source_evidence": "Table 1: E-BPB = M"
+    },
+    {
+      "component": "Verra/VMD0014",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "relationship": "OPTIONAL",
+      "applicability": "OPTIONAL_UDEF",
+      "source_evidence": "Table 1: E-FFC = O"
+    },
+    {
+      "component": "Verra/VMD0016",
+      "version": null,
+      "version_policy": "MOST_RECENT_AT_APPLICATION",
+      "relationship": "INCORPORATED_BY_REFERENCE",
+      "applicability": "MANDATORY_UDEF",
+      "source_evidence": "Table 1: X-STR = M"
+    }
+  ],
+  "future_activity_modules": [
+    {
+      "activity": "PDef",
+      "component": "APDef",
+      "status": "UNDER_DEVELOPMENT_IN_V1_0_SOURCE",
+      "table_status": "M_FOR_PDEF"
+    },
+    {
+      "activity": "UDeg",
+      "component": "AUDeg",
+      "status": "UNDER_DEVELOPMENT_IN_V1_0_SOURCE",
+      "table_status": "M_FOR_UDEG"
+    }
+  ],
+  "unresolved_source_semantics": 0
+}

@@ -1,0 +1,20 @@
+{
+  "component": "Verra/VM0048@v1-0",
+  "classification": "RULE_UPDATE",
+  "status": "EFFECTIVE",
+  "issued": "2024-07-31",
+  "source_pdf": "tools/Verra/VM0048/v1-0/clarification-2024-07-31.pdf",
+  "source_pdf_sha256": "d55fa78dddf7de254135d54e8e3da51f7c73cc73b54b6cabddee320326d11774",
+  "applies_to": [
+    {
+      "section": "3.1",
+      "subject": "Forest definition"
+    }
+  ],
+  "precedence": "The clarification is effective from issuance and must be applied when interpreting VM0048 v1.0.",
+  "normalized_effect": {
+    "forest_minimum_canopy_cover_percent": 10,
+    "country_reporting_reference": "UNFCCC"
+  },
+  "supersedes_source_text_for_interpretation": true
+}
