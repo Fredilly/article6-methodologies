@@ -37,6 +37,8 @@
     {"id":"T-SIG","resolution":"Verra/VM0007@v1-8#Appendix-1","component_dependency":false,"relationship":"INCORPORATED_BY_REFERENCE","applicability":"INTERNAL","required_when_applicable":true,"source_pdf_sha256":"68bb94746c4c4adb40acbe314a3f927e2a3a57af9bf4916afdbcf532ea0b50e6"}
   ],
   "edge_count": 20,
+  "incorporated_by_reference_edge_count": 19,
+  "informative_example_edge_count": 1,
   "unresolved_relationship_edges": 0,
   "unresolved_source_version_pins": 0,
   "promotion_blockers": [],
