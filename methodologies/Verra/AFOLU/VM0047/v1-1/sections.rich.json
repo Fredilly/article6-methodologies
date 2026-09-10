@@ -23,8 +23,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L109-L179"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "1 SUMMARY DESCRIPTION"
+      }
+    ]
   },
   {
     "id": "S-1-1",
@@ -46,8 +55,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 1.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L126-L155"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "1.1 Summary of the Area-based Approach"
+      }
+    ]
   },
   {
     "id": "S-1-2",
@@ -69,8 +87,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 1.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L159-L179"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "1.2 Summary of the Census-based Approach"
+      }
+    ]
   },
   {
     "id": "S-2",
@@ -92,8 +119,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L180-L193"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "2 SOURCES"
+      }
+    ]
   },
   {
     "id": "S-3",
@@ -117,8 +153,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 3",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L194-L266"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "3 DEFINITIONS"
+      }
+    ]
   },
   {
     "id": "S-4",
@@ -149,8 +194,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 4",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L267-L510"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "4 APPLICABILITY CONDITIONS"
+      }
+    ]
   },
   {
     "id": "S-4-1",
@@ -173,8 +227,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 4.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L278-L309"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "4.1 General Applicability Conditions"
+      }
+    ]
   },
   {
     "id": "S-4-2",
@@ -197,8 +260,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 4.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L310-L377"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "4.2 Area-based Approach Applicability Conditions"
+      }
+    ]
   },
   {
     "id": "S-4-3",
@@ -222,8 +294,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 4.3",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L378-L475"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "4.3 Census-based Approach Applicability Conditions"
+      }
+    ]
   },
   {
     "id": "S-4-4",
@@ -248,8 +329,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 4.4",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L476-L510"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "4.4 Exclusion Conditions"
+      }
+    ]
   },
   {
     "id": "S-4-4-1",
@@ -271,8 +361,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 4.4.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L484-L497"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "4.4.1 Area-based Approach Exclusions"
+      }
+    ]
   },
   {
     "id": "S-4-4-2",
@@ -294,8 +393,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 4.4.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L498-L510"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "4.4.2 Census-based Approach Exclusions"
+      }
+    ]
   },
   {
     "id": "S-5",
@@ -324,8 +432,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 5",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L511-L697"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "5 PROJECT BOUNDARY"
+      }
+    ]
   },
   {
     "id": "S-5-1",
@@ -348,8 +465,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 5.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L536-L597"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "5.1 Area-based Approach Carbon Pools"
+      }
+    ]
   },
   {
     "id": "S-5-2",
@@ -372,8 +498,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 5.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L598-L644"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "5.2 Census-based Approach Carbon Pools"
+      }
+    ]
   },
   {
     "id": "S-5-3",
@@ -395,8 +530,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 5.3",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L645-L697"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "5.3 GHG Sources"
+      }
+    ]
   },
   {
     "id": "S-6",
@@ -422,8 +566,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 6",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L698-L723"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "6 BASELINE SCENARIO"
+      }
+    ]
   },
   {
     "id": "S-6-1",
@@ -446,8 +599,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 6.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L699-L711"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "6.1 Area-based Approach"
+      }
+    ]
   },
   {
     "id": "S-6-2",
@@ -469,8 +631,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 6.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L712-L723"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "6.2 Census-based Approach"
+      }
+    ]
   },
   {
     "id": "S-7",
@@ -498,8 +669,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 7",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L724-L851"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "7 ADDITIONALITY"
+      }
+    ]
   },
   {
     "id": "S-7-1",
@@ -521,8 +701,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 7.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L729-L739"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "7.1 Area-based Approach"
+      }
+    ]
   },
   {
     "id": "S-7-2",
@@ -545,8 +734,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 7.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L740-L764"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "7.2 Census-based Approach"
+      }
+    ]
   },
   {
     "id": "S-7-3",
@@ -574,8 +772,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 7.3",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L765-L851"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "7.3 Additionality Demonstrations"
+      }
+    ]
   },
   {
     "id": "S-7-3-1",
@@ -597,8 +804,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 7.3.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L767-L772"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "7.3.1 Regulatory Surplus"
+      }
+    ]
   },
   {
     "id": "S-7-3-2",
@@ -620,8 +836,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 7.3.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L773-L785"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "7.3.2 Performance Benchmark"
+      }
+    ]
   },
   {
     "id": "S-7-3-3",
@@ -643,8 +868,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 7.3.3",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L786-L792"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "7.3.3 Investment Analysis"
+      }
+    ]
   },
   {
     "id": "S-7-3-4",
@@ -667,8 +901,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 7.3.4",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L793-L851"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "7.3.4 Common Practice"
+      }
+    ]
   },
   {
     "id": "S-8",
@@ -718,8 +961,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L852-L1826"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8 QUANTIFICATION OF REDUCTIONS AND REMOVALS"
+      }
+    ]
   },
   {
     "id": "S-8-1",
@@ -745,8 +997,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L854-L874"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.1 Baseline Emissions"
+      }
+    ]
   },
   {
     "id": "S-8-1-1",
@@ -768,8 +1029,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.1.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L863-L868"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.1.1 Area-based Approach"
+      }
+    ]
   },
   {
     "id": "S-8-1-2",
@@ -791,8 +1061,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.1.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L869-L874"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.1.2 Census-based Approach"
+      }
+    ]
   },
   {
     "id": "S-8-2",
@@ -826,8 +1105,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L875-L1371"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.2 Area-based Project Emissions"
+      }
+    ]
   },
   {
     "id": "S-8-2-1",
@@ -861,8 +1149,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.2.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L885-L1151"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.2.1 Area-based Project Carbon Stock Changes"
+      }
+    ]
   },
   {
     "id": "S-8-2-1-1",
@@ -885,8 +1182,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.2.1.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L928-L966"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.2.1.1 Area-based Quantification of Woody Biomass"
+      }
+    ]
   },
   {
     "id": "S-8-2-1-2",
@@ -909,8 +1215,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.2.1.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L967-L1030"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.2.1.2 Area-based Quantification of Pre-existing Woody Biomass"
+      }
+    ]
   },
   {
     "id": "S-8-2-1-3",
@@ -932,8 +1247,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.2.1.3",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1031-L1051"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.2.1.3 Area-based Quantification of Non-Woody Biomass"
+      }
+    ]
   },
   {
     "id": "S-8-2-1-4",
@@ -956,8 +1280,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.2.1.4",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1052-L1101"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.2.1.4 Area-based Quantification of Dead Wood"
+      }
+    ]
   },
   {
     "id": "S-8-2-1-5",
@@ -980,8 +1313,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.2.1.5",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1102-L1137"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.2.1.5 Area-based Quantification of Litter"
+      }
+    ]
   },
   {
     "id": "S-8-2-1-6",
@@ -1003,8 +1345,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.2.1.6",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1138-L1151"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.2.1.6 Area-based Quantification of Soil Organic Carbon"
+      }
+    ]
   },
   {
     "id": "S-8-2-2",
@@ -1033,8 +1384,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.2.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1152-L1371"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.2.2 Area-based Quantification of Emissions from Biomass Burning and Fertilizer Use"
+      }
+    ]
   },
   {
     "id": "S-8-2-2-1",
@@ -1056,8 +1416,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.2.2.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1175-L1214"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.2.2.1 Area-based Quantification of Emissions from Biomass Burning"
+      }
+    ]
   },
   {
     "id": "S-8-2-2-2",
@@ -1082,8 +1451,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.2.2.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1215-L1371"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.2.2.2 Area-based Quantification of Emissions from Fertilizer Application"
+      }
+    ]
   },
   {
     "id": "S-8-3",
@@ -1112,8 +1490,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.3",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1372-L1558"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.3 Census-based Project Emissions"
+      }
+    ]
   },
   {
     "id": "S-8-3-1",
@@ -1143,8 +1530,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.3.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1388-L1492"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.3.1 Census-based Project Carbon Stock Changes"
+      }
+    ]
   },
   {
     "id": "S-8-3-1-1",
@@ -1167,8 +1563,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.3.1.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1417-L1476"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.3.1.1 Census-based Quantification of Woody Biomass"
+      }
+    ]
   },
   {
     "id": "S-8-3-1-2",
@@ -1190,8 +1595,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.3.1.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1477-L1480"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.3.1.2 Census-based Quantification of Non-Woody Biomass"
+      }
+    ]
   },
   {
     "id": "S-8-3-1-3",
@@ -1213,8 +1627,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.3.1.3",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1481-L1484"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.3.1.3 Census-based Quantification of Dead Wood"
+      }
+    ]
   },
   {
     "id": "S-8-3-1-4",
@@ -1236,8 +1659,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.3.1.4",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1485-L1488"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.3.1.4 Census-based Quantification of Litter"
+      }
+    ]
   },
   {
     "id": "S-8-3-1-5",
@@ -1259,8 +1691,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.3.1.5",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1489-L1492"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.3.1.5 Census-based Quantification of Soil Organic Carbon"
+      }
+    ]
   },
   {
     "id": "S-8-3-2",
@@ -1286,8 +1727,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.3.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1493-L1558"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.3.2 Census-based Quantification of Emissions from Biomass Burning and Fertilizer Use"
+      }
+    ]
   },
   {
     "id": "S-8-3-2-1",
@@ -1310,8 +1760,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.3.2.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1498-L1552"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.3.2.1 Census-based Quantification of Emissions from Biomass Burning"
+      }
+    ]
   },
   {
     "id": "S-8-3-2-2",
@@ -1333,8 +1792,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.3.2.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1553-L1558"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.3.2.2 Census-based Quantification of Emissions from Fertilizer Application"
+      }
+    ]
   },
   {
     "id": "S-8-4",
@@ -1356,8 +1824,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.4",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1559-L1568"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.4 Leakage Emissions"
+      }
+    ]
   },
   {
     "id": "S-8-5",
@@ -1384,8 +1861,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.5",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1569-L1684"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.5 Uncertainty"
+      }
+    ]
   },
   {
     "id": "S-8-5-1",
@@ -1407,8 +1893,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.5.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1584-L1619"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.5.1 Area-based Quantification of Uncertainty"
+      }
+    ]
   },
   {
     "id": "S-8-5-2",
@@ -1431,8 +1926,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.5.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1620-L1684"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.5.2 Census-based Quantification of Uncertainty"
+      }
+    ]
   },
   {
     "id": "S-8-6",
@@ -1460,8 +1964,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.6",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1685-L1763"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.6 Estimated Carbon Dioxide Removals"
+      }
+    ]
   },
   {
     "id": "S-8-6-1",
@@ -1483,8 +1996,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.6.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1699-L1720"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.6.1 Area-based Quantification of Estimated Carbon Dioxide Removals"
+      }
+    ]
   },
   {
     "id": "S-8-6-2",
@@ -1506,8 +2028,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.6.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1721-L1745"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.6.2 Census-based Quantification of Estimated Carbon Dioxide Removals"
+      }
+    ]
   },
   {
     "id": "S-8-6-3",
@@ -1529,8 +2060,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.6.3",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1749-L1763"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.6.3 Annualized Carbon Dioxide Removals"
+      }
+    ]
   },
   {
     "id": "S-8-7",
@@ -1554,8 +2094,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 8.7",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1764-L1826"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "8.7 Area-based and Census-based Ex-Ante Estimation"
+      }
+    ]
   },
   {
     "id": "S-9",
@@ -1607,8 +2156,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 9",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1827-L3226"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "9 MONITORING"
+      }
+    ]
   },
   {
     "id": "S-9-1",
@@ -1637,8 +2195,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 9.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1828-L2239"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "9.1 Data and Parameters Available at Validation"
+      }
+    ]
   },
   {
     "id": "S-9-2",
@@ -1676,8 +2243,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 9.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L2240-L3144"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "9.2 Data and Parameters Monitored"
+      }
+    ]
   },
   {
     "id": "S-9-3",
@@ -1704,8 +2280,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 9.3",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3145-L3226"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "9.3 Description of the Monitoring Plan"
+      }
+    ]
   },
   {
     "id": "S-9-3-1",
@@ -1728,8 +2313,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 9.3.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3199-L3222"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "9.3.1 Database Requirements for Project and Control Plots"
+      }
+    ]
   },
   {
     "id": "S-10",
@@ -1753,8 +2347,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section 10",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3227-L3320"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "10 REFERENCES"
+      }
+    ]
   },
   {
     "id": "S-11",
@@ -1793,8 +2396,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section A1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3321-L3909"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "APPENDIX 1: PERFORMANCE METHOD"
+      }
+    ]
   },
   {
     "id": "S-11-1",
@@ -1816,8 +2428,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section A1.1",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3322-L3333"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "A1.1 Applicability Conditions"
+      }
+    ]
   },
   {
     "id": "S-11-2",
@@ -1839,8 +2460,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section A1.2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3334-L3355"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "A1.2 Baseline Scenario"
+      }
+    ]
   },
   {
     "id": "S-11-3",
@@ -1863,8 +2493,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section A1.3",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3356-L3382"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "A1.3 Performance Benchmark"
+      }
+    ]
   },
   {
     "id": "S-11-4",
@@ -1893,8 +2532,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section A1.4",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3383-L3772"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "A1.4 Procedure to Define the Performance Benchmark"
+      }
+    ]
   },
   {
     "id": "S-11-5",
@@ -1919,8 +2567,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section A1.5",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3773-L3909"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "A1.5 Data and Parameters Monitored"
+      }
+    ]
   },
   {
     "id": "S-12",
@@ -1944,8 +2601,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section A2",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3910-L3976"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "APPENDIX 2: TESTING THE SIGNIFICANCE OF CARBON POOLS AND GHG SOURCES"
+      }
+    ]
   },
   {
     "id": "S-13",
@@ -1969,8 +2635,17 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section A3",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3977-L4061"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "APPENDIX 3: UNCERTAINTY EQUATIONS FOR CHANGING SAMPLING APPROACHES"
+      }
+    ]
   },
   {
     "id": "S-14",
@@ -1992,7 +2667,16 @@
     "source_span_status": "source_audited",
     "provenance": {
       "source_ref": "VM0047 v1.1 Section DH",
-      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
-    }
+      "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L4062-L4084"
+      ]
+    },
+    "locators": [
+      {
+        "type": "governed_text_lines",
+        "quote": "DOCUMENT HISTORY"
+      }
+    ]
   }
 ]

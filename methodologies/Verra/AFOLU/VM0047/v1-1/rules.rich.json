@@ -7,7 +7,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Project activities must establish, increase or restore vegetative cover in non-forest areas; area-based activities may enhance stocks in existing forest cover only where the forest has not been managed for wood products in the previous ten years.",
+    "source_span_text": "This methodology applies to afforestation, reforestation, and revegetation (ARR) activities and provides two quantification approaches: area-based and census-based. Project activities must establish, increase, or restore vegetative cover in non-forest areas (applicable to both approaches), or activities must enhance forest carbon stocks in areas with existing forest cover that have not been managed for wood products in the past ten years (applicable to the area- based approach only).",
     "when": [],
     "tags": [
       "eligibility"
@@ -26,10 +26,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L118-L123"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "This methodology applies to afforestation, reforestation, and revegetation (ARR) activities and provides two quantification approaches: area-based and census-based."
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a71 \u00b62",
+      "source_ref": "§1 ¶2",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -41,7 +50,7 @@
     "type": "leakage",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Area-based projects apply VMD0054 to quantify leakage.",
+    "source_span_text": "these estimates to the project level based on the total project area within the boundary. 2) uses a dynamic performance benchmark to assess additionality and determine the crediting baseline at each verification. The performance benchmark is derived from ex- post observations that compare the change in vegetative stocking index (SI) between remotely sensed project and matched control plots. 3) does not apply to projects that can use the census-based approach. 4) applies VMD0054 Module for Estimating Leakage from ARR Activities to quantify",
     "when": [
       "area-based"
     ],
@@ -63,10 +72,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L133-L142"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "these estimates to the project level based on the total project area within the boundary. 2) uses a"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a71.1 item 4",
+      "source_ref": "§1.1 item 4",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -78,7 +96,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Census-based projects use direct planting, max 50 planting units/ha, complete census at t=0, project-method additionality/baseline, and no leakage deduction where land use is maintained.",
+    "source_span_text": "2) limits planting density to a maximum of 50 planting units per hectare. 3) uses a complete census of all planting units (established as N, the total number of planting units) at t=0. 4) estimates biomass through sampling and measurement of planting units, then scales to the project level using the number of planting units (N) as a multiplier. 5) uses a project method to demonstrate additionality and determine the crediting baseline. 6) is exempt from applying a leakage deduction because projects must not result in a change to existing land use.",
     "when": [
       "census-based"
     ],
@@ -100,10 +118,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L166-L177"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "2) limits planting density to a maximum of 50 planting units per hectare. 3) uses a complete census"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a71.2 items 1-6",
+      "source_ref": "§1.2 items 1-6",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -115,7 +142,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Each project activity instance must fully meet either area-based or census-based applicability; mixed projects require clearly separated instances with at least a 10 m buffer.",
+    "source_span_text": "conditions for the area-based and census-based approaches are mutually exclusive. Each project activity instance must fully meet the applicability conditions of either the area-based approach or the census-based approach. A project may incorporate multiple instances that apply different approaches, provided that those instances are clearly separated by a minimum 10-meter buffer",
     "when": [],
     "tags": [
       "boundary",
@@ -135,10 +162,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L271-L274"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "conditions for the area-based and census-based approaches are mutually exclusive. Each project activity instance must fully meet the"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a74 \u00b61",
+      "source_ref": "§4 ¶1",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -150,7 +186,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "All projects must increase vegetative cover, keep mixed approaches non-overlapping, fix the quantification approach for the crediting period, document the earliest start-date trigger, and use a multiple-project-activity design on organic soils/wetlands.",
+    "source_span_text": "4.1 General Applicability Conditions The following applicability conditions must be met by all projects using this methodology (area- based, census-based, or a combination of both approaches): 1) Project activities increase vegetative cover. 2) Where area-based and census-based approaches are used together, they are applied in non-overlapping areas defined at the project start (see Section 5 on the delineation of spatial boundaries to ensure non-overlap). 3) For lands enrolled in a project, the quantification approach is selected at the project start date and used for the entire project crediting period.",
     "when": [],
     "tags": [
       "eligibility"
@@ -169,10 +205,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L278-L289"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "4.1 General Applicability Conditions The following applicability conditions must be met by all projects using this methodology (area-"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a74.1 items 1-5",
+      "source_ref": "§4.1 items 1-5",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -184,7 +229,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Where site preparation triggers the start date, t=0 estimates for all significant pools must be established before preparation and no more than two years before start; remote sensing is limited to pre-existing woody biomass if plots were unavailable.",
+    "source_span_text": "estimates for all significant carbon pools3. ii) To ensure accuracy, t = 0 estimates are established no more than two years before the start date (e.g., if the start date is 2025, plots must have been established no earlier than 2023). iii) Where plot-based measurements are not established before site preparation, a remote sensing-based estimate found in Section 8.2.1.2 may be used, but only for pre-existing woody biomass. Note – Remote sensing estimates are only eligible to use for estimates of pre-existing",
     "when": [
       "area-based"
     ],
@@ -206,10 +251,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L326-L336"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "estimates for all significant carbon pools3. ii) To ensure accuracy, t = 0 estimates are established no more"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a74.2 item 2(a)(i)-(iii)",
+      "source_ref": "§4.2 item 2(a)(i)-(iii)",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -221,7 +275,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Remote sensing may establish t=0 only for pre-existing above- and belowground woody biomass; disturbed significant pools without t=0 measurement make the project ineligible unless conservatively excludable.",
+    "source_span_text": "only for pre-existing woody biomass. Note – Remote sensing estimates are only eligible to use for estimates of pre-existing aboveground and belowground biomass and must not be used to establish a t = 0 estimate for any other carbon pool (e.g., SOC, dead wood). Where any other significant carbon pool is impacted during site preparation (e.g., SOC impacted due to plowing at depth greater than 25 cm, or the removal of dead wood offsite) and a t = 0 measurement was not established, the project is ineligible. b) Where the project start date is defined by a land use change date or where the project start did not include site preparation that caused a significant decrease in carbon stocks in monitored carbon pools (e.g., pit planting without clearing existing",
     "when": [
       "area-based"
     ],
@@ -243,10 +297,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L334-L345"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "only for pre-existing woody biomass. Note – Remote sensing estimates are only eligible to use for estimates of"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a74.2 Note after item 2(a)",
+      "source_ref": "§4.2 Note after item 2(a)",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -258,7 +321,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Where start is a land-use-change date or preparation did not significantly reduce monitored pools, t=0 estimates must be established within two years after start, using plot sampling for all significant pools and evidence that preparation did not significantly reduce them.",
+    "source_span_text": "b) Where the project start date is defined by a land use change date or where the project start did not include site preparation that caused a significant decrease in carbon stocks in monitored carbon pools (e.g., pit planting without clearing existing vegetation) the following conditions must be met: i) The project proponent establishes t = 0 estimates within two years after the project start date (e.g., if the start date is 2025, plots must be established by",
     "when": [
       "area-based"
     ],
@@ -280,10 +343,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L343-L349"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "b) Where the project start date is defined by a land use change date or where the project"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a74.2 item 2(b)(i)-(iii)",
+      "source_ref": "§4.2 item 2(b)(i)-(iii)",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -295,7 +367,7 @@
     "type": "leakage",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Area-based leakage must be monitored and quantified using VMD0054 and must not be assumed de minimis.",
+    "source_span_text": "3) Leakage must be monitored and quantified using VMD0054. It must not be assumed to be de minimis.",
     "when": [
       "area-based"
     ],
@@ -317,10 +389,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L374-L375"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "3) Leakage must be monitored and quantified using VMD0054. It must not be assumed to be de minimis."
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a74.2 item 3",
+      "source_ref": "§4.2 item 3",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -332,7 +413,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Census-based activities must use direct planting, maintain pre-project land use, stay at or below 50 planting units/ha with proportional scaling, and establish N by complete census at t=0.",
+    "source_span_text": "4.3 Census-based Approach Applicability Conditions The following applicability conditions must be met by all projects using the census-based approach: 1) The project activity only includes direct planting. 2) The pre-project land use is maintained throughout the project lifetime (e.g., where projects occur on agricultural land, agricultural production continues). 3) Planting density does not exceed 50 planting units per hectare. The planting density limit",
     "when": [
       "census-based"
     ],
@@ -355,10 +436,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L378-L387"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "4.3 Census-based Approach Applicability Conditions The following applicability conditions must be met by all projects using the census-based"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a74.3 items 1-4",
+      "source_ref": "§4.3 items 1-4",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -370,7 +460,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Dead planting units may be replanted provided N does not exceed 50 live project planting units per hectare.",
+    "source_span_text": "Existing vegetation is not included in the census and does not count toward the 50 planting units per hectare density threshold. 5) Where planting units have died, plantings may be replanted provided N does not exceed 50 live planting units per hectare established by the project activity.",
     "when": [
       "census-based"
     ],
@@ -392,10 +482,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L403-L407"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Existing vegetation is not included in the census and does not count toward the 50 planting units per"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a74.3 item 5",
+      "source_ref": "§4.3 item 5",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -407,7 +506,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Each census planting unit must be identifiable by GPS spacing at least equal to positional accuracy or by a durable unique physical marker.",
+    "source_span_text": "if the positional accuracy of the GPS is five meters, the minimum spacing between planting units must be greater than or equal to five meters. b) Physical markers: Each planting unit must be marked with a durable, in-field physical identifier bearing a unique ID. These markers must be clearly visible and",
     "when": [
       "census-based"
     ],
@@ -425,14 +524,23 @@
       "section_anchor": "census-based-approach-applicability-conditions",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-4-3",
       "pages": [
-        10
+        11
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L422-L426"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "if the positional accuracy of the GPS is five meters, the minimum spacing between planting units must be"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a74.3 item 6(a)-(b)",
+      "source_ref": "§4.3 item 6(a)-(b)",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -444,7 +552,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "A planting unit that cannot be located at monitoring is conservatively assumed dead.",
+    "source_span_text": "7) Where a planting unit cannot be located during a monitoring event, it is conservatively assumed that the planting unit has died.",
     "when": [
       "census-based"
     ],
@@ -466,10 +574,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L429-L430"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "7) Where a planting unit cannot be located during a monitoring event, it is conservatively assumed that the"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a74.3 item 7",
+      "source_ref": "§4.3 item 7",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -481,7 +598,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Census activity must occur in areas with less than 10% pre-existing woody cover and/or qualifying continuous cropping, settlements or other lands.",
+    "source_span_text": "8) The project activity occurs: a) within an area with less than 10% pre-existing woody biomass cover; and/or b) in an area subject to continuous cropping,4 or in “settlements” or “other lands” land use categories.5 9) Soil disturbance from project activities6 (e.g., site preparation) meets the following conditions: a) Soil disturbance is permitted only at the time of planting. Where replanting or additional waves of planting occur, soil disturbance is permitted under the same",
     "when": [
       "census-based"
     ],
@@ -503,10 +620,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L432-L443"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "8) The project activity occurs: a) within an area with less than 10% pre-existing woody biomass cover; and/or"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a74.3 item 8(a)-(b)",
+      "source_ref": "§4.3 item 8(a)-(b)",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -518,7 +644,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Project-related soil disturbance is permitted at planting; localized planting disturbance may exceed 25 cm, but soil inversion must not exceed 25 cm and may occur only once in the crediting period.",
+    "source_span_text": "additional waves of planting occur, soil disturbance is permitted under the same conditions. b) Planting techniques that cause localized soil disturbance, such as pit planting, may exceed a depth of 25 cm. c) Where planting involves soil inversion (e.g., plowing), the depth must not exceed 25 cm (such as that caused by a moldboard plow) and may only occur once during the project crediting period.7",
     "when": [
       "census-based"
     ],
@@ -540,10 +666,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L443-L451"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "additional waves of planting occur, soil disturbance is permitted under the same conditions. b) Planting techniques that cause"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a74.3 item 9(a)-(c)",
+      "source_ref": "§4.3 item 9(a)-(c)",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -555,7 +690,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Area-based projects are ineligible on recently managed forest, where clearing involves timber harvest or native-ecosystem degradation, or where planting fewer than 50 units/ha could use census-based approach.",
+    "source_span_text": "This methodology is not applicable for projects using the area-based approach under the following conditions: 1) The project occurs on lands that have met the definition of managed forest at any point in the 10-year period immediately preceding the project start date. 2) Clearing of pre-existing woody biomass involves timber harvesting or results in degradation of native ecosystems. 3) The project is planting fewer than 50 planting units per hectare and could use the census-based approach.",
     "when": [
       "area-based"
     ],
@@ -577,10 +712,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L486-L496"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "This methodology is not applicable for projects using the area-based approach under the following conditions: 1) The project"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a74.4.1 items 1-3",
+      "source_ref": "§4.4.1 items 1-3",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -592,7 +736,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Census projects are ineligible where similar-purpose woody biomass was removed in the prior 10 years or project soil inversion exceeds 25 cm.",
+    "source_span_text": "4.4.2 Census-based Approach Exclusions This methodology is not applicable for projects using the census-based approach under the following conditions: 1) Woody biomass, which serves a similar purpose as the planting units in the project, has been removed within the last 10 years (confirmed via pre-project photos and/or attestation). 2) Soil disturbance from the project activity involves soil inversion to a depth exceeding 25",
     "when": [
       "census-based"
     ],
@@ -614,10 +758,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L498-L507"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "4.4.2 Census-based Approach Exclusions This methodology is not applicable for projects using the census-based approach under the following"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a74.4.2 items 1-2",
+      "source_ref": "§4.4.2 items 1-2",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -629,7 +782,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Mixed approaches must have non-overlapping accounting boundaries and Appendix 2 must be applied to test significance of optional pools and GHG sources.",
+    "source_span_text": "based approaches. Appendix 2 of this methodology must be applied to test the significance of carbon pools and greenhouse gas (GHG) emission sources to determine whether they may be deemed de minimis. 5.1 Area-based Approach Carbon Pools The accounting boundary for the area-based approach encompasses all lands subject to",
     "when": [],
     "tags": [
       "boundary",
@@ -645,14 +798,23 @@
       "section_anchor": "project-boundary",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-5",
       "pages": [
-        12
+        13
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L531-L537"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "based approaches. Appendix 2 of this methodology must be applied to test the significance of carbon pools and"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a75 \u00b61-2",
+      "source_ref": "§5 ¶1-2",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -664,7 +826,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Above- and belowground woody biomass are mandatory; optional pools become mandatory where project activity significantly reduces them or specified disturbance/harvesting conditions apply; harvested wood products are excluded.",
+    "source_span_text": "Table 1. Selected carbon pools in the project boundary using the area-based approach Carbon Pool Included? Justification/Explanation Aboveground woody Yes Major carbon pool biomass Aboveground non- Yes/Optional Must be included where the project activity significantly woody biomass reduces the carbon pool as per Appendix 2. Otherwise, this carbon pool is optional. Belowground woody Yes Major carbon pool",
     "when": [
       "area-based"
     ],
@@ -686,10 +848,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L544-L555"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Table 1. Selected carbon pools in the project boundary using the area-based approach Carbon Pool Included? Justification/Explanation Aboveground"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a75.1 Table 1",
+      "source_ref": "§5.1 Table 1",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -701,7 +872,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Each census planting unit has a 10 m radius accounting buffer; buffers may overlap within an instance but not another instance; only above- and belowground woody biomass are included.",
+    "source_span_text": "In the census-based approach, each planting unit has a 10-meter radius buffer. Together, these buffers define the accounting boundary of a project activity instance. Buffers may overlap within the same instance but must not overlap with the boundary of another census- or area-based instance. This separation between instances prevents double counting. Selected carbon pools included in the project boundary for the census-based baseline and",
     "when": [
       "census-based"
     ],
@@ -723,10 +894,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L599-L604"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "In the census-based approach, each planting unit has a 10-meter radius buffer. Together, these buffers define the accounting"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a75.2 \u00b61 and Table 2",
+      "source_ref": "§5.2 ¶1 and Table 2",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -738,7 +918,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Project CH4 and N2O from biomass burning and N2O from nitrogen fertilizer may be significant and are included; baseline sources and fossil-fuel burning are conservatively excluded or de minimis as specified.",
+    "source_span_text": "nitrogen fertilizer N2O Yes May be a significant source. CO2 No De minimis Burning of fossil fuels CH4 No De minimis",
     "when": [],
     "tags": [
       "ghg-sources"
@@ -757,10 +937,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L688-L692"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "nitrogen fertilizer N2O Yes May be a significant source. CO2 No De minimis Burning of fossil fuels CH4"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a75.3 Table 3",
+      "source_ref": "§5.3 Table 3",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -772,7 +961,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Area-based baseline is set using a performance benchmark derived from representative control plots under Appendix 1.",
+    "source_span_text": "A performance benchmark is used to set the crediting baseline. The performance benchmark, defined as the business-as-usual increase in vegetative cover relative to the project, is set based on data from representative control plots outside of the project area. Procedures to establish the performance benchmark are provided in Appendix 1.",
     "when": [
       "area-based"
     ],
@@ -789,14 +978,23 @@
       "section_anchor": "area-based-approach",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-6-1",
       "pages": [
-        15
+        16
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L705-L709"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "A performance benchmark is used to set the crediting baseline. The performance benchmark, defined as the business-as-usual increase"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a76.1 \u00b61-2",
+      "source_ref": "§6.1 ¶1-2",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -808,7 +1006,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Where census criteria are met, absence of ARR without project intervention may be assumed and the crediting baseline is zero.",
+    "source_span_text": "The census-based quantification approach uses a project method for setting the crediting baseline. The project activity must: 1) occur within an area with pre-existing woody biomass cover of less than 10%; and 2) occur in an area subject to continuous cropping, or in “settlements,” or “other lands” land use categories.9 Where a project meets these criteria, it may be assumed that afforestation, reforestation, or revegetation will not occur without project interventions and the crediting baseline is set to zero.",
     "when": [
       "census-based"
     ],
@@ -829,10 +1027,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L713-L721"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "The census-based quantification approach uses a project method for setting the crediting baseline. The project activity must: 1)"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a76.2 items 1-2",
+      "source_ref": "§6.2 items 1-2",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -844,7 +1051,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Area-based projects use a performance method and census-based projects use a project method to demonstrate additionality.",
+    "source_span_text": "Project proponents must apply a performance method (area-based approach) or a project method (census-based approach) to demonstrate additionality.",
     "when": [],
     "tags": [
       "additionality"
@@ -863,10 +1070,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L725-L726"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Project proponents must apply a performance method (area-based approach) or a project method (census-based approach) to demonstrate additionality."
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a77 \u00b61",
+      "source_ref": "§7 ¶1",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -878,7 +1094,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Area-based projects must demonstrate regulatory surplus, performance benchmark and investment analysis, except the investment-analysis exception where no non-carbon revenue or financial incentive exists.",
+    "source_span_text": "Project proponents using the area-based approach must apply the following additionality demonstrations: • Regulatory surplus • Performance benchmark • Investment analysis10",
     "when": [
       "area-based"
     ],
@@ -899,10 +1115,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L730-L737"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Project proponents using the area-based approach must apply the following additionality demonstrations: • Regulatory surplus • Performance benchmark"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a77.1 bullets and fn.10",
+      "source_ref": "§7.1 bullets and fn.10",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -914,7 +1139,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Census-based projects must demonstrate regulatory surplus, investment analysis and common practice; investment analysis is always required.",
+    "source_span_text": "Project proponents using the census-based approach must apply the following additionality demonstrations: • Regulatory surplus 9 Land use category as defined by the IPCC Guidelines for National Greenhouse Gas Inventories Volume 4, Chapter 3 10 The investment barrier analysis is in addition to the regulatory surplus check and the performance benchmark for the area-based approach. It is not required where area-based projects do not generate revenues or receive financial incentives",
     "when": [
       "census-based"
     ],
@@ -935,10 +1160,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L741-L752"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Project proponents using the census-based approach must apply the following additionality demonstrations: • Regulatory surplus 9 Land use"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a77.2 bullets and fn.11",
+      "source_ref": "§7.2 bullets and fn.11",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -950,7 +1184,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Regulatory surplus must follow the most recent VCS Methodology Requirements.",
+    "source_span_text": "requirements regarding regulatory surplus set out in the most recent version of the VCS Methodology Requirements.",
     "when": [],
     "tags": [
       "additionality",
@@ -970,10 +1204,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L770-L771"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "requirements regarding regulatory surplus set out in the most recent version of the VCS Methodology Requirements."
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a77.3.1 \u00b61",
+      "source_ref": "§7.3.1 ¶1",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -985,7 +1228,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Area-based projects establish the Appendix 1 benchmark; validation uses an ex-ante expected difference and each verification reassesses additionality using the Appendix 1 Z test.",
+    "source_span_text": "1 and is applicable to the area-based approach only. Where parameters ΔSIcontrol,t and ΔSIwp,t are deemed significantly different (via Z test in Appendix 1 Equation (A7)), the project demonstrates additionality for the performance benchmark. To demonstrate additionality at validation, project proponents must apply an ex-ante calculation to demonstrate an expected difference between modeled performance of the project and the forecasted performance benchmark. Additionality must be reassessed at each verification using",
     "when": [
       "area-based"
     ],
@@ -1007,10 +1250,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L776-L783"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "1 and is applicable to the area-based approach only. Where parameters ΔSIcontrol,t and ΔSIwp,t are deemed significantly different"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a77.3.2 \u00b61-3",
+      "source_ref": "§7.3.2 ¶1-3",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1022,7 +1274,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Investment analysis must use benchmark or investment-comparison analysis and Step 3 of the most recent VT0008 Additionality Assessment.",
+    "source_span_text": "Project proponents applying an investment analysis to assess additionality must use a benchmark analysis or investment comparison analysis and must apply the procedures and requirements in Step 3 of the most recent version of VCS tool VT0008 Additionality Assessment.12",
     "when": [],
     "tags": [
       "additionality",
@@ -1042,10 +1294,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L788-L791"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Project proponents applying an investment analysis to assess additionality must use a benchmark analysis or investment comparison analysis"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a77.3.3 \u00b61",
+      "source_ref": "§7.3.3 ¶1",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1057,7 +1318,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Census common-practice analysis must define activity, domain and adopter class, identify essential distinctions, survey representative similar landowners within five years of start, and calculate adoption without carbon finance.",
+    "source_span_text": "distinction must be essential and verifiable. Essential distinctions may be related to, for example, changes in access to land or inputs, subsidies or other financial incentives, emergence of new barriers, differences in market access, infrastructure, labor availability, and biophysical conditions (e.g., climate, slope, or soil type). 5) Survey a representative sample of similar landowners from within the relevant geographic domain within five years of the project start date. 6) Calculate the (cumulative) adoption rate (as a percentage) of the project activity by landowners who have not received carbon finance revenue (e.g., are not part of a registered VCS AFOLU project) in the sample of the adopter class. Where the adoption rate is below 15% (Mathur et al. 2007), the project activity is not common practice. Where the adoption rate is equal to or higher than 15%, the project activity is common practice and is not additional.",
     "when": [
       "census-based"
     ],
@@ -1075,14 +1336,23 @@
       "section_anchor": "common-practice",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-7-3-4",
       "pages": [
-        17
+        18
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L826-L837"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "distinction must be essential and verifiable. Essential distinctions may be related to, for example, changes in access to"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a77.3.4 steps 1-6",
+      "source_ref": "§7.3.4 steps 1-6",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1094,7 +1364,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Adoption below 15% is not common practice; adoption equal to or above 15% is common practice and the activity is not additional.",
+    "source_span_text": "Where the adoption rate is below 15% (Mathur et al. 2007), the project activity is not common practice. Where the adoption rate is equal to or higher than 15%, the project activity is common practice and is not additional.",
     "when": [
       "census-based"
     ],
@@ -1116,10 +1386,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L835-L837"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Where the adoption rate is below 15% (Mathur et al. 2007), the project activity is not common practice."
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a77.3.4 adoption threshold",
+      "source_ref": "§7.3.4 adoption threshold",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1131,7 +1410,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Public government data, peer-reviewed literature or independent industry research collected within five years of start may substitute for survey evidence when relevant and conservatively non-discriminating regarding carbon finance.",
+    "source_span_text": "practice and is not additional. Alternatively, statistics on ARR activities derived from data collected within five years of the project start date may be used for this demonstration provided they are relevant to the project area, do not distinguish between activities incentivized by and not incentivized by carbon finance (thus are conservative), and are publicly available as: a) agricultural census or other government data (e.g., survey data); b) peer-reviewed scientific literature; or c) independent research or reports compiled by industry associations, with full and",
     "when": [
       "census-based"
     ],
@@ -1153,10 +1432,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L837-L848"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "practice and is not additional. Alternatively, statistics on ARR activities derived from data collected within five years of"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a77.3.4 alternative statistics",
+      "source_ref": "§7.3.4 alternative statistics",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1168,7 +1456,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Area-based baseline stock changes are accounted by applying the performance benchmark to estimated removals.",
+    "source_span_text": "8.1.1 Area-based Approach Carbon stock changes in the baseline scenario are accounted for by applying the crediting baseline performance benchmark value (derived in Section 6) to the estimation of carbon dioxide removals (Section 8.6).",
     "when": [
       "area-based"
     ],
@@ -1190,10 +1478,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L863-L867"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "8.1.1 Area-based Approach Carbon stock changes in the baseline scenario are accounted for by applying the crediting baseline"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.1.1",
+      "source_ref": "§8.1.1",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1205,7 +1502,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Census baseline stock change is zero because the baseline has no project planting units.",
+    "source_span_text": "8.1.2 Census-based Approach The baseline scenario is represented by the absence of planting units and thus carbon stock changes in the baseline scenario are equal to zero.",
     "when": [
       "census-based"
     ],
@@ -1227,10 +1524,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L869-L872"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "8.1.2 Census-based Approach The baseline scenario is represented by the absence of planting units and thus carbon stock"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.1.2",
+      "source_ref": "§8.1.2",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1242,7 +1548,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Area-based pre-existing woody biomass requires t=0 via preferred pre-preparation plots, eligible post-start plots, or a qualifying remote-sensing estimate using specified model, confidence-bound, correlation and spatial-resolution conditions.",
+    "source_span_text": "preparation. Other carbon pools (e.g., SOC, dead wood, non-woody biomass) must not be estimated using remote sensing. Where a t = 0 estimate was not made, pools must either be eligible to be conservatively excluded or not have been disturbed. The remote sensing estimate of pre-existing woody biomass must meet the following conditions: a) The model predicts aboveground woody biomass using a stocking index-based regression model (see Appendix 1). b) The upper 90% confidence bound of the model’s prediction interval is used as the",
     "when": [
       "area-based"
     ],
@@ -1264,10 +1570,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L985-L993"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "preparation. Other carbon pools (e.g., SOC, dead wood, non-woody biomass) must not be estimated using remote sensing. Where"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.2.1.2 items 1-3(a)-(d)",
+      "source_ref": "§8.2.1.2 items 1-3(a)-(d)",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1279,7 +1594,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Removal during site preparation requires a t=0 estimate, waste/no-commercial-value status, and no clearing or harvesting of natural forest, native tree species or commercially viable timber.",
+    "source_span_text": "The removal of pre-existing woody biomass is allowed as part of site preparation where all of the following conditions are met: i) A t = 0 estimate has been established through plot-based sampling or remote sensing. ii) The biomass removed from the project site is considered a waste product with no commercial value. iii) Removal does not involve the clearing or harvesting of natural forests (primary or secondary), native tree species, or commercially viable timber species.",
     "when": [
       "area-based"
     ],
@@ -1301,10 +1616,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1015-L1024"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "The removal of pre-existing woody biomass is allowed as part of site preparation where all of the following"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.2.1.2 removal conditions i-iii",
+      "source_ref": "§8.2.1.2 removal conditions i-iii",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1316,7 +1640,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Dead wood t=0 must be measured by plots before disturbance and no more than two years before start; project disturbance or removal must be quantified by stock difference.",
+    "source_span_text": "must be conducted before site preparation and no more than two years prior to the project start date. Changes in dead wood due to offsite removal, burning, relocation, or disturbance must be quantified using the stock difference method to ensure accurate accounting.",
     "when": [
       "area-based"
     ],
@@ -1338,10 +1662,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1056-L1058"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "must be conducted before site preparation and no more than two years prior to the project start date."
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.2.1.4 \u00b61-2",
+      "source_ref": "§8.2.1.4 ¶1-2",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1353,7 +1686,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "If first carbon-stock measurement occurs after t=0, that measurement replaces t=0 for stock-change calculations and change before it is zero; project start remains t=0 for other purposes.",
+    "source_span_text": "ΔCWP-woody,t = Change in carbon stock in woody biomass in the project scenario through year t (t C) 44/12 = Ratio of molecular weight of carbon dioxide to carbon (unitless) t = 1, 2, 3, …, t years elapsed since the project start date Where a project proponent begins measuring carbon stocks after the start date (t > 0), the first year of measurement replaces t = 0 in all stock change calculations. Between t = 0 and t > 0, the project’s carbon stock change must be assumed to be zero. The project start date remains t = 0 for all other purposes, including crediting period determination and baseline setting.",
     "when": [
       "census-based"
     ],
@@ -1375,10 +1708,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1400-L1408"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "ΔCWP-woody,t = Change in carbon stock in woody biomass in the project scenario through year t (t C)"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.3.1 \u00b62",
+      "source_ref": "§8.3.1 ¶2",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1390,7 +1732,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Census woody biomass scales sampled per-unit biomass by N adjusted for mortality; monitoring of the complete census is required.",
+    "source_span_text": "Carbon stock in woody biomass in the project scenario is estimated by applying the number of planting units (N) as a scaling factor and adjusting for mortality (Mt) at each monitoring event. Note – Monitoring of the complete census of planting units is required.",
     "when": [
       "census-based"
     ],
@@ -1412,10 +1754,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1434-L1437"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Carbon stock in woody biomass in the project scenario is estimated by applying the number of planting units"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.3.1.1 note and Eq.24",
+      "source_ref": "§8.3.1.1 note and Eq.24",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1427,7 +1778,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Non-woody biomass, dead wood, litter and SOC are not applicable in census-based project carbon-stock quantification.",
+    "source_span_text": "8.3.1.2 Census-based Quantification of Non-Woody Biomass Not applicable (see Table 2).",
     "when": [
       "census-based"
     ],
@@ -1448,10 +1799,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1477-L1479"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "8.3.1.2 Census-based Quantification of Non-Woody Biomass Not applicable (see Table 2)."
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.3.1.2 through \u00a78.3.1.5",
+      "source_ref": "§8.3.1.2 through §8.3.1.5",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1459,11 +1819,11 @@
     "id": "Verra.AFOLU.VM0047.v1-1.R-8-3-2-2-0001",
     "stable_id": "Verra.AFOLU.VM0047.v1-1.R-8-3-2-2-0001",
     "summary": "Census fertilizer equations",
-    "logic": "Census nitrogen-fertilizer N2O emissions use Equations 15-21 from \u00a78.2.2.2.",
+    "logic": "Census nitrogen-fertilizer N2O emissions use Equations 15-21 from §8.2.2.2.",
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Census nitrogen-fertilizer N2O emissions use Equations 15-21 from \u00a78.2.2.2.",
+    "source_span_text": "Where nitrogen fertilizer is applied due to the project activity, nitrous oxide emissions are estimated under the census-based approach using Equations (15)–(21) in Section 8.2.2.2.",
     "when": [
       "census-based"
     ],
@@ -1485,10 +1845,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1555-L1556"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Where nitrogen fertilizer is applied due to the project activity, nitrous oxide emissions are estimated under the census-based"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.3.2.2",
+      "source_ref": "§8.3.2.2",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1500,7 +1869,7 @@
     "type": "leakage",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Area-based leakage uses the most recent VMD0054; census leakage LKt is zero because pre-project production is maintained and density limits avoid displacement.",
+    "source_span_text": "Emissions from leakage (LKt) for the area-based approach are accounted using the most recent version of VMD0054. In the census-based quantification approach, LKt is set equal to zero. The requirement that the ARR project activity maintains pre-project agricultural production levels avoids a change in land use and the planting density threshold avoids any significant displacement of a pre-existing land",
     "when": [],
     "tags": [
       "dependency",
@@ -1520,10 +1889,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1560-L1565"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Emissions from leakage (LKt) for the area-based approach are accounted using the most recent version of VMD0054. In"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.4 \u00b61-2",
+      "source_ref": "§8.4 ¶1-2",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1535,7 +1913,7 @@
     "type": "uncertainty",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Sampling uncertainty is quantified and accounted; measurement error is handled via QA/QC; burning and fertilizer parameter uncertainty is set to zero under conservative parameters.",
+    "source_span_text": "Uncertainty associated with sample error is quantified and accounted for. Measurement error is addressed through the application of quality assurance and quality control (QA/QC) procedures detailed in Section 9. Note – Estimation of emission sources from biomass burning and nitrogen fertilizer apply conservative parameters and associated uncertainty is set at zero.",
     "when": [],
     "tags": [
       "uncertainty"
@@ -1554,10 +1932,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1570-L1575"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Uncertainty associated with sample error is quantified and accounted for. Measurement error is addressed through the application of"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.5 \u00b61 and note",
+      "source_ref": "§8.5 ¶1 and note",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1569,7 +1956,7 @@
     "type": "uncertainty",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Area-based projects must use measurement-appropriate standard methods for uncertainty for each included pool; Equation 28 applies when inventory method is maintained.",
+    "source_span_text": "Uncertainty in estimating the project accounting boundary (area) is assumed to be zero and is addressed via complete (and accurate) geographic information system (GIS) boundaries of the project or instance areas, and by applying QA/QC procedures specified in the parameter table for A (Section 9.1). The performance benchmark is assumed to have zero uncertainty. Project proponents must use standard methods to estimate uncertainty when calculating changes in carbon stocks. The formula should be appropriate to the type of measurement used and be applied to each carbon pool p (representing woody biomass, non-woody biomass, dead wood, litter and SOC) included in the project.",
     "when": [
       "area-based"
     ],
@@ -1590,10 +1977,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1586-L1594"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Uncertainty in estimating the project accounting boundary (area) is assumed to be zero and is addressed via complete"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.5.1 \u00b62 and Eq.28",
+      "source_ref": "§8.5.1 ¶2 and Eq.28",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1605,7 +2001,7 @@
     "type": "uncertainty",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Where area-based projects switch inventory approaches, combined uncertainty must follow Appendix 3.",
+    "source_span_text": "Note – Equation(28) above is applicable to projects that maintain their inventory method throughout the project crediting period. Where projects switch approaches (e.g., independent inventories between t = 0 and t = 5, and then permanent plots are used from t = 5 onwards), the combined uncertainty between periods must be estimated using the steps shown in Appendix 3.",
     "when": [
       "area-based"
     ],
@@ -1626,10 +2022,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1615-L1618"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Note – Equation(28) above is applicable to projects that maintain their inventory method throughout the project crediting period."
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.5.1 Note",
+      "source_ref": "§8.5.1 Note",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1641,7 +2046,7 @@
     "type": "uncertainty",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Census uncertainty propagates uncertainty in mortality-adjusted population and mean woody biomass using Equations 29-31.",
+    "source_span_text": "UM,t = Percentage uncertainty in population size adjusted for mortality in the project scenario in year t (%) t = 1, 2, 3, …, t years elapsed since the project start date T = Critical value of a student’s two-tailed t distribution for significance level α = 0.1 SEp,t = Standard error of average woody biomass per planting unit in pool p (here",
     "when": [
       "census-based"
     ],
@@ -1658,14 +2063,23 @@
       "section_anchor": "census-based-quantification-of-uncertainty",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-5-2",
       "pages": [
-        33
+        34
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1642-L1647"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "UM,t = Percentage uncertainty in population size adjusted for mortality in the project scenario in year t (%)"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.5.2 Eqs.29-31",
+      "source_ref": "§8.5.2 Eqs.29-31",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1677,7 +2091,7 @@
     "type": "uncertainty",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "For either approach, CRt is zero where the half-width of the two-sided 90% confidence interval exceeds 100% of the removal estimate.",
+    "source_span_text": "For both census- and area-based quantification approaches, a project is not eligible for crediting (CRt = 0) where the half-width of the two-sided 90% confidence interval exceeds 100% of the carbon dioxide removal estimate.",
     "when": [],
     "tags": [
       "eligibility",
@@ -1698,10 +2112,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1680-L1682"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "For both census- and area-based quantification approaches, a project is not eligible for crediting (CRt = 0) where"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.5.2 final \u00b6",
+      "source_ref": "§8.5.2 final ¶",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1713,7 +2136,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Mixed-project removals equal the sum of independently calculated area- and census-based removals over non-overlapping areas.",
+    "source_span_text": "CRt = Carbon dioxide removals from the project activity over the monitoring interval ending in year t (t CO2e) ∆CWP,t = Project carbon stock change through year t (t CO2e) PEt = Project emissions from biomass burning and fertilizer use in year t (t CO2e) t = 1, 2, 3, …, t years elapsed since the project start date Where the project combines area- and census-based quantification approaches, total removals are calculated as the sum of the removals calculated independently for each approach (applied to non-overlapping areas).",
     "when": [],
     "tags": [
       "quantification"
@@ -1732,10 +2155,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1731-L1739"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "CRt = Carbon dioxide removals from the project activity over the monitoring interval ending in year t (t"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.6.2 \u00b63",
+      "source_ref": "§8.6.2 ¶3",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1747,7 +2179,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Projects with harvesting must follow the most recent VCS Standard long-term-average requirement as an upper limit on calculated removals.",
+    "source_span_text": "Where the project activity includes harvesting, the project must also conform to the most recent version of the VCS Standard for applying the long-term average (LTA) GHG benefit as an upper limit on calculated carbon dioxide removals.",
     "when": [],
     "tags": [
       "dependency",
@@ -1767,10 +2199,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1741-L1743"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Where the project activity includes harvesting, the project must also conform to the most recent version of the"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.6.2 \u00b64",
+      "source_ref": "§8.6.2 ¶4",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1782,7 +2223,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Annualized removals equal monitoring-interval removals divided by interval length.",
+    "source_span_text": "To calculate annualized carbon dioxide removals (CRannualized), divide the total removals (CRt) in the monitoring interval by the length of the monitoring interval (x):",
     "when": [],
     "tags": [
       "quantification"
@@ -1801,10 +2242,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1751-L1752"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "To calculate annualized carbon dioxide removals (CRannualized), divide the total removals (CRt) in the monitoring interval by the"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.6.3 Eq.34",
+      "source_ref": "§8.6.3 Eq.34",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1816,7 +2266,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Project description must include ex-ante removals for the crediting period using conservative growth and yield inputs, modeled harvest or management, at least 10% uncertainty deduction, approach-specific equations and baselines, and area-based benchmark forecasting.",
+    "source_span_text": "8.7 Area-based and Census-based Ex-Ante Estimation The project description must include an ex-ante estimation of carbon dioxide removals to demonstrate the expected difference between modeled performance of the project and the projected “no change” baseline (census-based only) or the forecasted performance benchmark (area-based only). The ex-ante estimation must meet the following requirements: 1) At validation, ex-ante estimates must be made for the length of the crediting period. Projected changes in biomass must be based on growth and yield models constructed with data and parameters that conservatively represent the project activity. 2) Any harvest regimes or forest management activities must be incorporated when",
     "when": [],
     "tags": [
       "ex-ante",
@@ -1832,15 +2282,23 @@
       "section_anchor": "area-based-and-census-based-ex-ante-estimation",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-8-7",
       "pages": [
-        36,
-        37
+        36
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1764-L1774"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "8.7 Area-based and Census-based Ex-Ante Estimation The project description must include an ex-ante estimation of carbon dioxide removals"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a78.7 items 1-7",
+      "source_ref": "§8.7 items 1-7",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1852,7 +2310,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Project area A is calculated from GIS; imagery or GIS must be georegistered and each discrete project area uniquely identified.",
+    "source_span_text": "measurement methods photographs), or other appropriate data. Any imagery or GIS datasets and procedures applied used must be geo-registered referencing corner points, clear landmarks, or other intersection points. Purpose of data Calculation of project emissions (area-based quantification approach) Comments The project activity may contain more than one discrete area of land. Each discrete area of land must have a unique geographic identification.",
     "when": [
       "area-based"
     ],
@@ -1874,10 +2332,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1846-L1853"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "measurement methods photographs), or other appropriate data. Any imagery or GIS datasets and procedures applied used must be"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.1 parameter A",
+      "source_ref": "§9.1 parameter A",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1889,7 +2356,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "R must follow the specified descending hierarchy by forest type/ecoregion or species/genus/family, with global values validated against direct measurements in the same ecoregion or life-zone.",
+    "source_span_text": "chosen from the following as available, listed in descending order of preference: 3) Values specific to the species, genus, or family within the same ecoregion or Holdridge life-zone as the region in which the project is located 4) Global values specific to the species, genus, or family (e.g., from Table 4.4 in Chapter 4, Volume 4 of the 2019 Refinement to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories) Where a global R ratio is used, it must have been developed from or validated with datasets including direct measurements collected via",
     "when": [],
     "tags": [
       "biomass",
@@ -1905,15 +2372,23 @@
       "section_anchor": "data-and-parameters-available-at-validation",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-1",
       "pages": [
-        38,
         39
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L1885-L1896"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "chosen from the following as available, listed in descending order of preference: 3) Values specific to the species,"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.1 parameter R",
+      "source_ref": "§9.1 parameter R",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1925,7 +2400,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "GWP uses the most recent IPCC assessment; nitrogen emission factors and fractions use the specified IPCC 2019 values.",
+    "source_span_text": "Source of data Default factor from the most recent IPCC assessment report Source of data Table 11.1, Chapter 11 in Volume 4 of the 2019 Refinement to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories Value applied 0.01 Justification of choice of IPCC is a reputable source approved under the VCS Standard. data or description of measurement methods and procedures applied Purpose of data Calculation of project emissions Comments Emission factors applicable to nitrogen additions from mineral fertilizers,",
     "when": [],
     "tags": [
       "ipcc",
@@ -1942,14 +2417,28 @@
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-1",
       "pages": [
         41,
-        44
+        42
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L2024-L2024",
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L2054-L2065"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Source of data Default factor from the most recent IPCC assessment report"
+        },
+        {
+          "type": "governed_text_lines",
+          "quote": "Source of data Table 11.1, Chapter 11 in Volume 4 of the 2019 Refinement to the 2006 IPCC"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.1 parameters GWPg, EFNdirect, FracGASF, FracGASM, FracLEACH, EFNleach",
+      "source_ref": "§9.1 parameters GWPg, EFNdirect, FracGASF, FracGASM, FracLEACH, EFNleach",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1961,7 +2450,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "N is established by complete census and each planting-unit record must include unique ID, georeferenced location, year planted and species.",
+    "source_span_text": "Value applied The original population size (N) is established via an initial complete census of all planting units. For each planting unit, the following must be recorded in the project description: 1) Unique ID 2) Geo-referenced point of the location 3) Year planted 4) Species",
     "when": [
       "census-based"
     ],
@@ -1983,10 +2472,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L2216-L2226"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Value applied The original population size (N) is established via an initial complete census of all planting units."
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.1 parameter N",
+      "source_ref": "§9.1 parameter N",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -1998,7 +2496,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Aboveground woody biomass must use representative unbiased plot sampling, documented QA/QC, fixed size thresholds and appropriately selected or validated allometry; VT0005 does not apply.",
+    "source_span_text": "a) be demonstrated to be unbiased and derived from representative sampling. b) ensure accuracy through adherence to best practices and QA/QC procedures (to be determined by the project proponent and outlined in standard operating procedures governing field data collection). c) apply fixed size thresholds to independent variables used in biomass estimation (e.g., diameter at breast height, diameter at",
     "when": [
       "area-based"
     ],
@@ -2016,15 +2514,23 @@
       "section_anchor": "data-and-parameters-monitored",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
       "pages": [
-        45,
-        47
+        46
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L2276-L2285"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "a) be demonstrated to be unbiased and derived from representative sampling. b) ensure accuracy through adherence to best"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.2 CWP-woody-AB,t",
+      "source_ref": "§9.2 CWP-woody-AB,t",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2036,7 +2542,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Non-woody biomass uses representative plot sampling, minimum/maximum seasonal samples or conservative minimum-stock sampling, at least every five years.",
+    "source_span_text": "non-woody biomass is clipped above the soil surface from inside each sample frame. Dry mass is determined either by drying the entire wet sample to a constant weight or by drying a subsample of the wet mass to determine a dry-to-wet mass ratio conversion factor. Because aboveground mass may be highly seasonal, the average pool must be calculated from at least two samples representing the minimum and maximum standing stocks. Alternatively, a conservative estimate of the pool may be determined from a sample taken at the time of minimum standing stock. Frequency of Every five years or more frequently monitoring/recording",
     "when": [
       "area-based"
     ],
@@ -2054,15 +2560,23 @@
       "section_anchor": "data-and-parameters-monitored",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
       "pages": [
-        47,
         48
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L2388-L2399"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "non-woody biomass is clipped above the soil surface from inside each sample frame. Dry mass is determined either"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.2 DMWP-herb,t",
+      "source_ref": "§9.2 DMWP-herb,t",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2074,7 +2588,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Standing and lying dead wood require unbiased representative sampling, fixed thresholds, documented protocols, appropriate volume and density methods and monitoring at least every five years.",
+    "source_span_text": "measurement methods for the relevant carbon pool p divided by the square root of the number of and procedures to be plots (or planting units, in the census-based approach). Where double applied sampling is used, SE is calculated as the root mean squared error of the regression (for ratio or regression estimators) scaled to the sample size. The estimate must be derived from representative, unbiased sampling. Frequency of Every five years or more frequently monitoring/recording QA/QC procedures to be Field protocols must include procedures for plot selection, consistent applied measurement techniques, and data recording to minimize measurement error. QA/QC procedures should be documented in standard operating",
     "when": [
       "area-based"
     ],
@@ -2092,15 +2606,23 @@
       "section_anchor": "data-and-parameters-monitored",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
       "pages": [
-        48,
-        50
+        61
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3114-L3125"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "measurement methods for the relevant carbon pool p divided by the square root of the number of and"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.2 BSDW,t and BLDW,t",
+      "source_ref": "§9.2 BSDW,t and BLDW,t",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2112,7 +2634,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Litter uses destructive fixed-frame sampling with dry-mass determination; monitoring occurs at t=0 and at least every five years.",
+    "source_span_text": "sample frame. Dry mass is determined either by drying the entire wet sample to a constant weight or by drying a subsample of the wet mass to determine a dry-to-wet mass ratio conversion factor. Because aboveground mass may be highly seasonal, the average pool must be calculated from at least two samples representing the minimum and maximum standing stocks. Alternatively, a conservative estimate of the pool may be determined from a sample taken at the time of minimum standing stock. Frequency of Every five years or more frequently monitoring/recording",
     "when": [
       "area-based"
     ],
@@ -2130,15 +2652,23 @@
       "section_anchor": "data-and-parameters-monitored",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
       "pages": [
-        51,
-        52
+        48
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L2389-L2399"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "sample frame. Dry mass is determined either by drying the entire wet sample to a constant weight or"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.2 DMWP-LI,t",
+      "source_ref": "§9.2 DMWP-LI,t",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2150,7 +2680,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "SOC requires representative stratified sampling to at least 30 cm, matched SOC and bulk-density measurement, equivalent-soil-mass remeasurement, documented protocols and required QA/QC; frequency may not be less than 10 years under the stated low-disturbance conditions.",
+    "source_span_text": "Procedures for SOC and bulk density (including all sample handling, preparation for analysis, and analysis techniques) must be thoroughly described in field sampling protocols and in parameter tables under “Data and Parameters Monitored.” Frequency of At time t = 0 and subsequently at every verification (every five years or monitoring/recording more frequently). SOC may be measured less frequently than other pools (but not less frequently than every 10 years) and reported as zero during intervening monitoring and verification events where soil disturbance from the",
     "when": [
       "area-based"
     ],
@@ -2168,15 +2698,23 @@
       "section_anchor": "data-and-parameters-monitored",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
       "pages": [
-        52,
-        54
+        53
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L2696-L2706"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Procedures for SOC and bulk density (including all sample handling, preparation for analysis, and analysis techniques) must be"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.2 CWP-SOC,t",
+      "source_ref": "§9.2 CWP-SOC,t",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2188,7 +2726,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Fertilizer mass and content must be monitored at least every five years or before a more frequent verification and quantitative management information must be supported by documentary evidence.",
+    "source_span_text": "Source of data Nitrogen content is determined following fertilizer manufacturer’s specifications. Description of Not directly measured. Recorded from fertilizer manufacturer’s measurement methods specifications and evidenced in management records, receipts, or and procedures to be invoices. applied Frequency of Monitoring must be conducted at least every five years or prior to each monitoring/recording verification event where verification occurs more frequently. QA/QC procedures to be Any quantitative information on management practices must be applied supported by one or more forms of documented evidence pertaining to",
     "when": [],
     "tags": [
       "fertilizer",
@@ -2204,15 +2742,23 @@
       "section_anchor": "data-and-parameters-monitored",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
       "pages": [
-        54,
         56
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L2827-L2838"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Source of data Nitrogen content is determined following fertilizer manufacturer’s specifications. Description of Not directly measured. Recorded from"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.2 Mwp,SF,t / Mwp,OF,t / NCwp,SF,t / NCwp,OF,t",
+      "source_ref": "§9.2 Mwp,SF,t / Mwp,OF,t / NCwp,SF,t / NCwp,OF,t",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2224,7 +2770,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Randomized sampling from N establishes nt and each sampled-unit record includes unique ID, georeference, year planted and species.",
+    "source_span_text": "established via randomized sampling of the initial complete census of all planting units. For each sampled planting unit, the following must be recorded in the monitoring report: 1) Unique ID 2) Geo-referenced point of the location 3) Year planted 4) Species",
     "when": [
       "census-based"
     ],
@@ -2246,10 +2792,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L2899-L2909"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "established via randomized sampling of the initial complete census of all planting units. For each sampled planting unit,"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.2 nt",
+      "source_ref": "§9.2 nt",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2261,7 +2816,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Mortality is determined by complete re-enumeration or representative sampling; a unit is dead where green vascular tissue and leaves are absent or the unit cannot be relocated.",
+    "source_span_text": "Planting units are assessed as dead where: 1) green vascular tissue (e.g., cambium of trees and shrubs) and green leaves are absent, or 2) relocating the planting unit is not possible. Frequency of Every five years or more frequently. Sampling for incidence of mortality monitoring/recording may be conducted simultaneously with sampling planting units for",
     "when": [
       "census-based"
     ],
@@ -2279,15 +2834,23 @@
       "section_anchor": "data-and-parameters-monitored",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
       "pages": [
-        57,
         58
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L2948-L2956"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Planting units are assessed as dead where: 1) green vascular tissue (e.g., cambium of trees and shrubs) and"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.2 Mt",
+      "source_ref": "§9.2 Mt",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2299,7 +2862,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Per-unit biomass requires representative sampling from N, documented QA/QC, fixed thresholds, validated allometry and at least five-year monitoring; live units below the predetermined size threshold receive zero biomass but remain in the sample.",
+    "source_span_text": "(e.g., minimum diameter at breast height) threshold, it is assigned a value of zero and included in the sample dataset. Data/Parameter nburn,t Data unit integer Description Number of sampled planting units recorded as burned in the monitoring interval ending in year t Equations (27) Source of data Field sampling Description of With census-based quantification, measured via representative sampling",
     "when": [
       "census-based"
     ],
@@ -2317,15 +2880,23 @@
       "section_anchor": "data-and-parameters-monitored",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
       "pages": [
-        58,
-        59
+        60
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3067-L3078"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "(e.g., minimum diameter at breast height) threshold, it is assigned a value of zero and included in the"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.2 BWP-woody-AB,pu,t",
+      "source_ref": "§9.2 BWP-woody-AB,pu,t",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2337,7 +2908,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Visibly burned and killed planting units are tallied by representative sampling with documented protocols at least every five years.",
+    "source_span_text": "Description of With census-based quantification, measured via representative sampling measurement methods from N planting units, tallying each visibly burned and killed planting unit. and procedures to be Measurement protocols must be detailed in standard operating applied procedures. Frequency of Every five years or more frequently monitoring/recording",
     "when": [
       "census-based"
     ],
@@ -2359,10 +2930,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3078-L3085"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Description of With census-based quantification, measured via representative sampling measurement methods from N planting units, tallying each visibly"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.2 nburn,t",
+      "source_ref": "§9.2 nburn,t",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2374,7 +2954,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "SEp,t must use representative unbiased estimators appropriate to the sample design with documented error checking and outlier procedures.",
+    "source_span_text": "error. QA/QC procedures should be documented in standard operating procedures and must include error checking and outlier detection in the sample data. Purpose of data Used in the calculation of project-level uncertainty for both the area and census-based approaches Calculation method SE is calculated using unbiased estimators appropriate to the sample design (e.g., simple random, stratified, or double sampling). Refer to",
     "when": [],
     "tags": [
       "monitoring",
@@ -2390,14 +2970,23 @@
       "section_anchor": "data-and-parameters-monitored",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-2",
       "pages": [
-        60
+        61
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3125-L3133"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "error. QA/QC procedures should be documented in standard operating procedures and must include error checking and outlier detection"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.2 SEp,t",
+      "source_ref": "§9.2 SEp,t",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2409,7 +2998,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "The monitoring plan must specify approach, tasks, accounting boundaries, measured parameters, collection techniques and sample design, frequencies, QA/QC, electronic archiving, roles, remote-sensing schedule and stocking-index derivation.",
+    "source_span_text": "8) Data archiving procedures, including procedures for any anticipated updates to electronic file formats. All data collected as a part of the monitoring process, including QA/QC data, must be archived electronically and kept for at least two years after the end of the last project crediting period. 9) Roles, responsibilities, and capacity of the monitoring team and management. Roles and responsibilities defined for chain of custody, repositing, and maintenance of all data. 10) Specific schedule and procedures for periodically acquiring, archiving, and processing remote sensing data to derive stocking indices 11) A full description of the stocking index, and the process to derive it (reference to the",
     "when": [],
     "tags": [
       "monitoring-plan"
@@ -2424,15 +3013,23 @@
       "section_anchor": "description-of-the-monitoring-plan",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-3",
       "pages": [
-        61,
         62
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3185-L3196"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "8) Data archiving procedures, including procedures for any anticipated updates to electronic file formats. All data collected as"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.3 items 1-11",
+      "source_ref": "§9.3 items 1-11",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2444,7 +3041,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "All monitoring and QA/QC data must be electronically archived for at least two years after the end of the last project crediting period.",
+    "source_span_text": "file formats. All data collected as a part of the monitoring process, including QA/QC data, must be archived electronically and kept for at least two years after the end of the last project crediting period.",
     "when": [],
     "tags": [
       "monitoring-plan",
@@ -2464,10 +3061,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3186-L3188"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "file formats. All data collected as a part of the monitoring process, including QA/QC data, must be archived"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.3 item 8",
+      "source_ref": "§9.3 item 8",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2479,7 +3085,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Area-based projects must maintain a database with stocking-index derivation, project and control plot IDs, locations, configuration, time series and weights, plus remote-sensing datasets and timestamps.",
+    "source_span_text": "3) a list of control plots including unique IDs (referencing unique ID of corresponding project plot to which they are matched), locations, size and configuration, weights, and time series of stocking index values from time t = 0 to time t; and 4) remote sensing datasets and time stamps used to derive stocking index values.",
     "when": [
       "area-based"
     ],
@@ -2497,15 +3103,23 @@
       "section_anchor": "database-requirements-for-project-and-control-plots",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-9-3-1",
       "pages": [
-        62,
         63
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3213-L3217"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "3) a list of control plots including unique IDs (referencing unique ID of corresponding project plot to which"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "\u00a79.3.1 items 1-4",
+      "source_ref": "§9.3.1 items 1-4",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2517,7 +3131,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Overall project/control matching is valid only where SDM for every matching covariate is less than or equal to 0.25; otherwise donor-pool radius or k are iteratively adjusted.",
+    "source_span_text": "Overall match results are deemed valid where SDM for each covariate is less than or equal to 0.25. Where the overall match is deemed valid, the final selection of control plots and their respective weights are then fixed, and Universal Transverse Mercator (UTM) coordinates recorded, for the duration of the crediting period. Where the overall match is not deemed valid, Steps 1, 2, and 3 are repeated after: 1) progressively expanding the radius of the donor pool in 100 km increments, and/or",
     "when": [
       "area-based"
     ],
@@ -2539,6 +3153,15 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3569-L3574"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Overall match results are deemed valid where SDM for each covariate is less than or equal to 0.25."
+        }
       ]
     },
     "provenance": {
@@ -2554,7 +3177,7 @@
     "type": "monitoring",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "At monitoring, invalid controls are removed, replacements drawn from the donor pool and control weights recalculated to sum to 1.",
+    "source_span_text": "Where a control plot has been deemed invalid, the plot is excluded and replaced from the donor pool selected in Step 2. Weights of the control plots must be recalculated to sum to 1. For each remaining valid control and project plot, re-evaluate SI, consulting the most recent imagery (see SI parameter table for guidance on temporal constraints on imagery sourcing). Step 5. Derive and Evaluate Slopes for Time Series of Stocking Indices Assemble accumulated time series of ΔSIcontrol,t and ΔSIwp,t values from time t = 0 to time t, estimated across the sample populations of project and control plots. The derivation of SI for the monitoring interval",
     "when": [
       "area-based"
     ],
@@ -2572,10 +3195,19 @@
       "section_anchor": "procedure-to-define-the-performance-benchmark",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
       "pages": [
-        70
+        71
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3600-L3608"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Where a control plot has been deemed invalid, the plot is excluded and replaced from the donor pool"
+        }
       ]
     },
     "provenance": {
@@ -2591,7 +3223,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Benchmark time series must include t=0 and t plus prior verifications; matched sets missing time-t SI are excluded; at least 30 project plots are required.",
+    "source_span_text": "must include at minimum two, annual time steps: t and t = 0. Observations from all previous verifications must also be included. To be included in the dataset, SI values must be available at time t for project plot i, and all of its matched control plots i,j. Where SI values for plots within a matched set are not available at time t (e.g., due to cloud cover or temporary sensor issues), the matched set of project and control plots must not be used in the derivation of ΔSIcontrol,t and ΔSIwp,t at time t. A minimum of n = 30 project plots must be obtained for a representative sample of the area. The rate of increase in stocking index in the control (ΔSIcontrol,t) and project (ΔSIwp,t) plots is calculated in Equations (A5) and (A6) as the slope of the weighted least squares regression (WSLR) of the accumulated time series of SI values for the respective population of plots.",
     "when": [
       "area-based"
     ],
@@ -2613,6 +3245,15 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3609-L3620"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "must include at minimum two, annual time steps: t and t = 0. Observations from all previous verifications"
+        }
       ]
     },
     "provenance": {
@@ -2628,7 +3269,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Absolute Z equal to or above 1.96 means project and control stocking-index slopes are significantly different.",
+    "source_span_text": "2 = Squared standard error of the average annual increase (slope) in stocking Δ _ , index SI in control plots through time t t = 1, 2, 3, …, t years elapsed since the project start date Where the absolute value of Z is equal to or exceeds 1.96, parameters ΔSIcontrol,t and ΔSIwp,t are deemed significantly different.",
     "when": [
       "area-based"
     ],
@@ -2650,6 +3291,15 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3729-L3735"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "2 = Squared standard error of the average annual increase (slope) in stocking Δ _ , index SI"
+        }
       ]
     },
     "provenance": {
@@ -2665,7 +3315,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "If absolute Z is below 1.96 PBt is 1; if absolute Z is at least 1.96 PBt is calculated by Equation A8; an insignificant or negative control slope is set to zero.",
+    "source_span_text": "PBt = Performance benchmark for the monitoring interval ending at year t (dimensionless) ΔSIcontrol,t = Average annual increase in stocking index, SI, in control plots through year t ΔSIwp,t = Average annual increase in stocking index, SI, in project plots through year t t = 1, 2, 3, …, t years elapsed since the project start date Where the slope coefficient of the control plots (ΔSIcontrol,t) is insignificant (P > 0.05) or less than zero, ΔSIcontrol,t is set equal to zero in Equation (A8).",
     "when": [
       "area-based"
     ],
@@ -2687,6 +3337,15 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3755-L3764"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "PBt = Performance benchmark for the monitoring interval ending at year t (dimensionless) ΔSIcontrol,t = Average annual increase"
+        }
       ]
     },
     "provenance": {
@@ -2702,7 +3361,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "SI must minimize seasonal variability, be monitored at least annually, use a metric demonstrably correlated with carbon stocks, and use the same ex-post metric for project and control plots unless a qualifying harmonized replacement is adopted.",
+    "source_span_text": "The same remote sensing metric must be used for monitoring SI ex-post in both control plots and project sample plots. Where more accurate remote sensing metrics become available over time, the remote sensing metric used for monitoring SI ex-post may be changed when all the following apply: a) The new metric offers equivalent or better accuracy (in terms of terrestrial carbon stocks). b) The new metric can be harmonized with the previous metric,",
     "when": [
       "area-based"
     ],
@@ -2720,11 +3379,19 @@
       "section_anchor": "data-and-parameters-monitored",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-5",
       "pages": [
-        74,
-        76
+        75
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3861-L3870"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "The same remote sensing metric must be used for monitoring SI ex-post in both control plots and project"
+        }
       ]
     },
     "provenance": {
@@ -2740,7 +3407,7 @@
     "type": "eligibility",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "If combined optional-pool and GHG impact is below 5% of expected removals all may be excluded; otherwise include ranked sources through at least 95% and exclude the remainder only if residual combined impact is also below 5% of total removals. Leakage is never part of this de minimis test.",
+    "source_span_text": "This appendix outlines a stepwise procedure for determining the significance of decreases in optional carbon pools and GHG emission sources (Es). All Es may be deemed de minimis and excluded from quantification if their combined impact (in t CO2e) is less than 5% of the total amount of carbon removal expected from the project, see Step 1, Equation (A9). Where the combined significance of optional pools and emissions sources is greater than 5% proceed to Step 2 Equation (A10) to determine which individual carbon pools and GHG emissions sources must be included. Note: – Leakage is excluded from this calculation as it must be accounted for regardless of the amount",
     "when": [],
     "tags": [
       "significance",
@@ -2756,11 +3423,19 @@
       "section_anchor": "appendix-2-testing-the-significance-of-carbon-pools-and-ghg-sources",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-12",
       "pages": [
-        77,
-        78
+        77
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3912-L3919"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "This appendix outlines a stepwise procedure for determining the significance of decreases in optional carbon pools and GHG"
+        }
       ]
     },
     "provenance": {
@@ -2776,7 +3451,7 @@
     "type": "uncertainty",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "When an area-based inventory approach changes, uncertainty must be calculated across the independent first interval and correlated second interval using Equations A11-A16.",
+    "source_span_text": "Section 8.5.1 shows how uncertainty deductions under the area-based approach are calculated when projects use one inventory approach across the entire crediting period. This appendix provides the stepwise approach for calculating the uncertainty deduction (UNCt) in the area-based approach when a project proponent switches sampling approaches, for example where a project proponent uses independent measurements (e.g., temporary plots) between t = 0 and an intermediate time t1, and then switches to permanent plots (i.e., dependent measurements) from t1 to any future time t. Step 1: Quantify the Standard Error for the First Inventory Period For the interval between t = 0 and t1, using independent plots (uncorrelated errors):",
     "when": [
       "area-based"
     ],
@@ -2793,11 +3468,19 @@
       "section_anchor": "appendix-3-uncertainty-equations-for-changing-sampling-approaches",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-13",
       "pages": [
-        79,
-        80
+        79
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3980-L3989"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Section 8.5.1 shows how uncertainty deductions under the area-based approach are calculated when projects use one inventory approach"
+        }
       ]
     },
     "provenance": {
@@ -2813,7 +3496,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Appendix 1 applies only where Section 4 applicability is met, project activities produce spatially delineable vegetative cover, and the performance benchmark is updated at each verification or every five years, whichever occurs first.",
+    "source_span_text": "A1.1 Applicability Conditions This appendix is applicable where all the following conditions are met: 1) The project meets all applicability conditions detailed in Section 4 of this methodology. 2) The project activities will produce vegetative cover allowing for clear spatial delineation of the project area. 3) The project’s performance benchmark is updated at each verification or every five years, whichever comes first.",
     "when": [
       "area-based"
     ],
@@ -2836,10 +3519,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3322-L3331"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "A1.1 Applicability Conditions This appendix is applicable where all the following conditions are met: 1) The project meets"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "Appendix 1 \u00a7A1.1 items 1-3",
+      "source_ref": "Appendix 1 §A1.1 items 1-3",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2851,7 +3543,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "The performance-method baseline is business-as-usual aboveground biomass growth observed on representative remotely sensed control plots outside registered AFOLU project areas and is re-established at each verification using the updated performance benchmark.",
+    "source_span_text": "The baseline scenario is represented by the business-as-usual growth of carbon stocks in aboveground biomass, as observed on representative remotely sensed control plots located outside of any registered AFOLU project area. This approach creates the most plausible baseline scenario because remote sensing provides continual and quantifiable observations of changes in aboveground biomass allowing for the real-time comparison of project and baseline. The business-as-usual changes in vegetation cover are represented by the performance benchmark, which is equal to the ratio of average change in stocking index (SI) of control plots to project plots. The control plots are appropriately matched to the project plots based on similar biophysical, social, and political conditions, and historic stock trends (see Section A1.4). SI in control plots is detected using remote sensing and does not need direct field measurement. The baseline is established at every verification period through the application of an updated performance benchmark. The application of",
     "when": [
       "area-based"
     ],
@@ -2873,10 +3565,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3335-L3346"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "The baseline scenario is represented by the business-as-usual growth of carbon stocks in aboveground biomass, as observed on"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "Appendix 1 \u00a7A1.2 \u00b61-2",
+      "source_ref": "Appendix 1 §A1.2 ¶1-2",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2888,7 +3589,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "A performance benchmark is developed per project area, or per annual cohort for grouped projects; an ex-ante estimate must use control-plot stocking indices from historic t=-10 to t=0 and project slope from the Section 8.7 growth-and-yield procedure.",
+    "source_span_text": "An ex-ante estimate of the performance benchmark must be calculated referencing a value of ΔSIcontrol,t using the stocking indices for the historic period t = −10 to t = 0 for the selected control plots (derived in Section A1.4). The project slope is derived from the growth and yield curve procedure provided in ex-ante",
     "when": [
       "area-based"
     ],
@@ -2906,15 +3607,23 @@
       "section_anchor": "performance-benchmark",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-3",
       "pages": [
-        66,
         67
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3373-L3375"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "An ex-ante estimate of the performance benchmark must be calculated referencing a value of ΔSIcontrol,t using the stocking"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "Appendix 1 \u00a7A1.3 \u00b61-2",
+      "source_ref": "Appendix 1 §A1.3 ¶1-2",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2926,7 +3635,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "All benchmark-establishment steps and all project/control plot locations must be documented in the project description and monitoring plan sufficiently to be repeated and validated.",
+    "source_span_text": "A1.4 Procedure to Define the Performance Benchmark The steps for establishing the performance benchmark must be documented in the project description in sufficient detail so that they can be repeated and validated. The location of all stocking index project and control plots must also be included in the project description. All of the following steps must be fully documented as part of the monitoring plan for project and control plots, as described in Section 9.3.",
     "when": [
       "area-based"
     ],
@@ -2948,10 +3657,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3383-L3387"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "A1.4 Procedure to Define the Performance Benchmark The steps for establishing the performance benchmark must be documented in"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "Appendix 1 \u00a7A1.4 opening \u00b6",
+      "source_ref": "Appendix 1 §A1.4 opening ¶",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -2963,7 +3681,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "For each annual cohort, project plots must be equal-sized contiguous non-overlapping units of 0.01-10 ha with at least 75% inside the project boundary, and at least 30 representative project plots must be randomly sampled overall.",
+    "source_span_text": "The following must be performed for each annual cohort separately. 1) Divide the entire project annual cohort area into equal-sized, contiguous, non-overlapping units (project plots) with area ranging from 0.01 hectares (10 × 10 m) to 10 hectares. At least 75% of each unit must be within the project area boundary. Project plots may be represented by individual pixels or aggregates of pixels. 2) Select a representative sample of n = 30 or more project plots across the project area using random sampling.",
     "when": [
       "area-based"
     ],
@@ -2986,6 +3704,15 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3394-L3402"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "The following must be performed for each annual cohort separately. 1) Divide the entire project annual cohort area"
+        }
       ]
     },
     "provenance": {
@@ -3001,7 +3728,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Control donor pools must apply the Table A1 jurisdiction, ecoregion, policy-environment, land-tenure and distance criteria, with optional registered-AFOLU-project exclusion; included geospatial datasets must be no coarser than 30 x 30 m and at least as fine as project plots.",
+    "source_span_text": "Any geospatial datasets included must have a resolution no coarser than 30 × 30 meters and must match or be finer than the resolution of the project plots used as units of analysis (see Step 1(1) above). Table A1. Required factors and source data to delineate donor pool and pixel selection, evaluated for time t = 0. Time variant geospatial layers used must be current as of t = 0, ±5 years. Matching Criteria Description Jurisdictional Where the project area is within a subnational jurisdiction either registered under",
     "when": [
       "area-based"
     ],
@@ -3020,11 +3747,19 @@
       "section_anchor": "procedure-to-define-the-performance-benchmark",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
       "pages": [
-        67,
         68
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3423-L3433"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Any geospatial datasets included must have a resolution no coarser than 30 × 30 meters and must match"
+        }
       ]
     },
     "provenance": {
@@ -3040,7 +3775,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "After donor-pool delineation, control units must be non-overlapping, equal-sized, and within plus or minus 20% of the mean project-plot size.",
+    "source_span_text": "Once the donor pool area has been delineated by applying the factors in Table A1, it is divided into non-overlapping units of equal size and not exceeding ±20% of the mean size of project plots. Quantify historic and initial conditions of SI via a time series analysis for a representative sample of control and project plots (Table A2). For each control plot, calculate a multivariate",
     "when": [
       "area-based"
     ],
@@ -3059,14 +3794,23 @@
       "section_anchor": "procedure-to-define-the-performance-benchmark",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
       "pages": [
-        68
+        69
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3481-L3486"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "Once the donor pool area has been delineated by applying the factors in Table A1, it is divided"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "Appendix 1 Step 2 item 2 \u00b61",
+      "source_ref": "Appendix 1 Step 2 item 2 ¶1",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -3078,7 +3822,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Control/project matching must include stocking-index covariates from at least three historic time points, including one between t=-10 and -8, one between t=-8 and -1, and t=0.",
+    "source_span_text": "indices from at least three time points as described in Table A2. Table A2. Required covariates for matching control plots to project plots (detailed guidance on each covariate provided in Section A1.5) Matching covariate Description SIt=0, SIt=−10, etc. Covariates used for evaluating the multivariate distance between control and project plots must include stocking indices from three or more time points during the historic period. At minimum, stocking indices from each of the",
     "when": [
       "area-based"
     ],
@@ -3097,11 +3841,19 @@
       "section_anchor": "procedure-to-define-the-performance-benchmark",
       "section_stable_id": "Verra.AFOLU.VM0047.v1-1.S-11-4",
       "pages": [
-        68,
         69
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3489-L3498"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "indices from at least three time points as described in Table A2. Table A2. Required covariates for matching"
+        }
       ]
     },
     "provenance": {
@@ -3117,7 +3869,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "Control plots must be matched using k-nearest-neighbor optimal matching without replacement; k is selected by the proponent and remains constant for each project-plot match for the project lifetime.",
+    "source_span_text": "3) Match control and project plots: To match control plots with project plots, apply a k-nearest neighbor optimal matching approach without replacement (i.e., control plots may not be matched to multiple project sample plots). The number of control plots matched to each project plot (k) is selected by the project proponent. k must be kept constant for each match (e.g., if k=5 for project plot A, k must remain 5 for the project lifetime).",
     "when": [
       "area-based"
     ],
@@ -3139,10 +3891,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3506-L3511"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "3) Match control and project plots: To match control plots with project plots, apply a k-nearest neighbor optimal"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "Appendix 1 Step 2 item 3 \u00b61",
+      "source_ref": "Appendix 1 Step 2 item 3 ¶1",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -3154,7 +3915,7 @@
     "type": "equation",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "The k controls with lowest multivariate distance are selected and assigned inverse-distance relative weights that sum to 1 under Equation A1.",
+    "source_span_text": "3) Match control and project plots: To match control plots with project plots, apply a k-nearest neighbor optimal matching approach without replacement (i.e., control plots may not be matched to multiple project sample plots). The number of control plots matched to each project plot (k) is selected by the project proponent. k must be kept constant for each match (e.g., if k=5 for project plot A, k must remain 5 for the project lifetime). Select the k control plots with the lowest multivariate distance metric values and derive relative weights, that sum to 1, proportional to the inverse of the multivariate distance metric value.",
     "when": [
       "area-based"
     ],
@@ -3177,10 +3938,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3506-L3514"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "3) Match control and project plots: To match control plots with project plots, apply a k-nearest neighbor optimal"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "Appendix 1 Step 2 item 3 \u00b62 and Eq.A1",
+      "source_ref": "Appendix 1 Step 2 item 3 ¶2 and Eq.A1",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   },
@@ -3192,7 +3962,7 @@
     "type": "calc",
     "quality_status": "source_audited",
     "source_span_status": "source_audited",
-    "source_span_text": "For the performance benchmark, remote sensing is used to estimate relative stock change between project and control plots rather than to directly estimate reportable carbon stocks; removal accounting remains dependent on direct field measurement under Section 8.",
+    "source_span_text": "matches for individual land parcels, but rather to produce robust estimates of impact for sample “populations” of matched pairs (controls and treatments). An ex-ante estimate of the performance benchmark must be calculated referencing a value of ΔSIcontrol,t using the stocking indices for the historic period t = −10 to t = 0 for the selected control plots (derived in Section A1.4). The project slope is derived from the growth and yield curve procedure provided in ex-ante calculations (see Section 8.7). Assessing plots using remote sensing does not involve direct estimation and reporting of carbon stocks. Remote sensing is used only to estimate relative stock change between control and project plots. Accounting of removals is treated in Section 8 and is dependent on direct field measurement.",
     "when": [
       "area-based"
     ],
@@ -3215,10 +3985,19 @@
       ],
       "tools": [
         "Verra/VM0047@v1-1"
+      ],
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt#L3370-L3380"
+      ],
+      "locators": [
+        {
+          "type": "governed_text_lines",
+          "quote": "matches for individual land parcels, but rather to produce robust estimates of impact for sample “populations” of matched"
+        }
       ]
     },
     "provenance": {
-      "source_ref": "Appendix 1 \u00a7A1.3 final \u00b6",
+      "source_ref": "Appendix 1 §A1.3 final ¶",
       "source_hash": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
   }
