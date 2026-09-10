@@ -1,0 +1,447 @@
+name: vm0048-build-bootstrap
+on:
+  push:
+    branches:
+      - governance/vm0048-v1-0-ingestion
+    paths:
+      - '.github/workflows/vm0048-build-bootstrap.yml'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: governance/vm0048-v1-0-ingestion
+          lfs: true
+          fetch-depth: 0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '20.11.1'
+      - name: Build VM0048 v1.0 governed corpus
+        run: |
+          python - <<'PY'
+          import json, hashlib, os, re
+          from pathlib import Path
+
+          ROOT=Path('.')
+          OUT=ROOT/'methodologies/Verra/AFOLU/VM0048/v1-0'
+          GOV=ROOT/'governance/Verra/AFOLU/VM0048/v1-0'
+          STAGE=ROOT/'docs/roadmaps/governance-v1/staging/VM0048/v1-0'
+          MAIN=STAGE/'source/source.layout.txt'
+          CLAR=STAGE/'source/clarification.layout.txt'
+          MAIN_HASH='d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982'
+          CLAR_HASH='d55fa78dddf7de254135d54e8e3da51f7c73cc73b54b6cabddee320326d11774'
+          OUT.mkdir(parents=True, exist_ok=True); GOV.mkdir(parents=True, exist_ok=True)
+
+          def norm(s):
+              return re.sub(r'\s+',' ',s.replace('\u2013','-').replace('\u2014','-')).strip().lower()
+          main_lines=MAIN.read_text(encoding='utf-8').splitlines()
+          clar_lines=CLAR.read_text(encoding='utf-8').splitlines()
+
+          def locate(lines, phrase, start_at=0):
+              p=norm(phrase)
+              for i in range(start_at,len(lines)):
+                  if p in norm(lines[i]): return i
+              # allow phrase across a short wrapped window
+              for i in range(start_at,len(lines)):
+                  window=' '.join(lines[i:i+5])
+                  if p in norm(window): return i
+              raise ValueError(f'cannot locate: {phrase}')
+
+          def paragraph(lines, phrase):
+              i=locate(lines,phrase)
+              # start at located line and extend through the contiguous paragraph/list item
+              j=i
+              while j+1 < len(lines):
+                  if not lines[j+1].strip(): break
+                  # stop at obvious next numbered/bulleted item after first line
+                  if j>i and re.match(r'^\s*(?:\d+\)|[a-c]\)|•)\s+', lines[j+1]): break
+                  j+=1
+              while j>i and not lines[j].strip(): j-=1
+              return i,j
+
+          sections_spec=[
+            ('S-1','1','Sources','SOURCES',1,None,1,2),
+            ('S-2','2','Summary Description of the Methodology','SUMMARY DESCRIPTION OF THE',1,None,2,3),
+            ('S-3','3','Definitions','DEFINITIONS',1,None,4,4),
+            ('S-3-1','3.1','Definitions','3.1   Definitions',2,'S-3',4,4),
+            ('S-3-2','3.2','Acronyms','3.2   Acronyms',2,'S-3',4,4),
+            ('S-4','4','Applicability Conditions','APPLICABILITY CONDITIONS',1,None,5,5),
+            ('S-5','5','Project Boundary','PROJECT BOUNDARY',1,None,5,7),
+            ('S-5-1','5.1','Geographic Boundaries','5.1   Geographic Boundaries',2,'S-5',5,5),
+            ('S-5-2','5.2','Carbon Pools','5.2   Carbon Pools',2,'S-5',5,6),
+            ('S-5-3','5.3','Sources of GHG Emissions','5.3   Sources of GHG Emissions',2,'S-5',6,7),
+            ('S-6','6','Baseline Scenario','BASELINE SCENARIO',1,None,8,10),
+            ('S-6-1','6.1','Determination of the Most Plausible Baseline Scenario','6.1   Determination of the Most Plausible Baseline Scenario',2,'S-6',8,10),
+            ('S-6-2','6.2','Projects Implemented in Jurisdictional REDD Programs or Where a Government has Established a REDD Baseline','6.2   Projects Implemented in Jurisdictional REDD Programs',2,'S-6',10,10),
+            ('S-6-3','6.3','Baseline Validity','6.3   Baseline Validity',2,'S-6',10,10),
+            ('S-7','7','Additionality','ADDITIONALITY',1,None,11,11),
+            ('S-8','8','Quantification of GHG Emission Reductions','QUANTIFICATION OF GHG EMISSION',1,None,11,13),
+            ('S-8-1','8.1','Baseline Emissions','8.1     Baseline Emissions',2,'S-8',11,12),
+            ('S-8-1-1','8.1.1','General Procedures','8.1.1   General Procedures',3,'S-8-1',11,11),
+            ('S-8-1-2','8.1.2','Baseline Reassessment and Transition to VM0048','8.1.2   Baseline Reassessment and Transition to VM0048',3,'S-8-1',11,12),
+            ('S-8-2','8.2','Project Emissions','8.2   Project Emissions',2,'S-8',12,12),
+            ('S-8-3','8.3','Leakage','8.3   Leakage',2,'S-8',12,13),
+            ('S-8-4','8.4','Net GHG Emission Reductions','8.4       Net GHG Emission Reductions',2,'S-8',13,13),
+            ('S-9','9','Monitoring','MONITORING',1,None,14,17),
+            ('S-9-1','9.1','Data and Parameters Available at Validation','9.1     Data and Parameters Available at Validation',2,'S-9',14,14),
+            ('S-9-2','9.2','Data and Parameters Monitored','9.2     Data and Parameters Monitored',2,'S-9',14,14),
+            ('S-9-3','9.3','Description of the Monitoring Plan','9.3     Description of the Monitoring Plan',2,'S-9',14,17),
+            ('S-9-3-1','9.3.1','Development of Monitoring Plan','9.3.1   Development of Monitoring Plan',3,'S-9-3',14,16),
+            ('S-9-3-2','9.3.2','Monitoring','9.3.2   Monitoring',3,'S-9-3',16,17),
+            ('S-10','10','References','REFERENCES',1,None,18,18),
+            ('S-11','Appendix 1','Testing Significance of GHG Emissions','APPENDIX 1: TESTING SIGNIFICANCE OF',1,None,19,20),
+            ('S-12','Document History','Document History','DOCUMENT HISTORY',1,None,21,21),
+          ]
+          children={s[0]:[] for s in sections_spec}
+          for sid,_,_,_,_,parent,_,_ in sections_spec:
+              if parent: children[parent].append(sid)
+          sections=[]
+          for sid,num,title,heading,level,parent,p1,p2 in sections_spec:
+              li=locate(main_lines,heading)
+              anchor=re.sub(r'[^a-z0-9]+','-',title.lower()).strip('-')
+              sections.append({
+                'id':sid,'stable_id':f'Verra.AFOLU.VM0048.v1-0.{sid}','title':title,'heading_text':title,
+                'anchor':anchor,'section_number':num,'section_level':level,'level':level,'parent_id':parent,
+                'page_start':p1,'page_end':p2,'pages':list(range(p1,p2+1)),'children':children[sid],
+                'locator_status':'source_audited','source_span_status':'source_audited',
+                'provenance':{'source_ref':f'VM0048 v1.0 Section {num}','source_hash':MAIN_HASH,
+                              'lines':[f'docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L{li+1}-L{li+1}']},
+                'locators':[{'type':'governed_text_lines','quote':main_lines[li].strip()}]
+              })
+          (OUT/'sections.rich.json').write_text(json.dumps(sections,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+          secmap={s['section_number']:s for s in sections}
+
+          specs=[]
+          def R(sec,summary,logic,typ,start,when=None,tags=None,source='main',tools=None):
+              specs.append(dict(sec=sec,summary=summary,logic=logic,typ=typ,start=start,when=when or [],tags=tags or [typ],source=source,tools=tools or []))
+
+          # Section 2: framework construction and module-selection obligations
+          R('2','Project description must identify methodology and modules','The project description must reference VM0048 and the modules used to construct the project-specific methodology.','documentation','Reference to this methodology and the modules used')
+          R('2','Module choices require justification','The project proponent must justify the choice of modules in the project description.','documentation','The project proponent must justify')
+          R('2','Appendix 1 governs omission justification','Appendix 1 must be used to justify omission of carbon pools and emission sources.','applicability','Appendix 1 of this methodology must be used')
+
+          # Clarification-effective forest definition
+          R('3.1','Clarified minimum forest canopy cover','Effective 31 July 2024, forest must include woody vegetation with canopy cover of at least 10 percent as used in the relevant country’s international reporting to the UNFCCC.','definition','with a canopy cover of at least 10 percent',source='clarification',tags=['definition','clarification'])
+
+          # Applicability
+          R('4','Eligible REDD projects only','VM0048 may only be used for eligible REDD projects and activities described in the VCS Methodology Requirements.','eligibility','This methodology may only be used for eligible REDD projects')
+          R('4','Activity-type applicability comes from accounting modules','The applicable activity-type module supplies the activity-specific applicability conditions.','applicability','The applicability conditions for each activity type')
+
+          # Geographic boundaries
+          R('5.1','Project spatial boundaries must be clearly defined','Spatial boundaries must be clearly defined for measuring, monitoring, accounting and verification.','boundary','The spatial boundaries of the project area must be clearly defined')
+          R('5.1','Discrete parcels require unique identification','Each discrete project area must provide its name and a unique ID.','boundary','1) Name of the project area')
+          R('5.1','Digital maps required','Each discrete project area must provide map(s) in digital format.','boundary','2) Map(s) of the area')
+          R('5.1','Polygon coordinates and accuracy documentation required','Each discrete project area must provide polygon-vertex coordinates and documentation of their accuracy in the VCS Standard format.','boundary','3) Geographic coordinates of each polygon vertex')
+          R('5.1','Total land area required','Each discrete project area must provide total land area.','boundary','4) Total land area')
+          R('5.1','Landholder and user rights required','Each discrete project area must provide details of landholder and user rights.','boundary','5) Details of landholder and user rights')
+          R('5.1','Forested project area continuity','The forested project area must be continuous without arbitrary exclusion of forests in the same geography.','boundary','The forested project area')
+          R('5.1','Ten-year forest qualification','The REDD activity boundary must include only land qualifying as forest for at least ten years before project start.','eligibility','The boundary of the REDD activity must be clearly delineated')
+          R('5.1','Activity-specific boundaries follow accounting modules','Specific activity-type boundary requirements are supplied by the appropriate accounting modules.','dependency','Specific boundaries exist for specific activity types')
+          R('5.1','Multiple AFOLU activities require spatial delineation','Where multiple AFOLU project activities occur within the boundary, the discrete areas for each activity must be spatially delineated.','boundary','For projects where multiple AFOLU project activities')
+
+          # Carbon pools
+          R('5.2','Carbon-pool selection and justification required','Selection of carbon pools and the justification for that selection must be presented in the project description.','boundary','The selection of carbon pools and the appropriate justification')
+          R('5.2','Wetland soil organic carbon accounting','REDD activities in wetlands must account for expected soil-organic-carbon emissions or stock changes in the project scenario unless de minimis.','quantification','Where REDD activities take place in wetlands')
+          R('5.2','Pool significance uses Appendix 1','Significance of carbon pools must be determined using Appendix 1.','applicability','The significance of pools must be determined')
+          R('5.2','Aboveground tree biomass included','Aboveground tree biomass is an included carbon pool.','boundary','Aboveground tree')
+          R('5.2','Belowground tree biomass included','Belowground tree biomass is an included carbon pool.','boundary','Belowground tree')
+          R('5.2','Aboveground non-tree biomass baseline inclusion','Aboveground non-tree biomass must be included in post-deforestation baseline carbon stocks, while forest carbon stocks may conservatively exclude it.','boundary','Aboveground non-tree')
+          R('5.2','Soil organic carbon treatment differs by wetland status','Non-wetland soil organic carbon may be conservatively excluded; wetland soil organic carbon requires significance assessment and may be included.','boundary','Soil organic carbon')
+          R('5.2','Harvested wood products may be omitted only when baseline harvest is negligible','Harvested wood products may be excluded where baseline timber harvest is negligible, with significance determined using Appendix 1.','boundary','Harvested wood')
+
+          # GHG sources
+          R('5.3','Significant attributable GHG increases must be accounted','Projects must account for significant increases in CO2, N2O and CH4 relative to baseline that are reasonably attributable to the project activity.','quantification','The project must account for any significant increases')
+          R('5.3','GHG-source selection and justification required','Selection of GHG sources and justification must be provided in the project description.','documentation','The selection of sources and the appropriate justification')
+          R('5.3','GHG-source significance uses Appendix 1','Appendix 1 must be used to determine whether a GHG emissions source is significant.','applicability','Procedures specified in Appendix 1')
+          R('5.3','Baseline-included source must also be included in project and leakage','A source included in baseline emissions must also be included in project and leakage emissions.','consistency','Where a source is included in estimating baseline emissions')
+          R('5.3','Project biomass-burning CO2 is included','CO2 emissions from project-scenario woody biomass burning are included.','quantification','Burning of        CO2   Included',when=['project scenario'])
+          R('5.3','Project biomass-burning CH4 and N2O are included','CH4 and N2O emissions from project-scenario woody biomass burning are included.','quantification','CH4   Included       Major emissions source',when=['project scenario'])
+          R('5.3','Project fertilizer N2O is conditional','Project N2O from fertilizers must be included where fertilizer use increases due to the project; otherwise it may be excluded if also excluded from baseline.','quantification','N2O      Optional       Must be included where fertilizer use increases')
+
+          # Baseline scenario
+          R('6.1','Baseline scenario must align with additionality and pre-project conditions','The most plausible baseline scenario must build on the additionality analysis and be consistent with conditions before project start.','baseline','Determination of the most plausible baseline scenario builds')
+          R('6.1','VT0001 is mandatory for additionality and baseline selection','VT0001 must be used to assess additionality and the VM0048 stepwise approach must be followed in addition to VT0001.','dependency','VT0001 must be used to assess the project additionality')
+          R('6.1','Reuse VT0001 plausible alternative scenarios','Step 1 must reuse plausible alternative land-use scenarios identified under VT0001 Sub-step 1b.','baseline','Step 1: Reuse the plausible alternative land use scenarios')
+          R('6.1','Continuation of pre-project land use must be considered','Unless shown non-credible or non-compliant, continuation of pre-project land use must be in the alternatives list.','baseline','1) Continuation of the pre-project land use')
+          R('6.1','Non-VCS implementation must be considered','Unless shown non-credible or non-compliant, project activity without VCS REDD registration must be in the alternatives list.','baseline','2) Project activity performed on the land')
+          R('6.1','Similar activities must be considered','Unless shown non-credible or non-compliant, similar activities on at least part of the proposed project land must be considered.','baseline','3) Activities similar to the proposed project activity')
+          R('6.1','Barrier-analysis baseline uses decision tree','Where VT0001 barrier analysis demonstrates additionality, the Figure 1 decision tree must be applied to alternatives not prevented by barriers.','baseline','Step 2a: Where the VT0001 barrier analysis')
+          R('6.1','Investment Option I chooses lowest-cost scenario','Under VT0001 Option I, the baseline is the lowest-cost land-use scenario over the crediting period, and Option I is only allowed if alternatives have no revenues.','baseline','4) Where VT0001 Option I is used')
+          R('6.1','Investment Option II chooses financially most attractive scenario','Under VT0001 Option II, the baseline is the most economically or financially attractive scenario.','baseline','5) Where VT0001 Option II is used')
+          R('6.1','Investment Option III applies benchmark logic','Under VT0001 Option III, continuation of pre-project land use is baseline if no alternative meets the benchmark; otherwise use the scenario with the most favorable financial indicator.','baseline','6) Where VT0001 Option III is used')
+          R('6.1','If barrier analysis cannot determine baseline, additional selection procedure is required','Where barrier analysis does not determine the baseline, either VT0001 Option II investment analysis or the specified qualitative lowest-emissions analysis must be used.','baseline','Step 3: Where barrier analysis is used')
+          R('6.1','Qualitative baseline data must be public and credible','Qualitative baseline estimates must use public default factors/standards and other data must be publicly available from recognized credible sources.','baseline','Estimates must be')
+          R('6.1','Selected baseline quantification follows activity modules','GHG emissions under the selected baseline must be quantified under the applicable activity-type module(s).','dependency','Quantification of GHG emissions under the selected baseline')
+
+          # Jurisdictional baselines
+          R('6.2','Registered JNR projects must be nested under applicable JNR scenario requirements','Projects in a registered JNR program may use VM0048 for included activities but must be nested under JNR Scenario 1 or Scenario 2 requirements as appropriate.','eligibility','Projects that are implemented within a registered JNR program')
+          R('6.2','Non-JNR jurisdictional projects remain VCS-registered and monitored under VM0048','Projects in non-JNR jurisdictional REDD programs should follow relevant jurisdictional requirements but must be registered and monitored under VCS following VM0048.','eligibility','REDD projects that are implemented within a non-JNR REDD jurisdictional program')
+          R('6.2','Project may cap issuance to lower local-government baseline','Where the VM0048 activity-data baseline exceeds the local government baseline, the project proponent may cap issuance to the lower baseline.','issuance','Where the baseline estimated using the activity data allocated')
+          R('6.2','Local regulation can make baseline cap mandatory','Where local regulations require the lower-baseline issuance limitation, the limitation is mandatory.','issuance','Where required by local regulations')
+          R('6.3','No projections beyond baseline validity required','Baseline projections beyond the baseline validity period are not required.','baseline','Baseline projections beyond the baseline validity period')
+          R('6.3','Baseline reassessment follows VCS Standard and relevant module','The project baseline must be reassessed per the VCS Standard and the relevant module.','baseline','The project baseline must be reassessed')
+          R('6.3','Next reassessment date must be in project description','The next scheduled baseline reassessment date must be specified in the project description.','documentation','The date of the next scheduled baseline reassessment')
+
+          # Additionality
+          R('7','Use most recent VT0001 and Methodology Requirements guidance','Additionality must be demonstrated with the most recent VT0001 and latest VCS Methodology Requirements investment-analysis guidance.','additionality','Additionality of the project activities must be demonstrated')
+          R('7','Regulatory surplus must satisfy VCS Standard and Methodology Requirements','Project proponents must demonstrate regulatory surplus under the latest VCS Standard and latest VCS Methodology Requirements.','additionality','Project proponents must also demonstrate regulatory surplus')
+          R('7','Non-Annex I enforcement-gap claims require lack of proponent control','Where regulatory surplus in a UNFCCC non-Annex I country relies on lack of systematic enforcement, lack of control by the proponent and project entities must be demonstrated.','additionality','In UNFCCC non-Annex I countries')
+
+          # Quantification
+          R('8.1.1','Use same quantification procedure ex ante and ex post','The same procedure for quantifying emissions and carbon stocks must be used ex ante and ex post.','quantification','The same procedure for quantifying emissions and carbon stocks')
+          R('8.1.1','Monitored-parameter ex ante values follow module tables','For parameters monitored after project initiation, ex ante values must follow guidance in the relevant module parameter tables.','quantification','For parameters monitored after project initiation')
+          R('8.1.1','Baseline is estimated ex ante','The project-activity baseline is estimated ex ante and used in ex ante and ex post estimation of net stock changes and GHG reductions.','baseline','The baseline of the project activity is estimated ex ante')
+          R('8.1.2','VM0009 transition requires baseline-model revision under VM0009 provisions','Projects previously verified under VM0009 must follow VM0009 provisions to revise the baseline emissions model when transitioning to VM0048.','transition','Where projects have verified using VM0009')
+          R('8.1.2','Over-issued transition difference must be compensated','If baseline reevaluation predicts fewer reductions than VCUs issued under the prior model, the project must compensate for the difference.','transition','Where, after baseline reevaluation')
+          R('8.1.2','Active VCU cancellation is an allowed compensation method','Compensation may be made by canceling unused active project VCUs, including consented already-issued active VCUs held by current owners.','transition','1) Cancelation of VCUs from the project')
+          R('8.1.2','Future issuance cancellation may compensate transition difference','Compensation may be made by immediate cancellation from subsequent project VCU issuances; multi-period deductions require an approved plan.','transition','2) Replacement of the emission reductions')
+          R('8.1.2','Transition calculations must be disclosed and assessed','Applicable calculations must be described as a project-description deviation in the first monitoring report after transition; the VVB must assess them and confirm relevant deduction-plan approval.','transition','Projects must describe the applicable calculations')
+          R('8.2','Project-emission procedure must be consistent ex ante and ex post','The same project-emissions procedure must be followed ex ante and ex post.','quantification','The same procedure for project emissions')
+          R('8.2','Project-scenario estimates follow relevant activity modules','Net stock-change and GHG-emission methods for the project scenario come from relevant activity modules.','dependency','Methods for estimating net carbon stock changes')
+
+          # Leakage
+          R('8.3','Activity-shifting leakage must be estimated unless de minimis','Activity-shifting leakage emissions must be estimated unless deemed de minimis.','leakage','1) Activity-shifting leakage')
+          R('8.3','Market-effect leakage must be estimated unless de minimis','Market-effect leakage emissions must be estimated unless deemed de minimis.','leakage','2) Market-effect leakage')
+          R('8.3','Leakage-prevention emissions must be estimated unless de minimis','Emissions from leakage-prevention activities must be estimated unless deemed de minimis.','leakage','3) Emissions from leakage prevention activities')
+          R('8.3','Leakage significance uses Appendix 1','Significance of leakage and carbon pools must be determined using Appendix 1.','leakage','The significance of leakage and carbon pools')
+          R('8.3','Market effects require LK-ME when production decreases','LK-ME must be used where the project decreases timber, fuelwood or charcoal production.','dependency','Leakage due to market effects must be considered using LK-ME')
+          R('8.3','Significant leakage-prevention increases must be accounted','Significant increases from leakage-prevention carbon-stock change, biomass burning or fertilizer use must be accounted under relevant modules unless de minimis.','leakage','Where leakage prevention activities result in significant increases')
+          R('8.3','Leakage-prevention fossil-fuel increases are de minimis','Increased fossil-fuel combustion caused by leakage prevention is considered de minimis and need not be quantified or reported.','leakage','Leakage prevention activities may lead to an increase in the combustion of fossil fuels')
+          R('8.3','Significant fertilizer increase requires E-NA','Where leakage prevention significantly increases fertilizer use, E-NA must be used.','dependency','Where leakage prevention leads to a significant increase in fertilizer use')
+          R('8.3','Leakage prevention cannot flood agricultural land or create feedlots/manure lagoons','Leakage prevention must not include flooding agricultural land or creating livestock feedlots or manure lagoons.','prohibition','Leakage prevention must not include the flooding of agricultural lands')
+          R('8.3','Leakage prevention cannot drain peatland','Leakage prevention must not include peatland drainage.','prohibition','Leakage prevention must not include the drainage of peatland')
+          R('8.3','Leakage-source list and justification required','Leakage sources and appropriate justification must be presented in the project description.','documentation','The list of leakage sources with appropriate justification')
+          R('8.4','Conservative ex ante net-reduction estimate required','The project proponent must present conservative ex ante estimates of total net GHG emission reductions.','quantification','The project proponent must present conservative ex ante estimations')
+          R('8.4','Potential VCUs aggregate applicable activity-type VCUs','Potential VCUs for monitoring period t equal the sum of VCU_AUDef, VCU_APDef and VCU_AUDeg.','equation','The potential number of Verified Carbon Units')
+
+          # Monitoring plan
+          R('9.3.1','Monitoring plan must monitor implementation','The monitoring plan must address monitoring of project implementation.','monitoring','Monitoring of project implementation')
+          R('9.3.1','Monitoring plan must monitor actual stock changes and emissions','The monitoring plan must address actual carbon-stock changes and GHG emissions.','monitoring','Monitoring of actual carbon stock changes')
+          R('9.3.1','Monitoring plan must monitor leakage','The monitoring plan must address leakage carbon-stock changes and GHG emissions.','monitoring','Monitoring of leakage carbon stock changes')
+          R('9.3.1','Monitoring plan must estimate ex post net changes','The monitoring plan must address estimation of ex post net carbon-stock changes and GHG emissions.','monitoring','Estimation of ex post net carbon stock changes')
+          R('9.3.1','Monitoring task technical description required','For each monitoring task, the plan must provide a technical description.','monitoring','Technical description of the monitoring task')
+          R('9.3.1','Monitoring task data specification required','For each monitoring task, data to be collected must be specified and listed in the project description.','monitoring','Data to be collected')
+          R('9.3.1','Data-collection procedures required','For each monitoring task, the plan must provide an overview of data-collection procedures.','monitoring','Overview of data collection procedures')
+          R('9.3.1','QA/QC procedures required','For each monitoring task, quality-control and quality-assurance procedures must be provided.','monitoring','Quality control and quality assurance procedures')
+          R('9.3.1','Data archiving required','For each monitoring task, data-archiving arrangements must be provided.','monitoring','Data archiving')
+          R('9.3.1','Monitoring organization and responsibilities required','For each monitoring task, organization and responsibilities of involved parties must be specified.','monitoring','Organization and responsibilities')
+          R('9.3.1','Critical parameters must be identified','The project must identify critical parameters that significantly influence estimate accuracy.','uncertainty','must identify critical parameters')
+          R('9.3.1','Local values required where possible','Project-specific local values must be obtained for key parameters where possible.','uncertainty','Local values specific to the project circumstances must be obtained')
+          R('9.3.1','Expert-value rationale required','Where expert opinion supplies a range and proposed value, rationale for selecting the chosen value must be demonstrated.','uncertainty','The rationale for selecting a particular data value')
+          R('9.3.1','Parameter choices must target accurate net-reduction estimates','For key parameters or important non-project-specific assumptions, values must be selected to lead to accurate net GHG reduction estimates considering uncertainty.','uncertainty','In choosing key parameters or making important assumptions')
+          R('9.3.1','Significant uncertainty requires conservative underestimation','Where uncertainty is significant, data must indisputably tend to underestimate rather than overestimate net project benefits.','uncertainty','Where uncertainty is significant')
+          R('9.3.1','Documented SOPs and data-quality procedures required','The project proponent must establish and document clear SOPs and procedures to ensure data quality.','monitoring','the project proponent must establish and document')
+          R('9.3.1','Field measurements must be replicably documented','Field measurements must be comprehensively documented so sampling can be replicated after staff turnover.','monitoring','Comprehensive documentation of all field measurements')
+          R('9.3.1','Training must be documented','Training procedures are required and the scope and date of all training must be documented.','monitoring','Training procedures for all people involved')
+          R('9.3.1','Plot-measurement accuracy protocol required','A check-cruise protocol and correction plan are required for plot-measurement accuracy.','monitoring','A protocol for assessing the accuracy of plot measurements')
+          R('9.3.1','Data error and consistency protocols required','Protocols must assess outliers, transcription errors and consistency across measurement periods.','monitoring','Protocols for assessing data for outliers')
+          R('9.3.1','Data must be safely archived for project lifetime','Data sheets must be safely archived for the project lifetime and electronic data must be backed up.','monitoring','Safe archiving of data sheets')
+          R('9.3.1','Expert judgment must follow IPCC guidance','Expert judgment must use the specified IPCC 2019 Refinement guidance in Volume 1 Chapter 2.','monitoring','The project proponent must use the guidance provided in Volume 1 Chapter 2')
+          R('9.3.1','Project boundary coordinates must be established, recorded and archived','Geographic coordinates of the project boundary and internal stratification/buffer zones must be established, recorded and archived.','monitoring','The geographic position of the project boundary is recorded')
+          R('9.3.1','Inventory SOPs and QA/QC must be applied','Common land-use inventory principles and SOP/QA/QC procedures for inventories, field collection and management must be applied.','monitoring','Standard operating procedures (SOPs) and quality control/quality assurance procedures')
+          R('9.3.1','Project plan and implementation record must be available','The project plan and record of implementation must be available for validation or verification.','monitoring','The project plan and a record of the plan')
+          R('9.3.1','Monitoring plan must use applicable activity modules','The monitoring plan must use relevant activity-module methods for forest-cover and carbon-stock changes and include all relevant module parameters.','dependency','The monitoring plan must use the methods in the relevant module')
+
+          # Ex-post monitoring
+          R('9.3.2','Ex post monitoring follows monitoring plan','Ex post monitoring must include monitoring according to the monitoring plan.','monitoring','1) Monitoring according to the monitoring plan')
+          R('9.3.2','Ex post monitoring revises future baseline','Ex post monitoring must include revising the baseline for future project crediting periods.','monitoring','2) Revising the baseline for future project crediting periods')
+          R('9.3.2','Baseline reassessment information must be collected throughout crediting period','Information needed to reassess the baseline must be collected throughout the project crediting period.','monitoring','Information required to periodically reassess the project baseline')
+          R('9.3.2','Forest-cover changes must be monitored','Changes in forest cover must be monitored as specified by applicable accounting modules.','monitoring','Changes in forest cover as specified')
+          R('9.3.2','Spatial modeling variables must be monitored','Spatial variable datasets used in modeling must be monitored as specified by applicable accounting modules, including at minimum first-baseline variables during reassessment.','monitoring','Spatial variable datasets used in modeling')
+          R('9.3.2','Required carbon-stock data must be monitored','Carbon-stock data must be monitored where required by the applicable accounting module.','monitoring','Carbon stock data, where required')
+          R('9.3.2','All significant leakage sources are monitored','All significant leakage sources must be monitored consistently with applicable leakage modules, and all relevant leakage-module parameters must be in the monitoring plan.','monitoring','All significant sources of leakage identified')
+          R('9.3.2','Monitoring report values require uncertainty estimates','Required monitoring-report values must include uncertainty as a two-sided 90 percent confidence interval.','reporting','The following values must be reported using the unit')
+          R('9.3.2','AUDef allocated annual deforestation by stratum must be reported','For AUDef projects, allocated annual deforestation area by stratum must be reported in hectares for each monitoring year.','reporting','1) For projects using AUDef')
+          R('9.3.2','Project-area annual deforestation must be reported','Aggregate annual deforestation area for the verification period in the project area must be reported in hectares/year.','reporting','2) Aggregate annual deforestation area for the verification period in the project area')
+          R('9.3.2','Leakage-belt annual deforestation must be reported','Aggregate annual deforestation area for the verification period in the leakage belt must be reported in hectares/year.','reporting','3) Aggregate annual deforestation area for the verification period in the leakage belt')
+          R('9.3.2','Project-area annual deforestation emissions must be reported','Aggregate annual emissions from deforestation for the verification period and project area must be reported in tonnes CO2e/year.','reporting','4) Aggregate annual emissions from deforestation for the verification period and project')
+          R('9.3.2','Leakage-belt annual deforestation emissions must be reported','Aggregate annual emissions from deforestation for the verification period and leakage belt must be reported in tonnes CO2e/year.','reporting','5) Aggregate annual emissions from deforestation for the verification period and leakage')
+          R('9.3.2','Average project-area deforestation emission factor must be reported','Average deforestation emission factor over the project area for the verification period must be reported in tonnes CO2e/hectare.','reporting','6) Average emission factor for deforestation')
+          R('9.3.2','Baseline update method must remain the same','The methodological procedure for updating the baseline must be the same as in the first baseline estimation.','baseline','The methodological procedure to update the baseline')
+
+          # Appendix 1 significance procedure
+          R('Appendix 1','Appendix 1 stepwise significance test is mandatory','The Appendix 1 stepwise procedure must be used to test significance of GHG emissions and may justify omission of pools, sources and leakage-mitigation emissions.','significance','The following stepwise procedure must be used')
+          R('Appendix 1','Pool/source significance tested at least ex ante and baseline reassessment','GHG-source and carbon-pool significance must be tested at minimum ex ante and at baseline reassessment.','significance','The significance of GHG emissions by source and carbon stock changes')
+          R('Appendix 1','Leakage significance tested ex ante and ex post','Leakage GHG-emission significance must be tested ex ante for the baseline validity period and ex post for a monitoring period.','significance','The significance of leakage GHG emissions')
+          R('Appendix 1','Define significance-test period','Step 1 requires defining the period over which significance is tested.','significance','1) Define the period over which the significance will be tested')
+          R('Appendix 1','Estimate source emissions using project data, peer-reviewed literature or latest IPCC defaults','Step 2a requires source-level GHG estimates based on site/project data, peer-reviewed literature and/or most recent IPCC default emission factors.','significance','a) GHG emissions by source')
+          R('Appendix 1','Estimate carbon-pool stock-change emissions consistently with methodology','Step 2b requires pool-level net-stock-change emissions consistent with the methodology, baseline and project activities using credible source data.','significance','b) GHG emissions attributable to net carbon stock changes by pool')
+          R('Appendix 1','Estimate leakage-mitigation emissions using applicable activity modules','Step 2c requires leakage-mitigation emissions estimates using sound procedures consistent with applicable activity modules and credible source data.','significance','c) Leakage GHG emissions by source attributable')
+          R('Appendix 1','Use latest VCS Standard GWP values','Where needed, emissions must be converted to CO2e using 100-year GWP values from the latest VCS Standard.','significance','3) Where needed, convert the GHG emissions to CO2e')
+          R('Appendix 1','Calculate relative contribution for each source','Step 4 requires calculating each source’s relative contribution to total project and leakage GHG emissions.','equation','4) Calculate the relative contributions')
+          R('Appendix 1','Rank relative contributions descending','Step 5 requires ranking emissions in descending order of relative contribution.','significance','5) Rank the GHG emissions in descending order')
+          R('Appendix 1','Cumulative relative contribution threshold is 0.95','Step 6 requires cumulative summation from lowest rank until reaching the lowest value not less than 0.95.','significance','6) Start calculating the cumulative sum')
+          R('Appendix 1','Excluded emissions insignificant only below five percent of net anthropogenic ERRs','Emissions excluded from the cumulative sum are insignificant only if their total is below five percent of net anthropogenic GHG ERRs in the project area; otherwise summation must continue.','significance','The GHG and project leakage emissions by source excluded')
+          R('Appendix 1','Significance ERR calculation precedes leakage discount','For significance testing, net GHG ERRs must be calculated before discounting cumulative leakage emissions.','significance','For the purposes of testing GHG emissions significance')
+          R('Appendix 1','Significance calculations require report summary and shared spreadsheet','Significance calculations must be summarized in the project description or monitoring reports and detailed in a spreadsheet shared with the VVB and Verra.','documentation','Significance test calculations must be summarized')
+
+          # Create rich rules using exact governed-text paragraphs
+          counts={}
+          rules=[]
+          for sp in specs:
+              sec=secmap[sp['sec']]; counts[sp['sec']]=counts.get(sp['sec'],0)+1
+              serial=counts[sp['sec']]
+              secid=sec['id'][2:].replace('-','-')
+              rid=f'Verra.AFOLU.VM0048.v1-0.R-{secid}-{serial:04d}'
+              lines=clar_lines if sp['source']=='clarification' else main_lines
+              srcpath='docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/clarification.layout.txt' if sp['source']=='clarification' else 'docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt'
+              sh=CLAR_HASH if sp['source']=='clarification' else MAIN_HASH
+              i,j=paragraph(lines,sp['start'])
+              span='\n'.join(lines[i:j+1]).strip()
+              quote=' '.join(x.strip() for x in lines[i:min(j+1,i+3)] if x.strip())[:280]
+              refs={'methodology':'Verra/VM0048@v1-0','primary_section':sec['id'],'sections':[sec['id']],
+                    'section_number':sec['section_number'],'section_anchor':sec['anchor'],'section_stable_id':sec['stable_id'],
+                    'pages':sec['pages'],'tools':sp['tools'],
+                    'lines':[f'{srcpath}#L{i+1}-L{j+1}'],'locators':[{'type':'governed_text_lines','quote':quote}]}
+              rules.append({'id':rid,'stable_id':rid,'summary':sp['summary'],'logic':sp['logic'],'type':sp['typ'],
+                            'quality_status':'structured_pending_governance_review','source_span_status':'source_audited',
+                            'source_span_text':span,'when':sp['when'],'tags':sp['tags'],'refs':refs,
+                            'provenance':{'source_ref':f"VM0048 v1.0 §{sp['sec']}" + (' / Clarification 1' if sp['source']=='clarification' else ''),'source_hash':sh}})
+          (OUT/'rules.rich.json').write_text(json.dumps(rules,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+
+          # Governed dependency graph: preserve source-stated version semantics; never infer a pin from local files.
+          deps={
+            'component':'Verra/VM0048@v1-0','contract':'governance-v1-dependencies','status':'source_structured_pending_final_provenance_review',
+            'source_pdf_sha256':MAIN_HASH,
+            'policy':{'silent_version_substitution':False,'source_stated_version_policy_is_authoritative':True,'local_artifact_version_does_not_imply_source_pin':True},
+            'source_basis':[
+              {'component':'Verra/JNR','version':'v4-0','relationship':'INFORMATIVE','role':'SOURCE_BASIS','source_section':'1'},
+              {'component':'Verra/VM0006','version':'v2-2','relationship':'INFORMATIVE','role':'SOURCE_BASIS','source_section':'1'},
+              {'component':'Verra/VM0007','version':'v1-6','relationship':'INFORMATIVE','role':'SOURCE_BASIS','source_section':'1'},
+              {'component':'Verra/VM0009','version':'v3-0','relationship':'INFORMATIVE','role':'SOURCE_BASIS','source_section':'1'},
+              {'component':'Verra/VM0015','version':'v1-1','relationship':'INFORMATIVE','role':'SOURCE_BASIS','source_section':'1'},
+              {'component':'Verra/VM0037','version':'v1-0','relationship':'INFORMATIVE','role':'SOURCE_BASIS','source_section':'1'}
+            ],
+            'runtime_edges':[
+              {'component':'Verra/VMD0055','version':None,'version_policy':'MOST_RECENT_AT_APPLICATION','relationship':'INCORPORATED_BY_REFERENCE','applicability':'MANDATORY_UDEF','source_evidence':'Table 1: AUDef = M for UDef'},
+              {'component':'Verra/AFOLU_NON_PERMANENCE_RISK_TOOL','version':None,'version_policy':'MOST_RECENT_AT_APPLICATION','relationship':'INCORPORATED_BY_REFERENCE','applicability':'MANDATORY_UDEF','source_evidence':'Table 1: AFOLU Non-Permanence Risk Tool = M for UDef'},
+              {'component':'Verra/VT0001','version':None,'version_policy':'MOST_RECENT_AT_APPLICATION','relationship':'INCORPORATED_BY_REFERENCE','applicability':'MANDATORY','source_evidence':'Sections 6.1 and 7'},
+              {'component':'UNFCCC/E-NA','version':None,'version_policy':'MOST_RECENT_AT_APPLICATION','relationship':'CONDITIONAL','applicability':'MANDATORY_WHEN_LEAKAGE_PREVENTION_INCREASES_FERTILIZER','source_evidence':'Table 1 note (m)1 and Section 8.3'},
+              {'component':'Verra/VMD0001','version':None,'version_policy':'MOST_RECENT_AT_APPLICATION','relationship':'INCORPORATED_BY_REFERENCE','applicability':'MANDATORY_UDEF','source_evidence':'Table 1: CP-AB = M'},
+              {'component':'Verra/VMD0002','version':None,'version_policy':'MOST_RECENT_AT_APPLICATION','relationship':'CONDITIONAL','applicability':'MANDATORY_IF_BASELINE_POOL_GREATER_AND_SIGNIFICANT','source_evidence':'Table 1 note (m)2'},
+              {'component':'Verra/VMD0003','version':None,'version_policy':'MOST_RECENT_AT_APPLICATION','relationship':'OPTIONAL','applicability':'OPTIONAL_UDEF','source_evidence':'Table 1: CP-L = O'},
+              {'component':'Verra/VMD0004','version':None,'version_policy':'MOST_RECENT_AT_APPLICATION','relationship':'OPTIONAL','applicability':'OPTIONAL_UDEF_WITH_WETLAND_SOC_REQUIREMENT','source_evidence':'Table 1: CP-S = O plus Section 5.2 wetlands requirement'},
+              {'component':'Verra/VMD0005','version':None,'version_policy':'MOST_RECENT_AT_APPLICATION','relationship':'CONDITIONAL','applicability':'MANDATORY_WHEN_COMMERCIAL_TIMBER_FUELWOOD_OR_CHARCOAL','source_evidence':'Table 1 note (m)3'},
+              {'component':'Verra/VMD0011','version':None,'version_policy':'MOST_RECENT_AT_APPLICATION','relationship':'CONDITIONAL','applicability':'MANDATORY_WHEN_PROJECT_DECREASES_TIMBER_FUELWOOD_OR_CHARCOAL_PRODUCTION','source_evidence':'Table 1 note (m)3 and Section 8.3'},
+              {'component':'Verra/VMD0013','version':None,'version_policy':'MOST_RECENT_AT_APPLICATION','relationship':'INCORPORATED_BY_REFERENCE','applicability':'MANDATORY_UDEF','source_evidence':'Table 1: E-BPB = M'},
+              {'component':'Verra/VMD0014','version':None,'version_policy':'MOST_RECENT_AT_APPLICATION','relationship':'OPTIONAL','applicability':'OPTIONAL_UDEF','source_evidence':'Table 1: E-FFC = O'},
+              {'component':'Verra/VMD0016','version':None,'version_policy':'MOST_RECENT_AT_APPLICATION','relationship':'INCORPORATED_BY_REFERENCE','applicability':'MANDATORY_UDEF','source_evidence':'Table 1: X-STR = M'}
+            ],
+            'future_activity_modules':[
+              {'activity':'PDef','component':'APDef','status':'UNDER_DEVELOPMENT_IN_V1_0_SOURCE','table_status':'M_FOR_PDEF'},
+              {'activity':'UDeg','component':'AUDeg','status':'UNDER_DEVELOPMENT_IN_V1_0_SOURCE','table_status':'M_FOR_UDEG'}
+            ],
+            'unresolved_source_semantics':0
+          }
+          (GOV/'dependencies.governance-v1.json').write_text(json.dumps(deps,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+
+          clar={
+            'component':'Verra/VM0048@v1-0','classification':'RULE_UPDATE','status':'EFFECTIVE','issued':'2024-07-31',
+            'source_pdf':'tools/Verra/VM0048/v1-0/clarification-2024-07-31.pdf','source_pdf_sha256':CLAR_HASH,
+            'applies_to':[{'section':'3.1','subject':'Forest definition'}],
+            'precedence':'The clarification is effective from issuance and must be applied when interpreting VM0048 v1.0.',
+            'normalized_effect':{'forest_minimum_canopy_cover_percent':10,'country_reporting_reference':'UNFCCC'},
+            'supersedes_source_text_for_interpretation':True
+          }
+          (GOV/'clarifications.governance-v1.json').write_text(json.dumps(clar,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+
+          equations={
+            'component':'Verra/VM0048@v1-0','classification':'SOURCE_REQUIREMENT','status':'STRUCTURED_PENDING_FINAL_AUDIT','equation_count':2,
+            'equations':[
+              {'equation_id':'1','section_number':'8.4','source_page':13,'normalized':'VCU_t = VCU_AUDef + VCU_APDef + VCU_AUDeg','purpose':'Potential VCUs for monitoring period t','transcription_basis':'visual_source_review'},
+              {'equation_id':'2','section_number':'Appendix 1','source_page':20,'normalized':'RCE_i = E_i / sum(E_i, i=1..I)','purpose':'Relative contribution of each project/leakage GHG-emission source','transcription_basis':'source_variable_definitions_and_equation_layout'}
+            ]
+          }
+          (GOV/'equations.governance-v1.json').write_text(json.dumps(equations,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+
+          params={
+            'component':'Verra/VM0048@v1-0','classification':'SOURCE_REQUIREMENT','status':'STRUCTURED_PENDING_FINAL_AUDIT','parameters':[
+              {'parameter':'VCU_t','section_number':'8.4','unit':'VCU','role':'output'},
+              {'parameter':'VCU_AUDef','section_number':'8.4','unit':'VCU','role':'activity_component'},
+              {'parameter':'VCU_APDef','section_number':'8.4','unit':'VCU','role':'activity_component'},
+              {'parameter':'VCU_AUDeg','section_number':'8.4','unit':'VCU','role':'activity_component'},
+              {'parameter':'RCE_i','section_number':'Appendix 1','unit':'fraction','role':'relative_contribution'},
+              {'parameter':'E_i','section_number':'Appendix 1','unit':'tCO2e','role':'project_and_leakage_emissions_source'},
+              {'parameter':'significance_cumulative_threshold','section_number':'Appendix 1','value':0.95,'unit':'fraction'},
+              {'parameter':'insignificance_threshold','section_number':'Appendix 1','value':0.05,'unit':'fraction_of_net_anthropogenic_GHG_ERRs'},
+              {'parameter':'significant_uncertainty_threshold','section_number':'9.3.1','value':0.10,'unit':'fraction_of_estimate'},
+              {'parameter':'reporting_confidence_interval','section_number':'9.3.2','value':0.90,'unit':'two_sided_confidence_interval'}
+            ]
+          }
+          params['parameter_count']=len(params['parameters'])
+          (GOV/'parameters.governance-v1.json').write_text(json.dumps(params,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+
+          inventory={'component':'Verra/VM0048@v1-0','classification':'ARTICLE6_NORMALIZATION','source':'source/source.layout.txt',
+                     'section_count':len(sections),'rule_count':len(rules),'equation_count':2,'parameter_count':params['parameter_count'],
+                     'governed_sources':2,'clarification_effective':True,'dependency_runtime_edge_count':len(deps['runtime_edges']),
+                     'source_requirements_note':'Runtime rules are source-spanned and structurally normalized; final semantic/provenance promotion review remains for the next PR.'}
+          (STAGE/'content-inventory.json').write_text(json.dumps(inventory,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+
+          idx={'component':'Verra/VM0048@v1-0','classification':'ARTICLE6_NORMALIZATION','rule_count':len(rules),
+               'rules':[{'id':r['id'],'section_number':r['refs']['section_number'],'summary':r['summary'],'source_hash':r['provenance']['source_hash'],'lines':r['refs']['lines']} for r in rules]}
+          (GOV/'rules.governance-v1.index.json').write_text(json.dumps(idx,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+
+          # Initial META; lean and hashes are filled after deterministic derivation.
+          meta={
+            'active_date':'2023-11-27','effective_from':'2023-11-27','domain':'AFOLU','method':'REDD Methodology Framework','standard':'VCS',
+            'stage':'Active','status':'active','title':'VM0048 Reducing Emissions from Deforestation and Forest Degradation, v1.0','version':'v1-0',
+            'component_type':'FRAMEWORK_METHODOLOGY','native_type':'VCS Methodology',
+            'artifact_status':{'rules':'structured_pending_governance_review','sections':'source_audited','source_pdf':'verified'},
+            'audit_hashes':{'source_pdf_sha256':MAIN_HASH,'clarification_2024_07_31_sha256':CLAR_HASH},
+            'provenance':{'author':'Article6 Governance v1','date':'2026-09-11','source_pdfs':[
+              {'doc':'Verra/VM0048@v1-0','kind':'pdf','path':'tools/Verra/VM0048/v1-0/source.pdf','sha256':MAIN_HASH,'size':os.path.getsize('tools/Verra/VM0048/v1-0/source.pdf')},
+              {'doc':'Verra/VM0048@v1-0#clarification-2024-07-31','kind':'pdf','path':'tools/Verra/VM0048/v1-0/clarification-2024-07-31.pdf','sha256':CLAR_HASH,'size':os.path.getsize('tools/Verra/VM0048/v1-0/clarification-2024-07-31.pdf')}
+            ]},
+            'references':{'tools':[
+              {'doc':'Verra/VM0048@v1-0','kind':'pdf','path':'tools/Verra/VM0048/v1-0/source.pdf','sha256':MAIN_HASH,'size':os.path.getsize('tools/Verra/VM0048/v1-0/source.pdf'),'url':'https://verra.org/methodologies/vm0048-reducing-emissions-from-deforestation-and-forest-degradation-v1-0/'},
+              {'doc':'Verra/VM0048@v1-0#clarification-2024-07-31','kind':'pdf','path':'tools/Verra/VM0048/v1-0/clarification-2024-07-31.pdf','sha256':CLAR_HASH,'size':os.path.getsize('tools/Verra/VM0048/v1-0/clarification-2024-07-31.pdf'),'url':'https://verra.org/wp-content/uploads/2024/07/VM0048-v1.0-Clarification-issued-July-31-2024.pdf'}
+            ]},
+            'relationships':{'version':{'family':'Verra.AFOLU.VM0048','lineage':['v1-0'],'previous_version':None,'next_version':None}},
+            'governance_v1':{'state':'RULES_COMPLETE','verified':False,'production_corpus':False,
+                             'blockers':['final_provenance_audit','production_retrieval_test'],
+                             'migration_note':'VM0048 v1.0 source capture, full hierarchy, source-spanned runtime rules, dependencies, equations, parameters and effective 31 July 2024 clarification are structured. Final provenance audit and production retrieval/promotion are intentionally deferred to the verification PR.'},
+            'external_dependencies':{'status':'governed_dependency_graph','path':'governance/Verra/AFOLU/VM0048/v1-0/dependencies.governance-v1.json','note':'Source-stated dynamic latest-version semantics are preserved; local support artifacts never silently create source version pins.'},
+            'governance_support':{'root':'governance/Verra/AFOLU/VM0048/v1-0','purpose':'Non-runtime governance artifacts for dependency semantics, clarification precedence, equations, parameters and rule/source indexing.'}
+          }
+          (OUT/'META.json').write_text(json.dumps(meta,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+          print(f'Built {len(sections)} sections and {len(rules)} source-spanned rules')
+          PY
+          node scripts/derive-lean-from-rich.js methodologies/Verra/AFOLU/VM0048/v1-0
+          python - <<'PY'
+          import json, hashlib
+          from pathlib import Path
+          OUT=Path('methodologies/Verra/AFOLU/VM0048/v1-0'); GOV=Path('governance/Verra/AFOLU/VM0048/v1-0')
+          def h(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+          meta=json.loads((OUT/'META.json').read_text())
+          paths=[OUT/'sections.json',OUT/'sections.rich.json',OUT/'rules.json',OUT/'rules.rich.json',GOV/'dependencies.governance-v1.json',GOV/'clarifications.governance-v1.json',GOV/'equations.governance-v1.json',GOV/'parameters.governance-v1.json',GOV/'rules.governance-v1.index.json']
+          keymap={'sections.json':'sections_json_sha256','sections.rich.json':'sections.rich_sha256','rules.json':'rules_json_sha256','rules.rich.json':'rules.rich_sha256'}
+          for p in paths:
+              if p.name in keymap: meta['audit_hashes'][keymap[p.name]]=h(p)
+          meta['files']=[]
+          for p in paths:
+              if str(p).startswith(str(OUT)+'/'): rel=p.name
+              else: rel=str(p)
+              meta['files'].append({'path':rel,'sha256':h(p)})
+          (OUT/'META.json').write_text(json.dumps(meta,indent=2,ensure_ascii=False)+'\n')
+          print(json.dumps(meta['audit_hashes'],indent=2))
+          PY
+      - name: Validate generated VM0048 package
+        run: |
+          set -euo pipefail
+          npm ci || npm i
+          npm run validate:rich
+          npm run validate:lean
+          node scripts/derive-lean-from-rich.js methodologies/Verra/AFOLU/VM0048/v1-0
+          git diff --exit-code -- methodologies/Verra/AFOLU/VM0048/v1-0/sections.json methodologies/Verra/AFOLU/VM0048/v1-0/rules.json
+      - name: Commit structured ingestion
+        run: |
+          set -euo pipefail
+          git config user.name 'article6-governance-bot'
+          git config user.email 'fredilly@article6.org'
+          git add methodologies/Verra/AFOLU/VM0048/v1-0 governance/Verra/AFOLU/VM0048/v1-0 docs/roadmaps/governance-v1/staging/VM0048/v1-0/content-inventory.json
+          git rm .github/workflows/vm0048-build-bootstrap.yml
+          git commit -m 'Governance: ingest VM0048 v1.0 governed corpus'
+          git push origin HEAD:governance/vm0048-v1-0-ingestion
