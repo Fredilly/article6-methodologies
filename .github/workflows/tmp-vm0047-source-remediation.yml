@@ -70,7 +70,7 @@ jobs:
               if len(span_text)<20: raise SystemExit(f"section {s['id']} resolved span is not substantive")
               quote=norm(resolved[s['id']]['heading_text'])
               s.setdefault('provenance',{})['lines']=[f'{SOURCE_REL}#L{start}-L{end}']
-              s['locators']=[{'kind':'governed_text_lines','quote':quote}]
+              s['locators']=[{'type':'governed_text_lines','quote':quote}]
               resolved[s['id']]['end']=end
           rules=json.loads((COMP/'rules.rich.json').read_text())
           for r in rules:
@@ -89,10 +89,7 @@ jobs:
                       score=.55*coverage+.20*precision+.25*seq-.002*(width-1)
                       candidates.append({'score':score,'terms':overlap_terms,'start':start,'end':end,'text':text})
               if not candidates: raise SystemExit(f"rule {r.get('id')} has no governed-text evidence candidate")
-              # Greedily select up to four non-overlapping exact spans. This supports parameter-table
-              # requirements that are genuinely distributed across method, QA/QC, threshold and frequency rows.
-              selected=[]; covered=set()
-              remaining=list(candidates)
+              selected=[]; covered=set(); remaining=list(candidates)
               for _ in range(4):
                   viable=[]
                   for c in remaining:
@@ -105,11 +102,10 @@ jobs:
                   c=viable[0][2]; selected.append(c); covered |= c['terms']
                   if len(covered)>=max(3,min(8,len(target)//2)): break
               selected.sort(key=lambda c:c['start'])
-              if len(covered)<3:
-                  raise SystemExit(f"rule {r.get('id')} evidence too weak after multi-span resolution: covered={len(covered)}")
+              if len(covered)<3: raise SystemExit(f"rule {r.get('id')} evidence too weak after multi-span resolution: covered={len(covered)}")
               line_refs=[f"{SOURCE_REL}#L{c['start']}-L{c['end']}" for c in selected]
               source_text=norm(' '.join(c['text'] for c in selected))
-              locators=[{'kind':'governed_text_lines','quote':' '.join(c['text'].split()[:18])} for c in selected]
+              locators=[{'type':'governed_text_lines','quote':' '.join(c['text'].split()[:18])} for c in selected]
               actual_pages=sorted({meta[i-1]['page'] for c in selected for i in range(c['start'],c['end']+1)})
               r['source_span_text']=source_text
               r.setdefault('refs',{})['lines']=line_refs
