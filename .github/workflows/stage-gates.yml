@@ -121,6 +121,8 @@ jobs:
         run: scripts/verify-generation.sh
       - name: Offline schema validation
         run: node scripts/validate-offline.js
+      - name: Production corpus contract
+        run: node scripts/check-production-corpus-contract.js
       - name: Previous versions lock drift (Agriculture)
         run: npm run previous:drift:agriculture
       - name: Previous versions lock drift (Forestry)
