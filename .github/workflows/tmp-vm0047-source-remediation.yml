@@ -24,9 +24,9 @@ jobs:
           COMP = ROOT/'methodologies/Verra/AFOLU/VM0047/v1-1'
           SOURCE_REL = 'docs/roadmaps/governance-v1/staging/VM0047/v1-1/source/source.layout.txt'
           SOURCE = ROOT/SOURCE_REL
-          raw = SOURCE.read_text(errors='replace').splitlines()
+          # Preserve form-feed characters so PDF page boundaries remain observable.
+          raw = SOURCE.read_text(errors='replace').split('\n')
 
-          # Physical PDF page number for every extracted line. Form feed belongs to the next page.
           page = 1
           meta = []
           for i, line in enumerate(raw, 1):
@@ -34,36 +34,25 @@ jobs:
                   page += line.count('\f')
               meta.append({'line': i, 'page': page, 'text': line.replace('\f','')})
 
-          def norm(s):
-              return re.sub(r'\s+', ' ', str(s or '')).strip()
-          def canon(s):
-              return re.sub(r'[^a-z0-9]+', ' ', norm(s).lower()).strip()
-          def toks(s):
-              return set(re.findall(r'[a-z0-9]+', canon(s)))
+          def norm(s): return re.sub(r'\s+', ' ', str(s or '')).strip()
+          def canon(s): return re.sub(r'[^a-z0-9]+', ' ', norm(s).lower()).strip()
+          def toks(s): return set(re.findall(r'[a-z0-9]+', canon(s)))
           STOP = {'the','and','or','of','to','a','an','in','for','with','by','on','at','as','is','are','be','must','shall','may','this','that','from','using','used','project','projects','approach','based'}
-          def meaningful(s):
-              return {t for t in toks(s) if t not in STOP and len(t)>2}
+          def meaningful(s): return {t for t in toks(s) if t not in STOP and len(t)>2}
 
           sections = json.loads((COMP/'sections.rich.json').read_text())
-
-          # Score heading windows, not body prose. Page ranges are a hard constraint.
           resolved = {}
           failures = []
           for s in sections:
-              title = norm(s.get('title'))
-              num = norm(s.get('section_number'))
-              pages = set(s.get('pages') or [])
+              title = norm(s.get('title')); num = norm(s.get('section_number')); pages = set(s.get('pages') or [])
               best = None
-              second = None
               for idx, row in enumerate(meta):
                   if pages and row['page'] not in pages: continue
                   if not norm(row['text']): continue
                   for width in (1,2,3):
                       chunk = meta[idx:idx+width]
-                      if len(chunk) != width: continue
-                      if any(pages and x['page'] not in pages for x in chunk): continue
-                      text = norm(' '.join(x['text'] for x in chunk))
-                      ctext, ctitle = canon(text), canon(title)
+                      if len(chunk) != width or any(pages and x['page'] not in pages for x in chunk): continue
+                      text = norm(' '.join(x['text'] for x in chunk)); ctext, ctitle = canon(text), canon(title)
                       if not ctext: continue
                       seq = SequenceMatcher(None, ctitle, ctext).ratio()
                       title_tokens = meaningful(title)
@@ -75,49 +64,36 @@ jobs:
                       appendix_bonus = .15 if (num.upper().startswith('A') and 'appendix' in ctext) else 0
                       score = .58*overlap + .42*seq + number_bonus + appendix_bonus
                       cand=(score, row['line'], chunk[-1]['line'], text)
-                      if best is None or cand[0] > best[0]:
-                          second=best; best=cand
-                      elif second is None or cand[0] > second[0]: second=cand
+                      if best is None or cand[0] > best[0]: best=cand
               if best is None or best[0] < .70:
                   failures.append(f"section {s.get('id')} unresolved heading: best={best}")
                   continue
               resolved[s['id']]={'start':best[1], 'heading_end':best[2], 'heading_text':best[3], 'score':best[0]}
 
-          if failures:
-              raise SystemExit('\n'.join(failures))
+          if failures: raise SystemExit('\n'.join(failures))
 
-          # Determine exact section span: through the next heading at the same or shallower level.
-          by_start=sorted([(v['start'], s) for s in sections for v in [resolved[s['id']]]], key=lambda x:x[0])
+          by_start=sorted([(resolved[s['id']]['start'], s) for s in sections], key=lambda x:x[0])
           for pos,(start,s) in enumerate(by_start):
-              level=int(s.get('section_level') or s.get('level') or 1)
-              end=len(raw)
+              level=int(s.get('section_level') or s.get('level') or 1); end=len(raw)
               for nxt_start,nxt in by_start[pos+1:]:
-                  nxt_level=int(nxt.get('section_level') or nxt.get('level') or 1)
-                  if nxt_level <= level:
+                  if int(nxt.get('section_level') or nxt.get('level') or 1) <= level:
                       end=nxt_start-1; break
-              # Respect declared last page to avoid accidental spill into unrelated material.
               pmax=max(s.get('pages') or [10**9])
               while end >= start and meta[end-1]['page'] > pmax: end -= 1
               if end < start: end=start
               span_text=norm(' '.join(x['text'] for x in meta[start-1:end]))
-              if len(span_text) < 20:
-                  raise SystemExit(f"section {s['id']} resolved span is not substantive")
+              if len(span_text) < 20: raise SystemExit(f"section {s['id']} resolved span is not substantive")
               quote=norm(resolved[s['id']]['heading_text'])
-              s['provenance']['lines']=[f'{SOURCE_REL}#L{start}-L{end}']
+              s.setdefault('provenance',{})['lines']=[f'{SOURCE_REL}#L{start}-L{end}']
               s['locators']=[{'kind':'governed_text_lines','quote':quote}]
               resolved[s['id']]['end']=end
 
-          # Rule evidence must come from the governed text inside the referenced section, never from normalized logic.
           rules=json.loads((COMP/'rules.rich.json').read_text())
           for r in rules:
               sid=(r.get('refs') or {}).get('primary_section')
-              if sid not in resolved:
-                  raise SystemExit(f"rule {r.get('id')} references unresolved section {sid}")
-              sec=resolved[sid]
-              pages=set((r.get('refs') or {}).get('pages') or [])
-              logic=norm(r.get('logic'))
-              target=meaningful(logic) | meaningful(r.get('summary'))
-              candidates=[]
+              if sid not in resolved: raise SystemExit(f"rule {r.get('id')} references unresolved section {sid}")
+              sec=resolved[sid]; pages=set((r.get('refs') or {}).get('pages') or []); logic=norm(r.get('logic'))
+              target=meaningful(logic) | meaningful(r.get('summary')); candidates=[]
               for start in range(sec['start'], sec['end']+1):
                   if pages and meta[start-1]['page'] not in pages: continue
                   for width in range(1,13):
@@ -127,38 +103,27 @@ jobs:
                       if pages and any(x['page'] not in pages for x in chunk): continue
                       text=norm(' '.join(x['text'] for x in chunk))
                       if len(text)<25: continue
-                      mt=meaningful(text)
-                      overlap=len(target & mt)
+                      mt=meaningful(text); overlap=len(target & mt)
                       if overlap<2: continue
-                      coverage=overlap/max(1,len(target))
-                      precision=overlap/max(1,len(mt))
-                      seq=SequenceMatcher(None, canon(logic), canon(text)).ratio()
-                      # Prefer compact source windows that explain the normalized rule.
+                      coverage=overlap/max(1,len(target)); precision=overlap/max(1,len(mt)); seq=SequenceMatcher(None, canon(logic), canon(text)).ratio()
                       score=.55*coverage + .20*precision + .25*seq - .002*(width-1)
                       candidates.append((score,overlap,start,end,text))
               candidates.sort(reverse=True,key=lambda x:(x[0],x[1],-x[3]+x[2]))
-              if not candidates:
-                  raise SystemExit(f"rule {r.get('id')} has no governed-text evidence candidate")
+              if not candidates: raise SystemExit(f"rule {r.get('id')} has no governed-text evidence candidate")
               best=candidates[0]
-              # Guard against weak automated provenance. Known difficult rows must still share >=3 meaningful concepts.
               if best[1] < 3 or best[0] < .12:
                   raise SystemExit(f"rule {r.get('id')} evidence too weak: score={best[0]:.4f}, overlap={best[1]}, lines={best[2]}-{best[3]}")
-              source_text=best[4]
-              # Distinctive short quote; source_span_text remains the fuller exact evidence window.
-              quote=' '.join(source_text.split()[:18])
+              source_text=best[4]; quote=' '.join(source_text.split()[:18])
               r['source_span_text']=source_text
-              r['refs']['lines']=[f'{SOURCE_REL}#L{best[2]}-L{best[3]}']
+              r.setdefault('refs',{})['lines']=[f'{SOURCE_REL}#L{best[2]}-L{best[3]}']
               r['refs']['locators']=[{'kind':'governed_text_lines','quote':quote}]
 
           (COMP/'sections.rich.json').write_text(json.dumps(sections,indent=2,ensure_ascii=False)+'\n')
           (COMP/'rules.rich.json').write_text(json.dumps(rules,indent=2,ensure_ascii=False)+'\n')
-
-          # Keep audit hashes internally consistent. Lean artifacts are deliberately unchanged in this remediation.
           meta_json=json.loads((COMP/'META.json').read_text())
           def sha(path): return hashlib.sha256(path.read_bytes()).hexdigest()
           sr=sha(COMP/'sections.rich.json'); rr=sha(COMP/'rules.rich.json')
-          meta_json['audit_hashes']['sections.rich_sha256']=sr
-          meta_json['audit_hashes']['rules.rich_sha256']=rr
+          meta_json['audit_hashes']['sections.rich_sha256']=sr; meta_json['audit_hashes']['rules.rich_sha256']=rr
           for item in meta_json.get('files',[]):
               if item.get('path')=='sections.rich.json': item['sha256']=sr
               if item.get('path')=='rules.rich.json': item['sha256']=rr
