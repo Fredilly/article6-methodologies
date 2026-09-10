@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/**'
       - 'methodologies/**'
+      - 'governance/**'
       - 'ingest.agriculture.yml'
       - 'ingest.forestry.yml'
       - 'registry/UNFCCC/Agriculture/previous-versions.json'
@@ -24,6 +25,7 @@ on:
     paths:
       - '.github/workflows/**'
       - 'methodologies/**'
+      - 'governance/**'
       - 'ingest.agriculture.yml'
       - 'ingest.forestry.yml'
       - 'registry/UNFCCC/Agriculture/previous-versions.json'
