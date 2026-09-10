@@ -1,0 +1,134 @@
+name: Temporary clean production corpus
+on:
+  push:
+    branches: [gov-v1-19-clean-production-corpus-contract]
+permissions:
+  contents: write
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 1
+      - name: Move governance support artifacts and enforce corpus contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          support='governance/Verra/AFOLU/VM0047/v1-1'
+          method='methodologies/Verra/AFOLU/VM0047/v1-1'
+          mkdir -p "$support"
+          for f in dependencies.governance-v1.json equations.governance-v1.json parameters.governance-v1.json rules.governance-v1.index.json version-diff-from-v1-0.json; do
+            git mv "$method/$f" "$support/$f"
+          done
+
+          cat > scripts/check-production-corpus-contract.js <<'EOF'
+          #!/usr/bin/env node
+          'use strict';
+          const fs = require('fs');
+          const path = require('path');
+
+          const CORE = new Set(['META.json','sections.json','sections.rich.json','rules.json','rules.rich.json']);
+          let failed = false;
+
+          function *walk(d) {
+            if (!fs.existsSync(d)) return;
+            for (const e of fs.readdirSync(d, {withFileTypes:true})) {
+              const p = path.join(d, e.name);
+              if (e.isDirectory()) {
+                if (/^v\d/.test(e.name)) yield p;
+                yield *walk(p);
+              }
+            }
+          }
+
+          for (const dir of walk('methodologies')) {
+            const metaPath = path.join(dir, 'META.json');
+            if (!fs.existsSync(metaPath)) continue;
+            const meta = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
+            if (meta?.governance_v1?.production_corpus !== true) continue;
+            const entries = fs.readdirSync(dir, {withFileTypes:true});
+            const extras = entries.filter(e => e.isFile() && !CORE.has(e.name)).map(e => e.name).sort();
+            const missing = [...CORE].filter(name => !fs.existsSync(path.join(dir, name)));
+            if (extras.length) {
+              console.error(`✖ production corpus ${dir} contains non-core files: ${extras.join(', ')}`);
+              failed = true;
+            }
+            if (missing.length) {
+              console.error(`✖ production corpus ${dir} missing core files: ${missing.join(', ')}`);
+              failed = true;
+            }
+          }
+
+          if (failed) process.exit(1);
+          console.log('✓ production corpus directories contain only the five core artifacts');
+          EOF
+          chmod +x scripts/check-production-corpus-contract.js
+
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          method = Path('methodologies/Verra/AFOLU/VM0047/v1-1')
+          support = Path('governance/Verra/AFOLU/VM0047/v1-1')
+          meta_path = method/'META.json'
+          meta = json.loads(meta_path.read_text())
+          support_names = {
+              'dependencies.governance-v1.json',
+              'equations.governance-v1.json',
+              'parameters.governance-v1.json',
+              'rules.governance-v1.index.json',
+              'version-diff-from-v1-0.json',
+          }
+          for item in meta.get('files', []):
+              p = item.get('path')
+              if p in support_names:
+                  item['path'] = f'{support.as_posix()}/{p}'
+          meta.setdefault('governance_support', {})
+          meta['governance_support']['root'] = support.as_posix()
+          meta['governance_support']['purpose'] = 'Non-runtime governance artifacts: dependencies, equations, parameters, indexes, and version comparison evidence.'
+          meta['external_dependencies']['path'] = f'{support.as_posix()}/dependencies.governance-v1.json'
+          meta_path.write_text(json.dumps(meta, indent=2, ensure_ascii=False)+'\n')
+
+          p = Path('lib/governance-retrieval.js')
+          text = p.read_text()
+          marker = "  function verification(meta) {\n"
+          helper = "  function governanceSupportDir(component) {\n    const configured = component.meta && component.meta.governance_support && component.meta.governance_support.root;\n    if (configured) return path.join(ROOT, configured);\n    const rel = component.entry.path.replace(/^methodologies[\\\\/]/, '');\n    return path.join(ROOT, 'governance', rel);\n  }\n\n"
+          if helper not in text:
+              text = text.replace(marker, helper + marker)
+          text = text.replace("const filePath = path.join(component.componentDir, 'dependencies.governance-v1.json');", "const filePath = path.join(governanceSupportDir(component), 'dependencies.governance-v1.json');")
+          text = text.replace("const filePath = path.join(component.componentDir, fileName);", "const filePath = path.join(governanceSupportDir(component), fileName);")
+          p.write_text(text)
+
+          wf = Path('.github/workflows/stage-gates.yml')
+          text = wf.read_text()
+          text = text.replace("      - 'methodologies/**'\n", "      - 'methodologies/**'\n      - 'governance/**'\n")
+          needle = "      - name: Trio + registry integrity\n        run: node scripts/check-trio-and-registry.js\n"
+          repl = needle + "      - name: Production corpus contract\n        run: node scripts/check-production-corpus-contract.js\n"
+          if 'Production corpus contract' not in text:
+              text = text.replace(needle, repl)
+          wf.write_text(text)
+          PY
+
+      - name: Validate contract and retrieval compatibility
+        shell: bash
+        run: |
+          set -euo pipefail
+          node scripts/check-production-corpus-contract.js
+          node scripts/check-trio-and-registry.js
+          node tests/governance-retrieval.test.js
+          npm ci --ignore-scripts
+          npm run validate:rich
+          npm run validate:lean
+          node scripts/build-manifest.mjs
+          node scripts/check-production-corpus-contract.js
+
+      - name: Commit migration
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add governance methodologies/Verra/AFOLU/VM0047/v1-1/META.json lib/governance-retrieval.js scripts/check-production-corpus-contract.js .github/workflows/stage-gates.yml manifest/index.json
+          git commit -m 'refactor: separate governance support from production corpus'
+          git push
