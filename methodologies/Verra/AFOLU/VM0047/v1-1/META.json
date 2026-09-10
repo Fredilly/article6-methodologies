@@ -98,6 +98,7 @@
     "state": "RULES_COMPLETE",
     "verified": false,
     "production_corpus": false,
+    "source_resolution_contract": "governed-text-v1",
     "blockers": [
       "rule_evidence_atomicity_repair"
     ],
