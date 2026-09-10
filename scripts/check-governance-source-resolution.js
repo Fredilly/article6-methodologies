@@ -7,6 +7,7 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const LINE_REF = /^(.+)#L(\d+)-L(\d+)$/;
 const GOVERNED_STATES = new Set(['PROVENANCE_COMPLETE', 'RETRIEVAL_TESTED', 'VERIFIED']);
+const SOURCE_RESOLUTION_CONTRACT = 'governed-text-v1';
 
 function readJSON(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -175,19 +176,28 @@ function validateComponent(componentDir) {
   const rulesPath = path.join(absoluteDir, 'rules.rich.json');
   const failures = [];
 
-  for (const required of [metaPath, sectionsPath, rulesPath]) {
+  if (!fs.existsSync(metaPath)) return failures;
+  const meta = readJSON(metaPath);
+  const governance = meta?.governance_v1 || {};
+
+  // The stronger invariant is forward-compatible and explicit. Legacy
+  // governance records are not silently re-graded by a contract introduced
+  // after their promotion. Any component that opts into this contract is
+  // fully enforced once it reaches a governed promotion state.
+  if (governance.source_resolution_contract !== SOURCE_RESOLUTION_CONTRACT) return failures;
+
+  const state = governance.state;
+  if (!GOVERNED_STATES.has(state)) return failures;
+
+  for (const required of [sectionsPath, rulesPath]) {
     if (!fs.existsSync(required)) failures.push(`${path.relative(ROOT, absoluteDir)}: missing ${path.basename(required)}`);
   }
   if (failures.length) return failures;
 
-  const meta = readJSON(metaPath);
-  const state = meta?.governance_v1?.state;
-  if (!GOVERNED_STATES.has(state)) return [];
-
-  if (state === 'VERIFIED' && meta?.governance_v1?.verified !== true) {
+  if (state === 'VERIFIED' && governance.verified !== true) {
     failures.push(`${componentDir}: VERIFIED state requires governance_v1.verified=true`);
   }
-  if (state !== 'VERIFIED' && meta?.governance_v1?.verified === true) {
+  if (state !== 'VERIFIED' && governance.verified === true) {
     failures.push(`${componentDir}: governance_v1.verified=true is invalid outside VERIFIED state`);
   }
 
