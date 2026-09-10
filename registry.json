@@ -1070,6 +1070,20 @@
     }
   },
   {
+    "kind": "active",
+    "standard": "UNFCCC",
+    "program": "Forestry",
+    "code": "AR-AM0014",
+    "version": "01.0.0",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0",
+    "stage": "staging",
+    "latest": false,
+    "source_pdf": {
+      "path": "tools/UNFCCC/AR-AM0014/v01-0-0/AR-AM0014_ver01.0.0.pdf",
+      "sha256": "8505376f7987ae68159db4c570a3daab136432a05112e406c46aa83653d7040a"
+    }
+  },
+  {
     "kind": "previous",
     "standard": "UNFCCC",
     "program": "Forestry",
@@ -1099,13 +1113,13 @@
     "standard": "UNFCCC",
     "program": "Forestry",
     "code": "AR-AM0014",
-    "version": "01.0.0",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v01-0-0",
+    "version": "02.0.0",
+    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0",
     "stage": "staging",
     "latest": false,
     "source_pdf": {
-      "path": "tools/UNFCCC/AR-AM0014/v01-0-0/AR-AM0014_ver01.0.0.pdf",
-      "sha256": "8505376f7987ae68159db4c570a3daab136432a05112e406c46aa83653d7040a"
+      "path": "tools/UNFCCC/AR-AM0014/v02-0-0/EB70_repan34_AM0014_ver02.0.0.pdf",
+      "sha256": "d4656f9d29fe9afbe35e2fda7dfadf0e5b80220b56319980c18147c8b8dcb955"
     }
   },
   {
@@ -1132,20 +1146,6 @@
         "url": null
       }
     ]
-  },
-  {
-    "kind": "active",
-    "standard": "UNFCCC",
-    "program": "Forestry",
-    "code": "AR-AM0014",
-    "version": "02.0.0",
-    "path": "methodologies/UNFCCC/Forestry/AR-AM0014/v02-0-0",
-    "stage": "staging",
-    "latest": false,
-    "source_pdf": {
-      "path": "tools/UNFCCC/AR-AM0014/v02-0-0/EB70_repan34_AM0014_ver02.0.0.pdf",
-      "sha256": "d4656f9d29fe9afbe35e2fda7dfadf0e5b80220b56319980c18147c8b8dcb955"
-    }
   },
   {
     "kind": "active",
