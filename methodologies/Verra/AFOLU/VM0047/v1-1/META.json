@@ -17,8 +17,8 @@
     "source_pdf_sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d",
     "sections_json_sha256": "778882f2a5da92616817d2b3bb76a38d51abd11087f3fa4556ac1d0921ed24a0",
     "rules_json_sha256": "bfdbb9f5e282260e2baeaacc82dce3f2bedc494a20f0ab91c11a59356c6d1c32",
-    "sections.rich_sha256": "1243e7393963995e821dda9826d37b71532fffc0d2e07b92cee1b0227e4d81e5",
-    "rules.rich_sha256": "1f559056b587dc35b84e03b20aadcc3d7f21a9695b854cb0a063a2421647629d"
+    "sections.rich_sha256": "bc74bca55ef236c8c94955ddcfba81d5ce754b6828617bdc0ed1690a80225ecd",
+    "rules.rich_sha256": "97ea35d710723fb4ebf6ec843db83b938fcb775bd4cec0aaf1b2b676f3143c2a"
   },
   "files": [
     {
@@ -27,7 +27,7 @@
     },
     {
       "path": "sections.rich.json",
-      "sha256": "1243e7393963995e821dda9826d37b71532fffc0d2e07b92cee1b0227e4d81e5"
+      "sha256": "bc74bca55ef236c8c94955ddcfba81d5ce754b6828617bdc0ed1690a80225ecd"
     },
     {
       "path": "rules.json",
@@ -35,7 +35,7 @@
     },
     {
       "path": "rules.rich.json",
-      "sha256": "1f559056b587dc35b84e03b20aadcc3d7f21a9695b854cb0a063a2421647629d"
+      "sha256": "97ea35d710723fb4ebf6ec843db83b938fcb775bd4cec0aaf1b2b676f3143c2a"
     },
     {
       "path": "equations.governance-v1.json",
@@ -99,7 +99,7 @@
     "verified": true,
     "production_corpus": true,
     "blockers": [],
-    "migration_note": "VM0047 v1.1 passed all governance-v1 gates, including canonical production structured retrieval execution, and is VERIFIED."
+    "migration_note": "VM0047 v1.1 is VERIFIED with governed-text-resolvable section content and exact rule evidence spans under governance-v1 source-resolution invariants."
   },
   "external_dependencies": {
     "status": "governed_dependency_graph",
