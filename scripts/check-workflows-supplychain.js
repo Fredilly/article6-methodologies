@@ -29,10 +29,22 @@ function normalizeShellLine(line) {
 function isAllowedAptGetLine(line) {
   const normalized = normalizeShellLine(line);
   if (!/\bapt-get\b/i.test(normalized)) return true;
+
+  // Existing minimal poppler allowance.
   if (/^(sudo )?apt-get update$/.test(normalized)) return true;
   if (/^(sudo )?apt-get install -y poppler-utils$/.test(normalized)) return true;
   if (/^(sudo )?apt-get install -y --no-install-recommends poppler-utils$/.test(normalized)) return true;
   if (/^(sudo )?apt-get install -y poppler-utils --no-install-recommends$/.test(normalized)) return true;
+
+  // Bounded/retriable equivalent used by stage-gates. Keep this deliberately exact:
+  // only apt metadata refresh plus installation of poppler-utils are permitted.
+  const bounded = '(?:-o Acquire::Retries=3 -o Acquire::http::Timeout=20 )';
+  const sudo = '(?:sudo )?';
+  const updateRx = new RegExp(`^${sudo}apt-get ${bounded}update(?: && \\\\)?$`);
+  const installRx = new RegExp(`^${sudo}apt-get ${bounded}install -y poppler-utils(?:; then)?$`);
+  if (updateRx.test(normalized)) return true;
+  if (installRx.test(normalized)) return true;
+
   return false;
 }
 
