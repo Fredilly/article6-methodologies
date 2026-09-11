@@ -1,0 +1,24 @@
+{
+  "component": "Verra/VM0048@v1-0",
+  "classification": "SOURCE_REQUIREMENT",
+  "status": "STRUCTURED_PENDING_FINAL_AUDIT",
+  "equation_count": 2,
+  "equations": [
+    {
+      "equation_id": "1",
+      "section_number": "8.4",
+      "source_page": 13,
+      "normalized": "VCU_t = VCU_AUDef + VCU_APDef + VCU_AUDeg",
+      "purpose": "Potential VCUs for monitoring period t",
+      "transcription_basis": "visual_source_review"
+    },
+    {
+      "equation_id": "2",
+      "section_number": "Appendix 1",
+      "source_page": 20,
+      "normalized": "RCE_i = E_i / sum(E_i, i=1..I)",
+      "purpose": "Relative contribution of each project/leakage GHG-emission source",
+      "transcription_basis": "source_variable_definitions_and_equation_layout"
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "sections": [
+    {
+      "id": "S-1",
+      "title": "Sources",
+      "anchor": "sources",
+      "section_number": "1",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-1",
+      "pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "S-2",
+      "title": "Summary Description of the Methodology",
+      "anchor": "summary-description-of-the-methodology",
+      "section_number": "2",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-2",
+      "pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "S-3",
+      "title": "Definitions",
+      "anchor": "definitions",
+      "section_number": "3",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-3",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "id": "S-3-1",
+      "title": "Definitions",
+      "anchor": "definitions",
+      "section_number": "3.1",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-3-1",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "id": "S-3-2",
+      "title": "Acronyms",
+      "anchor": "acronyms",
+      "section_number": "3.2",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-3-2",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "id": "S-4",
+      "title": "Applicability Conditions",
+      "anchor": "applicability-conditions",
+      "section_number": "4",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-4",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "id": "S-5",
+      "title": "Project Boundary",
+      "anchor": "project-boundary",
+      "section_number": "5",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-5",
+      "pages": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "S-5-1",
+      "title": "Geographic Boundaries",
+      "anchor": "geographic-boundaries",
+      "section_number": "5.1",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-1",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "id": "S-5-2",
+      "title": "Carbon Pools",
+      "anchor": "carbon-pools",
+      "section_number": "5.2",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-2",
+      "pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "S-5-3",
+      "title": "Sources of GHG Emissions",
+      "anchor": "sources-of-ghg-emissions",
+      "section_number": "5.3",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-5-3",
+      "pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "S-6",
+      "title": "Baseline Scenario",
+      "anchor": "baseline-scenario",
+      "section_number": "6",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-6",
+      "pages": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "S-6-1",
+      "title": "Determination of the Most Plausible Baseline Scenario",
+      "anchor": "determination-of-the-most-plausible-baseline-scenario",
+      "section_number": "6.1",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-1",
+      "pages": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "S-6-2",
+      "title": "Projects Implemented in Jurisdictional REDD Programs or Where a Government has Established a REDD Baseline",
+      "anchor": "projects-implemented-in-jurisdictional-redd-programs-or-where-a-government-has-established-a-redd-baseline",
+      "section_number": "6.2",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-2",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "id": "S-6-3",
+      "title": "Baseline Validity",
+      "anchor": "baseline-validity",
+      "section_number": "6.3",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-6-3",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "id": "S-7",
+      "title": "Additionality",
+      "anchor": "additionality",
+      "section_number": "7",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-7",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "id": "S-8",
+      "title": "Quantification of GHG Emission Reductions",
+      "anchor": "quantification-of-ghg-emission-reductions",
+      "section_number": "8",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-8",
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "S-8-1",
+      "title": "Baseline Emissions",
+      "anchor": "baseline-emissions",
+      "section_number": "8.1",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-1",
+      "pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "id": "S-8-1-1",
+      "title": "General Procedures",
+      "anchor": "general-procedures",
+      "section_number": "8.1.1",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-1-1",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "id": "S-8-1-2",
+      "title": "Baseline Reassessment and Transition to VM0048",
+      "anchor": "baseline-reassessment-and-transition-to-vm0048",
+      "section_number": "8.1.2",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-1-2",
+      "pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "id": "S-8-2",
+      "title": "Project Emissions",
+      "anchor": "project-emissions",
+      "section_number": "8.2",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-2",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "id": "S-8-3",
+      "title": "Leakage",
+      "anchor": "leakage",
+      "section_number": "8.3",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-3",
+      "pages": [
+        12,
+        13
+      ]
+    },
+    {
+      "id": "S-8-4",
+      "title": "Net GHG Emission Reductions",
+      "anchor": "net-ghg-emission-reductions",
+      "section_number": "8.4",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-8-4",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "id": "S-9",
+      "title": "Monitoring",
+      "anchor": "monitoring",
+      "section_number": "9",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-9",
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "S-9-1",
+      "title": "Data and Parameters Available at Validation",
+      "anchor": "data-and-parameters-available-at-validation",
+      "section_number": "9.1",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-1",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "id": "S-9-2",
+      "title": "Data and Parameters Monitored",
+      "anchor": "data-and-parameters-monitored",
+      "section_number": "9.2",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-2",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "id": "S-9-3",
+      "title": "Description of the Monitoring Plan",
+      "anchor": "description-of-the-monitoring-plan",
+      "section_number": "9.3",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3",
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "S-9-3-1",
+      "title": "Development of Monitoring Plan",
+      "anchor": "development-of-monitoring-plan",
+      "section_number": "9.3.1",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-1",
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "S-9-3-2",
+      "title": "Monitoring",
+      "anchor": "monitoring",
+      "section_number": "9.3.2",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-9-3-2",
+      "pages": [
+        16,
+        17
+      ]
+    },
+    {
+      "id": "S-10",
+      "title": "References",
+      "anchor": "references",
+      "section_number": "10",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-10",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "id": "S-11",
+      "title": "Testing Significance of GHG Emissions",
+      "anchor": "testing-significance-of-ghg-emissions",
+      "section_number": "Appendix 1",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-11",
+      "pages": [
+        19,
+        20
+      ]
+    },
+    {
+      "id": "S-12",
+      "title": "Document History",
+      "anchor": "document-history",
+      "section_number": "Document History",
+      "stable_id": "Verra.AFOLU.VM0048.v1-0.S-12",
+      "pages": [
+        21
+      ]
+    }
+  ]
+}

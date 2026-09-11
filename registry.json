@@ -1549,5 +1549,19 @@
       "path": "tools/Verra/VM0047/v1-1/source.pdf",
       "sha256": "2fdccb9764a0b06283e974142d0ff250910f81686dc53bcc197f6cf90d53de3d"
     }
+  },
+  {
+    "kind": "active",
+    "standard": "Verra",
+    "program": "AFOLU",
+    "code": "VM0048",
+    "version": "1.0",
+    "path": "methodologies/Verra/AFOLU/VM0048/v1-0",
+    "stage": "staging",
+    "latest": true,
+    "source_pdf": {
+      "path": "tools/Verra/VM0048/v1-0/source.pdf",
+      "sha256": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982"
+    }
   }
 ]

@@ -127,6 +127,8 @@ jobs:
         run: node scripts/audit-rule-evidence-atomicity.js methodologies/Verra/AFOLU/VM0047/v1-1
       - name: VM0007 v1.8 dependency provenance
         run: node scripts/check-vm0007-dependency-provenance.js
+      - name: VM0048 v1.0 ingestion contract
+        run: node scripts/check-vm0048-ingestion.js
       - name: Previous versions lock drift (Agriculture)
         run: npm run previous:drift:agriculture
       - name: Previous versions lock drift (Forestry)
@@ -143,10 +145,21 @@ jobs:
           command -v pdftotext >/dev/null || (echo "Missing pdftotext (poppler-utils) on runner"; exit 2)
       - name: Install poppler-utils (Forestry idempotency)
         if: ${{ steps.forestry_scope.outputs.run == 'true' && steps.forestry_pdftotext.outcome == 'failure' }}
+        timeout-minutes: 5
         run: |
-          sudo apt-get update
-          sudo apt-get install -y poppler-utils
-          command -v pdftotext >/dev/null
+          set -euo pipefail
+          for attempt in 1 2 3; do
+            if sudo apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout=20 update && \
+               sudo apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout=20 install -y poppler-utils; then
+              command -v pdftotext >/dev/null
+              exit 0
+            fi
+            if [[ "$attempt" == "3" ]]; then
+              echo "poppler-utils install failed after bounded retries"
+              exit 1
+            fi
+            sleep $((attempt * 15))
+          done
       - name: Forestry idempotency (with previous)
         if: ${{ steps.forestry_scope.outputs.run == 'true' }}
         run: bash scripts/ci-idempotency-forestry.sh

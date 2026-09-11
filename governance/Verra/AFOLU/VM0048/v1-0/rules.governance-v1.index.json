@@ -1,0 +1,1195 @@
+{
+  "component": "Verra/VM0048@v1-0",
+  "classification": "ARTICLE6_NORMALIZATION",
+  "rule_count": 132,
+  "rules": [
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-2-0001",
+      "section_number": "2",
+      "summary": "Project description must identify methodology and modules",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L164-L166"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-2-0002",
+      "section_number": "2",
+      "summary": "Module choices require justification",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L165-L166"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-2-0003",
+      "section_number": "2",
+      "summary": "Appendix 1 governs omission justification",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L169-L170"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-3-1-0001",
+      "section_number": "3.1",
+      "summary": "Clarified minimum forest canopy cover",
+      "source_hash": "d55fa78dddf7de254135d54e8e3da51f7c73cc73b54b6cabddee320326d11774",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/clarification.layout.txt#L38-L39"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-4-0001",
+      "section_number": "4",
+      "summary": "Eligible REDD projects only",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L285-L287"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-4-0002",
+      "section_number": "4",
+      "summary": "Activity-type applicability comes from accounting modules",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L286-L287"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0001",
+      "section_number": "5.1",
+      "summary": "Project spatial boundaries must be clearly defined",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L294-L297"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0002",
+      "section_number": "5.1",
+      "summary": "Discrete parcels require unique identification",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L299-L300"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0003",
+      "section_number": "5.1",
+      "summary": "Digital maps required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L302-L302"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0004",
+      "section_number": "5.1",
+      "summary": "Polygon coordinates and accuracy documentation required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L304-L306"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0005",
+      "section_number": "5.1",
+      "summary": "Total land area required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L308-L308"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0006",
+      "section_number": "5.1",
+      "summary": "Landholder and user rights required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L310-L310"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0007",
+      "section_number": "5.1",
+      "summary": "Forested project area continuity",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L312-L314"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0008",
+      "section_number": "5.1",
+      "summary": "Ten-year forest qualification",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L316-L317"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0009",
+      "section_number": "5.1",
+      "summary": "Activity-specific boundaries follow accounting modules",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L319-L320"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-1-0010",
+      "section_number": "5.1",
+      "summary": "Multiple AFOLU activities require spatial delineation",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L322-L323"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-2-0001",
+      "section_number": "5.2",
+      "summary": "Carbon-pool selection and justification required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L335-L336"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-2-0002",
+      "section_number": "5.2",
+      "summary": "Wetland soil organic carbon accounting",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L338-L341"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-2-0003",
+      "section_number": "5.2",
+      "summary": "Pool significance uses Appendix 1",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L340-L341"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-2-0004",
+      "section_number": "5.2",
+      "summary": "Aboveground tree biomass included",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L347-L349"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-2-0005",
+      "section_number": "5.2",
+      "summary": "Belowground tree biomass included",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L351-L353"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-2-0006",
+      "section_number": "5.2",
+      "summary": "Aboveground non-tree biomass baseline inclusion",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L355-L357"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-2-0007",
+      "section_number": "5.2",
+      "summary": "Soil organic carbon treatment differs by wetland status",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L132-L132"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-2-0008",
+      "section_number": "5.2",
+      "summary": "Harvested wood products may be omitted only when baseline harvest is negligible",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L374-L377"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-3-0001",
+      "section_number": "5.3",
+      "summary": "Significant attributable GHG increases must be accounted",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L382-L384"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-3-0002",
+      "section_number": "5.3",
+      "summary": "GHG-source selection and justification required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L393-L394"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-3-0003",
+      "section_number": "5.3",
+      "summary": "GHG-source significance uses Appendix 1",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L396-L398"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-3-0004",
+      "section_number": "5.3",
+      "summary": "Baseline-included source must also be included in project and leakage",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L397-L398"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-3-0005",
+      "section_number": "5.3",
+      "summary": "Project biomass-burning CO2 is included",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L404-L408"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-3-0006",
+      "section_number": "5.3",
+      "summary": "Project biomass-burning CH4 and N2O are included",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L429-L429"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-5-3-0007",
+      "section_number": "5.3",
+      "summary": "Project fertilizer N2O is conditional",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L464-L467"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0001",
+      "section_number": "6.1",
+      "summary": "Baseline scenario must align with additionality and pre-project conditions",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L474-L478"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0002",
+      "section_number": "6.1",
+      "summary": "VT0001 is mandatory for additionality and baseline selection",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L476-L478"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0003",
+      "section_number": "6.1",
+      "summary": "Reuse VT0001 plausible alternative scenarios",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L480-L484"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0004",
+      "section_number": "6.1",
+      "summary": "Continuation of pre-project land use must be considered",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L486-L486"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0005",
+      "section_number": "6.1",
+      "summary": "Non-VCS implementation must be considered",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L488-L489"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0006",
+      "section_number": "6.1",
+      "summary": "Similar activities must be considered",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L491-L492"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0007",
+      "section_number": "6.1",
+      "summary": "Barrier-analysis baseline uses decision tree",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L502-L504"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0008",
+      "section_number": "6.1",
+      "summary": "Investment Option I chooses lowest-cost scenario",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L514-L516"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0009",
+      "section_number": "6.1",
+      "summary": "Investment Option II chooses financially most attractive scenario",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L518-L520"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0010",
+      "section_number": "6.1",
+      "summary": "Investment Option III applies benchmark logic",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L522-L527"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0011",
+      "section_number": "6.1",
+      "summary": "If barrier analysis cannot determine baseline, additional selection procedure is required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L535-L536"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0012",
+      "section_number": "6.1",
+      "summary": "Qualitative baseline data must be public and credible",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L543-L547"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-1-0013",
+      "section_number": "6.1",
+      "summary": "Selected baseline quantification follows activity modules",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L549-L550"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-2-0001",
+      "section_number": "6.2",
+      "summary": "Registered JNR projects must be nested under applicable JNR scenario requirements",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L555-L558"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-2-0002",
+      "section_number": "6.2",
+      "summary": "Non-JNR jurisdictional projects remain VCS-registered and monitored under VM0048",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L560-L563"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-2-0003",
+      "section_number": "6.2",
+      "summary": "Project may cap issuance to lower local-government baseline",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L565-L568"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-2-0004",
+      "section_number": "6.2",
+      "summary": "Local regulation can make baseline cap mandatory",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L568-L568"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-3-0001",
+      "section_number": "6.3",
+      "summary": "No projections beyond baseline validity required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L572-L573"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-3-0002",
+      "section_number": "6.3",
+      "summary": "Baseline reassessment follows VCS Standard and relevant module",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L575-L577"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-6-3-0003",
+      "section_number": "6.3",
+      "summary": "Next reassessment date must be in project description",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L576-L577"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-7-0001",
+      "section_number": "7",
+      "summary": "Use most recent VT0001 and Methodology Requirements guidance",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L589-L592"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-7-0002",
+      "section_number": "7",
+      "summary": "Regulatory surplus must satisfy VCS Standard and Methodology Requirements",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L594-L597"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-7-0003",
+      "section_number": "7",
+      "summary": "Non-Annex I enforcement-gap claims require lack of proponent control",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L599-L602"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-1-1-0001",
+      "section_number": "8.1.1",
+      "summary": "Use same quantification procedure ex ante and ex post",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L613-L615"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-1-1-0002",
+      "section_number": "8.1.1",
+      "summary": "Monitored-parameter ex ante values follow module tables",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L614-L615"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-1-1-0003",
+      "section_number": "8.1.1",
+      "summary": "Baseline is estimated ex ante",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L617-L619"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-1-2-0001",
+      "section_number": "8.1.2",
+      "summary": "VM0009 transition requires baseline-model revision under VM0009 provisions",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L626-L629"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-1-2-0002",
+      "section_number": "8.1.2",
+      "summary": "Over-issued transition difference must be compensated",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L637-L639"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-1-2-0003",
+      "section_number": "8.1.2",
+      "summary": "Active VCU cancellation is an allowed compensation method",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L641-L644"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-1-2-0004",
+      "section_number": "8.1.2",
+      "summary": "Future issuance cancellation may compensate transition difference",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L646-L649"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-1-2-0005",
+      "section_number": "8.1.2",
+      "summary": "Transition calculations must be disclosed and assessed",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L651-L654"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-2-0001",
+      "section_number": "8.2",
+      "summary": "Project-emission procedure must be consistent ex ante and ex post",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L658-L660"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-2-0002",
+      "section_number": "8.2",
+      "summary": "Project-scenario estimates follow relevant activity modules",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L662-L663"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0001",
+      "section_number": "8.3",
+      "summary": "Activity-shifting leakage must be estimated unless de minimis",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L670-L670"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0002",
+      "section_number": "8.3",
+      "summary": "Market-effect leakage must be estimated unless de minimis",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L672-L672"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0003",
+      "section_number": "8.3",
+      "summary": "Leakage-prevention emissions must be estimated unless de minimis",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L674-L674"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0004",
+      "section_number": "8.3",
+      "summary": "Leakage significance uses Appendix 1",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L673-L674"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0005",
+      "section_number": "8.3",
+      "summary": "Market effects require LK-ME when production decreases",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L683-L684"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0006",
+      "section_number": "8.3",
+      "summary": "Significant leakage-prevention increases must be accounted",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L691-L694"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0007",
+      "section_number": "8.3",
+      "summary": "Leakage-prevention fossil-fuel increases are de minimis",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L696-L698"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0008",
+      "section_number": "8.3",
+      "summary": "Significant fertilizer increase requires E-NA",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L700-L701"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0009",
+      "section_number": "8.3",
+      "summary": "Leakage prevention cannot flood agricultural land or create feedlots/manure lagoons",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L703-L705"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0010",
+      "section_number": "8.3",
+      "summary": "Leakage prevention cannot drain peatland",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L701-L701"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-3-0011",
+      "section_number": "8.3",
+      "summary": "Leakage-source list and justification required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L707-L708"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-4-0001",
+      "section_number": "8.4",
+      "summary": "Conservative ex ante net-reduction estimate required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L712-L713"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-8-4-0002",
+      "section_number": "8.4",
+      "summary": "Potential VCUs aggregate applicable activity-type VCUs",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L718-L719"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0001",
+      "section_number": "9.3.1",
+      "summary": "Monitoring plan must monitor implementation",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L765-L766"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0002",
+      "section_number": "9.3.1",
+      "summary": "Monitoring plan must monitor actual stock changes and emissions",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L766-L767"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0003",
+      "section_number": "9.3.1",
+      "summary": "Monitoring plan must monitor leakage",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L767-L768"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0004",
+      "section_number": "9.3.1",
+      "summary": "Monitoring plan must estimate ex post net changes",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L768-L768"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0005",
+      "section_number": "9.3.1",
+      "summary": "Monitoring task technical description required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L772-L774"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0006",
+      "section_number": "9.3.1",
+      "summary": "Monitoring task data specification required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L773-L774"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0007",
+      "section_number": "9.3.1",
+      "summary": "Data-collection procedures required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L775-L776"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0008",
+      "section_number": "9.3.1",
+      "summary": "QA/QC procedures required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L776-L777"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0009",
+      "section_number": "9.3.1",
+      "summary": "Data archiving required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L777-L778"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0010",
+      "section_number": "9.3.1",
+      "summary": "Monitoring organization and responsibilities required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L778-L778"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0011",
+      "section_number": "9.3.1",
+      "summary": "Critical parameters must be identified",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L792-L794"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0012",
+      "section_number": "9.3.1",
+      "summary": "Local values required where possible",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L793-L794"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0013",
+      "section_number": "9.3.1",
+      "summary": "Expert-value rationale required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L799-L800"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0014",
+      "section_number": "9.3.1",
+      "summary": "Parameter choices must target accurate net-reduction estimates",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L804-L807"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0015",
+      "section_number": "9.3.1",
+      "summary": "Significant uncertainty requires conservative underestimation",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L809-L810"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0016",
+      "section_number": "9.3.1",
+      "summary": "Documented SOPs and data-quality procedures required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L813-L815"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0017",
+      "section_number": "9.3.1",
+      "summary": "Field measurements must be replicably documented",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L817-L819"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0018",
+      "section_number": "9.3.1",
+      "summary": "Training must be documented",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L820-L821"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0019",
+      "section_number": "9.3.1",
+      "summary": "Plot-measurement accuracy protocol required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L822-L823"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0020",
+      "section_number": "9.3.1",
+      "summary": "Data error and consistency protocols required",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L824-L825"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0021",
+      "section_number": "9.3.1",
+      "summary": "Data must be safely archived for project lifetime",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L826-L827"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0022",
+      "section_number": "9.3.1",
+      "summary": "Expert judgment must follow IPCC guidance",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L846-L848"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0023",
+      "section_number": "9.3.1",
+      "summary": "Project boundary coordinates must be established, recorded and archived",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L854-L858"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0024",
+      "section_number": "9.3.1",
+      "summary": "Inventory SOPs and QA/QC must be applied",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L865-L868"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0025",
+      "section_number": "9.3.1",
+      "summary": "Project plan and implementation record must be available",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L870-L871"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-1-0026",
+      "section_number": "9.3.1",
+      "summary": "Monitoring plan must use applicable activity modules",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L873-L875"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0001",
+      "section_number": "9.3.2",
+      "summary": "Ex post monitoring follows monitoring plan",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L881-L881"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0002",
+      "section_number": "9.3.2",
+      "summary": "Ex post monitoring revises future baseline",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L883-L883"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0003",
+      "section_number": "9.3.2",
+      "summary": "Baseline reassessment information must be collected throughout crediting period",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L897-L898"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0004",
+      "section_number": "9.3.2",
+      "summary": "Forest-cover changes must be monitored",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L900-L903"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0005",
+      "section_number": "9.3.2",
+      "summary": "Spatial modeling variables must be monitored",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L901-L903"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0006",
+      "section_number": "9.3.2",
+      "summary": "Required carbon-stock data must be monitored",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L904-L904"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0007",
+      "section_number": "9.3.2",
+      "summary": "All significant leakage sources are monitored",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L908-L910"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0008",
+      "section_number": "9.3.2",
+      "summary": "Monitoring report values require uncertainty estimates",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L914-L915"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0009",
+      "section_number": "9.3.2",
+      "summary": "AUDef allocated annual deforestation by stratum must be reported",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L917-L918"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0010",
+      "section_number": "9.3.2",
+      "summary": "Project-area annual deforestation must be reported",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L920-L921"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0011",
+      "section_number": "9.3.2",
+      "summary": "Leakage-belt annual deforestation must be reported",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L923-L924"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0012",
+      "section_number": "9.3.2",
+      "summary": "Project-area annual deforestation emissions must be reported",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L926-L927"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0013",
+      "section_number": "9.3.2",
+      "summary": "Leakage-belt annual deforestation emissions must be reported",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L929-L930"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0014",
+      "section_number": "9.3.2",
+      "summary": "Average project-area deforestation emission factor must be reported",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L932-L933"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-9-3-2-0015",
+      "section_number": "9.3.2",
+      "summary": "Baseline update method must remain the same",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L939-L940"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-11-0001",
+      "section_number": "Appendix 1",
+      "summary": "Appendix 1 stepwise significance test is mandatory",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L973-L977"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-11-0002",
+      "section_number": "Appendix 1",
+      "summary": "Pool/source significance tested at least ex ante and baseline reassessment",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L979-L982"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-11-0003",
+      "section_number": "Appendix 1",
+      "summary": "Leakage significance tested ex ante and ex post",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L977-L977"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-11-0004",
+      "section_number": "Appendix 1",
+      "summary": "Define significance-test period",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L984-L986"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-11-0005",
+      "section_number": "Appendix 1",
+      "summary": "Estimate source emissions using project data, peer-reviewed literature or latest IPCC defaults",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L990-L992"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-11-0006",
+      "section_number": "Appendix 1",
+      "summary": "Estimate carbon-pool stock-change emissions consistently with methodology",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L994-L998"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-11-0007",
+      "section_number": "Appendix 1",
+      "summary": "Estimate leakage-mitigation emissions using applicable activity modules",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L1000-L1007"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-11-0008",
+      "section_number": "Appendix 1",
+      "summary": "Use latest VCS Standard GWP values",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L1009-L1010"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-11-0009",
+      "section_number": "Appendix 1",
+      "summary": "Calculate relative contribution for each source",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L1012-L1013"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-11-0010",
+      "section_number": "Appendix 1",
+      "summary": "Rank relative contributions descending",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L1033-L1035"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-11-0011",
+      "section_number": "Appendix 1",
+      "summary": "Cumulative relative contribution threshold is 0.95",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L1037-L1039"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-11-0012",
+      "section_number": "Appendix 1",
+      "summary": "Excluded emissions insignificant only below five percent of net anthropogenic ERRs",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L1041-L1045"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-11-0013",
+      "section_number": "Appendix 1",
+      "summary": "Significance ERR calculation precedes leakage discount",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L1047-L1048"
+      ]
+    },
+    {
+      "id": "Verra.AFOLU.VM0048.v1-0.R-11-0014",
+      "section_number": "Appendix 1",
+      "summary": "Significance calculations require report summary and shared spreadsheet",
+      "source_hash": "d65f26b65946120688e5b41d7e97d116f6959fdd9d7a77f7643f5339a142b982",
+      "lines": [
+        "docs/roadmaps/governance-v1/staging/VM0048/v1-0/source/source.layout.txt#L1050-L1054"
+      ]
+    }
+  ]
+}

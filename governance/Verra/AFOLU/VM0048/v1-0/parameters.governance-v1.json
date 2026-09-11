@@ -1,0 +1,68 @@
+{
+  "component": "Verra/VM0048@v1-0",
+  "classification": "SOURCE_REQUIREMENT",
+  "status": "STRUCTURED_PENDING_FINAL_AUDIT",
+  "parameters": [
+    {
+      "parameter": "VCU_t",
+      "section_number": "8.4",
+      "unit": "VCU",
+      "role": "output"
+    },
+    {
+      "parameter": "VCU_AUDef",
+      "section_number": "8.4",
+      "unit": "VCU",
+      "role": "activity_component"
+    },
+    {
+      "parameter": "VCU_APDef",
+      "section_number": "8.4",
+      "unit": "VCU",
+      "role": "activity_component"
+    },
+    {
+      "parameter": "VCU_AUDeg",
+      "section_number": "8.4",
+      "unit": "VCU",
+      "role": "activity_component"
+    },
+    {
+      "parameter": "RCE_i",
+      "section_number": "Appendix 1",
+      "unit": "fraction",
+      "role": "relative_contribution"
+    },
+    {
+      "parameter": "E_i",
+      "section_number": "Appendix 1",
+      "unit": "tCO2e",
+      "role": "project_and_leakage_emissions_source"
+    },
+    {
+      "parameter": "significance_cumulative_threshold",
+      "section_number": "Appendix 1",
+      "value": 0.95,
+      "unit": "fraction"
+    },
+    {
+      "parameter": "insignificance_threshold",
+      "section_number": "Appendix 1",
+      "value": 0.05,
+      "unit": "fraction_of_net_anthropogenic_GHG_ERRs"
+    },
+    {
+      "parameter": "significant_uncertainty_threshold",
+      "section_number": "9.3.1",
+      "value": 0.1,
+      "unit": "fraction_of_estimate"
+    },
+    {
+      "parameter": "reporting_confidence_interval",
+      "section_number": "9.3.2",
+      "value": 0.9,
+      "unit": "two_sided_confidence_interval"
+    }
+  ],
+  "parameter_count": 10
+}
